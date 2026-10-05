@@ -1,0 +1,30 @@
+name: Sanity and Vercel
+title: Case study: technical SEO on a Sanity and Vercel website
+description: A local service business on Sanity and Vercel: Chris Abraham set SEO priorities, merged metadata changes through GitHub, and verified the prerendering.
+updated: 2026-10-05
+---
+<h1>Local service business on Sanity and Vercel: SEO in the repository</h1>
+<p class="lead">A junk removal company's website ran on a modern stack: Sanity for content, Vercel for hosting, and GitHub for code. It had the classic problems of a client-rendered site, and the fixes had to go through code.</p>
+
+<h2>The problems</h2>
+<ul>
+  <li>Client-side rendering, so crawlers received thin HTML.</li>
+  <li>Duplicate titles and meta descriptions across many pages.</li>
+  <li>Heading structure problems.</li>
+  <li>Soft 404s: missing pages returning a success status.</li>
+  <li>Missing or inconsistent canonical and structured data signals.</li>
+</ul>
+
+<h2>Who did what</h2>
+<p>The developer implemented the substantial infrastructure changes, including prerendered HTML and deployment improvements. I handled the SEO side: setting priorities, specifying what each page needed, reviewing the developer's changes, and verifying the live result independently. I also made code-level metadata changes myself through GitHub, in a pull request that was reviewed and merged.</p>
+
+<h2>Why it matters</h2>
+<p>Many businesses now run on headless CMSs and JavaScript frameworks where there's no SEO plugin to configure. The work happens in templates, routes, and build settings. I can read that code, propose and make changes through the team's normal review process, and check what crawlers actually receive after deployment.</p>
+
+<p>It also means changes are reviewable: every edit has a commit, a reviewer, and a way back.</p>
+
+<h2>How it was checked</h2>
+<p>Crawls before and after the prerendering change, raw HTML fetched from production, Search Console's live test, and a review of titles, descriptions, canonicals, and status codes across the site.</p>
+
+<h2>Status</h2>
+<p>Core fixes deployed and verified; a final audit is under way. See <a href="{root}services/developers/">developer specs and implementation QA</a>.</p>

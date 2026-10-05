@@ -116,15 +116,70 @@ dd { margin: .2rem 0 0 0; }
    "employee": {
     "@id": "https://chrisabraham.com/#person"
    },
+   "slogan": "Experienced help for the digital work your business needs done",
    "email": "chris@gerriscorp.com",
    "telephone": "+1-202-352-5051",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "Arlington",
     "addressRegion": "VA",
+    "postalCode": "22204",
     "addressCountry": "US"
    },
-   "areaServed": "Worldwide",
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
    "knowsAbout": [
     "Technical consulting",
     "Developer specifications",
@@ -150,10 +205,260 @@ dd { margin: .2rem 0 0 0; }
     "DKIM",
     "DMARC"
    ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
    "sameAs": [
     "https://www.upwork.com/freelancers/chrisjabraham",
     "https://github.com/chrisabraham/gerriscorp"
-   ]
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "@type": "Person",
@@ -165,10 +470,37 @@ dd { margin: .2rem 0 0 0; }
    "worksFor": {
     "@id": "https://gerriscorp.com/#org"
    },
-   "alumniOf": "The George Washington University",
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
    "homeLocation": {
-    "@type": "Place",
-    "name": "Arlington, Virginia"
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
    },
    "knowsAbout": [
     "Technical consulting",
@@ -202,6 +534,35 @@ dd { margin: .2rem 0 0 0; }
     "https://www.upwork.com/freelancers/chrisjabraham",
     "https://hillmole.com/"
    ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
   },
   {
    "@type": "WebPage",
@@ -276,7 +637,7 @@ dd { margin: .2rem 0 0 0; }
   <li><a href="../">Experienced help for the digital work your business needs done</a>: Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.</li>
   <li><a href="../services/">Services</a>: Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.</li>
   <li><a href="../guides/">Guides</a>: Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.</li>
-  <li><a href="../case-studies/">Case studies</a>: Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.</li>
+  <li><a href="../case-studies/">Case studies</a>: Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.</li>
   <li><a href="../about/">About Chris Abraham</a>: Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.</li>
   <li><a href="../work-with-me/">Work with me</a>: How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.</li>
   <li><a href="../faq/">Frequently asked questions</a>: Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.</li>
@@ -286,15 +647,19 @@ dd { margin: .2rem 0 0 0; }
 <ul>
   <li><a href="../services/technical-lead/">Fractional technical lead</a>: Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.</li>
   <li><a href="../services/developers/">Developer specs and implementation QA</a>: Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.</li>
-  <li><a href="../services/ai-automation/">AI agents and automation, built safely</a>: Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.</li>
+  <li><a href="../services/agency-partner/">Agency partner and white-label support</a>: Chris Abraham works inside agencies' client relationships as a technical SEO and AI search specialist, under NDA, in your Basecamp, with your branding.</li>
   <li><a href="../services/rescue/">Project rescue, takeovers, and legacy migrations</a>: Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.</li>
+  <li><a href="../services/ai-automation/">AI agents and automation, built safely</a>: Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.</li>
   <li><a href="../services/data-cleanup/">Data cleanup and AI-output audits</a>: Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.</li>
+  <li><a href="../services/analytics/">Analytics and measurement you can trust</a>: Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.</li>
   <li><a href="../services/advisory/">Strategic advisory and briefings</a>: Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.</li>
 </ul>
 <h2>Search and site performance</h2>
 <ul>
   <li><a href="../services/technical-seo/">Technical SEO forensics and fixes</a>: Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.</li>
   <li><a href="../services/crawler-visibility/">Content the crawler never sees</a>: Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.</li>
+  <li><a href="../services/large-sites/">SEO for large and programmatic sites</a>: Chris Abraham manages crawling and indexing on large and programmatic sites: segmented sitemaps, parameter URLs, index bloat, internal linking, and quality.</li>
+  <li><a href="../services/ecommerce/">E-commerce SEO: templates, catalogs, and product data</a>: Chris Abraham fixes ecommerce SEO at the template level: product data, duplicate URLs, faceted navigation, product schema, rendering, and migrations.</li>
   <li><a href="../services/on-page-seo/">On-page SEO</a>: Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.</li>
   <li><a href="../services/site-speed/">Site speed, Core Web Vitals, and Cloudflare</a>: Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.</li>
   <li><a href="../services/search-console/">Google Search Console setup, cleanup, and indexing fixes</a>: Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.</li>
@@ -302,8 +667,9 @@ dd { margin: .2rem 0 0 0; }
   <li><a href="../services/ai-search/">AI search visibility</a>: How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.</li>
   <li><a href="../services/ongoing-support/">Ongoing SEO and website support</a>: A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.</li>
 </ul>
-<h2>Specialist services</h2>
+<h2>Local, reputation, and email</h2>
 <ul>
+  <li><a href="../services/multi-location/">Multi-location and connected businesses</a>: Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.</li>
   <li><a href="../services/reputation/">Reputation and perception management</a>: Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.</li>
   <li><a href="../services/google-business-profile/">Google Business Profile hard cases</a>: Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.</li>
   <li><a href="../services/email-and-dns/">Email authentication and DNS</a>: Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.</li>
@@ -320,6 +686,21 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <h2>Case studies</h2>
 <ul>
+  <li><a href="../case-studies/ecommerce-rendering/">Magento store: product content Googlebot never saw</a>: How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.</li>
+  <li><a href="../case-studies/consent-blocking/">WordPress media site: a consent banner hiding every article</a>: A bilingual WordPress review site indexed on Bing but barely in Google: Chris Abraham traced it to consent blocking that left article tabs empty.</li>
+  <li><a href="../case-studies/react-event-platform/">React event platform: 2,000 pages Google couldn't reach</a>: A Create React App event platform with 2,000 pages Google never found: Chris Abraham wrote a 13 page developer spec ranked P0 to P3 and verified the fixes.</li>
+  <li><a href="../case-studies/netlify-migration/">Clinical practice: WordPress to Netlify, with search intact</a>: Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI assisted repository analysis, and a careful disavow.</li>
+  <li><a href="../case-studies/sanity-vercel/">Local service business on Sanity and Vercel: SEO in the repository</a>: A local service business on Sanity and Vercel: Chris Abraham set SEO priorities, merged metadata changes through GitHub, and verified the prerendering.</li>
+  <li><a href="../case-studies/shopify-migration/">Specialty retailer: cleaning up after Squarespace to Shopify</a>: A premium fly fishing store moved from Squarespace to Shopify and left 3,400 404s and duplicate URLs behind: a four part audit and theme schema work.</li>
+  <li><a href="../case-studies/app-takeover/">Consumer brand: taking over a stalled React application</a>: A consumer skincare brand's React application changed hands after an outage. Chris Abraham inventoried code, hosting, and DNS and fixed the server over SSH.</li>
+  <li><a href="../case-studies/programmatic-indexing/">Programmatic site: managing crawling and indexing at scale</a>: A trading card price site of 20,000+ pages on an expired domain lost indexing after a strong start. How Chris Abraham manages crawling at scale.</li>
+  <li><a href="../case-studies/indexing-recovery/">Health-testing store: recovering after an SEO plugin outage</a>: A WooCommerce health testing store lost indexing, traffic, and AI referrals after its SEO plugin was briefly disabled: how the recovery was checked.</li>
+  <li><a href="../case-studies/multi-location-entity/">Multi-location brand: untangling the parent from its first location</a>: A custom closets brand with locations in several states and one website: Chris Abraham separated the parent brand from its first location in schema.</li>
+  <li><a href="../case-studies/seasonal-retailer/">Seasonal retailer: a staged plan around the peak</a>: A multi store seasonal retailer with related sites and profiles: audit findings and a staged plan that keeps risky changes away from the peak season.</li>
+  <li><a href="../case-studies/gbp-reinstatement/">Therapy practice: a suspended Google Business Profile reinstated</a>: A hypnotherapy practice's suspended Google Business Profile, reinstated in February 2025 after Chris Abraham reviewed the listing and built a documented appeal.</li>
+  <li><a href="../case-studies/umbraco-operations/">Two B2B companies on Umbraco: publishing and technical operations</a>: Two B2B companies on Umbraco: 54 city landing pages and steady publishing for one, and a homepage overhaul with cache and template fixes for the other.</li>
+  <li><a href="../case-studies/ai-recruiting/">AI company: search visibility for recruiting engineers</a>: An AI company recruiting engineers in the Bay Area wanted to appear in AI answers about jobs. Chris Abraham audited its footprint and planned the fix.</li>
+  <li><a href="../case-studies/data-cleanup/">Contact data: three cleanups and an AI audit</a>: Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.</li>
   <li><a href="../case-studies/built-with-claude-code/">Built with Claude Code</a>: How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.</li>
 </ul>
 <h2>Files for machines</h2>

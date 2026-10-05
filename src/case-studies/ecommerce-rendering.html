@@ -1,0 +1,29 @@
+name: E-commerce Rendering
+title: Case study: Magento product pages hidden from Googlebot
+description: How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
+updated: 2026-10-05
+---
+<h1>Magento store: product content Googlebot never saw</h1>
+<p class="lead">An equipment retailer on Magento 2 with the Hyvä theme had been losing organic traffic for months. Brand searches and the home page were down while non-brand category traffic was growing, a pattern that didn't fit any single explanation.</p>
+
+<h2>My role</h2>
+<p>Forensic diagnosis and technical direction, working alongside the client's contractor, who owns implementation.</p>
+
+<h2>What I found</h2>
+<h3>Track one: rendering</h3>
+<p>The product templates used Alpine.js to mount the specifications, FAQs, and reviews only when a visitor scrolled them into view, with <code>x-intersect</code> wrapped around <code>x-if</code>. Googlebot never scrolls the way a person does, so those sections never mounted. A Screaming Frog crawl extracted thousands of words from category pages but only 250 to 400 words from flagship product pages that weighed more than 1.2 MB. Search Console showed a selective cluster of product URLs in "Crawled, currently not indexed," while the rest of the site indexed normally.</p>
+<h3>Track two: backlinks and redirects</h3>
+<p>In the same period, a spike of spam, adult, and warez backlinks arrived, mostly from cloud-hosting address ranges, alongside a 301 redirect problem. I kept this on its own track, collected the evidence, and asked for upgraded Search Console access to examine it properly, without folding it into the rendering story.</p>
+
+<h2>What I recommended</h2>
+<ul>
+  <li>Render the product sections in the server's HTML and keep the scroll animation as progressive enhancement.</li>
+  <li>An A/B test that removes the scroll gates from a group of product pages first, so the effect can be measured before a full rollout.</li>
+  <li>A separate investigation and cleanup plan for the backlink spike and the redirect problem.</li>
+</ul>
+
+<h2>How it was checked</h2>
+<p>Raw HTML, rendered DOM, and crawler extraction compared on the same URLs, Search Console's live test used to see what Google rendered, and the indexing cluster matched to the affected template.</p>
+
+<h2>Status</h2>
+<p>Diagnosis delivered and the test scoped; implementation sits with the client's contractor. The method is written up in the <a href="{root}guides/javascript-seo/">JavaScript SEO guide</a> and on <a href="{root}services/crawler-visibility/">content the crawler never sees</a>.</p>
