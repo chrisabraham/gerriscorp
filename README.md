@@ -21,26 +21,26 @@ Preview locally: `python3 -m http.server`, then open http://localhost:8000
 - IndexNow: the `<key>.txt` file, `tools/indexnow.py`, and `.github/workflows/indexnow.yml` ping Bing and the other IndexNow engines after each push, once gerriscorp.com really serves this site.
 - `_config.yml` keeps `src/` and `tools/` off the public site and publishes `.well-known/`.
 
-## DNS inventory (read on 2026-10-05, before any change)
+## DNS (Cloudflare, since 2026-10-05)
 
-Registrar: Squarespace Domains (registered 2012-05-07, expires 2027-05-07). Nameservers: ns-cloud-e1…e4.googledomains.com.
+Registrar: Squarespace Domains (registered 2012-05-07, expires 2027-05-07). Nameservers: adam.ns.cloudflare.com and cruz.ns.cloudflare.com. DNSSEC off.
 
-| Record | Value | At cutover |
+| Record | Value | Notes |
 |---|---|---|
-| A @ | 198.49.23.144, 198.49.23.145, 198.185.159.144, 198.185.159.145 (Squarespace redirect) | **Replace** with GitHub Pages |
-| CNAME www | ext-cust.squarespace.com | **Replace** with chrisabraham.github.io |
-| MX @ | aspmx.l.google.com and alt1–alt4 (Google Workspace) | Keep |
-| TXT @ | v=spf1 include:_spf.google.com ~all | Keep |
-| TXT @ | google-site-verification=… (Search Console) | Keep |
-| TXT _dmarc | v=DMARC1; p=quarantine; rua=mailto:dmarc@gerriscorp.com; pct=100 | Keep |
-| TXT google._domainkey | DKIM public key | Keep |
+| A @ | 185.199.108.153, .109.153, .110.153, .111.153 | GitHub Pages, DNS only |
+| AAAA @ | 2606:50c0:8000::153, 8001::153, 8002::153, 8003::153 | GitHub Pages, DNS only |
+| CNAME www | chrisabraham.github.io | GitHub redirects www to the apex |
+| MX @ | aspmx.l.google.com (1), alt1/alt2 (5), alt3/alt4 (10) | Google Workspace mail |
+| TXT @ | v=spf1 include:_spf.google.com ~all | SPF |
+| TXT @ | google-site-verification=… | Search Console |
+| TXT _dmarc | v=DMARC1; p=quarantine; rua=mailto:dmarc@gerriscorp.com; pct=100 | DMARC |
+| TXT google._domainkey | DKIM public key | Google Workspace DKIM |
+| CNAME docs, mail | ghs.googlehosted.com | legacy Google custom URLs |
 
-## Going live on gerriscorp.com
+Keep the website records DNS only until GitHub's certificate is issued; after that they can be proxied with SSL/TLS set to Full (strict). Keep Cloudflare's "Block AI bots" off so AI crawlers can read the site.
 
-The site is a noindexed preview at https://chrisabraham.github.io/gerriscorp/ until these steps are done. Canonical host: `gerriscorp.com`; GitHub Pages redirects `www` to it.
+## Live
 
-1. Set `LIVE = True` in `tools/build.py`, run it (this removes `noindex` and writes `CNAME`), commit, and push.
-2. In the repo's Settings → Pages, set the custom domain to `gerriscorp.com`.
-3. In Squarespace DNS, replace only the apex A records with 185.199.108.153, 185.199.109.153, 185.199.110.153, and 185.199.111.153 (optionally AAAA 2606:50c0:8000::153, 8001::153, 8002::153, 8003::153), and point `www` at `chrisabraham.github.io`. Leave MX and every TXT record alone, and turn off Squarespace's domain forwarding.
-4. Once GitHub issues the certificate, tick Enforce HTTPS. Check `https://gerriscorp.com/`, `https://www.gerriscorp.com/`, and that mail still arrives.
-5. Run the IndexNow workflow by hand, and submit `https://gerriscorp.com/sitemap.xml` in Google Search Console (already verified by DNS) and Bing Webmaster Tools.
+The site went live on gerriscorp.com on 2026-10-05 (`LIVE = True` in `tools/build.py`, custom domain set in the repo's Pages settings). The github.io address redirects to it.
+
+After going live: submit `https://gerriscorp.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and run the IndexNow workflow by hand once.
