@@ -1,21 +1,29 @@
 # Gerris Corp
 
-> Gerris Corp is Chris Abraham's digital agency in Arlington, Virginia: hands-on technical and on-page SEO, site speed, site migrations and 301 redirects, Google Business Profile reinstatement and management, AI search visibility, and online reputation management. Chris has built websites since 1994 and done SEO since 1998. Gerris has run campaigns for clients in more than 40 industries.
+> Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management. Based in Arlington, Virginia. Chris Abraham has built websites since 1994 and hosts The Chris Abraham Show.
+
+Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham.
 
 ## Pages
 
-- [Gerris Corp home](https://gerriscorp.com/): services, Google Business Profile pricing, clients, FAQ, contact
-- [Full text of this site](https://gerriscorp.com/llms-full.txt): everything on gerriscorp.com as plain text
+- [Home](https://gerriscorp.com/): Chris Abraham helps businesses get found, fixes what holds their websites back, and works with their developers on technical SEO, migrations, and AI search.
+- [Services](https://gerriscorp.com/services/): Services from Chris Abraham at Gerris Corp: technical SEO forensics, website migrations, AI search and content, developer collaboration, and ongoing support.
+- [Technical SEO](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops and indexing problems with evidence, separates the causes, and turns each one into a fix your developers can ship.
+- [Migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with redirect maps, launch checks, and cleanup.
+- [AI Search](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, and the site, content, and schema work that improves it.
+- [Developers](https://gerriscorp.com/services/developers/): Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.
+- [Ongoing Support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, troubleshooting, developer coordination, and sensible reporting.
+- [Reputation](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham at Gerris Corp: search results, data broker removal, AI answers, and monthly reporting for founders.
+- [Google Business Profile](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+- [Email and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS without breaking email or losing search equity.
+- [Case Studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.
+- [The Show](https://gerriscorp.com/show/): Season 10 of The Chris Abraham Show podcast, the @chrisabraham and @abrahamSEO YouTube channels, the Substack, and the Friday SEO, AEO, and GEO roundup.
+- [About](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp from Arlington, Virginia, near Washington, DC.
+- [Work With Me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, or ongoing support, prepaid and tracked in writing.
+- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or book a 30 minute call. Diagnostics are prepaid and scoped in writing.
 
-## About the founder
+## Optional
 
-- [Chris Abraham bio](https://chrisabraham.com/bio)
-- [Testimonials](https://chrisabraham.com/testimonials)
-- [Case studies](https://chrisabraham.com/case-studies)
-
-## Contact
-
-- Email: chris@gerriscorp.com
-- Phone or text: +1 202-352-5051
-- Book a call: https://calendly.com/chrisabraham/30
-- Upwork: https://www.upwork.com/freelancers/chrisjabraham
+- [Full text of this site](https://gerriscorp.com/llms-full.txt)
+- [Chris Abraham's personal site and blog](https://chrisabraham.com/)
+- [The Chris Abraham Show on Substack](https://chrisabraham.substack.com/)

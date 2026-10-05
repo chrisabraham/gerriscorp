@@ -3,7 +3,7 @@ name: IndexNow
 on:
   push:
     branches: [main]
-    paths: ["index.html", "sitemap.xml", "llms*.txt"]
+    paths: ["**.html", "sitemap.xml", "llms*.txt"]
   workflow_dispatch:
 
 jobs:
