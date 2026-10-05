@@ -22,7 +22,7 @@ I've worked in digital since the early 1990s, through the first web communities,
 
 ## Working alongside other advisors
 
-I work easily with legal, security, communications, and family office teams, and I currently run a long-standing engagement alongside a security firm's open-source intelligence program. Firms that need a search and reputation specialist to refer clients to are welcome to get in touch.
+I work easily with legal, security, communications, and family office teams. Firms that need a search and reputation specialist to refer clients to are welcome to get in touch.
 
 ## How a second opinion works
 

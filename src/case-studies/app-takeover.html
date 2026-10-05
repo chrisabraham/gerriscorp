@@ -1,0 +1,31 @@
+name: App Takeover
+title: Case study: taking over a stalled React app for a brand
+description: A consumer skincare brand's React application changed hands after an outage. Chris Abraham inventoried code, hosting, and DNS and fixed the server over SSH.
+updated: 2026-10-05
+---
+<h1>Consumer brand: taking over a stalled React application</h1>
+<p class="lead">A consumer skincare brand's React application changed hands after an outage. Project files, credentials, hosting, DNS, and the repository were spread across several people, and the brand needed someone to work out what it actually had.</p>
+
+<h2>My role</h2>
+<p>Takeover assessment and hands-on operations.</p>
+
+<h2>The assessment</h2>
+<p>I assessed the handoff the way every rescue should start, with an inventory:</p>
+<ul>
+  <li>Which project files were supplied, and whether they matched what was running.</li>
+  <li>Where the application was hosted, and who controlled the server.</li>
+  <li>Who controlled the domain and DNS.</li>
+  <li>Where the repository lived and who had access.</li>
+  <li>Which credentials existed, and which were missing.</li>
+</ul>
+
+<h2>Hands-on operations</h2>
+<p>Then I worked on the DigitalOcean Linux server directly over SSH: reading logs, editing the environment and application configuration files, and managing the Node application with the PM2 process manager. The application was being kept down by a port conflict, which I diagnosed.</p>
+
+<h2>Why it matters</h2>
+<p>Stalled projects are common: a freelancer moves on, an agency relationship ends, a founder inherits a codebase nobody explained. The first valuable thing is a clear picture of what exists and who controls it. The second is someone who can get onto the server and fix the immediate problem.</p>
+
+<p>Writing the inventory down also protects the business the next time someone leaves, because the knowledge no longer lives in one person's head.</p>
+
+<h2>Status</h2>
+<p>The assessment and the operational fixes described here were completed; larger rebuild and integration proposals are separate decisions for the brand. See <a href="{root}services/rescue/">project rescue and takeovers</a>.</p>

@@ -32,11 +32,11 @@ Monthly reporting on search results, AI answers, new broker listings, and anythi
 
 ## Working with your other advisors
 
-This work plugs into security, legal, and family office teams. I currently run a long-standing engagement alongside a security firm's open-source intelligence program, and the two disciplines strengthen each other: they watch for threats, and I keep the public record accurate and the private information private.
+This work plugs into security, legal, and family office teams, and the disciplines strengthen each other: they watch for threats, and I keep the public record accurate and the private information private.
 
 ## Background
 
-I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com. My longest current engagement has run for eight years.
+I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com.
 
 ## Common questions
 

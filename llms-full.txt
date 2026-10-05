@@ -13,7 +13,7 @@ Updated: 2026-10-05
 
 I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when the technical side of your web presence is a mess and nobody owns it. I find out what's wrong, write the plan, direct the developers, human and AI, ship what I can myself, and explain all of it in plain English.
 
-I've built websites since 1994 and started Gerris in 2007. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
+I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
 
 ## Consulting and technical direction
 - **[Fractional technical lead](https://gerriscorp.com/services/technical-lead/).** For companies with a website, a developer or two, and nobody in charge. I own the stack part time, set priorities, direct developers and vendors, and report to you in plain English.
@@ -72,14 +72,18 @@ I'm the person you call when the technical side of your web presence needs someo
 ## Consulting and technical direction
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
+- [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with Claude Code, with human confirmation on every action, tests, and encrypted backups.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
+- [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
 - [Strategic advisory and second opinions](https://gerriscorp.com/services/advisory/): advice for founders and executives on AI, search, reputation, and technology decisions.
 
 ## Search and site performance
 - [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/): traffic drops and indexing problems diagnosed with evidence and fixed with your developers.
 - [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): my signature diagnosis, for pages that look complete to visitors and empty to Google and AI crawlers.
+- [Large and programmatic sites](https://gerriscorp.com/services/large-sites/): crawling and indexing managed across tens of thousands of pages.
+- [Ecommerce SEO](https://gerriscorp.com/services/ecommerce/): Shopify, Magento, and WooCommerce fixed at the template level.
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): titles, descriptions, headings, internal links, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): fast pages on real phones, and a CDN configured properly.
 - [Google Search Console](https://gerriscorp.com/services/search-console/): setup, cleanup, and fixes for what the indexing reports reveal.
@@ -87,7 +91,8 @@ I'm the person you call when the technical side of your web presence needs someo
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 
-## Specialist services
+## Local, reputation, and email
+- [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): entity structure, location pages, and sister brands kept distinct.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
@@ -226,62 +231,50 @@ Updated October 5, 2026
 
 ---
 
-Source: https://gerriscorp.com/services/ai-automation/
+Source: https://gerriscorp.com/services/agency-partner/
 Updated: 2026-10-05
 
-# AI agents and automation, built safely
+# Agency partner and white-label support
 
-Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.
+Marketing, PR, and web agencies bring me in when a client needs deeper technical SEO, AI search, or developer coordination than the team has in house. I work inside your relationship, on your terms, and your client stays yours.
 
-## Why I can build these
+## Why agencies call
+- A client's traffic fell and the account team can't explain it.
+- A client is migrating platforms and nobody on staff has run a migration before.
+- A client asks about AI search, llms.txt, or why ChatGPT gets their business wrong.
+- The agency sold SEO and needs someone who can actually implement the technical parts.
+- A client's developer needs precise specs rather than a slide deck.
+- A Google Business Profile is suspended and the client is panicking.
 
-I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+## How I work with agencies
+- **Your relationship, your brand.** I can work white-label, as a named specialist on your team, or as a referral partner, whichever suits the client.
+- **Your systems.** I work in your Basecamp, Asana, Slack, or email, follow your reporting cadence, and record Loom walkthroughs for your team and your clients.
+- **Confidentiality.** I sign a mutual nondisclosure agreement before seeing client details, and I never contact your clients outside the arrangement you set.
+- **Billable, documented work.** Every task is turned into a clear deliverable you can bill and explain: audits, specs, implementation, verification, and reports written for the client to read.
+- **No territory grabs.** Your client stays your client, during the engagement and after it.
 
-## Safety by design
+## What I take on for agencies
 
-Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:
-- **A human confirms every external action.** Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.
-- **Deterministic first.** Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.
-- **Untrusted content is data.** Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.
-- **Secrets stay out of Git.** API keys and tokens live outside the repository.
-- **Tests and a real deploy loop.** Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.
-- **Encrypted backups with tested restores.** Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.
-- **Model choice by evidence.** I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.
+The full range of my work is available through partners: [technical SEO forensics](https://gerriscorp.com/services/technical-seo/), [migrations](https://gerriscorp.com/services/migrations/), [AI search visibility](https://gerriscorp.com/services/ai-search/) and answer-focused content, [e-commerce catalog work](https://gerriscorp.com/services/ecommerce/), [multi-location architecture](https://gerriscorp.com/services/multi-location/), site architecture and city-page priorities, metadata and schema implementation, GBP tracking and recovery, and [developer specs and QA](https://gerriscorp.com/services/developers/). I've worked with PR firms, digital marketing agencies, SEO agencies, and boutique web shops, across WordPress, Shopify, Magento, Umbraco, Wix, and modern JavaScript stacks.
 
-## What I build for clients
-
-Focused tools with a clear job: a morning briefing assembled from your tasks, calendar, and inbox; triage of incoming requests into your project tool; a research assistant that gathers sources and drafts a reviewable summary; integrations between systems that don't talk to each other; command-line tools for repetitive website and data chores; and audits of AI output before anyone relies on it.
-
-## How a pilot works
-
-Every build starts as a pilot, defined in writing before work begins:
-- **Inputs:** what goes in, from where.
-- **Permissions:** which accounts and data it touches, and nothing more.
-- **Outputs:** what it produces, where it's saved, and how a person reviews it.
-- **Acceptance:** the tests that prove it works, run in front of you.
-- **Handover:** the code in your repository, documentation, ownership of every account, and what to do when it fails.
-
-## The questions I ask
-
-What's the actual job? What happens after this step? Where is the result saved? Can you recover it if something goes wrong? What does this error mean? Does the system remember what it needs to remember? Those questions decide whether an AI tool saves time or creates a new mess.
-
-## Advice before building
-
-Not every team needs a custom tool. Often the right first step is advice: which tasks are worth automating, which off-the-shelf tools fit, what your team's working practices should be, and what should never be pasted into a public AI service. That's available on its own as part of [strategic advisory](https://gerriscorp.com/services/advisory/).
+## Arrangements
+- **Project subcontracting:** a defined deliverable for one client, scoped and prepaid.
+- **Retained capacity:** a monthly block of hours your team can draw on across clients.
+- **Referral:** you introduce the client and I contract directly, with a referral fee where agreed.
 
 ## Common questions
 
-### Who owns what you build?
+### Will you talk to the agency's client directly?
 
-You do. Pilots run on your accounts, and the code, prompts, tests, and documentation are handed over at the end.
+Only if you want me to. Many agencies prefer that I stay behind the scenes and supply reports and specs for the account team to present; others bring me into calls as their technical specialist.
 
-### Do you build large AI applications?
+### Can you match an agency's reporting format?
 
-I build small, focused tools that prove value quickly. When a pilot needs to grow into a larger system, I specify it and work with developers who build at that scale.
+Yes. I write in your templates, use your branding, and keep the technical detail in an appendix your account team can share or hold back.
 
-**Related:** [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
+**Related:** [Developer specs and QA](https://gerriscorp.com/services/developers/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Work With Me](https://gerriscorp.com/work-with-me/)
 
-[Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
+[Talk to me about partnering](https://gerriscorp.com/contact/)
 
 Updated October 5, 2026
 
@@ -344,6 +337,68 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/services/ai-automation/
+Updated: 2026-10-05
+
+# AI agents and automation, built safely
+
+Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.
+
+## Why I can build these
+
+I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+
+## Safety by design
+
+Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:
+- **A human confirms every external action.** Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.
+- **Deterministic first.** Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.
+- **Untrusted content is data.** Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.
+- **Secrets stay out of Git.** API keys and tokens live outside the repository.
+- **Tests and a real deploy loop.** Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.
+- **Encrypted backups with tested restores.** Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.
+- **Model choice by evidence.** I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.
+
+## What I build for clients
+
+Focused tools with a clear job: a morning briefing assembled from your tasks, calendar, and inbox; triage of incoming requests into your project tool; a research assistant that gathers sources and drafts a reviewable summary; integrations between systems that don't talk to each other; command-line tools for repetitive website and data chores; and audits of AI output before anyone relies on it.
+
+## How a pilot works
+
+Every build starts as a pilot, defined in writing before work begins:
+- **Inputs:** what goes in, from where.
+- **Permissions:** which accounts and data it touches, and nothing more.
+- **Outputs:** what it produces, where it's saved, and how a person reviews it.
+- **Acceptance:** the tests that prove it works, run in front of you.
+- **Handover:** the code in your repository, documentation, ownership of every account, and what to do when it fails.
+
+## The questions I ask
+
+What's the actual job? What happens after this step? Where is the result saved? Can you recover it if something goes wrong? What does this error mean? Does the system remember what it needs to remember? Those questions decide whether an AI tool saves time or creates a new mess.
+
+## Advice before building
+
+Not every team needs a custom tool. Often the right first step is advice: which tasks are worth automating, which off-the-shelf tools fit, what your team's working practices should be, and what should never be pasted into a public AI service. That's available on its own as part of [strategic advisory](https://gerriscorp.com/services/advisory/).
+
+## Common questions
+
+### Who owns what you build?
+
+You do. Pilots run on your accounts, and the code, prompts, tests, and documentation are handed over at the end.
+
+### Do you build large AI applications?
+
+I build small, focused tools that prove value quickly. When a pilot needs to grow into a larger system, I specify it and work with developers who build at that scale.
+
+**Related:** [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
+
+[Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
 Source: https://gerriscorp.com/services/data-cleanup/
 Updated: 2026-10-05
 
@@ -400,6 +455,56 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/services/analytics/
+Updated: 2026-10-05
+
+# Analytics and measurement you can trust
+
+Bad numbers cause bad decisions. A spam traffic spike looks like growth. A tracking change looks like a collapse. A vendor's new methodology looks like lost visibility. I make your measurement accurate, and I tell you what it can and can't prove.
+
+## What I fix
+- **Ghost and spam traffic** in GA4, filtered out so real visitors are what you measure.
+- **Conversion tracking** for forms, calls, purchases, and bookings, tested end to end.
+- **Channel classification,** including AI assistant referrals from ChatGPT, Perplexity, Gemini, and Copilot, which GA4 often lumps into referral or direct.
+- **Search Console and GA4 reconciled,** so clicks, sessions, and landing pages tell one consistent story.
+- **Bing Webmaster Tools** set up alongside Google, since Bing's index feeds Microsoft Copilot.
+- **Dashboards and monthly reports** that connect the numbers to the actions taken and say what comes next, in plain English.
+
+## Reading the data honestly
+
+This is where I'm most useful. Before anyone reacts to a number, I ask what it actually measures:
+- **A short window proves little.** A drop in engagement over a few days after a site change might be the change, a tracking glitch, a holiday, or noise. I treat tracking, engagement, and site defects as separate questions, each needing its own evidence.
+- **Reports lag.** Search Console data trails reality, and a "fixed" problem can look unfixed for weeks. I check live behavior before declaring success or failure.
+- **Vendors change methods.** I once traced an industry-wide drop in a client's AI visibility scores to a change in the vendor's methodology, not a decline in the client's visibility.
+- **Coincidences happen.** When two things change at once, I keep them on separate tracks until the data connects them.
+
+## Plain-English reporting
+
+For owners who aren't technical, I write short monthly reports that explain what happened, why, what I did, and what needs a decision, with the charts in support rather than in place of an explanation.
+
+## Measuring AI search
+
+AI assistants send visitors without search-style keyword data, so I track them as their own channel, alongside a fixed set of test prompts run on a schedule. Together they show whether visibility in AI answers is changing, without pretending to more precision than the data allows.
+
+## Common questions
+
+### Can you set up GA4 from scratch?
+
+Yes, including events, conversions, filters, Search Console linking, and a simple report your team will actually read.
+
+### Why don't GA4 and Search Console numbers match?
+
+They measure different things: Search Console counts clicks in Google, GA4 counts sessions it manages to record, and consent banners, ad blockers, and redirects all widen the gap. A consistent gap is normal; a sudden change in the gap is worth investigating.
+
+**Related:** [Data cleanup](https://gerriscorp.com/services/data-cleanup/) · [Search Console](https://gerriscorp.com/services/search-console/) · [Ongoing support](https://gerriscorp.com/services/ongoing-support/)
+
+[Ask me what your numbers mean](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
 Source: https://gerriscorp.com/services/advisory/
 Updated: 2026-10-05
 
@@ -423,7 +528,7 @@ I've worked in digital since the early 1990s, through the first web communities,
 
 ## Working alongside other advisors
 
-I work easily with legal, security, communications, and family office teams, and I currently run a long-standing engagement alongside a security firm's open-source intelligence program. Firms that need a search and reputation specialist to refer clients to are welcome to get in touch.
+I work easily with legal, security, communications, and family office teams. Firms that need a search and reputation specialist to refer clients to are welcome to get in touch.
 
 ## How a second opinion works
 
@@ -591,6 +696,118 @@ Rarely. Most fixes change how one template renders a few sections, such as rende
 **Related:** [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
 
 [Ask me what Google actually sees](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/large-sites/
+Updated: 2026-10-05
+
+# SEO for large and programmatic sites
+
+Sites with tens of thousands of pages, built from databases, feeds, or templates, live or die on how search engines crawl and index them. The work is managing collections of pages, not tuning a handful.
+
+## The usual story
+
+A programmatic site launches, indexing climbs fast, and then a large share of pages drops out. Search Console fills with "Crawled, currently not indexed" and "Discovered, currently not indexed." The cause is rarely one bug. It's usually some mix of near-duplicate pages, URL variations generated by tools and filters, weak internal linking to deep pages, thin templates, and, on expired or repurposed domains, history the site inherited.
+
+## What I work on
+- **Segmented XML sitemaps.** Separate sitemaps for each page type or collection, so Search Console reports indexing coverage per segment and problems show up where they live.
+- **Baselines and comparisons.** Indexing measured per segment over time, so changes are judged against data rather than impressions.
+- **Parameter and tool URLs.** Calculators, filters, sort orders, and search tools that spawn endless URL variations, handled with robots rules, canonicals, and link changes.
+- **Index bloat.** Deciding which page types deserve indexing at all, and which should be merged, improved, or kept out.
+- **Template quality.** Making sure each generated page carries enough unique, useful information to earn its place, rather than a template with a name swapped in.
+- **Internal linking at scale.** Hub pages, related-item links, and breadcrumbs that give deep pages a path from the home page.
+- **Crawl efficiency.** Server response times, crawl stats, redirect chains, and soft 404s that waste crawl attention.
+- **Reporting lag.** Search Console reports trail reality by days or weeks. I check live behavior and server evidence before concluding a fix failed or worked.
+
+## Working with the development team
+
+Large sites are built by developers, so the fixes go through them. I work in the repository and the team's chat tools, write changes as specs with acceptance criteria, and verify them with crawls and Search Console data. See [developer specs and QA](https://gerriscorp.com/services/developers/).
+
+## Common questions
+
+### Why did my programmatic pages drop out of the index?
+
+Google indexes generously at first and then reassesses. Pages that look alike, add little beyond a template, or sit far from internal links are the first to drop. A diagnostic finds which segments are affected and why.
+
+### Does an expired domain help or hurt?
+
+It can do either. Old links can help a new site get noticed, but a domain's history and a sudden change of topic can also weigh on how Google treats it. It's one more factor to separate from the site's own problems.
+
+**Related:** ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Search Console](https://gerriscorp.com/services/search-console/) · [E-commerce SEO](https://gerriscorp.com/services/ecommerce/)
+
+[Tell me what dropped out](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/ecommerce/
+Updated: 2026-10-05
+
+# E-commerce SEO: templates, catalogs, and product data
+
+Online stores rarely fail one product at a time. They fail by template: one product page design, one category layout, or one theme setting repeated across thousands of URLs. I find the template-level problem and fix it once.
+
+## Platforms
+
+Shopify and Liquid themes, Magento 2 and Hyvä, WooCommerce on WordPress, and headless storefronts. I make theme changes in a duplicated theme or a branch, so the live store is never at risk while work is under way.
+
+## What I work on
+
+### Product content crawlers can read
+
+Specs, descriptions, FAQs, and reviews that live in the page's HTML instead of appearing only after scripts run, scroll events, or clicks. On one Magento and Hyvä store, scroll-triggered rendering left flagship product pages with 250 to 400 words visible to crawlers. See [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
+
+### Duplicate and competing URLs
+
+The same product reachable at several addresses, such as collection-path URLs on Shopify, legacy paths after a migration, variant parameters, and sort and filter combinations. I choose the canonical version, consolidate signals, and keep the rest out of the index.
+
+### Faceted navigation and filters
+
+Filter combinations can generate millions of near-duplicate URLs. I decide which filtered views deserve to rank as landing pages and keep the rest from swallowing crawl attention.
+
+### Product data and metadata
+
+Default titles and descriptions inherited from a theme, thin manufacturer descriptions, missing categories, and broken meta descriptions, fixed in bulk where possible and by hand where it matters.
+
+### Product structured data
+
+One complete, valid Product schema block per page, with price, availability, brand, identifiers, and review data from the right source. Duplicate blocks from a theme and an app, and encoding bugs that corrupt the JSON, are common and easy to miss. I've found and fixed both.
+
+### Out-of-stock and discontinued products
+
+Keeping pages for items that will return, redirecting discontinued items to the closest equivalent, and avoiding soft 404s.
+
+### Migrations
+
+Squarespace to Shopify, Magento upgrades, and platform switches, with every product, collection, and image URL mapped. After one Squarespace to Shopify move, I found more than 3,400 404s left from the migration and duplicate product URLs competing in Google. See [migrations](https://gerriscorp.com/services/migrations/).
+
+### Speed
+
+Product images, app scripts, and theme bloat, which drag down Core Web Vitals on mobile. See [site speed](https://gerriscorp.com/services/site-speed/).
+
+## How it runs
+
+A paid diagnostic finds the template-level problems and ranks them by revenue at stake. Then I either implement the fixes in the theme, or write developer specs and verify the result, or both. A pilot group of pages often comes first, so the fix can be measured before it's rolled out across the catalog.
+
+## Common questions
+
+### Can you work on a large catalog?
+
+Yes. Large catalogs are where template-level fixes pay off most. I work from crawls, exports, and the platform's own data tools, and test fixes on a pilot group first.
+
+### Do you write product descriptions?
+
+For priority products and categories, yes. For large catalogs, I set up templates and rules that improve every product at once, and write by hand where it counts.
+
+**Related:** [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [Large and programmatic sites](https://gerriscorp.com/services/large-sites/) · [Case studies](https://gerriscorp.com/case-studies/)
+
+[Tell me about your store](https://gerriscorp.com/contact/)
 
 Updated October 5, 2026
 
@@ -965,6 +1182,70 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/services/multi-location/
+Updated: 2026-10-05
+
+# Multi-location and connected businesses
+
+A parent brand with several locations. Sister companies sharing an owner, a building, or a phone number. Stores in neighboring towns competing with each other in Google. These businesses confuse search engines and AI assistants unless their identities are untangled deliberately.
+
+## Common problems
+- Search engines can't tell the parent brand from its original location, so the wrong one shows up.
+- Location pages that repeat the same copy with a city name swapped in.
+- Google Business Profiles that link to the home page instead of the matching location page.
+- Sister businesses with conflicting names, addresses, or phone numbers across the web, or duplicate listings.
+- Structured data that describes every location as the same business, or several businesses as one.
+- Several related sites and domains, some redirecting, some not, competing for the same searches.
+
+## What I do
+
+### Entity architecture
+
+A clear map of who is who: the parent organization, each location, each sister business, and how they relate. Then structured data that states it, using organization and local business types with parent and branch relationships, so search engines and AI systems describe each one correctly.
+
+### Location pages that earn their place
+
+One page per real location, with the address, hours, services, staff, directions, and local details that make it useful, linked from the matching Google Business Profile. Service-area pages where the business travels to customers, written for that area instead of cloned.
+
+### Consistency everywhere
+
+Names, addresses, phone numbers, and categories aligned across websites, profiles, and directories, with duplicates found and resolved.
+
+### Connected businesses kept distinct
+
+Separate content, FAQs, and structured data for each business, even when they share an owner and an office. A plumbing company and a foundation repair company with the same owner need different answers to different questions.
+
+### Multi-site cleanup
+
+Old domains, duplicate sites, and inconsistent domain versions consolidated with 301 redirects, and Search Console history preserved for each property.
+
+### Seasonal planning
+
+For seasonal businesses, risky changes such as category edits that can trigger reverification happen in the off-season, and a change freeze covers the peak.
+
+## How it starts
+
+A paid diagnostic maps every site, profile, and listing the business controls, finds the conflicts, and ranks the fixes. Implementation follows in the order that protects existing rankings, visibility, and reviews first.
+
+## Common questions
+
+### Should each location have its own website?
+
+Usually one site with a strong page per location works best, because the locations share the brand's authority. Separate sites make sense for genuinely separate businesses.
+
+### Can you fix suspended or duplicate profiles too?
+
+Yes, as part of the same engagement. See [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/).
+
+**Related:** [Google Business Profile](https://gerriscorp.com/services/google-business-profile/) · [AI search visibility](https://gerriscorp.com/services/ai-search/) · [Migrations](https://gerriscorp.com/services/migrations/)
+
+[Tell me how your locations are set up](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
 Source: https://gerriscorp.com/services/reputation/
 Updated: 2026-10-05
 
@@ -998,11 +1279,11 @@ Monthly reporting on search results, AI answers, new broker listings, and anythi
 
 ## Working with your other advisors
 
-This work plugs into security, legal, and family office teams. I currently run a long-standing engagement alongside a security firm's open-source intelligence program, and the two disciplines strengthen each other: they watch for threats, and I keep the public record accurate and the private information private.
+This work plugs into security, legal, and family office teams, and the disciplines strengthen each other: they watch for threats, and I keep the public record accurate and the private information private.
 
 ## Background
 
-I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com. My longest current engagement has run for eight years.
+I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com.
 
 ## Common questions
 
@@ -1699,69 +1980,599 @@ Updated: 2026-10-05
 
 # Case studies
 
-Each case describes the problem, what I did, who did what, and how the work was checked. Clients are described by industry; I name them only with their permission.
+Each case describes the problem, my role, what I did, who else did what, how the work was checked, and where it stands now. Clients are described by industry; I name clients only with their permission.
 
-## E-commerce on Magento and Hyvä: product content Googlebot never saw
+## Content the crawler never sees
+- [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/). Alpine.js sections that mounted only on scroll, and a backlink spike kept on its own track.
+- [WordPress media site: a consent banner hiding every article](https://gerriscorp.com/case-studies/consent-blocking/). Consent blocking kept the article tabs empty for Googlebot.
+- [React event platform: 2,000 pages Google couldn't reach](https://gerriscorp.com/case-studies/react-event-platform/). A 13-page developer spec, ranked P0 to P3.
 
-**Problem.** Organic traffic was falling and the client's team had no explanation.
+## Migrations, rescues, and modern stacks
+- [Clinical practice: WordPress to Netlify, with search intact](https://gerriscorp.com/case-studies/netlify-migration/). Redirect decisions for every URL and an AI-assisted repository analysis.
+- [Local service business on Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/). Metadata changes merged through GitHub, and the developer's prerendering verified.
+- [Specialty retailer: cleaning up after Squarespace to Shopify](https://gerriscorp.com/case-studies/shopify-migration/). 3,400 404s, duplicate URLs, and theme schema.
+- [Consumer brand: taking over a stalled React application](https://gerriscorp.com/case-studies/app-takeover/). An inventory, then fixes on the server over SSH.
 
-**What I found.** Product templates used Alpine.js to mount specifications, FAQs, and reviews only when a visitor scrolled them into view, with `x-intersect` wrapped around `x-if`. A crawl showed category pages with thousands of words and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed." A spam backlink spike and a redirect problem in the same period were investigated on separate tracks.
+## Indexing at scale and recovery
+- [Programmatic site: crawling and indexing at scale](https://gerriscorp.com/case-studies/programmatic-indexing/). Segmented sitemaps and parameter rules for 20,000+ pages.
+- [Health-testing store: recovering after an SEO plugin outage](https://gerriscorp.com/case-studies/indexing-recovery/). Recovery checks in Google and Bing, explained in plain English.
 
-**Deliverable.** The mechanism, the evidence, and a developer spec with acceptance criteria. See [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
+## Entities, locations, and planning
+- [Multi-location brand: untangling the parent from its first location](https://gerriscorp.com/case-studies/multi-location-entity/). Entity structure and developer-ready JSON-LD.
+- [Seasonal retailer: a staged plan around the peak](https://gerriscorp.com/case-studies/seasonal-retailer/). Multi-site audit and timing around the busiest weeks.
+- [Therapy practice: a suspended Google Business Profile reinstated](https://gerriscorp.com/case-studies/gbp-reinstatement/). A documented appeal.
 
-## WordPress media site: consent management hiding every article
+## Content operations and AI search
+- [Two B2B companies on Umbraco](https://gerriscorp.com/case-studies/umbraco-operations/). 54 landing pages, steady publishing, and cache and template fixes.
+- [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/). How AI answers represent an employer.
 
-**Problem.** Large numbers of articles sat in "Crawled, currently not indexed," with no crawl errors anywhere.
-
-**What I found.** The site's consent-management platform blocked scripts for visitors who hadn't accepted cookies, including the script that initialized the jQuery UI tabs holding each article's content. Googlebot never accepts cookies, so it saw empty tabs on every page.
-
-**How it was checked.** Rendered HTML from Search Console's live test compared with a consenting browser session.
-
-## React event platform: links crawlers couldn't follow
-
-**Problem.** Server-side rendering had been added, yet pages still weren't being discovered.
-
-**What I found.** Navigation used the router's click handlers without real anchor links, so crawlers had no paths to the pages rendering had already fixed. The fix was real `<a href>` links.
-
-## Clinical practice: migration investigation and technical direction
-
-**Problem.** A practice moving from WordPress to a Next.js site on Netlify needed to know what the new site still depended on from the old one.
-
-**What I did.** Combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository using Claude Code. The analysis identified thousands of references to media still hosted on the old WordPress site and the handful of central files responsible. I turned that into a developer-ready plan, and worked on sequencing, media and redirect requirements, DNS review, and launch verification. The site's developer carried out the implementation.
-
-## Consumer skincare brand: application takeover and operations
-
-**Problem.** A React application changed hands after an outage, with project files, credentials, hosting, DNS, and repository arrangements spread across several parties.
-
-**What I did.** Assessed the handoff and inventoried what existed. Then, hands-on, I worked on the DigitalOcean Linux server over SSH: edited environment and application configuration, managed the application with PM2, and diagnosed a port conflict that was keeping it down.
-
-## Seasonal multi-site retailer: business-aware technical planning
-
-**Problem.** A retailer with several sites and its own staff needed technical problems fixed without disrupting its peak season.
-
-**What I did.** Brought in as the accountable lead working with the client's existing people, I proposed the investigation, the access needed, a migration review, and a staged plan that put risky changes after the peak.
-
-## Shopify: duplicate and broken product schema
-
-**What I did.** Working in a duplicated theme so the live store was never at risk, I edited the Liquid templates, found an HTML-encoding bug corrupting the structured data output, and consolidated duplicate Product schema into a single valid block.
-
-## Contact data: a 28,000-record cleanup and an AI tracker audit
-
-**What I did.** Built Python pipelines to clean and deduplicate more than 28,000 exported contact records, with name validation by country, name recovery from email addresses, and a resolution status on every record. Separately, I audited an AI-generated outreach tracker that marked bounced and nonexistent contacts as sent, with fabricated timestamps, and rebuilt it into a verified list: 452 rows became 392 real contacts. See [data cleanup](https://gerriscorp.com/services/data-cleanup/).
-
-## Measurement: a drop that wasn't a decline
-
-**What I did.** Traced an industry-wide drop in AI visibility scores to a change in the vendor's methodology, which kept a client from reacting to a decline that hadn't happened.
-
-## Long-term perception management for a founder
-
-**What I do.** An eight-year retainer shaping search results and the public record for a high-net-worth founder, removing personal information from data brokers, and reporting monthly, now alongside a security firm's open-source intelligence program.
+## Data
+- [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/). 88,900 contacts, two merged exports, and a tracker that invented its data.
 
 ## My own builds
-
-Blackbox, my command-line assistant, Hill Mole's move off Movable Type, and this site are covered on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 106 tests; Hill Mole's move off Movable Type; and this site.
 
 [Tell me about your problem](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/ecommerce-rendering/
+Updated: 2026-10-05
+
+# Magento store: product content Googlebot never saw
+
+An equipment retailer on Magento 2 with the Hyvä theme had been losing organic traffic for months. Brand searches and the home page were down while non-brand category traffic was growing, a pattern that didn't fit any single explanation.
+
+## My role
+
+Forensic diagnosis and technical direction, working alongside the client's contractor, who owns implementation.
+
+## What I found
+
+### Track one: rendering
+
+The product templates used Alpine.js to mount the specifications, FAQs, and reviews only when a visitor scrolled them into view, with `x-intersect` wrapped around `x-if`. Googlebot never scrolls the way a person does, so those sections never mounted. A Screaming Frog crawl extracted thousands of words from category pages but only 250 to 400 words from flagship product pages that weighed more than 1.2 MB. Search Console showed a selective cluster of product URLs in "Crawled, currently not indexed," while the rest of the site indexed normally.
+
+### Track two: backlinks and redirects
+
+In the same period, a spike of spam, adult, and warez backlinks arrived, mostly from cloud-hosting address ranges, alongside a 301 redirect problem. I kept this on its own track, collected the evidence, and asked for upgraded Search Console access to examine it properly, without folding it into the rendering story.
+
+## What I recommended
+- Render the product sections in the server's HTML and keep the scroll animation as progressive enhancement.
+- An A/B test that removes the scroll gates from a group of product pages first, so the effect can be measured before a full rollout.
+- A separate investigation and cleanup plan for the backlink spike and the redirect problem.
+
+## How it was checked
+
+Raw HTML, rendered DOM, and crawler extraction compared on the same URLs, Search Console's live test used to see what Google rendered, and the indexing cluster matched to the affected template.
+
+## Status
+
+Diagnosis delivered and the test scoped; implementation sits with the client's contractor. The method is written up in the [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) and on [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/consent-blocking/
+Updated: 2026-10-05
+
+# WordPress media site: a consent banner hiding every article
+
+A bilingual English and Italian site of film reviews was almost absent from Google, while Bing indexed it normally. There were no crawl errors anywhere, just page after page in "Crawled, currently not indexed."
+
+## My role
+
+Paid diagnosis for the site's owner, with a call to walk through the findings.
+
+## What I found
+
+Every review's content lived inside jQuery UI tabs. The site's consent-management platform used prior-consent blocking: scripts were held back until a visitor accepted cookies. One of the held-back scripts was the one that initialized the tabs. Googlebot never accepts cookies, so it crawls every page as a permanent non-consenting visitor, and it rendered each page with the structure intact and the content empty. That explains the gap between Google and Bing, which handled the pages differently.
+
+Two secondary problems made things worse: 97% of pages shared the same hardcoded H2 headings, and 95% of internal links had no anchor text, so even the visible structure told search engines almost nothing about each page.
+
+## What I recommended
+- Exempt the scripts that build the page's content from consent blocking, or render the tab content in the HTML so it doesn't depend on scripts at all. Consent rules should govern tracking and advertising scripts, never the article itself.
+- Replace the hardcoded H2s with headings drawn from each review.
+- Give internal links descriptive anchor text.
+
+## How it was checked
+
+Pages compared in a consenting browser session and a non-consenting one, the blocked scripts identified in the consent platform's configuration, and the empty tabs matched to the indexing pattern. Confirmation in Search Console's rendered HTML was the next step once access was granted.
+
+## Why it matters
+
+Consent platforms are now on almost every site, and their default settings can hide content from every crawler that never clicks "accept." It's one of three examples of the same failure on [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/react-event-platform/
+Updated: 2026-10-05
+
+# React event platform: 2,000 pages Google couldn't reach
+
+An event and nightlife discovery app built with Create React App needed about 2,000 event pages indexed. Three months of Search Console data showed impressions on the home page and almost nothing else.
+
+## My role
+
+Strategist and QA. I diagnosed the problems, wrote the specification, and verify the results; the founder's developer implements.
+
+## What I found
+- **An empty home page.** The home page served an empty root element; everything appeared only after JavaScript ran.
+- **No crawlable links.** Event cards navigated with click handlers instead of real `<a href>` links, so crawlers had no path to the event pages.
+- **Orphaned pages.** The event pages themselves already had server-side rendering, so their HTML was fine, but nothing linked to them.
+- **Wrong canonicals.** The canonical tags on the events and community sections pointed to the home page, telling Google those pages were duplicates of it.
+
+## What I delivered
+
+Two documents. For the founder, a plain-language summary of what was wrong and what it would take. For the developer, a 13-page specification of 12 items ranked P0 to P3, each with the evidence, the consequence, exact build steps, and acceptance criteria. The P0 items were real anchor links on event cards, server-side rendering for the home page and feed, and manual indexing requests for priority pages.
+
+## How it is checked
+
+Each item has a testable acceptance criterion, such as event links present in the server's HTML and self-referencing canonicals on each section. I verify the developer's changes against those criteria with a crawl and Search Console's live test, with remaining checks on how page heads are generated and whether the canonicals were corrected.
+
+## Status
+
+Reports delivered and acknowledged; verification of the developer's fixes in progress. See [developer specs and implementation QA](https://gerriscorp.com/services/developers/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/netlify-migration/
+Updated: 2026-10-05
+
+# Clinical practice: WordPress to Netlify, with search intact
+
+A clinical practice moved its website from WordPress on managed hosting to a new Next.js build on Netlify. The developer built the new site; my job was continuity: making sure search engines and visitors could follow the move, and investigating what went wrong afterward.
+
+## My role
+
+Technical SEO, migration oversight, and investigation, in coordination with the practice and its developer.
+
+## What I did
+
+### Redirect decisions for every URL
+
+I examined the legacy URLs and reconciled the redirect map, deciding for each URL whether it should pass through unchanged, inherit an existing destination, receive a migration redirect, or be treated as intentionally removed. I separated problems the migration caused from older issues the site already had, so neither got blamed on the other.
+
+### Repository analysis with Claude Code
+
+I combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository. It found thousands of references to images still hosted on the old WordPress site, and the handful of central files responsible, which became a developer-ready plan for moving the media. The analysis changed no code.
+
+### A conservative disavow
+
+I reviewed the backlink profile and prepared a replacement disavow file that removed genuinely toxic domains while keeping legitimate ones, because disavowing good links does real harm.
+
+### After launch
+
+I investigated blurry images from the image CDN, JavaScript and CSS problems, site instability, and analytics behavior with the client and developer, and worked on sequencing, DNS review, and launch verification.
+
+## Reading the data honestly
+
+When engagement fell in a short GA4 window, the easy story was that the blurry images were driving people away. I treated tracking, engagement, and site defects as three separate questions, each needing its own evidence, and didn't let a few days of data stand in for proof.
+
+## Status
+
+Migration oversight and post-launch investigation delivered; further work under discussion. See [website migrations](https://gerriscorp.com/services/migrations/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/sanity-vercel/
+Updated: 2026-10-05
+
+# Local service business on Sanity and Vercel: SEO in the repository
+
+A junk removal company's website ran on a modern stack: Sanity for content, Vercel for hosting, and GitHub for code. It had the classic problems of a client-rendered site, and the fixes had to go through code.
+
+## The problems
+- Client-side rendering, so crawlers received thin HTML.
+- Duplicate titles and meta descriptions across many pages.
+- Heading structure problems.
+- Soft 404s: missing pages returning a success status.
+- Missing or inconsistent canonical and structured data signals.
+
+## Who did what
+
+The developer implemented the substantial infrastructure changes, including prerendered HTML and deployment improvements. I handled the SEO side: setting priorities, specifying what each page needed, reviewing the developer's changes, and verifying the live result independently. I also made code-level metadata changes myself through GitHub, in a pull request that was reviewed and merged.
+
+## Why it matters
+
+Many businesses now run on headless CMSs and JavaScript frameworks where there's no SEO plugin to configure. The work happens in templates, routes, and build settings. I can read that code, propose and make changes through the team's normal review process, and check what crawlers actually receive after deployment.
+
+It also means changes are reviewable: every edit has a commit, a reviewer, and a way back.
+
+## How it was checked
+
+Crawls before and after the prerendering change, raw HTML fetched from production, Search Console's live test, and a review of titles, descriptions, canonicals, and status codes across the site.
+
+## Status
+
+Core fixes deployed and verified; a final audit is under way. See [developer specs and implementation QA](https://gerriscorp.com/services/developers/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/shopify-migration/
+Updated: 2026-10-05
+
+# Specialty retailer: cleaning up after Squarespace to Shopify
+
+A family-owned specialty store moved from Squarespace to Shopify. The new store looked good, but search visibility was slipping and the indexed page count was shrinking.
+
+## My role
+
+A four-part audit, then hands-on product optimization and structured data work in the store's theme.
+
+## What the audit found
+- Duplicate product URLs: old Squarespace-style paths and Shopify's own paths competing in Google for the same products.
+- More than 3,400 404 errors left over from the migration.
+- A duplicate FAQ page.
+- Organic traffic dominated by misspellings of the brand name, a sign the store wasn't being found for what it sells.
+- Broken product meta descriptions and default metadata inherited from the theme.
+- A spammy backlink profile, poor mobile speed, and weak visibility in AI assistants.
+
+## What I did
+
+A product optimization pass across titles, descriptions, metadata, and categories. Then structured data work in a duplicated copy of the live theme, so the store was never at risk: Organization schema added, and a new Product schema block that turned out to duplicate an existing, more complete block from the theme. I traced the duplication so only one valid block remains, and identified that the review rating data depended on confirming the right metafield namespace from the reviews app.
+
+## How it was checked
+
+Structured data validated on product pages, crawls compared before and after, and every change made in the duplicate theme first and previewed before publishing.
+
+## Status
+
+The audit and a product pass were delivered; remaining items, such as thin descriptions and missing categories, are being reconciled with the owner before further edits. See [e-commerce SEO](https://gerriscorp.com/services/ecommerce/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/app-takeover/
+Updated: 2026-10-05
+
+# Consumer brand: taking over a stalled React application
+
+A consumer skincare brand's React application changed hands after an outage. Project files, credentials, hosting, DNS, and the repository were spread across several people, and the brand needed someone to work out what it actually had.
+
+## My role
+
+Takeover assessment and hands-on operations.
+
+## The assessment
+
+I assessed the handoff the way every rescue should start, with an inventory:
+- Which project files were supplied, and whether they matched what was running.
+- Where the application was hosted, and who controlled the server.
+- Who controlled the domain and DNS.
+- Where the repository lived and who had access.
+- Which credentials existed, and which were missing.
+
+## Hands-on operations
+
+Then I worked on the DigitalOcean Linux server directly over SSH: reading logs, editing the environment and application configuration files, and managing the Node application with the PM2 process manager. The application was being kept down by a port conflict, which I diagnosed.
+
+## Why it matters
+
+Stalled projects are common: a freelancer moves on, an agency relationship ends, a founder inherits a codebase nobody explained. The first valuable thing is a clear picture of what exists and who controls it. The second is someone who can get onto the server and fix the immediate problem.
+
+Writing the inventory down also protects the business the next time someone leaves, because the knowledge no longer lives in one person's head.
+
+## Status
+
+The assessment and the operational fixes described here were completed; larger rebuild and integration proposals are separate decisions for the brand. See [project rescue and takeovers](https://gerriscorp.com/services/rescue/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/programmatic-indexing/
+Updated: 2026-10-05
+
+# Programmatic site: managing crawling and indexing at scale
+
+A new site publishing prices for more than 20,000 trading cards, built programmatically on an expired domain, indexed well at first. Then large numbers of pages dropped out of Google's index.
+
+## My role
+
+Technical SEO for crawl and index management, hired hourly, working with the owner over Teams and with access to the development repository on GitHub.
+
+## How I approach it
+
+A site like this has to be managed as collections of pages, not a handful of landing pages. The questions are which page types deserve indexing, how tools and filters generate URL variations, and how search engines discover deep pages.
+- **Segmented sitemaps** for each content type, so Search Console reports indexing coverage per segment.
+- **A baseline** of indexing by segment, so every change is compared against data.
+- **Robots rules for parameterized tools** whose URL variations add nothing to the index and draw crawl attention away from the pages that matter.
+- **Reporting lag accounted for.** Search Console reports trail reality, so I check live behavior before concluding a change worked or failed.
+- **The domain's history** treated as one factor among several, kept separate from the site's own problems.
+
+## Working with developers
+
+The site is development-led, so fixes go through the repository. Access to the code means I can see how URLs are generated and specify changes precisely.
+
+Every recommendation goes to the owner in writing, with the evidence behind it.
+
+## Status
+
+Ongoing. No recovery figures are claimed here; indexing at this scale moves over weeks and months. See [SEO for large and programmatic sites](https://gerriscorp.com/services/large-sites/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/indexing-recovery/
+Updated: 2026-10-05
+
+# Health-testing store: recovering after an SEO plugin outage
+
+On a WooCommerce store selling health tests, the SEO plugin was briefly switched off. Afterward, Search Console indexing, organic traffic, and referrals from AI assistants all fell. The owner isn't technical and needed someone to diagnose it, fix it, and prove the recovery.
+
+## My role
+
+Diagnosis, fixes, and verification in three paid milestones, under a HIPAA and nondisclosure agreement because the site handles protected health information.
+
+## What happens when an SEO plugin goes off
+
+On WordPress, the SEO plugin usually generates the titles, meta descriptions, canonical tags, robots directives, structured data, and XML sitemaps. Turn it off, even briefly, and crawlers can see pages without canonicals, with default titles, or with sitemaps that suddenly disappear. Turning it back on doesn't instantly undo what search engines recorded in the meantime.
+
+## What I did
+- URL inspections of the priority product and information pages in Search Console.
+- Crawl statistics reviewed for changes in how often Googlebot visited and what it fetched.
+- Sitemaps checked and resubmitted in both Google Search Console and Bing Webmaster Tools.
+- A priority list of pages to watch through the recovery.
+- Structured data, Cloudflare configuration, and ghost traffic in GA4 reviewed as part of the same scope.
+
+## How it was checked
+
+Several indicators compared over time instead of one dashboard, with care to separate a stale report from a fault that was still happening. The owner received before-and-after evidence in plain language.
+
+## Status
+
+Recovery checks under way, with possible next steps including redirects, merchant structured data, and crawler policy. See [Search Console](https://gerriscorp.com/services/search-console/) and [analytics](https://gerriscorp.com/services/analytics/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/multi-location-entity/
+Updated: 2026-10-05
+
+# Multi-location brand: untangling the parent from its first location
+
+A custom closet and wardrobe company with locations in several states ran everything through one website. Search engines kept confusing the parent brand with its original location, and the location pages, Google Business Profiles, and town pages overlapped.
+
+## My role
+
+A fixed-price, milestone-based engagement delivering recommendations and developer-ready structured data.
+
+## What I delivered
+
+### Entity clarification
+
+A clear separation of the parent brand from the original location, so search engines and AI assistants understand which is the company and which is one of its showrooms. The structured data states the relationship explicitly, with the locations as branches of the parent organization.
+
+### Home page and product schema
+
+JSON-LD for the organization and its products, ready for the developer to install.
+
+### Location pages tied to Google Business Profiles
+
+Recommendations for location pages that match each Google Business Profile, so every profile links to a page about that specific location rather than the home page.
+
+### Profiles versus town pages
+
+Guidance for where a Google Business Profile and a local town page cover the same area, so they support each other instead of competing.
+
+### Service listings and breadcrumbs
+
+Recommendations for how services, regions, and locations should be organized and linked, with breadcrumb structured data reflecting it.
+
+## Why it matters
+
+Multi-location businesses lose visibility when every page and listing says the same thing. Clear entities, distinct location pages, and accurate structured data let each location rank for its own area and let the brand rank for itself.
+
+## Status
+
+Delivered. See [multi-location and connected businesses](https://gerriscorp.com/services/multi-location/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/seasonal-retailer/
+Updated: 2026-10-05
+
+# Seasonal retailer: a staged plan around the peak
+
+A retailer with several related stores, websites, and Google Business Profiles does most of its business in a short season. Its search signals were tangled across sites, and a previous migration and a falling-out with its last SEO provider left loose ends.
+
+## My role
+
+Hired as the accountable lead for an initial SEO and migration audit, working with the owner and his technical contact, with a seasonal engagement planned to follow.
+
+## What the audit is finding
+- Legacy URLs and redirects from the earlier migration, including links from other sites that now point at pages that no longer exist.
+- Conflicting versions of the same domains.
+- Duplicate and conflicting structured data.
+- Business names and addresses that differ between sites, profiles, and directories.
+- Overlapping location pages competing with each other.
+- Product-page headings and outdated template content.
+- Sitemaps that need cleanup, and Google Business Profiles that need aligning with the sites.
+
+## The plan
+
+The real judgment here is timing. Foundation work and anything that risks volatility, including Google Business Profile category changes that can trigger reverification, happens months before the season. Seasonal pages go live and get indexed early. A change freeze covers the peak, because nobody should deploy a site change in the busiest weeks of the year. A competitive local-search baseline makes progress measurable.
+
+## Coordination
+
+I'm organizing access across several sites and Google properties, preserving the historical Search Console data, and turning a complicated account into a short sequence of actions with an owner for each.
+
+## Status
+
+Audit in progress. See [multi-location and connected businesses](https://gerriscorp.com/services/multi-location/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/gbp-reinstatement/
+Updated: 2026-10-05
+
+# Therapy practice: a suspended Google Business Profile reinstated
+
+A hypnotherapy practice in British Columbia had its Google Business Profile suspended. For a practice that depends on local clients finding it, that meant the business had effectively disappeared from Google Maps.
+
+## My role
+
+Reviewing the profile and the business's information, building the appeal, and handling the process with Google.
+
+## What I did
+
+### Find the mismatch
+
+Suspensions usually come from a mismatch between what the profile says and what Google can verify about the business: the name, the address, the category, or how the location operates. I compared the profile against the business's real details and corrected what didn't match.
+
+### Build the evidence
+
+I assembled the documents that prove the business is real and operates where it says: the lease, the business license, an invoice for the office, and the business card. I put the strongest verifiable document first, and claimed nothing the paperwork didn't support.
+
+### Appeal
+
+The appeal went to Google with the corrected profile and the organized evidence.
+
+## Outcome
+
+The profile was reinstated in February 2025.
+
+## What I learned, and how I work now
+
+Every case is different, and Google decides each one on its own schedule. That's why I now take on these cases as paid advisory work that starts with a written diagnostic, then a separately scoped appeal when there's a viable path. I also handle the investigative side of harder cases: reconstructing what happened to a profile, identifying the correct business record, and preserving an established profile and its reviews instead of starting over. See [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/umbraco-operations/
+Updated: 2026-10-05
+
+# Two B2B companies on Umbraco: publishing and technical operations
+
+Umbraco is a capable CMS that few SEO consultants know well. These two engagements show the day-to-day work of keeping B2B sites useful, published correctly, and technically sound inside a client's own workflow.
+
+## Site furnishings manufacturer
+
+A maker of community mailboxes, signage, and related site furnishings, with work organized in Basecamp and sign-off from marketing and management.
+- **54 landing pages** built and published for geographic targeting, now being tracked for indexing.
+- **A strategy shift** from "near me" phrasing to explicit city-and-state pages for specific markets.
+- **A push on keywords stuck in mid-range positions,** where small improvements move a page onto the first page.
+- **Steady publishing:** seasonal buying guides, replacement budgeting, product comparisons, and articles from the client's own specialists, each with titles, descriptions, formatting, images, internal links, and structured data.
+
+## Industrial sales intelligence company
+
+A B2B data company working with a backend developer.
+- **A home page overhaul** around the company's two core offerings, with copy approved by the owner.
+- **Custom JSON-LD and Open Graph metadata,** and internal links fixed.
+- **A cache problem found:** social metadata saved correctly in Umbraco but never appeared on the live page. The CMS said one thing; the live HTML said another, which pointed to cache purging.
+- **A template problem found:** fixed-height CSS clipping content blocks, handed to the developer with the evidence.
+- **A false alarm caught:** a sharp drop in third-party AI visibility metrics turned out to be the vendor's methodology change, not a real decline.
+
+## The common thread
+
+Doing the work inside the client's CMS and process, checking the live page source rather than trusting the editor, and knowing which fixes belong to the developer. See [ongoing support](https://gerriscorp.com/services/ongoing-support/).
+
+## Status
+
+Both ongoing.
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/ai-recruiting/
+Updated: 2026-10-05
+
+# AI company: search visibility for recruiting engineers
+
+An AI research company wanted to recruit engineers in Palo Alto and the wider Bay Area. Candidates increasingly ask ChatGPT, Perplexity, and Google's AI features which companies are hiring and what they pay, so the company asked how it appeared in those answers.
+
+## My role
+
+AI search visibility audit and recommendations, hired for a defined engagement.
+
+## What I examined
+- How the company appeared, or didn't, in AI answers to the questions engineers ask about jobs, companies, and compensation.
+- The sources those answers drew on, and where the company's own information was missing or outweighed by others.
+- The company's entity footprint: how consistently its name, description, and relationship to its related domains were stated across the web.
+- The careers content on two company domains.
+
+## What I delivered
+- Recruiting-focused recommendations for the careers pages and FAQs, written around the questions candidates ask.
+- Metadata and structured data recommendations for the careers and company pages.
+- Positioning built on the company's approved compensation information, so AI answers could quote accurate figures.
+- Suggestions for supporting third-party references that AI systems treat as evidence.
+
+## Why it's interesting
+
+The goal wasn't selling a product. It was being represented accurately to a specific audience making a career decision. AI search visibility applies anywhere people ask an assistant before they act: hiring, investing, choosing a vendor, or checking someone's background.
+
+The same audit works for any organization that cares how AI describes it to the people it wants to reach, whether they're candidates, customers, or investors.
+
+## Status
+
+Deliverables completed; the engagement is paused. See [AI search visibility](https://gerriscorp.com/services/ai-search/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/data-cleanup/
+Updated: 2026-10-05
+
+# Contact data: three cleanups and an AI audit
+
+Messy contact data costs money: bounced campaigns, damaged sender reputation, embarrassing wrong-name emails, and decisions made from lists nobody trusts. These projects turned unusable lists into reliable ones.
+
+## An 88,900-contact master list
+
+For a communications agency, a Python pipeline built one master list from a large accumulated set of contacts. It normalized names, removed bad email addresses, validated names against a global names database, flagged contradictions between a contact's name and email address, recovered missing names from email prefixes, and deduplicated across domains. The result was about 88,900 unique contacts.
+
+## Two 28,800-record exports merged
+
+For a reconnection campaign, I consolidated former clients and colleagues into one clean record per person, with company, first name, last name, and best email address, preferring personal addresses. The sources were a working spreadsheet and two contact-manager exports of about 28,800 records each, with shifted columns and broken field mappings that had to be repaired first. Tighter deduplication rules followed. The output reached about 94% email coverage, and every record carries a tag showing how it was resolved.
+
+## An AI-generated tracker audited
+
+An outreach tracker built with an AI tool claimed messages had been sent to contacts who had bounced or didn't exist, with uniform timestamps that couldn't be real, and duplicates throughout. I rebuilt it against the actual sending records: 452 rows became 392 real contacts, each with a status the evidence supported.
+
+## Lessons
+- Scripts beat hand-cleaning: the work is repeatable, and every change can be traced.
+- Every record needs a resolution status, so nothing disappears silently.
+- AI-produced data needs checking against source records before anyone relies on it.
+- Sending volume matters as much as list quality: a mail-merge blast at high daily volume can get a sending account shut down, even with a clean list.
+
+See [data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/).
 
 Updated October 5, 2026
 
@@ -1824,12 +2635,13 @@ Updated: 2026-10-05
 
 # About Chris Abraham
 
-I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does the work. I've lived in the Washington, DC area since 1988 and work from Arlington, Virginia.
+I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does the work. I've lived in the Washington, DC area since 1988 and work from South Arlington, in Arlington, Virginia. Clients like that I'm a US-based business, and I work with them across the country and the English-speaking world.
 
 ## At a glance
 | Business | Gerris Corp, founded in 2007 |
 | Principal | Chris Abraham (also Christopher Abraham) |
-| Location | Arlington, Virginia, serving clients everywhere |
+| Location | South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC |
+| Clients | Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand |
 | Focus | Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
 | Upwork | Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026) |
 | Working online since | Building websites since 1994; in digital marketing since 2002 |
@@ -2044,7 +2856,7 @@ Tell me what's going on with your site. Include the address, what you're seeing,
 - You'd like a small AI tool built safely, or a second opinion on someone else's plan.
 - Email from your domain is landing in spam.
 
-Gerris Corp is based in Arlington, Virginia, and works with clients everywhere. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
+Gerris Corp is based in South Arlington, Arlington, Virginia 22204, and works with clients across the United States, Canada, the United Kingdom, Ireland, Australia, New Zealand, and beyond. I work in US Eastern time and schedule calls across time zones. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
 
 Updated October 5, 2026
 
@@ -2062,7 +2874,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.
 - [Services](https://gerriscorp.com/services/): Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 - [Guides](https://gerriscorp.com/guides/): Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.
-- [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.
+- [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
 - [About Chris Abraham](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
 - [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
@@ -2071,14 +2883,18 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 ## Consulting and technical direction
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.
-- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+- [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): Chris Abraham works inside agencies' client relationships as a technical SEO and AI search specialist, under NDA, in your Basecamp, with your branding.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
+- [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 
 ## Search and site performance
 - [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
 - [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.
+- [SEO for large and programmatic sites](https://gerriscorp.com/services/large-sites/): Chris Abraham manages crawling and indexing on large and programmatic sites: segmented sitemaps, parameter URLs, index bloat, internal linking, and quality.
+- [E-commerce SEO: templates, catalogs, and product data](https://gerriscorp.com/services/ecommerce/): Chris Abraham fixes ecommerce SEO at the template level: product data, duplicate URLs, faceted navigation, product schema, rendering, and migrations.
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
@@ -2086,7 +2902,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
 
-## Specialist services
+## Local, reputation, and email
+- [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
@@ -2101,6 +2918,21 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 
 ## Case studies
+- [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
+- [WordPress media site: a consent banner hiding every article](https://gerriscorp.com/case-studies/consent-blocking/): A bilingual WordPress review site indexed on Bing but barely in Google: Chris Abraham traced it to consent blocking that left article tabs empty.
+- [React event platform: 2,000 pages Google couldn't reach](https://gerriscorp.com/case-studies/react-event-platform/): A Create React App event platform with 2,000 pages Google never found: Chris Abraham wrote a 13 page developer spec ranked P0 to P3 and verified the fixes.
+- [Clinical practice: WordPress to Netlify, with search intact](https://gerriscorp.com/case-studies/netlify-migration/): Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI assisted repository analysis, and a careful disavow.
+- [Local service business on Sanity and Vercel: SEO in the repository](https://gerriscorp.com/case-studies/sanity-vercel/): A local service business on Sanity and Vercel: Chris Abraham set SEO priorities, merged metadata changes through GitHub, and verified the prerendering.
+- [Specialty retailer: cleaning up after Squarespace to Shopify](https://gerriscorp.com/case-studies/shopify-migration/): A premium fly fishing store moved from Squarespace to Shopify and left 3,400 404s and duplicate URLs behind: a four part audit and theme schema work.
+- [Consumer brand: taking over a stalled React application](https://gerriscorp.com/case-studies/app-takeover/): A consumer skincare brand's React application changed hands after an outage. Chris Abraham inventoried code, hosting, and DNS and fixed the server over SSH.
+- [Programmatic site: managing crawling and indexing at scale](https://gerriscorp.com/case-studies/programmatic-indexing/): A trading card price site of 20,000+ pages on an expired domain lost indexing after a strong start. How Chris Abraham manages crawling at scale.
+- [Health-testing store: recovering after an SEO plugin outage](https://gerriscorp.com/case-studies/indexing-recovery/): A WooCommerce health testing store lost indexing, traffic, and AI referrals after its SEO plugin was briefly disabled: how the recovery was checked.
+- [Multi-location brand: untangling the parent from its first location](https://gerriscorp.com/case-studies/multi-location-entity/): A custom closets brand with locations in several states and one website: Chris Abraham separated the parent brand from its first location in schema.
+- [Seasonal retailer: a staged plan around the peak](https://gerriscorp.com/case-studies/seasonal-retailer/): A multi store seasonal retailer with related sites and profiles: audit findings and a staged plan that keeps risky changes away from the peak season.
+- [Therapy practice: a suspended Google Business Profile reinstated](https://gerriscorp.com/case-studies/gbp-reinstatement/): A hypnotherapy practice's suspended Google Business Profile, reinstated in February 2025 after Chris Abraham reviewed the listing and built a documented appeal.
+- [Two B2B companies on Umbraco: publishing and technical operations](https://gerriscorp.com/case-studies/umbraco-operations/): Two B2B companies on Umbraco: 54 city landing pages and steady publishing for one, and a homepage overhaul with cache and template fixes for the other.
+- [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/): An AI company recruiting engineers in the Bay Area wanted to appear in AI answers about jobs. Chris Abraham audited its footprint and planned the fix.
+- [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/): Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.
 - [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.
 
 ## Files for machines

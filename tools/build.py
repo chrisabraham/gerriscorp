@@ -45,25 +45,34 @@ TABS = [("", "Home"), ("services/", "Services"), ("guides/", "Guides"), ("case-s
         ("about/", "About"), ("work-with-me/", "Work With Me"), ("contact/", "Contact")]
 FILES = ["index",
          "services/index",
-         "services/technical-lead", "services/developers", "services/ai-automation", "services/rescue",
-         "services/data-cleanup", "services/advisory",
-         "services/technical-seo", "services/crawler-visibility", "services/on-page-seo", "services/site-speed",
-         "services/search-console", "services/migrations", "services/ai-search", "services/ongoing-support",
-         "services/reputation", "services/google-business-profile", "services/email-and-dns",
+         "services/technical-lead", "services/developers", "services/agency-partner", "services/rescue",
+         "services/ai-automation", "services/data-cleanup", "services/analytics", "services/advisory",
+         "services/technical-seo", "services/crawler-visibility", "services/large-sites", "services/ecommerce",
+         "services/on-page-seo", "services/site-speed", "services/search-console", "services/migrations",
+         "services/ai-search", "services/ongoing-support",
+         "services/multi-location", "services/reputation", "services/google-business-profile", "services/email-and-dns",
          "guides/index", "guides/ai-assistants", "guides/javascript-seo", "guides/crawled-not-indexed",
          "guides/migration-checklist", "guides/email-authentication", "guides/personal-information-removal",
          "guides/glossary",
-         "case-studies/index", "case-studies/built-with-claude-code",
+         "case-studies/index", "case-studies/ecommerce-rendering", "case-studies/consent-blocking",
+         "case-studies/react-event-platform", "case-studies/netlify-migration", "case-studies/sanity-vercel",
+         "case-studies/shopify-migration", "case-studies/app-takeover", "case-studies/programmatic-indexing",
+         "case-studies/indexing-recovery", "case-studies/multi-location-entity", "case-studies/seasonal-retailer",
+         "case-studies/gbp-reinstatement", "case-studies/umbraco-operations", "case-studies/ai-recruiting",
+         "case-studies/data-cleanup", "case-studies/built-with-claude-code",
          "about", "work-with-me", "faq", "contact"]
 SERVICE_GROUPS = [
-    ("Consulting and technical direction", ["services/technical-lead/", "services/developers/", "services/ai-automation/",
-                                            "services/rescue/", "services/data-cleanup/", "services/advisory/"]),
-    ("Search and site performance", ["services/technical-seo/", "services/crawler-visibility/", "services/on-page-seo/",
-                                     "services/site-speed/", "services/search-console/", "services/migrations/",
-                                     "services/ai-search/", "services/ongoing-support/"]),
-    ("Specialist services", ["services/reputation/", "services/google-business-profile/", "services/email-and-dns/"]),
+    ("Consulting and technical direction", ["services/technical-lead/", "services/developers/", "services/agency-partner/",
+                                            "services/rescue/", "services/ai-automation/", "services/data-cleanup/",
+                                            "services/analytics/", "services/advisory/"]),
+    ("Search and site performance", ["services/technical-seo/", "services/crawler-visibility/", "services/large-sites/",
+                                     "services/ecommerce/", "services/on-page-seo/", "services/site-speed/",
+                                     "services/search-console/", "services/migrations/", "services/ai-search/",
+                                     "services/ongoing-support/"]),
+    ("Local, reputation, and email", ["services/multi-location/", "services/reputation/",
+                                      "services/google-business-profile/", "services/email-and-dns/"]),
 ]
-MIN_WORDS = {"guide": 700, "service": 450, "page": 250}
+MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 AUTHOR = "https://chrisabraham.com/#person"
@@ -105,7 +114,8 @@ for f in FILES:
     p["tab"] = (p["path"].split("/")[0] + "/") if p["path"] else ""
     if p["tab"] not in dict(TABS):
         p["tab"] = "work-with-me/"  # the FAQ lives under Work With Me
-    p["kind"] = p.get("type") or ("service" if p["tab"] == "services/" and p["path"] != "services/" else "page")
+    p["kind"] = p.get("type") or ("service" if p["tab"] == "services/" and p["path"] != "services/" else
+                                  "case" if p["tab"] == "case-studies/" and p["path"] != "case-studies/" else "page")
     pages.append(finish(p))
 by_path = {p["path"]: p for p in pages}
 
@@ -200,26 +210,61 @@ KNOWS = ["Technical consulting", "Developer specifications", "AI-assisted softwa
          "Website migrations", "301 redirects", "Core Web Vitals", "Cloudflare", "Structured data",
          "Answer engine optimization", "Generative engine optimization", "llms.txt",
          "Online reputation management", "Data broker removal", "Google Business Profile", "SPF", "DKIM", "DMARC"]
+ENGLISH_SPEAKING = [("Country", "United States", "US"), ("Country", "Canada", "CA"), ("Country", "United Kingdom", "GB"),
+                    ("Country", "Ireland", "IE"), ("Country", "Australia", "AU"), ("Country", "New Zealand", "NZ")]
+AREA_SERVED = ([{"@type": "AdministrativeArea", "name": "Washington, DC metropolitan area"},
+                {"@type": "State", "name": "Virginia", "containedInPlace": {"@type": "Country", "name": "United States"}}]
+               + [{"@type": t, "name": n, "identifier": c} for t, n, c in ENGLISH_SPEAKING]
+               + ["Worldwide"])
+ADDRESS = {"@type": "PostalAddress", "addressLocality": "Arlington", "addressRegion": "VA", "postalCode": "22204",
+           "addressCountry": "US"}
+HOME = {"@type": "Place", "@id": SITE + "#place", "name": "South Arlington, Arlington, Virginia",
+        "alternateName": ["Arlington Heights, Arlington, Virginia", "Arlington, VA 22204"],
+        "address": ADDRESS, "geo": {"@type": "GeoCoordinates", "latitude": 38.86, "longitude": -77.10},
+        "containedInPlace": {"@type": "AdministrativeArea", "name": "Arlington County, Virginia",
+                             "containedInPlace": {"@type": "State", "name": "Virginia"}}}
 ORG = {
     "@type": "ProfessionalService", "@id": SITE + "#org", "name": "Gerris Corp",
     "alternateName": ["Gerris"], "url": SITE, "logo": SITE + "logo.png", "image": SITE + "social-card.png",
     "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
     "foundingDate": "2007", "founder": {"@id": AUTHOR}, "employee": {"@id": AUTHOR},
+    "slogan": "Experienced help for the digital work your business needs done",
     "email": EMAIL, "telephone": "+1-202-352-5051",
-    "address": {"@type": "PostalAddress", "addressLocality": "Arlington", "addressRegion": "VA", "addressCountry": "US"},
-    "areaServed": "Worldwide", "knowsAbout": KNOWS,
+    "address": ADDRESS, "location": {"@id": SITE + "#place"},
+    "geo": HOME["geo"], "areaServed": AREA_SERVED, "knowsLanguage": "en", "knowsAbout": KNOWS,
+    "numberOfEmployees": {"@type": "QuantitativeValue", "value": 1},
+    "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": EMAIL, "telephone": "+1-202-352-5051",
+                      "areaServed": [c for _, _, c in ENGLISH_SPEAKING], "availableLanguage": "English"},
+                     {"@type": "ContactPoint", "contactType": "technical support", "email": EMAIL,
+                      "telephone": "+1-202-352-5051", "availableLanguage": "English"}],
     "sameAs": ["https://www.upwork.com/freelancers/chrisjabraham", "https://github.com/chrisabraham/gerriscorp"],
 }
 PERSON = {
     "@type": "Person", "@id": AUTHOR, "name": "Chris Abraham", "alternateName": "Christopher Abraham",
     "url": "https://chrisabraham.com/", "jobTitle": "Founder and principal consultant",
-    "worksFor": {"@id": SITE + "#org"}, "alumniOf": "The George Washington University",
-    "homeLocation": {"@type": "Place", "name": "Arlington, Virginia"}, "knowsAbout": KNOWS,
+    "worksFor": {"@id": SITE + "#org"},
+    "alumniOf": [{"@type": "CollegeOrUniversity", "name": "The George Washington University",
+                  "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"},
+                 {"@type": "CollegeOrUniversity", "name": "University of East Anglia",
+                  "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"}],
+    "homeLocation": {"@id": SITE + "#place"}, "workLocation": {"@id": SITE + "#place"},
+    "nationality": {"@type": "Country", "name": "United States"}, "knowsLanguage": "en",
+    "hasOccupation": {"@type": "Occupation", "name": "Technical consultant and technical SEO specialist",
+                      "occupationLocation": {"@type": "Country", "name": "United States"},
+                      "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"},
+    "knowsAbout": KNOWS,
     "email": EMAIL, "telephone": "+1-202-352-5051",
     "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
            "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"}}
+
+
+ORG["hasOfferCatalog"] = {"@type": "OfferCatalog", "name": "Gerris Corp services", "itemListElement": [
+    {"@type": "OfferCatalog", "name": title, "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "@id": SITE + path + "#service", "name": by_path[path]["h1"],
+                                           "url": SITE + path}} for path in paths]}
+    for title, paths in SERVICE_GROUPS]}
 
 
 def trail(p):
@@ -238,7 +283,7 @@ def schema(p):
             "description": p["description"], "isPartOf": {"@id": SITE + "#website"},
             "about": {"@id": SITE + "#org"}, "primaryImageOfPage": SITE + "social-card.png",
             "inLanguage": "en-US", "dateModified": p["updated"], "author": {"@id": AUTHOR}}
-    graph = [WEBSITE, ORG, PERSON, page]
+    graph = [WEBSITE, ORG, PERSON, HOME, page]
     if p["path"]:
         page["breadcrumb"] = {"@id": p["url"] + "#breadcrumb"}
         graph.append({"@type": "BreadcrumbList", "@id": p["url"] + "#breadcrumb", "itemListElement": [
@@ -247,8 +292,17 @@ def schema(p):
     if p["kind"] == "service":
         graph.append({"@type": "Service", "@id": p["url"] + "#service", "name": p["h1"],
                       "serviceType": p["name"], "description": p["description"],
-                      "provider": {"@id": SITE + "#org"}, "areaServed": "Worldwide", "url": p["url"]})
+                      "provider": {"@id": SITE + "#org"}, "areaServed": AREA_SERVED, "url": p["url"],
+                      "availableChannel": {"@type": "ServiceChannel", "serviceUrl": SITE + "contact/",
+                                           "servicePhone": "+1-202-352-5051", "availableLanguage": "English"}})
         page["mainEntity"] = {"@id": p["url"] + "#service"}
+    if p["kind"] == "case":
+        graph.append({"@type": "Article", "@id": p["url"] + "#article", "headline": p["h1"], "articleSection": "Case studies",
+                      "description": p["description"], "url": p["url"], "mainEntityOfPage": {"@id": p["url"] + "#webpage"},
+                      "author": {"@id": AUTHOR}, "publisher": {"@id": SITE + "#org"},
+                      "datePublished": p.get("published", p["updated"]), "dateModified": p["updated"],
+                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"]})
+        page["mainEntity"] = {"@id": p["url"] + "#article"}
     if p["kind"] == "guide":
         graph.append({"@type": "TechArticle", "@id": p["url"] + "#article", "headline": p["h1"],
                       "description": p["description"], "url": p["url"], "mainEntityOfPage": {"@id": p["url"] + "#webpage"},

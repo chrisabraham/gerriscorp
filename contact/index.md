@@ -30,6 +30,6 @@ Tell me what's going on with your site. Include the address, what you're seeing,
 - You'd like a small AI tool built safely, or a second opinion on someone else's plan.
 - Email from your domain is landing in spam.
 
-Gerris Corp is based in Arlington, Virginia, and works with clients everywhere. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
+Gerris Corp is based in South Arlington, Arlington, Virginia 22204, and works with clients across the United States, Canada, the United Kingdom, Ireland, Australia, New Zealand, and beyond. I work in US Eastern time and schedule calls across time zones. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
 
 Updated October 5, 2026

@@ -4,12 +4,13 @@
 
 # About Chris Abraham
 
-I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does the work. I've lived in the Washington, DC area since 1988 and work from Arlington, Virginia.
+I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does the work. I've lived in the Washington, DC area since 1988 and work from South Arlington, in Arlington, Virginia. Clients like that I'm a US-based business, and I work with them across the country and the English-speaking world.
 
 ## At a glance
 | Business | Gerris Corp, founded in 2007 |
 | Principal | Chris Abraham (also Christopher Abraham) |
-| Location | Arlington, Virginia, serving clients everywhere |
+| Location | South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC |
+| Clients | Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand |
 | Focus | Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
 | Upwork | Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026) |
 | Working online since | Building websites since 1994; in digital marketing since 2002 |

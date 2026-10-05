@@ -1,50 +1,53 @@
 name: Case Studies
 title: Case studies: technical direction, rescues, and forensics
-description: Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.
+description: Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
 updated: 2026-10-05
 ---
 <h1>Case studies</h1>
-<p class="lead">Each case describes the problem, what I did, who did what, and how the work was checked. Clients are described by industry; I name them only with their permission.</p>
+<p class="lead">Each case describes the problem, my role, what I did, who else did what, how the work was checked, and where it stands now. Clients are described by industry; I name clients only with their permission.</p>
 
-<h2>E-commerce on Magento and Hyvä: product content Googlebot never saw</h2>
-<p><strong>Problem.</strong> Organic traffic was falling and the client's team had no explanation.</p>
-<p><strong>What I found.</strong> Product templates used Alpine.js to mount specifications, FAQs, and reviews only when a visitor scrolled them into view, with <code>x-intersect</code> wrapped around <code>x-if</code>. A crawl showed category pages with thousands of words and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed." A spam backlink spike and a redirect problem in the same period were investigated on separate tracks.</p>
-<p><strong>Deliverable.</strong> The mechanism, the evidence, and a developer spec with acceptance criteria. See <a href="{root}services/crawler-visibility/">content the crawler never sees</a>.</p>
+<h2>Content the crawler never sees</h2>
+<ul>
+  <li><a href="{root}case-studies/ecommerce-rendering/">Magento store: product content Googlebot never saw</a>. Alpine.js sections that mounted only on scroll, and a backlink spike kept on its own track.</li>
+  <li><a href="{root}case-studies/consent-blocking/">WordPress media site: a consent banner hiding every article</a>. Consent blocking kept the article tabs empty for Googlebot.</li>
+  <li><a href="{root}case-studies/react-event-platform/">React event platform: 2,000 pages Google couldn't reach</a>. A 13-page developer spec, ranked P0 to P3.</li>
+</ul>
 
-<h2>WordPress media site: consent management hiding every article</h2>
-<p><strong>Problem.</strong> Large numbers of articles sat in "Crawled, currently not indexed," with no crawl errors anywhere.</p>
-<p><strong>What I found.</strong> The site's consent-management platform blocked scripts for visitors who hadn't accepted cookies, including the script that initialized the jQuery UI tabs holding each article's content. Googlebot never accepts cookies, so it saw empty tabs on every page.</p>
-<p><strong>How it was checked.</strong> Rendered HTML from Search Console's live test compared with a consenting browser session.</p>
+<h2>Migrations, rescues, and modern stacks</h2>
+<ul>
+  <li><a href="{root}case-studies/netlify-migration/">Clinical practice: WordPress to Netlify, with search intact</a>. Redirect decisions for every URL and an AI-assisted repository analysis.</li>
+  <li><a href="{root}case-studies/sanity-vercel/">Local service business on Sanity and Vercel</a>. Metadata changes merged through GitHub, and the developer's prerendering verified.</li>
+  <li><a href="{root}case-studies/shopify-migration/">Specialty retailer: cleaning up after Squarespace to Shopify</a>. 3,400 404s, duplicate URLs, and theme schema.</li>
+  <li><a href="{root}case-studies/app-takeover/">Consumer brand: taking over a stalled React application</a>. An inventory, then fixes on the server over SSH.</li>
+</ul>
 
-<h2>React event platform: links crawlers couldn't follow</h2>
-<p><strong>Problem.</strong> Server-side rendering had been added, yet pages still weren't being discovered.</p>
-<p><strong>What I found.</strong> Navigation used the router's click handlers without real anchor links, so crawlers had no paths to the pages rendering had already fixed. The fix was real <code>&lt;a href&gt;</code> links.</p>
+<h2>Indexing at scale and recovery</h2>
+<ul>
+  <li><a href="{root}case-studies/programmatic-indexing/">Programmatic site: crawling and indexing at scale</a>. Segmented sitemaps and parameter rules for 20,000+ pages.</li>
+  <li><a href="{root}case-studies/indexing-recovery/">Health-testing store: recovering after an SEO plugin outage</a>. Recovery checks in Google and Bing, explained in plain English.</li>
+</ul>
 
-<h2>Clinical practice: migration investigation and technical direction</h2>
-<p><strong>Problem.</strong> A practice moving from WordPress to a Next.js site on Netlify needed to know what the new site still depended on from the old one.</p>
-<p><strong>What I did.</strong> Combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository using Claude Code. The analysis identified thousands of references to media still hosted on the old WordPress site and the handful of central files responsible. I turned that into a developer-ready plan, and worked on sequencing, media and redirect requirements, DNS review, and launch verification. The site's developer carried out the implementation.</p>
+<h2>Entities, locations, and planning</h2>
+<ul>
+  <li><a href="{root}case-studies/multi-location-entity/">Multi-location brand: untangling the parent from its first location</a>. Entity structure and developer-ready JSON-LD.</li>
+  <li><a href="{root}case-studies/seasonal-retailer/">Seasonal retailer: a staged plan around the peak</a>. Multi-site audit and timing around the busiest weeks.</li>
+  <li><a href="{root}case-studies/gbp-reinstatement/">Therapy practice: a suspended Google Business Profile reinstated</a>. A documented appeal.</li>
+</ul>
 
-<h2>Consumer skincare brand: application takeover and operations</h2>
-<p><strong>Problem.</strong> A React application changed hands after an outage, with project files, credentials, hosting, DNS, and repository arrangements spread across several parties.</p>
-<p><strong>What I did.</strong> Assessed the handoff and inventoried what existed. Then, hands-on, I worked on the DigitalOcean Linux server over SSH: edited environment and application configuration, managed the application with PM2, and diagnosed a port conflict that was keeping it down.</p>
+<h2>Content operations and AI search</h2>
+<ul>
+  <li><a href="{root}case-studies/umbraco-operations/">Two B2B companies on Umbraco</a>. 54 landing pages, steady publishing, and cache and template fixes.</li>
+  <li><a href="{root}case-studies/ai-recruiting/">AI company: search visibility for recruiting engineers</a>. How AI answers represent an employer.</li>
+</ul>
 
-<h2>Seasonal multi-site retailer: business-aware technical planning</h2>
-<p><strong>Problem.</strong> A retailer with several sites and its own staff needed technical problems fixed without disrupting its peak season.</p>
-<p><strong>What I did.</strong> Brought in as the accountable lead working with the client's existing people, I proposed the investigation, the access needed, a migration review, and a staged plan that put risky changes after the peak.</p>
-
-<h2>Shopify: duplicate and broken product schema</h2>
-<p><strong>What I did.</strong> Working in a duplicated theme so the live store was never at risk, I edited the Liquid templates, found an HTML-encoding bug corrupting the structured data output, and consolidated duplicate Product schema into a single valid block.</p>
-
-<h2>Contact data: a 28,000-record cleanup and an AI tracker audit</h2>
-<p><strong>What I did.</strong> Built Python pipelines to clean and deduplicate more than 28,000 exported contact records, with name validation by country, name recovery from email addresses, and a resolution status on every record. Separately, I audited an AI-generated outreach tracker that marked bounced and nonexistent contacts as sent, with fabricated timestamps, and rebuilt it into a verified list: 452 rows became 392 real contacts. See <a href="{root}services/data-cleanup/">data cleanup</a>.</p>
-
-<h2>Measurement: a drop that wasn't a decline</h2>
-<p><strong>What I did.</strong> Traced an industry-wide drop in AI visibility scores to a change in the vendor's methodology, which kept a client from reacting to a decline that hadn't happened.</p>
-
-<h2>Long-term perception management for a founder</h2>
-<p><strong>What I do.</strong> An eight-year retainer shaping search results and the public record for a high-net-worth founder, removing personal information from data brokers, and reporting monthly, now alongside a security firm's open-source intelligence program.</p>
+<h2>Data</h2>
+<ul>
+  <li><a href="{root}case-studies/data-cleanup/">Contact data: three cleanups and an AI audit</a>. 88,900 contacts, two merged exports, and a tracker that invented its data.</li>
+</ul>
 
 <h2>My own builds</h2>
-<p>Blackbox, my command-line assistant, Hill Mole's move off Movable Type, and this site are covered on <a href="{root}case-studies/built-with-claude-code/">Built with Claude Code</a>.</p>
+<ul>
+  <li><a href="{root}case-studies/built-with-claude-code/">Built with Claude Code</a>. Blackbox, my command-line assistant with 106 tests; Hill Mole's move off Movable Type; and this site.</li>
+</ul>
 
 <p><a class="button" href="{root}contact/">Tell me about your problem</a></p>

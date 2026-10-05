@@ -116,15 +116,70 @@ dd { margin: .2rem 0 0 0; }
    "employee": {
     "@id": "https://chrisabraham.com/#person"
    },
+   "slogan": "Experienced help for the digital work your business needs done",
    "email": "chris@gerriscorp.com",
    "telephone": "+1-202-352-5051",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "Arlington",
     "addressRegion": "VA",
+    "postalCode": "22204",
     "addressCountry": "US"
    },
-   "areaServed": "Worldwide",
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
    "knowsAbout": [
     "Technical consulting",
     "Developer specifications",
@@ -150,10 +205,260 @@ dd { margin: .2rem 0 0 0; }
     "DKIM",
     "DMARC"
    ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
    "sameAs": [
     "https://www.upwork.com/freelancers/chrisjabraham",
     "https://github.com/chrisabraham/gerriscorp"
-   ]
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "@type": "Person",
@@ -165,10 +470,37 @@ dd { margin: .2rem 0 0 0; }
    "worksFor": {
     "@id": "https://gerriscorp.com/#org"
    },
-   "alumniOf": "The George Washington University",
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
    "homeLocation": {
-    "@type": "Place",
-    "name": "Arlington, Virginia"
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
    },
    "knowsAbout": [
     "Technical consulting",
@@ -202,6 +534,35 @@ dd { margin: .2rem 0 0 0; }
     "https://www.upwork.com/freelancers/chrisjabraham",
     "https://hillmole.com/"
    ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
   },
   {
    "@type": "CollectionPage",
@@ -242,8 +603,8 @@ dd { margin: .2rem 0 0 0; }
      {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://gerriscorp.com/services/ai-automation/",
-      "name": "AI agents and automation, built safely"
+      "url": "https://gerriscorp.com/services/agency-partner/",
+      "name": "Agency partner and white-label support"
      },
      {
       "@type": "ListItem",
@@ -254,78 +615,108 @@ dd { margin: .2rem 0 0 0; }
      {
       "@type": "ListItem",
       "position": 5,
+      "url": "https://gerriscorp.com/services/ai-automation/",
+      "name": "AI agents and automation, built safely"
+     },
+     {
+      "@type": "ListItem",
+      "position": 6,
       "url": "https://gerriscorp.com/services/data-cleanup/",
       "name": "Data cleanup and AI-output audits"
      },
      {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
+      "url": "https://gerriscorp.com/services/analytics/",
+      "name": "Analytics and measurement you can trust"
+     },
+     {
+      "@type": "ListItem",
+      "position": 8,
       "url": "https://gerriscorp.com/services/advisory/",
       "name": "Strategic advisory and briefings"
      },
      {
       "@type": "ListItem",
-      "position": 7,
+      "position": 9,
       "url": "https://gerriscorp.com/services/technical-seo/",
       "name": "Technical SEO forensics and fixes"
      },
      {
       "@type": "ListItem",
-      "position": 8,
+      "position": 10,
       "url": "https://gerriscorp.com/services/crawler-visibility/",
       "name": "Content the crawler never sees"
      },
      {
       "@type": "ListItem",
-      "position": 9,
+      "position": 11,
+      "url": "https://gerriscorp.com/services/large-sites/",
+      "name": "SEO for large and programmatic sites"
+     },
+     {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://gerriscorp.com/services/ecommerce/",
+      "name": "E-commerce SEO: templates, catalogs, and product data"
+     },
+     {
+      "@type": "ListItem",
+      "position": 13,
       "url": "https://gerriscorp.com/services/on-page-seo/",
       "name": "On-page SEO"
      },
      {
       "@type": "ListItem",
-      "position": 10,
+      "position": 14,
       "url": "https://gerriscorp.com/services/site-speed/",
       "name": "Site speed, Core Web Vitals, and Cloudflare"
      },
      {
       "@type": "ListItem",
-      "position": 11,
+      "position": 15,
       "url": "https://gerriscorp.com/services/search-console/",
       "name": "Google Search Console setup, cleanup, and indexing fixes"
      },
      {
       "@type": "ListItem",
-      "position": 12,
+      "position": 16,
       "url": "https://gerriscorp.com/services/migrations/",
       "name": "Website migrations"
      },
      {
       "@type": "ListItem",
-      "position": 13,
+      "position": 17,
       "url": "https://gerriscorp.com/services/ai-search/",
       "name": "AI search visibility"
      },
      {
       "@type": "ListItem",
-      "position": 14,
+      "position": 18,
       "url": "https://gerriscorp.com/services/ongoing-support/",
       "name": "Ongoing SEO and website support"
      },
      {
       "@type": "ListItem",
-      "position": 15,
+      "position": 19,
+      "url": "https://gerriscorp.com/services/multi-location/",
+      "name": "Multi-location and connected businesses"
+     },
+     {
+      "@type": "ListItem",
+      "position": 20,
       "url": "https://gerriscorp.com/services/reputation/",
       "name": "Reputation and perception management"
      },
      {
       "@type": "ListItem",
-      "position": 16,
+      "position": 21,
       "url": "https://gerriscorp.com/services/google-business-profile/",
       "name": "Google Business Profile hard cases"
      },
      {
       "@type": "ListItem",
-      "position": 17,
+      "position": 22,
       "url": "https://gerriscorp.com/services/email-and-dns/",
       "name": "Email authentication and DNS"
      }
@@ -383,9 +774,11 @@ dd { margin: .2rem 0 0 0; }
 <ul>
   <li><a href="../services/technical-lead/">Fractional technical lead</a>: one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.</li>
   <li><a href="../services/developers/">Developer specs and implementation QA</a>: a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.</li>
+  <li><a href="../services/agency-partner/">Agency partner and white-label support</a>: technical SEO, AI search, and developer coordination inside your agency's client relationships.</li>
   <li><a href="../services/ai-automation/">AI agents and automation, built safely</a>: small AI tools built with Claude Code, with human confirmation on every action, tests, and encrypted backups.</li>
   <li><a href="../services/rescue/">Project rescue, takeovers, and legacy migrations</a>: stalled or inherited projects inventoried, stabilized, and moved off dead software.</li>
   <li><a href="../services/data-cleanup/">Data cleanup and AI-output audits</a>: contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.</li>
+  <li><a href="../services/analytics/">Analytics and measurement</a>: GA4 and Search Console you can trust, and an honest reading of what the numbers prove.</li>
   <li><a href="../services/advisory/">Strategic advisory and second opinions</a>: advice for founders and executives on AI, search, reputation, and technology decisions.</li>
 </ul>
 
@@ -393,6 +786,8 @@ dd { margin: .2rem 0 0 0; }
 <ul>
   <li><a href="../services/technical-seo/">Technical SEO forensics</a>: traffic drops and indexing problems diagnosed with evidence and fixed with your developers.</li>
   <li><a href="../services/crawler-visibility/">Content the crawler never sees</a>: my signature diagnosis, for pages that look complete to visitors and empty to Google and AI crawlers.</li>
+  <li><a href="../services/large-sites/">Large and programmatic sites</a>: crawling and indexing managed across tens of thousands of pages.</li>
+  <li><a href="../services/ecommerce/">Ecommerce SEO</a>: Shopify, Magento, and WooCommerce fixed at the template level.</li>
   <li><a href="../services/on-page-seo/">On-page SEO</a>: titles, descriptions, headings, internal links, and structured data, written and published.</li>
   <li><a href="../services/site-speed/">Site speed, Core Web Vitals, and Cloudflare</a>: fast pages on real phones, and a CDN configured properly.</li>
   <li><a href="../services/search-console/">Google Search Console</a>: setup, cleanup, and fixes for what the indexing reports reveal.</li>
@@ -401,8 +796,9 @@ dd { margin: .2rem 0 0 0; }
   <li><a href="../services/ongoing-support/">Ongoing SEO and website support</a>: an agreed amount of experienced help each month.</li>
 </ul>
 
-<h2>Specialist services</h2>
+<h2>Local, reputation, and email</h2>
 <ul>
+  <li><a href="../services/multi-location/">Multi-location and connected businesses</a>: entity structure, location pages, and sister brands kept distinct.</li>
   <li><a href="../services/reputation/">Reputation and perception management</a>: for founders, executives, and families who need privacy and an accurate public record.</li>
   <li><a href="../services/google-business-profile/">Google Business Profile hard cases</a>: suspensions and verification loops, starting with a written diagnostic.</li>
   <li><a href="../services/email-and-dns/">Email authentication and DNS</a>: SPF, DKIM, DMARC, deliverability, and domain consolidation.</li>
