@@ -8,18 +8,18 @@ Small AI tools and automations for real workflows, built with Claude Code and en
 
 ## Why I can build these
 
-I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
 
 ## Safety by design
 
-Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:
-- **A human confirms every external action.** Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.
-- **Deterministic first.** Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.
-- **Untrusted content is data.** Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.
-- **Secrets stay out of Git.** API keys and tokens live outside the repository.
-- **Tests and a real deploy loop.** Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.
-- **Encrypted backups with tested restores.** Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.
-- **Model choice by evidence.** I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.
+Companies are discovering that AI agents need guardrails. Every tool I build for you comes with these:
+- **You approve every action that leaves the system.** Emails, payments, posts, and deletions wait for a person to confirm a single, specific target.
+- **Plain code wherever possible.** Routine steps run as ordinary, predictable code; a model is called only for writing and judgment, which keeps running costs to pennies.
+- **Defense against prompt injection.** Anything the tool reads from outside, such as an email or a web page, is handled as material to work on and never as a command to follow.
+- **Credentials kept out of the code repository,** in your own secret store.
+- **Automated tests** that run before every change ships, plus a quick check on the live system afterward.
+- **Encrypted backups** with a restore you've watched work.
+- **The right model for the job,** chosen by testing candidates on your real task rather than by brand.
 
 ## What I build for clients
 

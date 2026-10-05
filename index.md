@@ -8,20 +8,16 @@ I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when th
 
 I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
 
-## Consulting and technical direction
-- **[Fractional technical lead](https://gerriscorp.com/services/technical-lead/).** For companies with a website, a developer or two, and nobody in charge. I own the stack part time, set priorities, direct developers and vendors, and report to you in plain English.
-- **[Developer specs and implementation QA](https://gerriscorp.com/services/developers/).** A diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification on the live site that the fix shipped.
-- **[AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/).** Small AI tools built with Claude Code, with a human confirming every action. My own command-line assistant is the proof: [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
-- **[Project rescue and takeovers](https://gerriscorp.com/services/rescue/).** The developer vanished or the agency handed over a zip file. I find out what you have and get it working.
+## When to call me
+- **Nobody owns the website.** You have a developer, a few vendors, and logins scattered across old inboxes. I can be your [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+- **Your developers need a clear brief.** I turn vague complaints into [specs with acceptance criteria](https://gerriscorp.com/services/developers/) and check what ships.
+- **The project stalled.** The freelancer vanished or the agency handed over a zip file. I handle [rescues and takeovers](https://gerriscorp.com/services/rescue/).
+- **You want AI to save your team time without new risks.** I build [small, safe AI tools](https://gerriscorp.com/services/ai-automation/) with Claude Code.
+- **Traffic fell off a cliff.** I run [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and often find [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
+- **The site is slow or a migration is coming.** See [site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) and [migrations](https://gerriscorp.com/services/migrations/).
+- **AI assistants get your business wrong.** See [AI search visibility](https://gerriscorp.com/services/ai-search/).
 
-## Search and site performance
-- **[Technical SEO forensics](https://gerriscorp.com/services/technical-seo/).** Traffic fell and nobody knows why. I find the mechanism, prove it, and get it fixed.
-- **[Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).** Pages that look complete to visitors and empty to Google and AI crawlers. I've found this on Magento, WordPress, and React sites in a single year.
-- **[Site speed and Cloudflare](https://gerriscorp.com/services/site-speed/).** Core Web Vitals passed on real phones, and a CDN configured properly.
-- **[Migrations](https://gerriscorp.com/services/migrations/).** Platform, domain, and URL changes without losing rankings or email.
-- **[AI search visibility](https://gerriscorp.com/services/ai-search/).** What ChatGPT, Claude, Gemini, Perplexity, and Google's AI features say about you, and how to improve it.
-
-See [every service](https://gerriscorp.com/services/), including on-page SEO, Search Console, ongoing support, data cleanup, advisory work, reputation management, and email and DNS.
+Every service, from agency support to ecommerce, large sites, analytics, and email authentication, is on the [services page](https://gerriscorp.com/services/).
 
 ## How I work
 

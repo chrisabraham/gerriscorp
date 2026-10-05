@@ -12,15 +12,19 @@ The same class of failure keeps turning up on completely different technology. I
 
 ### Magento with Hyvä: content mounted on scroll
 
-An e-commerce site's product templates used Alpine.js to render specifications, FAQs, and reviews only when a visitor scrolled them into view, with `x-intersect` wrapped around `x-if`. Googlebot never scrolls the way a person does, so those sections never mounted. A crawl showed category pages with thousands of words of text and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a cluster of product pages marked "Crawled, currently not indexed," while the rest of the site indexed normally.
+Product specifications, FAQs, and reviews were wrapped in Alpine.js directives that only rendered them once a shopper scrolled down. Crawler extraction on the store's most valuable product pages fell to a few hundred words, and exactly those pages piled up in Search Console's not-indexed report. [Read the Magento case study](https://gerriscorp.com/case-studies/ecommerce-rendering/).
 
 ### WordPress media site: consent management blocking the page
 
-A consent-management platform blocked scripts for visitors who hadn't accepted cookies. One of the blocked scripts initialized the jQuery UI tabs that held each article's content. Googlebot never accepts cookies, so it was a permanent non-consenter and saw empty tabs on every page. No crawl errors, no warnings, just "Crawled, currently not indexed" at scale.
+The cookie consent platform held back scripts until a visitor accepted, including the script that opened the tabs holding every article. A crawler never accepts cookies, so it met empty tabs everywhere. [Read the consent case study](https://gerriscorp.com/case-studies/consent-blocking/).
 
 ### React event platform: links crawlers couldn't follow
 
-A Create React App site had already added server-side rendering, so each page's HTML was fine. Navigation used the router's click handlers instead of real `<a href>` links, though, so crawlers had no links to follow and couldn't reach the pages rendering had fixed.
+Server-side rendering was already in place, yet event pages stayed undiscovered because the cards navigated with JavaScript click handlers instead of anchor links. [Read the React case study](https://gerriscorp.com/case-studies/react-event-platform/).
+
+## The pattern behind all three
+
+In each case the page was technically "there." Visitors saw it, the CMS showed it, and no tool reported an error. The failure only appears when you look at the page the way a crawler does: no scrolling, no clicking, no cookie consent, and often no JavaScript at all. That's why it survives for months, and why ordinary SEO audits miss it.
 
 ## How I find it
 1. **Compare three views of the same page:** the raw HTML the server sends, the DOM after JavaScript runs, and what a crawler extracts.
