@@ -15,7 +15,7 @@ Preview locally: `python3 -m http.server`, then open http://localhost:8000
 ## Search and AI
 
 - Per-page title, description, canonical, Open Graph, and Twitter card; 1200×630 `social-card.png`.
-- JSON-LD on every page: WebSite, ProfessionalService (Gerris Corp), Person (Chris, with `sameAs` to his profiles), the page itself, breadcrumbs, a `Service` on each service page, and `PodcastSeries` on The Show.
+- JSON-LD on every page: WebSite, ProfessionalService (Gerris Corp), Person (Chris, with `sameAs` to his profiles), the page itself, breadcrumbs, and a `Service` on each service page.
 - `robots.txt` welcomes every crawler and names the AI crawlers explicitly. `llms.txt` lists every page; `llms-full.txt` holds the full text.
 - IndexNow: the `<key>.txt` file, `tools/indexnow.py`, and `.github/workflows/indexnow.yml` ping Bing and the other IndexNow engines after each push, once gerriscorp.com really serves this site.
 - `_config.yml` keeps `src/` and `tools/` off the public site.

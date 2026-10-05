@@ -1,6 +1,6 @@
 # Gerris Corp
 
-> Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management. Based in Arlington, Virginia. Chris Abraham has built websites since 1994 and hosts The Chris Abraham Show.
+> Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management. Based in Arlington, Virginia. Chris Abraham has built websites since 1994.
 
 Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham.
 
@@ -17,7 +17,6 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [Google Business Profile](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
 - [Email and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS without breaking email or losing search equity.
 - [Case Studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.
-- [The Show](https://gerriscorp.com/show/): Season 10 of The Chris Abraham Show podcast, the @chrisabraham and @abrahamSEO YouTube channels, the Substack, and the Friday SEO, AEO, and GEO roundup.
 - [About](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp from Arlington, Virginia, near Washington, DC.
 - [Work With Me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, or ongoing support, prepaid and tracked in writing.
 - [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or book a 30 minute call. Diagnostics are prepaid and scoped in writing.
@@ -26,4 +25,3 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 
 - [Full text of this site](https://gerriscorp.com/llms-full.txt)
 - [Chris Abraham's personal site and blog](https://chrisabraham.com/)
-- [The Chris Abraham Show on Substack](https://chrisabraham.substack.com/)

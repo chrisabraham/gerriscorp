@@ -24,11 +24,10 @@ LIVE = False
 
 SITE = "https://gerriscorp.com/"
 PREVIEW_BASE = "/gerriscorp/"
-TABS = [("", "Home"), ("services/", "Services"), ("case-studies/", "Case Studies"), ("show/", "The Show"),
-        ("about/", "About"), ("work-with-me/", "Work With Me"), ("contact/", "Contact")]
+TABS = [("", "Home"), ("services/", "Services"), ("case-studies/", "Case Studies"), ("about/", "About"), ("work-with-me/", "Work With Me"), ("contact/", "Contact")]
 FILES = ["index", "services/index", "services/technical-seo", "services/migrations", "services/ai-search",
          "services/developers", "services/ongoing-support", "services/reputation",
-         "services/google-business-profile", "services/email-and-dns", "case-studies", "show", "about",
+         "services/google-business-profile", "services/email-and-dns", "case-studies", "about",
          "work-with-me", "contact"]
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
@@ -109,18 +108,10 @@ PERSON = {
     "worksFor": {"@id": SITE + "#org"}, "alumniOf": "The George Washington University",
     "homeLocation": {"@type": "Place", "name": "Arlington, Virginia"},
     "sameAs": ["https://chrisabraham.com/", "https://www.linkedin.com/in/chrisabraham",
-               "https://twitter.com/chrisabraham", "https://www.youtube.com/@chrisabraham",
-               "https://www.youtube.com/@abrahamSEO", "https://chrisabraham.substack.com/",
+               "https://twitter.com/chrisabraham",
                "https://www.instagram.com/chrisabraham", "https://www.facebook.com/chrisabraham",
                "https://www.upwork.com/freelancers/chrisjabraham", "https://github.com/chrisabraham",
                "https://hillmole.com/"],
-}
-PODCAST = {
-    "@type": "PodcastSeries", "@id": SITE + "show/#podcast", "name": "The Chris Abraham Show",
-    "url": SITE + "show/", "webFeed": "https://anchor.fm/s/c0f56fc/podcast/rss",
-    "author": {"@id": "https://chrisabraham.com/#person"},
-    "sameAs": ["https://podcasts.apple.com/us/podcast/the-chris-abraham-show/id1468506258",
-               "https://chrisabraham.substack.com/"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
            "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"}}
@@ -157,9 +148,6 @@ def schema(p):
             re.search(r"<h1>(.*?)</h1>", p["body"]).group(1)), "description": p["description"],
             "provider": {"@id": SITE + "#org"}, "areaServed": "Worldwide", "url": p["url"]})
         page["mainEntity"] = {"@id": p["url"] + "#service"}
-    if p["path"] == "show/":
-        graph.append(PODCAST)
-        page["mainEntity"] = {"@id": PODCAST["@id"]}
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, indent=1, ensure_ascii=False)
 
 
@@ -168,7 +156,7 @@ def render(p):
     home = r or "./"
     e = lambda s: html.escape(s, quote=True)
     nav = "\n".join(
-        f'    <li><a href="{r}{path}"{(" aria-current=" + chr(34) + ("page" if path == p["path"] else "true") + chr(34)) if path == p["tab"] else ""}>{label}</a></li>'
+        f'    <li><a href="{(r + path) or "./"}"{(" aria-current=" + chr(34) + ("page" if path == p["path"] else "true") + chr(34)) if path == p["tab"] else ""}>{label}</a></li>'
         for path, label in TABS)
     crumbs = ""
     if p["path"] and p["tab"] != p["path"]:
@@ -325,7 +313,7 @@ Sitemap: https://gerriscorp.com/sitemap.xml
 
 llms = f"""# Gerris Corp
 
-> {ORG["description"]} Based in Arlington, Virginia. Chris Abraham has built websites since 1994 and hosts The Chris Abraham Show.
+> {ORG["description"]} Based in Arlington, Virginia. Chris Abraham has built websites since 1994.
 
 Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham.
 
@@ -336,7 +324,6 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 
 - [Full text of this site]({SITE}llms-full.txt)
 - [Chris Abraham's personal site and blog](https://chrisabraham.com/)
-- [The Chris Abraham Show on Substack](https://chrisabraham.substack.com/)
 """
 open("llms.txt", "w", encoding="utf-8").write(llms)
 open("llm.txt", "w", encoding="utf-8").write(llms)
