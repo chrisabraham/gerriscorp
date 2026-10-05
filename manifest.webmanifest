@@ -1,0 +1,10 @@
+{
+  "name": "Gerris Corp",
+  "short_name": "Gerris",
+  "description": "Technical SEO, Google Business Profile, AI search, and online reputation work by Chris Abraham.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [{ "src": "logo.png", "sizes": "400x400", "type": "image/png", "purpose": "any" }]
+}
