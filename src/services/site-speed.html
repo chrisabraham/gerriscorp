@@ -1,0 +1,62 @@
+name: Site Speed and CDN
+title: Site speed, Core Web Vitals, and Cloudflare CDN optimization
+description: Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
+updated: 2026-10-05
+---
+<h1>Site speed, Core Web Vitals, and Cloudflare</h1>
+<p class="lead">Fast pages rank better, convert better, and get crawled more. I find what's actually slowing your site on real phones and fix it.</p>
+
+<h2>Core Web Vitals</h2>
+<p>Google measures page experience with three Core Web Vitals, scored from real Chrome users at the 75th percentile:</p>
+<table>
+<thead><tr><th>Metric</th><th>Measures</th><th>Good</th></tr></thead>
+<tbody>
+<tr><td>Largest Contentful Paint (LCP)</td><td>How fast the main content appears</td><td>2.5 seconds or less</td></tr>
+<tr><td>Interaction to Next Paint (INP)</td><td>How fast the page responds to taps and clicks</td><td>200 milliseconds or less</td></tr>
+<tr><td>Cumulative Layout Shift (CLS)</td><td>How much the layout jumps while loading</td><td>0.1 or less</td></tr>
+</tbody>
+</table>
+<p>INP replaced First Input Delay in March 2024, and many sites that passed before now fail on it, usually because of heavy JavaScript and third-party scripts.</p>
+
+<h2>What I fix</h2>
+<ul>
+  <li><strong>Images:</strong> right-sized, modern formats such as WebP and AVIF, explicit dimensions, lazy loading below the fold, and priority loading for the main image.</li>
+  <li><strong>CSS and JavaScript:</strong> render-blocking files, unused code, oversized bundles, and long tasks that block interaction.</li>
+  <li><strong>Third-party scripts:</strong> tag managers, chat widgets, ad and analytics scripts, and what each one actually costs.</li>
+  <li><strong>Fonts:</strong> fewer files, preloading, and font-display settings that avoid invisible text and layout shifts.</li>
+  <li><strong>Servers and caching:</strong> slow time to first byte, missing page caching, and cache headers that make browsers download the same files again.</li>
+</ul>
+
+<h2>Cloudflare and CDNs</h2>
+<p>A CDN puts copies of your site close to every visitor and absorbs load and attacks. I've used Cloudflare for years and set it up properly:</p>
+<ul>
+  <li>DNS moved without downtime and without disturbing email records.</li>
+  <li>Caching configured with Cache Rules, including full-page caching where it's safe, and Tiered Cache for sites with global traffic.</li>
+  <li>Automatic Platform Optimization for WordPress sites that benefit from it.</li>
+  <li>Compression, HTTP/3, and Early Hints switched on, and image optimization through Polish or Cloudflare Images.</li>
+  <li>Redirects moved to Redirect Rules and Bulk Redirects, so they run at the edge and survive CMS changes. Cloudflare is retiring the older Page Rules, and I migrate them.</li>
+  <li>Crawler Hints turned on, which notifies search engines of changes through IndexNow.</li>
+  <li>Bot and AI crawler settings checked. Cloudflare now blocks many AI crawlers by default on newer setups, which can quietly keep you out of AI search. I set them deliberately.</li>
+</ul>
+<p>I also work with Netlify, GitHub Pages, and other hosts' built-in CDNs.</p>
+
+<h2>What you get</h2>
+<ul>
+  <li>A speed diagnosis from field data and lab tests, with the causes ranked by impact.</li>
+  <li>The fixes I can make directly, and developer tickets for the rest.</li>
+  <li>A before and after comparison on the pages that matter.</li>
+</ul>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>Will Cloudflare make my site faster by itself?</h3>
+<p>It helps immediately with static files and distance. The large gains come from configuring caching, compression, images, and redirects for your specific site, which is the work I do.</p>
+<h3>How long until Core Web Vitals improve in Search Console?</h3>
+<p>The Chrome UX Report uses a rolling 28 days of real-user data, so improvements show up gradually over about a month after the fixes ship.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="{root}services/technical-seo/">Technical SEO</a> · <a href="{root}services/email-and-dns/">Email and DNS</a> · <a href="{root}guides/javascript-seo/">JavaScript SEO</a></p>
+</div>
+
+<p><a class="button" href="{root}contact/">Ask me why your site is slow</a></p>

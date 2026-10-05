@@ -1,0 +1,49 @@
+name: Data Cleanup
+title: Data cleanup, CRM deduplication, and AI spreadsheet audits
+description: Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
+updated: 2026-10-05
+---
+<h1>Data cleanup and AI-output audits</h1>
+<p class="lead">Contact lists with thousands of duplicates. CRMs nobody trusts. Confident-looking spreadsheets an AI produced that turn out to be partly invented. I turn messy data into something you can rely on.</p>
+
+<h2>Contact list and CRM cleanup</h2>
+<p>I build Python pipelines for the job instead of cleaning by hand, so the work is repeatable and every change can be traced. On a recent project with more than 28,000 exported records, the pipeline:</p>
+<ul>
+  <li>Remapped broken export formats into consistent columns.</li>
+  <li>Validated first and last names by country against a large names dataset, ranking how plausible each name is.</li>
+  <li>Rescued missing names from email address prefixes, and detected surnames entered in the wrong field.</li>
+  <li>Deduplicated contacts across domains and spelling variants.</li>
+  <li>Assigned every record a resolution status, so nothing was silently dropped.</li>
+</ul>
+<p>The same approach works for CRM exports, newsletter lists, event registrations, and merged lists after an acquisition.</p>
+
+<h2>Auditing AI output</h2>
+<p>AI tools now produce trackers, reports, and spreadsheets that look finished. Some of them contain fabricated values. In one audit, an AI-generated outreach tracker marked bounced and nonexistent contacts as sent, carried uniform timestamps that couldn't be real, and repeated contacts. I rebuilt it against the actual sending records into a verified master list: 452 rows became 392 real contacts, each with a status the evidence supported.</p>
+<p>I check AI output the way I check anything else: against the source records, looking for patterns that are too neat, and separating what was verified from what was assumed.</p>
+
+<h2>Measurement sanity checks</h2>
+<p>Dashboards mislead, too. A sudden drop in a metric can be a vendor changing its methodology rather than a real decline. I once traced an industry-wide drop in AI visibility scores to exactly that. Before you react to a number, I find out what it actually measures.</p>
+
+<h2>What you get</h2>
+<ul>
+  <li>A cleaned, deduplicated dataset with a status for every record.</li>
+  <li>The script that did the work, so the cleanup can be rerun on the next export.</li>
+  <li>A short report: what was wrong, what changed, and what still needs a human decision.</li>
+</ul>
+
+<h2>When to call me</h2>
+<p>Before a big campaign goes out to a merged list, after an acquisition or CRM migration, when a newsletter's bounce rate starts climbing, or when a report built with AI is about to go to leadership.</p>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>Is client data kept private?</h3>
+<p>Yes. Data stays in your accounts or on encrypted storage I control for the duration of the project, it's never pasted into public AI tools, and it's deleted at the end unless you ask otherwise.</p>
+<h3>Can you clean data directly inside a CRM?</h3>
+<p>Usually I export, clean, and re-import with your approval at each step, which keeps a record of every change. Direct in-CRM cleanup is possible when the CRM supports it safely.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="{root}services/ai-automation/">AI agents and automation</a> · <a href="{root}case-studies/built-with-claude-code/">Built with Claude Code</a></p>
+</div>
+
+<p><a class="button" href="{root}contact/">Send me the messy spreadsheet</a></p>

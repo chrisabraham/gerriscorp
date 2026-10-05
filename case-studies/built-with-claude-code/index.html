@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built with Claude Code: Blackbox, Hill Mole, and this site</title>
+<meta name="description" content="How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gerriscorp.com/case-studies/built-with-claude-code/">
+<meta name="author" content="Chris Abraham">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Built with Claude Code: Blackbox, Hill Mole, and this site">
+<meta property="og:description" content="How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.">
+<meta property="og:url" content="https://gerriscorp.com/case-studies/built-with-claude-code/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Built with Claude Code: Blackbox, Hill Mole, and this site">
+<meta name="twitter:description" content="How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top img { width: 64px; height: 64px; flex: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+   },
+   "areaServed": "Worldwide",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": "The George Washington University",
+   "homeLocation": {
+    "@type": "Place",
+    "name": "Arlington, Virginia"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/case-studies/built-with-claude-code/#webpage",
+   "url": "https://gerriscorp.com/case-studies/built-with-claude-code/",
+   "name": "Built with Claude Code: Blackbox, Hill Mole, and this site",
+   "description": "How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/case-studies/built-with-claude-code/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/case-studies/built-with-claude-code/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Case Studies",
+     "item": "https://gerriscorp.com/case-studies/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Built with Claude Code",
+     "item": "https://gerriscorp.com/case-studies/built-with-claude-code/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/">Guides</a></li>
+    <li><a href="../../case-studies/" aria-current="true">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../case-studies/">Case Studies</a> › Built with Claude Code</p>
+<main id="main">
+<h1>Built with Claude Code</h1>
+<p class="lead">I run Claude Code the way a technical lead runs a development team: I write the requirements, make the design decisions, review every change, insist on tests, and decide what ships. These are three things built that way.</p>
+
+<h2>Blackbox: a command-line chief of staff</h2>
+<p>Blackbox, or <code>bb</code>, is my own assistant. It runs on a Debian server I administer and manages the operational side of my business from the terminal.</p>
+<h3>What it does</h3>
+<ul>
+  <li>Manages tasks in Todoist, which is the single authority for everything I need to do.</li>
+  <li>Reads and writes Google Calendar through my own Google Cloud OAuth project.</li>
+  <li>Triages work opportunities through Upwork's official MCP server, ranking dozens of searches and drafting pitches for my approval.</li>
+  <li>Assembles briefings and drafts writing using whichever model does the job best.</li>
+</ul>
+<h3>How it was built</h3>
+<p>Over four days, Claude Code took it from a 1,500-line script to about 9,600 lines: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests across 25 commits on main. Claude Code wrote the implementation. I specified the behavior, wrote structured feedback documents with scoped priorities and open architecture questions, tested each stage, compared model backends from OpenAI, Anthropic, and open-weight providers against each other on real tasks, and accepted or rejected the work.</p>
+<h3>Safety rules</h3>
+<ul>
+  <li>Every external action needs one unambiguous target and my explicit confirmation. Nothing sends, submits, spends, or deletes on its own.</li>
+  <li>Untrusted content, such as email and web pages, is treated as data and never as instructions.</li>
+  <li>Deterministic routing handles every command it can without a model call; models are reserved for writing and judgment. Total model spend at launch was under three dollars.</li>
+  <li>Secrets live outside Git.</li>
+  <li>Nightly AES-256 encrypted backups go to a private repository, and restores have been tested.</li>
+</ul>
+<h3>The deploy loop</h3>
+<p>Work happens on a branch in a development worktree. Tests run, the database is backed up, the branch is fast-forwarded to main and pushed, and a live smoke test confirms the result. It's the same discipline I bring to <a href="../../services/ai-automation/">client automation pilots</a>.</p>
+
+<h2>Hill Mole: a legacy blog off dead software</h2>
+<p><a href="https://hillmole.com/">Hill Mole</a> is my serialized novel, 309 entries written from 2005 to 2022 on Movable Type, which had stopped working. With Claude Code, I moved it to static pages on GitHub Pages, preserving the content, the feel of the original, and every original URL, including old archive and feed addresses. Every entry now has a hand-written title and description checked by a script on each build, schema.org data, llms.txt coverage, and IndexNow submission. The same approach rescues any client site stranded on old software. See <a href="../../services/rescue/">project rescue</a>.</p>
+
+<h2>This site</h2>
+<p>Gerris is plain HTML generated by a short Python script, also built with Claude Code. Every page has structured data and a Markdown twin for AI tools, the site publishes llms.txt and a full-text llms-full.txt, and each build checks title and description lengths, word counts, broken internal links, and the copy rules. It's static, fast, readable without JavaScript, and an example of the advice in the <a href="../../guides/">guides</a>.</p>
+
+<h2>What this means for clients</h2>
+<p>Building software with AI coding assistants is a real skill, and the skill is mostly the part that isn't typing: knowing what the job is, specifying behavior precisely, catching what the model got wrong, testing, and owning the decision to ship. That's what I bring to a client's tool, a client's repository, or a client's developers.</p>
+
+<p><a class="button" href="../../contact/">Tell me what you'd build</a></p>
+<p class="updated">Updated October 5, 2026</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

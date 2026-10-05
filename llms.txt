@@ -1,27 +1,58 @@
 # Gerris Corp
 
-> Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management. Based in Arlington, Virginia. Chris Abraham has built websites since 1994.
+> Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management. Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2007.
 
-Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham.
+Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
 
-## Pages
+## Consulting and technical direction
 
-- [Home](https://gerriscorp.com/): Chris Abraham helps businesses get found, fixes what holds their websites back, and works with their developers on technical SEO, migrations, and AI search.
-- [Services](https://gerriscorp.com/services/): Services from Chris Abraham at Gerris Corp: technical SEO forensics, website migrations, AI search and content, developer collaboration, and ongoing support.
-- [Technical SEO](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops and indexing problems with evidence, separates the causes, and turns each one into a fix your developers can ship.
-- [Migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with redirect maps, launch checks, and cleanup.
-- [AI Search](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, and the site, content, and schema work that improves it.
-- [Developers](https://gerriscorp.com/services/developers/): Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.
-- [Ongoing Support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, troubleshooting, developer coordination, and sensible reporting.
-- [Reputation](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham at Gerris Corp: search results, data broker removal, AI answers, and monthly reporting for founders.
-- [Google Business Profile](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
-- [Email and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS without breaking email or losing search equity.
-- [Case Studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.
-- [About](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp from Arlington, Virginia, near Washington, DC.
-- [Work With Me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, or ongoing support, prepaid and tracked in writing.
-- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or book a 30 minute call. Diagnostics are prepaid and scoped in writing.
+- [Fractional technical lead](https://gerriscorp.com/services/technical-lead/index.md): Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.
+- [Developer specs and implementation QA](https://gerriscorp.com/services/developers/index.md): Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/index.md): Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+- [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/index.md): Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
+- [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/index.md): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
+- [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/index.md): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
+
+## Search and site performance
+
+- [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/index.md): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
+- [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/index.md): Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.
+- [On-page SEO](https://gerriscorp.com/services/on-page-seo/index.md): Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.
+- [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/index.md): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
+- [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/index.md): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
+- [Website migrations](https://gerriscorp.com/services/migrations/index.md): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
+- [AI search visibility](https://gerriscorp.com/services/ai-search/index.md): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
+- [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/index.md): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
+
+## Specialist services
+
+- [Reputation and perception management](https://gerriscorp.com/services/reputation/index.md): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/index.md): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/index.md): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+
+## Guides
+
+- [Guides](https://gerriscorp.com/guides/index.md): Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.
+- [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/index.md): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
+- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/index.md): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
+- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/index.md): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
+- [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/index.md): A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
+- [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/index.md): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
+- [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/index.md): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
+- [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/index.md): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
+
+## About and working together
+
+- [Experienced help for the digital work your business needs done](https://gerriscorp.com/index.md): Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.
+- [Case studies](https://gerriscorp.com/case-studies/index.md): Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.
+- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/index.md): How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.
+- [About Chris Abraham](https://gerriscorp.com/about/index.md): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
+- [Work with me](https://gerriscorp.com/work-with-me/index.md): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
+- [Frequently asked questions](https://gerriscorp.com/faq/index.md): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
+- [Contact](https://gerriscorp.com/contact/index.md): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+- [Site map](https://gerriscorp.com/sitemap/index.md): A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 
 ## Optional
 
 - [Full text of this site](https://gerriscorp.com/llms-full.txt)
-- [Chris Abraham's personal site and blog](https://chrisabraham.com/)
+- [Chris Abraham's personal site](https://chrisabraham.com/)

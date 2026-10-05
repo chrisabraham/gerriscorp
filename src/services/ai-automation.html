@@ -1,0 +1,55 @@
+name: AI Agents and Automation
+title: AI agents and automation built safely with Claude Code
+description: Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+updated: 2026-10-05
+---
+<h1>AI agents and automation, built safely</h1>
+<p class="lead">Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.</p>
+
+<h2>Why I can build these</h2>
+<p>I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on <a href="{root}case-studies/built-with-claude-code/">Built with Claude Code</a>.</p>
+
+<h2>Safety by design</h2>
+<p>Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:</p>
+<ul>
+  <li><strong>A human confirms every external action.</strong> Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.</li>
+  <li><strong>Deterministic first.</strong> Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.</li>
+  <li><strong>Untrusted content is data.</strong> Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.</li>
+  <li><strong>Secrets stay out of Git.</strong> API keys and tokens live outside the repository.</li>
+  <li><strong>Tests and a real deploy loop.</strong> Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.</li>
+  <li><strong>Encrypted backups with tested restores.</strong> Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.</li>
+  <li><strong>Model choice by evidence.</strong> I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.</li>
+</ul>
+
+<h2>What I build for clients</h2>
+<p>Focused tools with a clear job: a morning briefing assembled from your tasks, calendar, and inbox; triage of incoming requests into your project tool; a research assistant that gathers sources and drafts a reviewable summary; integrations between systems that don't talk to each other; command-line tools for repetitive website and data chores; and audits of AI output before anyone relies on it.</p>
+
+<h2>How a pilot works</h2>
+<p>Every build starts as a pilot, defined in writing before work begins:</p>
+<ul>
+  <li><strong>Inputs:</strong> what goes in, from where.</li>
+  <li><strong>Permissions:</strong> which accounts and data it touches, and nothing more.</li>
+  <li><strong>Outputs:</strong> what it produces, where it's saved, and how a person reviews it.</li>
+  <li><strong>Acceptance:</strong> the tests that prove it works, run in front of you.</li>
+  <li><strong>Handover:</strong> the code in your repository, documentation, ownership of every account, and what to do when it fails.</li>
+</ul>
+
+<h2>The questions I ask</h2>
+<p>What's the actual job? What happens after this step? Where is the result saved? Can you recover it if something goes wrong? What does this error mean? Does the system remember what it needs to remember? Those questions decide whether an AI tool saves time or creates a new mess.</p>
+
+<h2>Advice before building</h2>
+<p>Not every team needs a custom tool. Often the right first step is advice: which tasks are worth automating, which off-the-shelf tools fit, what your team's working practices should be, and what should never be pasted into a public AI service. That's available on its own as part of <a href="{root}services/advisory/">strategic advisory</a>.</p>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>Who owns what you build?</h3>
+<p>You do. Pilots run on your accounts, and the code, prompts, tests, and documentation are handed over at the end.</p>
+<h3>Do you build large AI applications?</h3>
+<p>I build small, focused tools that prove value quickly. When a pilot needs to grow into a larger system, I specify it and work with developers who build at that scale.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="{root}case-studies/built-with-claude-code/">Built with Claude Code</a> · <a href="{root}services/data-cleanup/">Data cleanup and AI-output audits</a> · <a href="{root}services/advisory/">Strategic advisory</a></p>
+</div>
+
+<p><a class="button" href="{root}contact/">Tell me the workflow you'd automate</a></p>

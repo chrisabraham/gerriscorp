@@ -1,43 +1,68 @@
 name: Technical SEO
 title: Technical SEO forensics: why your site lost its traffic
-description: Chris Abraham diagnoses traffic drops and indexing problems with evidence, separates the causes, and turns each one into a fix your developers can ship.
+description: Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
+updated: 2026-10-05
 ---
 <h1>Technical SEO forensics and fixes</h1>
 <p class="lead">A site lost traffic and nobody knows why. My job is to find the mechanism, prove it, and get it fixed.</p>
+<p>Technical SEO is the work that decides whether search engines and AI systems can find, render, understand, and trust your pages. It's the part of SEO I love most: on-page structure, site speed, 301 redirects, canonical tags, indexing, and Google Search Console. Most sites that underperform have a technical cause hiding in plain sight, and most of those causes leave evidence.</p>
 
 <h2>When to call me</h2>
 <ul>
-  <li>Organic traffic fell after a redesign, a platform change, a template update, or for no visible reason.</li>
-  <li>Search Console reports pages as "Crawled, currently not indexed" or "Discovered, currently not indexed."</li>
-  <li>Important pages rank below thin ones, or the wrong URL ranks.</li>
-  <li>The site looks complete to people and empty to crawlers.</li>
+  <li>Organic traffic fell after a redesign, a platform change, a template update, a hosting move, or for no visible reason.</li>
+  <li>Search Console shows a growing pile of pages marked "Crawled, currently not indexed" or "Discovered, currently not indexed."</li>
+  <li>Important pages rank below thin ones, or Google picks a different URL than the one you want.</li>
+  <li>The site looks complete to people and nearly empty to crawlers.</li>
+  <li>Pages are slow on phones, or Core Web Vitals are failing.</li>
+  <li>Redirects have piled up over the years and nobody trusts them.</li>
 </ul>
 
 <h2>What I check</h2>
-<ul>
-  <li>Rendering: what crawlers actually receive, especially on JavaScript-heavy builds using Alpine, React, Next.js, or Vue.</li>
-  <li>Crawling and indexing: robots rules, sitemaps, canonical tags, status codes, and duplicate URLs.</li>
-  <li>Redirects and broken links, including chains, loops, and redirects to the wrong place.</li>
-  <li>Internal linking, titles, descriptions, and heading structure.</li>
-  <li>Structured data and how it matches the visible page.</li>
-  <li>Page speed and Core Web Vitals.</li>
-  <li>Backlink anomalies, such as a sudden spike in spam links.</li>
-</ul>
+<h3>Rendering</h3>
+<p>What crawlers actually receive, compared with what a visitor sees. JavaScript frameworks and lazy-loading patterns can leave product details, reviews, and FAQs out of the HTML a crawler reads. I compare the raw HTML, the rendered DOM, and a crawler's extraction for the same page. The <a href="{root}guides/javascript-seo/">JavaScript SEO guide</a> explains the method.</p>
+<h3>Crawling and indexing</h3>
+<p>Robots rules, XML sitemaps, canonical tags, status codes, parameters, pagination, duplicate URLs, and how Google's chosen canonical compares with yours. I read the Search Console page indexing report as a set of clues, then confirm each with URL Inspection and a crawl.</p>
+<h3>Redirects and broken links</h3>
+<p>Chains, loops, temporary redirects that should be permanent, redirects to irrelevant pages, and internal links that still point at old URLs.</p>
+<h3>On-page structure</h3>
+<p>Titles, meta descriptions, heading order, internal linking, image alt text, and whether each page says plainly what it's about.</p>
+<h3>Site speed and Core Web Vitals</h3>
+<p>Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real users where data exists and from lab tests where it doesn't. The usual culprits are oversized images, render-blocking CSS and JavaScript, third-party scripts, web fonts, and slow servers or missing caching.</p>
+<h3>Structured data</h3>
+<p>Schema.org JSON-LD for your organization, people, products, services, articles, and breadcrumbs, and whether it matches the visible page.</p>
+<h3>Off-site signals</h3>
+<p>Backlink anomalies such as a sudden spike in spam links, and whether they matter at all.</p>
 
 <h2>One cause at a time</h2>
-<p>Two problems often arrive together: a template change and a spam link spike, or a redirect error and a seasonal dip. I keep each on its own track until the data connects them, so every fix targets a proven cause.</p>
+<p>Two problems often arrive together: a template change and a spam link spike, or a redirect error and a seasonal dip. I keep each on its own track until the data connects them, so every fix targets a proven cause and nobody spends a quarter fixing the wrong thing.</p>
 
 <h2>What you get</h2>
 <ul>
-  <li>Findings with evidence: crawl data, Search Console reports, and example URLs.</li>
+  <li>Findings with evidence: crawl data, Search Console reports, rendered HTML comparisons, and example URLs.</li>
   <li>The mechanism, explained in plain language for owners and in technical detail for developers.</li>
-  <li>A prioritized list of fixes, each with an owner.</li>
-  <li>Developer tickets with affected URLs, observed behavior, and acceptance criteria.</li>
-  <li>A check of the live site once the fixes ship.</li>
+  <li>A prioritized list of fixes, each with an owner and an expected effect.</li>
+  <li>Developer tickets with affected URLs, observed behavior, the fix, and acceptance criteria.</li>
+  <li>A check of the live site once the fixes ship, and a follow-up read of Search Console as Google recrawls.</li>
 </ul>
-<p>I make the changes I have access to myself, in the CMS or the repository.</p>
+<p>I make the changes I have access to myself, in the CMS or the repository, and work with your developers on the rest. See <a href="{root}services/developers/">working with your developers</a>.</p>
 
 <h2>Tools</h2>
-<p>Google Search Console, GA4, Screaming Frog, Semrush, Ahrefs, PageSpeed Insights, Cloudflare, and the browser's own developer tools.</p>
+<p>Google Search Console, GA4, Screaming Frog, Semrush, Ahrefs, PageSpeed Insights and the Chrome UX Report, Cloudflare, browser developer tools, and the command line.</p>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>How long does a technical SEO diagnostic take?</h3>
+<p>Usually one to three weeks, depending on the size of the site, the access I have, and how many separate problems turn up. I agree the questions and the timeline in writing before I start.</p>
+<h3>What access do you need?</h3>
+<p>Search Console and analytics access, a staging or production URL I can crawl, and ideally read access to the CMS or repository so I can find the template behind a problem.</p>
+<h3>Do you fix things or only report them?</h3>
+<p>Both. I fix what I have access to and write developer-ready tickets for changes that belong in the codebase, then check the result once it's live.</p>
+<h3>How soon will traffic recover after the fixes?</h3>
+<p>Google has to recrawl and reprocess the affected pages first, which takes days for important pages and weeks or months for large sites. I track the recovery in Search Console and report what changes.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="{root}guides/crawled-not-indexed/">"Crawled, currently not indexed" explained</a> · <a href="{root}guides/javascript-seo/">JavaScript SEO</a> · <a href="{root}services/migrations/">Website migrations</a></p>
+</div>
 
 <p><a class="button" href="{root}contact/">Tell me what happened to your traffic</a></p>

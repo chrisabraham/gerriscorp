@@ -1,0 +1,51 @@
+name: Crawled, Not Indexed
+type: guide
+published: 2026-10-05
+updated: 2026-10-05
+title: Crawled, currently not indexed: what it means and the fix
+description: What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
+---
+<h1>"Crawled, currently not indexed": what it means and how to fix it</h1>
+<p class="lead">Google visited the page, read it, and decided not to put it in the index, at least for now. It's the most misunderstood status in Search Console, and the fix depends entirely on why Google made that call.</p>
+
+<h2>Where you see it</h2>
+<p>In Google Search Console, open Indexing, then Pages. The "Why pages aren't indexed" table lists every reason Google has for leaving URLs out. "Crawled, currently not indexed" means Googlebot fetched the URL successfully and chose not to index it. Google gives no specific reason, and the status alone isn't an error. Every large site has some URLs here, and many of them deserve to be.</p>
+
+<h2>How it differs from "Discovered, currently not indexed"</h2>
+<p>"Discovered, currently not indexed" means Google knows the URL exists and hasn't crawled it yet. That usually points to crawl priority: too many URLs, weak internal linking, a slow server, or a site Google doesn't consider worth crawling quickly. "Crawled, currently not indexed" means Google did crawl the page and judged it not worth indexing. One is about getting Google to look; the other is about what Google saw when it looked.</p>
+
+<h2>Common causes</h2>
+<ul>
+  <li><strong>Thin or duplicate content.</strong> Pages that say little, or say nearly the same thing as other pages: tag archives, near-identical location pages, product variants, and boilerplate-heavy templates.</li>
+  <li><strong>Content hidden from the renderer.</strong> The page looks rich to visitors, but Google's rendered HTML holds only the template, because the substance loads on scroll or click. The <a href="{root}guides/javascript-seo/">JavaScript SEO guide</a> shows how to check.</li>
+  <li><strong>Weak signals of importance.</strong> Few internal links, no external links, buried deep in the site.</li>
+  <li><strong>Low-value URL patterns.</strong> Filter and sort parameters, internal search results, and session URLs that multiply without adding anything.</li>
+  <li><strong>Soft 404s and empty states.</strong> Out-of-stock or "no results" pages that return a 200 status.</li>
+  <li><strong>A new or recently changed site.</strong> Google is still deciding, and many URLs move into the index over the following weeks.</li>
+</ul>
+
+<h2>A method that finds the real cause</h2>
+<ol>
+  <li><strong>Export the examples.</strong> Click the status in the report and export the URL list. Search Console shows a sample of up to 1,000 URLs.</li>
+  <li><strong>Group them by template.</strong> Sort the URLs into page types: product, category, article, location, tag, parameter. A status spread evenly across the site tells a different story than a cluster in one template.</li>
+  <li><strong>Ask whether each group deserves indexing.</strong> Parameter URLs, tag pages, and near-duplicates are often correctly excluded. Handle those with canonicals, noindex, or by removing the links that create them, and move on.</li>
+  <li><strong>Inspect the important ones.</strong> For pages that should rank, run URL Inspection, test the live URL, and read the rendered HTML. Is the main content there? Is the canonical the URL you expect? Is the page returning 200?</li>
+  <li><strong>Compare with pages that are indexed.</strong> Crawl both groups and compare word counts, internal links, duplication, and load time. The difference usually points at the cause.</li>
+  <li><strong>Check the dates.</strong> Line up when the count started rising with deployments, template changes, migrations, and plugin updates.</li>
+  <li><strong>Keep other problems separate.</strong> A backlink spike or a redirect error at the same time may be a coincidence. Investigate each on its own track until the data connects them.</li>
+</ol>
+
+<h2>Fixes, by cause</h2>
+<ul>
+  <li>Thin or duplicate pages: merge them, expand them with real substance, or canonicalize them to the strongest version.</li>
+  <li>Hidden content: render it in the server's HTML.</li>
+  <li>Weak signals: link to the pages from relevant, indexed pages and from navigation where it makes sense.</li>
+  <li>Low-value patterns: stop generating crawlable links to them, and keep them out with canonicals or noindex.</li>
+  <li>Soft 404s: return a real 404 or 410, or give the page useful content.</li>
+</ul>
+<p>After the fix ships, click "Validate fix" in the report. Validation takes days to weeks, and Google reprocesses pages at its own pace. Request indexing through URL Inspection for a handful of the most important pages.</p>
+
+<h2>When it's a crisis</h2>
+<p>A sudden rise concentrated in your most valuable template, with a matching traffic drop, is a technical emergency, and it's usually a rendering or template change. A slow, even scatter across low-value pages is housekeeping. Telling the two apart is the first job.</p>
+
+<p class="related">I diagnose indexing problems as part of <a href="{root}services/technical-seo/">technical SEO forensics</a> and <a href="{root}services/search-console/">Search Console cleanup</a>.</p>

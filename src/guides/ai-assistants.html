@@ -1,0 +1,65 @@
+name: AI Assistants
+type: guide
+published: 2026-10-05
+updated: 2026-10-05
+title: How AI assistants decide what to say about your business
+description: Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
+---
+<h1>How AI assistants decide what to say about your business</h1>
+<p class="lead">When someone asks ChatGPT, Claude, Gemini, Perplexity, or Google's AI Overviews about your company, the answer comes from two places: what the model learned in training, and what it finds by searching the web right then. You can influence both, and the second is where most of the action is.</p>
+
+<h2>Two sources of knowledge</h2>
+<h3>Training data</h3>
+<p>Every large language model is trained on a huge snapshot of text, much of it crawled from the public web, and that knowledge stops at a training cutoff. What a model "knows" about you from training reflects whatever was public and widely repeated before that date. It changes only when the company trains a new model, so it lags reality by months or years. Older press coverage, Wikipedia, directories, and anything that was repeated often all weigh heavily here.</p>
+<h3>Live retrieval</h3>
+<p>Most assistants now search the web before answering questions about specific businesses, products, and recent events. The assistant turns the question into one or more searches, reads the top results, and writes an answer grounded in those pages, often with citations. This is called retrieval or grounding, and it means a page that ranks well and answers the question clearly can shape the answer within days of being published.</p>
+
+<h2>Which search indexes feed which assistants</h2>
+<ul>
+  <li><strong>Google AI Overviews and AI Mode</strong> are built on Google Search's own index, crawled by Googlebot.</li>
+  <li><strong>Gemini</strong> grounds its answers with Google Search.</li>
+  <li><strong>Microsoft Copilot</strong> uses Bing's index.</li>
+  <li><strong>ChatGPT search</strong> uses OpenAI's own crawler, OAI-SearchBot, alongside third-party search providers.</li>
+  <li><strong>Perplexity</strong> runs its own crawler, PerplexityBot, and its own index.</li>
+  <li><strong>Claude</strong> searches the web through a search provider and fetches pages with Anthropic's crawlers.</li>
+</ul>
+<p>The practical lesson: being well indexed in both Google and Bing covers most of the AI landscape. Bing Webmaster Tools and IndexNow, which tells Bing and other engines about changed pages within minutes, matter more than they used to.</p>
+
+<h2>The crawlers, and what each one is for</h2>
+<table>
+<thead><tr><th>Company</th><th>Training</th><th>Search index</th><th>Fetches for a user</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>GPTBot</td><td>OAI-SearchBot</td><td>ChatGPT-User</td></tr>
+<tr><td>Anthropic</td><td>ClaudeBot</td><td>Claude-SearchBot</td><td>Claude-User</td></tr>
+<tr><td>Perplexity</td><td>(none listed)</td><td>PerplexityBot</td><td>Perplexity-User</td></tr>
+<tr><td>Google</td><td>Google-Extended (a robots.txt token)</td><td>Googlebot</td><td>Google's user-triggered fetchers</td></tr>
+</tbody>
+</table>
+<p>You can allow or block each in robots.txt. Blocking a training crawler keeps your future pages out of future models; blocking a search crawler keeps you out of that assistant's live answers. Google-Extended controls whether your content is used for Gemini, and it doesn't affect Google Search or AI Overviews, which follow Googlebot. Check your CDN, too: Cloudflare began blocking many AI crawlers by default on new setups in 2025, which can keep a business out of AI answers without anyone deciding that on purpose.</p>
+
+<h2>What assistants favor when they write an answer</h2>
+<ul>
+  <li><strong>Direct answers.</strong> Pages that state the answer plainly near the top, in a sentence that still makes sense when quoted on its own.</li>
+  <li><strong>Self-contained context.</strong> Definitions, dates, locations, and names on the page itself, so the assistant doesn't have to guess.</li>
+  <li><strong>Consistency.</strong> The same facts about you on your site, your profiles, directories, and press. Conflicting facts produce hedged or wrong answers.</li>
+  <li><strong>Third-party confirmation.</strong> Reviews, news coverage, industry directories, and community discussions. Assistants treat what others say about you as evidence.</li>
+  <li><strong>Freshness.</strong> Visible "updated" dates and current information, especially for anything that changes.</li>
+  <li><strong>Readable HTML.</strong> Most AI crawlers fetch the HTML without running JavaScript, so content that appears only after scripts run is invisible to them. The <a href="{root}guides/javascript-seo/">JavaScript SEO guide</a> shows how to check.</li>
+</ul>
+
+<h2>What you can do this quarter</h2>
+<ol>
+  <li>Ask the major assistants the ten questions your buyers ask, and write down the answers and the sources cited.</li>
+  <li>Fix your own pages first: one clear page per service or product, with the facts stated plainly and an FAQ section with real answers.</li>
+  <li>Make your facts consistent everywhere: name, description, location, founding date, leadership, services, prices where public.</li>
+  <li>Add schema.org structured data for your organization, people, products, and services, matching the visible page.</li>
+  <li>Check robots.txt and your CDN's bot settings for the AI crawlers you want.</li>
+  <li>Submit your sitemap to Google Search Console and Bing Webmaster Tools, and turn on IndexNow.</li>
+  <li>Consider an <a href="{root}guides/glossary/#llms-txt">llms.txt</a> file. It's a proposed convention from 2024 that gives language models a plain summary of your site; adoption by AI companies is still uncertain, and it costs almost nothing.</li>
+  <li>Repeat the same questions in a month and compare.</li>
+</ol>
+
+<h2>Measuring it</h2>
+<p>AI answers vary with phrasing, location, account history, and time, so a single test proves little. Use a fixed set of prompts, run them on a schedule, and record the answers and citations. Add referral traffic from chatgpt.com, perplexity.ai, gemini.google.com, and copilot.microsoft.com in analytics, and watch which pages they land on.</p>
+
+<p class="related">I do this work as <a href="{root}services/ai-search/">AI search visibility</a>, starting with an AI search readiness audit.</p>

@@ -1,17 +1,55 @@
 name: Email and DNS
 title: Email authentication and DNS: SPF, DKIM, DMARC, and domains
-description: Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS without breaking email or losing search equity.
+description: Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+updated: 2026-10-05
 ---
 <h1>Email authentication and DNS</h1>
-<p class="lead">Unglamorous plumbing that decides whether your email arrives and your domains keep their value.</p>
+<p class="lead">Unglamorous plumbing that decides whether your email arrives and whether your domains keep their value.</p>
+<p>Since February 2024, Gmail and Yahoo have required authenticated email, and Microsoft's Outlook.com followed in May 2025 for high-volume senders. Mail that fails authentication lands in spam or bounces. At the same time, DNS is where websites, email, and verification records all live, so a careless change for a website move can quietly break email. I handle both with an inventory first and a change list second.</p>
 
-<h2>What I do</h2>
+<h2>Email authentication</h2>
 <ul>
-  <li>SPF, DKIM, and DMARC set up correctly for every service that sends mail as you.</li>
-  <li>Deliverability problems traced to their cause.</li>
-  <li>DNS inventories before any change, so nothing breaks by accident.</li>
-  <li>Domain consolidation, including internationalized domains, with 301 redirects that carry search equity to the right place.</li>
-  <li>Moving a website to new hosting while email stays exactly where it is.</li>
+  <li><strong>SPF</strong> listing every service allowed to send as your domain, within the ten-lookup limit.</li>
+  <li><strong>DKIM</strong> signing for your mailbox provider and every sending service: newsletters, CRM, invoicing, help desk.</li>
+  <li><strong>DMARC</strong> starting at monitoring, reading the aggregate reports to find every legitimate sender, then tightening to quarantine and reject.</li>
+  <li>Alignment, one-click unsubscribe headers for bulk mail, and spam-rate monitoring in Google Postmaster Tools.</li>
 </ul>
+<p>The <a href="{root}guides/email-authentication/">SPF, DKIM, and DMARC guide</a> explains each record and the current requirements.</p>
+
+<h2>Deliverability</h2>
+<p>When mail goes missing, I trace it: authentication results in message headers, DMARC reports, blocklists, sending reputation, and content. Then I fix the cause.</p>
+
+<h2>DNS and domains</h2>
+<ul>
+  <li>A complete DNS inventory before any change, so nothing breaks by accident.</li>
+  <li>Moves between DNS providers, such as Cloudflare, Squarespace, GoDaddy, and Route 53, without downtime.</li>
+  <li>Website moves that change only the web records and leave mail exactly where it is.</li>
+  <li>Domain consolidation, including internationalized domains, with 301 redirects that carry search equity to the right place.</li>
+  <li>Verification records for Google, Microsoft, and other services kept intact and documented.</li>
+</ul>
+
+<h2>How an engagement runs</h2>
+<ol>
+  <li>A complete export of every DNS record, and a list of every service that sends mail as your domain.</li>
+  <li>A written change plan: what changes, what stays, and in what order.</li>
+  <li>The changes, made in a quiet period with time-to-live values lowered first.</li>
+  <li>Verification with test messages, header analysis, and DMARC reports.</li>
+  <li>A record of the final configuration, so the next person who touches DNS knows what everything does.</li>
+</ol>
+
+<h2>Domains you own but don't use</h2>
+<p>Old brand names, typo domains, and defensive registrations need attention too. Parked domains get spoofed for phishing, so they need SPF and DMARC records that reject all mail, and any that still attract visitors or links should redirect to the right place on your main site.</p>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>How long does DMARC take to set up?</h3>
+<p>The records take minutes. Moving safely from monitoring to enforcement usually takes a few weeks of reading reports, because every legitimate sender has to be found and authenticated first.</p>
+<h3>Will changing DNS take my site or email offline?</h3>
+<p>Not when it's planned. I copy every record, lower time-to-live values ahead of the change, and verify mail and web after the switch.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="{root}guides/email-authentication/">SPF, DKIM, and DMARC explained</a> · <a href="{root}services/site-speed/">Site speed and Cloudflare</a> · <a href="{root}services/migrations/">Website migrations</a></p>
+</div>
 
 <p><a class="button" href="{root}contact/">Get your email and domains in order</a></p>

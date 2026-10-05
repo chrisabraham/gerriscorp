@@ -1,0 +1,68 @@
+name: Email Authentication
+type: guide
+published: 2026-10-05
+updated: 2026-10-05
+title: SPF, DKIM, and DMARC explained for domains that send email
+description: What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
+---
+<h1>SPF, DKIM, and DMARC for every domain that sends email</h1>
+<p class="lead">Three DNS records decide whether mail from your domain is trusted. Since 2024, the largest mailbox providers require them, and mail without them increasingly lands in spam or bounces.</p>
+
+<h2>The current requirements</h2>
+<p>Since February 2024, Gmail and Yahoo require every sender to authenticate mail with SPF or DKIM, to have valid forward and reverse DNS for sending servers, and to keep spam complaint rates low. Bulk senders, those sending around 5,000 or more messages a day to Gmail accounts, must also have SPF, DKIM, and a DMARC policy, align the visible From domain with SPF or DKIM, offer one-click unsubscribe on marketing mail, and keep the spam rate reported in Google Postmaster Tools below 0.3%. Since May 2025, Microsoft's Outlook.com has required SPF, DKIM, and DMARC from senders of more than 5,000 messages a day to its consumer addresses.</p>
+<p>Even small businesses are affected, because a newsletter tool, CRM, invoicing system, or help desk sending as your domain counts as a sender.</p>
+
+<h2>SPF: who may send</h2>
+<p>SPF (Sender Policy Framework) is a TXT record on your domain listing the servers and services allowed to send mail as you.</p>
+<pre><code>example.com.  TXT  "v=spf1 include:_spf.google.com include:sendgrid.net ~all"</code></pre>
+<ul>
+  <li>Publish exactly one SPF record per domain. Two records break SPF.</li>
+  <li>SPF allows at most ten DNS lookups. Each <code>include</code> counts, and nested includes count too. Too many services can push you over.</li>
+  <li><code>~all</code> (soft fail) is the common ending; <code>-all</code> (fail) is stricter. With DMARC in place, either works.</li>
+</ul>
+
+<h2>DKIM: a signature on every message</h2>
+<p>DKIM (DomainKeys Identified Mail) signs each message with a private key; receivers check the signature against a public key published in DNS under a selector.</p>
+<pre><code>google._domainkey.example.com.  TXT  "v=DKIM1; k=rsa; p=MIIBIjANBgkq..."</code></pre>
+<ul>
+  <li>Every service that sends as your domain needs its own DKIM setup, usually a TXT or CNAME record the service provides.</li>
+  <li>Use 2048-bit keys where the service offers them.</li>
+  <li>DKIM survives forwarding better than SPF, which makes it the more reliable of the two for DMARC alignment.</li>
+</ul>
+
+<h2>DMARC: the policy that ties them together</h2>
+<p>DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receivers what to do when a message claiming to be from your domain fails authentication, and asks them to send you reports.</p>
+<pre><code>_dmarc.example.com.  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com"</code></pre>
+<ul>
+  <li>A message passes DMARC when SPF or DKIM passes and the domain it passed for aligns with the visible From address.</li>
+  <li><code>p=none</code> monitors only, <code>p=quarantine</code> sends failures to spam, and <code>p=reject</code> refuses them.</li>
+  <li><code>rua</code> sets where daily aggregate reports go. They're XML files listing every source that sent mail as your domain and whether it passed.</li>
+</ul>
+
+<h2>Reaching enforcement safely</h2>
+<ol>
+  <li>Inventory every service that sends mail as your domain.</li>
+  <li>Set up SPF and DKIM for each.</li>
+  <li>Publish DMARC at <code>p=none</code> with reporting, and read the reports for two to four weeks, using a report viewer to make them readable.</li>
+  <li>Fix every legitimate source that fails.</li>
+  <li>Move to <code>p=quarantine</code>, optionally with <code>pct</code> below 100 to phase it in, and keep reading reports.</li>
+  <li>Move to <code>p=reject</code> once failures are only spoofing.</li>
+</ol>
+<p>Enforcement is what stops criminals sending invoices and password resets in your name. It also unlocks BIMI, which can show your logo next to your mail in supporting inboxes when combined with a verified mark certificate.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li>Two SPF records after a new service is added, which invalidates both.</li>
+  <li>A sending service set up without DKIM, so its mail fails DMARC once enforcement begins.</li>
+  <li>DMARC reports sent to a mailbox nobody reads.</li>
+  <li>Jumping straight to <code>p=reject</code> and blocking legitimate invoices or password resets.</li>
+  <li>Mail records lost during a DNS provider change because only the web records were copied.</li>
+</ul>
+
+<h2>Domains that don't send mail</h2>
+<p>Parked and secondary domains get spoofed too. Protect them with an SPF record of <code>v=spf1 -all</code>, a DMARC record at <code>p=reject</code>, and no MX records if they receive no mail.</p>
+
+<h2>Changing DNS without breaking mail</h2>
+<p>Website moves, CDN setups, and DNS provider changes are when mail records get lost. Export every record first, recreate them exactly, keep MX, SPF, DKIM, and DMARC untouched unless they're the point of the change, and send test messages afterward. Header analyzers show exactly which checks passed.</p>
+
+<p class="related">I set this up and troubleshoot deliverability as <a href="{root}services/email-and-dns/">email authentication and DNS</a> work.</p>

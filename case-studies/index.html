@@ -3,36 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Case studies: technical SEO, migrations, and schema work</title>
-<meta name="description" content="Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.">
+<title>Case studies: technical direction, rescues, and forensics</title>
+<meta name="description" content="Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://gerriscorp.com/case-studies/">
 <meta name="author" content="Chris Abraham">
 <link rel="icon" href="../logo.png" type="image/png">
 <link rel="apple-touch-icon" href="../logo.png">
 <link rel="manifest" href="../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
+<link rel="sitemap" type="application/xml" href="../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Case studies: technical SEO, migrations, and schema work">
-<meta property="og:description" content="Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.">
+<meta property="og:title" content="Case studies: technical direction, rescues, and forensics">
+<meta property="og:description" content="Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.">
 <meta property="og:url" content="https://gerriscorp.com/case-studies/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@chrisabraham">
-<meta name="twitter:title" content="Case studies: technical SEO, migrations, and schema work">
-<meta name="twitter:description" content="Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.">
+<meta name="twitter:title" content="Case studies: technical direction, rescues, and forensics">
+<meta name="twitter:description" content="Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1rem; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
 a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid #000; outline-offset: 2px; }
@@ -45,28 +47,39 @@ img { max-width: 100%; height: auto; }
 .brand:hover { text-decoration: underline; }
 .tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
 nav { border-bottom: 4px solid var(--bar); }
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
 nav li { margin: 0; }
-nav a { display: block; padding: .4rem .8rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .95rem; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
 nav a:hover { background: var(--bar); text-decoration: underline; }
 nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
 .crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
 main { padding: 1.25rem 0 2rem; }
 h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
 h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
-p, ul { margin: 0 0 1rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
 li { margin-bottom: .4rem; }
 .lead { font-size: 1.1rem; }
-code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
 .button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
 .button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
 @media (max-width: 34rem) {
   body { font-size: 17px; }
   .top img { width: 52px; height: 52px; }
-  nav a { padding: .45rem .6rem; font-size: .9rem; }
+  nav a { padding: .45rem .55rem; }
   h1 { font-size: 1.5rem; }
 }
 </style>
@@ -95,7 +108,14 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "url": "https://gerriscorp.com/",
    "logo": "https://gerriscorp.com/logo.png",
    "image": "https://gerriscorp.com/social-card.png",
-   "description": "Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management.",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
    "email": "chris@gerriscorp.com",
    "telephone": "+1-202-352-5051",
    "address": {
@@ -105,23 +125,30 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     "addressCountry": "US"
    },
    "areaServed": "Worldwide",
-   "founder": {
-    "@id": "https://chrisabraham.com/#person"
-   },
-   "employee": {
-    "@id": "https://chrisabraham.com/#person"
-   },
    "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
     "Technical SEO",
-    "JavaScript rendering and indexing",
+    "JavaScript SEO",
+    "Indexing",
     "Website migrations",
     "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
     "Answer engine optimization",
     "Generative engine optimization",
-    "Structured data",
+    "llms.txt",
     "Online reputation management",
+    "Data broker removal",
     "Google Business Profile",
-    "SPF, DKIM, and DMARC"
+    "SPF",
+    "DKIM",
+    "DMARC"
    ],
    "sameAs": [
     "https://www.upwork.com/freelancers/chrisjabraham",
@@ -134,7 +161,7 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "name": "Chris Abraham",
    "alternateName": "Christopher Abraham",
    "url": "https://chrisabraham.com/",
-   "jobTitle": "Founder",
+   "jobTitle": "Founder and principal consultant",
    "worksFor": {
     "@id": "https://gerriscorp.com/#org"
    },
@@ -143,23 +170,45 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     "@type": "Place",
     "name": "Arlington, Virginia"
    },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
    "sameAs": [
     "https://chrisabraham.com/",
-    "https://www.linkedin.com/in/chrisabraham",
-    "https://twitter.com/chrisabraham",
-    "https://www.instagram.com/chrisabraham",
-    "https://www.facebook.com/chrisabraham",
     "https://www.upwork.com/freelancers/chrisjabraham",
-    "https://github.com/chrisabraham",
     "https://hillmole.com/"
    ]
   },
   {
-   "@type": "WebPage",
+   "@type": "CollectionPage",
    "@id": "https://gerriscorp.com/case-studies/#webpage",
    "url": "https://gerriscorp.com/case-studies/",
-   "name": "Case studies: technical SEO, migrations, and schema work",
-   "description": "Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.",
+   "name": "Case studies: technical direction, rescues, and forensics",
+   "description": "Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -169,8 +218,22 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
    "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
    "breadcrumb": {
     "@id": "https://gerriscorp.com/case-studies/#breadcrumb"
+   },
+   "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://gerriscorp.com/case-studies/built-with-claude-code/",
+      "name": "Built with Claude Code"
+     }
+    ]
    }
   },
   {
@@ -202,13 +265,14 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
   <a href="../"><img src="../logo.png" width="64" height="64" alt="Gerris home"></a>
   <div>
     <a class="brand" href="../">Gerris</a>
-    <p class="tag">Chris Abraham: technical SEO, AI search, and reputation</p>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
     <li><a href="../">Home</a></li>
     <li><a href="../services/">Services</a></li>
+    <li><a href="../guides/">Guides</a></li>
     <li><a href="../case-studies/" aria-current="page">Case Studies</a></li>
     <li><a href="../about/">About</a></li>
     <li><a href="../work-with-me/">Work With Me</a></li>
@@ -217,34 +281,55 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
 </nav>
 <main id="main">
 <h1>Case studies</h1>
-<p class="lead">Client work is described by industry and problem. I name clients only with their permission.</p>
+<p class="lead">Each case describes the problem, what I did, who did what, and how the work was checked. Clients are described by industry; I name them only with their permission.</p>
 
-<h2>E-commerce: product pages invisible to crawlers</h2>
-<p><strong>Problem.</strong> An e-commerce site was losing organic traffic, and nobody knew why.</p>
-<p><strong>What I found.</strong> The product templates used Alpine.js to render specs, FAQs, and reviews only when a visitor scrolled them into view. A Screaming Frog crawl showed category pages with thousands of words of extractable text, while flagship product pages yielded 250 to 400 words despite weighing more than 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed," with the rest of the site indexed normally.</p>
-<p><strong>Separate tracks.</strong> A spike in spam backlinks and a redirect error showed up at the same time. I investigated each separately and kept them out of the rendering diagnosis until the data connected them.</p>
-<p><strong>Deliverable.</strong> The mechanism, the evidence, and developer tickets to render the content in the initial HTML.</p>
+<h2>E-commerce on Magento and Hyvä: product content Googlebot never saw</h2>
+<p><strong>Problem.</strong> Organic traffic was falling and the client's team had no explanation.</p>
+<p><strong>What I found.</strong> Product templates used Alpine.js to mount specifications, FAQs, and reviews only when a visitor scrolled them into view, with <code>x-intersect</code> wrapped around <code>x-if</code>. A crawl showed category pages with thousands of words and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed." A spam backlink spike and a redirect problem in the same period were investigated on separate tracks.</p>
+<p><strong>Deliverable.</strong> The mechanism, the evidence, and a developer spec with acceptance criteria. See <a href="../services/crawler-visibility/">content the crawler never sees</a>.</p>
 
-<h2>WordPress to Netlify migration</h2>
-<p><strong>Work.</strong> URL reconciliation between the old WordPress site and the new Netlify build, a redirect map, decisions on intentionally removed pages, orphaned URL checks, and sitemap verification, in collaboration with the site's developer.</p>
+<h2>WordPress media site: consent management hiding every article</h2>
+<p><strong>Problem.</strong> Large numbers of articles sat in "Crawled, currently not indexed," with no crawl errors anywhere.</p>
+<p><strong>What I found.</strong> The site's consent-management platform blocked scripts for visitors who hadn't accepted cookies, including the script that initialized the jQuery UI tabs holding each article's content. Googlebot never accepts cookies, so it saw empty tabs on every page.</p>
+<p><strong>How it was checked.</strong> Rendered HTML from Search Console's live test compared with a consenting browser session.</p>
 
-<h2>Landing pages and schema for a signage and mailbox company</h2>
-<p><strong>Work.</strong> A set of new landing pages with structured data, built so each product line has a clear page that search engines and AI assistants can understand.</p>
+<h2>React event platform: links crawlers couldn't follow</h2>
+<p><strong>Problem.</strong> Server-side rendering had been added, yet pages still weren't being discovered.</p>
+<p><strong>What I found.</strong> Navigation used the router's click handlers without real anchor links, so crawlers had no paths to the pages rendering had already fixed. The fix was real <code>&lt;a href&gt;</code> links.</p>
 
-<h2>Recurring publishing on Umbraco</h2>
-<p><strong>Work.</strong> Regular content publishing and on-page SEO inside an Umbraco CMS: formatting, titles, descriptions, internal links, and structured data on every page.</p>
+<h2>Clinical practice: migration investigation and technical direction</h2>
+<p><strong>Problem.</strong> A practice moving from WordPress to a Next.js site on Netlify needed to know what the new site still depended on from the old one.</p>
+<p><strong>What I did.</strong> Combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository using Claude Code. The analysis identified thousands of references to media still hosted on the old WordPress site and the handful of central files responsible. I turned that into a developer-ready plan, and worked on sequencing, media and redirect requirements, DNS review, and launch verification. The site's developer carried out the implementation.</p>
+
+<h2>Consumer skincare brand: application takeover and operations</h2>
+<p><strong>Problem.</strong> A React application changed hands after an outage, with project files, credentials, hosting, DNS, and repository arrangements spread across several parties.</p>
+<p><strong>What I did.</strong> Assessed the handoff and inventoried what existed. Then, hands-on, I worked on the DigitalOcean Linux server over SSH: edited environment and application configuration, managed the application with PM2, and diagnosed a port conflict that was keeping it down.</p>
+
+<h2>Seasonal multi-site retailer: business-aware technical planning</h2>
+<p><strong>Problem.</strong> A retailer with several sites and its own staff needed technical problems fixed without disrupting its peak season.</p>
+<p><strong>What I did.</strong> Brought in as the accountable lead working with the client's existing people, I proposed the investigation, the access needed, a migration review, and a staged plan that put risky changes after the peak.</p>
+
+<h2>Shopify: duplicate and broken product schema</h2>
+<p><strong>What I did.</strong> Working in a duplicated theme so the live store was never at risk, I edited the Liquid templates, found an HTML-encoding bug corrupting the structured data output, and consolidated duplicate Product schema into a single valid block.</p>
+
+<h2>Contact data: a 28,000-record cleanup and an AI tracker audit</h2>
+<p><strong>What I did.</strong> Built Python pipelines to clean and deduplicate more than 28,000 exported contact records, with name validation by country, name recovery from email addresses, and a resolution status on every record. Separately, I audited an AI-generated outreach tracker that marked bounced and nonexistent contacts as sent, with fabricated timestamps, and rebuilt it into a verified list: 452 rows became 392 real contacts. See <a href="../services/data-cleanup/">data cleanup</a>.</p>
+
+<h2>Measurement: a drop that wasn't a decline</h2>
+<p><strong>What I did.</strong> Traced an industry-wide drop in AI visibility scores to a change in the vendor's methodology, which kept a client from reacting to a decline that hadn't happened.</p>
 
 <h2>Long-term perception management for a founder</h2>
-<p><strong>Work.</strong> An eight-year retainer shaping search results and the public record for a high-net-worth founder, now running alongside a security firm's open-source intelligence program. Monthly reporting throughout.</p>
+<p><strong>What I do.</strong> An eight-year retainer shaping search results and the public record for a high-net-worth founder, removing personal information from data brokers, and reporting monthly, now alongside a security firm's open-source intelligence program.</p>
 
-<h2>My own project: hillmole.com</h2>
-<p><strong>Work.</strong> <a href="https://hillmole.com/">Hill Mole</a>, my serialized novel of 309 entries written from 2005 to 2022, moved from a broken Movable Type install to static pages on GitHub Pages. Every original URL still answers. Every entry has a hand-written title and description, schema.org data, and llms.txt coverage, and new entries are submitted through IndexNow.</p>
+<h2>My own builds</h2>
+<p>Blackbox, my command-line assistant, Hill Mole's move off Movable Type, and this site are covered on <a href="../case-studies/built-with-claude-code/">Built with Claude Code</a>.</p>
 
 <p><a class="button" href="../contact/">Tell me about your problem</a></p>
+<p class="updated">Updated October 5, 2026</p>
 </main>
 <footer class="site-footer">
-  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="https://chrisabraham.com/">chrisabraham.com</a> · <a href="../llms.txt">llms.txt</a></p>
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../faq/">FAQ</a> · <a href="../sitemap/">Site map</a> · <a href="../guides/glossary/">Glossary</a> · <a href="../llms.txt">llms.txt</a> · <a href="../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>
