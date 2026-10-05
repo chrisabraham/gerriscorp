@@ -728,18 +728,18 @@ dd { margin: .2rem 0 0 0; }
 <p class="lead">Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.</p>
 
 <h2>Why I can build these</h2>
-<p>I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on <a href="../../case-studies/built-with-claude-code/">Built with Claude Code</a>.</p>
+<p>I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on <a href="../../case-studies/built-with-claude-code/">Built with Claude Code</a>.</p>
 
 <h2>Safety by design</h2>
-<p>Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:</p>
+<p>Companies are discovering that AI agents need guardrails. Every tool I build for you comes with these:</p>
 <ul>
-  <li><strong>A human confirms every external action.</strong> Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.</li>
-  <li><strong>Deterministic first.</strong> Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.</li>
-  <li><strong>Untrusted content is data.</strong> Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.</li>
-  <li><strong>Secrets stay out of Git.</strong> API keys and tokens live outside the repository.</li>
-  <li><strong>Tests and a real deploy loop.</strong> Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.</li>
-  <li><strong>Encrypted backups with tested restores.</strong> Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.</li>
-  <li><strong>Model choice by evidence.</strong> I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.</li>
+  <li><strong>You approve every action that leaves the system.</strong> Emails, payments, posts, and deletions wait for a person to confirm a single, specific target.</li>
+  <li><strong>Plain code wherever possible.</strong> Routine steps run as ordinary, predictable code; a model is called only for writing and judgment, which keeps running costs to pennies.</li>
+  <li><strong>Defense against prompt injection.</strong> Anything the tool reads from outside, such as an email or a web page, is handled as material to work on and never as a command to follow.</li>
+  <li><strong>Credentials kept out of the code repository,</strong> in your own secret store.</li>
+  <li><strong>Automated tests</strong> that run before every change ships, plus a quick check on the live system afterward.</li>
+  <li><strong>Encrypted backups</strong> with a restore you've watched work.</li>
+  <li><strong>The right model for the job,</strong> chosen by testing candidates on your real task rather than by brand.</li>
 </ul>
 
 <h2>What I build for clients</h2>

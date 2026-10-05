@@ -554,11 +554,24 @@ open("sitemap.xsl", "w", encoding="utf-8").write(f"""<?xml version="1.0" encodin
 """)
 
 open("robots.txt", "w", encoding="utf-8").write("""# Search engines and AI assistants are welcome to read and cite everything here.
+#
+# Search engines get the HTML pages only. The Markdown twins (index.md),
+# llm.txt, and llms-full.txt repeat the HTML word for word, so search
+# indexes skip them to avoid duplicate-content reports. AI assistants,
+# which read them in place of HTML, get everything.
 User-agent: *
 Allow: /
 
 User-agent: Googlebot
 User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: YandexBot
+Allow: /
+Disallow: /*.md$
+Disallow: /llm.txt
+Disallow: /llms-full.txt
+
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
@@ -568,7 +581,6 @@ User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: Google-Extended
-User-agent: Applebot
 User-agent: Applebot-Extended
 User-agent: Amazonbot
 User-agent: DuckAssistBot
@@ -653,8 +665,33 @@ for p in pages:
     for target in re.findall(r'href="\{root\}([^"#]*)', p["body"]):
         if target and target not in by_path and not os.path.exists(target):
             problems.append(f"{where}: link to missing page {target}")
+# Distinct content: no two pages may share more than 15% of their six-word phrases,
+# and no sentence of ten or more words may appear on more than one page.
+# Keeps Search Console from treating pages as duplicates or near-duplicates.
+def _words(p):
+    t = text_of(re.sub(r"<pre>.*?</pre>", "", p["body"], flags=re.S))
+    return t, re.findall(r"[a-z0-9']+", t.lower())
+_sh, _sent = {}, {}
+for p in pages:
+    if p["path"] == "sitemap/":
+        continue  # the site map lists every page's description by design
+    t, w = _words(p)
+    _sh[p["path"]] = {" ".join(w[i:i + 6]) for i in range(len(w) - 5)}
+    for sentence in re.split(r"(?<=[.!?])\s+", t):
+        if len(sentence.split()) >= 10:
+            _sent.setdefault(sentence.strip(), []).append(p["path"] or "/")
+_paths = list(_sh)
+for i, a in enumerate(_paths):
+    for c in _paths[i + 1:]:
+        small = min(len(_sh[a]), len(_sh[c])) or 1
+        share = len(_sh[a] & _sh[c]) / small
+        if share > 0.15:
+            problems.append(f"/{a} and /{c} share {share:.0%} of their phrasing")
+for sentence, where in _sent.items():
+    if len(where) > 1:
+        problems.append(f"sentence repeated on {', '.join(where)}: {sentence[:80]}")
 if "Gerris" not in pages[0]["title"]: problems.append("home title should carry the name")
-for key in ("title", "description"):
+for key in ("title", "description", "h1"):
     seen = [p[key] for p in pages]
     for s in set(seen):
         if seen.count(s) > 1: problems.append(f"duplicate {key}: {s}")

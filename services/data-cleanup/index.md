@@ -8,20 +8,13 @@ Contact lists with thousands of duplicates. CRMs nobody trusts. Confident-lookin
 
 ## Contact list and CRM cleanup
 
-I build Python pipelines for the job instead of cleaning by hand, so the work is repeatable and every change can be traced. On a recent project with more than 28,000 exported records, the pipeline:
-- Remapped broken export formats into consistent columns.
-- Validated first and last names by country against a large names dataset, ranking how plausible each name is.
-- Rescued missing names from email address prefixes, and detected surnames entered in the wrong field.
-- Deduplicated contacts across domains and spelling variants.
-- Assigned every record a resolution status, so nothing was silently dropped.
+I build Python pipelines for the job instead of cleaning by hand, so the work is repeatable and every change can be traced. A typical pipeline repairs broken export columns, checks names for plausibility by country, recovers missing names from email addresses, catches surnames in the wrong field, merges duplicates across domains and spellings, and gives every record a status explaining what happened to it. I've run this on lists from a few thousand records to nearly ninety thousand. The details are in the [data cleanup case study](https://gerriscorp.com/case-studies/data-cleanup/).
 
-The same approach works for CRM exports, newsletter lists, event registrations, and merged lists after an acquisition.
+The same approach works for CRM exports, newsletter lists, event registrations, and lists merged after an acquisition.
 
 ## Auditing AI output
 
-AI tools now produce trackers, reports, and spreadsheets that look finished. Some of them contain fabricated values. In one audit, an AI-generated outreach tracker marked bounced and nonexistent contacts as sent, carried uniform timestamps that couldn't be real, and repeated contacts. I rebuilt it against the actual sending records into a verified master list: 452 rows became 392 real contacts, each with a status the evidence supported.
-
-I check AI output the way I check anything else: against the source records, looking for patterns that are too neat, and separating what was verified from what was assumed.
+AI tools now produce trackers, reports, and spreadsheets that look finished, and some contain values that were never real: actions logged that never happened, timestamps too regular to be genuine, records counted twice. I check AI output the way I check anything else: against the source records, looking for patterns that are too neat, and separating what was verified from what was assumed. Then I rebuild the file so every row is backed by evidence.
 
 ## Measurement sanity checks
 

@@ -15,20 +15,16 @@ I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when th
 
 I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
 
-## Consulting and technical direction
-- **[Fractional technical lead](https://gerriscorp.com/services/technical-lead/).** For companies with a website, a developer or two, and nobody in charge. I own the stack part time, set priorities, direct developers and vendors, and report to you in plain English.
-- **[Developer specs and implementation QA](https://gerriscorp.com/services/developers/).** A diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification on the live site that the fix shipped.
-- **[AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/).** Small AI tools built with Claude Code, with a human confirming every action. My own command-line assistant is the proof: [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
-- **[Project rescue and takeovers](https://gerriscorp.com/services/rescue/).** The developer vanished or the agency handed over a zip file. I find out what you have and get it working.
+## When to call me
+- **Nobody owns the website.** You have a developer, a few vendors, and logins scattered across old inboxes. I can be your [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+- **Your developers need a clear brief.** I turn vague complaints into [specs with acceptance criteria](https://gerriscorp.com/services/developers/) and check what ships.
+- **The project stalled.** The freelancer vanished or the agency handed over a zip file. I handle [rescues and takeovers](https://gerriscorp.com/services/rescue/).
+- **You want AI to save your team time without new risks.** I build [small, safe AI tools](https://gerriscorp.com/services/ai-automation/) with Claude Code.
+- **Traffic fell off a cliff.** I run [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and often find [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
+- **The site is slow or a migration is coming.** See [site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) and [migrations](https://gerriscorp.com/services/migrations/).
+- **AI assistants get your business wrong.** See [AI search visibility](https://gerriscorp.com/services/ai-search/).
 
-## Search and site performance
-- **[Technical SEO forensics](https://gerriscorp.com/services/technical-seo/).** Traffic fell and nobody knows why. I find the mechanism, prove it, and get it fixed.
-- **[Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).** Pages that look complete to visitors and empty to Google and AI crawlers. I've found this on Magento, WordPress, and React sites in a single year.
-- **[Site speed and Cloudflare](https://gerriscorp.com/services/site-speed/).** Core Web Vitals passed on real phones, and a CDN configured properly.
-- **[Migrations](https://gerriscorp.com/services/migrations/).** Platform, domain, and URL changes without losing rankings or email.
-- **[AI search visibility](https://gerriscorp.com/services/ai-search/).** What ChatGPT, Claude, Gemini, Perplexity, and Google's AI features say about you, and how to improve it.
-
-See [every service](https://gerriscorp.com/services/), including on-page SEO, Search Console, ongoing support, data cleanup, advisory work, reputation management, and email and DNS.
+Every service, from agency support to ecommerce, large sites, analytics, and email authentication, is on the [services page](https://gerriscorp.com/services/).
 
 ## How I work
 
@@ -346,18 +342,18 @@ Small AI tools and automations for real workflows, built with Claude Code and en
 
 ## Why I can build these
 
-I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
 
 ## Safety by design
 
-Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:
-- **A human confirms every external action.** Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.
-- **Deterministic first.** Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.
-- **Untrusted content is data.** Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.
-- **Secrets stay out of Git.** API keys and tokens live outside the repository.
-- **Tests and a real deploy loop.** Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.
-- **Encrypted backups with tested restores.** Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.
-- **Model choice by evidence.** I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.
+Companies are discovering that AI agents need guardrails. Every tool I build for you comes with these:
+- **You approve every action that leaves the system.** Emails, payments, posts, and deletions wait for a person to confirm a single, specific target.
+- **Plain code wherever possible.** Routine steps run as ordinary, predictable code; a model is called only for writing and judgment, which keeps running costs to pennies.
+- **Defense against prompt injection.** Anything the tool reads from outside, such as an email or a web page, is handled as material to work on and never as a command to follow.
+- **Credentials kept out of the code repository,** in your own secret store.
+- **Automated tests** that run before every change ships, plus a quick check on the live system afterward.
+- **Encrypted backups** with a restore you've watched work.
+- **The right model for the job,** chosen by testing candidates on your real task rather than by brand.
 
 ## What I build for clients
 
@@ -408,20 +404,13 @@ Contact lists with thousands of duplicates. CRMs nobody trusts. Confident-lookin
 
 ## Contact list and CRM cleanup
 
-I build Python pipelines for the job instead of cleaning by hand, so the work is repeatable and every change can be traced. On a recent project with more than 28,000 exported records, the pipeline:
-- Remapped broken export formats into consistent columns.
-- Validated first and last names by country against a large names dataset, ranking how plausible each name is.
-- Rescued missing names from email address prefixes, and detected surnames entered in the wrong field.
-- Deduplicated contacts across domains and spelling variants.
-- Assigned every record a resolution status, so nothing was silently dropped.
+I build Python pipelines for the job instead of cleaning by hand, so the work is repeatable and every change can be traced. A typical pipeline repairs broken export columns, checks names for plausibility by country, recovers missing names from email addresses, catches surnames in the wrong field, merges duplicates across domains and spellings, and gives every record a status explaining what happened to it. I've run this on lists from a few thousand records to nearly ninety thousand. The details are in the [data cleanup case study](https://gerriscorp.com/case-studies/data-cleanup/).
 
-The same approach works for CRM exports, newsletter lists, event registrations, and merged lists after an acquisition.
+The same approach works for CRM exports, newsletter lists, event registrations, and lists merged after an acquisition.
 
 ## Auditing AI output
 
-AI tools now produce trackers, reports, and spreadsheets that look finished. Some of them contain fabricated values. In one audit, an AI-generated outreach tracker marked bounced and nonexistent contacts as sent, carried uniform timestamps that couldn't be real, and repeated contacts. I rebuilt it against the actual sending records into a verified master list: 452 rows became 392 real contacts, each with a status the evidence supported.
-
-I check AI output the way I check anything else: against the source records, looking for patterns that are too neat, and separating what was verified from what was assumed.
+AI tools now produce trackers, reports, and spreadsheets that look finished, and some contain values that were never real: actions logged that never happened, timestamps too regular to be genuine, records counted twice. I check AI output the way I check anything else: against the source records, looking for patterns that are too neat, and separating what was verified from what was assumed. Then I rebuild the file so every row is backed by evidence.
 
 ## Measurement sanity checks
 
@@ -657,15 +646,19 @@ The same class of failure keeps turning up on completely different technology. I
 
 ### Magento with Hyvä: content mounted on scroll
 
-An e-commerce site's product templates used Alpine.js to render specifications, FAQs, and reviews only when a visitor scrolled them into view, with `x-intersect` wrapped around `x-if`. Googlebot never scrolls the way a person does, so those sections never mounted. A crawl showed category pages with thousands of words of text and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a cluster of product pages marked "Crawled, currently not indexed," while the rest of the site indexed normally.
+Product specifications, FAQs, and reviews were wrapped in Alpine.js directives that only rendered them once a shopper scrolled down. Crawler extraction on the store's most valuable product pages fell to a few hundred words, and exactly those pages piled up in Search Console's not-indexed report. [Read the Magento case study](https://gerriscorp.com/case-studies/ecommerce-rendering/).
 
 ### WordPress media site: consent management blocking the page
 
-A consent-management platform blocked scripts for visitors who hadn't accepted cookies. One of the blocked scripts initialized the jQuery UI tabs that held each article's content. Googlebot never accepts cookies, so it was a permanent non-consenter and saw empty tabs on every page. No crawl errors, no warnings, just "Crawled, currently not indexed" at scale.
+The cookie consent platform held back scripts until a visitor accepted, including the script that opened the tabs holding every article. A crawler never accepts cookies, so it met empty tabs everywhere. [Read the consent case study](https://gerriscorp.com/case-studies/consent-blocking/).
 
 ### React event platform: links crawlers couldn't follow
 
-A Create React App site had already added server-side rendering, so each page's HTML was fine. Navigation used the router's click handlers instead of real `<a href>` links, though, so crawlers had no links to follow and couldn't reach the pages rendering had fixed.
+Server-side rendering was already in place, yet event pages stayed undiscovered because the cards navigated with JavaScript click handlers instead of anchor links. [Read the React case study](https://gerriscorp.com/case-studies/react-event-platform/).
+
+## The pattern behind all three
+
+In each case the page was technically "there." Visitors saw it, the CMS showed it, and no tool reported an error. The failure only appears when you look at the page the way a crawler does: no scrolling, no clicking, no cookie consent, and often no JavaScript at all. That's why it survives for months, and why ordinary SEO audits miss it.
 
 ## How I find it
 1. **Compare three views of the same page:** the raw HTML the server sends, the DOM after JavaScript runs, and what a crawler extracts.
