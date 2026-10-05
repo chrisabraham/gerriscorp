@@ -29,7 +29,7 @@ Every engagement starts with a paid diagnostic: a defined question, the evidence
 - Reconciled URLs and redirects for a WordPress to Netlify migration.
 - Moved hillmole.com, my serialized novel of 309 entries, from Movable Type to static pages on GitHub Pages with every original URL intact.
 
-More in case studies (https://gerriscorp.com/case-studies/). I also host The Chris Abraham Show (https://gerriscorp.com/show/) and publish a weekly roundup of SEO, AEO, and GEO news.
+More in case studies (https://gerriscorp.com/case-studies/).
 
 ## Tell me what's going on with your site
 
@@ -326,33 +326,6 @@ Tell me about your problem (https://gerriscorp.com/contact/)
 
 ---
 
-Source: https://gerriscorp.com/show/
-
-# The Chris Abraham Show
-
-The show is where I think out loud about search, AI, the web, and everything else. It's the easiest way to find out how I work before you hire me.
-
-## Podcast
-
-The Chris Abraham Show is in its tenth season. Listen on Apple Podcasts (https://podcasts.apple.com/us/podcast/the-chris-abraham-show/id1468506258) or subscribe to the RSS feed (https://anchor.fm/s/c0f56fc/podcast/rss) in any podcast app.
-
-## YouTube
-- @abrahamSEO: SEO, AEO, and GEO explainers.
-- @chrisabraham: the show and everything else.
-
-## Substack
-
-Long-form essays several times a week on culture, technology, politics, and economics, at chrisabraham.substack.com. Subscribe there to get them by email.
-
-## The Friday roundup
-
-Every Friday I publish a roundup of the week's SEO, AEO, and GEO news, with links to every source. Read the latest, The SEO, AIO, GEO, and AEO Roundup for September 25, 2026 (https://chrisabraham.com/blog/the-seo-aio-geo-and-aeo-roundup-friday-september-25-2026), on chrisabraham.com.
-
-Hire the host (https://gerriscorp.com/contact/)
-
-
----
-
 Source: https://gerriscorp.com/about/
 
 # About Chris Abraham
@@ -376,7 +349,7 @@ I published the Memetic Lexicon on memes.org in 1999, ran the MemeSpace communit
 
 ## Writing
 
-I have a BA in American Literature from The George Washington University, with a year at the University of East Anglia in Norwich. I captained my high school speech and debate team, taught creative writing, and write several long essays a week on Substack (https://chrisabraham.substack.com/). I'm also the host of The Chris Abraham Show (https://gerriscorp.com/show/).
+I have a BA in American Literature from The George Washington University, with a year at the University of East Anglia in Norwich. I captained my high school speech and debate team, taught creative writing, and write every day.
 
 ## Elsewhere
 - chrisabraham.com: my personal site and blog
