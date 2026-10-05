@@ -29,24 +29,26 @@
 <meta name="twitter:description" content="Gerris Corp is Chris Abraham's agency for technical SEO, site speed, Google Business Profile recovery, AI search visibility, and reputation management.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
-:root { --text: #1a1a1a; --muted: #555; --link: #0b5394; --rule: #ddd; --bg: #fff; }
+:root { --text: #1a1a1a; --muted: #555; --link: #436976; --tab: #8cacbb; --bar: #dee7ec; --rule: #ddd; --bg: #fff; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-body { margin: 0 auto; max-width: 42rem; padding: 2rem 1rem 4rem; font: 18px/1.6 Georgia, "Times New Roman", serif; color: var(--text); background: var(--bg); }
+body { margin: 0 auto; max-width: 46rem; padding: 1.5rem 1rem 4rem; font: 16px/1.6 "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
 a { color: var(--link); overflow-wrap: anywhere; }
 img { max-width: 100%; height: auto; }
-h1 { font-size: 2rem; margin: 0 0 .25rem; }
-.logo { display: block; width: 96px; height: 96px; margin: 0 0 .5rem -8px; }
-h2 { font-size: 1.35rem; margin: 2.5rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
-h3 { font-size: 1.05rem; margin: 1.25rem 0 .25rem; }
+header { display: grid; grid-template-columns: auto 1fr; gap: 0 1rem; align-items: center; }
+.logo { width: 72px; height: 72px; grid-row: span 2; }
+h1 { font-size: 1.6rem; margin: 0; }
+.tag { color: var(--muted); margin: 0; font-size: .95rem; }
+nav { grid-column: 1 / -1; margin: 1.25rem 0 1.5rem; border-bottom: 4px solid var(--bar); display: flex; flex-wrap: wrap; gap: .35rem .4rem; }
+nav a { text-decoration: none; padding: .3rem .9rem; border: 1px solid var(--tab); border-bottom: none; font-size: .9rem; }
+nav a:hover, nav a:focus { background: var(--bar); }
+h2 { font-size: 1.3rem; margin: 2.25rem 0 .5rem; padding-top: .75rem; border-top: 1px solid var(--rule); }
+h3 { font-size: 1.02rem; margin: 1.25rem 0 .25rem; }
 p, ul { margin: 0 0 1rem; }
-nav { font-size: .95rem; margin: .5rem 0 2rem; }
-nav a { display: inline-block; margin: 0 .9rem .4rem 0; padding: .2rem 0; }
 #contact li { margin-bottom: .5rem; }
-@media (max-width: 30rem) { body { font-size: 17px; padding-top: 1.25rem; } h1 { font-size: 1.7rem; } }
-.tag { color: var(--muted); margin: 0; }
-blockquote { margin: 0 0 1.25rem; padding-left: 1rem; border-left: 3px solid var(--rule); }
-blockquote footer { color: var(--muted); font-size: .9rem; }
-footer.site { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+blockquote { margin: 0 0 1.25rem; padding-left: 1rem; border-left: 3px solid var(--bar); }
+blockquote footer { color: var(--muted); font-size: .88rem; }
+footer.site { margin-top: 3rem; padding-top: .75rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; }
+@media (max-width: 30rem) { body { font-size: 15px; padding-top: 1rem; } .logo { width: 56px; height: 56px; } h1 { font-size: 1.35rem; } nav a { padding: .4rem .7rem; } }
 </style>
 <script type="application/ld+json">
 {
