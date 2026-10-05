@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content the crawler never sees: JavaScript rendering faults</title>
+<meta name="description" content="Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gerriscorp.com/services/crawler-visibility/">
+<meta name="author" content="Chris Abraham">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Content the crawler never sees: JavaScript rendering faults">
+<meta property="og:description" content="Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.">
+<meta property="og:url" content="https://gerriscorp.com/services/crawler-visibility/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Content the crawler never sees: JavaScript rendering faults">
+<meta name="twitter:description" content="Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top img { width: 64px; height: 64px; flex: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+   },
+   "areaServed": "Worldwide",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": "The George Washington University",
+   "homeLocation": {
+    "@type": "Place",
+    "name": "Arlington, Virginia"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/services/crawler-visibility/#webpage",
+   "url": "https://gerriscorp.com/services/crawler-visibility/",
+   "name": "Content the crawler never sees: JavaScript rendering faults",
+   "description": "Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/services/crawler-visibility/#breadcrumb"
+   },
+   "mainEntity": {
+    "@id": "https://gerriscorp.com/services/crawler-visibility/#service"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/services/crawler-visibility/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Services",
+     "item": "https://gerriscorp.com/services/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Content the Crawler Never Sees",
+     "item": "https://gerriscorp.com/services/crawler-visibility/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+   "name": "Content the crawler never sees",
+   "serviceType": "Content the Crawler Never Sees",
+   "description": "Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.",
+   "provider": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "areaServed": "Worldwide",
+   "url": "https://gerriscorp.com/services/crawler-visibility/"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/services/crawler-visibility/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I know if my site has this problem?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Search view-source for a sentence from your most important content. If it's missing, crawlers that don't run JavaScript can't see it. A growing \"Crawled, currently not indexed\" count in one template is another strong sign."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the fix require a rebuild?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rarely. Most fixes change how one template renders a few sections, such as rendering on the server, keeping content in the HTML and toggling visibility with CSS, or using real links."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/" aria-current="true">Services</a></li>
+    <li><a href="../../guides/">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../services/">Services</a> › Content the Crawler Never Sees</p>
+<main id="main">
+<h1>Content the crawler never sees</h1>
+<p class="lead">The page looks complete in a browser. Googlebot and the AI crawlers get a shell. There are no crawl errors anywhere, only a growing pile of pages marked "Crawled, currently not indexed" and traffic that won't come back. This is the diagnosis I'm best known for.</p>
+
+<h2>One failure, many stacks</h2>
+<p>The same class of failure keeps turning up on completely different technology. In a single year I found it on three different stacks:</p>
+<h3>Magento with Hyvä: content mounted on scroll</h3>
+<p>An e-commerce site's product templates used Alpine.js to render specifications, FAQs, and reviews only when a visitor scrolled them into view, with <code>x-intersect</code> wrapped around <code>x-if</code>. Googlebot never scrolls the way a person does, so those sections never mounted. A crawl showed category pages with thousands of words of text and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a cluster of product pages marked "Crawled, currently not indexed," while the rest of the site indexed normally.</p>
+<h3>WordPress media site: consent management blocking the page</h3>
+<p>A consent-management platform blocked scripts for visitors who hadn't accepted cookies. One of the blocked scripts initialized the jQuery UI tabs that held each article's content. Googlebot never accepts cookies, so it was a permanent non-consenter and saw empty tabs on every page. No crawl errors, no warnings, just "Crawled, currently not indexed" at scale.</p>
+<h3>React event platform: links crawlers couldn't follow</h3>
+<p>A Create React App site had already added server-side rendering, so each page's HTML was fine. Navigation used the router's click handlers instead of real <code>&lt;a href&gt;</code> links, though, so crawlers had no links to follow and couldn't reach the pages rendering had fixed.</p>
+
+<h2>How I find it</h2>
+<ol>
+  <li><strong>Compare three views of the same page:</strong> the raw HTML the server sends, the DOM after JavaScript runs, and what a crawler extracts.</li>
+  <li><strong>Crawl with and without rendering,</strong> and compare word counts and links by template. A template that loses most of its text without JavaScript stands out at once.</li>
+  <li><strong>Ask Google directly</strong> with Search Console's live URL test, and read the rendered HTML it returns.</li>
+  <li><strong>Read the code</strong> for the template responsible, often with an AI coding assistant searching the repository alongside the crawl evidence, until the exact mechanism is clear.</li>
+  <li><strong>Keep other problems separate.</strong> A backlink spike or redirect error in the same month gets its own investigation.</li>
+</ol>
+
+<h2>What you get</h2>
+<ul>
+  <li>The mechanism, proven with side-by-side evidence.</li>
+  <li>A developer spec with the affected templates, example URLs, the fix, and acceptance criteria, such as "a plain fetch of a product URL returns the specification table."</li>
+  <li>Verification once the fix ships, in the raw HTML and in Search Console.</li>
+</ul>
+
+<h2>Why it matters more every year</h2>
+<p>Google renders JavaScript, slowly and imperfectly. Most AI crawlers don't render it at all. As more buyers ask ChatGPT, Perplexity, Claude, and Gemini instead of searching, content that exists only after scripts run is invisible to a growing share of the people looking for you. The <a href="../../guides/javascript-seo/">JavaScript SEO guide</a> shows how to run the first tests yourself.</p>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>How do I know if my site has this problem?</h3>
+<p>Search view-source for a sentence from your most important content. If it's missing, crawlers that don't run JavaScript can't see it. A growing "Crawled, currently not indexed" count in one template is another strong sign.</p>
+<h3>Does the fix require a rebuild?</h3>
+<p>Rarely. Most fixes change how one template renders a few sections, such as rendering on the server, keeping content in the HTML and toggling visibility with CSS, or using real links.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="../../guides/javascript-seo/">JavaScript SEO guide</a> · <a href="../../guides/crawled-not-indexed/">"Crawled, currently not indexed"</a> · <a href="../../services/technical-seo/">Technical SEO forensics</a></p>
+</div>
+
+<p><a class="button" href="../../contact/">Ask me what Google actually sees</a></p>
+<p class="updated">Updated October 5, 2026</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

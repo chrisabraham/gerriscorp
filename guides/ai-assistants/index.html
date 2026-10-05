@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How AI assistants decide what to say about your business</title>
+<meta name="description" content="Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gerriscorp.com/guides/ai-assistants/">
+<meta name="author" content="Chris Abraham">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How AI assistants decide what to say about your business">
+<meta property="og:description" content="Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.">
+<meta property="og:url" content="https://gerriscorp.com/guides/ai-assistants/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-05">
+<meta property="article:modified_time" content="2026-10-05">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How AI assistants decide what to say about your business">
+<meta name="twitter:description" content="Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top img { width: 64px; height: 64px; flex: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+   },
+   "areaServed": "Worldwide",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": "The George Washington University",
+   "homeLocation": {
+    "@type": "Place",
+    "name": "Arlington, Virginia"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/ai-assistants/#webpage",
+   "url": "https://gerriscorp.com/guides/ai-assistants/",
+   "name": "How AI assistants decide what to say about your business",
+   "description": "Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/ai-assistants/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/ai-assistants/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI Assistants",
+     "item": "https://gerriscorp.com/guides/ai-assistants/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/ai-assistants/#article",
+   "headline": "How AI assistants decide what to say about your business",
+   "description": "Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.",
+   "url": "https://gerriscorp.com/guides/ai-assistants/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/ai-assistants/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-05",
+   "dateModified": "2026-10-05",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 796
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › AI Assistants</p>
+<main id="main">
+<h1>How AI assistants decide what to say about your business</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 5, 2026</p>
+<p class="lead">When someone asks ChatGPT, Claude, Gemini, Perplexity, or Google's AI Overviews about your company, the answer comes from two places: what the model learned in training, and what it finds by searching the web right then. You can influence both, and the second is where most of the action is.</p>
+
+<h2>Two sources of knowledge</h2>
+<h3>Training data</h3>
+<p>Every large language model is trained on a huge snapshot of text, much of it crawled from the public web, and that knowledge stops at a training cutoff. What a model "knows" about you from training reflects whatever was public and widely repeated before that date. It changes only when the company trains a new model, so it lags reality by months or years. Older press coverage, Wikipedia, directories, and anything that was repeated often all weigh heavily here.</p>
+<h3>Live retrieval</h3>
+<p>Most assistants now search the web before answering questions about specific businesses, products, and recent events. The assistant turns the question into one or more searches, reads the top results, and writes an answer grounded in those pages, often with citations. This is called retrieval or grounding, and it means a page that ranks well and answers the question clearly can shape the answer within days of being published.</p>
+
+<h2>Which search indexes feed which assistants</h2>
+<ul>
+  <li><strong>Google AI Overviews and AI Mode</strong> are built on Google Search's own index, crawled by Googlebot.</li>
+  <li><strong>Gemini</strong> grounds its answers with Google Search.</li>
+  <li><strong>Microsoft Copilot</strong> uses Bing's index.</li>
+  <li><strong>ChatGPT search</strong> uses OpenAI's own crawler, OAI-SearchBot, alongside third-party search providers.</li>
+  <li><strong>Perplexity</strong> runs its own crawler, PerplexityBot, and its own index.</li>
+  <li><strong>Claude</strong> searches the web through a search provider and fetches pages with Anthropic's crawlers.</li>
+</ul>
+<p>The practical lesson: being well indexed in both Google and Bing covers most of the AI landscape. Bing Webmaster Tools and IndexNow, which tells Bing and other engines about changed pages within minutes, matter more than they used to.</p>
+
+<h2>The crawlers, and what each one is for</h2>
+<table>
+<thead><tr><th>Company</th><th>Training</th><th>Search index</th><th>Fetches for a user</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>GPTBot</td><td>OAI-SearchBot</td><td>ChatGPT-User</td></tr>
+<tr><td>Anthropic</td><td>ClaudeBot</td><td>Claude-SearchBot</td><td>Claude-User</td></tr>
+<tr><td>Perplexity</td><td>(none listed)</td><td>PerplexityBot</td><td>Perplexity-User</td></tr>
+<tr><td>Google</td><td>Google-Extended (a robots.txt token)</td><td>Googlebot</td><td>Google's user-triggered fetchers</td></tr>
+</tbody>
+</table>
+<p>You can allow or block each in robots.txt. Blocking a training crawler keeps your future pages out of future models; blocking a search crawler keeps you out of that assistant's live answers. Google-Extended controls whether your content is used for Gemini, and it doesn't affect Google Search or AI Overviews, which follow Googlebot. Check your CDN, too: Cloudflare began blocking many AI crawlers by default on new setups in 2025, which can keep a business out of AI answers without anyone deciding that on purpose.</p>
+
+<h2>What assistants favor when they write an answer</h2>
+<ul>
+  <li><strong>Direct answers.</strong> Pages that state the answer plainly near the top, in a sentence that still makes sense when quoted on its own.</li>
+  <li><strong>Self-contained context.</strong> Definitions, dates, locations, and names on the page itself, so the assistant doesn't have to guess.</li>
+  <li><strong>Consistency.</strong> The same facts about you on your site, your profiles, directories, and press. Conflicting facts produce hedged or wrong answers.</li>
+  <li><strong>Third-party confirmation.</strong> Reviews, news coverage, industry directories, and community discussions. Assistants treat what others say about you as evidence.</li>
+  <li><strong>Freshness.</strong> Visible "updated" dates and current information, especially for anything that changes.</li>
+  <li><strong>Readable HTML.</strong> Most AI crawlers fetch the HTML without running JavaScript, so content that appears only after scripts run is invisible to them. The <a href="../../guides/javascript-seo/">JavaScript SEO guide</a> shows how to check.</li>
+</ul>
+
+<h2>What you can do this quarter</h2>
+<ol>
+  <li>Ask the major assistants the ten questions your buyers ask, and write down the answers and the sources cited.</li>
+  <li>Fix your own pages first: one clear page per service or product, with the facts stated plainly and an FAQ section with real answers.</li>
+  <li>Make your facts consistent everywhere: name, description, location, founding date, leadership, services, prices where public.</li>
+  <li>Add schema.org structured data for your organization, people, products, and services, matching the visible page.</li>
+  <li>Check robots.txt and your CDN's bot settings for the AI crawlers you want.</li>
+  <li>Submit your sitemap to Google Search Console and Bing Webmaster Tools, and turn on IndexNow.</li>
+  <li>Consider an <a href="../../guides/glossary/#llms-txt">llms.txt</a> file. It's a proposed convention from 2024 that gives language models a plain summary of your site; adoption by AI companies is still uncertain, and it costs almost nothing.</li>
+  <li>Repeat the same questions in a month and compare.</li>
+</ol>
+
+<h2>Measuring it</h2>
+<p>AI answers vary with phrasing, location, account history, and time, so a single test proves little. Use a fixed set of prompts, run them on a schedule, and record the answers and citations. Add referral traffic from chatgpt.com, perplexity.ai, gemini.google.com, and copilot.microsoft.com in analytics, and watch which pages they land on.</p>
+
+<p class="related">I do this work as <a href="../../services/ai-search/">AI search visibility</a>, starting with an AI search readiness audit.</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

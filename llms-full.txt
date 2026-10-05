@@ -1,414 +1,2113 @@
 # Gerris Corp: full text of gerriscorp.com
 
-> Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management.
-> Updated 2026-10-05. Quote freely with attribution and a link.
+> Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
+> Built 2026-10-05. Quote freely with attribution and a link to the source page.
 
 
 ---
 
 Source: https://gerriscorp.com/
+Updated: 2026-10-05
 
-# I help businesses get found and fix what's holding their websites back
+# Experienced help for the digital work your business needs done
 
-I'm Chris Abraham, and Gerris is my consultancy. I work with funded companies, brands, and high-profile people. When a site goes quiet in search, I find the mechanism, explain it in plain language, and work with your people until the fix is live and checked.
+I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when the technical side of your web presence is a mess and nobody owns it. I find out what's wrong, write the plan, direct the developers, human and AI, ship what I can myself, and explain all of it in plain English.
 
-## What I do
-- Technical SEO forensics and fixes (https://gerriscorp.com/services/technical-seo/): traffic drops, indexing problems, rendering, redirects, and structured data, diagnosed with evidence.
-- Website migrations (https://gerriscorp.com/services/migrations/): redirect maps and launch checks before the move, and cleanup after it.
-- AI search and content (https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so search engines and AI assistants understand and represent you accurately.
-- Working with your developers (https://gerriscorp.com/services/developers/): search problems turned into tickets with a mechanism, examples, and acceptance criteria.
+I've built websites since 1994 and started Gerris in 2007. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
 
-See every service (https://gerriscorp.com/services/), including ongoing support, reputation work, Google Business Profile hard cases, and email and DNS cleanup.
+## Consulting and technical direction
+- **[Fractional technical lead](https://gerriscorp.com/services/technical-lead/).** For companies with a website, a developer or two, and nobody in charge. I own the stack part time, set priorities, direct developers and vendors, and report to you in plain English.
+- **[Developer specs and implementation QA](https://gerriscorp.com/services/developers/).** A diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification on the live site that the fix shipped.
+- **[AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/).** Small AI tools built with Claude Code, with a human confirming every action. My own command-line assistant is the proof: [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+- **[Project rescue and takeovers](https://gerriscorp.com/services/rescue/).** The developer vanished or the agency handed over a zip file. I find out what you have and get it working.
+
+## Search and site performance
+- **[Technical SEO forensics](https://gerriscorp.com/services/technical-seo/).** Traffic fell and nobody knows why. I find the mechanism, prove it, and get it fixed.
+- **[Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).** Pages that look complete to visitors and empty to Google and AI crawlers. I've found this on Magento, WordPress, and React sites in a single year.
+- **[Site speed and Cloudflare](https://gerriscorp.com/services/site-speed/).** Core Web Vitals passed on real phones, and a CDN configured properly.
+- **[Migrations](https://gerriscorp.com/services/migrations/).** Platform, domain, and URL changes without losing rankings or email.
+- **[AI search visibility](https://gerriscorp.com/services/ai-search/).** What ChatGPT, Claude, Gemini, Perplexity, and Google's AI features say about you, and how to improve it.
+
+See [every service](https://gerriscorp.com/services/), including on-page SEO, Search Console, ongoing support, data cleanup, advisory work, reputation management, and email and DNS.
 
 ## How I work
 
-Every engagement starts with a paid diagnostic: a defined question, the evidence, the cause, and a prioritized set of fixes with an owner for each. Then I make the changes I have access to, hand your developers clear tickets for the rest, and verify the result once it ships. Details are on Work With Me (https://gerriscorp.com/work-with-me/).
+Every engagement starts with a paid diagnostic: a defined question, the evidence, the cause, and a prioritized plan with an owner for each item. Then I make the changes I have access to, give your developers specs with acceptance criteria for the rest, and check the live result once it ships. Everything is in writing, in Basecamp or by email, with a technical document for the engineers and a plain-English summary for leadership. Details are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Recent work
-- Traced an e-commerce traffic loss to product templates that rendered specs, FAQs, and reviews only on scroll, which crawlers never saw.
-- Reconciled URLs and redirects for a WordPress to Netlify migration.
-- Moved hillmole.com, my serialized novel of 309 entries, from Movable Type to static pages on GitHub Pages with every original URL intact.
+- Traced an e-commerce traffic loss to product templates that mounted specs, FAQs, and reviews only on scroll, which Googlebot never triggered.
+- Found a consent-management platform hiding every article's content from Googlebot on a WordPress media site.
+- Combined crawl evidence with an AI-assisted read of a Next.js repository to plan a clinical practice's migration off WordPress media hosting.
+- Took over a stalled React application for a consumer brand: servers, DNS, repository, and a production outage.
+- Directed the build of my own AI assistant with Claude Code: 9,600 lines, 106 tests, and safety rules on every action.
 
-More in case studies (https://gerriscorp.com/case-studies/).
+More in [case studies](https://gerriscorp.com/case-studies/).
 
-## Tell me what's going on with your site
+## Guides
+- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/)
+- [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/)
+- [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/)
+- [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/)
 
-Book a call (https://calendly.com/chrisabraham/30) Hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham) Email me (https://gerriscorp.com/contact/)
+See [all guides](https://gerriscorp.com/guides/).
+
+## Tell me what's going on
+
+Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) or call or text [+1 202-352-5051](tel:+12023525051).
+
+[Contact me](https://gerriscorp.com/contact/) [Book a call](https://calendly.com/chrisabraham/30) [Hire me on Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/
+Updated: 2026-10-05
 
 # Services
 
-Every engagement starts with a paid diagnostic and a clear next step. I do the work myself and work alongside your team.
+I'm the person you call when the technical side of your web presence needs someone in charge. Every engagement starts with a paid diagnostic and a clear next step, and I do the work myself, alongside your team.
 
-## Core services
-- Technical SEO forensics and fixes (https://gerriscorp.com/services/technical-seo/): for sites that lost traffic or never ranked, with evidence, the mechanism, and developer-ready fixes.
-- Website migrations (https://gerriscorp.com/services/migrations/): planning, redirect mapping, launch checks, and post-launch cleanup.
-- AI search and content (https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO through clear pages, useful answers, and structured data.
-- Working with your developers (https://gerriscorp.com/services/developers/): the person who writes the search requirements and checks what ships.
-- Ongoing SEO and website support (https://gerriscorp.com/services/ongoing-support/): a set amount of experienced help each month.
+## Consulting and technical direction
+- [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
+- [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with Claude Code, with human confirmation on every action, tests, and encrypted backups.
+- [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
+- [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
+- [Strategic advisory and second opinions](https://gerriscorp.com/services/advisory/): advice for founders and executives on AI, search, reputation, and technology decisions.
+
+## Search and site performance
+- [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/): traffic drops and indexing problems diagnosed with evidence and fixed with your developers.
+- [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): my signature diagnosis, for pages that look complete to visitors and empty to Google and AI crawlers.
+- [On-page SEO](https://gerriscorp.com/services/on-page-seo/): titles, descriptions, headings, internal links, and structured data, written and published.
+- [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): fast pages on real phones, and a CDN configured properly.
+- [Google Search Console](https://gerriscorp.com/services/search-console/): setup, cleanup, and fixes for what the indexing reports reveal.
+- [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
+- [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
+- [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 
 ## Specialist services
-- Reputation and perception management (https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
-- Google Business Profile hard cases (https://gerriscorp.com/services/google-business-profile/): suspensions, verification loops, and broken profiles, starting with a written diagnostic.
-- Email authentication and DNS (https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
+- [Reputation and perception management](https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
+- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
 
-Not sure which fits? Tell me what's going on (https://gerriscorp.com/contact/) and I'll say where I'd start.
+## How engagements are shaped
 
+A **diagnostic** answers a defined question with evidence and a recommended next step. An **implementation sprint** delivers agreed fixes, verified against written acceptance criteria. A **migration review** covers a specific launch. A **pilot** builds and demonstrates one useful tool. **Retainers** cover fractional technical leadership, ongoing support, and advisory work. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
----
+Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Source: https://gerriscorp.com/services/technical-seo/
-
-# Technical SEO forensics and fixes
-
-A site lost traffic and nobody knows why. My job is to find the mechanism, prove it, and get it fixed.
-
-## When to call me
-- Organic traffic fell after a redesign, a platform change, a template update, or for no visible reason.
-- Search Console reports pages as "Crawled, currently not indexed" or "Discovered, currently not indexed."
-- Important pages rank below thin ones, or the wrong URL ranks.
-- The site looks complete to people and empty to crawlers.
-
-## What I check
-- Rendering: what crawlers actually receive, especially on JavaScript-heavy builds using Alpine, React, Next.js, or Vue.
-- Crawling and indexing: robots rules, sitemaps, canonical tags, status codes, and duplicate URLs.
-- Redirects and broken links, including chains, loops, and redirects to the wrong place.
-- Internal linking, titles, descriptions, and heading structure.
-- Structured data and how it matches the visible page.
-- Page speed and Core Web Vitals.
-- Backlink anomalies, such as a sudden spike in spam links.
-
-## One cause at a time
-
-Two problems often arrive together: a template change and a spam link spike, or a redirect error and a seasonal dip. I keep each on its own track until the data connects them, so every fix targets a proven cause.
-
-## What you get
-- Findings with evidence: crawl data, Search Console reports, and example URLs.
-- The mechanism, explained in plain language for owners and in technical detail for developers.
-- A prioritized list of fixes, each with an owner.
-- Developer tickets with affected URLs, observed behavior, and acceptance criteria.
-- A check of the live site once the fixes ship.
-
-I make the changes I have access to myself, in the CMS or the repository.
-
-## Tools
-
-Google Search Console, GA4, Screaming Frog, Semrush, Ahrefs, PageSpeed Insights, Cloudflare, and the browser's own developer tools.
-
-Tell me what happened to your traffic (https://gerriscorp.com/contact/)
+Updated October 5, 2026
 
 
 ---
 
-Source: https://gerriscorp.com/services/migrations/
+Source: https://gerriscorp.com/services/technical-lead/
+Updated: 2026-10-05
 
-# Website migrations
+# Fractional technical lead
 
-A migration is the moment a site is most likely to lose what it built in search. I help before the move, during the launch, and after it.
+For companies with a website, a developer or two, a few vendors, and nobody in charge of how it all fits together. I take that job part time.
 
-## Before launch
-- An inventory of every URL that matters: pages, media, PDFs, and anything with links or traffic.
-- A redirect map from every old URL to its best new home, with deliberate decisions about pages you're retiring.
-- A review of the new templates for titles, canonicals, structured data, and content that crawlers can read.
+Plenty of businesses reach the same point. The site runs on a platform someone chose years ago. A freelance developer fixes things when asked. An agency handles marketing. Hosting, DNS, email, analytics, and Search Console logins are scattered across former employees' inboxes. Every problem turns into a week of emails because nobody can see the whole picture. A fractional technical lead is the one experienced person who can.
 
-## At launch
-- Redirects tested in bulk on the live site.
-- Sitemaps, robots rules, and Search Console updated.
-- A quick round of fixes with your developer or host.
+## What I take responsibility for
+- **The inventory.** What exists, where it runs, who controls each account, what it costs, and what's missing: repositories, CMS, hosting, DNS, email, analytics, Search Console, CDN, and vendors.
+- **Priorities.** A short, ranked list of what needs doing, with the business calendar in mind. A risky change can wait until after your busy season; a security hole can't.
+- **Specifications.** Every piece of work written up for whoever will do it, with evidence, scope, and acceptance criteria. See [developer specs and implementation QA](https://gerriscorp.com/services/developers/).
+- **Direction.** Briefing your developers and vendors, answering their questions, reviewing their proposals, and keeping work moving.
+- **Hands-on work.** The fixes I can ship myself, in the CMS, the repository, Cloudflare, DNS, or on the server, under a reviewable change history.
+- **Verification.** Checking what shipped against what was specified, on the live site.
+- **Reporting.** A plain-English summary for leadership, kept separate from the technical detail, so a founder can read it in two minutes and forward it.
 
-## After launch
+## Who it suits
 
-Something already went wrong? I reconcile old and new URLs, find orphaned pages and broken media, fix redirect gaps, and track down what changed. I'm useful when the marketing team, the developer, the host, and the owner each hold part of the answer.
+Owner-led and founder-led companies, marketing teams without engineering leadership, and businesses that inherited a site from an agency or a departed employee. It also suits companies with a capable developer who needs a counterpart to set priorities and translate between the business and the code.
 
-## Platforms
+## How it runs
+1. **A paid onboarding diagnostic.** Access gathered, the stack inventoried, the urgent problems found, and a first priority list delivered in writing.
+2. **A monthly retainer.** An agreed number of hours each month, billed in advance, with a standing status update and a running decision log in Basecamp or by email.
+3. **Clear authority.** In writing: what I can decide, what needs your approval, and who implements each kind of work. I advise and coordinate; you keep ownership of the business decisions and the accounts.
 
-WordPress, Umbraco, Wix, Shopify, Magento, Netlify, GitHub Pages, and static sites, including a WordPress to Netlify migration and a Movable Type to GitHub Pages move.
+## What I bring
 
-Talk to me about your migration (https://gerriscorp.com/contact/)
+More than thirty years of building and running websites. Twenty years of WordPress and solid working knowledge of Shopify, Magento, Umbraco, Drupal, Squarespace, Wix, Webflow, and React applications. Linux servers I provision and harden myself. Git and pull-request workflows. Cloudflare, DNS, and email authentication. Deep technical SEO, which is often how clients first find me. And the habit of writing everything down, so the project survives anyone's absence, including mine.
 
+## Common questions
 
----
+### How many hours a month does a fractional technical lead need?
 
-Source: https://gerriscorp.com/services/ai-search/
+It depends on how much is broken and how much is changing. Most engagements settle into a fixed monthly block after the first month's cleanup, and the block is reviewed each quarter.
 
-# AI search and content
+### Do you replace the in-house developer?
 
-People now ask ChatGPT, Claude, Gemini, Perplexity, and Google's AI Overviews before they ever click a link. I help those systems, and search engines, understand and represent your business accurately.
+I work with your developer. Most of the value comes from giving a good developer clear priorities, precise specs, and someone who checks the result.
 
-## SEO, AEO, and GEO
+**Related:** [Developer specs and QA](https://gerriscorp.com/services/developers/) · [Project rescue](https://gerriscorp.com/services/rescue/) · [Work With Me](https://gerriscorp.com/work-with-me/)
 
-SEO is search engine optimization. AEO, answer engine optimization, shapes content so it answers the questions people actually ask. GEO, generative engine optimization, makes your business easy for AI systems to find, understand, and cite. All three rest on the same foundation: clear pages, useful answers, coherent structure, accurate structured data, and a site crawlers can read.
+[Tell me what nobody owns](https://gerriscorp.com/contact/)
 
-## AI search readiness audit
-
-I test a set of real prompts across the major AI assistants and record what they say about you, your products, and your competitors, where those answers come from, and what's missing or wrong. You get the findings and a prioritized plan.
-
-## Content that answers the question
-
-I write and improve service pages, landing pages, FAQs, glossaries, titles, and descriptions, and I publish them properly in your CMS. A service page plainly explains what you do, how it helps, and why your approach makes sense. An article answers its question completely, with the context a reader or an AI needs to quote it accurately.
-
-## Machine-readable you
-
-For founders, experts, and brands: consistent facts across your site and profiles, schema.org structured data that ties them together, and a self-contained body of pages that AI systems can cite. I've practiced this on myself for two decades by publishing my own work in the open.
-
-## Readable without JavaScript
-
-Many AI crawlers read only the HTML your server sends. I check that every important word is in it.
-
-This site follows its own advice: static HTML, schema.org data on every page, and an llms.txt summary for language models.
-
-Ask me what the AI assistants say about you (https://gerriscorp.com/contact/)
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/developers/
+Updated: 2026-10-05
 
-# Working with your developers
+# Developer specs and implementation QA
 
-I work with your developers, so they spend their time fixing the real problem.
+Your developers are good. What they need is someone to tell them exactly what to build, why, and how to know it's done, and then to check that it was. That's this service.
 
-## What I bring to a dev team
-- A search concern turned into a concrete request: affected URLs, examples, observed behavior, and acceptance criteria.
-- Content changes separated from template, routing, infrastructure, and rendering changes, so each goes to the right person.
-- Plain explanations in both directions: search requirements for developers and developer constraints for owners.
-- A check of the deployed behavior, and follow-up on anything still open.
+## The spec
 
-## Comfortable in your stack
+I turn a diagnosis into a developer-ready specification. A recent one ran to 13 pages of prioritized items from P0 to P3, each with:
+- **Confirmed evidence:** affected URLs, crawl data, screenshots, and the observed behavior.
+- **Consequence:** what the problem costs, in plain terms, which sets the priority.
+- **Build steps:** exactly what to change, in which template, file, or setting.
+- **Acceptance criteria:** a testable definition of done.
 
-I read the DOM, read a crawl, and find the template responsible. I work in GitHub repositories through branches and pull requests, on Linux servers over SSH, and in the command line. I diagnose rendering problems on JavaScript builds using Alpine, React, Next.js, and Vue, and I work in CMSs including WordPress, Umbraco, Wix, Shopify, and Magento.
+I generate specs programmatically from the evidence, so they stay consistent and can be regenerated as findings change. The owner gets a separate plain-English summary, so the engineer gets precision and the CEO gets clarity, and neither has to wade through the other's document.
+
+## A sample ticket
+
+```
+P0: Product specs, FAQs, and reviews missing from initial HTML
+
+Affected: all /products/* templates (example: /products/widget-200)
+Evidence: spec table, FAQ, and reviews render only after an
+  x-intersect scroll trigger; crawler extraction shows 250 to 400
+  words per product page versus 2,000+ for category pages.
+Consequence: product pages clustered in "Crawled, currently not
+  indexed"; organic product traffic falling.
+Build: render these sections in the server HTML; keep the
+  scroll animation as progressive enhancement only.
+Acceptance: a plain fetch of the product URL returns the spec
+  table, FAQ, and review text; Search Console live test shows
+  them in the rendered HTML.
+```
+
+## Implementation QA
+
+When the developer says it's done, I check, against the acceptance criteria, on the live site, in the page source. CMS panels and staging environments say one thing; the live HTML says what crawlers and visitors actually get. I check for side effects too, such as a fix applied too broadly or a cache that never purged, and I follow up on anything still open.
+
+## Working with your team
+- Direct work with client developers and IT on cache purges, template constraints, CMS publish behavior, and access.
+- Content changes separated from template, routing, infrastructure, CDN, and rendering changes, so each goes to the person who can fix it.
+- Plain explanations in both directions.
+- Specialist subcontractors brought in and managed when a job needs one, with a clear handoff and a regular status cadence.
+- A blame-free working relationship. Developers are usually solving five problems at once; my job is to make one of them easy.
+
+## In your repository
+
+I work in GitHub repositories through branches and pull requests, and I've made metadata changes directly in React and TypeScript codebases under review. I use AI coding assistants to search a codebase alongside crawl evidence, which finds the file responsible for a problem in minutes instead of days.
 
 ## Fractional SEO and AI search lead
 
-For teams shipping continuously, I can join as the embedded, part-time person who writes the SEO and AEO acceptance criteria for new work and catches the template change that's about to hide your content from Google.
+For teams shipping continuously, I join as the embedded, part-time person who writes the SEO and AEO acceptance criteria for new work, reviews templates and releases before they ship, and catches the change that's about to hide your content from Google.
 
-Bring me in with your developers (https://gerriscorp.com/contact/)
+## Common questions
+
+### Can you change the code directly?
+
+When you want me to and access is set up for it, I work through branches and pull requests so your team reviews every change. Many teams prefer that I write the specs and verify the result, which works just as well.
+
+### Which ticket systems do you use?
+
+Whatever your team uses, such as Jira, Linear, GitHub Issues, or Basecamp.
+
+**Related:** [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+
+[Get your developers a real spec](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/ai-automation/
+Updated: 2026-10-05
+
+# AI agents and automation, built safely
+
+Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.
+
+## Why I can build these
+
+I built my own. Blackbox is a command-line chief of staff that runs on a Debian server I administer. It manages my tasks in Todoist, reads and writes my Google Calendar through my own Google Cloud OAuth project, triages work opportunities through Upwork's official MCP server, keeps state in SQLite, and drafts writing with whichever model does the job best. I directed the build with Claude Code from a 1,500-line script to about 9,600 lines in four days: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests. Claude Code wrote the implementation; I specified the behavior, made the design decisions, tested every stage, and accepted or rejected the work. The full story is on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+
+## Safety by design
+
+Companies are discovering that AI agents need guardrails. These are the ones I build in from the start:
+- **A human confirms every external action.** Each action has one unambiguous target, and nothing sends, submits, spends, or deletes on its own.
+- **Deterministic first.** Everything that can be handled by ordinary code is, and models are reserved for writing and judgment. That makes the tool faster, predictable, and cheap: Blackbox's total model spend at launch was under three dollars.
+- **Untrusted content is data.** Emails, web pages, and documents the tool reads are treated as data and never as instructions, which defends against prompt injection.
+- **Secrets stay out of Git.** API keys and tokens live outside the repository.
+- **Tests and a real deploy loop.** Work happens on a branch, tests run, the database is backed up, the change is merged and pushed, and a live smoke test confirms it.
+- **Encrypted backups with tested restores.** Nightly AES-256 encrypted backups, and a restore actually performed, not assumed.
+- **Model choice by evidence.** I test models from OpenAI, Anthropic, and open-weight providers against each other on the real task before choosing.
+
+## What I build for clients
+
+Focused tools with a clear job: a morning briefing assembled from your tasks, calendar, and inbox; triage of incoming requests into your project tool; a research assistant that gathers sources and drafts a reviewable summary; integrations between systems that don't talk to each other; command-line tools for repetitive website and data chores; and audits of AI output before anyone relies on it.
+
+## How a pilot works
+
+Every build starts as a pilot, defined in writing before work begins:
+- **Inputs:** what goes in, from where.
+- **Permissions:** which accounts and data it touches, and nothing more.
+- **Outputs:** what it produces, where it's saved, and how a person reviews it.
+- **Acceptance:** the tests that prove it works, run in front of you.
+- **Handover:** the code in your repository, documentation, ownership of every account, and what to do when it fails.
+
+## The questions I ask
+
+What's the actual job? What happens after this step? Where is the result saved? Can you recover it if something goes wrong? What does this error mean? Does the system remember what it needs to remember? Those questions decide whether an AI tool saves time or creates a new mess.
+
+## Advice before building
+
+Not every team needs a custom tool. Often the right first step is advice: which tasks are worth automating, which off-the-shelf tools fit, what your team's working practices should be, and what should never be pasted into a public AI service. That's available on its own as part of [strategic advisory](https://gerriscorp.com/services/advisory/).
+
+## Common questions
+
+### Who owns what you build?
+
+You do. Pilots run on your accounts, and the code, prompts, tests, and documentation are handed over at the end.
+
+### Do you build large AI applications?
+
+I build small, focused tools that prove value quickly. When a pilot needs to grow into a larger system, I specify it and work with developers who build at that scale.
+
+**Related:** [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
+
+[Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/rescue/
+Updated: 2026-10-05
+
+# Project rescue, takeovers, and legacy migrations
+
+A developer disappeared. An agency handed over a zip file. The site is down, or running on software nobody can update. I find out what you actually have and get it working again.
+
+## Takeover and handover review
+
+The first job in any rescue is finding out what exists. I inventory:
+- The source code: where it lives, whether it matches what's running, and whether it builds.
+- The environments: hosting, servers, databases, build pipelines, and process managers.
+- The accounts and credentials: registrar, DNS, hosting, CDN, email, analytics, payment and third-party services, and who controls each one.
+- The outstanding work: what was promised, what was half-finished, and what's broken.
+
+You get a written handover review and a credible plan, whether that's resuming development, stabilizing what exists, or transferring responsibility to a new developer.
+
+## Hands-on stabilization
+
+I work directly on Linux servers over SSH: reading logs, editing application and environment configuration, managing Node applications with process managers, and resolving the port conflicts, failed services, and expired certificates that take sites down. When I provision a server, it's hardened from the start: key-only SSH, root and password login disabled, a firewall that allows only what's needed, and unattended security updates.
+
+## Legacy CMS migrations
+
+Old sites on dead software still hold years of content and links. I move them to something maintainable without losing a word or a URL. I moved my own serialized novel, 309 entries from 2005 to 2022, off a broken Movable Type install onto static pages on GitHub Pages, keeping every original URL and the feel of the old site. The same approach works for abandoned WordPress installs, old Drupal and Joomla sites, and hand-built sites nobody can edit.
+
+## Platform migrations
+
+Squarespace to Shopify, WordPress rebuilds, moves to static or headless builds, and hosting changes, with content, rankings, and email preserved. That includes DNS planning that leaves mail records untouched, 301 redirects for every changed URL, and post-launch 404 and redirect cleanup. See [website migrations](https://gerriscorp.com/services/migrations/) and the [migration checklist](https://gerriscorp.com/guides/migration-checklist/).
+
+## Restoring self-service
+
+Sometimes the rescue is simply getting the client able to edit their own site again: a broken visual editor, lost admin access, or a publishing workflow that stopped working. Restoring that is often worth more than any new feature.
+
+## What a handover review covers
+
+A good review answers a handful of plain questions in writing: Do you have the real source code? Can it be built and deployed by someone new? Who holds the domain, the DNS, and the hosting? Are there credentials only the departed developer knows? What would it cost to keep going versus starting over? The answers decide the next step, and they're useful even if someone else does the work.
+
+## Common questions
+
+### Where does a rescue start?
+
+With a paid diagnostic: access gathered, the inventory done, and a written plan. Recovery work follows under its own agreed scope.
+
+### Do you host the rescued site?
+
+The site goes back onto hosting you own and control, set up properly and documented, so you never depend on one person's server.
+
+**Related:** [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [Website migrations](https://gerriscorp.com/services/migrations/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
+
+[Tell me what you inherited](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/data-cleanup/
+Updated: 2026-10-05
+
+# Data cleanup and AI-output audits
+
+Contact lists with thousands of duplicates. CRMs nobody trusts. Confident-looking spreadsheets an AI produced that turn out to be partly invented. I turn messy data into something you can rely on.
+
+## Contact list and CRM cleanup
+
+I build Python pipelines for the job instead of cleaning by hand, so the work is repeatable and every change can be traced. On a recent project with more than 28,000 exported records, the pipeline:
+- Remapped broken export formats into consistent columns.
+- Validated first and last names by country against a large names dataset, ranking how plausible each name is.
+- Rescued missing names from email address prefixes, and detected surnames entered in the wrong field.
+- Deduplicated contacts across domains and spelling variants.
+- Assigned every record a resolution status, so nothing was silently dropped.
+
+The same approach works for CRM exports, newsletter lists, event registrations, and merged lists after an acquisition.
+
+## Auditing AI output
+
+AI tools now produce trackers, reports, and spreadsheets that look finished. Some of them contain fabricated values. In one audit, an AI-generated outreach tracker marked bounced and nonexistent contacts as sent, carried uniform timestamps that couldn't be real, and repeated contacts. I rebuilt it against the actual sending records into a verified master list: 452 rows became 392 real contacts, each with a status the evidence supported.
+
+I check AI output the way I check anything else: against the source records, looking for patterns that are too neat, and separating what was verified from what was assumed.
+
+## Measurement sanity checks
+
+Dashboards mislead, too. A sudden drop in a metric can be a vendor changing its methodology rather than a real decline. I once traced an industry-wide drop in AI visibility scores to exactly that. Before you react to a number, I find out what it actually measures.
+
+## What you get
+- A cleaned, deduplicated dataset with a status for every record.
+- The script that did the work, so the cleanup can be rerun on the next export.
+- A short report: what was wrong, what changed, and what still needs a human decision.
+
+## When to call me
+
+Before a big campaign goes out to a merged list, after an acquisition or CRM migration, when a newsletter's bounce rate starts climbing, or when a report built with AI is about to go to leadership.
+
+## Common questions
+
+### Is client data kept private?
+
+Yes. Data stays in your accounts or on encrypted storage I control for the duration of the project, it's never pasted into public AI tools, and it's deleted at the end unless you ask otherwise.
+
+### Can you clean data directly inside a CRM?
+
+Usually I export, clean, and re-import with your approval at each step, which keeps a record of every change. Direct in-CRM cleanup is possible when the CRM supports it safely.
+
+**Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
+
+[Send me the messy spreadsheet](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/advisory/
+Updated: 2026-10-05
+
+# Strategic advisory and briefings
+
+An experienced outside advisor for the people who make decisions: founders, executives, boards, communications teams, and the agencies and firms that serve them.
+
+I've worked in digital since the early 1990s, through the first web communities, the rise of Google, social media, online reputation management, and now AI search. Leaders hire me as an advisor when they need someone who understands both the technology and how it plays out in public, and who will tell them plainly what matters.
+
+## What I advise on
+- **AI search and your business.** How ChatGPT, Gemini, Claude, Perplexity, and Google's AI features are changing how customers find and judge you, and what to do about it this year.
+- **Your reputation online.** What search engines and AI assistants say about your company and your leaders, the risks in that record, and how to strengthen it.
+- **Digital risk.** Executive privacy, data brokers, impersonation, domain and email security, and the gaps that make an organization easy to attack or embarrass.
+- **Website and search decisions.** Replatforming, agency selection, and vendor proposals reviewed by someone with no stake in the outcome.
+- **AI adoption.** Which tasks are worth automating, which tools fit, how your team should use them, and what should never be pasted into a public AI service. When a custom tool makes sense, see [AI agents and automation](https://gerriscorp.com/services/ai-automation/).
+
+## Formats
+- **Advisory retainer.** A standing relationship: regular calls, review of plans and proposals, and quick answers when something comes up.
+- **Briefings and workshops.** A focused session for executives, a board, a communications team, or an agency, on AI search, reputation, or digital risk, with written takeaways.
+- **Second opinions.** A written review of a website problem, a proposed rebuild, a migration plan, a developer's recommendation, an agency proposal, an SEO audit, or an AI vendor's pitch: the options, the missing evidence, the dependencies, and the sensible next move.
+
+## Working alongside other advisors
+
+I work easily with legal, security, communications, and family office teams, and I currently run a long-standing engagement alongside a security firm's open-source intelligence program. Firms that need a search and reputation specialist to refer clients to are welcome to get in touch.
+
+## How a second opinion works
+
+You send the proposal, plan, or audit, plus the context: what you're trying to achieve, the budget, and the timeline. I review it, ask the questions the document skipped, and write a short recommendation covering what's sound, what's missing, what it depends on, and what I'd do next. Most second opinions take a few days.
+
+## Common questions
+
+### Is advisory work confidential?
+
+Always. I name no advisory or reputation clients, and I'm happy to sign a nondisclosure agreement before the first conversation.
+
+### How is advisory work billed?
+
+Retainers are billed monthly in advance. Briefings, workshops, and second opinions are scoped and prepaid individually.
+
+**Related:** [Reputation and perception management](https://gerriscorp.com/services/reputation/) · [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [About Chris Abraham](https://gerriscorp.com/about/)
+
+[Start a confidential conversation](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/technical-seo/
+Updated: 2026-10-05
+
+# Technical SEO forensics and fixes
+
+A site lost traffic and nobody knows why. My job is to find the mechanism, prove it, and get it fixed.
+
+Technical SEO is the work that decides whether search engines and AI systems can find, render, understand, and trust your pages. It's the part of SEO I love most: on-page structure, site speed, 301 redirects, canonical tags, indexing, and Google Search Console. Most sites that underperform have a technical cause hiding in plain sight, and most of those causes leave evidence.
+
+## When to call me
+- Organic traffic fell after a redesign, a platform change, a template update, a hosting move, or for no visible reason.
+- Search Console shows a growing pile of pages marked "Crawled, currently not indexed" or "Discovered, currently not indexed."
+- Important pages rank below thin ones, or Google picks a different URL than the one you want.
+- The site looks complete to people and nearly empty to crawlers.
+- Pages are slow on phones, or Core Web Vitals are failing.
+- Redirects have piled up over the years and nobody trusts them.
+
+## What I check
+
+### Rendering
+
+What crawlers actually receive, compared with what a visitor sees. JavaScript frameworks and lazy-loading patterns can leave product details, reviews, and FAQs out of the HTML a crawler reads. I compare the raw HTML, the rendered DOM, and a crawler's extraction for the same page. The [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) explains the method.
+
+### Crawling and indexing
+
+Robots rules, XML sitemaps, canonical tags, status codes, parameters, pagination, duplicate URLs, and how Google's chosen canonical compares with yours. I read the Search Console page indexing report as a set of clues, then confirm each with URL Inspection and a crawl.
+
+### Redirects and broken links
+
+Chains, loops, temporary redirects that should be permanent, redirects to irrelevant pages, and internal links that still point at old URLs.
+
+### On-page structure
+
+Titles, meta descriptions, heading order, internal linking, image alt text, and whether each page says plainly what it's about.
+
+### Site speed and Core Web Vitals
+
+Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real users where data exists and from lab tests where it doesn't. The usual culprits are oversized images, render-blocking CSS and JavaScript, third-party scripts, web fonts, and slow servers or missing caching.
+
+### Structured data
+
+Schema.org JSON-LD for your organization, people, products, services, articles, and breadcrumbs, and whether it matches the visible page.
+
+### Off-site signals
+
+Backlink anomalies such as a sudden spike in spam links, and whether they matter at all.
+
+## One cause at a time
+
+Two problems often arrive together: a template change and a spam link spike, or a redirect error and a seasonal dip. I keep each on its own track until the data connects them, so every fix targets a proven cause and nobody spends a quarter fixing the wrong thing.
+
+## What you get
+- Findings with evidence: crawl data, Search Console reports, rendered HTML comparisons, and example URLs.
+- The mechanism, explained in plain language for owners and in technical detail for developers.
+- A prioritized list of fixes, each with an owner and an expected effect.
+- Developer tickets with affected URLs, observed behavior, the fix, and acceptance criteria.
+- A check of the live site once the fixes ship, and a follow-up read of Search Console as Google recrawls.
+
+I make the changes I have access to myself, in the CMS or the repository, and work with your developers on the rest. See [working with your developers](https://gerriscorp.com/services/developers/).
+
+## Tools
+
+Google Search Console, GA4, Screaming Frog, Semrush, Ahrefs, PageSpeed Insights and the Chrome UX Report, Cloudflare, browser developer tools, and the command line.
+
+## Common questions
+
+### How long does a technical SEO diagnostic take?
+
+Usually one to three weeks, depending on the size of the site, the access I have, and how many separate problems turn up. I agree the questions and the timeline in writing before I start.
+
+### What access do you need?
+
+Search Console and analytics access, a staging or production URL I can crawl, and ideally read access to the CMS or repository so I can find the template behind a problem.
+
+### Do you fix things or only report them?
+
+Both. I fix what I have access to and write developer-ready tickets for changes that belong in the codebase, then check the result once it's live.
+
+### How soon will traffic recover after the fixes?
+
+Google has to recrawl and reprocess the affected pages first, which takes days for important pages and weeks or months for large sites. I track the recovery in Search Console and report what changes.
+
+**Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/)
+
+[Tell me what happened to your traffic](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/crawler-visibility/
+Updated: 2026-10-05
+
+# Content the crawler never sees
+
+The page looks complete in a browser. Googlebot and the AI crawlers get a shell. There are no crawl errors anywhere, only a growing pile of pages marked "Crawled, currently not indexed" and traffic that won't come back. This is the diagnosis I'm best known for.
+
+## One failure, many stacks
+
+The same class of failure keeps turning up on completely different technology. In a single year I found it on three different stacks:
+
+### Magento with Hyvä: content mounted on scroll
+
+An e-commerce site's product templates used Alpine.js to render specifications, FAQs, and reviews only when a visitor scrolled them into view, with `x-intersect` wrapped around `x-if`. Googlebot never scrolls the way a person does, so those sections never mounted. A crawl showed category pages with thousands of words of text and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a cluster of product pages marked "Crawled, currently not indexed," while the rest of the site indexed normally.
+
+### WordPress media site: consent management blocking the page
+
+A consent-management platform blocked scripts for visitors who hadn't accepted cookies. One of the blocked scripts initialized the jQuery UI tabs that held each article's content. Googlebot never accepts cookies, so it was a permanent non-consenter and saw empty tabs on every page. No crawl errors, no warnings, just "Crawled, currently not indexed" at scale.
+
+### React event platform: links crawlers couldn't follow
+
+A Create React App site had already added server-side rendering, so each page's HTML was fine. Navigation used the router's click handlers instead of real `<a href>` links, though, so crawlers had no links to follow and couldn't reach the pages rendering had fixed.
+
+## How I find it
+1. **Compare three views of the same page:** the raw HTML the server sends, the DOM after JavaScript runs, and what a crawler extracts.
+2. **Crawl with and without rendering,** and compare word counts and links by template. A template that loses most of its text without JavaScript stands out at once.
+3. **Ask Google directly** with Search Console's live URL test, and read the rendered HTML it returns.
+4. **Read the code** for the template responsible, often with an AI coding assistant searching the repository alongside the crawl evidence, until the exact mechanism is clear.
+5. **Keep other problems separate.** A backlink spike or redirect error in the same month gets its own investigation.
+
+## What you get
+- The mechanism, proven with side-by-side evidence.
+- A developer spec with the affected templates, example URLs, the fix, and acceptance criteria, such as "a plain fetch of a product URL returns the specification table."
+- Verification once the fix ships, in the raw HTML and in Search Console.
+
+## Why it matters more every year
+
+Google renders JavaScript, slowly and imperfectly. Most AI crawlers don't render it at all. As more buyers ask ChatGPT, Perplexity, Claude, and Gemini instead of searching, content that exists only after scripts run is invisible to a growing share of the people looking for you. The [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) shows how to run the first tests yourself.
+
+## Common questions
+
+### How do I know if my site has this problem?
+
+Search view-source for a sentence from your most important content. If it's missing, crawlers that don't run JavaScript can't see it. A growing "Crawled, currently not indexed" count in one template is another strong sign.
+
+### Does the fix require a rebuild?
+
+Rarely. Most fixes change how one template renders a few sections, such as rendering on the server, keeping content in the HTML and toggling visibility with CSS, or using real links.
+
+**Related:** [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
+
+[Ask me what Google actually sees](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/on-page-seo/
+Updated: 2026-10-05
+
+# On-page SEO
+
+Every page should tell people, search engines, and AI assistants exactly what it's about and why it deserves the click. On-page SEO is how a page says that.
+
+On-page SEO covers everything on the page itself: the title, the meta description, the headings, the copy, the internal links, the images, and the structured data. It's where technical SEO meets writing, and it's where I spend a lot of my time, because a technically perfect site still fails if its pages are vague.
+
+## What I work on
+
+### Titles and meta descriptions
+
+A title tag that names the topic like a news headline, usually 50 to 60 characters, and a description of 140 to 160 characters that tells a searcher what they'll find. I avoid pipes, dashes, and repeating the brand on every page, and I write each one for the page it's on. Google rewrites titles and descriptions it finds unhelpful; well-written ones are rewritten far less often.
+
+### Headings and structure
+
+One clear H1, then H2 and H3 headings in a logical order that a reader, a screen reader, and a crawler can all follow. Headings that carry information, so each section can stand on its own when an AI system quotes it.
+
+### Copy that matches intent
+
+A service page that plainly explains what you do, for whom, and how. An explanatory article that answers its question completely. I follow legitimate keyword priorities, and I write for the person searching first, because that's what both Google and AI assistants reward.
+
+### Internal linking
+
+Descriptive links between related pages, so authority flows to the pages that matter and every important page sits within a few clicks of the home page. Orphaned pages, the ones nothing links to, get found and connected.
+
+### Images
+
+Descriptive file names, alt text that serves people using screen readers, explicit dimensions to prevent layout shift, and modern formats at sensible sizes.
+
+### Structured data
+
+Schema.org JSON-LD for your organization, people, services, products, articles, FAQs, and breadcrumbs, consistent with what the page visibly says. FAQ and HowTo rich results are now rare in Google, but structured data still helps search engines and AI systems understand who you are and what each page covers.
+
+## Publishing, too
+
+I do the unglamorous part as well: getting a document into the CMS properly formatted, with the headings, links, images, metadata, and schema in place. WordPress with Yoast or WPCode, Umbraco, Wix, Squarespace, Shopify, and static sites are all familiar ground.
+
+## What you get
+- An audit of titles, descriptions, headings, internal links, and structured data across the site, with the worst problems first.
+- Rewritten titles and descriptions for the pages that matter, ready to paste or published by me.
+- An internal linking plan and the orphaned pages to connect.
+- Improved or new pages, written and published in your CMS.
+
+## Common questions
+
+### Do you write the content yourself?
+
+Yes. I write and edit service pages, landing pages, FAQs, glossaries, and articles, working from your knowledge of the business and checking facts with you before anything is published.
+
+### How many pages can you cover?
+
+Audits cover the whole site. Rewrites start with the pages that bring in the most traffic or revenue, and ongoing support works through the rest month by month.
+
+**Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [AI search visibility](https://gerriscorp.com/services/ai-search/) · [Glossary](https://gerriscorp.com/guides/glossary/)
+
+[Ask me to review your pages](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/site-speed/
+Updated: 2026-10-05
+
+# Site speed, Core Web Vitals, and Cloudflare
+
+Fast pages rank better, convert better, and get crawled more. I find what's actually slowing your site on real phones and fix it.
+
+## Core Web Vitals
+
+Google measures page experience with three Core Web Vitals, scored from real Chrome users at the 75th percentile:
+| Metric | Measures | Good |
+| --- | --- | --- |
+| Largest Contentful Paint (LCP) | How fast the main content appears | 2.5 seconds or less |
+| Interaction to Next Paint (INP) | How fast the page responds to taps and clicks | 200 milliseconds or less |
+| Cumulative Layout Shift (CLS) | How much the layout jumps while loading | 0.1 or less |
+
+INP replaced First Input Delay in March 2024, and many sites that passed before now fail on it, usually because of heavy JavaScript and third-party scripts.
+
+## What I fix
+- **Images:** right-sized, modern formats such as WebP and AVIF, explicit dimensions, lazy loading below the fold, and priority loading for the main image.
+- **CSS and JavaScript:** render-blocking files, unused code, oversized bundles, and long tasks that block interaction.
+- **Third-party scripts:** tag managers, chat widgets, ad and analytics scripts, and what each one actually costs.
+- **Fonts:** fewer files, preloading, and font-display settings that avoid invisible text and layout shifts.
+- **Servers and caching:** slow time to first byte, missing page caching, and cache headers that make browsers download the same files again.
+
+## Cloudflare and CDNs
+
+A CDN puts copies of your site close to every visitor and absorbs load and attacks. I've used Cloudflare for years and set it up properly:
+- DNS moved without downtime and without disturbing email records.
+- Caching configured with Cache Rules, including full-page caching where it's safe, and Tiered Cache for sites with global traffic.
+- Automatic Platform Optimization for WordPress sites that benefit from it.
+- Compression, HTTP/3, and Early Hints switched on, and image optimization through Polish or Cloudflare Images.
+- Redirects moved to Redirect Rules and Bulk Redirects, so they run at the edge and survive CMS changes. Cloudflare is retiring the older Page Rules, and I migrate them.
+- Crawler Hints turned on, which notifies search engines of changes through IndexNow.
+- Bot and AI crawler settings checked. Cloudflare now blocks many AI crawlers by default on newer setups, which can quietly keep you out of AI search. I set them deliberately.
+
+I also work with Netlify, GitHub Pages, and other hosts' built-in CDNs.
+
+## What you get
+- A speed diagnosis from field data and lab tests, with the causes ranked by impact.
+- The fixes I can make directly, and developer tickets for the rest.
+- A before and after comparison on the pages that matter.
+
+## Common questions
+
+### Will Cloudflare make my site faster by itself?
+
+It helps immediately with static files and distance. The large gains come from configuring caching, compression, images, and redirects for your specific site, which is the work I do.
+
+### How long until Core Web Vitals improve in Search Console?
+
+The Chrome UX Report uses a rolling 28 days of real-user data, so improvements show up gradually over about a month after the fixes ship.
+
+**Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+
+[Ask me why your site is slow](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/search-console/
+Updated: 2026-10-05
+
+# Google Search Console setup, cleanup, and indexing fixes
+
+Search Console is the closest thing to a direct line into how Google sees your site. Most businesses have it set up badly or never look at it. I set it up properly and act on what it says.
+
+## Setup done right
+- A Domain property verified by DNS, so every subdomain and protocol is covered, plus URL-prefix properties where they help.
+- The right people with the right permission levels, and former agencies and staff removed.
+- XML sitemaps submitted and checked against what's actually indexable.
+- Bing Webmaster Tools set up as well, because Bing's index feeds Microsoft Copilot and other AI assistants. It imports directly from Search Console.
+- Search Console linked to GA4 where it's useful.
+
+## Reading the reports
+
+### Page indexing
+
+The report that explains why pages aren't in Google: "Crawled, currently not indexed," "Discovered, currently not indexed," "Duplicate without user-selected canonical," "Alternate page with proper canonical tag," "Page with redirect," "Not found (404)," "Soft 404," and "Blocked by robots.txt." Each status has different causes and different fixes. The guide to ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) covers the most misunderstood one.
+
+### Performance
+
+Clicks, impressions, and positions by query and page, which show what you rank for, what's slipping, and which pages earn impressions without clicks because their titles undersell them.
+
+### URL Inspection
+
+The live test shows the HTML Google rendered for a page, which is how I prove whether content is visible to Googlebot.
+
+### Core Web Vitals, HTTPS, and enhancements
+
+Field speed data by URL group, security problems, and structured data errors and warnings.
+
+### Crawl stats
+
+Found under Settings: how often Googlebot visits, what it fetches, and how fast your server responds. It's essential after migrations and server changes.
+
+## Cleanup and fixes
+
+I turn the reports into a list of real problems, ignore the noise, and fix the causes: redirects, canonicals, thin or duplicate pages, sitemap errors, blocked resources, and soft 404s. Then I request reindexing where it's worth it and watch the reports as Google recrawls.
+
+## Common findings
+
+The same problems turn up again and again: a property verified by an agency that no longer works with you, sitemaps listing redirected or noindexed URLs, parameter URLs multiplying in the index, staging sites indexed by accident, and important templates quietly dropping out of the index after a release.
+
+## Common questions
+
+### Should every page on my site be indexed?
+
+No site needs every URL indexed. Filter pages, internal search results, tag archives, and near-duplicates are better left out. The goal is to get every page that deserves to rank into the index, and keep the rest out deliberately.
+
+### Is a Search Console cleanup a one-time job?
+
+The setup and first cleanup are a project. Monitoring fits naturally into [ongoing support](https://gerriscorp.com/services/ongoing-support/), since new problems appear whenever the site changes.
+
+**Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/)
+
+[Ask me to read your Search Console](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/migrations/
+Updated: 2026-10-05
+
+# Website migrations
+
+A migration is the moment a site is most likely to lose what it built in search. I help before the move, during the launch, and after it.
+
+Every migration changes something search engines rely on: URLs, templates, internal links, rendering, or the domain itself. When those changes are mapped and tested, rankings carry over. When they aren't, pages vanish from the index, links point at 404s, and nobody notices until traffic is gone. I make sure each change is deliberate.
+
+## Kinds of migration
+- **Platform changes:** WordPress to a headless or static build, Wix or Squarespace to WordPress, Magento to Shopify, a CMS upgrade with new templates.
+- **Domain changes:** rebrands, consolidations of several domains into one, country domains into folders, and HTTP to HTTPS.
+- **Structure changes:** new URL patterns, merged or retired sections, and new navigation.
+- **Redesigns:** the same URLs with new templates, which can still change rendering, headings, internal links, and speed.
+
+## Before launch
+- An inventory of every URL that matters, built from a crawl, the XML sitemaps, Search Console, analytics, and backlink data, so pages with traffic or links can't slip through.
+- A 301 redirect map from every old URL to its closest new equivalent, and deliberate decisions about pages you're retiring.
+- A review of the new templates on staging: titles, canonicals, headings, structured data, internal links, and content crawlers can read without running JavaScript.
+- A plan for analytics, Search Console, sitemaps, and robots rules on launch day.
+
+## At launch
+- Redirects tested in bulk on the live site, including status codes, chains, and destinations.
+- Staging blocks removed and production robots rules confirmed.
+- New XML sitemaps submitted, and Google's Change of Address tool used for domain moves.
+- A quick round of fixes with your developer or host while the launch is fresh.
+
+## After launch
+
+I watch crawl stats, the page indexing report, 404s, and organic landing pages for the weeks Google needs to process the move, and fix gaps as they appear. If the launch already happened and something went wrong, I reconcile old and new URLs, find orphaned pages and broken media, repair redirect gaps, and track down what changed. I'm useful when the marketing team, the developer, the host, and the owner each hold part of the answer.
+
+## Platforms
+
+WordPress, Umbraco, Wix, Squarespace, Shopify, Magento, Netlify, GitHub Pages, Jekyll, and hand-built static sites, including a WordPress to Netlify migration and a Movable Type to GitHub Pages move.
+
+## Common questions
+
+### When should I bring you into a migration?
+
+As early as the URL structure and templates are being decided. The earlier the redirect map and template review start, the cheaper every fix is.
+
+### How long should redirects stay in place?
+
+Google recommends keeping redirects for at least a year. I recommend keeping them indefinitely unless they cause a real problem, because old links keep arriving for years.
+
+### Can you help after a migration that already went wrong?
+
+Yes. Post-launch cleanup is a common engagement: I rebuild the URL mapping from crawl, log, Search Console, and backlink data and repair what's missing.
+
+**Related:** [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
+
+[Talk to me about your migration](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/ai-search/
+Updated: 2026-10-05
+
+# AI search visibility
+
+People now ask ChatGPT, Claude, Gemini, Perplexity, and Google's AI Overviews and AI Mode before they ever click a link. I help those systems, and traditional search engines, understand and represent your business accurately.
+
+## SEO, AEO, and GEO
+
+**SEO** is search engine optimization. **AEO**, answer engine optimization, shapes content so it directly answers the questions people ask. **GEO**, generative engine optimization, makes your business easy for AI systems to find, understand, and cite. All three rest on the same foundation: crawlable pages, clear answers, consistent facts, accurate structured data, and a site that loads fast. The [guide to how AI assistants decide what to say](https://gerriscorp.com/guides/ai-assistants/) explains the mechanics.
+
+## AI search readiness audit
+
+I test a set of real prompts across the major assistants, the questions your buyers actually ask, and record what each one says about you, your products, and your competitors. Then I trace where those answers come from: your own pages, review sites, directories, news, forums, and the search indexes the assistants draw on.
+
+You get:
+- A record of the prompts, the answers, and the sources cited, so you can repeat the test later and measure change.
+- The errors, omissions, and outdated facts, ranked by how much they matter.
+- The technical blockers: content hidden behind JavaScript, crawlers blocked in robots rules, missing or wrong structured data.
+- A prioritized plan for the pages, facts, and sources you control.
+
+## Content that answers the question
+
+I write and improve service pages, landing pages, FAQs, glossaries, titles, and descriptions, and I publish them properly in your CMS. A service page plainly explains what you do, how it helps, and why your approach makes sense. An explanatory article answers its question completely, with the definitions and context an AI needs to quote it accurately. Self-contained pages like these are the ones answer engines cite.
+
+## Machine-readable you
+
+For founders, experts, and brands: consistent facts across your site and the profiles AI systems read, schema.org structured data that ties them together, and a body of self-contained pages that describes you accurately. I've practiced this on myself for more than two decades by publishing my own work in the open.
+
+## Technical foundations
+- Important text present in the HTML your server sends, because most AI crawlers don't run JavaScript.
+- Deliberate robots rules for AI crawlers such as GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, and Google-Extended.
+- An [llms.txt](https://gerriscorp.com/guides/glossary/#llms-txt) file and Markdown versions of key pages for language models.
+- Fast indexing through XML sitemaps and IndexNow, which notifies Bing and other engines of changes within minutes.
+
+## Measurement
+
+AI answers vary by phrasing, location, and time, so I measure with a fixed prompt set run on a schedule, plus referral traffic from AI assistants in analytics. I report trends and specific corrections, and I'm candid about what the data can and can't show.
+
+This site follows its own advice: static HTML, structured data on every page, an [llms.txt](https://gerriscorp.com/llms.txt) file, Markdown versions of every page, and a full-text [llms-full.txt](https://gerriscorp.com/llms-full.txt).
+
+## Common questions
+
+### How long does an AI search readiness audit take?
+
+Usually two to three weeks, including the prompt testing, the source tracing, and the written plan.
+
+### Can you get my business mentioned in ChatGPT?
+
+I improve the things that decide whether assistants mention you: the content and facts you control, the sources they cite, and the technical access their crawlers need. Each AI company decides how its system answers.
+
+### Is AI search optimization different from SEO?
+
+It builds on SEO. Most AI assistants search the web before answering, so strong technical SEO is the price of entry. AI search adds a focus on direct answers, consistent facts, and the third-party sources assistants trust.
+
+**Related:** [How AI assistants decide what to say](https://gerriscorp.com/guides/ai-assistants/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
+
+[Ask me what the AI assistants say about you](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/ongoing-support/
+Updated: 2026-10-05
 
 # Ongoing SEO and website support
 
 A continuing pair of experienced hands for businesses that need steady improvement and someone who already knows the site.
 
+Websites drift. Plugins update, pages get added in a hurry, a developer changes a template, a redirect breaks, Google changes how it treats something. Ongoing support means somebody is watching, fixing, and improving every month, without the overhead of a large agency retainer.
+
 ## What it covers
-- Technical SEO fixes and monitoring in Search Console.
+- Technical SEO fixes and Search Console monitoring, with problems caught before they cost traffic.
 - Writing, editing, and publishing pages in your CMS, with titles, descriptions, internal links, and structured data.
+- Site speed and Cloudflare upkeep.
+- AI search checks: a recurring look at what the major assistants say about you.
 - Troubleshooting when something breaks or traffic moves.
 - Coordinating with your developers, host, and marketing team.
-- A short monthly report on what changed and what's next.
+- A short monthly report: what changed, what I fixed, what's next, and what needs your decision.
 
 ## How it works
 
-You and I agree on a monthly capacity and a priority list. The retainer is billed at the start of each month, and work is tracked in Basecamp or by email so you always know the status.
+You and I agree on a monthly capacity and a priority list. The retainer is billed at the start of each month. Work is tracked in Basecamp or by email, so you always know the status, and priorities can change month to month as the business does.
 
-Ask about ongoing support (https://gerriscorp.com/contact/)
+## Who it suits
+
+Businesses with a site that matters to revenue and no full-time SEO on staff, marketing teams that need a specialist they can call on, and agencies that need experienced technical SEO help for their own clients.
+
+## A typical month
+
+A check of Search Console and analytics for anything new or broken. Two or three pages written, improved, or republished with proper metadata. A round of technical fixes from the priority list. A look at site speed after the latest plugin or theme updates. Answers to your developer's questions. Then a short written report, and an updated list for next month.
+
+## What makes it work
+
+A clear priority list that you own, access to the systems I need, and a single written channel for requests, so nothing gets lost in text messages. The best ongoing relationships feel like having an experienced technical person on staff for a fraction of the cost.
+
+## Combining services
+
+Ongoing support pairs naturally with the rest of my work. It's the follow-through after a [technical SEO diagnosis](https://gerriscorp.com/services/technical-seo/), the monitoring after a [migration](https://gerriscorp.com/services/migrations/), and the steady implementation behind a [fractional technical lead](https://gerriscorp.com/services/technical-lead/) arrangement.
+
+## Common questions
+
+### Is there a minimum term?
+
+Ongoing support runs month to month after an initial diagnostic, so the first month starts from a clear picture of the site.
+
+### What happens to unused hours?
+
+The capacity is reserved for you each month. Whether unused time carries over is set out in the written agreement before work starts.
+
+**Related:** [Search Console](https://gerriscorp.com/services/search-console/) · [On-page SEO](https://gerriscorp.com/services/on-page-seo/) · [Work With Me](https://gerriscorp.com/work-with-me/)
+
+[Ask about ongoing support](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/reputation/
+Updated: 2026-10-05
 
 # Reputation and perception management
 
 For founders, executives, and families who need privacy and a defensible public record at the same time.
 
+Your reputation is whatever comes up when someone searches your name, and increasingly whatever an AI assistant says when someone asks about you. Both draw on the same sources: your own pages and profiles, news coverage, public records, data broker listings, and whatever else the web holds. Perception management means knowing what's in that record, removing what shouldn't be public, and making sure accurate information is what people and machines find first.
+
 ## What I do
-- Shape what search engines show for your name with accurate pages you control.
-- Remove personal information from data broker sites.
-- Correct what AI assistants say about you, at the source those answers draw on.
-- Monitor and report monthly.
+
+### Audit the record
+
+A full picture of what search engines and the major AI assistants say about you or your company, across names, spellings, and related searches, with the sources behind each result and answer.
+
+### Remove what shouldn't be public
+
+Personal information removed from data broker and people-search sites, removal requests through Google's "Results about you" tool for contact details in search results, and use of state privacy rights where they apply, including California's new Delete Request and Opt-out Platform. The [guide to removing your personal information](https://gerriscorp.com/guides/personal-information-removal/) explains how each works.
+
+### Strengthen what's accurate
+
+Pages you control, consistent facts across them, and structured data that tells search engines and AI systems who you are. Strong, accurate pages are what push weaker or outdated results down.
+
+### Correct AI answers
+
+When an assistant gets you wrong, I trace the answer to its sources and fix or outweigh them, then retest on a schedule.
+
+### Monitor and report
+
+Monthly reporting on search results, AI answers, new broker listings, and anything that needs attention, with fast response when something new appears.
 
 ## Working with your other advisors
 
-This work plugs into security, legal, and family office teams. I currently run a long-standing engagement alongside a security firm's open-source intelligence program.
+This work plugs into security, legal, and family office teams. I currently run a long-standing engagement alongside a security firm's open-source intelligence program, and the two disciplines strengthen each other: they watch for threats, and I keep the public record accurate and the private information private.
 
 ## Background
 
-I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com. Engagements are confidential, and I name none of these clients.
+I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com. My longest current engagement has run for eight years.
 
-Start a confidential conversation (https://gerriscorp.com/contact/)
+## Common questions
+
+### Is this work confidential?
+
+Completely. I name none of my reputation clients, and I'm happy to sign a nondisclosure agreement before the first conversation.
+
+### How is reputation work structured?
+
+It starts with a paid audit, then usually continues as a monthly retainer billed in advance, because the record changes and data brokers relist people constantly.
+
+### Can negative articles be removed?
+
+Removal depends on the source and the law. Some content qualifies for removal under platform policies or privacy rules; most legitimate news coverage doesn't. Where removal isn't available, accurate and stronger pages change what people see first.
+
+**Related:** [Removing your personal information](https://gerriscorp.com/guides/personal-information-removal/) · [Strategic advisory](https://gerriscorp.com/services/advisory/) · [How AI assistants decide what to say](https://gerriscorp.com/guides/ai-assistants/)
+
+[Start a confidential conversation](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/google-business-profile/
+Updated: 2026-10-05
 
 # Google Business Profile hard cases
 
 Suspensions, failed video verifications, profiles that are live in public and stuck in the dashboard, and access problems across managed profiles.
 
-## Advisory work, not a one-off fix
+A Google Business Profile is often the first thing a local customer sees, and when it's suspended or stuck, calls and visits drop at once. Google handles these cases through automated systems, an appeals process, and a support queue that moves at its own pace. The cases I take are the hard ones: repeated suspensions, verification loops, duplicate or split profiles, and accounts where one problem has spread to every profile they manage.
 
-I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer.
+## Advisory work, priced for the effort
 
-## Start with a diagnostic
+I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer. Each stage is scoped and paid in advance, so the work is defined before it starts.
 
-A prepaid review of the profile, its history, and its documentation, delivered as a written findings report: what most likely went wrong, what evidence exists, and whether an appeal is viable.
+## Stage one: a written diagnostic
 
-## Then, if there's a viable path
+A prepaid review of the profile, its history, the account and its other profiles, the business's documentation, and Google's guidelines, delivered as a written findings report:
+- What most likely triggered the problem, based on the evidence available.
+- What documentation exists and what's missing.
+- Whether an appeal or reverification is viable, and what it would involve.
+- What to fix first, whether or not you hire me for the next stage.
 
-A separately scoped engagement for compliance fixes, the appeal, and correspondence with Google, with agreed limits on profiles, appeal rounds, and hours. I build appeals like a legal brief: the strongest verifiable document first, nothing that exposes private information, and only claims the paperwork supports.
+## Stage two: remediation and appeal
+
+When there's a viable path, a separately scoped engagement covers compliance fixes to the profile and website, the appeal, and correspondence with Google, with agreed limits on profiles, appeal rounds, and hours. I build appeals like a legal brief: the strongest verifiable document first, nothing that exposes private information, and only claims the paperwork supports. Further rounds are agreed and paid separately.
 
 ## What I need from you
 
-Truthful documentation, access to the profile, and prompt answers. Google makes every reinstatement decision, on its own schedule.
+Truthful documentation, access to the profile and account, and prompt answers to Google's requests. Google makes every reinstatement decision, on its own schedule.
 
-For broader local search work, see technical SEO (https://gerriscorp.com/services/technical-seo/) and ongoing support (https://gerriscorp.com/services/ongoing-support/).
+## Prevention
 
-Book a profile diagnostic (https://gerriscorp.com/contact/)
+Most suspensions trace back to a mismatch between the profile and reality: an address that's really a service area, a name with extra keywords, a category that doesn't fit, or information that differs from the website. Fixing those before Google notices is far cheaper than an appeal, and it fits naturally into [ongoing support](https://gerriscorp.com/services/ongoing-support/).
+
+## Local search beyond the profile
+
+A profile is only as strong as the website and listings behind it. Consistent name, address, and phone details across directories, location and service pages that match the profile, and reviews answered promptly all support local visibility.
+
+## Common questions
+
+### How long does reinstatement take?
+
+Google's appeal reviews take anywhere from days to several weeks, and complex cases take longer. The diagnostic itself is delivered within a week of receiving access and documents.
+
+### Do you manage profiles that aren't suspended?
+
+Yes, as part of local SEO within [ongoing support](https://gerriscorp.com/services/ongoing-support/) or a broader SEO engagement.
+
+[Book a profile diagnostic](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/email-and-dns/
+Updated: 2026-10-05
 
 # Email authentication and DNS
 
-Unglamorous plumbing that decides whether your email arrives and your domains keep their value.
+Unglamorous plumbing that decides whether your email arrives and whether your domains keep their value.
 
-## What I do
-- SPF, DKIM, and DMARC set up correctly for every service that sends mail as you.
-- Deliverability problems traced to their cause.
-- DNS inventories before any change, so nothing breaks by accident.
+Since February 2024, Gmail and Yahoo have required authenticated email, and Microsoft's Outlook.com followed in May 2025 for high-volume senders. Mail that fails authentication lands in spam or bounces. At the same time, DNS is where websites, email, and verification records all live, so a careless change for a website move can quietly break email. I handle both with an inventory first and a change list second.
+
+## Email authentication
+- **SPF** listing every service allowed to send as your domain, within the ten-lookup limit.
+- **DKIM** signing for your mailbox provider and every sending service: newsletters, CRM, invoicing, help desk.
+- **DMARC** starting at monitoring, reading the aggregate reports to find every legitimate sender, then tightening to quarantine and reject.
+- Alignment, one-click unsubscribe headers for bulk mail, and spam-rate monitoring in Google Postmaster Tools.
+
+The [SPF, DKIM, and DMARC guide](https://gerriscorp.com/guides/email-authentication/) explains each record and the current requirements.
+
+## Deliverability
+
+When mail goes missing, I trace it: authentication results in message headers, DMARC reports, blocklists, sending reputation, and content. Then I fix the cause.
+
+## DNS and domains
+- A complete DNS inventory before any change, so nothing breaks by accident.
+- Moves between DNS providers, such as Cloudflare, Squarespace, GoDaddy, and Route 53, without downtime.
+- Website moves that change only the web records and leave mail exactly where it is.
 - Domain consolidation, including internationalized domains, with 301 redirects that carry search equity to the right place.
-- Moving a website to new hosting while email stays exactly where it is.
+- Verification records for Google, Microsoft, and other services kept intact and documented.
 
-Get your email and domains in order (https://gerriscorp.com/contact/)
+## How an engagement runs
+1. A complete export of every DNS record, and a list of every service that sends mail as your domain.
+2. A written change plan: what changes, what stays, and in what order.
+3. The changes, made in a quiet period with time-to-live values lowered first.
+4. Verification with test messages, header analysis, and DMARC reports.
+5. A record of the final configuration, so the next person who touches DNS knows what everything does.
+
+## Domains you own but don't use
+
+Old brand names, typo domains, and defensive registrations need attention too. Parked domains get spoofed for phishing, so they need SPF and DMARC records that reject all mail, and any that still attract visitors or links should redirect to the right place on your main site.
+
+## Common questions
+
+### How long does DMARC take to set up?
+
+The records take minutes. Moving safely from monitoring to enforcement usually takes a few weeks of reading reports, because every legitimate sender has to be found and authenticated first.
+
+### Will changing DNS take my site or email offline?
+
+Not when it's planned. I copy every record, lower time-to-live values ahead of the change, and verify mail and web after the switch.
+
+**Related:** [SPF, DKIM, and DMARC explained](https://gerriscorp.com/guides/email-authentication/) · [Site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) · [Website migrations](https://gerriscorp.com/services/migrations/)
+
+[Get your email and domains in order](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/guides/
+Updated: 2026-10-05
+
+# Guides
+
+Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
+
+## AI search
+- [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
+
+## Technical SEO
+- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
+- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
+- [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
+
+## Email and domains
+- [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
+
+## Privacy and reputation
+- [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
+
+## Reference
+- [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): plain definitions, from 301 redirects to XML sitemaps.
+
+## How these guides are written
+
+Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.
+
+New guides are announced in the [Atom feed](https://gerriscorp.com/feed.xml).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/guides/ai-assistants/
+Updated: 2026-10-05
+
+# How AI assistants decide what to say about your business
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+When someone asks ChatGPT, Claude, Gemini, Perplexity, or Google's AI Overviews about your company, the answer comes from two places: what the model learned in training, and what it finds by searching the web right then. You can influence both, and the second is where most of the action is.
+
+## Two sources of knowledge
+
+### Training data
+
+Every large language model is trained on a huge snapshot of text, much of it crawled from the public web, and that knowledge stops at a training cutoff. What a model "knows" about you from training reflects whatever was public and widely repeated before that date. It changes only when the company trains a new model, so it lags reality by months or years. Older press coverage, Wikipedia, directories, and anything that was repeated often all weigh heavily here.
+
+### Live retrieval
+
+Most assistants now search the web before answering questions about specific businesses, products, and recent events. The assistant turns the question into one or more searches, reads the top results, and writes an answer grounded in those pages, often with citations. This is called retrieval or grounding, and it means a page that ranks well and answers the question clearly can shape the answer within days of being published.
+
+## Which search indexes feed which assistants
+- **Google AI Overviews and AI Mode** are built on Google Search's own index, crawled by Googlebot.
+- **Gemini** grounds its answers with Google Search.
+- **Microsoft Copilot** uses Bing's index.
+- **ChatGPT search** uses OpenAI's own crawler, OAI-SearchBot, alongside third-party search providers.
+- **Perplexity** runs its own crawler, PerplexityBot, and its own index.
+- **Claude** searches the web through a search provider and fetches pages with Anthropic's crawlers.
+
+The practical lesson: being well indexed in both Google and Bing covers most of the AI landscape. Bing Webmaster Tools and IndexNow, which tells Bing and other engines about changed pages within minutes, matter more than they used to.
+
+## The crawlers, and what each one is for
+| Company | Training | Search index | Fetches for a user |
+| --- | --- | --- | --- |
+| OpenAI | GPTBot | OAI-SearchBot | ChatGPT-User |
+| Anthropic | ClaudeBot | Claude-SearchBot | Claude-User |
+| Perplexity | (none listed) | PerplexityBot | Perplexity-User |
+| Google | Google-Extended (a robots.txt token) | Googlebot | Google's user-triggered fetchers |
+
+You can allow or block each in robots.txt. Blocking a training crawler keeps your future pages out of future models; blocking a search crawler keeps you out of that assistant's live answers. Google-Extended controls whether your content is used for Gemini, and it doesn't affect Google Search or AI Overviews, which follow Googlebot. Check your CDN, too: Cloudflare began blocking many AI crawlers by default on new setups in 2025, which can keep a business out of AI answers without anyone deciding that on purpose.
+
+## What assistants favor when they write an answer
+- **Direct answers.** Pages that state the answer plainly near the top, in a sentence that still makes sense when quoted on its own.
+- **Self-contained context.** Definitions, dates, locations, and names on the page itself, so the assistant doesn't have to guess.
+- **Consistency.** The same facts about you on your site, your profiles, directories, and press. Conflicting facts produce hedged or wrong answers.
+- **Third-party confirmation.** Reviews, news coverage, industry directories, and community discussions. Assistants treat what others say about you as evidence.
+- **Freshness.** Visible "updated" dates and current information, especially for anything that changes.
+- **Readable HTML.** Most AI crawlers fetch the HTML without running JavaScript, so content that appears only after scripts run is invisible to them. The [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) shows how to check.
+
+## What you can do this quarter
+1. Ask the major assistants the ten questions your buyers ask, and write down the answers and the sources cited.
+2. Fix your own pages first: one clear page per service or product, with the facts stated plainly and an FAQ section with real answers.
+3. Make your facts consistent everywhere: name, description, location, founding date, leadership, services, prices where public.
+4. Add schema.org structured data for your organization, people, products, and services, matching the visible page.
+5. Check robots.txt and your CDN's bot settings for the AI crawlers you want.
+6. Submit your sitemap to Google Search Console and Bing Webmaster Tools, and turn on IndexNow.
+7. Consider an [llms.txt](https://gerriscorp.com/guides/glossary/#llms-txt) file. It's a proposed convention from 2024 that gives language models a plain summary of your site; adoption by AI companies is still uncertain, and it costs almost nothing.
+8. Repeat the same questions in a month and compare.
+
+## Measuring it
+
+AI answers vary with phrasing, location, account history, and time, so a single test proves little. Use a fixed set of prompts, run them on a schedule, and record the answers and citations. Add referral traffic from chatgpt.com, perplexity.ai, gemini.google.com, and copilot.microsoft.com in analytics, and watch which pages they land on.
+
+I do this work as [AI search visibility](https://gerriscorp.com/services/ai-search/), starting with an AI search readiness audit.
+
+
+---
+
+Source: https://gerriscorp.com/guides/javascript-seo/
+Updated: 2026-10-05
+
+# How to tell if JavaScript is hiding your content from Google and AI
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+A page can look complete in a browser and nearly empty to a crawler. When the important content depends on JavaScript, search engines may see less of it, later, and AI crawlers may not see it at all.
+
+## How crawlers handle JavaScript
+
+Googlebot renders pages with an up-to-date version of Chromium, so it can run JavaScript. Rendering happens in a queue after the initial crawl, though, and the renderer behaves like a very patient visitor who never clicks, never types, and never scrolls the way a person does. It loads the page with a tall viewport and takes a snapshot. Content that waits for a click, a real scroll event, or a user action can be missing from that snapshot.
+
+Most AI crawlers are simpler. GPTBot, ClaudeBot, PerplexityBot, and similar crawlers generally fetch the HTML the server sends and read it without running JavaScript. If your product details, prices, reviews, or answers exist only after scripts run, those crawlers see a shell.
+
+## Five tests that settle it
+
+### 1. Compare view-source with the rendered page
+
+Open the page, then open view-source. View-source shows the HTML your server sent; the Elements panel in developer tools shows the DOM after JavaScript ran. Search view-source for a sentence from the content you care about. If it's missing, crawlers that don't render can't see it.
+
+### 2. Fetch it from the command line
+
+```
+curl -sL https://example.com/products/widget-200 | grep -c "Specifications"
+```
+
+A count of zero means the text isn't in the server's HTML.
+
+### 3. Disable JavaScript
+
+Turn off JavaScript in your browser's developer tools and reload. What remains is roughly what a non-rendering crawler gets.
+
+### 4. Ask Google directly
+
+In Search Console, run URL Inspection on the page, click "Test live URL," then "View tested page" and the HTML tab. That's the HTML Google rendered. If your content is missing there, Google doesn't have it.
+
+### 5. Crawl both ways
+
+Crawl a sample of pages in Screaming Frog with JavaScript rendering off, then on, and compare word counts by template. In one diagnosis I ran, category pages yielded thousands of words while flagship product pages yielded 250 to 400 words despite weighing more than a megabyte, which pointed straight at the product template.
+
+## Common causes
+- **Client-side rendering.** Single-page apps that send an empty HTML shell and build the page in the browser.
+- **Content that loads on scroll or interaction.** Sections rendered only when they enter the viewport after a real scroll, such as Alpine.js `x-if` combined with `x-intersect`, or reviews fetched when a visitor scrolls near them.
+- **Content that loads on click.** Tabs and accordions that fetch their content when opened. Tabs that merely hide content already in the HTML are fine.
+- **Links without real URLs.** Navigation built with click handlers instead of `<a href>` links, which crawlers can't follow.
+- **Infinite scroll without paginated URLs.** Products beyond the first batch never get a crawlable link.
+- **Metadata changed by JavaScript.** Titles, canonical tags, or robots directives rewritten after load, so the raw HTML and the rendered page disagree.
+- **Blocked resources.** JavaScript or CSS files disallowed in robots.txt, which prevents Google from rendering the page properly.
+
+## Fixes
+- **Render on the server.** Server-side rendering or static generation puts the content in the initial HTML. Next.js, Nuxt, SvelteKit, Astro, and similar frameworks do this well when pages are configured for it.
+- **Keep content in the HTML and hide it with CSS.** In Alpine.js, `x-show` keeps an element in the DOM and only toggles visibility, while `x-if` removes it entirely until the condition is true. Use animation as progressive enhancement on content that's already present.
+- **Use real links and paginated URLs** for navigation and long lists.
+- **Put titles, canonicals, and structured data in the server's HTML**, and keep them unchanged after load.
+- **Avoid dynamic rendering** as a long-term answer. Google describes serving crawlers a separately rendered version as a workaround, and server rendering is the durable fix.
+
+## Writing the ticket
+
+Developers fix these problems fastest with evidence: the affected template, example URLs, the word count with and without rendering, the Search Console live test result, and a testable definition of done, such as "a curl of the product URL returns the specification table." There's a [sample ticket on the developers page](https://gerriscorp.com/services/developers/).
+
+I diagnose rendering problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/crawled-not-indexed/
+Updated: 2026-10-05
+
+# "Crawled, currently not indexed": what it means and how to fix it
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+Google visited the page, read it, and decided not to put it in the index, at least for now. It's the most misunderstood status in Search Console, and the fix depends entirely on why Google made that call.
+
+## Where you see it
+
+In Google Search Console, open Indexing, then Pages. The "Why pages aren't indexed" table lists every reason Google has for leaving URLs out. "Crawled, currently not indexed" means Googlebot fetched the URL successfully and chose not to index it. Google gives no specific reason, and the status alone isn't an error. Every large site has some URLs here, and many of them deserve to be.
+
+## How it differs from "Discovered, currently not indexed"
+
+"Discovered, currently not indexed" means Google knows the URL exists and hasn't crawled it yet. That usually points to crawl priority: too many URLs, weak internal linking, a slow server, or a site Google doesn't consider worth crawling quickly. "Crawled, currently not indexed" means Google did crawl the page and judged it not worth indexing. One is about getting Google to look; the other is about what Google saw when it looked.
+
+## Common causes
+- **Thin or duplicate content.** Pages that say little, or say nearly the same thing as other pages: tag archives, near-identical location pages, product variants, and boilerplate-heavy templates.
+- **Content hidden from the renderer.** The page looks rich to visitors, but Google's rendered HTML holds only the template, because the substance loads on scroll or click. The [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) shows how to check.
+- **Weak signals of importance.** Few internal links, no external links, buried deep in the site.
+- **Low-value URL patterns.** Filter and sort parameters, internal search results, and session URLs that multiply without adding anything.
+- **Soft 404s and empty states.** Out-of-stock or "no results" pages that return a 200 status.
+- **A new or recently changed site.** Google is still deciding, and many URLs move into the index over the following weeks.
+
+## A method that finds the real cause
+1. **Export the examples.** Click the status in the report and export the URL list. Search Console shows a sample of up to 1,000 URLs.
+2. **Group them by template.** Sort the URLs into page types: product, category, article, location, tag, parameter. A status spread evenly across the site tells a different story than a cluster in one template.
+3. **Ask whether each group deserves indexing.** Parameter URLs, tag pages, and near-duplicates are often correctly excluded. Handle those with canonicals, noindex, or by removing the links that create them, and move on.
+4. **Inspect the important ones.** For pages that should rank, run URL Inspection, test the live URL, and read the rendered HTML. Is the main content there? Is the canonical the URL you expect? Is the page returning 200?
+5. **Compare with pages that are indexed.** Crawl both groups and compare word counts, internal links, duplication, and load time. The difference usually points at the cause.
+6. **Check the dates.** Line up when the count started rising with deployments, template changes, migrations, and plugin updates.
+7. **Keep other problems separate.** A backlink spike or a redirect error at the same time may be a coincidence. Investigate each on its own track until the data connects them.
+
+## Fixes, by cause
+- Thin or duplicate pages: merge them, expand them with real substance, or canonicalize them to the strongest version.
+- Hidden content: render it in the server's HTML.
+- Weak signals: link to the pages from relevant, indexed pages and from navigation where it makes sense.
+- Low-value patterns: stop generating crawlable links to them, and keep them out with canonicals or noindex.
+- Soft 404s: return a real 404 or 410, or give the page useful content.
+
+After the fix ships, click "Validate fix" in the report. Validation takes days to weeks, and Google reprocesses pages at its own pace. Request indexing through URL Inspection for a handful of the most important pages.
+
+## When it's a crisis
+
+A sudden rise concentrated in your most valuable template, with a matching traffic drop, is a technical emergency, and it's usually a rendering or template change. A slow, even scatter across low-value pages is housekeeping. Telling the two apart is the first job.
+
+I diagnose indexing problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [Search Console cleanup](https://gerriscorp.com/services/search-console/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/migration-checklist/
+Updated: 2026-10-05
+
+# The website migration SEO checklist
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+Migrations lose traffic for predictable reasons: URLs that weren't mapped, redirects that weren't tested, templates that changed what crawlers see, and nobody watching afterward. This checklist covers each stage.
+
+## Before you start
+- Record a baseline: organic sessions and conversions by landing page from analytics, and clicks, impressions, and indexed pages from Search Console. Export them, because you'll compare against them for months.
+- Decide the launch window. Avoid your busiest season.
+- Make sure Search Console and Bing Webmaster Tools are verified for both the old and new sites, and that you'll keep access to the old domain if it's changing.
+
+## Build the URL inventory
+
+Combine every source, because each one misses something:
+- A full crawl of the current site.
+- Every URL in the XML sitemaps.
+- Pages with clicks or impressions in Search Console over the last 16 months.
+- Landing pages with traffic in analytics.
+- URLs with external backlinks, from Ahrefs, Semrush, or Search Console's Links report.
+- Images, PDFs, and other files that rank or receive links.
+
+## Build the redirect map
+- Map every old URL to its closest equivalent on the new site with a 301 or 308 permanent redirect.
+- Redirect to the most relevant page, never to the home page in bulk. Google treats mass redirects to the home page like soft 404s.
+- Make deliberate decisions about pages you're retiring: redirect them to a close substitute, or let them return 404 or 410 if nothing fits.
+- Avoid chains. Every old URL should reach its final destination in one hop, including URLs that were already redirecting.
+- Keep the map in a spreadsheet: old URL, new URL, status, reason. It's the document every later question goes back to.
+
+## Review the new site before launch
+- Crawl staging and compare titles, descriptions, headings, canonicals, and word counts with the old site, template by template.
+- Check that the main content is in the server's HTML, so it doesn't depend on JavaScript.
+- Check structured data, internal links, image alt text, and hreflang if you have more than one language.
+- Test Core Web Vitals on the new templates.
+- Keep staging blocked from search with authentication or noindex, and write down exactly how, so it can be removed at launch.
+
+## Launch day
+- Remove the staging block, and confirm production robots.txt and meta robots tags allow crawling.
+- Test the redirect map in bulk against the live site: status codes, single hops, correct destinations.
+- Submit the new XML sitemaps. Keep a sitemap of the old URLs available for a few weeks so Google recrawls them and discovers the redirects faster.
+- For a domain change, use Google's Change of Address tool in Search Console and Bing's Site Move tool.
+- Confirm analytics and tag tracking work on every template.
+- If DNS changes, confirm that mail records were left untouched and email still arrives.
+
+## The weeks after
+- Watch Search Console daily for the first two weeks: page indexing, crawl stats, and 404s.
+- Compare organic landing pages with the baseline, and investigate every important page that lost traffic.
+- Fix redirect gaps as they appear in 404 reports and server logs.
+- Update internal links that still point at old URLs.
+- Ask the most valuable sites linking to you to update their links.
+- Keep the redirects in place for at least a year, and ideally indefinitely.
+
+## Special cases
+
+### HTTP to HTTPS and www changes
+
+Pick one canonical host and protocol, redirect every other combination to it in a single hop, and update canonicals, sitemaps, and internal links to match.
+
+### Merging several sites into one
+
+Map each old site's pages to their best home on the new one, and keep every old domain registered and redirecting. Old domains carry links for years.
+
+### Moving to a JavaScript framework
+
+Check that the new templates render their content on the server. A migration from a traditional CMS to a client-rendered app is a common way to lose content from Google and AI crawlers. See the [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/).
+
+## What to expect
+
+A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.
+
+I run this process as [website migration support](https://gerriscorp.com/services/migrations/), before launch or after it.
+
+
+---
+
+Source: https://gerriscorp.com/guides/email-authentication/
+Updated: 2026-10-05
+
+# SPF, DKIM, and DMARC for every domain that sends email
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+Three DNS records decide whether mail from your domain is trusted. Since 2024, the largest mailbox providers require them, and mail without them increasingly lands in spam or bounces.
+
+## The current requirements
+
+Since February 2024, Gmail and Yahoo require every sender to authenticate mail with SPF or DKIM, to have valid forward and reverse DNS for sending servers, and to keep spam complaint rates low. Bulk senders, those sending around 5,000 or more messages a day to Gmail accounts, must also have SPF, DKIM, and a DMARC policy, align the visible From domain with SPF or DKIM, offer one-click unsubscribe on marketing mail, and keep the spam rate reported in Google Postmaster Tools below 0.3%. Since May 2025, Microsoft's Outlook.com has required SPF, DKIM, and DMARC from senders of more than 5,000 messages a day to its consumer addresses.
+
+Even small businesses are affected, because a newsletter tool, CRM, invoicing system, or help desk sending as your domain counts as a sender.
+
+## SPF: who may send
+
+SPF (Sender Policy Framework) is a TXT record on your domain listing the servers and services allowed to send mail as you.
+
+```
+example.com.  TXT  "v=spf1 include:_spf.google.com include:sendgrid.net ~all"
+```
+- Publish exactly one SPF record per domain. Two records break SPF.
+- SPF allows at most ten DNS lookups. Each `include` counts, and nested includes count too. Too many services can push you over.
+- `~all` (soft fail) is the common ending; `-all` (fail) is stricter. With DMARC in place, either works.
+
+## DKIM: a signature on every message
+
+DKIM (DomainKeys Identified Mail) signs each message with a private key; receivers check the signature against a public key published in DNS under a selector.
+
+```
+google._domainkey.example.com.  TXT  "v=DKIM1; k=rsa; p=MIIBIjANBgkq..."
+```
+- Every service that sends as your domain needs its own DKIM setup, usually a TXT or CNAME record the service provides.
+- Use 2048-bit keys where the service offers them.
+- DKIM survives forwarding better than SPF, which makes it the more reliable of the two for DMARC alignment.
+
+## DMARC: the policy that ties them together
+
+DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receivers what to do when a message claiming to be from your domain fails authentication, and asks them to send you reports.
+
+```
+_dmarc.example.com.  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com"
+```
+- A message passes DMARC when SPF or DKIM passes and the domain it passed for aligns with the visible From address.
+- `p=none` monitors only, `p=quarantine` sends failures to spam, and `p=reject` refuses them.
+- `rua` sets where daily aggregate reports go. They're XML files listing every source that sent mail as your domain and whether it passed.
+
+## Reaching enforcement safely
+1. Inventory every service that sends mail as your domain.
+2. Set up SPF and DKIM for each.
+3. Publish DMARC at `p=none` with reporting, and read the reports for two to four weeks, using a report viewer to make them readable.
+4. Fix every legitimate source that fails.
+5. Move to `p=quarantine`, optionally with `pct` below 100 to phase it in, and keep reading reports.
+6. Move to `p=reject` once failures are only spoofing.
+
+Enforcement is what stops criminals sending invoices and password resets in your name. It also unlocks BIMI, which can show your logo next to your mail in supporting inboxes when combined with a verified mark certificate.
+
+## Common mistakes
+- Two SPF records after a new service is added, which invalidates both.
+- A sending service set up without DKIM, so its mail fails DMARC once enforcement begins.
+- DMARC reports sent to a mailbox nobody reads.
+- Jumping straight to `p=reject` and blocking legitimate invoices or password resets.
+- Mail records lost during a DNS provider change because only the web records were copied.
+
+## Domains that don't send mail
+
+Parked and secondary domains get spoofed too. Protect them with an SPF record of `v=spf1 -all`, a DMARC record at `p=reject`, and no MX records if they receive no mail.
+
+## Changing DNS without breaking mail
+
+Website moves, CDN setups, and DNS provider changes are when mail records get lost. Export every record first, recreate them exactly, keep MX, SPF, DKIM, and DMARC untouched unless they're the point of the change, and send test messages afterward. Header analyzers show exactly which checks passed.
+
+I set this up and troubleshoot deliverability as [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) work.
+
+
+---
+
+Source: https://gerriscorp.com/guides/personal-information-removal/
+Updated: 2026-10-05
+
+# How to remove your personal information from data brokers and search
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+Your home address, phone numbers, relatives, and age are probably for sale on dozens of people-search sites. Removing them is tedious and never permanent, and it's still worth doing, especially for executives, public figures, and anyone with a reason to be careful.
+
+## Where the information comes from
+
+Data brokers compile profiles from public records such as property deeds, voter files, court records, and business filings, combined with marketing data, social media, and other brokers. People-search sites such as Spokeo, Whitepages, BeenVerified, Radaris, and many others sell access to those profiles, and search engines index the result pages, which is how your address ends up in Google results for your name.
+
+## Opting out, site by site
+- Most people-search sites have an opt-out form, usually linked from the footer as "Do not sell," "Opt out," or "Privacy."
+- Search each site for every version of your name, past and current addresses, and relatives' listings that include you.
+- Use a dedicated email address for opt-out requests, since many sites require confirmation by email.
+- Keep a log of each site, the date, and the confirmation. Listings reappear when brokers refresh their data, so the work repeats every few months.
+- Commercial removal services automate much of this for a subscription. They cover the major sites well and the long tail less well.
+
+## Google's "Results about you"
+
+Google's Results about you tool lets you request removal of search results that show your phone number, email address, or home address, and it can alert you when new results with your contact information appear. Removal from Google doesn't delete the page from the website itself, so pair it with an opt-out at the source. Google also has separate removal policies for doxxing, non-consensual explicit images, and certain other harmful content.
+
+## Your legal rights
+
+### California's Delete Act and DROP
+
+California's Delete Act created the Delete Request and Opt-out Platform, known as DROP, run by the California Privacy Protection Agency. Since January 2026, California residents can submit one request that goes to every registered data broker, and brokers must begin processing those requests in August 2026 and keep checking for new ones on a regular schedule. It's the most significant change to data broker removal in years.
+
+### Other states
+
+California, Vermont, Texas, and Oregon require data brokers to register, which makes the industry easier to identify. A growing number of state privacy laws give residents a right to delete personal information held by businesses, with exceptions, so check what your state provides.
+
+### Outside the US
+
+In the European Union and the United Kingdom, data protection law gives a right to erasure, and search engines handle delisting requests for results about you that are inaccurate, inadequate, or no longer relevant.
+
+## What removal can't do
+
+Public records themselves usually stay public, though some states let certain people, such as judges, law enforcement officers, and domestic violence survivors, shield their addresses. Legitimate news coverage is rarely removable. Where removal isn't available, the practical answer is a stronger, accurate public record that ranks above what you can't remove.
+
+## Protecting the people around you
+
+Broker profiles link relatives, so a spouse's or parent's listing can expose your address even after your own is removed. For executives and public figures, the work should cover the household, old addresses, and any properties held in a personal name. Consider holding new property in a trust or entity where that's appropriate, and use a mailing address that isn't your home for registrations and subscriptions.
+
+## Keeping it clean
+
+Brokers refresh their data from public records and other brokers constantly, so removed listings come back. A quarterly sweep across all the major sites catches relistings early, and monitoring tools, including Results about you, flag new appearances between sweeps.
+
+## A sensible routine
+1. Search your name, with and without your city, in Google and Bing, and on the largest people-search sites.
+2. Opt out of every listing you find, and log each request.
+3. Set up Results about you, and use DROP if you're a California resident.
+4. Repeat every three months.
+5. For families and executives, cover spouses, children, and older addresses as well.
+
+I handle this for clients as part of [reputation and perception management](https://gerriscorp.com/services/reputation/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/glossary/
+Updated: 2026-10-05
+
+# Glossary of SEO, AI search, and technical website terms
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+
+Plain definitions of the terms that come up in my work, written so each one makes sense on its own.
+
+**301 redirect**
+A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.
+
+**AEO (answer engine optimization)**
+Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.
+
+**AI Mode**
+Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.
+
+**AI Overviews**
+The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.
+
+**Alt text**
+A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.
+
+**BIMI**
+Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.
+
+**Bing Webmaster Tools**
+Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.
+
+**Canonical tag**
+A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.
+
+**CDN (content delivery network)**
+A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.
+
+**Core Web Vitals**
+Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.
+
+**Crawl budget**
+How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.
+
+**Crawled, currently not indexed**
+A Google Search Console status meaning Google fetched a page and chose not to index it. See the [full guide](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+**CLS (Cumulative Layout Shift)**
+A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
+
+**Discovered, currently not indexed**
+A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.
+
+**DKIM**
+DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.
+
+**DMARC**
+A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.
+
+**E-E-A-T**
+Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.
+
+**GEO (generative engine optimization)**
+Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
+
+**Google Search Console**
+Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.
+
+**hreflang**
+An annotation that tells search engines which language or regional version of a page to show to which users.
+
+**IndexNow**
+An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.
+
+**INP (Interaction to Next Paint)**
+A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.
+
+**JSON-LD**
+A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.
+
+**LCP (Largest Contentful Paint)**
+A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.
+
+**llms.txt**
+A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes [one](https://gerriscorp.com/llms.txt).
+
+**Meta description**
+A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.
+
+**robots.txt**
+A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.
+
+**Schema.org**
+The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.
+
+**Server-side rendering**
+Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.
+
+**Soft 404**
+A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.
+
+**SPF**
+Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.
+
+**Structured data**
+Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.
+
+**Title tag**
+The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.
+
+**TTFB (time to first byte)**
+How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.
+
+**XML sitemap**
+A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.
+
+Want these applied to your site? See [services](https://gerriscorp.com/services/).
 
 
 ---
 
 Source: https://gerriscorp.com/case-studies/
+Updated: 2026-10-05
 
 # Case studies
 
-Client work is described by industry and problem. I name clients only with their permission.
+Each case describes the problem, what I did, who did what, and how the work was checked. Clients are described by industry; I name them only with their permission.
 
-## E-commerce: product pages invisible to crawlers
+## E-commerce on Magento and Hyvä: product content Googlebot never saw
 
-Problem. An e-commerce site was losing organic traffic, and nobody knew why.
+**Problem.** Organic traffic was falling and the client's team had no explanation.
 
-What I found. The product templates used Alpine.js to render specs, FAQs, and reviews only when a visitor scrolled them into view. A Screaming Frog crawl showed category pages with thousands of words of extractable text, while flagship product pages yielded 250 to 400 words despite weighing more than 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed," with the rest of the site indexed normally.
+**What I found.** Product templates used Alpine.js to mount specifications, FAQs, and reviews only when a visitor scrolled them into view, with `x-intersect` wrapped around `x-if`. A crawl showed category pages with thousands of words and flagship product pages with 250 to 400 words, despite page weights above 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed." A spam backlink spike and a redirect problem in the same period were investigated on separate tracks.
 
-Separate tracks. A spike in spam backlinks and a redirect error showed up at the same time. I investigated each separately and kept them out of the rendering diagnosis until the data connected them.
+**Deliverable.** The mechanism, the evidence, and a developer spec with acceptance criteria. See [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
 
-Deliverable. The mechanism, the evidence, and developer tickets to render the content in the initial HTML.
+## WordPress media site: consent management hiding every article
 
-## WordPress to Netlify migration
+**Problem.** Large numbers of articles sat in "Crawled, currently not indexed," with no crawl errors anywhere.
 
-Work. URL reconciliation between the old WordPress site and the new Netlify build, a redirect map, decisions on intentionally removed pages, orphaned URL checks, and sitemap verification, in collaboration with the site's developer.
+**What I found.** The site's consent-management platform blocked scripts for visitors who hadn't accepted cookies, including the script that initialized the jQuery UI tabs holding each article's content. Googlebot never accepts cookies, so it saw empty tabs on every page.
 
-## Landing pages and schema for a signage and mailbox company
+**How it was checked.** Rendered HTML from Search Console's live test compared with a consenting browser session.
 
-Work. A set of new landing pages with structured data, built so each product line has a clear page that search engines and AI assistants can understand.
+## React event platform: links crawlers couldn't follow
 
-## Recurring publishing on Umbraco
+**Problem.** Server-side rendering had been added, yet pages still weren't being discovered.
 
-Work. Regular content publishing and on-page SEO inside an Umbraco CMS: formatting, titles, descriptions, internal links, and structured data on every page.
+**What I found.** Navigation used the router's click handlers without real anchor links, so crawlers had no paths to the pages rendering had already fixed. The fix was real `<a href>` links.
+
+## Clinical practice: migration investigation and technical direction
+
+**Problem.** A practice moving from WordPress to a Next.js site on Netlify needed to know what the new site still depended on from the old one.
+
+**What I did.** Combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository using Claude Code. The analysis identified thousands of references to media still hosted on the old WordPress site and the handful of central files responsible. I turned that into a developer-ready plan, and worked on sequencing, media and redirect requirements, DNS review, and launch verification. The site's developer carried out the implementation.
+
+## Consumer skincare brand: application takeover and operations
+
+**Problem.** A React application changed hands after an outage, with project files, credentials, hosting, DNS, and repository arrangements spread across several parties.
+
+**What I did.** Assessed the handoff and inventoried what existed. Then, hands-on, I worked on the DigitalOcean Linux server over SSH: edited environment and application configuration, managed the application with PM2, and diagnosed a port conflict that was keeping it down.
+
+## Seasonal multi-site retailer: business-aware technical planning
+
+**Problem.** A retailer with several sites and its own staff needed technical problems fixed without disrupting its peak season.
+
+**What I did.** Brought in as the accountable lead working with the client's existing people, I proposed the investigation, the access needed, a migration review, and a staged plan that put risky changes after the peak.
+
+## Shopify: duplicate and broken product schema
+
+**What I did.** Working in a duplicated theme so the live store was never at risk, I edited the Liquid templates, found an HTML-encoding bug corrupting the structured data output, and consolidated duplicate Product schema into a single valid block.
+
+## Contact data: a 28,000-record cleanup and an AI tracker audit
+
+**What I did.** Built Python pipelines to clean and deduplicate more than 28,000 exported contact records, with name validation by country, name recovery from email addresses, and a resolution status on every record. Separately, I audited an AI-generated outreach tracker that marked bounced and nonexistent contacts as sent, with fabricated timestamps, and rebuilt it into a verified list: 452 rows became 392 real contacts. See [data cleanup](https://gerriscorp.com/services/data-cleanup/).
+
+## Measurement: a drop that wasn't a decline
+
+**What I did.** Traced an industry-wide drop in AI visibility scores to a change in the vendor's methodology, which kept a client from reacting to a decline that hadn't happened.
 
 ## Long-term perception management for a founder
 
-Work. An eight-year retainer shaping search results and the public record for a high-net-worth founder, now running alongside a security firm's open-source intelligence program. Monthly reporting throughout.
+**What I do.** An eight-year retainer shaping search results and the public record for a high-net-worth founder, removing personal information from data brokers, and reporting monthly, now alongside a security firm's open-source intelligence program.
 
-## My own project: hillmole.com
+## My own builds
 
-Work. Hill Mole (https://hillmole.com/), my serialized novel of 309 entries written from 2005 to 2022, moved from a broken Movable Type install to static pages on GitHub Pages. Every original URL still answers. Every entry has a hand-written title and description, schema.org data, and llms.txt coverage, and new entries are submitted through IndexNow.
+Blackbox, my command-line assistant, Hill Mole's move off Movable Type, and this site are covered on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
 
-Tell me about your problem (https://gerriscorp.com/contact/)
+[Tell me about your problem](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/built-with-claude-code/
+Updated: 2026-10-05
+
+# Built with Claude Code
+
+I run Claude Code the way a technical lead runs a development team: I write the requirements, make the design decisions, review every change, insist on tests, and decide what ships. These are three things built that way.
+
+## Blackbox: a command-line chief of staff
+
+Blackbox, or `bb`, is my own assistant. It runs on a Debian server I administer and manages the operational side of my business from the terminal.
+
+### What it does
+- Manages tasks in Todoist, which is the single authority for everything I need to do.
+- Reads and writes Google Calendar through my own Google Cloud OAuth project.
+- Triages work opportunities through Upwork's official MCP server, ranking dozens of searches and drafting pitches for my approval.
+- Assembles briefings and drafts writing using whichever model does the job best.
+
+### How it was built
+
+Over four days, Claude Code took it from a 1,500-line script to about 9,600 lines: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests across 25 commits on main. Claude Code wrote the implementation. I specified the behavior, wrote structured feedback documents with scoped priorities and open architecture questions, tested each stage, compared model backends from OpenAI, Anthropic, and open-weight providers against each other on real tasks, and accepted or rejected the work.
+
+### Safety rules
+- Every external action needs one unambiguous target and my explicit confirmation. Nothing sends, submits, spends, or deletes on its own.
+- Untrusted content, such as email and web pages, is treated as data and never as instructions.
+- Deterministic routing handles every command it can without a model call; models are reserved for writing and judgment. Total model spend at launch was under three dollars.
+- Secrets live outside Git.
+- Nightly AES-256 encrypted backups go to a private repository, and restores have been tested.
+
+### The deploy loop
+
+Work happens on a branch in a development worktree. Tests run, the database is backed up, the branch is fast-forwarded to main and pushed, and a live smoke test confirms the result. It's the same discipline I bring to [client automation pilots](https://gerriscorp.com/services/ai-automation/).
+
+## Hill Mole: a legacy blog off dead software
+
+[Hill Mole](https://hillmole.com/) is my serialized novel, 309 entries written from 2005 to 2022 on Movable Type, which had stopped working. With Claude Code, I moved it to static pages on GitHub Pages, preserving the content, the feel of the original, and every original URL, including old archive and feed addresses. Every entry now has a hand-written title and description checked by a script on each build, schema.org data, llms.txt coverage, and IndexNow submission. The same approach rescues any client site stranded on old software. See [project rescue](https://gerriscorp.com/services/rescue/).
+
+## This site
+
+Gerris is plain HTML generated by a short Python script, also built with Claude Code. Every page has structured data and a Markdown twin for AI tools, the site publishes llms.txt and a full-text llms-full.txt, and each build checks title and description lengths, word counts, broken internal links, and the copy rules. It's static, fast, readable without JavaScript, and an example of the advice in the [guides](https://gerriscorp.com/guides/).
+
+## What this means for clients
+
+Building software with AI coding assistants is a real skill, and the skill is mostly the part that isn't typing: knowing what the job is, specifying behavior precisely, catching what the model got wrong, testing, and owning the decision to ship. That's what I bring to a client's tool, a client's repository, or a client's developers.
+
+[Tell me what you'd build](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/about/
+Updated: 2026-10-05
 
 # About Chris Abraham
 
-I've lived in the Washington, DC area since 1988 and work from Arlington, Virginia. Gerris Corp is my consultancy, and I'm the person who does the work.
+I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does the work. I've lived in the Washington, DC area since 1988 and work from Arlington, Virginia.
+
+## At a glance
+| Business | Gerris Corp, founded in 2007 |
+| Principal | Chris Abraham (also Christopher Abraham) |
+| Location | Arlington, Virginia, serving clients everywhere |
+| Focus | Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
+| Upwork | Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026) |
+| Working online since | Building websites since 1994; in digital marketing since 2002 |
+| Education | BA in American Literature, The George Washington University |
+| Contact | [chris@gerriscorp.com](mailto:chris@gerriscorp.com) · [+1 202-352-5051](tel:+12023525051) |
+
+## What I do now
+
+I'm a hands-on technical consultant whose deepest specialty is search. Clients bring me in when the technical side of their web presence needs someone in charge: I diagnose, scope, write the spec, direct the developers, human and AI, ship the parts I can ship myself, and explain it all to leadership in plain English. My technical SEO core covers on-page SEO, site speed, Cloudflare and CDN setup, 301 redirects, indexing, Google Search Console, and migrations. Around it I work as a fractional technical lead, rescue stalled projects, build small AI tools with Claude Code, clean up data, advise founders and executives, and manage the online reputation of people whose public record matters.
+
+## Systems and platforms
+
+I provision and harden my own Linux servers on DigitalOcean: key-only SSH, root and password login disabled, firewalls locked down, and unattended security updates. I run a self-hosted, encrypted file-sync system across my machines, a persistent terminal email setup over SSH, and my own command-line assistant, [Blackbox](https://gerriscorp.com/case-studies/built-with-claude-code/). I've worked with WordPress for twenty years, including Elementor, Avada, Rank Math, and WooCommerce, and with Shopify and Liquid, Magento 2 and Hyvä, Umbraco, Drupal, Joomla, Squarespace, Wix, Webflow, Framer, and React applications, with Cloudflare, GA4, and Search Console throughout. I've also worked under HIPAA and nondisclosure agreements on a healthcare site.
 
 ## Career
 - Employee number 13 at New Media Strategies, where online reputation management grew up as a practice.
-- Senior account supervisor on Edelman's digital public affairs team in Washington.
-- Co-founder of Abraham Harrison, then Gerris Corp, which I started with Dan Krueger in 2007.
+- Senior account supervisor on Edelman's digital public affairs team in Washington, where I vetted online influencers for a genuine, multi-year track record before clients engaged them.
+- Co-founder of Abraham Harrison, then of Gerris Corp, which I started with Dan Krueger in 2007.
 - Reputation and executive privacy work at Reputation.com.
 - Earlier, work with Howard Rheingold at Rheingold Associates, and internet infrastructure work in the Treasury Department's Office of the CIO.
 
 ## Technical background
 
-I was a programmer before I was a marketer: Perl, PHP, Python, and C. I've built websites since 1994 and have run chrisabraham.com on Plone, a Python CMS, since the early 2000s. Today I work in Git, on Linux servers, and alongside AI coding tools on my own projects.
+I was a programmer before I was a marketer: Perl, PHP, Python, and C. I've built websites since 1994 and have run [chrisabraham.com](https://chrisabraham.com/) on Plone, a Python CMS, since the early 2000s. Today I work in Git, on Linux servers over SSH, in the command line, and alongside AI coding assistants, building my own tools for research, publishing, and task management.
 
 ## Online community
 
-I published the Memetic Lexicon on memes.org in 1999, ran the MemeSpace community, which The New York Times profiled, and founded and moderate r/slowjogging. I was a member of The WELL, eWorld, and ArtsWire.
+I published the Memetic Lexicon on memes.org in 1999, ran the MemeSpace community, which The New York Times profiled, and founded and moderate a Reddit community for slow joggers. I was a member of The WELL, eWorld, and ArtsWire. Two decades of watching ideas spread and mutate online shapes how I approach reputation work today.
 
 ## Writing
 
-I have a BA in American Literature from The George Washington University, with a year at the University of East Anglia in Norwich. I captained my high school speech and debate team, taught creative writing, and write every day.
+I have a BA in American Literature from The George Washington University, with a year at the University of East Anglia in Norwich. I captained my high school speech and debate team, taught creative writing, and write every day. That training shows up in the work: appeals built like briefs, reports that explain the mechanism plainly, and pages that say what they mean.
 
-## Elsewhere
-- chrisabraham.com: my personal site and blog
-- LinkedIn (https://www.linkedin.com/in/chrisabraham)
-- Upwork (https://www.upwork.com/freelancers/chrisjabraham)
-- X (https://twitter.com/chrisabraham)
+## Verify
+- [My Upwork profile](https://www.upwork.com/freelancers/chrisjabraham), with client reviews and work history: Top Rated, 100% Job Success.
+- [chrisabraham.com](https://chrisabraham.com/), my personal site and archive since the early 2000s.
+- [hillmole.com](https://hillmole.com/), my serialized novel and a working example of a migration.
+- [The source code of this site](https://github.com/chrisabraham/gerriscorp).
+
+Gerris is distinct from chrisabraham.com: this site covers the consultancy and its services, and chrisabraham.com is my personal archive and writing.
+
+## The name
+
+*Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds.
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/work-with-me/
+Updated: 2026-10-05
 
 # Work with me
 
-A sensible next step is a paid diagnostic with a clear question and a clear deliverable. Everything else builds from there.
+A sensible first step is a paid diagnostic with a clear question and a clear deliverable. Everything else builds from there.
 
 ## Ways to engage
-- Diagnostic. Evidence, priorities, and a recommended next step, for a defined site and a defined set of questions.
-- Implementation sprint. Agreed fixes or deliverables, verified on the live site against written acceptance criteria.
-- Migration review. Pre-launch or post-launch checks and developer coordination for a named site.
-- Ongoing support. An agreed monthly capacity for search, content, and website work.
+- **Diagnostic.** Evidence, priorities, and a recommended next step, for a defined site and a defined set of questions. Usually one to three weeks.
+- **Implementation sprint.** Agreed fixes or deliverables, verified on the live site against written acceptance criteria.
+- **Migration review.** Pre-launch or post-launch checks and developer coordination for a named site and launch.
+- **Ongoing support.** An agreed monthly capacity for SEO, content, and website work.
+- **Advisory.** A monthly advisory retainer, or individual briefings, workshops, and second opinions.
+- **AI pilot.** One useful workflow built and demonstrated, with defined inputs, permissions, outputs, and handover.
 
-## Payment
-- Diagnostics are prepaid.
+## How a project runs
+1. **First conversation.** You describe the site and the problem by email or in a short call. I say whether I'm the right person and where I'd start.
+2. **Scope in writing.** The questions, the deliverable, the access needed, the timeline, and the price, agreed before work begins.
+3. **Payment.** The diagnostic is prepaid; larger projects start with a deposit.
+4. **The work.** I investigate, report progress in writing, and raise anything urgent at once.
+5. **Delivery.** Findings, fixes, tickets, or the agreed deliverable, walked through with you and your team.
+6. **Verification.** A check of the live result once changes ship, and a recommendation for what comes next.
+
+## Payment terms
+- Diagnostics, briefings, and second opinions are prepaid.
 - Projects start with a deposit.
 - Retainers are billed at the start of each month.
-- Invoices are due on receipt, and work resumes once they're paid.
+- Invoices are due on receipt, and work continues once they're paid.
 
 ## Where the work happens
 
-Every project runs in Basecamp or by email, threaded and on the record, so you always know the status and nothing gets lost.
+Every project runs in Basecamp or by email, threaded and on the record, so you always know the status and nothing gets lost. Developer work goes into your ticket system.
 
 ## What helps
-- Access to Search Console, analytics, and the CMS or repository I'll work in.
+- Access to Search Console, analytics, and the CMS, repository, or DNS I'll work in.
 - An introduction to your developer, host, or marketing team.
 - Prompt answers. A project that goes quiet closes, and restarts with a fresh scope when you're ready.
 
+## Hosting
+
+I work on sites wherever they're hosted. Hosting itself stays with you or your provider, so you always own and control your site.
+
 ## Upwork
 
-If your company hires through Upwork, you can hire me there: Chris Abraham on Upwork (https://www.upwork.com/freelancers/chrisjabraham).
+If your company hires through Upwork, you can hire me there: [Chris Abraham on Upwork](https://www.upwork.com/freelancers/chrisjabraham).
 
-Start with a diagnostic (https://gerriscorp.com/contact/)
+More answers on the [FAQ](https://gerriscorp.com/faq/).
+
+[Start with a diagnostic](https://gerriscorp.com/contact/)
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/faq/
+Updated: 2026-10-05
+
+# Frequently asked questions
+
+Practical answers about process, timing, payment, and how I work.
+
+## Starting out
+
+### How does a project start?
+
+With an email or a short call about your site and the problem. If I'm the right person, I send a written scope for a paid diagnostic: the questions, the deliverable, the access needed, the timeline, and the price.
+
+### Do you offer a free audit?
+
+The first conversation is free and short, enough to tell whether I can help and where I'd start. The diagnosis itself is paid work, because that's where the real value is.
+
+### Who does the work?
+
+I do, personally, on every engagement. Gerris Corp is my consultancy.
+
+### What kinds of clients do you work with?
+
+Funded companies, established businesses, agencies that need a specialist, and individuals whose public record matters, in any industry and any country.
+
+## Timing
+
+### How long does a diagnostic take?
+
+Usually one to three weeks, depending on the size of the site and the number of separate problems. The timeline is agreed in writing before work starts.
+
+### How soon can you start?
+
+Usually within one to two weeks of a signed scope and payment. Urgent problems, such as a sudden traffic collapse or a failed launch, get priority when I have capacity.
+
+### How long until results show in Google?
+
+Fixes take effect as Google recrawls the affected pages: days for important pages, weeks or months for large sites. I track the change in Search Console and report it.
+
+## Payment
+
+### How do you charge?
+
+Diagnostics, briefings, and second opinions are prepaid at a fixed price. Larger projects start with a deposit. Ongoing support and advisory retainers are billed monthly in advance.
+
+### Can I hire you through Upwork?
+
+Yes. Many clients hire me through Upwork, which handles contracts and payment.
+
+## Working together
+
+### What access do you need?
+
+Usually Search Console, analytics, and read access to the CMS or repository. DNS and CDN access when the work involves them. I document every account I use.
+
+### Which platforms do you work on?
+
+WordPress, Umbraco, Wix, Squarespace, Shopify, Magento, Netlify, GitHub Pages, static sites, and JavaScript frameworks such as Next.js, React, Vue, and Alpine.js, with Cloudflare in front of many of them.
+
+### How do you communicate during a project?
+
+In writing, in Basecamp or by email, so every decision and status update is on the record. Calls are scheduled when they're useful.
+
+### Do you work with in-house developers?
+
+Yes, and it's one of the things I do best. I write precise tickets with acceptance criteria and check the result once it ships.
+
+### Is the work confidential?
+
+Yes. I name clients only with their permission, and I'm happy to sign a nondisclosure agreement.
+
+Something else? [Ask me directly](https://gerriscorp.com/contact/).
+
+Updated October 5, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/contact/
+Updated: 2026-10-05
 
 # Contact
 
-Tell me what's going on with your site. Include the address, what you're seeing, what you'd like to happen, and a rough budget.
+Tell me what's going on with your site. Include the address, what you're seeing, what you'd like to happen, and a rough budget, and I'll reply with where I'd start.
+- Email: [chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+- Call or text: [+1 202-352-5051](tel:+12023525051)
 
-Email me about your site (chris@gerriscorp.com)
+[Email me about your site](mailto:chris@gerriscorp.com?subject=Website%20problem&body=Site%20address%3A%0A%0AWhat%20I%27m%20seeing%3A%0A%0AWhat%20I%27d%20like%20to%20happen%3A%0A%0ABudget%20range%3A%0A) [Book a 30 minute call](https://calendly.com/chrisabraham/30) [Hire me on Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Book a call (https://calendly.com/chrisabraham/30) Hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham)
-- Email: chris@gerriscorp.com
-- Call or text: 202-352-5051 (+12023525051)
-- Book a 30 minute introductory call: calendly.com/chrisabraham/30
-- Hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham)
-- LinkedIn (https://www.linkedin.com/in/chrisabraham)
+## What happens next
+1. I read your note and reply, usually within one business day.
+2. If I'm the right person, a short call or a few emails to understand the problem.
+3. A written scope for a paid diagnostic: the questions, the deliverable, the timeline, and the price.
+4. Work starts once the scope is agreed and the diagnostic is paid.
 
-Diagnostics are prepaid and scoped in writing. See Work With Me (https://gerriscorp.com/work-with-me/) for how engagements run.
+## Useful to include
+- The site's address, and the platform it runs on if you know it.
+- When the problem started, and anything that changed around then: a redesign, a migration, a plugin update, a hosting move.
+- Screenshots from Search Console or analytics, if you have them.
+- Who else is involved: a developer, an agency, a host.
+
+## Good reasons to get in touch
+- Organic traffic fell and nobody can explain it.
+- Your website, developer, and vendors need someone in charge.
+- A migration or redesign is coming, or one just went wrong.
+- You inherited a project and don't know what you have.
+- You'd like a small AI tool built safely, or a second opinion on someone else's plan.
+- Email from your domain is landing in spam.
+
+Gerris Corp is based in Arlington, Virginia, and works with clients everywhere. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
+
+Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/sitemap/
+Updated: 2026-10-05
+
+# Site map
+
+Every page on this site, grouped by section, with a one-line summary of each. Search engines read the same list in [sitemap.xml](https://gerriscorp.com/sitemap.xml), and AI tools in [llms.txt](https://gerriscorp.com/llms.txt).
+
+## Main pages
+- [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.
+- [Services](https://gerriscorp.com/services/): Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
+- [Guides](https://gerriscorp.com/guides/): Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.
+- [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures on three stacks, a Next.js migration plan, an app takeover, and data cleanup.
+- [About Chris Abraham](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
+- [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
+- [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
+- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+
+## Consulting and technical direction
+- [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.
+- [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+- [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
+- [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
+- [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
+
+## Search and site performance
+- [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
+- [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): Pages that look complete to visitors and empty to Google and AI crawlers: how Chris Abraham finds the cause on Magento, WordPress, and React sites.
+- [On-page SEO](https://gerriscorp.com/services/on-page-seo/): Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.
+- [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
+- [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
+- [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
+- [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
+- [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
+
+## Specialist services
+- [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+
+## Guides
+- [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
+- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
+- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
+- [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
+- [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
+- [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
+- [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
+
+## Case studies
+- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.
+
+## Files for machines
+- [sitemap.xml](https://gerriscorp.com/sitemap.xml): the XML sitemap for search engines.
+- [llms.txt](https://gerriscorp.com/llms.txt): a plain summary of the site for language models, linking to Markdown versions of every page.
+- [llms-full.txt](https://gerriscorp.com/llms-full.txt): the full text of the site in one file.
+- [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides.
+- [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
+
+Updated October 5, 2026

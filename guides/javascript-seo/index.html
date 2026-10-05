@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to tell if JavaScript hides content from Google and AI</title>
+<meta name="description" content="A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gerriscorp.com/guides/javascript-seo/">
+<meta name="author" content="Chris Abraham">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to tell if JavaScript hides content from Google and AI">
+<meta property="og:description" content="A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.">
+<meta property="og:url" content="https://gerriscorp.com/guides/javascript-seo/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-05">
+<meta property="article:modified_time" content="2026-10-05">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to tell if JavaScript hides content from Google and AI">
+<meta name="twitter:description" content="A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top img { width: 64px; height: 64px; flex: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+   },
+   "areaServed": "Worldwide",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": "The George Washington University",
+   "homeLocation": {
+    "@type": "Place",
+    "name": "Arlington, Virginia"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/javascript-seo/#webpage",
+   "url": "https://gerriscorp.com/guides/javascript-seo/",
+   "name": "How to tell if JavaScript hides content from Google and AI",
+   "description": "A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/javascript-seo/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/javascript-seo/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "JavaScript SEO",
+     "item": "https://gerriscorp.com/guides/javascript-seo/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/javascript-seo/#article",
+   "headline": "How to tell if JavaScript is hiding your content from Google and AI",
+   "description": "A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.",
+   "url": "https://gerriscorp.com/guides/javascript-seo/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/javascript-seo/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-05",
+   "dateModified": "2026-10-05",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 723
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › JavaScript SEO</p>
+<main id="main">
+<h1>How to tell if JavaScript is hiding your content from Google and AI</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 5, 2026</p>
+<p class="lead">A page can look complete in a browser and nearly empty to a crawler. When the important content depends on JavaScript, search engines may see less of it, later, and AI crawlers may not see it at all.</p>
+
+<h2>How crawlers handle JavaScript</h2>
+<p>Googlebot renders pages with an up-to-date version of Chromium, so it can run JavaScript. Rendering happens in a queue after the initial crawl, though, and the renderer behaves like a very patient visitor who never clicks, never types, and never scrolls the way a person does. It loads the page with a tall viewport and takes a snapshot. Content that waits for a click, a real scroll event, or a user action can be missing from that snapshot.</p>
+<p>Most AI crawlers are simpler. GPTBot, ClaudeBot, PerplexityBot, and similar crawlers generally fetch the HTML the server sends and read it without running JavaScript. If your product details, prices, reviews, or answers exist only after scripts run, those crawlers see a shell.</p>
+
+<h2>Five tests that settle it</h2>
+<h3>1. Compare view-source with the rendered page</h3>
+<p>Open the page, then open view-source. View-source shows the HTML your server sent; the Elements panel in developer tools shows the DOM after JavaScript ran. Search view-source for a sentence from the content you care about. If it's missing, crawlers that don't render can't see it.</p>
+<h3>2. Fetch it from the command line</h3>
+<pre><code>curl -sL https://example.com/products/widget-200 | grep -c "Specifications"</code></pre>
+<p>A count of zero means the text isn't in the server's HTML.</p>
+<h3>3. Disable JavaScript</h3>
+<p>Turn off JavaScript in your browser's developer tools and reload. What remains is roughly what a non-rendering crawler gets.</p>
+<h3>4. Ask Google directly</h3>
+<p>In Search Console, run URL Inspection on the page, click "Test live URL," then "View tested page" and the HTML tab. That's the HTML Google rendered. If your content is missing there, Google doesn't have it.</p>
+<h3>5. Crawl both ways</h3>
+<p>Crawl a sample of pages in Screaming Frog with JavaScript rendering off, then on, and compare word counts by template. In one diagnosis I ran, category pages yielded thousands of words while flagship product pages yielded 250 to 400 words despite weighing more than a megabyte, which pointed straight at the product template.</p>
+
+<h2>Common causes</h2>
+<ul>
+  <li><strong>Client-side rendering.</strong> Single-page apps that send an empty HTML shell and build the page in the browser.</li>
+  <li><strong>Content that loads on scroll or interaction.</strong> Sections rendered only when they enter the viewport after a real scroll, such as Alpine.js <code>x-if</code> combined with <code>x-intersect</code>, or reviews fetched when a visitor scrolls near them.</li>
+  <li><strong>Content that loads on click.</strong> Tabs and accordions that fetch their content when opened. Tabs that merely hide content already in the HTML are fine.</li>
+  <li><strong>Links without real URLs.</strong> Navigation built with click handlers instead of <code>&lt;a href&gt;</code> links, which crawlers can't follow.</li>
+  <li><strong>Infinite scroll without paginated URLs.</strong> Products beyond the first batch never get a crawlable link.</li>
+  <li><strong>Metadata changed by JavaScript.</strong> Titles, canonical tags, or robots directives rewritten after load, so the raw HTML and the rendered page disagree.</li>
+  <li><strong>Blocked resources.</strong> JavaScript or CSS files disallowed in robots.txt, which prevents Google from rendering the page properly.</li>
+</ul>
+
+<h2>Fixes</h2>
+<ul>
+  <li><strong>Render on the server.</strong> Server-side rendering or static generation puts the content in the initial HTML. Next.js, Nuxt, SvelteKit, Astro, and similar frameworks do this well when pages are configured for it.</li>
+  <li><strong>Keep content in the HTML and hide it with CSS.</strong> In Alpine.js, <code>x-show</code> keeps an element in the DOM and only toggles visibility, while <code>x-if</code> removes it entirely until the condition is true. Use animation as progressive enhancement on content that's already present.</li>
+  <li><strong>Use real links and paginated URLs</strong> for navigation and long lists.</li>
+  <li><strong>Put titles, canonicals, and structured data in the server's HTML</strong>, and keep them unchanged after load.</li>
+  <li><strong>Avoid dynamic rendering</strong> as a long-term answer. Google describes serving crawlers a separately rendered version as a workaround, and server rendering is the durable fix.</li>
+</ul>
+
+<h2>Writing the ticket</h2>
+<p>Developers fix these problems fastest with evidence: the affected template, example URLs, the word count with and without rendering, the Search Console live test result, and a testable definition of done, such as "a curl of the product URL returns the specification table." There's a <a href="../../services/developers/">sample ticket on the developers page</a>.</p>
+
+<p class="related">I diagnose rendering problems as part of <a href="../../services/technical-seo/">technical SEO forensics</a>.</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

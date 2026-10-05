@@ -4,21 +4,22 @@ Gerris Corp, Chris Abraham's consultancy. Static pages on GitHub Pages: plain HT
 
 ## Editing
 
-1. Edit the page sources in `src/`. Each file starts with `title:`, `description:`, and `name:` (the menu and breadcrumb label), then `---`, then the HTML body. Write `{root}` before internal links, e.g. `<a href="{root}services/">`.
-2. Run `python3 tools/build.py`. It writes every page, `404.html`, `sitemap.xml`, `robots.txt`, `llms.txt`, `llm.txt`, and `llms-full.txt`, then checks the house rules: titles 50–60 characters, descriptions 140–160, no pipes, dashes, or hyphens in either, unique titles and descriptions, one h1 per page, no em dashes in the copy, `Chris'` (never `Chris's`), and first person singular.
+1. Edit the page sources in `src/`. Each file starts with `title:`, `description:`, `name:` (menu and breadcrumb label), and `updated:`; guides add `type: guide` and `published:`. Then `---`, then the HTML body. Write `{root}` before internal links, and `{email}`, `{phone}`, `{tel}` for contact details (set once at the top of `tools/build.py`).
+2. Run `python3 tools/build.py`. It writes every page, a Markdown twin of each (`index.md`), the HTML site map at `/sitemap/`, `404.html`, `sitemap.xml` with its browser stylesheet `sitemap.xsl`, `robots.txt`, `feed.xml`, `llms.txt`, `llm.txt`, `llms-full.txt`, and `.well-known/security.txt`. Then it checks the house rules: titles 50–60 characters, descriptions 140–160, no pipes, dashes, or hyphens in either, unique titles and descriptions, one h1 per page, minimum word counts (guides 700, services 450, other pages 250), no em dashes, `Chris'`, first person singular, and no links to missing pages.
 3. Commit the sources and the generated files together, and push.
 
-To add a page, create its source file and add it to `FILES` in `tools/build.py` (and to `TABS` if it gets its own tab).
+To add a page, create its source file and add it to `FILES` in `tools/build.py` (and to `SERVICE_GROUPS` for a service). Marking up a `<section class="faq">` or a `<dl class="glossary">` produces FAQPage or DefinedTermSet structured data automatically.
 
 Preview locally: `python3 -m http.server`, then open http://localhost:8000
 
 ## Search and AI
 
-- Per-page title, description, canonical, Open Graph, and Twitter card; 1200×630 `social-card.png`.
-- JSON-LD on every page: WebSite, ProfessionalService (Gerris Corp), Person (Chris, with `sameAs` to his profiles), the page itself, breadcrumbs, and a `Service` on each service page.
-- `robots.txt` welcomes every crawler and names the AI crawlers explicitly. `llms.txt` lists every page; `llms-full.txt` holds the full text.
+- Per-page title, description, canonical, Open Graph, and Twitter card; 1200×630 `social-card.png`. Visible "Updated" dates on every page, bylines on guides.
+- JSON-LD on every page: WebSite, ProfessionalService, Person, the page, breadcrumbs, plus `Service` on service pages, `TechArticle` on guides, `FAQPage` wherever there are questions, `DefinedTermSet` on the glossary, and `ItemList` on section pages.
+- `sitemap.xml` with image entries and a stylesheet that renders it as a table in a browser; an HTML site map at `/sitemap/`.
+- `robots.txt` welcomes every crawler and names the AI crawlers explicitly. `llms.txt` links to Markdown versions of every page; `llms-full.txt` holds the full text. Atom feed of guides at `feed.xml`.
 - IndexNow: the `<key>.txt` file, `tools/indexnow.py`, and `.github/workflows/indexnow.yml` ping Bing and the other IndexNow engines after each push, once gerriscorp.com really serves this site.
-- `_config.yml` keeps `src/` and `tools/` off the public site.
+- `_config.yml` keeps `src/` and `tools/` off the public site and publishes `.well-known/`.
 
 ## DNS inventory (read on 2026-10-05, before any change)
 

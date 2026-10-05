@@ -3,36 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEO for development teams: tickets, Git, and rendering</title>
-<meta name="description" content="Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.">
+<title>Developer specs and implementation QA for website teams</title>
+<meta name="description" content="Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://gerriscorp.com/services/developers/">
 <meta name="author" content="Chris Abraham">
 <link rel="icon" href="../../logo.png" type="image/png">
 <link rel="apple-touch-icon" href="../../logo.png">
 <link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<meta property="og:title" content="SEO for development teams: tickets, Git, and rendering">
-<meta property="og:description" content="Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.">
+<meta property="og:title" content="Developer specs and implementation QA for website teams">
+<meta property="og:description" content="Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.">
 <meta property="og:url" content="https://gerriscorp.com/services/developers/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@chrisabraham">
-<meta name="twitter:title" content="SEO for development teams: tickets, Git, and rendering">
-<meta name="twitter:description" content="Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.">
+<meta name="twitter:title" content="Developer specs and implementation QA for website teams">
+<meta name="twitter:description" content="Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1rem; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
 a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid #000; outline-offset: 2px; }
@@ -45,28 +47,39 @@ img { max-width: 100%; height: auto; }
 .brand:hover { text-decoration: underline; }
 .tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
 nav { border-bottom: 4px solid var(--bar); }
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
 nav li { margin: 0; }
-nav a { display: block; padding: .4rem .8rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .95rem; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
 nav a:hover { background: var(--bar); text-decoration: underline; }
 nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
 .crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
 main { padding: 1.25rem 0 2rem; }
 h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
 h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
-p, ul { margin: 0 0 1rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
 li { margin-bottom: .4rem; }
 .lead { font-size: 1.1rem; }
-code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
 .button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
 .button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
 @media (max-width: 34rem) {
   body { font-size: 17px; }
   .top img { width: 52px; height: 52px; }
-  nav a { padding: .45rem .6rem; font-size: .9rem; }
+  nav a { padding: .45rem .55rem; }
   h1 { font-size: 1.5rem; }
 }
 </style>
@@ -95,7 +108,14 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "url": "https://gerriscorp.com/",
    "logo": "https://gerriscorp.com/logo.png",
    "image": "https://gerriscorp.com/social-card.png",
-   "description": "Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management.",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
    "email": "chris@gerriscorp.com",
    "telephone": "+1-202-352-5051",
    "address": {
@@ -105,23 +125,30 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     "addressCountry": "US"
    },
    "areaServed": "Worldwide",
-   "founder": {
-    "@id": "https://chrisabraham.com/#person"
-   },
-   "employee": {
-    "@id": "https://chrisabraham.com/#person"
-   },
    "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
     "Technical SEO",
-    "JavaScript rendering and indexing",
+    "JavaScript SEO",
+    "Indexing",
     "Website migrations",
     "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
     "Answer engine optimization",
     "Generative engine optimization",
-    "Structured data",
+    "llms.txt",
     "Online reputation management",
+    "Data broker removal",
     "Google Business Profile",
-    "SPF, DKIM, and DMARC"
+    "SPF",
+    "DKIM",
+    "DMARC"
    ],
    "sameAs": [
     "https://www.upwork.com/freelancers/chrisjabraham",
@@ -134,7 +161,7 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "name": "Chris Abraham",
    "alternateName": "Christopher Abraham",
    "url": "https://chrisabraham.com/",
-   "jobTitle": "Founder",
+   "jobTitle": "Founder and principal consultant",
    "worksFor": {
     "@id": "https://gerriscorp.com/#org"
    },
@@ -143,14 +170,36 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     "@type": "Place",
     "name": "Arlington, Virginia"
    },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
    "sameAs": [
     "https://chrisabraham.com/",
-    "https://www.linkedin.com/in/chrisabraham",
-    "https://twitter.com/chrisabraham",
-    "https://www.instagram.com/chrisabraham",
-    "https://www.facebook.com/chrisabraham",
     "https://www.upwork.com/freelancers/chrisjabraham",
-    "https://github.com/chrisabraham",
     "https://hillmole.com/"
    ]
   },
@@ -158,8 +207,8 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "@type": "WebPage",
    "@id": "https://gerriscorp.com/services/developers/#webpage",
    "url": "https://gerriscorp.com/services/developers/",
-   "name": "SEO for development teams: tickets, Git, and rendering",
-   "description": "Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.",
+   "name": "Developer specs and implementation QA for website teams",
+   "description": "Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -169,6 +218,9 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
    "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
    "breadcrumb": {
     "@id": "https://gerriscorp.com/services/developers/#breadcrumb"
    },
@@ -195,7 +247,7 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     {
      "@type": "ListItem",
      "position": 3,
-     "name": "Developers",
+     "name": "Developer Specs and QA",
      "item": "https://gerriscorp.com/services/developers/"
     }
    ]
@@ -203,13 +255,36 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
   {
    "@type": "Service",
    "@id": "https://gerriscorp.com/services/developers/#service",
-   "name": "Working with your developers",
-   "description": "Chris Abraham works with your developers on search: tickets with the mechanism and acceptance criteria, Git based workflows, and checks of what ships.",
+   "name": "Developer specs and implementation QA",
+   "serviceType": "Developer Specs and QA",
+   "description": "Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.",
    "provider": {
     "@id": "https://gerriscorp.com/#org"
    },
    "areaServed": "Worldwide",
    "url": "https://gerriscorp.com/services/developers/"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/services/developers/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can you change the code directly?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When you want me to and access is set up for it, I work through branches and pull requests so your team reviews every change. Many teams prefer that I write the specs and verify the result, which works just as well."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which ticket systems do you use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Whatever your team uses, such as Jira, Linear, GitHub Issues, or Basecamp."
+     }
+    }
+   ]
   }
  ]
 }
@@ -222,43 +297,86 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
   <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
   <div>
     <a class="brand" href="../../">Gerris</a>
-    <p class="tag">Chris Abraham: technical SEO, AI search, and reputation</p>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
     <li><a href="../../">Home</a></li>
     <li><a href="../../services/" aria-current="true">Services</a></li>
+    <li><a href="../../guides/">Guides</a></li>
     <li><a href="../../case-studies/">Case Studies</a></li>
     <li><a href="../../about/">About</a></li>
     <li><a href="../../work-with-me/">Work With Me</a></li>
     <li><a href="../../contact/">Contact</a></li>
   </ul>
 </nav>
-<p class="crumbs"><a href="../../">Home</a> › <a href="../../services/">Services</a> › Developers</p>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../services/">Services</a> › Developer Specs and QA</p>
 <main id="main">
-<h1>Working with your developers</h1>
-<p class="lead">I work with your developers, so they spend their time fixing the real problem.</p>
+<h1>Developer specs and implementation QA</h1>
+<p class="lead">Your developers are good. What they need is someone to tell them exactly what to build, why, and how to know it's done, and then to check that it was. That's this service.</p>
 
-<h2>What I bring to a dev team</h2>
+<h2>The spec</h2>
+<p>I turn a diagnosis into a developer-ready specification. A recent one ran to 13 pages of prioritized items from P0 to P3, each with:</p>
 <ul>
-  <li>A search concern turned into a concrete request: affected URLs, examples, observed behavior, and acceptance criteria.</li>
-  <li>Content changes separated from template, routing, infrastructure, and rendering changes, so each goes to the right person.</li>
-  <li>Plain explanations in both directions: search requirements for developers and developer constraints for owners.</li>
-  <li>A check of the deployed behavior, and follow-up on anything still open.</li>
+  <li><strong>Confirmed evidence:</strong> affected URLs, crawl data, screenshots, and the observed behavior.</li>
+  <li><strong>Consequence:</strong> what the problem costs, in plain terms, which sets the priority.</li>
+  <li><strong>Build steps:</strong> exactly what to change, in which template, file, or setting.</li>
+  <li><strong>Acceptance criteria:</strong> a testable definition of done.</li>
+</ul>
+<p>I generate specs programmatically from the evidence, so they stay consistent and can be regenerated as findings change. The owner gets a separate plain-English summary, so the engineer gets precision and the CEO gets clarity, and neither has to wade through the other's document.</p>
+
+<h2>A sample ticket</h2>
+<pre><code>P0: Product specs, FAQs, and reviews missing from initial HTML
+
+Affected: all /products/* templates (example: /products/widget-200)
+Evidence: spec table, FAQ, and reviews render only after an
+  x-intersect scroll trigger; crawler extraction shows 250 to 400
+  words per product page versus 2,000+ for category pages.
+Consequence: product pages clustered in "Crawled, currently not
+  indexed"; organic product traffic falling.
+Build: render these sections in the server HTML; keep the
+  scroll animation as progressive enhancement only.
+Acceptance: a plain fetch of the product URL returns the spec
+  table, FAQ, and review text; Search Console live test shows
+  them in the rendered HTML.</code></pre>
+
+<h2>Implementation QA</h2>
+<p>When the developer says it's done, I check, against the acceptance criteria, on the live site, in the page source. CMS panels and staging environments say one thing; the live HTML says what crawlers and visitors actually get. I check for side effects too, such as a fix applied too broadly or a cache that never purged, and I follow up on anything still open.</p>
+
+<h2>Working with your team</h2>
+<ul>
+  <li>Direct work with client developers and IT on cache purges, template constraints, CMS publish behavior, and access.</li>
+  <li>Content changes separated from template, routing, infrastructure, CDN, and rendering changes, so each goes to the person who can fix it.</li>
+  <li>Plain explanations in both directions.</li>
+  <li>Specialist subcontractors brought in and managed when a job needs one, with a clear handoff and a regular status cadence.</li>
+  <li>A blame-free working relationship. Developers are usually solving five problems at once; my job is to make one of them easy.</li>
 </ul>
 
-<h2>Comfortable in your stack</h2>
-<p>I read the DOM, read a crawl, and find the template responsible. I work in GitHub repositories through branches and pull requests, on Linux servers over SSH, and in the command line. I diagnose rendering problems on JavaScript builds using Alpine, React, Next.js, and Vue, and I work in CMSs including WordPress, Umbraco, Wix, Shopify, and Magento.</p>
+<h2>In your repository</h2>
+<p>I work in GitHub repositories through branches and pull requests, and I've made metadata changes directly in React and TypeScript codebases under review. I use AI coding assistants to search a codebase alongside crawl evidence, which finds the file responsible for a problem in minutes instead of days.</p>
 
 <h2>Fractional SEO and AI search lead</h2>
-<p>For teams shipping continuously, I can join as the embedded, part-time person who writes the SEO and AEO acceptance criteria for new work and catches the template change that's about to hide your content from Google.</p>
+<p>For teams shipping continuously, I join as the embedded, part-time person who writes the SEO and AEO acceptance criteria for new work, reviews templates and releases before they ship, and catches the change that's about to hide your content from Google.</p>
 
-<p><a class="button" href="../../contact/">Bring me in with your developers</a></p>
+<section class="faq">
+<h2>Common questions</h2>
+<h3>Can you change the code directly?</h3>
+<p>When you want me to and access is set up for it, I work through branches and pull requests so your team reviews every change. Many teams prefer that I write the specs and verify the result, which works just as well.</p>
+<h3>Which ticket systems do you use?</h3>
+<p>Whatever your team uses, such as Jira, Linear, GitHub Issues, or Basecamp.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="../../services/technical-lead/">Fractional technical lead</a> · <a href="../../services/crawler-visibility/">Content the crawler never sees</a> · <a href="../../guides/javascript-seo/">JavaScript SEO</a></p>
+</div>
+
+<p><a class="button" href="../../contact/">Get your developers a real spec</a></p>
+<p class="updated">Updated October 5, 2026</p>
 </main>
 <footer class="site-footer">
-  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="https://chrisabraham.com/">chrisabraham.com</a> · <a href="../../llms.txt">llms.txt</a></p>
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

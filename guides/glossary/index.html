@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary of SEO, AEO, GEO, and technical website terms</title>
+<meta name="description" content="Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gerriscorp.com/guides/glossary/">
+<meta name="author" content="Chris Abraham">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Glossary of SEO, AEO, GEO, and technical website terms">
+<meta property="og:description" content="Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.">
+<meta property="og:url" content="https://gerriscorp.com/guides/glossary/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-05">
+<meta property="article:modified_time" content="2026-10-05">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Glossary of SEO, AEO, GEO, and technical website terms">
+<meta name="twitter:description" content="Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top img { width: 64px; height: 64px; flex: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+   },
+   "areaServed": "Worldwide",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": "The George Washington University",
+   "homeLocation": {
+    "@type": "Place",
+    "name": "Arlington, Virginia"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/glossary/#webpage",
+   "url": "https://gerriscorp.com/guides/glossary/",
+   "name": "Glossary of SEO, AEO, GEO, and technical website terms",
+   "description": "Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/glossary/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/glossary/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Glossary",
+     "item": "https://gerriscorp.com/guides/glossary/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/glossary/#article",
+   "headline": "Glossary of SEO, AI search, and technical website terms",
+   "description": "Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.",
+   "url": "https://gerriscorp.com/guides/glossary/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/glossary/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-05",
+   "dateModified": "2026-10-05",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 962
+  },
+  {
+   "@type": "DefinedTermSet",
+   "@id": "https://gerriscorp.com/guides/glossary/#terms",
+   "name": "Glossary of SEO, AI search, and technical website terms",
+   "hasDefinedTerm": [
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#301-redirect",
+     "name": "301 redirect",
+     "description": "A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.",
+     "url": "https://gerriscorp.com/guides/glossary/#301-redirect",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#aeo",
+     "name": "AEO (answer engine optimization)",
+     "description": "Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.",
+     "url": "https://gerriscorp.com/guides/glossary/#aeo",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#ai-mode",
+     "name": "AI Mode",
+     "description": "Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.",
+     "url": "https://gerriscorp.com/guides/glossary/#ai-mode",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#ai-overviews",
+     "name": "AI Overviews",
+     "description": "The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.",
+     "url": "https://gerriscorp.com/guides/glossary/#ai-overviews",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#alt-text",
+     "name": "Alt text",
+     "description": "A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.",
+     "url": "https://gerriscorp.com/guides/glossary/#alt-text",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#bimi",
+     "name": "BIMI",
+     "description": "Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.",
+     "url": "https://gerriscorp.com/guides/glossary/#bimi",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#bing-webmaster-tools",
+     "name": "Bing Webmaster Tools",
+     "description": "Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.",
+     "url": "https://gerriscorp.com/guides/glossary/#bing-webmaster-tools",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#canonical-tag",
+     "name": "Canonical tag",
+     "description": "A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.",
+     "url": "https://gerriscorp.com/guides/glossary/#canonical-tag",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#cdn",
+     "name": "CDN (content delivery network)",
+     "description": "A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.",
+     "url": "https://gerriscorp.com/guides/glossary/#cdn",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#core-web-vitals",
+     "name": "Core Web Vitals",
+     "description": "Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.",
+     "url": "https://gerriscorp.com/guides/glossary/#core-web-vitals",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#crawl-budget",
+     "name": "Crawl budget",
+     "description": "How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.",
+     "url": "https://gerriscorp.com/guides/glossary/#crawl-budget",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#crawled-currently-not-indexed",
+     "name": "Crawled, currently not indexed",
+     "description": "A Google Search Console status meaning Google fetched a page and chose not to index it. See the full guide.",
+     "url": "https://gerriscorp.com/guides/glossary/#crawled-currently-not-indexed",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#cls",
+     "name": "CLS (Cumulative Layout Shift)",
+     "description": "A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.",
+     "url": "https://gerriscorp.com/guides/glossary/#cls",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#discovered-currently-not-indexed",
+     "name": "Discovered, currently not indexed",
+     "description": "A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.",
+     "url": "https://gerriscorp.com/guides/glossary/#discovered-currently-not-indexed",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#dkim",
+     "name": "DKIM",
+     "description": "DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.",
+     "url": "https://gerriscorp.com/guides/glossary/#dkim",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#dmarc",
+     "name": "DMARC",
+     "description": "A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.",
+     "url": "https://gerriscorp.com/guides/glossary/#dmarc",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#e-e-a-t",
+     "name": "E-E-A-T",
+     "description": "Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.",
+     "url": "https://gerriscorp.com/guides/glossary/#e-e-a-t",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#geo",
+     "name": "GEO (generative engine optimization)",
+     "description": "Making a business and its content easy for AI systems to find, understand, and cite in generated answers.",
+     "url": "https://gerriscorp.com/guides/glossary/#geo",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#google-search-console",
+     "name": "Google Search Console",
+     "description": "Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.",
+     "url": "https://gerriscorp.com/guides/glossary/#google-search-console",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#hreflang",
+     "name": "hreflang",
+     "description": "An annotation that tells search engines which language or regional version of a page to show to which users.",
+     "url": "https://gerriscorp.com/guides/glossary/#hreflang",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#indexnow",
+     "name": "IndexNow",
+     "description": "An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.",
+     "url": "https://gerriscorp.com/guides/glossary/#indexnow",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#inp",
+     "name": "INP (Interaction to Next Paint)",
+     "description": "A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.",
+     "url": "https://gerriscorp.com/guides/glossary/#inp",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#json-ld",
+     "name": "JSON-LD",
+     "description": "A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.",
+     "url": "https://gerriscorp.com/guides/glossary/#json-ld",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#lcp",
+     "name": "LCP (Largest Contentful Paint)",
+     "description": "A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.",
+     "url": "https://gerriscorp.com/guides/glossary/#lcp",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#llms-txt",
+     "name": "llms.txt",
+     "description": "A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes one.",
+     "url": "https://gerriscorp.com/guides/glossary/#llms-txt",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#meta-description",
+     "name": "Meta description",
+     "description": "A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.",
+     "url": "https://gerriscorp.com/guides/glossary/#meta-description",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#robots-txt",
+     "name": "robots.txt",
+     "description": "A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.",
+     "url": "https://gerriscorp.com/guides/glossary/#robots-txt",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#schema-org",
+     "name": "Schema.org",
+     "description": "The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.",
+     "url": "https://gerriscorp.com/guides/glossary/#schema-org",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#server-side-rendering",
+     "name": "Server-side rendering",
+     "description": "Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.",
+     "url": "https://gerriscorp.com/guides/glossary/#server-side-rendering",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#soft-404",
+     "name": "Soft 404",
+     "description": "A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.",
+     "url": "https://gerriscorp.com/guides/glossary/#soft-404",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#spf",
+     "name": "SPF",
+     "description": "Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.",
+     "url": "https://gerriscorp.com/guides/glossary/#spf",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#structured-data",
+     "name": "Structured data",
+     "description": "Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.",
+     "url": "https://gerriscorp.com/guides/glossary/#structured-data",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#title-tag",
+     "name": "Title tag",
+     "description": "The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.",
+     "url": "https://gerriscorp.com/guides/glossary/#title-tag",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#ttfb",
+     "name": "TTFB (time to first byte)",
+     "description": "How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.",
+     "url": "https://gerriscorp.com/guides/glossary/#ttfb",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://gerriscorp.com/guides/glossary/#xml-sitemap",
+     "name": "XML sitemap",
+     "description": "A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.",
+     "url": "https://gerriscorp.com/guides/glossary/#xml-sitemap",
+     "inDefinedTermSet": {
+      "@id": "https://gerriscorp.com/guides/glossary/#terms"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Glossary</p>
+<main id="main">
+<h1>Glossary of SEO, AI search, and technical website terms</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 5, 2026</p>
+<p class="lead">Plain definitions of the terms that come up in my work, written so each one makes sense on its own.</p>
+
+<dl class="glossary">
+<dt id="301-redirect">301 redirect</dt>
+<dd>A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.</dd>
+<dt id="aeo">AEO (answer engine optimization)</dt>
+<dd>Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.</dd>
+<dt id="ai-mode">AI Mode</dt>
+<dd>Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.</dd>
+<dt id="ai-overviews">AI Overviews</dt>
+<dd>The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.</dd>
+<dt id="alt-text">Alt text</dt>
+<dd>A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.</dd>
+<dt id="bimi">BIMI</dt>
+<dd>Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.</dd>
+<dt id="bing-webmaster-tools">Bing Webmaster Tools</dt>
+<dd>Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.</dd>
+<dt id="canonical-tag">Canonical tag</dt>
+<dd>A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.</dd>
+<dt id="cdn">CDN (content delivery network)</dt>
+<dd>A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.</dd>
+<dt id="core-web-vitals">Core Web Vitals</dt>
+<dd>Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.</dd>
+<dt id="crawl-budget">Crawl budget</dt>
+<dd>How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.</dd>
+<dt id="crawled-currently-not-indexed">Crawled, currently not indexed</dt>
+<dd>A Google Search Console status meaning Google fetched a page and chose not to index it. See the <a href="../../guides/crawled-not-indexed/">full guide</a>.</dd>
+<dt id="cls">CLS (Cumulative Layout Shift)</dt>
+<dd>A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.</dd>
+<dt id="discovered-currently-not-indexed">Discovered, currently not indexed</dt>
+<dd>A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.</dd>
+<dt id="dkim">DKIM</dt>
+<dd>DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.</dd>
+<dt id="dmarc">DMARC</dt>
+<dd>A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.</dd>
+<dt id="e-e-a-t">E-E-A-T</dt>
+<dd>Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.</dd>
+<dt id="geo">GEO (generative engine optimization)</dt>
+<dd>Making a business and its content easy for AI systems to find, understand, and cite in generated answers.</dd>
+<dt id="google-search-console">Google Search Console</dt>
+<dd>Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.</dd>
+<dt id="hreflang">hreflang</dt>
+<dd>An annotation that tells search engines which language or regional version of a page to show to which users.</dd>
+<dt id="indexnow">IndexNow</dt>
+<dd>An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.</dd>
+<dt id="inp">INP (Interaction to Next Paint)</dt>
+<dd>A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.</dd>
+<dt id="json-ld">JSON-LD</dt>
+<dd>A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.</dd>
+<dt id="lcp">LCP (Largest Contentful Paint)</dt>
+<dd>A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.</dd>
+<dt id="llms-txt">llms.txt</dt>
+<dd>A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes <a href="../../llms.txt">one</a>.</dd>
+<dt id="meta-description">Meta description</dt>
+<dd>A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.</dd>
+<dt id="robots-txt">robots.txt</dt>
+<dd>A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.</dd>
+<dt id="schema-org">Schema.org</dt>
+<dd>The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.</dd>
+<dt id="server-side-rendering">Server-side rendering</dt>
+<dd>Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.</dd>
+<dt id="soft-404">Soft 404</dt>
+<dd>A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.</dd>
+<dt id="spf">SPF</dt>
+<dd>Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.</dd>
+<dt id="structured-data">Structured data</dt>
+<dd>Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.</dd>
+<dt id="title-tag">Title tag</dt>
+<dd>The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.</dd>
+<dt id="ttfb">TTFB (time to first byte)</dt>
+<dd>How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.</dd>
+<dt id="xml-sitemap">XML sitemap</dt>
+<dd>A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.</dd>
+</dl>
+
+<p class="related">Want these applied to your site? See <a href="../../services/">services</a>.</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

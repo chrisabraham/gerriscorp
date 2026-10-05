@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The website migration SEO checklist for 2026, step by step</title>
+<meta name="description" content="A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gerriscorp.com/guides/migration-checklist/">
+<meta name="author" content="Chris Abraham">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The website migration SEO checklist for 2026, step by step">
+<meta property="og:description" content="A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.">
+<meta property="og:url" content="https://gerriscorp.com/guides/migration-checklist/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-05">
+<meta property="article:modified_time" content="2026-10-05">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The website migration SEO checklist for 2026, step by step">
+<meta name="twitter:description" content="A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top img { width: 64px; height: 64px; flex: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+   },
+   "areaServed": "Worldwide",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": "The George Washington University",
+   "homeLocation": {
+    "@type": "Place",
+    "name": "Arlington, Virginia"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/migration-checklist/#webpage",
+   "url": "https://gerriscorp.com/guides/migration-checklist/",
+   "name": "The website migration SEO checklist for 2026, step by step",
+   "description": "A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/migration-checklist/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/migration-checklist/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Migration Checklist",
+     "item": "https://gerriscorp.com/guides/migration-checklist/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/migration-checklist/#article",
+   "headline": "The website migration SEO checklist",
+   "description": "A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.",
+   "url": "https://gerriscorp.com/guides/migration-checklist/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/migration-checklist/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-05",
+   "dateModified": "2026-10-05",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 725
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Migration Checklist</p>
+<main id="main">
+<h1>The website migration SEO checklist</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 5, 2026</p>
+<p class="lead">Migrations lose traffic for predictable reasons: URLs that weren't mapped, redirects that weren't tested, templates that changed what crawlers see, and nobody watching afterward. This checklist covers each stage.</p>
+
+<h2>Before you start</h2>
+<ul>
+  <li>Record a baseline: organic sessions and conversions by landing page from analytics, and clicks, impressions, and indexed pages from Search Console. Export them, because you'll compare against them for months.</li>
+  <li>Decide the launch window. Avoid your busiest season.</li>
+  <li>Make sure Search Console and Bing Webmaster Tools are verified for both the old and new sites, and that you'll keep access to the old domain if it's changing.</li>
+</ul>
+
+<h2>Build the URL inventory</h2>
+<p>Combine every source, because each one misses something:</p>
+<ul>
+  <li>A full crawl of the current site.</li>
+  <li>Every URL in the XML sitemaps.</li>
+  <li>Pages with clicks or impressions in Search Console over the last 16 months.</li>
+  <li>Landing pages with traffic in analytics.</li>
+  <li>URLs with external backlinks, from Ahrefs, Semrush, or Search Console's Links report.</li>
+  <li>Images, PDFs, and other files that rank or receive links.</li>
+</ul>
+
+<h2>Build the redirect map</h2>
+<ul>
+  <li>Map every old URL to its closest equivalent on the new site with a 301 or 308 permanent redirect.</li>
+  <li>Redirect to the most relevant page, never to the home page in bulk. Google treats mass redirects to the home page like soft 404s.</li>
+  <li>Make deliberate decisions about pages you're retiring: redirect them to a close substitute, or let them return 404 or 410 if nothing fits.</li>
+  <li>Avoid chains. Every old URL should reach its final destination in one hop, including URLs that were already redirecting.</li>
+  <li>Keep the map in a spreadsheet: old URL, new URL, status, reason. It's the document every later question goes back to.</li>
+</ul>
+
+<h2>Review the new site before launch</h2>
+<ul>
+  <li>Crawl staging and compare titles, descriptions, headings, canonicals, and word counts with the old site, template by template.</li>
+  <li>Check that the main content is in the server's HTML, so it doesn't depend on JavaScript.</li>
+  <li>Check structured data, internal links, image alt text, and hreflang if you have more than one language.</li>
+  <li>Test Core Web Vitals on the new templates.</li>
+  <li>Keep staging blocked from search with authentication or noindex, and write down exactly how, so it can be removed at launch.</li>
+</ul>
+
+<h2>Launch day</h2>
+<ul>
+  <li>Remove the staging block, and confirm production robots.txt and meta robots tags allow crawling.</li>
+  <li>Test the redirect map in bulk against the live site: status codes, single hops, correct destinations.</li>
+  <li>Submit the new XML sitemaps. Keep a sitemap of the old URLs available for a few weeks so Google recrawls them and discovers the redirects faster.</li>
+  <li>For a domain change, use Google's Change of Address tool in Search Console and Bing's Site Move tool.</li>
+  <li>Confirm analytics and tag tracking work on every template.</li>
+  <li>If DNS changes, confirm that mail records were left untouched and email still arrives.</li>
+</ul>
+
+<h2>The weeks after</h2>
+<ul>
+  <li>Watch Search Console daily for the first two weeks: page indexing, crawl stats, and 404s.</li>
+  <li>Compare organic landing pages with the baseline, and investigate every important page that lost traffic.</li>
+  <li>Fix redirect gaps as they appear in 404 reports and server logs.</li>
+  <li>Update internal links that still point at old URLs.</li>
+  <li>Ask the most valuable sites linking to you to update their links.</li>
+  <li>Keep the redirects in place for at least a year, and ideally indefinitely.</li>
+</ul>
+
+<h2>Special cases</h2>
+<h3>HTTP to HTTPS and www changes</h3>
+<p>Pick one canonical host and protocol, redirect every other combination to it in a single hop, and update canonicals, sitemaps, and internal links to match.</p>
+<h3>Merging several sites into one</h3>
+<p>Map each old site's pages to their best home on the new one, and keep every old domain registered and redirecting. Old domains carry links for years.</p>
+<h3>Moving to a JavaScript framework</h3>
+<p>Check that the new templates render their content on the server. A migration from a traditional CMS to a client-rendered app is a common way to lose content from Google and AI crawlers. See the <a href="../../guides/javascript-seo/">JavaScript SEO guide</a>.</p>
+
+<h2>What to expect</h2>
+<p>A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.</p>
+
+<p class="related">I run this process as <a href="../../services/migrations/">website migration support</a>, before launch or after it.</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

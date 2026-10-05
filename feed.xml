@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gerris guides</title>
+  <subtitle>Technical SEO, AI search, migration, email, and privacy guides by Chris Abraham</subtitle>
+  <link href="https://gerriscorp.com/feed.xml" rel="self"/>
+  <link href="https://gerriscorp.com/guides/"/>
+  <id>https://gerriscorp.com/guides/</id>
+  <updated>2026-10-05T12:00:00Z</updated>
+  <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
+  <entry>
+    <title>How AI assistants decide what to say about your business</title>
+    <link href="https://gerriscorp.com/guides/ai-assistants/"/>
+    <id>https://gerriscorp.com/guides/ai-assistants/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.</summary>
+  </entry>
+  <entry>
+    <title>How to tell if JavaScript is hiding your content from Google and AI</title>
+    <link href="https://gerriscorp.com/guides/javascript-seo/"/>
+    <id>https://gerriscorp.com/guides/javascript-seo/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.</summary>
+  </entry>
+  <entry>
+    <title>"Crawled, currently not indexed": what it means and how to fix it</title>
+    <link href="https://gerriscorp.com/guides/crawled-not-indexed/"/>
+    <id>https://gerriscorp.com/guides/crawled-not-indexed/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.</summary>
+  </entry>
+  <entry>
+    <title>The website migration SEO checklist</title>
+    <link href="https://gerriscorp.com/guides/migration-checklist/"/>
+    <id>https://gerriscorp.com/guides/migration-checklist/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.</summary>
+  </entry>
+  <entry>
+    <title>SPF, DKIM, and DMARC for every domain that sends email</title>
+    <link href="https://gerriscorp.com/guides/email-authentication/"/>
+    <id>https://gerriscorp.com/guides/email-authentication/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.</summary>
+  </entry>
+  <entry>
+    <title>How to remove your personal information from data brokers and search</title>
+    <link href="https://gerriscorp.com/guides/personal-information-removal/"/>
+    <id>https://gerriscorp.com/guides/personal-information-removal/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.</summary>
+  </entry>
+  <entry>
+    <title>Glossary of SEO, AI search, and technical website terms</title>
+    <link href="https://gerriscorp.com/guides/glossary/"/>
+    <id>https://gerriscorp.com/guides/glossary/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-05T12:00:00Z</updated>
+    <summary>Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.</summary>
+  </entry>
+</feed>

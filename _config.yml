@@ -1,3 +1,4 @@
 # The site is pre-built by tools/build.py; Jekyll only copies files through.
-# Keep the sources and tools off the public site.
+# Generated pages have no front matter, so Jekyll copies them byte for byte.
+include: [.well-known]
 exclude: [src, tools, README.md, CLAUDE.md, .gitignore]

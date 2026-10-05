@@ -3,36 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gerris Corp: Chris Abraham on technical SEO and AI search</title>
-<meta name="description" content="Chris Abraham helps businesses get found, fixes what holds their websites back, and works with their developers on technical SEO, migrations, and AI search.">
+<title>Gerris Corp: Chris Abraham, technical consultant and SEO</title>
+<meta name="description" content="Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://gerriscorp.com/">
 <meta name="author" content="Chris Abraham">
 <link rel="icon" href="logo.png" type="image/png">
 <link rel="apple-touch-icon" href="logo.png">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Gerris Corp: Chris Abraham on technical SEO and AI search">
-<meta property="og:description" content="Chris Abraham helps businesses get found, fixes what holds their websites back, and works with their developers on technical SEO, migrations, and AI search.">
+<meta property="og:title" content="Gerris Corp: Chris Abraham, technical consultant and SEO">
+<meta property="og:description" content="Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.">
 <meta property="og:url" content="https://gerriscorp.com/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@chrisabraham">
-<meta name="twitter:title" content="Gerris Corp: Chris Abraham on technical SEO and AI search">
-<meta name="twitter:description" content="Chris Abraham helps businesses get found, fixes what holds their websites back, and works with their developers on technical SEO, migrations, and AI search.">
+<meta name="twitter:title" content="Gerris Corp: Chris Abraham, technical consultant and SEO">
+<meta name="twitter:description" content="Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1rem; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
 a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid #000; outline-offset: 2px; }
@@ -45,28 +47,39 @@ img { max-width: 100%; height: auto; }
 .brand:hover { text-decoration: underline; }
 .tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
 nav { border-bottom: 4px solid var(--bar); }
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
 nav li { margin: 0; }
-nav a { display: block; padding: .4rem .8rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .95rem; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
 nav a:hover { background: var(--bar); text-decoration: underline; }
 nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
 .crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
 main { padding: 1.25rem 0 2rem; }
 h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
 h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
-p, ul { margin: 0 0 1rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
 li { margin-bottom: .4rem; }
 .lead { font-size: 1.1rem; }
-code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
 .button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
 .button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
 @media (max-width: 34rem) {
   body { font-size: 17px; }
   .top img { width: 52px; height: 52px; }
-  nav a { padding: .45rem .6rem; font-size: .9rem; }
+  nav a { padding: .45rem .55rem; }
   h1 { font-size: 1.5rem; }
 }
 </style>
@@ -95,7 +108,14 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "url": "https://gerriscorp.com/",
    "logo": "https://gerriscorp.com/logo.png",
    "image": "https://gerriscorp.com/social-card.png",
-   "description": "Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management.",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
    "email": "chris@gerriscorp.com",
    "telephone": "+1-202-352-5051",
    "address": {
@@ -105,23 +125,30 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     "addressCountry": "US"
    },
    "areaServed": "Worldwide",
-   "founder": {
-    "@id": "https://chrisabraham.com/#person"
-   },
-   "employee": {
-    "@id": "https://chrisabraham.com/#person"
-   },
    "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
     "Technical SEO",
-    "JavaScript rendering and indexing",
+    "JavaScript SEO",
+    "Indexing",
     "Website migrations",
     "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
     "Answer engine optimization",
     "Generative engine optimization",
-    "Structured data",
+    "llms.txt",
     "Online reputation management",
+    "Data broker removal",
     "Google Business Profile",
-    "SPF, DKIM, and DMARC"
+    "SPF",
+    "DKIM",
+    "DMARC"
    ],
    "sameAs": [
     "https://www.upwork.com/freelancers/chrisjabraham",
@@ -134,7 +161,7 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "name": "Chris Abraham",
    "alternateName": "Christopher Abraham",
    "url": "https://chrisabraham.com/",
-   "jobTitle": "Founder",
+   "jobTitle": "Founder and principal consultant",
    "worksFor": {
     "@id": "https://gerriscorp.com/#org"
    },
@@ -143,14 +170,36 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
     "@type": "Place",
     "name": "Arlington, Virginia"
    },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
    "sameAs": [
     "https://chrisabraham.com/",
-    "https://www.linkedin.com/in/chrisabraham",
-    "https://twitter.com/chrisabraham",
-    "https://www.instagram.com/chrisabraham",
-    "https://www.facebook.com/chrisabraham",
     "https://www.upwork.com/freelancers/chrisjabraham",
-    "https://github.com/chrisabraham",
     "https://hillmole.com/"
    ]
   },
@@ -158,8 +207,8 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    "@type": "WebPage",
    "@id": "https://gerriscorp.com/#webpage",
    "url": "https://gerriscorp.com/",
-   "name": "Gerris Corp: Chris Abraham on technical SEO and AI search",
-   "description": "Chris Abraham helps businesses get found, fixes what holds their websites back, and works with their developers on technical SEO, migrations, and AI search.",
+   "name": "Gerris Corp: Chris Abraham, technical consultant and SEO",
+   "description": "Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -168,7 +217,10 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
    },
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "dateModified": "2026-10-05"
+   "dateModified": "2026-10-05",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   }
   }
  ]
 }
@@ -181,13 +233,14 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
   <a href="./"><img src="logo.png" width="64" height="64" alt="Gerris home"></a>
   <div>
     <a class="brand" href="./">Gerris</a>
-    <p class="tag">Chris Abraham: technical SEO, AI search, and reputation</p>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
     <li><a href="./" aria-current="page">Home</a></li>
     <li><a href="services/">Services</a></li>
+    <li><a href="guides/">Guides</a></li>
     <li><a href="case-studies/">Case Studies</a></li>
     <li><a href="about/">About</a></li>
     <li><a href="work-with-me/">Work With Me</a></li>
@@ -195,35 +248,58 @@ code { font-family: Consolas, Menlo, monospace; font-size: .95em; }
   </ul>
 </nav>
 <main id="main">
-<h1>I help businesses get found and fix what's holding their websites back</h1>
-<p class="lead">I'm Chris Abraham, and Gerris is my consultancy. I work with funded companies, brands, and high-profile people. When a site goes quiet in search, I find the mechanism, explain it in plain language, and work with your people until the fix is live and checked.</p>
+<h1>Experienced help for the digital work your business needs done</h1>
+<p class="lead">I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when the technical side of your web presence is a mess and nobody owns it. I find out what's wrong, write the plan, direct the developers, human and AI, ship what I can myself, and explain all of it in plain English.</p>
+<p>I've built websites since 1994 and started Gerris in 2007. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.</p>
 
-<h2>What I do</h2>
+<h2>Consulting and technical direction</h2>
 <ul>
-  <li><a href="./services/technical-seo/">Technical SEO forensics and fixes</a>: traffic drops, indexing problems, rendering, redirects, and structured data, diagnosed with evidence.</li>
-  <li><a href="./services/migrations/">Website migrations</a>: redirect maps and launch checks before the move, and cleanup after it.</li>
-  <li><a href="./services/ai-search/">AI search and content</a>: SEO, AEO, and GEO, so search engines and AI assistants understand and represent you accurately.</li>
-  <li><a href="./services/developers/">Working with your developers</a>: search problems turned into tickets with a mechanism, examples, and acceptance criteria.</li>
+  <li><strong><a href="./services/technical-lead/">Fractional technical lead</a>.</strong> For companies with a website, a developer or two, and nobody in charge. I own the stack part time, set priorities, direct developers and vendors, and report to you in plain English.</li>
+  <li><strong><a href="./services/developers/">Developer specs and implementation QA</a>.</strong> A diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification on the live site that the fix shipped.</li>
+  <li><strong><a href="./services/ai-automation/">AI agents and automation, built safely</a>.</strong> Small AI tools built with Claude Code, with a human confirming every action. My own command-line assistant is the proof: <a href="./case-studies/built-with-claude-code/">Built with Claude Code</a>.</li>
+  <li><strong><a href="./services/rescue/">Project rescue and takeovers</a>.</strong> The developer vanished or the agency handed over a zip file. I find out what you have and get it working.</li>
 </ul>
-<p>See <a href="./services/">every service</a>, including ongoing support, reputation work, Google Business Profile hard cases, and email and DNS cleanup.</p>
+
+<h2>Search and site performance</h2>
+<ul>
+  <li><strong><a href="./services/technical-seo/">Technical SEO forensics</a>.</strong> Traffic fell and nobody knows why. I find the mechanism, prove it, and get it fixed.</li>
+  <li><strong><a href="./services/crawler-visibility/">Content the crawler never sees</a>.</strong> Pages that look complete to visitors and empty to Google and AI crawlers. I've found this on Magento, WordPress, and React sites in a single year.</li>
+  <li><strong><a href="./services/site-speed/">Site speed and Cloudflare</a>.</strong> Core Web Vitals passed on real phones, and a CDN configured properly.</li>
+  <li><strong><a href="./services/migrations/">Migrations</a>.</strong> Platform, domain, and URL changes without losing rankings or email.</li>
+  <li><strong><a href="./services/ai-search/">AI search visibility</a>.</strong> What ChatGPT, Claude, Gemini, Perplexity, and Google's AI features say about you, and how to improve it.</li>
+</ul>
+<p>See <a href="./services/">every service</a>, including on-page SEO, Search Console, ongoing support, data cleanup, advisory work, reputation management, and email and DNS.</p>
 
 <h2>How I work</h2>
-<p>Every engagement starts with a paid diagnostic: a defined question, the evidence, the cause, and a prioritized set of fixes with an owner for each. Then I make the changes I have access to, hand your developers clear tickets for the rest, and verify the result once it ships. Details are on <a href="./work-with-me/">Work With Me</a>.</p>
+<p>Every engagement starts with a paid diagnostic: a defined question, the evidence, the cause, and a prioritized plan with an owner for each item. Then I make the changes I have access to, give your developers specs with acceptance criteria for the rest, and check the live result once it ships. Everything is in writing, in Basecamp or by email, with a technical document for the engineers and a plain-English summary for leadership. Details are on <a href="./work-with-me/">Work With Me</a>.</p>
 
 <h2>Recent work</h2>
 <ul>
-  <li>Traced an e-commerce traffic loss to product templates that rendered specs, FAQs, and reviews only on scroll, which crawlers never saw.</li>
-  <li>Reconciled URLs and redirects for a WordPress to Netlify migration.</li>
-  <li>Moved <a href="https://hillmole.com/">hillmole.com</a>, my serialized novel of 309 entries, from Movable Type to static pages on GitHub Pages with every original URL intact.</li>
+  <li>Traced an e-commerce traffic loss to product templates that mounted specs, FAQs, and reviews only on scroll, which Googlebot never triggered.</li>
+  <li>Found a consent-management platform hiding every article's content from Googlebot on a WordPress media site.</li>
+  <li>Combined crawl evidence with an AI-assisted read of a Next.js repository to plan a clinical practice's migration off WordPress media hosting.</li>
+  <li>Took over a stalled React application for a consumer brand: servers, DNS, repository, and a production outage.</li>
+  <li>Directed the build of my own AI assistant with Claude Code: 9,600 lines, 106 tests, and safety rules on every action.</li>
 </ul>
 <p>More in <a href="./case-studies/">case studies</a>.</p>
 
-<h2>Tell me what's going on with your site</h2>
-<p class="cta"><a class="button" href="https://calendly.com/chrisabraham/30">Book a call</a> <a class="button" href="https://www.upwork.com/freelancers/chrisjabraham">Hire me on Upwork</a> <a class="button" href="./contact/">Email me</a></p>
+<h2>Guides</h2>
+<ul>
+  <li><a href="./guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a></li>
+  <li><a href="./guides/ai-assistants/">How AI assistants decide what to say about your business</a></li>
+  <li><a href="./guides/migration-checklist/">The website migration SEO checklist</a></li>
+  <li><a href="./guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a></li>
+</ul>
+<p>See <a href="./guides/">all guides</a>.</p>
+
+<h2>Tell me what's going on</h2>
+<p>Email <a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> or call or text <a href="tel:+12023525051">+1 202-352-5051</a>.</p>
+<p class="cta"><a class="button" href="./contact/">Contact me</a> <a class="button" href="https://calendly.com/chrisabraham/30">Book a call</a> <a class="button" href="https://www.upwork.com/freelancers/chrisjabraham">Hire me on Upwork</a></p>
+<p class="updated">Updated October 5, 2026</p>
 </main>
 <footer class="site-footer">
-  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="https://chrisabraham.com/">chrisabraham.com</a> · <a href="llms.txt">llms.txt</a></p>
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="faq/">FAQ</a> · <a href="sitemap/">Site map</a> · <a href="guides/glossary/">Glossary</a> · <a href="llms.txt">llms.txt</a> · <a href="feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>
