@@ -1,0 +1,3 @@
+# The site is pre-built by tools/build.py; Jekyll only copies files through.
+# Keep the sources and tools off the public site.
+exclude: [src, tools, README.md, CLAUDE.md, .gitignore]

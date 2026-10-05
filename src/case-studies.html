@@ -1,0 +1,29 @@
+name: Case Studies
+title: Case studies: technical SEO, migrations, and schema work
+description: Anonymized case studies from Chris Abraham: a JavaScript rendering traffic loss, a WordPress to Netlify migration, a schema build, and Hill Mole.
+---
+<h1>Case studies</h1>
+<p class="lead">Client work is described by industry and problem. I name clients only with their permission.</p>
+
+<h2>E-commerce: product pages invisible to crawlers</h2>
+<p><strong>Problem.</strong> An e-commerce site was losing organic traffic, and nobody knew why.</p>
+<p><strong>What I found.</strong> The product templates used Alpine.js to render specs, FAQs, and reviews only when a visitor scrolled them into view. A Screaming Frog crawl showed category pages with thousands of words of extractable text, while flagship product pages yielded 250 to 400 words despite weighing more than 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed," with the rest of the site indexed normally.</p>
+<p><strong>Separate tracks.</strong> A spike in spam backlinks and a redirect error showed up at the same time. I investigated each separately and kept them out of the rendering diagnosis until the data connected them.</p>
+<p><strong>Deliverable.</strong> The mechanism, the evidence, and developer tickets to render the content in the initial HTML.</p>
+
+<h2>WordPress to Netlify migration</h2>
+<p><strong>Work.</strong> URL reconciliation between the old WordPress site and the new Netlify build, a redirect map, decisions on intentionally removed pages, orphaned URL checks, and sitemap verification, in collaboration with the site's developer.</p>
+
+<h2>Landing pages and schema for a signage and mailbox company</h2>
+<p><strong>Work.</strong> A set of new landing pages with structured data, built so each product line has a clear page that search engines and AI assistants can understand.</p>
+
+<h2>Recurring publishing on Umbraco</h2>
+<p><strong>Work.</strong> Regular content publishing and on-page SEO inside an Umbraco CMS: formatting, titles, descriptions, internal links, and structured data on every page.</p>
+
+<h2>Long-term perception management for a founder</h2>
+<p><strong>Work.</strong> An eight-year retainer shaping search results and the public record for a high-net-worth founder, now running alongside a security firm's open-source intelligence program. Monthly reporting throughout.</p>
+
+<h2>My own project: hillmole.com</h2>
+<p><strong>Work.</strong> <a href="https://hillmole.com/">Hill Mole</a>, my serialized novel of 309 entries written from 2005 to 2022, moved from a broken Movable Type install to static pages on GitHub Pages. Every original URL still answers. Every entry has a hand-written title and description, schema.org data, and llms.txt coverage, and new entries are submitted through IndexNow.</p>
+
+<p><a class="button" href="{root}contact/">Tell me about your problem</a></p>

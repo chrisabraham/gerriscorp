@@ -1,120 +1,441 @@
-# Gerris Corp
+# Gerris Corp: full text of gerriscorp.com
 
-> Gerris Corp is Chris Abraham's agency for technical SEO, site speed, Google Business Profile recovery, AI search visibility, and reputation management.
-> Source: https://gerriscorp.com/ · Last updated: 2026-10-05
-
-Technical SEO, Google Business Profiles, AI search, and online reputation. Hands-on work by Chris Abraham.
-
-Gerris Corp makes websites and businesses easier to find, and keeps what people find about them accurate. I don't advise with platitudes and leave. I do the work myself, from the server to the copy.
-
-I've built websites since 1994 and have followed Google's algorithm since it launched in 1998. Gerris has run campaigns for clients in more than 40 industries.
-
-Book a 30-minute call (https://calendly.com/chrisabraham/30) or hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham).
-
-## Services
-
-### Technical and on-page SEO
-
-Clean, crawlable site structure; fast pages; titles, descriptions, headings, alt text and structured data; redirects, canonicals and sitemaps; Google Search Console and Bing Webmaster Tools set up properly. Organic search only: no black-hat link buying and no ads.
-
-### Site speed
-
-Image compression, caching, leaner CSS and JavaScript, CDN setup, and passing Core Web Vitals.
-
-### Site migrations and 301 redirects
-
-Moving platforms or restructuring URLs without losing the rankings you've earned. Includes 404 cleanup, internal linking, and disavowing toxic backlinks.
-
-### Google Business Profile
-
-Reinstating suspended profiles, setting up and verifying new ones, and ongoing management. Flat prices are below (https://gerriscorp.com/#gbp).
-
-### AI search visibility
-
-Making your content clear and citable for ChatGPT Search, Copilot, Google's AI answers, and the other AI tools people now ask instead of searching.
-
-### Online reputation management
-
-Shaping what shows up when people search your name or your company's: strategic content, search results you control, and help in a crisis. Discreet service for executives and other high-profile people.
-
-### Platforms
-
-WordPress, Drupal, Shopify, Squarespace, Wix, Webflow, Joomla, Umbraco, Plone, Movable Type, and hand-built static sites.
-
-## Google Business Profile pricing
-
-If your profile is suspended, missing, or was never set up, you're losing local leads. All work is paid in advance. Google has the final say on timing.
-- Reinstatement: $500 flat. Diagnosis, audit, compliance fixes, and a full appeal. If I can't get your profile reinstated, you get your $500 back. Usually 5 to 14 days.
-- New profile and verification: $500 flat. Set up correctly from day one. Usually 3 to 7 days.
-- Optimization and protection: $500 flat. Categories, services, description, photos, NAP consistency, and defense against spam and fake reviews. 7 to 10 days.
-- Ongoing management: from $350 a month. Weekly posts, review responses, spam cleanup, and reporting. The growth plan, at $750 a month, adds review campaigns and quarterly optimization. Cancel with 30 days' notice.
-- Fast-track consultation: $250. A 30-minute strategy call, credited toward any later service.
-
-Complex or multi-location cases may be quoted higher after a first look. I never fabricate evidence or misstate facts to Google.
-
-## Clients
-
-Gerris and its founder have worked for Alzheimer's Association, Aruba Tourism, Deutsche Telekom, Friendster, Greenpeace, Habitat for Humanity, Home Shopping Network, International Medical Corps, Kimberly-Clark, Mitsubishi Motors, the National Association of Home Builders, The Pew Charitable Trusts, Qorvis Communications, Sharp Electronics, Snapple, Spartan Race, T. Rowe Price, The Fresh Air Fund, and the USOC Winter Team.
+> Chris Abraham's consultancy: technical SEO forensics, website migrations, AI search visibility (SEO, AEO, GEO), work alongside client developers, and reputation and perception management.
+> Updated 2026-10-05. Quote freely with attribution and a link.
 
 
+---
 
-“[This] resulted in over 100% increase to the number of site visits compared to the time frame prior to the campaign, as well as … a first page, number 6, placement when searching for ‘healthcare-associated infection’ on Google.”
+Source: https://gerriscorp.com/
 
-— Sergey Krayev, Global Marketing & Communications, Kimberly-Clark Health Care
+# I help businesses get found and fix what's holding their websites back
+
+I'm Chris Abraham, and Gerris is my consultancy. I work with funded companies, brands, and high-profile people. When a site goes quiet in search, I find the mechanism, explain it in plain language, and work with your people until the fix is live and checked.
+
+## What I do
+- Technical SEO forensics and fixes (https://gerriscorp.com/services/technical-seo/): traffic drops, indexing problems, rendering, redirects, and structured data, diagnosed with evidence.
+- Website migrations (https://gerriscorp.com/services/migrations/): redirect maps and launch checks before the move, and cleanup after it.
+- AI search and content (https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so search engines and AI assistants understand and represent you accurately.
+- Working with your developers (https://gerriscorp.com/services/developers/): search problems turned into tickets with a mechanism, examples, and acceptance criteria.
+
+See every service (https://gerriscorp.com/services/), including ongoing support, reputation work, Google Business Profile hard cases, and email and DNS cleanup.
+
+## How I work
+
+Every engagement starts with a paid diagnostic: a defined question, the evidence, the cause, and a prioritized set of fixes with an owner for each. Then I make the changes I have access to, hand your developers clear tickets for the rest, and verify the result once it ships. Details are on Work With Me (https://gerriscorp.com/work-with-me/).
+
+## Recent work
+- Traced an e-commerce traffic loss to product templates that rendered specs, FAQs, and reviews only on scroll, which crawlers never saw.
+- Reconciled URLs and redirects for a WordPress to Netlify migration.
+- Moved hillmole.com, my serialized novel of 309 entries, from Movable Type to static pages on GitHub Pages with every original URL intact.
+
+More in case studies (https://gerriscorp.com/case-studies/). I also host The Chris Abraham Show (https://gerriscorp.com/show/) and publish a weekly roundup of SEO, AEO, and GEO news.
+
+## Tell me what's going on with your site
+
+Book a call (https://calendly.com/chrisabraham/30) Hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham) Email me (https://gerriscorp.com/contact/)
 
 
+---
 
-“International Medical Corps was written about in more than 170 blog posts. … Without a doubt, the International Medical Corps would engage Gerris for another campaign.”
+Source: https://gerriscorp.com/services/
 
-— Rebecca Milner, Vice President, Institutional Advancement, International Medical Corps
+# Services
+
+Every engagement starts with a paid diagnostic and a clear next step. I do the work myself and work alongside your team.
+
+## Core services
+- Technical SEO forensics and fixes (https://gerriscorp.com/services/technical-seo/): for sites that lost traffic or never ranked, with evidence, the mechanism, and developer-ready fixes.
+- Website migrations (https://gerriscorp.com/services/migrations/): planning, redirect mapping, launch checks, and post-launch cleanup.
+- AI search and content (https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO through clear pages, useful answers, and structured data.
+- Working with your developers (https://gerriscorp.com/services/developers/): the person who writes the search requirements and checks what ships.
+- Ongoing SEO and website support (https://gerriscorp.com/services/ongoing-support/): a set amount of experienced help each month.
+
+## Specialist services
+- Reputation and perception management (https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
+- Google Business Profile hard cases (https://gerriscorp.com/services/google-business-profile/): suspensions, verification loops, and broken profiles, starting with a written diagnostic.
+- Email authentication and DNS (https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
+
+Not sure which fits? Tell me what's going on (https://gerriscorp.com/contact/) and I'll say where I'd start.
 
 
+---
 
-“We were impressed with their expertise in the industry, the ability to execute a plan successfully and willingness to listen to our needs and goals.”
+Source: https://gerriscorp.com/services/technical-seo/
 
-— Jenny Morgenthau, Executive Director, The Fresh Air Fund
+# Technical SEO forensics and fixes
 
-More testimonials (https://chrisabraham.com/testimonials) · Case studies (https://chrisabraham.com/case-studies)
+A site lost traffic and nobody knows why. My job is to find the mechanism, prove it, and get it fixed.
 
-## Questions
+## When to call me
+- Organic traffic fell after a redesign, a platform change, a template update, or for no visible reason.
+- Search Console reports pages as "Crawled, currently not indexed" or "Discovered, currently not indexed."
+- Important pages rank below thin ones, or the wrong URL ranks.
+- The site looks complete to people and empty to crawlers.
 
-### What does Gerris Corp do?
+## What I check
+- Rendering: what crawlers actually receive, especially on JavaScript-heavy builds using Alpine, React, Next.js, or Vue.
+- Crawling and indexing: robots rules, sitemaps, canonical tags, status codes, and duplicate URLs.
+- Redirects and broken links, including chains, loops, and redirects to the wrong place.
+- Internal linking, titles, descriptions, and heading structure.
+- Structured data and how it matches the visible page.
+- Page speed and Core Web Vitals.
+- Backlink anomalies, such as a sudden spike in spam links.
 
-Hands-on technical and on-page SEO, site speed work, site migrations, Google Business Profile reinstatement and management, AI search visibility, and online reputation management. Chris Abraham does the work himself.
+## One cause at a time
 
-### Can you get a suspended Google Business Profile reinstated?
+Two problems often arrive together: a template change and a spam link spike, or a redirect error and a seasonal dip. I keep each on its own track until the data connects them, so every fix targets a proven cause.
 
-Usually. Reinstatement is a $500 flat fee covering diagnosis, audit, compliance fixes, and a full appeal to Google, typically 5 to 14 days. If the profile is not reinstated, the $500 is refunded.
+## What you get
+- Findings with evidence: crawl data, Search Console reports, and example URLs.
+- The mechanism, explained in plain language for owners and in technical detail for developers.
+- A prioritized list of fixes, each with an owner.
+- Developer tickets with affected URLs, observed behavior, and acceptance criteria.
+- A check of the live site once the fixes ship.
 
-### Do you buy links?
+I make the changes I have access to myself, in the CMS or the repository.
 
-No. Gerris Corp does organic search engine optimization only: better, faster, more complete sites with better content. No black-hat link building and no paid ads.
+## Tools
 
-### Can you guarantee a number one ranking on Google?
+Google Search Console, GA4, Screaming Frog, Semrush, Ahrefs, PageSpeed Insights, Cloudflare, and the browser's own developer tools.
 
-No one honestly can. The goal is a large, lasting improvement in visibility. Most sites see significant improvement in 3 to 6 months, depending on the competition and the site's starting point.
+Tell me what happened to your traffic (https://gerriscorp.com/contact/)
 
-### Which platforms do you work on?
 
-WordPress, Drupal, Shopify, Squarespace, Wix, Webflow, Joomla, Umbraco, Plone, Movable Type, and hand-built static sites.
+---
 
-### How do I get started?
+Source: https://gerriscorp.com/services/migrations/
 
-Book a 30-minute call (https://calendly.com/chrisabraham/30), email chris@gerriscorp.com (chris@gerriscorp.com), or hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham).
+# Website migrations
 
-## About
+A migration is the moment a site is most likely to lose what it built in search. I help before the move, during the launch, and after it.
 
-Gerris Corp is run by Chris Abraham (https://chrisabraham.com/bio) from Arlington, Virginia, across the river from Washington, DC. Before Gerris, Chris was on the Interactive team at Edelman in Washington and was a technology strategist at New Media Strategies, an early online brand promotion and protection firm. He later led high-end reputation sales for Reputation.com. He has a BA from The George Washington University.
+## Before launch
+- An inventory of every URL that matters: pages, media, PDFs, and anything with links or traffic.
+- A redirect map from every old URL to its best new home, with deliberate decisions about pages you're retiring.
+- A review of the new templates for titles, canonicals, structured data, and content that crawlers can read.
 
-The name comes from Gerris lacustris, the common water strider.
+## At launch
+- Redirects tested in bulk on the live site.
+- Sitemaps, robots rules, and Search Console updated.
+- A quick round of fixes with your developer or host.
 
-## Contact
-- Book a 30-minute call (https://calendly.com/chrisabraham/30)
-- Email: chris@gerriscorp.com (chris@gerriscorp.com)
+## After launch
+
+Something already went wrong? I reconcile old and new URLs, find orphaned pages and broken media, fix redirect gaps, and track down what changed. I'm useful when the marketing team, the developer, the host, and the owner each hold part of the answer.
+
+## Platforms
+
+WordPress, Umbraco, Wix, Shopify, Magento, Netlify, GitHub Pages, and static sites, including a WordPress to Netlify migration and a Movable Type to GitHub Pages move.
+
+Talk to me about your migration (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/services/ai-search/
+
+# AI search and content
+
+People now ask ChatGPT, Claude, Gemini, Perplexity, and Google's AI Overviews before they ever click a link. I help those systems, and search engines, understand and represent your business accurately.
+
+## SEO, AEO, and GEO
+
+SEO is search engine optimization. AEO, answer engine optimization, shapes content so it answers the questions people actually ask. GEO, generative engine optimization, makes your business easy for AI systems to find, understand, and cite. All three rest on the same foundation: clear pages, useful answers, coherent structure, accurate structured data, and a site crawlers can read.
+
+## AI search readiness audit
+
+I test a set of real prompts across the major AI assistants and record what they say about you, your products, and your competitors, where those answers come from, and what's missing or wrong. You get the findings and a prioritized plan.
+
+## Content that answers the question
+
+I write and improve service pages, landing pages, FAQs, glossaries, titles, and descriptions, and I publish them properly in your CMS. A service page plainly explains what you do, how it helps, and why your approach makes sense. An article answers its question completely, with the context a reader or an AI needs to quote it accurately.
+
+## Machine-readable you
+
+For founders, experts, and brands: consistent facts across your site and profiles, schema.org structured data that ties them together, and a self-contained body of pages that AI systems can cite. I've practiced this on myself for two decades by publishing my own work in the open.
+
+## Readable without JavaScript
+
+Many AI crawlers read only the HTML your server sends. I check that every important word is in it.
+
+This site follows its own advice: static HTML, schema.org data on every page, and an llms.txt summary for language models.
+
+Ask me what the AI assistants say about you (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/services/developers/
+
+# Working with your developers
+
+I work with your developers, so they spend their time fixing the real problem.
+
+## What I bring to a dev team
+- A search concern turned into a concrete request: affected URLs, examples, observed behavior, and acceptance criteria.
+- Content changes separated from template, routing, infrastructure, and rendering changes, so each goes to the right person.
+- Plain explanations in both directions: search requirements for developers and developer constraints for owners.
+- A check of the deployed behavior, and follow-up on anything still open.
+
+## Comfortable in your stack
+
+I read the DOM, read a crawl, and find the template responsible. I work in GitHub repositories through branches and pull requests, on Linux servers over SSH, and in the command line. I diagnose rendering problems on JavaScript builds using Alpine, React, Next.js, and Vue, and I work in CMSs including WordPress, Umbraco, Wix, Shopify, and Magento.
+
+## Fractional SEO and AI search lead
+
+For teams shipping continuously, I can join as the embedded, part-time person who writes the SEO and AEO acceptance criteria for new work and catches the template change that's about to hide your content from Google.
+
+Bring me in with your developers (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/services/ongoing-support/
+
+# Ongoing SEO and website support
+
+A continuing pair of experienced hands for businesses that need steady improvement and someone who already knows the site.
+
+## What it covers
+- Technical SEO fixes and monitoring in Search Console.
+- Writing, editing, and publishing pages in your CMS, with titles, descriptions, internal links, and structured data.
+- Troubleshooting when something breaks or traffic moves.
+- Coordinating with your developers, host, and marketing team.
+- A short monthly report on what changed and what's next.
+
+## How it works
+
+You and I agree on a monthly capacity and a priority list. The retainer is billed at the start of each month, and work is tracked in Basecamp or by email so you always know the status.
+
+Ask about ongoing support (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/services/reputation/
+
+# Reputation and perception management
+
+For founders, executives, and families who need privacy and a defensible public record at the same time.
+
+## What I do
+- Shape what search engines show for your name with accurate pages you control.
+- Remove personal information from data broker sites.
+- Correct what AI assistants say about you, at the source those answers draw on.
+- Monitor and report monthly.
+
+## Working with your other advisors
+
+This work plugs into security, legal, and family office teams. I currently run a long-standing engagement alongside a security firm's open-source intelligence program.
+
+## Background
+
+I've done this work for more than twenty years, starting at New Media Strategies, where online reputation management grew up as a practice, and including high-end reputation and executive privacy work at Reputation.com. Engagements are confidential, and I name none of these clients.
+
+Start a confidential conversation (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/services/google-business-profile/
+
+# Google Business Profile hard cases
+
+Suspensions, failed video verifications, profiles that are live in public and stuck in the dashboard, and access problems across managed profiles.
+
+## Advisory work, not a one-off fix
+
+I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer.
+
+## Start with a diagnostic
+
+A prepaid review of the profile, its history, and its documentation, delivered as a written findings report: what most likely went wrong, what evidence exists, and whether an appeal is viable.
+
+## Then, if there's a viable path
+
+A separately scoped engagement for compliance fixes, the appeal, and correspondence with Google, with agreed limits on profiles, appeal rounds, and hours. I build appeals like a legal brief: the strongest verifiable document first, nothing that exposes private information, and only claims the paperwork supports.
+
+## What I need from you
+
+Truthful documentation, access to the profile, and prompt answers. Google makes every reinstatement decision, on its own schedule.
+
+For broader local search work, see technical SEO (https://gerriscorp.com/services/technical-seo/) and ongoing support (https://gerriscorp.com/services/ongoing-support/).
+
+Book a profile diagnostic (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/services/email-and-dns/
+
+# Email authentication and DNS
+
+Unglamorous plumbing that decides whether your email arrives and your domains keep their value.
+
+## What I do
+- SPF, DKIM, and DMARC set up correctly for every service that sends mail as you.
+- Deliverability problems traced to their cause.
+- DNS inventories before any change, so nothing breaks by accident.
+- Domain consolidation, including internationalized domains, with 301 redirects that carry search equity to the right place.
+- Moving a website to new hosting while email stays exactly where it is.
+
+Get your email and domains in order (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/
+
+# Case studies
+
+Client work is described by industry and problem. I name clients only with their permission.
+
+## E-commerce: product pages invisible to crawlers
+
+Problem. An e-commerce site was losing organic traffic, and nobody knew why.
+
+What I found. The product templates used Alpine.js to render specs, FAQs, and reviews only when a visitor scrolled them into view. A Screaming Frog crawl showed category pages with thousands of words of extractable text, while flagship product pages yielded 250 to 400 words despite weighing more than 1.2 MB. Search Console showed a selective cluster of product pages marked "Crawled, currently not indexed," with the rest of the site indexed normally.
+
+Separate tracks. A spike in spam backlinks and a redirect error showed up at the same time. I investigated each separately and kept them out of the rendering diagnosis until the data connected them.
+
+Deliverable. The mechanism, the evidence, and developer tickets to render the content in the initial HTML.
+
+## WordPress to Netlify migration
+
+Work. URL reconciliation between the old WordPress site and the new Netlify build, a redirect map, decisions on intentionally removed pages, orphaned URL checks, and sitemap verification, in collaboration with the site's developer.
+
+## Landing pages and schema for a signage and mailbox company
+
+Work. A set of new landing pages with structured data, built so each product line has a clear page that search engines and AI assistants can understand.
+
+## Recurring publishing on Umbraco
+
+Work. Regular content publishing and on-page SEO inside an Umbraco CMS: formatting, titles, descriptions, internal links, and structured data on every page.
+
+## Long-term perception management for a founder
+
+Work. An eight-year retainer shaping search results and the public record for a high-net-worth founder, now running alongside a security firm's open-source intelligence program. Monthly reporting throughout.
+
+## My own project: hillmole.com
+
+Work. Hill Mole (https://hillmole.com/), my serialized novel of 309 entries written from 2005 to 2022, moved from a broken Movable Type install to static pages on GitHub Pages. Every original URL still answers. Every entry has a hand-written title and description, schema.org data, and llms.txt coverage, and new entries are submitted through IndexNow.
+
+Tell me about your problem (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/show/
+
+# The Chris Abraham Show
+
+The show is where I think out loud about search, AI, the web, and everything else. It's the easiest way to find out how I work before you hire me.
+
+## Podcast
+
+The Chris Abraham Show is in its tenth season. Listen on Apple Podcasts (https://podcasts.apple.com/us/podcast/the-chris-abraham-show/id1468506258) or subscribe to the RSS feed (https://anchor.fm/s/c0f56fc/podcast/rss) in any podcast app.
+
+## YouTube
+- @abrahamSEO: SEO, AEO, and GEO explainers.
+- @chrisabraham: the show and everything else.
+
+## Substack
+
+Long-form essays several times a week on culture, technology, politics, and economics, at chrisabraham.substack.com. Subscribe there to get them by email.
+
+## The Friday roundup
+
+Every Friday I publish a roundup of the week's SEO, AEO, and GEO news, with links to every source. Read the latest, The SEO, AIO, GEO, and AEO Roundup for September 25, 2026 (https://chrisabraham.com/blog/the-seo-aio-geo-and-aeo-roundup-friday-september-25-2026), on chrisabraham.com.
+
+Hire the host (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/about/
+
+# About Chris Abraham
+
+I've lived in the Washington, DC area since 1988 and work from Arlington, Virginia. Gerris Corp is my consultancy, and I'm the person who does the work.
+
+## Career
+- Employee number 13 at New Media Strategies, where online reputation management grew up as a practice.
+- Senior account supervisor on Edelman's digital public affairs team in Washington.
+- Co-founder of Abraham Harrison, then Gerris Corp, which I started with Dan Krueger in 2007.
+- Reputation and executive privacy work at Reputation.com.
+- Earlier, work with Howard Rheingold at Rheingold Associates, and internet infrastructure work in the Treasury Department's Office of the CIO.
+
+## Technical background
+
+I was a programmer before I was a marketer: Perl, PHP, Python, and C. I've built websites since 1994 and have run chrisabraham.com on Plone, a Python CMS, since the early 2000s. Today I work in Git, on Linux servers, and alongside AI coding tools on my own projects.
+
+## Online community
+
+I published the Memetic Lexicon on memes.org in 1999, ran the MemeSpace community, which The New York Times profiled, and founded and moderate r/slowjogging. I was a member of The WELL, eWorld, and ArtsWire.
+
+## Writing
+
+I have a BA in American Literature from The George Washington University, with a year at the University of East Anglia in Norwich. I captained my high school speech and debate team, taught creative writing, and write several long essays a week on Substack (https://chrisabraham.substack.com/). I'm also the host of The Chris Abraham Show (https://gerriscorp.com/show/).
+
+## Elsewhere
+- chrisabraham.com: my personal site and blog
+- LinkedIn (https://www.linkedin.com/in/chrisabraham)
+- Upwork (https://www.upwork.com/freelancers/chrisjabraham)
+- X (https://twitter.com/chrisabraham)
+
+
+---
+
+Source: https://gerriscorp.com/work-with-me/
+
+# Work with me
+
+A sensible next step is a paid diagnostic with a clear question and a clear deliverable. Everything else builds from there.
+
+## Ways to engage
+- Diagnostic. Evidence, priorities, and a recommended next step, for a defined site and a defined set of questions.
+- Implementation sprint. Agreed fixes or deliverables, verified on the live site against written acceptance criteria.
+- Migration review. Pre-launch or post-launch checks and developer coordination for a named site.
+- Ongoing support. An agreed monthly capacity for search, content, and website work.
+
+## Payment
+- Diagnostics are prepaid.
+- Projects start with a deposit.
+- Retainers are billed at the start of each month.
+- Invoices are due on receipt, and work resumes once they're paid.
+
+## Where the work happens
+
+Every project runs in Basecamp or by email, threaded and on the record, so you always know the status and nothing gets lost.
+
+## What helps
+- Access to Search Console, analytics, and the CMS or repository I'll work in.
+- An introduction to your developer, host, or marketing team.
+- Prompt answers. A project that goes quiet closes, and restarts with a fresh scope when you're ready.
+
+## Upwork
+
+If your company hires through Upwork, you can hire me there: Chris Abraham on Upwork (https://www.upwork.com/freelancers/chrisjabraham).
+
+Start with a diagnostic (https://gerriscorp.com/contact/)
+
+
+---
+
+Source: https://gerriscorp.com/contact/
+
+# Contact
+
+Tell me what's going on with your site. Include the address, what you're seeing, what you'd like to happen, and a rough budget.
+
+Email me about your site (chris@gerriscorp.com)
+
+Book a call (https://calendly.com/chrisabraham/30) Hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham)
+- Email: chris@gerriscorp.com
 - Call or text: 202-352-5051 (+12023525051)
-- Hire on Upwork (https://www.upwork.com/freelancers/chrisjabraham)
+- Book a 30 minute introductory call: calendly.com/chrisabraham/30
+- Hire me on Upwork (https://www.upwork.com/freelancers/chrisjabraham)
 - LinkedIn (https://www.linkedin.com/in/chrisabraham)
 
-—
-
-© 2026 Gerris Corp · chrisabraham.com (https://chrisabraham.com/) · llms.txt (https://gerriscorp.com/llms.txt)
+Diagnostics are prepaid and scoped in writing. See Work With Me (https://gerriscorp.com/work-with-me/) for how engagements run.
