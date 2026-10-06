@@ -19,7 +19,8 @@ img { max-width: 100%; height: auto; }
 .skip { position: absolute; left: -999px; }
 .skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
 .top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
-.top img { width: 64px; height: 64px; flex: none; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
 .brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
 .brand:hover { text-decoration: underline; }
 .tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
