@@ -1414,7 +1414,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-05
+Updated: 2026-10-06
 
 # Guides
 
@@ -1422,14 +1422,34 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## AI search
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
+- [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.
+- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): specs, project memory, automated checks, review, and keeping secrets and production out of reach.
+
+## Diagnosis
+- [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
+- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
+- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
 
 ## Technical SEO
-- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
-- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
+- [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.
+- [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): matching rules, crawling versus indexing, status codes, and AI crawlers.
+- [Faceted navigation SEO: filters, parameters, and crawl budget](https://gerriscorp.com/guides/faceted-navigation/): which filter pages to index and how to keep the rest out of the crawl.
+- [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): the codes, the return links, and the errors that void them.
+
+## Speed and infrastructure
+- [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
+- [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
+
+## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
+- [How to plan 301 redirects that keep your rankings and links](https://gerriscorp.com/guides/301-redirects/): which redirect to use, mapping, implementation by platform, testing, and how long to keep them.
+
+## Analytics
+- [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): the four signals, basic and advanced mode, regional defaults, and how to verify it.
 
 ## Email and domains
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
+- [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): headers, authentication failures, reputation, blocklists, and sending practices.
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
@@ -1443,7 +1463,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 5, 2026
+Updated October 6, 2026
 
 
 ---
@@ -1845,6 +1865,820 @@ Brokers refresh their data from public records and other brokers constantly, so 
 5. For families and executives, cover spouses, children, and older addresses as well.
 
 I handle this for clients as part of [reputation and perception management](https://gerriscorp.com/services/reputation/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/traffic-drop/
+Updated: 2026-10-06
+
+# How to diagnose a Google traffic drop in Search Console
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Organic traffic fell and everyone wants an answer by Friday. The answer is almost always findable, and it comes from narrowing the drop down until only one explanation fits. This is the order I work in.
+
+## 1. Confirm the drop is real
+
+Start by ruling out measurement. Analytics can fall while search traffic is fine.
+- Compare Google Analytics with Search Console clicks over the same dates. If Search Console is flat and analytics fell, the problem is tracking: a broken tag, a new consent banner, a site redesign that dropped the snippet from some templates.
+- Check that the date ranges match in length and in days of the week. A Monday-to-Sunday week compared with a Thursday-to-Wednesday week shows a false drop on a business site.
+- Compare with the same period last year. Many businesses fall every summer or every January, and that's seasonality.
+
+One reporting change to know about: in September 2025 Google stopped supporting a parameter that rank-tracking tools used to load a hundred results at a time. Desktop impressions fell sharply for many sites and average position appeared to improve, with no change in clicks. A drop in impressions alone from that month is usually that.
+
+## 2. Read clicks, impressions, CTR, and position together
+| Pattern | Likely meaning |
+| --- | --- |
+| Impressions and clicks both fell, position fell | Rankings dropped: an algorithm update, a technical problem, or stronger competition |
+| Impressions steady, clicks and CTR fell | The results page changed: an AI Overview, more ads, a new feature above you, or a rewritten title |
+| Impressions fell, position steady | Fewer people are searching: seasonality, a news cycle ending, or a product falling out of fashion |
+| Everything fell to near zero | The site is blocked, deindexed, or under a manual action |
+
+## 3. Find where the loss is
+
+Use the Compare option in the Performance report, then sort each tab by the change in clicks.
+- **Pages.** Is the loss spread across the site, or concentrated in one section or template? A drop in one template points to something technical about that template.
+- **Queries.** Separate branded searches from everything else with a regular expression filter on the brand name. Branded loss means fewer people are looking for the business; unbranded loss means rankings.
+- **Countries and devices.** A drop on mobile alone suggests a mobile rendering or speed problem. A drop in one country suggests hreflang, a local competitor, or a regional update.
+- **Search appearance and search type.** Lost rich results, or lost image and video traffic, show up here.
+
+## 4. Line it up with dates
+
+Find the first day of the decline as precisely as the daily data allows, then check what happened that week.
+- **Google's Search Status Dashboard** lists confirmed core updates, spam updates, and incidents with start and end dates.
+- **Your own changes.** Deploys, plugin and theme updates, CMS upgrades, migrations, CDN or security changes, new consent tools, and changes to robots.txt or redirects. Ask the developers for the deploy log.
+- **Outside events.** A competitor's launch, a press story, a product recall.
+
+## 5. Check the technical reports
+- **Security and Manual actions.** One look, and either there's a notice or there isn't.
+- **Page indexing.** A rise in "Crawled, currently not indexed," "Excluded by noindex," "Blocked by robots.txt," or "Duplicate, Google chose different canonical" that starts on the same date is a strong lead.
+- **Crawl stats.** Under Settings: host status problems, a spike in server errors, slower response times, or a sudden change in crawl volume.
+- **URL Inspection.** Run a live test on a page that lost traffic and read the rendered HTML. Content missing from Google's render is a common, invisible cause. The [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) has the tests.
+
+## 6. Separate the problems
+
+Drops often have more than one cause at once: a core update lands the same month a redesign broke a template, or a backlink spam spike shows up beside a redirect error. Treat each candidate as its own hypothesis and test it against the data separately. When the evidence for each one points to different pages or different dates, they're different problems, and each gets its own fix.
+
+## 7. Write it down
+
+The deliverable is a short document: the size and start date of the drop, where it is concentrated, the cause, the evidence for it, the explanations that were ruled out and why, and the fix with tickets the developers can act on. Then mark the fix's ship date and watch the same report, filtered the same way, over the following weeks.
+
+## Questions about traffic drops
+
+### How fast does traffic recover after a fix?
+
+A technical fix such as an unblocked template often recovers within weeks, as Google recrawls. Losses from a core update usually move only when Google runs a later update, after the content has improved.
+
+### How far back does Search Console go?
+
+Sixteen months. For longer history, set up the bulk export to BigQuery now, because it only collects data from the day it starts.
+
+Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/canonical-tags/
+Updated: 2026-10-06
+
+# Canonical tags: how Google chooses which URL to index
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Most sites publish the same content at more than one address: with and without tracking parameters, sorted and filtered, printed, paginated, or copied across domains. Google picks one address from each group to show in results. The canonical tag is how you tell Google which one you prefer.
+
+## What the tag does
+
+A canonical tag is a line in the page's head:
+
+```
+<link rel="canonical" href="https://example.com/shoes/trail-runner/">
+```
+
+It says: this page is a copy, or the original, of the content at that address, and that address is the one to index. Google consolidates ranking signals such as links onto the chosen URL and shows it in results. The duplicates stay reachable for visitors.
+
+For files without a head, such as PDFs, the same instruction can go in an HTTP header: `Link: <https://example.com/guide.pdf>; rel="canonical"`.
+
+## A hint, weighed against other signals
+
+Google treats the canonical tag as a strong hint. It weighs the tag together with redirects, internal links, the URLs listed in the XML sitemap, hreflang annotations, and a preference for HTTPS and for shorter, cleaner URLs. When the signals agree, Google follows the tag almost every time. When they disagree, Google decides for itself.
+
+A typical conflict: every product page declares a clean canonical URL, while the navigation, the sitemap, and the breadcrumbs all link to a version with a parameter. Three signals point one way and one points the other, and Google may side with the majority.
+
+## The Search Console statuses
+
+The Page indexing report shows canonical decisions in three statuses.
+- **Alternate page with proper canonical tag.** The page points elsewhere, and Google agreed. This is working as intended.
+- **Duplicate without user-selected canonical.** Google found duplicates with no canonical tag and picked one itself. Add tags so the choice is yours.
+- **Duplicate, Google chose different canonical than user.** You named one URL and Google picked another. Look for conflicting signals, or for pages that are more different than you think.
+
+URL Inspection shows both the user-declared canonical and the Google-selected canonical for any page, which settles individual cases.
+
+## The rules I apply
+- **Every indexable page declares itself.** A self-referencing canonical guards against parameter copies that other sites and ad platforms create.
+- **Absolute URLs.** Include the protocol and host. Relative canonicals are valid, and they break the moment a page is served from a staging host or a second domain.
+- **The target returns a 200.** A canonical pointing at a redirect, a 404, or a noindexed page sends contradictory instructions.
+- **One tag per page, in the head.** Two different canonicals cancel each other, and Google ignores canonical tags in the body. Plugins and themes that each add their own tag are the usual cause.
+- **In the server's HTML.** A canonical inserted or changed by JavaScript may be read late or not at all. If the raw HTML and the rendered HTML disagree, fix the template.
+- **Internal links match.** Navigation, breadcrumbs, and sitemaps link to the canonical version.
+
+## Common mistakes
+- **Pagination pointing to page one.** Page two of a category holds different products from page one. Each paginated page should declare itself. Google stopped using rel prev and next as an indexing signal in 2019, so plain crawlable links between the pages do that job.
+- **Canonical and noindex together.** One says "index that other page instead," the other says "index nothing." Pick one.
+- **Every page pointing at the home page.** A template bug that copies the home URL into every canonical can remove most of a site from results within weeks.
+- **Canonicals to the HTTP version, or to the old domain.** Leftovers from a migration that nobody updated.
+- **Product variants.** Color and size variants that differ only by a parameter usually canonicalize to the main product. Variants that people search for by name, such as a specific model, may deserve their own indexable pages.
+
+## Across domains
+
+A canonical can point to another domain, which is how a business that runs two sites with overlapping content can concentrate signals on one. For syndicated articles republished by partners, Google's current advice is that the partner should block indexing of its copy with noindex, because a cross-domain canonical on a large partner site doesn't always win against that site's own authority.
+
+## Canonical or redirect
+
+When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.
+
+Canonical audits are part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [large-site SEO](https://gerriscorp.com/services/large-sites/). For the related indexing status, see [Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/robots-txt/
+Updated: 2026-10-06
+
+# How robots.txt works, and the mistakes that cost traffic
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+robots.txt is a plain text file at the root of a site that tells crawlers which paths they may fetch. It's small, it's public, and a single wrong line in it can take a site out of Google. Here's how it actually behaves.
+
+## Where it lives and what it covers
+
+The file must sit at the root of the host, such as `https://example.com/robots.txt`. It applies only to that exact protocol and host: `www.example.com`, `shop.example.com`, and the HTTP version each need their own. Google reads up to 500 kibibytes of it and generally caches it for up to a day, so changes take effect within about 24 hours.
+
+## The syntax
+
+```
+User-agent: *
+Disallow: /cart/
+Disallow: /search
+Allow: /search/help
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://example.com/sitemap.xml
+```
+- **User-agent** starts a group of rules for a named crawler. `*` means every crawler that has no group of its own. A crawler obeys only the most specific group that names it and ignores the rest, so a bot with its own group skips everything under `*`.
+- **Disallow** and **Allow** take a path prefix. `Disallow: /search` blocks `/search`, `/search?q=shoes`, and `/searching`.
+- **Wildcards.** `*` matches any characters, and `$` anchors the end. `Disallow: /*.pdf$` blocks every URL ending in .pdf.
+- **Conflicts.** When an Allow and a Disallow both match, Google uses the longer, more specific rule, and Allow wins a tie.
+- **Sitemap** lines can appear anywhere and apply to every crawler.
+
+Google ignores `Crawl-delay`; Bing honors it. Google also stopped supporting `Noindex` lines in robots.txt in 2019.
+
+## Blocking crawling is different from blocking indexing
+
+This is the most expensive misunderstanding. Disallow stops a crawler from fetching a page. It doesn't stop the URL from being indexed. If other pages link to a blocked URL, Google can index the address alone, with no content, and Search Console reports it as "Indexed, though blocked by robots.txt."
+
+To keep a page out of results, let it be crawled and give it a `noindex` robots meta tag or an `X-Robots-Tag: noindex` header. Google has to fetch the page to see that instruction, so a page that's both disallowed and noindexed stays in the index, because the noindex is never read. For content that must stay private, use a login. robots.txt is public, and listing secret paths in it advertises them.
+
+## Status codes matter
+- **200**: Google follows the rules in the file.
+- **404 or another 4xx**: Google treats the site as having no restrictions and crawls everything.
+- **500 or another 5xx, or a timeout**: Google treats the whole site as disallowed and pauses crawling. If the error lasts, Google falls back to its last good copy, and after about a month without one it treats the site as unrestricted.
+
+A server or firewall that errors only on robots.txt can quietly stop all crawling, which is why it's one of the first URLs I check on a site that lost traffic.
+
+## AI crawlers
+
+Each AI company publishes the user agents it uses, and each honors robots.txt. They split into crawlers that gather training data, such as GPTBot, ClaudeBot, and CCBot, and crawlers that fetch pages for live answers, such as OAI-SearchBot, Claude-SearchBot, and PerplexityBot. Google-Extended and Applebot-Extended are tokens rather than separate crawlers: they control whether content fetched by Googlebot and Applebot may be used for AI models, and blocking them leaves ordinary search crawling alone. The [AI assistants guide](https://gerriscorp.com/guides/ai-assistants/) lists which crawler feeds which product.
+
+This site lets every AI crawler read everything, and keeps the Markdown copies of its pages out of traditional search engines, so they never compete with the HTML pages. Because a crawler follows only its own group, naming the search engines in one group and the AI crawlers in another gives each its own rules:
+
+```
+User-agent: Googlebot
+User-agent: Bingbot
+Allow: /
+Disallow: /*.md$
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+Allow: /
+```
+
+## Mistakes I find most often
+- **The staging file goes live.** `Disallow: /` protects a staging site, gets copied to production at launch, and blocks everything. Check robots.txt on launch day before anything else.
+- **Blocking CSS and JavaScript.** Google renders pages, and a disallowed script folder can leave it looking at a broken layout with missing content.
+- **Blocking parameters that carry real pages.** A broad rule like `Disallow: /*?` also blocks paginated categories and filtered pages that rank.
+- **A bot's own group dropping the general rules.** Adding a group for one crawler without repeating the shared rules gives that crawler free run of everything else.
+
+## Testing changes
+
+Search Console's robots.txt report shows the version Google last fetched, when it fetched it, and any parsing errors. Before changing a live file, test the proposed rules against a list of important URLs with a parser that follows Google's rules, such as Google's open-source robots.txt library or a crawler like Screaming Frog with a custom robots.txt. Then confirm the change in Search Console after Google picks it up.
+
+robots.txt is part of every [crawler visibility audit](https://gerriscorp.com/services/crawler-visibility/) and every [technical SEO](https://gerriscorp.com/services/technical-seo/) engagement I run.
+
+
+---
+
+Source: https://gerriscorp.com/guides/structured-data/
+Updated: 2026-10-06
+
+# Structured data in 2026: which schema markup is worth adding
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Structured data is a machine-readable description of what a page is about: this is a product with this price, this is a business at this address, this article was written by this person. It can earn enhanced listings in Google, and it helps every system that reads the page, including AI assistants, understand the facts without guessing.
+
+## The format
+
+Use JSON-LD: a block of JSON in a `script` tag with the type `application/ld+json`, using the vocabulary from schema.org. Google supports Microdata and RDFa too, and recommends JSON-LD because it sits apart from the visible HTML and is easy to generate from a template. A minimal example for a business:
+
+```
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://example.com/#business",
+  "name": "Example Consulting",
+  "url": "https://example.com/",
+  "telephone": "+1 555 0100",
+  "address": {"@type": "PostalAddress", "addressLocality": "Arlington",
+              "addressRegion": "VA", "postalCode": "22204", "addressCountry": "US"}
+}
+</script>
+```
+
+## What still earns rich results
+
+Google has narrowed the list of types that change how a result looks. In 2023 it limited FAQ rich results to well-known government and health sites and dropped How-to rich results. In 2025 it retired several more, including Claim Review, Estimated Salary, and Vehicle Listing, and stopped showing breadcrumb trails on mobile results. The types that still produce visible features include:
+- **Product**, with offers, price, availability, shipping, and return policy, for product snippets and merchant listings.
+- **Review snippets and aggregate ratings** on products, recipes, books, software, and other eligible types. Reviews of your own business on your own site are excluded.
+- **Organization and LocalBusiness**, for the logo and business details Google uses in knowledge panels.
+- **Article**, for headline, image, dates, and author.
+- **Event, JobPosting, Recipe, VideoObject, and Course list**, each tied to its own search feature.
+- **BreadcrumbList**, still shown on desktop and still useful for understanding site structure.
+
+Google's search gallery in its developer documentation is the current list, and it changes, so check it before building anything around a feature.
+
+## Markup without a rich result still helps
+
+A retired rich result doesn't make the markup useless. FAQPage markup no longer produces dropdowns for most sites, and it still states plainly which question each answer belongs to. Search engines use structured data to understand entities: who the business is, who wrote the page, which person is which, and how they relate. Microsoft's Bing team has said that schema markup helps its language models understand content. When an assistant has to decide whether two mentions refer to the same business, consistent structured data across the web removes doubt.
+
+## Build a connected graph
+
+The strongest pattern is one graph per page, where each thing has an `@id` and refers to the others by it. The WebSite is published by the Organization. The Organization is founded by the Person. The Article is written by the Person and is about the Service. Every page on this site carries a graph like that, built from one template, so the facts never contradict each other.
+- **sameAs** links an entity to its profiles elsewhere: a Wikipedia article, Wikidata, a professional profile, a Google Business Profile. Those links are how systems confirm identity.
+- **Stable identifiers.** Use the same `@id` for the same entity on every page.
+- **The same facts everywhere.** Name, address, phone, founding date, and founder should match the visible page, the business profile, and the directories.
+
+## Rules that keep markup safe
+- **Mark up only what visitors can see.** Reviews, prices, and FAQs in the markup must appear on the page. Hidden or invented markup can earn a manual action for spammy structured data, which removes rich results for the whole site.
+- **Keep it current.** A price or an event date in the markup that disagrees with the page is a quality problem. Generate the markup from the same data as the page.
+- **Server-rendered.** Google can read JSON-LD injected by JavaScript, and many other crawlers can't. Put it in the HTML.
+
+## How to validate it
+- **Google's Rich Results Test** shows which rich results a page is eligible for and flags missing required properties.
+- **The Schema Markup Validator** at validator.schema.org checks any schema.org markup against the full vocabulary, including types Google ignores.
+- **Search Console** lists each detected rich result type under Enhancements, with valid and invalid counts across the site and alerts when a template breaks.
+
+## Questions about structured data
+
+### Is structured data a ranking factor?
+
+Google says it isn't a direct ranking factor. It affects how results look and how well Google understands the page, and both of those affect clicks.
+
+### Can a plugin handle it?
+
+Yoast, Rank Math, and Shopify themes add sensible defaults for common types. For a connected graph, custom business types, or multiple plugins that each add their own markup, it usually needs a hand-built template.
+
+I build schema and entity markup as part of [on-page SEO](https://gerriscorp.com/services/on-page-seo/) and [AI search visibility](https://gerriscorp.com/services/ai-search/) work.
+
+
+---
+
+Source: https://gerriscorp.com/guides/301-redirects/
+Updated: 2026-10-06
+
+# How to plan 301 redirects that keep your rankings and links
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+A redirect tells browsers and search engines that a page has moved. Done well, it carries the old page's links, bookmarks, and search history to the new address. Done badly, it quietly throws all of that away. Here's how I plan them.
+
+## Which redirect to use
+| Type | Meaning | Use it for |
+| --- | --- | --- |
+| 301 | Moved permanently | Almost every move: renamed pages, merged pages, domain changes, HTTP to HTTPS |
+| 308 | Moved permanently, and the request method stays the same | The same jobs as a 301; some servers and APIs prefer it |
+| 302 or 307 | Moved temporarily | A page that will come back: a short promotion, maintenance, a geographic or login handoff |
+| Meta refresh at zero seconds | An HTML instruction to load another page | Hosts that can't send server redirects, such as GitHub Pages |
+| JavaScript redirect | A script that changes the location | A last resort; it only works once the page renders |
+
+Google treats 301 and 308 as strong signals that the new URL should replace the old one in its index. A temporary redirect is a weaker signal, though Google may eventually treat a 302 that never goes away as permanent. An instant meta refresh is read as a permanent move too, which is how this site handles the hundreds of old gerriscorp.com addresses it inherited: GitHub Pages can't send a real 301, so each old path holds a tiny page that forwards immediately and names the new page as its canonical.
+
+## Map every old URL to its closest equivalent
+
+The redirect map is a two-column list: old URL, new URL. The work is in the second column. Each old page goes to the page that answers the same question its visitors arrived with.
+- **One to one when you can.** A product, article, or service that still exists goes to its new address.
+- **Merged pages go to the survivor.** Three thin pages folded into one strong page all point at it.
+- **Retired pages go to the nearest parent.** A discontinued product goes to its category, and a retired service goes to the services overview.
+- **Junk can stay gone.** Spam URLs, old tag archives, and test pages with no links and no traffic can return a 404 or 410.
+
+Send old pages to relevant pages, and keep the home page for the home page. Google treats a mass redirect to an unrelated page as a soft 404, so the old page's signals are dropped anyway, and visitors land somewhere that doesn't answer what they came for.
+
+## Where the old URLs come from
+
+Build the list from every source you have, because no single one is complete. Crawl the current site with a tool such as Screaming Frog. Export pages from Search Console's Performance report and from analytics landing pages. Pull linked pages from a backlink tool. For an old site that's already gone, the Internet Archive's Wayback Machine keeps a record of URLs it captured, which is how I recovered more than six hundred old paths for this domain.
+
+## Where to implement them
+- **At the edge.** Cloudflare's Redirect Rules and Bulk Redirects answer before the request ever reaches your server, which is fast and survives a change of host or platform.
+- **On the web server.** Apache uses `Redirect 301` or `RewriteRule` in the configuration or `.htaccess`; Nginx uses `return 301` inside a `location` block.
+- **In the platform.** WordPress handles them with a plugin such as Redirection or the redirect manager in Rank Math. Shopify has a URL redirects screen in the admin, and it only applies a redirect when the old path would otherwise return a 404. Squarespace, Wix, and Webflow each have a redirects panel in their settings.
+- **In the framework.** Next.js, Netlify, and Vercel take redirects in a configuration file that ships with the code, which keeps them under version control.
+
+Pick one layer and keep all the redirects there. Rules split across Cloudflare, the server, and a plugin are how loops and chains happen.
+
+## Chains and loops
+
+A chain is a redirect that lands on another redirect: A goes to B, and B goes to C. Googlebot follows up to ten hops, but each hop costs time for visitors and makes the signal weaker. When a site has been redesigned more than once, old redirects often point at URLs that are themselves redirected now. Update the old rules so every one points straight at the final address.
+
+A loop is A to B and B back to A. Browsers give up with an error. Loops usually come from two layers fighting, such as an HTTPS rule in Cloudflare and a different HTTPS rule on the server.
+
+## How to test them
+
+From a terminal, `curl -sIL https://example.com/old-page` prints every hop with its status code, so you can see a 301 followed by a 200 and nothing in between. For the full map, feed the old URL list to a crawler in list mode and check three things for each row: the first response is a 301 or 308, the final response is a 200, and the final URL matches the target in the map. Then spot check the same URLs in a private browser window, since your own browser caches permanent redirects aggressively.
+
+## How long to keep them
+
+Google's advice is at least a year. I keep them indefinitely. Backlinks from other sites never get updated, and a redirect costs almost nothing to keep. Removing redirects after a year is how a business loses links it earned a decade ago.
+
+## Questions about redirects
+
+### Do 301 redirects lose PageRank?
+
+No. Google has said for years that 301, 302, and 308 redirects pass link value without a penalty. The losses people see come from redirecting to the wrong page, from chains, or from removing redirects too soon.
+
+### Should I redirect a page I deleted on purpose?
+
+Only if something on the site now answers the same need. Otherwise a 410 tells search engines the removal was deliberate, and they drop the URL a little faster than with a 404.
+
+### How many redirects is too many?
+
+There's no practical limit on the number of rules. Tens of thousands are normal on large sites. What matters is that each one is a single hop to a relevant page.
+
+Redirect mapping is part of every [website migration](https://gerriscorp.com/services/migrations/) I run. For the whole process, see the [migration checklist](https://gerriscorp.com/guides/migration-checklist/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/faceted-navigation/
+Updated: 2026-10-06
+
+# Faceted navigation SEO: filters, parameters, and crawl budget
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Filters are how shoppers narrow a catalog: size, color, brand, price, rating. Every combination can become its own URL, and a store with a few thousand products can produce millions of them. Google spends its time crawling those combinations instead of the pages that sell.
+
+## How the problem grows
+
+A category with ten colors, eight sizes, twelve brands, and five price bands has 4,800 single combinations before sort order, page number, and the order the parameters appear in. Multiply by every category and the site has far more filter URLs than products. Most of them show the same handful of items, many show none, and almost nobody searches for them.
+
+Google's documentation names faceted navigation as the most common cause of crawling problems it sees, and its December 2024 guidance on the subject is the clearest statement of what it wants.
+
+## When crawl budget actually matters
+
+Google says crawl budget is a concern mainly for sites with more than a million unique pages that change weekly, or more than ten thousand pages that change daily. Smaller sites rarely need to think about it. The signs that a site has crossed the line:
+- New products take weeks to appear in Google.
+- Search Console's Page indexing report shows a large and growing count of "Discovered, currently not indexed."
+- Crawl stats show most of Googlebot's requests going to parameter URLs.
+- Server logs show Googlebot fetching filter combinations far more often than product pages.
+
+Server logs are the definitive source. Search Console shows a sample; the logs show every request Googlebot made and where its time went.
+
+## Decide which filters deserve pages
+
+Some filtered views match real searches. "Women's trail running shoes," "red sofa," and "Makita cordless drills" are all a category plus one filter, and each can be a strong landing page. Use keyword research to find the combinations with search demand, usually one filter deep and occasionally two. Give each one a clean, permanent URL such as `/shoes/womens/trail/`, a unique title and heading, some introductory text, and links from the category navigation. Everything else stays a convenience for shoppers and stays out of the crawl.
+
+## Keep the rest away from crawlers
+
+Google's guidance offers two approaches for filter URLs that shouldn't be indexed.
+- **Block them in robots.txt.** Disallow the parameters that create combinations, such as `Disallow: /*?*color=`. This stops crawling immediately and saves the most budget. The [robots.txt guide](https://gerriscorp.com/guides/robots-txt/) covers the syntax.
+- **Use URL fragments.** Filters applied after a `#`, handled by JavaScript, never create new crawlable URLs, because Google ignores fragments.
+
+Other tools are weaker for this job:
+- **Canonical tags** pointing filter pages at the category consolidate signals over time, and Google still has to crawl every URL to read them, so they save no crawl budget.
+- **noindex** keeps pages out of results and also has to be crawled to work. Over time Google crawls noindexed pages less often.
+- **nofollow on filter links** discourages crawling and is a hint Google may disregard.
+
+Search Console's URL Parameters tool, which used to handle this, was retired in 2022.
+
+## If filter pages must be crawlable
+- Use the standard `&` separator and the same parameter order every time, so one combination has one URL.
+- Return a 404 for combinations with no products, and for nonsense values. A "no results" page with a 200 status becomes a soft 404 and wastes crawls.
+- Keep sort order and items-per-page out of the URL, or block them, since they reshuffle the same products.
+- Limit how many filters can be stacked into one crawlable URL.
+
+## Pagination
+
+Paginated category pages are different from filters: they list different products, and they're how crawlers reach products deep in a catalog. Keep them crawlable with plain links, let each page declare itself as canonical, and keep pages from going on forever by giving categories sensible sizes.
+
+## Measure the change
+
+Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.
+
+Crawl control for big catalogs is the focus of [large-site SEO](https://gerriscorp.com/services/large-sites/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/). See also the [programmatic indexing case study](https://gerriscorp.com/case-studies/programmatic-indexing/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/hreflang/
+Updated: 2026-10-06
+
+# hreflang for English-language sites serving the US, UK, Canada, and Australia
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+A business that sells in several English-speaking countries often ends up with near-identical pages for each one. hreflang tells Google which version belongs to which audience, so a shopper in Leeds sees prices in pounds and a shopper in Toronto sees Canadian dollars. Written wrong, it does nothing at all.
+
+## Do you need it?
+
+hreflang is for sites with separate versions of a page for different languages or regions. One English site that serves everyone the same content needs none. The tags start paying off when the versions differ in ways that matter to the visitor:
+- Prices and currency
+- Shipping, taxes, returns, and delivery times
+- Legal terms, regulated claims, and contact details
+- Spelling and vocabulary: color and colour, sneakers and trainers, apartment and flat
+
+Without hreflang, Google sees several pages saying almost the same thing, may pick one as canonical for every country, and shows the American page in Australia. With it, Google treats the pages as a set and swaps in the right member for each searcher.
+
+## The codes
+
+Each value is an ISO 639-1 language code, optionally followed by an ISO 3166-1 country code:
+| Audience | Code |
+| --- | --- |
+| United States | `en-US` |
+| United Kingdom | `en-GB` (never en-UK, which isn't a valid code) |
+| Canada, English | `en-CA` |
+| Canada, French | `fr-CA` |
+| Australia | `en-AU` |
+| New Zealand | `en-NZ` |
+| Ireland | `en-IE` |
+| English speakers anywhere else | `en` |
+| Fallback for everyone unmatched | `x-default` |
+
+The language is required. A country on its own, such as `gb`, is read as a language code, and since there's no language with that code, the annotation is ignored.
+
+## Writing the tags
+
+Every version in the set lists every version, including itself:
+
+```
+<link rel="alternate" hreflang="en-US" href="https://example.com/us/boots/">
+<link rel="alternate" hreflang="en-GB" href="https://example.com/uk/boots/">
+<link rel="alternate" hreflang="en-AU" href="https://example.com/au/boots/">
+<link rel="alternate" hreflang="x-default" href="https://example.com/boots/">
+```
+
+The same block goes on the US, UK, and Australian pages. The annotations can also live in the XML sitemap, which is easier to maintain on large sites, or in HTTP headers for files such as PDFs. Pick one method. Mixing them invites the two copies to drift apart, and a set that disagrees with itself is ignored.
+
+## The rules that void it
+- **Missing return links.** If the UK page names the US page and the US page doesn't name the UK page back, Google ignores the pair. This is the most common failure.
+- **Pointing at non-canonical URLs.** Every URL in the set should return a 200 and declare itself as canonical. A UK page whose canonical points at the US page tells Google to drop the UK page, and hreflang can't override that.
+- **Relative or mixed URLs.** Use full absolute URLs, with the same protocol and host style used everywhere else.
+- **Tags only in JavaScript.** Put them in the server's HTML or in the sitemap.
+
+## How to structure the versions
+- **Subfolders** such as `/uk/` and `/au/` on one domain share all its authority and are the simplest to run. This is my default recommendation.
+- **Country domains** such as `.co.uk` and `.com.au` send the strongest local signal and build trust with local buyers, and each domain has to earn its own links.
+- **Subdomains** such as `uk.example.com` work, with more setup and no real advantage over subfolders.
+
+## Don't redirect by location
+
+Redirecting visitors automatically by IP address hides versions from Google, because Googlebot crawls mostly from the United States and would only ever see the American pages. Let every URL load for everyone, and offer a banner that suggests the local version. hreflang handles search; the banner handles direct visitors.
+
+## Bing
+
+Bing gives hreflang less weight and looks more at the `content-language` meta tag and the page's `lang` attribute. Set `<html lang="en-GB">` on UK pages, and so on, so both engines get a clear signal.
+
+## Checking it
+
+Search Console retired its International Targeting report in 2022, so checking falls to crawlers. Screaming Frog and Sitebulb both validate hreflang sets, flag missing return links and non-canonical targets, and export the errors by page. After that, search from each country with a VPN or with Google's country settings and confirm the right page appears. Spot check a few sets by hand as well: open the source of each version and confirm the block of annotations is identical on every page in the set.
+
+I sort out international setups as part of [technical SEO](https://gerriscorp.com/services/technical-seo/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/) engagements, for clients across the English-speaking world.
+
+
+---
+
+Source: https://gerriscorp.com/guides/core-web-vitals/
+Updated: 2026-10-06
+
+# Core Web Vitals explained: LCP, INP, CLS, and the fixes that work
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Core Web Vitals are three measurements of how a page feels to real visitors: how fast the main content appears, how quickly the page responds, and how much it jumps around. Google uses them in ranking as part of page experience. They matter more to visitors than to rankings, and that alone makes them worth fixing.
+
+## The three measurements
+| Metric | What it measures | Good | Poor |
+| --- | --- | --- | --- |
+| LCP, Largest Contentful Paint | Time until the biggest image or text block in view finishes rendering | 2.5 seconds or less | Over 4 seconds |
+| INP, Interaction to Next Paint | Delay between a tap, click, or key press and the screen visibly responding, across the whole visit | 200 milliseconds or less | Over 500 milliseconds |
+| CLS, Cumulative Layout Shift | How much visible content moves unexpectedly while the page is in use | 0.1 or less | Over 0.25 |
+
+INP replaced First Input Delay in March 2024. FID only measured the first interaction; INP watches every interaction and reports one of the slowest, which is why many sites that passed under FID fail under INP.
+
+## Field data and lab data
+
+Google's assessment uses field data: measurements from real Chrome users, collected in the Chrome User Experience Report over a rolling 28 days. A page passes when the 75th percentile of visits meets the good threshold for all three metrics. Mobile and desktop are judged separately.
+
+Lab data comes from a single simulated load, such as a Lighthouse run. It's useful for debugging and for testing a fix before it ships, and it can't measure INP at all, because nobody clicks anything during a lab test. Lighthouse reports Total Blocking Time as a stand-in. A perfect Lighthouse score with failing field data is common, and the field data is the one that counts.
+
+## Where to read it
+- **PageSpeed Insights** shows field data for the URL and for the whole origin at the top, and a Lighthouse lab run below it.
+- **Search Console's Core Web Vitals report** groups URLs with similar problems, usually by template, and tracks them over time. Fixing one template often fixes thousands of URLs.
+- **Chrome DevTools**, in the Performance panel, records a real session on your own machine, shows each interaction's timing, and highlights layout shifts.
+- **Real user monitoring**, through Google's web-vitals JavaScript library or a commercial tool, collects the metrics from your own visitors, with the element and script responsible attached.
+
+## Fixing LCP
+
+Break LCP into its parts: time to first byte, the delay before the browser discovers the LCP resource, the time to download it, and the time to render it. Fix whichever part is largest.
+- **Slow server response.** Cache HTML at a CDN, speed up database queries, and remove redirects in front of the page.
+- **Late discovery.** Put the hero image in the HTML as an ordinary `img` tag with `fetchpriority="high"`. A background image set in CSS, or an image inserted by JavaScript, is found late.
+- **Lazy loading the hero.** `loading="lazy"` belongs on images below the fold. On the LCP image it delays the most important download on the page.
+- **Heavy files.** Serve images at the size they're displayed, in WebP or AVIF, with `srcset` for different screens.
+- **Render blocking.** Large stylesheets and synchronous scripts in the head hold back the first paint. Inline the critical CSS and defer the rest.
+
+## Fixing INP
+
+Poor INP almost always means the browser's main thread was busy when the visitor interacted. The culprits are long JavaScript tasks.
+- **Third-party scripts.** Chat widgets, heatmaps, tag managers full of old tags, and ad scripts. Audit them, remove the ones nobody uses, and load the rest after the page is interactive.
+- **Heavy event handlers.** A click that triggers a large re-render or a synchronous calculation blocks the next paint. Show visual feedback first, then do the work, and break long tasks up so the browser can paint in between.
+- **Hydration.** Frameworks such as React and Vue attach their behavior after load, and interactions during that window wait. Smaller bundles, partial hydration, and server components shorten it.
+
+## Fixing CLS
+- Give every image and video `width` and `height` attributes, or a CSS `aspect-ratio`, so the browser reserves the space.
+- Reserve fixed space for ads, embeds, and cookie banners, or show banners as overlays that cover content instead of pushing it.
+- Load web fonts with `font-display: swap` and a fallback font sized to match, or use system fonts, as this site does.
+- Never insert content above what the visitor is already reading, unless they asked for it.
+
+## How much it matters
+
+Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.
+
+Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/cloudflare-seo/
+Updated: 2026-10-06
+
+# Cloudflare settings that help or hurt SEO and AI crawlers
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Cloudflare sits in front of millions of websites, and a handful of its switches decide whether search engines and AI assistants can read yours. I set it up for clients often, and I audit it every time a site's crawling looks strange. These are the settings I check first.
+
+## Proxied or DNS only
+
+Every DNS record in Cloudflare has a cloud icon. Orange means proxied: visitors and crawlers reach Cloudflare's network, which applies caching, security, and rules before passing the request to your server. Grey means DNS only: Cloudflare answers the DNS lookup and then steps aside. Only proxied records get Cloudflare's speed and protection, and only proxied records can be blocked by its security features. When a crawling problem appears, the cloud color is the first thing to confirm.
+
+Mail records always stay grey. MX targets and the hostnames used by mail services must resolve to the real servers.
+
+## AI crawler controls
+
+In July 2025 Cloudflare began blocking known AI crawlers by default on newly added domains, and it offers a one-click switch to block them on existing ones. The current controls live under AI Crawl Control, where each crawler can be allowed or blocked by name, and Cloudflare can also manage robots.txt for you with its own content signals added.
+
+This matters because the crawlers are different jobs. GPTBot and ClaudeBot gather training data. OAI-SearchBot, Claude-SearchBot, and PerplexityBot build the indexes that assistants search when they answer questions live. Blocking the search crawlers keeps you out of those answers entirely. Decide crawler by crawler, then confirm the setting matches the decision. The [AI assistants guide](https://gerriscorp.com/guides/ai-assistants/) explains which crawler feeds which product.
+
+## Bot protection and challenges
+- **Bot Fight Mode** on the free plan challenges traffic that looks automated. Cloudflare exempts its list of verified bots, which includes Googlebot and Bingbot, and the WAF can't override this mode, so a misfire is hard to work around.
+- **Super Bot Fight Mode** on paid plans has a separate setting for verified bots. Set it to allow.
+- **Under Attack Mode** puts a challenge page in front of every visitor, and crawlers can't pass it. Use it during an actual attack and turn it off when the attack ends.
+- **Custom WAF rules** that block by country, by user agent, or by request rate catch crawlers too. Googlebot crawls mostly from the United States, so a rule that challenges American traffic hits it directly.
+
+The proof is in Security, then Events. Filter by user agent for Googlebot or Bingbot and look for blocks or managed challenges. In Search Console, the Crawl stats report under Settings shows host status and response codes from Google's side, and a URL Inspection live test shows exactly what Googlebot received.
+
+## Caching HTML
+
+By default Cloudflare caches static files such as images, CSS, and JavaScript, and passes HTML requests through to your server. For a site whose pages are the same for every visitor, a Cache Rule that marks HTML as eligible for cache can cut time to first byte to a few dozen milliseconds worldwide. Exclude anything personal: carts, checkouts, account pages, admin paths, and any request carrying a login cookie. Set an edge cache time you can live with, and purge the cache on deploy.
+
+## HTTPS settings
+- **SSL mode Full (strict).** Cloudflare connects to your server over HTTPS and checks its certificate. Flexible mode connects over plain HTTP, and when the server also redirects to HTTPS, the result is an endless redirect loop.
+- **Always Use HTTPS.** Sends every HTTP request to HTTPS with a 301 at the edge, so the server needs no rule of its own.
+- **HSTS.** Tells browsers to refuse plain HTTP for a period you choose. Start with a short max age, and add preload only when every subdomain serves HTTPS, because preload is slow to undo.
+
+## Features that change your HTML
+
+Several Cloudflare features rewrite pages on the way out, and each deserves a deliberate decision.
+- **Rocket Loader** defers JavaScript by rewriting script tags. It can speed up simple sites and break complex ones, including analytics and consent banners. Test with it off before blaming anything else.
+- **Email Address Obfuscation** replaces email addresses in the HTML with a script. Visitors see the address, and crawlers that read raw HTML see a placeholder.
+- **Auto Minify** was retired in 2024. If a build still depends on it, move minification into the build.
+
+## Redirects at the edge
+
+Redirect Rules handle patterns, such as moving a whole folder or forcing the www or bare domain. Bulk Redirects handle long lists of one-to-one moves from a file. Both answer at the edge with a true 301, which makes Cloudflare a good home for a migration's redirect map. Keep all the redirects in one layer; rules split between Cloudflare and the origin server are where chains and loops come from. The [redirects guide](https://gerriscorp.com/guides/301-redirects/) covers mapping and testing.
+
+## Crawler Hints
+
+Crawler Hints notifies search engines that support IndexNow, including Bing and Yandex, when your content changes, based on what Cloudflare sees passing through its cache. It's a free switch under Caching and worth turning on for any site that changes regularly. Google doesn't use IndexNow, so it does nothing for Google.
+
+## Questions about Cloudflare and search
+
+### Does Cloudflare's shared IP address hurt rankings?
+
+No. Millions of sites share Cloudflare's addresses, and Google judges sites by their content and links, not by who else is on the IP.
+
+### Should a small site use Cloudflare at all?
+
+Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and proxying can be added record by record later. This site uses Cloudflare for DNS only, because GitHub Pages already provides HTTPS and a CDN.
+
+I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/ga4-consent-mode/
+Updated: 2026-10-06
+
+# Google Consent Mode v2 for GA4: a practical setup guide
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Consent Mode is how Google's tags learn whether a visitor agreed to cookies, and how they behave when the answer is no. Set up well, it keeps analytics honest and the site compliant. Set up badly, it either drops most of your data or quietly ignores the visitor's choice.
+
+## The four signals
+| Signal | Controls |
+| --- | --- |
+| `analytics_storage` | Cookies for analytics, such as GA4's visitor identifier |
+| `ad_storage` | Cookies for advertising, such as conversion and remarketing cookies |
+| `ad_user_data` | Whether visitor data may be sent to Google for advertising |
+| `ad_personalization` | Whether that data may be used for personalized ads and remarketing |
+
+Version 2 added the last two in late 2023. Since March 2024 Google has required them for advertisers who want to use audience and conversion features with traffic from the European Economic Area, under the EU's Digital Markets Act.
+
+## Basic and advanced mode
+- **Basic mode.** Google's tags don't load at all until the visitor consents. Nothing is collected from people who decline or ignore the banner.
+- **Advanced mode.** The tags load right away with consent denied and send cookieless pings: no identifiers, no stored cookies. When the visitor accepts, the tags switch to full measurement.
+
+Advanced mode lets GA4 estimate the behavior of visitors who declined, through behavioral modeling, once a property has enough traffic. Google's documented minimum is roughly a thousand daily events from visitors with analytics denied, and a thousand daily users with analytics granted, sustained for a week or more. Smaller sites never reach it, and for them the choice between modes makes little difference to the reports.
+
+## Setting the defaults
+
+The default state must be set before any Google tag loads. With the gtag snippet, that means a `consent default` command above the config line. Defaults can differ by region, using ISO country codes:
+
+```
+gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied',
+  ad_personalization: 'denied', analytics_storage: 'denied',
+  region: ['AT','BE','BG','CH','CY','CZ','DE','DK','EE','ES','FI','FR','GB',
+           'GR','HR','HU','IE','IS','IT','LI','LT','LU','LV','MT','NL','NO',
+           'PL','PT','RO','SE','SI','SK']
+});
+gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied',
+  ad_personalization: 'denied', analytics_storage: 'granted'
+});
+```
+
+That's the pattern this site uses: advertising signals denied everywhere, because the site runs no ads, and analytics denied by default in the EEA, the UK, and Switzerland, where the law requires prior consent, and granted elsewhere. The most specific matching region wins. When a visitor accepts or declines, the banner sends a `consent update` command with the new values.
+
+In Google Tag Manager, set defaults with a tag on the Consent Initialization trigger, which fires before every other trigger. Most consent platforms certified by Google ship a Tag Manager template that does this for you.
+
+## Choosing a consent platform
+
+Publishers who show Google ads to visitors in the EEA, the UK, or Switzerland must use a consent platform from Google's certified list. For everyone else it's still the safer choice, because certified platforms send Consent Mode signals correctly by default. Check that the platform supports regional rules, so visitors in places that don't require a banner aren't shown one.
+
+## Checking that it works
+- **Tag Assistant.** Connect it to the site and open the Consent tab for each event. It shows the default state, each update, and which tags fired under which state.
+- **The network panel.** Every GA4 request carries a `gcs` parameter. `G100` means advertising and analytics storage are both denied; `G111` means both granted; `G101` means advertising denied and analytics granted.
+- **The cookie list.** In a fresh private window from a region set to denied, load a page without touching the banner. No `_ga` cookie should exist until you accept.
+- **GA4 admin.** Under Data collection, the consent settings screen reports whether analytics and advertising consent signals are being received.
+
+## Mistakes I find most often
+- **The default is set after the tag loads.** The first hit goes out with no consent state, often with cookies set. Order matters.
+- **Two sources of truth.** A banner plugin and a hand-coded snippet both set defaults, with different values.
+- **The banner blocks the page.** A consent script that loads synchronously in the head, or a banner that pushes the layout, hurts Core Web Vitals. Load it asynchronously and show it as an overlay.
+- **Hard-coded tags outside the consent setup.** An old Universal Analytics snippet, a Facebook pixel, or a heatmap script still firing regardless of the visitor's choice.
+
+## What to expect in the reports
+
+After a consent banner goes live in Europe, GA4's European sessions usually fall, sometimes sharply, because declined visitors are no longer counted as users. That's the system working. Search Console doesn't use cookies, so its click counts are unaffected, and comparing the two separates a consent effect from a real traffic loss.
+
+Analytics setup and repair is part of [GA4 and analytics work](https://gerriscorp.com/services/analytics/). For a consent problem that hid half a site's traffic, see the [consent blocking case study](https://gerriscorp.com/case-studies/consent-blocking/).
+
+
+---
+
+Source: https://gerriscorp.com/guides/email-deliverability/
+Updated: 2026-10-06
+
+# Why business email lands in spam, and how to find the cause
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+Invoices disappear, proposals land in junk folders, and customers say they never got the reset link. Deliverability failures look random from the outside. They have specific causes, and the evidence for each one is sitting in the message headers and a few free tools.
+
+## Start with one message's headers
+
+Send a message to a Gmail address you control, open it, and choose Show original. Gmail prints three verdicts at the top: SPF, DKIM, and DMARC, each with pass or fail, and the domain each one checked. In Outlook, the same information sits in the message properties under the `Authentication-Results` header. Read it before changing anything; it tells you which of the following sections applies.
+
+## Authentication failures
+
+A failing result usually has one of four causes.
+- **A sender left out of SPF.** The CRM, the invoicing tool, or the website's contact form sends as your domain and isn't listed in the SPF record.
+- **SPF over its lookup limit.** SPF allows ten DNS lookups. Every `include` costs at least one, and a record that exceeds the limit fails for every message, including the ones from legitimate senders.
+- **DKIM never switched on.** Many services sign with their own domain until you publish their DKIM records and enable signing in their dashboard.
+- **No alignment.** DMARC needs SPF or DKIM to pass for the same domain shown in the From line. A service that passes SPF for its own bounce domain still fails DMARC for yours.
+
+The [SPF, DKIM, and DMARC guide](https://gerriscorp.com/guides/email-authentication/) covers the records themselves. DMARC aggregate reports, sent daily by the big mailbox providers to the address in your DMARC record, list every source sending as your domain and whether it passed. They're the fastest way to find a sender you forgot.
+
+## Reputation
+
+When authentication passes and mail still lands in spam, the problem is reputation: how the mailbox providers judge mail from your domain and your sending servers, based on how recipients treat it.
+- **Google Postmaster Tools** shows Gmail's view of a domain that sends in volume: spam complaint rate, authentication rates, and delivery errors. Gmail expects bulk senders to keep reported spam below 0.3 percent, and recommends staying under 0.1.
+- **Microsoft's Smart Network Data Services** shows how Outlook.com sees the IP addresses you send from, if you control them.
+- **Blocklists.** Check the domain and the sending IPs against Spamhaus and the other major lists with a lookup tool such as MXToolbox. A listing usually comes with a reason and a removal process.
+
+Shared sending services put many customers on the same IP addresses, so a neighbor's bad behavior can affect you. That's one reason marketing email and everyday business email belong on separate services, and often on separate subdomains, such as `news.example.com` for newsletters. A newsletter complaint spike then can't drag down invoices.
+
+## The sending practices that cause it
+- **Old or purchased lists.** Addresses that bounce, and spam traps hidden on old lists, damage reputation quickly. Mail only people who asked for it, and remove addresses that bounce.
+- **No easy unsubscribe.** Since 2024 Gmail and Yahoo require bulk senders to support one-click unsubscribe. People who can't leave a list mark it as spam instead.
+- **Sudden volume.** A domain that sends fifty messages a day and then ten thousand looks compromised. Increase volume over weeks.
+- **Mail nobody opens.** Providers watch engagement. Stop mailing people who haven't opened anything in months.
+
+## Content and links
+
+Content matters less than authentication and reputation, and it still matters. Link shorteners, links to domains with poor reputations, a single large image with no text, and attachments that commonly carry malware all raise suspicion. Every link in a message is judged by its domain, so a tracking domain shared with spammers hurts every message that uses it.
+
+## Bounces tell you exactly what happened
+
+A bounce message carries a status code and usually a sentence from the receiving server. A `550 5.7.26` from Gmail means the message failed authentication. Codes starting with 4 are temporary and the sending server retries. Codes starting with 5 are permanent. Search the exact code and text; the major providers document what each one means.
+
+## Testing
+
+Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.
+
+I fix deliverability as part of [email authentication and DNS work](https://gerriscorp.com/services/email-and-dns/), usually alongside the domain cleanup that caused the problem.
+
+
+---
+
+Source: https://gerriscorp.com/guides/ai-coding-assistants/
+Updated: 2026-10-06
+
+# How to use AI coding assistants on a business website safely
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+
+AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.
+
+## Start with a written spec
+
+An assistant does exactly what it understands you to want, at full speed. Before any code, write down the goal, the constraints, and what done looks like. "Move the blog to the new platform" is a wish. A spec says: every old URL keeps working or redirects to its closest match, titles and dates carry over, images are copied and not hotlinked, the build fails if any internal link points to a missing page, and nothing ships until the redirect list has been checked. The assistant can help draft this, and a person decides it.
+
+## Give the project a memory
+
+Claude Code reads a `CLAUDE.md` file at the start of every session, and other tools have their own equivalents. Put the things that must never be forgotten there: the build command, the deploy process, the voice rules for copy, the files that must never be committed, the decisions already made and why. This site's project file holds its style rules and a list of names that must never appear on the site. The assistant reads it every time; a new contractor would need the same briefing.
+
+## Turn the rules into checks
+
+Instructions get forgotten. Automated checks don't. Every rule that can be tested by a script should be. The build for this site refuses to finish if a page title falls outside 50 to 60 characters, if a meta description is the wrong length, if two pages share a title, if any page links to one that doesn't exist, or if two pages share too much of their wording. When the assistant writes a new page, the build tells it what's wrong before I ever see the draft. The same approach works for any site: link checkers, HTML validators, accessibility tests, and unit tests for anything with logic in it.
+
+## Small changes, reviewed
+- **Use version control.** Every change goes through Git, on a branch, so anything can be undone and every change can be read as a diff.
+- **Keep each change small enough to read.** A change that touches three files gets reviewed properly. One that touches three hundred gets skimmed.
+- **Read the diff, not the summary.** An assistant's description of what it changed is a claim. The diff is the evidence.
+- **Watch for scope creep.** Assistants like to tidy things nobody asked them to touch. Reject unrelated changes and ask again.
+
+## Keep secrets and production out of reach
+
+Never paste passwords, API keys, or customer data into a conversation, and never commit them to a repository. Give the assistant access to a copy of the site, a staging environment, or a local build, and keep deploys to production a deliberate human step, or an automated pipeline that runs only after the checks pass. For anything destructive, such as deleting files, rewriting history, or changing DNS, require explicit confirmation every time. Inventory the DNS records before touching any of them; a careless change can stop a company's email.
+
+## Verify against the real world
+
+Assistants are well read and out of date in places. They'll describe a platform setting that moved last year, or a search feature Google retired, with total confidence. For anything that depends on a third party's current behavior, check the vendor's documentation or test it directly. After deploying, check the live result: fetch the pages, test the redirects with `curl`, run PageSpeed Insights, and look at the page in a browser. "The code looks right" isn't the same as "the site works."
+
+## Where assistants are strongest
+- **Bulk, rule-based work.** Building a redirect map from hundreds of old URLs, rewriting templates across a site, generating structured data from page content, converting content between platforms.
+- **Audits at scale.** Checking every page for missing titles, broken links, duplicate descriptions, or images without alt text, then fixing them.
+- **Small internal tools.** Scripts that pull reports, clean exports, or automate a weekly chore.
+- **Explaining unfamiliar code.** Reading an inherited theme or plugin and describing what it actually does.
+
+## Where to slow down
+- **Judgment calls.** Which pages to merge, which claims a page should make, what a client would or wouldn't want public. The assistant can propose; a person decides.
+- **Security and payments.** Authentication, checkout, and anything handling personal data needs an expert review regardless of who wrote it.
+- **Long sessions.** As a conversation grows, early instructions carry less weight. Restate the important rules, or keep them in the project memory file where they're read fresh.
+
+## Someone has to be accountable
+
+The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.
+
+See how this site and other projects were built in the [Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 
 
 ---
@@ -2945,6 +3779,18 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
+- [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
+- [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.
+- [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): How robots.txt rules are matched, why a Disallow rule still lets pages be indexed, how to handle AI crawlers, and how to test robots.txt changes before launch.
+- [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.
+- [How to plan 301 redirects that keep your rankings and links](https://gerriscorp.com/guides/301-redirects/): Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.
+- [Faceted navigation SEO: filters, parameters, and crawl budget](https://gerriscorp.com/guides/faceted-navigation/): How product filters create millions of crawlable URLs, when crawl budget becomes a real problem, and how to decide which filter pages deserve to be indexed.
+- [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.
+- [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): What Google measures with Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, how to read field data, and the fixes for each one.
+- [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.
+- [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
+- [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
+- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 
 ## Case studies

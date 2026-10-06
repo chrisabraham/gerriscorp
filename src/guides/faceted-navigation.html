@@ -1,0 +1,56 @@
+name: Faceted Navigation
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+title: Faceted navigation SEO: filters, parameters, crawl budget
+description: How product filters create millions of crawlable URLs, when crawl budget becomes a real problem, and how to decide which filter pages deserve to be indexed.
+---
+<h1>Faceted navigation SEO: filters, parameters, and crawl budget</h1>
+<p class="lead">Filters are how shoppers narrow a catalog: size, color, brand, price, rating. Every combination can become its own URL, and a store with a few thousand products can produce millions of them. Google spends its time crawling those combinations instead of the pages that sell.</p>
+
+<h2>How the problem grows</h2>
+<p>A category with ten colors, eight sizes, twelve brands, and five price bands has 4,800 single combinations before sort order, page number, and the order the parameters appear in. Multiply by every category and the site has far more filter URLs than products. Most of them show the same handful of items, many show none, and almost nobody searches for them.</p>
+<p>Google's documentation names faceted navigation as the most common cause of crawling problems it sees, and its December 2024 guidance on the subject is the clearest statement of what it wants.</p>
+
+<h2>When crawl budget actually matters</h2>
+<p>Google says crawl budget is a concern mainly for sites with more than a million unique pages that change weekly, or more than ten thousand pages that change daily. Smaller sites rarely need to think about it. The signs that a site has crossed the line:</p>
+<ul>
+  <li>New products take weeks to appear in Google.</li>
+  <li>Search Console's Page indexing report shows a large and growing count of "Discovered, currently not indexed."</li>
+  <li>Crawl stats show most of Googlebot's requests going to parameter URLs.</li>
+  <li>Server logs show Googlebot fetching filter combinations far more often than product pages.</li>
+</ul>
+<p>Server logs are the definitive source. Search Console shows a sample; the logs show every request Googlebot made and where its time went.</p>
+
+<h2>Decide which filters deserve pages</h2>
+<p>Some filtered views match real searches. "Women's trail running shoes," "red sofa," and "Makita cordless drills" are all a category plus one filter, and each can be a strong landing page. Use keyword research to find the combinations with search demand, usually one filter deep and occasionally two. Give each one a clean, permanent URL such as <code>/shoes/womens/trail/</code>, a unique title and heading, some introductory text, and links from the category navigation. Everything else stays a convenience for shoppers and stays out of the crawl.</p>
+
+<h2>Keep the rest away from crawlers</h2>
+<p>Google's guidance offers two approaches for filter URLs that shouldn't be indexed.</p>
+<ul>
+  <li><strong>Block them in robots.txt.</strong> Disallow the parameters that create combinations, such as <code>Disallow: /*?*color=</code>. This stops crawling immediately and saves the most budget. The <a href="{root}guides/robots-txt/">robots.txt guide</a> covers the syntax.</li>
+  <li><strong>Use URL fragments.</strong> Filters applied after a <code>#</code>, handled by JavaScript, never create new crawlable URLs, because Google ignores fragments.</li>
+</ul>
+<p>Other tools are weaker for this job:</p>
+<ul>
+  <li><strong>Canonical tags</strong> pointing filter pages at the category consolidate signals over time, and Google still has to crawl every URL to read them, so they save no crawl budget.</li>
+  <li><strong>noindex</strong> keeps pages out of results and also has to be crawled to work. Over time Google crawls noindexed pages less often.</li>
+  <li><strong>nofollow on filter links</strong> discourages crawling and is a hint Google may disregard.</li>
+</ul>
+<p>Search Console's URL Parameters tool, which used to handle this, was retired in 2022.</p>
+
+<h2>If filter pages must be crawlable</h2>
+<ul>
+  <li>Use the standard <code>&amp;</code> separator and the same parameter order every time, so one combination has one URL.</li>
+  <li>Return a 404 for combinations with no products, and for nonsense values. A "no results" page with a 200 status becomes a soft 404 and wastes crawls.</li>
+  <li>Keep sort order and items-per-page out of the URL, or block them, since they reshuffle the same products.</li>
+  <li>Limit how many filters can be stacked into one crawlable URL.</li>
+</ul>
+
+<h2>Pagination</h2>
+<p>Paginated category pages are different from filters: they list different products, and they're how crawlers reach products deep in a catalog. Keep them crawlable with plain links, let each page declare itself as canonical, and keep pages from going on forever by giving categories sensible sizes.</p>
+
+<h2>Measure the change</h2>
+<p>Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.</p>
+
+<p class="related">Crawl control for big catalogs is the focus of <a href="{root}services/large-sites/">large-site SEO</a> and <a href="{root}services/ecommerce/">ecommerce SEO</a>. See also the <a href="{root}case-studies/programmatic-indexing/">programmatic indexing case study</a>.</p>

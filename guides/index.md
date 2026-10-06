@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -8,14 +8,34 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## AI search
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
+- [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.
+- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): specs, project memory, automated checks, review, and keeping secrets and production out of reach.
+
+## Diagnosis
+- [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
+- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
+- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
 
 ## Technical SEO
-- [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
-- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
+- [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.
+- [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): matching rules, crawling versus indexing, status codes, and AI crawlers.
+- [Faceted navigation SEO: filters, parameters, and crawl budget](https://gerriscorp.com/guides/faceted-navigation/): which filter pages to index and how to keep the rest out of the crawl.
+- [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): the codes, the return links, and the errors that void them.
+
+## Speed and infrastructure
+- [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
+- [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
+
+## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
+- [How to plan 301 redirects that keep your rankings and links](https://gerriscorp.com/guides/301-redirects/): which redirect to use, mapping, implementation by platform, testing, and how long to keep them.
+
+## Analytics
+- [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): the four signals, basic and advanced mode, regional defaults, and how to verify it.
 
 ## Email and domains
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
+- [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): headers, authentication failures, reputation, blocklists, and sending practices.
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
@@ -29,4 +49,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 5, 2026
+Updated October 6, 2026

@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hreflang for US, UK, Canadian, and Australian websites</title>
+<meta name="description" content="When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.">
+<link rel="canonical" href="https://gerriscorp.com/guides/hreflang/">
+<meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  gtag('js', new Date());
+  gtag('config', 'G-JF2W6ESJZN');
+</script>
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hreflang for US, UK, Canadian, and Australian websites">
+<meta property="og:description" content="When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.">
+<meta property="og:url" content="https://gerriscorp.com/guides/hreflang/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="hreflang for US, UK, Canadian, and Australian websites">
+<meta name="twitter:description" content="When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { color: var(--blue); font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.5rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "slogan": "Experienced help for the digital work your business needs done",
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://gerriscorp.com/chris-abraham.jpg",
+    "width": 320,
+    "height": 320,
+    "caption": "Chris Abraham, founder of Gerris Corp"
+   },
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
+   "homeLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/hreflang/#webpage",
+   "url": "https://gerriscorp.com/guides/hreflang/",
+   "name": "hreflang for US, UK, Canadian, and Australian websites",
+   "description": "When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-06",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/hreflang/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/hreflang/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "hreflang for English Markets",
+     "item": "https://gerriscorp.com/guides/hreflang/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/hreflang/#article",
+   "headline": "hreflang for English-language sites serving the US, UK, Canada, and Australia",
+   "description": "When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.",
+   "url": "https://gerriscorp.com/guides/hreflang/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/hreflang/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-10-06",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 723
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › hreflang for English Markets</p>
+<main id="main">
+<h1>hreflang for English-language sites serving the US, UK, Canada, and Australia</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="lead">A business that sells in several English-speaking countries often ends up with near-identical pages for each one. hreflang tells Google which version belongs to which audience, so a shopper in Leeds sees prices in pounds and a shopper in Toronto sees Canadian dollars. Written wrong, it does nothing at all.</p>
+
+<h2>Do you need it?</h2>
+<p>hreflang is for sites with separate versions of a page for different languages or regions. One English site that serves everyone the same content needs none. The tags start paying off when the versions differ in ways that matter to the visitor:</p>
+<ul>
+  <li>Prices and currency</li>
+  <li>Shipping, taxes, returns, and delivery times</li>
+  <li>Legal terms, regulated claims, and contact details</li>
+  <li>Spelling and vocabulary: color and colour, sneakers and trainers, apartment and flat</li>
+</ul>
+<p>Without hreflang, Google sees several pages saying almost the same thing, may pick one as canonical for every country, and shows the American page in Australia. With it, Google treats the pages as a set and swaps in the right member for each searcher.</p>
+
+<h2>The codes</h2>
+<p>Each value is an ISO 639-1 language code, optionally followed by an ISO 3166-1 country code:</p>
+<table>
+<thead><tr><th>Audience</th><th>Code</th></tr></thead>
+<tbody>
+<tr><td>United States</td><td><code>en-US</code></td></tr>
+<tr><td>United Kingdom</td><td><code>en-GB</code> (never en-UK, which isn't a valid code)</td></tr>
+<tr><td>Canada, English</td><td><code>en-CA</code></td></tr>
+<tr><td>Canada, French</td><td><code>fr-CA</code></td></tr>
+<tr><td>Australia</td><td><code>en-AU</code></td></tr>
+<tr><td>New Zealand</td><td><code>en-NZ</code></td></tr>
+<tr><td>Ireland</td><td><code>en-IE</code></td></tr>
+<tr><td>English speakers anywhere else</td><td><code>en</code></td></tr>
+<tr><td>Fallback for everyone unmatched</td><td><code>x-default</code></td></tr>
+</tbody>
+</table>
+<p>The language is required. A country on its own, such as <code>gb</code>, is read as a language code, and since there's no language with that code, the annotation is ignored.</p>
+
+<h2>Writing the tags</h2>
+<p>Every version in the set lists every version, including itself:</p>
+<pre>&lt;link rel="alternate" hreflang="en-US" href="https://example.com/us/boots/"&gt;
+&lt;link rel="alternate" hreflang="en-GB" href="https://example.com/uk/boots/"&gt;
+&lt;link rel="alternate" hreflang="en-AU" href="https://example.com/au/boots/"&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://example.com/boots/"&gt;</pre>
+<p>The same block goes on the US, UK, and Australian pages. The annotations can also live in the XML sitemap, which is easier to maintain on large sites, or in HTTP headers for files such as PDFs. Pick one method. Mixing them invites the two copies to drift apart, and a set that disagrees with itself is ignored.</p>
+
+<h2>The rules that void it</h2>
+<ul>
+  <li><strong>Missing return links.</strong> If the UK page names the US page and the US page doesn't name the UK page back, Google ignores the pair. This is the most common failure.</li>
+  <li><strong>Pointing at non-canonical URLs.</strong> Every URL in the set should return a 200 and declare itself as canonical. A UK page whose canonical points at the US page tells Google to drop the UK page, and hreflang can't override that.</li>
+  <li><strong>Relative or mixed URLs.</strong> Use full absolute URLs, with the same protocol and host style used everywhere else.</li>
+  <li><strong>Tags only in JavaScript.</strong> Put them in the server's HTML or in the sitemap.</li>
+</ul>
+
+<h2>How to structure the versions</h2>
+<ul>
+  <li><strong>Subfolders</strong> such as <code>/uk/</code> and <code>/au/</code> on one domain share all its authority and are the simplest to run. This is my default recommendation.</li>
+  <li><strong>Country domains</strong> such as <code>.co.uk</code> and <code>.com.au</code> send the strongest local signal and build trust with local buyers, and each domain has to earn its own links.</li>
+  <li><strong>Subdomains</strong> such as <code>uk.example.com</code> work, with more setup and no real advantage over subfolders.</li>
+</ul>
+
+<h2>Don't redirect by location</h2>
+<p>Redirecting visitors automatically by IP address hides versions from Google, because Googlebot crawls mostly from the United States and would only ever see the American pages. Let every URL load for everyone, and offer a banner that suggests the local version. hreflang handles search; the banner handles direct visitors.</p>
+
+<h2>Bing</h2>
+<p>Bing gives hreflang less weight and looks more at the <code>content-language</code> meta tag and the page's <code>lang</code> attribute. Set <code>&lt;html lang="en-GB"&gt;</code> on UK pages, and so on, so both engines get a clear signal.</p>
+
+<h2>Checking it</h2>
+<p>Search Console retired its International Targeting report in 2022, so checking falls to crawlers. Screaming Frog and Sitebulb both validate hreflang sets, flag missing return links and non-canonical targets, and export the errors by page. After that, search from each country with a VPN or with Google's country settings and confirm the right page appears. Spot check a few sets by hand as well: open the source of each version and confirm the block of annotations is identical on every page in the set.</p>
+
+<p class="related">I sort out international setups as part of <a href="../../services/technical-seo/">technical SEO</a> and <a href="../../services/ecommerce/">ecommerce SEO</a> engagements, for clients across the English-speaking world.</p>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

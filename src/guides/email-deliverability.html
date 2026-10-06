@@ -1,0 +1,50 @@
+name: Email Deliverability
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+title: Why business email lands in spam, and how to fix it
+description: How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
+---
+<h1>Why business email lands in spam, and how to find the cause</h1>
+<p class="lead">Invoices disappear, proposals land in junk folders, and customers say they never got the reset link. Deliverability failures look random from the outside. They have specific causes, and the evidence for each one is sitting in the message headers and a few free tools.</p>
+
+<h2>Start with one message's headers</h2>
+<p>Send a message to a Gmail address you control, open it, and choose Show original. Gmail prints three verdicts at the top: SPF, DKIM, and DMARC, each with pass or fail, and the domain each one checked. In Outlook, the same information sits in the message properties under the <code>Authentication-Results</code> header. Read it before changing anything; it tells you which of the following sections applies.</p>
+
+<h2>Authentication failures</h2>
+<p>A failing result usually has one of four causes.</p>
+<ul>
+  <li><strong>A sender left out of SPF.</strong> The CRM, the invoicing tool, or the website's contact form sends as your domain and isn't listed in the SPF record.</li>
+  <li><strong>SPF over its lookup limit.</strong> SPF allows ten DNS lookups. Every <code>include</code> costs at least one, and a record that exceeds the limit fails for every message, including the ones from legitimate senders.</li>
+  <li><strong>DKIM never switched on.</strong> Many services sign with their own domain until you publish their DKIM records and enable signing in their dashboard.</li>
+  <li><strong>No alignment.</strong> DMARC needs SPF or DKIM to pass for the same domain shown in the From line. A service that passes SPF for its own bounce domain still fails DMARC for yours.</li>
+</ul>
+<p>The <a href="{root}guides/email-authentication/">SPF, DKIM, and DMARC guide</a> covers the records themselves. DMARC aggregate reports, sent daily by the big mailbox providers to the address in your DMARC record, list every source sending as your domain and whether it passed. They're the fastest way to find a sender you forgot.</p>
+
+<h2>Reputation</h2>
+<p>When authentication passes and mail still lands in spam, the problem is reputation: how the mailbox providers judge mail from your domain and your sending servers, based on how recipients treat it.</p>
+<ul>
+  <li><strong>Google Postmaster Tools</strong> shows Gmail's view of a domain that sends in volume: spam complaint rate, authentication rates, and delivery errors. Gmail expects bulk senders to keep reported spam below 0.3 percent, and recommends staying under 0.1.</li>
+  <li><strong>Microsoft's Smart Network Data Services</strong> shows how Outlook.com sees the IP addresses you send from, if you control them.</li>
+  <li><strong>Blocklists.</strong> Check the domain and the sending IPs against Spamhaus and the other major lists with a lookup tool such as MXToolbox. A listing usually comes with a reason and a removal process.</li>
+</ul>
+<p>Shared sending services put many customers on the same IP addresses, so a neighbor's bad behavior can affect you. That's one reason marketing email and everyday business email belong on separate services, and often on separate subdomains, such as <code>news.example.com</code> for newsletters. A newsletter complaint spike then can't drag down invoices.</p>
+
+<h2>The sending practices that cause it</h2>
+<ul>
+  <li><strong>Old or purchased lists.</strong> Addresses that bounce, and spam traps hidden on old lists, damage reputation quickly. Mail only people who asked for it, and remove addresses that bounce.</li>
+  <li><strong>No easy unsubscribe.</strong> Since 2024 Gmail and Yahoo require bulk senders to support one-click unsubscribe. People who can't leave a list mark it as spam instead.</li>
+  <li><strong>Sudden volume.</strong> A domain that sends fifty messages a day and then ten thousand looks compromised. Increase volume over weeks.</li>
+  <li><strong>Mail nobody opens.</strong> Providers watch engagement. Stop mailing people who haven't opened anything in months.</li>
+</ul>
+
+<h2>Content and links</h2>
+<p>Content matters less than authentication and reputation, and it still matters. Link shorteners, links to domains with poor reputations, a single large image with no text, and attachments that commonly carry malware all raise suspicion. Every link in a message is judged by its domain, so a tracking domain shared with spammers hurts every message that uses it.</p>
+
+<h2>Bounces tell you exactly what happened</h2>
+<p>A bounce message carries a status code and usually a sentence from the receiving server. A <code>550 5.7.26</code> from Gmail means the message failed authentication. Codes starting with 4 are temporary and the sending server retries. Codes starting with 5 are permanent. Search the exact code and text; the major providers document what each one means.</p>
+
+<h2>Testing</h2>
+<p>Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.</p>
+
+<p class="related">I fix deliverability as part of <a href="{root}services/email-and-dns/">email authentication and DNS work</a>, usually alongside the domain cleanup that caused the problem.</p>

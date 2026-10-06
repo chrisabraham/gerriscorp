@@ -1,0 +1,71 @@
+name: hreflang for English Markets
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+title: hreflang for US, UK, Canadian, and Australian websites
+description: When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.
+---
+<h1>hreflang for English-language sites serving the US, UK, Canada, and Australia</h1>
+<p class="lead">A business that sells in several English-speaking countries often ends up with near-identical pages for each one. hreflang tells Google which version belongs to which audience, so a shopper in Leeds sees prices in pounds and a shopper in Toronto sees Canadian dollars. Written wrong, it does nothing at all.</p>
+
+<h2>Do you need it?</h2>
+<p>hreflang is for sites with separate versions of a page for different languages or regions. One English site that serves everyone the same content needs none. The tags start paying off when the versions differ in ways that matter to the visitor:</p>
+<ul>
+  <li>Prices and currency</li>
+  <li>Shipping, taxes, returns, and delivery times</li>
+  <li>Legal terms, regulated claims, and contact details</li>
+  <li>Spelling and vocabulary: color and colour, sneakers and trainers, apartment and flat</li>
+</ul>
+<p>Without hreflang, Google sees several pages saying almost the same thing, may pick one as canonical for every country, and shows the American page in Australia. With it, Google treats the pages as a set and swaps in the right member for each searcher.</p>
+
+<h2>The codes</h2>
+<p>Each value is an ISO 639-1 language code, optionally followed by an ISO 3166-1 country code:</p>
+<table>
+<thead><tr><th>Audience</th><th>Code</th></tr></thead>
+<tbody>
+<tr><td>United States</td><td><code>en-US</code></td></tr>
+<tr><td>United Kingdom</td><td><code>en-GB</code> (never en-UK, which isn't a valid code)</td></tr>
+<tr><td>Canada, English</td><td><code>en-CA</code></td></tr>
+<tr><td>Canada, French</td><td><code>fr-CA</code></td></tr>
+<tr><td>Australia</td><td><code>en-AU</code></td></tr>
+<tr><td>New Zealand</td><td><code>en-NZ</code></td></tr>
+<tr><td>Ireland</td><td><code>en-IE</code></td></tr>
+<tr><td>English speakers anywhere else</td><td><code>en</code></td></tr>
+<tr><td>Fallback for everyone unmatched</td><td><code>x-default</code></td></tr>
+</tbody>
+</table>
+<p>The language is required. A country on its own, such as <code>gb</code>, is read as a language code, and since there's no language with that code, the annotation is ignored.</p>
+
+<h2>Writing the tags</h2>
+<p>Every version in the set lists every version, including itself:</p>
+<pre>&lt;link rel="alternate" hreflang="en-US" href="https://example.com/us/boots/"&gt;
+&lt;link rel="alternate" hreflang="en-GB" href="https://example.com/uk/boots/"&gt;
+&lt;link rel="alternate" hreflang="en-AU" href="https://example.com/au/boots/"&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://example.com/boots/"&gt;</pre>
+<p>The same block goes on the US, UK, and Australian pages. The annotations can also live in the XML sitemap, which is easier to maintain on large sites, or in HTTP headers for files such as PDFs. Pick one method. Mixing them invites the two copies to drift apart, and a set that disagrees with itself is ignored.</p>
+
+<h2>The rules that void it</h2>
+<ul>
+  <li><strong>Missing return links.</strong> If the UK page names the US page and the US page doesn't name the UK page back, Google ignores the pair. This is the most common failure.</li>
+  <li><strong>Pointing at non-canonical URLs.</strong> Every URL in the set should return a 200 and declare itself as canonical. A UK page whose canonical points at the US page tells Google to drop the UK page, and hreflang can't override that.</li>
+  <li><strong>Relative or mixed URLs.</strong> Use full absolute URLs, with the same protocol and host style used everywhere else.</li>
+  <li><strong>Tags only in JavaScript.</strong> Put them in the server's HTML or in the sitemap.</li>
+</ul>
+
+<h2>How to structure the versions</h2>
+<ul>
+  <li><strong>Subfolders</strong> such as <code>/uk/</code> and <code>/au/</code> on one domain share all its authority and are the simplest to run. This is my default recommendation.</li>
+  <li><strong>Country domains</strong> such as <code>.co.uk</code> and <code>.com.au</code> send the strongest local signal and build trust with local buyers, and each domain has to earn its own links.</li>
+  <li><strong>Subdomains</strong> such as <code>uk.example.com</code> work, with more setup and no real advantage over subfolders.</li>
+</ul>
+
+<h2>Don't redirect by location</h2>
+<p>Redirecting visitors automatically by IP address hides versions from Google, because Googlebot crawls mostly from the United States and would only ever see the American pages. Let every URL load for everyone, and offer a banner that suggests the local version. hreflang handles search; the banner handles direct visitors.</p>
+
+<h2>Bing</h2>
+<p>Bing gives hreflang less weight and looks more at the <code>content-language</code> meta tag and the page's <code>lang</code> attribute. Set <code>&lt;html lang="en-GB"&gt;</code> on UK pages, and so on, so both engines get a clear signal.</p>
+
+<h2>Checking it</h2>
+<p>Search Console retired its International Targeting report in 2022, so checking falls to crawlers. Screaming Frog and Sitebulb both validate hreflang sets, flag missing return links and non-canonical targets, and export the errors by page. After that, search from each country with a VPN or with Google's country settings and confirm the right page appears. Spot check a few sets by hand as well: open the source of each version and confirm the block of annotations is identical on every page in the set.</p>
+
+<p class="related">I sort out international setups as part of <a href="{root}services/technical-seo/">technical SEO</a> and <a href="{root}services/ecommerce/">ecommerce SEO</a> engagements, for clients across the English-speaking world.</p>

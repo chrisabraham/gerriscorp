@@ -597,7 +597,7 @@ dd { margin: .2rem 0 0 0; }
    },
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "dateModified": "2026-10-05",
+   "dateModified": "2026-10-06",
    "author": {
     "@id": "https://chrisabraham.com/#person"
    },
@@ -646,6 +646,78 @@ dd { margin: .2rem 0 0 0; }
      {
       "@type": "ListItem",
       "position": 7,
+      "url": "https://gerriscorp.com/guides/traffic-drop/",
+      "name": "How to diagnose a Google traffic drop in Search Console"
+     },
+     {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://gerriscorp.com/guides/canonical-tags/",
+      "name": "Canonical tags: how Google chooses which URL to index"
+     },
+     {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://gerriscorp.com/guides/robots-txt/",
+      "name": "How robots.txt works, and the mistakes that cost traffic"
+     },
+     {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://gerriscorp.com/guides/structured-data/",
+      "name": "Structured data in 2026: which schema markup is worth adding"
+     },
+     {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://gerriscorp.com/guides/301-redirects/",
+      "name": "How to plan 301 redirects that keep your rankings and links"
+     },
+     {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://gerriscorp.com/guides/faceted-navigation/",
+      "name": "Faceted navigation SEO: filters, parameters, and crawl budget"
+     },
+     {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://gerriscorp.com/guides/hreflang/",
+      "name": "hreflang for English-language sites serving the US, UK, Canada, and Australia"
+     },
+     {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://gerriscorp.com/guides/core-web-vitals/",
+      "name": "Core Web Vitals explained: LCP, INP, CLS, and the fixes that work"
+     },
+     {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://gerriscorp.com/guides/cloudflare-seo/",
+      "name": "Cloudflare settings that help or hurt SEO and AI crawlers"
+     },
+     {
+      "@type": "ListItem",
+      "position": 16,
+      "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
+      "name": "Google Consent Mode v2 for GA4: a practical setup guide"
+     },
+     {
+      "@type": "ListItem",
+      "position": 17,
+      "url": "https://gerriscorp.com/guides/email-deliverability/",
+      "name": "Why business email lands in spam, and how to find the cause"
+     },
+     {
+      "@type": "ListItem",
+      "position": 18,
+      "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
+      "name": "How to use AI coding assistants on a business website safely"
+     },
+     {
+      "@type": "ListItem",
+      "position": 19,
       "url": "https://gerriscorp.com/guides/glossary/",
       "name": "Glossary of SEO, AI search, and technical website terms"
      }
@@ -702,18 +774,46 @@ dd { margin: .2rem 0 0 0; }
 <h2>AI search</h2>
 <ul>
   <li><a href="../guides/ai-assistants/">How AI assistants decide what to say about your business</a>: training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.</li>
+  <li><a href="../guides/structured-data/">Structured data in 2026: which schema markup is worth adding</a>: the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.</li>
+  <li><a href="../guides/ai-coding-assistants/">How to use AI coding assistants on a business website safely</a>: specs, project memory, automated checks, review, and keeping secrets and production out of reach.</li>
+</ul>
+
+<h2>Diagnosis</h2>
+<ul>
+  <li><a href="../guides/traffic-drop/">How to diagnose a Google traffic drop in Search Console</a>: confirm the drop, find where it is, line it up with dates, and name the cause.</li>
+  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
+  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
 </ul>
 
 <h2>Technical SEO</h2>
 <ul>
-  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
-  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
+  <li><a href="../guides/canonical-tags/">Canonical tags: how Google chooses which URL to index</a>: the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.</li>
+  <li><a href="../guides/robots-txt/">How robots.txt works, and the mistakes that cost traffic</a>: matching rules, crawling versus indexing, status codes, and AI crawlers.</li>
+  <li><a href="../guides/faceted-navigation/">Faceted navigation SEO: filters, parameters, and crawl budget</a>: which filter pages to index and how to keep the rest out of the crawl.</li>
+  <li><a href="../guides/hreflang/">hreflang for English-language sites serving the US, UK, Canada, and Australia</a>: the codes, the return links, and the errors that void them.</li>
+</ul>
+
+<h2>Speed and infrastructure</h2>
+<ul>
+  <li><a href="../guides/core-web-vitals/">Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</a>: field data versus lab data, and what moves each number.</li>
+  <li><a href="../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>: proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.</li>
+</ul>
+
+<h2>Migrations and redirects</h2>
+<ul>
   <li><a href="../guides/migration-checklist/">The website migration SEO checklist</a>: the URL inventory, the 301 redirect map, launch day, and the weeks after.</li>
+  <li><a href="../guides/301-redirects/">How to plan 301 redirects that keep your rankings and links</a>: which redirect to use, mapping, implementation by platform, testing, and how long to keep them.</li>
+</ul>
+
+<h2>Analytics</h2>
+<ul>
+  <li><a href="../guides/ga4-consent-mode/">Google Consent Mode v2 for GA4: a practical setup guide</a>: the four signals, basic and advanced mode, regional defaults, and how to verify it.</li>
 </ul>
 
 <h2>Email and domains</h2>
 <ul>
   <li><a href="../guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a>: what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.</li>
+  <li><a href="../guides/email-deliverability/">Why business email lands in spam, and how to find the cause</a>: headers, authentication failures, reputation, blocklists, and sending practices.</li>
 </ul>
 
 <h2>Privacy and reputation</h2>
@@ -730,7 +830,7 @@ dd { margin: .2rem 0 0 0; }
 <p>Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.</p>
 
 <p>New guides are announced in the <a href="../feed.xml">Atom feed</a>.</p>
-<p class="updated">Updated October 5, 2026</p>
+<p class="updated">Updated October 6, 2026</p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
