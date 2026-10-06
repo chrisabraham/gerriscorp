@@ -1,0 +1,64 @@
+name: Lynx for Website QA
+title: Lynx for website QA: text browser checks before every launch
+description: How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.
+keywords: Lynx browser, website QA, launch checklist, text browser testing
+sources: Lynx project home | https://lynx.invisible-island.net/ ;; Debian package: lynx | https://packages.debian.org/stable/lynx ;; Homebrew formula: lynx | https://formulae.brew.sh/formula/lynx ;; Microsoft Learn: Install WSL | https://learn.microsoft.com/en-us/windows/wsl/install ;; W3C: Easy checks, a first review of web accessibility | https://www.w3.org/WAI/test-evaluate/preliminary/
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+---
+<h1>Lynx for website QA: text browser checks before every launch</h1>
+<p class="lead">Lynx has been around since the early nineties, and it's still one of the most useful tools in my launch kit. Because it ignores styling and never runs JavaScript, it strips a page down to what the server actually sends. Scripted from the command line, it can check every page of a site in minutes, which makes it a natural fit for redesigns, migrations, and release checklists.</p>
+
+<h2>Getting Lynx</h2>
+<p>I run Lynx on a Linux server over SSH, from an old ThinkPad, and that's the simplest setup. On Debian or Ubuntu:</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt install lynx</code></pre>
+<p>Other systems: <code>brew install lynx</code> on macOS with Homebrew, <code>sudo dnf install lynx</code> on Fedora, and on Windows, the same apt command inside the Windows Subsystem for Linux. Once it's installed, <code>lynx --version</code> confirms it works.</p>
+
+<h2>Commands worth memorizing</h2>
+<table>
+<thead><tr><th>Command</th><th>What it gives you</th></tr></thead>
+<tbody>
+<tr><td><code>lynx URL</code></td><td>An interactive text browser. Arrows move, Enter follows a link, <kbd>q</kbd> quits, and <kbd>\</kbd> toggles the HTML source.</td></tr>
+<tr><td><code>lynx -dump URL</code></td><td>The rendered text, followed by a numbered list of every link.</td></tr>
+<tr><td><code>lynx -dump -nolist URL</code></td><td>Text only, no link list. Best for comparing two versions of a page.</td></tr>
+<tr><td><code>lynx -dump -listonly URL</code></td><td>Only the links, numbered, with their full addresses.</td></tr>
+<tr><td><code>lynx -source URL</code></td><td>The raw HTML, handy for checking head tags.</td></tr>
+</tbody>
+</table>
+
+<h2>Five checks I script before a launch</h2>
+<h3>1. Every page in the sitemap has real text</h3>
+<p>Pull the URLs from the sitemap and count the words Lynx sees on each. A product page that comes back with forty words when it should have four hundred is a template hiding its content behind scripts.</p>
+<pre><code>curl -s https://example.com/sitemap.xml | grep -o '&lt;loc&gt;[^&lt;]*' | sed 's/&lt;loc&gt;//' |
+while read u; do echo "$(lynx -dump -nolist "$u" | wc -w) $u"; done | sort -n | head</code></pre>
+<p>The thinnest pages float to the top of the list.</p>
+<h3>2. Staging and production say the same thing</h3>
+<p>After a migration, compare the old page with the new one as text. Missing paragraphs, dropped FAQs, and lost disclaimers show up immediately, without any styling noise.</p>
+<pre><code>diff &lt;(lynx -dump -nolist https://old.example.com/pricing/) \
+     &lt;(lynx -dump -nolist https://www.example.com/pricing/)</code></pre>
+<h3>3. No stray noindex survived from staging</h3>
+<p>The most expensive launch mistake I know is a robots noindex tag carried over from a staging site. One loop over the sitemap catches it:</p>
+<pre><code>... | while read u; do lynx -source "$u" | grep -qi 'noindex' &amp;&amp; echo "NOINDEX $u"; done</code></pre>
+<h3>4. Links are real, and they all resolve</h3>
+<p>The link list shows only genuine anchor links, so navigation built from click handlers simply won't appear. Feed the list to curl to catch broken targets and redirect chains:</p>
+<pre><code>lynx -dump -listonly https://example.com/ | awk '/https?:/{print $2}' | sort -u |
+xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^200'</code></pre>
+<h3>5. The first screen is about the page</h3>
+<p>Read the top twenty lines of each key template's dump. If a consent banner, a mega menu, and a promotional strip come before the first heading, assistive technology and crawlers wade through all of it too. Reordering the markup, or adding a skip link, fixes the problem for both.</p>
+
+<h2>Reading the results with a team</h2>
+<p>Text dumps are easy to share, and they make strong evidence in a developer ticket: here's the page as a crawler receives it, and here's the paragraph that's missing. Nobody has to install anything to read a text file, and the comparison is hard to argue with.</p>
+
+<h2>When a terminal isn't an option</h2>
+<p>Plenty of teams can't or won't install command-line tools. These get most of the way there:</p>
+<ul>
+  <li><a href="https://www.delorie.com/web/lynxview.html">Lynx Viewer</a>, a free web service that renders a public URL much as Lynx would.</li>
+  <li><a href="https://www.seo-browser.com/">SEO Browser</a>, which places the browser's version of a page beside a crawler's and highlights what JavaScript added.</li>
+  <li>The <a href="https://search.google.com/test/rich-results">Rich Results Test</a> and Search Console's URL Inspection, which both show the HTML Google rendered.</li>
+  <li>The <a href="https://chrispederick.com/work/web-developer/">Web Developer extension</a> for Chrome and Firefox, which turns off CSS and JavaScript with a click.</li>
+  <li>Accessibility checkers and screen readers: <a href="https://wave.webaim.org/">WAVE</a> offers a no-styles view, and <a href="https://www.nvaccess.org/">NVDA</a> or Apple's VoiceOver read a page in the same top-to-bottom order Lynx displays. An accessibility auditor will usually run some version of this test anyway.</li>
+</ul>
+
+<h2>Add it to the checklist</h2>
+<p>I add a Lynx pass to every launch: sitemap word counts, a noindex sweep, a link check, and a text diff of the most important templates. It takes about ten minutes and catches problems a styled browser hides. For the full launch sequence, see <a href="{root}guides/migration-checklist/">the website migration SEO checklist</a>, and for the deeper rendering questions, <a href="{root}guides/javascript-seo/">how to tell if JavaScript is hiding your content</a>.</p>
