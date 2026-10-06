@@ -1,0 +1,64 @@
+name: ADA Website Compliance
+title: ADA website compliance for business: lower risk, better SEO
+description: What the ADA expects of business websites, the six fixes that cover most of the risk, what to skip, and why the same work improves search, AI answers, trust.
+keywords: ADA website compliance, WCAG for business websites, ADA lawsuit risk, accessibility and SEO
+sources: ADA.gov: Guidance on web accessibility and the ADA | https://www.ada.gov/resources/web-guidance/ ;; ADA.gov: Fact sheet on the Title II web rule | https://www.ada.gov/resources/2024-03-08-web-rule/ ;; W3C: Web Content Accessibility Guidelines (WCAG) 2.2 | https://www.w3.org/TR/WCAG22/ ;; WebAIM: The WebAIM Million, 2026 report | https://webaim.org/projects/million/ ;; Overlay Fact Sheet | https://overlayfactsheet.com/
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+---
+<h1>ADA website compliance for businesses: lower risk, better SEO</h1>
+<p class="lead">Making a website accessible is the right thing to do, and it's also cheap insurance. Most of the legal exposure comes from a short list of common, fixable failures. Fix those, document what you did, and you'll also get a faster, clearer, better-ranking site that AI assistants understand. No badges, no widgets, and no press release required.</p>
+<p>A note before the details: this is a practitioner's guide, not legal advice. If you've received a demand letter, call a lawyer first.</p>
+
+<h2>What the law expects</h2>
+<p>The Americans with Disabilities Act covers businesses open to the public, and the Department of Justice's position, set out in its guidance on ADA.gov, is that this includes their websites. For private businesses there's no technical standard written into the regulations, so courts, settlements, and auditors almost always measure sites against the Web Content Accessibility Guidelines, WCAG, at level AA.</p>
+<p>For state and local governments, the rules are firmer. A 2024 Justice Department rule requires WCAG 2.1 level AA. An interim rule in April 2026 extended the deadlines: April 26, 2027, for governments serving 50,000 people or more, and April 26, 2028, for smaller ones and special districts. If you build or run sites for public agencies, those dates belong on your calendar.</p>
+
+<h2>Where the risk actually comes from</h2>
+<p>Demand letters and lawsuits tend to cite problems anyone can detect with a free automated scan, because that's how many of them are found. WebAIM's 2026 survey of the top million home pages found detectable failures on 95.9% of them, and six kinds of errors accounted for 96% of everything detected:</p>
+<table>
+<thead><tr><th>Failure</th><th>Share of home pages</th></tr></thead>
+<tbody>
+<tr><td>Low contrast text</td><td>83.9%</td></tr>
+<tr><td>Missing image alt text</td><td>53.1%</td></tr>
+<tr><td>Form fields without labels</td><td>51%</td></tr>
+<tr><td>Empty links</td><td>46.3%</td></tr>
+<tr><td>Empty buttons</td><td>30.6%</td></tr>
+<tr><td>Missing page language</td><td>13.5%</td></tr>
+</tbody>
+</table>
+<p>Fixing those six puts a site ahead of almost all of the web. That's the 80 to 90 percent that matters most, and it's usually days of work, not months.</p>
+
+<h2>The fix list, in order</h2>
+<ol>
+  <li><strong>Contrast.</strong> Darken pale text and light brand colors until normal text reaches 4.5 to 1 against its background. This is usually a handful of color values in one stylesheet.</li>
+  <li><strong>Alt text.</strong> Describe every meaningful image; give decorative ones an empty alt attribute.</li>
+  <li><strong>Form labels.</strong> Every field gets a visible label tied to it. Placeholder text alone doesn't count.</li>
+  <li><strong>Links and buttons that say something.</strong> Icon-only buttons need an accessible name; a link wrapped around nothing but an icon needs one too.</li>
+  <li><strong>Page language.</strong> One attribute on the html element.</li>
+  <li><strong>Keyboard and focus.</strong> Tab through every page template; everything should be reachable, in order, with a visible focus outline.</li>
+</ol>
+<p>Then cover the rest of WCAG AA over time, starting with headings, captions for video, and error messages on forms.</p>
+
+<h2>What to skip</h2>
+<ul>
+  <li><strong>Overlay widgets.</strong> Scripts that promise one-line compliance don't fix the underlying markup, many users of assistive technology find them obstructive, and sites using them have still been sued.</li>
+  <li><strong>Badges and certificates.</strong> A "fully compliant" seal invites scrutiny and proves nothing. The work speaks for itself.</li>
+  <li><strong>Grand announcements.</strong> A short accessibility statement is useful; a marketing campaign about it isn't.</li>
+</ul>
+
+<h2>Document it</h2>
+<p>Keep a simple record: which pages were checked, with which tools, what was fixed, and when. Publish a brief accessibility statement with a way to report problems, and answer those reports promptly. A business that can show steady, good-faith effort is in a far better position than one that can't.</p>
+
+<h2>The dividends you collect anyway</h2>
+<ul>
+  <li><strong>Search.</strong> Alt text feeds image search, real headings and descriptive links are exactly what Google uses to understand a page, and the page language helps search engines serve the right audience.</li>
+  <li><strong>AI answers and AI agents.</strong> Assistants quote clean, well-structured text, and the browsing agents now arriving use a page's accessibility information to find and operate buttons and forms. Lighthouse even added an Agentic Browsing check.</li>
+  <li><strong>Trust.</strong> A site that works for everyone reads as careful and current, which is what quality raters, and customers, look for.</li>
+  <li><strong>Conversions.</strong> Readable text, labeled forms, and usable buttons help every visitor, including the ones on a phone in bright sunlight.</li>
+</ul>
+
+<h2>Keep it from sliding back</h2>
+<p>Accessibility erodes with every new page, plugin, and campaign. Add a quick automated scan and a keyboard pass to your launch routine, check new templates before they ship, and review the site once a quarter. My guide to <a href="{root}guides/lynx-qa/">Lynx for website QA</a> covers a text-browser pass that catches a surprising number of these problems in minutes.</p>
+<p>For help auditing and fixing a site, see <a href="{root}services/technical-seo/">technical SEO</a> or <a href="{root}contact/">get in touch</a>.</p>
