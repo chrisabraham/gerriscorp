@@ -363,6 +363,20 @@ GA = f"""
 </script>""" if LIVE else ""
 
 
+# Meta keywords: ignored by Google since 2009 and kept here for old time's sake.
+# A few honest terms per page: its topic, its section, and who wrote it.
+KEYWORDS_HOME = "technical SEO consultant, technical consulting, AI search, Cloudflare, Google Search Console, Arlington Virginia"
+KEYWORDS_SECTION = {"services/": "technical SEO consultant", "guides/": "SEO guide", "case-studies/": "SEO case study"}
+
+def keywords(p):
+    if p.get("keywords"):
+        return p["keywords"]
+    if p["path"] == "":
+        return KEYWORDS_HOME + ", Gerris Corp, Chris Abraham"
+    own = [p["name"]] if p["kind"] in ("service", "guide", "case") else []
+    terms = own + [KEYWORDS_SECTION.get(p["tab"], "technical SEO consultant"), "Gerris Corp", "Chris Abraham"]
+    return ", ".join(dict.fromkeys(terms))
+
 def render(p):
     r = p["root"]
     home = r or "./"
@@ -388,6 +402,7 @@ def render(p):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(p["title"])}</title>
 <meta name="description" content="{e(p["description"])}">{robots}
+<meta name="keywords" content="{e(keywords(p))}">
 <link rel="canonical" href="{p["url"]}">
 <meta name="author" content="Chris Abraham">
 <meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
