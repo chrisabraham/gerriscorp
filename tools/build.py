@@ -192,6 +192,7 @@ th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left;
 th { background: var(--bar); }
 dt { font-weight: bold; margin-top: 1rem; }
 dd { margin: .2rem 0 0 0; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
 .button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
 .button:hover { text-decoration: underline; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
@@ -203,6 +204,7 @@ dd { margin: .2rem 0 0 0; }
   .top img { width: 52px; height: 52px; }
   nav a { padding: .45rem .55rem; }
   h1 { font-size: 1.5rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
 }
 """.strip()
 
@@ -242,6 +244,8 @@ ORG = {
 }
 PERSON = {
     "@type": "Person", "@id": AUTHOR, "name": "Chris Abraham", "alternateName": "Christopher Abraham",
+    "image": {"@type": "ImageObject", "url": SITE + "chris-abraham.jpg", "width": 225, "height": 225,
+              "caption": "Chris Abraham, founder of Gerris Corp"},
     "url": "https://chrisabraham.com/", "jobTitle": "Founder and principal consultant",
     "worksFor": {"@id": SITE + "#org"},
     "alumniOf": [{"@type": "CollegeOrUniversity", "name": "The George Washington University",
@@ -514,6 +518,8 @@ def sitemap_entry(p):
     if p["path"] == "":
         img = (f"\n    <image:image><image:loc>{SITE}logo.png</image:loc></image:image>"
                f"\n    <image:image><image:loc>{SITE}social-card.png</image:loc></image:image>")
+    if p["path"] == "about/":
+        img = f"\n    <image:image><image:loc>{SITE}chris-abraham.jpg</image:loc></image:image>"
     return f"  <url>\n    <loc>{p['url']}</loc>\n    <lastmod>{p['updated']}</lastmod>{img}\n  </url>\n"
 
 
