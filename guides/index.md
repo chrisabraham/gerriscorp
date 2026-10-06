@@ -1,4 +1,4 @@
-> Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.
+> Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
 > Source: https://gerriscorp.com/guides/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
 
