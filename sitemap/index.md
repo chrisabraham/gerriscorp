@@ -65,6 +65,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+- [Lynx for website QA: text browser checks before every launch](https://gerriscorp.com/guides/lynx-qa/): How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 
 ## Case studies

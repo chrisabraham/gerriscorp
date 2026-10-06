@@ -152,6 +152,14 @@
     <summary>A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.</summary>
   </entry>
   <entry>
+    <title>Lynx for website QA: text browser checks before every launch</title>
+    <link href="https://gerriscorp.com/guides/lynx-qa/"/>
+    <id>https://gerriscorp.com/guides/lynx-qa/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.</summary>
+  </entry>
+  <entry>
     <title>Glossary of SEO, AI search, and technical website terms</title>
     <link href="https://gerriscorp.com/guides/glossary/"/>
     <id>https://gerriscorp.com/guides/glossary/</id>
