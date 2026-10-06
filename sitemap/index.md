@@ -15,6 +15,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+- [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
 
 ## Consulting and technical direction
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.

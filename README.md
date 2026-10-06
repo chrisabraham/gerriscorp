@@ -1,6 +1,6 @@
 # gerriscorp.com
 
-Gerris Corp, Chris Abraham's consultancy. Static pages on GitHub Pages: plain HTML with inline CSS, no JavaScript, Plone classic look (tabs, slate-blue links), built for legibility (black Verdana at 18px, AAA link contrast, visible focus, skip link).
+Gerris Corp, Chris Abraham's consultancy. Static pages on GitHub Pages: plain HTML with inline CSS, no JavaScript except the Google Analytics tag (GA4 with consent mode: analytics cookies off in the UK and EEA, ads storage off everywhere; see /privacy/), Plone classic look (tabs, slate-blue links), built for legibility (black Verdana at 18px, AAA link contrast, visible focus, skip link).
 
 ## Editing
 
