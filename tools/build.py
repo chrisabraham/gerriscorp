@@ -248,7 +248,8 @@ ORG = {
                       "areaServed": [c for _, _, c in ENGLISH_SPEAKING], "availableLanguage": "English"},
                      {"@type": "ContactPoint", "contactType": "technical support", "email": EMAIL,
                       "telephone": "+1-202-352-5051", "availableLanguage": "English"}],
-    "sameAs": ["https://www.upwork.com/freelancers/chrisjabraham", "https://github.com/chrisabraham/gerriscorp"],
+    "sameAs": ["https://www.upwork.com/freelancers/chrisjabraham", "https://github.com/chrisabraham/gerriscorp",
+               "https://share.google/C5KMu0jYTNz8t2Zpn"],  # verified Google Business Profile "Gerris"
     "publishingPrinciples": SITE + "standards/",
 }
 PERSON = {
