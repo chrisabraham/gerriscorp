@@ -658,7 +658,7 @@ dd { margin: .2rem 0 0 0; }
    "dateModified": "2026-10-06",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 783
+   "wordCount": 799
   }
  ]
 }
@@ -740,6 +740,8 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
   <li>The <a href="https://chrispederick.com/work/web-developer/">Web Developer extension</a> for Chrome and Firefox, which turns off CSS and JavaScript with a click.</li>
   <li>Accessibility checkers and screen readers: <a href="https://wave.webaim.org/">WAVE</a> offers a no-styles view, and <a href="https://www.nvaccess.org/">NVDA</a> or Apple's VoiceOver read a page in the same top-to-bottom order Lynx displays. An accessibility auditor will usually run some version of this test anyway.</li>
 </ul>
+
+<p><strong>Here's the short version: if a page works in Lynx, you're way more than halfway there.</strong></p>
 
 <h2>Add it to the checklist</h2>
 <p>I add a Lynx pass to every launch: sitemap word counts, a noindex sweep, a link check, and a text diff of the most important templates. It takes about ten minutes and catches problems a styled browser hides. For the full launch sequence, see <a href="../../guides/migration-checklist/">the website migration SEO checklist</a>, and for the deeper rendering questions, <a href="../../guides/javascript-seo/">how to tell if JavaScript is hiding your content</a>.</p>

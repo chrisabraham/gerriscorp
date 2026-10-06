@@ -2879,6 +2879,8 @@ Plenty of teams can't or won't install command-line tools. These get most of the
 - The [Web Developer extension](https://chrispederick.com/work/web-developer/) for Chrome and Firefox, which turns off CSS and JavaScript with a click.
 - Accessibility checkers and screen readers: [WAVE](https://wave.webaim.org/) offers a no-styles view, and [NVDA](https://www.nvaccess.org/) or Apple's VoiceOver read a page in the same top-to-bottom order Lynx displays. An accessibility auditor will usually run some version of this test anyway.
 
+**Here's the short version: if a page works in Lynx, you're way more than halfway there.**
+
 ## Add it to the checklist
 
 I add a Lynx pass to every launch: sitemap word counts, a noindex sweep, a link check, and a text diff of the most important templates. It takes about ten minutes and catches problems a styled browser hides. For the full launch sequence, see [the website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/), and for the deeper rendering questions, [how to tell if JavaScript is hiding your content](https://gerriscorp.com/guides/javascript-seo/).
