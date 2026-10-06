@@ -15,6 +15,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
+- [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
 - [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/): scripted text browser checks for thin pages, stray noindex tags, and broken links before every launch.
 
 ## Technical SEO
