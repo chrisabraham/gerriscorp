@@ -152,7 +152,7 @@ by_path = {p["path"]: p for p in pages}
 guides = [p for p in pages if p["kind"] == "guide"]
 
 CSS = """
-:root { --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+:root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
 .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
@@ -165,7 +165,7 @@ img { max-width: 100%; height: auto; }
 .top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
 .top > a { flex: none; line-height: 0; }
 .top img { width: 64px; height: 64px; max-width: none; }
-.brand { font-size: 1.6rem; font-weight: bold; color: #000; text-decoration: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
 .brand:hover { text-decoration: underline; }
 .tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
 nav { border-bottom: 4px solid var(--bar); }
@@ -176,8 +176,8 @@ nav a:hover { background: var(--bar); text-decoration: underline; }
 nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
 .crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
 main { padding: 1.25rem 0 2rem; }
-h1 { font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
-h2 { font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h1 { color: var(--blue); font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
 h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
 p, ul, ol, dl, table { margin: 0 0 1rem; }
 li { margin-bottom: .4rem; }
@@ -244,7 +244,7 @@ ORG = {
 }
 PERSON = {
     "@type": "Person", "@id": AUTHOR, "name": "Chris Abraham", "alternateName": "Christopher Abraham",
-    "image": {"@type": "ImageObject", "url": SITE + "chris-abraham.jpg", "width": 225, "height": 225,
+    "image": {"@type": "ImageObject", "url": SITE + "chris-abraham.jpg", "width": 320, "height": 320,
               "caption": "Chris Abraham, founder of Gerris Corp"},
     "url": "https://chrisabraham.com/", "jobTitle": "Founder and principal consultant",
     "worksFor": {"@id": SITE + "#org"},
