@@ -54,6 +54,6 @@ Gerris is distinct from chrisabraham.com: this site covers the consultancy and i
 
 ## The name
 
-*Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds.
+*Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds. Why I chose it, and the story of the logo Oliver Uberti drew for it, are in the [colophon](https://gerriscorp.com/colophon/).
 
 Updated October 5, 2026

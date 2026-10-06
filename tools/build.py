@@ -63,7 +63,7 @@ FILES = ["index",
          "case-studies/indexing-recovery", "case-studies/multi-location-entity", "case-studies/seasonal-retailer",
          "case-studies/gbp-reinstatement", "case-studies/umbraco-operations", "case-studies/ai-recruiting",
          "case-studies/data-cleanup", "case-studies/built-with-claude-code",
-         "about", "work-with-me", "faq", "standards", "contact", "privacy"]
+         "about", "work-with-me", "faq", "standards", "colophon", "contact", "privacy"]
 SERVICE_GROUPS = [
     ("Consulting and technical direction", ["services/technical-lead/", "services/developers/", "services/agency-partner/",
                                             "services/rescue/", "services/ai-automation/", "services/data-cleanup/",
@@ -118,7 +118,7 @@ for f in FILES:
     p["body"] = body.strip().replace("{email}", EMAIL).replace("{phone}", PHONE).replace("{tel}", TEL)
     p["tab"] = (p["path"].split("/")[0] + "/") if p["path"] else ""
     if p["tab"] not in dict(TABS):
-        p["tab"] = {"privacy/": "privacy/", "standards/": "about/"}.get(p["path"], "work-with-me/")  # the FAQ lives under Work With Me
+        p["tab"] = {"privacy/": "privacy/", "standards/": "about/", "colophon/": "about/"}.get(p["path"], "work-with-me/")  # the FAQ lives under Work With Me
     p["kind"] = p.get("type") or ("service" if p["tab"] == "services/" and p["path"] != "services/" else
                                   "case" if p["tab"] == "case-studies/" and p["path"] != "case-studies/" else "page")
     pages.append(finish(p))
@@ -132,7 +132,7 @@ def site_map_body():
            'Search engines read the same list in <a href="{root}sitemap.xml">sitemap.xml</a>, and AI tools in '
            '<a href="{root}llms.txt">llms.txt</a>.</p>',
            '<h2>Main pages</h2>', '<ul>']
-    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "work-with-me/", "faq/", "standards/", "contact/", "privacy/"]]
+    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "work-with-me/", "faq/", "standards/", "colophon/", "contact/", "privacy/"]]
     out.append('</ul>')
     for title, paths in SERVICE_GROUPS:
         out += [f'<h2>{title}</h2>', '<ul>'] + [li(by_path[x]) for x in paths] + ['</ul>']
@@ -473,7 +473,7 @@ def render(p):
 </main>
 <footer class="site-footer">
   <p><a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="tel:{TEL}">{PHONE}</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}standards/">Standards</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}standards/">Standards</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}colophon/">Colophon</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>
