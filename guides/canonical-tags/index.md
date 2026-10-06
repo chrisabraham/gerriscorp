@@ -59,3 +59,9 @@ A canonical can point to another domain, which is how a business that runs two s
 When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.
 
 Canonical audits are part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [large-site SEO](https://gerriscorp.com/services/large-sites/). For the related indexing status, see [Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+## References
+- [Google Search Central: What is canonicalization](https://developers.google.com/search/docs/crawling-indexing/canonicalization)
+- [Google Search Central: How to specify a canonical URL](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

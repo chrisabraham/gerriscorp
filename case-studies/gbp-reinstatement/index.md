@@ -32,4 +32,6 @@ The profile was reinstated in February 2025.
 
 Every case is different, and Google decides each one on its own schedule. That's why I now take on these cases as paid advisory work that starts with a written diagnostic, then a separately scoped appeal when there's a viable path. I also handle the investigative side of harder cases: reconstructing what happened to a profile, identifying the correct business record, and preserving an established profile and its reviews instead of starting over. See [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

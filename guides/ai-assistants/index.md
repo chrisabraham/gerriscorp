@@ -61,3 +61,10 @@ You can allow or block each in robots.txt. Blocking a training crawler keeps you
 AI answers vary with phrasing, location, account history, and time, so a single test proves little. Use a fixed set of prompts, run them on a schedule, and record the answers and citations. Add referral traffic from chatgpt.com, perplexity.ai, gemini.google.com, and copilot.microsoft.com in analytics, and watch which pages they land on.
 
 I do this work as [AI search visibility](https://gerriscorp.com/services/ai-search/), starting with an AI search readiness audit.
+
+## References
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

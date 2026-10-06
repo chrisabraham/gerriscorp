@@ -87,6 +87,9 @@ dd { margin: .2rem 0 0 0; }
 .portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
 .button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
 .button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
@@ -112,7 +115,8 @@ dd { margin: .2rem 0 0 0; }
    "inLanguage": "en-US",
    "publisher": {
     "@id": "https://gerriscorp.com/#org"
-   }
+   },
+   "publishingPrinciples": "https://gerriscorp.com/standards/"
   },
   {
    "@type": "ProfessionalService",
@@ -253,6 +257,7 @@ dd { margin: .2rem 0 0 0; }
     "https://www.upwork.com/freelancers/chrisjabraham",
     "https://github.com/chrisabraham/gerriscorp"
    ],
+   "publishingPrinciples": "https://gerriscorp.com/standards/",
    "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Gerris Corp services",
@@ -730,10 +735,19 @@ dd { margin: .2rem 0 0 0; }
 <p>When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.</p>
 
 <p class="related">Canonical audits are part of <a href="../../services/technical-seo/">technical SEO forensics</a> and <a href="../../services/large-sites/">large-site SEO</a>. For the related indexing status, see <a href="../../guides/crawled-not-indexed/">Crawled, currently not indexed</a>.</p>
+<h2>References</h2>
+<ul class="sources">
+  <li><a href="https://developers.google.com/search/docs/crawling-indexing/canonicalization">Google Search Central: What is canonicalization</a></li>
+  <li><a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">Google Search Central: How to specify a canonical URL</a></li>
+</ul>
+<aside class="author-box" aria-label="About the author">
+  <img src="../../chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="../../about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="../../standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../standards/">Standards</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

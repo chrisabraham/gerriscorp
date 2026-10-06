@@ -56,3 +56,9 @@ Paginated category pages are different from filters: they list different product
 Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.
 
 Crawl control for big catalogs is the focus of [large-site SEO](https://gerriscorp.com/services/large-sites/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/). See also the [programmatic indexing case study](https://gerriscorp.com/case-studies/programmatic-indexing/).
+
+## References
+- [Google Search Central: Managing crawling of faceted navigation URLs](https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation)
+- [Google Search Central: How to specify a canonical URL](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

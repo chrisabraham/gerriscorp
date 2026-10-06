@@ -70,3 +70,9 @@ Only if something on the site now answers the same need. Otherwise a 410 tells s
 There's no practical limit on the number of rules. Tens of thousands are normal on large sites. What matters is that each one is a single hop to a relevant page.
 
 Redirect mapping is part of every [website migration](https://gerriscorp.com/services/migrations/) I run. For the whole process, see the [migration checklist](https://gerriscorp.com/guides/migration-checklist/).
+
+## References
+- [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+- [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

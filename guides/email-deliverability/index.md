@@ -50,3 +50,9 @@ A bounce message carries a status code and usually a sentence from the receiving
 Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.
 
 I fix deliverability as part of [email authentication and DNS work](https://gerriscorp.com/services/email-and-dns/), usually alongside the domain cleanup that caused the problem.
+
+## References
+- [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
+- [Yahoo Sender Hub: Best practices](https://senders.yahooinc.com/best-practices/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

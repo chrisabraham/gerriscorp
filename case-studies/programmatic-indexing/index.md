@@ -29,4 +29,6 @@ Every recommendation goes to the owner in writing, with the evidence behind it.
 
 Ongoing. No recovery figures are claimed here; indexing at this scale moves over weeks and months. See [SEO for large and programmatic sites](https://gerriscorp.com/services/large-sites/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

@@ -47,3 +47,9 @@ After the fix ships, click "Validate fix" in the report. Validation takes days t
 A sudden rise concentrated in your most valuable template, with a matching traffic drop, is a technical emergency, and it's usually a rendering or template change. A slow, even scatter across low-value pages is housekeeping. Telling the two apart is the first job.
 
 I diagnose indexing problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [Search Console cleanup](https://gerriscorp.com/services/search-console/).
+
+## References
+- [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
+- [Google Search Central: JavaScript SEO basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

@@ -75,3 +75,9 @@ Allow: /
 Search Console's robots.txt report shows the version Google last fetched, when it fetched it, and any parsing errors. Before changing a live file, test the proposed rules against a list of important URLs with a parser that follows Google's rules, such as Google's open-source robots.txt library or a crawler like Screaming Frog with a custom robots.txt. Then confirm the change in Search Console after Google picks it up.
 
 robots.txt is part of every [crawler visibility audit](https://gerriscorp.com/services/crawler-visibility/) and every [technical SEO](https://gerriscorp.com/services/technical-seo/) engagement I run.
+
+## References
+- [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

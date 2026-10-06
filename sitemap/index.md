@@ -14,6 +14,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [About Chris Abraham](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
 - [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
+- [Editorial standards](https://gerriscorp.com/standards/): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
 - [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
 

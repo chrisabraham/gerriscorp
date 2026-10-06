@@ -28,4 +28,6 @@ Each item has a testable acceptance criterion, such as event links present in th
 
 Reports delivered and acknowledged; verification of the developer's fixes in progress. See [developer specs and implementation QA](https://gerriscorp.com/services/developers/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
