@@ -370,6 +370,7 @@ def render(p):
 <meta name="description" content="{e(p["description"])}">{robots}
 <link rel="canonical" href="{p["url"]}">
 <meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
 <link rel="icon" href="{r}logo.png" type="image/png">
 <link rel="apple-touch-icon" href="{r}logo.png">
 <link rel="manifest" href="{r}manifest.webmanifest">
