@@ -179,7 +179,7 @@ nav a:hover { background: var(--bar); text-decoration: underline; }
 nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
 .crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
 main { padding: 1.25rem 0 2rem; }
-h1 { color: var(--blue); font-size: 1.75rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h1 { color: var(--blue); font-size: 1.4rem; line-height: 1.25; margin: .25rem 0 1rem; }
 h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
 h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
 p, ul, ol, dl, table { margin: 0 0 1rem; }
@@ -206,7 +206,7 @@ dd { margin: .2rem 0 0 0; }
   body { font-size: 17px; }
   .top img { width: 52px; height: 52px; }
   nav a { padding: .45rem .55rem; }
-  h1 { font-size: 1.5rem; }
+  h1 { font-size: 1.25rem; }
   .portrait { width: 112px; height: 112px; margin-left: 1rem; }
 }
 """.strip()
