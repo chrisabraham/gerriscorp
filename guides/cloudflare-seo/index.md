@@ -63,3 +63,10 @@ No. Millions of sites share Cloudflare's addresses, and Google judges sites by t
 Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and proxying can be added record by record later. This site uses Cloudflare for DNS only, because GitHub Pages already provides HTTPS and a CDN.
 
 I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
+
+## References
+- [Cloudflare Docs: Verified bots](https://developers.cloudflare.com/bots/concepts/bot/verified-bots/)
+- [Cloudflare Docs: Cache](https://developers.cloudflare.com/cache/)
+- [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

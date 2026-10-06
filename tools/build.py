@@ -63,7 +63,7 @@ FILES = ["index",
          "case-studies/indexing-recovery", "case-studies/multi-location-entity", "case-studies/seasonal-retailer",
          "case-studies/gbp-reinstatement", "case-studies/umbraco-operations", "case-studies/ai-recruiting",
          "case-studies/data-cleanup", "case-studies/built-with-claude-code",
-         "about", "work-with-me", "faq", "contact", "privacy"]
+         "about", "work-with-me", "faq", "standards", "contact", "privacy"]
 SERVICE_GROUPS = [
     ("Consulting and technical direction", ["services/technical-lead/", "services/developers/", "services/agency-partner/",
                                             "services/rescue/", "services/ai-automation/", "services/data-cleanup/",
@@ -104,6 +104,8 @@ def finish(p):
                           "".join(re.findall(r'<section class="faq">(.*?)</section>', p["body"], re.S)), re.S)
     p["terms"] = re.findall(r'<dt id="([^"]+)">(.*?)</dt>\s*<dd>(.*?)</dd>', p["body"], re.S)
     p["words"] = len(text_of(p["body"]).split())
+    # sources: "Label | https://url ;; Label | https://url", the primary documentation behind a guide
+    p["sources"] = [tuple(x.strip() for x in item.split(" | ", 1)) for item in p.get("sources", "").split(" ;; ") if " | " in item]
     return p
 
 
@@ -116,7 +118,7 @@ for f in FILES:
     p["body"] = body.strip().replace("{email}", EMAIL).replace("{phone}", PHONE).replace("{tel}", TEL)
     p["tab"] = (p["path"].split("/")[0] + "/") if p["path"] else ""
     if p["tab"] not in dict(TABS):
-        p["tab"] = {"privacy/": "privacy/"}.get(p["path"], "work-with-me/")  # the FAQ lives under Work With Me
+        p["tab"] = {"privacy/": "privacy/", "standards/": "about/"}.get(p["path"], "work-with-me/")  # the FAQ lives under Work With Me
     p["kind"] = p.get("type") or ("service" if p["tab"] == "services/" and p["path"] != "services/" else
                                   "case" if p["tab"] == "case-studies/" and p["path"] != "case-studies/" else "page")
     pages.append(finish(p))
@@ -130,7 +132,7 @@ def site_map_body():
            'Search engines read the same list in <a href="{root}sitemap.xml">sitemap.xml</a>, and AI tools in '
            '<a href="{root}llms.txt">llms.txt</a>.</p>',
            '<h2>Main pages</h2>', '<ul>']
-    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "work-with-me/", "faq/", "contact/", "privacy/"]]
+    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "work-with-me/", "faq/", "standards/", "contact/", "privacy/"]]
     out.append('</ul>')
     for title, paths in SERVICE_GROUPS:
         out += [f'<h2>{title}</h2>', '<ul>'] + [li(by_path[x]) for x in paths] + ['</ul>']
@@ -198,6 +200,9 @@ dd { margin: .2rem 0 0 0; }
 .portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
 .button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
 .button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
@@ -244,6 +249,7 @@ ORG = {
                      {"@type": "ContactPoint", "contactType": "technical support", "email": EMAIL,
                       "telephone": "+1-202-352-5051", "availableLanguage": "English"}],
     "sameAs": ["https://www.upwork.com/freelancers/chrisjabraham", "https://github.com/chrisabraham/gerriscorp"],
+    "publishingPrinciples": SITE + "standards/",
 }
 PERSON = {
     "@type": "Person", "@id": AUTHOR, "name": "Chris Abraham", "alternateName": "Christopher Abraham",
@@ -265,7 +271,8 @@ PERSON = {
     "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
-           "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"}}
+           "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"},
+           "publishingPrinciples": SITE + "standards/"}
 
 
 ORG["hasOfferCatalog"] = {"@type": "OfferCatalog", "name": "Gerris Corp services", "itemListElement": [
@@ -309,7 +316,8 @@ def schema(p):
                       "description": p["description"], "url": p["url"], "mainEntityOfPage": {"@id": p["url"] + "#webpage"},
                       "author": {"@id": AUTHOR}, "publisher": {"@id": SITE + "#org"},
                       "datePublished": p.get("published", p["updated"]), "dateModified": p["updated"],
-                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"]})
+                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"],
+                      "citation": [{"@type": "CreativeWork", "name": label, "url": u} for label, u in p["sources"]]})
         page["mainEntity"] = {"@id": p["url"] + "#article"}
     if p["kind"] == "guide":
         graph.append({"@type": "TechArticle", "@id": p["url"] + "#article", "headline": p["h1"],
@@ -341,7 +349,16 @@ def body_html(p):
         by = (f'<p class="byline">By <a href="{r}about/">Chris Abraham</a> · Published {nice(p.get("published", p["updated"]))}'
               + (f' · Updated {nice(p["updated"])}' if p.get("published", p["updated"]) != p["updated"] else "") + "</p>")
         body = re.sub(r"(</h1>)", r"\1\n" + by, body, count=1)
-    else:
+    if p["sources"]:
+        body += ('\n<h2>References</h2>\n<ul class="sources">\n'
+                 + "".join(f'  <li><a href="{u}">{html.escape(label)}</a></li>\n' for label, u in p["sources"]) + "</ul>")
+    if p["kind"] in ("guide", "case"):
+        body += f"""
+<aside class="author-box" aria-label="About the author">
+  <img src="{r}chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="{r}about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="{r}standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>"""
+    if p["kind"] != "guide":
         body += f'\n<p class="updated">Updated {nice(p["updated"])}</p>'
     return body
 
@@ -455,7 +472,7 @@ def render(p):
 </main>
 <footer class="site-footer">
   <p><a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="tel:{TEL}">{PHONE}</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}standards/">Standards</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

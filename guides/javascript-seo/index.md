@@ -61,3 +61,9 @@ Crawl a sample of pages in Screaming Frog with JavaScript rendering off, then on
 Developers fix these problems fastest with evidence: the affected template, example URLs, the word count with and without rendering, the Search Console live test result, and a testable definition of done, such as "a curl of the product URL returns the specification table." There's a [sample ticket on the developers page](https://gerriscorp.com/services/developers/).
 
 I diagnose rendering problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/).
+
+## References
+- [Google Search Central: JavaScript SEO basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

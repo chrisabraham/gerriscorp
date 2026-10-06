@@ -73,3 +73,10 @@ Parked and secondary domains get spoofed too. Protect them with an SPF record of
 Website moves, CDN setups, and DNS provider changes are when mail records get lost. Export every record first, recreate them exactly, keep MX, SPF, DKIM, and DMARC untouched unless they're the point of the change, and send test messages afterward. Header analyzers show exactly which checks passed.
 
 I set this up and troubleshoot deliverability as [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) work.
+
+## References
+- [RFC 7208: Sender Policy Framework (SPF)](https://www.rfc-editor.org/rfc/rfc7208)
+- [RFC 7489: DMARC](https://www.rfc-editor.org/rfc/rfc7489)
+- [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

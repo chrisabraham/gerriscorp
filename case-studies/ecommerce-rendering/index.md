@@ -33,4 +33,6 @@ Raw HTML, rendered DOM, and crawler extraction compared on the same URLs, Search
 
 Diagnosis delivered and the test scoped; implementation sits with the client's contractor. The method is written up in the [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) and on [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

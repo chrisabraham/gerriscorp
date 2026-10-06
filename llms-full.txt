@@ -1531,6 +1531,13 @@ AI answers vary with phrasing, location, account history, and time, so a single 
 
 I do this work as [AI search visibility](https://gerriscorp.com/services/ai-search/), starting with an AI search readiness audit.
 
+## References
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -1597,6 +1604,12 @@ Developers fix these problems fastest with evidence: the affected template, exam
 
 I diagnose rendering problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/).
 
+## References
+- [Google Search Central: JavaScript SEO basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -1648,6 +1661,12 @@ After the fix ships, click "Validate fix" in the report. Validation takes days t
 A sudden rise concentrated in your most valuable template, with a matching traffic drop, is a technical emergency, and it's usually a rendering or template change. A slow, even scatter across low-value pages is housekeeping. Telling the two apart is the first job.
 
 I diagnose indexing problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [Search Console cleanup](https://gerriscorp.com/services/search-console/).
+
+## References
+- [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
+- [Google Search Central: JavaScript SEO basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -1725,6 +1744,12 @@ Check that the new templates render their content on the server. A migration fro
 A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.
 
 I run this process as [website migration support](https://gerriscorp.com/services/migrations/), before launch or after it.
+
+## References
+- [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+- [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -1804,6 +1829,13 @@ Website moves, CDN setups, and DNS provider changes are when mail records get lo
 
 I set this up and troubleshoot deliverability as [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) work.
 
+## References
+- [RFC 7208: Sender Policy Framework (SPF)](https://www.rfc-editor.org/rfc/rfc7208)
+- [RFC 7489: DMARC](https://www.rfc-editor.org/rfc/rfc7489)
+- [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -1865,6 +1897,12 @@ Brokers refresh their data from public records and other brokers constantly, so 
 5. For families and executives, cover spouses, children, and older addresses as well.
 
 I handle this for clients as part of [reputation and perception management](https://gerriscorp.com/services/reputation/).
+
+## References
+- [FTC Consumer Advice: People search sites that sell your information](https://consumer.ftc.gov/articles/what-know-about-people-search-sites-sell-your-information)
+- [California Privacy Protection Agency: Data broker registry](https://cppa.ca.gov/data_broker_registry/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -1936,6 +1974,13 @@ Sixteen months. For longer history, set up the bulk export to BigQuery now, beca
 
 Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/).
 
+## References
+- [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
+- [Google Search Status Dashboard](https://status.search.google.com/)
+- [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -1999,6 +2044,12 @@ A canonical can point to another domain, which is how a business that runs two s
 When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.
 
 Canonical audits are part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [large-site SEO](https://gerriscorp.com/services/large-sites/). For the related indexing status, see [Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+## References
+- [Google Search Central: What is canonicalization](https://developers.google.com/search/docs/crawling-indexing/canonicalization)
+- [Google Search Central: How to specify a canonical URL](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -2080,6 +2131,12 @@ Search Console's robots.txt report shows the version Google last fetched, when i
 
 robots.txt is part of every [crawler visibility audit](https://gerriscorp.com/services/crawler-visibility/) and every [technical SEO](https://gerriscorp.com/services/technical-seo/) engagement I run.
 
+## References
+- [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2156,6 +2213,12 @@ Yoast, Rank Math, and Shopify themes add sensible defaults for common types. For
 
 I build schema and entity markup as part of [on-page SEO](https://gerriscorp.com/services/on-page-seo/) and [AI search visibility](https://gerriscorp.com/services/ai-search/) work.
 
+## References
+- [Google Search Central: Introduction to structured data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
+- [Google Search Central: Local business structured data](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2231,6 +2294,12 @@ There's no practical limit on the number of rules. Tens of thousands are normal 
 
 Redirect mapping is part of every [website migration](https://gerriscorp.com/services/migrations/) I run. For the whole process, see the [migration checklist](https://gerriscorp.com/guides/migration-checklist/).
 
+## References
+- [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+- [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2291,6 +2360,12 @@ Paginated category pages are different from filters: they list different product
 Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.
 
 Crawl control for big catalogs is the focus of [large-site SEO](https://gerriscorp.com/services/large-sites/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/). See also the [programmatic indexing case study](https://gerriscorp.com/case-studies/programmatic-indexing/).
+
+## References
+- [Google Search Central: Managing crawling of faceted navigation URLs](https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation)
+- [Google Search Central: How to specify a canonical URL](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -2369,6 +2444,12 @@ Search Console retired its International Targeting report in 2022, so checking f
 
 I sort out international setups as part of [technical SEO](https://gerriscorp.com/services/technical-seo/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/) engagements, for clients across the English-speaking world.
 
+## References
+- [Google Search Central: Tell Google about localized versions of your page](https://developers.google.com/search/docs/specialty/international/localized-versions)
+- [Google Search Central: Managing multi-regional and multilingual sites](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2429,6 +2510,12 @@ Poor INP almost always means the browser's main thread was busy when the visitor
 Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.
 
 Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/).
+
+## References
+- [Google Search Central: Understanding Core Web Vitals and Google search results](https://developers.google.com/search/docs/appearance/core-web-vitals)
+- [web.dev: Web Vitals](https://web.dev/articles/vitals)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -2497,6 +2584,13 @@ No. Millions of sites share Cloudflare's addresses, and Google judges sites by t
 Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and proxying can be added record by record later. This site uses Cloudflare for DNS only, because GitHub Pages already provides HTTPS and a CDN.
 
 I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
+
+## References
+- [Cloudflare Docs: Verified bots](https://developers.cloudflare.com/bots/concepts/bot/verified-bots/)
+- [Cloudflare Docs: Cache](https://developers.cloudflare.com/cache/)
+- [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -2570,6 +2664,11 @@ After a consent banner goes live in Europe, GA4's European sessions usually fall
 
 Analytics setup and repair is part of [GA4 and analytics work](https://gerriscorp.com/services/analytics/). For a consent problem that hid half a site's traffic, see the [consent blocking case study](https://gerriscorp.com/case-studies/consent-blocking/).
 
+## References
+- [Google Tag Platform: Set up consent mode](https://developers.google.com/tag-platform/security/guides/consent)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2625,6 +2724,12 @@ Services such as mail-tester.com score a single message against authentication, 
 
 I fix deliverability as part of [email authentication and DNS work](https://gerriscorp.com/services/email-and-dns/), usually alongside the domain cleanup that caused the problem.
 
+## References
+- [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
+- [Yahoo Sender Hub: Best practices](https://senders.yahooinc.com/best-practices/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2679,6 +2784,11 @@ Assistants are well read and out of date in places. They'll describe a platform 
 The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.
 
 See how this site and other projects were built in the [Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+
+## References
+- [Anthropic: Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 
 ---
@@ -2799,6 +2909,8 @@ A file listing the URLs a site wants search engines to crawl, with optional last
 
 Want these applied to your site? See [services](https://gerriscorp.com/services/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 
 ---
 
@@ -2880,6 +2992,8 @@ Raw HTML, rendered DOM, and crawler extraction compared on the same URLs, Search
 
 Diagnosis delivered and the test scoped; implementation sits with the client's contractor. The method is written up in the [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) and on [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -2915,6 +3029,8 @@ Pages compared in a consenting browser session and a non-consenting one, the blo
 
 Consent platforms are now on almost every site, and their default settings can hide content from every crawler that never clicks "accept." It's one of three examples of the same failure on [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -2948,6 +3064,8 @@ Each item has a testable acceptance criterion, such as event links present in th
 ## Status
 
 Reports delivered and acknowledged; verification of the developer's fixes in progress. See [developer specs and implementation QA](https://gerriscorp.com/services/developers/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -2991,6 +3109,8 @@ When engagement fell in a short GA4 window, the easy story was that the blurry i
 
 Migration oversight and post-launch investigation delivered; further work under discussion. See [website migrations](https://gerriscorp.com/services/migrations/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3028,6 +3148,8 @@ Crawls before and after the prerendering change, raw HTML fetched from productio
 
 Core fixes deployed and verified; a final audit is under way. See [developer specs and implementation QA](https://gerriscorp.com/services/developers/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3063,6 +3185,8 @@ Structured data validated on product pages, crawls compared before and after, an
 ## Status
 
 The audit and a product pass were delivered; remaining items, such as thin descriptions and missing categories, are being reconciled with the owner before further edits. See [e-commerce SEO](https://gerriscorp.com/services/ecommerce/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -3103,6 +3227,8 @@ Writing the inventory down also protects the business the next time someone leav
 
 The assessment and the operational fixes described here were completed; larger rebuild and integration proposals are separate decisions for the brand. See [project rescue and takeovers](https://gerriscorp.com/services/rescue/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3138,6 +3264,8 @@ Every recommendation goes to the owner in writing, with the evidence behind it.
 
 Ongoing. No recovery figures are claimed here; indexing at this scale moves over weeks and months. See [SEO for large and programmatic sites](https://gerriscorp.com/services/large-sites/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3172,6 +3300,8 @@ Several indicators compared over time instead of one dashboard, with care to sep
 ## Status
 
 Recovery checks under way, with possible next steps including redirects, merchant structured data, and crawler policy. See [Search Console](https://gerriscorp.com/services/search-console/) and [analytics](https://gerriscorp.com/services/analytics/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -3219,6 +3349,8 @@ Multi-location businesses lose visibility when every page and listing says the s
 
 Delivered. See [multi-location and connected businesses](https://gerriscorp.com/services/multi-location/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3255,6 +3387,8 @@ I'm organizing access across several sites and Google properties, preserving the
 ## Status
 
 Audit in progress. See [multi-location and connected businesses](https://gerriscorp.com/services/multi-location/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -3294,6 +3428,8 @@ The profile was reinstated in February 2025.
 
 Every case is different, and Google decides each one on its own schedule. That's why I now take on these cases as paid advisory work that starts with a written diagnostic, then a separately scoped appeal when there's a viable path. I also handle the investigative side of harder cases: reconstructing what happened to a profile, identifying the correct business record, and preserving an established profile and its reviews instead of starting over. See [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3330,6 +3466,8 @@ Doing the work inside the client's CMS and process, checking the live page sourc
 ## Status
 
 Both ongoing.
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -3369,6 +3507,8 @@ The same audit works for any organization that cares how AI describes it to the 
 
 Deliverables completed; the engagement is paused. See [AI search visibility](https://gerriscorp.com/services/ai-search/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -3400,6 +3540,8 @@ An outreach tracker built with an AI tool claimed messages had been sent to cont
 - Sending volume matters as much as list quality: a mail-merge blast at high daily volume can get a sending account shut down, even with a clean list.
 
 See [data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -3451,6 +3593,8 @@ Gerris is plain HTML generated by a short Python script, also built with Claude 
 Building software with AI coding assistants is a real skill, and the skill is mostly the part that isn't typing: knowing what the job is, specifying behavior precisely, catching what the model got wrong, testing, and owning the decision to ship. That's what I bring to a client's tool, a client's repository, or a client's developers.
 
 [Tell me what you'd build](https://gerriscorp.com/contact/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -3652,6 +3796,50 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/standards/
+Updated: 2026-10-06
+
+# Editorial standards
+
+Gerris Corp is one consultant, so every guide, case study, and service page on this site is mine to stand behind. These are the rules I hold them to.
+
+## Experience comes first
+
+A case study here exists because I did the work: I was hired, I ran the diagnosis or the build, and I can say exactly which parts were mine and which belonged to the client's developer or agency. Guides grow out of the same engagements. If I haven't done something with my own hands, I don't write a how-to about it.
+
+## Claims point to their source
+
+When a guide says how Googlebot renders a page, how Bing treats a tag, what an RFC requires of a DNS record, or what a consent setting actually does, the page lists the documentation behind it under "References." The same list is published in the guide's structured data. Official documentation changes, so a reference is a starting point for your own check, not a replacement for it.
+
+## AI in the workflow, with a human at the end
+
+I build with AI tools every day, including Claude Code, and this site's generator and many first drafts came out of that work. The rule is simple: nothing goes live until I've read it, corrected it, and verified every factual statement. Biographical details about me come from my own records and published sources I can point to, never from what a chatbot has decided about me. The build itself refuses pages that break the house rules for titles, length, duplication, and voice.
+
+## Confidentiality is part of accuracy
+
+Clients are described by industry and problem. No names, addresses, revenue, case numbers, or private screenshots, and nothing that would let a reader work out who the client is. Ongoing and paused engagements are labeled that way. Outcomes are reported only when the evidence supports them, and "under way" is an honest status.
+
+## No one pays to be mentioned
+
+This site carries no affiliate links, sponsored content, or paid reviews. When I name a tool, a host, or a platform, it's because I use it or a client runs on it.
+
+## Dates mean something
+
+Every page shows its last update, and guides show both their publication and revision dates. When Google, Bing, or a standard changes in a way that affects a guide, the guide is revised and the date moves.
+
+## Found a mistake?
+
+Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) with the page address and the problem. I'll check it against the source and correct the page if you're right, and note any substantive change on the page itself.
+
+## More about me
+
+My background is on the [About page](https://gerriscorp.com/about/), how engagements run is on [Work With Me](https://gerriscorp.com/work-with-me/), and you can reach me through the [contact page](https://gerriscorp.com/contact/).
+
+Updated October 6, 2026
+
+
+---
+
 Source: https://gerriscorp.com/contact/
 Updated: 2026-10-05
 
@@ -3741,6 +3929,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [About Chris Abraham](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
 - [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
+- [Editorial standards](https://gerriscorp.com/standards/): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
 - [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
 

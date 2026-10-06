@@ -31,4 +31,6 @@ I'm organizing access across several sites and Google properties, preserving the
 
 Audit in progress. See [multi-location and connected businesses](https://gerriscorp.com/services/multi-location/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

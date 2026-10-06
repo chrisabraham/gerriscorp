@@ -114,3 +114,5 @@ How long a browser waits for the first byte of a server's response. Slow TTFB de
 A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.
 
 Want these applied to your site? See [services](https://gerriscorp.com/services/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

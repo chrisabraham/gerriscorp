@@ -57,3 +57,9 @@ Brokers refresh their data from public records and other brokers constantly, so 
 5. For families and executives, cover spouses, children, and older addresses as well.
 
 I handle this for clients as part of [reputation and perception management](https://gerriscorp.com/services/reputation/).
+
+## References
+- [FTC Consumer Advice: People search sites that sell your information](https://consumer.ftc.gov/articles/what-know-about-people-search-sites-sell-your-information)
+- [California Privacy Protection Agency: Data broker registry](https://cppa.ca.gov/data_broker_registry/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

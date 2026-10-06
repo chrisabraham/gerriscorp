@@ -36,4 +36,6 @@ When engagement fell in a short GA4 window, the easy story was that the blurry i
 
 Migration oversight and post-launch investigation delivered; further work under discussion. See [website migrations](https://gerriscorp.com/services/migrations/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

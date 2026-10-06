@@ -29,4 +29,6 @@ Several indicators compared over time instead of one dashboard, with care to sep
 
 Recovery checks under way, with possible next steps including redirects, merchant structured data, and crawler policy. See [Search Console](https://gerriscorp.com/services/search-console/) and [analytics](https://gerriscorp.com/services/analytics/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

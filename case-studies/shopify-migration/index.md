@@ -30,4 +30,6 @@ Structured data validated on product pages, crawls compared before and after, an
 
 The audit and a product pass were delivered; remaining items, such as thin descriptions and missing categories, are being reconciled with the owner before further edits. See [e-commerce SEO](https://gerriscorp.com/services/ecommerce/).
 
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
