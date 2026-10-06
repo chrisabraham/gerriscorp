@@ -37,7 +37,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 
 ## Guides
 
-- [Guides](https://gerriscorp.com/guides/index.md): Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.
+- [Guides](https://gerriscorp.com/guides/index.md): Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/index.md): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/index.md): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/index.md): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
