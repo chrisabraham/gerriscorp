@@ -503,6 +503,26 @@ for p in pages:
           + markdown(p) + "\n")
     open(os.path.join(p["path"], "index.md"), "w", encoding="utf-8").write(md)
 
+# Redirects for URLs from the old gerriscorp.com (src/redirects.tsv: old path, target).
+# GitHub Pages can't send server 301s, so each old path gets a tiny page with an instant
+# meta refresh and a canonical, which Google and Bing treat as a permanent redirect.
+redirects = 0
+for line in open("src/redirects.tsv", encoding="utf-8"):
+    old, target = line.rstrip("\n").split("\t")
+    rel = old.strip("/")
+    if not rel or rel.rstrip("/") + "/" in by_path:
+        continue
+    url = target if target.startswith("http") else SITE + target.lstrip("/")
+    if not target.startswith("http") and target.lstrip("/") not in by_path:
+        print("PROBLEM: redirect target missing:", old, "->", target)
+    os.makedirs(rel, exist_ok=True)
+    open(os.path.join(rel, "index.html"), "w", encoding="utf-8").write(
+        f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>'
+        f'<link rel="canonical" href="{url}"><meta http-equiv="refresh" content="0; url={url}">'
+        f'<meta name="robots" content="noindex"></head><body><p>This page has moved to <a href="{url}">{url}</a>.</p></body></html>\n')
+    redirects += 1
+print(f"{redirects} redirect pages written")
+
 base = SITE if LIVE else PREVIEW_BASE
 open("404.html", "w", encoding="utf-8").write(f"""<!doctype html>
 <html lang="en">
