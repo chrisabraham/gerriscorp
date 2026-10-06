@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guides to technical SEO, AI search, migrations, and email</title>
-<meta name="description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<link rel="canonical" href="https://gerriscorp.com/guides/">
+<title>How to use AI coding assistants on a website safely</title>
+<meta name="description" content="A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.">
+<link rel="canonical" href="https://gerriscorp.com/guides/ai-coding-assistants/">
 <meta name="author" content="Chris Abraham">
 <meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
-<link rel="icon" href="../logo.png" type="image/png">
-<link rel="apple-touch-icon" href="../logo.png">
-<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
 <link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
-<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../feed.xml">
-<link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
-<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
@@ -27,17 +27,20 @@
 </script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta property="og:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<meta property="og:url" content="https://gerriscorp.com/guides/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to use AI coding assistants on a website safely">
+<meta property="og:description" content="A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.">
+<meta property="og:url" content="https://gerriscorp.com/guides/ai-coding-assistants/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta name="twitter:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
+<meta name="twitter:title" content="How to use AI coding assistants on a website safely">
+<meta name="twitter:description" content="A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
@@ -584,11 +587,11 @@ dd { margin: .2rem 0 0 0; }
    }
   },
   {
-   "@type": "CollectionPage",
-   "@id": "https://gerriscorp.com/guides/#webpage",
-   "url": "https://gerriscorp.com/guides/",
-   "name": "Guides to technical SEO, AI search, migrations, and email",
-   "description": "Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.",
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/ai-coding-assistants/#webpage",
+   "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
+   "name": "How to use AI coding assistants on a website safely",
+   "description": "A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -602,131 +605,12 @@ dd { margin: .2rem 0 0 0; }
     "@id": "https://chrisabraham.com/#person"
    },
    "breadcrumb": {
-    "@id": "https://gerriscorp.com/guides/#breadcrumb"
-   },
-   "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-     {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://gerriscorp.com/guides/ai-assistants/",
-      "name": "How AI assistants decide what to say about your business"
-     },
-     {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://gerriscorp.com/guides/javascript-seo/",
-      "name": "How to tell if JavaScript is hiding your content from Google and AI"
-     },
-     {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://gerriscorp.com/guides/crawled-not-indexed/",
-      "name": "\"Crawled, currently not indexed\": what it means and how to fix it"
-     },
-     {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://gerriscorp.com/guides/migration-checklist/",
-      "name": "The website migration SEO checklist"
-     },
-     {
-      "@type": "ListItem",
-      "position": 5,
-      "url": "https://gerriscorp.com/guides/email-authentication/",
-      "name": "SPF, DKIM, and DMARC for every domain that sends email"
-     },
-     {
-      "@type": "ListItem",
-      "position": 6,
-      "url": "https://gerriscorp.com/guides/personal-information-removal/",
-      "name": "How to remove your personal information from data brokers and search"
-     },
-     {
-      "@type": "ListItem",
-      "position": 7,
-      "url": "https://gerriscorp.com/guides/traffic-drop/",
-      "name": "How to diagnose a Google traffic drop in Search Console"
-     },
-     {
-      "@type": "ListItem",
-      "position": 8,
-      "url": "https://gerriscorp.com/guides/canonical-tags/",
-      "name": "Canonical tags: how Google chooses which URL to index"
-     },
-     {
-      "@type": "ListItem",
-      "position": 9,
-      "url": "https://gerriscorp.com/guides/robots-txt/",
-      "name": "How robots.txt works, and the mistakes that cost traffic"
-     },
-     {
-      "@type": "ListItem",
-      "position": 10,
-      "url": "https://gerriscorp.com/guides/structured-data/",
-      "name": "Structured data in 2026: which schema markup is worth adding"
-     },
-     {
-      "@type": "ListItem",
-      "position": 11,
-      "url": "https://gerriscorp.com/guides/301-redirects/",
-      "name": "How to plan 301 redirects that keep your rankings and links"
-     },
-     {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://gerriscorp.com/guides/faceted-navigation/",
-      "name": "Faceted navigation SEO: filters, parameters, and crawl budget"
-     },
-     {
-      "@type": "ListItem",
-      "position": 13,
-      "url": "https://gerriscorp.com/guides/hreflang/",
-      "name": "hreflang for English-language sites serving the US, UK, Canada, and Australia"
-     },
-     {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://gerriscorp.com/guides/core-web-vitals/",
-      "name": "Core Web Vitals explained: LCP, INP, CLS, and the fixes that work"
-     },
-     {
-      "@type": "ListItem",
-      "position": 15,
-      "url": "https://gerriscorp.com/guides/cloudflare-seo/",
-      "name": "Cloudflare settings that help or hurt SEO and AI crawlers"
-     },
-     {
-      "@type": "ListItem",
-      "position": 16,
-      "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
-      "name": "Google Consent Mode v2 for GA4: a practical setup guide"
-     },
-     {
-      "@type": "ListItem",
-      "position": 17,
-      "url": "https://gerriscorp.com/guides/email-deliverability/",
-      "name": "Why business email lands in spam, and how to find the cause"
-     },
-     {
-      "@type": "ListItem",
-      "position": 18,
-      "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
-      "name": "How to use AI coding assistants on a business website safely"
-     },
-     {
-      "@type": "ListItem",
-      "position": 19,
-      "url": "https://gerriscorp.com/guides/glossary/",
-      "name": "Glossary of SEO, AI search, and technical website terms"
-     }
-    ]
+    "@id": "https://gerriscorp.com/guides/ai-coding-assistants/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://gerriscorp.com/guides/#breadcrumb",
+   "@id": "https://gerriscorp.com/guides/ai-coding-assistants/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -739,8 +623,35 @@ dd { margin: .2rem 0 0 0; }
      "position": 2,
      "name": "Guides",
      "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI Coding Assistants for Websites",
+     "item": "https://gerriscorp.com/guides/ai-coding-assistants/"
     }
    ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/ai-coding-assistants/#article",
+   "headline": "How to use AI coding assistants on a business website safely",
+   "description": "A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.",
+   "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/ai-coding-assistants/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-10-06",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 899
   }
  ]
 }
@@ -750,91 +661,75 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
   <div>
-    <a class="brand" href="../">Gerris</a>
+    <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../services/">Services</a></li>
-    <li><a href="../guides/" aria-current="page">Guides</a></li>
-    <li><a href="../case-studies/">Case Studies</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../work-with-me/">Work With Me</a></li>
-    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
   </ul>
 </nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › AI Coding Assistants for Websites</p>
 <main id="main">
-<h1>Guides</h1>
-<p class="lead">Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.</p>
+<h1>How to use AI coding assistants on a business website safely</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="lead">AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.</p>
 
-<h2>AI search</h2>
+<h2>Start with a written spec</h2>
+<p>An assistant does exactly what it understands you to want, at full speed. Before any code, write down the goal, the constraints, and what done looks like. "Move the blog to the new platform" is a wish. A spec says: every old URL keeps working or redirects to its closest match, titles and dates carry over, images are copied and not hotlinked, the build fails if any internal link points to a missing page, and nothing ships until the redirect list has been checked. The assistant can help draft this, and a person decides it.</p>
+
+<h2>Give the project a memory</h2>
+<p>Claude Code reads a <code>CLAUDE.md</code> file at the start of every session, and other tools have their own equivalents. Put the things that must never be forgotten there: the build command, the deploy process, the voice rules for copy, the files that must never be committed, the decisions already made and why. This site's project file holds its style rules and a list of names that must never appear on the site. The assistant reads it every time; a new contractor would need the same briefing.</p>
+
+<h2>Turn the rules into checks</h2>
+<p>Instructions get forgotten. Automated checks don't. Every rule that can be tested by a script should be. The build for this site refuses to finish if a page title falls outside 50 to 60 characters, if a meta description is the wrong length, if two pages share a title, if any page links to one that doesn't exist, or if two pages share too much of their wording. When the assistant writes a new page, the build tells it what's wrong before I ever see the draft. The same approach works for any site: link checkers, HTML validators, accessibility tests, and unit tests for anything with logic in it.</p>
+
+<h2>Small changes, reviewed</h2>
 <ul>
-  <li><a href="../guides/ai-assistants/">How AI assistants decide what to say about your business</a>: training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.</li>
-  <li><a href="../guides/structured-data/">Structured data in 2026: which schema markup is worth adding</a>: the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.</li>
-  <li><a href="../guides/ai-coding-assistants/">How to use AI coding assistants on a business website safely</a>: specs, project memory, automated checks, review, and keeping secrets and production out of reach.</li>
+  <li><strong>Use version control.</strong> Every change goes through Git, on a branch, so anything can be undone and every change can be read as a diff.</li>
+  <li><strong>Keep each change small enough to read.</strong> A change that touches three files gets reviewed properly. One that touches three hundred gets skimmed.</li>
+  <li><strong>Read the diff, not the summary.</strong> An assistant's description of what it changed is a claim. The diff is the evidence.</li>
+  <li><strong>Watch for scope creep.</strong> Assistants like to tidy things nobody asked them to touch. Reject unrelated changes and ask again.</li>
 </ul>
 
-<h2>Diagnosis</h2>
+<h2>Keep secrets and production out of reach</h2>
+<p>Never paste passwords, API keys, or customer data into a conversation, and never commit them to a repository. Give the assistant access to a copy of the site, a staging environment, or a local build, and keep deploys to production a deliberate human step, or an automated pipeline that runs only after the checks pass. For anything destructive, such as deleting files, rewriting history, or changing DNS, require explicit confirmation every time. Inventory the DNS records before touching any of them; a careless change can stop a company's email.</p>
+
+<h2>Verify against the real world</h2>
+<p>Assistants are well read and out of date in places. They'll describe a platform setting that moved last year, or a search feature Google retired, with total confidence. For anything that depends on a third party's current behavior, check the vendor's documentation or test it directly. After deploying, check the live result: fetch the pages, test the redirects with <code>curl</code>, run PageSpeed Insights, and look at the page in a browser. "The code looks right" isn't the same as "the site works."</p>
+
+<h2>Where assistants are strongest</h2>
 <ul>
-  <li><a href="../guides/traffic-drop/">How to diagnose a Google traffic drop in Search Console</a>: confirm the drop, find where it is, line it up with dates, and name the cause.</li>
-  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
-  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
+  <li><strong>Bulk, rule-based work.</strong> Building a redirect map from hundreds of old URLs, rewriting templates across a site, generating structured data from page content, converting content between platforms.</li>
+  <li><strong>Audits at scale.</strong> Checking every page for missing titles, broken links, duplicate descriptions, or images without alt text, then fixing them.</li>
+  <li><strong>Small internal tools.</strong> Scripts that pull reports, clean exports, or automate a weekly chore.</li>
+  <li><strong>Explaining unfamiliar code.</strong> Reading an inherited theme or plugin and describing what it actually does.</li>
 </ul>
 
-<h2>Technical SEO</h2>
+<h2>Where to slow down</h2>
 <ul>
-  <li><a href="../guides/canonical-tags/">Canonical tags: how Google chooses which URL to index</a>: the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.</li>
-  <li><a href="../guides/robots-txt/">How robots.txt works, and the mistakes that cost traffic</a>: matching rules, crawling versus indexing, status codes, and AI crawlers.</li>
-  <li><a href="../guides/faceted-navigation/">Faceted navigation SEO: filters, parameters, and crawl budget</a>: which filter pages to index and how to keep the rest out of the crawl.</li>
-  <li><a href="../guides/hreflang/">hreflang for English-language sites serving the US, UK, Canada, and Australia</a>: the codes, the return links, and the errors that void them.</li>
+  <li><strong>Judgment calls.</strong> Which pages to merge, which claims a page should make, what a client would or wouldn't want public. The assistant can propose; a person decides.</li>
+  <li><strong>Security and payments.</strong> Authentication, checkout, and anything handling personal data needs an expert review regardless of who wrote it.</li>
+  <li><strong>Long sessions.</strong> As a conversation grows, early instructions carry less weight. Restate the important rules, or keep them in the project memory file where they're read fresh.</li>
 </ul>
 
-<h2>Speed and infrastructure</h2>
-<ul>
-  <li><a href="../guides/core-web-vitals/">Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</a>: field data versus lab data, and what moves each number.</li>
-  <li><a href="../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>: proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.</li>
-</ul>
+<h2>Someone has to be accountable</h2>
+<p>The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.</p>
 
-<h2>Migrations and redirects</h2>
-<ul>
-  <li><a href="../guides/migration-checklist/">The website migration SEO checklist</a>: the URL inventory, the 301 redirect map, launch day, and the weeks after.</li>
-  <li><a href="../guides/301-redirects/">How to plan 301 redirects that keep your rankings and links</a>: which redirect to use, mapping, implementation by platform, testing, and how long to keep them.</li>
-</ul>
-
-<h2>Analytics</h2>
-<ul>
-  <li><a href="../guides/ga4-consent-mode/">Google Consent Mode v2 for GA4: a practical setup guide</a>: the four signals, basic and advanced mode, regional defaults, and how to verify it.</li>
-</ul>
-
-<h2>Email and domains</h2>
-<ul>
-  <li><a href="../guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a>: what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.</li>
-  <li><a href="../guides/email-deliverability/">Why business email lands in spam, and how to find the cause</a>: headers, authentication failures, reputation, blocklists, and sending practices.</li>
-</ul>
-
-<h2>Privacy and reputation</h2>
-<ul>
-  <li><a href="../guides/personal-information-removal/">How to remove your personal information from data brokers and search</a>: opt-outs, Google's Results about you, and California's DROP.</li>
-</ul>
-
-<h2>Reference</h2>
-<ul>
-  <li><a href="../guides/glossary/">Glossary of SEO, AI search, and technical website terms</a>: plain definitions, from 301 redirects to XML sitemaps.</li>
-</ul>
-
-<h2>How these guides are written</h2>
-<p>Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.</p>
-
-<p>New guides are announced in the <a href="../feed.xml">Atom feed</a>.</p>
-<p class="updated">Updated October 6, 2026</p>
+<p class="related">See how this site and other projects were built in the <a href="../../case-studies/built-with-claude-code/">Claude Code case study</a>, and what I build for clients under <a href="../../services/ai-automation/">AI tools and automation</a> and <a href="../../services/technical-lead/">fractional technical lead</a>.</p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../faq/">FAQ</a> · <a href="../privacy/">Privacy</a> · <a href="../sitemap/">Site map</a> · <a href="../guides/glossary/">Glossary</a> · <a href="../llms.txt">llms.txt</a> · <a href="../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

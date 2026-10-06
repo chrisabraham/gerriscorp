@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guides to technical SEO, AI search, migrations, and email</title>
-<meta name="description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<link rel="canonical" href="https://gerriscorp.com/guides/">
+<title>How to plan 301 redirects that keep rankings and links</title>
+<meta name="description" content="Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.">
+<link rel="canonical" href="https://gerriscorp.com/guides/301-redirects/">
 <meta name="author" content="Chris Abraham">
 <meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
-<link rel="icon" href="../logo.png" type="image/png">
-<link rel="apple-touch-icon" href="../logo.png">
-<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
 <link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
-<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../feed.xml">
-<link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
-<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
@@ -27,17 +27,20 @@
 </script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta property="og:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<meta property="og:url" content="https://gerriscorp.com/guides/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to plan 301 redirects that keep rankings and links">
+<meta property="og:description" content="Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.">
+<meta property="og:url" content="https://gerriscorp.com/guides/301-redirects/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta name="twitter:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
+<meta name="twitter:title" content="How to plan 301 redirects that keep rankings and links">
+<meta name="twitter:description" content="Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
@@ -584,11 +587,11 @@ dd { margin: .2rem 0 0 0; }
    }
   },
   {
-   "@type": "CollectionPage",
-   "@id": "https://gerriscorp.com/guides/#webpage",
-   "url": "https://gerriscorp.com/guides/",
-   "name": "Guides to technical SEO, AI search, migrations, and email",
-   "description": "Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.",
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/301-redirects/#webpage",
+   "url": "https://gerriscorp.com/guides/301-redirects/",
+   "name": "How to plan 301 redirects that keep rankings and links",
+   "description": "Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -602,131 +605,12 @@ dd { margin: .2rem 0 0 0; }
     "@id": "https://chrisabraham.com/#person"
    },
    "breadcrumb": {
-    "@id": "https://gerriscorp.com/guides/#breadcrumb"
-   },
-   "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-     {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://gerriscorp.com/guides/ai-assistants/",
-      "name": "How AI assistants decide what to say about your business"
-     },
-     {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://gerriscorp.com/guides/javascript-seo/",
-      "name": "How to tell if JavaScript is hiding your content from Google and AI"
-     },
-     {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://gerriscorp.com/guides/crawled-not-indexed/",
-      "name": "\"Crawled, currently not indexed\": what it means and how to fix it"
-     },
-     {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://gerriscorp.com/guides/migration-checklist/",
-      "name": "The website migration SEO checklist"
-     },
-     {
-      "@type": "ListItem",
-      "position": 5,
-      "url": "https://gerriscorp.com/guides/email-authentication/",
-      "name": "SPF, DKIM, and DMARC for every domain that sends email"
-     },
-     {
-      "@type": "ListItem",
-      "position": 6,
-      "url": "https://gerriscorp.com/guides/personal-information-removal/",
-      "name": "How to remove your personal information from data brokers and search"
-     },
-     {
-      "@type": "ListItem",
-      "position": 7,
-      "url": "https://gerriscorp.com/guides/traffic-drop/",
-      "name": "How to diagnose a Google traffic drop in Search Console"
-     },
-     {
-      "@type": "ListItem",
-      "position": 8,
-      "url": "https://gerriscorp.com/guides/canonical-tags/",
-      "name": "Canonical tags: how Google chooses which URL to index"
-     },
-     {
-      "@type": "ListItem",
-      "position": 9,
-      "url": "https://gerriscorp.com/guides/robots-txt/",
-      "name": "How robots.txt works, and the mistakes that cost traffic"
-     },
-     {
-      "@type": "ListItem",
-      "position": 10,
-      "url": "https://gerriscorp.com/guides/structured-data/",
-      "name": "Structured data in 2026: which schema markup is worth adding"
-     },
-     {
-      "@type": "ListItem",
-      "position": 11,
-      "url": "https://gerriscorp.com/guides/301-redirects/",
-      "name": "How to plan 301 redirects that keep your rankings and links"
-     },
-     {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://gerriscorp.com/guides/faceted-navigation/",
-      "name": "Faceted navigation SEO: filters, parameters, and crawl budget"
-     },
-     {
-      "@type": "ListItem",
-      "position": 13,
-      "url": "https://gerriscorp.com/guides/hreflang/",
-      "name": "hreflang for English-language sites serving the US, UK, Canada, and Australia"
-     },
-     {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://gerriscorp.com/guides/core-web-vitals/",
-      "name": "Core Web Vitals explained: LCP, INP, CLS, and the fixes that work"
-     },
-     {
-      "@type": "ListItem",
-      "position": 15,
-      "url": "https://gerriscorp.com/guides/cloudflare-seo/",
-      "name": "Cloudflare settings that help or hurt SEO and AI crawlers"
-     },
-     {
-      "@type": "ListItem",
-      "position": 16,
-      "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
-      "name": "Google Consent Mode v2 for GA4: a practical setup guide"
-     },
-     {
-      "@type": "ListItem",
-      "position": 17,
-      "url": "https://gerriscorp.com/guides/email-deliverability/",
-      "name": "Why business email lands in spam, and how to find the cause"
-     },
-     {
-      "@type": "ListItem",
-      "position": 18,
-      "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
-      "name": "How to use AI coding assistants on a business website safely"
-     },
-     {
-      "@type": "ListItem",
-      "position": 19,
-      "url": "https://gerriscorp.com/guides/glossary/",
-      "name": "Glossary of SEO, AI search, and technical website terms"
-     }
-    ]
+    "@id": "https://gerriscorp.com/guides/301-redirects/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://gerriscorp.com/guides/#breadcrumb",
+   "@id": "https://gerriscorp.com/guides/301-redirects/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -739,6 +623,63 @@ dd { margin: .2rem 0 0 0; }
      "position": 2,
      "name": "Guides",
      "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "301 Redirects",
+     "item": "https://gerriscorp.com/guides/301-redirects/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/301-redirects/#article",
+   "headline": "How to plan 301 redirects that keep your rankings and links",
+   "description": "Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.",
+   "url": "https://gerriscorp.com/guides/301-redirects/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/301-redirects/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-10-06",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 1061
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/guides/301-redirects/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do 301 redirects lose PageRank?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Google has said for years that 301, 302, and 308 redirects pass link value without a penalty. The losses people see come from redirecting to the wrong page, from chains, or from removing redirects too soon."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I redirect a page I deleted on purpose?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only if something on the site now answers the same need. Otherwise a 410 tells search engines the removal was deliberate, and they drop the URL a little faster than with a 404."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many redirects is too many?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There's no practical limit on the number of rules. Tens of thousands are normal on large sites. What matters is that each one is a single hop to a relevant page."
+     }
     }
    ]
   }
@@ -750,91 +691,89 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
   <div>
-    <a class="brand" href="../">Gerris</a>
+    <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../services/">Services</a></li>
-    <li><a href="../guides/" aria-current="page">Guides</a></li>
-    <li><a href="../case-studies/">Case Studies</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../work-with-me/">Work With Me</a></li>
-    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
   </ul>
 </nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › 301 Redirects</p>
 <main id="main">
-<h1>Guides</h1>
-<p class="lead">Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.</p>
+<h1>How to plan 301 redirects that keep your rankings and links</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="lead">A redirect tells browsers and search engines that a page has moved. Done well, it carries the old page's links, bookmarks, and search history to the new address. Done badly, it quietly throws all of that away. Here's how I plan them.</p>
 
-<h2>AI search</h2>
+<h2>Which redirect to use</h2>
+<table>
+<thead><tr><th>Type</th><th>Meaning</th><th>Use it for</th></tr></thead>
+<tbody>
+<tr><td>301</td><td>Moved permanently</td><td>Almost every move: renamed pages, merged pages, domain changes, HTTP to HTTPS</td></tr>
+<tr><td>308</td><td>Moved permanently, and the request method stays the same</td><td>The same jobs as a 301; some servers and APIs prefer it</td></tr>
+<tr><td>302 or 307</td><td>Moved temporarily</td><td>A page that will come back: a short promotion, maintenance, a geographic or login handoff</td></tr>
+<tr><td>Meta refresh at zero seconds</td><td>An HTML instruction to load another page</td><td>Hosts that can't send server redirects, such as GitHub Pages</td></tr>
+<tr><td>JavaScript redirect</td><td>A script that changes the location</td><td>A last resort; it only works once the page renders</td></tr>
+</tbody>
+</table>
+<p>Google treats 301 and 308 as strong signals that the new URL should replace the old one in its index. A temporary redirect is a weaker signal, though Google may eventually treat a 302 that never goes away as permanent. An instant meta refresh is read as a permanent move too, which is how this site handles the hundreds of old gerriscorp.com addresses it inherited: GitHub Pages can't send a real 301, so each old path holds a tiny page that forwards immediately and names the new page as its canonical.</p>
+
+<h2>Map every old URL to its closest equivalent</h2>
+<p>The redirect map is a two-column list: old URL, new URL. The work is in the second column. Each old page goes to the page that answers the same question its visitors arrived with.</p>
 <ul>
-  <li><a href="../guides/ai-assistants/">How AI assistants decide what to say about your business</a>: training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.</li>
-  <li><a href="../guides/structured-data/">Structured data in 2026: which schema markup is worth adding</a>: the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.</li>
-  <li><a href="../guides/ai-coding-assistants/">How to use AI coding assistants on a business website safely</a>: specs, project memory, automated checks, review, and keeping secrets and production out of reach.</li>
+  <li><strong>One to one when you can.</strong> A product, article, or service that still exists goes to its new address.</li>
+  <li><strong>Merged pages go to the survivor.</strong> Three thin pages folded into one strong page all point at it.</li>
+  <li><strong>Retired pages go to the nearest parent.</strong> A discontinued product goes to its category, and a retired service goes to the services overview.</li>
+  <li><strong>Junk can stay gone.</strong> Spam URLs, old tag archives, and test pages with no links and no traffic can return a 404 or 410.</li>
 </ul>
+<p>Send old pages to relevant pages, and keep the home page for the home page. Google treats a mass redirect to an unrelated page as a soft 404, so the old page's signals are dropped anyway, and visitors land somewhere that doesn't answer what they came for.</p>
 
-<h2>Diagnosis</h2>
+<h2>Where the old URLs come from</h2>
+<p>Build the list from every source you have, because no single one is complete. Crawl the current site with a tool such as Screaming Frog. Export pages from Search Console's Performance report and from analytics landing pages. Pull linked pages from a backlink tool. For an old site that's already gone, the Internet Archive's Wayback Machine keeps a record of URLs it captured, which is how I recovered more than six hundred old paths for this domain.</p>
+
+<h2>Where to implement them</h2>
 <ul>
-  <li><a href="../guides/traffic-drop/">How to diagnose a Google traffic drop in Search Console</a>: confirm the drop, find where it is, line it up with dates, and name the cause.</li>
-  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
-  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
+  <li><strong>At the edge.</strong> Cloudflare's Redirect Rules and Bulk Redirects answer before the request ever reaches your server, which is fast and survives a change of host or platform.</li>
+  <li><strong>On the web server.</strong> Apache uses <code>Redirect 301</code> or <code>RewriteRule</code> in the configuration or <code>.htaccess</code>; Nginx uses <code>return 301</code> inside a <code>location</code> block.</li>
+  <li><strong>In the platform.</strong> WordPress handles them with a plugin such as Redirection or the redirect manager in Rank Math. Shopify has a URL redirects screen in the admin, and it only applies a redirect when the old path would otherwise return a 404. Squarespace, Wix, and Webflow each have a redirects panel in their settings.</li>
+  <li><strong>In the framework.</strong> Next.js, Netlify, and Vercel take redirects in a configuration file that ships with the code, which keeps them under version control.</li>
 </ul>
+<p>Pick one layer and keep all the redirects there. Rules split across Cloudflare, the server, and a plugin are how loops and chains happen.</p>
 
-<h2>Technical SEO</h2>
-<ul>
-  <li><a href="../guides/canonical-tags/">Canonical tags: how Google chooses which URL to index</a>: the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.</li>
-  <li><a href="../guides/robots-txt/">How robots.txt works, and the mistakes that cost traffic</a>: matching rules, crawling versus indexing, status codes, and AI crawlers.</li>
-  <li><a href="../guides/faceted-navigation/">Faceted navigation SEO: filters, parameters, and crawl budget</a>: which filter pages to index and how to keep the rest out of the crawl.</li>
-  <li><a href="../guides/hreflang/">hreflang for English-language sites serving the US, UK, Canada, and Australia</a>: the codes, the return links, and the errors that void them.</li>
-</ul>
+<h2>Chains and loops</h2>
+<p>A chain is a redirect that lands on another redirect: A goes to B, and B goes to C. Googlebot follows up to ten hops, but each hop costs time for visitors and makes the signal weaker. When a site has been redesigned more than once, old redirects often point at URLs that are themselves redirected now. Update the old rules so every one points straight at the final address.</p>
+<p>A loop is A to B and B back to A. Browsers give up with an error. Loops usually come from two layers fighting, such as an HTTPS rule in Cloudflare and a different HTTPS rule on the server.</p>
 
-<h2>Speed and infrastructure</h2>
-<ul>
-  <li><a href="../guides/core-web-vitals/">Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</a>: field data versus lab data, and what moves each number.</li>
-  <li><a href="../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>: proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.</li>
-</ul>
+<h2>How to test them</h2>
+<p>From a terminal, <code>curl -sIL https://example.com/old-page</code> prints every hop with its status code, so you can see a 301 followed by a 200 and nothing in between. For the full map, feed the old URL list to a crawler in list mode and check three things for each row: the first response is a 301 or 308, the final response is a 200, and the final URL matches the target in the map. Then spot check the same URLs in a private browser window, since your own browser caches permanent redirects aggressively.</p>
 
-<h2>Migrations and redirects</h2>
-<ul>
-  <li><a href="../guides/migration-checklist/">The website migration SEO checklist</a>: the URL inventory, the 301 redirect map, launch day, and the weeks after.</li>
-  <li><a href="../guides/301-redirects/">How to plan 301 redirects that keep your rankings and links</a>: which redirect to use, mapping, implementation by platform, testing, and how long to keep them.</li>
-</ul>
+<h2>How long to keep them</h2>
+<p>Google's advice is at least a year. I keep them indefinitely. Backlinks from other sites never get updated, and a redirect costs almost nothing to keep. Removing redirects after a year is how a business loses links it earned a decade ago.</p>
 
-<h2>Analytics</h2>
-<ul>
-  <li><a href="../guides/ga4-consent-mode/">Google Consent Mode v2 for GA4: a practical setup guide</a>: the four signals, basic and advanced mode, regional defaults, and how to verify it.</li>
-</ul>
+<section class="faq">
+<h2>Questions about redirects</h2>
+<h3>Do 301 redirects lose PageRank?</h3>
+<p>No. Google has said for years that 301, 302, and 308 redirects pass link value without a penalty. The losses people see come from redirecting to the wrong page, from chains, or from removing redirects too soon.</p>
+<h3>Should I redirect a page I deleted on purpose?</h3>
+<p>Only if something on the site now answers the same need. Otherwise a 410 tells search engines the removal was deliberate, and they drop the URL a little faster than with a 404.</p>
+<h3>How many redirects is too many?</h3>
+<p>There's no practical limit on the number of rules. Tens of thousands are normal on large sites. What matters is that each one is a single hop to a relevant page.</p>
+</section>
 
-<h2>Email and domains</h2>
-<ul>
-  <li><a href="../guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a>: what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.</li>
-  <li><a href="../guides/email-deliverability/">Why business email lands in spam, and how to find the cause</a>: headers, authentication failures, reputation, blocklists, and sending practices.</li>
-</ul>
-
-<h2>Privacy and reputation</h2>
-<ul>
-  <li><a href="../guides/personal-information-removal/">How to remove your personal information from data brokers and search</a>: opt-outs, Google's Results about you, and California's DROP.</li>
-</ul>
-
-<h2>Reference</h2>
-<ul>
-  <li><a href="../guides/glossary/">Glossary of SEO, AI search, and technical website terms</a>: plain definitions, from 301 redirects to XML sitemaps.</li>
-</ul>
-
-<h2>How these guides are written</h2>
-<p>Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.</p>
-
-<p>New guides are announced in the <a href="../feed.xml">Atom feed</a>.</p>
-<p class="updated">Updated October 6, 2026</p>
+<p class="related">Redirect mapping is part of every <a href="../../services/migrations/">website migration</a> I run. For the whole process, see the <a href="../../guides/migration-checklist/">migration checklist</a>.</p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../faq/">FAQ</a> · <a href="../privacy/">Privacy</a> · <a href="../sitemap/">Site map</a> · <a href="../guides/glossary/">Glossary</a> · <a href="../llms.txt">llms.txt</a> · <a href="../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

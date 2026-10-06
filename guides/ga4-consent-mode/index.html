@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guides to technical SEO, AI search, migrations, and email</title>
-<meta name="description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<link rel="canonical" href="https://gerriscorp.com/guides/">
+<title>Google Consent Mode v2 for GA4: a practical setup guide</title>
+<meta name="description" content="What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.">
+<link rel="canonical" href="https://gerriscorp.com/guides/ga4-consent-mode/">
 <meta name="author" content="Chris Abraham">
 <meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
-<link rel="icon" href="../logo.png" type="image/png">
-<link rel="apple-touch-icon" href="../logo.png">
-<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
 <link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
-<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../feed.xml">
-<link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
-<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
@@ -27,17 +27,20 @@
 </script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta property="og:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<meta property="og:url" content="https://gerriscorp.com/guides/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google Consent Mode v2 for GA4: a practical setup guide">
+<meta property="og:description" content="What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.">
+<meta property="og:url" content="https://gerriscorp.com/guides/ga4-consent-mode/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta name="twitter:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
+<meta name="twitter:title" content="Google Consent Mode v2 for GA4: a practical setup guide">
+<meta name="twitter:description" content="What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
@@ -584,11 +587,11 @@ dd { margin: .2rem 0 0 0; }
    }
   },
   {
-   "@type": "CollectionPage",
-   "@id": "https://gerriscorp.com/guides/#webpage",
-   "url": "https://gerriscorp.com/guides/",
-   "name": "Guides to technical SEO, AI search, migrations, and email",
-   "description": "Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.",
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/ga4-consent-mode/#webpage",
+   "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
+   "name": "Google Consent Mode v2 for GA4: a practical setup guide",
+   "description": "What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -602,131 +605,12 @@ dd { margin: .2rem 0 0 0; }
     "@id": "https://chrisabraham.com/#person"
    },
    "breadcrumb": {
-    "@id": "https://gerriscorp.com/guides/#breadcrumb"
-   },
-   "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-     {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://gerriscorp.com/guides/ai-assistants/",
-      "name": "How AI assistants decide what to say about your business"
-     },
-     {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://gerriscorp.com/guides/javascript-seo/",
-      "name": "How to tell if JavaScript is hiding your content from Google and AI"
-     },
-     {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://gerriscorp.com/guides/crawled-not-indexed/",
-      "name": "\"Crawled, currently not indexed\": what it means and how to fix it"
-     },
-     {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://gerriscorp.com/guides/migration-checklist/",
-      "name": "The website migration SEO checklist"
-     },
-     {
-      "@type": "ListItem",
-      "position": 5,
-      "url": "https://gerriscorp.com/guides/email-authentication/",
-      "name": "SPF, DKIM, and DMARC for every domain that sends email"
-     },
-     {
-      "@type": "ListItem",
-      "position": 6,
-      "url": "https://gerriscorp.com/guides/personal-information-removal/",
-      "name": "How to remove your personal information from data brokers and search"
-     },
-     {
-      "@type": "ListItem",
-      "position": 7,
-      "url": "https://gerriscorp.com/guides/traffic-drop/",
-      "name": "How to diagnose a Google traffic drop in Search Console"
-     },
-     {
-      "@type": "ListItem",
-      "position": 8,
-      "url": "https://gerriscorp.com/guides/canonical-tags/",
-      "name": "Canonical tags: how Google chooses which URL to index"
-     },
-     {
-      "@type": "ListItem",
-      "position": 9,
-      "url": "https://gerriscorp.com/guides/robots-txt/",
-      "name": "How robots.txt works, and the mistakes that cost traffic"
-     },
-     {
-      "@type": "ListItem",
-      "position": 10,
-      "url": "https://gerriscorp.com/guides/structured-data/",
-      "name": "Structured data in 2026: which schema markup is worth adding"
-     },
-     {
-      "@type": "ListItem",
-      "position": 11,
-      "url": "https://gerriscorp.com/guides/301-redirects/",
-      "name": "How to plan 301 redirects that keep your rankings and links"
-     },
-     {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://gerriscorp.com/guides/faceted-navigation/",
-      "name": "Faceted navigation SEO: filters, parameters, and crawl budget"
-     },
-     {
-      "@type": "ListItem",
-      "position": 13,
-      "url": "https://gerriscorp.com/guides/hreflang/",
-      "name": "hreflang for English-language sites serving the US, UK, Canada, and Australia"
-     },
-     {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://gerriscorp.com/guides/core-web-vitals/",
-      "name": "Core Web Vitals explained: LCP, INP, CLS, and the fixes that work"
-     },
-     {
-      "@type": "ListItem",
-      "position": 15,
-      "url": "https://gerriscorp.com/guides/cloudflare-seo/",
-      "name": "Cloudflare settings that help or hurt SEO and AI crawlers"
-     },
-     {
-      "@type": "ListItem",
-      "position": 16,
-      "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
-      "name": "Google Consent Mode v2 for GA4: a practical setup guide"
-     },
-     {
-      "@type": "ListItem",
-      "position": 17,
-      "url": "https://gerriscorp.com/guides/email-deliverability/",
-      "name": "Why business email lands in spam, and how to find the cause"
-     },
-     {
-      "@type": "ListItem",
-      "position": 18,
-      "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
-      "name": "How to use AI coding assistants on a business website safely"
-     },
-     {
-      "@type": "ListItem",
-      "position": 19,
-      "url": "https://gerriscorp.com/guides/glossary/",
-      "name": "Glossary of SEO, AI search, and technical website terms"
-     }
-    ]
+    "@id": "https://gerriscorp.com/guides/ga4-consent-mode/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://gerriscorp.com/guides/#breadcrumb",
+   "@id": "https://gerriscorp.com/guides/ga4-consent-mode/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -739,8 +623,35 @@ dd { margin: .2rem 0 0 0; }
      "position": 2,
      "name": "Guides",
      "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "GA4 Consent Mode",
+     "item": "https://gerriscorp.com/guides/ga4-consent-mode/"
     }
    ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/ga4-consent-mode/#article",
+   "headline": "Google Consent Mode v2 for GA4: a practical setup guide",
+   "description": "What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.",
+   "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/ga4-consent-mode/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-10-06",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 792
   }
  ]
 }
@@ -750,91 +661,91 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
   <div>
-    <a class="brand" href="../">Gerris</a>
+    <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../services/">Services</a></li>
-    <li><a href="../guides/" aria-current="page">Guides</a></li>
-    <li><a href="../case-studies/">Case Studies</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../work-with-me/">Work With Me</a></li>
-    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
   </ul>
 </nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › GA4 Consent Mode</p>
 <main id="main">
-<h1>Guides</h1>
-<p class="lead">Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.</p>
+<h1>Google Consent Mode v2 for GA4: a practical setup guide</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="lead">Consent Mode is how Google's tags learn whether a visitor agreed to cookies, and how they behave when the answer is no. Set up well, it keeps analytics honest and the site compliant. Set up badly, it either drops most of your data or quietly ignores the visitor's choice.</p>
 
-<h2>AI search</h2>
+<h2>The four signals</h2>
+<table>
+<thead><tr><th>Signal</th><th>Controls</th></tr></thead>
+<tbody>
+<tr><td><code>analytics_storage</code></td><td>Cookies for analytics, such as GA4's visitor identifier</td></tr>
+<tr><td><code>ad_storage</code></td><td>Cookies for advertising, such as conversion and remarketing cookies</td></tr>
+<tr><td><code>ad_user_data</code></td><td>Whether visitor data may be sent to Google for advertising</td></tr>
+<tr><td><code>ad_personalization</code></td><td>Whether that data may be used for personalized ads and remarketing</td></tr>
+</tbody>
+</table>
+<p>Version 2 added the last two in late 2023. Since March 2024 Google has required them for advertisers who want to use audience and conversion features with traffic from the European Economic Area, under the EU's Digital Markets Act.</p>
+
+<h2>Basic and advanced mode</h2>
 <ul>
-  <li><a href="../guides/ai-assistants/">How AI assistants decide what to say about your business</a>: training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.</li>
-  <li><a href="../guides/structured-data/">Structured data in 2026: which schema markup is worth adding</a>: the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.</li>
-  <li><a href="../guides/ai-coding-assistants/">How to use AI coding assistants on a business website safely</a>: specs, project memory, automated checks, review, and keeping secrets and production out of reach.</li>
+  <li><strong>Basic mode.</strong> Google's tags don't load at all until the visitor consents. Nothing is collected from people who decline or ignore the banner.</li>
+  <li><strong>Advanced mode.</strong> The tags load right away with consent denied and send cookieless pings: no identifiers, no stored cookies. When the visitor accepts, the tags switch to full measurement.</li>
+</ul>
+<p>Advanced mode lets GA4 estimate the behavior of visitors who declined, through behavioral modeling, once a property has enough traffic. Google's documented minimum is roughly a thousand daily events from visitors with analytics denied, and a thousand daily users with analytics granted, sustained for a week or more. Smaller sites never reach it, and for them the choice between modes makes little difference to the reports.</p>
+
+<h2>Setting the defaults</h2>
+<p>The default state must be set before any Google tag loads. With the gtag snippet, that means a <code>consent default</code> command above the config line. Defaults can differ by region, using ISO country codes:</p>
+<pre>gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied',
+  ad_personalization: 'denied', analytics_storage: 'denied',
+  region: ['AT','BE','BG','CH','CY','CZ','DE','DK','EE','ES','FI','FR','GB',
+           'GR','HR','HU','IE','IS','IT','LI','LT','LU','LV','MT','NL','NO',
+           'PL','PT','RO','SE','SI','SK']
+});
+gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied',
+  ad_personalization: 'denied', analytics_storage: 'granted'
+});</pre>
+<p>That's the pattern this site uses: advertising signals denied everywhere, because the site runs no ads, and analytics denied by default in the EEA, the UK, and Switzerland, where the law requires prior consent, and granted elsewhere. The most specific matching region wins. When a visitor accepts or declines, the banner sends a <code>consent update</code> command with the new values.</p>
+<p>In Google Tag Manager, set defaults with a tag on the Consent Initialization trigger, which fires before every other trigger. Most consent platforms certified by Google ship a Tag Manager template that does this for you.</p>
+
+<h2>Choosing a consent platform</h2>
+<p>Publishers who show Google ads to visitors in the EEA, the UK, or Switzerland must use a consent platform from Google's certified list. For everyone else it's still the safer choice, because certified platforms send Consent Mode signals correctly by default. Check that the platform supports regional rules, so visitors in places that don't require a banner aren't shown one.</p>
+
+<h2>Checking that it works</h2>
+<ul>
+  <li><strong>Tag Assistant.</strong> Connect it to the site and open the Consent tab for each event. It shows the default state, each update, and which tags fired under which state.</li>
+  <li><strong>The network panel.</strong> Every GA4 request carries a <code>gcs</code> parameter. <code>G100</code> means advertising and analytics storage are both denied; <code>G111</code> means both granted; <code>G101</code> means advertising denied and analytics granted.</li>
+  <li><strong>The cookie list.</strong> In a fresh private window from a region set to denied, load a page without touching the banner. No <code>_ga</code> cookie should exist until you accept.</li>
+  <li><strong>GA4 admin.</strong> Under Data collection, the consent settings screen reports whether analytics and advertising consent signals are being received.</li>
 </ul>
 
-<h2>Diagnosis</h2>
+<h2>Mistakes I find most often</h2>
 <ul>
-  <li><a href="../guides/traffic-drop/">How to diagnose a Google traffic drop in Search Console</a>: confirm the drop, find where it is, line it up with dates, and name the cause.</li>
-  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
-  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
+  <li><strong>The default is set after the tag loads.</strong> The first hit goes out with no consent state, often with cookies set. Order matters.</li>
+  <li><strong>Two sources of truth.</strong> A banner plugin and a hand-coded snippet both set defaults, with different values.</li>
+  <li><strong>The banner blocks the page.</strong> A consent script that loads synchronously in the head, or a banner that pushes the layout, hurts Core Web Vitals. Load it asynchronously and show it as an overlay.</li>
+  <li><strong>Hard-coded tags outside the consent setup.</strong> An old Universal Analytics snippet, a Facebook pixel, or a heatmap script still firing regardless of the visitor's choice.</li>
 </ul>
 
-<h2>Technical SEO</h2>
-<ul>
-  <li><a href="../guides/canonical-tags/">Canonical tags: how Google chooses which URL to index</a>: the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.</li>
-  <li><a href="../guides/robots-txt/">How robots.txt works, and the mistakes that cost traffic</a>: matching rules, crawling versus indexing, status codes, and AI crawlers.</li>
-  <li><a href="../guides/faceted-navigation/">Faceted navigation SEO: filters, parameters, and crawl budget</a>: which filter pages to index and how to keep the rest out of the crawl.</li>
-  <li><a href="../guides/hreflang/">hreflang for English-language sites serving the US, UK, Canada, and Australia</a>: the codes, the return links, and the errors that void them.</li>
-</ul>
+<h2>What to expect in the reports</h2>
+<p>After a consent banner goes live in Europe, GA4's European sessions usually fall, sometimes sharply, because declined visitors are no longer counted as users. That's the system working. Search Console doesn't use cookies, so its click counts are unaffected, and comparing the two separates a consent effect from a real traffic loss.</p>
 
-<h2>Speed and infrastructure</h2>
-<ul>
-  <li><a href="../guides/core-web-vitals/">Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</a>: field data versus lab data, and what moves each number.</li>
-  <li><a href="../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>: proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.</li>
-</ul>
-
-<h2>Migrations and redirects</h2>
-<ul>
-  <li><a href="../guides/migration-checklist/">The website migration SEO checklist</a>: the URL inventory, the 301 redirect map, launch day, and the weeks after.</li>
-  <li><a href="../guides/301-redirects/">How to plan 301 redirects that keep your rankings and links</a>: which redirect to use, mapping, implementation by platform, testing, and how long to keep them.</li>
-</ul>
-
-<h2>Analytics</h2>
-<ul>
-  <li><a href="../guides/ga4-consent-mode/">Google Consent Mode v2 for GA4: a practical setup guide</a>: the four signals, basic and advanced mode, regional defaults, and how to verify it.</li>
-</ul>
-
-<h2>Email and domains</h2>
-<ul>
-  <li><a href="../guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a>: what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.</li>
-  <li><a href="../guides/email-deliverability/">Why business email lands in spam, and how to find the cause</a>: headers, authentication failures, reputation, blocklists, and sending practices.</li>
-</ul>
-
-<h2>Privacy and reputation</h2>
-<ul>
-  <li><a href="../guides/personal-information-removal/">How to remove your personal information from data brokers and search</a>: opt-outs, Google's Results about you, and California's DROP.</li>
-</ul>
-
-<h2>Reference</h2>
-<ul>
-  <li><a href="../guides/glossary/">Glossary of SEO, AI search, and technical website terms</a>: plain definitions, from 301 redirects to XML sitemaps.</li>
-</ul>
-
-<h2>How these guides are written</h2>
-<p>Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.</p>
-
-<p>New guides are announced in the <a href="../feed.xml">Atom feed</a>.</p>
-<p class="updated">Updated October 6, 2026</p>
+<p class="related">Analytics setup and repair is part of <a href="../../services/analytics/">GA4 and analytics work</a>. For a consent problem that hid half a site's traffic, see the <a href="../../case-studies/consent-blocking/">consent blocking case study</a>.</p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../faq/">FAQ</a> · <a href="../privacy/">Privacy</a> · <a href="../sitemap/">Site map</a> · <a href="../guides/glossary/">Glossary</a> · <a href="../llms.txt">llms.txt</a> · <a href="../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

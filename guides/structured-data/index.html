@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guides to technical SEO, AI search, migrations, and email</title>
-<meta name="description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<link rel="canonical" href="https://gerriscorp.com/guides/">
+<title>Structured data in 2026: the schema markup worth adding</title>
+<meta name="description" content="Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.">
+<link rel="canonical" href="https://gerriscorp.com/guides/structured-data/">
 <meta name="author" content="Chris Abraham">
 <meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
-<link rel="icon" href="../logo.png" type="image/png">
-<link rel="apple-touch-icon" href="../logo.png">
-<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
 <link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
-<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../feed.xml">
-<link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
-<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
@@ -27,17 +27,20 @@
 </script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta property="og:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<meta property="og:url" content="https://gerriscorp.com/guides/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Structured data in 2026: the schema markup worth adding">
+<meta property="og:description" content="Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.">
+<meta property="og:url" content="https://gerriscorp.com/guides/structured-data/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta name="twitter:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
+<meta name="twitter:title" content="Structured data in 2026: the schema markup worth adding">
+<meta name="twitter:description" content="Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
@@ -584,11 +587,11 @@ dd { margin: .2rem 0 0 0; }
    }
   },
   {
-   "@type": "CollectionPage",
-   "@id": "https://gerriscorp.com/guides/#webpage",
-   "url": "https://gerriscorp.com/guides/",
-   "name": "Guides to technical SEO, AI search, migrations, and email",
-   "description": "Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.",
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/structured-data/#webpage",
+   "url": "https://gerriscorp.com/guides/structured-data/",
+   "name": "Structured data in 2026: the schema markup worth adding",
+   "description": "Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -602,131 +605,12 @@ dd { margin: .2rem 0 0 0; }
     "@id": "https://chrisabraham.com/#person"
    },
    "breadcrumb": {
-    "@id": "https://gerriscorp.com/guides/#breadcrumb"
-   },
-   "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-     {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://gerriscorp.com/guides/ai-assistants/",
-      "name": "How AI assistants decide what to say about your business"
-     },
-     {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://gerriscorp.com/guides/javascript-seo/",
-      "name": "How to tell if JavaScript is hiding your content from Google and AI"
-     },
-     {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://gerriscorp.com/guides/crawled-not-indexed/",
-      "name": "\"Crawled, currently not indexed\": what it means and how to fix it"
-     },
-     {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://gerriscorp.com/guides/migration-checklist/",
-      "name": "The website migration SEO checklist"
-     },
-     {
-      "@type": "ListItem",
-      "position": 5,
-      "url": "https://gerriscorp.com/guides/email-authentication/",
-      "name": "SPF, DKIM, and DMARC for every domain that sends email"
-     },
-     {
-      "@type": "ListItem",
-      "position": 6,
-      "url": "https://gerriscorp.com/guides/personal-information-removal/",
-      "name": "How to remove your personal information from data brokers and search"
-     },
-     {
-      "@type": "ListItem",
-      "position": 7,
-      "url": "https://gerriscorp.com/guides/traffic-drop/",
-      "name": "How to diagnose a Google traffic drop in Search Console"
-     },
-     {
-      "@type": "ListItem",
-      "position": 8,
-      "url": "https://gerriscorp.com/guides/canonical-tags/",
-      "name": "Canonical tags: how Google chooses which URL to index"
-     },
-     {
-      "@type": "ListItem",
-      "position": 9,
-      "url": "https://gerriscorp.com/guides/robots-txt/",
-      "name": "How robots.txt works, and the mistakes that cost traffic"
-     },
-     {
-      "@type": "ListItem",
-      "position": 10,
-      "url": "https://gerriscorp.com/guides/structured-data/",
-      "name": "Structured data in 2026: which schema markup is worth adding"
-     },
-     {
-      "@type": "ListItem",
-      "position": 11,
-      "url": "https://gerriscorp.com/guides/301-redirects/",
-      "name": "How to plan 301 redirects that keep your rankings and links"
-     },
-     {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://gerriscorp.com/guides/faceted-navigation/",
-      "name": "Faceted navigation SEO: filters, parameters, and crawl budget"
-     },
-     {
-      "@type": "ListItem",
-      "position": 13,
-      "url": "https://gerriscorp.com/guides/hreflang/",
-      "name": "hreflang for English-language sites serving the US, UK, Canada, and Australia"
-     },
-     {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://gerriscorp.com/guides/core-web-vitals/",
-      "name": "Core Web Vitals explained: LCP, INP, CLS, and the fixes that work"
-     },
-     {
-      "@type": "ListItem",
-      "position": 15,
-      "url": "https://gerriscorp.com/guides/cloudflare-seo/",
-      "name": "Cloudflare settings that help or hurt SEO and AI crawlers"
-     },
-     {
-      "@type": "ListItem",
-      "position": 16,
-      "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
-      "name": "Google Consent Mode v2 for GA4: a practical setup guide"
-     },
-     {
-      "@type": "ListItem",
-      "position": 17,
-      "url": "https://gerriscorp.com/guides/email-deliverability/",
-      "name": "Why business email lands in spam, and how to find the cause"
-     },
-     {
-      "@type": "ListItem",
-      "position": 18,
-      "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
-      "name": "How to use AI coding assistants on a business website safely"
-     },
-     {
-      "@type": "ListItem",
-      "position": 19,
-      "url": "https://gerriscorp.com/guides/glossary/",
-      "name": "Glossary of SEO, AI search, and technical website terms"
-     }
-    ]
+    "@id": "https://gerriscorp.com/guides/structured-data/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://gerriscorp.com/guides/#breadcrumb",
+   "@id": "https://gerriscorp.com/guides/structured-data/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -739,6 +623,55 @@ dd { margin: .2rem 0 0 0; }
      "position": 2,
      "name": "Guides",
      "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Structured Data",
+     "item": "https://gerriscorp.com/guides/structured-data/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/structured-data/#article",
+   "headline": "Structured data in 2026: which schema markup is worth adding",
+   "description": "Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.",
+   "url": "https://gerriscorp.com/guides/structured-data/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/structured-data/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-10-06",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 810
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/guides/structured-data/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is structured data a ranking factor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Google says it isn't a direct ranking factor. It affects how results look and how well Google understands the page, and both of those affect clicks."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a plugin handle it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yoast, Rank Math, and Shopify themes add sensible defaults for common types. For a connected graph, custom business types, or multiple plugins that each add their own markup, it usually needs a hand-built template."
+     }
     }
    ]
   }
@@ -750,91 +683,94 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
   <div>
-    <a class="brand" href="../">Gerris</a>
+    <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../services/">Services</a></li>
-    <li><a href="../guides/" aria-current="page">Guides</a></li>
-    <li><a href="../case-studies/">Case Studies</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../work-with-me/">Work With Me</a></li>
-    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
   </ul>
 </nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Structured Data</p>
 <main id="main">
-<h1>Guides</h1>
-<p class="lead">Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.</p>
+<h1>Structured data in 2026: which schema markup is worth adding</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="lead">Structured data is a machine-readable description of what a page is about: this is a product with this price, this is a business at this address, this article was written by this person. It can earn enhanced listings in Google, and it helps every system that reads the page, including AI assistants, understand the facts without guessing.</p>
 
-<h2>AI search</h2>
+<h2>The format</h2>
+<p>Use JSON-LD: a block of JSON in a <code>script</code> tag with the type <code>application/ld+json</code>, using the vocabulary from schema.org. Google supports Microdata and RDFa too, and recommends JSON-LD because it sits apart from the visible HTML and is easy to generate from a template. A minimal example for a business:</p>
+<pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://example.com/#business",
+  "name": "Example Consulting",
+  "url": "https://example.com/",
+  "telephone": "+1 555 0100",
+  "address": {"@type": "PostalAddress", "addressLocality": "Arlington",
+              "addressRegion": "VA", "postalCode": "22204", "addressCountry": "US"}
+}
+&lt;/script&gt;</pre>
+
+<h2>What still earns rich results</h2>
+<p>Google has narrowed the list of types that change how a result looks. In 2023 it limited FAQ rich results to well-known government and health sites and dropped How-to rich results. In 2025 it retired several more, including Claim Review, Estimated Salary, and Vehicle Listing, and stopped showing breadcrumb trails on mobile results. The types that still produce visible features include:</p>
 <ul>
-  <li><a href="../guides/ai-assistants/">How AI assistants decide what to say about your business</a>: training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.</li>
-  <li><a href="../guides/structured-data/">Structured data in 2026: which schema markup is worth adding</a>: the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.</li>
-  <li><a href="../guides/ai-coding-assistants/">How to use AI coding assistants on a business website safely</a>: specs, project memory, automated checks, review, and keeping secrets and production out of reach.</li>
+  <li><strong>Product</strong>, with offers, price, availability, shipping, and return policy, for product snippets and merchant listings.</li>
+  <li><strong>Review snippets and aggregate ratings</strong> on products, recipes, books, software, and other eligible types. Reviews of your own business on your own site are excluded.</li>
+  <li><strong>Organization and LocalBusiness</strong>, for the logo and business details Google uses in knowledge panels.</li>
+  <li><strong>Article</strong>, for headline, image, dates, and author.</li>
+  <li><strong>Event, JobPosting, Recipe, VideoObject, and Course list</strong>, each tied to its own search feature.</li>
+  <li><strong>BreadcrumbList</strong>, still shown on desktop and still useful for understanding site structure.</li>
+</ul>
+<p>Google's search gallery in its developer documentation is the current list, and it changes, so check it before building anything around a feature.</p>
+
+<h2>Markup without a rich result still helps</h2>
+<p>A retired rich result doesn't make the markup useless. FAQPage markup no longer produces dropdowns for most sites, and it still states plainly which question each answer belongs to. Search engines use structured data to understand entities: who the business is, who wrote the page, which person is which, and how they relate. Microsoft's Bing team has said that schema markup helps its language models understand content. When an assistant has to decide whether two mentions refer to the same business, consistent structured data across the web removes doubt.</p>
+
+<h2>Build a connected graph</h2>
+<p>The strongest pattern is one graph per page, where each thing has an <code>@id</code> and refers to the others by it. The WebSite is published by the Organization. The Organization is founded by the Person. The Article is written by the Person and is about the Service. Every page on this site carries a graph like that, built from one template, so the facts never contradict each other.</p>
+<ul>
+  <li><strong>sameAs</strong> links an entity to its profiles elsewhere: a Wikipedia article, Wikidata, a professional profile, a Google Business Profile. Those links are how systems confirm identity.</li>
+  <li><strong>Stable identifiers.</strong> Use the same <code>@id</code> for the same entity on every page.</li>
+  <li><strong>The same facts everywhere.</strong> Name, address, phone, founding date, and founder should match the visible page, the business profile, and the directories.</li>
 </ul>
 
-<h2>Diagnosis</h2>
+<h2>Rules that keep markup safe</h2>
 <ul>
-  <li><a href="../guides/traffic-drop/">How to diagnose a Google traffic drop in Search Console</a>: confirm the drop, find where it is, line it up with dates, and name the cause.</li>
-  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
-  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
+  <li><strong>Mark up only what visitors can see.</strong> Reviews, prices, and FAQs in the markup must appear on the page. Hidden or invented markup can earn a manual action for spammy structured data, which removes rich results for the whole site.</li>
+  <li><strong>Keep it current.</strong> A price or an event date in the markup that disagrees with the page is a quality problem. Generate the markup from the same data as the page.</li>
+  <li><strong>Server-rendered.</strong> Google can read JSON-LD injected by JavaScript, and many other crawlers can't. Put it in the HTML.</li>
 </ul>
 
-<h2>Technical SEO</h2>
+<h2>How to validate it</h2>
 <ul>
-  <li><a href="../guides/canonical-tags/">Canonical tags: how Google chooses which URL to index</a>: the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.</li>
-  <li><a href="../guides/robots-txt/">How robots.txt works, and the mistakes that cost traffic</a>: matching rules, crawling versus indexing, status codes, and AI crawlers.</li>
-  <li><a href="../guides/faceted-navigation/">Faceted navigation SEO: filters, parameters, and crawl budget</a>: which filter pages to index and how to keep the rest out of the crawl.</li>
-  <li><a href="../guides/hreflang/">hreflang for English-language sites serving the US, UK, Canada, and Australia</a>: the codes, the return links, and the errors that void them.</li>
+  <li><strong>Google's Rich Results Test</strong> shows which rich results a page is eligible for and flags missing required properties.</li>
+  <li><strong>The Schema Markup Validator</strong> at validator.schema.org checks any schema.org markup against the full vocabulary, including types Google ignores.</li>
+  <li><strong>Search Console</strong> lists each detected rich result type under Enhancements, with valid and invalid counts across the site and alerts when a template breaks.</li>
 </ul>
 
-<h2>Speed and infrastructure</h2>
-<ul>
-  <li><a href="../guides/core-web-vitals/">Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</a>: field data versus lab data, and what moves each number.</li>
-  <li><a href="../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>: proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.</li>
-</ul>
+<section class="faq">
+<h2>Questions about structured data</h2>
+<h3>Is structured data a ranking factor?</h3>
+<p>Google says it isn't a direct ranking factor. It affects how results look and how well Google understands the page, and both of those affect clicks.</p>
+<h3>Can a plugin handle it?</h3>
+<p>Yoast, Rank Math, and Shopify themes add sensible defaults for common types. For a connected graph, custom business types, or multiple plugins that each add their own markup, it usually needs a hand-built template.</p>
+</section>
 
-<h2>Migrations and redirects</h2>
-<ul>
-  <li><a href="../guides/migration-checklist/">The website migration SEO checklist</a>: the URL inventory, the 301 redirect map, launch day, and the weeks after.</li>
-  <li><a href="../guides/301-redirects/">How to plan 301 redirects that keep your rankings and links</a>: which redirect to use, mapping, implementation by platform, testing, and how long to keep them.</li>
-</ul>
-
-<h2>Analytics</h2>
-<ul>
-  <li><a href="../guides/ga4-consent-mode/">Google Consent Mode v2 for GA4: a practical setup guide</a>: the four signals, basic and advanced mode, regional defaults, and how to verify it.</li>
-</ul>
-
-<h2>Email and domains</h2>
-<ul>
-  <li><a href="../guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a>: what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.</li>
-  <li><a href="../guides/email-deliverability/">Why business email lands in spam, and how to find the cause</a>: headers, authentication failures, reputation, blocklists, and sending practices.</li>
-</ul>
-
-<h2>Privacy and reputation</h2>
-<ul>
-  <li><a href="../guides/personal-information-removal/">How to remove your personal information from data brokers and search</a>: opt-outs, Google's Results about you, and California's DROP.</li>
-</ul>
-
-<h2>Reference</h2>
-<ul>
-  <li><a href="../guides/glossary/">Glossary of SEO, AI search, and technical website terms</a>: plain definitions, from 301 redirects to XML sitemaps.</li>
-</ul>
-
-<h2>How these guides are written</h2>
-<p>Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.</p>
-
-<p>New guides are announced in the <a href="../feed.xml">Atom feed</a>.</p>
-<p class="updated">Updated October 6, 2026</p>
+<p class="related">I build schema and entity markup as part of <a href="../../services/on-page-seo/">on-page SEO</a> and <a href="../../services/ai-search/">AI search visibility</a> work.</p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../faq/">FAQ</a> · <a href="../privacy/">Privacy</a> · <a href="../sitemap/">Site map</a> · <a href="../guides/glossary/">Glossary</a> · <a href="../llms.txt">llms.txt</a> · <a href="../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guides to technical SEO, AI search, migrations, and email</title>
-<meta name="description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<link rel="canonical" href="https://gerriscorp.com/guides/">
+<title>How to diagnose a Google traffic drop in Search Console</title>
+<meta name="description" content="A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.">
+<link rel="canonical" href="https://gerriscorp.com/guides/traffic-drop/">
 <meta name="author" content="Chris Abraham">
 <meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
-<link rel="icon" href="../logo.png" type="image/png">
-<link rel="apple-touch-icon" href="../logo.png">
-<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
 <link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
-<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../feed.xml">
-<link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
-<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
@@ -27,17 +27,20 @@
 </script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta property="og:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
-<meta property="og:url" content="https://gerriscorp.com/guides/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to diagnose a Google traffic drop in Search Console">
+<meta property="og:description" content="A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.">
+<meta property="og:url" content="https://gerriscorp.com/guides/traffic-drop/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-06">
+<meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Guides to technical SEO, AI search, migrations, and email">
-<meta name="twitter:description" content="Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.">
+<meta name="twitter:title" content="How to diagnose a Google traffic drop in Search Console">
+<meta name="twitter:description" content="A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --orange: #f3b842; --blue: #1d9cd5; --teal: #3ca0b0; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
@@ -584,11 +587,11 @@ dd { margin: .2rem 0 0 0; }
    }
   },
   {
-   "@type": "CollectionPage",
-   "@id": "https://gerriscorp.com/guides/#webpage",
-   "url": "https://gerriscorp.com/guides/",
-   "name": "Guides to technical SEO, AI search, migrations, and email",
-   "description": "Plain, current guides by Chris Abraham to the problems he fixes: AI assistants, JavaScript SEO, indexing, migrations, email authentication, and privacy.",
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/traffic-drop/#webpage",
+   "url": "https://gerriscorp.com/guides/traffic-drop/",
+   "name": "How to diagnose a Google traffic drop in Search Console",
+   "description": "A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -602,131 +605,12 @@ dd { margin: .2rem 0 0 0; }
     "@id": "https://chrisabraham.com/#person"
    },
    "breadcrumb": {
-    "@id": "https://gerriscorp.com/guides/#breadcrumb"
-   },
-   "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-     {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://gerriscorp.com/guides/ai-assistants/",
-      "name": "How AI assistants decide what to say about your business"
-     },
-     {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://gerriscorp.com/guides/javascript-seo/",
-      "name": "How to tell if JavaScript is hiding your content from Google and AI"
-     },
-     {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://gerriscorp.com/guides/crawled-not-indexed/",
-      "name": "\"Crawled, currently not indexed\": what it means and how to fix it"
-     },
-     {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://gerriscorp.com/guides/migration-checklist/",
-      "name": "The website migration SEO checklist"
-     },
-     {
-      "@type": "ListItem",
-      "position": 5,
-      "url": "https://gerriscorp.com/guides/email-authentication/",
-      "name": "SPF, DKIM, and DMARC for every domain that sends email"
-     },
-     {
-      "@type": "ListItem",
-      "position": 6,
-      "url": "https://gerriscorp.com/guides/personal-information-removal/",
-      "name": "How to remove your personal information from data brokers and search"
-     },
-     {
-      "@type": "ListItem",
-      "position": 7,
-      "url": "https://gerriscorp.com/guides/traffic-drop/",
-      "name": "How to diagnose a Google traffic drop in Search Console"
-     },
-     {
-      "@type": "ListItem",
-      "position": 8,
-      "url": "https://gerriscorp.com/guides/canonical-tags/",
-      "name": "Canonical tags: how Google chooses which URL to index"
-     },
-     {
-      "@type": "ListItem",
-      "position": 9,
-      "url": "https://gerriscorp.com/guides/robots-txt/",
-      "name": "How robots.txt works, and the mistakes that cost traffic"
-     },
-     {
-      "@type": "ListItem",
-      "position": 10,
-      "url": "https://gerriscorp.com/guides/structured-data/",
-      "name": "Structured data in 2026: which schema markup is worth adding"
-     },
-     {
-      "@type": "ListItem",
-      "position": 11,
-      "url": "https://gerriscorp.com/guides/301-redirects/",
-      "name": "How to plan 301 redirects that keep your rankings and links"
-     },
-     {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://gerriscorp.com/guides/faceted-navigation/",
-      "name": "Faceted navigation SEO: filters, parameters, and crawl budget"
-     },
-     {
-      "@type": "ListItem",
-      "position": 13,
-      "url": "https://gerriscorp.com/guides/hreflang/",
-      "name": "hreflang for English-language sites serving the US, UK, Canada, and Australia"
-     },
-     {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://gerriscorp.com/guides/core-web-vitals/",
-      "name": "Core Web Vitals explained: LCP, INP, CLS, and the fixes that work"
-     },
-     {
-      "@type": "ListItem",
-      "position": 15,
-      "url": "https://gerriscorp.com/guides/cloudflare-seo/",
-      "name": "Cloudflare settings that help or hurt SEO and AI crawlers"
-     },
-     {
-      "@type": "ListItem",
-      "position": 16,
-      "url": "https://gerriscorp.com/guides/ga4-consent-mode/",
-      "name": "Google Consent Mode v2 for GA4: a practical setup guide"
-     },
-     {
-      "@type": "ListItem",
-      "position": 17,
-      "url": "https://gerriscorp.com/guides/email-deliverability/",
-      "name": "Why business email lands in spam, and how to find the cause"
-     },
-     {
-      "@type": "ListItem",
-      "position": 18,
-      "url": "https://gerriscorp.com/guides/ai-coding-assistants/",
-      "name": "How to use AI coding assistants on a business website safely"
-     },
-     {
-      "@type": "ListItem",
-      "position": 19,
-      "url": "https://gerriscorp.com/guides/glossary/",
-      "name": "Glossary of SEO, AI search, and technical website terms"
-     }
-    ]
+    "@id": "https://gerriscorp.com/guides/traffic-drop/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://gerriscorp.com/guides/#breadcrumb",
+   "@id": "https://gerriscorp.com/guides/traffic-drop/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -739,6 +623,55 @@ dd { margin: .2rem 0 0 0; }
      "position": 2,
      "name": "Guides",
      "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Diagnosing a Traffic Drop",
+     "item": "https://gerriscorp.com/guides/traffic-drop/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/traffic-drop/#article",
+   "headline": "How to diagnose a Google traffic drop in Search Console",
+   "description": "A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.",
+   "url": "https://gerriscorp.com/guides/traffic-drop/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/traffic-drop/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-06",
+   "dateModified": "2026-10-06",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 846
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/guides/traffic-drop/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How fast does traffic recover after a fix?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A technical fix such as an unblocked template often recovers within weeks, as Google recrawls. Losses from a core update usually move only when Google runs a later update, after the content has improved."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How far back does Search Console go?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sixteen months. For longer history, set up the bulk export to BigQuery now, because it only collects data from the day it starts."
+     }
     }
    ]
   }
@@ -750,91 +683,93 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
   <div>
-    <a class="brand" href="../">Gerris</a>
+    <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
   </div>
 </header>
 <nav aria-label="Site">
   <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../services/">Services</a></li>
-    <li><a href="../guides/" aria-current="page">Guides</a></li>
-    <li><a href="../case-studies/">Case Studies</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../work-with-me/">Work With Me</a></li>
-    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
   </ul>
 </nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Diagnosing a Traffic Drop</p>
 <main id="main">
-<h1>Guides</h1>
-<p class="lead">Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.</p>
+<h1>How to diagnose a Google traffic drop in Search Console</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="lead">Organic traffic fell and everyone wants an answer by Friday. The answer is almost always findable, and it comes from narrowing the drop down until only one explanation fits. This is the order I work in.</p>
 
-<h2>AI search</h2>
+<h2>1. Confirm the drop is real</h2>
+<p>Start by ruling out measurement. Analytics can fall while search traffic is fine.</p>
 <ul>
-  <li><a href="../guides/ai-assistants/">How AI assistants decide what to say about your business</a>: training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.</li>
-  <li><a href="../guides/structured-data/">Structured data in 2026: which schema markup is worth adding</a>: the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.</li>
-  <li><a href="../guides/ai-coding-assistants/">How to use AI coding assistants on a business website safely</a>: specs, project memory, automated checks, review, and keeping secrets and production out of reach.</li>
+  <li>Compare Google Analytics with Search Console clicks over the same dates. If Search Console is flat and analytics fell, the problem is tracking: a broken tag, a new consent banner, a site redesign that dropped the snippet from some templates.</li>
+  <li>Check that the date ranges match in length and in days of the week. A Monday-to-Sunday week compared with a Thursday-to-Wednesday week shows a false drop on a business site.</li>
+  <li>Compare with the same period last year. Many businesses fall every summer or every January, and that's seasonality.</li>
+</ul>
+<p>One reporting change to know about: in September 2025 Google stopped supporting a parameter that rank-tracking tools used to load a hundred results at a time. Desktop impressions fell sharply for many sites and average position appeared to improve, with no change in clicks. A drop in impressions alone from that month is usually that.</p>
+
+<h2>2. Read clicks, impressions, CTR, and position together</h2>
+<table>
+<thead><tr><th>Pattern</th><th>Likely meaning</th></tr></thead>
+<tbody>
+<tr><td>Impressions and clicks both fell, position fell</td><td>Rankings dropped: an algorithm update, a technical problem, or stronger competition</td></tr>
+<tr><td>Impressions steady, clicks and CTR fell</td><td>The results page changed: an AI Overview, more ads, a new feature above you, or a rewritten title</td></tr>
+<tr><td>Impressions fell, position steady</td><td>Fewer people are searching: seasonality, a news cycle ending, or a product falling out of fashion</td></tr>
+<tr><td>Everything fell to near zero</td><td>The site is blocked, deindexed, or under a manual action</td></tr>
+</tbody>
+</table>
+
+<h2>3. Find where the loss is</h2>
+<p>Use the Compare option in the Performance report, then sort each tab by the change in clicks.</p>
+<ul>
+  <li><strong>Pages.</strong> Is the loss spread across the site, or concentrated in one section or template? A drop in one template points to something technical about that template.</li>
+  <li><strong>Queries.</strong> Separate branded searches from everything else with a regular expression filter on the brand name. Branded loss means fewer people are looking for the business; unbranded loss means rankings.</li>
+  <li><strong>Countries and devices.</strong> A drop on mobile alone suggests a mobile rendering or speed problem. A drop in one country suggests hreflang, a local competitor, or a regional update.</li>
+  <li><strong>Search appearance and search type.</strong> Lost rich results, or lost image and video traffic, show up here.</li>
 </ul>
 
-<h2>Diagnosis</h2>
+<h2>4. Line it up with dates</h2>
+<p>Find the first day of the decline as precisely as the daily data allows, then check what happened that week.</p>
 <ul>
-  <li><a href="../guides/traffic-drop/">How to diagnose a Google traffic drop in Search Console</a>: confirm the drop, find where it is, line it up with dates, and name the cause.</li>
-  <li><a href="../guides/crawled-not-indexed/">"Crawled, currently not indexed": what it means and how to fix it</a>: a method for finding the real cause behind Search Console's most misunderstood status.</li>
-  <li><a href="../guides/javascript-seo/">How to tell if JavaScript is hiding your content from Google and AI</a>: five tests, the common causes, and the fixes developers can ship.</li>
+  <li><strong>Google's Search Status Dashboard</strong> lists confirmed core updates, spam updates, and incidents with start and end dates.</li>
+  <li><strong>Your own changes.</strong> Deploys, plugin and theme updates, CMS upgrades, migrations, CDN or security changes, new consent tools, and changes to robots.txt or redirects. Ask the developers for the deploy log.</li>
+  <li><strong>Outside events.</strong> A competitor's launch, a press story, a product recall.</li>
 </ul>
 
-<h2>Technical SEO</h2>
+<h2>5. Check the technical reports</h2>
 <ul>
-  <li><a href="../guides/canonical-tags/">Canonical tags: how Google chooses which URL to index</a>: the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.</li>
-  <li><a href="../guides/robots-txt/">How robots.txt works, and the mistakes that cost traffic</a>: matching rules, crawling versus indexing, status codes, and AI crawlers.</li>
-  <li><a href="../guides/faceted-navigation/">Faceted navigation SEO: filters, parameters, and crawl budget</a>: which filter pages to index and how to keep the rest out of the crawl.</li>
-  <li><a href="../guides/hreflang/">hreflang for English-language sites serving the US, UK, Canada, and Australia</a>: the codes, the return links, and the errors that void them.</li>
+  <li><strong>Security and Manual actions.</strong> One look, and either there's a notice or there isn't.</li>
+  <li><strong>Page indexing.</strong> A rise in "Crawled, currently not indexed," "Excluded by noindex," "Blocked by robots.txt," or "Duplicate, Google chose different canonical" that starts on the same date is a strong lead.</li>
+  <li><strong>Crawl stats.</strong> Under Settings: host status problems, a spike in server errors, slower response times, or a sudden change in crawl volume.</li>
+  <li><strong>URL Inspection.</strong> Run a live test on a page that lost traffic and read the rendered HTML. Content missing from Google's render is a common, invisible cause. The <a href="../../guides/javascript-seo/">JavaScript SEO guide</a> has the tests.</li>
 </ul>
 
-<h2>Speed and infrastructure</h2>
-<ul>
-  <li><a href="../guides/core-web-vitals/">Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</a>: field data versus lab data, and what moves each number.</li>
-  <li><a href="../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>: proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.</li>
-</ul>
+<h2>6. Separate the problems</h2>
+<p>Drops often have more than one cause at once: a core update lands the same month a redesign broke a template, or a backlink spam spike shows up beside a redirect error. Treat each candidate as its own hypothesis and test it against the data separately. When the evidence for each one points to different pages or different dates, they're different problems, and each gets its own fix.</p>
 
-<h2>Migrations and redirects</h2>
-<ul>
-  <li><a href="../guides/migration-checklist/">The website migration SEO checklist</a>: the URL inventory, the 301 redirect map, launch day, and the weeks after.</li>
-  <li><a href="../guides/301-redirects/">How to plan 301 redirects that keep your rankings and links</a>: which redirect to use, mapping, implementation by platform, testing, and how long to keep them.</li>
-</ul>
+<h2>7. Write it down</h2>
+<p>The deliverable is a short document: the size and start date of the drop, where it is concentrated, the cause, the evidence for it, the explanations that were ruled out and why, and the fix with tickets the developers can act on. Then mark the fix's ship date and watch the same report, filtered the same way, over the following weeks.</p>
 
-<h2>Analytics</h2>
-<ul>
-  <li><a href="../guides/ga4-consent-mode/">Google Consent Mode v2 for GA4: a practical setup guide</a>: the four signals, basic and advanced mode, regional defaults, and how to verify it.</li>
-</ul>
+<section class="faq">
+<h2>Questions about traffic drops</h2>
+<h3>How fast does traffic recover after a fix?</h3>
+<p>A technical fix such as an unblocked template often recovers within weeks, as Google recrawls. Losses from a core update usually move only when Google runs a later update, after the content has improved.</p>
+<h3>How far back does Search Console go?</h3>
+<p>Sixteen months. For longer history, set up the bulk export to BigQuery now, because it only collects data from the day it starts.</p>
+</section>
 
-<h2>Email and domains</h2>
-<ul>
-  <li><a href="../guides/email-authentication/">SPF, DKIM, and DMARC for every domain that sends email</a>: what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.</li>
-  <li><a href="../guides/email-deliverability/">Why business email lands in spam, and how to find the cause</a>: headers, authentication failures, reputation, blocklists, and sending practices.</li>
-</ul>
-
-<h2>Privacy and reputation</h2>
-<ul>
-  <li><a href="../guides/personal-information-removal/">How to remove your personal information from data brokers and search</a>: opt-outs, Google's Results about you, and California's DROP.</li>
-</ul>
-
-<h2>Reference</h2>
-<ul>
-  <li><a href="../guides/glossary/">Glossary of SEO, AI search, and technical website terms</a>: plain definitions, from 301 redirects to XML sitemaps.</li>
-</ul>
-
-<h2>How these guides are written</h2>
-<p>Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.</p>
-
-<p>New guides are announced in the <a href="../feed.xml">Atom feed</a>.</p>
-<p class="updated">Updated October 6, 2026</p>
+<p class="related">Finding the cause of lost traffic is the core of <a href="../../services/technical-seo/">technical SEO forensics</a>. See also the <a href="../../case-studies/indexing-recovery/">indexing recovery case study</a>.</p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../faq/">FAQ</a> · <a href="../privacy/">Privacy</a> · <a href="../sitemap/">Site map</a> · <a href="../guides/glossary/">Glossary</a> · <a href="../llms.txt">llms.txt</a> · <a href="../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>

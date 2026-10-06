@@ -1,0 +1,60 @@
+name: Cloudflare and SEO
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+title: Cloudflare settings that help or hurt SEO and AI crawlers
+description: The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.
+---
+<h1>Cloudflare settings that help or hurt SEO and AI crawlers</h1>
+<p class="lead">Cloudflare sits in front of millions of websites, and a handful of its switches decide whether search engines and AI assistants can read yours. I set it up for clients often, and I audit it every time a site's crawling looks strange. These are the settings I check first.</p>
+
+<h2>Proxied or DNS only</h2>
+<p>Every DNS record in Cloudflare has a cloud icon. Orange means proxied: visitors and crawlers reach Cloudflare's network, which applies caching, security, and rules before passing the request to your server. Grey means DNS only: Cloudflare answers the DNS lookup and then steps aside. Only proxied records get Cloudflare's speed and protection, and only proxied records can be blocked by its security features. When a crawling problem appears, the cloud color is the first thing to confirm.</p>
+<p>Mail records always stay grey. MX targets and the hostnames used by mail services must resolve to the real servers.</p>
+
+<h2>AI crawler controls</h2>
+<p>In July 2025 Cloudflare began blocking known AI crawlers by default on newly added domains, and it offers a one-click switch to block them on existing ones. The current controls live under AI Crawl Control, where each crawler can be allowed or blocked by name, and Cloudflare can also manage robots.txt for you with its own content signals added.</p>
+<p>This matters because the crawlers are different jobs. GPTBot and ClaudeBot gather training data. OAI-SearchBot, Claude-SearchBot, and PerplexityBot build the indexes that assistants search when they answer questions live. Blocking the search crawlers keeps you out of those answers entirely. Decide crawler by crawler, then confirm the setting matches the decision. The <a href="{root}guides/ai-assistants/">AI assistants guide</a> explains which crawler feeds which product.</p>
+
+<h2>Bot protection and challenges</h2>
+<ul>
+  <li><strong>Bot Fight Mode</strong> on the free plan challenges traffic that looks automated. Cloudflare exempts its list of verified bots, which includes Googlebot and Bingbot, and the WAF can't override this mode, so a misfire is hard to work around.</li>
+  <li><strong>Super Bot Fight Mode</strong> on paid plans has a separate setting for verified bots. Set it to allow.</li>
+  <li><strong>Under Attack Mode</strong> puts a challenge page in front of every visitor, and crawlers can't pass it. Use it during an actual attack and turn it off when the attack ends.</li>
+  <li><strong>Custom WAF rules</strong> that block by country, by user agent, or by request rate catch crawlers too. Googlebot crawls mostly from the United States, so a rule that challenges American traffic hits it directly.</li>
+</ul>
+<p>The proof is in Security, then Events. Filter by user agent for Googlebot or Bingbot and look for blocks or managed challenges. In Search Console, the Crawl stats report under Settings shows host status and response codes from Google's side, and a URL Inspection live test shows exactly what Googlebot received.</p>
+
+<h2>Caching HTML</h2>
+<p>By default Cloudflare caches static files such as images, CSS, and JavaScript, and passes HTML requests through to your server. For a site whose pages are the same for every visitor, a Cache Rule that marks HTML as eligible for cache can cut time to first byte to a few dozen milliseconds worldwide. Exclude anything personal: carts, checkouts, account pages, admin paths, and any request carrying a login cookie. Set an edge cache time you can live with, and purge the cache on deploy.</p>
+
+<h2>HTTPS settings</h2>
+<ul>
+  <li><strong>SSL mode Full (strict).</strong> Cloudflare connects to your server over HTTPS and checks its certificate. Flexible mode connects over plain HTTP, and when the server also redirects to HTTPS, the result is an endless redirect loop.</li>
+  <li><strong>Always Use HTTPS.</strong> Sends every HTTP request to HTTPS with a 301 at the edge, so the server needs no rule of its own.</li>
+  <li><strong>HSTS.</strong> Tells browsers to refuse plain HTTP for a period you choose. Start with a short max age, and add preload only when every subdomain serves HTTPS, because preload is slow to undo.</li>
+</ul>
+
+<h2>Features that change your HTML</h2>
+<p>Several Cloudflare features rewrite pages on the way out, and each deserves a deliberate decision.</p>
+<ul>
+  <li><strong>Rocket Loader</strong> defers JavaScript by rewriting script tags. It can speed up simple sites and break complex ones, including analytics and consent banners. Test with it off before blaming anything else.</li>
+  <li><strong>Email Address Obfuscation</strong> replaces email addresses in the HTML with a script. Visitors see the address, and crawlers that read raw HTML see a placeholder.</li>
+  <li><strong>Auto Minify</strong> was retired in 2024. If a build still depends on it, move minification into the build.</li>
+</ul>
+
+<h2>Redirects at the edge</h2>
+<p>Redirect Rules handle patterns, such as moving a whole folder or forcing the www or bare domain. Bulk Redirects handle long lists of one-to-one moves from a file. Both answer at the edge with a true 301, which makes Cloudflare a good home for a migration's redirect map. Keep all the redirects in one layer; rules split between Cloudflare and the origin server are where chains and loops come from. The <a href="{root}guides/301-redirects/">redirects guide</a> covers mapping and testing.</p>
+
+<h2>Crawler Hints</h2>
+<p>Crawler Hints notifies search engines that support IndexNow, including Bing and Yandex, when your content changes, based on what Cloudflare sees passing through its cache. It's a free switch under Caching and worth turning on for any site that changes regularly. Google doesn't use IndexNow, so it does nothing for Google.</p>
+
+<section class="faq">
+<h2>Questions about Cloudflare and search</h2>
+<h3>Does Cloudflare's shared IP address hurt rankings?</h3>
+<p>No. Millions of sites share Cloudflare's addresses, and Google judges sites by their content and links, not by who else is on the IP.</p>
+<h3>Should a small site use Cloudflare at all?</h3>
+<p>Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and proxying can be added record by record later. This site uses Cloudflare for DNS only, because GitHub Pages already provides HTTPS and a CDN.</p>
+</section>
+
+<p class="related">I configure and audit Cloudflare as part of <a href="{root}services/site-speed/">site speed and Cloudflare work</a> and <a href="{root}services/crawler-visibility/">crawler visibility audits</a>.</p>

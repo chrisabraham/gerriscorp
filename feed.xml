@@ -5,7 +5,7 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-05T12:00:00Z</updated>
+  <updated>2026-10-06T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
     <title>How AI assistants decide what to say about your business</title>
@@ -54,6 +54,102 @@
     <published>2026-10-05T12:00:00Z</published>
     <updated>2026-10-05T12:00:00Z</updated>
     <summary>How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.</summary>
+  </entry>
+  <entry>
+    <title>How to diagnose a Google traffic drop in Search Console</title>
+    <link href="https://gerriscorp.com/guides/traffic-drop/"/>
+    <id>https://gerriscorp.com/guides/traffic-drop/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.</summary>
+  </entry>
+  <entry>
+    <title>Canonical tags: how Google chooses which URL to index</title>
+    <link href="https://gerriscorp.com/guides/canonical-tags/"/>
+    <id>https://gerriscorp.com/guides/canonical-tags/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.</summary>
+  </entry>
+  <entry>
+    <title>How robots.txt works, and the mistakes that cost traffic</title>
+    <link href="https://gerriscorp.com/guides/robots-txt/"/>
+    <id>https://gerriscorp.com/guides/robots-txt/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>How robots.txt rules are matched, why a Disallow rule still lets pages be indexed, how to handle AI crawlers, and how to test robots.txt changes before launch.</summary>
+  </entry>
+  <entry>
+    <title>Structured data in 2026: which schema markup is worth adding</title>
+    <link href="https://gerriscorp.com/guides/structured-data/"/>
+    <id>https://gerriscorp.com/guides/structured-data/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.</summary>
+  </entry>
+  <entry>
+    <title>How to plan 301 redirects that keep your rankings and links</title>
+    <link href="https://gerriscorp.com/guides/301-redirects/"/>
+    <id>https://gerriscorp.com/guides/301-redirects/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.</summary>
+  </entry>
+  <entry>
+    <title>Faceted navigation SEO: filters, parameters, and crawl budget</title>
+    <link href="https://gerriscorp.com/guides/faceted-navigation/"/>
+    <id>https://gerriscorp.com/guides/faceted-navigation/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>How product filters create millions of crawlable URLs, when crawl budget becomes a real problem, and how to decide which filter pages deserve to be indexed.</summary>
+  </entry>
+  <entry>
+    <title>hreflang for English-language sites serving the US, UK, Canada, and Australia</title>
+    <link href="https://gerriscorp.com/guides/hreflang/"/>
+    <id>https://gerriscorp.com/guides/hreflang/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.</summary>
+  </entry>
+  <entry>
+    <title>Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</title>
+    <link href="https://gerriscorp.com/guides/core-web-vitals/"/>
+    <id>https://gerriscorp.com/guides/core-web-vitals/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>What Google measures with Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, how to read field data, and the fixes for each one.</summary>
+  </entry>
+  <entry>
+    <title>Cloudflare settings that help or hurt SEO and AI crawlers</title>
+    <link href="https://gerriscorp.com/guides/cloudflare-seo/"/>
+    <id>https://gerriscorp.com/guides/cloudflare-seo/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.</summary>
+  </entry>
+  <entry>
+    <title>Google Consent Mode v2 for GA4: a practical setup guide</title>
+    <link href="https://gerriscorp.com/guides/ga4-consent-mode/"/>
+    <id>https://gerriscorp.com/guides/ga4-consent-mode/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.</summary>
+  </entry>
+  <entry>
+    <title>Why business email lands in spam, and how to find the cause</title>
+    <link href="https://gerriscorp.com/guides/email-deliverability/"/>
+    <id>https://gerriscorp.com/guides/email-deliverability/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.</summary>
+  </entry>
+  <entry>
+    <title>How to use AI coding assistants on a business website safely</title>
+    <link href="https://gerriscorp.com/guides/ai-coding-assistants/"/>
+    <id>https://gerriscorp.com/guides/ai-coding-assistants/</id>
+    <published>2026-10-06T12:00:00Z</published>
+    <updated>2026-10-06T12:00:00Z</updated>
+    <summary>A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.</summary>
   </entry>
   <entry>
     <title>Glossary of SEO, AI search, and technical website terms</title>

@@ -1,0 +1,69 @@
+name: robots.txt
+type: guide
+published: 2026-10-06
+updated: 2026-10-06
+title: How robots.txt works, and the mistakes that cost traffic
+description: How robots.txt rules are matched, why a Disallow rule still lets pages be indexed, how to handle AI crawlers, and how to test robots.txt changes before launch.
+---
+<h1>How robots.txt works, and the mistakes that cost traffic</h1>
+<p class="lead">robots.txt is a plain text file at the root of a site that tells crawlers which paths they may fetch. It's small, it's public, and a single wrong line in it can take a site out of Google. Here's how it actually behaves.</p>
+
+<h2>Where it lives and what it covers</h2>
+<p>The file must sit at the root of the host, such as <code>https://example.com/robots.txt</code>. It applies only to that exact protocol and host: <code>www.example.com</code>, <code>shop.example.com</code>, and the HTTP version each need their own. Google reads up to 500 kibibytes of it and generally caches it for up to a day, so changes take effect within about 24 hours.</p>
+
+<h2>The syntax</h2>
+<pre>User-agent: *
+Disallow: /cart/
+Disallow: /search
+Allow: /search/help
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://example.com/sitemap.xml</pre>
+<ul>
+  <li><strong>User-agent</strong> starts a group of rules for a named crawler. <code>*</code> means every crawler that has no group of its own. A crawler obeys only the most specific group that names it and ignores the rest, so a bot with its own group skips everything under <code>*</code>.</li>
+  <li><strong>Disallow</strong> and <strong>Allow</strong> take a path prefix. <code>Disallow: /search</code> blocks <code>/search</code>, <code>/search?q=shoes</code>, and <code>/searching</code>.</li>
+  <li><strong>Wildcards.</strong> <code>*</code> matches any characters, and <code>$</code> anchors the end. <code>Disallow: /*.pdf$</code> blocks every URL ending in .pdf.</li>
+  <li><strong>Conflicts.</strong> When an Allow and a Disallow both match, Google uses the longer, more specific rule, and Allow wins a tie.</li>
+  <li><strong>Sitemap</strong> lines can appear anywhere and apply to every crawler.</li>
+</ul>
+<p>Google ignores <code>Crawl-delay</code>; Bing honors it. Google also stopped supporting <code>Noindex</code> lines in robots.txt in 2019.</p>
+
+<h2>Blocking crawling is different from blocking indexing</h2>
+<p>This is the most expensive misunderstanding. Disallow stops a crawler from fetching a page. It doesn't stop the URL from being indexed. If other pages link to a blocked URL, Google can index the address alone, with no content, and Search Console reports it as "Indexed, though blocked by robots.txt."</p>
+<p>To keep a page out of results, let it be crawled and give it a <code>noindex</code> robots meta tag or an <code>X-Robots-Tag: noindex</code> header. Google has to fetch the page to see that instruction, so a page that's both disallowed and noindexed stays in the index, because the noindex is never read. For content that must stay private, use a login. robots.txt is public, and listing secret paths in it advertises them.</p>
+
+<h2>Status codes matter</h2>
+<ul>
+  <li><strong>200</strong>: Google follows the rules in the file.</li>
+  <li><strong>404 or another 4xx</strong>: Google treats the site as having no restrictions and crawls everything.</li>
+  <li><strong>500 or another 5xx, or a timeout</strong>: Google treats the whole site as disallowed and pauses crawling. If the error lasts, Google falls back to its last good copy, and after about a month without one it treats the site as unrestricted.</li>
+</ul>
+<p>A server or firewall that errors only on robots.txt can quietly stop all crawling, which is why it's one of the first URLs I check on a site that lost traffic.</p>
+
+<h2>AI crawlers</h2>
+<p>Each AI company publishes the user agents it uses, and each honors robots.txt. They split into crawlers that gather training data, such as GPTBot, ClaudeBot, and CCBot, and crawlers that fetch pages for live answers, such as OAI-SearchBot, Claude-SearchBot, and PerplexityBot. Google-Extended and Applebot-Extended are tokens rather than separate crawlers: they control whether content fetched by Googlebot and Applebot may be used for AI models, and blocking them leaves ordinary search crawling alone. The <a href="{root}guides/ai-assistants/">AI assistants guide</a> lists which crawler feeds which product.</p>
+<p>This site lets every AI crawler read everything, and keeps the Markdown copies of its pages out of traditional search engines, so they never compete with the HTML pages. Because a crawler follows only its own group, naming the search engines in one group and the AI crawlers in another gives each its own rules:</p>
+<pre>User-agent: Googlebot
+User-agent: Bingbot
+Allow: /
+Disallow: /*.md$
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+Allow: /</pre>
+
+<h2>Mistakes I find most often</h2>
+<ul>
+  <li><strong>The staging file goes live.</strong> <code>Disallow: /</code> protects a staging site, gets copied to production at launch, and blocks everything. Check robots.txt on launch day before anything else.</li>
+  <li><strong>Blocking CSS and JavaScript.</strong> Google renders pages, and a disallowed script folder can leave it looking at a broken layout with missing content.</li>
+  <li><strong>Blocking parameters that carry real pages.</strong> A broad rule like <code>Disallow: /*?</code> also blocks paginated categories and filtered pages that rank.</li>
+  <li><strong>A bot's own group dropping the general rules.</strong> Adding a group for one crawler without repeating the shared rules gives that crawler free run of everything else.</li>
+</ul>
+
+<h2>Testing changes</h2>
+<p>Search Console's robots.txt report shows the version Google last fetched, when it fetched it, and any parsing errors. Before changing a live file, test the proposed rules against a list of important URLs with a parser that follows Google's rules, such as Google's open-source robots.txt library or a crawler like Screaming Frog with a custom robots.txt. Then confirm the change in Search Console after Google picks it up.</p>
+
+<p class="related">robots.txt is part of every <a href="{root}services/crawler-visibility/">crawler visibility audit</a> and every <a href="{root}services/technical-seo/">technical SEO</a> engagement I run.</p>
