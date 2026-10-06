@@ -60,7 +60,7 @@ FILES = ["index",
          "case-studies/indexing-recovery", "case-studies/multi-location-entity", "case-studies/seasonal-retailer",
          "case-studies/gbp-reinstatement", "case-studies/umbraco-operations", "case-studies/ai-recruiting",
          "case-studies/data-cleanup", "case-studies/built-with-claude-code",
-         "about", "work-with-me", "faq", "contact"]
+         "about", "work-with-me", "faq", "contact", "privacy"]
 SERVICE_GROUPS = [
     ("Consulting and technical direction", ["services/technical-lead/", "services/developers/", "services/agency-partner/",
                                             "services/rescue/", "services/ai-automation/", "services/data-cleanup/",
@@ -113,7 +113,7 @@ for f in FILES:
     p["body"] = body.strip().replace("{email}", EMAIL).replace("{phone}", PHONE).replace("{tel}", TEL)
     p["tab"] = (p["path"].split("/")[0] + "/") if p["path"] else ""
     if p["tab"] not in dict(TABS):
-        p["tab"] = "work-with-me/"  # the FAQ lives under Work With Me
+        p["tab"] = {"privacy/": "privacy/"}.get(p["path"], "work-with-me/")  # the FAQ lives under Work With Me
     p["kind"] = p.get("type") or ("service" if p["tab"] == "services/" and p["path"] != "services/" else
                                   "case" if p["tab"] == "case-studies/" and p["path"] != "case-studies/" else "page")
     pages.append(finish(p))
@@ -127,7 +127,7 @@ def site_map_body():
            'Search engines read the same list in <a href="{root}sitemap.xml">sitemap.xml</a>, and AI tools in '
            '<a href="{root}llms.txt">llms.txt</a>.</p>',
            '<h2>Main pages</h2>', '<ul>']
-    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "work-with-me/", "faq/", "contact/"]]
+    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "work-with-me/", "faq/", "contact/", "privacy/"]]
     out.append('</ul>')
     for title, paths in SERVICE_GROUPS:
         out += [f'<h2>{title}</h2>', '<ul>'] + [li(by_path[x]) for x in paths] + ['</ul>']
@@ -343,6 +343,23 @@ def body_html(p):
     return body
 
 
+# Google Analytics 4. Consent mode: ads storage denied everywhere; analytics storage
+# denied in the UK and EEA (cookieless pings there), granted elsewhere. See /privacy/.
+GA_ID = "G-JF2W6ESJZN"
+_EEA_UK = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU",
+           "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]
+GA = f"""
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('consent', 'default', {{ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'}});
+  gtag('consent', 'default', {{analytics_storage: 'denied', region: {json.dumps(_EEA_UK)}}});
+  gtag('js', new Date());
+  gtag('config', '{GA_ID}');
+</script>""" if LIVE else ""
+
+
 def render(p):
     r = p["root"]
     home = r or "./"
@@ -378,7 +395,7 @@ def render(p):
 <link rel="alternate" type="application/atom+xml" title="Gerris guides" href="{r}feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{r}llms.txt">
 <link rel="sitemap" type="application/xml" href="{r}sitemap.xml">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#ffffff">{GA}
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{og_type}">
@@ -420,7 +437,7 @@ def render(p):
 </main>
 <footer class="site-footer">
   <p><a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="tel:{TEL}">{PHONE}</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>
