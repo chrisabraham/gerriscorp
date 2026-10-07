@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-07 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -86,7 +86,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Two B2B companies on Umbraco: publishing and technical operations](https://gerriscorp.com/case-studies/umbraco-operations/): Two B2B companies on Umbraco: 54 city landing pages and steady publishing for one, and a homepage overhaul with cache and template fixes for the other.
 - [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/): An AI company recruiting engineers in the Bay Area wanted to appear in AI answers about jobs. Chris Abraham audited its footprint and planned the fix.
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/): Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.
+- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
 
 ## Files for machines
 - [sitemap.xml](https://gerriscorp.com/sitemap.xml): the XML sitemap for search engines.
@@ -95,4 +95,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides.
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 6, 2026
+Updated October 7, 2026

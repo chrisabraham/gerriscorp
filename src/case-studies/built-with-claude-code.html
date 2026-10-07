@@ -1,7 +1,7 @@
 name: Built with Claude Code
 title: Built with Claude Code: Blackbox, Hill Mole, and this site
-description: How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.
-updated: 2026-10-05
+description: How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
+updated: 2026-10-07
 ---
 <h1>Built with Claude Code</h1>
 <p class="lead">I run Claude Code the way a technical lead runs a development team: I write the requirements, make the design decisions, review every change, insist on tests, and decide what ships. These are three things built that way.</p>
@@ -11,20 +11,23 @@ updated: 2026-10-05
 <h3>What it does</h3>
 <ul>
   <li>Manages tasks in Todoist, which is the single authority for everything I need to do.</li>
-  <li>Reads and writes Google Calendar through my own Google Cloud OAuth project.</li>
+  <li>Reads and writes Google Calendar through my own Google Cloud OAuth project, and reads unread mail each morning, read-only, skipping invoices, newsletters, and sales pitches.</li>
   <li>Triages work opportunities through Upwork's official MCP server, ranking dozens of searches and drafting pitches for my approval.</li>
   <li>Assembles briefings and drafts writing using whichever model does the job best.</li>
+  <li>Writes a diary entry at the end of every day, and closes the day itself at 11:45 p.m. if I forget to.</li>
 </ul>
 <h3>How it was built</h3>
-<p>Over four days, Claude Code took it from a 1,500-line script to about 9,600 lines: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests across 25 commits on main. Claude Code wrote the implementation. I specified the behavior, wrote structured feedback documents with scoped priorities and open architecture questions, tested each stage, compared model backends from OpenAI, Anthropic, and open-weight providers against each other on real tasks, and accepted or rejected the work.</p>
+<p>Over eight days, Claude Code took it from a 1,500-line script to about 12,000 lines: Python modules, an installer, a backup tool, and 140 end-to-end tests across 54 commits on main. Claude Code wrote the implementation. I specified the behavior, wrote structured feedback documents with scoped priorities and open architecture questions, tested each stage, compared model backends from OpenAI, Anthropic, and open-weight providers against each other on real tasks, and accepted or rejected the work.</p>
 <h3>Safety rules</h3>
 <ul>
   <li>Every external action needs one unambiguous target and my explicit confirmation. Nothing sends, submits, spends, or deletes on its own.</li>
   <li>Untrusted content, such as email and web pages, is treated as data and never as instructions.</li>
-  <li>Deterministic routing handles every command it can without a model call; models are reserved for writing and judgment. Total model spend at launch was under three dollars.</li>
+  <li>Deterministic routing handles every command it can without a model call; models are reserved for writing and judgment. Total model spend for the whole build period was about five dollars.</li>
   <li>Secrets live outside Git.</li>
   <li>Nightly AES-256 encrypted backups go to a private repository, and restores have been tested.</li>
 </ul>
+<h3>Built from real use</h3>
+<p>The second week was the most useful. I used bb the way I actually talk, pasted the sessions back, and every misfire became a fix plus a test that uses my exact words. A shorthand I'd typed for weeks had been silently ignored, so now bb says plainly when something isn't a command and shows what would have worked. A ranking that gave hourly jobs no credit was found by asking a simple question about the results. Rules I stated once in conversation now live in code, where they can't drift. Every screen ends with the exact next command, which turned out to be the feature I value most.</p>
 <h3>The deploy loop</h3>
 <p>Work happens on a branch in a development worktree. Tests run, the database is backed up, the branch is fast-forwarded to main and pushed, and a live smoke test confirms the result. It's the same discipline I bring to <a href="{root}services/ai-automation/">client automation pilots</a>.</p>
 
