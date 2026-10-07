@@ -1414,7 +1414,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-06
+Updated: 2026-10-07
 
 # Guides
 
@@ -1427,6 +1427,8 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
+- [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
+- [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
 - [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
@@ -1465,7 +1467,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 6, 2026
+Updated October 7, 2026
 
 
 ---
@@ -1980,6 +1982,139 @@ Finding the cause of lost traffic is the core of [technical SEO forensics](https
 - [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
 - [Google Search Status Dashboard](https://status.search.google.com/)
 - [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/removed-location-pages/
+Updated: 2026-10-07
+
+# Deleting hundreds of location pages: why core rankings fall, and the fix
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 7, 2026
+
+It's one of the most common stories I hear from service businesses. Years ago someone built a landing page for every city, county, or area code the company serves. Later, someone decided they were thin, or risky, or just embarrassing, and deleted them. Months afterward the important pages, the ones nobody touched, are ranking lower. The deletion may be the cause, a coincidence, or one of several causes, and the only way to know is to look.
+
+## Why the pages existed, and why removing them can be right
+
+Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long term decision. The damage comes from how the pages are removed.
+
+## Five ways a cleanup hurts the pages you kept
+1. **Lost internal links.** Every location page usually linked to the core service pages. Delete five hundred pages and you delete thousands of internal links pointing at the pages you care about.
+2. **Lost inbound links.** Some of those pages earned links from local directories, partners, or press. If they now return errors, that value stops flowing.
+3. **Redirects to nowhere useful.** Sending every deleted page to the home page looks tidy, but Google can treat irrelevant redirects much like missing pages.
+4. **Relevance that moved with them.** A few of those pages may have quietly ranked for valuable searches the core pages never covered.
+5. **A coincidence in the timeline.** Large removals often happen alongside redesigns, template changes, or algorithm updates, and the losses get blamed on whichever change people remember.
+
+## Step one: rebuild the inventory
+
+Before deciding anything, list every removed URL. If the old list is gone, rebuild it from Search Console's historical performance data, old XML sitemaps, archived crawls, server logs, and analytics landing page reports. For each URL record its traffic and impressions before removal, any external links pointing to it, and what it returns today: a redirect, a 404, a 410, or a soft 404.
+
+## Step two: line up the dates
+
+Put the removal date, any redesign or migration, and known Google updates on one timeline next to the core pages' clicks and positions. If the decline started before the removal, the deletion didn't start it. If it began within weeks after, it's a strong suspect. Treat any unusual query patterns as a separate track until the data connects them.
+
+## Step three: decide each URL's fate
+- **Restore** the handful that earned real traffic or links and can be made genuinely useful, with local details only that location can offer.
+- **Redirect** pages with links or traffic to the closest relevant page, such as a regional service page, using a 301.
+- **Let go** of the rest with a 404 or 410. Google treats both as signals to drop the URL, and that's fine for pages that had no value.
+
+Every URL gets its own decision, recorded in the inventory.
+
+## Step four: rebuild the paths
+
+Replace the internal links the old pages provided. A service area page that lists the regions you cover, linked from the main navigation or footer, and service pages that mention where you work, put prominence back on the pages that matter without recreating hundreds of thin ones.
+
+## Step five: measure the right things
+
+Watch the core pages' impressions, clicks, and positions for the searches they're meant to win, along with leads. Expect weeks, not days, before Google recrawls and reassesses. Keep a short change log so each improvement can be tied to the change that caused it.
+
+## What a useful location page looks like
+
+If some locations deserve a page, give each one facts no other page has: the team or crew that serves it, real jobs completed there, local regulations or permits, travel times, and reviews from customers in that area. A page that would read the same with a different town name swapped in is the kind that caused the cleanup in the first place.
+
+## If you haven't deleted them yet
+
+Do the inventory first. Decide each page's fate with the data in hand, set up the redirects and internal links before anything is removed, and remove in stages so you can see the effect of each batch.
+
+Already deleted and watching rankings slide? This is the kind of forensic work I do. See [how to diagnose a traffic drop](https://gerriscorp.com/guides/traffic-drop/), or [tell me what happened and when](https://gerriscorp.com/contact/).
+
+## References
+- [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
+- [Google Search Central: How HTTP status codes affect Google's crawlers](https://developers.google.com/search/docs/crawling-indexing/http-network-errors)
+- [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/year-end-seo-check/
+Updated: 2026-10-07
+
+# The year end SEO check: one afternoon that protects next year
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 7, 2026
+
+December is quiet for a lot of websites, which makes it the right time to find the problems that pile up unnoticed. None of these checks takes long, and together they catch the small failures that otherwise surface in March as a mystery traffic drop. Block an afternoon, work down the list, and write down what you find.
+
+## 1. Indexing: is Google seeing what you think it is?
+
+Open Search Console's Page indexing report and compare the number of indexed pages with the number of pages you actually want in search. A sudden rise in excluded pages, or important pages listed as crawled but not indexed, deserves a closer look. Spot check five of your most valuable pages with URL Inspection to confirm they're indexed and that Google chose the canonical you intended.
+
+## 2. Sitemaps: current and clean
+
+In the Sitemaps report, confirm each sitemap was read recently and without errors. A sitemap should list only live pages you want indexed. If it still includes redirected, deleted, or noindexed URLs from this year's changes, clean it up.
+
+## 3. Analytics: keep the history you'll want
+
+Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year over year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.
+
+## 4. Domains and certificates
+
+List every domain the business owns, including old ones that only redirect. Check renewal dates and turn on auto renew for the ones you'll keep. A lapsed domain can be bought by someone else and pointed anywhere. Confirm HTTPS certificates renew automatically, and that redirects from old domains still land on the right pages.
+
+## 5. Redirects from this year's changes
+
+If you redesigned, renamed, or retired pages this year, crawl your old URLs and confirm each one returns a single redirect to a relevant page, with no chains and no redirects to the home page by default.
+
+## 6. Speed and stability
+
+Look at the Core Web Vitals report for pages that slipped from good to needs improvement. The cause is often something added during the year: a chat widget, a new tracking script, or oversized images on a new template.
+
+## 7. Listings and holiday hours
+
+Check your Business Profile for accurate hours, categories, photos, and contact details. Set special hours for the holidays still ahead, and confirm Bing Places and Apple Maps match.
+
+## 8. What AI assistants say about you
+
+Ask ChatGPT, Gemini, Claude, Perplexity, and Google's AI Overviews the questions a customer would ask about your business. Note what's wrong and where each answer seems to come from. Year end is a good moment to set this baseline and correct the sources, so you can compare next December.
+
+## 9. Structured data
+
+Run your key page types through a schema validator. Prices, hours, addresses, and people who left the company are the facts that go stale in structured data first.
+
+## 10. Access and ownership
+
+List who has access to Search Console, analytics, the Business Profile, the domain registrar, DNS, and hosting. Remove former staff and agencies that no longer work with you, and make sure at least two people inside the business hold owner access to each. Lost access is one of the most expensive problems I'm asked to untangle, and it's easiest to prevent while everyone is still reachable.
+
+## 11. Write it down
+
+End with one page of notes: what you checked, what you fixed, and what needs a developer or a budget next year. That page becomes the start of next year's plan and the baseline for next December. Keep it with last year's, and the trend over several Decembers tells you more than any single report.
+
+## Save the big launches for January
+
+A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.
+
+Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
+
+## References
+- [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
+- [Search Console Help: Sitemaps report](https://support.google.com/webmasters/answer/7451001)
+- [Analytics Help: Data retention](https://support.google.com/analytics/answer/7667196)
+- [Google Business Profile Help: How to set special hours](https://support.google.com/business/answer/6303076)
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
@@ -4194,6 +4329,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
+- [Deleting hundreds of location pages: why core rankings fall, and the fix](https://gerriscorp.com/guides/removed-location-pages/): What happens when a site prunes hundreds of city or area code landing pages: why core pages can drop, how to decide each URL's fate, and how to recover.
+- [The year end SEO check: one afternoon that protects next year](https://gerriscorp.com/guides/year-end-seo-check/): A one afternoon year end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.
 - [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): How robots.txt rules are matched, why a Disallow rule still lets pages be indexed, how to handle AI crawlers, and how to test robots.txt changes before launch.
 - [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.

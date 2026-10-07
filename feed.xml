@@ -5,7 +5,7 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-06T12:00:00Z</updated>
+  <updated>2026-10-07T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
     <title>How AI assistants decide what to say about your business</title>
@@ -62,6 +62,22 @@
     <published>2026-10-06T12:00:00Z</published>
     <updated>2026-10-06T12:00:00Z</updated>
     <summary>A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.</summary>
+  </entry>
+  <entry>
+    <title>Deleting hundreds of location pages: why core rankings fall, and the fix</title>
+    <link href="https://gerriscorp.com/guides/removed-location-pages/"/>
+    <id>https://gerriscorp.com/guides/removed-location-pages/</id>
+    <published>2026-10-07T12:00:00Z</published>
+    <updated>2026-10-07T12:00:00Z</updated>
+    <summary>What happens when a site prunes hundreds of city or area code landing pages: why core pages can drop, how to decide each URL's fate, and how to recover.</summary>
+  </entry>
+  <entry>
+    <title>The year end SEO check: one afternoon that protects next year</title>
+    <link href="https://gerriscorp.com/guides/year-end-seo-check/"/>
+    <id>https://gerriscorp.com/guides/year-end-seo-check/</id>
+    <published>2026-10-07T12:00:00Z</published>
+    <updated>2026-10-07T12:00:00Z</updated>
+    <summary>A one afternoon year end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.</summary>
   </entry>
   <entry>
     <title>Canonical tags: how Google chooses which URL to index</title>
