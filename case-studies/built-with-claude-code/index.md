@@ -1,6 +1,6 @@
-> How Chris Abraham directs Claude Code like a development team: a 9,600 line AI assistant with 106 tests, a legacy blog moved to GitHub Pages, and this website.
+> How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
 >
-> Source: https://gerriscorp.com/case-studies/built-with-claude-code/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/case-studies/built-with-claude-code/ · Updated 2026-10-07 · By Chris Abraham, Gerris Corp
 
 # Built with Claude Code
 
@@ -12,20 +12,25 @@ Blackbox, or `bb`, is my own assistant. It runs on a Debian server I administer 
 
 ### What it does
 - Manages tasks in Todoist, which is the single authority for everything I need to do.
-- Reads and writes Google Calendar through my own Google Cloud OAuth project.
+- Reads and writes Google Calendar through my own Google Cloud OAuth project, and reads unread mail each morning, read-only, skipping invoices, newsletters, and sales pitches.
 - Triages work opportunities through Upwork's official MCP server, ranking dozens of searches and drafting pitches for my approval.
 - Assembles briefings and drafts writing using whichever model does the job best.
+- Writes a diary entry at the end of every day, and closes the day itself at 11:45 p.m. if I forget to.
 
 ### How it was built
 
-Over four days, Claude Code took it from a 1,500-line script to about 9,600 lines: 17 Python modules, an installer, a backup tool, and 106 end-to-end tests across 25 commits on main. Claude Code wrote the implementation. I specified the behavior, wrote structured feedback documents with scoped priorities and open architecture questions, tested each stage, compared model backends from OpenAI, Anthropic, and open-weight providers against each other on real tasks, and accepted or rejected the work.
+Over eight days, Claude Code took it from a 1,500-line script to about 12,000 lines: Python modules, an installer, a backup tool, and 140 end-to-end tests across 54 commits on main. Claude Code wrote the implementation. I specified the behavior, wrote structured feedback documents with scoped priorities and open architecture questions, tested each stage, compared model backends from OpenAI, Anthropic, and open-weight providers against each other on real tasks, and accepted or rejected the work.
 
 ### Safety rules
 - Every external action needs one unambiguous target and my explicit confirmation. Nothing sends, submits, spends, or deletes on its own.
 - Untrusted content, such as email and web pages, is treated as data and never as instructions.
-- Deterministic routing handles every command it can without a model call; models are reserved for writing and judgment. Total model spend at launch was under three dollars.
+- Deterministic routing handles every command it can without a model call; models are reserved for writing and judgment. Total model spend for the whole build period was about five dollars.
 - Secrets live outside Git.
 - Nightly AES-256 encrypted backups go to a private repository, and restores have been tested.
+
+### Built from real use
+
+The second week was the most useful. I used bb the way I actually talk, pasted the sessions back, and every misfire became a fix plus a test that uses my exact words. A shorthand I'd typed for weeks had been silently ignored, so now bb says plainly when something isn't a command and shows what would have worked. A ranking that gave hourly jobs no credit was found by asking a simple question about the results. Rules I stated once in conversation now live in code, where they can't drift. Every screen ends with the exact next command, which turned out to be the feature I value most.
 
 ### The deploy loop
 
@@ -47,4 +52,4 @@ Building software with AI coding assistants is a real skill, and the skill is mo
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 7, 2026
