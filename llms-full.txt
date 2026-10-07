@@ -3950,6 +3950,7 @@ I provision and harden my own Linux servers on DigitalOcean: key-only SSH, root 
 - Senior account supervisor on Edelman's digital public affairs team in Washington, where I vetted online influencers for a genuine, multi-year track record before clients engaged them.
 - Co-founder of Abraham Harrison, then of Gerris Corp, which I started with Dan Krueger in 2007.
 - Reputation and executive privacy work at Reputation.com.
+- In 1996, a member of the Proxima team (later Proxicom) that launched Owens Corning's Pink Panther website, a deep, interactive site with a homeowner discussion forum that took the first BOTI award for Best Web Site Design ([press release, archived](https://web.archive.org/web/19980117033913/http://www.proxicom.com:80/press/owens.html)).
 - Earlier, work with Howard Rheingold at Rheingold Associates, and internet infrastructure work in the Treasury Department's Office of the CIO, on an intranet where the job was the reverse of SEO: keeping every spider and bot out.
 
 ## Technical background
