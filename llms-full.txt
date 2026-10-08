@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-07. Quote freely with attribution and a link to the source page.
+> Built 2026-10-08. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -1428,6 +1428,9 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
+- [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
+- [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
+- [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
 - [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
@@ -2930,6 +2933,199 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/guides/podcast-website/
+Updated: 2026-10-08
+
+# Build a podcast website with Claude Code, GitHub Pages, and Cloudflare
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+
+A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Claude Code does the typing.
+
+## What you end up with
+- One page per episode, at an address that never changes, with the cover art, the player, the show notes, and the transcript.
+- A home page that features the newest episode, an archive of every episode, and an about page with every place to subscribe.
+- Structured data, a sitemap, and descriptions written for search engines and AI assistants.
+- A daily job that reads your podcast feed and adds new episodes on its own.
+
+The audio stays with your host. Each player streams from the address in your feed, so the host still counts every play and your download numbers stay whole.
+
+## Step 1: register the domain at cost
+
+Cloudflare Registrar sells domains at the wholesale price the registry charges, plus the ICANN fee, with no markup on renewals. Privacy for the registration record comes included. A .com runs about ten dollars a year. The catch is that the domain must use Cloudflare's DNS, which suits this setup anyway. Pick a name that matches the show exactly, and register it before you announce anything.
+
+## Step 2: let Claude Code build the generator
+
+Claude Code is an AI coding assistant that runs in your terminal and works directly in a folder of files. You describe the site; it writes the code, runs it, reads the errors, and fixes them. The prompt that matters most names your feed and your rules. A good one reads close to this:
+
+>
+
+Build a static site from this podcast RSS feed, one page per episode, in Python. Keep each episode's address forever once it's assigned. Cache the cover art and transcripts in the repository, never the audio. Use the feed's audio URL exactly as given. Give every page a unique title near 60 characters and a description near 155. Add PodcastEpisode structured data and a sitemap.
+
+Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of a show with a few hundred episodes takes an afternoon, most of it spent downloading artwork.
+
+## Step 3: publish on GitHub Pages
+
+GitHub Pages hosts static sites free from a public repository. Published sites can be up to 1 GB, with a soft limit of 100 GB of traffic a month, which covers a podcast site comfortably because the audio never touches it. Put a file named `CNAME` containing your domain in the repository, and turn on Pages for the main branch.
+
+## Step 4: point the domain, then turn on HTTPS
+
+In Cloudflare's DNS, add the four GitHub Pages A records and four AAAA records for the bare domain, and a CNAME for www pointing at your github.io address. Leave every record set to DNS only, the gray cloud, while GitHub issues the certificate. When the "Enforce HTTPS" box in the repository's Pages settings becomes clickable, tick it. If the certificate never starts, remove the custom domain in the Pages settings and add it again; GitHub skips the request when the domain was saved before its DNS existed.
+
+## Step 5: make it run itself
+
+Ask Claude Code for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:
+- **Keepalive.** GitHub disables scheduled workflows in public repositories after 60 days without activity. A step that re-enables the workflow through the GitHub API on every run keeps the schedule alive through a quiet season.
+- **Late transcripts.** Hosts often add transcripts days after an episode goes up. Recheck every episode that lacks one, on every run.
+- **A sanity check.** If the feed suddenly lists far fewer episodes than the site has, stop and publish nothing.
+
+## Step 6: tell the search engines
+
+Add the site to Google Search Console and Bing Webmaster Tools and submit the sitemap. Wire in IndexNow so Bing and the other engines that share it hear about each new episode the morning it appears. Put the site's address in your podcast host's settings, too, so Apple and Spotify link listeners back to it.
+
+## What it costs
+
+The domain is the only bill. Hosting, HTTPS, and the daily job run free. Claude Code comes with Anthropic's paid plans, starting with Pro, which is plenty for a build like this.
+
+## Where AI saves the most time
+
+The generator itself is routine code. The slow parts are the judgment calls: a title that reads well at 60 characters, a description for an episode whose notes are two words, alt text for hundreds of cover images. An assistant drafts those in minutes, and you spend your time reviewing instead of typing. For the working method, specs, review, and keeping secrets out of the repository, see [how to use AI coding assistants on a website safely](https://gerriscorp.com/guides/ai-coding-assistants/). For the DNS side, see [Cloudflare settings that help or hurt SEO](https://gerriscorp.com/guides/cloudflare-seo/).
+
+Want this built for your show, or for any feed you publish? [Tell me about it](https://gerriscorp.com/contact/).
+
+## References
+- [GitHub Docs: GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+- [GitHub Docs: Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- [Cloudflare Docs: Cloudflare Registrar](https://developers.cloudflare.com/registrar/)
+- [GitHub Docs: Disabling and enabling a workflow](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow)
+- [Anthropic: Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/podcast-seo/
+Updated: 2026-10-08
+
+# Podcast SEO: get every episode found in Google and AI search
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+
+Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.
+
+## Give every episode its own page
+
+One episode, one address, forever. The page carries the title, the date, the running time, the cover art, a player, the full show notes, and links to listen in the major apps. Keep the address stable even if you later edit the title on your host, because every link and every search ranking points to that address.
+
+The player can stream straight from the audio file listed in your feed. The host keeps counting downloads, and your page keeps the search value.
+
+## Put the transcript in the HTML
+
+The transcript is the single biggest SEO asset a podcast has: thousands of words, in your own phrasing, on exactly the topics you know. Most hosts now generate transcripts automatically. Publish the text on the episode page as real HTML. A collapsible section is fine, since the text is still in the page, and it keeps the player and notes near the top. A transcript hidden inside a player widget or a downloadable file is invisible to search.
+
+## Write titles and descriptions for searchers
+
+Episode titles written for loyal listeners, like inside jokes or bare episode numbers, mean something only to regulars. Each page needs a title tag of about 60 characters that says what the episode covers, and a meta description of about 150 that a searcher would click. The on-page heading can stay playful. Write a unique pair for every episode; duplicate titles across hundreds of pages are a common reason an archive underperforms.
+
+## Mark it up with schema
+
+Schema.org has types built for this. Mark each page as a `PodcastEpisode` with its name, date, duration, description, and image, link the audio as an `AudioObject`, and connect every episode to one `PodcastSeries` on the home page with links to the show on each platform. Season and episode numbers have their own properties too. This is how search engines and AI systems learn that hundreds of pages belong to one show by one host.
+
+## Describe your cover art
+
+Custom covers per episode help in image search and social shares, but only if the alt text says what each image shows. Describe the picture in a sentence, quote any words that appear in it, and skip the "image of" lead-in. Screen reader users and text-only browsers get a caption; search engines get context.
+
+## Get indexed quickly
+- **Sitemap:** list every episode page with its date, and submit it in Google Search Console and Bing Webmaster Tools.
+- **IndexNow:** ping Bing and the other participating engines the moment a new episode page goes live.
+- **Internal links:** link each episode to the previous and next ones, and keep a full archive page, so crawlers can reach the whole catalog.
+- **Feed link:** put your site's address in your host's show settings, so the apps link listeners back to it.
+
+## Make it readable by AI assistants
+
+People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a podcast said about something. Those systems quote pages they can read. Allow their crawlers in robots.txt, keep the text in plain HTML, and consider an `llms.txt` file that lists every episode with a link. See [how AI assistants find and describe a business](https://gerriscorp.com/guides/ai-assistants/) for the wider picture.
+
+## Own the property
+
+Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is [how to build one with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/).
+
+Starting from scratch? Read [what it really takes to start a podcast for your brand](https://gerriscorp.com/guides/podcast-for-your-brand/), or [ask me to look at your show's search visibility](https://gerriscorp.com/contact/).
+
+## References
+- [Schema.org: PodcastEpisode](https://schema.org/PodcastEpisode)
+- [Google Search Central: Image SEO best practices](https://developers.google.com/search/docs/appearance/google-images)
+- [Google Search Central: Build and submit a sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+- [IndexNow](https://www.indexnow.org/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/podcast-for-your-brand/
+Updated: 2026-10-08
+
+# Starting a podcast to build your brand: what it really takes
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+
+A podcast puts a founder's or an expert's actual voice in someone's ears for half an hour, by choice, while they drive or walk the dog. Few marketing channels earn that much attention. I recommend one to every client with something to say, along with a warning: the hard part is showing up, week after week, for a year.
+
+## What a podcast does for a brand
+- **Trust at scale.** Listeners hear how you think, how you handle a tangent, and what makes you laugh. By the time they call, they already know you.
+- **A searchable record of expertise.** Every episode, with its notes and transcript, becomes evidence that you know your subject, for prospects, for search engines, and for the AI assistants people now ask about you.
+- **Raw material.** One recording becomes show notes, an article, social clips, a newsletter item, and a transcript full of quotable lines.
+
+## The real cost is commitment
+
+A podcast rewards consistency long before it rewards polish. Pick a rhythm you can keep for a year, weekly or every other week, and protect it on the calendar like a client meeting. Many shows stop after a handful of episodes, so simply continuing puts you ahead of a crowd. Growth is slow, and the archive is the asset: the fiftieth episode makes the first forty-nine easier to find.
+
+## A pocket recorder or a phone is enough
+
+A small digital voice recorder, the kind Sony sells for less than a nice dinner, records clean audio, fits in a jacket pocket, and charges from a plain USB port. Buy two or three and keep one in every bag, so an idea never waits for the studio. A smartphone held close in a quiet room works just as well. A carpeted bedroom beats an echoing kitchen with an expensive microphone every time.
+
+Noise used to be the reason people bought gear. Adobe Podcast's Enhance Speech, which has a free version, now takes a noisy recording and brings it close to studio quality in a minute or two. Audacity, free on every computer, handles the edit: trim the false starts and the long pauses, and leave the personality in.
+
+## Hosting and distribution are free
+
+A podcast host stores the audio and publishes the RSS feed that every app reads. Spotify for Creators, formerly Anchor, hosts shows free, publishes them on Spotify, and gives you the feed to list on Apple Podcasts and every other directory. Record on whatever you carry, upload the file, write the notes, schedule it, and every app picks it up.
+
+## YouTube is a separate channel
+
+YouTube can import an audio podcast from its RSS feed, but it turns each episode into a video over a still image, and those videos live only on YouTube and YouTube Music. YouTube audiences expect faces, cuts, and visuals, and they discover shows through YouTube's own recommendations. Treat it as its own channel with its own effort, and keep publishing the audio feed everywhere else.
+
+## Spend money on the parts that repeat
+
+An intro, an outro, and the show's main cover art appear on every episode, so they repay a professional. Freelancers on Fiverr produce all three for a modest fee. For individual episodes, ChatGPT turns a title and a mood into a custom cover in minutes, and a distinct cover per episode makes each one easier to spot in a feed and easier to share.
+
+## Let AI clear away the chores
+- **Cleanup:** AI enhancement rescues recordings made in imperfect rooms.
+- **Transcripts:** hosts and apps generate them automatically. Publish them, because they make every episode searchable.
+- **Show notes:** paste the transcript into an assistant, ask for a summary, chapter points, and a title, then edit for your voice.
+- **Cover art:** an image model gives every episode its own look.
+- **New formats:** Google's NotebookLM turns notes or an episode into a two-host audio discussion, an easy bonus episode for listeners who enjoy that style.
+
+Your opinions stay yours. AI removes the busywork that makes people skip a week, and skipped weeks are what end shows.
+
+## Own a home for it
+
+Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
+
+Want help turning a show into search visibility for your brand? [Tell me about it](https://gerriscorp.com/contact/).
+
+## References
+- [Spotify for Creators](https://creators.spotify.com/)
+- [Adobe Podcast: Enhance Speech](https://podcast.adobe.com/enhance)
+- [Audacity](https://www.audacityteam.org/)
+- [YouTube Help: Deliver podcasts using an RSS feed](https://support.google.com/youtube/answer/13525207)
+- [Google NotebookLM](https://notebooklm.google.com/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/guides/lynx-qa/
 Updated: 2026-10-06
 
@@ -4275,7 +4471,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-07
+Updated: 2026-10-08
 
 # Site map
 
@@ -4343,6 +4539,9 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+- [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
+- [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.
+- [Starting a podcast to build your brand: what it really takes](https://gerriscorp.com/guides/podcast-for-your-brand/): What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.
 - [Lynx for website QA: text browser checks before every launch](https://gerriscorp.com/guides/lynx-qa/): How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.
 - [ADA website compliance for businesses: lower risk, better SEO](https://gerriscorp.com/guides/ada-website-compliance/): What the ADA expects of business websites, the six fixes that cover most of the risk, what to skip, and why the same work improves search, AI answers, trust.
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
@@ -4372,4 +4571,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides.
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 7, 2026
+Updated October 8, 2026
