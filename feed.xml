@@ -5,7 +5,7 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-07T12:00:00Z</updated>
+  <updated>2026-10-08T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
     <title>How AI assistants decide what to say about your business</title>
@@ -166,6 +166,30 @@
     <published>2026-10-06T12:00:00Z</published>
     <updated>2026-10-06T12:00:00Z</updated>
     <summary>A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.</summary>
+  </entry>
+  <entry>
+    <title>Build a podcast website with Claude Code, GitHub Pages, and Cloudflare</title>
+    <link href="https://gerriscorp.com/guides/podcast-website/"/>
+    <id>https://gerriscorp.com/guides/podcast-website/</id>
+    <published>2026-10-08T12:00:00Z</published>
+    <updated>2026-10-08T12:00:00Z</updated>
+    <summary>Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.</summary>
+  </entry>
+  <entry>
+    <title>Podcast SEO: get every episode found in Google and AI search</title>
+    <link href="https://gerriscorp.com/guides/podcast-seo/"/>
+    <id>https://gerriscorp.com/guides/podcast-seo/</id>
+    <published>2026-10-08T12:00:00Z</published>
+    <updated>2026-10-08T12:00:00Z</updated>
+    <summary>How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.</summary>
+  </entry>
+  <entry>
+    <title>Starting a podcast to build your brand: what it really takes</title>
+    <link href="https://gerriscorp.com/guides/podcast-for-your-brand/"/>
+    <id>https://gerriscorp.com/guides/podcast-for-your-brand/</id>
+    <published>2026-10-08T12:00:00Z</published>
+    <updated>2026-10-08T12:00:00Z</updated>
+    <summary>What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.</summary>
   </entry>
   <entry>
     <title>Lynx for website QA: text browser checks before every launch</title>

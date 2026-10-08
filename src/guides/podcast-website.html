@@ -1,0 +1,52 @@
+name: Podcast Website
+type: guide
+published: 2026-10-08
+sources: GitHub Docs: GitHub Pages limits | https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits ;; GitHub Docs: Managing a custom domain for your GitHub Pages site | https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site ;; Cloudflare Docs: Cloudflare Registrar | https://developers.cloudflare.com/registrar/ ;; GitHub Docs: Disabling and enabling a workflow | https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow ;; Anthropic: Claude Code overview | https://docs.anthropic.com/en/docs/claude-code/overview
+updated: 2026-10-08
+title: Build a podcast website with Claude Code and GitHub Pages
+description: Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
+---
+<h1>Build a podcast website with Claude Code, GitHub Pages, and Cloudflare</h1>
+<p class="lead">A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Claude Code does the typing.</p>
+
+<h2>What you end up with</h2>
+<ul>
+  <li>One page per episode, at an address that never changes, with the cover art, the player, the show notes, and the transcript.</li>
+  <li>A home page that features the newest episode, an archive of every episode, and an about page with every place to subscribe.</li>
+  <li>Structured data, a sitemap, and descriptions written for search engines and AI assistants.</li>
+  <li>A daily job that reads your podcast feed and adds new episodes on its own.</li>
+</ul>
+<p>The audio stays with your host. Each player streams from the address in your feed, so the host still counts every play and your download numbers stay whole.</p>
+
+<h2>Step 1: register the domain at cost</h2>
+<p>Cloudflare Registrar sells domains at the wholesale price the registry charges, plus the ICANN fee, with no markup on renewals. Privacy for the registration record comes included. A .com runs about ten dollars a year. The catch is that the domain must use Cloudflare's DNS, which suits this setup anyway. Pick a name that matches the show exactly, and register it before you announce anything.</p>
+
+<h2>Step 2: let Claude Code build the generator</h2>
+<p>Claude Code is an AI coding assistant that runs in your terminal and works directly in a folder of files. You describe the site; it writes the code, runs it, reads the errors, and fixes them. The prompt that matters most names your feed and your rules. A good one reads close to this:</p>
+<blockquote><p>Build a static site from this podcast RSS feed, one page per episode, in Python. Keep each episode's address forever once it's assigned. Cache the cover art and transcripts in the repository, never the audio. Use the feed's audio URL exactly as given. Give every page a unique title near 60 characters and a description near 155. Add PodcastEpisode structured data and a sitemap.</p></blockquote>
+<p>Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of a show with a few hundred episodes takes an afternoon, most of it spent downloading artwork.</p>
+
+<h2>Step 3: publish on GitHub Pages</h2>
+<p>GitHub Pages hosts static sites free from a public repository. Published sites can be up to 1 GB, with a soft limit of 100 GB of traffic a month, which covers a podcast site comfortably because the audio never touches it. Put a file named <code>CNAME</code> containing your domain in the repository, and turn on Pages for the main branch.</p>
+
+<h2>Step 4: point the domain, then turn on HTTPS</h2>
+<p>In Cloudflare's DNS, add the four GitHub Pages A records and four AAAA records for the bare domain, and a CNAME for www pointing at your github.io address. Leave every record set to DNS only, the gray cloud, while GitHub issues the certificate. When the "Enforce HTTPS" box in the repository's Pages settings becomes clickable, tick it. If the certificate never starts, remove the custom domain in the Pages settings and add it again; GitHub skips the request when the domain was saved before its DNS existed.</p>
+
+<h2>Step 5: make it run itself</h2>
+<p>Ask Claude Code for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:</p>
+<ul>
+  <li><strong>Keepalive.</strong> GitHub disables scheduled workflows in public repositories after 60 days without activity. A step that re-enables the workflow through the GitHub API on every run keeps the schedule alive through a quiet season.</li>
+  <li><strong>Late transcripts.</strong> Hosts often add transcripts days after an episode goes up. Recheck every episode that lacks one, on every run.</li>
+  <li><strong>A sanity check.</strong> If the feed suddenly lists far fewer episodes than the site has, stop and publish nothing.</li>
+</ul>
+
+<h2>Step 6: tell the search engines</h2>
+<p>Add the site to Google Search Console and Bing Webmaster Tools and submit the sitemap. Wire in IndexNow so Bing and the other engines that share it hear about each new episode the morning it appears. Put the site's address in your podcast host's settings, too, so Apple and Spotify link listeners back to it.</p>
+
+<h2>What it costs</h2>
+<p>The domain is the only bill. Hosting, HTTPS, and the daily job run free. Claude Code comes with Anthropic's paid plans, starting with Pro, which is plenty for a build like this.</p>
+
+<h2>Where AI saves the most time</h2>
+<p>The generator itself is routine code. The slow parts are the judgment calls: a title that reads well at 60 characters, a description for an episode whose notes are two words, alt text for hundreds of cover images. An assistant drafts those in minutes, and you spend your time reviewing instead of typing. For the working method, specs, review, and keeping secrets out of the repository, see <a href="{root}guides/ai-coding-assistants/">how to use AI coding assistants on a website safely</a>. For the DNS side, see <a href="{root}guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO</a>.</p>
+
+<p>Want this built for your show, or for any feed you publish? <a href="{root}contact/">Tell me about it</a>.</p>
