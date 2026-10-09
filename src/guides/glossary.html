@@ -27,12 +27,16 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
 <dd>A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.</dd>
 <dt id="cdn">CDN (content delivery network)</dt>
 <dd>A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.</dd>
+<dt id="core-update">Core update</dt>
+<dd>A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.</dd>
 <dt id="core-web-vitals">Core Web Vitals</dt>
 <dd>Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.</dd>
 <dt id="crawl-budget">Crawl budget</dt>
 <dd>How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.</dd>
 <dt id="crawled-currently-not-indexed">Crawled, currently not indexed</dt>
 <dd>A Google Search Console status meaning Google fetched a page and chose not to index it. See the <a href="{root}guides/crawled-not-indexed/">full guide</a>.</dd>
+<dt id="crawler-hints">Crawler Hints</dt>
+<dd>A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.</dd>
 <dt id="cls">CLS (Cumulative Layout Shift)</dt>
 <dd>A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.</dd>
 <dt id="discovered-currently-not-indexed">Discovered, currently not indexed</dt>
@@ -49,6 +53,8 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
 <dd>Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.</dd>
 <dt id="hreflang">hreflang</dt>
 <dd>An annotation that tells search engines which language or regional version of a page to show to which users.</dd>
+<dt id="hsts">HSTS (HTTP Strict Transport Security)</dt>
+<dd>A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.</dd>
 <dt id="indexnow">IndexNow</dt>
 <dd>An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.</dd>
 <dt id="inp">INP (Interaction to Next Paint)</dt>
@@ -61,14 +67,24 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
 <dd>A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes <a href="{root}llms.txt">one</a>.</dd>
 <dt id="meta-description">Meta description</dt>
 <dd>A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.</dd>
+<dt id="oai-searchbot">OAI-SearchBot</dt>
+<dd>OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.</dd>
+<dt id="orange-cloud">Orange cloud (proxied)</dt>
+<dd>A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.</dd>
 <dt id="robots-txt">robots.txt</dt>
 <dd>A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.</dd>
+<dt id="scaled-content-abuse">Scaled content abuse</dt>
+<dd>The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.</dd>
 <dt id="schema-org">Schema.org</dt>
 <dd>The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.</dd>
 <dt id="server-side-rendering">Server-side rendering</dt>
 <dd>Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.</dd>
+<dt id="site-reputation-abuse">Site reputation abuse</dt>
+<dd>Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.</dd>
 <dt id="soft-404">Soft 404</dt>
 <dd>A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.</dd>
+<dt id="spam-update">Spam update</dt>
+<dd>An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.</dd>
 <dt id="spf">SPF</dt>
 <dd>Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.</dd>
 <dt id="structured-data">Structured data</dt>

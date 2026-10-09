@@ -35,6 +35,9 @@ A link element that tells search engines which URL is the preferred version of a
 **CDN (content delivery network)**
 A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.
 
+**Core update**
+A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.
+
 **Core Web Vitals**
 Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.
 
@@ -43,6 +46,9 @@ How many URLs a search engine is willing and able to crawl on a site in a given 
 
 **Crawled, currently not indexed**
 A Google Search Console status meaning Google fetched a page and chose not to index it. See the [full guide](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+**Crawler Hints**
+A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.
 
 **CLS (Cumulative Layout Shift)**
 A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
@@ -68,6 +74,9 @@ Google's free service for monitoring how a site appears in Google Search: indexi
 **hreflang**
 An annotation that tells search engines which language or regional version of a page to show to which users.
 
+**HSTS (HTTP Strict Transport Security)**
+A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.
+
 **IndexNow**
 An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.
 
@@ -86,8 +95,17 @@ A proposed convention, introduced in 2024, for a plain Markdown file at a site's
 **Meta description**
 A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.
 
+**OAI-SearchBot**
+OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.
+
+**Orange cloud (proxied)**
+A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.
+
 **robots.txt**
 A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.
+
+**Scaled content abuse**
+The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.
 
 **Schema.org**
 The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.
@@ -95,8 +113,14 @@ The shared vocabulary search engines use for structured data, describing organiz
 **Server-side rendering**
 Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.
 
+**Site reputation abuse**
+Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.
+
 **Soft 404**
 A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.
+
+**Spam update**
+An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.
 
 **SPF**
 Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.
