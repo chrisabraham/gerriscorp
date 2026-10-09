@@ -51,9 +51,20 @@ Google's Core Web Vitals measure three things: how fast the main content appears
 
 Accessibility and SEO want the same things: real text, logical headings, descriptive links, alt text, captions, enough color contrast, and a site that works with a keyboard alone. The Web Content Accessibility Guidelines (WCAG) are the standard, and in the United States the ADA has been applied to websites in court. Every accessibility fix makes the site easier to crawl too. See [ADA website compliance](https://gerriscorp.com/guides/ada-website-compliance/) and [testing a site in a text browser](https://gerriscorp.com/guides/lynx-qa/).
 
+## My standing recommendation: put the site behind Cloudflare
+
+For almost every site I work on, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/), and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/), and I don't earn a cent for recommending it to clients, though I've joked that I should.
+- **Speed:** Cloudflare serves cached copies of your pages and files from data centers near each visitor, which cuts load times and takes strain off your server.
+- **Security and HTTPS:** set the SSL/TLS mode to Full (strict), turn on Always Use HTTPS, and enable HSTS once everything loads over HTTPS, so browsers never fall back to an insecure connection.
+- **Crawlers:** its Crawler Hints feature uses IndexNow to tell Bing and other engines when pages change. Set its bot and AI crawler controls on purpose; I let search and AI crawlers in, because I want to be found and cited.
+- **Domains at cost:** Cloudflare Registrar sells domains at the registry's wholesale price with no markup on renewals.
+
+The exception is hosted platforms like Shopify, Squarespace, and Wix, which run their own CDN and certificates. With those, use Cloudflare for DNS only, the gray cloud, or let the platform manage DNS, and follow the platform's own instructions. My [guide to Cloudflare settings that help or hurt SEO](https://gerriscorp.com/guides/cloudflare-seo/) covers the switches to check.
+
 ## Principle 9: open the door for crawlers
 - Keep [robots.txt](https://gerriscorp.com/guides/robots-txt/) from blocking pages you want found.
-- Publish an XML sitemap listing your important pages, and submit it in Google Search Console and Bing Webmaster Tools, both free.
+- Publish an XML sitemap listing your important pages, and submit it in Google Search Console. Then open Bing Webmaster Tools and use its import option to copy every verified site and sitemap over from Search Console in a few clicks. Both tools are free, and I check both regularly to make sure the sitemaps are read without errors.
+- Turn on IndexNow, through Cloudflare, your SEO plugin, or your platform, so Bing and other participating engines hear about new and changed pages right away.
 - Use HTTPS everywhere, and pick one version of the domain, with or without www, and redirect the other to it.
 - Add [structured data](https://gerriscorp.com/guides/structured-data/) that matches what the page visibly says.
 

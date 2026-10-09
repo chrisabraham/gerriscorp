@@ -658,7 +658,7 @@ dd { margin: .2rem 0 0 0; }
    "dateModified": "2026-10-09",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 1134
+   "wordCount": 1436
   }
  ]
 }
@@ -732,10 +732,21 @@ dd { margin: .2rem 0 0 0; }
 <h2>Principle 8: build it so everyone can use it</h2>
 <p>Accessibility and SEO want the same things: real text, logical headings, descriptive links, alt text, captions, enough color contrast, and a site that works with a keyboard alone. The Web Content Accessibility Guidelines (WCAG) are the standard, and in the United States the ADA has been applied to websites in court. Every accessibility fix makes the site easier to crawl too. See <a href="../../guides/ada-website-compliance/">ADA website compliance</a> and <a href="../../guides/lynx-qa/">testing a site in a text browser</a>.</p>
 
+<h2>My standing recommendation: put the site behind Cloudflare</h2>
+<p>For almost every site I work on, I recommend running DNS and caching through <a href="https://www.cloudflare.com/">Cloudflare</a>, and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. I pay for Cloudflare Pro on <a href="https://chrisabraham.com/">chrisabraham.com</a>, and I don't earn a cent for recommending it to clients, though I've joked that I should.</p>
+<ul>
+  <li><strong>Speed:</strong> Cloudflare serves cached copies of your pages and files from data centers near each visitor, which cuts load times and takes strain off your server.</li>
+  <li><strong>Security and HTTPS:</strong> set the SSL/TLS mode to Full (strict), turn on Always Use HTTPS, and enable HSTS once everything loads over HTTPS, so browsers never fall back to an insecure connection.</li>
+  <li><strong>Crawlers:</strong> its Crawler Hints feature uses IndexNow to tell Bing and other engines when pages change. Set its bot and AI crawler controls on purpose; I let search and AI crawlers in, because I want to be found and cited.</li>
+  <li><strong>Domains at cost:</strong> Cloudflare Registrar sells domains at the registry's wholesale price with no markup on renewals.</li>
+</ul>
+<p>The exception is hosted platforms like Shopify, Squarespace, and Wix, which run their own CDN and certificates. With those, use Cloudflare for DNS only, the gray cloud, or let the platform manage DNS, and follow the platform's own instructions. My <a href="../../guides/cloudflare-seo/">guide to Cloudflare settings that help or hurt SEO</a> covers the switches to check.</p>
+
 <h2>Principle 9: open the door for crawlers</h2>
 <ul>
   <li>Keep <a href="../../guides/robots-txt/">robots.txt</a> from blocking pages you want found.</li>
-  <li>Publish an XML sitemap listing your important pages, and submit it in Google Search Console and Bing Webmaster Tools, both free.</li>
+  <li>Publish an XML sitemap listing your important pages, and submit it in Google Search Console. Then open Bing Webmaster Tools and use its import option to copy every verified site and sitemap over from Search Console in a few clicks. Both tools are free, and I check both regularly to make sure the sitemaps are read without errors.</li>
+  <li>Turn on IndexNow, through Cloudflare, your SEO plugin, or your platform, so Bing and other participating engines hear about new and changed pages right away.</li>
   <li>Use HTTPS everywhere, and pick one version of the domain, with or without www, and redirect the other to it.</li>
   <li>Add <a href="../../guides/structured-data/">structured data</a> that matches what the page visibly says.</li>
 </ul>
