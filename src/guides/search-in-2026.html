@@ -1,0 +1,59 @@
+name: Search in 2026
+type: guide
+published: 2026-10-09
+sources: Google Search Status Dashboard: Ranking incident history | https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history ;; Google Search Central: Spam policies for Google web search | https://developers.google.com/search/docs/essentials/spam-policies ;; Google Search Central: AI features and your website | https://developers.google.com/search/docs/appearance/ai-features ;; Search Engine Journal: Google spam update rolls out, AI manipulation in scope | https://www.searchenginejournal.com/seo-pulse-google-spam-update-rolls-out-ai-manipulation-in-scope/580565/ ;; Bing Webmaster Tools | https://www.bing.com/webmasters/ ;; OpenAI: Overview of OpenAI crawlers | https://developers.openai.com/docs/bots
+updated: 2026-10-09
+title: Search in 2026: every Google update and the AI shift
+description: Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.
+---
+<h1>The state of search in 2026: every Google update so far, and the AI shift behind them</h1>
+<p class="lead">2026 has been the busiest year for Google's ranking systems in a long time: two core updates, four spam updates, and a rule change that brings AI Overviews and AI Mode under the spam policies. Here is what happened, in order, from Google's own records, along with what Bing and OpenAI now let site owners see, and what all of it means for anyone who publishes on the web.</p>
+
+<h2>The 2026 updates, from Google's dashboard</h2>
+<p>Google logs every confirmed ranking update on its Search Status Dashboard. Through early October, 2026 has seven:</p>
+<ul>
+  <li><strong>February Discover update:</strong> began February 5, ran about 22 days. It changed what appears in the Discover feed, separately from Search.</li>
+  <li><strong>March spam update:</strong> began March 24, finished in under a day.</li>
+  <li><strong>March core update:</strong> began March 27, ran about 12 days.</li>
+  <li><strong>May core update:</strong> began May 21, ran about 12 days, finishing June 2.</li>
+  <li><strong>June spam update:</strong> began June 24, ran about two days.</li>
+  <li><strong>August spam update:</strong> began August 18, ran under three days.</li>
+  <li><strong>September spam update:</strong> began September 24 and ran nearly two weeks, far longer than the year's earlier spam updates.</li>
+</ul>
+<p>Core updates reassess how every page ranks against everything else, and pages can rise or fall. Spam updates improve the automated systems that detect policy violations, and the sites they hit tend to drop hard and fast.</p>
+
+<h2>The big rule change: AI answers are now inside the spam policies</h2>
+<p>In May, Google revised the opening of its spam policies. Spam now explicitly includes "attempting to manipulate generative AI responses in Google Search," which covers AI Overviews and AI Mode. The June spam update was widely reported as the first to enforce it. In practice, the tactics now in scope include:</p>
+<ul>
+  <li>Hidden text or instructions aimed at AI systems: white-on-white copy, zero-size fonts, or prompts tucked into markup that try to make an assistant favor a brand.</li>
+  <li>Structured data that claims things the visible page doesn't say.</li>
+  <li>Networks of near-identical "best of" pages built to seed the answers an AI assembles.</li>
+</ul>
+<p>Security researchers have shown for two years that hidden page text can steer AI search tools. Search engines are now treating those tricks the way they treated keyword stuffing in 2005.</p>
+
+<h2>Scaled content abuse is the year's main target</h2>
+<p>Google's policy defines scaled content abuse by intent and outcome: many pages made primarily to manipulate rankings, written by automation, by people, or by both. Automation alone is never the violation; the purpose is. Reporting on the August and September updates centered on sites that mass-published AI-written pages with no review and nothing original in them. Two older policies stayed in the news alongside it:</p>
+<ul>
+  <li><strong>Site reputation abuse:</strong> renting a trusted site's subfolder or subdomain to third-party content, coupons, gambling, or affiliate pages, to borrow its rankings.</li>
+  <li><strong>Expired domain abuse:</strong> buying a dead domain with history and filling it with low-value pages to exploit its old reputation.</li>
+</ul>
+
+<h2>What Google says about optimizing for AI Overviews</h2>
+<p>Google's own documentation is blunt: there are no additional requirements to appear in AI Overviews or AI Mode, and no special optimizations, files, or schema are needed. A page has to be indexed and eligible to show a snippet. The recommended practices are the ordinary ones: allow crawling, link pages internally, keep important content in text, and make structured data match the visible page. Traffic from both features is counted in Search Console's Performance report under the Web search type. Every vendor selling a secret AI Overview formula is selling something Google says doesn't exist.</p>
+
+<h2>Bing and ChatGPT now show their work</h2>
+<p>Bing Webmaster Tools added an AI Performance report, in public preview since February. It counts how often Copilot, Bing's AI summaries, and some partner integrations cite your pages, and it lists the grounding queries that led to those citations. It counts citations only, no clicks, and it is a rare first-party view of how an AI search product uses a site.</p>
+<p>OpenAI documents its crawlers separately. <code>OAI-SearchBot</code> decides whether a site can appear in ChatGPT search; <code>GPTBot</code> collects training data. Each is controlled independently in robots.txt, so a site can welcome search and decline training. A site that blocks OAI-SearchBot, often by accident through a firewall or CDN bot setting, simply drops out of ChatGPT's answers.</p>
+
+<h2>A measurement change that still confuses reports</h2>
+<p>In September 2025, Google stopped honoring the <code>num=100</code> parameter that let rank trackers load a hundred results at once. Desktop impressions in Search Console fell for most sites and average position jumped, because bots had been inflating the counts. Any year-over-year report that spans September 2025 needs that footnote, or it will show a decline that never happened to real visitors.</p>
+
+<h2>What wins in this environment</h2>
+<ul>
+  <li><strong>Evidence of real work.</strong> Original data, photos, tests, case details, and first-hand experience: material an assistant can't produce by summarizing other pages.</li>
+  <li><strong>Fewer, better pages.</strong> Consolidate thin and overlapping pages into ones that fully answer a question.</li>
+  <li><strong>Clean access.</strong> Check robots.txt, CDN, and firewall settings for every crawler you want: Googlebot, Bingbot, OAI-SearchBot, and the rest.</li>
+  <li><strong>Honest markup.</strong> Structured data that matches the page, and nothing hidden.</li>
+  <li><strong>A clear entity.</strong> Consistent names, addresses, and profiles across the web, so every engine and assistant knows exactly who you are.</li>
+</ul>
+<p>For the crawler side, see <a href="{root}guides/ai-assistants/">how AI assistants decide what to say about your business</a> and <a href="{root}guides/robots-txt/">my robots.txt guide</a>. If a 2026 update has already hit you, start with <a href="{root}guides/traffic-drop/">how to diagnose a traffic drop</a>, or <a href="{root}contact/">send me the dates and the domain</a>.</p>
