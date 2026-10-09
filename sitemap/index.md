@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-08 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-09 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -69,6 +69,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
 - [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
+- [The state of search in 2026: every Google update so far, and the AI shift behind them](https://gerriscorp.com/guides/search-in-2026/): Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.
 - [Starting a podcast to build your brand: what it really takes](https://gerriscorp.com/guides/podcast-for-your-brand/): What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.
 - [Lynx for website QA: text browser checks before every launch](https://gerriscorp.com/guides/lynx-qa/): How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.
@@ -100,4 +101,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides.
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 8, 2026
+Updated October 9, 2026

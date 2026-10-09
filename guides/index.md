@@ -14,6 +14,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
+- [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
 - [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
 - [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
