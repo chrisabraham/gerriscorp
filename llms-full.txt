@@ -2664,13 +2664,21 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/cloudflare-seo/
-Updated: 2026-10-06
+Updated: 2026-10-09
 
 # Cloudflare settings that help or hurt SEO and AI crawlers
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026 · Updated October 9, 2026
 
 Cloudflare sits in front of millions of websites, and a handful of its switches decide whether search engines and AI assistants can read yours. I set it up for clients often, and I audit it every time a site's crawling looks strange. These are the settings I check first.
+
+## Why I recommend it, and what to budget
+
+For nearly every client site, I recommend moving DNS to Cloudflare and caching through it. My own experience and every AI assistant I've asked agree on that, and I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/). Cloudflare pays me nothing for the recommendation, though given how often I make it, I've joked that it should.
+- **Registration and DNS only:** if Cloudflare just holds the domain and answers DNS while traffic goes straight to your host, the free plan is all you need. Cloudflare Registrar charges the registry's wholesale price, with no markup on renewals.
+- **Proxied on the free plan:** route the site through Cloudflare and even the free plan caches images, scripts, and stylesheets close to visitors, compresses them, provides certificates, and soaks up attacks.
+- **Paid plans:** Pro and above add features such as Polish, which compresses and converts images on the fly. When a proxied site benefits from those, I tell clients to budget about $50 a month for Cloudflare's paid services, starting with Pro.
+- **Hosted builders:** Shopify, Squarespace, and Wix run their own CDN and certificates. Keep their records on DNS only and follow each platform's connection instructions.
 
 ## Proxied or DNS only
 
@@ -2729,6 +2737,9 @@ Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and pr
 I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
 
 ## References
+- [Cloudflare Docs: Default cache behavior](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/)
+- [Cloudflare Docs: Polish](https://developers.cloudflare.com/images/polish/)
+- [Cloudflare Docs: Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/)
 - [Cloudflare Docs: Verified bots](https://developers.cloudflare.com/bots/concepts/bot/verified-bots/)
 - [Cloudflare Docs: Cache](https://developers.cloudflare.com/cache/)
 - [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
@@ -3191,13 +3202,7 @@ Accessibility and SEO want the same things: real text, logical headings, descrip
 
 ## My standing recommendation: put the site behind Cloudflare
 
-For almost every site I work on, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/), and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. If Cloudflare only registers your domain and answers DNS while traffic passes straight through to your host, the free plan is all you need. Run the site through Cloudflare itself, the orange cloud, and even the free plan caches your images, scripts, and stylesheets near visitors, compresses them, issues certificates, and absorbs attacks. The paid services add more on top, including image optimization that shrinks and converts pictures on the fly. For a site that benefits, I recommend budgeting about $50 a month for them, starting with the Pro plan. I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/), and I don't earn a cent for recommending it to clients, though I've joked that I should.
-- **Speed:** Cloudflare serves cached copies of your images, scripts, and stylesheets from data centers near each visitor, which cuts load times and takes strain off your server. HTML pages aren't cached by default; a cache rule can add them when the site is built for it.
-- **Security and HTTPS:** set the SSL/TLS mode to Full (strict), turn on Always Use HTTPS, and enable HSTS once everything loads over HTTPS, so browsers never fall back to an insecure connection.
-- **Crawlers:** its Crawler Hints feature uses IndexNow to tell Bing and other engines when pages change. Set its bot and AI crawler controls on purpose; I let search and AI crawlers in, because I want to be found and cited.
-- **Domains at cost:** Cloudflare Registrar sells domains at the registry's wholesale price with no markup on renewals.
-
-The exception is hosted platforms like Shopify, Squarespace, and Wix, which run their own CDN and certificates. With those, use Cloudflare for DNS only, the gray cloud, or let the platform manage DNS, and follow the platform's own instructions. My [guide to Cloudflare settings that help or hurt SEO](https://gerriscorp.com/guides/cloudflare-seo/) covers the switches to check.
+For almost every site, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/). Even its free plan speeds up pages, handles HTTPS certificates, and absorbs attacks, and it sells domains at cost. Hosted builders such as Shopify, Squarespace, and Wix are the exception; with those, keep Cloudflare to DNS only. My [Cloudflare guide](https://gerriscorp.com/guides/cloudflare-seo/) covers which plan to choose, what to budget, and the settings that help or hurt search.
 
 ## Principle 9: open the door for crawlers
 - Keep [robots.txt](https://gerriscorp.com/guides/robots-txt/) from blocking pages you want found.
@@ -3234,9 +3239,6 @@ Every shortcut on this list has hurt real businesses, some permanently: buying l
 Want a second pair of eyes on your first week's list? [Send me the site](https://gerriscorp.com/contact/).
 
 ## References
-- [Cloudflare Docs: Default cache behavior](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/)
-- [Cloudflare Docs: Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/)
-- [Cloudflare Docs: Polish](https://developers.cloudflare.com/images/polish/)
 - [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
 - [Google Search Central: In-depth guide to how Google Search works](https://developers.google.com/search/docs/fundamentals/how-search-works)
 - [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
@@ -3582,6 +3584,9 @@ A link element that tells search engines which URL is the preferred version of a
 **CDN (content delivery network)**
 A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.
 
+**Core update**
+A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.
+
 **Core Web Vitals**
 Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.
 
@@ -3590,6 +3595,9 @@ How many URLs a search engine is willing and able to crawl on a site in a given 
 
 **Crawled, currently not indexed**
 A Google Search Console status meaning Google fetched a page and chose not to index it. See the [full guide](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+**Crawler Hints**
+A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.
 
 **CLS (Cumulative Layout Shift)**
 A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
@@ -3615,6 +3623,9 @@ Google's free service for monitoring how a site appears in Google Search: indexi
 **hreflang**
 An annotation that tells search engines which language or regional version of a page to show to which users.
 
+**HSTS (HTTP Strict Transport Security)**
+A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.
+
 **IndexNow**
 An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.
 
@@ -3633,8 +3644,17 @@ A proposed convention, introduced in 2024, for a plain Markdown file at a site's
 **Meta description**
 A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.
 
+**OAI-SearchBot**
+OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.
+
+**Orange cloud (proxied)**
+A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.
+
 **robots.txt**
 A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.
+
+**Scaled content abuse**
+The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.
 
 **Schema.org**
 The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.
@@ -3642,8 +3662,14 @@ The shared vocabulary search engines use for structured data, describing organiz
 **Server-side rendering**
 Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.
 
+**Site reputation abuse**
+Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.
+
 **Soft 404**
 A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.
+
+**Spam update**
+An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.
 
 **SPF**
 Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.
@@ -4535,6 +4561,10 @@ Usually Search Console, analytics, and read access to the CMS or repository. DNS
 ### Which platforms do you work on?
 
 WordPress, Umbraco, Wix, Squarespace, Shopify, Magento, Netlify, GitHub Pages, static sites, and JavaScript frameworks such as Next.js, React, Vue, and Alpine.js, with Cloudflare in front of many of them.
+
+### Do you recommend Cloudflare?
+
+For nearly every site, yes: DNS and caching through Cloudflare, configured so search engines and AI crawlers get in. The free plan does a lot, and when a site runs through Cloudflare and benefits from the paid features, I suggest budgeting about $50 a month. Hosted builders such as Shopify, Squarespace, and Wix are the exception. Details are in [my Cloudflare guide](https://gerriscorp.com/guides/cloudflare-seo/).
 
 ### How do you communicate during a project?
 

@@ -658,7 +658,7 @@ dd { margin: .2rem 0 0 0; }
    "dateModified": "2026-10-09",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 1546
+   "wordCount": 1272
   }
  ]
 }
@@ -733,14 +733,7 @@ dd { margin: .2rem 0 0 0; }
 <p>Accessibility and SEO want the same things: real text, logical headings, descriptive links, alt text, captions, enough color contrast, and a site that works with a keyboard alone. The Web Content Accessibility Guidelines (WCAG) are the standard, and in the United States the ADA has been applied to websites in court. Every accessibility fix makes the site easier to crawl too. See <a href="../../guides/ada-website-compliance/">ADA website compliance</a> and <a href="../../guides/lynx-qa/">testing a site in a text browser</a>.</p>
 
 <h2>My standing recommendation: put the site behind Cloudflare</h2>
-<p>For almost every site I work on, I recommend running DNS and caching through <a href="https://www.cloudflare.com/">Cloudflare</a>, and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. If Cloudflare only registers your domain and answers DNS while traffic passes straight through to your host, the free plan is all you need. Run the site through Cloudflare itself, the orange cloud, and even the free plan caches your images, scripts, and stylesheets near visitors, compresses them, issues certificates, and absorbs attacks. The paid services add more on top, including image optimization that shrinks and converts pictures on the fly. For a site that benefits, I recommend budgeting about $50 a month for them, starting with the Pro plan. I pay for Cloudflare Pro on <a href="https://chrisabraham.com/">chrisabraham.com</a>, and I don't earn a cent for recommending it to clients, though I've joked that I should.</p>
-<ul>
-  <li><strong>Speed:</strong> Cloudflare serves cached copies of your images, scripts, and stylesheets from data centers near each visitor, which cuts load times and takes strain off your server. HTML pages aren't cached by default; a cache rule can add them when the site is built for it.</li>
-  <li><strong>Security and HTTPS:</strong> set the SSL/TLS mode to Full (strict), turn on Always Use HTTPS, and enable HSTS once everything loads over HTTPS, so browsers never fall back to an insecure connection.</li>
-  <li><strong>Crawlers:</strong> its Crawler Hints feature uses IndexNow to tell Bing and other engines when pages change. Set its bot and AI crawler controls on purpose; I let search and AI crawlers in, because I want to be found and cited.</li>
-  <li><strong>Domains at cost:</strong> Cloudflare Registrar sells domains at the registry's wholesale price with no markup on renewals.</li>
-</ul>
-<p>The exception is hosted platforms like Shopify, Squarespace, and Wix, which run their own CDN and certificates. With those, use Cloudflare for DNS only, the gray cloud, or let the platform manage DNS, and follow the platform's own instructions. My <a href="../../guides/cloudflare-seo/">guide to Cloudflare settings that help or hurt SEO</a> covers the switches to check.</p>
+<p>For almost every site, I recommend running DNS and caching through <a href="https://www.cloudflare.com/">Cloudflare</a>. Even its free plan speeds up pages, handles HTTPS certificates, and absorbs attacks, and it sells domains at cost. Hosted builders such as Shopify, Squarespace, and Wix are the exception; with those, keep Cloudflare to DNS only. My <a href="../../guides/cloudflare-seo/">Cloudflare guide</a> covers which plan to choose, what to budget, and the settings that help or hurt search.</p>
 
 <h2>Principle 9: open the door for crawlers</h2>
 <ul>
@@ -781,9 +774,6 @@ dd { margin: .2rem 0 0 0; }
 <p>Want a second pair of eyes on your first week's list? <a href="../../contact/">Send me the site</a>.</p>
 <h2>References</h2>
 <ul class="sources">
-  <li><a href="https://developers.cloudflare.com/cache/concepts/default-cache-behavior/">Cloudflare Docs: Default cache behavior</a></li>
-  <li><a href="https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/">Cloudflare Docs: Crawler Hints</a></li>
-  <li><a href="https://developers.cloudflare.com/images/polish/">Cloudflare Docs: Polish</a></li>
   <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google Search Central: SEO Starter Guide</a></li>
   <li><a href="https://developers.google.com/search/docs/fundamentals/how-search-works">Google Search Central: In-depth guide to how Google Search works</a></li>
   <li><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google Search Central: Creating helpful, reliable, people-first content</a></li>

@@ -58,6 +58,10 @@ Usually Search Console, analytics, and read access to the CMS or repository. DNS
 
 WordPress, Umbraco, Wix, Squarespace, Shopify, Magento, Netlify, GitHub Pages, static sites, and JavaScript frameworks such as Next.js, React, Vue, and Alpine.js, with Cloudflare in front of many of them.
 
+### Do you recommend Cloudflare?
+
+For nearly every site, yes: DNS and caching through Cloudflare, configured so search engines and AI crawlers get in. The free plan does a lot, and when a site runs through Cloudflare and benefits from the paid features, I suggest budgeting about $50 a month. Hosted builders such as Shopify, Squarespace, and Wix are the exception. Details are in [my Cloudflare guide](https://gerriscorp.com/guides/cloudflare-seo/).
+
 ### How do you communicate during a project?
 
 In writing, in Basecamp or by email, so every decision and status update is on the record. Calls are scheduled when they're useful.

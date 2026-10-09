@@ -1,12 +1,20 @@
 > The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.
 >
-> Source: https://gerriscorp.com/guides/cloudflare-seo/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/cloudflare-seo/ · Updated 2026-10-09 · By Chris Abraham, Gerris Corp
 
 # Cloudflare settings that help or hurt SEO and AI crawlers
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026 · Updated October 9, 2026
 
 Cloudflare sits in front of millions of websites, and a handful of its switches decide whether search engines and AI assistants can read yours. I set it up for clients often, and I audit it every time a site's crawling looks strange. These are the settings I check first.
+
+## Why I recommend it, and what to budget
+
+For nearly every client site, I recommend moving DNS to Cloudflare and caching through it. My own experience and every AI assistant I've asked agree on that, and I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/). Cloudflare pays me nothing for the recommendation, though given how often I make it, I've joked that it should.
+- **Registration and DNS only:** if Cloudflare just holds the domain and answers DNS while traffic goes straight to your host, the free plan is all you need. Cloudflare Registrar charges the registry's wholesale price, with no markup on renewals.
+- **Proxied on the free plan:** route the site through Cloudflare and even the free plan caches images, scripts, and stylesheets close to visitors, compresses them, provides certificates, and soaks up attacks.
+- **Paid plans:** Pro and above add features such as Polish, which compresses and converts images on the fly. When a proxied site benefits from those, I tell clients to budget about $50 a month for Cloudflare's paid services, starting with Pro.
+- **Hosted builders:** Shopify, Squarespace, and Wix run their own CDN and certificates. Keep their records on DNS only and follow each platform's connection instructions.
 
 ## Proxied or DNS only
 
@@ -65,6 +73,9 @@ Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and pr
 I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
 
 ## References
+- [Cloudflare Docs: Default cache behavior](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/)
+- [Cloudflare Docs: Polish](https://developers.cloudflare.com/images/polish/)
+- [Cloudflare Docs: Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/)
 - [Cloudflare Docs: Verified bots](https://developers.cloudflare.com/bots/concepts/bot/verified-bots/)
 - [Cloudflare Docs: Cache](https://developers.cloudflare.com/cache/)
 - [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)

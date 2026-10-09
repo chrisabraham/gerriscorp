@@ -1,13 +1,22 @@
 name: Cloudflare and SEO
 type: guide
 published: 2026-10-06
-sources: Cloudflare Docs: Verified bots | https://developers.cloudflare.com/bots/concepts/bot/verified-bots/ ;; Cloudflare Docs: Cache | https://developers.cloudflare.com/cache/ ;; Google Search Central: Introduction to robots.txt | https://developers.google.com/search/docs/crawling-indexing/robots/intro
-updated: 2026-10-06
+sources: Cloudflare Docs: Default cache behavior | https://developers.cloudflare.com/cache/concepts/default-cache-behavior/ ;; Cloudflare Docs: Polish | https://developers.cloudflare.com/images/polish/ ;; Cloudflare Docs: Crawler Hints | https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/ ;; Cloudflare Docs: Verified bots | https://developers.cloudflare.com/bots/concepts/bot/verified-bots/ ;; Cloudflare Docs: Cache | https://developers.cloudflare.com/cache/ ;; Google Search Central: Introduction to robots.txt | https://developers.google.com/search/docs/crawling-indexing/robots/intro
+updated: 2026-10-09
 title: Cloudflare settings that help or hurt SEO and AI crawlers
 description: The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.
 ---
 <h1>Cloudflare settings that help or hurt SEO and AI crawlers</h1>
 <p class="lead">Cloudflare sits in front of millions of websites, and a handful of its switches decide whether search engines and AI assistants can read yours. I set it up for clients often, and I audit it every time a site's crawling looks strange. These are the settings I check first.</p>
+
+<h2>Why I recommend it, and what to budget</h2>
+<p>For nearly every client site, I recommend moving DNS to Cloudflare and caching through it. My own experience and every AI assistant I've asked agree on that, and I pay for Cloudflare Pro on <a href="https://chrisabraham.com/">chrisabraham.com</a>. Cloudflare pays me nothing for the recommendation, though given how often I make it, I've joked that it should.</p>
+<ul>
+  <li><strong>Registration and DNS only:</strong> if Cloudflare just holds the domain and answers DNS while traffic goes straight to your host, the free plan is all you need. Cloudflare Registrar charges the registry's wholesale price, with no markup on renewals.</li>
+  <li><strong>Proxied on the free plan:</strong> route the site through Cloudflare and even the free plan caches images, scripts, and stylesheets close to visitors, compresses them, provides certificates, and soaks up attacks.</li>
+  <li><strong>Paid plans:</strong> Pro and above add features such as Polish, which compresses and converts images on the fly. When a proxied site benefits from those, I tell clients to budget about $50 a month for Cloudflare's paid services, starting with Pro.</li>
+  <li><strong>Hosted builders:</strong> Shopify, Squarespace, and Wix run their own CDN and certificates. Keep their records on DNS only and follow each platform's connection instructions.</li>
+</ul>
 
 <h2>Proxied or DNS only</h2>
 <p>Every DNS record in Cloudflare has a cloud icon. Orange means proxied: visitors and crawlers reach Cloudflare's network, which applies caching, security, and rules before passing the request to your server. Grey means DNS only: Cloudflare answers the DNS lookup and then steps aside. Only proxied records get Cloudflare's speed and protection, and only proxied records can be blocked by its security features. When a crawling problem appears, the cloud color is the first thing to confirm.</p>

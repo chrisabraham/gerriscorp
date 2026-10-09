@@ -53,13 +53,7 @@ Accessibility and SEO want the same things: real text, logical headings, descrip
 
 ## My standing recommendation: put the site behind Cloudflare
 
-For almost every site I work on, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/), and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. If Cloudflare only registers your domain and answers DNS while traffic passes straight through to your host, the free plan is all you need. Run the site through Cloudflare itself, the orange cloud, and even the free plan caches your images, scripts, and stylesheets near visitors, compresses them, issues certificates, and absorbs attacks. The paid services add more on top, including image optimization that shrinks and converts pictures on the fly. For a site that benefits, I recommend budgeting about $50 a month for them, starting with the Pro plan. I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/), and I don't earn a cent for recommending it to clients, though I've joked that I should.
-- **Speed:** Cloudflare serves cached copies of your images, scripts, and stylesheets from data centers near each visitor, which cuts load times and takes strain off your server. HTML pages aren't cached by default; a cache rule can add them when the site is built for it.
-- **Security and HTTPS:** set the SSL/TLS mode to Full (strict), turn on Always Use HTTPS, and enable HSTS once everything loads over HTTPS, so browsers never fall back to an insecure connection.
-- **Crawlers:** its Crawler Hints feature uses IndexNow to tell Bing and other engines when pages change. Set its bot and AI crawler controls on purpose; I let search and AI crawlers in, because I want to be found and cited.
-- **Domains at cost:** Cloudflare Registrar sells domains at the registry's wholesale price with no markup on renewals.
-
-The exception is hosted platforms like Shopify, Squarespace, and Wix, which run their own CDN and certificates. With those, use Cloudflare for DNS only, the gray cloud, or let the platform manage DNS, and follow the platform's own instructions. My [guide to Cloudflare settings that help or hurt SEO](https://gerriscorp.com/guides/cloudflare-seo/) covers the switches to check.
+For almost every site, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/). Even its free plan speeds up pages, handles HTTPS certificates, and absorbs attacks, and it sells domains at cost. Hosted builders such as Shopify, Squarespace, and Wix are the exception; with those, keep Cloudflare to DNS only. My [Cloudflare guide](https://gerriscorp.com/guides/cloudflare-seo/) covers which plan to choose, what to budget, and the settings that help or hurt search.
 
 ## Principle 9: open the door for crawlers
 - Keep [robots.txt](https://gerriscorp.com/guides/robots-txt/) from blocking pages you want found.
@@ -96,9 +90,6 @@ Every shortcut on this list has hurt real businesses, some permanently: buying l
 Want a second pair of eyes on your first week's list? [Send me the site](https://gerriscorp.com/contact/).
 
 ## References
-- [Cloudflare Docs: Default cache behavior](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/)
-- [Cloudflare Docs: Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/)
-- [Cloudflare Docs: Polish](https://developers.cloudflare.com/images/polish/)
 - [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
 - [Google Search Central: In-depth guide to how Google Search works](https://developers.google.com/search/docs/fundamentals/how-search-works)
 - [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
