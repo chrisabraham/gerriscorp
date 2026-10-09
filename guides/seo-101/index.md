@@ -53,7 +53,7 @@ Accessibility and SEO want the same things: real text, logical headings, descrip
 
 ## My standing recommendation: put the site behind Cloudflare
 
-For almost every site I work on, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/), and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/), and I don't earn a cent for recommending it to clients, though I've joked that I should.
+For almost every site I work on, I recommend running DNS and caching through [Cloudflare](https://www.cloudflare.com/), and the free plan alone does a remarkable amount. My own experience and every AI assistant I've asked agree on this one. Even though Cloudflare can cost nothing at all, I always tell clients to budget about $50 a month for its paid services, starting with the Pro plan and adding what the site grows into. I pay for Cloudflare Pro on [chrisabraham.com](https://chrisabraham.com/), and I don't earn a cent for recommending it to clients, though I've joked that I should.
 - **Speed:** Cloudflare serves cached copies of your pages and files from data centers near each visitor, which cuts load times and takes strain off your server.
 - **Security and HTTPS:** set the SSL/TLS mode to Full (strict), turn on Always Use HTTPS, and enable HSTS once everything loads over HTTPS, so browsers never fall back to an insecure connection.
 - **Crawlers:** its Crawler Hints feature uses IndexNow to tell Bing and other engines when pages change. Set its bot and AI crawler controls on purpose; I let search and AI crawlers in, because I want to be found and cited.
