@@ -756,6 +756,11 @@ for p in pages:
     for target in re.findall(r'href="\{root\}([^"#]*)', p["body"]):
         if target and target not in by_path and not os.path.exists(target):
             problems.append(f"{where}: link to missing page {target}")
+    # Anchor text: every link names its destination on its own.
+    for m in re.finditer(r"<a [^>]*>(.*?)</a>", p["body"], re.S):
+        label = text_of(m.group(1)).strip().rstrip(".!:").lower()
+        if re.fullmatch(r"(read|click|tap|go|see|view|learn|find out|continue|continue reading)?( (more|here|this|it|on))*|here|more|this|link|this page|this post|details|read (the )?(full )?(case( study)?|guide|post|article|story)|the case study|this (case study|guide)", label) or re.match(r"https?://", label):
+            problems.append(f"/{p['path']}: link text says nothing on its own: {text_of(m.group(1)).strip() or '(empty)'}")
 # Distinct content: no two pages may share more than 15% of their six-word phrases,
 # and no sentence of ten or more words may appear on more than one page.
 # Keeps Search Console from treating pages as duplicates or near-duplicates.
