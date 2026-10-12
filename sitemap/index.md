@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-09 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-11 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -68,6 +68,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+- [Repositories plus super intelligence: the SEO superpower nobody told you to learn](https://gerriscorp.com/guides/seo-superpower/): Repositories plus AI coding assistants turn an SEO from plugin operator into someone who ships fixes. Why SEOs need Git, Claude Code, and Copilot now.
 - [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
 - [The state of search in 2026: every Google update so far, and the AI shift behind them](https://gerriscorp.com/guides/search-in-2026/): Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.
 - [Ranking yourself first in a "best of" list now backfires in AI answers](https://gerriscorp.com/guides/self-ranking-lists/): How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
@@ -103,4 +104,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides.
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 9, 2026
+Updated October 11, 2026

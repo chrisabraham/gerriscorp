@@ -5,7 +5,7 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-09T12:00:00Z</updated>
+  <updated>2026-10-11T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
     <title>How AI assistants decide what to say about your business</title>
@@ -166,6 +166,14 @@
     <published>2026-10-06T12:00:00Z</published>
     <updated>2026-10-06T12:00:00Z</updated>
     <summary>A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.</summary>
+  </entry>
+  <entry>
+    <title>Repositories plus super intelligence: the SEO superpower nobody told you to learn</title>
+    <link href="https://gerriscorp.com/guides/seo-superpower/"/>
+    <id>https://gerriscorp.com/guides/seo-superpower/</id>
+    <published>2026-10-11T12:00:00Z</published>
+    <updated>2026-10-11T12:00:00Z</updated>
+    <summary>Repositories plus AI coding assistants turn an SEO from plugin operator into someone who ships fixes. Why SEOs need Git, Claude Code, and Copilot now.</summary>
   </entry>
   <entry>
     <title>Build a podcast website with Claude Code, GitHub Pages, and Cloudflare</title>

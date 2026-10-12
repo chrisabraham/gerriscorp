@@ -56,7 +56,7 @@ FILES = ["index",
          "guides/traffic-drop", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
          "guides/301-redirects", "guides/faceted-navigation", "guides/hreflang", "guides/core-web-vitals",
          "guides/cloudflare-seo", "guides/ga4-consent-mode", "guides/email-deliverability",
-         "guides/ai-coding-assistants", "guides/podcast-website", "guides/search-in-2026", "guides/self-ranking-lists", "guides/seo-101", "guides/podcast-seo", "guides/podcast-for-your-brand", "guides/lynx-qa", "guides/ada-website-compliance", "guides/glossary",
+         "guides/ai-coding-assistants", "guides/seo-superpower", "guides/podcast-website", "guides/search-in-2026", "guides/self-ranking-lists", "guides/seo-101", "guides/podcast-seo", "guides/podcast-for-your-brand", "guides/lynx-qa", "guides/ada-website-compliance", "guides/glossary",
          "case-studies/index", "case-studies/ecommerce-rendering", "case-studies/consent-blocking",
          "case-studies/react-event-platform", "case-studies/netlify-migration", "case-studies/sanity-vercel",
          "case-studies/shopify-migration", "case-studies/app-takeover", "case-studies/programmatic-indexing",
@@ -106,6 +106,10 @@ def finish(p):
     p["words"] = len(text_of(p["body"]).split())
     # sources: "Label | https://url ;; Label | https://url", the primary documentation behind a guide
     p["sources"] = [tuple(x.strip() for x in item.split(" | ", 1)) for item in p.get("sources", "").split(" ;; ") if " | " in item]
+    # about: / mentions: "Name | https://en.wikipedia.org/wiki/... ;; ..." (entities the article covers, for AI answer engines)
+    for key in ("about", "mentions"):
+        p["ent_" + key] = [{"@type": "Thing", "name": n.strip(), "sameAs": u.strip()}
+                           for n, u in (item.split(" | ", 1) for item in p.get(key, "").split(" ;; ") if " | " in item)]
     return p
 
 
@@ -325,7 +329,13 @@ def schema(p):
                       "description": p["description"], "url": p["url"], "mainEntityOfPage": {"@id": p["url"] + "#webpage"},
                       "author": {"@id": AUTHOR}, "publisher": {"@id": SITE + "#org"},
                       "datePublished": p.get("published", p["updated"]), "dateModified": p["updated"],
-                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"]})
+                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"],
+                      "citation": [{"@type": "CreativeWork", "name": label, "url": u} for label, u in p["sources"]]})
+    if p["kind"] == "guide":
+        art = graph[-1]
+        if p["ent_about"]: art["about"] = p["ent_about"]
+        if p["ent_mentions"]: art["mentions"] = p["ent_mentions"]
+        if p.get("keywords"): art["keywords"] = p["keywords"]
     if page_type == "CollectionPage":
         kids = [q for q in pages if q["tab"] == p["path"] and q is not p]
         page["mainEntity"] = {"@type": "ItemList", "itemListElement": [
