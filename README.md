@@ -44,3 +44,17 @@ Keep the website records DNS only until GitHub's certificate is issued; after th
 The site went live on gerriscorp.com on 2026-10-05 (`LIVE = True` in `tools/build.py`, custom domain set in the repo's Pages settings). The github.io address redirects to it.
 
 After going live: submit `https://gerriscorp.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and run the IndexNow workflow by hand once.
+
+
+## Guides syndication
+
+`/rss.xml` and `/feed.xml` contain every Guide, with full HTML article content,
+stable source URL identifiers, publication and revision dates, and absolute
+links and image addresses. RSS uses `content:encoded`; Atom uses HTML content.
+Entries are sorted by revision date, newest first. For Plone, import the RSS URL
+and test one entry before enabling scheduled ingestion. Attribution and any
+canonical setting must be configured in the destination CMS.
+
+The IndexNow workflow waits for the public sitemap to match the repository's
+intended inventory before submitting. A key that already exists is insufficient
+to prove that a new release has deployed. API acceptance is not indexing proof.

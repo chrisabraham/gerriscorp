@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-11 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-12 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -48,6 +48,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 
 ## Guides
+- [IndexNow, Bing, and a practical AI search workflow for fall 2026](https://gerriscorp.com/guides/indexnow-ai-search/): Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
@@ -101,7 +102,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [sitemap.xml](https://gerriscorp.com/sitemap.xml): the XML sitemap for search engines.
 - [llms.txt](https://gerriscorp.com/llms.txt): a plain summary of the site for language models, linking to Markdown versions of every page.
 - [llms-full.txt](https://gerriscorp.com/llms-full.txt): the full text of the site in one file.
-- [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides.
+- [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 11, 2026
+Updated October 12, 2026

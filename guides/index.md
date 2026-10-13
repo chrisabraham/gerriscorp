@@ -1,12 +1,13 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-07 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-12 · By Chris Abraham, Gerris Corp
 
 # Guides
 
 Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
 
 ## AI search
+- [IndexNow, Bing, and an AI search publishing workflow](https://gerriscorp.com/guides/indexnow-ai-search/): verify releases, notify participating engines, and syndicate full articles.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
 - [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.
 - [Repositories plus super intelligence: the SEO superpower](https://gerriscorp.com/guides/seo-superpower/): why SEOs need Git and AI coding assistants together, what it looks like in practice, and how to start.
@@ -58,6 +59,6 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.
 
-New guides are announced in the [Atom feed](https://gerriscorp.com/feed.xml).
+New guides are announced in the [full text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 7, 2026
+Updated October 12, 2026

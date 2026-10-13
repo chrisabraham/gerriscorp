@@ -5,6 +5,7 @@ until https://gerriscorp.com/<key>.txt actually serves the key, so the
 github.io preview (and the old redirect) never gets submitted.
 """
 import glob, json, re, time, urllib.request, xml.etree.ElementTree as ET
+from urllib.parse import urlparse
 
 LIVE = "https://gerriscorp.com"
 key = next(f[:-4] for f in glob.glob("*.txt") if re.fullmatch(r"[0-9a-f]{32}\.txt", f))
@@ -13,10 +14,16 @@ def get(url):
     with urllib.request.urlopen(url, timeout=20) as r:
         return r.geturl(), r.read().decode("utf-8", "replace")
 
+expected_sitemap = ET.tostring(ET.parse("sitemap.xml").getroot())
+
 def live():
     try:
         final, body = get(f"{LIVE}/{key}.txt")
-        return final.startswith(LIVE) and body.strip() == key
+        if urlparse(final).netloc != urlparse(LIVE).netloc or body.strip() != key:
+            return False
+        sitemap_url, sitemap_body = get(f"{LIVE}/sitemap.xml")
+        return (urlparse(sitemap_url).netloc == urlparse(LIVE).netloc
+                and ET.tostring(ET.fromstring(sitemap_body)) == expected_sitemap)
     except Exception:
         return False
 
@@ -24,7 +31,7 @@ for _ in range(20):  # Pages deploys a minute or two after the push
     if live(): break
     time.sleep(30)
 else:
-    print(f"{LIVE}/{key}.txt isn't serving the key; not live yet, skipping IndexNow")
+    print(f"{LIVE}/{key}.txt or the intended sitemap is not live yet; skipping IndexNow")
     raise SystemExit(0)
 
 urls = [e.text.strip() for e in ET.fromstring(get(f"{LIVE}/sitemap.xml")[1])

@@ -51,7 +51,7 @@ FILES = ["index",
          "services/on-page-seo", "services/site-speed", "services/search-console", "services/migrations",
          "services/ai-search", "services/ongoing-support",
          "services/multi-location", "services/reputation", "services/google-business-profile", "services/email-and-dns",
-         "guides/index", "guides/ai-assistants", "guides/javascript-seo", "guides/crawled-not-indexed",
+         "guides/index", "guides/indexnow-ai-search", "guides/ai-assistants", "guides/javascript-seo", "guides/crawled-not-indexed",
          "guides/migration-checklist", "guides/email-authentication", "guides/personal-information-removal",
          "guides/traffic-drop", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
          "guides/301-redirects", "guides/faceted-navigation", "guides/hreflang", "guides/core-web-vitals",
@@ -146,7 +146,7 @@ def site_map_body():
             '  <li><a href="{root}sitemap.xml">sitemap.xml</a>: the XML sitemap for search engines.</li>',
             '  <li><a href="{root}llms.txt">llms.txt</a>: a plain summary of the site for language models, linking to Markdown versions of every page.</li>',
             '  <li><a href="{root}llms-full.txt">llms-full.txt</a>: the full text of the site in one file.</li>',
-            '  <li><a href="{root}feed.xml">feed.xml</a>: an Atom feed of the guides.</li>',
+            '  <li><a href="{root}feed.xml">feed.xml</a>: an Atom feed of the guides. RSS is available at <a href="{root}rss.xml">rss.xml</a>.</li>',
             '  <li><a href="{root}robots.txt">robots.txt</a>: crawler rules; every search engine and AI crawler is welcome.</li>',
             '</ul>']
     return "\n".join(out)
@@ -438,6 +438,7 @@ def render(p):
 <link rel="apple-touch-icon" href="{r}logo.png">
 <link rel="manifest" href="{r}manifest.webmanifest">
 <link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/rss+xml" title="Gerris guides (RSS)" href="{r}rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Gerris guides" href="{r}feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{r}llms.txt">
 <link rel="sitemap" type="application/xml" href="{r}sitemap.xml">
@@ -483,7 +484,7 @@ def render(p):
 </main>
 <footer class="site-footer">
   <p><a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="tel:{TEL}">{PHONE}</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}standards/">Standards</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}colophon/">Colophon</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}feed.xml">Feed</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}standards/">Standards</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}colophon/">Colophon</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}rss.xml">RSS</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
 </footer>
 </div>
 </body>
@@ -682,6 +683,16 @@ Allow: /
 Sitemap: https://gerriscorp.com/sitemap.xml
 """)
 
+# Feed bodies travel outside the site, so every local resource needs an absolute URL.
+from urllib.parse import urljoin
+
+def feed_body(p):
+    body = body_html(p)
+    return re.sub(r'(href|src)="([^"]+)"',
+                  lambda m: m[1] + '="' + html.escape(urljoin(p["url"], html.unescape(m[2])), quote=True) + '"', body)
+
+guides = sorted(guides, key=lambda p: (p["updated"], p.get("published", p["updated"]), p["url"]), reverse=True)
+
 esc = lambda s: html.escape(s, quote=False)
 newest = max(p["updated"] for p in guides)
 open("feed.xml", "w", encoding="utf-8").write(
@@ -701,8 +712,31 @@ open("feed.xml", "w", encoding="utf-8").write(
     <published>{p.get("published", p["updated"])}T12:00:00Z</published>
     <updated>{p["updated"]}T12:00:00Z</updated>
     <summary>{esc(p["description"])}</summary>
+    <content type="html">{esc(feed_body(p))}</content>
   </entry>
 """ for p in guides) + "</feed>\n")
+
+rfc822 = lambda d: datetime.date.fromisoformat(d).strftime("%a, %d %b %Y 12:00:00 +0000")
+open("rss.xml", "w", encoding="utf-8").write(
+    f"""<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Gerris guides</title>
+  <link>{SITE}guides/</link>
+  <description>Technical SEO, AI search, migration, email, and privacy guides by Chris Abraham</description>
+  <language>en-us</language>
+  <lastBuildDate>{rfc822(newest)}</lastBuildDate>
+  <atom:link href="{SITE}rss.xml" rel="self" type="application/rss+xml"/>
+""" + "".join(f"""  <item>
+    <title>{esc(p["h1"])}</title>
+    <link>{p["url"]}</link>
+    <guid isPermaLink="true">{p["url"]}</guid>
+    <pubDate>{rfc822(p.get("published", p["updated"]))}</pubDate>
+    <description>{esc(p["description"])}</description>
+    <content:encoded>{esc(feed_body(p))}</content:encoded>
+    <content:encoded>{esc(feed_body(p))}</content:encoded>
+  </item>
+""" for p in guides) + "</channel>\n</rss>\n")
 
 os.makedirs(".well-known", exist_ok=True)
 expires = (datetime.date.today() + datetime.timedelta(days=365)).isoformat()

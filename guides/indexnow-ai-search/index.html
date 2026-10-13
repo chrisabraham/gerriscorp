@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IndexNow and Bing for an AI search publishing workflow</title>
+<meta name="description" content="Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.">
+<meta name="keywords" content="IndexNow and AI search, SEO guide, Gerris Corp, Chris Abraham">
+<link rel="canonical" href="https://gerriscorp.com/guides/indexnow-ai-search/">
+<meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/rss+xml" title="Gerris guides (RSS)" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  gtag('js', new Date());
+  gtag('config', 'G-JF2W6ESJZN');
+</script>
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IndexNow and Bing for an AI search publishing workflow">
+<meta property="og:description" content="Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.">
+<meta property="og:url" content="https://gerriscorp.com/guides/indexnow-ai-search/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-12">
+<meta property="article:modified_time" content="2026-10-12">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IndexNow and Bing for an AI search publishing workflow">
+<meta name="twitter:description" content="Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --orange: #c75000; --blue: #16729e; --teal: #237482; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { color: var(--blue); font-size: 1.4rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.25rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "publishingPrinciples": "https://gerriscorp.com/standards/"
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "slogan": "Experienced help for the digital work your business needs done",
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp",
+    "https://share.google/C5KMu0jYTNz8t2Zpn"
+   ],
+   "publishingPrinciples": "https://gerriscorp.com/standards/",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://gerriscorp.com/chris-abraham.jpg",
+    "width": 320,
+    "height": 320,
+    "caption": "Chris Abraham, founder of Gerris Corp"
+   },
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
+   "homeLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/indexnow-ai-search/#webpage",
+   "url": "https://gerriscorp.com/guides/indexnow-ai-search/",
+   "name": "IndexNow and Bing for an AI search publishing workflow",
+   "description": "Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-12",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/indexnow-ai-search/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/indexnow-ai-search/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "IndexNow and AI search",
+     "item": "https://gerriscorp.com/guides/indexnow-ai-search/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/indexnow-ai-search/#article",
+   "headline": "IndexNow, Bing, and a practical AI search workflow for fall 2026",
+   "description": "Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.",
+   "url": "https://gerriscorp.com/guides/indexnow-ai-search/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/indexnow-ai-search/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-12",
+   "dateModified": "2026-10-12",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 987,
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "IndexNow protocol documentation",
+     "url": "https://www.indexnow.org/documentation"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "IndexNow frequently asked questions",
+     "url": "https://www.indexnow.org/faq"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Google guidance for AI search features",
+     "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › IndexNow and AI search</p>
+<main id="main">
+<h1>IndexNow, Bing, and a practical AI search workflow for fall 2026</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 12, 2026</p>
+<p class="lead">A website can publish excellent advice and still have a poor release process. The repository changes, the build finishes, a notification runs, and nobody checks which version reached the public domain. My priority for AI search this fall is making that chain observable. Give each release a clear destination, verify the content there, and keep evidence of what happened afterward.</p>
+
+<h2>Assign a separate job to each part of the system</h2>
+<p>A sitemap describes the site's intended public inventory. Internal links give visitors and crawlers routes through it. An RSS feed distributes articles to subscribers and other publishing systems. IndexNow sends change notifications to participating engines. None of these substitutes for a page that explains something accurately.</p>
+<p>The distinctions matter when a stakeholder asks whether a guide has been “submitted to AI.” There is no single submission step that covers every assistant. Search products can retrieve information through different providers and their own crawlers. IndexNow can support freshness in participating indexes, but it is not a pipeline into every language model.</p>
+<p>I would name the checkpoints in a release record: committed, built, deployed, publicly verified, notified, crawled, and indexed. A citation is another observation, not a synonym for any of those states. That vocabulary prevents a green build badge from becoming an unsupported visibility claim.</p>
+
+<h2>Prepare the page before setting up notifications</h2>
+<p>Choose a permanent address and connect it to the right guide category. Confirm the title describes the question, the introduction supplies an answer, and the author's identity is clear. Check the visible content against the structured data. If a comparison uses numbers, publish the assumptions and the date of the comparison.</p>
+<p>Then request the public address directly. It should return the expected page without requiring an editor session. Inspect the canonical and indexing controls, and test important images and downloadable resources. Compare the raw HTML with the rendered page when JavaScript is involved. My <a href="../../guides/javascript-seo/">JavaScript visibility guide</a> provides a focused diagnostic sequence.</p>
+<p>Google's AI search documentation keeps the eligibility requirements within ordinary Search: the page must be indexed and allowed to appear with a snippet. Extra AI specific markup is not required. I would spend the first hour correcting access or content problems before adding another machine readable file.</p>
+
+<h2>Make IndexNow part of the release process</h2>
+<p>The protocol verifies control of a host through a key file. Publish that file where the submitted key location points, and confirm its contents from the public domain. Submit the final URLs on that host, rather than preview addresses or a development domain. Preserve the verification file through template changes and migrations.</p>
+<p>Send notifications for meaningful additions, revisions, or removals. The documentation permits batches of up to 10,000 URLs, but a normal editorial release rarely needs that many. A deployment that changes only a decorative detail does not justify repeatedly announcing the entire archive.</p>
+<p>For a static site, the sequence I would implement is:</p>
+<ol>
+  <li>Build the source and validate the generated HTML, sitemap, and feeds.</li>
+  <li>Publish the approved commit to the production host.</li>
+  <li>Wait until the changed public pages match the intended release.</li>
+  <li>Submit the affected URL inventory to IndexNow.</li>
+  <li>Save the response and review engine reporting later.</li>
+</ol>
+<p>A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.</p>
+
+<h2>Use Bing Webmaster Tools as a diagnostic instrument</h2>
+<p>Verify the business domain in Bing Webmaster Tools and review its sitemap and URL inspection information. Look at the exact production address when investigating a missing article. Keep old and new URLs together during a migration so a redirect can be evaluated against its intended destination.</p>
+<p>A submission report and an index report answer different questions. If a URL was notified but remains unavailable in search, examine the content, access rules, canonical choice, and engine feedback. Repeated submissions do not fix an incorrect canonical or a page that needs authentication.</p>
+<p>I would also retain the existing Google Search Console routine. IndexNow's participant list does not currently include Google. Use the site's Google reports to assess Google discovery and indexing rather than infer success from a Bing notification.</p>
+
+<h2>Give the Guides a feed that another site can actually use</h2>
+<p>A summary feed is enough for a headline widget. Republishing a Guide needs more: article content, a stable identifier, a source link, reliable dates, and absolute links inside the imported body. A relative image or navigation address that works on the originating website may point somewhere else after import.</p>
+<p>The <a href="../../rss.xml">Gerris Guides RSS feed</a> carries full article content, and the <a href="../../feed.xml">Atom version</a> provides an alternative. An importer should preserve the original source URL and recognize the same identifier on subsequent runs. Test one article in Plone before enabling automatic ingestion for the whole archive.</p>
+<p>Decide whether the destination displays excerpts or republishes complete articles. A full copy deserves visible attribution and a deliberate canonical policy. A feed cannot control the metadata that a separate CMS emits. Check the resulting Plone page, including its links and images, rather than assume feed parsing completed the SEO work.</p>
+
+<h2>Measure the business result independently</h2>
+<p>For each release, retain a short note of the question it answers, the production URL, the publication date, and the intended reader. Review search visibility and referred traffic against that record. If you test assistant answers, keep the question wording and the linked sources so another person can inspect the observation.</p>
+<p>The strongest operational outcome is a process that can distinguish publication failure from indexing delay and editorial weakness. Those require different remedies. Start with one useful Guide, establish the checkpoints, then repeat the process for the next article. For broader release planning, the <a href="../../guides/migration-checklist/">website migration checklist</a> shows how inventories and verification fit together.</p>
+<h2>References</h2>
+<ul class="sources">
+  <li><a href="https://www.indexnow.org/documentation">IndexNow protocol documentation</a></li>
+  <li><a href="https://www.indexnow.org/faq">IndexNow frequently asked questions</a></li>
+  <li><a href="https://developers.google.com/search/docs/appearance/ai-features">Google guidance for AI search features</a></li>
+</ul>
+<aside class="author-box" aria-label="About the author">
+  <img src="../../chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="../../about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="../../standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../standards/">Standards</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../colophon/">Colophon</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../rss.xml">RSS</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+name: IndexNow and AI search
+type: guide
+published: 2026-10-12
+updated: 2026-10-12
+title: IndexNow and Bing for an AI search publishing workflow
+description: Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.
+sources: IndexNow protocol documentation | https://www.indexnow.org/documentation ;; IndexNow frequently asked questions | https://www.indexnow.org/faq ;; Google guidance for AI search features | https://developers.google.com/search/docs/appearance/ai-features
+---
+<h1>IndexNow, Bing, and a practical AI search workflow for fall 2026</h1>
+<p class="lead">A website can publish excellent advice and still have a poor release process. The repository changes, the build finishes, a notification runs, and nobody checks which version reached the public domain. My priority for AI search this fall is making that chain observable. Give each release a clear destination, verify the content there, and keep evidence of what happened afterward.</p>
+
+<h2>Assign a separate job to each part of the system</h2>
+<p>A sitemap describes the site's intended public inventory. Internal links give visitors and crawlers routes through it. An RSS feed distributes articles to subscribers and other publishing systems. IndexNow sends change notifications to participating engines. None of these substitutes for a page that explains something accurately.</p>
+<p>The distinctions matter when a stakeholder asks whether a guide has been “submitted to AI.” There is no single submission step that covers every assistant. Search products can retrieve information through different providers and their own crawlers. IndexNow can support freshness in participating indexes, but it is not a pipeline into every language model.</p>
+<p>I would name the checkpoints in a release record: committed, built, deployed, publicly verified, notified, crawled, and indexed. A citation is another observation, not a synonym for any of those states. That vocabulary prevents a green build badge from becoming an unsupported visibility claim.</p>
+
+<h2>Prepare the page before setting up notifications</h2>
+<p>Choose a permanent address and connect it to the right guide category. Confirm the title describes the question, the introduction supplies an answer, and the author's identity is clear. Check the visible content against the structured data. If a comparison uses numbers, publish the assumptions and the date of the comparison.</p>
+<p>Then request the public address directly. It should return the expected page without requiring an editor session. Inspect the canonical and indexing controls, and test important images and downloadable resources. Compare the raw HTML with the rendered page when JavaScript is involved. My <a href="{root}guides/javascript-seo/">JavaScript visibility guide</a> provides a focused diagnostic sequence.</p>
+<p>Google's AI search documentation keeps the eligibility requirements within ordinary Search: the page must be indexed and allowed to appear with a snippet. Extra AI specific markup is not required. I would spend the first hour correcting access or content problems before adding another machine readable file.</p>
+
+<h2>Make IndexNow part of the release process</h2>
+<p>The protocol verifies control of a host through a key file. Publish that file where the submitted key location points, and confirm its contents from the public domain. Submit the final URLs on that host, rather than preview addresses or a development domain. Preserve the verification file through template changes and migrations.</p>
+<p>Send notifications for meaningful additions, revisions, or removals. The documentation permits batches of up to 10,000 URLs, but a normal editorial release rarely needs that many. A deployment that changes only a decorative detail does not justify repeatedly announcing the entire archive.</p>
+<p>For a static site, the sequence I would implement is:</p>
+<ol>
+  <li>Build the source and validate the generated HTML, sitemap, and feeds.</li>
+  <li>Publish the approved commit to the production host.</li>
+  <li>Wait until the changed public pages match the intended release.</li>
+  <li>Submit the affected URL inventory to IndexNow.</li>
+  <li>Save the response and review engine reporting later.</li>
+</ol>
+<p>A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.</p>
+
+<h2>Use Bing Webmaster Tools as a diagnostic instrument</h2>
+<p>Verify the business domain in Bing Webmaster Tools and review its sitemap and URL inspection information. Look at the exact production address when investigating a missing article. Keep old and new URLs together during a migration so a redirect can be evaluated against its intended destination.</p>
+<p>A submission report and an index report answer different questions. If a URL was notified but remains unavailable in search, examine the content, access rules, canonical choice, and engine feedback. Repeated submissions do not fix an incorrect canonical or a page that needs authentication.</p>
+<p>I would also retain the existing Google Search Console routine. IndexNow's participant list does not currently include Google. Use the site's Google reports to assess Google discovery and indexing rather than infer success from a Bing notification.</p>
+
+<h2>Give the Guides a feed that another site can actually use</h2>
+<p>A summary feed is enough for a headline widget. Republishing a Guide needs more: article content, a stable identifier, a source link, reliable dates, and absolute links inside the imported body. A relative image or navigation address that works on the originating website may point somewhere else after import.</p>
+<p>The <a href="{root}rss.xml">Gerris Guides RSS feed</a> carries full article content, and the <a href="{root}feed.xml">Atom version</a> provides an alternative. An importer should preserve the original source URL and recognize the same identifier on subsequent runs. Test one article in Plone before enabling automatic ingestion for the whole archive.</p>
+<p>Decide whether the destination displays excerpts or republishes complete articles. A full copy deserves visible attribution and a deliberate canonical policy. A feed cannot control the metadata that a separate CMS emits. Check the resulting Plone page, including its links and images, rather than assume feed parsing completed the SEO work.</p>
+
+<h2>Measure the business result independently</h2>
+<p>For each release, retain a short note of the question it answers, the production URL, the publication date, and the intended reader. Review search visibility and referred traffic against that record. If you test assistant answers, keep the question wording and the linked sources so another person can inspect the observation.</p>
+<p>The strongest operational outcome is a process that can distinguish publication failure from indexing delay and editorial weakness. Those require different remedies. Start with one useful Guide, establish the checkpoints, then repeat the process for the next article. For broader release planning, the <a href="{root}guides/migration-checklist/">website migration checklist</a> shows how inventories and verification fit together.</p>
