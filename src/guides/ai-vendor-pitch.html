@@ -1,0 +1,44 @@
+name: Vet an AI Vendor
+type: guide
+published: 2026-10-13
+updated: 2026-10-13
+title: How to vet an AI vendor's sales pitch before you sign
+description: Twelve questions that expose AI washing in a vendor pitch, the SEC and FTC cases that define it, and why a technical skeptic belongs on the sales call.
+keywords: AI washing, AI vendor evaluation, AI due diligence, AI vendor questions, technology advisor
+sources: SEC: SEC charges two investment advisers with making false and misleading statements about their use of artificial intelligence (March 18, 2024) | https://www.sec.gov/newsroom/press-releases/2024-36 ;; FTC: FTC announces crackdown on deceptive AI claims and schemes (September 25, 2024) | https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes ;; NIST: AI Risk Management Framework | https://www.nist.gov/itl/ai-risk-management-framework
+about: AI washing | https://en.wikipedia.org/wiki/AI_washing ;; Due diligence | https://en.wikipedia.org/wiki/Due_diligence
+mentions: U.S. Securities and Exchange Commission | https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission ;; Federal Trade Commission | https://en.wikipedia.org/wiki/Federal_Trade_Commission ;; DoNotPay | https://en.wikipedia.org/wiki/DoNotPay ;; Large language model | https://en.wikipedia.org/wiki/Large_language_model ;; National Institute of Standards and Technology | https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology
+---
+<h1>How to vet an AI vendor's pitch before you sign anything</h1>
+<p class="lead">Every software sales deck now has AI on the first slide. Some of those products are remarkable. Some are a thin layer over a model you could rent yourself for a few dollars a month. A few have no meaningful AI at all. Regulators have a name for the last group, AI washing, and they've started bringing cases. These are the questions I ask when a client brings me onto a vendor call, and the answers that tell me which kind of product I'm looking at.</p>
+
+<h2>What AI washing looks like on the record</h2>
+<p>On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI driven investing when it wasn't using that data in its process.</p>
+<p>On September 25, 2024, the FTC announced Operation AI Comply, five actions against companies using AI claims to deceive customers. One was DoNotPay, marketed as "the world's first robot lawyer"; the FTC said the company never tested whether its output matched a lawyer's, and DoNotPay agreed to pay $193,000. FTC Chair Lina Khan put the principle in one line: "there is no AI exemption from the laws on the books."</p>
+<p>Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well written prompt and a spreadsheet.</p>
+
+<h2>Twelve questions for the sales call</h2>
+<ol>
+  <li><strong>Which model does this run on, and who hosts it?</strong> A clear answer ("a hosted model from one of the big labs, called through their API") is fine. Evasion is a warning.</li>
+  <li><strong>What does your product add on top of that model?</strong> Good answers name real work: your integrations, a curated dataset, a review workflow, evaluation tests.</li>
+  <li><strong>Can you run it on my data, live, right now?</strong> A recorded demo shows the best case. A live run on a sample of your own material shows the typical one.</li>
+  <li><strong>How often is it wrong, and how do you measure that?</strong> Every AI system makes mistakes. Vendors with mature products have an error rate and a test set. Vendors without one say "it's very accurate."</li>
+  <li><strong>What happens when it's wrong?</strong> Who notices, who fixes it, and who carries the cost: you, the vendor, or your customer.</li>
+  <li><strong>Where does my data go?</strong> Which servers, which subprocessors, how long it's kept, and whether it trains anyone's model. Get the answer in the contract.</li>
+  <li><strong>Who owns the output?</strong> Content, code, analysis, and anything the system learns from your use.</li>
+  <li><strong>What does it cost at ten times my volume?</strong> Per seat, per task, and per token pricing behave very differently once usage grows.</li>
+  <li><strong>How many humans are behind it?</strong> Some "automated" services quietly route work to people. That can be a fine product; it should be an honest one.</li>
+  <li><strong>How do I leave?</strong> Export formats, notice periods, and what happens to your data afterward.</li>
+  <li><strong>Who else uses it for exactly this?</strong> Ask for a reference customer with your use case, and call them.</li>
+  <li><strong>What would make you tell me not to buy this?</strong> Honest vendors know where their product fits badly, and they'll tell you.</li>
+</ol>
+
+<h2>Read the answers as evidence</h2>
+<p>I score each answer three ways: specific or vague, testable or unverifiable, and consistent with what the contract says. One vague answer is normal; sales teams don't know everything and should offer to follow up. A pattern of vague answers on accuracy, data, and cost is the signal. The product might still be good, and the vendor still hasn't shown it.</p>
+<p>For a structured view of risk once you're serious, NIST's AI Risk Management Framework gives you vocabulary for governance, testing, and monitoring that your legal and security teams will recognize.</p>
+
+<h2>Run a paid pilot with a scorecard</h2>
+<p>Before a full contract, run a short pilot on real work with success measures you set: accuracy on a sample you've already checked by hand, time saved per task, and the number of outputs a person had to correct. Write the measures down before the pilot starts, so nobody redefines success at the end. My guide to <a href="{root}guides/fact-check-ai-seo/">fact checking confident AI answers</a> describes the claim by claim habit I use to grade output.</p>
+
+<h2>Bring a technical skeptic to the call</h2>
+<p>Sales calls are designed for the buyer who doesn't know which questions to ask. Bringing one person who does changes the whole conversation. I sit in on vendor calls for clients as exactly that person: I've built on these models myself, so I can tell a real integration from a wrapper in a few questions, and I'm comfortable asking the awkward ones politely. Afterward you get a short written recommendation: what's real, what's missing, and what to ask for in the contract. That work falls under my <a href="{root}services/advisory/">advisory and second opinions</a>, and if the answer is to build something yourself, see <a href="{root}services/ai-automation/">AI agents and automation</a>.</p>

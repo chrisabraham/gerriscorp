@@ -56,7 +56,7 @@ FILES = ["index",
          "guides/traffic-drop", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
          "guides/301-redirects", "guides/faceted-navigation", "guides/hreflang", "guides/core-web-vitals",
          "guides/cloudflare-seo", "guides/ga4-consent-mode", "guides/email-deliverability",
-         "guides/ai-coding-assistants", "guides/seo-superpower", "guides/podcast-website", "guides/search-in-2026", "guides/self-ranking-lists", "guides/seo-101", "guides/podcast-seo", "guides/podcast-for-your-brand", "guides/lynx-qa", "guides/ada-website-compliance", "guides/glossary",
+         "guides/ai-coding-assistants", "guides/ai-vendor-pitch", "guides/hiring-developers", "guides/hype-or-shift", "guides/seo-superpower", "guides/podcast-website", "guides/search-in-2026", "guides/self-ranking-lists", "guides/seo-101", "guides/podcast-seo", "guides/podcast-for-your-brand", "guides/lynx-qa", "guides/ada-website-compliance", "guides/glossary",
          "case-studies/index", "case-studies/ecommerce-rendering", "case-studies/consent-blocking",
          "case-studies/react-event-platform", "case-studies/netlify-migration", "case-studies/sanity-vercel",
          "case-studies/shopify-migration", "case-studies/app-takeover", "case-studies/programmatic-indexing",
@@ -802,7 +802,7 @@ for p in pages:
     if p["words"] < MIN_WORDS[p["kind"]]: problems.append(f"{where}: only {p['words']} words (min {MIN_WORDS[p['kind']]})")
     if "—" in b or " – " in b: problems.append(f"{where}: em or en dash in the copy")
     if "Chris's" in b + t + d: problems.append(f"{where}: write Chris' not Chris's")
-    plain = re.sub(r"<code>.*?</code>|<pre>.*?</pre>", "", p["body"], flags=re.S)
+    plain = re.sub(r"<code>.*?</code>|<pre>.*?</pre>|<blockquote>.*?</blockquote>", "", p["body"], flags=re.S)  # quoted words aren't the site's voice
     for m in re.finditer(r"\b(we|We|our|Our|us)\b", text_of(plain)):
         problems.append(f"{where}: first person plural: {m.group(0)}")
     for target in re.findall(r'href="\{root\}([^"#]*)', p["body"]):

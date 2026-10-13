@@ -62,6 +62,11 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
 
+## Vendors, developers, and technology decisions
+- [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.
+- [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): own the accounts, interview for judgment, pay for a trial task, and review every change.
+- [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Amara's law, the hype cycle, and lessons from communities, blogs, social media, crypto, and AI.
+
 ## Reference
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): plain definitions, from 301 redirects to XML sitemaps.
 

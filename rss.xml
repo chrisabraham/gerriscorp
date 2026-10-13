@@ -404,6 +404,64 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/aside&gt;</content:encoded>
   </item>
   <item>
+    <title>Hype or real shift? Eight tests for judging a new technology wave</title>
+    <link>https://gerriscorp.com/guides/hype-or-shift/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/hype-or-shift/</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Eight tests for telling a lasting technology shift from a hype cycle, drawn from online communities, blogs, social media, crypto, and the AI wave of 2026.</description>
+    <content:encoded>&lt;h1&gt;Hype or real shift? Eight tests for judging a new technology wave&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="lead"&gt;Every few years a technology arrives that everyone says changes everything. Sometimes it does. I've worked through enough of these waves to have a working method for telling the difference: online communities, blogs, social media, cryptocurrency, and now AI. The tests below are the ones I use with clients who have to decide what to spend on this year, while the noise is loudest.&lt;/p&gt;
+
+&lt;h2&gt;Two ideas worth keeping in your pocket&lt;/h2&gt;
+&lt;p&gt;Roy Amara, who led the Institute for the Future, gave his name to the most useful sentence about technology forecasting, now called Amara's law:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Gartner's hype cycle draws the same shape as a curve: an innovation trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity. The model has its critics, and plenty of technologies never climb out of the trough. As a reminder that loud and lasting are different measurements, both earn their place.&lt;/p&gt;
+
+&lt;h2&gt;What I've watched up close&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Online communities.&lt;/strong&gt; I was on The WELL and ran MemeSpace long before "community manager" was a job. The tools changed completely. The thing people wanted, a place to talk with others who care about the same subject, never changed at all, and it's why Reddit threads now feed AI answers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Blogs.&lt;/strong&gt; I ran blogs on Movable Type and helped develop blogger outreach in 2006. The format peaked and faded as a fashion, and the underlying shift, anyone can publish and be found, became permanent.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Social media.&lt;/strong&gt; I was on Facebook in 2006 and Twitter in 2007, and I've watched platforms rise, dominate, and lose their grip. The lasting change was in how news and reputations move.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cryptocurrency.&lt;/strong&gt; I co-founded and edited a daily news site covering crypto and blockchain, based in Tallinn, and interviewed the people building it. Covering a market every day teaches you to separate press releases from working software.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AI.&lt;/strong&gt; I use AI tools every working day and have built real software with them. I also catch them inventing things every week.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Eight tests&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Does it work when it's boring?&lt;/strong&gt; Demos show the best case. Ask what a normal Tuesday looks like for someone who has used it for six months.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Who pays, and for what?&lt;/strong&gt; Lasting shifts have customers paying for a result. Hype is often funded by investors paying for growth.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Does it survive the subsidy?&lt;/strong&gt; Many new tools are priced below cost to win users. Ask what the work costs at a price the vendor can sustain.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Do practitioners keep using it?&lt;/strong&gt; Watch the people who do the work after the novelty wears off. In Stack Overflow's 2025 survey, 84 percent of developers used or planned to use AI tools while more distrusted their accuracy than trusted it. That combination, heavy use with clear eyed doubt, is what a real tool looks like in its awkward years.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Are the objections fixed or renamed?&lt;/strong&gt; Real shifts answer their critics with better products. Hype answers them with new vocabulary.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Does it change a cost line?&lt;/strong&gt; The waves that lasted made something dramatically cheaper: publishing, distribution, communication. Find the line in your budget that it shrinks.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Can you leave?&lt;/strong&gt; Lock in tends to grow on the peak. Prefer tools that let you take your data with you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What does the skeptic in the room say?&lt;/strong&gt; Find the most knowledgeable doubter you can and listen to the strongest version of the case against.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;How to act while you're unsure&lt;/h2&gt;
+&lt;p&gt;Be early and small. Try new tools on real work at low cost, keep what proves itself, and drop the rest without ceremony. Write down what you learn as you go, so the decision a year from now rests on your own evidence. Avoid both betting the company on the peak and waiting for the plateau, because by then your competitors have already learned what you're just starting to.&lt;/p&gt;
+
+&lt;h2&gt;The gray beard in the room&lt;/h2&gt;
+&lt;p&gt;Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my &lt;a href="https://gerriscorp.com/services/advisory/"&gt;advisory work&lt;/a&gt;, read &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;how I vet an AI vendor's pitch&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Roy_Amara"&gt;Wikipedia: Roy Amara (Amara&amp;#x27;s law)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Gartner_hype_cycle"&gt;Wikipedia: Gartner hype cycle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://survey.stackoverflow.co/2025/ai"&gt;Stack Overflow: 2025 Developer Survey, AI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
     <title>React hydration errors and what they mean for SEO</title>
     <link>https://gerriscorp.com/guides/hydration-errors/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/hydration-errors/</guid>
@@ -469,6 +527,73 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;a href="https://react.dev/errors/418"&gt;React: Minified React error #418&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics"&gt;Google Search Central: Understand the JavaScript SEO basics&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata"&gt;Next.js: generateMetadata&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>How to hire and manage developers when you can't read code yourself</title>
+    <link>https://gerriscorp.com/guides/hiring-developers/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/hiring-developers/</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A founder's method for hiring web developers: own the accounts first, interview for judgment, pay for a trial task, review pull requests, and manage AI use.</description>
+    <content:encoded>&lt;h1&gt;How to hire and manage developers when you can't read code yourself&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="lead"&gt;Founders and marketing leads hire developers all the time without being able to judge the work. They pick the most confident interview, hope for the best, and find out six months later what they bought. There's a better way, and none of it requires learning to program. It requires owning the right accounts, asking questions that reveal judgment, and putting every change somewhere you can see it.&lt;/p&gt;
+
+&lt;h2&gt;Own the accounts before you hire anyone&lt;/h2&gt;
+&lt;p&gt;Create a GitHub organization in your company's name, and keep the domain registrar, hosting, DNS, email, analytics, and Search Console in accounts your business controls. GitHub's organizations exist for exactly this: shared ownership with per person permissions. Developers get invited in and can be removed cleanly. The most expensive situation I see in rescue work is a business whose site lives in a former contractor's personal account.&lt;/p&gt;
+
+&lt;h2&gt;Write the problem down&lt;/h2&gt;
+&lt;p&gt;A one page brief beats any job title. What the site does, what's broken or missing, what platform it runs on, what "done" would look like, and the deadline that actually matters. The brief attracts the right people, and it becomes the yardstick for everything that follows.&lt;/p&gt;
+
+&lt;h2&gt;Interview for judgment&lt;/h2&gt;
+&lt;p&gt;You can't grade code in an interview, and you don't need to. You can grade how someone thinks. Ask:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;"Walk me through something you built that's live now."&lt;/strong&gt; Open it together. Strong candidates explain choices and tradeoffs; weak ones list technologies.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;"Tell me about something that broke in production."&lt;/strong&gt; Everyone experienced has a story. Listen for how they found the cause and what they changed so it wouldn't repeat.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;"What would you need from me in week one?"&lt;/strong&gt; Good developers ask for access, the brief, and a decision maker. People who need nothing are planning to guess.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;"How do you use AI coding tools, and how do you check what they write?"&lt;/strong&gt; More on this below; the answer tells you a lot.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;"What part of this brief would you push back on?"&lt;/strong&gt; Someone who agrees with everything will also agree with every bad idea later.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Pay for a small trial task&lt;/h2&gt;
+&lt;p&gt;Pick a real, contained piece of work: a page template, a bug, a performance fix. Write the acceptance criteria in plain English, pay for a few hours, and ask for the work as a pull request in your repository. You learn how they communicate, whether they meet the brief, and whether their work is readable to the next person. They learn whether they want the job. Either side can stop cleanly.&lt;/p&gt;
+
+&lt;h2&gt;See every change through pull requests&lt;/h2&gt;
+&lt;p&gt;A pull request is a proposed change, shown line by line, with a description and a place for comments, and nothing reaches the live site until someone approves it. Require one for every change, with a sentence in plain English explaining what and why. You won't read the code, but you'll read the descriptions, see the pace of work, and have a complete history if a developer leaves. If you have one technical person you trust, give them reviewer rights.&lt;/p&gt;
+
+&lt;h2&gt;Manage the AI in the room&lt;/h2&gt;
+&lt;p&gt;Nearly every developer now works with AI assistants. In Stack Overflow's 2025 Developer Survey, 84 percent of respondents said they use or plan to use AI tools, yet more distrusted the accuracy of those tools (46 percent) than trusted it (33 percent). The most common frustration, cited by 66 percent, was AI solutions that are "almost right, but not quite."&lt;/p&gt;
+&lt;p&gt;That gap is your hiring signal. The developer you want uses AI for speed and checks everything it writes: runs it, tests it, and can explain any line in their pull request. The developer to avoid pastes output they can't explain. Ask candidates to walk you through a recent change and why each part is there. If they can't, nobody can.&lt;/p&gt;
+
+&lt;h2&gt;Getting the best from junior developers&lt;/h2&gt;
+&lt;p&gt;Junior developers are often quick, eager, and very good with new tools. They need what everyone needs, in larger doses: small, clearly written tickets, acceptance criteria they can test themselves, a reviewer who explains the "why" behind each requested change, and a running decision log so they don't relitigate settled questions. Paired with an experienced reviewer, a junior developer becomes productive fast. Left alone with a vague brief and an AI assistant, they produce confident code that someone will have to rewrite.&lt;/p&gt;
+
+&lt;h2&gt;Red flags&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Work happens on their server or in their personal account.&lt;/li&gt;
+  &lt;li&gt;Changes go live with no record of what changed.&lt;/li&gt;
+  &lt;li&gt;Status updates are always "almost done."&lt;/li&gt;
+  &lt;li&gt;Every problem belongs to the hosting company, the plugin, or the previous developer.&lt;/li&gt;
+  &lt;li&gt;Requests for passwords sent by text message instead of invitations to your accounts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Where I fit&lt;/h2&gt;
+&lt;p&gt;I've spent decades on both sides of this table: writing Perl and PHP myself, then specifying, reviewing, and directing developers' work for clients, and now directing AI coding assistants the way a lead directs a team. I sit in on developer interviews as the technical interviewer, write the trial task and its acceptance criteria, review the pull requests, and mentor junior developers through their first months. When you need someone to own the whole picture part time, that's my &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt; work; for specs and review alone, see &lt;a href="https://gerriscorp.com/services/developers/"&gt;developer specs and QA&lt;/a&gt;. My guide to &lt;a href="https://gerriscorp.com/guides/repository-access/"&gt;giving an outside expert repository access&lt;/a&gt; covers the permissions side.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://survey.stackoverflow.co/2025/ai"&gt;Stack Overflow: 2025 Developer Survey, AI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations"&gt;GitHub Docs: About organizations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"&gt;GitHub Docs: About pull request reviews&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
@@ -689,6 +814,63 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/speed/docs/insights/v5/get-started"&gt;Google: PageSpeed Insights API&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developer.chrome.com/docs/crux/api"&gt;Chrome for Developers: CrUX API&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/"&gt;Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>How to vet an AI vendor's pitch before you sign anything</title>
+    <link>https://gerriscorp.com/guides/ai-vendor-pitch/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/ai-vendor-pitch/</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Twelve questions that expose AI washing in a vendor pitch, the SEC and FTC cases that define it, and why a technical skeptic belongs on the sales call.</description>
+    <content:encoded>&lt;h1&gt;How to vet an AI vendor's pitch before you sign anything&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="lead"&gt;Every software sales deck now has AI on the first slide. Some of those products are remarkable. Some are a thin layer over a model you could rent yourself for a few dollars a month. A few have no meaningful AI at all. Regulators have a name for the last group, AI washing, and they've started bringing cases. These are the questions I ask when a client brings me onto a vendor call, and the answers that tell me which kind of product I'm looking at.&lt;/p&gt;
+
+&lt;h2&gt;What AI washing looks like on the record&lt;/h2&gt;
+&lt;p&gt;On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI driven investing when it wasn't using that data in its process.&lt;/p&gt;
+&lt;p&gt;On September 25, 2024, the FTC announced Operation AI Comply, five actions against companies using AI claims to deceive customers. One was DoNotPay, marketed as "the world's first robot lawyer"; the FTC said the company never tested whether its output matched a lawyer's, and DoNotPay agreed to pay $193,000. FTC Chair Lina Khan put the principle in one line: "there is no AI exemption from the laws on the books."&lt;/p&gt;
+&lt;p&gt;Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well written prompt and a spreadsheet.&lt;/p&gt;
+
+&lt;h2&gt;Twelve questions for the sales call&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Which model does this run on, and who hosts it?&lt;/strong&gt; A clear answer ("a hosted model from one of the big labs, called through their API") is fine. Evasion is a warning.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What does your product add on top of that model?&lt;/strong&gt; Good answers name real work: your integrations, a curated dataset, a review workflow, evaluation tests.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Can you run it on my data, live, right now?&lt;/strong&gt; A recorded demo shows the best case. A live run on a sample of your own material shows the typical one.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How often is it wrong, and how do you measure that?&lt;/strong&gt; Every AI system makes mistakes. Vendors with mature products have an error rate and a test set. Vendors without one say "it's very accurate."&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What happens when it's wrong?&lt;/strong&gt; Who notices, who fixes it, and who carries the cost: you, the vendor, or your customer.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Where does my data go?&lt;/strong&gt; Which servers, which subprocessors, how long it's kept, and whether it trains anyone's model. Get the answer in the contract.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Who owns the output?&lt;/strong&gt; Content, code, analysis, and anything the system learns from your use.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What does it cost at ten times my volume?&lt;/strong&gt; Per seat, per task, and per token pricing behave very differently once usage grows.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How many humans are behind it?&lt;/strong&gt; Some "automated" services quietly route work to people. That can be a fine product; it should be an honest one.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How do I leave?&lt;/strong&gt; Export formats, notice periods, and what happens to your data afterward.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Who else uses it for exactly this?&lt;/strong&gt; Ask for a reference customer with your use case, and call them.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What would make you tell me not to buy this?&lt;/strong&gt; Honest vendors know where their product fits badly, and they'll tell you.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Read the answers as evidence&lt;/h2&gt;
+&lt;p&gt;I score each answer three ways: specific or vague, testable or unverifiable, and consistent with what the contract says. One vague answer is normal; sales teams don't know everything and should offer to follow up. A pattern of vague answers on accuracy, data, and cost is the signal. The product might still be good, and the vendor still hasn't shown it.&lt;/p&gt;
+&lt;p&gt;For a structured view of risk once you're serious, NIST's AI Risk Management Framework gives you vocabulary for governance, testing, and monitoring that your legal and security teams will recognize.&lt;/p&gt;
+
+&lt;h2&gt;Run a paid pilot with a scorecard&lt;/h2&gt;
+&lt;p&gt;Before a full contract, run a short pilot on real work with success measures you set: accuracy on a sample you've already checked by hand, time saved per task, and the number of outputs a person had to correct. Write the measures down before the pilot starts, so nobody redefines success at the end. My guide to &lt;a href="https://gerriscorp.com/guides/fact-check-ai-seo/"&gt;fact checking confident AI answers&lt;/a&gt; describes the claim by claim habit I use to grade output.&lt;/p&gt;
+
+&lt;h2&gt;Bring a technical skeptic to the call&lt;/h2&gt;
+&lt;p&gt;Sales calls are designed for the buyer who doesn't know which questions to ask. Bringing one person who does changes the whole conversation. I sit in on vendor calls for clients as exactly that person: I've built on these models myself, so I can tell a real integration from a wrapper in a few questions, and I'm comfortable asking the awkward ones politely. Afterward you get a short written recommendation: what's real, what's missing, and what to ask for in the contract. That work falls under my &lt;a href="https://gerriscorp.com/services/advisory/"&gt;advisory and second opinions&lt;/a&gt;, and if the answer is to build something yourself, see &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;AI agents and automation&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://www.sec.gov/newsroom/press-releases/2024-36"&gt;SEC: SEC charges two investment advisers with making false and misleading statements about their use of artificial intelligence (March 18, 2024)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes"&gt;FTC: FTC announces crackdown on deceptive AI claims and schemes (September 25, 2024)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.nist.gov/itl/ai-risk-management-framework"&gt;NIST: AI Risk Management Framework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
