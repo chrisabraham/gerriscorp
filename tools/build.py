@@ -734,7 +734,6 @@ open("rss.xml", "w", encoding="utf-8").write(
     <pubDate>{rfc822(p.get("published", p["updated"]))}</pubDate>
     <description>{esc(p["description"])}</description>
     <content:encoded>{esc(feed_body(p))}</content:encoded>
-    <content:encoded>{esc(feed_body(p))}</content:encoded>
   </item>
 """ for p in guides) + "</channel>\n</rss>\n")
 
