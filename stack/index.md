@@ -7,6 +7,7 @@
 Search problems rarely stay in one layer. A ranking loss turns out to be a template, the template turns out to be a build setting, and the fix needs someone on the server. I work in every one of those layers myself. Here they are from the bottom up, each with the engagement or the working system that shows it.
 
 ## Servers and hosting
+- Before LAMP had a name, I was already living in it: Linux boxes, Apache, MySQL, and Perl and PHP scripts, all the way to 2002, when search became my full time work.
 - I took over a consumer brand's stalled React application after an outage: inventoried the code, hosting, DNS, and credentials, then got onto the DigitalOcean server over SSH, read the logs, corrected the configuration, ran the Node process under PM2, and found the port conflict keeping it offline. [The app takeover](https://gerriscorp.com/case-studies/app-takeover/).
 - I provision and harden Linux servers for my own systems: key only SSH, root login off, firewalls, and automatic security updates.
 
