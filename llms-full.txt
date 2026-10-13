@@ -5391,6 +5391,15 @@ Search problems rarely stay in one layer. A ranking loss turns out to be a templ
 ## Data
 - My Python pipelines produced an 88,900 contact master list, merged two 28,800 record exports to 94% email coverage, and exposed an AI made tracker that had invented its records. [Data cleanup](https://gerriscorp.com/case-studies/data-cleanup/).
 
+## What comes with me into every layer
+- **Separate problems stay separate.** A template change and a spam link spike that arrive in the same month get two investigations until the data joins them. [The Magento case](https://gerriscorp.com/case-studies/ecommerce-rendering/) is the example.
+- **False alarms get caught.** When an AI visibility dashboard showed a sharp drop for a B2B client, I traced it to the vendor changing its methodology; the client's actual visibility had held steady. [Umbraco operations](https://gerriscorp.com/case-studies/umbraco-operations/).
+- **Evidence gets assembled like a legal brief.** Debate training shows in my Google appeals: the strongest verifiable document leads, private documents stay out, and every date has paper behind it. [The reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/).
+- **Sources get vetted.** At Edelman I screened online influencers for a genuine multi year history before any client engaged them. That is open source intelligence work, and the same instinct checks every report a vendor or an AI hands me.
+- **One finding, two documents.** Engineers get ranked tickets with acceptance criteria; owners get a plain summary they can act on. [Developer specs and QA](https://gerriscorp.com/services/developers/).
+- **Speed with guardrails.** This site reached 92 pages and more than 62,000 words eight days after its first commit, built with Claude Code under my direction, and every page clears the automated checks before it publishes.
+- **Mail that can't be spoofed.** This domain runs SPF, DKIM, and DMARC, and a sister domain that never sends mail is locked down with a reject policy, strict alignment, and a null MX.
+
 ## Regulated work
 
 I've worked under HIPAA and nondisclosure agreements on a healthcare site, and I keep credentials out of repositories and AI tools on every engagement.
