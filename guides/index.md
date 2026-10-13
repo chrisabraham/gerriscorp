@@ -13,6 +13,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
 - [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.
 - [Repositories plus super intelligence: the SEO superpower](https://gerriscorp.com/guides/seo-superpower/): why SEOs need Git and AI coding assistants together, what it looks like in practice, and how to start.
+- [How to give an outside SEO safe access to your code repository](https://gerriscorp.com/guides/repository-access/): one repository, the Read role first, protected main, deploy previews, no secrets, and a clean exit.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): specs, project memory, automated checks, review, and keeping secrets and production out of reach.
 
 ## Diagnosis
@@ -27,6 +28,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
+- [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): what error #418 means, why Google usually still indexes the page, the real costs, and how to find every one.
 - [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
 - [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/): scripted text browser checks for thin pages, stray noindex tags, and broken links before every launch.
 

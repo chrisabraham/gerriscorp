@@ -81,7 +81,7 @@ Both. I fix what I have access to and write developer-ready tickets for changes 
 
 Google has to recrawl and reprocess the affected pages first, which takes days for important pages and weeks or months for large sites. I track the recovery in Search Console and report what changes.
 
-**Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/)
+**Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/) · [SEO engineering](https://gerriscorp.com/services/seo-engineering/)
 
 [Tell me what happened to your traffic](https://gerriscorp.com/contact/)
 

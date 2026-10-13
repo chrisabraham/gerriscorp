@@ -63,7 +63,7 @@ When you want me to and access is set up for it, I work through branches and pul
 
 Whatever your team uses, such as Jira, Linear, GitHub Issues, or Basecamp.
 
-**Related:** [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+**Related:** [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [SEO engineering](https://gerriscorp.com/services/seo-engineering/) · [Repository access for an outside SEO](https://gerriscorp.com/guides/repository-access/)
 
 [Get your developers a real spec](https://gerriscorp.com/contact/)
 

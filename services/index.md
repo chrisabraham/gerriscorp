@@ -1,6 +1,6 @@
 > Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 >
-> Source: https://gerriscorp.com/services/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
 
 # Services
 
@@ -18,6 +18,7 @@ I'm the person you call when the technical side of your web presence needs someo
 
 ## Search and site performance
 - [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/): traffic drops and indexing problems diagnosed with evidence and fixed with your developers.
+- [SEO engineering for Next.js, React, and headless sites](https://gerriscorp.com/services/seo-engineering/): titles, canonicals, sitemaps, redirects, and schema written as code, tested on every build, and checked on a preview before merge.
 - [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): my signature diagnosis, for pages that look complete to visitors and empty to Google and AI crawlers.
 - [Large and programmatic sites](https://gerriscorp.com/services/large-sites/): crawling and indexing managed across tens of thousands of pages.
 - [Ecommerce SEO](https://gerriscorp.com/services/ecommerce/): Shopify, Magento, and WooCommerce fixed at the template level.
@@ -40,4 +41,4 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 5, 2026
+Updated October 13, 2026

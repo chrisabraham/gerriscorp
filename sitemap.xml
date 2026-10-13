@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/services/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/technical-lead/</loc>
@@ -46,6 +46,10 @@
   <url>
     <loc>https://gerriscorp.com/services/technical-seo/</loc>
     <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://gerriscorp.com/services/seo-engineering/</loc>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/crawler-visibility/</loc>
@@ -122,6 +126,14 @@
   <url>
     <loc>https://gerriscorp.com/guides/javascript-seo/</loc>
     <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://gerriscorp.com/guides/hydration-errors/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://gerriscorp.com/guides/repository-access/</loc>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/crawled-not-indexed/</loc>
