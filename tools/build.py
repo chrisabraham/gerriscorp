@@ -242,7 +242,7 @@ ORG = {
     "@type": "ProfessionalService", "@id": SITE + "#org", "name": "Gerris Corp",
     "alternateName": ["Gerris"], "url": SITE, "logo": SITE + "logo.png", "image": SITE + "social-card.png",
     "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
-    "foundingDate": "2007", "founder": {"@id": AUTHOR}, "employee": {"@id": AUTHOR},
+    "foundingDate": "2012", "founder": {"@id": AUTHOR}, "employee": {"@id": AUTHOR},
     "slogan": "Experienced help for the digital work your business needs done",
     "email": EMAIL, "telephone": "+1-202-352-5051",
     "address": ADDRESS, "location": {"@id": SITE + "#place"},
@@ -593,6 +593,15 @@ open("404.html", "w", encoding="utf-8").write(f"""<!doctype html>
 <p>That page isn't here. Try the <a href="{base}">home page</a>, the <a href="{base}services/">services</a>, the <a href="{base}guides/">guides</a>, the <a href="{base}sitemap/">site map</a>, or email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 </main>
 </div>
+<script>
+// Old Squarespace blog and podcast URLs not listed in src/redirects.tsv (tags, archives) go to their new homes.
+(function () {{
+  var p = location.pathname;
+  var t = /^\\/blog(\\/|$)/.test(p) ? "https://chrisabraham.com/blog" :
+          /^\\/podcast(\\/|$)/.test(p) ? "https://chrisabraham.com/thechrisabrahamshow" : "";
+  if (t) location.replace(t);
+}})();
+</script>
 </body>
 </html>
 """)
@@ -748,7 +757,7 @@ sections = [(title, [by_path[x] for x in paths]) for title, paths in SERVICE_GRO
     ("About and working together", [p for p in pages if p["tab"] in ("", "case-studies/", "about/", "work-with-me/", "contact/", "sitemap/")])]
 llms = f"""# Gerris Corp
 
-> {ORG["description"]} Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2007.
+> {ORG["description"]} Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.
 
 Every engagement starts with a prepaid diagnostic. Contact: {EMAIL}, {PHONE}, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
 """ + "".join(f"\n## {title}\n\n" + "".join(f"- [{p['h1']}]({p['url']}index.md): {p['description']}\n" for p in group)

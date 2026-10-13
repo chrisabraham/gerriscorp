@@ -1,4 +1,4 @@
-> Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
+> Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2012, from Arlington, Virginia.
 >
 > Source: https://gerriscorp.com/about/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
 
@@ -7,7 +7,7 @@
 I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does the work. I've lived in the Washington, DC area since 1988 and work from South Arlington, in Arlington, Virginia. Clients like that I'm a US-based business, and I work with them across the country and the English-speaking world.
 
 ## At a glance
-| Business | Gerris Corp, founded in 2007 |
+| Business | Gerris Corp, founded in 2012 |
 | Principal | Chris Abraham (also Christopher Abraham) |
 | Location | South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC |
 | Clients | Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand |
@@ -28,7 +28,7 @@ I provision and harden my own Linux servers on DigitalOcean: key-only SSH, root 
 ## Career
 - Employee number 13 at New Media Strategies, where online reputation management grew up as a practice.
 - Senior account supervisor on Edelman's digital public affairs team in Washington, where I vetted online influencers for a genuine, multi-year track record before clients engaged them.
-- Co-founder of Abraham Harrison, then of Gerris Corp, which I started with Dan Krueger in 2007.
+- Co-founder of Abraham Harrison in 2007, then of Gerris Corp, which I started with Dan Krueger in 2012.
 - Reputation and executive privacy work at Reputation.com.
 - In 1996, a member of the Proxima team (later Proxicom) that launched Owens Corning's Pink Panther website, a deep, interactive site with a homeowner discussion forum that took the first BOTI award for Best Web Site Design ([press release, archived](https://web.archive.org/web/19980117033913/http://www.proxicom.com:80/press/owens.html)).
 - Earlier, work with Howard Rheingold at Rheingold Associates, and internet infrastructure work in the Treasury Department's Office of the CIO, on an intranet where the job was the reverse of SEO: keeping every spider and bot out.

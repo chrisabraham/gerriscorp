@@ -76,5 +76,14 @@ dd { margin: .2rem 0 0 0; }
 <p>That page isn't here. Try the <a href="https://gerriscorp.com/">home page</a>, the <a href="https://gerriscorp.com/services/">services</a>, the <a href="https://gerriscorp.com/guides/">guides</a>, the <a href="https://gerriscorp.com/sitemap/">site map</a>, or email <a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a>.</p>
 </main>
 </div>
+<script>
+// Old Squarespace blog and podcast URLs not listed in src/redirects.tsv (tags, archives) go to their new homes.
+(function () {
+  var p = location.pathname;
+  var t = /^\/blog(\/|$)/.test(p) ? "https://chrisabraham.com/blog" :
+          /^\/podcast(\/|$)/.test(p) ? "https://chrisabraham.com/thechrisabrahamshow" : "";
+  if (t) location.replace(t);
+})();
+</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Gerris Corp
 
-> Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management. Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2007.
+> Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management. Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.
 
 Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
 
@@ -100,7 +100,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/index.md): An AI company recruiting engineers in the Bay Area wanted to appear in AI answers about jobs. Chris Abraham audited its footprint and planned the fix.
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/index.md): Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.
 - [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/index.md): How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
-- [About Chris Abraham](https://gerriscorp.com/about/index.md): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2007, from Arlington, Virginia.
+- [About Chris Abraham](https://gerriscorp.com/about/index.md): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2012, from Arlington, Virginia.
 - [Work with me](https://gerriscorp.com/work-with-me/index.md): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 - [Frequently asked questions](https://gerriscorp.com/faq/index.md): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Editorial standards](https://gerriscorp.com/standards/index.md): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
