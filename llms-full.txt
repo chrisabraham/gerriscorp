@@ -5358,6 +5358,7 @@ Search problems rarely stay in one layer. A ranking loss turns out to be a templ
 - I configure Cloudflare caching, redirects, and bot settings so speed improvements never lock out search or AI crawlers. See [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/) and [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/).
 
 ## Repositories and pull requests
+- I wrote and patched Perl and PHP for years, on Movable Type, PHP-Nuke, PostNuke, and scripts of my own, so a client's codebase is familiar ground long before an AI assistant opens it.
 - I merged metadata changes into a local business's Sanity and Vercel codebase through GitHub, under the developer's review, and confirmed the prerendered output. [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/).
 - I work in a 20,000 page programmatic site's GitHub repository to see how URLs get generated and specify crawl controls precisely. [Programmatic indexing](https://gerriscorp.com/case-studies/programmatic-indexing/).
 - I read entire codebases with Claude Code and Codex to find the component behind a crawl finding, and I check each answer on the live site.
