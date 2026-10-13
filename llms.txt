@@ -34,7 +34,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/index.md): Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/index.md): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/index.md): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
-- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/index.md): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/index.md): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 
 ## Guides
 

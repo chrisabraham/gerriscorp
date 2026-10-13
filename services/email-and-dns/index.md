@@ -1,4 +1,4 @@
-> Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+> Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 >
 > Source: https://gerriscorp.com/services/email-and-dns/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
 
@@ -18,7 +18,7 @@ The [SPF, DKIM, and DMARC guide](https://gerriscorp.com/guides/email-authenticat
 
 ## Deliverability
 
-When mail goes missing, I trace it: authentication results in message headers, DMARC reports, blocklists, sending reputation, and content. Then I fix the cause.
+When mail goes missing, I trace it: authentication results in message headers, DMARC reports, blocklists, sending reputation, and content. Then I fix everything the domain owner controls: authentication, DNS, the sending setup, and the separation of marketing mail from business mail. Getting a domain off a blocklist or rebuilding its standing with Gmail and Microsoft is decided by those operators, on their schedule; for that stage I document the fixes for their review processes, and bring in a deliverability specialist when a case needs one.
 
 ## DNS and domains
 - A complete DNS inventory before any change, so nothing breaks by accident.

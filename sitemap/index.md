@@ -47,7 +47,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
-- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+- [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 
 ## Guides
 - [How to fact check a confident AI answer about SEO before you act on it](https://gerriscorp.com/guides/fact-check-ai-seo/): A claim by claim method for checking polished AI answers about SEO, using a real exchange about brand names in page titles and what the evidence supports.
