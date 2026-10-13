@@ -42,10 +42,13 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Speed and infrastructure
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
+- [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): Chrome DevTools traces, CrUX field data, and Screaming Frog across every template.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
+- [The SEO tools for a website migration](https://gerriscorp.com/guides/migration-tools/): crawlers, Search Console, redirect testing, and crawl comparison, matched to the job each one does.
+- [Traffic fell after a site migration: how to get it back](https://gerriscorp.com/guides/migration-recovery/): rebuild the old URL list, test every redirect, compare old and new pages, and fix in order of value.
 - [How to plan 301 redirects that keep your rankings and links](https://gerriscorp.com/guides/301-redirects/): which redirect to use, mapping, implementation by platform, testing, and how long to keep them.
 
 ## Analytics

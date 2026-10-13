@@ -52,7 +52,7 @@ It helps immediately with static files and distance. The large gains come from c
 
 The Chrome UX Report uses a rolling 28 days of real-user data, so improvements show up gradually over about a month after the fixes ship.
 
-**Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+**Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
 
 [Ask me why your site is slow](https://gerriscorp.com/contact/)
 

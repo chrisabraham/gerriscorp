@@ -48,7 +48,7 @@ Google recommends keeping redirects for at least a year. I recommend keeping the
 
 Yes. Post-launch cleanup is a common engagement: I rebuild the URL mapping from crawl, log, Search Console, and backlink data and repair what's missing.
 
-**Related:** [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
+**Related:** [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/) · [Recovering traffic after a migration](https://gerriscorp.com/guides/migration-recovery/) · [Migration tools](https://gerriscorp.com/guides/migration-tools/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
 [Talk to me about your migration](https://gerriscorp.com/contact/)
 

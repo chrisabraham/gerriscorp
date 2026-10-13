@@ -1,0 +1,51 @@
+name: Migration Tools
+type: guide
+published: 2026-10-13
+sources: Google Search Central: Site moves with URL changes | https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes ;; Search Console Help: Change of Address tool | https://support.google.com/webmasters/answer/9370220 ;; Screaming Frog: How to use the SEO Spider in a site migration | https://www.screamingfrog.co.uk/seo-spider/tutorials/how-to-use-the-seo-spider-in-a-site-migration/ ;; Screaming Frog: How to compare crawls | https://www.screamingfrog.co.uk/seo-spider/tutorials/how-to-compare-crawls/ ;; Next.js: redirects | https://nextjs.org/docs/app/api-reference/config/next-config-js/redirects
+updated: 2026-10-13
+title: SEO tools for a website migration, and what each one does
+description: The tools that carry a website migration safely: crawlers, Search Console, redirect testing, crawl comparison, and analytics, with the job each one does.
+---
+<h1>The SEO tools for a website migration, and the job each one does</h1>
+<p class="lead">No single product migrates a website for you. A migration is a handful of jobs, and each has a tool that does it well: an inventory, a redirect map, a pre-launch comparison, a launch day test, and weeks of watching. Here is the kit I use, matched to the job, with the free options where they exist.</p>
+
+<h2>Job 1: list every URL that matters</h2>
+<p>The inventory is the foundation, and it comes from several tools at once, since no single source sees everything.</p>
+<ul>
+  <li><strong>A crawler.</strong> Screaming Frog SEO Spider, Sitebulb, or a similar desktop crawler finds every URL linked from the site. Screaming Frog's free version stops at 500 URLs; a licence removes the limit.</li>
+  <li><strong>Google Search Console.</strong> The Performance report, exported by page over the last twelve to sixteen months, lists the URLs that actually earn impressions, including ones no longer linked from anywhere.</li>
+  <li><strong>Analytics.</strong> Landing pages from GA4 or whatever you run, for the URLs people arrive on from every channel.</li>
+  <li><strong>A backlink tool.</strong> Ahrefs, Semrush, or Majestic for the URLs other sites link to, which carry value even if they earn no traffic.</li>
+  <li><strong>The XML sitemaps</strong> and, if you can get them, <strong>server logs.</strong></li>
+</ul>
+<p>Merge them into one spreadsheet with a row per URL and columns for clicks, links, and sessions. That's the list everything else is tested against.</p>
+
+<h2>Job 2: build and store the redirect map</h2>
+<p>The map pairs each old URL with its closest new equivalent. A spreadsheet is fine for drafting. The finished map belongs wherever the new site serves redirects: the server configuration, the host's redirect rules file on Netlify, Vercel, or Cloudflare, or the framework's own configuration. In Next.js, for example, redirects live in <code>next.config.js</code>, and each rule's <code>permanent</code> flag decides between a 308 and a 307. Keeping the map in version control means it gets reviewed, and nobody loses it.</p>
+<p>For large sites, pattern rules cover whole sections in one line, and exceptions handle the pages that don't fit the pattern. Test the patterns before launch, because one bad regex can redirect thousands of pages to the wrong place.</p>
+
+<h2>Job 3: compare staging with the live site</h2>
+<p>Before launch, crawl both the live site and the staging site with the same settings, then compare them. Screaming Frog's crawl comparison does this with URL Mapping, which uses a regex to pair the staging hostname's URLs with the live ones. You see, template by template, which titles, descriptions, headings, canonicals, structured data, and internal links changed. It needs a licence and database storage mode.</p>
+<p>Check the staging site's robots.txt and meta robots tags at the same time. Staging is supposed to be blocked from search. Production isn't, and the block coming across at launch is one of the most common migration disasters.</p>
+
+<h2>Job 4: test every redirect on launch day</h2>
+<p>Once the redirects are live, crawl the old URL list in Screaming Frog's list mode with Always Follow Redirects switched on, as Screaming Frog's migration guide describes. The All Redirects report shows each old URL, where it finally lands, and every hop in between, so you can spot 404s, chains, loops, and temporary redirects in minutes. Run it again a day later, after caches have cleared.</p>
+<p>For a quick spot check without a crawler, <code>curl -sI</code> on the command line shows the status code and the Location header for any single URL.</p>
+
+<h2>Job 5: tell Google, then watch</h2>
+<ul>
+  <li><strong>Search Console sitemaps.</strong> Google's site move guidance is to submit the sitemaps for both the old and new URLs, then watch the indexed count move from one to the other. Warnings that the old URLs redirect are expected.</li>
+  <li><strong>The Change of Address tool,</strong> for moves from one domain or subdomain to another, used after the redirects are in place. It doesn't apply to HTTP to HTTPS, www changes, or path changes within one site.</li>
+  <li><strong>URL Inspection,</strong> on a sample of important old and new URLs, to see Google's chosen canonical and indexing status.</li>
+  <li><strong>The Performance report with a date comparison,</strong> by page, to catch any section that loses more than the expected dip.</li>
+  <li><strong>Bing Webmaster Tools,</strong> the equivalent for Bing, which also supplies results to other search and AI products.</li>
+  <li><strong>Server logs,</strong> which Google also recommends checking during a move, to confirm Googlebot is crawling the new URLs and to catch error codes your crawler missed.</li>
+</ul>
+
+<h2>Job 6: prove the move held</h2>
+<p>A few weeks after launch, crawl the new site again and compare it with the pre-launch staging crawl, and rerun the old URL list. Anything that drifted, such as a redirect someone edited or a template change that dropped schema, shows up as a difference. If the numbers have fallen and stayed down, the <a href="{root}guides/migration-recovery/">migration recovery guide</a> covers what to do next.</p>
+
+<h2>What a tool can't do</h2>
+<p>Every tool above reports facts. None of them decides which new page is the right home for an old one, whether a thin page should be merged or kept, or which redirect rule is safe on a site with forty thousand URLs. That judgment is the migration work itself, and it's why the inventory and the map deserve the most time.</p>
+
+<p class="related">I run migrations with this kit as <a href="{root}services/migrations/">website migration SEO</a>. For the full sequence, follow the <a href="{root}guides/migration-checklist/">website migration checklist</a>, and for redirect rules in depth, see <a href="{root}guides/301-redirects/">301 redirects explained</a>.</p>

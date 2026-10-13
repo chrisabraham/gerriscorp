@@ -1000,7 +1000,7 @@ It helps immediately with static files and distance. The large gains come from c
 
 The Chrome UX Report uses a rolling 28 days of real-user data, so improvements show up gradually over about a month after the fixes ship.
 
-**Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+**Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
 
 [Ask me why your site is slow](https://gerriscorp.com/contact/)
 
@@ -1121,7 +1121,7 @@ Google recommends keeping redirects for at least a year. I recommend keeping the
 
 Yes. Post-launch cleanup is a common engagement: I rebuild the URL mapping from crawl, log, Search Console, and backlink data and repair what's missing.
 
-**Related:** [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
+**Related:** [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/) · [Recovering traffic after a migration](https://gerriscorp.com/guides/migration-recovery/) · [Migration tools](https://gerriscorp.com/guides/migration-tools/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
 [Talk to me about your migration](https://gerriscorp.com/contact/)
 
@@ -1532,10 +1532,13 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Speed and infrastructure
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
+- [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): Chrome DevTools traces, CrUX field data, and Screaming Frog across every template.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
+- [The SEO tools for a website migration](https://gerriscorp.com/guides/migration-tools/): crawlers, Search Console, redirect testing, and crawl comparison, matched to the job each one does.
+- [Traffic fell after a site migration: how to get it back](https://gerriscorp.com/guides/migration-recovery/): rebuild the old URL list, test every redirect, compare old and new pages, and fix in order of value.
 - [How to plan 301 redirects that keep your rankings and links](https://gerriscorp.com/guides/301-redirects/): which redirect to use, mapping, implementation by platform, testing, and how long to keep them.
 
 ## Analytics
@@ -2228,6 +2231,229 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/guides/migration-recovery/
+Updated: 2026-10-13
+
+# Traffic fell after a site migration: how to find what broke and get it back
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+
+The new site launched, and organic traffic dropped and stayed down. Some dip is normal while Google recrawls. A drop that's still there after a month has a cause, and it's almost always one of a short list. Here is the recovery routine I run, in the order that finds the money fastest.
+
+## First, separate normal turbulence from real loss
+
+Google says to expect ranking fluctuations during any significant move, and that for a medium sized site it can take a few weeks or more before the new URLs gradually replace the old ones in results, longer for large sites. So the first question is shape. A dip that's recovering week over week is the move settling. A cliff that hasn't moved, or losses concentrated in one section, is a fault.
+
+In Search Console, compare the four weeks after launch with the four weeks before, and look at pages rather than totals. Sort by lost clicks. The top twenty URLs usually account for most of the loss, and they tell you where to dig.
+
+## Rebuild the list of old URLs
+
+Every recovery starts with the URL inventory the migration should have started with. If nobody kept one, rebuild it from every source you can reach:
+- The Search Console Performance report for the months before launch, exported by page.
+- Analytics landing pages for the same period.
+- The old XML sitemaps, from a backup or from the Wayback Machine.
+- A backlink tool's list of linked URLs on your domain.
+- Server logs, if the old host kept them.
+
+Merge them and remove duplicates. This list, weighted by the traffic and links each URL carried, is what you'll test.
+
+## Test every old URL's redirect
+
+Screaming Frog's own migration guide describes the method. Switch to list mode, turn on Always Follow Redirects under Config > Spider > Advanced, upload the old URLs, and crawl them. The All Redirects export then shows each old address, the final address it lands on, the type of each hop, and whether a chain or a loop is involved.
+
+Read the export for these failures, in this order:
+1. **404s and soft 404s.** Old URLs with no redirect at all. On a big site these are usually whole patterns, such as an old category path or a dropped file extension.
+2. **Redirects to the home page or a generic category.** Google treats a redirect to an unrelated page much like a missing page, and the old URL's value doesn't carry over.
+3. **Temporary redirects.** Google's documentation says a permanent redirect shows the new target in results, while a temporary one keeps showing the source. A migration built on 302s or 307s is telling Google to keep the old URLs.
+4. **Chains and loops.** Each extra hop slows crawling, and loops never resolve.
+5. **JavaScript and meta refresh redirects.** Google ranks server side redirects as the most reliable way to signal a move. Anything else should be replaced with one.
+
+## Compare old pages with their new versions
+
+A redirect that lands on the right URL still loses traffic if the new page is weaker. If you have a crawl from before launch, compare it with a crawl of the new site in Screaming Frog's comparison mode, using URL Mapping to pair old and new addresses. Without one, archived copies of the top pages will do. Check each pair for:
+- Titles, descriptions, and H1s that were rewritten, shortened, or replaced with a template default.
+- Body copy cut down, split across tabs, or moved behind a script.
+- Structured data that existed before and doesn't now.
+- Internal links that used to point at the page and no longer do, which shows up as greater crawl depth.
+- Canonical tags pointing at staging, at the old domain, or at the wrong page.
+- A noindex or a robots.txt rule carried over from the staging site.
+
+## Check that Google can see the new site the way you think
+
+Use URL Inspection on a sample of the top lost URLs and their new equivalents. Look at Google's chosen canonical, the indexing status, and the rendered page. Check the old sitemap and the new one in the Sitemaps report: Google's guidance is to submit both during a move, and to expect the indexed count on the old one to fall as the new one rises. If the old URLs still show as indexed weeks later, Google isn't following your redirects as you intended.
+
+For a move to a new domain, confirm the Change of Address request went in from the old property. Google's help is specific about when it applies: a move between domains or subdomains. HTTP to HTTPS, www to non-www, and path changes within one site don't use it.
+
+## Fix in order of value
+
+Recovery work goes fastest when it follows the money. Fix the redirects for the twenty URLs that lost the most first, then the patterns that cover hundreds of URLs at once, then content and template gaps on the pages that matter, then the long tail. Keep every redirect in place: Google recommends at least a year, and longer is better for people following old links.
+
+After each round of fixes, run the list crawl again and confirm the failures are gone, then watch the affected pages in Search Console. Recovered pages usually come back over weeks, as Google recrawls them. I make no promise about full recovery, because rankings also move for reasons unrelated to the migration, but a site whose old URLs all resolve cleanly to equal or better pages has removed every cause it controls.
+
+## Keep the evidence
+
+Write down what you found, what you fixed, and when, with the before and after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.
+
+I handle this as part of [website migration SEO](https://gerriscorp.com/services/migrations/), and for inherited projects that went badly, [project rescue](https://gerriscorp.com/services/rescue/). To prevent the next one, use the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/) and the [tools I use for a website migration](https://gerriscorp.com/guides/migration-tools/).
+
+## References
+- [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+- [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+- [Search Console Help: Change of Address tool](https://support.google.com/webmasters/answer/9370220)
+- [Screaming Frog: How to use the SEO Spider in a site migration](https://www.screamingfrog.co.uk/seo-spider/tutorials/how-to-use-the-seo-spider-in-a-site-migration/)
+- [Screaming Frog: How to compare crawls](https://www.screamingfrog.co.uk/seo-spider/tutorials/how-to-compare-crawls/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/migration-tools/
+Updated: 2026-10-13
+
+# The SEO tools for a website migration, and the job each one does
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+
+No single product migrates a website for you. A migration is a handful of jobs, and each has a tool that does it well: an inventory, a redirect map, a pre-launch comparison, a launch day test, and weeks of watching. Here is the kit I use, matched to the job, with the free options where they exist.
+
+## Job 1: list every URL that matters
+
+The inventory is the foundation, and it comes from several tools at once, since no single source sees everything.
+- **A crawler.** Screaming Frog SEO Spider, Sitebulb, or a similar desktop crawler finds every URL linked from the site. Screaming Frog's free version stops at 500 URLs; a licence removes the limit.
+- **Google Search Console.** The Performance report, exported by page over the last twelve to sixteen months, lists the URLs that actually earn impressions, including ones no longer linked from anywhere.
+- **Analytics.** Landing pages from GA4 or whatever you run, for the URLs people arrive on from every channel.
+- **A backlink tool.** Ahrefs, Semrush, or Majestic for the URLs other sites link to, which carry value even if they earn no traffic.
+- **The XML sitemaps** and, if you can get them, **server logs.**
+
+Merge them into one spreadsheet with a row per URL and columns for clicks, links, and sessions. That's the list everything else is tested against.
+
+## Job 2: build and store the redirect map
+
+The map pairs each old URL with its closest new equivalent. A spreadsheet is fine for drafting. The finished map belongs wherever the new site serves redirects: the server configuration, the host's redirect rules file on Netlify, Vercel, or Cloudflare, or the framework's own configuration. In Next.js, for example, redirects live in `next.config.js`, and each rule's `permanent` flag decides between a 308 and a 307. Keeping the map in version control means it gets reviewed, and nobody loses it.
+
+For large sites, pattern rules cover whole sections in one line, and exceptions handle the pages that don't fit the pattern. Test the patterns before launch, because one bad regex can redirect thousands of pages to the wrong place.
+
+## Job 3: compare staging with the live site
+
+Before launch, crawl both the live site and the staging site with the same settings, then compare them. Screaming Frog's crawl comparison does this with URL Mapping, which uses a regex to pair the staging hostname's URLs with the live ones. You see, template by template, which titles, descriptions, headings, canonicals, structured data, and internal links changed. It needs a licence and database storage mode.
+
+Check the staging site's robots.txt and meta robots tags at the same time. Staging is supposed to be blocked from search. Production isn't, and the block coming across at launch is one of the most common migration disasters.
+
+## Job 4: test every redirect on launch day
+
+Once the redirects are live, crawl the old URL list in Screaming Frog's list mode with Always Follow Redirects switched on, as Screaming Frog's migration guide describes. The All Redirects report shows each old URL, where it finally lands, and every hop in between, so you can spot 404s, chains, loops, and temporary redirects in minutes. Run it again a day later, after caches have cleared.
+
+For a quick spot check without a crawler, `curl -sI` on the command line shows the status code and the Location header for any single URL.
+
+## Job 5: tell Google, then watch
+- **Search Console sitemaps.** Google's site move guidance is to submit the sitemaps for both the old and new URLs, then watch the indexed count move from one to the other. Warnings that the old URLs redirect are expected.
+- **The Change of Address tool,** for moves from one domain or subdomain to another, used after the redirects are in place. It doesn't apply to HTTP to HTTPS, www changes, or path changes within one site.
+- **URL Inspection,** on a sample of important old and new URLs, to see Google's chosen canonical and indexing status.
+- **The Performance report with a date comparison,** by page, to catch any section that loses more than the expected dip.
+- **Bing Webmaster Tools,** the equivalent for Bing, which also supplies results to other search and AI products.
+- **Server logs,** which Google also recommends checking during a move, to confirm Googlebot is crawling the new URLs and to catch error codes your crawler missed.
+
+## Job 6: prove the move held
+
+A few weeks after launch, crawl the new site again and compare it with the pre-launch staging crawl, and rerun the old URL list. Anything that drifted, such as a redirect someone edited or a template change that dropped schema, shows up as a difference. If the numbers have fallen and stayed down, the [migration recovery guide](https://gerriscorp.com/guides/migration-recovery/) covers what to do next.
+
+## What a tool can't do
+
+Every tool above reports facts. None of them decides which new page is the right home for an old one, whether a thin page should be merged or kept, or which redirect rule is safe on a site with forty thousand URLs. That judgment is the migration work itself, and it's why the inventory and the map deserve the most time.
+
+I run migrations with this kit as [website migration SEO](https://gerriscorp.com/services/migrations/). For the full sequence, follow the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/), and for redirect rules in depth, see [301 redirects explained](https://gerriscorp.com/guides/301-redirects/).
+
+## References
+- [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+- [Search Console Help: Change of Address tool](https://support.google.com/webmasters/answer/9370220)
+- [Screaming Frog: How to use the SEO Spider in a site migration](https://www.screamingfrog.co.uk/seo-spider/tutorials/how-to-use-the-seo-spider-in-a-site-migration/)
+- [Screaming Frog: How to compare crawls](https://www.screamingfrog.co.uk/seo-spider/tutorials/how-to-compare-crawls/)
+- [Next.js: redirects](https://nextjs.org/docs/app/api-reference/config/next-config-js/redirects)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/core-web-vitals-mcp/
+Updated: 2026-10-13
+
+# Diagnosing Core Web Vitals with MCP and an AI coding assistant
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+
+Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.
+
+## The three numbers you're chasing
+
+Core Web Vitals measure loading, responsiveness, and visual stability. Google's web.dev thresholds for a good experience are a Largest Contentful Paint within 2.5 seconds, an Interaction to Next Paint of 200 milliseconds or less, and a Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of page loads on mobile and desktop separately. A page passes when it meets all three. The [Core Web Vitals guide](https://gerriscorp.com/guides/core-web-vitals/) explains each metric and its usual causes; this guide is about the tooling.
+
+## What MCP adds
+
+MCP is a standard way for an AI assistant to call outside tools. An MCP server wraps a tool, such as a browser or a crawler, and the assistant can ask it to do things and read back the results. In Claude Code, you register a server with `claude mcp add`, and its tools become available in the session. The assistant still needs you to tell it what to look at and to check its conclusions, but the tedious loop of test, read, and search the code collapses into one conversation.
+
+## Chrome DevTools MCP: lab traces on demand
+
+Google's Chrome DevTools MCP server gives an assistant control of a real Chrome browser and the DevTools performance panel. Its documented setup for Claude Code is a single command:
+
+```
+claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest
+```
+
+The tools that matter for Core Web Vitals:
+- **performance_start_trace** and **performance_stop_trace** record a trace, optionally reloading the page and bypassing the cache to measure a cold load. The tool is described as finding frontend performance issues and Core Web Vitals.
+- **performance_analyze_insight** opens a specific finding from the trace, such as the LCP breakdown, which shows where the time before the largest element appeared actually went.
+- **emulate** throttles the CPU and network, with presets from Slow 3G to Fast 4G, and sets a mobile viewport, so a fast desktop doesn't hide a slow phone experience.
+- **list_console_messages** and **list_network_requests** show errors and the heaviest resources.
+- **lighthouse_audit** runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.
+
+Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the `--no-performance-crux` flag turns that off. And Google collects usage statistics from the server by default, which `--no-usage-statistics` disables.
+
+## Real user data: CrUX, and a change to PageSpeed Insights
+
+A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.
+
+One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.
+
+## Screaming Frog: every template, not one page
+
+Traces are for depth. For breadth, Screaming Frog's PageSpeed Insights integration, under Configuration > API Access > PageSpeed Insights, pulls Lighthouse metrics and opportunities for every URL during a crawl. It can also run Lighthouse locally, which avoids the API's daily query limit but has no CrUX data.
+
+Screaming Frog version 24 also runs as an MCP server, so an assistant can start crawls and read reports and bulk exports directly. It's a paid licence feature and needs database storage mode. Optional tools let the assistant run Node.js scripts, and they're off until you enable them in the MCP server settings.
+
+The combination is where the time savings live: crawl every URL, group the slow ones by template, trace one representative page per template, and fix the template once.
+
+## A working session, step by step
+1. **Start from field data.** Check the Core Web Vitals report in Search Console or the CrUX API to see which metric fails and on which group of pages.
+2. **Pick representative URLs,** one per failing template.
+3. **Trace each on emulated mobile.** Ask the assistant to throttle to a mid-range phone and record a cold load.
+4. **Read the insight, then the code.** For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.
+5. **Test on a preview.** Trace the same page on the branch's preview deployment and compare.
+6. **Confirm in the field.** CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.
+
+## Where to keep a hand on the wheel
+- **Lab is not field.** A trace on a developer's machine, even throttled, is one sample. Treat it as a diagnosis and judge the outcome by field data.
+- **Check every proposed fix.** An assistant can suggest deferring a script that the page needs, or a preload that competes with the real LCP image. Measure before and after.
+- **Mind what the browser can see.** The DevTools server's own documentation warns that it exposes the browser's content to the assistant. Use a separate browser profile, never one signed in to anything sensitive.
+- **INP needs interaction.** A page load trace says little about responsiveness. Have the assistant click, type, and open menus during a trace, and compare with field INP.
+
+This is how I run speed work on code based sites as part of [site speed and Core Web Vitals](https://gerriscorp.com/services/site-speed/) and [SEO engineering](https://gerriscorp.com/services/seo-engineering/). For the habits that keep an AI assistant safe in a client codebase, see [using AI coding assistants on a business website](https://gerriscorp.com/guides/ai-coding-assistants/).
+
+## References
+- [Chrome DevTools MCP (README)](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+- [Chrome DevTools MCP tool reference](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md)
+- [Anthropic: Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp)
+- [web.dev: Web Vitals](https://web.dev/articles/vitals)
+- [Google: PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started)
+- [Chrome for Developers: CrUX API](https://developer.chrome.com/docs/crux/api)
+- [Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights)](https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/guides/crawled-not-indexed/
 Updated: 2026-10-05
 
@@ -2358,7 +2584,7 @@ Check that the new templates render their content on the server. A migration fro
 
 A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.
 
-I run this process as [website migration support](https://gerriscorp.com/services/migrations/), before launch or after it.
+I run this process as a [website migration SEO service](https://gerriscorp.com/services/migrations/), before launch or after it. The kit is in [SEO tools for a website migration](https://gerriscorp.com/guides/migration-tools/), and if traffic has already fallen, start with [migration recovery](https://gerriscorp.com/guides/migration-recovery/).
 
 ## References
 - [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
@@ -2587,7 +2813,7 @@ A technical fix such as an unblocked template often recovers within weeks, as Go
 
 Sixteen months. For longer history, set up the bulk export to BigQuery now, because it only collects data from the day it starts.
 
-Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/).
+Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/), and if the drop followed a relaunch, [recovering traffic after a site migration](https://gerriscorp.com/guides/migration-recovery/).
 
 ## References
 - [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
@@ -3257,7 +3483,7 @@ Poor INP almost always means the browser's main thread was busy when the visitor
 
 Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.
 
-Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/).
+Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/), and for diagnosis with an AI assistant, [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/).
 
 ## References
 - [Google Search Central: Understanding Core Web Vitals and Google search results](https://developers.google.com/search/docs/appearance/core-web-vitals)
@@ -5465,6 +5691,9 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [How to give an outside SEO safe access to your code repository](https://gerriscorp.com/guides/repository-access/): A safe setup for letting an SEO consultant into your GitHub or GitLab repository: one repo, the Read role first, reviewed pull requests, and no secrets.
 - [A Next.js SEO checklist for the App Router](https://gerriscorp.com/guides/nextjs-seo/): A Next.js App Router SEO checklist: metadata, canonicals, title templates, streamed metadata, sitemap.ts, robots.ts, 308 redirects, real 404s, and schema.
 - [How to add SEO regression tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/): Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.
+- [Traffic fell after a site migration: how to find what broke and get it back](https://gerriscorp.com/guides/migration-recovery/): A recovery plan for a website migration that lost search traffic: rebuild the old URL list, test every redirect, compare old and new pages, and fix in order.
+- [The SEO tools for a website migration, and the job each one does](https://gerriscorp.com/guides/migration-tools/): The tools that carry a website migration safely: crawlers, Search Console, redirect testing, crawl comparison, and analytics, with the job each one does.
+- [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.

@@ -64,7 +64,7 @@ A technical fix such as an unblocked template often recovers within weeks, as Go
 
 Sixteen months. For longer history, set up the bulk export to BigQuery now, because it only collects data from the day it starts.
 
-Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/).
+Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/), and if the drop followed a relaunch, [recovering traffic after a site migration](https://gerriscorp.com/guides/migration-recovery/).
 
 ## References
 - [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)

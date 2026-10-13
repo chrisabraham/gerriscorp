@@ -55,7 +55,7 @@ Poor INP almost always means the browser's main thread was busy when the visitor
 
 Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.
 
-Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/).
+Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/), and for diagnosis with an AI assistant, [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/).
 
 ## References
 - [Google Search Central: Understanding Core Web Vitals and Google search results](https://developers.google.com/search/docs/appearance/core-web-vitals)
