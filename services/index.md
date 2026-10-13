@@ -35,6 +35,8 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
 
+Want the technical depth behind these services? See [what I can take on in your stack](https://gerriscorp.com/stack/), layer by layer, with the case study for each.
+
 ## How engagements are shaped
 
 A **diagnostic** answers a defined question with evidence and a recommended next step. An **implementation sprint** delivers agreed fixes, verified against written acceptance criteria. A **migration review** covers a specific launch. A **pilot** builds and demonstrates one useful tool. **Retainers** cover fractional technical leadership, ongoing support, and advisory work. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).

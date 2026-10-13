@@ -341,6 +341,10 @@
     <image:image><image:loc>https://gerriscorp.com/chris-abraham.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://gerriscorp.com/stack/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
     <loc>https://gerriscorp.com/work-with-me/</loc>
     <lastmod>2026-10-05</lastmod>
   </url>

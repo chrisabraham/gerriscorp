@@ -94,6 +94,8 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
 
+Want the technical depth behind these services? See [what I can take on in your stack](https://gerriscorp.com/stack/), layer by layer, with the case study for each.
+
 ## How engagements are shaped
 
 A **diagnostic** answers a defined question with evidence and a recommended next step. An **implementation sprint** delivers agreed fixes, verified against written acceptance criteria. A **migration review** covers a specific launch. A **pilot** builds and demonstrates one useful tool. **Retainers** cover fractional technical leadership, ongoing support, and advisory work. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
@@ -5295,6 +5297,8 @@ I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does th
 
 I'm a hands-on technical consultant whose deepest specialty is search. Clients bring me in when the technical side of their web presence needs someone in charge: I diagnose, scope, write the spec, direct the developers, human and AI, ship the parts I can ship myself, and explain it all to leadership in plain English. My technical SEO core covers on-page SEO, site speed, Cloudflare and CDN setup, 301 redirects, indexing, Google Search Console, and migrations. Around it I work as a fractional technical lead, rescue stalled projects, build small AI tools with Claude Code, clean up data, advise founders and executives, and manage the online reputation of people whose public record matters.
 
+Every layer I work in, from servers and DNS to code, schema, and data, is listed with its proof on [what I can take on in your stack](https://gerriscorp.com/stack/).
+
 ## Systems and platforms
 
 I provision and harden my own Linux servers on DigitalOcean: key-only SSH, root and password login disabled, firewalls locked down, and unattended security updates. I run a self-hosted, encrypted file-sync system across my machines, a persistent terminal email setup over SSH, and my own command-line assistant, [Blackbox](https://gerriscorp.com/case-studies/built-with-claude-code/). I've worked with WordPress for twenty years, including Elementor, Avada, Rank Math, and WooCommerce, and with Shopify and Liquid, Magento 2 and Hyvä, Umbraco, Drupal, Joomla, Squarespace, Wix, Webflow, Framer, and React applications, with Cloudflare, GA4, and Search Console throughout. I've also worked under HIPAA and nondisclosure agreements on a healthcare site.
@@ -5332,6 +5336,65 @@ Gerris is distinct from chrisabraham.com: this site covers the consultancy and i
 *Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds. Why I chose it, and the story of the logo Oliver Uberti drew for it, are in the [colophon](https://gerriscorp.com/colophon/).
 
 Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/stack/
+Updated: 2026-10-13
+
+# What I can take on in your stack, layer by layer
+
+Search problems rarely stay in one layer. A ranking loss turns out to be a template, the template turns out to be a build setting, and the fix needs someone on the server. I work in every one of those layers myself. Here they are from the bottom up, each with the engagement or the working system that shows it.
+
+## Servers and hosting
+- I took over a consumer brand's stalled React application after an outage: inventoried the code, hosting, DNS, and credentials, then got onto the DigitalOcean server over SSH, read the logs, corrected the configuration, ran the Node process under PM2, and found the port conflict keeping it offline. [The app takeover](https://gerriscorp.com/case-studies/app-takeover/).
+- I provision and harden Linux servers for my own systems: key only SSH, root login off, firewalls, and automatic security updates.
+
+## DNS, CDN, and email
+- I moved this domain's DNS to Cloudflare with every Google Workspace mail record intact, and it runs SPF, DKIM, and a DMARC quarantine policy.
+- I configure Cloudflare caching, redirects, and bot settings so speed improvements never lock out search or AI crawlers. See [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/) and [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/).
+
+## Repositories and pull requests
+- I merged metadata changes into a local business's Sanity and Vercel codebase through GitHub, under the developer's review, and confirmed the prerendered output. [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/).
+- I work in a 20,000 page programmatic site's GitHub repository to see how URLs get generated and specify crawl controls precisely. [Programmatic indexing](https://gerriscorp.com/case-studies/programmatic-indexing/).
+- I read entire codebases with Claude Code and Codex to find the component behind a crawl finding, and I check each answer on the live site.
+
+## Build pipelines and automation
+- This site is generated by a Python script that refuses to publish a bad title, a duplicate description, a broken internal link, a page under its word minimum, or two pages that share too much wording. The method is written up in [SEO regression tests in the build](https://gerriscorp.com/guides/seo-build-checks/).
+- A GitHub Actions workflow pings IndexNow after every deploy, once the new sitemap is confirmed live.
+- I moved a 309 entry serialized novel off a broken Movable Type install to Jekyll on GitHub Pages, keeping every original URL and adding schema, llms.txt, and IndexNow. [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+- I built my own operations assistant, about 12,000 lines of Python with 140 end to end tests, by directing Claude Code like a development team.
+
+## Rendering and front end
+- I traced a Magento and Hyvä store's decline to Alpine.js sections that never rendered for Googlebot, and kept a second, unrelated problem on its own track. [Ecommerce rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/).
+- I specified the fixes for a Create React App platform with 2,000 undiscovered pages in a 13 page spec ranked P0 to P3, then verified them. [React event platform](https://gerriscorp.com/case-studies/react-event-platform/).
+- I found the consent setup that left a review site's article tabs empty for Google. [Consent blocking](https://gerriscorp.com/case-studies/consent-blocking/).
+- I sweep sites for React hydration errors with scripted headless Chrome. See [hydration errors and SEO](https://gerriscorp.com/guides/hydration-errors/).
+
+## Content systems
+- On Umbraco I built and published 54 city landing pages for one B2B company, and for another found the cache problem that kept saved social metadata off the live page. [Umbraco operations](https://gerriscorp.com/case-studies/umbraco-operations/).
+- I audited a Squarespace to Shopify move with 3,400 404s and duplicate URLs, and did the theme schema work. [Shopify migration](https://gerriscorp.com/case-studies/shopify-migration/).
+- I've worked in WordPress for twenty years, and in Shopify, Magento 2, Drupal, Squarespace, Webflow, Plone, Jekyll, and Next.js.
+
+## Crawl data and archives
+- For this domain, which has run on Drupal, Squarespace, and now static pages since 2012, I pulled every URL the Wayback Machine ever captured, tested all 848 against the live site, and redirected each one that had ever served a page: more than 640 redirects in all.
+- Full site crawls with JavaScript rendering, custom extraction, near duplicate detection, and before and after comparisons are routine.
+
+## Structured data and entities
+- I separated a multi state closets brand from its first location in schema and on the page. [Multi-location entity](https://gerriscorp.com/case-studies/multi-location-entity/).
+- Every page here carries a connected JSON-LD graph, a Markdown twin, and full text feeds for AI crawlers.
+
+## Data
+- My Python pipelines produced an 88,900 contact master list, merged two 28,800 record exports to 94% email coverage, and exposed an AI made tracker that had invented its records. [Data cleanup](https://gerriscorp.com/case-studies/data-cleanup/).
+
+## Regulated work
+
+I've worked under HIPAA and nondisclosure agreements on a healthcare site, and I keep credentials out of repositories and AI tools on every engagement.
+
+For the person behind all this, see [About](https://gerriscorp.com/about/), and for the full career record, my [CV on chrisabraham.com](https://chrisabraham.com/cv). To put any of it to work, [tell me where your problem lives](https://gerriscorp.com/contact/).
+
+Updated October 13, 2026
 
 
 ---
@@ -5645,6 +5708,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Guides](https://gerriscorp.com/guides/): Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 - [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
 - [About Chris Abraham](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2012, from Arlington, Virginia.
+- [What I can take on in your stack, layer by layer](https://gerriscorp.com/stack/): Every layer of a website Chris Abraham works in, from Linux servers and DNS to repositories, build pipelines, rendering, schema, and data, with proof for each.
 - [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Editorial standards](https://gerriscorp.com/standards/): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
