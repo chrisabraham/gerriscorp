@@ -1,0 +1,49 @@
+name: Next.js SEO Checklist
+type: guide
+published: 2026-10-13
+sources: Next.js: generateMetadata | https://nextjs.org/docs/app/api-reference/functions/generate-metadata ;; Next.js: sitemap.xml | https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap ;; Next.js: robots.txt | https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots ;; Next.js: redirects | https://nextjs.org/docs/app/api-reference/config/next-config-js/redirects ;; Next.js: notFound | https://nextjs.org/docs/app/api-reference/functions/not-found ;; Next.js: JSON-LD | https://nextjs.org/docs/app/guides/json-ld ;; Next.js: Link component | https://nextjs.org/docs/app/api-reference/components/link ;; Next.js source: HTML limited bot list | https://github.com/vercel/next.js/blob/canary/packages/next/src/shared/lib/router/utils/html-bots.ts
+updated: 2026-10-13
+title: Next.js SEO checklist for the App Router, item by item
+description: A Next.js App Router SEO checklist: metadata, canonicals, title templates, streamed metadata, sitemap.ts, robots.ts, 308 redirects, real 404s, and schema.
+---
+<h1>A Next.js SEO checklist for the App Router</h1>
+<p class="lead">Next.js gives you everything a search engine needs, as code: metadata, sitemaps, robots rules, redirects, and status codes. Every one of them can also be left at a default that quietly hurts you. This is the list I work through on every Next.js site, in the order I check it.</p>
+
+<h2>1. Every route sets its own title and description</h2>
+<p>In the App Router, metadata comes from a <code>metadata</code> object or a <code>generateMetadata</code> function exported from a layout or page. Static pages can use the object. Pages built from data, such as products, posts, and locations, need <code>generateMetadata</code> so each URL gets its own title and description from its own record.</p>
+<p>Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client side features, keep <code>page.tsx</code> as a Server Component and move the interactive parts into a child component.</p>
+
+<h2>2. The title template does what you meant</h2>
+<p>A <code>title.template</code> in the root layout, such as <code>'%s | Brand'</code>, adds a suffix to every child page's title, and <code>title.default</code> fills in for pages that set none. That's convenient, and it's also how a site ends up with 2,000 pages titled with the brand name alone. Crawl the site and sort titles by frequency: any title used more than a few times is a page that fell through to the default.</p>
+
+<h2>3. Canonicals are set per route, with a metadataBase</h2>
+<p>Set <code>metadataBase</code> once in the root layout, then give each route <code>alternates.canonical</code>. Next.js combines the two into a full URL. Check the output on routes with query strings and on paginated lists, where a template canonical copied from the parent layout can point every page at page one.</p>
+
+<h2>4. You know what crawlers receive when metadata streams</h2>
+<p>When <code>generateMetadata</code> waits on request time data, Next.js can stream the page first and append the metadata tags to the body once they resolve. It does that for crawlers it expects to run JavaScript, such as Googlebot, and blocks rendering to put the tags in the head for a list of HTML limited bots, including Bingbot, social preview bots, and several others. GPTBot, ClaudeBot, and PerplexityBot are absent from the default list in the Next.js source. If AI crawler visibility matters to you, fetch your key pages with those user agents and check where the title and canonical land. The <code>htmlLimitedBots</code> option in the Next.js config lets you add them, at some cost in response time.</p>
+
+<h2>5. The sitemap is generated, complete, and honest</h2>
+<p>An <code>app/sitemap.ts</code> file that returns an array of URLs produces <code>/sitemap.xml</code>. Generate it from the same data source as the routes, include only canonical, indexable URLs that return 200, and set <code>lastModified</code> from the content's real update date rather than the build time. Large sites can split into several sitemaps. Compare the sitemap with a crawl: every URL in one should be in the other.</p>
+
+<h2>6. robots.ts says what you mean, for each crawler</h2>
+<p>An <code>app/robots.ts</code> file generates <code>/robots.txt</code>, with rules per user agent and a sitemap line. Decide deliberately about AI crawlers, and make sure preview and staging deployments disallow everything while production allows what you intend. A single environment variable deciding which robots file ships is a common source of a production site that tells every crawler to stay out.</p>
+
+<h2>7. Redirects are permanent where you mean permanent</h2>
+<p>Redirects in <code>next.config.js</code> take a <code>source</code>, a <code>destination</code>, and a <code>permanent</code> flag. With <code>permanent: true</code> Next.js returns a 308, the permanent status that tells browsers and search engines to remember the move. With <code>false</code> it returns a 307, a temporary redirect that nothing caches. A migration map written with <code>permanent: false</code> tells search engines to keep the old URLs. Check every rule's flag, and test the map against a crawl of the old site.</p>
+
+<h2>8. Missing pages return a real 404</h2>
+<p>Calling <code>notFound()</code> renders the not-found page, returns a 404, and adds a noindex tag. One catch: if the check runs inside a Suspense boundary after the response has started streaming, the status is already sent, so the page keeps its 200 and relies on the noindex tag. Run the existence check before streaming begins on routes where a real 404 matters, such as products and posts that get deleted. Then crawl a list of deliberately broken URLs and confirm the status codes.</p>
+
+<h2>9. JSON-LD is rendered in the component</h2>
+<p>The Next.js recommendation is a plain <code>&lt;script type="application/ld+json"&gt;</code> in the layout or page, built from the same data as the visible content. Escape the <code>&lt;</code> character in the JSON, as the Next.js guide shows, so content from a CMS can't inject script. Validate a sample from each template with the Rich Results Test or the Schema Markup Validator.</p>
+
+<h2>10. Navigation uses real links</h2>
+<p>The <code>Link</code> component extends the HTML anchor element, so it produces an <code>&lt;a href&gt;</code> that crawlers can follow. Navigation built from buttons with <code>router.push</code> in a click handler produces no link at all. Search the codebase for click handlers that navigate, and crawl with JavaScript rendering off to see which pages are reachable from plain HTML.</p>
+
+<h2>11. The rendered page matches the server page</h2>
+<p>Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client side redirects all show up here. The <a href="{root}guides/hydration-errors/">guide to React hydration errors</a> covers the most common fault.</p>
+
+<h2>Make the checklist permanent</h2>
+<p>Every item above can become an automated check in the build, so a future change can't undo it. That's the subject of <a href="{root}guides/seo-build-checks/">adding SEO tests to your website's build</a>.</p>
+
+<p class="related">I work through this list, and fix what it finds, as part of <a href="{root}services/seo-engineering/">SEO engineering</a> for Next.js and React sites. If you're bringing me into your repository, start with <a href="{root}guides/repository-access/">how to give an outside SEO safe access</a>.</p>

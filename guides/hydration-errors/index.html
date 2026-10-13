@@ -668,7 +668,7 @@ dd { margin: .2rem 0 0 0; }
    "dateModified": "2026-10-13",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 925,
+   "wordCount": 918,
    "citation": [
     {
      "@type": "CreativeWork",
@@ -739,7 +739,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Broken widgets.</strong> Components in the rebuilt section lose whatever state they had, so a menu, carousel, or form can reset or stop responding.</li>
   <li><strong>Messy analytics.</strong> Tags that fire on load can fire twice, or against elements that have since been replaced.</li>
 </ul>
-<p>Head tags are a separate concern. In Next.js, metadata set with <code>generateMetadata</code> or a <code>metadata</code> export is resolved on the server and included in the initial HTML, so titles and canonicals stay intact when the page body has a hydration fault.</p>
+<p>Head tags are a separate concern. In Next.js, metadata set with <code>generateMetadata</code> or a <code>metadata</code> export is resolved on the server and sent as HTML, so titles and canonicals don't depend on hydration succeeding.</p>
 
 <h2>The usual causes</h2>
 <p>React's own list covers most of what I find on real sites:</p>

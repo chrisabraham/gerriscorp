@@ -8,6 +8,101 @@
   <updated>2026-10-13T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
+    <title>How to add SEO regression tests to your website's build</title>
+    <link href="https://gerriscorp.com/guides/seo-build-checks/"/>
+    <id>https://gerriscorp.com/guides/seo-build-checks/</id>
+    <published>2026-10-13T12:00:00Z</published>
+    <updated>2026-10-13T12:00:00Z</updated>
+    <summary>Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.</summary>
+    <content type="html">&lt;h1&gt;How to add SEO regression tests to your website's build&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="lead"&gt;Most SEO damage on a coded website arrives in an ordinary pull request. Someone refactors a layout, and the canonical tag disappears from 4,000 pages. A content import runs, and every description is blank. Nobody notices for a month, because nobody was looking. A short set of automated checks, run on every build, looks every time. Here is what to test and how to wire it in.&lt;/p&gt;
+
+&lt;h2&gt;Where the checks run&lt;/h2&gt;
+&lt;p&gt;Continuous integration runs your tests automatically whenever code is pushed. On GitHub Actions, the results appear on the pull request itself, so a reviewer sees a failed check before anyone merges. SEO tests belong in the same place as the unit tests your developers already run: they're just tests whose subject is the built HTML.&lt;/p&gt;
+&lt;p&gt;The simplest pattern is to build the site, then run a script over the output. A static or prerendered site produces a folder of HTML files to read directly. A server rendered site can be started in the CI job and fetched page by page from a list of representative URLs, one per template.&lt;/p&gt;
+
+&lt;h2&gt;The checks worth having&lt;/h2&gt;
+&lt;h3&gt;Titles and descriptions&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Every page has exactly one title element and one meta description, and neither is empty.&lt;/li&gt;
+  &lt;li&gt;No two pages share a title or a description. Google's documentation asks for distinct titles on every page and warns against repeated or boilerplate text, and it says the same of descriptions.&lt;/li&gt;
+  &lt;li&gt;Lengths stay inside a range you choose. Google sets no length limit and truncates to fit the device, so the range is a house style. Mine is 50 to 60 characters for titles and 140 to 160 for descriptions, and the build enforces it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Indexing signals&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Every indexable page carries exactly one canonical tag, pointing at its own production URL.&lt;/li&gt;
+  &lt;li&gt;No production page carries a noindex, unless it's on an explicit allow list.&lt;/li&gt;
+  &lt;li&gt;robots.txt in the production build allows what you expect and lists the sitemap.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sitemap agreement&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Every URL in the sitemap exists in the build and returns 200.&lt;/li&gt;
+  &lt;li&gt;Every indexable page in the build appears in the sitemap.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Structured data&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Every JSON-LD block parses as valid JSON.&lt;/li&gt;
+  &lt;li&gt;Each template emits the types it should, such as Product on product pages and Article on posts.&lt;/li&gt;
+  &lt;li&gt;Key values match the visible page. Google's guidelines say structured data should represent the main content of the page and describe content the user can see, so a price or a name in the JSON-LD that differs from the page is a real fault.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Headings and markup&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Exactly one H1 per page.&lt;/li&gt;
+  &lt;li&gt;The HTML parses with balanced tags and no invalid nesting, which also heads off a class of React hydration errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Links&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Every internal link points at a page that exists in the build.&lt;/li&gt;
+  &lt;li&gt;No internal link points at a URL that redirects, so links go straight to the final address.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;A minimal example&lt;/h2&gt;
+&lt;p&gt;A check doesn't need a framework. This Python sketch reads every built page and fails the build on a missing or duplicate title:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import pathlib, re, sys
+seen, problems = {}, []
+for page in pathlib.Path("out").rglob("*.html"):
+    html = page.read_text(encoding="utf-8")
+    titles = re.findall(r"&amp;lt;title&amp;gt;(.*?)&amp;lt;/title&amp;gt;", html, re.S)
+    if len(titles) != 1:
+        problems.append(f"{page}: {len(titles)} title elements")
+        continue
+    seen.setdefault(titles[0].strip(), []).append(str(page))
+for title, pages in seen.items():
+    if len(pages) &amp;gt; 1:
+        problems.append(f"duplicate title {title!r}: {pages}")
+print("\n".join(problems))
+sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add a step to the CI workflow that runs it after the build. A nonzero exit fails the check, and the message names the page and the rule, so the developer can fix it without asking anyone. For anything beyond a sketch, use a real HTML parser in place of regular expressions.&lt;/p&gt;
+
+&lt;h2&gt;Checks that guard the writing, too&lt;/h2&gt;
+&lt;p&gt;Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.&lt;/p&gt;
+
+&lt;h2&gt;Rolling it out without blocking everyone&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Start in report only mode.&lt;/strong&gt; Run the checks and print the results without failing the build, and fix the existing backlog.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Turn on failure one rule at a time,&lt;/strong&gt; starting with the ones that cost the most when they break: canonicals, noindex, and robots.txt.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keep messages specific.&lt;/strong&gt; "Missing canonical on /products/blue-widget/" gets fixed in a minute. "SEO check failed" gets the check switched off.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Make the rules a file in the repository,&lt;/strong&gt; reviewed like code, so changing a threshold is a decision someone signs off.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;What tests can't tell you&lt;/h2&gt;
+&lt;p&gt;Build checks prove the HTML you ship meets your rules. They can't tell you how Google ranks it, whether a title persuades anyone to click, or what an AI assistant says about you. Pair them with a crawl of the live site after each release and with Search Console, and keep a person reading the pages.&lt;/p&gt;
+
+&lt;p class="related"&gt;I write these checks into client repositories as part of &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt;. For the Next.js specifics they should cover, see the &lt;a href="https://gerriscorp.com/guides/nextjs-seo/"&gt;Next.js SEO checklist&lt;/a&gt;, and for safe repository setup, &lt;a href="https://gerriscorp.com/guides/repository-access/"&gt;giving an outside SEO access&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/get-started/continuous-integration"&gt;GitHub Docs: About continuous integration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/title-link"&gt;Google Search Central: Influencing your title links&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/snippet"&gt;Google Search Central: Control your snippets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies"&gt;Google Search Central: General structured data guidelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
     <title>How to give an outside SEO safe access to your code repository</title>
     <link href="https://gerriscorp.com/guides/repository-access/"/>
     <id>https://gerriscorp.com/guides/repository-access/</id>
@@ -82,6 +177,71 @@
 &lt;/aside&gt;</content>
   </entry>
   <entry>
+    <title>A Next.js SEO checklist for the App Router</title>
+    <link href="https://gerriscorp.com/guides/nextjs-seo/"/>
+    <id>https://gerriscorp.com/guides/nextjs-seo/</id>
+    <published>2026-10-13T12:00:00Z</published>
+    <updated>2026-10-13T12:00:00Z</updated>
+    <summary>A Next.js App Router SEO checklist: metadata, canonicals, title templates, streamed metadata, sitemap.ts, robots.ts, 308 redirects, real 404s, and schema.</summary>
+    <content type="html">&lt;h1&gt;A Next.js SEO checklist for the App Router&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="lead"&gt;Next.js gives you everything a search engine needs, as code: metadata, sitemaps, robots rules, redirects, and status codes. Every one of them can also be left at a default that quietly hurts you. This is the list I work through on every Next.js site, in the order I check it.&lt;/p&gt;
+
+&lt;h2&gt;1. Every route sets its own title and description&lt;/h2&gt;
+&lt;p&gt;In the App Router, metadata comes from a &lt;code&gt;metadata&lt;/code&gt; object or a &lt;code&gt;generateMetadata&lt;/code&gt; function exported from a layout or page. Static pages can use the object. Pages built from data, such as products, posts, and locations, need &lt;code&gt;generateMetadata&lt;/code&gt; so each URL gets its own title and description from its own record.&lt;/p&gt;
+&lt;p&gt;Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client side features, keep &lt;code&gt;page.tsx&lt;/code&gt; as a Server Component and move the interactive parts into a child component.&lt;/p&gt;
+
+&lt;h2&gt;2. The title template does what you meant&lt;/h2&gt;
+&lt;p&gt;A &lt;code&gt;title.template&lt;/code&gt; in the root layout, such as &lt;code&gt;'%s | Brand'&lt;/code&gt;, adds a suffix to every child page's title, and &lt;code&gt;title.default&lt;/code&gt; fills in for pages that set none. That's convenient, and it's also how a site ends up with 2,000 pages titled with the brand name alone. Crawl the site and sort titles by frequency: any title used more than a few times is a page that fell through to the default.&lt;/p&gt;
+
+&lt;h2&gt;3. Canonicals are set per route, with a metadataBase&lt;/h2&gt;
+&lt;p&gt;Set &lt;code&gt;metadataBase&lt;/code&gt; once in the root layout, then give each route &lt;code&gt;alternates.canonical&lt;/code&gt;. Next.js combines the two into a full URL. Check the output on routes with query strings and on paginated lists, where a template canonical copied from the parent layout can point every page at page one.&lt;/p&gt;
+
+&lt;h2&gt;4. You know what crawlers receive when metadata streams&lt;/h2&gt;
+&lt;p&gt;When &lt;code&gt;generateMetadata&lt;/code&gt; waits on request time data, Next.js can stream the page first and append the metadata tags to the body once they resolve. It does that for crawlers it expects to run JavaScript, such as Googlebot, and blocks rendering to put the tags in the head for a list of HTML limited bots, including Bingbot, social preview bots, and several others. GPTBot, ClaudeBot, and PerplexityBot are absent from the default list in the Next.js source. If AI crawler visibility matters to you, fetch your key pages with those user agents and check where the title and canonical land. The &lt;code&gt;htmlLimitedBots&lt;/code&gt; option in the Next.js config lets you add them, at some cost in response time.&lt;/p&gt;
+
+&lt;h2&gt;5. The sitemap is generated, complete, and honest&lt;/h2&gt;
+&lt;p&gt;An &lt;code&gt;app/sitemap.ts&lt;/code&gt; file that returns an array of URLs produces &lt;code&gt;/sitemap.xml&lt;/code&gt;. Generate it from the same data source as the routes, include only canonical, indexable URLs that return 200, and set &lt;code&gt;lastModified&lt;/code&gt; from the content's real update date rather than the build time. Large sites can split into several sitemaps. Compare the sitemap with a crawl: every URL in one should be in the other.&lt;/p&gt;
+
+&lt;h2&gt;6. robots.ts says what you mean, for each crawler&lt;/h2&gt;
+&lt;p&gt;An &lt;code&gt;app/robots.ts&lt;/code&gt; file generates &lt;code&gt;/robots.txt&lt;/code&gt;, with rules per user agent and a sitemap line. Decide deliberately about AI crawlers, and make sure preview and staging deployments disallow everything while production allows what you intend. A single environment variable deciding which robots file ships is a common source of a production site that tells every crawler to stay out.&lt;/p&gt;
+
+&lt;h2&gt;7. Redirects are permanent where you mean permanent&lt;/h2&gt;
+&lt;p&gt;Redirects in &lt;code&gt;next.config.js&lt;/code&gt; take a &lt;code&gt;source&lt;/code&gt;, a &lt;code&gt;destination&lt;/code&gt;, and a &lt;code&gt;permanent&lt;/code&gt; flag. With &lt;code&gt;permanent: true&lt;/code&gt; Next.js returns a 308, the permanent status that tells browsers and search engines to remember the move. With &lt;code&gt;false&lt;/code&gt; it returns a 307, a temporary redirect that nothing caches. A migration map written with &lt;code&gt;permanent: false&lt;/code&gt; tells search engines to keep the old URLs. Check every rule's flag, and test the map against a crawl of the old site.&lt;/p&gt;
+
+&lt;h2&gt;8. Missing pages return a real 404&lt;/h2&gt;
+&lt;p&gt;Calling &lt;code&gt;notFound()&lt;/code&gt; renders the not-found page, returns a 404, and adds a noindex tag. One catch: if the check runs inside a Suspense boundary after the response has started streaming, the status is already sent, so the page keeps its 200 and relies on the noindex tag. Run the existence check before streaming begins on routes where a real 404 matters, such as products and posts that get deleted. Then crawl a list of deliberately broken URLs and confirm the status codes.&lt;/p&gt;
+
+&lt;h2&gt;9. JSON-LD is rendered in the component&lt;/h2&gt;
+&lt;p&gt;The Next.js recommendation is a plain &lt;code&gt;&amp;lt;script type="application/ld+json"&amp;gt;&lt;/code&gt; in the layout or page, built from the same data as the visible content. Escape the &lt;code&gt;&amp;lt;&lt;/code&gt; character in the JSON, as the Next.js guide shows, so content from a CMS can't inject script. Validate a sample from each template with the Rich Results Test or the Schema Markup Validator.&lt;/p&gt;
+
+&lt;h2&gt;10. Navigation uses real links&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;Link&lt;/code&gt; component extends the HTML anchor element, so it produces an &lt;code&gt;&amp;lt;a href&amp;gt;&lt;/code&gt; that crawlers can follow. Navigation built from buttons with &lt;code&gt;router.push&lt;/code&gt; in a click handler produces no link at all. Search the codebase for click handlers that navigate, and crawl with JavaScript rendering off to see which pages are reachable from plain HTML.&lt;/p&gt;
+
+&lt;h2&gt;11. The rendered page matches the server page&lt;/h2&gt;
+&lt;p&gt;Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client side redirects all show up here. The &lt;a href="https://gerriscorp.com/guides/hydration-errors/"&gt;guide to React hydration errors&lt;/a&gt; covers the most common fault.&lt;/p&gt;
+
+&lt;h2&gt;Make the checklist permanent&lt;/h2&gt;
+&lt;p&gt;Every item above can become an automated check in the build, so a future change can't undo it. That's the subject of &lt;a href="https://gerriscorp.com/guides/seo-build-checks/"&gt;adding SEO tests to your website's build&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class="related"&gt;I work through this list, and fix what it finds, as part of &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt; for Next.js and React sites. If you're bringing me into your repository, start with &lt;a href="https://gerriscorp.com/guides/repository-access/"&gt;how to give an outside SEO safe access&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata"&gt;Next.js: generateMetadata&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap"&gt;Next.js: sitemap.xml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots"&gt;Next.js: robots.txt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/config/next-config-js/redirects"&gt;Next.js: redirects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/functions/not-found"&gt;Next.js: notFound&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/guides/json-ld"&gt;Next.js: JSON-LD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/components/link"&gt;Next.js: Link component&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/vercel/next.js/blob/canary/packages/next/src/shared/lib/router/utils/html-bots.ts"&gt;Next.js source: HTML limited bot list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
     <title>React hydration errors and what they mean for SEO</title>
     <link href="https://gerriscorp.com/guides/hydration-errors/"/>
     <id>https://gerriscorp.com/guides/hydration-errors/</id>
@@ -108,7 +268,7 @@
   &lt;li&gt;&lt;strong&gt;Broken widgets.&lt;/strong&gt; Components in the rebuilt section lose whatever state they had, so a menu, carousel, or form can reset or stop responding.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Messy analytics.&lt;/strong&gt; Tags that fire on load can fire twice, or against elements that have since been replaced.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Head tags are a separate concern. In Next.js, metadata set with &lt;code&gt;generateMetadata&lt;/code&gt; or a &lt;code&gt;metadata&lt;/code&gt; export is resolved on the server and included in the initial HTML, so titles and canonicals stay intact when the page body has a hydration fault.&lt;/p&gt;
+&lt;p&gt;Head tags are a separate concern. In Next.js, metadata set with &lt;code&gt;generateMetadata&lt;/code&gt; or a &lt;code&gt;metadata&lt;/code&gt; export is resolved on the server and sent as HTML, so titles and canonicals don't depend on hydration succeeding.&lt;/p&gt;
 
 &lt;h2&gt;The usual causes&lt;/h2&gt;
 &lt;p&gt;React's own list covers most of what I find on real sites:&lt;/p&gt;

@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to add SEO regression tests to your website&#x27;s build</title>
+<meta name="description" content="Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.">
+<meta name="keywords" content="SEO Build Checks, SEO guide, Gerris Corp, Chris Abraham">
+<link rel="canonical" href="https://gerriscorp.com/guides/seo-build-checks/">
+<meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/rss+xml" title="Gerris guides (RSS)" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  gtag('js', new Date());
+  gtag('config', 'G-JF2W6ESJZN');
+</script>
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to add SEO regression tests to your website&#x27;s build">
+<meta property="og:description" content="Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.">
+<meta property="og:url" content="https://gerriscorp.com/guides/seo-build-checks/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-13">
+<meta property="article:modified_time" content="2026-10-13">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to add SEO regression tests to your website&#x27;s build">
+<meta name="twitter:description" content="Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --orange: #c75000; --blue: #16729e; --teal: #237482; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { color: var(--blue); font-size: 1.4rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.25rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "publishingPrinciples": "https://gerriscorp.com/standards/"
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2007",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "slogan": "Experienced help for the digital work your business needs done",
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp",
+    "https://share.google/C5KMu0jYTNz8t2Zpn"
+   ],
+   "publishingPrinciples": "https://gerriscorp.com/standards/",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/seo-engineering/#service",
+         "name": "SEO engineering for sites built in code",
+         "url": "https://gerriscorp.com/services/seo-engineering/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://gerriscorp.com/chris-abraham.jpg",
+    "width": 320,
+    "height": 320,
+    "caption": "Chris Abraham, founder of Gerris Corp"
+   },
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
+   "homeLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/"
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/seo-build-checks/#webpage",
+   "url": "https://gerriscorp.com/guides/seo-build-checks/",
+   "name": "How to add SEO regression tests to your website's build",
+   "description": "Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-13",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/seo-build-checks/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/seo-build-checks/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "SEO Build Checks",
+     "item": "https://gerriscorp.com/guides/seo-build-checks/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/seo-build-checks/#article",
+   "headline": "How to add SEO regression tests to your website's build",
+   "description": "Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.",
+   "url": "https://gerriscorp.com/guides/seo-build-checks/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/seo-build-checks/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-13",
+   "dateModified": "2026-10-13",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 885,
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "GitHub Docs: About continuous integration",
+     "url": "https://docs.github.com/en/actions/get-started/continuous-integration"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Google Search Central: Influencing your title links",
+     "url": "https://developers.google.com/search/docs/appearance/title-link"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Google Search Central: Control your snippets",
+     "url": "https://developers.google.com/search/docs/appearance/snippet"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Google Search Central: General structured data guidelines",
+     "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › SEO Build Checks</p>
+<main id="main">
+<h1>How to add SEO regression tests to your website's build</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 13, 2026</p>
+<p class="lead">Most SEO damage on a coded website arrives in an ordinary pull request. Someone refactors a layout, and the canonical tag disappears from 4,000 pages. A content import runs, and every description is blank. Nobody notices for a month, because nobody was looking. A short set of automated checks, run on every build, looks every time. Here is what to test and how to wire it in.</p>
+
+<h2>Where the checks run</h2>
+<p>Continuous integration runs your tests automatically whenever code is pushed. On GitHub Actions, the results appear on the pull request itself, so a reviewer sees a failed check before anyone merges. SEO tests belong in the same place as the unit tests your developers already run: they're just tests whose subject is the built HTML.</p>
+<p>The simplest pattern is to build the site, then run a script over the output. A static or prerendered site produces a folder of HTML files to read directly. A server rendered site can be started in the CI job and fetched page by page from a list of representative URLs, one per template.</p>
+
+<h2>The checks worth having</h2>
+<h3>Titles and descriptions</h3>
+<ul>
+  <li>Every page has exactly one title element and one meta description, and neither is empty.</li>
+  <li>No two pages share a title or a description. Google's documentation asks for distinct titles on every page and warns against repeated or boilerplate text, and it says the same of descriptions.</li>
+  <li>Lengths stay inside a range you choose. Google sets no length limit and truncates to fit the device, so the range is a house style. Mine is 50 to 60 characters for titles and 140 to 160 for descriptions, and the build enforces it.</li>
+</ul>
+<h3>Indexing signals</h3>
+<ul>
+  <li>Every indexable page carries exactly one canonical tag, pointing at its own production URL.</li>
+  <li>No production page carries a noindex, unless it's on an explicit allow list.</li>
+  <li>robots.txt in the production build allows what you expect and lists the sitemap.</li>
+</ul>
+<h3>Sitemap agreement</h3>
+<ul>
+  <li>Every URL in the sitemap exists in the build and returns 200.</li>
+  <li>Every indexable page in the build appears in the sitemap.</li>
+</ul>
+<h3>Structured data</h3>
+<ul>
+  <li>Every JSON-LD block parses as valid JSON.</li>
+  <li>Each template emits the types it should, such as Product on product pages and Article on posts.</li>
+  <li>Key values match the visible page. Google's guidelines say structured data should represent the main content of the page and describe content the user can see, so a price or a name in the JSON-LD that differs from the page is a real fault.</li>
+</ul>
+<h3>Headings and markup</h3>
+<ul>
+  <li>Exactly one H1 per page.</li>
+  <li>The HTML parses with balanced tags and no invalid nesting, which also heads off a class of React hydration errors.</li>
+</ul>
+<h3>Links</h3>
+<ul>
+  <li>Every internal link points at a page that exists in the build.</li>
+  <li>No internal link points at a URL that redirects, so links go straight to the final address.</li>
+</ul>
+
+<h2>A minimal example</h2>
+<p>A check doesn't need a framework. This Python sketch reads every built page and fails the build on a missing or duplicate title:</p>
+<pre><code>import pathlib, re, sys
+seen, problems = {}, []
+for page in pathlib.Path("out").rglob("*.html"):
+    html = page.read_text(encoding="utf-8")
+    titles = re.findall(r"&lt;title&gt;(.*?)&lt;/title&gt;", html, re.S)
+    if len(titles) != 1:
+        problems.append(f"{page}: {len(titles)} title elements")
+        continue
+    seen.setdefault(titles[0].strip(), []).append(str(page))
+for title, pages in seen.items():
+    if len(pages) &gt; 1:
+        problems.append(f"duplicate title {title!r}: {pages}")
+print("\n".join(problems))
+sys.exit(1 if problems else 0)</code></pre>
+<p>Add a step to the CI workflow that runs it after the build. A nonzero exit fails the check, and the message names the page and the rule, so the developer can fix it without asking anyone. For anything beyond a sketch, use a real HTML parser in place of regular expressions.</p>
+
+<h2>Checks that guard the writing, too</h2>
+<p>Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.</p>
+
+<h2>Rolling it out without blocking everyone</h2>
+<ol>
+  <li><strong>Start in report only mode.</strong> Run the checks and print the results without failing the build, and fix the existing backlog.</li>
+  <li><strong>Turn on failure one rule at a time,</strong> starting with the ones that cost the most when they break: canonicals, noindex, and robots.txt.</li>
+  <li><strong>Keep messages specific.</strong> "Missing canonical on /products/blue-widget/" gets fixed in a minute. "SEO check failed" gets the check switched off.</li>
+  <li><strong>Make the rules a file in the repository,</strong> reviewed like code, so changing a threshold is a decision someone signs off.</li>
+</ol>
+
+<h2>What tests can't tell you</h2>
+<p>Build checks prove the HTML you ship meets your rules. They can't tell you how Google ranks it, whether a title persuades anyone to click, or what an AI assistant says about you. Pair them with a crawl of the live site after each release and with Search Console, and keep a person reading the pages.</p>
+
+<p class="related">I write these checks into client repositories as part of <a href="../../services/seo-engineering/">SEO engineering</a>. For the Next.js specifics they should cover, see the <a href="../../guides/nextjs-seo/">Next.js SEO checklist</a>, and for safe repository setup, <a href="../../guides/repository-access/">giving an outside SEO access</a>.</p>
+<h2>References</h2>
+<ul class="sources">
+  <li><a href="https://docs.github.com/en/actions/get-started/continuous-integration">GitHub Docs: About continuous integration</a></li>
+  <li><a href="https://developers.google.com/search/docs/appearance/title-link">Google Search Central: Influencing your title links</a></li>
+  <li><a href="https://developers.google.com/search/docs/appearance/snippet">Google Search Central: Control your snippets</a></li>
+  <li><a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies">Google Search Central: General structured data guidelines</a></li>
+</ul>
+<aside class="author-box" aria-label="About the author">
+  <img src="../../chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="../../about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="../../standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../standards/">Standards</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../colophon/">Colophon</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../rss.xml">RSS</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -28,7 +28,7 @@ The costs show up elsewhere:
 - **Broken widgets.** Components in the rebuilt section lose whatever state they had, so a menu, carousel, or form can reset or stop responding.
 - **Messy analytics.** Tags that fire on load can fire twice, or against elements that have since been replaced.
 
-Head tags are a separate concern. In Next.js, metadata set with `generateMetadata` or a `metadata` export is resolved on the server and included in the initial HTML, so titles and canonicals stay intact when the page body has a hydration fault.
+Head tags are a separate concern. In Next.js, metadata set with `generateMetadata` or a `metadata` export is resolved on the server and sent as HTML, so titles and canonicals don't depend on hydration succeeding.
 
 ## The usual causes
 

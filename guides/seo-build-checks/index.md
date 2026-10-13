@@ -1,0 +1,91 @@
+> Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.
+>
+> Source: https://gerriscorp.com/guides/seo-build-checks/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
+
+# How to add SEO regression tests to your website's build
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+
+Most SEO damage on a coded website arrives in an ordinary pull request. Someone refactors a layout, and the canonical tag disappears from 4,000 pages. A content import runs, and every description is blank. Nobody notices for a month, because nobody was looking. A short set of automated checks, run on every build, looks every time. Here is what to test and how to wire it in.
+
+## Where the checks run
+
+Continuous integration runs your tests automatically whenever code is pushed. On GitHub Actions, the results appear on the pull request itself, so a reviewer sees a failed check before anyone merges. SEO tests belong in the same place as the unit tests your developers already run: they're just tests whose subject is the built HTML.
+
+The simplest pattern is to build the site, then run a script over the output. A static or prerendered site produces a folder of HTML files to read directly. A server rendered site can be started in the CI job and fetched page by page from a list of representative URLs, one per template.
+
+## The checks worth having
+
+### Titles and descriptions
+- Every page has exactly one title element and one meta description, and neither is empty.
+- No two pages share a title or a description. Google's documentation asks for distinct titles on every page and warns against repeated or boilerplate text, and it says the same of descriptions.
+- Lengths stay inside a range you choose. Google sets no length limit and truncates to fit the device, so the range is a house style. Mine is 50 to 60 characters for titles and 140 to 160 for descriptions, and the build enforces it.
+
+### Indexing signals
+- Every indexable page carries exactly one canonical tag, pointing at its own production URL.
+- No production page carries a noindex, unless it's on an explicit allow list.
+- robots.txt in the production build allows what you expect and lists the sitemap.
+
+### Sitemap agreement
+- Every URL in the sitemap exists in the build and returns 200.
+- Every indexable page in the build appears in the sitemap.
+
+### Structured data
+- Every JSON-LD block parses as valid JSON.
+- Each template emits the types it should, such as Product on product pages and Article on posts.
+- Key values match the visible page. Google's guidelines say structured data should represent the main content of the page and describe content the user can see, so a price or a name in the JSON-LD that differs from the page is a real fault.
+
+### Headings and markup
+- Exactly one H1 per page.
+- The HTML parses with balanced tags and no invalid nesting, which also heads off a class of React hydration errors.
+
+### Links
+- Every internal link points at a page that exists in the build.
+- No internal link points at a URL that redirects, so links go straight to the final address.
+
+## A minimal example
+
+A check doesn't need a framework. This Python sketch reads every built page and fails the build on a missing or duplicate title:
+
+```
+import pathlib, re, sys
+seen, problems = {}, []
+for page in pathlib.Path("out").rglob("*.html"):
+    html = page.read_text(encoding="utf-8")
+    titles = re.findall(r"<title>(.*?)</title>", html, re.S)
+    if len(titles) != 1:
+        problems.append(f"{page}: {len(titles)} title elements")
+        continue
+    seen.setdefault(titles[0].strip(), []).append(str(page))
+for title, pages in seen.items():
+    if len(pages) > 1:
+        problems.append(f"duplicate title {title!r}: {pages}")
+print("\n".join(problems))
+sys.exit(1 if problems else 0)
+```
+
+Add a step to the CI workflow that runs it after the build. A nonzero exit fails the check, and the message names the page and the rule, so the developer can fix it without asking anyone. For anything beyond a sketch, use a real HTML parser in place of regular expressions.
+
+## Checks that guard the writing, too
+
+Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.
+
+## Rolling it out without blocking everyone
+1. **Start in report only mode.** Run the checks and print the results without failing the build, and fix the existing backlog.
+2. **Turn on failure one rule at a time,** starting with the ones that cost the most when they break: canonicals, noindex, and robots.txt.
+3. **Keep messages specific.** "Missing canonical on /products/blue-widget/" gets fixed in a minute. "SEO check failed" gets the check switched off.
+4. **Make the rules a file in the repository,** reviewed like code, so changing a threshold is a decision someone signs off.
+
+## What tests can't tell you
+
+Build checks prove the HTML you ship meets your rules. They can't tell you how Google ranks it, whether a title persuades anyone to click, or what an AI assistant says about you. Pair them with a crawl of the live site after each release and with Search Console, and keep a person reading the pages.
+
+I write these checks into client repositories as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/). For the Next.js specifics they should cover, see the [Next.js SEO checklist](https://gerriscorp.com/guides/nextjs-seo/), and for safe repository setup, [giving an outside SEO access](https://gerriscorp.com/guides/repository-access/).
+
+## References
+- [GitHub Docs: About continuous integration](https://docs.github.com/en/actions/get-started/continuous-integration)
+- [Google Search Central: Influencing your title links](https://developers.google.com/search/docs/appearance/title-link)
+- [Google Search Central: Control your snippets](https://developers.google.com/search/docs/appearance/snippet)
+- [Google Search Central: General structured data guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

@@ -28,6 +28,8 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
+- [A Next.js SEO checklist for the App Router](https://gerriscorp.com/guides/nextjs-seo/): metadata, title templates, streamed metadata and AI crawlers, sitemap.ts, robots.ts, 308 redirects, real 404s, JSON-LD, and links.
+- [How to add SEO regression tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/): the checks worth automating, a minimal example, and how to roll them out without blocking developers.
 - [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): what error #418 means, why Google usually still indexes the page, the real costs, and how to find every one.
 - [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
 - [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/): scripted text browser checks for thin pages, stray noindex tags, and broken links before every launch.
