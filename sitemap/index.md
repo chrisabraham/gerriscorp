@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-12 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -48,6 +48,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, fixes deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 
 ## Guides
+- [How to fact check a confident AI answer about SEO before you act on it](https://gerriscorp.com/guides/fact-check-ai-seo/): A claim by claim method for checking polished AI answers about SEO, using a real exchange about brand names in page titles and what the evidence supports.
 - [How to measure AI search citations, referrals, and actual leads](https://gerriscorp.com/guides/measure-ai-search/): Build an honest AI search report that separates citations, referral visits, and leads using Bing Webmaster Tools, GA4, repeatable checks, and clear limits.
 - [IndexNow, Bing, and a practical AI search workflow for fall 2026](https://gerriscorp.com/guides/indexnow-ai-search/): Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
@@ -106,4 +107,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 12, 2026
+Updated October 13, 2026

@@ -101,7 +101,11 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://gerriscorp.com/guides/fact-check-ai-seo/</loc>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/measure-ai-search/</loc>
@@ -330,6 +334,6 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/sitemap/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
 </urlset>

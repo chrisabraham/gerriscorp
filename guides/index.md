@@ -1,12 +1,13 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-12 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
 
 # Guides
 
 Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
 
 ## AI search
+- [How to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/): split the answer into claims, grade each by its source, trace every number, and test on your own data.
 - [Measure AI citations, referrals, and leads](https://gerriscorp.com/guides/measure-ai-search/): provider reports, identifiable visits, repeatable answer checks, and attribution limits.
 - [IndexNow, Bing, and an AI search publishing workflow](https://gerriscorp.com/guides/indexnow-ai-search/): verify releases, notify participating engines, and syndicate full articles.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
@@ -62,4 +63,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 12, 2026
+Updated October 13, 2026
