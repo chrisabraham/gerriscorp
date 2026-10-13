@@ -51,7 +51,7 @@ FILES = ["index",
          "services/on-page-seo", "services/site-speed", "services/search-console", "services/migrations",
          "services/ai-search", "services/ongoing-support",
          "services/multi-location", "services/reputation", "services/google-business-profile", "services/email-and-dns",
-         "guides/index", "guides/fact-check-ai-seo", "guides/measure-ai-search", "guides/indexnow-ai-search", "guides/ai-assistants", "guides/javascript-seo", "guides/hydration-errors", "guides/repository-access", "guides/nextjs-seo", "guides/seo-build-checks", "guides/migration-recovery", "guides/migration-tools", "guides/core-web-vitals-mcp", "guides/crawled-not-indexed",
+         "guides/index", "guides/fact-check-ai-seo", "guides/measure-ai-search", "guides/indexnow-ai-search", "guides/ai-assistants", "guides/javascript-seo", "guides/hydration-errors", "guides/repository-access", "guides/nextjs-seo", "guides/seo-build-checks", "guides/migration-recovery", "guides/migration-tools", "guides/core-web-vitals-mcp", "guides/email-blocklist-recovery", "guides/crawled-not-indexed",
          "guides/migration-checklist", "guides/email-authentication", "guides/personal-information-removal",
          "guides/traffic-drop", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
          "guides/301-redirects", "guides/faceted-navigation", "guides/hreflang", "guides/core-web-vitals",
@@ -207,6 +207,8 @@ dd { margin: .2rem 0 0 0; }
 .author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
 .author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
 .author-box p { margin: 0; }
+.help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
+.help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
@@ -360,6 +362,14 @@ def body_html(p):
         by = (f'<p class="byline">By <a href="{r}about/">Chris Abraham</a> · Published {nice(p.get("published", p["updated"]))}'
               + (f' · Updated {nice(p["updated"])}' if p.get("published", p["updated"]) != p["updated"] else "") + "</p>")
         body = re.sub(r"(</h1>)", r"\1\n" + by, body, count=1)
+    if p["kind"] == "guide":
+        body += f"""
+<aside class="help-box" aria-label="Get help">
+  <h2>Want me to handle this for you?</h2>
+  <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:{TEL}">Call {PHONE}</a> <a class="button" href="mailto:{EMAIL}">Email {EMAIL}</a></p>
+  <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>"""
     if p["sources"]:
         body += ('\n<h2>References</h2>\n<ul class="sources">\n'
                  + "".join(f'  <li><a href="{u}">{html.escape(label)}</a></li>\n' for label, u in p["sources"]) + "</ul>")

@@ -91,6 +91,8 @@ dd { margin: .2rem 0 0 0; }
 .author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
 .author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
 .author-box p { margin: 0; }
+.help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
+.help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
@@ -668,7 +670,7 @@ dd { margin: .2rem 0 0 0; }
    "dateModified": "2026-10-06",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 763,
+   "wordCount": 776,
    "citation": [
     {
      "@type": "CreativeWork",
@@ -752,7 +754,13 @@ dd { margin: .2rem 0 0 0; }
 <h2>Testing</h2>
 <p>Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.</p>
 
-<p class="related">I fix deliverability as part of <a href="../../services/email-and-dns/">email authentication and DNS work</a>, usually alongside the domain cleanup that caused the problem.</p>
+<p class="related">I trace delivery problems and fix the authentication and DNS behind them as part of <a href="../../services/email-and-dns/">email authentication and DNS work</a>. If a domain is already listed, the <a href="../../guides/email-blocklist-recovery/">blocklist recovery guide</a> covers what comes next.</p>
+<aside class="help-box" aria-label="Get help">
+  <h2>Want me to handle this for you?</h2>
+  <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:+12023525051">Call +1 202-352-5051</a> <a class="button" href="mailto:chris@gerriscorp.com">Email chris@gerriscorp.com</a></p>
+  <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>
 <h2>References</h2>
 <ul class="sources">
   <li><a href="https://support.google.com/a/answer/81126">Google Workspace Admin Help: Email sender guidelines</a></li>

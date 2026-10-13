@@ -66,6 +66,14 @@ Sixteen months. For longer history, set up the bulk export to BigQuery now, beca
 
 Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/), and if the drop followed a relaunch, [recovering traffic after a site migration](https://gerriscorp.com/guides/migration-recovery/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
 - [Google Search Status Dashboard](https://status.search.google.com/)

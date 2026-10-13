@@ -43,6 +43,14 @@ Disclose the authorship at the top in a sentence a reader can't miss, publish th
 
 Every answer to the last question tells you how long the results will last. For the wider picture, see [the state of search in 2026](https://gerriscorp.com/guides/search-in-2026/) and [how AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/), or [ask me what the assistants say about yours](https://gerriscorp.com/contact/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Lily Ray: Prediction, the next massive Google update is around the corner](https://lilyraynyc.substack.com/p/prediction-the-next-massive-google)
 - [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)

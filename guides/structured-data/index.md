@@ -72,6 +72,14 @@ Yoast, Rank Math, and Shopify themes add sensible defaults for common types. For
 
 I build schema and entity markup as part of [on-page SEO](https://gerriscorp.com/services/on-page-seo/) and [AI search visibility](https://gerriscorp.com/services/ai-search/) work.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Introduction to structured data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
 - [Google Search Central: Local business structured data](https://developers.google.com/search/docs/appearance/structured-data/local-business)

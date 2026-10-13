@@ -63,6 +63,14 @@ The combination is where the time savings live: crawl every URL, group the slow 
 
 This is how I run speed work on code based sites as part of [site speed and Core Web Vitals](https://gerriscorp.com/services/site-speed/) and [SEO engineering](https://gerriscorp.com/services/seo-engineering/). For the habits that keep an AI assistant safe in a client codebase, see [using AI coding assistants on a business website](https://gerriscorp.com/guides/ai-coding-assistants/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Chrome DevTools MCP (README)](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 - [Chrome DevTools MCP tool reference](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md)

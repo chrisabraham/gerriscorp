@@ -51,6 +51,14 @@ The assistant writes code; a person owns the outcome. For a business site that m
 
 See how this site and other projects were built in the [Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Anthropic: Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 

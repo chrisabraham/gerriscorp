@@ -63,6 +63,14 @@ Put the end date in your own calendar on the day you grant access. When the work
 
 This is the setup I ask for at the start of an [SEO engineering](https://gerriscorp.com/services/seo-engineering/) engagement. For how I work once I'm in, see [developer specs and QA](https://gerriscorp.com/services/developers/) and the guide to [working safely with AI coding assistants](https://gerriscorp.com/guides/ai-coding-assistants/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [GitHub Docs: Repository roles for an organization](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
 - [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)

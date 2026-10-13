@@ -60,6 +60,14 @@ Every item above can become an automated check in the build, so a future change 
 
 I work through this list, and fix what it finds, as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/) for Next.js and React sites. If you're bringing me into your repository, start with [how to give an outside SEO safe access](https://gerriscorp.com/guides/repository-access/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Next.js: generateMetadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
 - [Next.js: sitemap.xml](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap)

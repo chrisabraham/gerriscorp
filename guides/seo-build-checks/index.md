@@ -82,6 +82,14 @@ Build checks prove the HTML you ship meets your rules. They can't tell you how G
 
 I write these checks into client repositories as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/). For the Next.js specifics they should cover, see the [Next.js SEO checklist](https://gerriscorp.com/guides/nextjs-seo/), and for safe repository setup, [giving an outside SEO access](https://gerriscorp.com/guides/repository-access/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [GitHub Docs: About continuous integration](https://docs.github.com/en/actions/get-started/continuous-integration)
 - [Google Search Central: Influencing your title links](https://developers.google.com/search/docs/appearance/title-link)

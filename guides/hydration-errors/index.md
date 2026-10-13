@@ -57,6 +57,14 @@ Then stop the problem coming back. A small check in the build that parses every 
 
 I find and fix these as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/) and [rendering diagnosis](https://gerriscorp.com/services/crawler-visibility/). For the wider rendering picture, see the [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) and [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [React: hydrateRoot](https://react.dev/reference/react-dom/client/hydrateRoot)
 - [React: Minified React error #418](https://react.dev/errors/418)

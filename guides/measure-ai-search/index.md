@@ -69,6 +69,14 @@ Ask which pages are repeatedly useful, which questions remain unanswered, and wh
 
 The report should end with a decision: repair a factual error, improve a relevant article, investigate tracking, or leave a useful page alone. For the publication side of that process, use [the IndexNow and AI search release workflow](https://gerriscorp.com/guides/indexnow-ai-search/). If the tracking itself needs work, see [analytics setup and repair](https://gerriscorp.com/services/analytics/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Microsoft Bing AI visibility reporting update](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/)
 - [Google Search Central AI features and reporting](https://developers.google.com/search/docs/appearance/ai-features)

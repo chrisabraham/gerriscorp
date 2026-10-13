@@ -1549,6 +1549,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 ## Email and domains
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): headers, authentication failures, reputation, blocklists, and sending practices.
+- [How to get your email off a blocklist and back into the inbox](https://gerriscorp.com/guides/email-blocklist-recovery/): find the listing, fix the cause, request removal properly, rebuild your reputation, and avoid the paid removal scam.
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
@@ -1610,6 +1611,14 @@ For title changes, the deciding evidence sits in your own Search Console. Change
 ## What survived the check
 
 After grading, the defensible advice fit in a few lines: write a specific title for each page, include the company name where it helps someone recognize or choose the result, keep titles concise, and measure the change. Dropping a repeated suffix remains a legitimate editorial call. It simply has to be presented as judgment backed by a test, never as escape from a penalty that does not exist.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: Influencing your title links in search results](https://developers.google.com/search/docs/appearance/title-link)
@@ -1690,6 +1699,14 @@ Ask which pages are repeatedly useful, which questions remain unanswered, and wh
 
 The report should end with a decision: repair a factual error, improve a relevant article, investigate tracking, or leave a useful page alone. For the publication side of that process, use [the IndexNow and AI search release workflow](https://gerriscorp.com/guides/indexnow-ai-search/). If the tracking itself needs work, see [analytics setup and repair](https://gerriscorp.com/services/analytics/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Microsoft Bing AI visibility reporting update](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/)
 - [Google Search Central AI features and reporting](https://developers.google.com/search/docs/appearance/ai-features)
@@ -1761,6 +1778,14 @@ Decide whether the destination displays excerpts or republishes complete article
 For each release, retain a short note of the question it answers, the production URL, the publication date, and the intended reader. Review search visibility and referred traffic against that record. If you test assistant answers, keep the question wording and the linked sources so another person can inspect the observation.
 
 The strongest operational outcome is a process that can distinguish publication failure from indexing delay and editorial weakness. Those require different remedies. Start with one useful Guide, establish the checkpoints, then repeat the process for the next article. For broader release planning, the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/) shows how inventories and verification fit together.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [IndexNow protocol documentation](https://www.indexnow.org/documentation)
@@ -1835,6 +1860,14 @@ AI answers vary with phrasing, location, account history, and time, so a single 
 
 I do this work as [AI search visibility](https://gerriscorp.com/services/ai-search/), starting with an AI search readiness audit.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
 - [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
@@ -1908,6 +1941,14 @@ Developers fix these problems fastest with evidence: the affected template, exam
 
 I diagnose rendering problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: JavaScript SEO basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
 - [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
@@ -1974,6 +2015,14 @@ The production build tells you only that a mismatch happened. To see where, run 
 Then stop the problem coming back. A small check in the build that parses every rendered page and fails on unbalanced tags or invalid nesting catches the CMS content that would have caused the next one.
 
 I find and fix these as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/) and [rendering diagnosis](https://gerriscorp.com/services/crawler-visibility/). For the wider rendering picture, see the [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) and [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [React: hydrateRoot](https://react.dev/reference/react-dom/client/hydrateRoot)
@@ -2050,6 +2099,14 @@ Put the end date in your own calendar on the day you grant access. When the work
 
 This is the setup I ask for at the start of an [SEO engineering](https://gerriscorp.com/services/seo-engineering/) engagement. For how I work once I'm in, see [developer specs and QA](https://gerriscorp.com/services/developers/) and the guide to [working safely with AI coding assistants](https://gerriscorp.com/guides/ai-coding-assistants/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [GitHub Docs: Repository roles for an organization](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
 - [GitHub Docs: About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
@@ -2123,6 +2180,14 @@ Finally, compare the raw HTML with the rendered DOM on each template, and run th
 Every item above can become an automated check in the build, so a future change can't undo it. That's the subject of [adding SEO tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/).
 
 I work through this list, and fix what it finds, as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/) for Next.js and React sites. If you're bringing me into your repository, start with [how to give an outside SEO safe access](https://gerriscorp.com/guides/repository-access/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Next.js: generateMetadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
@@ -2222,6 +2287,14 @@ Build checks prove the HTML you ship meets your rules. They can't tell you how G
 
 I write these checks into client repositories as part of [SEO engineering](https://gerriscorp.com/services/seo-engineering/). For the Next.js specifics they should cover, see the [Next.js SEO checklist](https://gerriscorp.com/guides/nextjs-seo/), and for safe repository setup, [giving an outside SEO access](https://gerriscorp.com/guides/repository-access/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [GitHub Docs: About continuous integration](https://docs.github.com/en/actions/get-started/continuous-integration)
 - [Google Search Central: Influencing your title links](https://developers.google.com/search/docs/appearance/title-link)
@@ -2298,6 +2371,14 @@ Write down what you found, what you fixed, and when, with the before and after c
 
 I handle this as part of [website migration SEO](https://gerriscorp.com/services/migrations/), and for inherited projects that went badly, [project rescue](https://gerriscorp.com/services/rescue/). To prevent the next one, use the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/) and the [tools I use for a website migration](https://gerriscorp.com/guides/migration-tools/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
 - [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
@@ -2365,6 +2446,14 @@ A few weeks after launch, crawl the new site again and compare it with the pre-l
 Every tool above reports facts. None of them decides which new page is the right home for an old one, whether a thin page should be merged or kept, or which redirect rule is safe on a site with forty thousand URLs. That judgment is the migration work itself, and it's why the inventory and the map deserve the most time.
 
 I run migrations with this kit as [website migration SEO](https://gerriscorp.com/services/migrations/). For the full sequence, follow the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/), and for redirect rules in depth, see [301 redirects explained](https://gerriscorp.com/guides/301-redirects/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
@@ -2442,6 +2531,14 @@ The combination is where the time savings live: crawl every URL, group the slow 
 
 This is how I run speed work on code based sites as part of [site speed and Core Web Vitals](https://gerriscorp.com/services/site-speed/) and [SEO engineering](https://gerriscorp.com/services/seo-engineering/). For the habits that keep an AI assistant safe in a client codebase, see [using AI coding assistants on a business website](https://gerriscorp.com/guides/ai-coding-assistants/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Chrome DevTools MCP (README)](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 - [Chrome DevTools MCP tool reference](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md)
@@ -2450,6 +2547,86 @@ This is how I run speed work on code based sites as part of [site speed and Core
 - [Google: PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started)
 - [Chrome for Developers: CrUX API](https://developer.chrome.com/docs/crux/api)
 - [Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights)](https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/email-blocklist-recovery/
+Updated: 2026-10-13
+
+# How to get your email off a blocklist and back into the inbox
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+
+Your invoices are bouncing, or your newsletter vanished into spam, and somebody says you're "blacklisted." Recovery is a procedure anyone can follow: find the actual problem, fix it, ask for removal through the front door, and then send mail people want for long enough that the filters change their minds. Here is the sequence.
+
+## First, the scam to avoid
+
+Spamhaus, the most consequential blocklist operator, is blunt about it: there is never any charge or fee to remove a Spamhaus listing, any offer to remove one for a fee is a scam, and no third party can influence or speed up a removal. Anyone promising to make a listing disappear for a price is selling the thing you can do yourself for free, or nothing at all.
+
+## Step 1: find out what's actually blocked
+
+"Blacklisted" covers several different problems, and the fix depends on which one you have.
+- **Read the bounce.** A rejected message comes back with an error code and usually a sentence naming the reason and often the list. Keep a copy. That text is your most specific evidence.
+- **Check the sending IP and the domain.** Spamhaus's IP and Domain Reputation Checker covers its lists, and multi list lookup tools such as MXToolbox check the rest at once. Note whether the listing is on your *domain* or on the *IP address* that sent the mail; on a shared email service, that IP belongs to the provider, and so does the fix.
+- **Check the mailbox providers' own views.** Google Postmaster Tools shows Gmail's spam rate, reputation, authentication, and delivery errors for your domain. Microsoft's Smart Network Data Services shows Outlook.com's view of IP addresses you control. These aren't public lists, and they often matter more than the lists do.
+
+## Step 2: fix the cause before you ask for anything
+
+Every operator says the same thing in different words: the problem must be identified and corrected first. Spamhaus's documentation for its fastest list notes that it will let you remove an IP, then list it again at once if the problem is still detected. The usual causes:
+1. **A compromised account or website.** A hacked mailbox or a form on the website relaying spam. Change passwords, turn on two factor authentication, lock down the form with a CAPTCHA, and check for anything that sends mail you didn't write.
+2. **A bad list.** Purchased, scraped, or years old, full of dead addresses and spam traps. Stop sending to it. Keep only people who asked to hear from you and have engaged recently.
+3. **Missing authentication.** Google and Yahoo both require SPF or DKIM at a minimum for everyone, plus valid forward and reverse DNS for sending IPs, and bulk senders need SPF, DKIM, and DMARC together, aligned with the From domain. Since May 2025 Outlook.com enforces the same for domains sending more than 5,000 messages a day.
+4. **No easy way out.** Google requires marketing mail from bulk senders to support one click unsubscribe and to show a visible unsubscribe link. People who can't leave press "report spam" instead, and complaints are what sink you.
+5. **Marketing on the business domain.** When a newsletter's complaints land on the same domain as your invoices, the invoices suffer. Move bulk mail to a separate subdomain and sending service.
+
+## Step 3: request removal, once, with the evidence
+- **Spamhaus:** start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.
+- **Barracuda:** its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.
+- **Microsoft:** the Outlook.com postmaster site is the starting point, with troubleshooting for mail that Outlook.com blocks or sends to junk.
+- **Gmail:** no list to be removed from. Google's guidelines say senders who don't follow its practices may not be considered for deliverability mitigations, so meeting every requirement comes first.
+- **If the listing is on your provider's IP,** contact the provider. They control that address and its removal.
+
+Write each request the way you'd write an appeal: what happened, what you changed, and the date you changed it. One clear request beats five vague ones.
+
+## Step 4: rebuild slowly
+
+Removal from a list only stops the blocking. Reputation with Gmail and Microsoft recovers from behavior over time. Send only to your most engaged recipients at first, at a steady, modest volume, and raise it gradually over several weeks while you watch Postmaster Tools. Google asks senders to keep the spam rate it reports below 0.1% and never to reach 0.3%; Yahoo's limit for all senders is the same 0.3%. A spike during the rebuild is the signal to slow down.
+
+## What money really buys, and when to start fresh
+
+Big senders do recover faster, and money is part of the reason: dedicated sending IPs they control and warm up themselves, account managers at their email platforms, paid certification programs, and staff who watch these dashboards daily. All of it shortens the feedback loop; the filters still judge the mail itself. A small sender reaches the same result on the same rules, more slowly.
+
+Sometimes the practical answer is a fresh start: business mail stays on the main domain once it's clean, and marketing moves to a new subdomain on a reputable sending service, built up from scratch with a clean list. A new address can't carry a bad list or a hacked form forward, so fix those first or the new domain will end up in the same place.
+
+## Keep it from happening again
+- Read your DMARC aggregate reports, or have a tool summarize them, so spoofing and misconfigured senders show up early.
+- Watch Postmaster Tools monthly, and sign up for feedback loops such as Microsoft's Junk Email Reporting Program and Yahoo's Complaint Feedback Loop.
+- Remove bounces and long silent addresses after every campaign.
+- Lock down every form on the site that can send email.
+- Give any domain that never sends mail a reject DMARC policy and an SPF record that allows nothing, so nobody can borrow its name. My [email authentication guide](https://gerriscorp.com/guides/email-authentication/) covers SPF, DKIM, and DMARC.
+
+For how to diagnose missing mail before it becomes a listing, see the [email deliverability guide](https://gerriscorp.com/guides/email-deliverability/). I set up authentication and trace delivery problems as part of [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Spamhaus: Domain Blocklist FAQ](https://www.spamhaus.org/faqs/domain-blocklist/)
+- [Spamhaus: Combined Spam Sources FAQ](https://www.spamhaus.org/faqs/combined-spam-sources-css/)
+- [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
+- [Google Workspace Admin Help: Postmaster Tools](https://support.google.com/a/answer/9981691)
+- [Outlook.com Postmaster](https://sendersupport.olc.protection.outlook.com/pm/policies.aspx)
+- [Outlook.com Smart Network Data Services](https://sendersupport.olc.protection.outlook.com/snds/)
+- [Yahoo Sender Hub: Best practices](https://senders.yahooinc.com/best-practices/)
+- [Barracuda Central: Removal request](https://www.barracudacentral.org/rbl/removal-request)
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
@@ -2504,6 +2681,14 @@ After the fix ships, click "Validate fix" in the report. Validation takes days t
 A sudden rise concentrated in your most valuable template, with a matching traffic drop, is a technical emergency, and it's usually a rendering or template change. A slow, even scatter across low-value pages is housekeeping. Telling the two apart is the first job.
 
 I diagnose indexing problems as part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [Search Console cleanup](https://gerriscorp.com/services/search-console/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
@@ -2587,6 +2772,14 @@ Check that the new templates render their content on the server. A migration fro
 A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.
 
 I run this process as a [website migration SEO service](https://gerriscorp.com/services/migrations/), before launch or after it. The kit is in [SEO tools for a website migration](https://gerriscorp.com/guides/migration-tools/), and if traffic has already fallen, start with [migration recovery](https://gerriscorp.com/guides/migration-recovery/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
@@ -2672,6 +2865,14 @@ Website moves, CDN setups, and DNS provider changes are when mail records get lo
 
 I set this up and troubleshoot deliverability as [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) work.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [RFC 7208: Sender Policy Framework (SPF)](https://www.rfc-editor.org/rfc/rfc7208)
 - [RFC 7489: DMARC](https://www.rfc-editor.org/rfc/rfc7489)
@@ -2740,6 +2941,14 @@ Brokers refresh their data from public records and other brokers constantly, so 
 5. For families and executives, cover spouses, children, and older addresses as well.
 
 I handle this for clients as part of [reputation and perception management](https://gerriscorp.com/services/reputation/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [FTC Consumer Advice: People search sites that sell your information](https://consumer.ftc.gov/articles/what-know-about-people-search-sites-sell-your-information)
@@ -2817,6 +3026,14 @@ Sixteen months. For longer history, set up the bulk export to BigQuery now, beca
 
 Finding the cause of lost traffic is the core of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/). See also the [indexing recovery case study](https://gerriscorp.com/case-studies/indexing-recovery/), and if the drop followed a relaunch, [recovering traffic after a site migration](https://gerriscorp.com/guides/migration-recovery/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
 - [Google Search Status Dashboard](https://status.search.google.com/)
@@ -2879,6 +3096,14 @@ If some locations deserve a page, give each one facts no other page has: the tea
 Do the inventory first. Decide each page's fate with the data in hand, set up the redirects and internal links before anything is removed, and remove in stages so you can see the effect of each batch.
 
 Already deleted and watching rankings slide? This is the kind of forensic work I do. See [how to diagnose a traffic drop](https://gerriscorp.com/guides/traffic-drop/), or [tell me what happened and when](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
@@ -2948,6 +3173,14 @@ End with one page of notes: what you checked, what you fixed, and what needs a d
 A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.
 
 Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
@@ -3020,6 +3253,14 @@ A canonical can point to another domain, which is how a business that runs two s
 When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.
 
 Canonical audits are part of [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and [large-site SEO](https://gerriscorp.com/services/large-sites/). For the related indexing status, see [Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: What is canonicalization](https://developers.google.com/search/docs/crawling-indexing/canonicalization)
@@ -3107,6 +3348,14 @@ Search Console's robots.txt report shows the version Google last fetched, when i
 
 robots.txt is part of every [crawler visibility audit](https://gerriscorp.com/services/crawler-visibility/) and every [technical SEO](https://gerriscorp.com/services/technical-seo/) engagement I run.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
 - [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
@@ -3189,6 +3438,14 @@ Yoast, Rank Math, and Shopify themes add sensible defaults for common types. For
 
 I build schema and entity markup as part of [on-page SEO](https://gerriscorp.com/services/on-page-seo/) and [AI search visibility](https://gerriscorp.com/services/ai-search/) work.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Introduction to structured data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
 - [Google Search Central: Local business structured data](https://developers.google.com/search/docs/appearance/structured-data/local-business)
@@ -3270,6 +3527,14 @@ There's no practical limit on the number of rules. Tens of thousands are normal 
 
 Redirect mapping is part of every [website migration](https://gerriscorp.com/services/migrations/) I run. For the whole process, see the [migration checklist](https://gerriscorp.com/guides/migration-checklist/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
 - [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
@@ -3336,6 +3601,14 @@ Paginated category pages are different from filters: they list different product
 Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.
 
 Crawl control for big catalogs is the focus of [large-site SEO](https://gerriscorp.com/services/large-sites/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/). See also the [programmatic indexing case study](https://gerriscorp.com/case-studies/programmatic-indexing/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: Managing crawling of faceted navigation URLs](https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation)
@@ -3420,6 +3693,14 @@ Search Console retired its International Targeting report in 2022, so checking f
 
 I sort out international setups as part of [technical SEO](https://gerriscorp.com/services/technical-seo/) and [ecommerce SEO](https://gerriscorp.com/services/ecommerce/) engagements, for clients across the English-speaking world.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Tell Google about localized versions of your page](https://developers.google.com/search/docs/specialty/international/localized-versions)
 - [Google Search Central: Managing multi-regional and multilingual sites](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)
@@ -3486,6 +3767,14 @@ Poor INP almost always means the browser's main thread was busy when the visitor
 Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.
 
 Speed work is its own service: [site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/). For the CDN side, see [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/), and for diagnosis with an AI assistant, [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Search Central: Understanding Core Web Vitals and Google search results](https://developers.google.com/search/docs/appearance/core-web-vitals)
@@ -3569,6 +3858,14 @@ Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and pr
 
 I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Cloudflare Docs: Default cache behavior](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/)
 - [Cloudflare Docs: Polish](https://developers.cloudflare.com/images/polish/)
@@ -3651,6 +3948,14 @@ After a consent banner goes live in Europe, GA4's European sessions usually fall
 
 Analytics setup and repair is part of [GA4 and analytics work](https://gerriscorp.com/services/analytics/). For a consent problem that hid half a site's traffic, see the [consent blocking case study](https://gerriscorp.com/case-studies/consent-blocking/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Tag Platform: Set up consent mode](https://developers.google.com/tag-platform/security/guides/consent)
 
@@ -3709,7 +4014,15 @@ A bounce message carries a status code and usually a sentence from the receiving
 
 Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.
 
-I fix deliverability as part of [email authentication and DNS work](https://gerriscorp.com/services/email-and-dns/), usually alongside the domain cleanup that caused the problem.
+I trace delivery problems and fix the authentication and DNS behind them as part of [email authentication and DNS work](https://gerriscorp.com/services/email-and-dns/). If a domain is already listed, the [blocklist recovery guide](https://gerriscorp.com/guides/email-blocklist-recovery/) covers what comes next.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
@@ -3772,6 +4085,14 @@ The assistant writes code; a person owns the outcome. For a business site that m
 
 See how this site and other projects were built in the [Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Anthropic: Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
@@ -3825,6 +4146,14 @@ If you run a company with a website, the question to ask your SEO is no longer w
 ## Hire the superpower
 
 This is how I work every day: in the repository, through pull requests, with super intelligence doing the heavy reading under my direction and my name on the result. I can be your [fractional technical lead](https://gerriscorp.com/services/technical-lead/), turn a diagnosis into [developer ready specs](https://gerriscorp.com/services/developers/) and verify they shipped, or [build you small AI tools safely](https://gerriscorp.com/services/ai-automation/). [Tell me about your site](https://gerriscorp.com/contact/) and I'll tell you what the code is doing to your search visibility.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [The White House: Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence (September 29, 2026)](https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/)
@@ -3896,6 +4225,14 @@ The domain is the only bill. Hosting, HTTPS, and the daily job run free. Claude 
 The generator itself is routine code. The slow parts are the judgment calls: a title that reads well at 60 characters, a description for an episode whose notes are two words, alt text for hundreds of cover images. An assistant drafts those in minutes, and you spend your time reviewing instead of typing. For the working method, specs, review, and keeping secrets out of the repository, see [how to use AI coding assistants on a website safely](https://gerriscorp.com/guides/ai-coding-assistants/). For the DNS side, see [Cloudflare settings that help or hurt SEO](https://gerriscorp.com/guides/cloudflare-seo/).
 
 Want this built for your show, or for any feed you publish? [Tell me about it](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [GitHub Docs: GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
@@ -3969,6 +4306,14 @@ In September 2025, Google stopped honoring the `num=100` parameter that let rank
 
 For the crawler side, see [how AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/) and [my robots.txt guide](https://gerriscorp.com/guides/robots-txt/). If a 2026 update has already hit you, start with [how to diagnose a traffic drop](https://gerriscorp.com/guides/traffic-drop/), or [send me the dates and the domain](https://gerriscorp.com/contact/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Status Dashboard: Ranking incident history](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history)
 - [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
@@ -4025,6 +4370,14 @@ Disclose the authorship at the top in a sentence a reader can't miss, publish th
 5. Which of your tactics would you stop doing if Google or Anthropic wrote about them tomorrow?
 
 Every answer to the last question tells you how long the results will last. For the wider picture, see [the state of search in 2026](https://gerriscorp.com/guides/search-in-2026/) and [how AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/), or [ask me what the assistants say about yours](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Lily Ray: Prediction, the next massive Google update is around the corner](https://lilyraynyc.substack.com/p/prediction-the-next-massive-google)
@@ -4128,6 +4481,14 @@ Every shortcut on this list has hurt real businesses, some permanently: buying l
 
 Want a second pair of eyes on your first week's list? [Send me the site](https://gerriscorp.com/contact/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
 - [Google Search Central: In-depth guide to how Google Search works](https://developers.google.com/search/docs/fundamentals/how-search-works)
@@ -4187,6 +4548,14 @@ People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a 
 Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is [how to build one with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/).
 
 Starting from scratch? Read [what it really takes to start a podcast for your brand](https://gerriscorp.com/guides/podcast-for-your-brand/), or [ask me to look at your show's search visibility](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Schema.org: PodcastEpisode](https://schema.org/PodcastEpisode)
@@ -4249,6 +4618,14 @@ Your opinions stay yours. AI removes the busywork that makes people skip a week,
 Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
 
 Want help turning a show into search visibility for your brand? [Tell me about it](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [Spotify for Creators](https://creators.spotify.com/)
@@ -4352,6 +4729,14 @@ Plenty of teams can't or won't install command-line tools. These get most of the
 
 I add a Lynx pass to every launch: sitemap word counts, a noindex sweep, a link check, and a text diff of the most important templates. It takes about ten minutes and catches problems a styled browser hides. For the full launch sequence, see [the website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/), and for the deeper rendering questions, [how to tell if JavaScript is hiding your content](https://gerriscorp.com/guides/javascript-seo/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Lynx project home](https://lynx.invisible-island.net/)
 - [Debian package: lynx](https://packages.debian.org/stable/lynx)
@@ -4425,6 +4810,14 @@ Keep a simple record: which pages were checked, with which tools, what was fixed
 Accessibility erodes with every new page, plugin, and campaign. Add a quick automated scan and a keyboard pass to your launch routine, check new templates before they ship, and review the site once a quarter. My guide to [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/) covers a text-browser pass that catches a surprising number of these problems in minutes.
 
 For help auditing and fixing a site, see [technical SEO](https://gerriscorp.com/services/technical-seo/) or [get in touch](https://gerriscorp.com/contact/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
 - [ADA.gov: Guidance on web accessibility and the ADA](https://www.ada.gov/resources/web-guidance/)
@@ -4577,6 +4970,14 @@ How long a browser waits for the first byte of a server's response. Slow TTFB de
 A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.
 
 Want these applied to your site? See [services](https://gerriscorp.com/services/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
@@ -5770,6 +6171,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Traffic fell after a site migration: how to find what broke and get it back](https://gerriscorp.com/guides/migration-recovery/): A recovery plan for a website migration that lost search traffic: rebuild the old URL list, test every redirect, compare old and new pages, and fix in order.
 - [The SEO tools for a website migration, and the job each one does](https://gerriscorp.com/guides/migration-tools/): The tools that carry a website migration safely: crawlers, Search Console, redirect testing, crawl comparison, and analytics, with the job each one does.
 - [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
+- [How to get your email off a blocklist and back into the inbox](https://gerriscorp.com/guides/email-blocklist-recovery/): A recovery plan for a small business whose email lands in spam or bounces: find the listing, fix the cause, request removal, and rebuild your reputation.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.

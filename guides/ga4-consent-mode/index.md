@@ -68,6 +68,14 @@ After a consent banner goes live in Europe, GA4's European sessions usually fall
 
 Analytics setup and repair is part of [GA4 and analytics work](https://gerriscorp.com/services/analytics/). For a consent problem that hid half a site's traffic, see the [consent blocking case study](https://gerriscorp.com/case-studies/consent-blocking/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Tag Platform: Set up consent mode](https://developers.google.com/tag-platform/security/guides/consent)
 

@@ -59,6 +59,14 @@ In September 2025, Google stopped honoring the `num=100` parameter that let rank
 
 For the crawler side, see [how AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/) and [my robots.txt guide](https://gerriscorp.com/guides/robots-txt/). If a 2026 update has already hit you, start with [how to diagnose a traffic drop](https://gerriscorp.com/guides/traffic-drop/), or [send me the dates and the domain](https://gerriscorp.com/contact/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Status Dashboard: Ranking incident history](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history)
 - [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)

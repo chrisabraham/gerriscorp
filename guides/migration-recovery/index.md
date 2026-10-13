@@ -64,6 +64,14 @@ Write down what you found, what you fixed, and when, with the before and after c
 
 I handle this as part of [website migration SEO](https://gerriscorp.com/services/migrations/), and for inherited projects that went badly, [project rescue](https://gerriscorp.com/services/rescue/). To prevent the next one, use the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/) and the [tools I use for a website migration](https://gerriscorp.com/guides/migration-tools/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
 - [Google Search Central: Redirects and Google Search](https://developers.google.com/search/docs/crawling-indexing/301-redirects)

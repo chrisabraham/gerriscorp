@@ -43,6 +43,14 @@ For title changes, the deciding evidence sits in your own Search Console. Change
 
 After grading, the defensible advice fit in a few lines: write a specific title for each page, include the company name where it helps someone recognize or choose the result, keep titles concise, and measure the change. Dropping a repeated suffix remains a legitimate editorial call. It simply has to be presented as judgment backed by a test, never as escape from a penalty that does not exist.
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Google Search Central: Influencing your title links in search results](https://developers.google.com/search/docs/appearance/title-link)
 - [Zyppy: Google rewrites 61% of page title tags, a study of 80,959 titles from early 2022](https://zyppy.com/seo/google-title-rewrites/)

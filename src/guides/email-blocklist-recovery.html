@@ -1,0 +1,59 @@
+name: Email Blocklist Recovery
+type: guide
+published: 2026-10-13
+sources: Spamhaus: Domain Blocklist FAQ | https://www.spamhaus.org/faqs/domain-blocklist/ ;; Spamhaus: Combined Spam Sources FAQ | https://www.spamhaus.org/faqs/combined-spam-sources-css/ ;; Google Workspace Admin Help: Email sender guidelines | https://support.google.com/a/answer/81126 ;; Google Workspace Admin Help: Postmaster Tools | https://support.google.com/a/answer/9981691 ;; Outlook.com Postmaster | https://sendersupport.olc.protection.outlook.com/pm/policies.aspx ;; Outlook.com Smart Network Data Services | https://sendersupport.olc.protection.outlook.com/snds/ ;; Yahoo Sender Hub: Best practices | https://senders.yahooinc.com/best-practices/ ;; Barracuda Central: Removal request | https://www.barracudacentral.org/rbl/removal-request
+updated: 2026-10-13
+title: How to get your email off a blocklist and back in the inbox
+description: A recovery plan for a small business whose email lands in spam or bounces: find the listing, fix the cause, request removal, and rebuild your reputation.
+---
+<h1>How to get your email off a blocklist and back into the inbox</h1>
+<p class="lead">Your invoices are bouncing, or your newsletter vanished into spam, and somebody says you're "blacklisted." Recovery is a procedure anyone can follow: find the actual problem, fix it, ask for removal through the front door, and then send mail people want for long enough that the filters change their minds. Here is the sequence.</p>
+
+<h2>First, the scam to avoid</h2>
+<p>Spamhaus, the most consequential blocklist operator, is blunt about it: there is never any charge or fee to remove a Spamhaus listing, any offer to remove one for a fee is a scam, and no third party can influence or speed up a removal. Anyone promising to make a listing disappear for a price is selling the thing you can do yourself for free, or nothing at all.</p>
+
+<h2>Step 1: find out what's actually blocked</h2>
+<p>"Blacklisted" covers several different problems, and the fix depends on which one you have.</p>
+<ul>
+  <li><strong>Read the bounce.</strong> A rejected message comes back with an error code and usually a sentence naming the reason and often the list. Keep a copy. That text is your most specific evidence.</li>
+  <li><strong>Check the sending IP and the domain.</strong> Spamhaus's IP and Domain Reputation Checker covers its lists, and multi list lookup tools such as MXToolbox check the rest at once. Note whether the listing is on your <em>domain</em> or on the <em>IP address</em> that sent the mail; on a shared email service, that IP belongs to the provider, and so does the fix.</li>
+  <li><strong>Check the mailbox providers' own views.</strong> Google Postmaster Tools shows Gmail's spam rate, reputation, authentication, and delivery errors for your domain. Microsoft's Smart Network Data Services shows Outlook.com's view of IP addresses you control. These aren't public lists, and they often matter more than the lists do.</li>
+</ul>
+
+<h2>Step 2: fix the cause before you ask for anything</h2>
+<p>Every operator says the same thing in different words: the problem must be identified and corrected first. Spamhaus's documentation for its fastest list notes that it will let you remove an IP, then list it again at once if the problem is still detected. The usual causes:</p>
+<ol>
+  <li><strong>A compromised account or website.</strong> A hacked mailbox or a form on the website relaying spam. Change passwords, turn on two factor authentication, lock down the form with a CAPTCHA, and check for anything that sends mail you didn't write.</li>
+  <li><strong>A bad list.</strong> Purchased, scraped, or years old, full of dead addresses and spam traps. Stop sending to it. Keep only people who asked to hear from you and have engaged recently.</li>
+  <li><strong>Missing authentication.</strong> Google and Yahoo both require SPF or DKIM at a minimum for everyone, plus valid forward and reverse DNS for sending IPs, and bulk senders need SPF, DKIM, and DMARC together, aligned with the From domain. Since May 2025 Outlook.com enforces the same for domains sending more than 5,000 messages a day.</li>
+  <li><strong>No easy way out.</strong> Google requires marketing mail from bulk senders to support one click unsubscribe and to show a visible unsubscribe link. People who can't leave press "report spam" instead, and complaints are what sink you.</li>
+  <li><strong>Marketing on the business domain.</strong> When a newsletter's complaints land on the same domain as your invoices, the invoices suffer. Move bulk mail to a separate subdomain and sending service.</li>
+</ol>
+
+<h2>Step 3: request removal, once, with the evidence</h2>
+<ul>
+  <li><strong>Spamhaus:</strong> start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.</li>
+  <li><strong>Barracuda:</strong> its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.</li>
+  <li><strong>Microsoft:</strong> the Outlook.com postmaster site is the starting point, with troubleshooting for mail that Outlook.com blocks or sends to junk.</li>
+  <li><strong>Gmail:</strong> no list to be removed from. Google's guidelines say senders who don't follow its practices may not be considered for deliverability mitigations, so meeting every requirement comes first.</li>
+  <li><strong>If the listing is on your provider's IP,</strong> contact the provider. They control that address and its removal.</li>
+</ul>
+<p>Write each request the way you'd write an appeal: what happened, what you changed, and the date you changed it. One clear request beats five vague ones.</p>
+
+<h2>Step 4: rebuild slowly</h2>
+<p>Removal from a list only stops the blocking. Reputation with Gmail and Microsoft recovers from behavior over time. Send only to your most engaged recipients at first, at a steady, modest volume, and raise it gradually over several weeks while you watch Postmaster Tools. Google asks senders to keep the spam rate it reports below 0.1% and never to reach 0.3%; Yahoo's limit for all senders is the same 0.3%. A spike during the rebuild is the signal to slow down.</p>
+
+<h2>What money really buys, and when to start fresh</h2>
+<p>Big senders do recover faster, and money is part of the reason: dedicated sending IPs they control and warm up themselves, account managers at their email platforms, paid certification programs, and staff who watch these dashboards daily. All of it shortens the feedback loop; the filters still judge the mail itself. A small sender reaches the same result on the same rules, more slowly.</p>
+<p>Sometimes the practical answer is a fresh start: business mail stays on the main domain once it's clean, and marketing moves to a new subdomain on a reputable sending service, built up from scratch with a clean list. A new address can't carry a bad list or a hacked form forward, so fix those first or the new domain will end up in the same place.</p>
+
+<h2>Keep it from happening again</h2>
+<ul>
+  <li>Read your DMARC aggregate reports, or have a tool summarize them, so spoofing and misconfigured senders show up early.</li>
+  <li>Watch Postmaster Tools monthly, and sign up for feedback loops such as Microsoft's Junk Email Reporting Program and Yahoo's Complaint Feedback Loop.</li>
+  <li>Remove bounces and long silent addresses after every campaign.</li>
+  <li>Lock down every form on the site that can send email.</li>
+  <li>Give any domain that never sends mail a reject DMARC policy and an SPF record that allows nothing, so nobody can borrow its name. My <a href="{root}guides/email-authentication/">email authentication guide</a> covers SPF, DKIM, and DMARC.</li>
+</ul>
+
+<p class="related">For how to diagnose missing mail before it becomes a listing, see the <a href="{root}guides/email-deliverability/">email deliverability guide</a>. I set up authentication and trace delivery problems as part of <a href="{root}services/email-and-dns/">email authentication and DNS</a>.</p>

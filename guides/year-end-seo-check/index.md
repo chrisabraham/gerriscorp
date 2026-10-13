@@ -58,6 +58,14 @@ A redesign or migration launched the week before a holiday shutdown breaks with 
 
 Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
 - [Search Console Help: Sitemaps report](https://support.google.com/webmasters/answer/7451001)

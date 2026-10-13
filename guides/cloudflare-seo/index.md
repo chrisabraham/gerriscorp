@@ -72,6 +72,14 @@ Yes, at least for DNS. Cloudflare's free DNS is fast and well documented, and pr
 
 I configure and audit Cloudflare as part of [site speed and Cloudflare work](https://gerriscorp.com/services/site-speed/) and [crawler visibility audits](https://gerriscorp.com/services/crawler-visibility/).
 
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
 ## References
 - [Cloudflare Docs: Default cache behavior](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/)
 - [Cloudflare Docs: Polish](https://developers.cloudflare.com/images/polish/)

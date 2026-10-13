@@ -89,6 +89,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Build checks prove the HTML you ship meets your rules. They can't tell you how Google ranks it, whether a title persuades anyone to click, or what an AI assistant says about you. Pair them with a crawl of the live site after each release and with Search Console, and keep a person reading the pages.&lt;/p&gt;
 
 &lt;p class="related"&gt;I write these checks into client repositories as part of &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt;. For the Next.js specifics they should cover, see the &lt;a href="https://gerriscorp.com/guides/nextjs-seo/"&gt;Next.js SEO checklist&lt;/a&gt;, and for safe repository setup, &lt;a href="https://gerriscorp.com/guides/repository-access/"&gt;giving an outside SEO access&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/get-started/continuous-integration"&gt;GitHub Docs: About continuous integration&lt;/a&gt;&lt;/li&gt;
@@ -160,6 +166,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/ol&gt;
 
 &lt;p class="related"&gt;This is the setup I ask for at the start of an &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt; engagement. For how I work once I'm in, see &lt;a href="https://gerriscorp.com/services/developers/"&gt;developer specs and QA&lt;/a&gt; and the guide to &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;working safely with AI coding assistants&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"&gt;GitHub Docs: Repository roles for an organization&lt;/a&gt;&lt;/li&gt;
@@ -222,6 +234,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Every item above can become an automated check in the build, so a future change can't undo it. That's the subject of &lt;a href="https://gerriscorp.com/guides/seo-build-checks/"&gt;adding SEO tests to your website's build&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p class="related"&gt;I work through this list, and fix what it finds, as part of &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt; for Next.js and React sites. If you're bringing me into your repository, start with &lt;a href="https://gerriscorp.com/guides/repository-access/"&gt;how to give an outside SEO safe access&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata"&gt;Next.js: generateMetadata&lt;/a&gt;&lt;/li&gt;
@@ -288,6 +306,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Every tool above reports facts. None of them decides which new page is the right home for an old one, whether a thin page should be merged or kept, or which redirect rule is safe on a site with forty thousand URLs. That judgment is the migration work itself, and it's why the inventory and the map deserve the most time.&lt;/p&gt;
 
 &lt;p class="related"&gt;I run migrations with this kit as &lt;a href="https://gerriscorp.com/services/migrations/"&gt;website migration SEO&lt;/a&gt;. For the full sequence, follow the &lt;a href="https://gerriscorp.com/guides/migration-checklist/"&gt;website migration checklist&lt;/a&gt;, and for redirect rules in depth, see &lt;a href="https://gerriscorp.com/guides/301-redirects/"&gt;301 redirects explained&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"&gt;Google Search Central: Site moves with URL changes&lt;/a&gt;&lt;/li&gt;
@@ -360,6 +384,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Write down what you found, what you fixed, and when, with the before and after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.&lt;/p&gt;
 
 &lt;p class="related"&gt;I handle this as part of &lt;a href="https://gerriscorp.com/services/migrations/"&gt;website migration SEO&lt;/a&gt;, and for inherited projects that went badly, &lt;a href="https://gerriscorp.com/services/rescue/"&gt;project rescue&lt;/a&gt;. To prevent the next one, use the &lt;a href="https://gerriscorp.com/guides/migration-checklist/"&gt;website migration checklist&lt;/a&gt; and the &lt;a href="https://gerriscorp.com/guides/migration-tools/"&gt;tools I use for a website migration&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"&gt;Google Search Central: Site moves with URL changes&lt;/a&gt;&lt;/li&gt;
@@ -427,6 +457,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then stop the problem coming back. A small check in the build that parses every rendered page and fails on unbalanced tags or invalid nesting catches the CMS content that would have caused the next one.&lt;/p&gt;
 
 &lt;p class="related"&gt;I find and fix these as part of &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/crawler-visibility/"&gt;rendering diagnosis&lt;/a&gt;. For the wider rendering picture, see the &lt;a href="https://gerriscorp.com/guides/javascript-seo/"&gt;JavaScript SEO guide&lt;/a&gt; and &lt;a href="https://gerriscorp.com/guides/core-web-vitals/"&gt;Core Web Vitals&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://react.dev/reference/react-dom/client/hydrateRoot"&gt;React: hydrateRoot&lt;/a&gt;&lt;/li&gt;
@@ -479,10 +515,96 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;What survived the check&lt;/h2&gt;
 &lt;p&gt;After grading, the defensible advice fit in a few lines: write a specific title for each page, include the company name where it helps someone recognize or choose the result, keep titles concise, and measure the change. Dropping a repeated suffix remains a legitimate editorial call. It simply has to be presented as judgment backed by a test, never as escape from a penalty that does not exist.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/title-link"&gt;Google Search Central: Influencing your title links in search results&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://zyppy.com/seo/google-title-rewrites/"&gt;Zyppy: Google rewrites 61% of page title tags, a study of 80,959 titles from early 2022&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>How to get your email off a blocklist and back into the inbox</title>
+    <link>https://gerriscorp.com/guides/email-blocklist-recovery/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/email-blocklist-recovery/</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A recovery plan for a small business whose email lands in spam or bounces: find the listing, fix the cause, request removal, and rebuild your reputation.</description>
+    <content:encoded>&lt;h1&gt;How to get your email off a blocklist and back into the inbox&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="lead"&gt;Your invoices are bouncing, or your newsletter vanished into spam, and somebody says you're "blacklisted." Recovery is a procedure anyone can follow: find the actual problem, fix it, ask for removal through the front door, and then send mail people want for long enough that the filters change their minds. Here is the sequence.&lt;/p&gt;
+
+&lt;h2&gt;First, the scam to avoid&lt;/h2&gt;
+&lt;p&gt;Spamhaus, the most consequential blocklist operator, is blunt about it: there is never any charge or fee to remove a Spamhaus listing, any offer to remove one for a fee is a scam, and no third party can influence or speed up a removal. Anyone promising to make a listing disappear for a price is selling the thing you can do yourself for free, or nothing at all.&lt;/p&gt;
+
+&lt;h2&gt;Step 1: find out what's actually blocked&lt;/h2&gt;
+&lt;p&gt;"Blacklisted" covers several different problems, and the fix depends on which one you have.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Read the bounce.&lt;/strong&gt; A rejected message comes back with an error code and usually a sentence naming the reason and often the list. Keep a copy. That text is your most specific evidence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Check the sending IP and the domain.&lt;/strong&gt; Spamhaus's IP and Domain Reputation Checker covers its lists, and multi list lookup tools such as MXToolbox check the rest at once. Note whether the listing is on your &lt;em&gt;domain&lt;/em&gt; or on the &lt;em&gt;IP address&lt;/em&gt; that sent the mail; on a shared email service, that IP belongs to the provider, and so does the fix.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Check the mailbox providers' own views.&lt;/strong&gt; Google Postmaster Tools shows Gmail's spam rate, reputation, authentication, and delivery errors for your domain. Microsoft's Smart Network Data Services shows Outlook.com's view of IP addresses you control. These aren't public lists, and they often matter more than the lists do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Step 2: fix the cause before you ask for anything&lt;/h2&gt;
+&lt;p&gt;Every operator says the same thing in different words: the problem must be identified and corrected first. Spamhaus's documentation for its fastest list notes that it will let you remove an IP, then list it again at once if the problem is still detected. The usual causes:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;A compromised account or website.&lt;/strong&gt; A hacked mailbox or a form on the website relaying spam. Change passwords, turn on two factor authentication, lock down the form with a CAPTCHA, and check for anything that sends mail you didn't write.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A bad list.&lt;/strong&gt; Purchased, scraped, or years old, full of dead addresses and spam traps. Stop sending to it. Keep only people who asked to hear from you and have engaged recently.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Missing authentication.&lt;/strong&gt; Google and Yahoo both require SPF or DKIM at a minimum for everyone, plus valid forward and reverse DNS for sending IPs, and bulk senders need SPF, DKIM, and DMARC together, aligned with the From domain. Since May 2025 Outlook.com enforces the same for domains sending more than 5,000 messages a day.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No easy way out.&lt;/strong&gt; Google requires marketing mail from bulk senders to support one click unsubscribe and to show a visible unsubscribe link. People who can't leave press "report spam" instead, and complaints are what sink you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Marketing on the business domain.&lt;/strong&gt; When a newsletter's complaints land on the same domain as your invoices, the invoices suffer. Move bulk mail to a separate subdomain and sending service.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Step 3: request removal, once, with the evidence&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spamhaus:&lt;/strong&gt; start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Barracuda:&lt;/strong&gt; its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Microsoft:&lt;/strong&gt; the Outlook.com postmaster site is the starting point, with troubleshooting for mail that Outlook.com blocks or sends to junk.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Gmail:&lt;/strong&gt; no list to be removed from. Google's guidelines say senders who don't follow its practices may not be considered for deliverability mitigations, so meeting every requirement comes first.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;If the listing is on your provider's IP,&lt;/strong&gt; contact the provider. They control that address and its removal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Write each request the way you'd write an appeal: what happened, what you changed, and the date you changed it. One clear request beats five vague ones.&lt;/p&gt;
+
+&lt;h2&gt;Step 4: rebuild slowly&lt;/h2&gt;
+&lt;p&gt;Removal from a list only stops the blocking. Reputation with Gmail and Microsoft recovers from behavior over time. Send only to your most engaged recipients at first, at a steady, modest volume, and raise it gradually over several weeks while you watch Postmaster Tools. Google asks senders to keep the spam rate it reports below 0.1% and never to reach 0.3%; Yahoo's limit for all senders is the same 0.3%. A spike during the rebuild is the signal to slow down.&lt;/p&gt;
+
+&lt;h2&gt;What money really buys, and when to start fresh&lt;/h2&gt;
+&lt;p&gt;Big senders do recover faster, and money is part of the reason: dedicated sending IPs they control and warm up themselves, account managers at their email platforms, paid certification programs, and staff who watch these dashboards daily. All of it shortens the feedback loop; the filters still judge the mail itself. A small sender reaches the same result on the same rules, more slowly.&lt;/p&gt;
+&lt;p&gt;Sometimes the practical answer is a fresh start: business mail stays on the main domain once it's clean, and marketing moves to a new subdomain on a reputable sending service, built up from scratch with a clean list. A new address can't carry a bad list or a hacked form forward, so fix those first or the new domain will end up in the same place.&lt;/p&gt;
+
+&lt;h2&gt;Keep it from happening again&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Read your DMARC aggregate reports, or have a tool summarize them, so spoofing and misconfigured senders show up early.&lt;/li&gt;
+  &lt;li&gt;Watch Postmaster Tools monthly, and sign up for feedback loops such as Microsoft's Junk Email Reporting Program and Yahoo's Complaint Feedback Loop.&lt;/li&gt;
+  &lt;li&gt;Remove bounces and long silent addresses after every campaign.&lt;/li&gt;
+  &lt;li&gt;Lock down every form on the site that can send email.&lt;/li&gt;
+  &lt;li&gt;Give any domain that never sends mail a reject DMARC policy and an SPF record that allows nothing, so nobody can borrow its name. My &lt;a href="https://gerriscorp.com/guides/email-authentication/"&gt;email authentication guide&lt;/a&gt; covers SPF, DKIM, and DMARC.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class="related"&gt;For how to diagnose missing mail before it becomes a listing, see the &lt;a href="https://gerriscorp.com/guides/email-deliverability/"&gt;email deliverability guide&lt;/a&gt;. I set up authentication and trace delivery problems as part of &lt;a href="https://gerriscorp.com/services/email-and-dns/"&gt;email authentication and DNS&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://www.spamhaus.org/faqs/domain-blocklist/"&gt;Spamhaus: Domain Blocklist FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.spamhaus.org/faqs/combined-spam-sources-css/"&gt;Spamhaus: Combined Spam Sources FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://support.google.com/a/answer/81126"&gt;Google Workspace Admin Help: Email sender guidelines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://support.google.com/a/answer/9981691"&gt;Google Workspace Admin Help: Postmaster Tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://sendersupport.olc.protection.outlook.com/pm/policies.aspx"&gt;Outlook.com Postmaster&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://sendersupport.olc.protection.outlook.com/snds/"&gt;Outlook.com Smart Network Data Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://senders.yahooinc.com/best-practices/"&gt;Yahoo Sender Hub: Best practices&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.barracudacentral.org/rbl/removal-request"&gt;Barracuda Central: Removal request&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
@@ -546,6 +668,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 
 &lt;p class="related"&gt;This is how I run speed work on code based sites as part of &lt;a href="https://gerriscorp.com/services/site-speed/"&gt;site speed and Core Web Vitals&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt;. For the habits that keep an AI assistant safe in a client codebase, see &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;using AI coding assistants on a business website&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://github.com/ChromeDevTools/chrome-devtools-mcp"&gt;Chrome DevTools MCP (README)&lt;/a&gt;&lt;/li&gt;
@@ -612,6 +740,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Review the evidence before commissioning more content&lt;/h2&gt;
 &lt;p&gt;Ask which pages are repeatedly useful, which questions remain unanswered, and whether the cited explanation is accurate. Improve a specific weakness and record the release date. Compare an appropriate later period, while acknowledging other changes that occurred during it.&lt;/p&gt;
 &lt;p&gt;The report should end with a decision: repair a factual error, improve a relevant article, investigate tracking, or leave a useful page alone. For the publication side of that process, use &lt;a href="https://gerriscorp.com/guides/indexnow-ai-search/"&gt;the IndexNow and AI search release workflow&lt;/a&gt;. If the tracking itself needs work, see &lt;a href="https://gerriscorp.com/services/analytics/"&gt;analytics setup and repair&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/"&gt;Microsoft Bing AI visibility reporting update&lt;/a&gt;&lt;/li&gt;
@@ -669,6 +803,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Measure the business result independently&lt;/h2&gt;
 &lt;p&gt;For each release, retain a short note of the question it answers, the production URL, the publication date, and the intended reader. Review search visibility and referred traffic against that record. If you test assistant answers, keep the question wording and the linked sources so another person can inspect the observation.&lt;/p&gt;
 &lt;p&gt;The strongest operational outcome is a process that can distinguish publication failure from indexing delay and editorial weakness. Those require different remedies. Start with one useful Guide, establish the checkpoints, then repeat the process for the next article. For broader release planning, the &lt;a href="https://gerriscorp.com/guides/migration-checklist/"&gt;website migration checklist&lt;/a&gt; shows how inventories and verification fit together.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://www.indexnow.org/documentation"&gt;IndexNow protocol documentation&lt;/a&gt;&lt;/li&gt;
@@ -727,6 +867,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Hire the superpower&lt;/h2&gt;
 &lt;p&gt;This is how I work every day: in the repository, through pull requests, with super intelligence doing the heavy reading under my direction and my name on the result. I can be your &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt;, turn a diagnosis into &lt;a href="https://gerriscorp.com/services/developers/"&gt;developer ready specs&lt;/a&gt; and verify they shipped, or &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;build you small AI tools safely&lt;/a&gt;. &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about your site&lt;/a&gt; and I'll tell you what the code is doing to your search visibility.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/"&gt;The White House: Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence (September 29, 2026)&lt;/a&gt;&lt;/li&gt;
@@ -830,6 +976,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;a href="https://moz.com/beginners-guide-to-seo"&gt;Moz's Beginner's Guide to SEO&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Want a second pair of eyes on your first week's list? &lt;a href="https://gerriscorp.com/contact/"&gt;Send me the site&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide"&gt;Google Search Central: SEO Starter Guide&lt;/a&gt;&lt;/li&gt;
@@ -888,6 +1040,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;Which of your tactics would you stop doing if Google or Anthropic wrote about them tomorrow?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Every answer to the last question tells you how long the results will last. For the wider picture, see &lt;a href="https://gerriscorp.com/guides/search-in-2026/"&gt;the state of search in 2026&lt;/a&gt; and &lt;a href="https://gerriscorp.com/guides/ai-assistants/"&gt;how AI assistants decide what to say about your business&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;ask me what the assistants say about yours&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://lilyraynyc.substack.com/p/prediction-the-next-massive-google"&gt;Lily Ray: Prediction, the next massive Google update is around the corner&lt;/a&gt;&lt;/li&gt;
@@ -959,6 +1117,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;strong&gt;A clear entity.&lt;/strong&gt; Consistent names, addresses, and profiles across the web, so every engine and assistant knows exactly who you are.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the crawler side, see &lt;a href="https://gerriscorp.com/guides/ai-assistants/"&gt;how AI assistants decide what to say about your business&lt;/a&gt; and &lt;a href="https://gerriscorp.com/guides/robots-txt/"&gt;my robots.txt guide&lt;/a&gt;. If a 2026 update has already hit you, start with &lt;a href="https://gerriscorp.com/guides/traffic-drop/"&gt;how to diagnose a traffic drop&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;send me the dates and the domain&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history"&gt;Google Search Status Dashboard: Ranking incident history&lt;/a&gt;&lt;/li&gt;
@@ -1042,6 +1206,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
 
 &lt;p class="related"&gt;I configure and audit Cloudflare as part of &lt;a href="https://gerriscorp.com/services/site-speed/"&gt;site speed and Cloudflare work&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/crawler-visibility/"&gt;crawler visibility audits&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.cloudflare.com/cache/concepts/default-cache-behavior/"&gt;Cloudflare Docs: Default cache behavior&lt;/a&gt;&lt;/li&gt;
@@ -1107,6 +1277,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The generator itself is routine code. The slow parts are the judgment calls: a title that reads well at 60 characters, a description for an episode whose notes are two words, alt text for hundreds of cover images. An assistant drafts those in minutes, and you spend your time reviewing instead of typing. For the working method, specs, review, and keeping secrets out of the repository, see &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;how to use AI coding assistants on a website safely&lt;/a&gt;. For the DNS side, see &lt;a href="https://gerriscorp.com/guides/cloudflare-seo/"&gt;Cloudflare settings that help or hurt SEO&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Want this built for your show, or for any feed you publish? &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about it&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"&gt;GitHub Docs: GitHub Pages limits&lt;/a&gt;&lt;/li&gt;
@@ -1161,6 +1337,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how to build one with Claude Code, GitHub Pages, and Cloudflare&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Starting from scratch? Read &lt;a href="https://gerriscorp.com/guides/podcast-for-your-brand/"&gt;what it really takes to start a podcast for your brand&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;ask me to look at your show's search visibility&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://schema.org/PodcastEpisode"&gt;Schema.org: PodcastEpisode&lt;/a&gt;&lt;/li&gt;
@@ -1220,6 +1402,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read &lt;a href="https://gerriscorp.com/guides/podcast-seo/"&gt;how to get every episode found in Google and AI search&lt;/a&gt;, and &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how to build the site with Claude Code and GitHub Pages&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Want help turning a show into search visibility for your brand? &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about it&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://creators.spotify.com/"&gt;Spotify for Creators&lt;/a&gt;&lt;/li&gt;
@@ -1280,6 +1468,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.&lt;/p&gt;
 
 &lt;p&gt;Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about your site&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://support.google.com/webmasters/answer/7440203"&gt;Search Console Help: Page indexing report&lt;/a&gt;&lt;/li&gt;
@@ -1341,6 +1535,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Do the inventory first. Decide each page's fate with the data in hand, set up the redirects and internal links before anything is removed, and remove in stages so you can see the effect of each batch.&lt;/p&gt;
 
 &lt;p&gt;Already deleted and watching rankings slide? This is the kind of forensic work I do. See &lt;a href="https://gerriscorp.com/guides/traffic-drop/"&gt;how to diagnose a traffic drop&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;tell me what happened and when&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/essentials/spam-policies"&gt;Google Search Central: Spam policies for Google web search&lt;/a&gt;&lt;/li&gt;
@@ -1422,6 +1622,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
 
 &lt;p class="related"&gt;Finding the cause of lost traffic is the core of &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO forensics&lt;/a&gt;. See also the &lt;a href="https://gerriscorp.com/case-studies/indexing-recovery/"&gt;indexing recovery case study&lt;/a&gt;, and if the drop followed a relaunch, &lt;a href="https://gerriscorp.com/guides/migration-recovery/"&gt;recovering traffic after a site migration&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops"&gt;Google Search Central: Debugging drops in Google Search traffic&lt;/a&gt;&lt;/li&gt;
@@ -1504,6 +1710,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
 
 &lt;p class="related"&gt;I build schema and entity markup as part of &lt;a href="https://gerriscorp.com/services/on-page-seo/"&gt;on-page SEO&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/ai-search/"&gt;AI search visibility&lt;/a&gt; work.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"&gt;Google Search Central: Introduction to structured data&lt;/a&gt;&lt;/li&gt;
@@ -1583,6 +1795,12 @@ Allow: /&lt;/pre&gt;
 &lt;p&gt;Search Console's robots.txt report shows the version Google last fetched, when it fetched it, and any parsing errors. Before changing a live file, test the proposed rules against a list of important URLs with a parser that follows Google's rules, such as Google's open-source robots.txt library or a crawler like Screaming Frog with a custom robots.txt. Then confirm the change in Search Console after Google picks it up.&lt;/p&gt;
 
 &lt;p class="related"&gt;robots.txt is part of every &lt;a href="https://gerriscorp.com/services/crawler-visibility/"&gt;crawler visibility audit&lt;/a&gt; and every &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO&lt;/a&gt; engagement I run.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro"&gt;Google Search Central: Introduction to robots.txt&lt;/a&gt;&lt;/li&gt;
@@ -1657,6 +1875,12 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
 
 &lt;h2&gt;Add it to the checklist&lt;/h2&gt;
 &lt;p&gt;I add a Lynx pass to every launch: sitemap word counts, a noindex sweep, a link check, and a text diff of the most important templates. It takes about ten minutes and catches problems a styled browser hides. For the full launch sequence, see &lt;a href="https://gerriscorp.com/guides/migration-checklist/"&gt;the website migration SEO checklist&lt;/a&gt;, and for the deeper rendering questions, &lt;a href="https://gerriscorp.com/guides/javascript-seo/"&gt;how to tell if JavaScript is hiding your content&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://lynx.invisible-island.net/"&gt;Lynx project home&lt;/a&gt;&lt;/li&gt;
@@ -1741,6 +1965,12 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
 &lt;p&gt;Search Console retired its International Targeting report in 2022, so checking falls to crawlers. Screaming Frog and Sitebulb both validate hreflang sets, flag missing return links and non-canonical targets, and export the errors by page. After that, search from each country with a VPN or with Google's country settings and confirm the right page appears. Spot check a few sets by hand as well: open the source of each version and confirm the block of annotations is identical on every page in the set.&lt;/p&gt;
 
 &lt;p class="related"&gt;I sort out international setups as part of &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/ecommerce/"&gt;ecommerce SEO&lt;/a&gt; engagements, for clients across the English-speaking world.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/specialty/international/localized-versions"&gt;Google Search Central: Tell Google about localized versions of your page&lt;/a&gt;&lt;/li&gt;
@@ -1819,6 +2049,12 @@ gtag('consent', 'default', {
 &lt;p&gt;After a consent banner goes live in Europe, GA4's European sessions usually fall, sometimes sharply, because declined visitors are no longer counted as users. That's the system working. Search Console doesn't use cookies, so its click counts are unaffected, and comparing the two separates a consent effect from a real traffic loss.&lt;/p&gt;
 
 &lt;p class="related"&gt;Analytics setup and repair is part of &lt;a href="https://gerriscorp.com/services/analytics/"&gt;GA4 and analytics work&lt;/a&gt;. For a consent problem that hid half a site's traffic, see the &lt;a href="https://gerriscorp.com/case-studies/consent-blocking/"&gt;consent blocking case study&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/tag-platform/security/guides/consent"&gt;Google Tag Platform: Set up consent mode&lt;/a&gt;&lt;/li&gt;
@@ -1884,6 +2120,12 @@ gtag('consent', 'default', {
 &lt;p&gt;Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.&lt;/p&gt;
 
 &lt;p class="related"&gt;Crawl control for big catalogs is the focus of &lt;a href="https://gerriscorp.com/services/large-sites/"&gt;large-site SEO&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/ecommerce/"&gt;ecommerce SEO&lt;/a&gt;. See also the &lt;a href="https://gerriscorp.com/case-studies/programmatic-indexing/"&gt;programmatic indexing case study&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation"&gt;Google Search Central: Managing crawling of faceted navigation URLs&lt;/a&gt;&lt;/li&gt;
@@ -1943,7 +2185,13 @@ gtag('consent', 'default', {
 &lt;h2&gt;Testing&lt;/h2&gt;
 &lt;p&gt;Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.&lt;/p&gt;
 
-&lt;p class="related"&gt;I fix deliverability as part of &lt;a href="https://gerriscorp.com/services/email-and-dns/"&gt;email authentication and DNS work&lt;/a&gt;, usually alongside the domain cleanup that caused the problem.&lt;/p&gt;
+&lt;p class="related"&gt;I trace delivery problems and fix the authentication and DNS behind them as part of &lt;a href="https://gerriscorp.com/services/email-and-dns/"&gt;email authentication and DNS work&lt;/a&gt;. If a domain is already listed, the &lt;a href="https://gerriscorp.com/guides/email-blocklist-recovery/"&gt;blocklist recovery guide&lt;/a&gt; covers what comes next.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://support.google.com/a/answer/81126"&gt;Google Workspace Admin Help: Email sender guidelines&lt;/a&gt;&lt;/li&gt;
@@ -2017,6 +2265,12 @@ gtag('consent', 'default', {
 &lt;p&gt;Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.&lt;/p&gt;
 
 &lt;p class="related"&gt;Speed work is its own service: &lt;a href="https://gerriscorp.com/services/site-speed/"&gt;site speed, Core Web Vitals, and Cloudflare&lt;/a&gt;. For the CDN side, see &lt;a href="https://gerriscorp.com/guides/cloudflare-seo/"&gt;Cloudflare settings for SEO&lt;/a&gt;, and for diagnosis with an AI assistant, &lt;a href="https://gerriscorp.com/guides/core-web-vitals-mcp/"&gt;Core Web Vitals with MCP&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/core-web-vitals"&gt;Google Search Central: Understanding Core Web Vitals and Google search results&lt;/a&gt;&lt;/li&gt;
@@ -2082,6 +2336,12 @@ gtag('consent', 'default', {
 &lt;p&gt;When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.&lt;/p&gt;
 
 &lt;p class="related"&gt;Canonical audits are part of &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO forensics&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/large-sites/"&gt;large-site SEO&lt;/a&gt;. For the related indexing status, see &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;Crawled, currently not indexed&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/canonicalization"&gt;Google Search Central: What is canonicalization&lt;/a&gt;&lt;/li&gt;
@@ -2144,6 +2404,12 @@ gtag('consent', 'default', {
 &lt;p&gt;The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.&lt;/p&gt;
 
 &lt;p class="related"&gt;See how this site and other projects were built in the &lt;a href="https://gerriscorp.com/case-studies/built-with-claude-code/"&gt;Claude Code case study&lt;/a&gt;, and what I build for clients under &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;AI tools and automation&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://docs.anthropic.com/en/docs/claude-code/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
@@ -2215,6 +2481,12 @@ gtag('consent', 'default', {
 &lt;h2&gt;Keep it from sliding back&lt;/h2&gt;
 &lt;p&gt;Accessibility erodes with every new page, plugin, and campaign. Add a quick automated scan and a keyboard pass to your launch routine, check new templates before they ship, and review the site once a quarter. My guide to &lt;a href="https://gerriscorp.com/guides/lynx-qa/"&gt;Lynx for website QA&lt;/a&gt; covers a text-browser pass that catches a surprising number of these problems in minutes.&lt;/p&gt;
 &lt;p&gt;For help auditing and fixing a site, see &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO&lt;/a&gt; or &lt;a href="https://gerriscorp.com/contact/"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://www.ada.gov/resources/web-guidance/"&gt;ADA.gov: Guidance on web accessibility and the ADA&lt;/a&gt;&lt;/li&gt;
@@ -2294,6 +2566,12 @@ gtag('consent', 'default', {
 &lt;/section&gt;
 
 &lt;p class="related"&gt;Redirect mapping is part of every &lt;a href="https://gerriscorp.com/services/migrations/"&gt;website migration&lt;/a&gt; I run. For the whole process, see the &lt;a href="https://gerriscorp.com/guides/migration-checklist/"&gt;migration checklist&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/301-redirects"&gt;Google Search Central: Redirects and Google Search&lt;/a&gt;&lt;/li&gt;
@@ -2356,6 +2634,12 @@ gtag('consent', 'default', {
 &lt;/ol&gt;
 
 &lt;p class="related"&gt;I handle this for clients as part of &lt;a href="https://gerriscorp.com/services/reputation/"&gt;reputation and perception management&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://consumer.ftc.gov/articles/what-know-about-people-search-sites-sell-your-information"&gt;FTC Consumer Advice: People search sites that sell your information&lt;/a&gt;&lt;/li&gt;
@@ -2444,6 +2728,12 @@ gtag('consent', 'default', {
 &lt;p&gt;A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.&lt;/p&gt;
 
 &lt;p class="related"&gt;I run this process as a &lt;a href="https://gerriscorp.com/services/migrations/"&gt;website migration SEO service&lt;/a&gt;, before launch or after it. The kit is in &lt;a href="https://gerriscorp.com/guides/migration-tools/"&gt;SEO tools for a website migration&lt;/a&gt;, and if traffic has already fallen, start with &lt;a href="https://gerriscorp.com/guides/migration-recovery/"&gt;migration recovery&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"&gt;Google Search Central: Site moves with URL changes&lt;/a&gt;&lt;/li&gt;
@@ -2505,6 +2795,12 @@ gtag('consent', 'default', {
 &lt;p&gt;Developers fix these problems fastest with evidence: the affected template, example URLs, the word count with and without rendering, the Search Console live test result, and a testable definition of done, such as "a curl of the product URL returns the specification table." There's a &lt;a href="https://gerriscorp.com/services/developers/"&gt;sample ticket on the developers page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p class="related"&gt;I diagnose rendering problems as part of &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO forensics&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics"&gt;Google Search Central: JavaScript SEO basics&lt;/a&gt;&lt;/li&gt;
@@ -2615,6 +2911,12 @@ gtag('consent', 'default', {
 &lt;/dl&gt;
 
 &lt;p class="related"&gt;Want these applied to your site? See &lt;a href="https://gerriscorp.com/services/"&gt;services&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
   &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
@@ -2688,6 +2990,12 @@ gtag('consent', 'default', {
 &lt;p&gt;Website moves, CDN setups, and DNS provider changes are when mail records get lost. Export every record first, recreate them exactly, keep MX, SPF, DKIM, and DMARC untouched unless they're the point of the change, and send test messages afterward. Header analyzers show exactly which checks passed.&lt;/p&gt;
 
 &lt;p class="related"&gt;I set this up and troubleshoot deliverability as &lt;a href="https://gerriscorp.com/services/email-and-dns/"&gt;email authentication and DNS&lt;/a&gt; work.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://www.rfc-editor.org/rfc/rfc7208"&gt;RFC 7208: Sender Policy Framework (SPF)&lt;/a&gt;&lt;/li&gt;
@@ -2750,6 +3058,12 @@ gtag('consent', 'default', {
 &lt;p&gt;A sudden rise concentrated in your most valuable template, with a matching traffic drop, is a technical emergency, and it's usually a rendering or template change. A slow, even scatter across low-value pages is housekeeping. Telling the two apart is the first job.&lt;/p&gt;
 
 &lt;p class="related"&gt;I diagnose indexing problems as part of &lt;a href="https://gerriscorp.com/services/technical-seo/"&gt;technical SEO forensics&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/search-console/"&gt;Search Console cleanup&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://support.google.com/webmasters/answer/7440203"&gt;Search Console Help: Page indexing report&lt;/a&gt;&lt;/li&gt;
@@ -2825,6 +3139,12 @@ gtag('consent', 'default', {
 &lt;p&gt;AI answers vary with phrasing, location, account history, and time, so a single test proves little. Use a fixed set of prompts, run them on a schedule, and record the answers and citations. Add referral traffic from chatgpt.com, perplexity.ai, gemini.google.com, and copilot.microsoft.com in analytics, and watch which pages they land on.&lt;/p&gt;
 
 &lt;p class="related"&gt;I do this work as &lt;a href="https://gerriscorp.com/services/ai-search/"&gt;AI search visibility&lt;/a&gt;, starting with an AI search readiness audit.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/ai-features"&gt;Google Search Central: AI features and your website&lt;/a&gt;&lt;/li&gt;
