@@ -19,7 +19,7 @@ A podcast rewards consistency long before it rewards polish. Pick a rhythm you c
 
 ## A pocket recorder or a phone is enough
 
-A small digital voice recorder, the kind Sony sells for less than a nice dinner, records clean audio, fits in a jacket pocket, and charges from a plain USB port. Buy two or three and keep one in every bag, so an idea never waits for the studio. A smartphone held close in a quiet room works just as well. A carpeted bedroom beats an echoing kitchen with an expensive microphone every time.
+A small digital voice recorder, the kind [Sony sells](https://www.amazon.com/dp/B082QL6KLG?tag=gerris-20) for less than a nice dinner (I record on a Sony ICD-UX570), records clean audio, fits in a jacket pocket, and charges from a plain USB port. Buy two or three and keep one in every bag, so an idea never waits for the studio. A smartphone held close in a quiet room works just as well. A carpeted bedroom beats an echoing kitchen with an expensive microphone every time.
 
 Noise used to be the reason people bought gear. Adobe Podcast's Enhance Speech, which has a free version, now takes a noisy recording and brings it close to studio quality in a minute or two. Audacity, free on every computer, handles the edit: trim the false starts and the long pauses, and leave the personality in.
 
@@ -49,6 +49,8 @@ Your opinions stay yours. AI removes the busywork that makes people skip a week,
 Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
 
 Want help turning a show into search visibility for your brand? [Tell me about it](https://gerriscorp.com/contact/).
+
+As an Amazon Associate I earn from qualifying purchases.
 
 ## Want me to handle this for you?
 

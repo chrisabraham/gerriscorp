@@ -8,7 +8,7 @@ A colophon is the note at the back of a well-made book about how it was made. Th
 
 ## The logo
 
-The Gerris water strider was designed and drawn in 2012 by [Oliver Uberti](https://www.oliveruberti.com/), a dear friend and a remarkable artist. Oliver was a senior design editor at National Geographic and is the co-author and designer of Atlas of the Invisible, London: The Information Capital, Where the Animals Go, and Notes from a Public Typewriter. He gave the company its emblem: *Gerris lacustris*, the insect that skates across the surface of a pond without breaking it.
+The Gerris water strider was designed and drawn in 2012 by [Oliver Uberti](https://www.oliveruberti.com/), a dear friend and a remarkable artist. Oliver was a senior design editor at National Geographic and is the co-author and designer of [Atlas of the Invisible](https://www.amazon.com/dp/0393651517?tag=gerris-20), [London: The Information Capital](https://www.amazon.com/dp/1846148472?tag=gerris-20), [Where the Animals Go](https://www.amazon.com/dp/0393634027?tag=gerris-20), and [Notes from a Public Typewriter](https://www.amazon.com/dp/1538729113?tag=gerris-20). He gave the company its emblem: *Gerris lacustris*, the insect that skates across the surface of a pond without breaking it.
 
 The name came first, and it came from rowing. Carbon fiber racing shells, especially doubles, have always looked to me like the pond skaters you can find in the still water along the Potomac's banks, dancing on the surface tension. I named my Hudson racing shell *Gerris* before I ever named a company after it. Once the firm Dan Krueger and I ran was incorporated, I asked Oliver for a logo, and what he drew settled the matter: any thought of renaming the agency ended the day I saw it. I wrote the whole story up in 2017.
 
@@ -34,5 +34,7 @@ The finished files are served by GitHub Pages over HTTPS, with DNS at Cloudflare
 ## Source
 
 The code and content live in a public repository: [github.com/chrisabraham/gerriscorp](https://github.com/chrisabraham/gerriscorp). The site went live on October 5, 2026.
+
+Links to books and gear on Amazon carry my Amazon Associates tag. As an Amazon Associate I earn from qualifying purchases.
 
 Updated October 6, 2026
