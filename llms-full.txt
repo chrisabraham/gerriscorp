@@ -2573,6 +2573,12 @@ Spamhaus, the most consequential blocklist operator, is blunt about it: there is
 - **Check the sending IP and the domain.** Spamhaus's IP and Domain Reputation Checker covers its lists, and multi list lookup tools such as MXToolbox check the rest at once. Note whether the listing is on your *domain* or on the *IP address* that sent the mail; on a shared email service, that IP belongs to the provider, and so does the fix.
 - **Check the mailbox providers' own views.** Google Postmaster Tools shows Gmail's spam rate, reputation, authentication, and delivery errors for your domain. Microsoft's Smart Network Data Services shows Outlook.com's view of IP addresses you control. These aren't public lists, and they often matter more than the lists do.
 
+## Domain blocklists are a different animal
+
+Most talk about blocklists is about IP addresses. A second family lists *domains* that show up inside spam messages, and SURBL is the best known. A listing there can hurt any email that merely links to you, your own signature included, wherever a spam filter consults it. SURBL's ABUSE list covers abuse and spam sites.
+
+You can check these lists yourself with a DNS lookup, with two traps to know about. First, query the domain with the list's zone added, such as `example.com.multi.surbl.org`: no answer means not listed, and an answer in 127.0.0.x means listed, with the last number telling you which list. SURBL documents 64 as its ABUSE list. Second, the big public resolvers are often refused: SURBL answers 127.0.0.1 when your access is blocked, and Spamhaus answers 127.255.255.254, so those replies tell you nothing about your domain. Always look up the list's published test entry alongside your own, such as `test.surbl.org`; if the test entry doesn't come back listed, your result isn't real. The TXT record for a listed domain usually states which list it's on.
+
 ## Step 2: fix the cause before you ask for anything
 
 Every operator says the same thing in different words: the problem must be identified and corrected first. Spamhaus's documentation for its fastest list notes that it will let you remove an IP, then list it again at once if the problem is still detected. The usual causes:
@@ -2621,6 +2627,8 @@ If your company hires through Upwork, you'll find me [there as well](https://www
 ## References
 - [Spamhaus: Domain Blocklist FAQ](https://www.spamhaus.org/faqs/domain-blocklist/)
 - [Spamhaus: Combined Spam Sources FAQ](https://www.spamhaus.org/faqs/combined-spam-sources-css/)
+- [SURBL: Lists](https://www.surbl.org/lists)
+- [SURBL: Implementation guidelines](https://www.surbl.org/guidelines)
 - [Google Workspace Admin Help: Email sender guidelines](https://support.google.com/a/answer/81126)
 - [Google Workspace Admin Help: Postmaster Tools](https://support.google.com/a/answer/9981691)
 - [Outlook.com Postmaster](https://sendersupport.olc.protection.outlook.com/pm/policies.aspx)
