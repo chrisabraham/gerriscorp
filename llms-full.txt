@@ -5766,6 +5766,10 @@ Search problems rarely stay in one layer. A ranking loss turns out to be a templ
 - I moved this domain's DNS to Cloudflare with every Google Workspace mail record intact, and it runs SPF, DKIM, and a DMARC quarantine policy.
 - I configure Cloudflare caching, redirects, and bot settings so speed improvements never lock out search or AI crawlers. See [Cloudflare settings for SEO](https://gerriscorp.com/guides/cloudflare-seo/) and [email authentication and DNS](https://gerriscorp.com/services/email-and-dns/).
 
+## Mail servers and Google Workspace
+- I administer Google Workspace for my own business: users, aliases, groups, Gmail routing, Calendar, and Drive, plus a Google Cloud OAuth project my assistant uses to read and write my calendar.
+- I learned mail on Linux servers running Sendmail, so IMAP, POP3, SMTP ports, aliases, and mail routing are old friends. When mail misbehaves, I read the headers and the bounce codes first. The [blocklist recovery guide](https://gerriscorp.com/guides/email-blocklist-recovery/) shows the method.
+
 ## Repositories and pull requests
 - I wrote and patched Perl and PHP for years, on Movable Type, PHP-Nuke, PostNuke, and scripts of my own, so a client's codebase is familiar ground long before an AI assistant opens it.
 - I merged metadata changes into a local business's Sanity and Vercel codebase through GitHub, under the developer's review, and confirmed the prerendered output. [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/).
