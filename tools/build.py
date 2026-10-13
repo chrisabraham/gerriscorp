@@ -28,7 +28,7 @@ people), robots.txt, feed.xml (guides), llms.txt, llm.txt, llms-full.txt,
 .well-known/security.txt, and (when LIVE) CNAME. Then checks the house
 rules: titles 50-60 characters, descriptions 140-160, no pipes, dashes or
 hyphens in either, unique titles and descriptions, one h1 per page, a
-minimum word count, no em dashes, "Chris'" never "Chris's", first person
+minimum word count, em dashes only closed up, "Chris'" never "Chris's", first person
 singular ("I", never "we"), and no links to missing pages.
 
     python3 tools/build.py
@@ -85,6 +85,13 @@ PHONE = "+1 202-352-5051"
 TEL = "+12023525051"
 
 
+
+def close_dashes(h):
+    """Chris' rule: "--" becomes an em dash and every em dash is closed up (word—word).
+    Code, scripts, styles, and HTML comments keep their text exactly."""
+    parts = re.split(r"(<pre\b.*?</pre>|<code\b.*?</code>|<script\b.*?</script>|<style\b.*?</style>|<!--.*?-->|<[^>]+>)", h, flags=re.S)
+    return "".join(x if i % 2 else re.sub(r"\s*(?:--|—)\s*", "—", x) for i, x in enumerate(parts))
+
 def text_of(fragment):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).replace(" .", ".").strip()
 
@@ -120,6 +127,8 @@ for f in FILES:
     p["src"] = f
     p["path"] = "" if f == "index" else (f[:-5] if f.endswith("/index") else f + "/")
     p["body"] = body.strip().replace("{email}", EMAIL).replace("{phone}", PHONE).replace("{tel}", TEL)
+    # Chris' rule (2026-10-13): "--" becomes an em dash, and every em dash is closed up tight.
+    p["body"] = close_dashes(p["body"])
     p["tab"] = (p["path"].split("/")[0] + "/") if p["path"] else ""
     if p["tab"] not in dict(TABS):
         p["tab"] = {"privacy/": "privacy/", "standards/": "about/", "colophon/": "about/", "stack/": "about/"}.get(p["path"], "work-with-me/")  # the FAQ lives under Work With Me
@@ -800,7 +809,7 @@ for p in pages:
         if re.search(r"[|\-–—]", s): problems.append(f"{where}: pipe, dash or hyphen in {label}: {s}")
     if p["body"].count("<h1>") != 1: problems.append(f"{where}: needs exactly one h1")
     if p["words"] < MIN_WORDS[p["kind"]]: problems.append(f"{where}: only {p['words']} words (min {MIN_WORDS[p['kind']]})")
-    if "—" in b or " – " in b: problems.append(f"{where}: em or en dash in the copy")
+    if re.search(r"\s—|—\s| – ", text_of(re.sub(r"<pre\b.*?</pre>|<code\b.*?</code>", "", p["body"], flags=re.S))): problems.append(f"{where}: spaced em or en dash in the copy (close it up: word—word)")
     if "Chris's" in b + t + d: problems.append(f"{where}: write Chris' not Chris's")
     plain = re.sub(r"<code>.*?</code>|<pre>.*?</pre>|<blockquote>.*?</blockquote>", "", p["body"], flags=re.S)  # quoted words aren't the site's voice
     for m in re.finditer(r"\b(we|We|our|Our|us)\b", text_of(plain)):
