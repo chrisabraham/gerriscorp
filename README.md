@@ -1,6 +1,8 @@
 # gerriscorp.com
 
-Gerris Corp, Chris Abraham's consultancy. Static pages on GitHub Pages: plain HTML with inline CSS, no JavaScript except the Google Analytics tag (GA4 with consent mode: analytics cookies off in the UK and EEA, ads storage off everywhere; see /privacy/), Plone classic look (tabs, slate-blue links), built for legibility (black Verdana at 18px, AAA link contrast, visible focus, skip link).
+This repository builds https://gerriscorp.com, live since October 5, 2026. For what Gerris Corp does and who runs it, read the site; this file only explains how the site is built.
+
+Gerris Corp, Chris Abraham's consultancy. Static pages on GitHub Pages: plain HTML with inline CSS, no JavaScript except a Google Analytics tag that loads after the reader's first scroll or tap (GA4 with consent mode: analytics cookies off in the UK and EEA, ads storage off everywhere; see /privacy/) and a speculation rule that prefetches the next page, Plone classic look (tabs, slate-blue links), built for legibility (black Verdana at 18px, AAA link contrast, visible focus, skip link).
 
 ## Editing
 
@@ -18,7 +20,7 @@ Preview locally: `python3 -m http.server`, then open http://localhost:8000
 - JSON-LD on every page: WebSite, ProfessionalService, Person, the page, breadcrumbs, plus `Service` on service pages, `TechArticle` on guides, `FAQPage` wherever there are questions, `DefinedTermSet` on the glossary, and `ItemList` on section pages.
 - `sitemap.xml` with image entries and a stylesheet that renders it as a table in a browser; an HTML site map at `/sitemap/`.
 - `robots.txt` welcomes every crawler and names the AI crawlers explicitly. `llms.txt` links to Markdown versions of every page; `llms-full.txt` holds the full text. Atom feed of guides at `feed.xml`.
-- IndexNow: the `<key>.txt` file, `tools/indexnow.py`, and `.github/workflows/indexnow.yml` ping Bing and the other IndexNow engines after each push, once gerriscorp.com really serves this site.
+- IndexNow: the `<key>.txt` file, `tools/indexnow.py`, and `.github/workflows/indexnow.yml` ping Bing and the other IndexNow engines after each push.
 - `_config.yml` keeps `src/` and `tools/` off the public site and publishes `.well-known/`.
 
 ## DNS (Cloudflare, since 2026-10-05)
