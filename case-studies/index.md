@@ -29,12 +29,14 @@ Each case describes the problem, my role, what I did, who else did what, how the
 ## Content operations and AI search
 - [Two B2B companies on Umbraco](https://gerriscorp.com/case-studies/umbraco-operations/). 54 landing pages, steady publishing, and cache and template fixes.
 - [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/). How AI answers represent an employer.
+- [A founder's public record: tracing AI errors to their sources](https://gerriscorp.com/case-studies/founder-record/). A wrong founding year, an invented rename, and a doubted award the archive proved.
 
 ## Data
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/). 88,900 contacts, two merged exports, and a tracker that invented its data.
 
 ## My own builds
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 106 tests; Hill Mole's move off Movable Type; and this site.
+- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 140 tests; Hill Mole's move off Movable Type; and this site.
+- [Four static sites: a speed and AI crawler pass](https://gerriscorp.com/case-studies/four-site-speed-pass/). Every page measured moved to 89 or better on mobile, most to 97 and above.
 
 [Tell me about your problem](https://gerriscorp.com/contact/)
 

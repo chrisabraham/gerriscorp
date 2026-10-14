@@ -1,0 +1,36 @@
+name: README as an AI Source
+type: guide
+published: 2026-10-14
+updated: 2026-10-14
+title: Your public GitHub README is a source AI search reads
+description: AI assistants with web search read public repositories and quote README files as fact. Keep the README current, point it to the live site, and keep secrets out.
+keywords: GitHub README, AI search sources, public repository SEO, stale documentation
+sources: GitHub Docs: About READMEs | https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes ;; GitHub Docs: Setting repository visibility | https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility ;; Google Search Central: AI features and your website | https://developers.google.com/search/docs/appearance/ai-features
+about: README | https://en.wikipedia.org/wiki/README ;; GitHub | https://en.wikipedia.org/wiki/GitHub
+mentions: Generative engine optimization | https://en.wikipedia.org/wiki/Generative_engine_optimization ;; GitHub Pages | https://en.wikipedia.org/wiki/GitHub_Pages
+---
+<h1>Your public GitHub README is a source AI search reads</h1>
+<p class="lead">If your website is built from a public GitHub repository, its README file is a public page, and AI assistants with web search read it. In October 2026 I asked Claude what gerriscorp.com was. Its answer quoted this site's own repository, and it described the site as a preview that hadn't launched, because the README still carried the setup notes I wrote before launch. The site had been live for nine days. The fix took ten minutes.</p>
+
+<h2>Why a README gets read</h2>
+<p>GitHub shows a repository's README on its front page, so the file is public web content like any other. When an assistant searches for a site or a company and the repository ranks for that name, the README is often the most direct description it can find: who built the site, what it is for, and what state it is in. Developers write READMEs for other developers, in the present tense, and then stop updating them. An assistant can't tell a launch checklist from a status report.</p>
+<p>Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.</p>
+
+<h2>What to put at the top</h2>
+<p>Open the README with two sentences for the reader who arrived from a search: what the repository builds, the live address, and the date it went live. Then say where to learn about the company itself. Mine now begins: "This repository builds https://gerriscorp.com, live since October 5, 2026. For what Gerris Corp does and who runs it, read the site; this file only explains how the site is built."</p>
+<p>Below that, write for developers as before. Rewrite any section that describes a past state as current: "the site starts as a noindexed preview" becomes a short "Live" section with the date.</p>
+
+<h2>Keep it current on the same schedule as the site</h2>
+<p>Treat the README as a page of the site. When the site's status, name, address, or ownership changes, the README changes in the same commit. A check in the build can enforce it: fail when the README mentions "preview" or "staging" while the site is set to live. My build scripts already check titles, descriptions, and links on every run, and the README is one more file to check.</p>
+
+<h2>Check every repository that names you</h2>
+<p>The live site's repository is rarely the only one. Old prototypes, a redesign that never shipped, a fork a contractor made, and a project from a previous company name can all sit in public accounts with READMEs describing a state of affairs that ended years ago. Search GitHub for the company name and the domain. An archived repository stays public and readable; archiving only freezes it. For each one that describes a past state, either add a first line that says so and links the current site, or make it private if nothing in it needs to stay public.</p>
+
+<h2>Keep confidential material out of it</h2>
+<p>A public README is public. Client names, internal hostnames, credentials, and notes about how a client relationship works belong in a private file. I keep a separate briefing file for each of my sites, listed in the repository's ignore file so it never reaches GitHub. If a public README already contains something private, edit it and treat the old version as exposed, since the history is public too. GitHub's documentation on repository visibility explains what changing a repository to private does and doesn't hide.</p>
+
+<h2>Check what the assistants say</h2>
+<p>Ask an assistant with web search to describe your company and your site, then read the sources it cites. If a repository appears among them, read its README the way a stranger would. Google's guidance for its AI features applies here as everywhere: the content the systems can find is the content they use. My guide to <a href="{root}guides/citation-gap-analysis/">citation gap analysis</a> covers checking sources systematically, and <a href="{root}guides/repository-access/">giving your SEO repository access</a> covers working in the repository itself.</p>
+
+<h2>Where I fit</h2>
+<p>I audit the public sources that describe a company, repositories included, and fix what they say. If your site is built from a public repository, <a href="{root}contact/">send me the link</a> and I'll tell you what an assistant would learn from it.</p>

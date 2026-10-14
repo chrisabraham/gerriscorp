@@ -15,6 +15,9 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Repositories plus super intelligence: the SEO superpower](https://gerriscorp.com/guides/seo-superpower/): why SEOs need Git and AI coding assistants together, what it looks like in practice, and how to start.
 - [How to give an outside SEO safe access to your code repository](https://gerriscorp.com/guides/repository-access/): one repository, the Read role first, protected main, deploy previews, no secrets, and a clean exit.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): specs, project memory, automated checks, review, and keeping secrets and production out of reach.
+- [Citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/): collect the sources AI cites when it names your competitors, sort them by type, and rank the ones that leave you out.
+- [Content briefs for pages AI search will quote](https://gerriscorp.com/guides/content-briefs/): the question, the expert's answer, the evidence, and the page's limits, settled before anyone writes.
+- [Your public GitHub README is a source AI reads](https://gerriscorp.com/guides/readme-ai-source/): keep it current, point it to the live site, and keep private notes out.
 
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
@@ -44,6 +47,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
 - [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): Chrome DevTools traces, CrUX field data, and Screaming Frog across every template.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
+- [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.

@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speculation rules: make the next page open at once in Chrome</title>
+<meta name="description" content="One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.">
+<meta name="keywords" content="speculation rules, prefetch, prerender, instant navigation, Chrome performance">
+<link rel="canonical" href="https://gerriscorp.com/guides/speculation-rules/">
+<meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/rss+xml" title="Gerris guides (RSS)" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  gtag('js', new Date());
+  gtag('config', 'G-JF2W6ESJZN');
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Speculation rules: make the next page open at once in Chrome">
+<meta property="og:description" content="One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.">
+<meta property="og:url" content="https://gerriscorp.com/guides/speculation-rules/">
+<meta property="og:image" content="https://gerriscorp.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
+<meta property="article:published_time" content="2026-10-14">
+<meta property="article:modified_time" content="2026-10-14">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Speculation rules: make the next page open at once in Chrome">
+<meta name="twitter:description" content="One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.">
+<meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
+<style>
+:root { --orange: #c75000; --blue: #16729e; --teal: #237482; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { color: var(--blue); font-size: 1.4rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
+.help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
+.help-box h2 { margin-top: .75rem; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.contact li { margin-bottom: .6rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.25rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "publishingPrinciples": "https://gerriscorp.com/standards/"
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2012",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "slogan": "Experienced help for the digital work your business needs done",
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp",
+    "https://share.google/C5KMu0jYTNz8t2Zpn"
+   ],
+   "publishingPrinciples": "https://gerriscorp.com/standards/",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/seo-engineering/#service",
+         "name": "SEO engineering for sites built in code",
+         "url": "https://gerriscorp.com/services/seo-engineering/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://gerriscorp.com/chris-abraham.jpg",
+    "width": 320,
+    "height": 320,
+    "caption": "Chris Abraham, founder of Gerris Corp"
+   },
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
+   "homeLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "Claude Code",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/",
+    "https://adage.com/author/chris-abraham/1797"
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/speculation-rules/#webpage",
+   "url": "https://gerriscorp.com/guides/speculation-rules/",
+   "name": "Speculation rules: make the next page open at once in Chrome",
+   "description": "One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-14",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/speculation-rules/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/speculation-rules/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Speculation Rules",
+     "item": "https://gerriscorp.com/guides/speculation-rules/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/speculation-rules/#article",
+   "headline": "Speculation rules: make the next page open instantly in Chrome",
+   "description": "One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.",
+   "url": "https://gerriscorp.com/guides/speculation-rules/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/speculation-rules/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-14",
+   "dateModified": "2026-10-14",
+   "image": "https://gerriscorp.com/social-card.png",
+   "inLanguage": "en-US",
+   "wordCount": 726,
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "Chrome for Developers: Prerender pages in Chrome for instant page navigations (updated January 23, 2026)",
+     "url": "https://developer.chrome.com/docs/web-platform/prerender-pages"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "MDN: Speculation Rules API",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "web.dev: Largest Contentful Paint",
+     "url": "https://web.dev/articles/lcp"
+    }
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Link prefetching",
+     "sameAs": "https://en.wikipedia.org/wiki/Link_prefetching"
+    },
+    {
+     "@type": "Thing",
+     "name": "Web performance",
+     "sameAs": "https://en.wikipedia.org/wiki/Web_performance"
+    }
+   ],
+   "mentions": [
+    {
+     "@type": "Thing",
+     "name": "Google Chrome",
+     "sameAs": "https://en.wikipedia.org/wiki/Google_Chrome"
+    },
+    {
+     "@type": "Thing",
+     "name": "Microsoft Edge",
+     "sameAs": "https://en.wikipedia.org/wiki/Microsoft_Edge"
+    }
+   ],
+   "keywords": "speculation rules, prefetch, prerender, instant navigation, Chrome performance"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Speculation Rules</p>
+<main id="main">
+<h1>Speculation rules: make the next page open instantly in Chrome</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-14">October 14, 2026</time></p>
+<p class="lead">Speculation rules are a short block of JSON in a script tag that tells Chrome and Edge which links to load before the reader clicks them. When the reader does click, the page is already in memory and opens at once. I added one rule to every site I run in October 2026. It costs nothing in browsers that don't support it, and on a static site it takes about five minutes.</p>
+
+<h2>Prefetch or prerender</h2>
+<p>A prefetch downloads the next page's HTML and holds it in memory without rendering it. A prerender goes further: Chrome's documentation says the page behaves as if it had been opened in an invisible background tab, then is shown when the reader arrives. Prerender is faster still and uses more memory and bandwidth, and it runs the page's scripts before anyone sees the page.</p>
+<p>I use prefetch. It removes the network wait, which is most of the delay on a static site, and it runs no scripts early, so analytics, consent tools, and anything else that should only run for a real visit behave exactly as before. Prerender suits sites whose pages are heavy to render and whose scripts are built to handle it. Chrome also caps how much it will speculate: its documentation allows up to 50 immediate prefetches and 10 immediate prerenders per page, so a rule that matches every link on a long page cannot flood the network.</p>
+
+<h2>Choose the eagerness</h2>
+<p>Eagerness sets how early Chrome acts on a rule. The four levels, from Chrome's documentation:</p>
+<ul>
+  <li><strong>immediate:</strong> as soon as the rule is seen.</li>
+  <li><strong>eager:</strong> on desktop, when the pointer rests on a link for 10 milliseconds; on mobile, shortly after a link enters the viewport.</li>
+  <li><strong>moderate:</strong> on desktop, when the pointer rests on a link for 200 milliseconds, or on pointer down if that comes first; on mobile, using viewport heuristics after the reader stops scrolling.</li>
+  <li><strong>conservative:</strong> on pointer or touch down, the default for rules that match links on the page.</li>
+</ul>
+<p>Moderate is the setting I use. A 200-millisecond hover is a good signal of intent, and it fetches few pages the reader never opens.</p>
+
+<h2>The rule I use</h2>
+<pre><code>&lt;script type="speculationrules"&gt;
+{"prefetch": [{"where": {"and": [
+  {"href_matches": "/*"},
+  {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}
+]}, "eagerness": "moderate"}]}
+&lt;/script&gt;</code></pre>
+<p>It matches every same-site link and excludes the files no reader opens in a browser: Markdown copies, llms.txt, and XML feeds and sitemaps. Exclude anything with side effects as well. A logout link, an "add to cart" URL, or any GET request that changes state must never be prefetched. On a static site there are none; on an application, list them.</p>
+
+<h2>Check that it works</h2>
+<p>Open the site in Chrome, open DevTools, and go to the Application panel. Under background services, the speculative loads view lists the rules Chrome found on the page and the status of each speculation: not triggered, running, ready, or failed, with the reason for any failure. Hover over a link for a moment and watch its entry change. The Network panel shows the prefetch request itself.</p>
+<p>Chrome marks speculative requests with a Sec-Purpose request header, set to prefetch for a prefetch. That gives servers and log analysis a way to separate speculative fetches from real visits. A static host serves the page either way. A site that counts visits on the server side should exclude requests carrying that header, so prefetches never inflate the numbers.</p>
+
+<h2>Browser support</h2>
+<p>Chrome and Edge support speculation rules, with eagerness settings since version 121. Firefox does not support them, and Safari has them behind a flag. Unsupported browsers ignore the script tag, so the rule degrades to an ordinary link.</p>
+
+<h2>What it changes</h2>
+<p>Lighthouse measures a single page load, so speculation rules leave its scores where they were. What changes is the second page: the reader clicks and the page is already there. That is the part of speed a visitor notices most. In field data, the prefetched page's Largest Contentful Paint starts from a page already in memory, so real-user loading times improve once enough visits have been recorded.</p>
+
+<h2>Where I fit</h2>
+<p>I add speculation rules as part of a <a href="../../services/site-speed/">site speed</a> engagement, along with the work Lighthouse does measure: render-blocking resources, image sizes, and third-party scripts. For the measurement side, start with my guide to <a href="../../guides/core-web-vitals/">Core Web Vitals</a>.</p>
+<aside class="help-box" aria-label="Get help">
+  <h2>Want me to handle this for you?</h2>
+  <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:+12023525051">Call +1 202-352-5051</a> <a class="button" href="mailto:chris@gerriscorp.com">Email chris@gerriscorp.com</a></p>
+  <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>
+<h2>References</h2>
+<ul class="sources">
+  <li><a href="https://developer.chrome.com/docs/web-platform/prerender-pages">Chrome for Developers: Prerender pages in Chrome for instant page navigations (updated January 23, 2026)</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API">MDN: Speculation Rules API</a></li>
+  <li><a href="https://web.dev/articles/lcp">web.dev: Largest Contentful Paint</a></li>
+</ul>
+<aside class="author-box" aria-label="About the author">
+  <img src="../../chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="../../about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="../../standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington, Virginia · <a href="../../faq/">FAQ</a> · <a href="../../standards/">Standards</a> · <a href="../../privacy/">Privacy</a> · <a href="../../sitemap/">Site map</a> · <a href="../../guides/glossary/">Glossary</a> · <a href="../../colophon/">Colophon</a> · <a href="../../llms.txt">llms.txt</a> · <a href="../../rss.xml">RSS</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+name: Speculation Rules
+type: guide
+published: 2026-10-14
+updated: 2026-10-14
+title: Speculation rules: make the next page open at once in Chrome
+description: One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.
+keywords: speculation rules, prefetch, prerender, instant navigation, Chrome performance
+sources: Chrome for Developers: Prerender pages in Chrome for instant page navigations (updated January 23, 2026) | https://developer.chrome.com/docs/web-platform/prerender-pages ;; MDN: Speculation Rules API | https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API ;; web.dev: Largest Contentful Paint | https://web.dev/articles/lcp
+about: Link prefetching | https://en.wikipedia.org/wiki/Link_prefetching ;; Web performance | https://en.wikipedia.org/wiki/Web_performance
+mentions: Google Chrome | https://en.wikipedia.org/wiki/Google_Chrome ;; Microsoft Edge | https://en.wikipedia.org/wiki/Microsoft_Edge
+---
+<h1>Speculation rules: make the next page open instantly in Chrome</h1>
+<p class="lead">Speculation rules are a short block of JSON in a script tag that tells Chrome and Edge which links to load before the reader clicks them. When the reader does click, the page is already in memory and opens at once. I added one rule to every site I run in October 2026. It costs nothing in browsers that don't support it, and on a static site it takes about five minutes.</p>
+
+<h2>Prefetch or prerender</h2>
+<p>A prefetch downloads the next page's HTML and holds it in memory without rendering it. A prerender goes further: Chrome's documentation says the page behaves as if it had been opened in an invisible background tab, then is shown when the reader arrives. Prerender is faster still and uses more memory and bandwidth, and it runs the page's scripts before anyone sees the page.</p>
+<p>I use prefetch. It removes the network wait, which is most of the delay on a static site, and it runs no scripts early, so analytics, consent tools, and anything else that should only run for a real visit behave exactly as before. Prerender suits sites whose pages are heavy to render and whose scripts are built to handle it. Chrome also caps how much it will speculate: its documentation allows up to 50 immediate prefetches and 10 immediate prerenders per page, so a rule that matches every link on a long page cannot flood the network.</p>
+
+<h2>Choose the eagerness</h2>
+<p>Eagerness sets how early Chrome acts on a rule. The four levels, from Chrome's documentation:</p>
+<ul>
+  <li><strong>immediate:</strong> as soon as the rule is seen.</li>
+  <li><strong>eager:</strong> on desktop, when the pointer rests on a link for 10 milliseconds; on mobile, shortly after a link enters the viewport.</li>
+  <li><strong>moderate:</strong> on desktop, when the pointer rests on a link for 200 milliseconds, or on pointer down if that comes first; on mobile, using viewport heuristics after the reader stops scrolling.</li>
+  <li><strong>conservative:</strong> on pointer or touch down, the default for rules that match links on the page.</li>
+</ul>
+<p>Moderate is the setting I use. A 200-millisecond hover is a good signal of intent, and it fetches few pages the reader never opens.</p>
+
+<h2>The rule I use</h2>
+<pre><code>&lt;script type="speculationrules"&gt;
+{"prefetch": [{"where": {"and": [
+  {"href_matches": "/*"},
+  {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}
+]}, "eagerness": "moderate"}]}
+&lt;/script&gt;</code></pre>
+<p>It matches every same-site link and excludes the files no reader opens in a browser: Markdown copies, llms.txt, and XML feeds and sitemaps. Exclude anything with side effects as well. A logout link, an "add to cart" URL, or any GET request that changes state must never be prefetched. On a static site there are none; on an application, list them.</p>
+
+<h2>Check that it works</h2>
+<p>Open the site in Chrome, open DevTools, and go to the Application panel. Under background services, the speculative loads view lists the rules Chrome found on the page and the status of each speculation: not triggered, running, ready, or failed, with the reason for any failure. Hover over a link for a moment and watch its entry change. The Network panel shows the prefetch request itself.</p>
+<p>Chrome marks speculative requests with a Sec-Purpose request header, set to prefetch for a prefetch. That gives servers and log analysis a way to separate speculative fetches from real visits. A static host serves the page either way. A site that counts visits on the server side should exclude requests carrying that header, so prefetches never inflate the numbers.</p>
+
+<h2>Browser support</h2>
+<p>Chrome and Edge support speculation rules, with eagerness settings since version 121. Firefox does not support them, and Safari has them behind a flag. Unsupported browsers ignore the script tag, so the rule degrades to an ordinary link.</p>
+
+<h2>What it changes</h2>
+<p>Lighthouse measures a single page load, so speculation rules leave its scores where they were. What changes is the second page: the reader clicks and the page is already there. That is the part of speed a visitor notices most. In field data, the prefetched page's Largest Contentful Paint starts from a page already in memory, so real-user loading times improve once enough visits have been recorded.</p>
+
+<h2>Where I fit</h2>
+<p>I add speculation rules as part of a <a href="{root}services/site-speed/">site speed</a> engagement, along with the work Lighthouse does measure: render-blocking resources, image sizes, and third-party scripts. For the measurement side, start with my guide to <a href="{root}guides/core-web-vitals/">Core Web Vitals</a>.</p>

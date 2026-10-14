@@ -1507,6 +1507,9 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Repositories plus super intelligence: the SEO superpower](https://gerriscorp.com/guides/seo-superpower/): why SEOs need Git and AI coding assistants together, what it looks like in practice, and how to start.
 - [How to give an outside SEO safe access to your code repository](https://gerriscorp.com/guides/repository-access/): one repository, the Read role first, protected main, deploy previews, no secrets, and a clean exit.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): specs, project memory, automated checks, review, and keeping secrets and production out of reach.
+- [Citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/): collect the sources AI cites when it names your competitors, sort them by type, and rank the ones that leave you out.
+- [Content briefs for pages AI search will quote](https://gerriscorp.com/guides/content-briefs/): the question, the expert's answer, the evidence, and the page's limits, settled before anyone writes.
+- [Your public GitHub README is a source AI reads](https://gerriscorp.com/guides/readme-ai-source/): keep it current, point it to the live site, and keep private notes out.
 
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
@@ -1536,6 +1539,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
 - [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): Chrome DevTools traces, CrUX field data, and Screaming Frog across every template.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
+- [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
@@ -1851,6 +1855,139 @@ If your company hires through Upwork, you'll find me [there as well](https://www
 - [Google Search Central: Guidance on using generative AI content](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
 - [Google Search Central: Control your snippets in search results](https://developers.google.com/search/docs/appearance/snippet)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/readme-ai-source/
+Updated: 2026-10-14
+
+# Your public GitHub README is a source AI search reads
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 14, 2026
+
+If your website is built from a public GitHub repository, its README file is a public page, and AI assistants with web search read it. In October 2026 I asked Claude what gerriscorp.com was. Its answer quoted this site's own repository, and it described the site as a preview that hadn't launched, because the README still carried the setup notes I wrote before launch. The site had been live for nine days. The fix took ten minutes.
+
+## Why a README gets read
+
+GitHub shows a repository's README on its front page, so the file is public web content like any other. When an assistant searches for a site or a company and the repository ranks for that name, the README is often the most direct description it can find: who built the site, what it is for, and what state it is in. Developers write READMEs for other developers, in the present tense, and then stop updating them. An assistant can't tell a launch checklist from a status report.
+
+Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.
+
+## What to put at the top
+
+Open the README with two sentences for the reader who arrived from a search: what the repository builds, the live address, and the date it went live. Then say where to learn about the company itself. Mine now begins: "This repository builds https://gerriscorp.com, live since October 5, 2026. For what Gerris Corp does and who runs it, read the site; this file only explains how the site is built."
+
+Below that, write for developers as before. Rewrite any section that describes a past state as current: "the site starts as a noindexed preview" becomes a short "Live" section with the date.
+
+## Keep it current on the same schedule as the site
+
+Treat the README as a page of the site. When the site's status, name, address, or ownership changes, the README changes in the same commit. A check in the build can enforce it: fail when the README mentions "preview" or "staging" while the site is set to live. My build scripts already check titles, descriptions, and links on every run, and the README is one more file to check.
+
+## Check every repository that names you
+
+The live site's repository is rarely the only one. Old prototypes, a redesign that never shipped, a fork a contractor made, and a project from a previous company name can all sit in public accounts with READMEs describing a state of affairs that ended years ago. Search GitHub for the company name and the domain. An archived repository stays public and readable; archiving only freezes it. For each one that describes a past state, either add a first line that says so and links the current site, or make it private if nothing in it needs to stay public.
+
+## Keep confidential material out of it
+
+A public README is public. Client names, internal hostnames, credentials, and notes about how a client relationship works belong in a private file. I keep a separate briefing file for each of my sites, listed in the repository's ignore file so it never reaches GitHub. If a public README already contains something private, edit it and treat the old version as exposed, since the history is public too. GitHub's documentation on repository visibility explains what changing a repository to private does and doesn't hide.
+
+## Check what the assistants say
+
+Ask an assistant with web search to describe your company and your site, then read the sources it cites. If a repository appears among them, read its README the way a stranger would. Google's guidance for its AI features applies here as everywhere: the content the systems can find is the content they use. My guide to [citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/) covers checking sources systematically, and [giving your SEO repository access](https://gerriscorp.com/guides/repository-access/) covers working in the repository itself.
+
+## Where I fit
+
+I audit the public sources that describe a company, repositories included, and fix what they say. If your site is built from a public repository, [send me the link](https://gerriscorp.com/contact/) and I'll tell you what an assistant would learn from it.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [GitHub Docs: About READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+- [GitHub Docs: Setting repository visibility](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/speculation-rules/
+Updated: 2026-10-14
+
+# Speculation rules: make the next page open instantly in Chrome
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 14, 2026
+
+Speculation rules are a short block of JSON in a script tag that tells Chrome and Edge which links to load before the reader clicks them. When the reader does click, the page is already in memory and opens at once. I added one rule to every site I run in October 2026. It costs nothing in browsers that don't support it, and on a static site it takes about five minutes.
+
+## Prefetch or prerender
+
+A prefetch downloads the next page's HTML and holds it in memory without rendering it. A prerender goes further: Chrome's documentation says the page behaves as if it had been opened in an invisible background tab, then is shown when the reader arrives. Prerender is faster still and uses more memory and bandwidth, and it runs the page's scripts before anyone sees the page.
+
+I use prefetch. It removes the network wait, which is most of the delay on a static site, and it runs no scripts early, so analytics, consent tools, and anything else that should only run for a real visit behave exactly as before. Prerender suits sites whose pages are heavy to render and whose scripts are built to handle it. Chrome also caps how much it will speculate: its documentation allows up to 50 immediate prefetches and 10 immediate prerenders per page, so a rule that matches every link on a long page cannot flood the network.
+
+## Choose the eagerness
+
+Eagerness sets how early Chrome acts on a rule. The four levels, from Chrome's documentation:
+- **immediate:** as soon as the rule is seen.
+- **eager:** on desktop, when the pointer rests on a link for 10 milliseconds; on mobile, shortly after a link enters the viewport.
+- **moderate:** on desktop, when the pointer rests on a link for 200 milliseconds, or on pointer down if that comes first; on mobile, using viewport heuristics after the reader stops scrolling.
+- **conservative:** on pointer or touch down, the default for rules that match links on the page.
+
+Moderate is the setting I use. A 200-millisecond hover is a good signal of intent, and it fetches few pages the reader never opens.
+
+## The rule I use
+
+```
+<script type="speculationrules">
+{"prefetch": [{"where": {"and": [
+  {"href_matches": "/*"},
+  {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}
+]}, "eagerness": "moderate"}]}
+</script>
+```
+
+It matches every same-site link and excludes the files no reader opens in a browser: Markdown copies, llms.txt, and XML feeds and sitemaps. Exclude anything with side effects as well. A logout link, an "add to cart" URL, or any GET request that changes state must never be prefetched. On a static site there are none; on an application, list them.
+
+## Check that it works
+
+Open the site in Chrome, open DevTools, and go to the Application panel. Under background services, the speculative loads view lists the rules Chrome found on the page and the status of each speculation: not triggered, running, ready, or failed, with the reason for any failure. Hover over a link for a moment and watch its entry change. The Network panel shows the prefetch request itself.
+
+Chrome marks speculative requests with a Sec-Purpose request header, set to prefetch for a prefetch. That gives servers and log analysis a way to separate speculative fetches from real visits. A static host serves the page either way. A site that counts visits on the server side should exclude requests carrying that header, so prefetches never inflate the numbers.
+
+## Browser support
+
+Chrome and Edge support speculation rules, with eagerness settings since version 121. Firefox does not support them, and Safari has them behind a flag. Unsupported browsers ignore the script tag, so the rule degrades to an ordinary link.
+
+## What it changes
+
+Lighthouse measures a single page load, so speculation rules leave its scores where they were. What changes is the second page: the reader clicks and the page is already there. That is the part of speed a visitor notices most. In field data, the prefetched page's Largest Contentful Paint starts from a page already in memory, so real-user loading times improve once enough visits have been recorded.
+
+## Where I fit
+
+I add speculation rules as part of a [site speed](https://gerriscorp.com/services/site-speed/) engagement, along with the work Lighthouse does measure: render-blocking resources, image sizes, and third-party scripts. For the measurement side, start with my guide to [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Chrome for Developers: Prerender pages in Chrome for instant page navigations (updated January 23, 2026)](https://developer.chrome.com/docs/web-platform/prerender-pages)
+- [MDN: Speculation Rules API](https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API)
+- [web.dev: Largest Contentful Paint](https://web.dev/articles/lcp)
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
@@ -5362,12 +5499,14 @@ Each case describes the problem, my role, what I did, who else did what, how the
 ## Content operations and AI search
 - [Two B2B companies on Umbraco](https://gerriscorp.com/case-studies/umbraco-operations/). 54 landing pages, steady publishing, and cache and template fixes.
 - [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/). How AI answers represent an employer.
+- [A founder's public record: tracing AI errors to their sources](https://gerriscorp.com/case-studies/founder-record/). A wrong founding year, an invented rename, and a doubted award the archive proved.
 
 ## Data
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/). 88,900 contacts, two merged exports, and a tracker that invented its data.
 
 ## My own builds
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 106 tests; Hill Mole's move off Movable Type; and this site.
+- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 140 tests; Hill Mole's move off Movable Type; and this site.
+- [Four static sites: a speed and AI crawler pass](https://gerriscorp.com/case-studies/four-site-speed-pass/). Every page measured moved to 89 or better on mobile, most to 97 and above.
 
 [Tell me about your problem](https://gerriscorp.com/contact/)
 
@@ -5966,6 +6105,101 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/case-studies/founder-record/
+Updated: 2026-10-14
+
+# A founder's public record: tracing AI errors to the pages behind them
+
+In October 2026 I checked what Claude and Google's AI Mode say about me. Most of it was right. Four things were wrong or doubted: the year Gerris Corp started, a company rename that never happened, two-year-old freelance figures, and a Forbes ranking the answer called unconfirmed. Every one traced to a specific page, three of them pages I had written myself, and the Wayback Machine confirmed the award the answers doubted.
+
+## My role
+
+The subject and the investigator. It is the same work I do for founders and executives whose public record has drifted, done on my own name so nothing has to be redacted.
+
+## The errors and where they came from
+
+**The founding year.** One answer said I started Gerris Corp in 2007. Gerris started in 2012; 2007 is when Mark Harrison and I launched Abraham Harrison. The answer quoted my own About page, which listed both companies and both years in one sentence. The model kept the first year and attached it to the second company. I gave each company its own line and its own year.
+
+**The rename.** Google's AI Mode reported that I run "Gerris Digital (formerly Gerris Corp)." No rename ever happened. The name Gerris Digital appeared on three pages of chrisabraham.com, my personal archive, and one of those pages is a long biography written by an AI research tool, which says Abraham Harrison "merged with other entities to form Gerris Corp (Gerris Digital)." Faced with two names for one firm, the answer engine reconciled them by inventing a history. The fix is one name everywhere, and a correction note on the AI-written page.
+
+**The stale figures.** Freelance figures from two years earlier, a higher status tier than I hold and smaller job and hour counts, came from a single profile page on the same archive. One page, three wrong facts.
+
+**The doubted award.** My bios have long said Forbes named me a top 50 social media power influencer. One answer flagged it as unconfirmed because no bio linked a source. The original Forbes contributor post from January 25, 2012, is archived in the Wayback Machine, and the list shows me at number 33. The claim was true and unproven. Linking the archived list proves it.
+
+## Corroborating the rest
+
+The same archive work confirmed details the answers repeated correctly but without independent support: Advertising Age's April 2008 introduction of its DigitalNext bloggers, which describes me as president of Abraham Harrison, specializing in blogger outreach and search-reputation management, and living in Berlin and Washington; and my November 2008 Ad Age column written from Berlin. Ad Age's site blocks automated readers, so the archived copies are the citable versions.
+
+## What it shows
+
+Answer engines are faithful to their sources, including the careless ones. A sentence with two entities and two dates can hand a model the wrong pair. An AI-written bio published as a curiosity becomes a source for the next AI. An old profile page outranks a current one when nothing tells the crawler which is newer. And a true claim with no link reads to a model like an unsupported one. Each problem has a mechanical fix, and every fix starts with finding the page.
+
+My guides cover the method: [fact checking a confident AI answer](https://gerriscorp.com/guides/fact-check-ai-seo/) claim by claim, and [citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/) for the sources that leave you out. For founders and executives, see [reputation and perception management](https://gerriscorp.com/services/reputation/).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+Updated October 14, 2026
+
+
+---
+
+Source: https://gerriscorp.com/case-studies/four-site-speed-pass/
+Updated: 2026-10-14
+
+# Four static sites: a speed and AI crawler pass in one afternoon
+
+In October 2026 I ran a full speed and AI crawler review across four sites I own: this one, a second consulting site, Hill Mole, and a feed-driven archive of 465 pages. They were already fast by most standards. The review found one cause behind most of the remaining slowness, fixed it with a trade-off I could state in a sentence, and moved every page I measured to 89 or better on mobile, most of them to 97 or above.
+
+## My role
+
+Everything: measurement, diagnosis, the code changes in each site's build, verification, and deployment. The sites are mine, so every number here can be checked on the live pages.
+
+## Method
+
+I measured a home page and a typical inner page on each site with Lighthouse 12 in mobile mode, using the same throttling PageSpeed Insights applies. I tested each fix on a local build of the same code before shipping it. Separately, I crawled 41 pages per site with my own audit script, checking headings, structured data, canonicals, image dimensions and alt text, dates, robots directives, and whether every sitemap URL returned a 200 and was indexable.
+
+## What I found
+- **The analytics tag.** On three of the sites, gtag.js produced most of the main-thread blocking time, 575 to 1,291 milliseconds per page. The sites' own code was small.
+- **Image weight on the archive.** Cover images were 800-pixel JPEGs. WebP at three sizes cut the image weight on an episode page by about 300 KB.
+- **A render-blocking stylesheet on Hill Mole.** A 2 KB stylesheet held the first paint, and the 700-pixel banner was a GIF shown at 412 pixels on phones.
+- **Small tap targets.** A dark-mode button 22 pixels tall, below the 24-pixel minimum.
+- **An incomplete AI crawler list.** robots.txt named 14 AI agents and missed 9 newer ones. Every token I added came from the vendor's own documentation that day, which also showed that one Google fetcher had been renamed two months earlier.
+
+The crawl found no structural problems: one H1 per page, valid structured data everywhere, clean canonicals, complete alt text, and no noindexed URL in any sitemap.
+
+## What I changed
+
+Analytics now loads on the visitor's first scroll, tap, or key press, or four seconds after the page loads, with every command queued until the script arrives. The archive serves WebP covers at 400, 600, and 800 pixels with the JPEG as the fallback. Hill Mole's stylesheet is inlined and its banner is served as WebP. The dark-mode button grew to 48 by 28 pixels. robots.txt on all four sites names the newer agents. And every site now carries a speculation rule that prefetches a same-site page when a reader hovers over or starts to tap its link.
+
+## Results
+| Page | Before | After |
+| --- | --- | --- |
+| This site, home | 65 | 100 |
+| This site, service page | 79 | 97 |
+| Second consulting site, home | 83 | 98 |
+| Second consulting site, service page | 84 | 100 |
+| Hill Mole, home | 98 | 100 |
+| Hill Mole, entry | 98 | 100 |
+| Archive, home | 75 | 89 |
+| Archive, episode page | 70 | 97 |
+
+Scores are mobile Lighthouse performance. Accessibility reached 100 on all eight pages.
+
+## The trade-off
+
+Deferring analytics means a visitor who leaves within about four seconds without touching the page is never counted. Every other pageview is recorded. I made that choice for my own sites and would put the same choice to a client in writing before shipping it.
+
+## What it shows
+
+A fast site can still carry one expensive habit, and the fix is often a single decision once the measurement names it. The audit took an afternoon because the sites are generated from code I control: each change went into a build script once and reached every page. See [site speed](https://gerriscorp.com/services/site-speed/) for the same review on your site.
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+Updated October 14, 2026
+
+
+---
+
 Source: https://gerriscorp.com/case-studies/built-with-claude-code/
 Updated: 2026-10-07
 
@@ -6518,6 +6752,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [How to measure AI search citations, referrals, and actual leads](https://gerriscorp.com/guides/measure-ai-search/): Build an honest AI search report that separates citations, referral visits, and leads using Bing Webmaster Tools, GA4, repeatable checks, and clear limits.
 - [Citation gap analysis: finding the sources AI cites instead of you](https://gerriscorp.com/guides/citation-gap-analysis/): Collect the pages AI assistants cite when they name your competitors, sort them by type, and turn the ones that leave you out into a ranked outreach list.
 - [How to write a content brief for pages AI search will quote](https://gerriscorp.com/guides/content-briefs/): A one page brief that fixes the question, answer, evidence, and limits before anyone writes, so the finished page answers first and holds up when quoted.
+- [Your public GitHub README is a source AI search reads](https://gerriscorp.com/guides/readme-ai-source/): AI assistants with web search read public repositories and quote README files as fact. Keep the README current, point it to the live site, and keep secrets out.
+- [Speculation rules: make the next page open instantly in Chrome](https://gerriscorp.com/guides/speculation-rules/): One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.
 - [IndexNow, Bing, and a practical AI search workflow for fall 2026](https://gerriscorp.com/guides/indexnow-ai-search/): Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
@@ -6577,6 +6813,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Two B2B companies on Umbraco: publishing and technical operations](https://gerriscorp.com/case-studies/umbraco-operations/): Two B2B companies on Umbraco: 54 city landing pages and steady publishing for one, and a homepage overhaul with cache and template fixes for the other.
 - [AI company: search visibility for recruiting engineers](https://gerriscorp.com/case-studies/ai-recruiting/): An AI company recruiting engineers in the Bay Area wanted to appear in AI answers about jobs. Chris Abraham audited its footprint and planned the fix.
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/): Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.
+- [A founder's public record: tracing AI errors to the pages behind them](https://gerriscorp.com/case-studies/founder-record/): AI answers about me got a founding year wrong, invented a company rename, and doubted a real award. Each traced to a page, and the archive settled the rest.
+- [Four static sites: a speed and AI crawler pass in one afternoon](https://gerriscorp.com/case-studies/four-site-speed-pass/): Four static sites I own, measured with mobile Lighthouse, fixed in one afternoon, and measured again: analytics deferred, images resized, robots rules verified.
 - [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
 
 ## Files for machines
