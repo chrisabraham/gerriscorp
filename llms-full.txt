@@ -5890,7 +5890,7 @@ Updated October 7, 2026
 ---
 
 Source: https://gerriscorp.com/about/
-Updated: 2026-10-05
+Updated: 2026-10-14
 
 # About Chris Abraham
 
@@ -5920,7 +5920,8 @@ I provision and harden my own Linux servers on DigitalOcean: key-only SSH, root 
 ## Career
 - Employee number 13 at New Media Strategies, where online reputation management grew up as a practice.
 - Senior account supervisor on Edelman's digital public affairs team in Washington, where I vetted online influencers for a genuine, multi-year track record before clients engaged them.
-- Co-founder of Abraham Harrison in 2007, then of Gerris Corp, which I started with Dan Krueger in 2012.
+- Co-founder of Abraham Harrison, launched with Mark Harrison in 2007.
+- Founder of Gerris Corp, started with Dan Krueger in 2012.
 - Reputation and executive privacy work at Reputation.com.
 - In 1996, a member of the Proxima team (later Proxicom) that launched Owens Corning's Pink Panther website, a deep, interactive site with a homeowner discussion forum that took the first BOTI award for Best Web Site Design ([press release, archived](https://web.archive.org/web/19980117033913/http://www.proxicom.com:80/press/owens.html)).
 - Earlier, work with Howard Rheingold at Rheingold Associates, and internet infrastructure work in the Treasury Department's Office of the CIO, on an intranet where the job was the reverse of SEO: keeping every spider and bot out.
@@ -5949,7 +5950,7 @@ Gerris is distinct from chrisabraham.com: this site covers the consultancy and i
 
 *Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds. Why I chose it, and the story of the logo Oliver Uberti drew for it, are in the [colophon](https://gerriscorp.com/colophon/).
 
-Updated October 5, 2026
+Updated October 14, 2026
 
 
 ---
