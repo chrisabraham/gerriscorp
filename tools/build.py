@@ -284,7 +284,8 @@ PERSON = {
                       "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"},
     "knowsAbout": KNOWS,
     "email": EMAIL, "telephone": "+1-202-352-5051",
-    "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/"],
+    "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/",
+               "https://adage.com/author/chris-abraham/1797"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
            "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"},
