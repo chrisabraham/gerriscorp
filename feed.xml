@@ -5,8 +5,124 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-13T12:00:00Z</updated>
+  <updated>2026-10-14T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
+  <entry>
+    <title>How to write a content brief for pages AI search will quote</title>
+    <link href="https://gerriscorp.com/guides/content-briefs/"/>
+    <id>https://gerriscorp.com/guides/content-briefs/</id>
+    <published>2026-10-14T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <summary>A one page brief that fixes the question, answer, evidence, and limits before anyone writes, so the finished page answers first and holds up when quoted.</summary>
+    <content type="html">&lt;h1&gt;How to write a content brief for pages AI search will quote&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-14"&gt;October 14, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A content brief is a one-page instruction that settles a page's question, its answer, its evidence, and its limits before anyone writes a sentence. For AI search the brief carries more weight than it used to, because answer engines lift single passages out of a page and repeat them without the context around them. A page built from a good brief answers in its first lines, supports every claim, and stays inside its own question. I learned the discipline as an executive editor running a staff of writers, and it is the same job now with a new kind of reader.&lt;/p&gt;
+
+&lt;h2&gt;The question, word for word&lt;/h2&gt;
+&lt;p&gt;Every brief starts with one question, written the way a buyer asks it. Take the wording from Search Console queries, sales call notes, or the questions in an AI visibility question set. "How do I fix Crawled, currently not indexed" is a brief. "Indexing issues" is a topic, and a page written from a topic answers nothing in particular.&lt;/p&gt;
+&lt;p&gt;Under the question, name who asks it and what they will decide after reading. A developer deciding whether a template is at fault needs a different page from a marketing director deciding whether to hire help, even when they type the same words.&lt;/p&gt;
+
+&lt;h2&gt;The answer, written by the expert first&lt;/h2&gt;
+&lt;p&gt;The person who knows the subject writes the answer in two or three sentences before the writer starts. This is the passage an AI system is most likely to lift, so it has to stand alone: it names the thing, gives the answer, and includes the number or condition that makes it true. A writer can polish it. A writer working without it will produce a careful introduction that circles the answer for three paragraphs.&lt;/p&gt;
+&lt;p&gt;Google's guidance on helpful content asks whether a page provides original information and substantial value beyond what other pages offer. The expert's answer is where that originality lives: the threshold from your own projects, the failure you have seen five times, the step everyone skips.&lt;/p&gt;
+
+&lt;h2&gt;The evidence list&lt;/h2&gt;
+&lt;p&gt;List every claim the page will make that a reader could doubt, and the source for each one: a vendor's documentation page, your own data with its date and sample, a public record. Writers open every source before citing it, and the brief says so. Answer engines cross-check, and a confident sentence with no support behind it is the sentence they drop or contradict.&lt;/p&gt;
+&lt;p&gt;Mark which evidence is first-party. Data from your own client work, anonymized, is the material no competitor can copy, and it is what turns a page into a source other pages cite.&lt;/p&gt;
+
+&lt;h2&gt;The sections, each one self-contained&lt;/h2&gt;
+&lt;p&gt;Outline the sections as questions the reader will ask next, in the order they ask them. Each section opens with its own answer and makes sense if it is the only part quoted. Google says AI Overviews and AI Mode may run several related searches across subtopics to build a response, so a section that answers a sub-question cleanly can be the passage selected for that sub-search.&lt;/p&gt;
+
+&lt;h2&gt;The limits&lt;/h2&gt;
+&lt;p&gt;A brief says what the page does not cover and where that material lives instead, with the link. This is how a site avoids two pages answering the same question, and it keeps each page short enough to finish. When the limit points to a page that doesn't exist yet, the brief has found the next brief.&lt;/p&gt;
+
+&lt;h2&gt;The links, title, and description&lt;/h2&gt;
+&lt;p&gt;List the internal links the page must carry: up to the hub page for the subject, across to the pages a reader needs next, and from two or three existing pages that should now point to this one. Draft the title and meta description in the brief, inside the site's limits, because Google often uses the description for the snippet when it describes the page better than the page's own text. Structured data, where the page uses it, must match what the visible page says; Google's AI features guidance asks for exactly that.&lt;/p&gt;
+
+&lt;h2&gt;The review before publishing&lt;/h2&gt;
+&lt;p&gt;Before a page goes live, someone other than the writer checks it against the brief: the answer is in the first lines, every claim has its source, the limits held, and every link resolves. AI drafting tools speed up the writing and change none of this. Google's guidance on generative AI content judges the result by its accuracy, quality, and relevance, and so does every reader who decides whether to trust you.&lt;/p&gt;
+
+&lt;h2&gt;Where I fit&lt;/h2&gt;
+&lt;p&gt;I write briefs for clients' writers and agencies' content teams, supply the expert answer and the evidence list from the technical side, and review drafts before they publish. If your content team is producing pages that rank but never get quoted, &lt;a href="https://gerriscorp.com/contact/"&gt;send me two of them&lt;/a&gt; and I'll show you what the brief was missing. For the source side of the same problem, see my guide to &lt;a href="https://gerriscorp.com/guides/citation-gap-analysis/"&gt;citation gap analysis&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content"&gt;Google Search Central: Creating helpful, reliable, people first content&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"&gt;Google Search Central: Guidance on using generative AI content&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/ai-features"&gt;Google Search Central: AI features and your website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/snippet"&gt;Google Search Central: Control your snippets in search results&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
+    <title>Citation gap analysis: finding the sources AI cites instead of you</title>
+    <link href="https://gerriscorp.com/guides/citation-gap-analysis/"/>
+    <id>https://gerriscorp.com/guides/citation-gap-analysis/</id>
+    <published>2026-10-14T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <summary>Collect the pages AI assistants cite when they name your competitors, sort them by type, and turn the ones that leave you out into a ranked outreach list.</summary>
+    <content type="html">&lt;h1&gt;Citation gap analysis: finding the sources AI cites instead of you&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-14"&gt;October 14, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A citation gap is a page that AI assistants cite when they answer your buyers' questions, which names your competitors and leaves you out. Finding them is mechanical: ask the questions, collect every cited URL, sort the sources by type, and mark the ones where a competitor appears and you don't. The result is a ranked list of places to be, and it replaces guessing about which publications "AI trusts" with the actual pages it used.&lt;/p&gt;
+
+&lt;h2&gt;Collect the sources, not only the answers&lt;/h2&gt;
+&lt;p&gt;Start with a fixed set of buyer questions and run them with web search turned on. The answer text tells you who was named. The citations tell you why. OpenAI's API returns two lists for a web search answer: the URLs cited inline, and, on request, every source the model consulted, which is usually longer. Claude returns the cited URL with each passage it draws from a search result. Keep both lists for every answer, with the date and the engine.&lt;/p&gt;
+&lt;p&gt;Bing Webmaster Tools now reports how often your own pages are cited in Copilot answers and lets you compare that citation share against other sites. That is the one place a search engine shows citation counts directly, and it covers only your side of the gap. The question set covers the rest.&lt;/p&gt;
+
+&lt;h2&gt;Sort every source by type&lt;/h2&gt;
+&lt;p&gt;A pile of URLs becomes useful once each one carries a label. I use seven:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;marketplace and directory listings (freelance platforms, agency directories, review sites)&lt;/li&gt;
+  &lt;li&gt;"best of" roundups and ranked lists&lt;/li&gt;
+  &lt;li&gt;practitioner guides written by third parties&lt;/li&gt;
+  &lt;li&gt;vendor and tool company blogs&lt;/li&gt;
+  &lt;li&gt;trade press and news&lt;/li&gt;
+  &lt;li&gt;forums and communities&lt;/li&gt;
+  &lt;li&gt;competitors' own sites&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The labels decide the remedy. A listing gap is closed with a complete, current profile. A roundup gap is an editorial pitch. A practitioner-guide gap is closed by writing the better answer yourself and by giving the writers of those guides a reason to cite you. A competitor's own page that keeps getting cited is a content benchmark: read it and work out what it answers that your page doesn't.&lt;/p&gt;
+
+&lt;h2&gt;Mark the gaps and rank them&lt;/h2&gt;
+&lt;p&gt;For each source, record which names it mentions. A source that names two of your competitors and not you is a gap. Rank the gaps by how many questions cited the source, then by how reachable it is. A directory you can join this afternoon outranks a national publication that might cover you next year, even though the publication carries more weight.&lt;/p&gt;
+
+&lt;h2&gt;What a real run turned up&lt;/h2&gt;
+&lt;p&gt;In October 2026 I ran sixteen buyer questions about my own services through Claude with web search. On the hiring questions, the names came from marketplace listing pages, an agency directory, and three "best consultants" lists. On a question about recovering from a traffic drop, the answer named four well-known practitioners, and it found them through three recovery guides written by other people, none of them the practitioners' own pages. On the how-to questions, vendor blogs outnumbered practitioners' guides.&lt;/p&gt;
+&lt;p&gt;My own gaps were plain. I was absent from the roundups that supplied the hiring names, and none of my guides was among the sources cited for the how-to questions. The answers that did name me rested almost entirely on pages I wrote, and the assistant said so. That sets the work: listings and roundups first, because they are reachable, and third-party coverage over the following months.&lt;/p&gt;
+
+&lt;h2&gt;Closing a gap without buying your way in&lt;/h2&gt;
+&lt;p&gt;Some roundups sell placement. A paid inclusion is an endorsement relationship, and the FTC's Endorsement Guides require a clear disclosure of any material connection between an advertiser and the person recommending it. An undisclosed paid placement is a legal problem before it is an SEO one, and a ranked list that discloses payment carries little weight with readers or with AI systems that read the disclosure. Pitch the editors on evidence instead: a specific result, a public case study, a quote they can use. I wrote separately about why &lt;a href="https://gerriscorp.com/guides/self-ranking-lists/"&gt;ranking yourself first in your own list&lt;/a&gt; stopped working.&lt;/p&gt;
+
+&lt;h2&gt;Rerun it and watch the list move&lt;/h2&gt;
+&lt;p&gt;Run the same questions monthly. A gap is closed when the source names you and the answers start to cite it beside your name. Sources drop out of the answers on their own as the assistants find newer pages, so pull the list fresh each month. Pair this with a log of identifiable referral visits, as described in my guide to &lt;a href="https://gerriscorp.com/guides/measure-ai-search/"&gt;measuring AI search&lt;/a&gt;, so the report shows outcomes as well as presence.&lt;/p&gt;
+
+&lt;h2&gt;Where I fit&lt;/h2&gt;
+&lt;p&gt;I run citation gap analyses for companies and as a specialist on agency teams: the question set, the source collection, the ranked gap list, and the pitches or pages that close each gap. If you want to know which sources are speaking for your competitors, &lt;a href="https://gerriscorp.com/contact/"&gt;tell me your market and three competitors&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/ai-features"&gt;Google Search Central: AI features and your website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.openai.com/api/docs/guides/tools-web-search"&gt;OpenAI: Web search tool guide (citations and the full sources list)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/"&gt;Microsoft Bing: AI visibility insights in Bing Webmaster Tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255"&gt;FTC: Guides Concerning the Use of Endorsements and Testimonials in Advertising (16 CFR Part 255)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
   <entry>
     <title>How to add SEO regression tests to your website's build</title>
     <link href="https://gerriscorp.com/guides/seo-build-checks/"/>
