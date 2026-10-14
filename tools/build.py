@@ -284,7 +284,7 @@ PERSON = {
                       "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"},
     "knowsAbout": KNOWS,
     "email": EMAIL, "telephone": "+1-202-352-5051",
-    "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/",
+    "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/", "https://mastodon.social/@chrisa",
                "https://adage.com/author/chris-abraham/1797"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
@@ -428,6 +428,7 @@ GA = f"""
 
 # Chrome prefetches a same-site page when a reader hovers or starts to tap its link,
 # so the next page opens at once. Markdown, text, and XML files are left alone.
+RELME = '\n<link rel="me" href="https://mastodon.social/@chrisa">'  # Mastodon profile verification
 SPECULATION = """
 <script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>"""
 
@@ -483,7 +484,7 @@ def render(p):
 <link rel="alternate" type="application/atom+xml" title="Gerris guides" href="{r}feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{r}llms.txt">
 <link rel="sitemap" type="application/xml" href="{r}sitemap.xml">
-<meta name="theme-color" content="#ffffff">{GA}{SPECULATION}
+<meta name="theme-color" content="#ffffff">{GA}{SPECULATION}{RELME}
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{og_type}">
