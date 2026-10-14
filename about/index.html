@@ -18,7 +18,6 @@
 <link rel="alternate" type="text/plain" title="llms.txt" href="../llms.txt">
 <link rel="sitemap" type="application/xml" href="../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,7 +25,23 @@
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
   gtag('js', new Date());
   gtag('config', 'G-JF2W6ESJZN');
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
 </script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
@@ -650,7 +665,7 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../"><img src="../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
   <div>
     <a class="brand" href="../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
@@ -675,15 +690,15 @@ dd { margin: .2rem 0 0 0; }
 <h2>At a glance</h2>
 <table>
 <tbody>
-<tr><th>Business</th><td>Gerris Corp, founded in 2012</td></tr>
-<tr><th>Principal</th><td>Chris Abraham (also Christopher Abraham)</td></tr>
-<tr><th>Location</th><td>South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC</td></tr>
-<tr><th>Clients</th><td>Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand</td></tr>
-<tr><th>Focus</th><td>Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility</td></tr>
-<tr><th>Upwork</th><td>Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026)</td></tr>
-<tr><th>Working online since</th><td>Building websites since 1994; in digital marketing since 2002</td></tr>
-<tr><th>Education</th><td>BA in American Literature, The George Washington University</td></tr>
-<tr><th>Contact</th><td><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a></td></tr>
+<tr><th scope="row">Business</th><td>Gerris Corp, founded in 2012</td></tr>
+<tr><th scope="row">Principal</th><td>Chris Abraham (also Christopher Abraham)</td></tr>
+<tr><th scope="row">Location</th><td>South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC</td></tr>
+<tr><th scope="row">Clients</th><td>Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand</td></tr>
+<tr><th scope="row">Focus</th><td>Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility</td></tr>
+<tr><th scope="row">Upwork</th><td>Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026)</td></tr>
+<tr><th scope="row">Working online since</th><td>Building websites since 1994; in digital marketing since 2002</td></tr>
+<tr><th scope="row">Education</th><td>BA in American Literature, The George Washington University</td></tr>
+<tr><th scope="row">Contact</th><td><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a></td></tr>
 </tbody>
 </table>
 
@@ -725,7 +740,7 @@ dd { margin: .2rem 0 0 0; }
 
 <h2>The name</h2>
 <p><em>Gerris lacustris</em> is the common water strider, the insect that skates across the surface of ponds. Why I chose it, and the story of the logo Oliver Uberti drew for it, are in the <a href="../colophon/">colophon</a>.</p>
-<p class="updated">Updated October 5, 2026</p>
+<p class="updated">Updated <time datetime="2026-10-05">October 5, 2026</time></p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>

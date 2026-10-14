@@ -14,7 +14,7 @@
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.</description>
     <content:encoded>&lt;h1&gt;How to add SEO regression tests to your website's build&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Most SEO damage on a coded website arrives in an ordinary pull request. Someone refactors a layout, and the canonical tag disappears from 4,000 pages. A content import runs, and every description is blank. Nobody notices for a month, because nobody was looking. A short set of automated checks, run on every build, looks every time. Here is what to test and how to wire it in.&lt;/p&gt;
 
 &lt;h2&gt;Where the checks run&lt;/h2&gt;
@@ -114,7 +114,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>A safe setup for letting an SEO consultant into your GitHub or GitLab repository: one repo, the Read role first, reviewed pull requests, and no secrets.</description>
     <content:encoded>&lt;h1&gt;How to give an outside SEO safe access to your code repository&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;On a site built with Next.js, React, or a headless CMS, the search problems live in the code, so the person fixing them needs to see it. Granting that access is a small, routine job when you set it up in the right order. Here is the order I ask clients to follow, and the reasons behind each step.&lt;/p&gt;
 
 &lt;h2&gt;Why an SEO asks for the repository at all&lt;/h2&gt;
@@ -193,7 +193,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>A Next.js App Router SEO checklist: metadata, canonicals, title templates, streamed metadata, sitemap.ts, robots.ts, 308 redirects, real 404s, and schema.</description>
     <content:encoded>&lt;h1&gt;A Next.js SEO checklist for the App Router&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Next.js gives you everything a search engine needs, as code: metadata, sitemaps, robots rules, redirects, and status codes. Every one of them can also be left at a default that quietly hurts you. This is the list I work through on every Next.js site, in the order I check it.&lt;/p&gt;
 
 &lt;h2&gt;1. Every route sets its own title and description&lt;/h2&gt;
@@ -263,7 +263,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>The tools that carry a website migration safely: crawlers, Search Console, redirect testing, crawl comparison, and analytics, with the job each one does.</description>
     <content:encoded>&lt;h1&gt;The SEO tools for a website migration, and the job each one does&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;No single product migrates a website for you. A migration is a handful of jobs, and each has a tool that does it well: an inventory, a redirect map, a pre-launch comparison, a launch day test, and weeks of watching. Here is the kit I use, matched to the job, with the free options where they exist.&lt;/p&gt;
 
 &lt;h2&gt;Job 1: list every URL that matters&lt;/h2&gt;
@@ -332,7 +332,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>A recovery plan for a website migration that lost search traffic: rebuild the old URL list, test every redirect, compare old and new pages, and fix in order.</description>
     <content:encoded>&lt;h1&gt;Traffic fell after a site migration: how to find what broke and get it back&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;The new site launched, and organic traffic dropped and stayed down. Some dip is normal while Google recrawls. A drop that's still there after a month has a cause, and it's almost always one of a short list. Here is the recovery routine I run, in the order that finds the money fastest.&lt;/p&gt;
 
 &lt;h2&gt;First, separate normal turbulence from real loss&lt;/h2&gt;
@@ -410,7 +410,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>Eight tests for telling a lasting technology shift from a hype cycle, drawn from online communities, blogs, social media, crypto, and the AI wave of 2026.</description>
     <content:encoded>&lt;h1&gt;Hype or real shift? Eight tests for judging a new technology wave&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Every few years a technology arrives that everyone says changes everything. Sometimes it does. I've worked through enough of these waves to have a working method for telling the difference: online communities, blogs, social media, cryptocurrency, and now AI. The tests below are the ones I use with clients who have to decide what to spend on this year, while the noise is loudest.&lt;/p&gt;
 
 &lt;h2&gt;Two ideas worth keeping in your pocket&lt;/h2&gt;
@@ -468,7 +468,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>What React error 418 and other hydration mismatches are, why Google usually still indexes the page, what they cost in speed and analytics, and how to find them.</description>
     <content:encoded>&lt;h1&gt;React hydration errors and what they mean for SEO&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;If your browser console on a React or Next.js site shows "Minified React error #418," the page has a hydration error. It rarely stops Google from indexing the content, so it's easy to leave alone. It still costs you layout stability, responsiveness, and trustworthy analytics, and it usually points at a markup fault worth fixing at the source.&lt;/p&gt;
 
 &lt;h2&gt;What hydration is&lt;/h2&gt;
@@ -540,7 +540,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>A founder's method for hiring web developers: own the accounts first, interview for judgment, pay for a trial task, review pull requests, and manage AI use.</description>
     <content:encoded>&lt;h1&gt;How to hire and manage developers when you can't read code yourself&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Founders and marketing leads hire developers all the time without being able to judge the work. They pick the most confident interview, hope for the best, and find out six months later what they bought. There's a better way, and none of it requires learning to program. It requires owning the right accounts, asking questions that reveal judgment, and putting every change somewhere you can see it.&lt;/p&gt;
 
 &lt;h2&gt;Own the accounts before you hire anyone&lt;/h2&gt;
@@ -607,7 +607,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>A claim by claim method for checking polished AI answers about SEO, using a real exchange about brand names in page titles and what the evidence supports.</description>
     <content:encoded>&lt;h1&gt;How to fact check a confident AI answer about SEO before you act on it&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;I asked an AI search assistant whether ending every page title with a pipe and the company name hurts a website. The answer came back polished, cited, and full of percentages. When I pushed my own opinion back at it, it declared that opinion “100% true” and invented psychology to support it. The recommendation itself was reasonable. A good share of the evidence was not. This is the routine I use to separate the two before anything reaches a client's site.&lt;/p&gt;
 
 &lt;h2&gt;Turn the answer into a list of claims&lt;/h2&gt;
@@ -617,7 +617,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Grade every claim by where it comes from&lt;/h2&gt;
 &lt;p&gt;Each line goes into one of four bins: the platform's own documentation, an independent study with a published method, a vendor test, or nothing traceable. Here is how this exchange graded out.&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Claim&lt;/th&gt;&lt;th&gt;What I found&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Claim&lt;/th&gt;&lt;th scope="col"&gt;What I found&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;&lt;td&gt;Titles are cut off at about 60 characters&lt;/td&gt;&lt;td&gt;Google's documentation sets no maximum length and says the displayed title is shortened to fit the device. Sixty characters is an industry habit, not a Google limit.&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;Google rewrites over 75 percent of titles&lt;/td&gt;&lt;td&gt;I could not trace that figure to a primary dataset about pipes or brand names. The best documented study I found, by Zyppy, measured 61.6 percent of 80,959 titles on 2,370 sites, using desktop results from early 2022. Titles longer than 70 characters were rewritten 99.9 percent of the time.&lt;/td&gt;&lt;/tr&gt;
@@ -663,7 +663,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>A recovery plan for a small business whose email lands in spam or bounces: find the listing, fix the cause, request removal, and rebuild your reputation.</description>
     <content:encoded>&lt;h1&gt;How to get your email off a blocklist and back into the inbox&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Your invoices are bouncing, or your newsletter vanished into spam, and somebody says you're "blacklisted." Recovery is a procedure anyone can follow: find the actual problem, fix it, ask for removal through the front door, and then send mail people want for long enough that the filters change their minds. Here is the sequence.&lt;/p&gt;
 
 &lt;h2&gt;First, the scam to avoid&lt;/h2&gt;
@@ -749,7 +749,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.</description>
     <content:encoded>&lt;h1&gt;Diagnosing Core Web Vitals with MCP and an AI coding assistant&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.&lt;/p&gt;
 
 &lt;h2&gt;The three numbers you're chasing&lt;/h2&gt;
@@ -827,7 +827,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
     <description>Twelve questions that expose AI washing in a vendor pitch, the SEC and FTC cases that define it, and why a technical skeptic belongs on the sales call.</description>
     <content:encoded>&lt;h1&gt;How to vet an AI vendor's pitch before you sign anything&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 13, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Every software sales deck now has AI on the first slide. Some of those products are remarkable. Some are a thin layer over a model you could rent yourself for a few dollars a month. A few have no meaningful AI at all. Regulators have a name for the last group, AI washing, and they've started bringing cases. These are the questions I ask when a client brings me onto a vendor call, and the answers that tell me which kind of product I'm looking at.&lt;/p&gt;
 
 &lt;h2&gt;What AI washing looks like on the record&lt;/h2&gt;
@@ -884,7 +884,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
     <description>Build an honest AI search report that separates citations, referral visits, and leads using Bing Webmaster Tools, GA4, repeatable checks, and clear limits.</description>
     <content:encoded>&lt;h1&gt;How to measure AI search citations, referrals, and actual leads&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 12, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-12"&gt;October 12, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;An AI answer mentions your business. Someone sends a screenshot. Another person asks whether revenue has increased. Those are three different observations, and a useful report keeps them separate. I would build a small measurement routine around citations, identifiable visits, and business outcomes, with a note explaining what each source can and cannot see.&lt;/p&gt;
 
 &lt;h2&gt;Define the outcome before choosing a dashboard&lt;/h2&gt;
@@ -952,7 +952,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
     <description>Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.</description>
     <content:encoded>&lt;h1&gt;IndexNow, Bing, and a practical AI search workflow for fall 2026&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 12, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-12"&gt;October 12, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A website can publish excellent advice and still have a poor release process. The repository changes, the build finishes, a notification runs, and nobody checks which version reached the public domain. My priority for AI search this fall is making that chain observable. Give each release a clear destination, verify the content there, and keep evidence of what happened afterward.&lt;/p&gt;
 
 &lt;h2&gt;Assign a separate job to each part of the system&lt;/h2&gt;
@@ -1015,7 +1015,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Sun, 11 Oct 2026 12:00:00 +0000</pubDate>
     <description>Repositories plus AI coding assistants turn an SEO from plugin operator into someone who ships fixes. Why SEOs need Git, Claude Code, and Copilot now.</description>
     <content:encoded>&lt;h1&gt;Repositories plus super intelligence: the SEO superpower nobody told you to learn&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 11, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-11"&gt;October 11, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;On September 29, 2026, President Trump signed an executive order replacing "Artificial Intelligence" with "Super Intelligence" across the executive branch. Call it AI, SI, or a very fast intern; for anyone in SEO, the name matters less than what it does when you pair it with the other half of the equation: the code repository. Git plus a capable coding assistant is a real superpower. It takes you far outside the confines of being a Yoast monkey or a Screaming Frog jockey.&lt;/p&gt;
 
 &lt;h2&gt;Half one: the repository&lt;/h2&gt;
@@ -1080,7 +1080,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
     <description>SEO from first principles for absolute beginners: how search works, people first content, E E A T, titles, links, alt text, speed, and accessibility.</description>
     <content:encoded>&lt;h1&gt;SEO 101: a first principles primer for any website&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 9, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-09"&gt;October 9, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Search engine optimization sounds like a dark art. It's mostly common sense, applied carefully. A search engine has one job: send each searcher to the page that best answers the question. Everything in SEO follows from helping it do that job, and from never trying to fool it. This primer works for any website on any platform, from a hand-coded page to a store with ten thousand products.&lt;/p&gt;
 
 &lt;h2&gt;Principle 1: understand the machine&lt;/h2&gt;
@@ -1191,7 +1191,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
     <description>How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.</description>
     <content:encoded>&lt;h1&gt;Ranking yourself first in a "best of" list now backfires in AI answers&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 9, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-09"&gt;October 9, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Ask ChatGPT, Gemini, or Google's AI Mode for the best AI search agency and you get a confident shortlist. Look at where that shortlist comes from and you find something funny: most of the sources are "best agency" lists written by agencies that put themselves first. For about two years that trick worked. In 2026 the search engines, the AI companies, and the data all turned against it at once.&lt;/p&gt;
 
 &lt;h2&gt;How the trick works&lt;/h2&gt;
@@ -1254,7 +1254,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
     <description>Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.</description>
     <content:encoded>&lt;h1&gt;The state of search in 2026: every Google update so far, and the AI shift behind them&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 9, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-09"&gt;October 9, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;2026 has been the busiest year for Google's ranking systems in a long time: two core updates, four spam updates, and a rule change that brings AI Overviews and AI Mode under the spam policies. Here is what happened, in order, from Google's own records, along with what Bing and OpenAI now let site owners see, and what all of it means for anyone who publishes on the web.&lt;/p&gt;
 
 &lt;h2&gt;The 2026 updates, from Google's dashboard&lt;/h2&gt;
@@ -1332,7 +1332,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.</description>
     <content:encoded>&lt;h1&gt;Cloudflare settings that help or hurt SEO and AI crawlers&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026 · Updated October 9, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-09"&gt;October 9, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Cloudflare sits in front of millions of websites, and a handful of its switches decide whether search engines and AI assistants can read yours. I set it up for clients often, and I audit it every time a site's crawling looks strange. These are the settings I check first.&lt;/p&gt;
 
 &lt;h2&gt;Why I recommend it, and what to budget&lt;/h2&gt;
@@ -1421,7 +1421,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.</description>
     <content:encoded>&lt;h1&gt;Build a podcast website with Claude Code, GitHub Pages, and Cloudflare&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 8, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Claude Code does the typing.&lt;/p&gt;
 
 &lt;h2&gt;What you end up with&lt;/h2&gt;
@@ -1491,7 +1491,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.</description>
     <content:encoded>&lt;h1&gt;Podcast SEO: get every episode found in Google and AI search&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 8, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.&lt;/p&gt;
 
 &lt;h2&gt;Give every episode its own page&lt;/h2&gt;
@@ -1550,7 +1550,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.</description>
     <content:encoded>&lt;h1&gt;Starting a podcast to build your brand: what it really takes&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 8, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A podcast puts a founder's or an expert's actual voice in someone's ears for half an hour, by choice, while they drive or walk the dog. Few marketing channels earn that much attention. I recommend one to every client with something to say, along with a warning: the hard part is showing up, week after week, for a year.&lt;/p&gt;
 
 &lt;h2&gt;What a podcast does for a brand&lt;/h2&gt;
@@ -1617,7 +1617,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>A one afternoon year end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.</description>
     <content:encoded>&lt;h1&gt;The year end SEO check: one afternoon that protects next year&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 7, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-07"&gt;October 7, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;December is quiet for a lot of websites, which makes it the right time to find the problems that pile up unnoticed. None of these checks takes long, and together they catch the small failures that otherwise surface in March as a mystery traffic drop. Block an afternoon, work down the list, and write down what you find.&lt;/p&gt;
 
 &lt;h2&gt;1. Indexing: is Google seeing what you think it is?&lt;/h2&gt;
@@ -1682,7 +1682,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>What happens when a site prunes hundreds of city or area code landing pages: why core pages can drop, how to decide each URL's fate, and how to recover.</description>
     <content:encoded>&lt;h1&gt;Deleting hundreds of location pages: why core rankings fall, and the fix&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 7, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-07"&gt;October 7, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;It's one of the most common stories I hear from service businesses. Years ago someone built a landing page for every city, county, or area code the company serves. Later, someone decided they were thin, or risky, or just embarrassing, and deleted them. Months afterward the important pages, the ones nobody touched, are ranking lower. The deletion may be the cause, a coincidence, or one of several causes, and the only way to know is to look.&lt;/p&gt;
 
 &lt;h2&gt;Why the pages existed, and why removing them can be right&lt;/h2&gt;
@@ -1748,7 +1748,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.</description>
     <content:encoded>&lt;h1&gt;How to diagnose a Google traffic drop in Search Console&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Organic traffic fell and everyone wants an answer by Friday. The answer is almost always findable, and it comes from narrowing the drop down until only one explanation fits. This is the order I work in.&lt;/p&gt;
 
 &lt;h2&gt;1. Confirm the drop is real&lt;/h2&gt;
@@ -1762,7 +1762,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;2. Read clicks, impressions, CTR, and position together&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Pattern&lt;/th&gt;&lt;th&gt;Likely meaning&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Pattern&lt;/th&gt;&lt;th scope="col"&gt;Likely meaning&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;Impressions and clicks both fell, position fell&lt;/td&gt;&lt;td&gt;Rankings dropped: an algorithm update, a technical problem, or stronger competition&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Impressions steady, clicks and CTR fell&lt;/td&gt;&lt;td&gt;The results page changed: an AI Overview, more ads, a new feature above you, or a rewritten title&lt;/td&gt;&lt;/tr&gt;
@@ -1835,7 +1835,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.</description>
     <content:encoded>&lt;h1&gt;Structured data in 2026: which schema markup is worth adding&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Structured data is a machine-readable description of what a page is about: this is a product with this price, this is a business at this address, this article was written by this person. It can earn enhanced listings in Google, and it helps every system that reads the page, including AI assistants, understand the facts without guessing.&lt;/p&gt;
 
 &lt;h2&gt;The format&lt;/h2&gt;
@@ -1922,7 +1922,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>How robots.txt rules are matched, why a Disallow rule still lets pages be indexed, how to handle AI crawlers, and how to test robots.txt changes before launch.</description>
     <content:encoded>&lt;h1&gt;How robots.txt works, and the mistakes that cost traffic&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;robots.txt is a plain text file at the root of a site that tells crawlers which paths they may fetch. It's small, it's public, and a single wrong line in it can take a site out of Google. Here's how it actually behaves.&lt;/p&gt;
 
 &lt;h2&gt;Where it lives and what it covers&lt;/h2&gt;
@@ -2007,7 +2007,7 @@ Allow: /&lt;/pre&gt;
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.</description>
     <content:encoded>&lt;h1&gt;Lynx for website QA: text browser checks before every launch&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Lynx has been around since the early nineties, and it's still one of the most useful tools in my launch kit. Because it ignores styling and never runs JavaScript, it strips a page down to what the server actually sends. Scripted from the command line, it can check every page of a site in minutes, which makes it a natural fit for redesigns, migrations, and release checklists.&lt;/p&gt;
 
 &lt;h2&gt;Getting Lynx&lt;/h2&gt;
@@ -2017,7 +2017,7 @@ Allow: /&lt;/pre&gt;
 
 &lt;h2&gt;Commands worth memorizing&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Command&lt;/th&gt;&lt;th&gt;What it gives you&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Command&lt;/th&gt;&lt;th scope="col"&gt;What it gives you&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;&lt;code&gt;lynx URL&lt;/code&gt;&lt;/td&gt;&lt;td&gt;An interactive text browser. Arrows move, Enter follows a link, &lt;kbd&gt;q&lt;/kbd&gt; quits, and &lt;kbd&gt;\&lt;/kbd&gt; toggles the HTML source.&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;&lt;code&gt;lynx -dump URL&lt;/code&gt;&lt;/td&gt;&lt;td&gt;The rendered text, followed by a numbered list of every link.&lt;/td&gt;&lt;/tr&gt;
@@ -2090,7 +2090,7 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.</description>
     <content:encoded>&lt;h1&gt;hreflang for English-language sites serving the US, UK, Canada, and Australia&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A business that sells in several English-speaking countries often ends up with near-identical pages for each one. hreflang tells Google which version belongs to which audience, so a shopper in Leeds sees prices in pounds and a shopper in Toronto sees Canadian dollars. Written wrong, it does nothing at all.&lt;/p&gt;
 
 &lt;h2&gt;Do you need it?&lt;/h2&gt;
@@ -2106,7 +2106,7 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
 &lt;h2&gt;The codes&lt;/h2&gt;
 &lt;p&gt;Each value is an ISO 639-1 language code, optionally followed by an ISO 3166-1 country code:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Audience&lt;/th&gt;&lt;th&gt;Code&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Audience&lt;/th&gt;&lt;th scope="col"&gt;Code&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;United States&lt;/td&gt;&lt;td&gt;&lt;code&gt;en-US&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;United Kingdom&lt;/td&gt;&lt;td&gt;&lt;code&gt;en-GB&lt;/code&gt; (never en-UK, which isn't a valid code)&lt;/td&gt;&lt;/tr&gt;
@@ -2177,12 +2177,12 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.</description>
     <content:encoded>&lt;h1&gt;Google Consent Mode v2 for GA4: a practical setup guide&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Consent Mode is how Google's tags learn whether a visitor agreed to cookies, and how they behave when the answer is no. Set up well, it keeps analytics honest and the site compliant. Set up badly, it either drops most of your data or quietly ignores the visitor's choice.&lt;/p&gt;
 
 &lt;h2&gt;The four signals&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Signal&lt;/th&gt;&lt;th&gt;Controls&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Signal&lt;/th&gt;&lt;th scope="col"&gt;Controls&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;&lt;code&gt;analytics_storage&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Cookies for analytics, such as GA4's visitor identifier&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;&lt;code&gt;ad_storage&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Cookies for advertising, such as conversion and remarketing cookies&lt;/td&gt;&lt;/tr&gt;
@@ -2260,7 +2260,7 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>How product filters create millions of crawlable URLs, when crawl budget becomes a real problem, and how to decide which filter pages deserve to be indexed.</description>
     <content:encoded>&lt;h1&gt;Faceted navigation SEO: filters, parameters, and crawl budget&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Filters are how shoppers narrow a catalog: size, color, brand, price, rating. Every combination can become its own URL, and a store with a few thousand products can produce millions of them. Google spends its time crawling those combinations instead of the pages that sell.&lt;/p&gt;
 
 &lt;h2&gt;How the problem grows&lt;/h2&gt;
@@ -2332,7 +2332,7 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.</description>
     <content:encoded>&lt;h1&gt;Why business email lands in spam, and how to find the cause&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Invoices disappear, proposals land in junk folders, and customers say they never got the reset link. Deliverability failures look random from the outside. They have specific causes, and the evidence for each one is sitting in the message headers and a few free tools.&lt;/p&gt;
 
 &lt;h2&gt;Start with one message's headers&lt;/h2&gt;
@@ -2398,12 +2398,12 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>What Google measures with Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, how to read field data, and the fixes for each one.</description>
     <content:encoded>&lt;h1&gt;Core Web Vitals explained: LCP, INP, CLS, and the fixes that work&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Core Web Vitals are three measurements of how a page feels to real visitors: how fast the main content appears, how quickly the page responds, and how much it jumps around. Google uses them in ranking as part of page experience. They matter more to visitors than to rankings, and that alone makes them worth fixing.&lt;/p&gt;
 
 &lt;h2&gt;The three measurements&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Metric&lt;/th&gt;&lt;th&gt;What it measures&lt;/th&gt;&lt;th&gt;Good&lt;/th&gt;&lt;th&gt;Poor&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Metric&lt;/th&gt;&lt;th scope="col"&gt;What it measures&lt;/th&gt;&lt;th scope="col"&gt;Good&lt;/th&gt;&lt;th scope="col"&gt;Poor&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;LCP, Largest Contentful Paint&lt;/td&gt;&lt;td&gt;Time until the biggest image or text block in view finishes rendering&lt;/td&gt;&lt;td&gt;2.5 seconds or less&lt;/td&gt;&lt;td&gt;Over 4 seconds&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;INP, Interaction to Next Paint&lt;/td&gt;&lt;td&gt;Delay between a tap, click, or key press and the screen visibly responding, across the whole visit&lt;/td&gt;&lt;td&gt;200 milliseconds or less&lt;/td&gt;&lt;td&gt;Over 500 milliseconds&lt;/td&gt;&lt;/tr&gt;
@@ -2477,7 +2477,7 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.</description>
     <content:encoded>&lt;h1&gt;Canonical tags: how Google chooses which URL to index&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Most sites publish the same content at more than one address: with and without tracking parameters, sorted and filtered, printed, paginated, or copied across domains. Google picks one address from each group to show in results. The canonical tag is how you tell Google which one you prefer.&lt;/p&gt;
 
 &lt;h2&gt;What the tag does&lt;/h2&gt;
@@ -2548,7 +2548,7 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.</description>
     <content:encoded>&lt;h1&gt;How to use AI coding assistants on a business website safely&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.&lt;/p&gt;
 
 &lt;h2&gt;Start with a written spec&lt;/h2&gt;
@@ -2615,7 +2615,7 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>What the ADA expects of business websites, the six fixes that cover most of the risk, what to skip, and why the same work improves search, AI answers, trust.</description>
     <content:encoded>&lt;h1&gt;ADA website compliance for businesses: lower risk, better SEO&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Making a website accessible is the right thing to do, and it's also cheap insurance. Most of the legal exposure comes from a short list of common, fixable failures. Fix those, document what you did, and you'll also get a faster, clearer, better-ranking site that AI assistants understand. No badges, no widgets, and no press release required.&lt;/p&gt;
 &lt;p&gt;A note before the details: this is a practitioner's guide, not legal advice. If you've received a demand letter, call a lawyer first.&lt;/p&gt;
 
@@ -2626,7 +2626,7 @@ gtag('consent', 'default', {
 &lt;h2&gt;Where the risk actually comes from&lt;/h2&gt;
 &lt;p&gt;Demand letters and lawsuits tend to cite problems anyone can detect with a free automated scan, because that's how many of them are found. WebAIM's 2026 survey of the top million home pages found detectable failures on 95.9% of them, and six kinds of errors accounted for 96% of everything detected:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Failure&lt;/th&gt;&lt;th&gt;Share of home pages&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Failure&lt;/th&gt;&lt;th scope="col"&gt;Share of home pages&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;Low contrast text&lt;/td&gt;&lt;td&gt;83.9%&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Missing image alt text&lt;/td&gt;&lt;td&gt;53.1%&lt;/td&gt;&lt;/tr&gt;
@@ -2696,12 +2696,12 @@ gtag('consent', 'default', {
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>Which redirect to use, how to map old URLs to new ones, where to implement redirects on common platforms, how to test them, and how long to keep them live.</description>
     <content:encoded>&lt;h1&gt;How to plan 301 redirects that keep your rankings and links&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 6, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A redirect tells browsers and search engines that a page has moved. Done well, it carries the old page's links, bookmarks, and search history to the new address. Done badly, it quietly throws all of that away. Here's how I plan them.&lt;/p&gt;
 
 &lt;h2&gt;Which redirect to use&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Meaning&lt;/th&gt;&lt;th&gt;Use it for&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Type&lt;/th&gt;&lt;th scope="col"&gt;Meaning&lt;/th&gt;&lt;th scope="col"&gt;Use it for&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;301&lt;/td&gt;&lt;td&gt;Moved permanently&lt;/td&gt;&lt;td&gt;Almost every move: renamed pages, merged pages, domain changes, HTTP to HTTPS&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;308&lt;/td&gt;&lt;td&gt;Moved permanently, and the request method stays the same&lt;/td&gt;&lt;td&gt;The same jobs as a 301; some servers and APIs prefer it&lt;/td&gt;&lt;/tr&gt;
@@ -2778,7 +2778,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.</description>
     <content:encoded>&lt;h1&gt;How to remove your personal information from data brokers and search&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Your home address, phone numbers, relatives, and age are probably for sale on dozens of people-search sites. Removing them is tedious and never permanent, and it's still worth doing, especially for executives, public figures, and anyone with a reason to be careful.&lt;/p&gt;
 
 &lt;h2&gt;Where the information comes from&lt;/h2&gt;
@@ -2846,7 +2846,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.</description>
     <content:encoded>&lt;h1&gt;The website migration SEO checklist&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Migrations lose traffic for predictable reasons: URLs that weren't mapped, redirects that weren't tested, templates that changed what crawlers see, and nobody watching afterward. This checklist covers each stage.&lt;/p&gt;
 
 &lt;h2&gt;Before you start&lt;/h2&gt;
@@ -2940,7 +2940,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.</description>
     <content:encoded>&lt;h1&gt;How to tell if JavaScript is hiding your content from Google and AI&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A page can look complete in a browser and nearly empty to a crawler. When the important content depends on JavaScript, search engines may see less of it, later, and AI crawlers may not see it at all.&lt;/p&gt;
 
 &lt;h2&gt;How crawlers handle JavaScript&lt;/h2&gt;
@@ -3007,7 +3007,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.</description>
     <content:encoded>&lt;h1&gt;Glossary of SEO, AI search, and technical website terms&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Plain definitions of the terms that come up in my work, written so each one makes sense on its own.&lt;/p&gt;
 
 &lt;dl class="glossary"&gt;
@@ -3118,7 +3118,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.</description>
     <content:encoded>&lt;h1&gt;SPF, DKIM, and DMARC for every domain that sends email&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Three DNS records decide whether mail from your domain is trusted. Since 2024, the largest mailbox providers require them, and mail without them increasingly lands in spam or bounces.&lt;/p&gt;
 
 &lt;h2&gt;The current requirements&lt;/h2&gt;
@@ -3203,7 +3203,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.</description>
     <content:encoded>&lt;h1&gt;"Crawled, currently not indexed": what it means and how to fix it&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Google visited the page, read it, and decided not to put it in the index, at least for now. It's the most misunderstood status in Search Console, and the fix depends entirely on why Google made that call.&lt;/p&gt;
 
 &lt;h2&gt;Where you see it&lt;/h2&gt;
@@ -3270,7 +3270,7 @@ gtag('consent', 'default', {
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.</description>
     <content:encoded>&lt;h1&gt;How AI assistants decide what to say about your business&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published October 5, 2026&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;When someone asks ChatGPT, Claude, Gemini, Perplexity, or Google's AI Overviews about your company, the answer comes from two places: what the model learned in training, and what it finds by searching the web right then. You can influence both, and the second is where most of the action is.&lt;/p&gt;
 
 &lt;h2&gt;Two sources of knowledge&lt;/h2&gt;
@@ -3292,7 +3292,7 @@ gtag('consent', 'default', {
 
 &lt;h2&gt;The crawlers, and what each one is for&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Company&lt;/th&gt;&lt;th&gt;Training&lt;/th&gt;&lt;th&gt;Search index&lt;/th&gt;&lt;th&gt;Fetches for a user&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Company&lt;/th&gt;&lt;th scope="col"&gt;Training&lt;/th&gt;&lt;th scope="col"&gt;Search index&lt;/th&gt;&lt;th scope="col"&gt;Fetches for a user&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;OpenAI&lt;/td&gt;&lt;td&gt;GPTBot&lt;/td&gt;&lt;td&gt;OAI-SearchBot&lt;/td&gt;&lt;td&gt;ChatGPT-User&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Anthropic&lt;/td&gt;&lt;td&gt;ClaudeBot&lt;/td&gt;&lt;td&gt;Claude-SearchBot&lt;/td&gt;&lt;td&gt;Claude-User&lt;/td&gt;&lt;/tr&gt;

@@ -18,7 +18,6 @@
 <link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
 <link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,7 +25,23 @@
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
   gtag('js', new Date());
   gtag('config', 'G-JF2W6ESJZN');
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
 </script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -722,7 +737,7 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
   <div>
     <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
@@ -742,12 +757,12 @@ dd { margin: .2rem 0 0 0; }
 <p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › 301 Redirects</p>
 <main id="main">
 <h1>How to plan 301 redirects that keep your rankings and links</h1>
-<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">A redirect tells browsers and search engines that a page has moved. Done well, it carries the old page's links, bookmarks, and search history to the new address. Done badly, it quietly throws all of that away. Here's how I plan them.</p>
 
 <h2>Which redirect to use</h2>
 <table>
-<thead><tr><th>Type</th><th>Meaning</th><th>Use it for</th></tr></thead>
+<thead><tr><th scope="col">Type</th><th scope="col">Meaning</th><th scope="col">Use it for</th></tr></thead>
 <tbody>
 <tr><td>301</td><td>Moved permanently</td><td>Almost every move: renamed pages, merged pages, domain changes, HTTP to HTTPS</td></tr>
 <tr><td>308</td><td>Moved permanently, and the request method stays the same</td><td>The same jobs as a 301; some servers and APIs prefer it</td></tr>

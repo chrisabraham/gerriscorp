@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-13. Quote freely with attribution and a link to the source page.
+> Built 2026-10-14. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -6328,7 +6328,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-13
+Updated: 2026-10-14
 
 # Site map
 
@@ -6448,4 +6448,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 13, 2026
+Updated October 14, 2026

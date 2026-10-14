@@ -368,8 +368,8 @@ def body_html(p):
     r = p["root"] or "./"
     body = p["body"].replace("{root}", r)
     if p["kind"] == "guide":
-        by = (f'<p class="byline">By <a href="{r}about/">Chris Abraham</a> · Published {nice(p.get("published", p["updated"]))}'
-              + (f' · Updated {nice(p["updated"])}' if p.get("published", p["updated"]) != p["updated"] else "") + "</p>")
+        by = (f'<p class="byline">By <a href="{r}about/">Chris Abraham</a> · Published <time datetime="{p.get("published", p["updated"])}">{nice(p.get("published", p["updated"]))}</time>'
+              + (f' · Updated <time datetime="{p["updated"]}">{nice(p["updated"])}</time>' if p.get("published", p["updated"]) != p["updated"] else "") + "</p>")
         body = re.sub(r"(</h1>)", r"\1\n" + by, body, count=1)
     if p["kind"] == "guide":
         body += f"""
@@ -389,8 +389,10 @@ def body_html(p):
   <p>Written by <a href="{r}about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="{r}standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
 </aside>"""
     if p["kind"] != "guide":
-        body += f'\n<p class="updated">Updated {nice(p["updated"])}</p>'
-    return body
+        body += f'\n<p class="updated">Updated <time datetime="{p["updated"]}">{nice(p["updated"])}</time></p>'
+    # Header cells announce their row or column to screen readers.
+    body = re.sub(r"<thead>(.*?)</thead>", lambda m: m.group(0).replace("<th>", '<th scope="col">'), body, flags=re.S)
+    return body.replace("<th>", '<th scope="row">')
 
 
 # Google Analytics 4. Consent mode: ads storage denied everywhere; analytics storage
@@ -399,7 +401,6 @@ GA_ID = "G-JF2W6ESJZN"
 _EEA_UK = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU",
            "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]
 GA = f"""
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
@@ -407,7 +408,27 @@ GA = f"""
   gtag('consent', 'default', {{analytics_storage: 'denied', region: {json.dumps(_EEA_UK)}}});
   gtag('js', new Date());
   gtag('config', '{GA_ID}');
+  (function () {{
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {{
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id={GA_ID}';
+      document.head.appendChild(s);
+    }}
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) {{ addEventListener(e, load, {{once: true, passive: true}}); }});
+    addEventListener('load', function () {{ setTimeout(load, 4000); }});
+  }})();
 </script>""" if LIVE else ""
+
+# Chrome prefetches a same-site page when a reader hovers or starts to tap its link,
+# so the next page opens at once. Markdown, text, and XML files are left alone.
+SPECULATION = """
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>"""
 
 
 # Meta keywords: ignored by Google since 2009 and kept here for old time's sake.
@@ -461,7 +482,7 @@ def render(p):
 <link rel="alternate" type="application/atom+xml" title="Gerris guides" href="{r}feed.xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{r}llms.txt">
 <link rel="sitemap" type="application/xml" href="{r}sitemap.xml">
-<meta name="theme-color" content="#ffffff">{GA}
+<meta name="theme-color" content="#ffffff">{GA}{SPECULATION}
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{og_type}">
@@ -487,7 +508,7 @@ def render(p):
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="{home}"><img src="{r}logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="{home}"><img src="{r}logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
   <div>
     <a class="brand" href="{home}">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
@@ -706,6 +727,15 @@ User-agent: Amazonbot
 User-agent: DuckAssistBot
 User-agent: MistralAI-User
 User-agent: CCBot
+User-agent: GoogleOther
+User-agent: Google-CloudVertexBot
+User-agent: Google-Agent
+User-agent: Google-GeminiNotebook
+User-agent: meta-webindexer
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: Amzn-SearchBot
+User-agent: Amzn-User
 Allow: /
 
 Sitemap: https://gerriscorp.com/sitemap.xml

@@ -18,7 +18,6 @@
 <link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
 <link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,7 +25,23 @@
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
   gtag('js', new Date());
   gtag('config', 'G-JF2W6ESJZN');
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
 </script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -692,7 +707,7 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
   <div>
     <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
@@ -712,12 +727,12 @@ dd { margin: .2rem 0 0 0; }
 <p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Core Web Vitals</p>
 <main id="main">
 <h1>Core Web Vitals explained: LCP, INP, CLS, and the fixes that work</h1>
-<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Core Web Vitals are three measurements of how a page feels to real visitors: how fast the main content appears, how quickly the page responds, and how much it jumps around. Google uses them in ranking as part of page experience. They matter more to visitors than to rankings, and that alone makes them worth fixing.</p>
 
 <h2>The three measurements</h2>
 <table>
-<thead><tr><th>Metric</th><th>What it measures</th><th>Good</th><th>Poor</th></tr></thead>
+<thead><tr><th scope="col">Metric</th><th scope="col">What it measures</th><th scope="col">Good</th><th scope="col">Poor</th></tr></thead>
 <tbody>
 <tr><td>LCP, Largest Contentful Paint</td><td>Time until the biggest image or text block in view finishes rendering</td><td>2.5 seconds or less</td><td>Over 4 seconds</td></tr>
 <tr><td>INP, Interaction to Next Paint</td><td>Delay between a tap, click, or key press and the screen visibly responding, across the whole visit</td><td>200 milliseconds or less</td><td>Over 500 milliseconds</td></tr>

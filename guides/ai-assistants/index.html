@@ -18,7 +18,6 @@
 <link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
 <link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,7 +25,23 @@
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
   gtag('js', new Date());
   gtag('config', 'G-JF2W6ESJZN');
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
 </script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -697,7 +712,7 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
   <div>
     <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
@@ -717,7 +732,7 @@ dd { margin: .2rem 0 0 0; }
 <p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › AI Assistants</p>
 <main id="main">
 <h1>How AI assistants decide what to say about your business</h1>
-<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 5, 2026</p>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-05">October 5, 2026</time></p>
 <p class="lead">When someone asks ChatGPT, Claude, Gemini, Perplexity, or Google's AI Overviews about your company, the answer comes from two places: what the model learned in training, and what it finds by searching the web right then. You can influence both, and the second is where most of the action is.</p>
 
 <h2>Two sources of knowledge</h2>
@@ -739,7 +754,7 @@ dd { margin: .2rem 0 0 0; }
 
 <h2>The crawlers, and what each one is for</h2>
 <table>
-<thead><tr><th>Company</th><th>Training</th><th>Search index</th><th>Fetches for a user</th></tr></thead>
+<thead><tr><th scope="col">Company</th><th scope="col">Training</th><th scope="col">Search index</th><th scope="col">Fetches for a user</th></tr></thead>
 <tbody>
 <tr><td>OpenAI</td><td>GPTBot</td><td>OAI-SearchBot</td><td>ChatGPT-User</td></tr>
 <tr><td>Anthropic</td><td>ClaudeBot</td><td>Claude-SearchBot</td><td>Claude-User</td></tr>

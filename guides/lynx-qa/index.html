@@ -18,7 +18,6 @@
 <link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
 <link rel="sitemap" type="application/xml" href="../../sitemap.xml">
 <meta name="theme-color" content="#ffffff">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,7 +25,23 @@
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
   gtag('js', new Date());
   gtag('config', 'G-JF2W6ESJZN');
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JF2W6ESJZN';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
 </script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -708,7 +723,7 @@ dd { margin: .2rem 0 0 0; }
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home"></a>
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
   <div>
     <a class="brand" href="../../">Gerris</a>
     <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
@@ -728,7 +743,7 @@ dd { margin: .2rem 0 0 0; }
 <p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Lynx for Website QA</p>
 <main id="main">
 <h1>Lynx for website QA: text browser checks before every launch</h1>
-<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published October 6, 2026</p>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Lynx has been around since the early nineties, and it's still one of the most useful tools in my launch kit. Because it ignores styling and never runs JavaScript, it strips a page down to what the server actually sends. Scripted from the command line, it can check every page of a site in minutes, which makes it a natural fit for redesigns, migrations, and release checklists.</p>
 
 <h2>Getting Lynx</h2>
@@ -738,7 +753,7 @@ dd { margin: .2rem 0 0 0; }
 
 <h2>Commands worth memorizing</h2>
 <table>
-<thead><tr><th>Command</th><th>What it gives you</th></tr></thead>
+<thead><tr><th scope="col">Command</th><th scope="col">What it gives you</th></tr></thead>
 <tbody>
 <tr><td><code>lynx URL</code></td><td>An interactive text browser. Arrows move, Enter follows a link, <kbd>q</kbd> quits, and <kbd>\</kbd> toggles the HTML source.</td></tr>
 <tr><td><code>lynx -dump URL</code></td><td>The rendered text, followed by a numbered list of every link.</td></tr>
