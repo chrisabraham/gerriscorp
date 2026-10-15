@@ -5,8 +5,144 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-14T12:00:00Z</updated>
+  <updated>2026-10-15T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
+  <entry>
+    <title>Glossary of SEO, AI search, and technical website terms</title>
+    <link href="https://gerriscorp.com/guides/glossary/"/>
+    <id>https://gerriscorp.com/guides/glossary/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-15T12:00:00Z</updated>
+    <summary>Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.</summary>
+    <content type="html">&lt;h1&gt;Glossary of SEO, AI search, and technical website terms&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Plain definitions of the terms that come up in my work, written so each one makes sense on its own.&lt;/p&gt;
+
+&lt;dl class="glossary"&gt;
+  &lt;dt id="301-redirect"&gt;301 redirect&lt;/dt&gt;
+  &lt;dd&gt;A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.&lt;/dd&gt;
+  &lt;dt id="acceptance-criteria"&gt;Acceptance criteria&lt;/dt&gt;
+  &lt;dd&gt;The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.&lt;/dd&gt;
+  &lt;dt id="aeo"&gt;AEO (answer engine optimization)&lt;/dt&gt;
+  &lt;dd&gt;Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.&lt;/dd&gt;
+  &lt;dt id="ai-mode"&gt;AI Mode&lt;/dt&gt;
+  &lt;dd&gt;Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.&lt;/dd&gt;
+  &lt;dt id="ai-overviews"&gt;AI Overviews&lt;/dt&gt;
+  &lt;dd&gt;The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.&lt;/dd&gt;
+  &lt;dt id="ai-washing"&gt;AI washing&lt;/dt&gt;
+  &lt;dd&gt;Claiming artificial intelligence a product doesn't really use, or overstating what its AI does. The SEC brought its first AI washing cases in March 2024; see &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;how to vet an AI vendor's pitch&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="alt-text"&gt;Alt text&lt;/dt&gt;
+  &lt;dd&gt;A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.&lt;/dd&gt;
+  &lt;dt id="amaras-law"&gt;Amara's law&lt;/dt&gt;
+  &lt;dd&gt;Roy Amara's observation that people overestimate a technology's effect in the short run and underestimate it in the long run. It's the first test in &lt;a href="https://gerriscorp.com/guides/hype-or-shift/"&gt;hype or real shift&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="bimi"&gt;BIMI&lt;/dt&gt;
+  &lt;dd&gt;Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.&lt;/dd&gt;
+  &lt;dt id="bing-webmaster-tools"&gt;Bing Webmaster Tools&lt;/dt&gt;
+  &lt;dd&gt;Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.&lt;/dd&gt;
+  &lt;dt id="canonical-tag"&gt;Canonical tag&lt;/dt&gt;
+  &lt;dd&gt;A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.&lt;/dd&gt;
+  &lt;dt id="cdn"&gt;CDN (content delivery network)&lt;/dt&gt;
+  &lt;dd&gt;A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.&lt;/dd&gt;
+  &lt;dt id="citation-gap"&gt;Citation gap&lt;/dt&gt;
+  &lt;dd&gt;A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a &lt;a href="https://gerriscorp.com/guides/citation-gap-analysis/"&gt;citation gap analysis&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="cls"&gt;CLS (Cumulative Layout Shift)&lt;/dt&gt;
+  &lt;dd&gt;A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.&lt;/dd&gt;
+  &lt;dt id="content-brief"&gt;Content brief&lt;/dt&gt;
+  &lt;dd&gt;A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See &lt;a href="https://gerriscorp.com/guides/content-briefs/"&gt;writing a content brief&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="core-update"&gt;Core update&lt;/dt&gt;
+  &lt;dd&gt;A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.&lt;/dd&gt;
+  &lt;dt id="core-web-vitals"&gt;Core Web Vitals&lt;/dt&gt;
+  &lt;dd&gt;Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.&lt;/dd&gt;
+  &lt;dt id="crawl-budget"&gt;Crawl budget&lt;/dt&gt;
+  &lt;dd&gt;How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.&lt;/dd&gt;
+  &lt;dt id="crawled-currently-not-indexed"&gt;Crawled, currently not indexed&lt;/dt&gt;
+  &lt;dd&gt;A Google Search Console status meaning Google fetched a page and chose not to index it. See the &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;full guide&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="crawler-hints"&gt;Crawler Hints&lt;/dt&gt;
+  &lt;dd&gt;A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.&lt;/dd&gt;
+  &lt;dt id="discovered-currently-not-indexed"&gt;Discovered, currently not indexed&lt;/dt&gt;
+  &lt;dd&gt;A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.&lt;/dd&gt;
+  &lt;dt id="dkim"&gt;DKIM&lt;/dt&gt;
+  &lt;dd&gt;DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.&lt;/dd&gt;
+  &lt;dt id="dmarc"&gt;DMARC&lt;/dt&gt;
+  &lt;dd&gt;A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.&lt;/dd&gt;
+  &lt;dt id="e-e-a-t"&gt;E-E-A-T&lt;/dt&gt;
+  &lt;dd&gt;Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.&lt;/dd&gt;
+  &lt;dt id="email-blocklist"&gt;Email blocklist&lt;/dt&gt;
+  &lt;dd&gt;A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see &lt;a href="https://gerriscorp.com/guides/email-blocklist-recovery/"&gt;blocklist recovery&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="geo"&gt;GEO (generative engine optimization)&lt;/dt&gt;
+  &lt;dd&gt;Making a business and its content easy for AI systems to find, understand, and cite in generated answers.&lt;/dd&gt;
+  &lt;dt id="git"&gt;Git&lt;/dt&gt;
+  &lt;dd&gt;The version control system almost every software team uses. It records each change to a set of files, who made it, and why, so any version can be restored.&lt;/dd&gt;
+  &lt;dt id="google-search-console"&gt;Google Search Console&lt;/dt&gt;
+  &lt;dd&gt;Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.&lt;/dd&gt;
+  &lt;dt id="hreflang"&gt;hreflang&lt;/dt&gt;
+  &lt;dd&gt;An annotation that tells search engines which language or regional version of a page to show to which users.&lt;/dd&gt;
+  &lt;dt id="hsts"&gt;HSTS (HTTP Strict Transport Security)&lt;/dt&gt;
+  &lt;dd&gt;A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.&lt;/dd&gt;
+  &lt;dt id="hype-cycle"&gt;Hype cycle&lt;/dt&gt;
+  &lt;dd&gt;Gartner's curve for a new technology's reputation: a trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity.&lt;/dd&gt;
+  &lt;dt id="indexnow"&gt;IndexNow&lt;/dt&gt;
+  &lt;dd&gt;An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.&lt;/dd&gt;
+  &lt;dt id="inp"&gt;INP (Interaction to Next Paint)&lt;/dt&gt;
+  &lt;dd&gt;A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.&lt;/dd&gt;
+  &lt;dt id="json-ld"&gt;JSON-LD&lt;/dt&gt;
+  &lt;dd&gt;A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.&lt;/dd&gt;
+  &lt;dt id="lcp"&gt;LCP (Largest Contentful Paint)&lt;/dt&gt;
+  &lt;dd&gt;A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.&lt;/dd&gt;
+  &lt;dt id="llms-txt"&gt;llms.txt&lt;/dt&gt;
+  &lt;dd&gt;A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes &lt;a href="https://gerriscorp.com/llms.txt"&gt;one&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="meta-description"&gt;Meta description&lt;/dt&gt;
+  &lt;dd&gt;A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.&lt;/dd&gt;
+  &lt;dt id="oai-searchbot"&gt;OAI-SearchBot&lt;/dt&gt;
+  &lt;dd&gt;OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.&lt;/dd&gt;
+  &lt;dt id="orange-cloud"&gt;Orange cloud (proxied)&lt;/dt&gt;
+  &lt;dd&gt;A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.&lt;/dd&gt;
+  &lt;dt id="pull-request"&gt;Pull request&lt;/dt&gt;
+  &lt;dd&gt;A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see &lt;a href="https://gerriscorp.com/guides/hiring-developers/"&gt;hiring developers&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="readme"&gt;README&lt;/dt&gt;
+  &lt;dd&gt;The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see &lt;a href="https://gerriscorp.com/guides/readme-ai-source/"&gt;your README is a source AI reads&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="repository"&gt;Repository&lt;/dt&gt;
+  &lt;dd&gt;The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.&lt;/dd&gt;
+  &lt;dt id="robots-txt"&gt;robots.txt&lt;/dt&gt;
+  &lt;dd&gt;A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.&lt;/dd&gt;
+  &lt;dt id="scaled-content-abuse"&gt;Scaled content abuse&lt;/dt&gt;
+  &lt;dd&gt;The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.&lt;/dd&gt;
+  &lt;dt id="schema-org"&gt;Schema.org&lt;/dt&gt;
+  &lt;dd&gt;The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.&lt;/dd&gt;
+  &lt;dt id="server-side-rendering"&gt;Server-side rendering&lt;/dt&gt;
+  &lt;dd&gt;Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.&lt;/dd&gt;
+  &lt;dt id="site-reputation-abuse"&gt;Site reputation abuse&lt;/dt&gt;
+  &lt;dd&gt;Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.&lt;/dd&gt;
+  &lt;dt id="soft-404"&gt;Soft 404&lt;/dt&gt;
+  &lt;dd&gt;A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.&lt;/dd&gt;
+  &lt;dt id="spam-update"&gt;Spam update&lt;/dt&gt;
+  &lt;dd&gt;An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.&lt;/dd&gt;
+  &lt;dt id="speculation-rules"&gt;Speculation rules&lt;/dt&gt;
+  &lt;dd&gt;A JSON block in a script tag that tells Chrome and Edge which links to prefetch or prerender before the reader clicks, so the next page opens at once. See &lt;a href="https://gerriscorp.com/guides/speculation-rules/"&gt;speculation rules&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="spf"&gt;SPF&lt;/dt&gt;
+  &lt;dd&gt;Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.&lt;/dd&gt;
+  &lt;dt id="structured-data"&gt;Structured data&lt;/dt&gt;
+  &lt;dd&gt;Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.&lt;/dd&gt;
+  &lt;dt id="title-tag"&gt;Title tag&lt;/dt&gt;
+  &lt;dd&gt;The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.&lt;/dd&gt;
+  &lt;dt id="ttfb"&gt;TTFB (time to first byte)&lt;/dt&gt;
+  &lt;dd&gt;How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.&lt;/dd&gt;
+  &lt;dt id="xml-sitemap"&gt;XML sitemap&lt;/dt&gt;
+  &lt;dd&gt;A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p class="related"&gt;Want these applied to your site? See &lt;a href="https://gerriscorp.com/services/"&gt;services&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
   <entry>
     <title>What Cloudflare's cache leaves exposed on a WordPress site</title>
     <link href="https://gerriscorp.com/guides/wordpress-behind-cloudflare/"/>
@@ -3323,118 +3459,6 @@ gtag('consent', 'default', {
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics"&gt;Google Search Central: JavaScript SEO basics&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://platform.openai.com/docs/bots"&gt;OpenAI: Overview of OpenAI crawlers&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content>
-  </entry>
-  <entry>
-    <title>Glossary of SEO, AI search, and technical website terms</title>
-    <link href="https://gerriscorp.com/guides/glossary/"/>
-    <id>https://gerriscorp.com/guides/glossary/</id>
-    <published>2026-10-05T12:00:00Z</published>
-    <updated>2026-10-05T12:00:00Z</updated>
-    <summary>Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.</summary>
-    <content type="html">&lt;h1&gt;Glossary of SEO, AI search, and technical website terms&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;Plain definitions of the terms that come up in my work, written so each one makes sense on its own.&lt;/p&gt;
-
-&lt;dl class="glossary"&gt;
-&lt;dt id="301-redirect"&gt;301 redirect&lt;/dt&gt;
-&lt;dd&gt;A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.&lt;/dd&gt;
-&lt;dt id="aeo"&gt;AEO (answer engine optimization)&lt;/dt&gt;
-&lt;dd&gt;Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.&lt;/dd&gt;
-&lt;dt id="ai-mode"&gt;AI Mode&lt;/dt&gt;
-&lt;dd&gt;Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.&lt;/dd&gt;
-&lt;dt id="ai-overviews"&gt;AI Overviews&lt;/dt&gt;
-&lt;dd&gt;The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.&lt;/dd&gt;
-&lt;dt id="alt-text"&gt;Alt text&lt;/dt&gt;
-&lt;dd&gt;A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.&lt;/dd&gt;
-&lt;dt id="bimi"&gt;BIMI&lt;/dt&gt;
-&lt;dd&gt;Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.&lt;/dd&gt;
-&lt;dt id="bing-webmaster-tools"&gt;Bing Webmaster Tools&lt;/dt&gt;
-&lt;dd&gt;Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.&lt;/dd&gt;
-&lt;dt id="canonical-tag"&gt;Canonical tag&lt;/dt&gt;
-&lt;dd&gt;A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.&lt;/dd&gt;
-&lt;dt id="cdn"&gt;CDN (content delivery network)&lt;/dt&gt;
-&lt;dd&gt;A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.&lt;/dd&gt;
-&lt;dt id="core-update"&gt;Core update&lt;/dt&gt;
-&lt;dd&gt;A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.&lt;/dd&gt;
-&lt;dt id="core-web-vitals"&gt;Core Web Vitals&lt;/dt&gt;
-&lt;dd&gt;Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.&lt;/dd&gt;
-&lt;dt id="crawl-budget"&gt;Crawl budget&lt;/dt&gt;
-&lt;dd&gt;How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.&lt;/dd&gt;
-&lt;dt id="crawled-currently-not-indexed"&gt;Crawled, currently not indexed&lt;/dt&gt;
-&lt;dd&gt;A Google Search Console status meaning Google fetched a page and chose not to index it. See the &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;full guide&lt;/a&gt;.&lt;/dd&gt;
-&lt;dt id="crawler-hints"&gt;Crawler Hints&lt;/dt&gt;
-&lt;dd&gt;A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.&lt;/dd&gt;
-&lt;dt id="cls"&gt;CLS (Cumulative Layout Shift)&lt;/dt&gt;
-&lt;dd&gt;A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.&lt;/dd&gt;
-&lt;dt id="discovered-currently-not-indexed"&gt;Discovered, currently not indexed&lt;/dt&gt;
-&lt;dd&gt;A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.&lt;/dd&gt;
-&lt;dt id="dkim"&gt;DKIM&lt;/dt&gt;
-&lt;dd&gt;DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.&lt;/dd&gt;
-&lt;dt id="dmarc"&gt;DMARC&lt;/dt&gt;
-&lt;dd&gt;A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.&lt;/dd&gt;
-&lt;dt id="e-e-a-t"&gt;E-E-A-T&lt;/dt&gt;
-&lt;dd&gt;Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.&lt;/dd&gt;
-&lt;dt id="geo"&gt;GEO (generative engine optimization)&lt;/dt&gt;
-&lt;dd&gt;Making a business and its content easy for AI systems to find, understand, and cite in generated answers.&lt;/dd&gt;
-&lt;dt id="google-search-console"&gt;Google Search Console&lt;/dt&gt;
-&lt;dd&gt;Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.&lt;/dd&gt;
-&lt;dt id="hreflang"&gt;hreflang&lt;/dt&gt;
-&lt;dd&gt;An annotation that tells search engines which language or regional version of a page to show to which users.&lt;/dd&gt;
-&lt;dt id="hsts"&gt;HSTS (HTTP Strict Transport Security)&lt;/dt&gt;
-&lt;dd&gt;A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.&lt;/dd&gt;
-&lt;dt id="indexnow"&gt;IndexNow&lt;/dt&gt;
-&lt;dd&gt;An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.&lt;/dd&gt;
-&lt;dt id="inp"&gt;INP (Interaction to Next Paint)&lt;/dt&gt;
-&lt;dd&gt;A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.&lt;/dd&gt;
-&lt;dt id="json-ld"&gt;JSON-LD&lt;/dt&gt;
-&lt;dd&gt;A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.&lt;/dd&gt;
-&lt;dt id="lcp"&gt;LCP (Largest Contentful Paint)&lt;/dt&gt;
-&lt;dd&gt;A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.&lt;/dd&gt;
-&lt;dt id="llms-txt"&gt;llms.txt&lt;/dt&gt;
-&lt;dd&gt;A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes &lt;a href="https://gerriscorp.com/llms.txt"&gt;one&lt;/a&gt;.&lt;/dd&gt;
-&lt;dt id="meta-description"&gt;Meta description&lt;/dt&gt;
-&lt;dd&gt;A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.&lt;/dd&gt;
-&lt;dt id="oai-searchbot"&gt;OAI-SearchBot&lt;/dt&gt;
-&lt;dd&gt;OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.&lt;/dd&gt;
-&lt;dt id="orange-cloud"&gt;Orange cloud (proxied)&lt;/dt&gt;
-&lt;dd&gt;A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.&lt;/dd&gt;
-&lt;dt id="robots-txt"&gt;robots.txt&lt;/dt&gt;
-&lt;dd&gt;A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.&lt;/dd&gt;
-&lt;dt id="scaled-content-abuse"&gt;Scaled content abuse&lt;/dt&gt;
-&lt;dd&gt;The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.&lt;/dd&gt;
-&lt;dt id="schema-org"&gt;Schema.org&lt;/dt&gt;
-&lt;dd&gt;The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.&lt;/dd&gt;
-&lt;dt id="server-side-rendering"&gt;Server-side rendering&lt;/dt&gt;
-&lt;dd&gt;Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.&lt;/dd&gt;
-&lt;dt id="site-reputation-abuse"&gt;Site reputation abuse&lt;/dt&gt;
-&lt;dd&gt;Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.&lt;/dd&gt;
-&lt;dt id="soft-404"&gt;Soft 404&lt;/dt&gt;
-&lt;dd&gt;A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.&lt;/dd&gt;
-&lt;dt id="spam-update"&gt;Spam update&lt;/dt&gt;
-&lt;dd&gt;An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.&lt;/dd&gt;
-&lt;dt id="spf"&gt;SPF&lt;/dt&gt;
-&lt;dd&gt;Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.&lt;/dd&gt;
-&lt;dt id="structured-data"&gt;Structured data&lt;/dt&gt;
-&lt;dd&gt;Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.&lt;/dd&gt;
-&lt;dt id="title-tag"&gt;Title tag&lt;/dt&gt;
-&lt;dd&gt;The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.&lt;/dd&gt;
-&lt;dt id="ttfb"&gt;TTFB (time to first byte)&lt;/dt&gt;
-&lt;dd&gt;How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.&lt;/dd&gt;
-&lt;dt id="xml-sitemap"&gt;XML sitemap&lt;/dt&gt;
-&lt;dd&gt;A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p class="related"&gt;Want these applied to your site? See &lt;a href="https://gerriscorp.com/services/"&gt;services&lt;/a&gt;.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
   &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;

@@ -1,7 +1,7 @@
 name: Glossary
 type: guide
 published: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-15
 title: Glossary of SEO, AEO, GEO, and technical website terms
 description: Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 ---
@@ -9,92 +9,116 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
 <p class="lead">Plain definitions of the terms that come up in my work, written so each one makes sense on its own.</p>
 
 <dl class="glossary">
-<dt id="301-redirect">301 redirect</dt>
-<dd>A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.</dd>
-<dt id="aeo">AEO (answer engine optimization)</dt>
-<dd>Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.</dd>
-<dt id="ai-mode">AI Mode</dt>
-<dd>Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.</dd>
-<dt id="ai-overviews">AI Overviews</dt>
-<dd>The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.</dd>
-<dt id="alt-text">Alt text</dt>
-<dd>A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.</dd>
-<dt id="bimi">BIMI</dt>
-<dd>Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.</dd>
-<dt id="bing-webmaster-tools">Bing Webmaster Tools</dt>
-<dd>Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.</dd>
-<dt id="canonical-tag">Canonical tag</dt>
-<dd>A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.</dd>
-<dt id="cdn">CDN (content delivery network)</dt>
-<dd>A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.</dd>
-<dt id="core-update">Core update</dt>
-<dd>A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.</dd>
-<dt id="core-web-vitals">Core Web Vitals</dt>
-<dd>Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.</dd>
-<dt id="crawl-budget">Crawl budget</dt>
-<dd>How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.</dd>
-<dt id="crawled-currently-not-indexed">Crawled, currently not indexed</dt>
-<dd>A Google Search Console status meaning Google fetched a page and chose not to index it. See the <a href="{root}guides/crawled-not-indexed/">full guide</a>.</dd>
-<dt id="crawler-hints">Crawler Hints</dt>
-<dd>A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.</dd>
-<dt id="cls">CLS (Cumulative Layout Shift)</dt>
-<dd>A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.</dd>
-<dt id="discovered-currently-not-indexed">Discovered, currently not indexed</dt>
-<dd>A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.</dd>
-<dt id="dkim">DKIM</dt>
-<dd>DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.</dd>
-<dt id="dmarc">DMARC</dt>
-<dd>A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.</dd>
-<dt id="e-e-a-t">E-E-A-T</dt>
-<dd>Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.</dd>
-<dt id="geo">GEO (generative engine optimization)</dt>
-<dd>Making a business and its content easy for AI systems to find, understand, and cite in generated answers.</dd>
-<dt id="google-search-console">Google Search Console</dt>
-<dd>Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.</dd>
-<dt id="hreflang">hreflang</dt>
-<dd>An annotation that tells search engines which language or regional version of a page to show to which users.</dd>
-<dt id="hsts">HSTS (HTTP Strict Transport Security)</dt>
-<dd>A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.</dd>
-<dt id="indexnow">IndexNow</dt>
-<dd>An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.</dd>
-<dt id="inp">INP (Interaction to Next Paint)</dt>
-<dd>A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.</dd>
-<dt id="json-ld">JSON-LD</dt>
-<dd>A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.</dd>
-<dt id="lcp">LCP (Largest Contentful Paint)</dt>
-<dd>A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.</dd>
-<dt id="llms-txt">llms.txt</dt>
-<dd>A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes <a href="{root}llms.txt">one</a>.</dd>
-<dt id="meta-description">Meta description</dt>
-<dd>A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.</dd>
-<dt id="oai-searchbot">OAI-SearchBot</dt>
-<dd>OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.</dd>
-<dt id="orange-cloud">Orange cloud (proxied)</dt>
-<dd>A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.</dd>
-<dt id="robots-txt">robots.txt</dt>
-<dd>A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.</dd>
-<dt id="scaled-content-abuse">Scaled content abuse</dt>
-<dd>The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.</dd>
-<dt id="schema-org">Schema.org</dt>
-<dd>The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.</dd>
-<dt id="server-side-rendering">Server-side rendering</dt>
-<dd>Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.</dd>
-<dt id="site-reputation-abuse">Site reputation abuse</dt>
-<dd>Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.</dd>
-<dt id="soft-404">Soft 404</dt>
-<dd>A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.</dd>
-<dt id="spam-update">Spam update</dt>
-<dd>An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.</dd>
-<dt id="spf">SPF</dt>
-<dd>Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.</dd>
-<dt id="structured-data">Structured data</dt>
-<dd>Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.</dd>
-<dt id="title-tag">Title tag</dt>
-<dd>The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.</dd>
-<dt id="ttfb">TTFB (time to first byte)</dt>
-<dd>How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.</dd>
-<dt id="xml-sitemap">XML sitemap</dt>
-<dd>A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.</dd>
+  <dt id="301-redirect">301 redirect</dt>
+  <dd>A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.</dd>
+  <dt id="acceptance-criteria">Acceptance criteria</dt>
+  <dd>The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.</dd>
+  <dt id="aeo">AEO (answer engine optimization)</dt>
+  <dd>Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.</dd>
+  <dt id="ai-mode">AI Mode</dt>
+  <dd>Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.</dd>
+  <dt id="ai-overviews">AI Overviews</dt>
+  <dd>The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.</dd>
+  <dt id="ai-washing">AI washing</dt>
+  <dd>Claiming artificial intelligence a product doesn't really use, or overstating what its AI does. The SEC brought its first AI washing cases in March 2024; see <a href="{root}guides/ai-vendor-pitch/">how to vet an AI vendor's pitch</a>.</dd>
+  <dt id="alt-text">Alt text</dt>
+  <dd>A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.</dd>
+  <dt id="amaras-law">Amara's law</dt>
+  <dd>Roy Amara's observation that people overestimate a technology's effect in the short run and underestimate it in the long run. It's the first test in <a href="{root}guides/hype-or-shift/">hype or real shift</a>.</dd>
+  <dt id="bimi">BIMI</dt>
+  <dd>Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.</dd>
+  <dt id="bing-webmaster-tools">Bing Webmaster Tools</dt>
+  <dd>Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.</dd>
+  <dt id="canonical-tag">Canonical tag</dt>
+  <dd>A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.</dd>
+  <dt id="cdn">CDN (content delivery network)</dt>
+  <dd>A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.</dd>
+  <dt id="citation-gap">Citation gap</dt>
+  <dd>A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a <a href="{root}guides/citation-gap-analysis/">citation gap analysis</a>.</dd>
+  <dt id="cls">CLS (Cumulative Layout Shift)</dt>
+  <dd>A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.</dd>
+  <dt id="content-brief">Content brief</dt>
+  <dd>A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See <a href="{root}guides/content-briefs/">writing a content brief</a>.</dd>
+  <dt id="core-update">Core update</dt>
+  <dd>A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.</dd>
+  <dt id="core-web-vitals">Core Web Vitals</dt>
+  <dd>Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.</dd>
+  <dt id="crawl-budget">Crawl budget</dt>
+  <dd>How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.</dd>
+  <dt id="crawled-currently-not-indexed">Crawled, currently not indexed</dt>
+  <dd>A Google Search Console status meaning Google fetched a page and chose not to index it. See the <a href="{root}guides/crawled-not-indexed/">full guide</a>.</dd>
+  <dt id="crawler-hints">Crawler Hints</dt>
+  <dd>A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.</dd>
+  <dt id="discovered-currently-not-indexed">Discovered, currently not indexed</dt>
+  <dd>A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.</dd>
+  <dt id="dkim">DKIM</dt>
+  <dd>DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.</dd>
+  <dt id="dmarc">DMARC</dt>
+  <dd>A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.</dd>
+  <dt id="e-e-a-t">E-E-A-T</dt>
+  <dd>Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.</dd>
+  <dt id="email-blocklist">Email blocklist</dt>
+  <dd>A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see <a href="{root}guides/email-blocklist-recovery/">blocklist recovery</a>.</dd>
+  <dt id="geo">GEO (generative engine optimization)</dt>
+  <dd>Making a business and its content easy for AI systems to find, understand, and cite in generated answers.</dd>
+  <dt id="git">Git</dt>
+  <dd>The version control system almost every software team uses. It records each change to a set of files, who made it, and why, so any version can be restored.</dd>
+  <dt id="google-search-console">Google Search Console</dt>
+  <dd>Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.</dd>
+  <dt id="hreflang">hreflang</dt>
+  <dd>An annotation that tells search engines which language or regional version of a page to show to which users.</dd>
+  <dt id="hsts">HSTS (HTTP Strict Transport Security)</dt>
+  <dd>A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.</dd>
+  <dt id="hype-cycle">Hype cycle</dt>
+  <dd>Gartner's curve for a new technology's reputation: a trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity.</dd>
+  <dt id="indexnow">IndexNow</dt>
+  <dd>An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.</dd>
+  <dt id="inp">INP (Interaction to Next Paint)</dt>
+  <dd>A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.</dd>
+  <dt id="json-ld">JSON-LD</dt>
+  <dd>A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.</dd>
+  <dt id="lcp">LCP (Largest Contentful Paint)</dt>
+  <dd>A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.</dd>
+  <dt id="llms-txt">llms.txt</dt>
+  <dd>A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes <a href="{root}llms.txt">one</a>.</dd>
+  <dt id="meta-description">Meta description</dt>
+  <dd>A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.</dd>
+  <dt id="oai-searchbot">OAI-SearchBot</dt>
+  <dd>OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.</dd>
+  <dt id="orange-cloud">Orange cloud (proxied)</dt>
+  <dd>A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.</dd>
+  <dt id="pull-request">Pull request</dt>
+  <dd>A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see <a href="{root}guides/hiring-developers/">hiring developers</a>.</dd>
+  <dt id="readme">README</dt>
+  <dd>The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see <a href="{root}guides/readme-ai-source/">your README is a source AI reads</a>.</dd>
+  <dt id="repository">Repository</dt>
+  <dd>The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.</dd>
+  <dt id="robots-txt">robots.txt</dt>
+  <dd>A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.</dd>
+  <dt id="scaled-content-abuse">Scaled content abuse</dt>
+  <dd>The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.</dd>
+  <dt id="schema-org">Schema.org</dt>
+  <dd>The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.</dd>
+  <dt id="server-side-rendering">Server-side rendering</dt>
+  <dd>Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.</dd>
+  <dt id="site-reputation-abuse">Site reputation abuse</dt>
+  <dd>Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.</dd>
+  <dt id="soft-404">Soft 404</dt>
+  <dd>A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.</dd>
+  <dt id="spam-update">Spam update</dt>
+  <dd>An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.</dd>
+  <dt id="speculation-rules">Speculation rules</dt>
+  <dd>A JSON block in a script tag that tells Chrome and Edge which links to prefetch or prerender before the reader clicks, so the next page opens at once. See <a href="{root}guides/speculation-rules/">speculation rules</a>.</dd>
+  <dt id="spf">SPF</dt>
+  <dd>Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.</dd>
+  <dt id="structured-data">Structured data</dt>
+  <dd>Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.</dd>
+  <dt id="title-tag">Title tag</dt>
+  <dd>The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.</dd>
+  <dt id="ttfb">TTFB (time to first byte)</dt>
+  <dd>How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.</dd>
+  <dt id="xml-sitemap">XML sitemap</dt>
+  <dd>A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.</dd>
 </dl>
 
 <p class="related">Want these applied to your site? See <a href="{root}services/">services</a>.</p>

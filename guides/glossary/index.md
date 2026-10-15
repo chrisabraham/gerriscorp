@@ -1,15 +1,18 @@
 > Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 >
-> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Glossary of SEO, AI search, and technical website terms
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 15, 2026
 
 Plain definitions of the terms that come up in my work, written so each one makes sense on its own.
 
 **301 redirect**
 A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.
+
+**Acceptance criteria**
+The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.
 
 **AEO (answer engine optimization)**
 Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.
@@ -20,8 +23,14 @@ Google Search's conversational, AI-generated search experience, which answers qu
 **AI Overviews**
 The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.
 
+**AI washing**
+Claiming artificial intelligence a product doesn't really use, or overstating what its AI does. The SEC brought its first AI washing cases in March 2024; see [how to vet an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/).
+
 **Alt text**
 A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.
+
+**Amara's law**
+Roy Amara's observation that people overestimate a technology's effect in the short run and underestimate it in the long run. It's the first test in [hype or real shift](https://gerriscorp.com/guides/hype-or-shift/).
 
 **BIMI**
 Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.
@@ -34,6 +43,15 @@ A link element that tells search engines which URL is the preferred version of a
 
 **CDN (content delivery network)**
 A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.
+
+**Citation gap**
+A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a [citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/).
+
+**CLS (Cumulative Layout Shift)**
+A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
+
+**Content brief**
+A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See [writing a content brief](https://gerriscorp.com/guides/content-briefs/).
 
 **Core update**
 A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.
@@ -50,9 +68,6 @@ A Google Search Console status meaning Google fetched a page and chose not to in
 **Crawler Hints**
 A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.
 
-**CLS (Cumulative Layout Shift)**
-A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
-
 **Discovered, currently not indexed**
 A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.
 
@@ -65,8 +80,14 @@ A DNS policy telling receiving mail servers what to do with mail that fails SPF 
 **E-E-A-T**
 Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.
 
+**Email blocklist**
+A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see [blocklist recovery](https://gerriscorp.com/guides/email-blocklist-recovery/).
+
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
+
+**Git**
+The version control system almost every software team uses. It records each change to a set of files, who made it, and why, so any version can be restored.
 
 **Google Search Console**
 Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.
@@ -76,6 +97,9 @@ An annotation that tells search engines which language or regional version of a 
 
 **HSTS (HTTP Strict Transport Security)**
 A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.
+
+**Hype cycle**
+Gartner's curve for a new technology's reputation: a trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity.
 
 **IndexNow**
 An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.
@@ -101,6 +125,15 @@ OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the
 **Orange cloud (proxied)**
 A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.
 
+**Pull request**
+A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see [hiring developers](https://gerriscorp.com/guides/hiring-developers/).
+
+**README**
+The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see [your README is a source AI reads](https://gerriscorp.com/guides/readme-ai-source/).
+
+**Repository**
+The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.
+
 **robots.txt**
 A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.
 
@@ -121,6 +154,9 @@ A page that tells visitors it doesn't exist or has nothing to show, while return
 
 **Spam update**
 An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.
+
+**Speculation rules**
+A JSON block in a script tag that tells Chrome and Edge which links to prefetch or prerender before the reader clicks, so the next page opens at once. See [speculation rules](https://gerriscorp.com/guides/speculation-rules/).
 
 **SPF**
 Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.
