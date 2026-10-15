@@ -6,7 +6,7 @@
 
 A colophon is the note at the back of a well-made book about how it was made. This is that note for gerriscorp.com.
 
-## The logo
+## The logo The Gerris logo, drawn by Oliver Uberti in 2012.
 
 The Gerris water strider was designed and drawn in 2012 by [Oliver Uberti](https://www.oliveruberti.com/), a dear friend and a remarkable artist. Oliver was a senior design editor at National Geographic and is the co-author and designer of [Atlas of the Invisible](https://www.amazon.com/dp/0393651517?tag=gerris-20), [London: The Information Capital](https://www.amazon.com/dp/1846148472?tag=gerris-20), [Where the Animals Go](https://www.amazon.com/dp/0393634027?tag=gerris-20), and [Notes from a Public Typewriter](https://www.amazon.com/dp/1538729113?tag=gerris-20). He gave the company its emblem: *Gerris lacustris*, the insect that skates across the surface of a pond without breaking it.
 
