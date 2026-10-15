@@ -1,4 +1,4 @@
-> How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
+> How self-ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
 >
 > Source: https://gerriscorp.com/guides/self-ranking-lists/ · Updated 2026-10-09 · By Chris Abraham, Gerris Corp
 
@@ -26,7 +26,7 @@ When the engine, the referee, and the tool maker all move in the same direction,
 Assistants are trying to do what a careful buyer does: find independent evidence that several unrelated people reached the same conclusion. Give them that evidence.
 - **Reviews on platforms you don't control:** Google Business Profile, Clutch, G2, and the directories of your industry.
 - **Lists written by someone else:** trade press, analysts, associations, and customers' own write-ups.
-- **Case studies with checkable detail:** a named client where permitted, dates, before and after figures, and the method.
+- **Case studies with checkable detail:** a named client where permitted, dates, before-and-after figures, and the method.
 - **Honest comparison pages:** if you compare yourself with competitors, say so plainly, state who each option suits, and include the ones that beat you on something.
 - **A consistent entity:** the same name, description, people, and profiles everywhere, so every system recognizes one business.
 

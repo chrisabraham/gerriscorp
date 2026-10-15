@@ -1,4 +1,4 @@
-> SEO from first principles for absolute beginners: how search works, people first content, E E A T, titles, links, alt text, speed, and accessibility.
+> SEO from first principles for absolute beginners: how search works, people-first content, E-E-A-T, titles, links, alt text, speed, and accessibility.
 >
 > Source: https://gerriscorp.com/guides/seo-101/ · Updated 2026-10-09 · By Chris Abraham, Gerris Corp
 

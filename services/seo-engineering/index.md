@@ -28,7 +28,7 @@ JSON-LD for organizations, products, articles, breadcrumbs, and FAQs is assemble
 
 This is the part most teams skip, and the part that keeps the work from quietly coming undone. Search problems are usually introduced by an ordinary change: a new layout that drops the canonical, a content import that blanks the descriptions, a component that adds a second H1. A test that runs on every build catches each of those before it reaches production.
 
-This site is a working example. Its build script refuses to publish when any title falls outside 50 to 60 characters, any description falls outside 140 to 160, either one contains a pipe, a dash, or a hyphen, two pages share a title or a description, a page has more or fewer than one H1, a page falls under its minimum word count, an internal link points at a page that doesn't exist, or two pages share more than 15% of their six word phrases. I build the same kind of gate into client repositories, tuned to their templates: required tags per route, valid JSON-LD, sitemap and route agreement, and balanced HTML from the CMS.
+This site is a working example. Its build script refuses to publish when any title falls outside 50 to 60 characters, any description falls outside 140 to 160, either one contains a pipe, a dash, or a hyphen, two pages share a title or a description, a page has more or fewer than one H1, a page falls under its minimum word count, an internal link points at a page that doesn't exist, or two pages share more than 15% of their six-word phrases. I build the same kind of gate into client repositories, tuned to their templates: required tags per route, valid JSON-LD, sitemap and route agreement, and balanced HTML from the CMS.
 
 ## Deploy previews checked before merge
 

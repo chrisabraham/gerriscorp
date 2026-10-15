@@ -933,7 +933,8 @@ for p in pages:
     if not 50 <= len(t) <= 60: problems.append(f"{where}: title is {len(t)} chars: {t}")
     if not 140 <= len(d) <= 160: problems.append(f"{where}: description is {len(d)} chars: {d}")
     for label, s in (("title", t), ("description", d)):
-        if re.search(r"[|\-–—]", s): problems.append(f"{where}: pipe, dash or hyphen in {label}: {s}")
+        # Chris' rule: no pipes or dashes as separators; hyphens inside words (back-of-the-book) are fine.
+        if re.search(r"\||[–—]|(?<!\w)-|-(?!\w)", s): problems.append(f"{where}: pipe or separator dash in {label}: {s}")
     if p["body"].count("<h1>") != 1: problems.append(f"{where}: needs exactly one h1")
     if p["words"] < MIN_WORDS[p["kind"]]: problems.append(f"{where}: only {p['words']} words (min {MIN_WORDS[p['kind']]})")
     if re.search(r"\s—|—\s| – ", text_of(re.sub(r"<pre\b.*?</pre>|<code\b.*?</code>", "", p["body"], flags=re.S))): problems.append(f"{where}: spaced em or en dash in the copy (close it up: word—word)")

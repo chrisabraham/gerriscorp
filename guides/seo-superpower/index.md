@@ -31,7 +31,7 @@ Coding assistants have moved past autocomplete. GitHub says Copilot can now answ
 
 ## How to start, if you're an SEO
 1. **Learn six Git words:** clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.
-2. **Ask for read access** to a client's repository. Read only is an easy yes for most teams.
+2. **Ask for read access** to a client's repository. Read-only is an easy yes for most teams.
 3. **Have the assistant give you the tour.** Ask it to explain the structure, where templates live, and where every SEO element is generated.
 4. **Make your first pull request tiny,** such as a title pattern or a missing canonical, and let the developer review it.
 5. **Write the rules down** in a project memory file and turn them into automated checks, so the assistant follows them every time.

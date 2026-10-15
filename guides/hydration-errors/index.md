@@ -20,7 +20,7 @@ Production builds of React strip long error messages to save bytes and print a n
 
 ## What it means for search
 
-Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.
+Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server-side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.
 
 The costs show up elsewhere:
 - **Layout shift.** When React throws away server markup and re-renders, elements can jump, which counts against Cumulative Layout Shift.

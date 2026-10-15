@@ -68,7 +68,7 @@ Add a step to the CI workflow that runs it after the build. A nonzero exit fails
 
 ## Checks that guard the writing, too
 
-Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.
+Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six-word phrases, or when a sentence of ten or more words appears on two pages. That keeps near-duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.
 
 ## Rolling it out without blocking everyone
 1. **Start in report only mode.** Run the checks and print the results without failing the build, and fix the existing backlog.

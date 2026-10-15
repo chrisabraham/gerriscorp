@@ -242,7 +242,7 @@ Updated: 2026-10-05
 
 # Agency partner and white-label support
 
-Marketing, PR, and web agencies bring me in when a client needs deeper technical SEO, AI search, or developer coordination than the team has in house. I work inside your relationship, on your terms, and your client stays yours.
+Marketing, PR, and web agencies bring me in when a client needs deeper technical SEO, AI search, or developer coordination than the team has in-house. I work inside your relationship, on your terms, and your client stays yours.
 
 ## Why agencies call
 - A client's traffic fell and the account team can't explain it.
@@ -678,7 +678,7 @@ JSON-LD for organizations, products, articles, breadcrumbs, and FAQs is assemble
 
 This is the part most teams skip, and the part that keeps the work from quietly coming undone. Search problems are usually introduced by an ordinary change: a new layout that drops the canonical, a content import that blanks the descriptions, a component that adds a second H1. A test that runs on every build catches each of those before it reaches production.
 
-This site is a working example. Its build script refuses to publish when any title falls outside 50 to 60 characters, any description falls outside 140 to 160, either one contains a pipe, a dash, or a hyphen, two pages share a title or a description, a page has more or fewer than one H1, a page falls under its minimum word count, an internal link points at a page that doesn't exist, or two pages share more than 15% of their six word phrases. I build the same kind of gate into client repositories, tuned to their templates: required tags per route, valid JSON-LD, sitemap and route agreement, and balanced HTML from the CMS.
+This site is a working example. Its build script refuses to publish when any title falls outside 50 to 60 characters, any description falls outside 140 to 160, either one contains a pipe, a dash, or a hyphen, two pages share a title or a description, a page has more or fewer than one H1, a page falls under its minimum word count, an internal link points at a page that doesn't exist, or two pages share more than 15% of their six-word phrases. I build the same kind of gate into client repositories, tuned to their templates: required tags per route, valid JSON-LD, sitemap and route agreement, and balanced HTML from the CMS.
 
 ## Deploy previews checked before merge
 
@@ -1005,7 +1005,7 @@ I also work with Netlify, GitHub Pages, and other hosts' built-in CDNs.
 ## What you get
 - A speed diagnosis from field data and lab tests, with the causes ranked by impact.
 - The fixes I can make directly, and developer tickets for the rest.
-- A before and after comparison on the pages that matter.
+- A before-and-after comparison on the pages that matter.
 
 ## Common questions
 
@@ -1657,13 +1657,13 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
-- [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
-- [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
+- [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people-first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
+- [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self-ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
 - [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
 - [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
 - [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
-- [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
+- [The year-end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
 - [A Next.js SEO checklist for the App Router](https://gerriscorp.com/guides/nextjs-seo/): metadata, title templates, streamed metadata and AI crawlers, sitemap.ts, robots.ts, 308 redirects, real 404s, JSON-LD, and links.
@@ -1717,7 +1717,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.
 
-New guides are announced in the [full text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
+New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
 Updated October 15, 2026
 
@@ -2021,7 +2021,7 @@ If your website is built from a public GitHub repository, its README file is a p
 
 GitHub shows a repository's README on its front page, so the file is public web content like any other. When an assistant searches for a site or a company and the repository ranks for that name, the README is often the most direct description it can find: who built the site, what it is for, and what state it is in. Developers write READMEs for other developers, in the present tense, and then stop updating them. An assistant can't tell a launch checklist from a status report.
 
-Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.
+Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open-source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.
 
 ## What to put at the top
 
@@ -2179,7 +2179,7 @@ For a static site, the sequence I would implement is:
 4. Submit the affected URL inventory to IndexNow.
 5. Save the response and review engine reporting later.
 
-A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.
+A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow-up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.
 
 ## Use Bing Webmaster Tools as a diagnostic instrument
 
@@ -2403,7 +2403,7 @@ Production builds of React strip long error messages to save bytes and print a n
 
 ## What it means for search
 
-Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.
+Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server-side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.
 
 The costs show up elsewhere:
 - **Layout shift.** When React throws away server markup and re-renders, elements can jump, which counts against Cumulative Layout Shift.
@@ -2557,7 +2557,7 @@ Next.js gives you everything a search engine needs, as code: metadata, sitemaps,
 
 In the App Router, metadata comes from a `metadata` object or a `generateMetadata` function exported from a layout or page. Static pages can use the object. Pages built from data, such as products, posts, and locations, need `generateMetadata` so each URL gets its own title and description from its own record.
 
-Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client side features, keep `page.tsx` as a Server Component and move the interactive parts into a child component.
+Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client-side features, keep `page.tsx` as a Server Component and move the interactive parts into a child component.
 
 ## 2. The title template does what you meant
 
@@ -2597,7 +2597,7 @@ The `Link` component extends the HTML anchor element, so it produces an `<a href
 
 ## 11. The rendered page matches the server page
 
-Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client side redirects all show up here. The [guide to React hydration errors](https://gerriscorp.com/guides/hydration-errors/) covers the most common fault.
+Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client-side redirects all show up here. The [guide to React hydration errors](https://gerriscorp.com/guides/hydration-errors/) covers the most common fault.
 
 ## Make the checklist permanent
 
@@ -2697,7 +2697,7 @@ Add a step to the CI workflow that runs it after the build. A nonzero exit fails
 
 ## Checks that guard the writing, too
 
-Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.
+Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six-word phrases, or when a sentence of ten or more words appears on two pages. That keeps near-duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.
 
 ## Rolling it out without blocking everyone
 1. **Start in report only mode.** Run the checks and print the results without failing the build, and fix the existing backlog.
@@ -2765,7 +2765,7 @@ Read the export for these failures, in this order:
 2. **Redirects to the home page or a generic category.** Google treats a redirect to an unrelated page much like a missing page, and the old URL's value doesn't carry over.
 3. **Temporary redirects.** Google's documentation says a permanent redirect shows the new target in results, while a temporary one keeps showing the source. A migration built on 302s or 307s is telling Google to keep the old URLs.
 4. **Chains and loops.** Each extra hop slows crawling, and loops never resolve.
-5. **JavaScript and meta refresh redirects.** Google ranks server side redirects as the most reliable way to signal a move. Anything else should be replaced with one.
+5. **JavaScript and meta refresh redirects.** Google ranks server-side redirects as the most reliable way to signal a move. Anything else should be replaced with one.
 
 ## Compare old pages with their new versions
 
@@ -2791,7 +2791,7 @@ After each round of fixes, run the list crawl again and confirm the failures are
 
 ## Keep the evidence
 
-Write down what you found, what you fixed, and when, with the before and after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.
+Write down what you found, what you fixed, and when, with the before-and-after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.
 
 I handle this as part of [website migration SEO](https://gerriscorp.com/services/migrations/), and for inherited projects that went badly, [project rescue](https://gerriscorp.com/services/rescue/). To prevent the next one, use the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/) and the [tools I use for a website migration](https://gerriscorp.com/guides/migration-tools/).
 
@@ -2925,13 +2925,13 @@ The tools that matter for Core Web Vitals:
 - **list_console_messages** and **list_network_requests** show errors and the heaviest resources.
 - **lighthouse_audit** runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.
 
-Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the `--no-performance-crux` flag turns that off. And Google collects usage statistics from the server by default, which `--no-usage-statistics` disables.
+Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real-user data beside the lab result; the `--no-performance-crux` flag turns that off. And Google collects usage statistics from the server by default, which `--no-usage-statistics` disables.
 
-## Real user data: CrUX, and a change to PageSpeed Insights
+## Real-user data: CrUX, and a change to PageSpeed Insights
 
 A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.
 
-One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.
+One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real-user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.
 
 ## Screaming Frog: every template, not one page
 
@@ -2947,7 +2947,7 @@ The combination is where the time savings live: crawl every URL, group the slow 
 3. **Trace each on emulated mobile.** Ask the assistant to throttle to a mid-range phone and record a cold load.
 4. **Read the insight, then the code.** For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.
 5. **Test on a preview.** Trace the same page on the branch's preview deployment and compare.
-6. **Confirm in the field.** CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.
+6. **Confirm in the field.** CrUX data is a rolling 28-day window, so real-user numbers improve gradually after release.
 
 ## Where to keep a hand on the wheel
 - **Lab is not field.** A trace on a developer's machine, even throttled, is one sample. Treat it as a diagnosis and judge the outcome by field data.
@@ -3015,7 +3015,7 @@ Every operator says the same thing in different words: the problem must be ident
 5. **Marketing on the business domain.** When a newsletter's complaints land on the same domain as your invoices, the invoices suffer. Move bulk mail to a separate subdomain and sending service.
 
 ## Step 3: request removal, once, with the evidence
-- **Spamhaus:** start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.
+- **Spamhaus:** start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self-service removals are limited, so use them only after the fix.
 - **Barracuda:** its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.
 - **Microsoft:** the Outlook.com postmaster site is the starting point, with troubleshooting for mail that Outlook.com blocks or sends to junk.
 - **Gmail:** no list to be removed from. Google's guidelines say senders who don't follow its practices may not be considered for deliverability mitigations, so meeting every requirement comes first.
@@ -3489,7 +3489,7 @@ It's one of the most common stories I hear from service businesses. Years ago so
 
 ## Why the pages existed, and why removing them can be right
 
-Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long term decision. The damage comes from how the pages are removed.
+Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long-term decision. The damage comes from how the pages are removed.
 
 ## Five ways a cleanup hurts the pages you kept
 1. **Lost internal links.** Every location page usually linked to the core service pages. Delete five hundred pages and you delete thousands of internal links pointing at the pages you care about.
@@ -3552,7 +3552,7 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 Source: https://gerriscorp.com/guides/year-end-seo-check/
 Updated: 2026-10-07
 
-# The year end SEO check: one afternoon that protects next year
+# The year-end SEO check: one afternoon that protects next year
 
 By [Chris Abraham](https://gerriscorp.com/about/) · Published October 7, 2026
 
@@ -3568,7 +3568,7 @@ In the Sitemaps report, confirm each sitemap was read recently and without error
 
 ## 3. Analytics: keep the history you'll want
 
-Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year over year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.
+Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year-over-year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.
 
 ## 4. Domains and certificates
 
@@ -3606,7 +3606,7 @@ End with one page of notes: what you checked, what you fixed, and what needs a d
 
 A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.
 
-Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
+Prefer to hand this off? I run this check as a fixed-price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
 
 ## Want me to handle this for you?
 
@@ -4320,7 +4320,7 @@ Updated: 2026-10-14
 
 By [Chris Abraham](https://gerriscorp.com/about/) · Published October 14, 2026
 
-Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.
+Putting WordPress behind Cloudflare with full-page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.
 
 ## How the cache decides
 
@@ -4607,11 +4607,11 @@ Every software sales deck now has AI on the first slide. Some of those products 
 
 ## What AI washing looks like on the record
 
-On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI driven investing when it wasn't using that data in its process.
+On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI-driven investing when it wasn't using that data in its process.
 
 On September 25, 2024, the FTC announced Operation AI Comply, five actions against companies using AI claims to deceive customers. One was DoNotPay, marketed as "the world's first robot lawyer"; the FTC said the company never tested whether its output matched a lawyer's, and DoNotPay agreed to pay $193,000. FTC Chair Lina Khan put the principle in one line: "there is no AI exemption from the laws on the books."
 
-Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well written prompt and a spreadsheet.
+Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well-written prompt and a spreadsheet.
 
 ## Twelve questions for the sales call
 1. **Which model does this run on, and who hosts it?** A clear answer ("a hosted model from one of the big labs, called through their API") is fine. Evasion is a warning.
@@ -4774,7 +4774,7 @@ Be early and small. Try new tools on real work at low cost, keep what proves its
 
 ## The gray beard in the room
 
-Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my [advisory work](https://gerriscorp.com/services/advisory/), read [how I vet an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/), or [get in touch](https://gerriscorp.com/contact/).
+Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white-label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my [advisory work](https://gerriscorp.com/services/advisory/), read [how I vet an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/), or [get in touch](https://gerriscorp.com/contact/).
 
 ## Want me to handle this for you?
 
@@ -4826,7 +4826,7 @@ Coding assistants have moved past autocomplete. GitHub says Copilot can now answ
 
 ## How to start, if you're an SEO
 1. **Learn six Git words:** clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.
-2. **Ask for read access** to a client's repository. Read only is an easy yes for most teams.
+2. **Ask for read access** to a client's repository. Read-only is an easy yes for most teams.
 3. **Have the assistant give you the tour.** Ask it to explain the structure, where templates live, and where every SEO element is generated.
 4. **Make your first pull request tiny,** such as a title pattern or a missing canonical, and let the developer review it.
 5. **Write the rules down** in a project memory file and turn them into automated checks, so the assistant follows them every time.
@@ -5049,7 +5049,7 @@ When the engine, the referee, and the tool maker all move in the same direction,
 Assistants are trying to do what a careful buyer does: find independent evidence that several unrelated people reached the same conclusion. Give them that evidence.
 - **Reviews on platforms you don't control:** Google Business Profile, Clutch, G2, and the directories of your industry.
 - **Lists written by someone else:** trade press, analysts, associations, and customers' own write-ups.
-- **Case studies with checkable detail:** a named client where permitted, dates, before and after figures, and the method.
+- **Case studies with checkable detail:** a named client where permitted, dates, before-and-after figures, and the method.
 - **Honest comparison pages:** if you compare yourself with competitors, say so plainly, state who each option suits, and include the ones that beat you on something.
 - **A consistent entity:** the same name, description, people, and profiles everywhere, so every system recognizes one business.
 
@@ -6587,7 +6587,7 @@ Search problems rarely stay in one layer. A ranking loss turns out to be a templ
 
 ## Servers and hosting
 - My first root password opened a Solaris SPARCstation pizza box in the image lab at PNI, Picture Network International, my first job out of college.
-- Before LAMP had a name, I was already living in it: Linux boxes, Apache, MySQL, and Perl and PHP scripts, all the way to 2002, when search became my full time work.
+- Before LAMP had a name, I was already living in it: Linux boxes, Apache, MySQL, and Perl and PHP scripts, all the way to 2002, when search became my full-time work.
 - I took over a consumer brand's stalled React application after an outage: inventoried the code, hosting, DNS, and credentials, then got onto the DigitalOcean server over SSH, read the logs, corrected the configuration, ran the Node process under PM2, and found the port conflict keeping it offline. [The app takeover](https://gerriscorp.com/case-studies/app-takeover/).
 - I provision and harden Linux servers for my own systems: key only SSH, root login off, firewalls, and automatic security updates.
 
@@ -6611,11 +6611,11 @@ Codex and Claude Code handle most of my work with AI coding assistants. My other
 - This site is generated by a Python script that refuses to publish a bad title, a duplicate description, a broken internal link, a page under its word minimum, or two pages that share too much wording. The method is written up in [SEO regression tests in the build](https://gerriscorp.com/guides/seo-build-checks/).
 - A GitHub Actions workflow pings IndexNow after every deploy, once the new sitemap is confirmed live.
 - I moved a 309 entry serialized novel off a broken Movable Type install to Jekyll on GitHub Pages, keeping every original URL and adding schema, llms.txt, and IndexNow. [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
-- I built my own operations assistant, about 12,000 lines of Python with 140 end to end tests, by directing Claude Code like a development team.
+- I built my own operations assistant, about 12,000 lines of Python with 140 end-to-end tests, by directing Claude Code like a development team.
 
 ## Rendering and front end
 - I traced a Magento and Hyvä store's decline to Alpine.js sections that never rendered for Googlebot, and kept a second, unrelated problem on its own track. [Ecommerce rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/).
-- I specified the fixes for a Create React App platform with 2,000 undiscovered pages in a 13 page spec ranked P0 to P3, then verified them. [React event platform](https://gerriscorp.com/case-studies/react-event-platform/).
+- I specified the fixes for a Create React App platform with 2,000 undiscovered pages in a 13-page spec ranked P0 to P3, then verified them. [React event platform](https://gerriscorp.com/case-studies/react-event-platform/).
 - I found the consent setup that left a review site's article tabs empty for Google. [Consent blocking](https://gerriscorp.com/case-studies/consent-blocking/).
 - I sweep sites for React hydration errors with scripted headless Chrome. See [hydration errors and SEO](https://gerriscorp.com/guides/hydration-errors/).
 
@@ -6626,20 +6626,20 @@ Codex and Claude Code handle most of my work with AI coding assistants. My other
 
 ## Crawl data and archives
 - For this domain, which has run on Drupal, Squarespace, and now static pages since 2012, I pulled every URL the Wayback Machine ever captured, tested all 848 against the live site, and redirected each one that had ever served a page: more than 640 redirects in all.
-- Full site crawls with JavaScript rendering, custom extraction, near duplicate detection, and before and after comparisons are routine.
+- Full site crawls with JavaScript rendering, custom extraction, near-duplicate detection, and before-and-after comparisons are routine.
 
 ## Structured data and entities
-- I separated a multi state closets brand from its first location in schema and on the page. [Multi-location entity](https://gerriscorp.com/case-studies/multi-location-entity/).
-- Every page here carries a connected JSON-LD graph, a Markdown twin, and full text feeds for AI crawlers.
+- I separated a multi-state closets brand from its first location in schema and on the page. [Multi-location entity](https://gerriscorp.com/case-studies/multi-location-entity/).
+- Every page here carries a connected JSON-LD graph, a Markdown twin, and full-text feeds for AI crawlers.
 
 ## Data
-- My Python pipelines produced an 88,900 contact master list, merged two 28,800 record exports to 94% email coverage, and exposed an AI made tracker that had invented its records. [Data cleanup](https://gerriscorp.com/case-studies/data-cleanup/).
+- My Python pipelines produced an 88,900 contact master list, merged two 28,800 record exports to 94% email coverage, and exposed an AI-made tracker that had invented its records. [Data cleanup](https://gerriscorp.com/case-studies/data-cleanup/).
 
 ## What comes with me into every layer
 - **Separate problems stay separate.** A template change and a spam link spike that arrive in the same month get two investigations until the data joins them. [The Magento case](https://gerriscorp.com/case-studies/ecommerce-rendering/) is the example.
 - **False alarms get caught.** When an AI visibility dashboard showed a sharp drop for a B2B client, I traced it to the vendor changing its methodology; the client's actual visibility had held steady. [Umbraco operations](https://gerriscorp.com/case-studies/umbraco-operations/).
 - **Evidence gets assembled like a legal brief.** Debate training shows in my Google appeals: the strongest verifiable document leads, private documents stay out, and every date has paper behind it. [The reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/).
-- **Sources get vetted.** At Edelman I screened online influencers for a genuine multi year history before any client engaged them. That is open source intelligence work, and the same instinct checks every report a vendor or an AI hands me.
+- **Sources get vetted.** At Edelman I screened online influencers for a genuine multi-year history before any client engaged them. That is open-source intelligence work, and the same instinct checks every report a vendor or an AI hands me.
 - **One finding, two documents.** Engineers get ranked tickets with acceptance criteria; owners get a plain summary they can act on. [Developer specs and QA](https://gerriscorp.com/services/developers/).
 - **Speed with guardrails.** This site reached 92 pages and more than 62,000 words eight days after its first commit, built with Claude Code under my direction, and every page clears the automated checks before it publishes.
 - **Mail that can't be spoofed.** This domain runs SPF, DKIM, and DMARC, and a sister domain that never sends mail is locked down with a reject policy, strict alignment, and a null MX.
@@ -7038,7 +7038,7 @@ I work with representative examples from the people who will actually use the to
 
 ## Experience behind the review
 
-My own command line assistant grew through real use: misread requests became explicit examples in its test suite. The [coding assistant case study](https://gerriscorp.com/case-studies/built-with-claude-code/) describes that process and the 140 end to end tests in the original build. Separately, I checked an AI generated outreach tracker against actual sending records and found activity the evidence did not support. That work is in the [data cleanup and AI audit case study](https://gerriscorp.com/case-studies/data-cleanup/). Both experiences inform a simple habit: compare the tool's report with what actually happened.
+My own command line assistant grew through real use: misread requests became explicit examples in its test suite. The [coding assistant case study](https://gerriscorp.com/case-studies/built-with-claude-code/) describes that process and the 140 end-to-end tests in the original build. Separately, I checked an AI-generated outreach tracker against actual sending records and found activity the evidence did not support. That work is in the [data cleanup and AI audit case study](https://gerriscorp.com/case-studies/data-cleanup/). Both experiences inform a simple habit: compare the tool's report with what actually happened.
 
 ## Platform agnostic by design
 
@@ -7233,7 +7233,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham diagnoses web problems, directs developers, and builds with OpenAI Codex and Claude Code. Consulting, automation, and SEO from Gerris Corp.
 - [Services](https://gerriscorp.com/services/): Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 - [Guides](https://gerriscorp.com/guides/): Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
-- [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
+- [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi-location schema, and data cleanup.
 - [About Chris Abraham](https://gerriscorp.com/about/): Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2012, from Arlington, Virginia.
 - [What I can take on in your stack, layer by layer](https://gerriscorp.com/stack/): Every layer of a website Chris Abraham works in, from Linux servers and DNS to repositories, build pipelines, rendering, schema, and data, with proof for each.
 - [Work with me](https://gerriscorp.com/work-with-me/): How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
@@ -7250,7 +7250,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): Chris Abraham works inside agencies' client relationships as a technical SEO and AI search specialist, under NDA, in your Basecamp, with your branding.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds AI tools with OpenAI Codex and Claude Code: reviewed actions, tests, secrets outside Git, and backups with a tested restore path.
-- [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
+- [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI-generated spreadsheets for fabricated or wrong data before you rely on them.
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
@@ -7273,7 +7273,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/): Connect your website's services, articles, products, and case studies with an internal linking plan: crawl evidence, clear anchors, and verified changes.
 
 ## Local, reputation, and email
-- [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
+- [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
@@ -7285,7 +7285,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [How to write a content brief for pages AI search will quote](https://gerriscorp.com/guides/content-briefs/): A one page brief that fixes the question, answer, evidence, and limits before anyone writes, so the finished page answers first and holds up when quoted.
 - [Your public GitHub README is a source AI search reads](https://gerriscorp.com/guides/readme-ai-source/): AI assistants with web search read public repositories and quote README files as fact. Keep the README current, point it to the live site, and keep secrets out.
 - [Speculation rules: make the next page open instantly in Chrome](https://gerriscorp.com/guides/speculation-rules/): One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.
-- [IndexNow, Bing, and a practical AI search workflow for fall 2026](https://gerriscorp.com/guides/indexnow-ai-search/): Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.
+- [IndexNow, Bing, and a practical AI search workflow for fall 2026](https://gerriscorp.com/guides/indexnow-ai-search/): Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full-text feeds, and measurable checkpoints.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
 - [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): What React error 418 and other hydration mismatches are, why Google usually still indexes the page, what they cost in speed and analytics, and how to find them.
@@ -7294,15 +7294,15 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [How to add SEO regression tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/): Automated SEO checks that run on every build and pull request: titles, descriptions, canonicals, noindex, schema, sitemaps, headings, and links, with examples.
 - [Traffic fell after a site migration: how to find what broke and get it back](https://gerriscorp.com/guides/migration-recovery/): A recovery plan for a website migration that lost search traffic: rebuild the old URL list, test every redirect, compare old and new pages, and fix in order.
 - [The SEO tools for a website migration, and the job each one does](https://gerriscorp.com/guides/migration-tools/): The tools that carry a website migration safely: crawlers, Search Console, redirect testing, crawl comparison, and analytics, with the job each one does.
-- [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
+- [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.
 - [How to get your email off a blocklist and back into the inbox](https://gerriscorp.com/guides/email-blocklist-recovery/): A recovery plan for a small business whose email lands in spam or bounces: find the listing, fix the cause, request removal, and rebuild your reputation.
-- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
-- [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
+- ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step-by-step method to find the real cause.
+- [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): A step-by-step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
-- [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
+- [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): A step-by-step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
 - [Deleting hundreds of location pages: why core rankings fall, and the fix](https://gerriscorp.com/guides/removed-location-pages/): What happens when a site prunes hundreds of city or area code landing pages: why core pages can drop, how to decide each URL's fate, and how to recover.
-- [The year end SEO check: one afternoon that protects next year](https://gerriscorp.com/guides/year-end-seo-check/): A one afternoon year end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
+- [The year-end SEO check: one afternoon that protects next year](https://gerriscorp.com/guides/year-end-seo-check/): A one-afternoon year-end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.
 - [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): How robots.txt rules are matched, why a Disallow rule still lets pages be indexed, how to handle AI crawlers, and how to test robots.txt changes before launch.
 - [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): Which schema.org markup still earns rich results in Google, which types were retired, how JSON LD helps search engines and AI understand entities, and testing.
@@ -7311,7 +7311,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): What Google measures with Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, how to read field data, and the fixes for each one.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.
-- [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
+- [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): Full-page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A practical workflow for OpenAI Codex, Claude Code, and GitHub Copilot on business websites: written specs, project context, automated checks, and human review.
@@ -7321,8 +7321,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Repositories plus super intelligence: the SEO superpower nobody told you to learn](https://gerriscorp.com/guides/seo-superpower/): Repositories and AI coding assistants help SEOs ship fixes. How Git, OpenAI Codex, Claude Code, and GitHub Copilot connect search findings to changes in code.
 - [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Build a podcast website with OpenAI Codex or Claude Code, GitHub Pages, and Cloudflare: a page for every episode, stable links, and daily feed updates.
 - [The state of search in 2026: every Google update so far, and the AI shift behind them](https://gerriscorp.com/guides/search-in-2026/): Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.
-- [Ranking yourself first in a "best of" list now backfires in AI answers](https://gerriscorp.com/guides/self-ranking-lists/): How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
-- [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): SEO from first principles for absolute beginners: how search works, people first content, E E A T, titles, links, alt text, speed, and accessibility.
+- [Ranking yourself first in a "best of" list now backfires in AI answers](https://gerriscorp.com/guides/self-ranking-lists/): How self-ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
+- [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): SEO from first principles for absolute beginners: how search works, people-first content, E-E-A-T, titles, links, alt text, speed, and accessibility.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.
 - [Starting a podcast to build your brand: what it really takes](https://gerriscorp.com/guides/podcast-for-your-brand/): What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.
 - [Lynx for website QA: text browser checks before every launch](https://gerriscorp.com/guides/lynx-qa/): How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.
@@ -7335,7 +7335,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
 - [WordPress media site: a consent banner hiding every article](https://gerriscorp.com/case-studies/consent-blocking/): A bilingual WordPress review site indexed on Bing but barely in Google: Chris Abraham traced it to consent blocking that left article tabs empty.
 - [React event platform: 2,000 pages Google couldn't reach](https://gerriscorp.com/case-studies/react-event-platform/): A Create React App event platform with 2,000 pages Google never found: Chris Abraham wrote a 13 page developer spec ranked P0 to P3 and verified the fixes.
-- [Clinical practice: WordPress to Netlify, with search intact](https://gerriscorp.com/case-studies/netlify-migration/): Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI assisted repository analysis, and a careful disavow.
+- [Clinical practice: WordPress to Netlify, with search intact](https://gerriscorp.com/case-studies/netlify-migration/): Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI-assisted repository analysis, and a careful disavow.
 - [Local service business on Sanity and Vercel: SEO in the repository](https://gerriscorp.com/case-studies/sanity-vercel/): A local service business on Sanity and Vercel: Chris Abraham set SEO priorities, merged metadata changes through GitHub, and verified the prerendering.
 - [Specialty retailer: cleaning up after Squarespace to Shopify](https://gerriscorp.com/case-studies/shopify-migration/): A premium fly fishing store moved from Squarespace to Shopify and left 3,400 404s and duplicate URLs behind: a four part audit and theme schema work.
 - [Consumer brand: taking over a stalled React application](https://gerriscorp.com/case-studies/app-takeover/): A consumer skincare brand's React application changed hands after an outage. Chris Abraham inventoried code, hosting, and DNS and fixed the server over SSH.
@@ -7429,7 +7429,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
 - acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
-- access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
   - documentation and statements, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - fix list, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
@@ -7891,7 +7891,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - Consent Mode v2, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
   - conversion tracking, [Analytics](https://gerriscorp.com/services/analytics/)
   - custom channel groups, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
-  - data retention, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - data retention, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
   - deferring gtag.js, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
   - ghost and spam traffic, [Analytics](https://gerriscorp.com/services/analytics/)
   - matching Search Console, [Analytics](https://gerriscorp.com/services/analytics/)
@@ -7940,7 +7940,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Google Calendar, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - Google Podcasts (closed 2024), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/)
 - Google Postmaster Tools, [Email and DNS](https://gerriscorp.com/services/email-and-dns/), [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Authentication](https://gerriscorp.com/guides/email-authentication/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
-- Google Search Console, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Search Console](https://gerriscorp.com/services/search-console/)**, [Migrations](https://gerriscorp.com/services/migrations/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/), [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
+- Google Search Console, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Search Console](https://gerriscorp.com/services/search-console/)**, [Migrations](https://gerriscorp.com/services/migrations/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/), [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
   - Change of Address, [Migrations](https://gerriscorp.com/services/migrations/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
   - common findings, [Search Console](https://gerriscorp.com/services/search-console/)
   - Crawl stats, [Search Console](https://gerriscorp.com/services/search-console/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
@@ -7996,7 +7996,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - red flags, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
   - writing the brief, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
 
-- holiday hours, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- holiday hours, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - hreflang, **[hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)**
   - Bing and the lang attribute, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
   - checking, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
@@ -8090,7 +8090,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
-- lapsed domains, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**
   - baselines, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - crawl efficiency, [Large Sites](https://gerriscorp.com/services/large-sites/)
@@ -8699,17 +8699,17 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## Y
 - Yahoo directory, [About](https://gerriscorp.com/about/)
-- year-end SEO check, **[Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)**
-  - access and ownership, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - AI answers, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - domains and certificates, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - GA4 data retention, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - indexing, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - listings and holiday hours, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - redirects, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - sitemaps, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - speed, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - structured data, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- year-end SEO check, **[Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)**
+  - access and ownership, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - AI answers, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - domains and certificates, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - GA4 data retention, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - indexing, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - listings and holiday hours, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - redirects, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - sitemaps, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - speed, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - structured data, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 
 - Yoast monkey, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - Yoast SEO, [On-Page SEO](https://gerriscorp.com/services/on-page-seo/)

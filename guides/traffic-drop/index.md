@@ -1,4 +1,4 @@
-> A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
+> A step-by-step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
 >
 > Source: https://gerriscorp.com/guides/traffic-drop/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
 

@@ -1,8 +1,8 @@
-> A one afternoon year end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
+> A one-afternoon year-end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
 >
 > Source: https://gerriscorp.com/guides/year-end-seo-check/ · Updated 2026-10-07 · By Chris Abraham, Gerris Corp
 
-# The year end SEO check: one afternoon that protects next year
+# The year-end SEO check: one afternoon that protects next year
 
 By [Chris Abraham](https://gerriscorp.com/about/) · Published October 7, 2026
 
@@ -18,7 +18,7 @@ In the Sitemaps report, confirm each sitemap was read recently and without error
 
 ## 3. Analytics: keep the history you'll want
 
-Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year over year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.
+Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year-over-year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.
 
 ## 4. Domains and certificates
 
@@ -56,7 +56,7 @@ End with one page of notes: what you checked, what you fixed, and what needs a d
 
 A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.
 
-Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
+Prefer to hand this off? I run this check as a fixed-price review and leave you with the written list. [Tell me about your site](https://gerriscorp.com/contact/).
 
 ## Want me to handle this for you?
 

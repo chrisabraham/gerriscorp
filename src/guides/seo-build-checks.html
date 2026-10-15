@@ -67,7 +67,7 @@ sys.exit(1 if problems else 0)</code></pre>
 <p>Add a step to the CI workflow that runs it after the build. A nonzero exit fails the check, and the message names the page and the rule, so the developer can fix it without asking anyone. For anything beyond a sketch, use a real HTML parser in place of regular expressions.</p>
 
 <h2>Checks that guard the writing, too</h2>
-<p>Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.</p>
+<p>Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six-word phrases, or when a sentence of ten or more words appears on two pages. That keeps near-duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.</p>
 
 <h2>Rolling it out without blocking everyone</h2>
 <ol>

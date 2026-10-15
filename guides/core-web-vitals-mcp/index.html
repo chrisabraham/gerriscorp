@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diagnose Core Web Vitals with MCP and AI coding assistants</title>
-<meta name="description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.">
+<meta name="description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.">
 <meta name="keywords" content="Core Web Vitals with MCP, SEO guide, Gerris Corp, Chris Abraham">
 <link rel="canonical" href="https://gerriscorp.com/guides/core-web-vitals-mcp/">
 <meta name="author" content="Chris Abraham">
@@ -47,7 +47,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Diagnose Core Web Vitals with MCP and AI coding assistants">
-<meta property="og:description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.">
+<meta property="og:description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.">
 <meta property="og:url" content="https://gerriscorp.com/guides/core-web-vitals-mcp/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
 <meta property="og:image:width" content="1200">
@@ -58,7 +58,7 @@
 <meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Diagnose Core Web Vitals with MCP and AI coding assistants">
-<meta name="twitter:description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.">
+<meta name="twitter:description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
 :root { --orange: #c75000; --blue: #16729e; --teal: #237482; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
@@ -702,7 +702,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    "@id": "https://gerriscorp.com/guides/core-web-vitals-mcp/#webpage",
    "url": "https://gerriscorp.com/guides/core-web-vitals-mcp/",
    "name": "Diagnose Core Web Vitals with MCP and AI coding assistants",
-   "description": "How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.",
+   "description": "How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
    },
@@ -747,7 +747,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    "@type": "TechArticle",
    "@id": "https://gerriscorp.com/guides/core-web-vitals-mcp/#article",
    "headline": "Diagnosing Core Web Vitals with MCP and an AI coding assistant",
-   "description": "How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.",
+   "description": "How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.",
    "url": "https://gerriscorp.com/guides/core-web-vitals-mcp/",
    "mainEntityOfPage": {
     "@id": "https://gerriscorp.com/guides/core-web-vitals-mcp/#webpage"
@@ -762,7 +762,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    "dateModified": "2026-10-15",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 1083,
+   "wordCount": 1078,
    "citation": [
     {
      "@type": "CreativeWork",
@@ -839,7 +839,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
     <li><a href="#section-the-three-numbers-you-re-chasing">The three numbers you&#x27;re chasing</a></li>
     <li><a href="#section-what-mcp-adds">What MCP adds</a></li>
     <li><a href="#section-chrome-devtools-mcp-lab-traces-on-demand">Chrome DevTools MCP: lab traces on demand</a></li>
-    <li><a href="#section-real-user-data-crux-and-a-change-to-pagespeed-insights">Real user data: CrUX, and a change to PageSpeed Insights</a></li>
+    <li><a href="#section-real-user-data-crux-and-a-change-to-pagespeed-insights">Real-user data: CrUX, and a change to PageSpeed Insights</a></li>
     <li><a href="#section-screaming-frog-every-template-not-one-page">Screaming Frog: every template, not one page</a></li>
     <li><a href="#section-a-working-session-step-by-step">A working session, step by step</a></li>
     <li><a href="#section-where-to-keep-a-hand-on-the-wheel">Where to keep a hand on the wheel</a></li>
@@ -863,11 +863,11 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li><strong>list_console_messages</strong> and <strong>list_network_requests</strong> show errors and the heaviest resources.</li>
   <li><strong>lighthouse_audit</strong> runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.</li>
 </ul>
-<p>Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the <code>--no-performance-crux</code> flag turns that off. And Google collects usage statistics from the server by default, which <code>--no-usage-statistics</code> disables.</p>
+<p>Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real-user data beside the lab result; the <code>--no-performance-crux</code> flag turns that off. And Google collects usage statistics from the server by default, which <code>--no-usage-statistics</code> disables.</p>
 
-<h2 id="section-real-user-data-crux-and-a-change-to-pagespeed-insights" tabindex="-1">Real user data: CrUX, and a change to PageSpeed Insights</h2>
+<h2 id="section-real-user-data-crux-and-a-change-to-pagespeed-insights" tabindex="-1">Real-user data: CrUX, and a change to PageSpeed Insights</h2>
 <p>A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.</p>
-<p>One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.</p>
+<p>One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real-user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.</p>
 
 <h2 id="section-screaming-frog-every-template-not-one-page" tabindex="-1">Screaming Frog: every template, not one page</h2>
 <p>Traces are for depth. For breadth, Screaming Frog's PageSpeed Insights integration, under Configuration &gt; API Access &gt; PageSpeed Insights, pulls Lighthouse metrics and opportunities for every URL during a crawl. It can also run Lighthouse locally, which avoids the API's daily query limit but has no CrUX data.</p>
@@ -881,7 +881,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li><strong>Trace each on emulated mobile.</strong> Ask the assistant to throttle to a mid-range phone and record a cold load.</li>
   <li><strong>Read the insight, then the code.</strong> For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.</li>
   <li><strong>Test on a preview.</strong> Trace the same page on the branch's preview deployment and compare.</li>
-  <li><strong>Confirm in the field.</strong> CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.</li>
+  <li><strong>Confirm in the field.</strong> CrUX data is a rolling 28-day window, so real-user numbers improve gradually after release.</li>
 </ol>
 
 <h2 id="section-where-to-keep-a-hand-on-the-wheel" tabindex="-1">Where to keep a hand on the wheel</h2>

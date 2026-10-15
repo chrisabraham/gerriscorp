@@ -1,4 +1,4 @@
-> How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
+> How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.
 >
 > Source: https://gerriscorp.com/guides/core-web-vitals-mcp/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
@@ -33,13 +33,13 @@ The tools that matter for Core Web Vitals:
 - **list_console_messages** and **list_network_requests** show errors and the heaviest resources.
 - **lighthouse_audit** runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.
 
-Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the `--no-performance-crux` flag turns that off. And Google collects usage statistics from the server by default, which `--no-usage-statistics` disables.
+Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real-user data beside the lab result; the `--no-performance-crux` flag turns that off. And Google collects usage statistics from the server by default, which `--no-usage-statistics` disables.
 
-## Real user data: CrUX, and a change to PageSpeed Insights
+## Real-user data: CrUX, and a change to PageSpeed Insights
 
 A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.
 
-One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.
+One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real-user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.
 
 ## Screaming Frog: every template, not one page
 
@@ -55,7 +55,7 @@ The combination is where the time savings live: crawl every URL, group the slow 
 3. **Trace each on emulated mobile.** Ask the assistant to throttle to a mid-range phone and record a cold load.
 4. **Read the insight, then the code.** For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.
 5. **Test on a preview.** Trace the same page on the branch's preview deployment and compare.
-6. **Confirm in the field.** CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.
+6. **Confirm in the field.** CrUX data is a rolling 28-day window, so real-user numbers improve gradually after release.
 
 ## Where to keep a hand on the wheel
 - **Lab is not field.** A trace on a developer's machine, even throttled, is one sample. Treat it as a diagnosis and judge the outcome by field data.

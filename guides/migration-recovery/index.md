@@ -34,7 +34,7 @@ Read the export for these failures, in this order:
 2. **Redirects to the home page or a generic category.** Google treats a redirect to an unrelated page much like a missing page, and the old URL's value doesn't carry over.
 3. **Temporary redirects.** Google's documentation says a permanent redirect shows the new target in results, while a temporary one keeps showing the source. A migration built on 302s or 307s is telling Google to keep the old URLs.
 4. **Chains and loops.** Each extra hop slows crawling, and loops never resolve.
-5. **JavaScript and meta refresh redirects.** Google ranks server side redirects as the most reliable way to signal a move. Anything else should be replaced with one.
+5. **JavaScript and meta refresh redirects.** Google ranks server-side redirects as the most reliable way to signal a move. Anything else should be replaced with one.
 
 ## Compare old pages with their new versions
 
@@ -60,7 +60,7 @@ After each round of fixes, run the list crawl again and confirm the failures are
 
 ## Keep the evidence
 
-Write down what you found, what you fixed, and when, with the before and after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.
+Write down what you found, what you fixed, and when, with the before-and-after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.
 
 I handle this as part of [website migration SEO](https://gerriscorp.com/services/migrations/), and for inherited projects that went badly, [project rescue](https://gerriscorp.com/services/rescue/). To prevent the next one, use the [website migration checklist](https://gerriscorp.com/guides/migration-checklist/) and the [tools I use for a website migration](https://gerriscorp.com/guides/migration-tools/).
 

@@ -65,7 +65,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
 - acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
-- access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
   - documentation and statements, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - fix list, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
@@ -527,7 +527,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - Consent Mode v2, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
   - conversion tracking, [Analytics](https://gerriscorp.com/services/analytics/)
   - custom channel groups, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
-  - data retention, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - data retention, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
   - deferring gtag.js, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
   - ghost and spam traffic, [Analytics](https://gerriscorp.com/services/analytics/)
   - matching Search Console, [Analytics](https://gerriscorp.com/services/analytics/)
@@ -576,7 +576,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Google Calendar, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - Google Podcasts (closed 2024), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/)
 - Google Postmaster Tools, [Email and DNS](https://gerriscorp.com/services/email-and-dns/), [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Authentication](https://gerriscorp.com/guides/email-authentication/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
-- Google Search Console, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Search Console](https://gerriscorp.com/services/search-console/)**, [Migrations](https://gerriscorp.com/services/migrations/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/), [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
+- Google Search Console, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Search Console](https://gerriscorp.com/services/search-console/)**, [Migrations](https://gerriscorp.com/services/migrations/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/), [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
   - Change of Address, [Migrations](https://gerriscorp.com/services/migrations/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
   - common findings, [Search Console](https://gerriscorp.com/services/search-console/)
   - Crawl stats, [Search Console](https://gerriscorp.com/services/search-console/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
@@ -632,7 +632,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - red flags, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
   - writing the brief, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
 
-- holiday hours, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- holiday hours, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - hreflang, **[hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)**
   - Bing and the lang attribute, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
   - checking, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
@@ -726,7 +726,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
-- lapsed domains, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**
   - baselines, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - crawl efficiency, [Large Sites](https://gerriscorp.com/services/large-sites/)
@@ -1335,17 +1335,17 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## Y
 - Yahoo directory, [About](https://gerriscorp.com/about/)
-- year-end SEO check, **[Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)**
-  - access and ownership, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - AI answers, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - domains and certificates, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - GA4 data retention, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - indexing, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - listings and holiday hours, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - redirects, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - sitemaps, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - speed, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-  - structured data, [Year End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- year-end SEO check, **[Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)**
+  - access and ownership, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - AI answers, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - domains and certificates, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - GA4 data retention, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - indexing, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - listings and holiday hours, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - redirects, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - sitemaps, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - speed, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+  - structured data, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 
 - Yoast monkey, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - Yoast SEO, [On-Page SEO](https://gerriscorp.com/services/on-page-seo/)

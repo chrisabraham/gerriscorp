@@ -40,7 +40,7 @@ I also work with Netlify, GitHub Pages, and other hosts' built-in CDNs.
 ## What you get
 - A speed diagnosis from field data and lab tests, with the causes ranked by impact.
 - The fixes I can make directly, and developer tickets for the rest.
-- A before and after comparison on the pages that matter.
+- A before-and-after comparison on the pages that matter.
 
 ## Common questions
 

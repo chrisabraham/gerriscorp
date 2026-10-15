@@ -1,4 +1,4 @@
-> Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
+> Full-page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
 >
 > Source: https://gerriscorp.com/guides/wordpress-behind-cloudflare/ · Updated 2026-10-14 · By Chris Abraham, Gerris Corp
 
@@ -6,7 +6,7 @@
 
 By [Chris Abraham](https://gerriscorp.com/about/) · Published October 14, 2026
 
-Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.
+Putting WordPress behind Cloudflare with full-page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.
 
 ## How the cache decides
 

@@ -11,7 +11,7 @@ description: A Next.js App Router SEO checklist: metadata, canonicals, title tem
 
 <h2>1. Every route sets its own title and description</h2>
 <p>In the App Router, metadata comes from a <code>metadata</code> object or a <code>generateMetadata</code> function exported from a layout or page. Static pages can use the object. Pages built from data, such as products, posts, and locations, need <code>generateMetadata</code> so each URL gets its own title and description from its own record.</p>
-<p>Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client side features, keep <code>page.tsx</code> as a Server Component and move the interactive parts into a child component.</p>
+<p>Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client-side features, keep <code>page.tsx</code> as a Server Component and move the interactive parts into a child component.</p>
 
 <h2>2. The title template does what you meant</h2>
 <p>A <code>title.template</code> in the root layout, such as <code>'%s | Brand'</code>, adds a suffix to every child page's title, and <code>title.default</code> fills in for pages that set none. That's convenient, and it's also how a site ends up with 2,000 pages titled with the brand name alone. Crawl the site and sort titles by frequency: any title used more than a few times is a page that fell through to the default.</p>
@@ -41,7 +41,7 @@ description: A Next.js App Router SEO checklist: metadata, canonicals, title tem
 <p>The <code>Link</code> component extends the HTML anchor element, so it produces an <code>&lt;a href&gt;</code> that crawlers can follow. Navigation built from buttons with <code>router.push</code> in a click handler produces no link at all. Search the codebase for click handlers that navigate, and crawl with JavaScript rendering off to see which pages are reachable from plain HTML.</p>
 
 <h2>11. The rendered page matches the server page</h2>
-<p>Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client side redirects all show up here. The <a href="{root}guides/hydration-errors/">guide to React hydration errors</a> covers the most common fault.</p>
+<p>Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client-side redirects all show up here. The <a href="{root}guides/hydration-errors/">guide to React hydration errors</a> covers the most common fault.</p>
 
 <h2>Make the checklist permanent</h2>
 <p>Every item above can become an automated check in the build, so a future change can't undo it. That's the subject of <a href="{root}guides/seo-build-checks/">adding SEO tests to your website's build</a>.</p>

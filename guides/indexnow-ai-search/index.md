@@ -1,4 +1,4 @@
-> Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.
+> Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full-text feeds, and measurable checkpoints.
 >
 > Source: https://gerriscorp.com/guides/indexnow-ai-search/ · Updated 2026-10-12 · By Chris Abraham, Gerris Corp
 
@@ -37,7 +37,7 @@ For a static site, the sequence I would implement is:
 4. Submit the affected URL inventory to IndexNow.
 5. Save the response and review engine reporting later.
 
-A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.
+A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow-up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.
 
 ## Use Bing Webmaster Tools as a diagnostic instrument
 

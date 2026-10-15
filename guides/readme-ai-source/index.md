@@ -12,7 +12,7 @@ If your website is built from a public GitHub repository, its README file is a p
 
 GitHub shows a repository's README on its front page, so the file is public web content like any other. When an assistant searches for a site or a company and the repository ranks for that name, the README is often the most direct description it can find: who built the site, what it is for, and what state it is in. Developers write READMEs for other developers, in the present tense, and then stop updating them. An assistant can't tell a launch checklist from a status report.
 
-Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.
+Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open-source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.
 
 ## What to put at the top
 

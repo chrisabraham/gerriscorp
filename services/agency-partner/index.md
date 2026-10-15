@@ -4,7 +4,7 @@
 
 # Agency partner and white-label support
 
-Marketing, PR, and web agencies bring me in when a client needs deeper technical SEO, AI search, or developer coordination than the team has in house. I work inside your relationship, on your terms, and your client stays yours.
+Marketing, PR, and web agencies bring me in when a client needs deeper technical SEO, AI search, or developer coordination than the team has in-house. I work inside your relationship, on your terms, and your client stays yours.
 
 ## Why agencies call
 - A client's traffic fell and the account team can't explain it.

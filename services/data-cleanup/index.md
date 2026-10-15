@@ -1,4 +1,4 @@
-> Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
+> Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI-generated spreadsheets for fabricated or wrong data before you rely on them.
 >
 > Source: https://gerriscorp.com/services/data-cleanup/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 

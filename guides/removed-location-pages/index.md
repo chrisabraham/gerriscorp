@@ -10,7 +10,7 @@ It's one of the most common stories I hear from service businesses. Years ago so
 
 ## Why the pages existed, and why removing them can be right
 
-Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long term decision. The damage comes from how the pages are removed.
+Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long-term decision. The damage comes from how the pages are removed.
 
 ## Five ways a cleanup hurts the pages you kept
 1. **Lost internal links.** Every location page usually linked to the core service pages. Delete five hundred pages and you delete thousands of internal links pointing at the pages you care about.

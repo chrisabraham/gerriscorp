@@ -17,7 +17,7 @@ description: What React error 418 and other hydration mismatches are, why Google
 <p>Production builds of React strip long error messages to save bytes and print a number instead. React's error page decodes #418 as: hydration failed because the server rendered HTML didn't match the client, and as a result the tree will be regenerated on the client. In plain terms, React gave up on the server's HTML for that part of the page and built it again in the browser.</p>
 
 <h2>What it means for search</h2>
-<p>Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.</p>
+<p>Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server-side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.</p>
 <p>The costs show up elsewhere:</p>
 <ul>
   <li><strong>Layout shift.</strong> When React throws away server markup and re-renders, elements can jump, which counts against Cumulative Layout Shift.</li>

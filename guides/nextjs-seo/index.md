@@ -12,7 +12,7 @@ Next.js gives you everything a search engine needs, as code: metadata, sitemaps,
 
 In the App Router, metadata comes from a `metadata` object or a `generateMetadata` function exported from a layout or page. Static pages can use the object. Pages built from data, such as products, posts, and locations, need `generateMetadata` so each URL gets its own title and description from its own record.
 
-Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client side features, keep `page.tsx` as a Server Component and move the interactive parts into a child component.
+Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client-side features, keep `page.tsx` as a Server Component and move the interactive parts into a child component.
 
 ## 2. The title template does what you meant
 
@@ -52,7 +52,7 @@ The `Link` component extends the HTML anchor element, so it produces an `<a href
 
 ## 11. The rendered page matches the server page
 
-Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client side redirects all show up here. The [guide to React hydration errors](https://gerriscorp.com/guides/hydration-errors/) covers the most common fault.
+Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client-side redirects all show up here. The [guide to React hydration errors](https://gerriscorp.com/guides/hydration-errors/) covers the most common fault.
 
 ## Make the checklist permanent
 

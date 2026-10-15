@@ -142,7 +142,7 @@
     <link>https://gerriscorp.com/guides/core-web-vitals-mcp/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/core-web-vitals-mcp/</guid>
     <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
-    <description>How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.</description>
+    <description>How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.</description>
     <content:encoded>&lt;h1&gt;Diagnosing Core Web Vitals with MCP and an AI coding assistant&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.&lt;/p&gt;
@@ -165,11 +165,11 @@
   &lt;li&gt;&lt;strong&gt;list_console_messages&lt;/strong&gt; and &lt;strong&gt;list_network_requests&lt;/strong&gt; show errors and the heaviest resources.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;lighthouse_audit&lt;/strong&gt; runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the &lt;code&gt;--no-performance-crux&lt;/code&gt; flag turns that off. And Google collects usage statistics from the server by default, which &lt;code&gt;--no-usage-statistics&lt;/code&gt; disables.&lt;/p&gt;
+&lt;p&gt;Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real-user data beside the lab result; the &lt;code&gt;--no-performance-crux&lt;/code&gt; flag turns that off. And Google collects usage statistics from the server by default, which &lt;code&gt;--no-usage-statistics&lt;/code&gt; disables.&lt;/p&gt;
 
-&lt;h2&gt;Real user data: CrUX, and a change to PageSpeed Insights&lt;/h2&gt;
+&lt;h2&gt;Real-user data: CrUX, and a change to PageSpeed Insights&lt;/h2&gt;
 &lt;p&gt;A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.&lt;/p&gt;
-&lt;p&gt;One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.&lt;/p&gt;
+&lt;p&gt;One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real-user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.&lt;/p&gt;
 
 &lt;h2&gt;Screaming Frog: every template, not one page&lt;/h2&gt;
 &lt;p&gt;Traces are for depth. For breadth, Screaming Frog's PageSpeed Insights integration, under Configuration &amp;gt; API Access &amp;gt; PageSpeed Insights, pulls Lighthouse metrics and opportunities for every URL during a crawl. It can also run Lighthouse locally, which avoids the API's daily query limit but has no CrUX data.&lt;/p&gt;
@@ -183,7 +183,7 @@
   &lt;li&gt;&lt;strong&gt;Trace each on emulated mobile.&lt;/strong&gt; Ask the assistant to throttle to a mid-range phone and record a cold load.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Read the insight, then the code.&lt;/strong&gt; For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Test on a preview.&lt;/strong&gt; Trace the same page on the branch's preview deployment and compare.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Confirm in the field.&lt;/strong&gt; CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Confirm in the field.&lt;/strong&gt; CrUX data is a rolling 28-day window, so real-user numbers improve gradually after release.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2&gt;Where to keep a hand on the wheel&lt;/h2&gt;
@@ -251,7 +251,7 @@
 &lt;h2&gt;How to start, if you're an SEO&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Learn six Git words:&lt;/strong&gt; clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Ask for read access&lt;/strong&gt; to a client's repository. Read only is an easy yes for most teams.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ask for read access&lt;/strong&gt; to a client's repository. Read-only is an easy yes for most teams.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Have the assistant give you the tour.&lt;/strong&gt; Ask it to explain the structure, where templates live, and where every SEO element is generated.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Make your first pull request tiny,&lt;/strong&gt; such as a title pattern or a missing canonical, and let the developer review it.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Write the rules down&lt;/strong&gt; in a project memory file and turn them into automated checks, so the assistant follows them every time.&lt;/li&gt;
@@ -687,10 +687,10 @@
     <link>https://gerriscorp.com/guides/wordpress-behind-cloudflare/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/wordpress-behind-cloudflare/</guid>
     <pubDate>Wed, 14 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.</description>
+    <description>Full-page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.</description>
     <content:encoded>&lt;h1&gt;What Cloudflare's cache leaves exposed on a WordPress site&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-14"&gt;October 14, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.&lt;/p&gt;
+&lt;p class="lead"&gt;Putting WordPress behind Cloudflare with full-page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.&lt;/p&gt;
 
 &lt;h2&gt;How the cache decides&lt;/h2&gt;
 &lt;p&gt;Cloudflare doesn't cache HTML by default. You turn page caching on with Automatic Platform Optimization, which Cloudflare built for WordPress, or with a cache rule that tells Cloudflare to cache everything on chosen paths. APO comes with its own logic for what to skip. Cloudflare's documentation says it bypasses the cache for logged-in and administrator users so private content isn't cached, and that a request skips the cache when bypass cookies are present, naming logged-in, session, and WooCommerce cookies. With the Cloudflare WordPress plugin installed, the edge copy updates when you change content.&lt;/p&gt;
@@ -814,7 +814,7 @@
 
 &lt;h2&gt;Why a README gets read&lt;/h2&gt;
 &lt;p&gt;GitHub shows a repository's README on its front page, so the file is public web content like any other. When an assistant searches for a site or a company and the repository ranks for that name, the README is often the most direct description it can find: who built the site, what it is for, and what state it is in. Developers write READMEs for other developers, in the present tense, and then stop updating them. An assistant can't tell a launch checklist from a status report.&lt;/p&gt;
-&lt;p&gt;Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.&lt;/p&gt;
+&lt;p&gt;Static sites on GitHub Pages, Netlify, and Vercel all tend to sit in public repositories. Agencies, open-source projects, and companies with developer documentation have the same exposure: every public repository that names the company is a page that can describe it.&lt;/p&gt;
 
 &lt;h2&gt;What to put at the top&lt;/h2&gt;
 &lt;p&gt;Open the README with two sentences for the reader who arrived from a search: what the repository builds, the live address, and the date it went live. Then say where to learn about the company itself. Mine now begins: "This repository builds https://gerriscorp.com, live since October 5, 2026. For what Gerris Corp does and who runs it, read the site; this file only explains how the site is built."&lt;/p&gt;
@@ -1033,7 +1033,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Add a step to the CI workflow that runs it after the build. A nonzero exit fails the check, and the message names the page and the rule, so the developer can fix it without asking anyone. For anything beyond a sketch, use a real HTML parser in place of regular expressions.&lt;/p&gt;
 
 &lt;h2&gt;Checks that guard the writing, too&lt;/h2&gt;
-&lt;p&gt;Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.&lt;/p&gt;
+&lt;p&gt;Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six-word phrases, or when a sentence of ten or more words appears on two pages. That keeps near-duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.&lt;/p&gt;
 
 &lt;h2&gt;Rolling it out without blocking everyone&lt;/h2&gt;
 &lt;ol&gt;
@@ -1156,7 +1156,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;1. Every route sets its own title and description&lt;/h2&gt;
 &lt;p&gt;In the App Router, metadata comes from a &lt;code&gt;metadata&lt;/code&gt; object or a &lt;code&gt;generateMetadata&lt;/code&gt; function exported from a layout or page. Static pages can use the object. Pages built from data, such as products, posts, and locations, need &lt;code&gt;generateMetadata&lt;/code&gt; so each URL gets its own title and description from its own record.&lt;/p&gt;
-&lt;p&gt;Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client side features, keep &lt;code&gt;page.tsx&lt;/code&gt; as a Server Component and move the interactive parts into a child component.&lt;/p&gt;
+&lt;p&gt;Both exports work only in Server Components, which keeps the tags in the server's HTML. If a page needs client-side features, keep &lt;code&gt;page.tsx&lt;/code&gt; as a Server Component and move the interactive parts into a child component.&lt;/p&gt;
 
 &lt;h2&gt;2. The title template does what you meant&lt;/h2&gt;
 &lt;p&gt;A &lt;code&gt;title.template&lt;/code&gt; in the root layout, such as &lt;code&gt;'%s | Brand'&lt;/code&gt;, adds a suffix to every child page's title, and &lt;code&gt;title.default&lt;/code&gt; fills in for pages that set none. That's convenient, and it's also how a site ends up with 2,000 pages titled with the brand name alone. Crawl the site and sort titles by frequency: any title used more than a few times is a page that fell through to the default.&lt;/p&gt;
@@ -1186,7 +1186,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The &lt;code&gt;Link&lt;/code&gt; component extends the HTML anchor element, so it produces an &lt;code&gt;&amp;lt;a href&amp;gt;&lt;/code&gt; that crawlers can follow. Navigation built from buttons with &lt;code&gt;router.push&lt;/code&gt; in a click handler produces no link at all. Search the codebase for click handlers that navigate, and crawl with JavaScript rendering off to see which pages are reachable from plain HTML.&lt;/p&gt;
 
 &lt;h2&gt;11. The rendered page matches the server page&lt;/h2&gt;
-&lt;p&gt;Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client side redirects all show up here. The &lt;a href="https://gerriscorp.com/guides/hydration-errors/"&gt;guide to React hydration errors&lt;/a&gt; covers the most common fault.&lt;/p&gt;
+&lt;p&gt;Finally, compare the raw HTML with the rendered DOM on each template, and run the pages in headless Chrome to collect console errors. Hydration mismatches, content that loads only after interaction, and client-side redirects all show up here. The &lt;a href="https://gerriscorp.com/guides/hydration-errors/"&gt;guide to React hydration errors&lt;/a&gt; covers the most common fault.&lt;/p&gt;
 
 &lt;h2&gt;Make the checklist permanent&lt;/h2&gt;
 &lt;p&gt;Every item above can become an automated check in the build, so a future change can't undo it. That's the subject of &lt;a href="https://gerriscorp.com/guides/seo-build-checks/"&gt;adding SEO tests to your website's build&lt;/a&gt;.&lt;/p&gt;
@@ -1316,7 +1316,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;strong&gt;Redirects to the home page or a generic category.&lt;/strong&gt; Google treats a redirect to an unrelated page much like a missing page, and the old URL's value doesn't carry over.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Temporary redirects.&lt;/strong&gt; Google's documentation says a permanent redirect shows the new target in results, while a temporary one keeps showing the source. A migration built on 302s or 307s is telling Google to keep the old URLs.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Chains and loops.&lt;/strong&gt; Each extra hop slows crawling, and loops never resolve.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;JavaScript and meta refresh redirects.&lt;/strong&gt; Google ranks server side redirects as the most reliable way to signal a move. Anything else should be replaced with one.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;JavaScript and meta refresh redirects.&lt;/strong&gt; Google ranks server-side redirects as the most reliable way to signal a move. Anything else should be replaced with one.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2&gt;Compare old pages with their new versions&lt;/h2&gt;
@@ -1339,7 +1339,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After each round of fixes, run the list crawl again and confirm the failures are gone, then watch the affected pages in Search Console. Recovered pages usually come back over weeks, as Google recrawls them. I make no promise about full recovery, because rankings also move for reasons unrelated to the migration, but a site whose old URLs all resolve cleanly to equal or better pages has removed every cause it controls.&lt;/p&gt;
 
 &lt;h2&gt;Keep the evidence&lt;/h2&gt;
-&lt;p&gt;Write down what you found, what you fixed, and when, with the before and after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.&lt;/p&gt;
+&lt;p&gt;Write down what you found, what you fixed, and when, with the before-and-after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.&lt;/p&gt;
 
 &lt;p class="related"&gt;I handle this as part of &lt;a href="https://gerriscorp.com/services/migrations/"&gt;website migration SEO&lt;/a&gt;, and for inherited projects that went badly, &lt;a href="https://gerriscorp.com/services/rescue/"&gt;project rescue&lt;/a&gt;. To prevent the next one, use the &lt;a href="https://gerriscorp.com/guides/migration-checklist/"&gt;website migration checklist&lt;/a&gt; and the &lt;a href="https://gerriscorp.com/guides/migration-tools/"&gt;tools I use for a website migration&lt;/a&gt;.&lt;/p&gt;
 &lt;aside class="help-box" aria-label="Get help"&gt;
@@ -1401,7 +1401,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Be early and small. Try new tools on real work at low cost, keep what proves itself, and drop the rest without ceremony. Write down what you learn as you go, so the decision a year from now rests on your own evidence. Avoid both betting the company on the peak and waiting for the plateau, because by then your competitors have already learned what you're just starting to.&lt;/p&gt;
 
 &lt;h2&gt;The gray beard in the room&lt;/h2&gt;
-&lt;p&gt;Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my &lt;a href="https://gerriscorp.com/services/advisory/"&gt;advisory work&lt;/a&gt;, read &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;how I vet an AI vendor's pitch&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white-label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my &lt;a href="https://gerriscorp.com/services/advisory/"&gt;advisory work&lt;/a&gt;, read &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;how I vet an AI vendor's pitch&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
 &lt;aside class="help-box" aria-label="Get help"&gt;
   &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
   &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
@@ -1437,7 +1437,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Production builds of React strip long error messages to save bytes and print a number instead. React's error page decodes #418 as: hydration failed because the server rendered HTML didn't match the client, and as a result the tree will be regenerated on the client. In plain terms, React gave up on the server's HTML for that part of the page and built it again in the browser.&lt;/p&gt;
 
 &lt;h2&gt;What it means for search&lt;/h2&gt;
-&lt;p&gt;Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.&lt;/p&gt;
+&lt;p&gt;Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server-side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.&lt;/p&gt;
 &lt;p&gt;The costs show up elsewhere:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Layout shift.&lt;/strong&gt; When React throws away server markup and re-renders, elements can jump, which counts against Cumulative Layout Shift.&lt;/li&gt;
@@ -1651,7 +1651,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Step 3: request removal, once, with the evidence&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Spamhaus:&lt;/strong&gt; start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Spamhaus:&lt;/strong&gt; start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self-service removals are limited, so use them only after the fix.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Barracuda:&lt;/strong&gt; its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Microsoft:&lt;/strong&gt; the Outlook.com postmaster site is the starting point, with troubleshooting for mail that Outlook.com blocks or sends to junk.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Gmail:&lt;/strong&gt; no list to be removed from. Google's guidelines say senders who don't follow its practices may not be considered for deliverability mitigations, so meeting every requirement comes first.&lt;/li&gt;
@@ -1711,9 +1711,9 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="lead"&gt;Every software sales deck now has AI on the first slide. Some of those products are remarkable. Some are a thin layer over a model you could rent yourself for a few dollars a month. A few have no meaningful AI at all. Regulators have a name for the last group, AI washing, and they've started bringing cases. These are the questions I ask when a client brings me onto a vendor call, and the answers that tell me which kind of product I'm looking at.&lt;/p&gt;
 
 &lt;h2&gt;What AI washing looks like on the record&lt;/h2&gt;
-&lt;p&gt;On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI driven investing when it wasn't using that data in its process.&lt;/p&gt;
+&lt;p&gt;On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI-driven investing when it wasn't using that data in its process.&lt;/p&gt;
 &lt;p&gt;On September 25, 2024, the FTC announced Operation AI Comply, five actions against companies using AI claims to deceive customers. One was DoNotPay, marketed as "the world's first robot lawyer"; the FTC said the company never tested whether its output matched a lawyer's, and DoNotPay agreed to pay $193,000. FTC Chair Lina Khan put the principle in one line: "there is no AI exemption from the laws on the books."&lt;/p&gt;
-&lt;p&gt;Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well written prompt and a spreadsheet.&lt;/p&gt;
+&lt;p&gt;Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well-written prompt and a spreadsheet.&lt;/p&gt;
 
 &lt;h2&gt;Twelve questions for the sales call&lt;/h2&gt;
 &lt;ol&gt;
@@ -1830,7 +1830,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <link>https://gerriscorp.com/guides/indexnow-ai-search/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/indexnow-ai-search/</guid>
     <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full text feeds, and measurable checkpoints.</description>
+    <description>Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full-text feeds, and measurable checkpoints.</description>
     <content:encoded>&lt;h1&gt;IndexNow, Bing, and a practical AI search workflow for fall 2026&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-12"&gt;October 12, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A website can publish excellent advice and still have a poor release process. The repository changes, the build finishes, a notification runs, and nobody checks which version reached the public domain. My priority for AI search this fall is making that chain observable. Give each release a clear destination, verify the content there, and keep evidence of what happened afterward.&lt;/p&gt;
@@ -1856,7 +1856,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;Submit the affected URL inventory to IndexNow.&lt;/li&gt;
   &lt;li&gt;Save the response and review engine reporting later.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.&lt;/p&gt;
+&lt;p&gt;A successful API response records acceptance, not a completed crawl. A response awaiting key verification also needs follow-up. Record the HTTP status alongside the host, time, and submitted count. If a request fails, inspect the cause before retrying; do not create an endless loop that hides a broken verification file.&lt;/p&gt;
 
 &lt;h2&gt;Use Bing Webmaster Tools as a diagnostic instrument&lt;/h2&gt;
 &lt;p&gt;Verify the business domain in Bing Webmaster Tools and review its sitemap and URL inspection information. Look at the exact production address when investigating a missing article. Keep old and new URLs together during a migration so a redirect can be evaluated against its intended destination.&lt;/p&gt;
@@ -1893,7 +1893,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <link>https://gerriscorp.com/guides/seo-101/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/seo-101/</guid>
     <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
-    <description>SEO from first principles for absolute beginners: how search works, people first content, E E A T, titles, links, alt text, speed, and accessibility.</description>
+    <description>SEO from first principles for absolute beginners: how search works, people-first content, E-E-A-T, titles, links, alt text, speed, and accessibility.</description>
     <content:encoded>&lt;h1&gt;SEO 101: a first principles primer for any website&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-09"&gt;October 9, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Search engine optimization sounds like a dark art. It's mostly common sense, applied carefully. A search engine has one job: send each searcher to the page that best answers the question. Everything in SEO follows from helping it do that job, and from never trying to fool it. This primer works for any website on any platform, from a hand-coded page to a store with ten thousand products.&lt;/p&gt;
@@ -2004,7 +2004,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <link>https://gerriscorp.com/guides/self-ranking-lists/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/self-ranking-lists/</guid>
     <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
-    <description>How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.</description>
+    <description>How self-ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.</description>
     <content:encoded>&lt;h1&gt;Ranking yourself first in a "best of" list now backfires in AI answers&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-09"&gt;October 9, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Ask ChatGPT, Gemini, or Google's AI Mode for the best AI search agency and you get a confident shortlist. Look at where that shortlist comes from and you find something funny: most of the sources are "best agency" lists written by agencies that put themselves first. For about two years that trick worked. In 2026 the search engines, the AI companies, and the data all turned against it at once.&lt;/p&gt;
@@ -2026,7 +2026,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Reviews on platforms you don't control:&lt;/strong&gt; Google Business Profile, Clutch, G2, and the directories of your industry.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Lists written by someone else:&lt;/strong&gt; trade press, analysts, associations, and customers' own write-ups.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Case studies with checkable detail:&lt;/strong&gt; a named client where permitted, dates, before and after figures, and the method.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Case studies with checkable detail:&lt;/strong&gt; a named client where permitted, dates, before-and-after figures, and the method.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Honest comparison pages:&lt;/strong&gt; if you compare yourself with competitors, say so plainly, state who each option suits, and include the ones that beat you on something.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;A consistent entity:&lt;/strong&gt; the same name, description, people, and profiles everywhere, so every system recognizes one business.&lt;/li&gt;
 &lt;/ul&gt;
@@ -2230,12 +2230,12 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/aside&gt;</content:encoded>
   </item>
   <item>
-    <title>The year end SEO check: one afternoon that protects next year</title>
+    <title>The year-end SEO check: one afternoon that protects next year</title>
     <link>https://gerriscorp.com/guides/year-end-seo-check/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/year-end-seo-check/</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
-    <description>A one afternoon year end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.</description>
-    <content:encoded>&lt;h1&gt;The year end SEO check: one afternoon that protects next year&lt;/h1&gt;
+    <description>A one-afternoon year-end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.</description>
+    <content:encoded>&lt;h1&gt;The year-end SEO check: one afternoon that protects next year&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-07"&gt;October 7, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;December is quiet for a lot of websites, which makes it the right time to find the problems that pile up unnoticed. None of these checks takes long, and together they catch the small failures that otherwise surface in March as a mystery traffic drop. Block an afternoon, work down the list, and write down what you find.&lt;/p&gt;
 
@@ -2246,7 +2246,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In the Sitemaps report, confirm each sitemap was read recently and without errors. A sitemap should list only live pages you want indexed. If it still includes redirected, deleted, or noindexed URLs from this year's changes, clean it up.&lt;/p&gt;
 
 &lt;h2&gt;3. Analytics: keep the history you'll want&lt;/h2&gt;
-&lt;p&gt;Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year over year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.&lt;/p&gt;
+&lt;p&gt;Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year-over-year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.&lt;/p&gt;
 
 &lt;h2&gt;4. Domains and certificates&lt;/h2&gt;
 &lt;p&gt;List every domain the business owns, including old ones that only redirect. Check renewal dates and turn on auto renew for the ones you'll keep. A lapsed domain can be bought by someone else and pointed anywhere. Confirm HTTPS certificates renew automatically, and that redirects from old domains still land on the right pages.&lt;/p&gt;
@@ -2275,7 +2275,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Save the big launches for January&lt;/h2&gt;
 &lt;p&gt;A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.&lt;/p&gt;
 
-&lt;p&gt;Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about your site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Prefer to hand this off? I run this check as a fixed-price review and leave you with the written list. &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about your site&lt;/a&gt;.&lt;/p&gt;
 &lt;aside class="help-box" aria-label="Get help"&gt;
   &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
   &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
@@ -2305,7 +2305,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="lead"&gt;It's one of the most common stories I hear from service businesses. Years ago someone built a landing page for every city, county, or area code the company serves. Later, someone decided they were thin, or risky, or just embarrassing, and deleted them. Months afterward the important pages, the ones nobody touched, are ranking lower. The deletion may be the cause, a coincidence, or one of several causes, and the only way to know is to look.&lt;/p&gt;
 
 &lt;h2&gt;Why the pages existed, and why removing them can be right&lt;/h2&gt;
-&lt;p&gt;Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long term decision. The damage comes from how the pages are removed.&lt;/p&gt;
+&lt;p&gt;Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long-term decision. The damage comes from how the pages are removed.&lt;/p&gt;
 
 &lt;h2&gt;Five ways a cleanup hurts the pages you kept&lt;/h2&gt;
 &lt;ol&gt;
@@ -2365,7 +2365,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
     <link>https://gerriscorp.com/guides/traffic-drop/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/traffic-drop/</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
-    <description>A step by step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.</description>
+    <description>A step-by-step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.</description>
     <content:encoded>&lt;h1&gt;How to diagnose a Google traffic drop in Search Console&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Organic traffic fell and everyone wants an answer by Friday. The answer is almost always findable, and it comes from narrowing the drop down until only one explanation fits. This is the order I work in.&lt;/p&gt;
@@ -3396,7 +3396,7 @@ gtag('consent', 'default', {
     <link>https://gerriscorp.com/guides/migration-checklist/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/migration-checklist/</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
-    <description>A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.</description>
+    <description>A step-by-step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.</description>
     <content:encoded>&lt;h1&gt;The website migration SEO checklist&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Migrations lose traffic for predictable reasons: URLs that weren't mapped, redirects that weren't tested, templates that changed what crawlers see, and nobody watching afterward. This checklist covers each stage.&lt;/p&gt;
@@ -3642,7 +3642,7 @@ gtag('consent', 'default', {
     <link>https://gerriscorp.com/guides/crawled-not-indexed/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/crawled-not-indexed/</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
-    <description>What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.</description>
+    <description>What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step-by-step method to find the real cause.</description>
     <content:encoded>&lt;h1&gt;"Crawled, currently not indexed": what it means and how to fix it&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Google visited the page, read it, and decided not to put it in the index, at least for now. It's the most misunderstood status in Search Console, and the fix depends entirely on why Google made that call.&lt;/p&gt;

@@ -41,7 +41,7 @@ Be early and small. Try new tools on real work at low cost, keep what proves its
 
 ## The gray beard in the room
 
-Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my [advisory work](https://gerriscorp.com/services/advisory/), read [how I vet an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/), or [get in touch](https://gerriscorp.com/contact/).
+Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white-label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my [advisory work](https://gerriscorp.com/services/advisory/), read [how I vet an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/), or [get in touch](https://gerriscorp.com/contact/).
 
 ## Want me to handle this for you?
 

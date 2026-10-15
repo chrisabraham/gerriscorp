@@ -4,7 +4,7 @@ published: 2026-10-13
 sources: Chrome DevTools MCP (README) | https://github.com/ChromeDevTools/chrome-devtools-mcp ;; Chrome DevTools MCP tool reference | https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md ;; Anthropic: Connect Claude Code to tools via MCP | https://code.claude.com/docs/en/mcp ;; web.dev: Web Vitals | https://web.dev/articles/vitals ;; Google: PageSpeed Insights API | https://developers.google.com/speed/docs/insights/v5/get-started ;; Chrome for Developers: CrUX API | https://developer.chrome.com/docs/crux/api ;; Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights) | https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/
 updated: 2026-10-15
 title: Diagnose Core Web Vitals with MCP and AI coding assistants
-description: How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
+description: How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real-user CrUX data, and Screaming Frog at scale.
 ---
 <h1>Diagnosing Core Web Vitals with MCP and an AI coding assistant</h1>
 <p class="lead">Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.</p>
@@ -27,11 +27,11 @@ description: How to diagnose LCP, INP, and CLS with an AI coding assistant throu
   <li><strong>list_console_messages</strong> and <strong>list_network_requests</strong> show errors and the heaviest resources.</li>
   <li><strong>lighthouse_audit</strong> runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.</li>
 </ul>
-<p>Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the <code>--no-performance-crux</code> flag turns that off. And Google collects usage statistics from the server by default, which <code>--no-usage-statistics</code> disables.</p>
+<p>Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real-user data beside the lab result; the <code>--no-performance-crux</code> flag turns that off. And Google collects usage statistics from the server by default, which <code>--no-usage-statistics</code> disables.</p>
 
-<h2>Real user data: CrUX, and a change to PageSpeed Insights</h2>
+<h2>Real-user data: CrUX, and a change to PageSpeed Insights</h2>
 <p>A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.</p>
-<p>One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.</p>
+<p>One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real-user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.</p>
 
 <h2>Screaming Frog: every template, not one page</h2>
 <p>Traces are for depth. For breadth, Screaming Frog's PageSpeed Insights integration, under Configuration &gt; API Access &gt; PageSpeed Insights, pulls Lighthouse metrics and opportunities for every URL during a crawl. It can also run Lighthouse locally, which avoids the API's daily query limit but has no CrUX data.</p>
@@ -45,7 +45,7 @@ description: How to diagnose LCP, INP, and CLS with an AI coding assistant throu
   <li><strong>Trace each on emulated mobile.</strong> Ask the assistant to throttle to a mid-range phone and record a cold load.</li>
   <li><strong>Read the insight, then the code.</strong> For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.</li>
   <li><strong>Test on a preview.</strong> Trace the same page on the branch's preview deployment and compare.</li>
-  <li><strong>Confirm in the field.</strong> CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.</li>
+  <li><strong>Confirm in the field.</strong> CrUX data is a rolling 28-day window, so real-user numbers improve gradually after release.</li>
 </ol>
 
 <h2>Where to keep a hand on the wheel</h2>

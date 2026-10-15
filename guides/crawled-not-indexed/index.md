@@ -1,4 +1,4 @@
-> What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step by step method to find the real cause.
+> What Google Search Console's Crawled, currently not indexed status means, how it differs from Discovered, and a step-by-step method to find the real cause.
 >
 > Source: https://gerriscorp.com/guides/crawled-not-indexed/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
 

@@ -3,11 +3,11 @@ type: guide
 published: 2026-10-14
 updated: 2026-10-14
 title: What Cloudflare's cache leaves exposed on a WordPress site
-description: Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
+description: Full-page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
 sources: Cloudflare Docs: About Automatic Platform Optimization | https://developers.cloudflare.com/automatic-platform-optimization/about/ ;; WordPress Advanced Administration Handbook: Hardening WordPress | https://developer.wordpress.org/advanced-administration/security/hardening/ ;; Cloudflare Docs: Cache Rules | https://developers.cloudflare.com/cache/how-to/cache-rules/ ;; Cloudflare Docs: Rate limiting rules | https://developers.cloudflare.com/waf/rate-limiting-rules/
 ---
 <h1>What Cloudflare's cache leaves exposed on a WordPress site</h1>
-<p class="lead">Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.</p>
+<p class="lead">Putting WordPress behind Cloudflare with full-page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.</p>
 
 <h2>How the cache decides</h2>
 <p>Cloudflare doesn't cache HTML by default. You turn page caching on with Automatic Platform Optimization, which Cloudflare built for WordPress, or with a cache rule that tells Cloudflare to cache everything on chosen paths. APO comes with its own logic for what to skip. Cloudflare's documentation says it bypasses the cache for logged-in and administrator users so private content isn't cached, and that a request skips the cache when bypass cookies are present, naming logged-in, session, and WooCommerce cookies. With the Cloudflare WordPress plugin installed, the edge copy updates when you change content.</p>

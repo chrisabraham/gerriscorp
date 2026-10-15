@@ -22,13 +22,13 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
-- [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
-- [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
+- [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people-first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
+- [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self-ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
 - [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
 - [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
 - [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
-- [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
+- [The year-end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): five tests, the common causes, and the fixes developers can ship.
 - [A Next.js SEO checklist for the App Router](https://gerriscorp.com/guides/nextjs-seo/): metadata, title templates, streamed metadata and AI crawlers, sitemap.ts, robots.ts, 308 redirects, real 404s, JSON-LD, and links.
@@ -82,6 +82,6 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 Each guide answers one question completely, with the definitions and context needed to act on it, and carries the date it was last updated. They're written from the work itself: the problems clients bring me, the tests I run, and the fixes that hold.
 
-New guides are announced in the [full text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
+New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
 Updated October 15, 2026

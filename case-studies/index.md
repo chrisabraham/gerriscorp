@@ -1,4 +1,4 @@
-> Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
+> Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi-location schema, and data cleanup.
 >
 > Source: https://gerriscorp.com/case-studies/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 

@@ -1,4 +1,4 @@
-> A step by step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
+> A step-by-step website migration SEO checklist: URL inventory, 301 redirect map, template review, launch day checks, and the weeks of monitoring after.
 >
 > Source: https://gerriscorp.com/guides/migration-checklist/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
 

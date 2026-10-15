@@ -23,7 +23,7 @@ I work with representative examples from the people who will actually use the to
 
 ## Experience behind the review
 
-My own command line assistant grew through real use: misread requests became explicit examples in its test suite. The [coding assistant case study](https://gerriscorp.com/case-studies/built-with-claude-code/) describes that process and the 140 end to end tests in the original build. Separately, I checked an AI generated outreach tracker against actual sending records and found activity the evidence did not support. That work is in the [data cleanup and AI audit case study](https://gerriscorp.com/case-studies/data-cleanup/). Both experiences inform a simple habit: compare the tool's report with what actually happened.
+My own command line assistant grew through real use: misread requests became explicit examples in its test suite. The [coding assistant case study](https://gerriscorp.com/case-studies/built-with-claude-code/) describes that process and the 140 end-to-end tests in the original build. Separately, I checked an AI-generated outreach tracker against actual sending records and found activity the evidence did not support. That work is in the [data cleanup and AI audit case study](https://gerriscorp.com/case-studies/data-cleanup/). Both experiences inform a simple habit: compare the tool's report with what actually happened.
 
 ## Platform agnostic by design
 

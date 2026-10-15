@@ -1,4 +1,4 @@
-> Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI assisted repository analysis, and a careful disavow.
+> Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI-assisted repository analysis, and a careful disavow.
 >
 > Source: https://gerriscorp.com/case-studies/netlify-migration/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 

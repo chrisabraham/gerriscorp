@@ -1,4 +1,4 @@
-> Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
+> Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 >
 > Source: https://gerriscorp.com/services/multi-location/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
 

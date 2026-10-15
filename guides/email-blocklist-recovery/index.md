@@ -35,7 +35,7 @@ Every operator says the same thing in different words: the problem must be ident
 5. **Marketing on the business domain.** When a newsletter's complaints land on the same domain as your invoices, the invoices suffer. Move bulk mail to a separate subdomain and sending service.
 
 ## Step 3: request removal, once, with the evidence
-- **Spamhaus:** start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.
+- **Spamhaus:** start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self-service removals are limited, so use them only after the fix.
 - **Barracuda:** its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.
 - **Microsoft:** the Outlook.com postmaster site is the starting point, with troubleshooting for mail that Outlook.com blocks or sends to junk.
 - **Gmail:** no list to be removed from. Google's guidelines say senders who don't follow its practices may not be considered for deliverability mitigations, so meeting every requirement comes first.
