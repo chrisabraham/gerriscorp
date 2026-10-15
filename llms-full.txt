@@ -7390,6 +7390,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - 404 errors, [E-commerce](https://gerriscorp.com/services/ecommerce/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
 - 410 status, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## A
 - A/B testing a fix, [E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/)
 - Abraham, Chris, **[About](https://gerriscorp.com/about/)**. *See also* [working with Chris](https://gerriscorp.com/site-index/#ix-working-with-chris)
@@ -7553,6 +7555,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Audacity, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Avada, [About](https://gerriscorp.com/about/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## B
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
 - backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
@@ -7600,6 +7604,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - structured data, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
   - titles and descriptions, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
   - where the checks run, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## C
 - California DROP (Delete Request and Opt-out Platform), [Reputation](https://gerriscorp.com/services/reputation/), [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
@@ -7732,6 +7738,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Cursor, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
 - CVS and Subversion, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## D
 - dangerouslySetInnerHTML, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)
 - data brokers, [Advisory](https://gerriscorp.com/services/advisory/), [Reputation](https://gerriscorp.com/services/reputation/), **[Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)**. *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
@@ -7783,6 +7791,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - doxxing, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - Drupal, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [In Your Stack](https://gerriscorp.com/stack/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## E
 - ecommerce SEO, [Services](https://gerriscorp.com/services/), **[E-commerce](https://gerriscorp.com/services/ecommerce/)**
   - duplicate product URLs, [E-commerce](https://gerriscorp.com/services/ecommerce/)
@@ -7828,6 +7838,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - expired domain abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/)
 - expired domains, [Large Sites](https://gerriscorp.com/services/large-sites/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## F
 - faceted navigation, [E-commerce](https://gerriscorp.com/services/ecommerce/), **[Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)**
   - crawlable filter pages, [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)
@@ -7868,6 +7880,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Framer, [About](https://gerriscorp.com/about/)
 - FTC Endorsement Guides, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
 - FTC (Federal Trade Commission), [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## G
 - G2, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
@@ -7960,6 +7974,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - gtag.js, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
 - guides, **[Guides](https://gerriscorp.com/guides/)**
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## H
 - H2 headings, hardcoded, [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
 - Harrison, Mark, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
@@ -8003,6 +8019,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Hyvä (Magento theme), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [E-commerce](https://gerriscorp.com/services/ecommerce/), [E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## I
 - image CDNs, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/)
 - impersonation, [Advisory](https://gerriscorp.com/services/advisory/)
@@ -8044,6 +8062,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - international SEO, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
 - International Targeting report (retired 2022), [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## J
 - JavaScript SEO, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), **[JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)**, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/). *See also* [content the crawler never sees](https://gerriscorp.com/site-index/#ix-content-the-crawler-never-sees)
   - common causes, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
@@ -8060,9 +8080,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - jQuery UI tabs, [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
 - JSON-LD, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Structured Data](https://gerriscorp.com/guides/structured-data/), [Glossary](https://gerriscorp.com/guides/glossary/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## K
 - Khan, Lina, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
 - Krueger, Dan, [About](https://gerriscorp.com/about/), [Colophon](https://gerriscorp.com/colophon/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
@@ -8106,6 +8130,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - staging versus production diffs, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 
 - Lynx Viewer, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## M
 - Magento, [Services](https://gerriscorp.com/services/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [E-commerce](https://gerriscorp.com/services/ecommerce/), [Migrations](https://gerriscorp.com/services/migrations/), **[E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/)**
@@ -8152,6 +8178,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - MXToolbox, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## N
 - NAP (name, address, phone), [Multi-Location](https://gerriscorp.com/services/multi-location/), [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
 - National Geographic, [Colophon](https://gerriscorp.com/colophon/)
@@ -8183,6 +8211,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Nuxt, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
 - NVDA, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## O
 - OAI-SearchBot, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
 - one-click unsubscribe, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
@@ -8205,6 +8235,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - orphaned pages, [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/), [Internal Linking](https://gerriscorp.com/services/internal-linking/)
 - OWASP excessive agency, [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
 - Owens Corning, [About](https://gerriscorp.com/about/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## P
 - P0 to P3 priorities, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
@@ -8292,9 +8324,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - push protection (GitHub), [Repository Access](https://gerriscorp.com/guides/repository-access/)
 - Python, [Data Cleanup](https://gerriscorp.com/services/data-cleanup/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## Q
 - quality rater guidelines, [SEO 101](https://gerriscorp.com/guides/seo-101/)
 - query fan-out, [Content Briefs](https://gerriscorp.com/guides/content-briefs/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## R
 - Radaris, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
@@ -8358,6 +8394,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Route 53, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - RSS feeds, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
   - full-content Guides feed, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## S
 - Sanity, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)**
@@ -8517,6 +8555,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - sycophancy in AI answers, [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/)
 - syndicated content, [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## T
 - Tag Assistant, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
 - technical SEO, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Technical SEO](https://gerriscorp.com/services/technical-seo/)**. *See also* [Crawled, currently not indexed](https://gerriscorp.com/site-index/#ix-crawled-currently-not-indexed)
@@ -8571,6 +8611,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - TTFB (time to first byte), [Glossary](https://gerriscorp.com/guides/glossary/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## U
 - Uberti, Oliver, [About](https://gerriscorp.com/about/), [Colophon](https://gerriscorp.com/colophon/)
 - Umbraco, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [Migrations](https://gerriscorp.com/services/migrations/), **[Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)**, [In Your Stack](https://gerriscorp.com/stack/)
@@ -8585,11 +8627,15 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - URL Parameters tool (retired 2022), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)
 - Usenet, [About](https://gerriscorp.com/about/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## V
 - vendor methodology changes, [Data Cleanup](https://gerriscorp.com/services/data-cleanup/), [Analytics](https://gerriscorp.com/services/analytics/), [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/), [In Your Stack](https://gerriscorp.com/stack/)
 - Vercel, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Repository Access](https://gerriscorp.com/guides/repository-access/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - Verdana, [Colophon](https://gerriscorp.com/colophon/)
 - VoiceOver, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## W
 - WAVE, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
@@ -8643,9 +8689,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - worksheets (CSV), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
 - WPCode, [On-Page SEO](https://gerriscorp.com/services/on-page-seo/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## X
 - XML sitemaps, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Large Sites](https://gerriscorp.com/services/large-sites/), [Glossary](https://gerriscorp.com/guides/glossary/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)
 - X-Robots-Tag, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Repository Access](https://gerriscorp.com/guides/repository-access/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## Y
 - Yahoo directory, [About](https://gerriscorp.com/about/)
@@ -8665,7 +8715,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Yoast SEO, [On-Page SEO](https://gerriscorp.com/services/on-page-seo/)
 - YouTube, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
+
 ## Z
 - Zyppy title rewrite study, [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/)
+
+[Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 Updated October 15, 2026

@@ -215,8 +215,9 @@ def site_index_body():
            'A locator is a page\'s short name; bold marks the page that treats the subject in full, and hovering shows the page\'s whole title.</p>',
            '<p>Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the '
            '<a href="{root}guides/glossary/">glossary</a>, and the <a href="{root}sitemap/">site map</a> lists every page by section.</p>',
-           '<nav class="index-letters" aria-label="Index letters"><p>'
-           + " ".join(f'<a href="#ix-letter-{x[0].lower()}">{x}</a>' for x in letters) + '</p></nav>']
+           '<nav class="index-letters" id="index-letters" aria-label="Jump to a letter"><p>'
+           + " ".join(f'<a href="#ix-letter-{x[0].lower()}">{x}</a>' if x in groups else f'<span class="index-empty" title="No headings under {x}">{x}</span>'
+                      for x in ["0–9"] + [chr(c) for c in range(65, 91)]) + '</p></nav>']
     for letter in letters:
         out.append(f'<h2 id="ix-letter-{letter[0].lower()}">{letter}</h2>\n<ul class="site-index">')
         for head, v in groups[letter]:
@@ -230,7 +231,7 @@ def site_index_body():
                     f'\n      <li>{e(s)}, {locs(ks)}</li>'
                     for s, ks in sorted(v["subs"].items(), key=lambda kv: sort_key(kv[0])) if locs(ks)) + "\n    </ul>"
             out.append(line + "</li>")
-        out.append("</ul>")
+        out.append('</ul>\n<p class="index-top"><a href="#index-letters">Back to the letters</a></p>')
     return "\n".join(out)
 
 
@@ -302,7 +303,12 @@ dd { margin: .2rem 0 0 0; }
 .guide-contents li { margin-bottom: .35rem; }
 h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
-.index-letters p { font-size: 1.05rem; word-spacing: .35em; }
+.index-letters { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--rule); margin: 0 0 1rem; }
+.index-letters p { margin: 0; padding: .35rem 0; font-size: 1.05rem; display: flex; flex-wrap: wrap; gap: .1rem .2rem; }
+.index-letters a, .index-letters span { display: inline-block; min-width: 1.9rem; min-height: 1.9rem; line-height: 1.9rem; text-align: center; }
+.index-letters .index-empty { color: #767676; }
+.index-top { font-size: .9rem; margin: -.4rem 0 1.25rem; }
+[id^="ix-"] { scroll-margin-top: 4.5rem; }
 ul.site-index { list-style: none; padding: 0; }
 ul.site-index > li { margin-bottom: .35rem; padding-left: 1.5rem; text-indent: -1.5rem; }
 ul.site-index ul { list-style: none; padding-left: 1.5rem; margin: .15rem 0 .3rem; }
