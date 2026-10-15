@@ -24,9 +24,12 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Ecommerce SEO](https://gerriscorp.com/services/ecommerce/): Shopify, Magento, and WooCommerce fixed at the template level.
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): titles, descriptions, headings, internal links, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): fast pages on real phones, and a CDN configured properly.
+- [WordPress care: caching, hardening, or a static move](https://gerriscorp.com/services/wordpress-care/): Cloudflare page caching, hardening for what the cache can't shield, or a move off WordPress.
 - [Google Search Console](https://gerriscorp.com/services/search-console/): setup, cleanup, and fixes for what the indexing reports reveal.
 - [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
+- [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): articles and pages written with AI from your own material, then checked claim by claim before they go live.
+- [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): a page and transcript for every episode, generated from your feed and updated every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 
 ## Local, reputation, and email

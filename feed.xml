@@ -8,6 +8,65 @@
   <updated>2026-10-14T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
+    <title>What Cloudflare's cache leaves exposed on a WordPress site</title>
+    <link href="https://gerriscorp.com/guides/wordpress-behind-cloudflare/"/>
+    <id>https://gerriscorp.com/guides/wordpress-behind-cloudflare/</id>
+    <published>2026-10-14T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <summary>Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.</summary>
+    <content type="html">&lt;h1&gt;What Cloudflare's cache leaves exposed on a WordPress site&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-14"&gt;October 14, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.&lt;/p&gt;
+
+&lt;h2&gt;How the cache decides&lt;/h2&gt;
+&lt;p&gt;Cloudflare doesn't cache HTML by default. You turn page caching on with Automatic Platform Optimization, which Cloudflare built for WordPress, or with a cache rule that tells Cloudflare to cache everything on chosen paths. APO comes with its own logic for what to skip. Cloudflare's documentation says it bypasses the cache for logged-in and administrator users so private content isn't cached, and that a request skips the cache when bypass cookies are present, naming logged-in, session, and WooCommerce cookies. With the Cloudflare WordPress plugin installed, the edge copy updates when you change content.&lt;/p&gt;
+&lt;p&gt;A hand-written cache rule has none of that logic until you add it. A rule that caches everything and forgets the login cookie will serve one editor's view of the site to the public. If you write your own rules, add a bypass for requests carrying the WordPress login cookie, and test logged in and logged out before trusting it.&lt;/p&gt;
+
+&lt;h2&gt;Traffic that still reaches your server&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Logins.&lt;/strong&gt; Every request to &lt;code&gt;wp-login.php&lt;/code&gt; and the dashboard runs PHP and queries the database. Password-guessing bots aim here first.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;XML-RPC.&lt;/strong&gt; &lt;code&gt;xmlrpc.php&lt;/code&gt; is an older remote-publishing interface that WordPress still ships. It accepts logins too, and bots use it for password guessing. Jetpack depends on it, so check before closing it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Logged-in sessions.&lt;/strong&gt; Editors, members, and customers with a session cookie get uncached pages, by design.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Forms, comments, and search.&lt;/strong&gt; Every submission and search query goes to the origin.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Carts and checkout&lt;/strong&gt; on WooCommerce, which carry session cookies.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Anything requested by IP address&lt;/strong&gt;, if the server answers requests that skip Cloudflare entirely.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Hardening the paths that remain&lt;/h2&gt;
+&lt;p&gt;WordPress's own hardening guide, in the Advanced Administration Handbook, covers most of this, and I follow it:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Update core, plugins, and themes.&lt;/strong&gt; The handbook's first advice is to keep WordPress current, and it says the same of plugins.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Delete plugins you don't use.&lt;/strong&gt; The handbook says to remove an unused plugin from the system entirely. A deactivated plugin still sits on disk.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Use strong passwords and two-step login&lt;/strong&gt; for every account that can publish, and close accounts that belong to people who've left.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Turn off the dashboard file editor&lt;/strong&gt; with &lt;code&gt;define( 'DISALLOW_FILE_EDIT', true );&lt;/code&gt; in &lt;code&gt;wp-config.php&lt;/code&gt;, so a stolen administrator login can't rewrite your theme's code from the browser.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Protect the login.&lt;/strong&gt; The handbook suggests server-side password protection for the admin area as a second layer. At Cloudflare, a rate limiting rule on &lt;code&gt;wp-login.php&lt;/code&gt; stops bulk guessing before it reaches the server.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Close XML-RPC&lt;/strong&gt; when nothing needs it, with a Cloudflare rule that blocks the path or a plugin that disables it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Back up the files and the database&lt;/strong&gt;, which the handbook names explicitly, and store the copies away from the server. Restore one to a test site once, so you know the backups work.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Accept only Cloudflare's traffic&lt;/strong&gt; at the origin, through your host's firewall or Cloudflare Tunnel, so nobody can go around the proxy.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;The maintenance never stops&lt;/h2&gt;
+&lt;p&gt;Caching removes the speed problem and most of the load. It leaves the upkeep: updates every week, plugin audits, backup checks, and an eye on login attempts. That is the standing cost of running WordPress, and for stores, membership sites, and newsrooms it's worth paying.&lt;/p&gt;
+&lt;p&gt;For a company site that changes a few times a year, it often isn't. A static site has no login page, no database, and no plugins, so the whole list above disappears. I covered that trade in &lt;a href="https://gerriscorp.com/services/wordpress-care/"&gt;WordPress care: caching, hardening, or a static move&lt;/a&gt;. For the Cloudflare settings that affect search engines and AI crawlers, see &lt;a href="https://gerriscorp.com/guides/cloudflare-seo/"&gt;Cloudflare settings that help or hurt SEO and AI crawlers&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.cloudflare.com/automatic-platform-optimization/about/"&gt;Cloudflare Docs: About Automatic Platform Optimization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developer.wordpress.org/advanced-administration/security/hardening/"&gt;WordPress Advanced Administration Handbook: Hardening WordPress&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.cloudflare.com/cache/how-to/cache-rules/"&gt;Cloudflare Docs: Cache Rules&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.cloudflare.com/waf/rate-limiting-rules/"&gt;Cloudflare Docs: Rate limiting rules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
     <title>Speculation rules: make the next page open instantly in Chrome</title>
     <link href="https://gerriscorp.com/guides/speculation-rules/"/>
     <id>https://gerriscorp.com/guides/speculation-rules/</id>

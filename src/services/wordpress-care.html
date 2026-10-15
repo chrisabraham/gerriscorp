@@ -1,0 +1,30 @@
+name: WordPress Care
+title: WordPress care: Cloudflare caching, hardening, or static
+description: For WordPress sites that are slow, exposed, or costly to keep: Cloudflare page caching, hardening for what the cache can't shield, or a move to static pages.
+updated: 2026-10-14
+---
+<h1>WordPress care: caching, hardening, or moving off</h1>
+<p class="lead">A WordPress site carries running costs that never show up on an invoice: a MySQL database, PHP on every uncached request, and a stack of plugins that each need updates and each open a door. I bring those costs down in one of two ways. I put the site behind Cloudflare and harden what's left exposed, or I move it to static pages when it never needed WordPress in the first place.</p>
+
+<h2>Option one: cache it and harden it</h2>
+<p>Cloudflare can serve whole WordPress pages from its edge, through Automatic Platform Optimization or a cache rule, so most visitors never reach your server or your database. I set that up and test it: cached pages carry the right canonical, logged-in views never get cached for the public, and the cache clears when you publish.</p>
+<p>The cache shields most of the site and leaves gaps by design. Cloudflare's documentation says APO sends logged-in users, and requests carrying session or WooCommerce cookies, straight to the origin. Login attempts, comment and form posts, search, and the XML-RPC endpoint all reach WordPress. Those gaps are where the hardening goes:</p>
+<ul>
+  <li>Core, plugins, and themes updated on a schedule, with a staging check first when the site is complex.</li>
+  <li>Plugins nobody uses removed outright, which WordPress's own hardening guide recommends.</li>
+  <li>Strong passwords and two-step login for every administrator, and old accounts closed.</li>
+  <li>The dashboard file editor disabled in wp-config.php.</li>
+  <li>XML-RPC switched off unless Jetpack or another tool depends on it, and login attempts rate limited at Cloudflare.</li>
+  <li>Backups that include the database, kept off the server, and a restore tested at least once.</li>
+</ul>
+<p>The reasoning, with sources, is in my guide to <a href="{root}guides/wordpress-behind-cloudflare/">what Cloudflare's cache doesn't protect on WordPress</a>.</p>
+
+<h2>Option two: leave WordPress</h2>
+<p>A company site that changes a few times a year pays all of those costs to serve pages that hardly change. I move sites like that to static HTML on GitHub Pages behind Cloudflare: every URL kept or redirected, titles and descriptions carried over, structured data added, and rankings watched through the launch. I did the same for my own serialized novel, moving it off a broken Movable Type install with every original address intact, as described under <a href="{root}services/rescue/">project rescue</a>. My own sites run this way; the <a href="{root}colophon/">colophon</a> shows how this one is built.</p>
+<p>WordPress stays the right tool for stores, membership sites, and teams that publish daily through its editor. For those, option one is the plan.</p>
+
+<h2>How I decide which</h2>
+<p>A short diagnostic answers it: how often the site changes, who edits it, what plugins it runs and why, what the hosting costs, and what it has already suffered. You get the recommendation in writing with the reasons, and the choice stays yours.</p>
+
+<h2>Engagement</h2>
+<p>A prepaid diagnostic, then a fixed-scope setup or migration. Monthly care is available under <a href="{root}services/ongoing-support/">ongoing support</a>. Terms are on <a href="{root}work-with-me/">Work With Me</a>.</p>

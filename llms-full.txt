@@ -83,9 +83,12 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Ecommerce SEO](https://gerriscorp.com/services/ecommerce/): Shopify, Magento, and WooCommerce fixed at the template level.
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): titles, descriptions, headings, internal links, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): fast pages on real phones, and a CDN configured properly.
+- [WordPress care: caching, hardening, or a static move](https://gerriscorp.com/services/wordpress-care/): Cloudflare page caching, hardening for what the cache can't shield, or a move off WordPress.
 - [Google Search Console](https://gerriscorp.com/services/search-console/): setup, cleanup, and fixes for what the indexing reports reveal.
 - [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
+- [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): articles and pages written with AI from your own material, then checked claim by claim before they go live.
+- [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): a page and transcript for every episode, generated from your feed and updated every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 
 ## Local, reputation, and email
@@ -1011,6 +1014,46 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/services/wordpress-care/
+Updated: 2026-10-14
+
+# WordPress care: caching, hardening, or moving off
+
+A WordPress site carries running costs that never show up on an invoice: a MySQL database, PHP on every uncached request, and a stack of plugins that each need updates and each open a door. I bring those costs down in one of two ways. I put the site behind Cloudflare and harden what's left exposed, or I move it to static pages when it never needed WordPress in the first place.
+
+## Option one: cache it and harden it
+
+Cloudflare can serve whole WordPress pages from its edge, through Automatic Platform Optimization or a cache rule, so most visitors never reach your server or your database. I set that up and test it: cached pages carry the right canonical, logged-in views never get cached for the public, and the cache clears when you publish.
+
+The cache shields most of the site and leaves gaps by design. Cloudflare's documentation says APO sends logged-in users, and requests carrying session or WooCommerce cookies, straight to the origin. Login attempts, comment and form posts, search, and the XML-RPC endpoint all reach WordPress. Those gaps are where the hardening goes:
+- Core, plugins, and themes updated on a schedule, with a staging check first when the site is complex.
+- Plugins nobody uses removed outright, which WordPress's own hardening guide recommends.
+- Strong passwords and two-step login for every administrator, and old accounts closed.
+- The dashboard file editor disabled in wp-config.php.
+- XML-RPC switched off unless Jetpack or another tool depends on it, and login attempts rate limited at Cloudflare.
+- Backups that include the database, kept off the server, and a restore tested at least once.
+
+The reasoning, with sources, is in my guide to [what Cloudflare's cache doesn't protect on WordPress](https://gerriscorp.com/guides/wordpress-behind-cloudflare/).
+
+## Option two: leave WordPress
+
+A company site that changes a few times a year pays all of those costs to serve pages that hardly change. I move sites like that to static HTML on GitHub Pages behind Cloudflare: every URL kept or redirected, titles and descriptions carried over, structured data added, and rankings watched through the launch. I did the same for my own serialized novel, moving it off a broken Movable Type install with every original address intact, as described under [project rescue](https://gerriscorp.com/services/rescue/). My own sites run this way; the [colophon](https://gerriscorp.com/colophon/) shows how this one is built.
+
+WordPress stays the right tool for stores, membership sites, and teams that publish daily through its editor. For those, option one is the plan.
+
+## How I decide which
+
+A short diagnostic answers it: how often the site changes, who edits it, what plugins it runs and why, what the hosting costs, and what it has already suffered. You get the recommendation in writing with the reasons, and the choice stays yours.
+
+## Engagement
+
+A prepaid diagnostic, then a fixed-scope setup or migration. Monthly care is available under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+
+Updated October 14, 2026
+
+
+---
+
 Source: https://gerriscorp.com/services/search-console/
 Updated: 2026-10-05
 
@@ -1192,6 +1235,90 @@ It builds on SEO. Most AI assistants search the web before answering, so strong 
 [Ask me what the AI assistants say about you](https://gerriscorp.com/contact/)
 
 Updated October 5, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/editorial/
+Updated: 2026-10-14
+
+# Fact-checked writing in your voice
+
+AI drafting is fast and cheap. The risk is what it adds: a date that's off by a year, a cause of death nobody reported, a quote smoothed into something the speaker never said, a motive assigned to you that you never stated. I write with AI and then fact-check the draft line by line, the way a magazine checks a feature before it goes to print.
+
+## Who this is for
+
+Founders, experts, and executives who have more to say than time to write it; shows and channels that want articles grown out of episodes; organizations whose writing has to survive a skeptical reader. Every piece goes out under a real name, so every claim in it has to hold.
+
+## How a piece gets made
+1. **Material first.** A recording, a transcript, an interview, your notes, a thread, your photos. The draft is built from what you gave me, and nothing is invented to fill a gap. Gaps come back to you as questions.
+2. **Voice rules.** Your words, your banned words, your habits, your sense of humor, and the constructions you can't stand, written down once and applied to every draft. AI prose has recognizable tics, and the rules strip them.
+3. **Draft and revision.** I draft with AI, revise by hand, and send it to you to read.
+4. **The check.** Every claim is traced before publication, described below.
+5. **Publication.** A search-ready title and description, structured data, images with alt text, and links to the pages the piece supports.
+
+## What the check covers
+- Names, titles, dates, ages, places, and figures, confirmed against primary or reputable sources and cited in the piece.
+- Your own statements, compared with the recording so the piece matches what you actually said.
+- Quotations, copied exactly and attributed to the person who wrote or said them, including commenters and posters.
+- Metrics, labeled for what they count. Views, upvotes, members, and visitors are four different numbers.
+- Feelings and motives, kept only when you stated them.
+
+With the finished piece you get a short list of what the check changed, why, and the source for each change. Anything I can't confirm is cut or flagged for your decision.
+
+## Why it matters for search
+
+Google's spam policies target content produced at scale to manipulate rankings and content that misleads readers, whatever tool wrote it. Accurate pages with named sources are the ones AI assistants are most willing to quote. For checking AI claims yourself, see [how to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/).
+
+## Engagement
+
+Per piece or a monthly allotment, prepaid, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+
+Updated October 14, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/podcast-sites/
+Updated: 2026-10-14
+
+# Podcast websites, built and run for you
+
+Spotify, Apple, and YouTube own the pages your show appears on. I give the show a home it owns: a website on your domain, generated from your RSS feed, with a real page for every episode and a daily job that keeps it current without anyone touching it.
+
+## Why a show needs one
+
+Search engines and AI assistants read text. A feed full of audio gives them almost nothing to work with, and the episode pages the platforms generate are thin and identical. A page per episode, carrying the full transcript, turns every hour you've recorded into something a person can find by searching for what you talked about. The platform pages also belong to the platform, and a platform can shut down a directory overnight, the way Google Podcasts closed in 2024.
+
+## What I deliver
+- A generator, written in Python with Claude Code, that reads your feed and writes the whole site as static HTML.
+- Episode pages at permanent addresses, each with cover art, a player that streams from your host, the show notes, a transcript, and a glossary when an episode calls for one.
+- Search titles and descriptions for every episode, drafted with AI and reviewed by hand, and alt text for every cover.
+- PodcastSeries and PodcastEpisode structured data, a sitemap, an llms.txt file, and an RSS feed of the site.
+- A 1,200 by 630 share card for every episode, carrying the cover and the episode title, so links posted to social platforms show in full.
+- An archive, an about page with every place to listen, and room for written articles alongside the episodes.
+
+## The daily job
+
+A scheduled GitHub Actions workflow runs every morning. It adds new episodes, collects transcripts that arrive days late, rebuilds, and commits only when something changed. It refuses to publish when the feed looks broken, for example when the feed suddenly lists far fewer episodes than the site already has. Plays still count with your host, because the audio never leaves it.
+
+## Running costs
+
+GitHub Pages hosts the site and Cloudflare handles DNS. Neither charges for a site like this, so the domain is the only bill. Nothing on the server needs patching, because nothing runs on the server.
+
+## After launch
+
+Most shows want more than a mirror of the feed. Common additions are corrections to an episode's notes, photos, links to the things discussed, and articles grown out of episodes that drew a response. Articles go through the same fact-check I describe on [fact-checked writing in your voice](https://gerriscorp.com/services/editorial/).
+
+## Want to build it yourself?
+
+The full method is free in my guide to [building a podcast website with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/). For getting episodes found once the site exists, see [podcast SEO](https://gerriscorp.com/guides/podcast-seo/).
+
+## Engagement
+
+The build is a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+
+Updated October 14, 2026
 
 
 ---
@@ -1539,6 +1666,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
 - [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): Chrome DevTools traces, CrUX field data, and Screaming Frog across every template.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
+- [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): the traffic that still reaches your server, and how to harden logins, XML-RPC, plugins, and backups.
 - [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
 
 ## Migrations and redirects
@@ -4164,6 +4292,66 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/guides/wordpress-behind-cloudflare/
+Updated: 2026-10-14
+
+# What Cloudflare's cache leaves exposed on a WordPress site
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 14, 2026
+
+Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.
+
+## How the cache decides
+
+Cloudflare doesn't cache HTML by default. You turn page caching on with Automatic Platform Optimization, which Cloudflare built for WordPress, or with a cache rule that tells Cloudflare to cache everything on chosen paths. APO comes with its own logic for what to skip. Cloudflare's documentation says it bypasses the cache for logged-in and administrator users so private content isn't cached, and that a request skips the cache when bypass cookies are present, naming logged-in, session, and WooCommerce cookies. With the Cloudflare WordPress plugin installed, the edge copy updates when you change content.
+
+A hand-written cache rule has none of that logic until you add it. A rule that caches everything and forgets the login cookie will serve one editor's view of the site to the public. If you write your own rules, add a bypass for requests carrying the WordPress login cookie, and test logged in and logged out before trusting it.
+
+## Traffic that still reaches your server
+- **Logins.** Every request to `wp-login.php` and the dashboard runs PHP and queries the database. Password-guessing bots aim here first.
+- **XML-RPC.** `xmlrpc.php` is an older remote-publishing interface that WordPress still ships. It accepts logins too, and bots use it for password guessing. Jetpack depends on it, so check before closing it.
+- **Logged-in sessions.** Editors, members, and customers with a session cookie get uncached pages, by design.
+- **Forms, comments, and search.** Every submission and search query goes to the origin.
+- **Carts and checkout** on WooCommerce, which carry session cookies.
+- **Anything requested by IP address**, if the server answers requests that skip Cloudflare entirely.
+
+## Hardening the paths that remain
+
+WordPress's own hardening guide, in the Advanced Administration Handbook, covers most of this, and I follow it:
+1. **Update core, plugins, and themes.** The handbook's first advice is to keep WordPress current, and it says the same of plugins.
+2. **Delete plugins you don't use.** The handbook says to remove an unused plugin from the system entirely. A deactivated plugin still sits on disk.
+3. **Use strong passwords and two-step login** for every account that can publish, and close accounts that belong to people who've left.
+4. **Turn off the dashboard file editor** with `define( 'DISALLOW_FILE_EDIT', true );` in `wp-config.php`, so a stolen administrator login can't rewrite your theme's code from the browser.
+5. **Protect the login.** The handbook suggests server-side password protection for the admin area as a second layer. At Cloudflare, a rate limiting rule on `wp-login.php` stops bulk guessing before it reaches the server.
+6. **Close XML-RPC** when nothing needs it, with a Cloudflare rule that blocks the path or a plugin that disables it.
+7. **Back up the files and the database**, which the handbook names explicitly, and store the copies away from the server. Restore one to a test site once, so you know the backups work.
+8. **Accept only Cloudflare's traffic** at the origin, through your host's firewall or Cloudflare Tunnel, so nobody can go around the proxy.
+
+## The maintenance never stops
+
+Caching removes the speed problem and most of the load. It leaves the upkeep: updates every week, plugin audits, backup checks, and an eye on login attempts. That is the standing cost of running WordPress, and for stores, membership sites, and newsrooms it's worth paying.
+
+For a company site that changes a few times a year, it often isn't. A static site has no login page, no database, and no plugins, so the whole list above disappears. I covered that trade in [WordPress care: caching, hardening, or a static move](https://gerriscorp.com/services/wordpress-care/). For the Cloudflare settings that affect search engines and AI crawlers, see [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Cloudflare Docs: About Automatic Platform Optimization](https://developers.cloudflare.com/automatic-platform-optimization/about/)
+- [WordPress Advanced Administration Handbook: Hardening WordPress](https://developer.wordpress.org/advanced-administration/security/hardening/)
+- [Cloudflare Docs: Cache Rules](https://developers.cloudflare.com/cache/how-to/cache-rules/)
+- [Cloudflare Docs: Rate limiting rules](https://developers.cloudflare.com/waf/rate-limiting-rules/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/guides/ga4-consent-mode/
 Updated: 2026-10-06
 
@@ -6736,9 +6924,12 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [E-commerce SEO: templates, catalogs, and product data](https://gerriscorp.com/services/ecommerce/): Chris Abraham fixes ecommerce SEO at the template level: product data, duplicate URLs, faceted navigation, product schema, rendering, and migrations.
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
+- [WordPress care: caching, hardening, or moving off](https://gerriscorp.com/services/wordpress-care/): For WordPress sites that are slow, exposed, or costly to keep: Cloudflare page caching, hardening for what the cache can't shield, or a move to static pages.
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
+- [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
+- [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
 
 ## Local, reputation, and email
@@ -6780,6 +6971,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): When an English language business needs hreflang for the US, UK, Canada, Australia, Ireland, and New Zealand, how to write the tags, and errors that void it.
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): What Google measures with Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, how to read field data, and the fixes for each one.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): The Cloudflare settings that decide whether Googlebot, Bingbot, and AI crawlers can reach your site, plus the caching, HTTPS, and redirect choices that help.
+- [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
