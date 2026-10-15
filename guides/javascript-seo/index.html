@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,11 +797,22 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-05">October 5, 2026</time></p>
 <p class="lead">A page can look complete in a browser and nearly empty to a crawler. When the important content depends on JavaScript, search engines may see less of it, later, and AI crawlers may not see it at all.</p>
 
-<h2>How crawlers handle JavaScript</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-how-crawlers-handle-javascript">How crawlers handle JavaScript</a></li>
+    <li><a href="#section-five-tests-that-settle-it">Five tests that settle it</a></li>
+    <li><a href="#section-common-causes">Common causes</a></li>
+    <li><a href="#section-fixes">Fixes</a></li>
+    <li><a href="#section-writing-the-ticket">Writing the ticket</a></li>
+  </ol>
+</details>
+
+<h2 id="section-how-crawlers-handle-javascript" tabindex="-1">How crawlers handle JavaScript</h2>
 <p>Googlebot renders pages with an up-to-date version of Chromium, so it can run JavaScript. Rendering happens in a queue after the initial crawl, though, and the renderer behaves like a very patient visitor who never clicks, never types, and never scrolls the way a person does. It loads the page with a tall viewport and takes a snapshot. Content that waits for a click, a real scroll event, or a user action can be missing from that snapshot.</p>
 <p>Most AI crawlers are simpler. GPTBot, ClaudeBot, PerplexityBot, and similar crawlers generally fetch the HTML the server sends and read it without running JavaScript. If your product details, prices, reviews, or answers exist only after scripts run, those crawlers see a shell.</p>
 
-<h2>Five tests that settle it</h2>
+<h2 id="section-five-tests-that-settle-it" tabindex="-1">Five tests that settle it</h2>
 <h3>1. Compare view-source with the rendered page</h3>
 <p>Open the page, then open view-source. View-source shows the HTML your server sent; the Elements panel in developer tools shows the DOM after JavaScript ran. Search view-source for a sentence from the content you care about. If it's missing, crawlers that don't render can't see it.</p>
 <h3>2. Fetch it from the command line</h3>
@@ -809,7 +825,7 @@ dd { margin: .2rem 0 0 0; }
 <h3>5. Crawl both ways</h3>
 <p>Crawl a sample of pages in Screaming Frog with JavaScript rendering off, then on, and compare word counts by template. In one diagnosis I ran, category pages yielded thousands of words while flagship product pages yielded 250 to 400 words despite weighing more than a megabyte, which pointed straight at the product template.</p>
 
-<h2>Common causes</h2>
+<h2 id="section-common-causes" tabindex="-1">Common causes</h2>
 <ul>
   <li><strong>Client-side rendering.</strong> Single-page apps that send an empty HTML shell and build the page in the browser.</li>
   <li><strong>Content that loads on scroll or interaction.</strong> Sections rendered only when they enter the viewport after a real scroll, such as Alpine.js <code>x-if</code> combined with <code>x-intersect</code>, or reviews fetched when a visitor scrolls near them.</li>
@@ -820,7 +836,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Blocked resources.</strong> JavaScript or CSS files disallowed in robots.txt, which prevents Google from rendering the page properly.</li>
 </ul>
 
-<h2>Fixes</h2>
+<h2 id="section-fixes" tabindex="-1">Fixes</h2>
 <ul>
   <li><strong>Render on the server.</strong> Server-side rendering or static generation puts the content in the initial HTML. Next.js, Nuxt, SvelteKit, Astro, and similar frameworks do this well when pages are configured for it.</li>
   <li><strong>Keep content in the HTML and hide it with CSS.</strong> In Alpine.js, <code>x-show</code> keeps an element in the DOM and only toggles visibility, while <code>x-if</code> removes it entirely until the condition is true. Use animation as progressive enhancement on content that's already present.</li>
@@ -829,7 +845,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Avoid dynamic rendering</strong> as a long-term answer. Google describes serving crawlers a separately rendered version as a workaround, and server rendering is the durable fix.</li>
 </ul>
 
-<h2>Writing the ticket</h2>
+<h2 id="section-writing-the-ticket" tabindex="-1">Writing the ticket</h2>
 <p>Developers fix these problems fastest with evidence: the affected template, example URLs, the word count with and without rendering, the Search Console live test result, and a testable definition of done, such as "a curl of the product URL returns the specification table." There's a <a href="../../services/developers/">sample ticket on the developers page</a>.</p>
 
 <p class="related">I diagnose rendering problems as part of <a href="../../services/technical-seo/">technical SEO forensics</a>.</p>

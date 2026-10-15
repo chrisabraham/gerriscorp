@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -802,23 +807,37 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-08">October 8, 2026</time> · Updated <time datetime="2026-10-15">October 15, 2026</time></p>
 <p class="lead">Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.</p>
 
-<h2>Give every episode its own page</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-give-every-episode-its-own-page">Give every episode its own page</a></li>
+    <li><a href="#section-put-the-transcript-in-the-html">Put the transcript in the HTML</a></li>
+    <li><a href="#section-write-titles-and-descriptions-for-searchers">Write titles and descriptions for searchers</a></li>
+    <li><a href="#section-mark-it-up-with-schema">Mark it up with schema</a></li>
+    <li><a href="#section-describe-your-cover-art">Describe your cover art</a></li>
+    <li><a href="#section-get-indexed-quickly">Get indexed quickly</a></li>
+    <li><a href="#section-make-it-readable-by-ai-assistants">Make it readable by AI assistants</a></li>
+    <li><a href="#section-own-the-property">Own the property</a></li>
+  </ol>
+</details>
+
+<h2 id="section-give-every-episode-its-own-page" tabindex="-1">Give every episode its own page</h2>
 <p>One episode, one address, forever. The page carries the title, the date, the running time, the cover art, a player, the full show notes, and links to listen in the major apps. Keep the address stable even if you later edit the title on your host, because every link and every search ranking points to that address.</p>
 <p>The player can stream straight from the audio file listed in your feed. The host keeps counting downloads, and your page keeps the search value.</p>
 
-<h2>Put the transcript in the HTML</h2>
+<h2 id="section-put-the-transcript-in-the-html" tabindex="-1">Put the transcript in the HTML</h2>
 <p>The transcript is the single biggest SEO asset a podcast has: thousands of words, in your own phrasing, on exactly the topics you know. Most hosts now generate transcripts automatically. Publish the text on the episode page as real HTML. A collapsible section is fine, since the text is still in the page, and it keeps the player and notes near the top. A transcript hidden inside a player widget or a downloadable file is invisible to search.</p>
 
-<h2>Write titles and descriptions for searchers</h2>
+<h2 id="section-write-titles-and-descriptions-for-searchers" tabindex="-1">Write titles and descriptions for searchers</h2>
 <p>Episode titles written for loyal listeners, like inside jokes or bare episode numbers, mean something only to regulars. Each page needs a title tag of about 60 characters that says what the episode covers, and a meta description of about 150 that a searcher would click. The on-page heading can stay playful. Write a unique pair for every episode; duplicate titles across hundreds of pages are a common reason an archive underperforms.</p>
 
-<h2>Mark it up with schema</h2>
+<h2 id="section-mark-it-up-with-schema" tabindex="-1">Mark it up with schema</h2>
 <p>Schema.org has types built for this. Mark each page as a <code>PodcastEpisode</code> with its name, date, duration, description, and image, link the audio as an <code>AudioObject</code>, and connect every episode to one <code>PodcastSeries</code> on the home page with links to the show on each platform. Season and episode numbers have their own properties too. This is how search engines and AI systems learn that hundreds of pages belong to one show by one host.</p>
 
-<h2>Describe your cover art</h2>
+<h2 id="section-describe-your-cover-art" tabindex="-1">Describe your cover art</h2>
 <p>Custom covers per episode help in image search and social shares, but only if the alt text says what each image shows. Describe the picture in a sentence, quote any words that appear in it, and skip the "image of" lead-in. Screen reader users and text-only browsers get a caption; search engines get context.</p>
 
-<h2>Get indexed quickly</h2>
+<h2 id="section-get-indexed-quickly" tabindex="-1">Get indexed quickly</h2>
 <ul>
   <li><strong>Sitemap:</strong> list every episode page with its date, and submit it in Google Search Console and Bing Webmaster Tools.</li>
   <li><strong>IndexNow:</strong> ping Bing and the other participating engines the moment a new episode page goes live.</li>
@@ -826,10 +845,10 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Feed link:</strong> put your site's address in your host's show settings, so the apps link listeners back to it.</li>
 </ul>
 
-<h2>Make it readable by AI assistants</h2>
+<h2 id="section-make-it-readable-by-ai-assistants" tabindex="-1">Make it readable by AI assistants</h2>
 <p>People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a podcast said about something. Those systems quote pages they can read. Allow their crawlers in robots.txt, keep the text in plain HTML, and consider an <code>llms.txt</code> file that lists every episode with a link. See <a href="../../guides/ai-assistants/">how AI assistants find and describe a business</a> for the wider picture.</p>
 
-<h2>Own the property</h2>
+<h2 id="section-own-the-property" tabindex="-1">Own the property</h2>
 <p>Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is <a href="../../guides/podcast-website/">how to build one with Codex or Claude Code, GitHub Pages, and Cloudflare</a>.</p>
 
 <p>Starting from scratch? Read <a href="../../guides/podcast-for-your-brand/">what it really takes to start a podcast for your brand</a>, or <a href="../../contact/">ask me to look at your show's search visibility</a>.</p>

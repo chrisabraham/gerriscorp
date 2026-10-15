@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -807,11 +812,22 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-09">October 9, 2026</time></p>
 <p class="lead">Ask ChatGPT, Gemini, or Google's AI Mode for the best AI search agency and you get a confident shortlist. Look at where that shortlist comes from and you find something funny: most of the sources are "best agency" lists written by agencies that put themselves first. For about two years that trick worked. In 2026 the search engines, the AI companies, and the data all turned against it at once.</p>
 
-<h2>How the trick works</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-how-the-trick-works">How the trick works</a></li>
+    <li><a href="#section-why-it-stopped-working">Why it stopped working</a></li>
+    <li><a href="#section-what-earns-a-real-recommendation">What earns a real recommendation</a></li>
+    <li><a href="#section-if-you-already-published-a-self-ranked-list">If you already published a self-ranked list</a></li>
+    <li><a href="#section-how-to-vet-anyone-selling-ai-visibility">How to vet anyone selling AI visibility</a></li>
+  </ol>
+</details>
+
+<h2 id="section-how-the-trick-works" tabindex="-1">How the trick works</h2>
 <p>AI assistants assemble recommendations from pages that already compare options, and a list titled "best GEO agencies in 2026" is exactly that kind of page. So agencies publish one, rank themselves first, and fill the rest with respectable competitors so the list looks fair. A few are candid about it. One list opens with its author admitting the self-ranking in a single word: "Guilty." Others score themselves highest on a scoring system they designed. The pattern is easy to spot in the search results for any "best agency" query this month.</p>
 <p>One agency studied the effect from the inside. Tracking 48 AI answers to four "which agency" prompts in late summer 2026, it found that almost every frequently cited source was an agency's own list ranking itself first, and that a single agency's site supplied the source for 14 of the 48 answers. Its conclusion, in its own words: the agencies AI recommends are, to a large degree, the agencies that published the lists AI reads. That agency then published its own scored list, and kept itself out of the ranking.</p>
 
-<h2>Why it stopped working</h2>
+<h2 id="section-why-it-stopped-working" tabindex="-1">Why it stopped working</h2>
 <ul>
   <li><strong>Google changed the rules in May.</strong> Its spam policies now open by including attempts to manipulate generative AI responses in Search. Lists built mainly to plant a recommendation sit squarely in that territory, alongside hidden instructions and fake sources.</li>
   <li><strong>The citations are already falling.</strong> Lily Ray tracked 100 "best B2B software" queries in Google's AI Overviews. Compared with June, September's answers cited 38 percent fewer self-promotional "best of" lists, and the brand that published the list was left out of the recommendation 83 percent of the time, up from 69 percent. One researcher and one sample, but the direction is clear.</li>
@@ -819,7 +835,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>When the engine, the referee, and the tool maker all move in the same direction, the tactic has a short future.</p>
 
-<h2>What earns a real recommendation</h2>
+<h2 id="section-what-earns-a-real-recommendation" tabindex="-1">What earns a real recommendation</h2>
 <p>Assistants are trying to do what a careful buyer does: find independent evidence that several unrelated people reached the same conclusion. Give them that evidence.</p>
 <ul>
   <li><strong>Reviews on platforms you don't control:</strong> Google Business Profile, Clutch, G2, and the directories of your industry.</li>
@@ -829,10 +845,10 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>A consistent entity:</strong> the same name, description, people, and profiles everywhere, so every system recognizes one business.</li>
 </ul>
 
-<h2>If you already published a self-ranked list</h2>
+<h2 id="section-if-you-already-published-a-self-ranked-list" tabindex="-1">If you already published a self-ranked list</h2>
 <p>Disclose the authorship at the top in a sentence a reader can't miss, publish the scoring method, and score yourself by the same rules as everyone else, or step out of the ranking entirely. Better still, turn it into a buyer's checklist that helps people choose well, with your own offer described once, at the end, as one option.</p>
 
-<h2>How to vet anyone selling AI visibility</h2>
+<h2 id="section-how-to-vet-anyone-selling-ai-visibility" tabindex="-1">How to vet anyone selling AI visibility</h2>
 <ol>
   <li>Show me an AI answer that names one of your clients, with the date.</li>
   <li>Which tool measures it, and can I see the raw prompts?</li>

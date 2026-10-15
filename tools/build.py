@@ -35,6 +35,7 @@ singular ("I", never "we"), and no links to missing pages.
 """
 import datetime, html, json, os, re, sys
 from html.parser import HTMLParser
+from guide_navigation import add_guide_contents
 
 # Set to True at the DNS cutover: drops noindex and writes CNAME (see README).
 LIVE = True
@@ -229,6 +230,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -375,9 +381,11 @@ def schema(p):
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, indent=1, ensure_ascii=False)
 
 
-def body_html(p):
+def body_html(p, *, contents=True):
     r = p["root"] or "./"
     body = p["body"].replace("{root}", r)
+    if p["kind"] == "guide" and contents:
+        body = add_guide_contents(body, p["words"])
     if p["kind"] == "guide":
         by = (f'<p class="byline">By <a href="{r}about/">Chris Abraham</a> · Published <time datetime="{p.get("published", p["updated"])}">{nice(p.get("published", p["updated"]))}</time>'
               + (f' · Updated <time datetime="{p["updated"]}">{nice(p["updated"])}</time>' if p.get("published", p["updated"]) != p["updated"] else "") + "</p>")
@@ -588,7 +596,7 @@ class Markdown(HTMLParser):
 
 def markdown(p):
     m = Markdown(p["url"])
-    m.feed(body_html(p).replace('href="' + (p["root"] or "./"), 'href="'))
+    m.feed(body_html(p, contents=False).replace('href="' + (p["root"] or "./"), 'href="'))
     text = re.sub(r"[ \t]+\n", "\n", "".join(m.out))
     return re.sub(r"\n{3,}", "\n\n", text).strip()
 
@@ -757,7 +765,7 @@ Sitemap: https://gerriscorp.com/sitemap.xml
 from urllib.parse import urljoin
 
 def feed_body(p):
-    body = body_html(p)
+    body = body_html(p, contents=False)
     return re.sub(r'(href|src)="([^"]+)"',
                   lambda m: m[1] + '="' + html.escape(urljoin(p["url"], html.unescape(m[2])), quote=True) + '"', body)
 

@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -797,11 +802,25 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-05">October 5, 2026</time></p>
 <p class="lead">Three DNS records decide whether mail from your domain is trusted. Since 2024, the largest mailbox providers require them, and mail without them increasingly lands in spam or bounces.</p>
 
-<h2>The current requirements</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-the-current-requirements">The current requirements</a></li>
+    <li><a href="#section-spf-who-may-send">SPF: who may send</a></li>
+    <li><a href="#section-dkim-a-signature-on-every-message">DKIM: a signature on every message</a></li>
+    <li><a href="#section-dmarc-the-policy-that-ties-them-together">DMARC: the policy that ties them together</a></li>
+    <li><a href="#section-reaching-enforcement-safely">Reaching enforcement safely</a></li>
+    <li><a href="#section-common-mistakes">Common mistakes</a></li>
+    <li><a href="#section-domains-that-don-t-send-mail">Domains that don&#x27;t send mail</a></li>
+    <li><a href="#section-changing-dns-without-breaking-mail">Changing DNS without breaking mail</a></li>
+  </ol>
+</details>
+
+<h2 id="section-the-current-requirements" tabindex="-1">The current requirements</h2>
 <p>Since February 2024, Gmail and Yahoo require every sender to authenticate mail with SPF or DKIM, to have valid forward and reverse DNS for sending servers, and to keep spam complaint rates low. Bulk senders, those sending around 5,000 or more messages a day to Gmail accounts, must also have SPF, DKIM, and a DMARC policy, align the visible From domain with SPF or DKIM, offer one-click unsubscribe on marketing mail, and keep the spam rate reported in Google Postmaster Tools below 0.3%. Since May 2025, Microsoft's Outlook.com has required SPF, DKIM, and DMARC from senders of more than 5,000 messages a day to its consumer addresses.</p>
 <p>Even small businesses are affected, because a newsletter tool, CRM, invoicing system, or help desk sending as your domain counts as a sender.</p>
 
-<h2>SPF: who may send</h2>
+<h2 id="section-spf-who-may-send" tabindex="-1">SPF: who may send</h2>
 <p>SPF (Sender Policy Framework) is a TXT record on your domain listing the servers and services allowed to send mail as you.</p>
 <pre><code>example.com.  TXT  "v=spf1 include:_spf.google.com include:sendgrid.net ~all"</code></pre>
 <ul>
@@ -810,7 +829,7 @@ dd { margin: .2rem 0 0 0; }
   <li><code>~all</code> (soft fail) is the common ending; <code>-all</code> (fail) is stricter. With DMARC in place, either works.</li>
 </ul>
 
-<h2>DKIM: a signature on every message</h2>
+<h2 id="section-dkim-a-signature-on-every-message" tabindex="-1">DKIM: a signature on every message</h2>
 <p>DKIM (DomainKeys Identified Mail) signs each message with a private key; receivers check the signature against a public key published in DNS under a selector.</p>
 <pre><code>google._domainkey.example.com.  TXT  "v=DKIM1; k=rsa; p=MIIBIjANBgkq..."</code></pre>
 <ul>
@@ -819,7 +838,7 @@ dd { margin: .2rem 0 0 0; }
   <li>DKIM survives forwarding better than SPF, which makes it the more reliable of the two for DMARC alignment.</li>
 </ul>
 
-<h2>DMARC: the policy that ties them together</h2>
+<h2 id="section-dmarc-the-policy-that-ties-them-together" tabindex="-1">DMARC: the policy that ties them together</h2>
 <p>DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receivers what to do when a message claiming to be from your domain fails authentication, and asks them to send you reports.</p>
 <pre><code>_dmarc.example.com.  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com"</code></pre>
 <ul>
@@ -828,7 +847,7 @@ dd { margin: .2rem 0 0 0; }
   <li><code>rua</code> sets where daily aggregate reports go. They're XML files listing every source that sent mail as your domain and whether it passed.</li>
 </ul>
 
-<h2>Reaching enforcement safely</h2>
+<h2 id="section-reaching-enforcement-safely" tabindex="-1">Reaching enforcement safely</h2>
 <ol>
   <li>Inventory every service that sends mail as your domain.</li>
   <li>Set up SPF and DKIM for each.</li>
@@ -839,7 +858,7 @@ dd { margin: .2rem 0 0 0; }
 </ol>
 <p>Enforcement is what stops criminals sending invoices and password resets in your name. It also unlocks BIMI, which can show your logo next to your mail in supporting inboxes when combined with a verified mark certificate.</p>
 
-<h2>Common mistakes</h2>
+<h2 id="section-common-mistakes" tabindex="-1">Common mistakes</h2>
 <ul>
   <li>Two SPF records after a new service is added, which invalidates both.</li>
   <li>A sending service set up without DKIM, so its mail fails DMARC once enforcement begins.</li>
@@ -848,10 +867,10 @@ dd { margin: .2rem 0 0 0; }
   <li>Mail records lost during a DNS provider change because only the web records were copied.</li>
 </ul>
 
-<h2>Domains that don't send mail</h2>
+<h2 id="section-domains-that-don-t-send-mail" tabindex="-1">Domains that don't send mail</h2>
 <p>Parked and secondary domains get spoofed too. Protect them with an SPF record of <code>v=spf1 -all</code>, a DMARC record at <code>p=reject</code>, and no MX records if they receive no mail.</p>
 
-<h2>Changing DNS without breaking mail</h2>
+<h2 id="section-changing-dns-without-breaking-mail" tabindex="-1">Changing DNS without breaking mail</h2>
 <p>Website moves, CDN setups, and DNS provider changes are when mail records get lost. Export every record first, recreate them exactly, keep MX, SPF, DKIM, and DMARC untouched unless they're the point of the change, and send test messages afterward. Header analyzers show exactly which checks passed.</p>
 
 <p class="related">I set this up and troubleshoot deliverability as <a href="../../services/email-and-dns/">email authentication and DNS</a> work.</p>

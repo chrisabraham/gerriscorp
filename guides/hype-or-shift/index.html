@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -842,12 +847,23 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">Every few years a technology arrives that everyone says changes everything. Sometimes it does. I've worked through enough of these waves to have a working method for telling the difference: online communities, blogs, social media, cryptocurrency, and now AI. The tests below are the ones I use with clients who have to decide what to spend on this year, while the noise is loudest.</p>
 
-<h2>Two ideas worth keeping in your pocket</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-two-ideas-worth-keeping-in-your-pocket">Two ideas worth keeping in your pocket</a></li>
+    <li><a href="#section-what-i-ve-watched-up-close">What I&#x27;ve watched up close</a></li>
+    <li><a href="#section-eight-tests">Eight tests</a></li>
+    <li><a href="#section-how-to-act-while-you-re-unsure">How to act while you&#x27;re unsure</a></li>
+    <li><a href="#section-the-gray-beard-in-the-room">The gray beard in the room</a></li>
+  </ol>
+</details>
+
+<h2 id="section-two-ideas-worth-keeping-in-your-pocket" tabindex="-1">Two ideas worth keeping in your pocket</h2>
 <p>Roy Amara, who led the Institute for the Future, gave his name to the most useful sentence about technology forecasting, now called Amara's law:</p>
 <blockquote><p>We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.</p></blockquote>
 <p>Gartner's hype cycle draws the same shape as a curve: an innovation trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity. The model has its critics, and plenty of technologies never climb out of the trough. As a reminder that loud and lasting are different measurements, both earn their place.</p>
 
-<h2>What I've watched up close</h2>
+<h2 id="section-what-i-ve-watched-up-close" tabindex="-1">What I've watched up close</h2>
 <ul>
   <li><strong>Online communities.</strong> I was on The WELL and ran MemeSpace long before "community manager" was a job. The tools changed completely. The thing people wanted, a place to talk with others who care about the same subject, never changed at all, and it's why Reddit threads now feed AI answers.</li>
   <li><strong>Blogs.</strong> I ran blogs on Movable Type and helped develop blogger outreach in 2006. The format peaked and faded as a fashion, and the underlying shift, anyone can publish and be found, became permanent.</li>
@@ -856,7 +872,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>AI.</strong> I use AI tools every working day and have built real software with them. I also catch them inventing things every week.</li>
 </ul>
 
-<h2>Eight tests</h2>
+<h2 id="section-eight-tests" tabindex="-1">Eight tests</h2>
 <ol>
   <li><strong>Does it work when it's boring?</strong> Demos show the best case. Ask what a normal Tuesday looks like for someone who has used it for six months.</li>
   <li><strong>Who pays, and for what?</strong> Lasting shifts have customers paying for a result. Hype is often funded by investors paying for growth.</li>
@@ -868,10 +884,10 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>What does the skeptic in the room say?</strong> Find the most knowledgeable doubter you can and listen to the strongest version of the case against.</li>
 </ol>
 
-<h2>How to act while you're unsure</h2>
+<h2 id="section-how-to-act-while-you-re-unsure" tabindex="-1">How to act while you're unsure</h2>
 <p>Be early and small. Try new tools on real work at low cost, keep what proves itself, and drop the rest without ceremony. Write down what you learn as you go, so the decision a year from now rests on your own evidence. Avoid both betting the company on the peak and waiting for the plateau, because by then your competitors have already learned what you're just starting to.</p>
 
-<h2>The gray beard in the room</h2>
+<h2 id="section-the-gray-beard-in-the-room" tabindex="-1">The gray beard in the room</h2>
 <p>Here's what I've learned about my own role. The rarest person in a meeting about new technology is someone who's genuinely excited by it and still asks for the receipts. I'm both, every time. Companies bring me in as the experienced voice for a young team, as the technical skeptic on a vendor call, as an interim or white label executive who can speak for the technology, and as a guest on shows, panels, and interviews about AI and search. If you need someone to separate the real from the loud, start with my <a href="../../services/advisory/">advisory work</a>, read <a href="../../guides/ai-vendor-pitch/">how I vet an AI vendor's pitch</a>, or <a href="../../contact/">get in touch</a>.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

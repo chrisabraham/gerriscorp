@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -887,21 +892,34 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-11">October 11, 2026</time> · Updated <time datetime="2026-10-15">October 15, 2026</time></p>
 <p class="lead">On September 29, 2026, President Trump signed an executive order replacing "Artificial Intelligence" with "Super Intelligence" across the executive branch. Call it AI, SI, or a very fast intern; for anyone in SEO, the name matters less than what it does when you pair it with the other half of the equation: the code repository. Git plus a capable coding assistant is a real superpower. It takes you far outside the confines of being a Yoast monkey or a Screaming Frog jockey.</p>
 
-<h2>Half one: the repository</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-half-one-the-repository">Half one: the repository</a></li>
+    <li><a href="#section-half-two-super-intelligence-that-reads-code">Half two: super intelligence that reads code</a></li>
+    <li><a href="#section-why-each-half-fails-alone">Why each half fails alone</a></li>
+    <li><a href="#section-what-the-superpower-looks-like-in-practice">What the superpower looks like in practice</a></li>
+    <li><a href="#section-how-to-start-if-you-re-an-seo">How to start, if you&#x27;re an SEO</a></li>
+    <li><a href="#section-what-this-means-for-your-business">What this means for your business</a></li>
+    <li><a href="#section-hire-the-superpower">Hire the superpower</a></li>
+  </ol>
+</details>
+
+<h2 id="section-half-one-the-repository" tabindex="-1">Half one: the repository</h2>
 <p>Every serious website now lives in version control, almost always Git, which Linus Torvalds and the Linux kernel community built in 2005 after losing free use of their previous tool. Before Git, teams used CVS and then Subversion. Today the code sits on GitHub, GitLab, or Bitbucket, and every change arrives as a commit, gets proposed as a pull request, is reviewed, and can be rolled back.</p>
 <p>For SEO, that means the things you care about are files. Title patterns, canonical logic, hreflang, structured data, redirects, robots rules, sitemaps, internal linking modules, and lazy loading behavior are all written down somewhere in the repository. If you can't read it, you're guessing about it from the outside.</p>
 
-<h2>Half two: super intelligence that reads code</h2>
+<h2 id="section-half-two-super-intelligence-that-reads-code" tabindex="-1">Half two: super intelligence that reads code</h2>
 <p>Coding assistants have moved past autocomplete. GitHub says Copilot can now answer questions about a repository, plan and make changes, run tests in a cloud environment, and review pull requests. Anthropic's Claude Code does the same from a terminal, and OpenAI Codex helps write, review, and debug code. Point one at a codebase and ask where the canonical tag comes from, and it will find the component, the function feeding it, and the edge case that breaks it, in minutes.</p>
 
-<h2>Why each half fails alone</h2>
+<h2 id="section-why-each-half-fails-alone" tabindex="-1">Why each half fails alone</h2>
 <ul>
   <li><strong>A repository without AI</strong> is a wall of unfamiliar code. Most SEOs never get past the folder list, so they file a ticket and wait.</li>
   <li><strong>AI without a repository</strong> is copy and paste from a chat window: snippets with no history, no review, and no way to know whether the fix ever shipped or what else it broke.</li>
   <li><strong>Together,</strong> the assistant reads and drafts, Git records and protects, and the SEO supplies the one thing neither has: knowing what search engines and AI answer engines actually need.</li>
 </ul>
 
-<h2>What the superpower looks like in practice</h2>
+<h2 id="section-what-the-superpower-looks-like-in-practice" tabindex="-1">What the superpower looks like in practice</h2>
 <ul>
   <li><strong>Diagnosis down to the line.</strong> A crawl tells you product pages render 300 words. The repository tells you a scroll triggered component never mounts for a crawler. I found exactly that once, and it's the difference between "Google doesn't like the page" and a fix a developer can ship the same day. The details are in my <a href="../../guides/javascript-seo/">JavaScript SEO guide</a>.</li>
   <li><strong>Migrations with receipts.</strong> Redirect maps written as config, tested against the old URL list before launch, and reviewed like any other code.</li>
@@ -909,7 +927,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Your own tools.</strong> I direct OpenAI Codex and Claude Code like a small development team; Claude Code built me a command line assistant with a full test suite, moved a legacy blog off dead software, and built this website. <a href="../../case-studies/built-with-claude-code/">See my Codex and Claude Code workflow.</a></li>
 </ul>
 
-<h2>How to start, if you're an SEO</h2>
+<h2 id="section-how-to-start-if-you-re-an-seo" tabindex="-1">How to start, if you're an SEO</h2>
 <ol>
   <li><strong>Learn six Git words:</strong> clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.</li>
   <li><strong>Ask for read access</strong> to a client's repository. Read only is an easy yes for most teams.</li>
@@ -919,10 +937,10 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Check everything.</strong> The assistant is confidently wrong often enough that verification is the job. My method for doing this safely is in <a href="../../guides/ai-coding-assistants/">how to use AI coding assistants on a business website</a>.</li>
 </ol>
 
-<h2>What this means for your business</h2>
+<h2 id="section-what-this-means-for-your-business" tabindex="-1">What this means for your business</h2>
 <p>If you run a company with a website, the question to ask your SEO is no longer whether they know the plugin. It's whether they can read the code and send a pull request. An SEO with both halves of the superpower costs you fewer developer hours, finds the cause, and leaves a reviewed history of every change.</p>
 
-<h2>Hire the superpower</h2>
+<h2 id="section-hire-the-superpower" tabindex="-1">Hire the superpower</h2>
 <p>This is how I work every day: in the repository, through pull requests, with super intelligence doing the heavy reading under my direction and my name on the result. I can be your <a href="../../services/technical-lead/">fractional technical lead</a>, turn a diagnosis into <a href="../../services/developers/">developer ready specs</a> and verify they shipped, or <a href="../../services/ai-automation/">build you small AI tools safely</a>. <a href="../../contact/">Tell me about your site</a> and I'll tell you what the code is doing to your search visibility.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -808,12 +813,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Lynx has been around since the early nineties, and it's still one of the most useful tools in my launch kit. Because it ignores styling and never runs JavaScript, it strips a page down to what the server actually sends. Scripted from the command line, it can check every page of a site in minutes, which makes it a natural fit for redesigns, migrations, and release checklists.</p>
 
-<h2>Getting Lynx</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-getting-lynx">Getting Lynx</a></li>
+    <li><a href="#section-commands-worth-memorizing">Commands worth memorizing</a></li>
+    <li><a href="#section-five-checks-i-script-before-a-launch">Five checks I script before a launch</a></li>
+    <li><a href="#section-reading-the-results-with-a-team">Reading the results with a team</a></li>
+    <li><a href="#section-when-a-terminal-isn-t-an-option">When a terminal isn&#x27;t an option</a></li>
+    <li><a href="#section-add-it-to-the-checklist">Add it to the checklist</a></li>
+  </ol>
+</details>
+
+<h2 id="section-getting-lynx" tabindex="-1">Getting Lynx</h2>
 <p>I run Lynx on a Linux server over SSH, from an old ThinkPad, and that's the simplest setup. On Debian or Ubuntu:</p>
 <pre><code>sudo apt update &amp;&amp; sudo apt install lynx</code></pre>
 <p>Other systems: <code>brew install lynx</code> on macOS with Homebrew, <code>sudo dnf install lynx</code> on Fedora, and on Windows, the same apt command inside the Windows Subsystem for Linux. Once it's installed, <code>lynx --version</code> confirms it works.</p>
 
-<h2>Commands worth memorizing</h2>
+<h2 id="section-commands-worth-memorizing" tabindex="-1">Commands worth memorizing</h2>
 <table>
 <thead><tr><th scope="col">Command</th><th scope="col">What it gives you</th></tr></thead>
 <tbody>
@@ -825,7 +842,7 @@ dd { margin: .2rem 0 0 0; }
 </tbody>
 </table>
 
-<h2>Five checks I script before a launch</h2>
+<h2 id="section-five-checks-i-script-before-a-launch" tabindex="-1">Five checks I script before a launch</h2>
 <h3>1. Every page in the sitemap has real text</h3>
 <p>Pull the URLs from the sitemap and count the words Lynx sees on each. A product page that comes back with forty words when it should have four hundred is a template hiding its content behind scripts.</p>
 <pre><code>curl -s https://example.com/sitemap.xml | grep -o '&lt;loc&gt;[^&lt;]*' | sed 's/&lt;loc&gt;//' |
@@ -845,10 +862,10 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
 <h3>5. The first screen is about the page</h3>
 <p>Read the top twenty lines of each key template's dump. If a consent banner, a mega menu, and a promotional strip come before the first heading, assistive technology and crawlers wade through all of it too. Reordering the markup, or adding a skip link, fixes the problem for both.</p>
 
-<h2>Reading the results with a team</h2>
+<h2 id="section-reading-the-results-with-a-team" tabindex="-1">Reading the results with a team</h2>
 <p>Text dumps are easy to share, and they make strong evidence in a developer ticket: here's the page as a crawler receives it, and here's the paragraph that's missing. Nobody has to install anything to read a text file, and the comparison is hard to argue with.</p>
 
-<h2>When a terminal isn't an option</h2>
+<h2 id="section-when-a-terminal-isn-t-an-option" tabindex="-1">When a terminal isn't an option</h2>
 <p>Plenty of teams can't or won't install command-line tools. These get most of the way there:</p>
 <ul>
   <li><a href="https://www.delorie.com/web/lynxview.html">Lynx Viewer</a>, a free web service that renders a public URL much as Lynx would.</li>
@@ -860,7 +877,7 @@ xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n' | grep -v '^
 
 <p><strong>Here's the short version: if a page works in Lynx, you're way more than halfway there.</strong></p>
 
-<h2>Add it to the checklist</h2>
+<h2 id="section-add-it-to-the-checklist" tabindex="-1">Add it to the checklist</h2>
 <p>I add a Lynx pass to every launch: sitemap word counts, a noindex sweep, a link check, and a text diff of the most important templates. It takes about ten minutes and catches problems a styled browser hides. For the full launch sequence, see <a href="../../guides/migration-checklist/">the website migration SEO checklist</a>, and for the deeper rendering questions, <a href="../../guides/javascript-seo/">how to tell if JavaScript is hiding your content</a>.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

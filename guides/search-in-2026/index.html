@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -812,7 +817,20 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-09">October 9, 2026</time></p>
 <p class="lead">2026 has been the busiest year for Google's ranking systems in a long time: two core updates, four spam updates, and a rule change that brings AI Overviews and AI Mode under the spam policies. Here is what happened, in order, from Google's own records, along with what Bing and OpenAI now let site owners see, and what all of it means for anyone who publishes on the web.</p>
 
-<h2>The 2026 updates, from Google's dashboard</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-the-2026-updates-from-google-s-dashboard">The 2026 updates, from Google&#x27;s dashboard</a></li>
+    <li><a href="#section-the-big-rule-change-ai-answers-are-now-inside-the-spam-policies">The big rule change: AI answers are now inside the spam policies</a></li>
+    <li><a href="#section-scaled-content-abuse-is-the-year-s-main-target">Scaled content abuse is the year&#x27;s main target</a></li>
+    <li><a href="#section-what-google-says-about-optimizing-for-ai-overviews">What Google says about optimizing for AI Overviews</a></li>
+    <li><a href="#section-bing-and-chatgpt-now-show-their-work">Bing and ChatGPT now show their work</a></li>
+    <li><a href="#section-a-measurement-change-that-still-confuses-reports">A measurement change that still confuses reports</a></li>
+    <li><a href="#section-what-wins-in-this-environment">What wins in this environment</a></li>
+  </ol>
+</details>
+
+<h2 id="section-the-2026-updates-from-google-s-dashboard" tabindex="-1">The 2026 updates, from Google's dashboard</h2>
 <p>Google logs every confirmed ranking update on its Search Status Dashboard. Through early October, 2026 has seven:</p>
 <ul>
   <li><strong>February Discover update:</strong> began February 5, ran about 22 days. It changed what appears in the Discover feed, separately from Search.</li>
@@ -825,7 +843,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Core updates reassess how every page ranks against everything else, and pages can rise or fall. Spam updates improve the automated systems that detect policy violations, and the sites they hit tend to drop hard and fast.</p>
 
-<h2>The big rule change: AI answers are now inside the spam policies</h2>
+<h2 id="section-the-big-rule-change-ai-answers-are-now-inside-the-spam-policies" tabindex="-1">The big rule change: AI answers are now inside the spam policies</h2>
 <p>In May, Google revised the opening of its spam policies. Spam now explicitly includes "attempting to manipulate generative AI responses in Google Search," which covers AI Overviews and AI Mode. The June spam update was widely reported as the first to enforce it. In practice, the tactics now in scope include:</p>
 <ul>
   <li>Hidden text or instructions aimed at AI systems: white-on-white copy, zero-size fonts, or prompts tucked into markup that try to make an assistant favor a brand.</li>
@@ -834,24 +852,24 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Security researchers have shown for two years that hidden page text can steer AI search tools. Search engines are now treating those tricks the way they treated keyword stuffing in 2005.</p>
 
-<h2>Scaled content abuse is the year's main target</h2>
+<h2 id="section-scaled-content-abuse-is-the-year-s-main-target" tabindex="-1">Scaled content abuse is the year's main target</h2>
 <p>Google's policy defines scaled content abuse by intent and outcome: many pages made primarily to manipulate rankings, written by automation, by people, or by both. Automation alone is never the violation; the purpose is. Reporting on the August and September updates centered on sites that mass-published AI-written pages with no review and nothing original in them. Two older policies stayed in the news alongside it:</p>
 <ul>
   <li><strong>Site reputation abuse:</strong> renting a trusted site's subfolder or subdomain to third-party content, coupons, gambling, or affiliate pages, to borrow its rankings.</li>
   <li><strong>Expired domain abuse:</strong> buying a dead domain with history and filling it with low-value pages to exploit its old reputation.</li>
 </ul>
 
-<h2>What Google says about optimizing for AI Overviews</h2>
+<h2 id="section-what-google-says-about-optimizing-for-ai-overviews" tabindex="-1">What Google says about optimizing for AI Overviews</h2>
 <p>Google's own documentation is blunt: there are no additional requirements to appear in AI Overviews or AI Mode, and no special optimizations, files, or schema are needed. A page has to be indexed and eligible to show a snippet. The recommended practices are the ordinary ones: allow crawling, link pages internally, keep important content in text, and make structured data match the visible page. Traffic from both features is counted in Search Console's Performance report under the Web search type. Every vendor selling a secret AI Overview formula is selling something Google says doesn't exist.</p>
 
-<h2>Bing and ChatGPT now show their work</h2>
+<h2 id="section-bing-and-chatgpt-now-show-their-work" tabindex="-1">Bing and ChatGPT now show their work</h2>
 <p>Bing Webmaster Tools added an AI Performance report, in public preview since February. It counts how often Copilot, Bing's AI summaries, and some partner integrations cite your pages, and it lists the grounding queries that led to those citations. It counts citations only, no clicks, and it is a rare first-party view of how an AI search product uses a site.</p>
 <p>OpenAI documents its crawlers separately. <code>OAI-SearchBot</code> decides whether a site can appear in ChatGPT search; <code>GPTBot</code> collects training data. Each is controlled independently in robots.txt, so a site can welcome search and decline training. A site that blocks OAI-SearchBot, often by accident through a firewall or CDN bot setting, simply drops out of ChatGPT's answers.</p>
 
-<h2>A measurement change that still confuses reports</h2>
+<h2 id="section-a-measurement-change-that-still-confuses-reports" tabindex="-1">A measurement change that still confuses reports</h2>
 <p>In September 2025, Google stopped honoring the <code>num=100</code> parameter that let rank trackers load a hundred results at once. Desktop impressions in Search Console fell for most sites and average position jumped, because bots had been inflating the counts. Any year-over-year report that spans September 2025 needs that footnote, or it will show a decline that never happened to real visitors.</p>
 
-<h2>What wins in this environment</h2>
+<h2 id="section-what-wins-in-this-environment" tabindex="-1">What wins in this environment</h2>
 <ul>
   <li><strong>Evidence of real work.</strong> Original data, photos, tests, case details, and first-hand experience: material an assistant can't produce by summarizing other pages.</li>
   <li><strong>Fewer, better pages.</strong> Consolidate thin and overlapping pages into ones that fully answer a question.</li>

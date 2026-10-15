@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -837,12 +842,23 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">Every software sales deck now has AI on the first slide. Some of those products are remarkable. Some are a thin layer over a model you could rent yourself for a few dollars a month. A few have no meaningful AI at all. Regulators have a name for the last group, AI washing, and they've started bringing cases. These are the questions I ask when a client brings me onto a vendor call, and the answers that tell me which kind of product I'm looking at.</p>
 
-<h2>What AI washing looks like on the record</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-what-ai-washing-looks-like-on-the-record">What AI washing looks like on the record</a></li>
+    <li><a href="#section-twelve-questions-for-the-sales-call">Twelve questions for the sales call</a></li>
+    <li><a href="#section-read-the-answers-as-evidence">Read the answers as evidence</a></li>
+    <li><a href="#section-run-a-paid-pilot-with-a-scorecard">Run a paid pilot with a scorecard</a></li>
+    <li><a href="#section-bring-a-technical-skeptic-to-the-call">Bring a technical skeptic to the call</a></li>
+  </ol>
+</details>
+
+<h2 id="section-what-ai-washing-looks-like-on-the-record" tabindex="-1">What AI washing looks like on the record</h2>
 <p>On March 18, 2024, the SEC announced its first AI washing cases, settled charges against two investment advisers, Delphia and Global Predictions, for claiming AI capabilities they didn't have. The penalties came to $400,000 combined. The SEC said Delphia had claimed to use client data in AI driven investing when it wasn't using that data in its process.</p>
 <p>On September 25, 2024, the FTC announced Operation AI Comply, five actions against companies using AI claims to deceive customers. One was DoNotPay, marketed as "the world's first robot lawyer"; the FTC said the company never tested whether its output matched a lawyer's, and DoNotPay agreed to pay $193,000. FTC Chair Lina Khan put the principle in one line: "there is no AI exemption from the laws on the books."</p>
 <p>Those are the extreme cases. The everyday version is a vendor whose product works fine but whose pitch credits "proprietary AI" for what is a well written prompt and a spreadsheet.</p>
 
-<h2>Twelve questions for the sales call</h2>
+<h2 id="section-twelve-questions-for-the-sales-call" tabindex="-1">Twelve questions for the sales call</h2>
 <ol>
   <li><strong>Which model does this run on, and who hosts it?</strong> A clear answer ("a hosted model from one of the big labs, called through their API") is fine. Evasion is a warning.</li>
   <li><strong>What does your product add on top of that model?</strong> Good answers name real work: your integrations, a curated dataset, a review workflow, evaluation tests.</li>
@@ -858,14 +874,14 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>What would make you tell me not to buy this?</strong> Honest vendors know where their product fits badly, and they'll tell you.</li>
 </ol>
 
-<h2>Read the answers as evidence</h2>
+<h2 id="section-read-the-answers-as-evidence" tabindex="-1">Read the answers as evidence</h2>
 <p>I score each answer three ways: specific or vague, testable or unverifiable, and consistent with what the contract says. One vague answer is normal; sales teams don't know everything and should offer to follow up. A pattern of vague answers on accuracy, data, and cost is the signal. The product might still be good, and the vendor still hasn't shown it.</p>
 <p>For a structured view of risk once you're serious, NIST's AI Risk Management Framework gives you vocabulary for governance, testing, and monitoring that your legal and security teams will recognize.</p>
 
-<h2>Run a paid pilot with a scorecard</h2>
+<h2 id="section-run-a-paid-pilot-with-a-scorecard" tabindex="-1">Run a paid pilot with a scorecard</h2>
 <p>Before a full contract, run a short pilot on real work with success measures you set: accuracy on a sample you've already checked by hand, time saved per task, and the number of outputs a person had to correct. Write the measures down before the pilot starts, so nobody redefines success at the end. My guide to <a href="../../guides/fact-check-ai-seo/">fact checking confident AI answers</a> describes the claim by claim habit I use to grade output.</p>
 
-<h2>Bring a technical skeptic to the call</h2>
+<h2 id="section-bring-a-technical-skeptic-to-the-call" tabindex="-1">Bring a technical skeptic to the call</h2>
 <p>Sales calls are designed for the buyer who doesn't know which questions to ask. Bringing one person who does changes the whole conversation. I sit in on vendor calls for clients as exactly that person: I've built on these models myself, so I can tell a real integration from a wrapper in a few questions, and I'm comfortable asking the awkward ones politely. Afterward you get a short written recommendation: what's real, what's missing, and what to ask for in the contract. That work falls under my <a href="../../services/advisory/">advisory and second opinions</a>, and if the answer is to build something yourself, see <a href="../../services/ai-automation/">AI agents and automation</a>.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

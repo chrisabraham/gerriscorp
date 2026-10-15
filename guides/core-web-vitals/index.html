@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,7 +797,20 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Core Web Vitals are three measurements of how a page feels to real visitors: how fast the main content appears, how quickly the page responds, and how much it jumps around. Google uses them in ranking as part of page experience. They matter more to visitors than to rankings, and that alone makes them worth fixing.</p>
 
-<h2>The three measurements</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-the-three-measurements">The three measurements</a></li>
+    <li><a href="#section-field-data-and-lab-data">Field data and lab data</a></li>
+    <li><a href="#section-where-to-read-it">Where to read it</a></li>
+    <li><a href="#section-fixing-lcp">Fixing LCP</a></li>
+    <li><a href="#section-fixing-inp">Fixing INP</a></li>
+    <li><a href="#section-fixing-cls">Fixing CLS</a></li>
+    <li><a href="#section-how-much-it-matters">How much it matters</a></li>
+  </ol>
+</details>
+
+<h2 id="section-the-three-measurements" tabindex="-1">The three measurements</h2>
 <table>
 <thead><tr><th scope="col">Metric</th><th scope="col">What it measures</th><th scope="col">Good</th><th scope="col">Poor</th></tr></thead>
 <tbody>
@@ -803,11 +821,11 @@ dd { margin: .2rem 0 0 0; }
 </table>
 <p>INP replaced First Input Delay in March 2024. FID only measured the first interaction; INP watches every interaction and reports one of the slowest, which is why many sites that passed under FID fail under INP.</p>
 
-<h2>Field data and lab data</h2>
+<h2 id="section-field-data-and-lab-data" tabindex="-1">Field data and lab data</h2>
 <p>Google's assessment uses field data: measurements from real Chrome users, collected in the Chrome User Experience Report over a rolling 28 days. A page passes when the 75th percentile of visits meets the good threshold for all three metrics. Mobile and desktop are judged separately.</p>
 <p>Lab data comes from a single simulated load, such as a Lighthouse run. It's useful for debugging and for testing a fix before it ships, and it can't measure INP at all, because nobody clicks anything during a lab test. Lighthouse reports Total Blocking Time as a stand-in. A perfect Lighthouse score with failing field data is common, and the field data is the one that counts.</p>
 
-<h2>Where to read it</h2>
+<h2 id="section-where-to-read-it" tabindex="-1">Where to read it</h2>
 <ul>
   <li><strong>PageSpeed Insights</strong> shows field data for the URL and for the whole origin at the top, and a Lighthouse lab run below it.</li>
   <li><strong>Search Console's Core Web Vitals report</strong> groups URLs with similar problems, usually by template, and tracks them over time. Fixing one template often fixes thousands of URLs.</li>
@@ -815,7 +833,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Real user monitoring</strong>, through Google's web-vitals JavaScript library or a commercial tool, collects the metrics from your own visitors, with the element and script responsible attached.</li>
 </ul>
 
-<h2>Fixing LCP</h2>
+<h2 id="section-fixing-lcp" tabindex="-1">Fixing LCP</h2>
 <p>Break LCP into its parts: time to first byte, the delay before the browser discovers the LCP resource, the time to download it, and the time to render it. Fix whichever part is largest.</p>
 <ul>
   <li><strong>Slow server response.</strong> Cache HTML at a CDN, speed up database queries, and remove redirects in front of the page.</li>
@@ -825,7 +843,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Render blocking.</strong> Large stylesheets and synchronous scripts in the head hold back the first paint. Inline the critical CSS and defer the rest.</li>
 </ul>
 
-<h2>Fixing INP</h2>
+<h2 id="section-fixing-inp" tabindex="-1">Fixing INP</h2>
 <p>Poor INP almost always means the browser's main thread was busy when the visitor interacted. The culprits are long JavaScript tasks.</p>
 <ul>
   <li><strong>Third-party scripts.</strong> Chat widgets, heatmaps, tag managers full of old tags, and ad scripts. Audit them, remove the ones nobody uses, and load the rest after the page is interactive.</li>
@@ -833,7 +851,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Hydration.</strong> Frameworks such as React and Vue attach their behavior after load, and interactions during that window wait. Smaller bundles, partial hydration, and server components shorten it.</li>
 </ul>
 
-<h2>Fixing CLS</h2>
+<h2 id="section-fixing-cls" tabindex="-1">Fixing CLS</h2>
 <ul>
   <li>Give every image and video <code>width</code> and <code>height</code> attributes, or a CSS <code>aspect-ratio</code>, so the browser reserves the space.</li>
   <li>Reserve fixed space for ads, embeds, and cookie banners, or show banners as overlays that cover content instead of pushing it.</li>
@@ -841,7 +859,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Never insert content above what the visitor is already reading, unless they asked for it.</li>
 </ul>
 
-<h2>How much it matters</h2>
+<h2 id="section-how-much-it-matters" tabindex="-1">How much it matters</h2>
 <p>Page experience is one ranking signal among hundreds, and relevance wins. A slow page with the best answer still outranks a fast page with a weak one. The business case is visitors: faster pages convert better, and slow mobile pages lose people before they ever see the offer. I treat Core Web Vitals as a quality bar every template should clear, and I fix the templates in order of the traffic and revenue they carry.</p>
 
 <p class="related">Speed work is its own service: <a href="../../services/site-speed/">site speed, Core Web Vitals, and Cloudflare</a>. For the CDN side, see <a href="../../guides/cloudflare-seo/">Cloudflare settings for SEO</a>, and for diagnosis with an AI assistant, <a href="../../guides/core-web-vitals-mcp/">Core Web Vitals with MCP</a>.</p>

@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,19 +797,33 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-15">October 15, 2026</time></p>
 <p class="lead">A polished demonstration answers the question the demonstrator prepared. Your working day contains the requests they did not prepare: a missing date, two customers with the same name, a task submitted twice, or a report that sounds finished when the underlying action failed. A pilot needs examples of those situations before anyone can decide whether to rely on it.</p>
 
-<h2>Write one plain job description</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-write-one-plain-job-description">Write one plain job description</a></li>
+    <li><a href="#section-collect-ordinary-examples-before-clever-ones">Collect ordinary examples before clever ones</a></li>
+    <li><a href="#section-define-the-result-before-running-the-case">Define the result before running the case</a></li>
+    <li><a href="#section-include-a-few-failures-on-purpose">Include a few failures on purpose</a></li>
+    <li><a href="#section-test-the-permission-boundary-as-behavior">Test the permission boundary as behavior</a></li>
+    <li><a href="#section-save-evidence-that-outlives-the-session">Save evidence that outlives the session</a></li>
+    <li><a href="#section-score-separate-questions-separately">Score separate questions separately</a></li>
+    <li><a href="#section-keep-the-collection-when-the-pilot-ends">Keep the collection when the pilot ends</a></li>
+  </ol>
+</details>
+
+<h2 id="section-write-one-plain-job-description" tabindex="-1">Write one plain job description</h2>
 <p>Begin with a sentence that has an input and an observable result. For example: given an approved meeting note, produce draft tasks with the correct owner and due date. That is narrow enough to test. A promise to make the team more productive is useful as an ambition, but it leaves the test writer guessing which behavior is required.</p>
 <p>Record the tool version, its connected services, and the account permissions used in the trial. Give the pilot an owner who can decide whether an output is acceptable. The person writing the test should not have to infer the answer from whatever the assistant happened to produce.</p>
 
-<h2>Collect ordinary examples before clever ones</h2>
+<h2 id="section-collect-ordinary-examples-before-clever-ones" tabindex="-1">Collect ordinary examples before clever ones</h2>
 <p>Ask the future users for several requests they would really make. Preserve the shorthand, unfinished sentences, and naming conventions that appear in daily work. Add a small number of unusual cases deliberately, rather than building the whole collection from puzzles. The ordinary examples show whether the workflow is useful; the exceptions show where it needs help.</p>
 <p>I learned this with my own terminal assistant. A phrase I had used repeatedly was being silently ignored. Turning the exact request into a test made the problem visible and kept the correction from depending on a conversation I would later forget. The build history is described in the <a href="../../case-studies/built-with-claude-code/">assistant case study</a>.</p>
 
-<h2>Define the result before running the case</h2>
+<h2 id="section-define-the-result-before-running-the-case" tabindex="-1">Define the result before running the case</h2>
 <p>For a draft task, the owner must refer to the right person, an absent date must remain absent or trigger a question, and no live task should be created if the request only asks for a draft. For a summary, separate facts that must be present from wording that can vary. This avoids the easy mistake of approving a convincing answer because it resembles the last convincing answer.</p>
 <p>Use the <a href="../../downloads/ai-pilot-test-cases.csv">AI pilot test case worksheet</a> as a starting point. Its rows describe invented examples. Fill in the expected behavior, the observed result, and the evidence. Keep real client data in the approved project workspace rather than in a public example file.</p>
 
-<h2>Include a few failures on purpose</h2>
+<h2 id="section-include-a-few-failures-on-purpose" tabindex="-1">Include a few failures on purpose</h2>
 <table>
 <thead><tr><th scope="col">Case</th><th scope="col">Question to settle</th></tr></thead>
 <tbody>
@@ -818,19 +837,19 @@ dd { margin: .2rem 0 0 0; }
 </table>
 <p>Exercise service failures in an isolated trial or with a simulated dependency. Do not create a live outage to see how the pilot reacts. The aim is a reproducible example, not a surprise for the people depending on the service.</p>
 
-<h2>Test the permission boundary as behavior</h2>
+<h2 id="section-test-the-permission-boundary-as-behavior" tabindex="-1">Test the permission boundary as behavior</h2>
 <p>OWASP's discussion of excessive agency recommends limiting tool capabilities and permissions, with human approval for consequential actions. Translate that principle into a case you can observe. If a workflow is allowed to prepare a message but requires approval to send it, inspect both the draft and the sending record. The assistant saying that it waited is only one part of the evidence.</p>
 <p>A written instruction helps explain the rules. An account that lacks unnecessary permissions helps enforce them. Review both when the pilot connects to another service. A harmless drafting exercise can become a different system when somebody adds a connection that can publish, delete, or spend.</p>
 
-<h2>Save evidence that outlives the session</h2>
+<h2 id="section-save-evidence-that-outlives-the-session" tabindex="-1">Save evidence that outlives the session</h2>
 <p>Keep the inputs, outputs, timestamps, relevant service records, and the acceptance decision together. When a test runs in GitHub Actions, downloadable workflow artifacts can hold its reports. Set retention deliberately and store sensitive evidence only where the team has approved it. A screenshot of the final answer rarely explains a retry, a hidden error, or a partial action.</p>
 <p>My <a href="../../case-studies/data-cleanup/">outreach tracker audit</a> is a useful reminder here. The tracker described activity, but checking the actual sending records changed what could honestly be reported. A pilot should make that comparison easier, not bury the trail under a confident paragraph.</p>
 
-<h2>Score separate questions separately</h2>
+<h2 id="section-score-separate-questions-separately" tabindex="-1">Score separate questions separately</h2>
 <p>Record correctness, completeness, unauthorized actions, and manual correction effort independently. A mostly useful summary and a message sent to the wrong person should not average into an acceptable score. Decide in advance which failures stop the pilot and which can be tolerated with a documented workaround.</p>
 <p>Repeat cases where results vary and retain the individual outcomes. If only one run was observed, say so. A small collection can reveal a repeatable failure without proving a general success rate. The report should state what was tested and the limits of that evidence.</p>
 
-<h2>Keep the collection when the pilot ends</h2>
+<h2 id="section-keep-the-collection-when-the-pilot-ends" tabindex="-1">Keep the collection when the pilot ends</h2>
 <p>Use the same examples when a prompt changes, a new model is proposed, or a connector gains another permission. Add real failures as the team encounters them. Remove obsolete cases through an explicit decision so the collection continues to describe the job people are actually doing.</p>
 <p>I can help define and run that review through <a href="../../services/ai-workflow-testing/">AI workflow testing</a>. For the earlier buying decision, the <a href="../../guides/ai-vendor-pitch/">AI vendor questions</a> help establish what the supplier should demonstrate before a pilot begins.</p>
 <aside class="help-box" aria-label="Get help">

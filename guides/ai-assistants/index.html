@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -797,13 +802,25 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-05">October 5, 2026</time></p>
 <p class="lead">When someone asks ChatGPT, Claude, Gemini, Perplexity, or Google's AI Overviews about your company, the answer comes from two places: what the model learned in training, and what it finds by searching the web right then. You can influence both, and the second is where most of the action is.</p>
 
-<h2>Two sources of knowledge</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-two-sources-of-knowledge">Two sources of knowledge</a></li>
+    <li><a href="#section-which-search-indexes-feed-which-assistants">Which search indexes feed which assistants</a></li>
+    <li><a href="#section-the-crawlers-and-what-each-one-is-for">The crawlers, and what each one is for</a></li>
+    <li><a href="#section-what-assistants-favor-when-they-write-an-answer">What assistants favor when they write an answer</a></li>
+    <li><a href="#section-what-you-can-do-this-quarter">What you can do this quarter</a></li>
+    <li><a href="#section-measuring-it">Measuring it</a></li>
+  </ol>
+</details>
+
+<h2 id="section-two-sources-of-knowledge" tabindex="-1">Two sources of knowledge</h2>
 <h3>Training data</h3>
 <p>Every large language model is trained on a huge snapshot of text, much of it crawled from the public web, and that knowledge stops at a training cutoff. What a model "knows" about you from training reflects whatever was public and widely repeated before that date. It changes only when the company trains a new model, so it lags reality by months or years. Older press coverage, Wikipedia, directories, and anything that was repeated often all weigh heavily here.</p>
 <h3>Live retrieval</h3>
 <p>Most assistants now search the web before answering questions about specific businesses, products, and recent events. The assistant turns the question into one or more searches, reads the top results, and writes an answer grounded in those pages, often with citations. This is called retrieval or grounding, and it means a page that ranks well and answers the question clearly can shape the answer within days of being published.</p>
 
-<h2>Which search indexes feed which assistants</h2>
+<h2 id="section-which-search-indexes-feed-which-assistants" tabindex="-1">Which search indexes feed which assistants</h2>
 <ul>
   <li><strong>Google AI Overviews and AI Mode</strong> are built on Google Search's own index, crawled by Googlebot.</li>
   <li><strong>Gemini</strong> grounds its answers with Google Search.</li>
@@ -814,7 +831,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>The practical lesson: being well indexed in both Google and Bing covers most of the AI landscape. Bing Webmaster Tools and IndexNow, which tells Bing and other engines about changed pages within minutes, matter more than they used to.</p>
 
-<h2>The crawlers, and what each one is for</h2>
+<h2 id="section-the-crawlers-and-what-each-one-is-for" tabindex="-1">The crawlers, and what each one is for</h2>
 <table>
 <thead><tr><th scope="col">Company</th><th scope="col">Training</th><th scope="col">Search index</th><th scope="col">Fetches for a user</th></tr></thead>
 <tbody>
@@ -826,7 +843,7 @@ dd { margin: .2rem 0 0 0; }
 </table>
 <p>You can allow or block each in robots.txt. Blocking a training crawler keeps your future pages out of future models; blocking a search crawler keeps you out of that assistant's live answers. Google-Extended controls whether your content is used for Gemini, and it doesn't affect Google Search or AI Overviews, which follow Googlebot. Check your CDN, too: Cloudflare began blocking many AI crawlers by default on new setups in 2025, which can keep a business out of AI answers without anyone deciding that on purpose.</p>
 
-<h2>What assistants favor when they write an answer</h2>
+<h2 id="section-what-assistants-favor-when-they-write-an-answer" tabindex="-1">What assistants favor when they write an answer</h2>
 <ul>
   <li><strong>Direct answers.</strong> Pages that state the answer plainly near the top, in a sentence that still makes sense when quoted on its own.</li>
   <li><strong>Self-contained context.</strong> Definitions, dates, locations, and names on the page itself, so the assistant doesn't have to guess.</li>
@@ -836,7 +853,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Readable HTML.</strong> Most AI crawlers fetch the HTML without running JavaScript, so content that appears only after scripts run is invisible to them. The <a href="../../guides/javascript-seo/">JavaScript SEO guide</a> shows how to check.</li>
 </ul>
 
-<h2>What you can do this quarter</h2>
+<h2 id="section-what-you-can-do-this-quarter" tabindex="-1">What you can do this quarter</h2>
 <ol>
   <li>Ask the major assistants the ten questions your buyers ask, and write down the answers and the sources cited.</li>
   <li>Fix your own pages first: one clear page per service or product, with the facts stated plainly and an FAQ section with real answers.</li>
@@ -848,7 +865,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Repeat the same questions in a month and compare.</li>
 </ol>
 
-<h2>Measuring it</h2>
+<h2 id="section-measuring-it" tabindex="-1">Measuring it</h2>
 <p>AI answers vary with phrasing, location, account history, and time, so a single test proves little. Use a fixed set of prompts, run them on a schedule, and record the answers and citations. Add referral traffic from chatgpt.com, perplexity.ai, gemini.google.com, and copilot.microsoft.com in analytics, and watch which pages they land on.</p>
 
 <p class="related">I do this work as <a href="../../services/ai-search/">AI search visibility</a>, starting with an AI search readiness audit.</p>

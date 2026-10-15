@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,10 +797,23 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Invoices disappear, proposals land in junk folders, and customers say they never got the reset link. Deliverability failures look random from the outside. They have specific causes, and the evidence for each one is sitting in the message headers and a few free tools.</p>
 
-<h2>Start with one message's headers</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-start-with-one-message-s-headers">Start with one message&#x27;s headers</a></li>
+    <li><a href="#section-authentication-failures">Authentication failures</a></li>
+    <li><a href="#section-reputation">Reputation</a></li>
+    <li><a href="#section-the-sending-practices-that-cause-it">The sending practices that cause it</a></li>
+    <li><a href="#section-content-and-links">Content and links</a></li>
+    <li><a href="#section-bounces-tell-you-exactly-what-happened">Bounces tell you exactly what happened</a></li>
+    <li><a href="#section-testing">Testing</a></li>
+  </ol>
+</details>
+
+<h2 id="section-start-with-one-message-s-headers" tabindex="-1">Start with one message's headers</h2>
 <p>Send a message to a Gmail address you control, open it, and choose Show original. Gmail prints three verdicts at the top: SPF, DKIM, and DMARC, each with pass or fail, and the domain each one checked. In Outlook, the same information sits in the message properties under the <code>Authentication-Results</code> header. Read it before changing anything; it tells you which of the following sections applies.</p>
 
-<h2>Authentication failures</h2>
+<h2 id="section-authentication-failures" tabindex="-1">Authentication failures</h2>
 <p>A failing result usually has one of four causes.</p>
 <ul>
   <li><strong>A sender left out of SPF.</strong> The CRM, the invoicing tool, or the website's contact form sends as your domain and isn't listed in the SPF record.</li>
@@ -805,7 +823,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>The <a href="../../guides/email-authentication/">SPF, DKIM, and DMARC guide</a> covers the records themselves. DMARC aggregate reports, sent daily by the big mailbox providers to the address in your DMARC record, list every source sending as your domain and whether it passed. They're the fastest way to find a sender you forgot.</p>
 
-<h2>Reputation</h2>
+<h2 id="section-reputation" tabindex="-1">Reputation</h2>
 <p>When authentication passes and mail still lands in spam, the problem is reputation: how the mailbox providers judge mail from your domain and your sending servers, based on how recipients treat it.</p>
 <ul>
   <li><strong>Google Postmaster Tools</strong> shows Gmail's view of a domain that sends in volume: spam complaint rate, authentication rates, and delivery errors. Gmail expects bulk senders to keep reported spam below 0.3 percent, and recommends staying under 0.1.</li>
@@ -814,7 +832,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Shared sending services put many customers on the same IP addresses, so a neighbor's bad behavior can affect you. That's one reason marketing email and everyday business email belong on separate services, and often on separate subdomains, such as <code>news.example.com</code> for newsletters. A newsletter complaint spike then can't drag down invoices.</p>
 
-<h2>The sending practices that cause it</h2>
+<h2 id="section-the-sending-practices-that-cause-it" tabindex="-1">The sending practices that cause it</h2>
 <ul>
   <li><strong>Old or purchased lists.</strong> Addresses that bounce, and spam traps hidden on old lists, damage reputation quickly. Mail only people who asked for it, and remove addresses that bounce.</li>
   <li><strong>No easy unsubscribe.</strong> Since 2024 Gmail and Yahoo require bulk senders to support one-click unsubscribe. People who can't leave a list mark it as spam instead.</li>
@@ -822,13 +840,13 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Mail nobody opens.</strong> Providers watch engagement. Stop mailing people who haven't opened anything in months.</li>
 </ul>
 
-<h2>Content and links</h2>
+<h2 id="section-content-and-links" tabindex="-1">Content and links</h2>
 <p>Content matters less than authentication and reputation, and it still matters. Link shorteners, links to domains with poor reputations, a single large image with no text, and attachments that commonly carry malware all raise suspicion. Every link in a message is judged by its domain, so a tracking domain shared with spammers hurts every message that uses it.</p>
 
-<h2>Bounces tell you exactly what happened</h2>
+<h2 id="section-bounces-tell-you-exactly-what-happened" tabindex="-1">Bounces tell you exactly what happened</h2>
 <p>A bounce message carries a status code and usually a sentence from the receiving server. A <code>550 5.7.26</code> from Gmail means the message failed authentication. Codes starting with 4 are temporary and the sending server retries. Codes starting with 5 are permanent. Search the exact code and text; the major providers document what each one means.</p>
 
-<h2>Testing</h2>
+<h2 id="section-testing" tabindex="-1">Testing</h2>
 <p>Services such as mail-tester.com score a single message against authentication, blocklists, and content rules. Seed tests, which send to test mailboxes at each major provider, show whether a campaign lands in the inbox, the promotions tab, or spam. Run one after every change to DNS or sending services.</p>
 
 <p class="related">I trace delivery problems and fix the authentication and DNS behind them as part of <a href="../../services/email-and-dns/">email authentication and DNS work</a>. If a domain is already listed, the <a href="../../guides/email-blocklist-recovery/">blocklist recovery guide</a> covers what comes next.</p>

@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -802,11 +807,23 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">Most SEO damage on a coded website arrives in an ordinary pull request. Someone refactors a layout, and the canonical tag disappears from 4,000 pages. A content import runs, and every description is blank. Nobody notices for a month, because nobody was looking. A short set of automated checks, run on every build, looks every time. Here is what to test and how to wire it in.</p>
 
-<h2>Where the checks run</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-where-the-checks-run">Where the checks run</a></li>
+    <li><a href="#section-the-checks-worth-having">The checks worth having</a></li>
+    <li><a href="#section-a-minimal-example">A minimal example</a></li>
+    <li><a href="#section-checks-that-guard-the-writing-too">Checks that guard the writing, too</a></li>
+    <li><a href="#section-rolling-it-out-without-blocking-everyone">Rolling it out without blocking everyone</a></li>
+    <li><a href="#section-what-tests-can-t-tell-you">What tests can&#x27;t tell you</a></li>
+  </ol>
+</details>
+
+<h2 id="section-where-the-checks-run" tabindex="-1">Where the checks run</h2>
 <p>Continuous integration runs your tests automatically whenever code is pushed. On GitHub Actions, the results appear on the pull request itself, so a reviewer sees a failed check before anyone merges. SEO tests belong in the same place as the unit tests your developers already run: they're just tests whose subject is the built HTML.</p>
 <p>The simplest pattern is to build the site, then run a script over the output. A static or prerendered site produces a folder of HTML files to read directly. A server rendered site can be started in the CI job and fetched page by page from a list of representative URLs, one per template.</p>
 
-<h2>The checks worth having</h2>
+<h2 id="section-the-checks-worth-having" tabindex="-1">The checks worth having</h2>
 <h3>Titles and descriptions</h3>
 <ul>
   <li>Every page has exactly one title element and one meta description, and neither is empty.</li>
@@ -841,7 +858,7 @@ dd { margin: .2rem 0 0 0; }
   <li>No internal link points at a URL that redirects, so links go straight to the final address.</li>
 </ul>
 
-<h2>A minimal example</h2>
+<h2 id="section-a-minimal-example" tabindex="-1">A minimal example</h2>
 <p>A check doesn't need a framework. This Python sketch reads every built page and fails the build on a missing or duplicate title:</p>
 <pre><code>import pathlib, re, sys
 seen, problems = {}, []
@@ -859,10 +876,10 @@ print("\n".join(problems))
 sys.exit(1 if problems else 0)</code></pre>
 <p>Add a step to the CI workflow that runs it after the build. A nonzero exit fails the check, and the message names the page and the rule, so the developer can fix it without asking anyone. For anything beyond a sketch, use a real HTML parser in place of regular expressions.</p>
 
-<h2>Checks that guard the writing, too</h2>
+<h2 id="section-checks-that-guard-the-writing-too" tabindex="-1">Checks that guard the writing, too</h2>
 <p>Build checks can protect content as well as markup. This site's build compares the text of every page with every other page and fails when two pages share more than 15% of their six word phrases, or when a sentence of ten or more words appears on two pages. That keeps near duplicate pages from creeping in as the site grows. A similar rule suits any site that publishes many pages from a shared template, such as location or category pages.</p>
 
-<h2>Rolling it out without blocking everyone</h2>
+<h2 id="section-rolling-it-out-without-blocking-everyone" tabindex="-1">Rolling it out without blocking everyone</h2>
 <ol>
   <li><strong>Start in report only mode.</strong> Run the checks and print the results without failing the build, and fix the existing backlog.</li>
   <li><strong>Turn on failure one rule at a time,</strong> starting with the ones that cost the most when they break: canonicals, noindex, and robots.txt.</li>
@@ -870,7 +887,7 @@ sys.exit(1 if problems else 0)</code></pre>
   <li><strong>Make the rules a file in the repository,</strong> reviewed like code, so changing a threshold is a decision someone signs off.</li>
 </ol>
 
-<h2>What tests can't tell you</h2>
+<h2 id="section-what-tests-can-t-tell-you" tabindex="-1">What tests can't tell you</h2>
 <p>Build checks prove the HTML you ship meets your rules. They can't tell you how Google ranks it, whether a title persuades anyone to click, or what an AI assistant says about you. Pair them with a crawl of the live site after each release and with Search Console, and keep a person reading the pages.</p>
 
 <p class="related">I write these checks into client repositories as part of <a href="../../services/seo-engineering/">SEO engineering</a>. For the Next.js specifics they should cover, see the <a href="../../guides/nextjs-seo/">Next.js SEO checklist</a>, and for safe repository setup, <a href="../../guides/repository-access/">giving an outside SEO access</a>.</p>

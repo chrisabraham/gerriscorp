@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -827,11 +832,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-14">October 14, 2026</time></p>
 <p class="lead">A citation gap is a page that AI assistants cite when they answer your buyers' questions, which names your competitors and leaves you out. Finding them is mechanical: ask the questions, collect every cited URL, sort the sources by type, and mark the ones where a competitor appears and you don't. The result is a ranked list of places to be, and it replaces guessing about which publications "AI trusts" with the actual pages it used.</p>
 
-<h2>Collect the sources, not only the answers</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-collect-the-sources-not-only-the-answers">Collect the sources, not only the answers</a></li>
+    <li><a href="#section-sort-every-source-by-type">Sort every source by type</a></li>
+    <li><a href="#section-mark-the-gaps-and-rank-them">Mark the gaps and rank them</a></li>
+    <li><a href="#section-what-a-real-run-turned-up">What a real run turned up</a></li>
+    <li><a href="#section-closing-a-gap-without-buying-your-way-in">Closing a gap without buying your way in</a></li>
+    <li><a href="#section-rerun-it-and-watch-the-list-move">Rerun it and watch the list move</a></li>
+    <li><a href="#section-where-i-fit">Where I fit</a></li>
+  </ol>
+</details>
+
+<h2 id="section-collect-the-sources-not-only-the-answers" tabindex="-1">Collect the sources, not only the answers</h2>
 <p>Start with a fixed set of buyer questions and run them with web search turned on. The answer text tells you who was named. The citations tell you why. OpenAI's API returns two lists for a web search answer: the URLs cited inline, and, on request, every source the model consulted, which is usually longer. Claude returns the cited URL with each passage it draws from a search result. Keep both lists for every answer, with the date and the engine.</p>
 <p>Bing Webmaster Tools now reports how often your own pages are cited in Copilot answers and lets you compare that citation share against other sites. That is the one place a search engine shows citation counts directly, and it covers only your side of the gap. The question set covers the rest.</p>
 
-<h2>Sort every source by type</h2>
+<h2 id="section-sort-every-source-by-type" tabindex="-1">Sort every source by type</h2>
 <p>A pile of URLs becomes useful once each one carries a label. I use seven:</p>
 <ul>
   <li>marketplace and directory listings (freelance platforms, agency directories, review sites)</li>
@@ -844,20 +862,20 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>The labels decide the remedy. A listing gap is closed with a complete, current profile. A roundup gap is an editorial pitch. A practitioner-guide gap is closed by writing the better answer yourself and by giving the writers of those guides a reason to cite you. A competitor's own page that keeps getting cited is a content benchmark: read it and work out what it answers that your page doesn't.</p>
 
-<h2>Mark the gaps and rank them</h2>
+<h2 id="section-mark-the-gaps-and-rank-them" tabindex="-1">Mark the gaps and rank them</h2>
 <p>For each source, record which names it mentions. A source that names two of your competitors and not you is a gap. Rank the gaps by how many questions cited the source, then by how reachable it is. A directory you can join this afternoon outranks a national publication that might cover you next year, even though the publication carries more weight.</p>
 
-<h2>What a real run turned up</h2>
+<h2 id="section-what-a-real-run-turned-up" tabindex="-1">What a real run turned up</h2>
 <p>In October 2026 I ran sixteen buyer questions about my own services through Claude with web search. On the hiring questions, the names came from marketplace listing pages, an agency directory, and three "best consultants" lists. On a question about recovering from a traffic drop, the answer named four well-known practitioners, and it found them through three recovery guides written by other people, none of them the practitioners' own pages. On the how-to questions, vendor blogs outnumbered practitioners' guides.</p>
 <p>My own gaps were plain. I was absent from the roundups that supplied the hiring names, and none of my guides was among the sources cited for the how-to questions. The answers that did name me rested almost entirely on pages I wrote, and the assistant said so. That sets the work: listings and roundups first, because they are reachable, and third-party coverage over the following months.</p>
 
-<h2>Closing a gap without buying your way in</h2>
+<h2 id="section-closing-a-gap-without-buying-your-way-in" tabindex="-1">Closing a gap without buying your way in</h2>
 <p>Some roundups sell placement. A paid inclusion is an endorsement relationship, and the FTC's Endorsement Guides require a clear disclosure of any material connection between an advertiser and the person recommending it. An undisclosed paid placement is a legal problem before it is an SEO one, and a ranked list that discloses payment carries little weight with readers or with AI systems that read the disclosure. Pitch the editors on evidence instead: a specific result, a public case study, a quote they can use. I wrote separately about why <a href="../../guides/self-ranking-lists/">ranking yourself first in your own list</a> stopped working.</p>
 
-<h2>Rerun it and watch the list move</h2>
+<h2 id="section-rerun-it-and-watch-the-list-move" tabindex="-1">Rerun it and watch the list move</h2>
 <p>Run the same questions monthly. A gap is closed when the source names you and the answers start to cite it beside your name. Sources drop out of the answers on their own as the assistants find newer pages, so pull the list fresh each month. Pair this with a log of identifiable referral visits, as described in my guide to <a href="../../guides/measure-ai-search/">measuring AI search</a>, so the report shows outcomes as well as presence.</p>
 
-<h2>Where I fit</h2>
+<h2 id="section-where-i-fit" tabindex="-1">Where I fit</h2>
 <p>I run citation gap analyses for companies and as a specialist on agency teams: the question set, the source collection, the ranked gap list, and the pitches or pages that close each gap. If you want to know which sources are speaking for your competitors, <a href="../../contact/">tell me your market and three competitors</a>.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

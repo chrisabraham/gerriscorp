@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -802,14 +807,26 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">If your browser console on a React or Next.js site shows "Minified React error #418," the page has a hydration error. It rarely stops Google from indexing the content, so it's easy to leave alone. It still costs you layout stability, responsiveness, and trustworthy analytics, and it usually points at a markup fault worth fixing at the source.</p>
 
-<h2>What hydration is</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-what-hydration-is">What hydration is</a></li>
+    <li><a href="#section-what-error-418-means">What error #418 means</a></li>
+    <li><a href="#section-what-it-means-for-search">What it means for search</a></li>
+    <li><a href="#section-the-usual-causes">The usual causes</a></li>
+    <li><a href="#section-finding-them-across-a-whole-site">Finding them across a whole site</a></li>
+    <li><a href="#section-fixing-them-at-the-source">Fixing them at the source</a></li>
+  </ol>
+</details>
+
+<h2 id="section-what-hydration-is" tabindex="-1">What hydration is</h2>
 <p>A server rendered React page arrives as finished HTML, so visitors and crawlers see content immediately. Then React loads in the browser and "attaches" itself to that HTML, wiring up buttons, menus, and forms. React calls this hydration: it turns the server's HTML snapshot into an interactive app.</p>
 <p>For that to work, the HTML React expects to find has to match what the server sent. React's documentation says it expects the rendered content to be identical, and that you should treat mismatches as bugs and fix them.</p>
 
-<h2>What error #418 means</h2>
+<h2 id="section-what-error-418-means" tabindex="-1">What error #418 means</h2>
 <p>Production builds of React strip long error messages to save bytes and print a number instead. React's error page decodes #418 as: hydration failed because the server rendered HTML didn't match the client, and as a result the tree will be regenerated on the client. In plain terms, React gave up on the server's HTML for that part of the page and built it again in the browser.</p>
 
-<h2>What it means for search</h2>
+<h2 id="section-what-it-means-for-search" tabindex="-1">What it means for search</h2>
 <p>Google crawls the server's response first, and server rendering means the content is already in that HTML. Google's JavaScript SEO documentation still recommends server side or pre-rendering for exactly that reason: it's faster for users and crawlers, and not every bot runs JavaScript. A hydration error happens after that HTML is delivered, so the words on the page usually still reach the index.</p>
 <p>The costs show up elsewhere:</p>
 <ul>
@@ -820,7 +837,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Head tags are a separate concern. In Next.js, metadata set with <code>generateMetadata</code> or a <code>metadata</code> export is resolved on the server and sent as HTML, so titles and canonicals don't depend on hydration succeeding.</p>
 
-<h2>The usual causes</h2>
+<h2 id="section-the-usual-causes" tabindex="-1">The usual causes</h2>
 <p>React's own list covers most of what I find on real sites:</p>
 <ul>
   <li><strong>Invalid nesting.</strong> A <code>div</code> inside a <code>p</code>, or a link inside a link. The browser's HTML parser rearranges invalid nesting as it reads the page, so the DOM no longer matches the tree React rendered on the server.</li>
@@ -831,11 +848,11 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Browser extensions.</strong> Extensions that edit the page before React loads. These show up only for some visitors and aren't yours to fix, which is why it's worth reproducing in a clean browser profile first.</li>
 </ul>
 
-<h2>Finding them across a whole site</h2>
+<h2 id="section-finding-them-across-a-whole-site" tabindex="-1">Finding them across a whole site</h2>
 <p>The browser console shows you one page at a time, and hydration errors often live on a handful of templates or on pages whose CMS content happens to contain bad markup. Spot checking misses them. I script headless Chrome with Playwright to load every URL in the sitemap or the crawl, collect each console error with the URL it came from, and group the results by template. A few hundred pages run in minutes.</p>
 <p>The production build tells you only that a mismatch happened. To see where, run the same page against a development build, where React warns about each mismatch with its full message instead of a number. Once the list is grouped, the cause for each template is usually obvious within a few minutes of reading.</p>
 
-<h2>Fixing them at the source</h2>
+<h2 id="section-fixing-them-at-the-source" tabindex="-1">Fixing them at the source</h2>
 <ul>
   <li><strong>Correct the nesting</strong> in the component, using a <code>div</code> or <code>span</code> where a paragraph can't legally contain the child.</li>
   <li><strong>Repair the content</strong> that carries unbalanced HTML, and sanitize rich text on the way into the CMS or at render time.</li>

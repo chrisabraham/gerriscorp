@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,17 +797,30 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Most sites publish the same content at more than one address: with and without tracking parameters, sorted and filtered, printed, paginated, or copied across domains. Google picks one address from each group to show in results. The canonical tag is how you tell Google which one you prefer.</p>
 
-<h2>What the tag does</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-what-the-tag-does">What the tag does</a></li>
+    <li><a href="#section-a-hint-weighed-against-other-signals">A hint, weighed against other signals</a></li>
+    <li><a href="#section-the-search-console-statuses">The Search Console statuses</a></li>
+    <li><a href="#section-the-rules-i-apply">The rules I apply</a></li>
+    <li><a href="#section-common-mistakes">Common mistakes</a></li>
+    <li><a href="#section-across-domains">Across domains</a></li>
+    <li><a href="#section-canonical-or-redirect">Canonical or redirect</a></li>
+  </ol>
+</details>
+
+<h2 id="section-what-the-tag-does" tabindex="-1">What the tag does</h2>
 <p>A canonical tag is a line in the page's head:</p>
 <pre>&lt;link rel="canonical" href="https://example.com/shoes/trail-runner/"&gt;</pre>
 <p>It says: this page is a copy, or the original, of the content at that address, and that address is the one to index. Google consolidates ranking signals such as links onto the chosen URL and shows it in results. The duplicates stay reachable for visitors.</p>
 <p>For files without a head, such as PDFs, the same instruction can go in an HTTP header: <code>Link: &lt;https://example.com/guide.pdf&gt;; rel="canonical"</code>.</p>
 
-<h2>A hint, weighed against other signals</h2>
+<h2 id="section-a-hint-weighed-against-other-signals" tabindex="-1">A hint, weighed against other signals</h2>
 <p>Google treats the canonical tag as a strong hint. It weighs the tag together with redirects, internal links, the URLs listed in the XML sitemap, hreflang annotations, and a preference for HTTPS and for shorter, cleaner URLs. When the signals agree, Google follows the tag almost every time. When they disagree, Google decides for itself.</p>
 <p>A typical conflict: every product page declares a clean canonical URL, while the navigation, the sitemap, and the breadcrumbs all link to a version with a parameter. Three signals point one way and one points the other, and Google may side with the majority.</p>
 
-<h2>The Search Console statuses</h2>
+<h2 id="section-the-search-console-statuses" tabindex="-1">The Search Console statuses</h2>
 <p>The Page indexing report shows canonical decisions in three statuses.</p>
 <ul>
   <li><strong>Alternate page with proper canonical tag.</strong> The page points elsewhere, and Google agreed. This is working as intended.</li>
@@ -811,7 +829,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>URL Inspection shows both the user-declared canonical and the Google-selected canonical for any page, which settles individual cases.</p>
 
-<h2>The rules I apply</h2>
+<h2 id="section-the-rules-i-apply" tabindex="-1">The rules I apply</h2>
 <ul>
   <li><strong>Every indexable page declares itself.</strong> A self-referencing canonical guards against parameter copies that other sites and ad platforms create.</li>
   <li><strong>Absolute URLs.</strong> Include the protocol and host. Relative canonicals are valid, and they break the moment a page is served from a staging host or a second domain.</li>
@@ -821,7 +839,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Internal links match.</strong> Navigation, breadcrumbs, and sitemaps link to the canonical version.</li>
 </ul>
 
-<h2>Common mistakes</h2>
+<h2 id="section-common-mistakes" tabindex="-1">Common mistakes</h2>
 <ul>
   <li><strong>Pagination pointing to page one.</strong> Page two of a category holds different products from page one. Each paginated page should declare itself. Google stopped using rel prev and next as an indexing signal in 2019, so plain crawlable links between the pages do that job.</li>
   <li><strong>Canonical and noindex together.</strong> One says "index that other page instead," the other says "index nothing." Pick one.</li>
@@ -830,10 +848,10 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Product variants.</strong> Color and size variants that differ only by a parameter usually canonicalize to the main product. Variants that people search for by name, such as a specific model, may deserve their own indexable pages.</li>
 </ul>
 
-<h2>Across domains</h2>
+<h2 id="section-across-domains" tabindex="-1">Across domains</h2>
 <p>A canonical can point to another domain, which is how a business that runs two sites with overlapping content can concentrate signals on one. For syndicated articles republished by partners, Google's current advice is that the partner should block indexing of its copy with noindex, because a cross-domain canonical on a large partner site doesn't always win against that site's own authority.</p>
 
-<h2>Canonical or redirect</h2>
+<h2 id="section-canonical-or-redirect" tabindex="-1">Canonical or redirect</h2>
 <p>When visitors never need the duplicate URL, redirect it. A 301 is a stronger signal, and nobody lands on the copy. Use a canonical when the duplicate has to keep working, such as a filtered view, a tracking link, or a print version.</p>
 
 <p class="related">Canonical audits are part of <a href="../../services/technical-seo/">technical SEO forensics</a> and <a href="../../services/large-sites/">large-site SEO</a>. For the related indexing status, see <a href="../../guides/crawled-not-indexed/">Crawled, currently not indexed</a>.</p>

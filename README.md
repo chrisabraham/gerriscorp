@@ -60,3 +60,13 @@ canonical setting must be configured in the destination CMS.
 The IndexNow workflow waits for the public sitemap to match the repository's
 intended inventory before submitting. A key that already exists is insufficient
 to prove that a new release has deployed. API acceptance is not indexing proof.
+
+
+## Guide section navigation
+
+Guides with at least 700 words and four main sections receive a collapsible
+"On this page" list after the introduction. `tools/guide_navigation.py` adds
+section IDs while rendering HTML; editorial sources, Markdown twins, and
+syndication feeds keep their original content. Existing heading IDs are retained.
+To keep a shared section URL stable when renaming a heading, give that source
+heading an explicit `id` before changing its wording.

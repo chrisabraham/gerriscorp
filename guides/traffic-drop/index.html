@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -819,7 +824,21 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Organic traffic fell and everyone wants an answer by Friday. The answer is almost always findable, and it comes from narrowing the drop down until only one explanation fits. This is the order I work in.</p>
 
-<h2>1. Confirm the drop is real</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-1-confirm-the-drop-is-real">1. Confirm the drop is real</a></li>
+    <li><a href="#section-2-read-clicks-impressions-ctr-and-position-together">2. Read clicks, impressions, CTR, and position together</a></li>
+    <li><a href="#section-3-find-where-the-loss-is">3. Find where the loss is</a></li>
+    <li><a href="#section-4-line-it-up-with-dates">4. Line it up with dates</a></li>
+    <li><a href="#section-5-check-the-technical-reports">5. Check the technical reports</a></li>
+    <li><a href="#section-6-separate-the-problems">6. Separate the problems</a></li>
+    <li><a href="#section-7-write-it-down">7. Write it down</a></li>
+    <li><a href="#section-questions-about-traffic-drops">Questions about traffic drops</a></li>
+  </ol>
+</details>
+
+<h2 id="section-1-confirm-the-drop-is-real" tabindex="-1">1. Confirm the drop is real</h2>
 <p>Start by ruling out measurement. Analytics can fall while search traffic is fine.</p>
 <ul>
   <li>Compare Google Analytics with Search Console clicks over the same dates. If Search Console is flat and analytics fell, the problem is tracking: a broken tag, a new consent banner, a site redesign that dropped the snippet from some templates.</li>
@@ -828,7 +847,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>One reporting change to know about: in September 2025 Google stopped supporting a parameter that rank-tracking tools used to load a hundred results at a time. Desktop impressions fell sharply for many sites and average position appeared to improve, with no change in clicks. A drop in impressions alone from that month is usually that.</p>
 
-<h2>2. Read clicks, impressions, CTR, and position together</h2>
+<h2 id="section-2-read-clicks-impressions-ctr-and-position-together" tabindex="-1">2. Read clicks, impressions, CTR, and position together</h2>
 <table>
 <thead><tr><th scope="col">Pattern</th><th scope="col">Likely meaning</th></tr></thead>
 <tbody>
@@ -839,7 +858,7 @@ dd { margin: .2rem 0 0 0; }
 </tbody>
 </table>
 
-<h2>3. Find where the loss is</h2>
+<h2 id="section-3-find-where-the-loss-is" tabindex="-1">3. Find where the loss is</h2>
 <p>Use the Compare option in the Performance report, then sort each tab by the change in clicks.</p>
 <ul>
   <li><strong>Pages.</strong> Is the loss spread across the site, or concentrated in one section or template? A drop in one template points to something technical about that template.</li>
@@ -848,7 +867,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Search appearance and search type.</strong> Lost rich results, or lost image and video traffic, show up here.</li>
 </ul>
 
-<h2>4. Line it up with dates</h2>
+<h2 id="section-4-line-it-up-with-dates" tabindex="-1">4. Line it up with dates</h2>
 <p>Find the first day of the decline as precisely as the daily data allows, then check what happened that week.</p>
 <ul>
   <li><strong>Google's Search Status Dashboard</strong> lists confirmed core updates, spam updates, and incidents with start and end dates.</li>
@@ -856,7 +875,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Outside events.</strong> A competitor's launch, a press story, a product recall.</li>
 </ul>
 
-<h2>5. Check the technical reports</h2>
+<h2 id="section-5-check-the-technical-reports" tabindex="-1">5. Check the technical reports</h2>
 <ul>
   <li><strong>Security and Manual actions.</strong> One look, and either there's a notice or there isn't.</li>
   <li><strong>Page indexing.</strong> A rise in "Crawled, currently not indexed," "Excluded by noindex," "Blocked by robots.txt," or "Duplicate, Google chose different canonical" that starts on the same date is a strong lead.</li>
@@ -864,14 +883,14 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>URL Inspection.</strong> Run a live test on a page that lost traffic and read the rendered HTML. Content missing from Google's render is a common, invisible cause. The <a href="../../guides/javascript-seo/">JavaScript SEO guide</a> has the tests.</li>
 </ul>
 
-<h2>6. Separate the problems</h2>
+<h2 id="section-6-separate-the-problems" tabindex="-1">6. Separate the problems</h2>
 <p>Drops often have more than one cause at once: a core update lands the same month a redesign broke a template, or a backlink spam spike shows up beside a redirect error. Treat each candidate as its own hypothesis and test it against the data separately. When the evidence for each one points to different pages or different dates, they're different problems, and each gets its own fix.</p>
 
-<h2>7. Write it down</h2>
+<h2 id="section-7-write-it-down" tabindex="-1">7. Write it down</h2>
 <p>The deliverable is a short document: the size and start date of the drop, where it is concentrated, the cause, the evidence for it, the explanations that were ruled out and why, and the fix with tickets the developers can act on. Then mark the fix's ship date and watch the same report, filtered the same way, over the following weeks.</p>
 
 <section class="faq">
-<h2>Questions about traffic drops</h2>
+<h2 id="section-questions-about-traffic-drops" tabindex="-1">Questions about traffic drops</h2>
 <h3>How fast does traffic recover after a fix?</h3>
 <p>A technical fix such as an unblocked template often recovers within weeks, as Google recrawls. Losses from a core update usually move only when Google runs a later update, after the content has improved.</p>
 <h3>How far back does Search Console go?</h3>

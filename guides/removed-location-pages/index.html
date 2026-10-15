@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -797,10 +802,25 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-07">October 7, 2026</time></p>
 <p class="lead">It's one of the most common stories I hear from service businesses. Years ago someone built a landing page for every city, county, or area code the company serves. Later, someone decided they were thin, or risky, or just embarrassing, and deleted them. Months afterward the important pages, the ones nobody touched, are ranking lower. The deletion may be the cause, a coincidence, or one of several causes, and the only way to know is to look.</p>
 
-<h2>Why the pages existed, and why removing them can be right</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-why-the-pages-existed-and-why-removing-them-can-be-right">Why the pages existed, and why removing them can be right</a></li>
+    <li><a href="#section-five-ways-a-cleanup-hurts-the-pages-you-kept">Five ways a cleanup hurts the pages you kept</a></li>
+    <li><a href="#section-step-one-rebuild-the-inventory">Step one: rebuild the inventory</a></li>
+    <li><a href="#section-step-two-line-up-the-dates">Step two: line up the dates</a></li>
+    <li><a href="#section-step-three-decide-each-url-s-fate">Step three: decide each URL&#x27;s fate</a></li>
+    <li><a href="#section-step-four-rebuild-the-paths">Step four: rebuild the paths</a></li>
+    <li><a href="#section-step-five-measure-the-right-things">Step five: measure the right things</a></li>
+    <li><a href="#section-what-a-useful-location-page-looks-like">What a useful location page looks like</a></li>
+    <li><a href="#section-if-you-haven-t-deleted-them-yet">If you haven&#x27;t deleted them yet</a></li>
+  </ol>
+</details>
+
+<h2 id="section-why-the-pages-existed-and-why-removing-them-can-be-right" tabindex="-1">Why the pages existed, and why removing them can be right</h2>
 <p>Hundreds of nearly identical pages that differ only by a place name are close to what Google's spam policies call doorway abuse: pages made to rank for many similar searches that funnel visitors to the same place. Pruning them is often the correct long term decision. The damage comes from how the pages are removed.</p>
 
-<h2>Five ways a cleanup hurts the pages you kept</h2>
+<h2 id="section-five-ways-a-cleanup-hurts-the-pages-you-kept" tabindex="-1">Five ways a cleanup hurts the pages you kept</h2>
 <ol>
   <li><strong>Lost internal links.</strong> Every location page usually linked to the core service pages. Delete five hundred pages and you delete thousands of internal links pointing at the pages you care about.</li>
   <li><strong>Lost inbound links.</strong> Some of those pages earned links from local directories, partners, or press. If they now return errors, that value stops flowing.</li>
@@ -809,13 +829,13 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>A coincidence in the timeline.</strong> Large removals often happen alongside redesigns, template changes, or algorithm updates, and the losses get blamed on whichever change people remember.</li>
 </ol>
 
-<h2>Step one: rebuild the inventory</h2>
+<h2 id="section-step-one-rebuild-the-inventory" tabindex="-1">Step one: rebuild the inventory</h2>
 <p>Before deciding anything, list every removed URL. If the old list is gone, rebuild it from Search Console's historical performance data, old XML sitemaps, archived crawls, server logs, and analytics landing page reports. For each URL record its traffic and impressions before removal, any external links pointing to it, and what it returns today: a redirect, a 404, a 410, or a soft 404.</p>
 
-<h2>Step two: line up the dates</h2>
+<h2 id="section-step-two-line-up-the-dates" tabindex="-1">Step two: line up the dates</h2>
 <p>Put the removal date, any redesign or migration, and known Google updates on one timeline next to the core pages' clicks and positions. If the decline started before the removal, the deletion didn't start it. If it began within weeks after, it's a strong suspect. Treat any unusual query patterns as a separate track until the data connects them.</p>
 
-<h2>Step three: decide each URL's fate</h2>
+<h2 id="section-step-three-decide-each-url-s-fate" tabindex="-1">Step three: decide each URL's fate</h2>
 <ul>
   <li><strong>Restore</strong> the handful that earned real traffic or links and can be made genuinely useful, with local details only that location can offer.</li>
   <li><strong>Redirect</strong> pages with links or traffic to the closest relevant page, such as a regional service page, using a 301.</li>
@@ -823,16 +843,16 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Every URL gets its own decision, recorded in the inventory.</p>
 
-<h2>Step four: rebuild the paths</h2>
+<h2 id="section-step-four-rebuild-the-paths" tabindex="-1">Step four: rebuild the paths</h2>
 <p>Replace the internal links the old pages provided. A service area page that lists the regions you cover, linked from the main navigation or footer, and service pages that mention where you work, put prominence back on the pages that matter without recreating hundreds of thin ones.</p>
 
-<h2>Step five: measure the right things</h2>
+<h2 id="section-step-five-measure-the-right-things" tabindex="-1">Step five: measure the right things</h2>
 <p>Watch the core pages' impressions, clicks, and positions for the searches they're meant to win, along with leads. Expect weeks, not days, before Google recrawls and reassesses. Keep a short change log so each improvement can be tied to the change that caused it.</p>
 
-<h2>What a useful location page looks like</h2>
+<h2 id="section-what-a-useful-location-page-looks-like" tabindex="-1">What a useful location page looks like</h2>
 <p>If some locations deserve a page, give each one facts no other page has: the team or crew that serves it, real jobs completed there, local regulations or permits, travel times, and reviews from customers in that area. A page that would read the same with a different town name swapped in is the kind that caused the cleanup in the first place.</p>
 
-<h2>If you haven't deleted them yet</h2>
+<h2 id="section-if-you-haven-t-deleted-them-yet" tabindex="-1">If you haven't deleted them yet</h2>
 <p>Do the inventory first. Decide each page's fate with the data in hand, set up the redirects and internal links before anything is removed, and remove in stages so you can see the effect of each batch.</p>
 
 <p>Already deleted and watching rankings slide? This is the kind of forensic work I do. See <a href="../../guides/traffic-drop/">how to diagnose a traffic drop</a>, or <a href="../../contact/">tell me what happened and when</a>.</p>

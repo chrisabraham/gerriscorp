@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -822,11 +827,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-14">October 14, 2026</time></p>
 <p class="lead">Speculation rules are a short block of JSON in a script tag that tells Chrome and Edge which links to load before the reader clicks them. When the reader does click, the page is already in memory and opens at once. I added one rule to every site I run in October 2026. It costs nothing in browsers that don't support it, and on a static site it takes about five minutes.</p>
 
-<h2>Prefetch or prerender</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-prefetch-or-prerender">Prefetch or prerender</a></li>
+    <li><a href="#section-choose-the-eagerness">Choose the eagerness</a></li>
+    <li><a href="#section-the-rule-i-use">The rule I use</a></li>
+    <li><a href="#section-check-that-it-works">Check that it works</a></li>
+    <li><a href="#section-browser-support">Browser support</a></li>
+    <li><a href="#section-what-it-changes">What it changes</a></li>
+    <li><a href="#section-where-i-fit">Where I fit</a></li>
+  </ol>
+</details>
+
+<h2 id="section-prefetch-or-prerender" tabindex="-1">Prefetch or prerender</h2>
 <p>A prefetch downloads the next page's HTML and holds it in memory without rendering it. A prerender goes further: Chrome's documentation says the page behaves as if it had been opened in an invisible background tab, then is shown when the reader arrives. Prerender is faster still and uses more memory and bandwidth, and it runs the page's scripts before anyone sees the page.</p>
 <p>I use prefetch. It removes the network wait, which is most of the delay on a static site, and it runs no scripts early, so analytics, consent tools, and anything else that should only run for a real visit behave exactly as before. Prerender suits sites whose pages are heavy to render and whose scripts are built to handle it. Chrome also caps how much it will speculate: its documentation allows up to 50 immediate prefetches and 10 immediate prerenders per page, so a rule that matches every link on a long page cannot flood the network.</p>
 
-<h2>Choose the eagerness</h2>
+<h2 id="section-choose-the-eagerness" tabindex="-1">Choose the eagerness</h2>
 <p>Eagerness sets how early Chrome acts on a rule. The four levels, from Chrome's documentation:</p>
 <ul>
   <li><strong>immediate:</strong> as soon as the rule is seen.</li>
@@ -836,7 +854,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Moderate is the setting I use. A 200-millisecond hover is a good signal of intent, and it fetches few pages the reader never opens.</p>
 
-<h2>The rule I use</h2>
+<h2 id="section-the-rule-i-use" tabindex="-1">The rule I use</h2>
 <pre><code>&lt;script type="speculationrules"&gt;
 {"prefetch": [{"where": {"and": [
   {"href_matches": "/*"},
@@ -845,17 +863,17 @@ dd { margin: .2rem 0 0 0; }
 &lt;/script&gt;</code></pre>
 <p>It matches every same-site link and excludes the files no reader opens in a browser: Markdown copies, llms.txt, and XML feeds and sitemaps. Exclude anything with side effects as well. A logout link, an "add to cart" URL, or any GET request that changes state must never be prefetched. On a static site there are none; on an application, list them.</p>
 
-<h2>Check that it works</h2>
+<h2 id="section-check-that-it-works" tabindex="-1">Check that it works</h2>
 <p>Open the site in Chrome, open DevTools, and go to the Application panel. Under background services, the speculative loads view lists the rules Chrome found on the page and the status of each speculation: not triggered, running, ready, or failed, with the reason for any failure. Hover over a link for a moment and watch its entry change. The Network panel shows the prefetch request itself.</p>
 <p>Chrome marks speculative requests with a Sec-Purpose request header, set to prefetch for a prefetch. That gives servers and log analysis a way to separate speculative fetches from real visits. A static host serves the page either way. A site that counts visits on the server side should exclude requests carrying that header, so prefetches never inflate the numbers.</p>
 
-<h2>Browser support</h2>
+<h2 id="section-browser-support" tabindex="-1">Browser support</h2>
 <p>Chrome and Edge support speculation rules, with eagerness settings since version 121. Firefox does not support them, and Safari has them behind a flag. Unsupported browsers ignore the script tag, so the rule degrades to an ordinary link.</p>
 
-<h2>What it changes</h2>
+<h2 id="section-what-it-changes" tabindex="-1">What it changes</h2>
 <p>Lighthouse measures a single page load, so speculation rules leave its scores where they were. What changes is the second page: the reader clicks and the page is already there. That is the part of speed a visitor notices most. In field data, the prefetched page's Largest Contentful Paint starts from a page already in memory, so real-user loading times improve once enough visits have been recorded.</p>
 
-<h2>Where I fit</h2>
+<h2 id="section-where-i-fit" tabindex="-1">Where I fit</h2>
 <p>I add speculation rules as part of a <a href="../../services/site-speed/">site speed</a> engagement, along with the work Lighthouse does measure: render-blocking resources, image sizes, and third-party scripts. For the measurement side, start with my guide to <a href="../../guides/core-web-vitals/">Core Web Vitals</a>.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

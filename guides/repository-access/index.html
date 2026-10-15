@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -812,13 +817,28 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">On a site built with Next.js, React, or a headless CMS, the search problems live in the code, so the person fixing them needs to see it. Granting that access is a small, routine job when you set it up in the right order. Here is the order I ask clients to follow, and the reasons behind each step.</p>
 
-<h2>Why an SEO asks for the repository at all</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-why-an-seo-asks-for-the-repository-at-all">Why an SEO asks for the repository at all</a></li>
+    <li><a href="#section-invite-them-to-one-repository-as-an-outside-collaborator">Invite them to one repository, as an outside collaborator</a></li>
+    <li><a href="#section-start-with-the-read-role">Start with the Read role</a></li>
+    <li><a href="#section-grant-write-only-after-main-is-protected">Grant Write only after main is protected</a></li>
+    <li><a href="#section-use-deploy-previews-to-see-each-change-before-merge">Use deploy previews to see each change before merge</a></li>
+    <li><a href="#section-keep-secrets-out-of-the-repository">Keep secrets out of the repository</a></li>
+    <li><a href="#section-the-cms-only-option">The CMS only option</a></li>
+    <li><a href="#section-remove-access-when-the-engagement-ends">Remove access when the engagement ends</a></li>
+    <li><a href="#section-a-checklist-for-the-day-you-say-yes">A checklist for the day you say yes</a></li>
+  </ol>
+</details>
+
+<h2 id="section-why-an-seo-asks-for-the-repository-at-all" tabindex="-1">Why an SEO asks for the repository at all</h2>
 <p>A crawl tells me that 900 pages share a title. The repository tells me which component writes it, which data it reads, and whether a fix will reach every route that uses it. Without the code, I write a ticket describing the symptom and your developer goes looking for the cause. With it, the ticket names the file, or arrives as a pull request ready for review. Read access alone usually cuts the time from finding to fix by a wide margin.</p>
 
-<h2>Invite them to one repository, as an outside collaborator</h2>
+<h2 id="section-invite-them-to-one-repository-as-an-outside-collaborator" tabindex="-1">Invite them to one repository, as an outside collaborator</h2>
 <p>On GitHub, a consultant belongs outside your organization's membership. Add them as an outside collaborator on the one repository that builds the website, rather than as an organization member who inherits base permissions across everything you own. Your other repositories, your internal tools, and your infrastructure code stay out of view. If the site is split across a frontend and a content repository, add them to both and nothing else.</p>
 
-<h2>Start with the Read role</h2>
+<h2 id="section-start-with-the-read-role" tabindex="-1">Start with the Read role</h2>
 <p>GitHub's repository roles, from least access to most, are Read, Triage, Write, Maintain, and Admin. GitHub's own guidance is to pick the role that fits each person's function without giving them more access than they need.</p>
 <ul>
   <li><strong>Read</strong> is GitHub's role for people who view or discuss a project without changing it. That covers the whole diagnostic phase.</li>
@@ -828,14 +848,14 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>GitLab has its own set: Guest, Reporter, Developer, Maintainer, and Owner, ordered from fewest permissions to most, plus specialized Planner and Security Manager roles. Reporter is the usual starting point for an outside reviewer there, and Developer is roughly the equivalent of GitHub's Write.</p>
 
-<h2>Grant Write only after main is protected</h2>
+<h2 id="section-grant-write-only-after-main-is-protected" tabindex="-1">Grant Write only after main is protected</h2>
 <p>Before anyone outside your team can push, make sure nobody can push straight to your main branch. On GitHub, a ruleset or a branch protection rule controls who can push to a branch and can require reviews on pull requests before they merge. GitHub's documentation notes that when both a ruleset and a protection rule apply to the same branch, all the rules apply, and the most restrictive version of each wins.</p>
 <p>With that in place, Write access becomes safe: the consultant can create branches and open pull requests, and every change still waits for one of your people to approve it. Nothing they write reaches production without your review.</p>
 
-<h2>Use deploy previews to see each change before merge</h2>
+<h2 id="section-use-deploy-previews-to-see-each-change-before-merge" tabindex="-1">Use deploy previews to see each change before merge</h2>
 <p>Netlify builds a Deploy Preview for pull requests in a connected GitHub, GitLab, Bitbucket, or Azure DevOps repository, and Vercel creates a preview deployment for every push to a non-production branch and every pull request. Each preview gets its own URL. Your team can click through the change, and I can check what a crawler will see on it: titles, canonicals, structured data, status codes, and rendered content. Netlify adds an <code>X-Robots-Tag: noindex</code> header to its previews, which asks search engines to leave them out of results. For anything sensitive, Netlify recommends password protection on top.</p>
 
-<h2>Keep secrets out of the repository</h2>
+<h2 id="section-keep-secrets-out-of-the-repository" tabindex="-1">Keep secrets out of the repository</h2>
 <p>API keys, database passwords, and tokens belong in your host's environment variables, never in a committed file. Anyone you give read access can read every file and its history, so a key committed two years ago and deleted since is still visible to them. Two habits protect you:</p>
 <ul>
   <li><strong>Turn on push protection.</strong> GitHub's push protection is a secret scanning feature that blocks pushes containing recognized credentials before they reach the repository, from the command line, the web interface, and the API.</li>
@@ -843,13 +863,13 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>An SEO needs no production credentials to do this work. If someone asks for them, ask why.</p>
 
-<h2>The CMS only option</h2>
+<h2 id="section-the-cms-only-option" tabindex="-1">The CMS only option</h2>
 <p>Some teams can't open the codebase, for contractual or security reasons. That still leaves plenty of room. Give the consultant an editor role in the CMS for content, titles, and descriptions, Search Console access, and the preview URLs. They write tickets with the evidence and the acceptance criteria, and your developer makes the code changes. It's slower, and it works.</p>
 
-<h2>Remove access when the engagement ends</h2>
+<h2 id="section-remove-access-when-the-engagement-ends" tabindex="-1">Remove access when the engagement ends</h2>
 <p>Put the end date in your own calendar on the day you grant access. When the work finishes, remove the outside collaborator from the repository, take them out of Search Console and the hosting dashboard, and revoke any deploy keys or tokens created for the engagement.</p>
 
-<h2>A checklist for the day you say yes</h2>
+<h2 id="section-a-checklist-for-the-day-you-say-yes" tabindex="-1">A checklist for the day you say yes</h2>
 <ol>
   <li>Invite the consultant as an outside collaborator on the website repository only.</li>
   <li>Assign Read on GitHub, or Reporter on GitLab.</li>

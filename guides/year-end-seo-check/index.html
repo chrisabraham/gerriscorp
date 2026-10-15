@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -802,40 +807,58 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-07">October 7, 2026</time></p>
 <p class="lead">December is quiet for a lot of websites, which makes it the right time to find the problems that pile up unnoticed. None of these checks takes long, and together they catch the small failures that otherwise surface in March as a mystery traffic drop. Block an afternoon, work down the list, and write down what you find.</p>
 
-<h2>1. Indexing: is Google seeing what you think it is?</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-1-indexing-is-google-seeing-what-you-think-it-is">1. Indexing: is Google seeing what you think it is?</a></li>
+    <li><a href="#section-2-sitemaps-current-and-clean">2. Sitemaps: current and clean</a></li>
+    <li><a href="#section-3-analytics-keep-the-history-you-ll-want">3. Analytics: keep the history you&#x27;ll want</a></li>
+    <li><a href="#section-4-domains-and-certificates">4. Domains and certificates</a></li>
+    <li><a href="#section-5-redirects-from-this-year-s-changes">5. Redirects from this year&#x27;s changes</a></li>
+    <li><a href="#section-6-speed-and-stability">6. Speed and stability</a></li>
+    <li><a href="#section-7-listings-and-holiday-hours">7. Listings and holiday hours</a></li>
+    <li><a href="#section-8-what-ai-assistants-say-about-you">8. What AI assistants say about you</a></li>
+    <li><a href="#section-9-structured-data">9. Structured data</a></li>
+    <li><a href="#section-10-access-and-ownership">10. Access and ownership</a></li>
+    <li><a href="#section-11-write-it-down">11. Write it down</a></li>
+    <li><a href="#section-save-the-big-launches-for-january">Save the big launches for January</a></li>
+  </ol>
+</details>
+
+<h2 id="section-1-indexing-is-google-seeing-what-you-think-it-is" tabindex="-1">1. Indexing: is Google seeing what you think it is?</h2>
 <p>Open Search Console's Page indexing report and compare the number of indexed pages with the number of pages you actually want in search. A sudden rise in excluded pages, or important pages listed as crawled but not indexed, deserves a closer look. Spot check five of your most valuable pages with URL Inspection to confirm they're indexed and that Google chose the canonical you intended.</p>
 
-<h2>2. Sitemaps: current and clean</h2>
+<h2 id="section-2-sitemaps-current-and-clean" tabindex="-1">2. Sitemaps: current and clean</h2>
 <p>In the Sitemaps report, confirm each sitemap was read recently and without errors. A sitemap should list only live pages you want indexed. If it still includes redirected, deleted, or noindexed URLs from this year's changes, clean it up.</p>
 
-<h2>3. Analytics: keep the history you'll want</h2>
+<h2 id="section-3-analytics-keep-the-history-you-ll-want" tabindex="-1">3. Analytics: keep the history you'll want</h2>
 <p>Google Analytics 4 keeps detailed event data for only two months by default, and you can extend it to fourteen months in the property's data retention settings. If yours still says two, change it now, before you need a year over year comparison you can't make. While you're there, confirm that key events like form submissions and calls still fire after this year's site changes.</p>
 
-<h2>4. Domains and certificates</h2>
+<h2 id="section-4-domains-and-certificates" tabindex="-1">4. Domains and certificates</h2>
 <p>List every domain the business owns, including old ones that only redirect. Check renewal dates and turn on auto renew for the ones you'll keep. A lapsed domain can be bought by someone else and pointed anywhere. Confirm HTTPS certificates renew automatically, and that redirects from old domains still land on the right pages.</p>
 
-<h2>5. Redirects from this year's changes</h2>
+<h2 id="section-5-redirects-from-this-year-s-changes" tabindex="-1">5. Redirects from this year's changes</h2>
 <p>If you redesigned, renamed, or retired pages this year, crawl your old URLs and confirm each one returns a single redirect to a relevant page, with no chains and no redirects to the home page by default.</p>
 
-<h2>6. Speed and stability</h2>
+<h2 id="section-6-speed-and-stability" tabindex="-1">6. Speed and stability</h2>
 <p>Look at the Core Web Vitals report for pages that slipped from good to needs improvement. The cause is often something added during the year: a chat widget, a new tracking script, or oversized images on a new template.</p>
 
-<h2>7. Listings and holiday hours</h2>
+<h2 id="section-7-listings-and-holiday-hours" tabindex="-1">7. Listings and holiday hours</h2>
 <p>Check your Business Profile for accurate hours, categories, photos, and contact details. Set special hours for the holidays still ahead, and confirm Bing Places and Apple Maps match.</p>
 
-<h2>8. What AI assistants say about you</h2>
+<h2 id="section-8-what-ai-assistants-say-about-you" tabindex="-1">8. What AI assistants say about you</h2>
 <p>Ask ChatGPT, Gemini, Claude, Perplexity, and Google's AI Overviews the questions a customer would ask about your business. Note what's wrong and where each answer seems to come from. Year end is a good moment to set this baseline and correct the sources, so you can compare next December.</p>
 
-<h2>9. Structured data</h2>
+<h2 id="section-9-structured-data" tabindex="-1">9. Structured data</h2>
 <p>Run your key page types through a schema validator. Prices, hours, addresses, and people who left the company are the facts that go stale in structured data first.</p>
 
-<h2>10. Access and ownership</h2>
+<h2 id="section-10-access-and-ownership" tabindex="-1">10. Access and ownership</h2>
 <p>List who has access to Search Console, analytics, the Business Profile, the domain registrar, DNS, and hosting. Remove former staff and agencies that no longer work with you, and make sure at least two people inside the business hold owner access to each. Lost access is one of the most expensive problems I'm asked to untangle, and it's easiest to prevent while everyone is still reachable.</p>
 
-<h2>11. Write it down</h2>
+<h2 id="section-11-write-it-down" tabindex="-1">11. Write it down</h2>
 <p>End with one page of notes: what you checked, what you fixed, and what needs a developer or a budget next year. That page becomes the start of next year's plan and the baseline for next December. Keep it with last year's, and the trend over several Decembers tells you more than any single report.</p>
 
-<h2>Save the big launches for January</h2>
+<h2 id="section-save-the-big-launches-for-january" tabindex="-1">Save the big launches for January</h2>
 <p>A redesign or migration launched the week before a holiday shutdown breaks with nobody around to notice for two weeks. December is for findings; January is for shipping the bigger changes.</p>
 
 <p>Prefer to hand this off? I run this check as a fixed price review and leave you with the written list. <a href="../../contact/">Tell me about your site</a>.</p>

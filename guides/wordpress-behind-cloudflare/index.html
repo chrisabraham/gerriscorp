@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -802,11 +807,21 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-14">October 14, 2026</time></p>
 <p class="lead">Putting WordPress behind Cloudflare with full page caching is the best single change I know for a slow WordPress site. Visitors get a saved copy of each page from a data center near them, and your server, PHP, and MySQL sit idle for most of the traffic. I think of it as a plate carrier: it covers the vital organs, where most of the hits land. The traffic it lets through goes straight to the parts of WordPress attackers aim at, so those parts need their own protection.</p>
 
-<h2>How the cache decides</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-how-the-cache-decides">How the cache decides</a></li>
+    <li><a href="#section-traffic-that-still-reaches-your-server">Traffic that still reaches your server</a></li>
+    <li><a href="#section-hardening-the-paths-that-remain">Hardening the paths that remain</a></li>
+    <li><a href="#section-the-maintenance-never-stops">The maintenance never stops</a></li>
+  </ol>
+</details>
+
+<h2 id="section-how-the-cache-decides" tabindex="-1">How the cache decides</h2>
 <p>Cloudflare doesn't cache HTML by default. You turn page caching on with Automatic Platform Optimization, which Cloudflare built for WordPress, or with a cache rule that tells Cloudflare to cache everything on chosen paths. APO comes with its own logic for what to skip. Cloudflare's documentation says it bypasses the cache for logged-in and administrator users so private content isn't cached, and that a request skips the cache when bypass cookies are present, naming logged-in, session, and WooCommerce cookies. With the Cloudflare WordPress plugin installed, the edge copy updates when you change content.</p>
 <p>A hand-written cache rule has none of that logic until you add it. A rule that caches everything and forgets the login cookie will serve one editor's view of the site to the public. If you write your own rules, add a bypass for requests carrying the WordPress login cookie, and test logged in and logged out before trusting it.</p>
 
-<h2>Traffic that still reaches your server</h2>
+<h2 id="section-traffic-that-still-reaches-your-server" tabindex="-1">Traffic that still reaches your server</h2>
 <ul>
   <li><strong>Logins.</strong> Every request to <code>wp-login.php</code> and the dashboard runs PHP and queries the database. Password-guessing bots aim here first.</li>
   <li><strong>XML-RPC.</strong> <code>xmlrpc.php</code> is an older remote-publishing interface that WordPress still ships. It accepts logins too, and bots use it for password guessing. Jetpack depends on it, so check before closing it.</li>
@@ -816,7 +831,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Anything requested by IP address</strong>, if the server answers requests that skip Cloudflare entirely.</li>
 </ul>
 
-<h2>Hardening the paths that remain</h2>
+<h2 id="section-hardening-the-paths-that-remain" tabindex="-1">Hardening the paths that remain</h2>
 <p>WordPress's own hardening guide, in the Advanced Administration Handbook, covers most of this, and I follow it:</p>
 <ol>
   <li><strong>Update core, plugins, and themes.</strong> The handbook's first advice is to keep WordPress current, and it says the same of plugins.</li>
@@ -829,7 +844,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Accept only Cloudflare's traffic</strong> at the origin, through your host's firewall or Cloudflare Tunnel, so nobody can go around the proxy.</li>
 </ol>
 
-<h2>The maintenance never stops</h2>
+<h2 id="section-the-maintenance-never-stops" tabindex="-1">The maintenance never stops</h2>
 <p>Caching removes the speed problem and most of the load. It leaves the upkeep: updates every week, plugin audits, backup checks, and an eye on login attempts. That is the standing cost of running WordPress, and for stores, membership sites, and newsrooms it's worth paying.</p>
 <p>For a company site that changes a few times a year, it often isn't. A static site has no login page, no database, and no plugins, so the whole list above disappears. I covered that trade in <a href="../../services/wordpress-care/">WordPress care: caching, hardening, or a static move</a>. For the Cloudflare settings that affect search engines and AI crawlers, see <a href="../../guides/cloudflare-seo/">Cloudflare settings that help or hurt SEO and AI crawlers</a>.</p>
 <aside class="help-box" aria-label="Get help">

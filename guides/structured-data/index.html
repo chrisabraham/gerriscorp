@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -814,7 +819,20 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Structured data is a machine-readable description of what a page is about: this is a product with this price, this is a business at this address, this article was written by this person. It can earn enhanced listings in Google, and it helps every system that reads the page, including AI assistants, understand the facts without guessing.</p>
 
-<h2>The format</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-the-format">The format</a></li>
+    <li><a href="#section-what-still-earns-rich-results">What still earns rich results</a></li>
+    <li><a href="#section-markup-without-a-rich-result-still-helps">Markup without a rich result still helps</a></li>
+    <li><a href="#section-build-a-connected-graph">Build a connected graph</a></li>
+    <li><a href="#section-rules-that-keep-markup-safe">Rules that keep markup safe</a></li>
+    <li><a href="#section-how-to-validate-it">How to validate it</a></li>
+    <li><a href="#section-questions-about-structured-data">Questions about structured data</a></li>
+  </ol>
+</details>
+
+<h2 id="section-the-format" tabindex="-1">The format</h2>
 <p>Use JSON-LD: a block of JSON in a <code>script</code> tag with the type <code>application/ld+json</code>, using the vocabulary from schema.org. Google supports Microdata and RDFa too, and recommends JSON-LD because it sits apart from the visible HTML and is easy to generate from a template. A minimal example for a business:</p>
 <pre>&lt;script type="application/ld+json"&gt;
 {
@@ -829,7 +847,7 @@ dd { margin: .2rem 0 0 0; }
 }
 &lt;/script&gt;</pre>
 
-<h2>What still earns rich results</h2>
+<h2 id="section-what-still-earns-rich-results" tabindex="-1">What still earns rich results</h2>
 <p>Google has narrowed the list of types that change how a result looks. In 2023 it limited FAQ rich results to well-known government and health sites and dropped How-to rich results. In 2025 it retired several more, including Claim Review, Estimated Salary, and Vehicle Listing, and stopped showing breadcrumb trails on mobile results. The types that still produce visible features include:</p>
 <ul>
   <li><strong>Product</strong>, with offers, price, availability, shipping, and return policy, for product snippets and merchant listings.</li>
@@ -841,10 +859,10 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Google's search gallery in its developer documentation is the current list, and it changes, so check it before building anything around a feature.</p>
 
-<h2>Markup without a rich result still helps</h2>
+<h2 id="section-markup-without-a-rich-result-still-helps" tabindex="-1">Markup without a rich result still helps</h2>
 <p>A retired rich result doesn't make the markup useless. FAQPage markup no longer produces dropdowns for most sites, and it still states plainly which question each answer belongs to. Search engines use structured data to understand entities: who the business is, who wrote the page, which person is which, and how they relate. Microsoft's Bing team has said that schema markup helps its language models understand content. When an assistant has to decide whether two mentions refer to the same business, consistent structured data across the web removes doubt.</p>
 
-<h2>Build a connected graph</h2>
+<h2 id="section-build-a-connected-graph" tabindex="-1">Build a connected graph</h2>
 <p>The strongest pattern is one graph per page, where each thing has an <code>@id</code> and refers to the others by it. The WebSite is published by the Organization. The Organization is founded by the Person. The Article is written by the Person and is about the Service. Every page on this site carries a graph like that, built from one template, so the facts never contradict each other.</p>
 <ul>
   <li><strong>sameAs</strong> links an entity to its profiles elsewhere: a Wikipedia article, Wikidata, a professional profile, a Google Business Profile. Those links are how systems confirm identity.</li>
@@ -852,14 +870,14 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>The same facts everywhere.</strong> Name, address, phone, founding date, and founder should match the visible page, the business profile, and the directories.</li>
 </ul>
 
-<h2>Rules that keep markup safe</h2>
+<h2 id="section-rules-that-keep-markup-safe" tabindex="-1">Rules that keep markup safe</h2>
 <ul>
   <li><strong>Mark up only what visitors can see.</strong> Reviews, prices, and FAQs in the markup must appear on the page. Hidden or invented markup can earn a manual action for spammy structured data, which removes rich results for the whole site.</li>
   <li><strong>Keep it current.</strong> A price or an event date in the markup that disagrees with the page is a quality problem. Generate the markup from the same data as the page.</li>
   <li><strong>Server-rendered.</strong> Google can read JSON-LD injected by JavaScript, and many other crawlers can't. Put it in the HTML.</li>
 </ul>
 
-<h2>How to validate it</h2>
+<h2 id="section-how-to-validate-it" tabindex="-1">How to validate it</h2>
 <ul>
   <li><strong>Google's Rich Results Test</strong> shows which rich results a page is eligible for and flags missing required properties.</li>
   <li><strong>The Schema Markup Validator</strong> at validator.schema.org checks any schema.org markup against the full vocabulary, including types Google ignores.</li>
@@ -867,7 +885,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 
 <section class="faq">
-<h2>Questions about structured data</h2>
+<h2 id="section-questions-about-structured-data" tabindex="-1">Questions about structured data</h2>
 <h3>Is structured data a ranking factor?</h3>
 <p>Google says it isn't a direct ranking factor. It affects how results look and how well Google understands the page, and both of those affect clicks.</p>
 <h3>Can a plugin handle it?</h3>

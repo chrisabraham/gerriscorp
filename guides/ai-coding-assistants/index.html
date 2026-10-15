@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,16 +797,31 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time> · Updated <time datetime="2026-10-15">October 15, 2026</time></p>
 <p class="lead">AI coding assistants such as OpenAI Codex, Claude Code, GitHub Copilot, and Cursor can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.</p>
 
-<h2>Start with a written spec</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-start-with-a-written-spec">Start with a written spec</a></li>
+    <li><a href="#section-give-the-project-a-memory">Give the project a memory</a></li>
+    <li><a href="#section-turn-the-rules-into-checks">Turn the rules into checks</a></li>
+    <li><a href="#section-small-changes-reviewed">Small changes, reviewed</a></li>
+    <li><a href="#section-keep-secrets-and-production-out-of-reach">Keep secrets and production out of reach</a></li>
+    <li><a href="#section-verify-against-the-real-world">Verify against the real world</a></li>
+    <li><a href="#section-where-assistants-are-strongest">Where assistants are strongest</a></li>
+    <li><a href="#section-where-to-slow-down">Where to slow down</a></li>
+    <li><a href="#section-someone-has-to-be-accountable">Someone has to be accountable</a></li>
+  </ol>
+</details>
+
+<h2 id="section-start-with-a-written-spec" tabindex="-1">Start with a written spec</h2>
 <p>An assistant does exactly what it understands you to want, at full speed. Before any code, write down the goal, the constraints, and what done looks like. "Move the blog to the new platform" is a wish. A spec says: every old URL keeps working or redirects to its closest match, titles and dates carry over, images are copied and not hotlinked, the build fails if any internal link points to a missing page, and nothing ships until the redirect list has been checked. The assistant can help draft this, and a person decides it.</p>
 
-<h2>Give the project a memory</h2>
+<h2 id="section-give-the-project-a-memory" tabindex="-1">Give the project a memory</h2>
 <p>Claude Code reads a <code>CLAUDE.md</code> file at the start of every session, and other tools have their own equivalents. Put the things that must never be forgotten there: the build command, the deploy process, the voice rules for copy, the files that must never be committed, the decisions already made and why. This site's project file holds its style rules and a list of names that must never appear on the site. The assistant reads it every time; a new contractor would need the same briefing.</p>
 
-<h2>Turn the rules into checks</h2>
+<h2 id="section-turn-the-rules-into-checks" tabindex="-1">Turn the rules into checks</h2>
 <p>Instructions get forgotten. Automated checks don't. Every rule that can be tested by a script should be. The build for this site refuses to finish if a page title falls outside 50 to 60 characters, if a meta description is the wrong length, if two pages share a title, if any page links to one that doesn't exist, or if two pages share too much of their wording. When the assistant writes a new page, the build tells it what's wrong before I ever see the draft. The same approach works for any site: link checkers, HTML validators, accessibility tests, and unit tests for anything with logic in it.</p>
 
-<h2>Small changes, reviewed</h2>
+<h2 id="section-small-changes-reviewed" tabindex="-1">Small changes, reviewed</h2>
 <ul>
   <li><strong>Use version control.</strong> Every change goes through Git, on a branch, so anything can be undone and every change can be read as a diff.</li>
   <li><strong>Keep each change small enough to read.</strong> A change that touches three files gets reviewed properly. One that touches three hundred gets skimmed.</li>
@@ -809,13 +829,13 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Watch for scope creep.</strong> Assistants like to tidy things nobody asked them to touch. Reject unrelated changes and ask again.</li>
 </ul>
 
-<h2>Keep secrets and production out of reach</h2>
+<h2 id="section-keep-secrets-and-production-out-of-reach" tabindex="-1">Keep secrets and production out of reach</h2>
 <p>Never paste passwords, API keys, or customer data into a conversation, and never commit them to a repository. Give the assistant access to a copy of the site, a staging environment, or a local build, and keep deploys to production a deliberate human step, or an automated pipeline that runs only after the checks pass. For anything destructive, such as deleting files, rewriting history, or changing DNS, require explicit confirmation every time. Inventory the DNS records before touching any of them; a careless change can stop a company's email.</p>
 
-<h2>Verify against the real world</h2>
+<h2 id="section-verify-against-the-real-world" tabindex="-1">Verify against the real world</h2>
 <p>Assistants are well read and out of date in places. They'll describe a platform setting that moved last year, or a search feature Google retired, with total confidence. For anything that depends on a third party's current behavior, check the vendor's documentation or test it directly. After deploying, check the live result: fetch the pages, test the redirects with <code>curl</code>, run PageSpeed Insights, and look at the page in a browser. "The code looks right" isn't the same as "the site works."</p>
 
-<h2>Where assistants are strongest</h2>
+<h2 id="section-where-assistants-are-strongest" tabindex="-1">Where assistants are strongest</h2>
 <ul>
   <li><strong>Bulk, rule-based work.</strong> Building a redirect map from hundreds of old URLs, rewriting templates across a site, generating structured data from page content, converting content between platforms.</li>
   <li><strong>Audits at scale.</strong> Checking every page for missing titles, broken links, duplicate descriptions, or images without alt text, then fixing them.</li>
@@ -823,14 +843,14 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Explaining unfamiliar code.</strong> Reading an inherited theme or plugin and describing what it actually does.</li>
 </ul>
 
-<h2>Where to slow down</h2>
+<h2 id="section-where-to-slow-down" tabindex="-1">Where to slow down</h2>
 <ul>
   <li><strong>Judgment calls.</strong> Which pages to merge, which claims a page should make, what a client would or wouldn't want public. The assistant can propose; a person decides.</li>
   <li><strong>Security and payments.</strong> Authentication, checkout, and anything handling personal data needs an expert review regardless of who wrote it.</li>
   <li><strong>Long sessions.</strong> As a conversation grows, early instructions carry less weight. Restate the important rules, or keep them in the project memory file where they're read fresh.</li>
 </ul>
 
-<h2>Someone has to be accountable</h2>
+<h2 id="section-someone-has-to-be-accountable" tabindex="-1">Someone has to be accountable</h2>
 <p>The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.</p>
 
 <p class="related">See how this site and other projects were built in the <a href="../../case-studies/built-with-claude-code/">Codex and Claude Code case study</a>, and what I build for clients under <a href="../../services/ai-automation/">AI tools and automation</a> and <a href="../../services/technical-lead/">fractional technical lead</a>.</p>

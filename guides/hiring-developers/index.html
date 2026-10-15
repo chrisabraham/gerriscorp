@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -837,13 +842,28 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">Founders and marketing leads hire developers all the time without being able to judge the work. They pick the most confident interview, hope for the best, and find out six months later what they bought. There's a better way, and none of it requires learning to program. It requires owning the right accounts, asking questions that reveal judgment, and putting every change somewhere you can see it.</p>
 
-<h2>Own the accounts before you hire anyone</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-own-the-accounts-before-you-hire-anyone">Own the accounts before you hire anyone</a></li>
+    <li><a href="#section-write-the-problem-down">Write the problem down</a></li>
+    <li><a href="#section-interview-for-judgment">Interview for judgment</a></li>
+    <li><a href="#section-pay-for-a-small-trial-task">Pay for a small trial task</a></li>
+    <li><a href="#section-see-every-change-through-pull-requests">See every change through pull requests</a></li>
+    <li><a href="#section-manage-the-ai-in-the-room">Manage the AI in the room</a></li>
+    <li><a href="#section-getting-the-best-from-junior-developers">Getting the best from junior developers</a></li>
+    <li><a href="#section-red-flags">Red flags</a></li>
+    <li><a href="#section-where-i-fit">Where I fit</a></li>
+  </ol>
+</details>
+
+<h2 id="section-own-the-accounts-before-you-hire-anyone" tabindex="-1">Own the accounts before you hire anyone</h2>
 <p>Create a GitHub organization in your company's name, and keep the domain registrar, hosting, DNS, email, analytics, and Search Console in accounts your business controls. GitHub's organizations exist for exactly this: shared ownership with per person permissions. Developers get invited in and can be removed cleanly. The most expensive situation I see in rescue work is a business whose site lives in a former contractor's personal account.</p>
 
-<h2>Write the problem down</h2>
+<h2 id="section-write-the-problem-down" tabindex="-1">Write the problem down</h2>
 <p>A one page brief beats any job title. What the site does, what's broken or missing, what platform it runs on, what "done" would look like, and the deadline that actually matters. The brief attracts the right people, and it becomes the yardstick for everything that follows.</p>
 
-<h2>Interview for judgment</h2>
+<h2 id="section-interview-for-judgment" tabindex="-1">Interview for judgment</h2>
 <p>You can't grade code in an interview, and you don't need to. You can grade how someone thinks. Ask:</p>
 <ul>
   <li><strong>"Walk me through something you built that's live now."</strong> Open it together. Strong candidates explain choices and tradeoffs; weak ones list technologies.</li>
@@ -853,20 +873,20 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>"What part of this brief would you push back on?"</strong> Someone who agrees with everything will also agree with every bad idea later.</li>
 </ul>
 
-<h2>Pay for a small trial task</h2>
+<h2 id="section-pay-for-a-small-trial-task" tabindex="-1">Pay for a small trial task</h2>
 <p>Pick a real, contained piece of work: a page template, a bug, a performance fix. Write the acceptance criteria in plain English, pay for a few hours, and ask for the work as a pull request in your repository. You learn how they communicate, whether they meet the brief, and whether their work is readable to the next person. They learn whether they want the job. Either side can stop cleanly.</p>
 
-<h2>See every change through pull requests</h2>
+<h2 id="section-see-every-change-through-pull-requests" tabindex="-1">See every change through pull requests</h2>
 <p>A pull request is a proposed change, shown line by line, with a description and a place for comments, and nothing reaches the live site until someone approves it. Require one for every change, with a sentence in plain English explaining what and why. You won't read the code, but you'll read the descriptions, see the pace of work, and have a complete history if a developer leaves. If you have one technical person you trust, give them reviewer rights.</p>
 
-<h2>Manage the AI in the room</h2>
+<h2 id="section-manage-the-ai-in-the-room" tabindex="-1">Manage the AI in the room</h2>
 <p>Nearly every developer now works with AI assistants. In Stack Overflow's 2025 Developer Survey, 84 percent of respondents said they use or plan to use AI tools, yet more distrusted the accuracy of those tools (46 percent) than trusted it (33 percent). The most common frustration, cited by 66 percent, was AI solutions that are "almost right, but not quite."</p>
 <p>That gap is your hiring signal. The developer you want uses AI for speed and checks everything it writes: runs it, tests it, and can explain any line in their pull request. The developer to avoid pastes output they can't explain. Ask candidates to walk you through a recent change and why each part is there. If they can't, nobody can.</p>
 
-<h2>Getting the best from junior developers</h2>
+<h2 id="section-getting-the-best-from-junior-developers" tabindex="-1">Getting the best from junior developers</h2>
 <p>Junior developers are often quick, eager, and very good with new tools. They need what everyone needs, in larger doses: small, clearly written tickets, acceptance criteria they can test themselves, a reviewer who explains the "why" behind each requested change, and a running decision log so they don't relitigate settled questions. Paired with an experienced reviewer, a junior developer becomes productive fast. Left alone with a vague brief and an AI assistant, they produce confident code that someone will have to rewrite.</p>
 
-<h2>Red flags</h2>
+<h2 id="section-red-flags" tabindex="-1">Red flags</h2>
 <ul>
   <li>Work happens on their server or in their personal account.</li>
   <li>Changes go live with no record of what changed.</li>
@@ -875,7 +895,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Requests for passwords sent by text message instead of invitations to your accounts.</li>
 </ul>
 
-<h2>Where I fit</h2>
+<h2 id="section-where-i-fit" tabindex="-1">Where I fit</h2>
 <p>I've spent decades on both sides of this table: writing Perl and PHP myself, then specifying, reviewing, and directing developers' work for clients, and now directing AI coding assistants the way a lead directs a team. I sit in on developer interviews as the technical interviewer, write the trial task and its acceptance criteria, review the pull requests, and mentor junior developers through their first months. When you need someone to own the whole picture part time, that's my <a href="../../services/technical-lead/">fractional technical lead</a> work; for specs and review alone, see <a href="../../services/developers/">developer specs and QA</a>. My guide to <a href="../../guides/repository-access/">giving an outside expert repository access</a> covers the permissions side.</p>
 <aside class="help-box" aria-label="Get help">
   <h2>Want me to handle this for you?</h2>

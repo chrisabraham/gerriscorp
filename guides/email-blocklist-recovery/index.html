@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -832,10 +837,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">Your invoices are bouncing, or your newsletter vanished into spam, and somebody says you're "blacklisted." Recovery is a procedure anyone can follow: find the actual problem, fix it, ask for removal through the front door, and then send mail people want for long enough that the filters change their minds. Here is the sequence.</p>
 
-<h2>First, the scam to avoid</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-first-the-scam-to-avoid">First, the scam to avoid</a></li>
+    <li><a href="#section-step-1-find-out-what-s-actually-blocked">Step 1: find out what&#x27;s actually blocked</a></li>
+    <li><a href="#section-domain-blocklists-are-a-different-animal">Domain blocklists are a different animal</a></li>
+    <li><a href="#section-step-2-fix-the-cause-before-you-ask-for-anything">Step 2: fix the cause before you ask for anything</a></li>
+    <li><a href="#section-step-3-request-removal-once-with-the-evidence">Step 3: request removal, once, with the evidence</a></li>
+    <li><a href="#section-step-4-rebuild-slowly">Step 4: rebuild slowly</a></li>
+    <li><a href="#section-what-money-really-buys-and-when-to-start-fresh">What money really buys, and when to start fresh</a></li>
+    <li><a href="#section-keep-it-from-happening-again">Keep it from happening again</a></li>
+  </ol>
+</details>
+
+<h2 id="section-first-the-scam-to-avoid" tabindex="-1">First, the scam to avoid</h2>
 <p>Spamhaus, the most consequential blocklist operator, is blunt about it: there is never any charge or fee to remove a Spamhaus listing, any offer to remove one for a fee is a scam, and no third party can influence or speed up a removal. Anyone promising to make a listing disappear for a price is selling the thing you can do yourself for free, or nothing at all.</p>
 
-<h2>Step 1: find out what's actually blocked</h2>
+<h2 id="section-step-1-find-out-what-s-actually-blocked" tabindex="-1">Step 1: find out what's actually blocked</h2>
 <p>"Blacklisted" covers several different problems, and the fix depends on which one you have.</p>
 <ul>
   <li><strong>Read the bounce.</strong> A rejected message comes back with an error code and usually a sentence naming the reason and often the list. Keep a copy. That text is your most specific evidence.</li>
@@ -843,11 +862,11 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Check the mailbox providers' own views.</strong> Google Postmaster Tools shows Gmail's spam rate, reputation, authentication, and delivery errors for your domain. Microsoft's Smart Network Data Services shows Outlook.com's view of IP addresses you control. These aren't public lists, and they often matter more than the lists do.</li>
 </ul>
 
-<h2>Domain blocklists are a different animal</h2>
+<h2 id="section-domain-blocklists-are-a-different-animal" tabindex="-1">Domain blocklists are a different animal</h2>
 <p>Most talk about blocklists is about IP addresses. A second family lists <em>domains</em> that show up inside spam messages, and SURBL is the best known. A listing there can hurt any email that merely links to you, your own signature included, wherever a spam filter consults it. SURBL's ABUSE list covers abuse and spam sites.</p>
 <p>You can check these lists yourself with a DNS lookup, with two traps to know about. First, query the domain with the list's zone added, such as <code>example.com.multi.surbl.org</code>: no answer means not listed, and an answer in 127.0.0.x means listed, with the last number telling you which list. SURBL documents 64 as its ABUSE list. Second, the big public resolvers are often refused: SURBL answers 127.0.0.1 when your access is blocked, and Spamhaus answers 127.255.255.254, so those replies tell you nothing about your domain. Always look up the list's published test entry alongside your own, such as <code>test.surbl.org</code>; if the test entry doesn't come back listed, your result isn't real. The TXT record for a listed domain usually states which list it's on.</p>
 
-<h2>Step 2: fix the cause before you ask for anything</h2>
+<h2 id="section-step-2-fix-the-cause-before-you-ask-for-anything" tabindex="-1">Step 2: fix the cause before you ask for anything</h2>
 <p>Every operator says the same thing in different words: the problem must be identified and corrected first. Spamhaus's documentation for its fastest list notes that it will let you remove an IP, then list it again at once if the problem is still detected. The usual causes:</p>
 <ol>
   <li><strong>A compromised account or website.</strong> A hacked mailbox or a form on the website relaying spam. Change passwords, turn on two factor authentication, lock down the form with a CAPTCHA, and check for anything that sends mail you didn't write.</li>
@@ -857,7 +876,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Marketing on the business domain.</strong> When a newsletter's complaints land on the same domain as your invoices, the invoices suffer. Move bulk mail to a separate subdomain and sending service.</li>
 </ol>
 
-<h2>Step 3: request removal, once, with the evidence</h2>
+<h2 id="section-step-3-request-removal-once-with-the-evidence" tabindex="-1">Step 3: request removal, once, with the evidence</h2>
 <ul>
   <li><strong>Spamhaus:</strong> start from its IP and Domain Reputation Checker and follow the removal link for the specific list. Self service removals are limited, so use them only after the fix.</li>
   <li><strong>Barracuda:</strong> its removal form asks for the IP, your contact details, and a reason. It says valid requests are usually handled within 12 hours, and that repeat requests are ignored.</li>
@@ -867,14 +886,14 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Write each request the way you'd write an appeal: what happened, what you changed, and the date you changed it. One clear request beats five vague ones.</p>
 
-<h2>Step 4: rebuild slowly</h2>
+<h2 id="section-step-4-rebuild-slowly" tabindex="-1">Step 4: rebuild slowly</h2>
 <p>Removal from a list only stops the blocking. Reputation with Gmail and Microsoft recovers from behavior over time. Send only to your most engaged recipients at first, at a steady, modest volume, and raise it gradually over several weeks while you watch Postmaster Tools. Google asks senders to keep the spam rate it reports below 0.1% and never to reach 0.3%; Yahoo's limit for all senders is the same 0.3%. A spike during the rebuild is the signal to slow down.</p>
 
-<h2>What money really buys, and when to start fresh</h2>
+<h2 id="section-what-money-really-buys-and-when-to-start-fresh" tabindex="-1">What money really buys, and when to start fresh</h2>
 <p>Big senders do recover faster, and money is part of the reason: dedicated sending IPs they control and warm up themselves, account managers at their email platforms, paid certification programs, and staff who watch these dashboards daily. All of it shortens the feedback loop; the filters still judge the mail itself. A small sender reaches the same result on the same rules, more slowly.</p>
 <p>Sometimes the practical answer is a fresh start: business mail stays on the main domain once it's clean, and marketing moves to a new subdomain on a reputable sending service, built up from scratch with a clean list. A new address can't carry a bad list or a hacked form forward, so fix those first or the new domain will end up in the same place.</p>
 
-<h2>Keep it from happening again</h2>
+<h2 id="section-keep-it-from-happening-again" tabindex="-1">Keep it from happening again</h2>
 <ul>
   <li>Read your DMARC aggregate reports, or have a tool summarize them, so spoofing and misconfigured senders show up early.</li>
   <li>Watch Postmaster Tools monthly, and sign up for feedback loops such as Microsoft's Junk Email Reporting Program and Yahoo's Complaint Feedback Loop.</li>

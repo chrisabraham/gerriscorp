@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -787,7 +792,20 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Consent Mode is how Google's tags learn whether a visitor agreed to cookies, and how they behave when the answer is no. Set up well, it keeps analytics honest and the site compliant. Set up badly, it either drops most of your data or quietly ignores the visitor's choice.</p>
 
-<h2>The four signals</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-the-four-signals">The four signals</a></li>
+    <li><a href="#section-basic-and-advanced-mode">Basic and advanced mode</a></li>
+    <li><a href="#section-setting-the-defaults">Setting the defaults</a></li>
+    <li><a href="#section-choosing-a-consent-platform">Choosing a consent platform</a></li>
+    <li><a href="#section-checking-that-it-works">Checking that it works</a></li>
+    <li><a href="#section-mistakes-i-find-most-often">Mistakes I find most often</a></li>
+    <li><a href="#section-what-to-expect-in-the-reports">What to expect in the reports</a></li>
+  </ol>
+</details>
+
+<h2 id="section-the-four-signals" tabindex="-1">The four signals</h2>
 <table>
 <thead><tr><th scope="col">Signal</th><th scope="col">Controls</th></tr></thead>
 <tbody>
@@ -799,14 +817,14 @@ dd { margin: .2rem 0 0 0; }
 </table>
 <p>Version 2 added the last two in late 2023. Since March 2024 Google has required them for advertisers who want to use audience and conversion features with traffic from the European Economic Area, under the EU's Digital Markets Act.</p>
 
-<h2>Basic and advanced mode</h2>
+<h2 id="section-basic-and-advanced-mode" tabindex="-1">Basic and advanced mode</h2>
 <ul>
   <li><strong>Basic mode.</strong> Google's tags don't load at all until the visitor consents. Nothing is collected from people who decline or ignore the banner.</li>
   <li><strong>Advanced mode.</strong> The tags load right away with consent denied and send cookieless pings: no identifiers, no stored cookies. When the visitor accepts, the tags switch to full measurement.</li>
 </ul>
 <p>Advanced mode lets GA4 estimate the behavior of visitors who declined, through behavioral modeling, once a property has enough traffic. Google's documented minimum is roughly a thousand daily events from visitors with analytics denied, and a thousand daily users with analytics granted, sustained for a week or more. Smaller sites never reach it, and for them the choice between modes makes little difference to the reports.</p>
 
-<h2>Setting the defaults</h2>
+<h2 id="section-setting-the-defaults" tabindex="-1">Setting the defaults</h2>
 <p>The default state must be set before any Google tag loads. With the gtag snippet, that means a <code>consent default</code> command above the config line. Defaults can differ by region, using ISO country codes:</p>
 <pre>gtag('consent', 'default', {
   ad_storage: 'denied', ad_user_data: 'denied',
@@ -822,10 +840,10 @@ gtag('consent', 'default', {
 <p>That's the pattern this site uses: advertising signals denied everywhere, because the site runs no ads, and analytics denied by default in the EEA, the UK, and Switzerland, where the law requires prior consent, and granted elsewhere. The most specific matching region wins. When a visitor accepts or declines, the banner sends a <code>consent update</code> command with the new values.</p>
 <p>In Google Tag Manager, set defaults with a tag on the Consent Initialization trigger, which fires before every other trigger. Most consent platforms certified by Google ship a Tag Manager template that does this for you.</p>
 
-<h2>Choosing a consent platform</h2>
+<h2 id="section-choosing-a-consent-platform" tabindex="-1">Choosing a consent platform</h2>
 <p>Publishers who show Google ads to visitors in the EEA, the UK, or Switzerland must use a consent platform from Google's certified list. For everyone else it's still the safer choice, because certified platforms send Consent Mode signals correctly by default. Check that the platform supports regional rules, so visitors in places that don't require a banner aren't shown one.</p>
 
-<h2>Checking that it works</h2>
+<h2 id="section-checking-that-it-works" tabindex="-1">Checking that it works</h2>
 <ul>
   <li><strong>Tag Assistant.</strong> Connect it to the site and open the Consent tab for each event. It shows the default state, each update, and which tags fired under which state.</li>
   <li><strong>The network panel.</strong> Every GA4 request carries a <code>gcs</code> parameter. <code>G100</code> means advertising and analytics storage are both denied; <code>G111</code> means both granted; <code>G101</code> means advertising denied and analytics granted.</li>
@@ -833,7 +851,7 @@ gtag('consent', 'default', {
   <li><strong>GA4 admin.</strong> Under Data collection, the consent settings screen reports whether analytics and advertising consent signals are being received.</li>
 </ul>
 
-<h2>Mistakes I find most often</h2>
+<h2 id="section-mistakes-i-find-most-often" tabindex="-1">Mistakes I find most often</h2>
 <ul>
   <li><strong>The default is set after the tag loads.</strong> The first hit goes out with no consent state, often with cookies set. Order matters.</li>
   <li><strong>Two sources of truth.</strong> A banner plugin and a hand-coded snippet both set defaults, with different values.</li>
@@ -841,7 +859,7 @@ gtag('consent', 'default', {
   <li><strong>Hard-coded tags outside the consent setup.</strong> An old Universal Analytics snippet, a Facebook pixel, or a heatmap script still firing regardless of the visitor's choice.</li>
 </ul>
 
-<h2>What to expect in the reports</h2>
+<h2 id="section-what-to-expect-in-the-reports" tabindex="-1">What to expect in the reports</h2>
 <p>After a consent banner goes live in Europe, GA4's European sessions usually fall, sometimes sharply, because declined visitors are no longer counted as users. That's the system working. Search Console doesn't use cookies, so its click counts are unaffected, and comparing the two separates a consent effect from a real traffic loss.</p>
 
 <p class="related">Analytics setup and repair is part of <a href="../../services/analytics/">GA4 and analytics work</a>. For a consent problem that hid half a site's traffic, see the <a href="../../case-studies/consent-blocking/">consent blocking case study</a>.</p>

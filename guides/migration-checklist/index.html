@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,14 +797,28 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-05">October 5, 2026</time></p>
 <p class="lead">Migrations lose traffic for predictable reasons: URLs that weren't mapped, redirects that weren't tested, templates that changed what crawlers see, and nobody watching afterward. This checklist covers each stage.</p>
 
-<h2>Before you start</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-before-you-start">Before you start</a></li>
+    <li><a href="#section-build-the-url-inventory">Build the URL inventory</a></li>
+    <li><a href="#section-build-the-redirect-map">Build the redirect map</a></li>
+    <li><a href="#section-review-the-new-site-before-launch">Review the new site before launch</a></li>
+    <li><a href="#section-launch-day">Launch day</a></li>
+    <li><a href="#section-the-weeks-after">The weeks after</a></li>
+    <li><a href="#section-special-cases">Special cases</a></li>
+    <li><a href="#section-what-to-expect">What to expect</a></li>
+  </ol>
+</details>
+
+<h2 id="section-before-you-start" tabindex="-1">Before you start</h2>
 <ul>
   <li>Record a baseline: organic sessions and conversions by landing page from analytics, and clicks, impressions, and indexed pages from Search Console. Export them, because you'll compare against them for months.</li>
   <li>Decide the launch window. Avoid your busiest season.</li>
   <li>Make sure Search Console and Bing Webmaster Tools are verified for both the old and new sites, and that you'll keep access to the old domain if it's changing.</li>
 </ul>
 
-<h2>Build the URL inventory</h2>
+<h2 id="section-build-the-url-inventory" tabindex="-1">Build the URL inventory</h2>
 <p>Combine every source, because each one misses something:</p>
 <ul>
   <li>A full crawl of the current site.</li>
@@ -810,7 +829,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Images, PDFs, and other files that rank or receive links.</li>
 </ul>
 
-<h2>Build the redirect map</h2>
+<h2 id="section-build-the-redirect-map" tabindex="-1">Build the redirect map</h2>
 <ul>
   <li>Map every old URL to its closest equivalent on the new site with a 301 or 308 permanent redirect.</li>
   <li>Redirect to the most relevant page, never to the home page in bulk. Google treats mass redirects to the home page like soft 404s.</li>
@@ -819,7 +838,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Keep the map in a spreadsheet: old URL, new URL, status, reason. It's the document every later question goes back to.</li>
 </ul>
 
-<h2>Review the new site before launch</h2>
+<h2 id="section-review-the-new-site-before-launch" tabindex="-1">Review the new site before launch</h2>
 <ul>
   <li>Crawl staging and compare titles, descriptions, headings, canonicals, and word counts with the old site, template by template.</li>
   <li>Check that the main content is in the server's HTML, so it doesn't depend on JavaScript.</li>
@@ -828,7 +847,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Keep staging blocked from search with authentication or noindex, and write down exactly how, so it can be removed at launch.</li>
 </ul>
 
-<h2>Launch day</h2>
+<h2 id="section-launch-day" tabindex="-1">Launch day</h2>
 <ul>
   <li>Remove the staging block, and confirm production robots.txt and meta robots tags allow crawling.</li>
   <li>Test the redirect map in bulk against the live site: status codes, single hops, correct destinations.</li>
@@ -838,7 +857,7 @@ dd { margin: .2rem 0 0 0; }
   <li>If DNS changes, confirm that mail records were left untouched and email still arrives.</li>
 </ul>
 
-<h2>The weeks after</h2>
+<h2 id="section-the-weeks-after" tabindex="-1">The weeks after</h2>
 <ul>
   <li>Watch Search Console daily for the first two weeks: page indexing, crawl stats, and 404s.</li>
   <li>Compare organic landing pages with the baseline, and investigate every important page that lost traffic.</li>
@@ -848,7 +867,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Keep the redirects in place for at least a year, and ideally indefinitely.</li>
 </ul>
 
-<h2>Special cases</h2>
+<h2 id="section-special-cases" tabindex="-1">Special cases</h2>
 <h3>HTTP to HTTPS and www changes</h3>
 <p>Pick one canonical host and protocol, redirect every other combination to it in a single hop, and update canonicals, sitemaps, and internal links to match.</p>
 <h3>Merging several sites into one</h3>
@@ -856,7 +875,7 @@ dd { margin: .2rem 0 0 0; }
 <h3>Moving to a JavaScript framework</h3>
 <p>Check that the new templates render their content on the server. A migration from a traditional CMS to a client-rendered app is a common way to lose content from Google and AI crawlers. See the <a href="../../guides/javascript-seo/">JavaScript SEO guide</a>.</p>
 
-<h2>What to expect</h2>
+<h2 id="section-what-to-expect" tabindex="-1">What to expect</h2>
 <p>A well-run migration often shows some fluctuation for a few weeks while Google reprocesses the site, then settles. Domain changes take longer than platform changes on the same domain. A drop that deepens after the first month, or that's concentrated in one template, means something specific went wrong, and it's worth diagnosing rather than waiting out.</p>
 
 <p class="related">I run this process as a <a href="../../services/migrations/">website migration SEO service</a>, before launch or after it. The kit is in <a href="../../guides/migration-tools/">SEO tools for a website migration</a>, and if traffic has already fallen, start with <a href="../../guides/migration-recovery/">migration recovery</a>.</p>

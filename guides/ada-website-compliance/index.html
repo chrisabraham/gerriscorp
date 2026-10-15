@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -809,11 +814,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="lead">Making a website accessible is the right thing to do, and it's also cheap insurance. Most of the legal exposure comes from a short list of common, fixable failures. Fix those, document what you did, and you'll also get a faster, clearer, better-ranking site that AI assistants understand. No badges, no widgets, and no press release required.</p>
 <p>A note before the details: this is a practitioner's guide, not legal advice. If you've received a demand letter, call a lawyer first.</p>
 
-<h2>What the law expects</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-what-the-law-expects">What the law expects</a></li>
+    <li><a href="#section-where-the-risk-actually-comes-from">Where the risk actually comes from</a></li>
+    <li><a href="#section-the-fix-list-in-order">The fix list, in order</a></li>
+    <li><a href="#section-what-to-skip">What to skip</a></li>
+    <li><a href="#section-document-it">Document it</a></li>
+    <li><a href="#section-the-dividends-you-collect-anyway">The dividends you collect anyway</a></li>
+    <li><a href="#section-keep-it-from-sliding-back">Keep it from sliding back</a></li>
+  </ol>
+</details>
+
+<h2 id="section-what-the-law-expects" tabindex="-1">What the law expects</h2>
 <p>The Americans with Disabilities Act covers businesses open to the public, and the Department of Justice's position, set out in its guidance on ADA.gov, is that this includes their websites. For private businesses there's no technical standard written into the regulations, so courts, settlements, and auditors almost always measure sites against the Web Content Accessibility Guidelines, WCAG, at level AA.</p>
 <p>For state and local governments, the rules are firmer. A 2024 Justice Department rule requires WCAG 2.1 level AA. An interim rule in April 2026 extended the deadlines: April 26, 2027, for governments serving 50,000 people or more, and April 26, 2028, for smaller ones and special districts. If you build or run sites for public agencies, those dates belong on your calendar.</p>
 
-<h2>Where the risk actually comes from</h2>
+<h2 id="section-where-the-risk-actually-comes-from" tabindex="-1">Where the risk actually comes from</h2>
 <p>Demand letters and lawsuits tend to cite problems anyone can detect with a free automated scan, because that's how many of them are found. WebAIM's 2026 survey of the top million home pages found detectable failures on 95.9% of them, and six kinds of errors accounted for 96% of everything detected:</p>
 <table>
 <thead><tr><th scope="col">Failure</th><th scope="col">Share of home pages</th></tr></thead>
@@ -828,7 +846,7 @@ dd { margin: .2rem 0 0 0; }
 </table>
 <p>Fixing those six puts a site ahead of almost all of the web. That's the 80 to 90 percent that matters most, and it's usually days of work, not months.</p>
 
-<h2>The fix list, in order</h2>
+<h2 id="section-the-fix-list-in-order" tabindex="-1">The fix list, in order</h2>
 <ol>
   <li><strong>Contrast.</strong> Darken pale text and light brand colors until normal text reaches 4.5 to 1 against its background. This is usually a handful of color values in one stylesheet.</li>
   <li><strong>Alt text.</strong> Describe every meaningful image; give decorative ones an empty alt attribute.</li>
@@ -839,17 +857,17 @@ dd { margin: .2rem 0 0 0; }
 </ol>
 <p>Then cover the rest of WCAG AA over time, starting with headings, captions for video, and error messages on forms.</p>
 
-<h2>What to skip</h2>
+<h2 id="section-what-to-skip" tabindex="-1">What to skip</h2>
 <ul>
   <li><strong>Overlay widgets.</strong> Scripts that promise one-line compliance don't fix the underlying markup, many users of assistive technology find them obstructive, and sites using them have still been sued.</li>
   <li><strong>Badges and certificates.</strong> A "fully compliant" seal invites scrutiny and proves nothing. The work speaks for itself.</li>
   <li><strong>Grand announcements.</strong> A short accessibility statement is useful; a marketing campaign about it isn't.</li>
 </ul>
 
-<h2>Document it</h2>
+<h2 id="section-document-it" tabindex="-1">Document it</h2>
 <p>Keep a simple record: which pages were checked, with which tools, what was fixed, and when. Publish a brief accessibility statement with a way to report problems, and answer those reports promptly. A business that can show steady, good-faith effort is in a far better position than one that can't.</p>
 
-<h2>The dividends you collect anyway</h2>
+<h2 id="section-the-dividends-you-collect-anyway" tabindex="-1">The dividends you collect anyway</h2>
 <ul>
   <li><strong>Search.</strong> Alt text feeds image search, real headings and descriptive links are exactly what Google uses to understand a page, and the page language helps search engines serve the right audience.</li>
   <li><strong>AI answers and AI agents.</strong> Assistants quote clean, well-structured text, and the browsing agents now arriving use a page's accessibility information to find and operate buttons and forms. Lighthouse even added an Agentic Browsing check.</li>
@@ -857,7 +875,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Conversions.</strong> Readable text, labeled forms, and usable buttons help every visitor, including the ones on a phone in bright sunlight.</li>
 </ul>
 
-<h2>Keep it from sliding back</h2>
+<h2 id="section-keep-it-from-sliding-back" tabindex="-1">Keep it from sliding back</h2>
 <p>Accessibility erodes with every new page, plugin, and campaign. Add a quick automated scan and a keyboard pass to your launch routine, check new templates before they ship, and review the site once a quarter. My guide to <a href="../../guides/lynx-qa/">Lynx for website QA</a> covers a text-browser pass that catches a surprising number of these problems in minutes.</p>
 <p>For help auditing and fixing a site, see <a href="../../services/technical-seo/">technical SEO</a> or <a href="../../contact/">get in touch</a>.</p>
 <aside class="help-box" aria-label="Get help">

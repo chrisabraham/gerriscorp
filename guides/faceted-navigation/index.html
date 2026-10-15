@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -792,11 +797,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-06">October 6, 2026</time></p>
 <p class="lead">Filters are how shoppers narrow a catalog: size, color, brand, price, rating. Every combination can become its own URL, and a store with a few thousand products can produce millions of them. Google spends its time crawling those combinations instead of the pages that sell.</p>
 
-<h2>How the problem grows</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-how-the-problem-grows">How the problem grows</a></li>
+    <li><a href="#section-when-crawl-budget-actually-matters">When crawl budget actually matters</a></li>
+    <li><a href="#section-decide-which-filters-deserve-pages">Decide which filters deserve pages</a></li>
+    <li><a href="#section-keep-the-rest-away-from-crawlers">Keep the rest away from crawlers</a></li>
+    <li><a href="#section-if-filter-pages-must-be-crawlable">If filter pages must be crawlable</a></li>
+    <li><a href="#section-pagination">Pagination</a></li>
+    <li><a href="#section-measure-the-change">Measure the change</a></li>
+  </ol>
+</details>
+
+<h2 id="section-how-the-problem-grows" tabindex="-1">How the problem grows</h2>
 <p>A category with ten colors, eight sizes, twelve brands, and five price bands has 4,800 single combinations before sort order, page number, and the order the parameters appear in. Multiply by every category and the site has far more filter URLs than products. Most of them show the same handful of items, many show none, and almost nobody searches for them.</p>
 <p>Google's documentation names faceted navigation as the most common cause of crawling problems it sees, and its December 2024 guidance on the subject is the clearest statement of what it wants.</p>
 
-<h2>When crawl budget actually matters</h2>
+<h2 id="section-when-crawl-budget-actually-matters" tabindex="-1">When crawl budget actually matters</h2>
 <p>Google says crawl budget is a concern mainly for sites with more than a million unique pages that change weekly, or more than ten thousand pages that change daily. Smaller sites rarely need to think about it. The signs that a site has crossed the line:</p>
 <ul>
   <li>New products take weeks to appear in Google.</li>
@@ -806,10 +824,10 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Server logs are the definitive source. Search Console shows a sample; the logs show every request Googlebot made and where its time went.</p>
 
-<h2>Decide which filters deserve pages</h2>
+<h2 id="section-decide-which-filters-deserve-pages" tabindex="-1">Decide which filters deserve pages</h2>
 <p>Some filtered views match real searches. "Women's trail running shoes," "red sofa," and "Makita cordless drills" are all a category plus one filter, and each can be a strong landing page. Use keyword research to find the combinations with search demand, usually one filter deep and occasionally two. Give each one a clean, permanent URL such as <code>/shoes/womens/trail/</code>, a unique title and heading, some introductory text, and links from the category navigation. Everything else stays a convenience for shoppers and stays out of the crawl.</p>
 
-<h2>Keep the rest away from crawlers</h2>
+<h2 id="section-keep-the-rest-away-from-crawlers" tabindex="-1">Keep the rest away from crawlers</h2>
 <p>Google's guidance offers two approaches for filter URLs that shouldn't be indexed.</p>
 <ul>
   <li><strong>Block them in robots.txt.</strong> Disallow the parameters that create combinations, such as <code>Disallow: /*?*color=</code>. This stops crawling immediately and saves the most budget. The <a href="../../guides/robots-txt/">robots.txt guide</a> covers the syntax.</li>
@@ -823,7 +841,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Search Console's URL Parameters tool, which used to handle this, was retired in 2022.</p>
 
-<h2>If filter pages must be crawlable</h2>
+<h2 id="section-if-filter-pages-must-be-crawlable" tabindex="-1">If filter pages must be crawlable</h2>
 <ul>
   <li>Use the standard <code>&amp;</code> separator and the same parameter order every time, so one combination has one URL.</li>
   <li>Return a 404 for combinations with no products, and for nonsense values. A "no results" page with a 200 status becomes a soft 404 and wastes crawls.</li>
@@ -831,10 +849,10 @@ dd { margin: .2rem 0 0 0; }
   <li>Limit how many filters can be stacked into one crawlable URL.</li>
 </ul>
 
-<h2>Pagination</h2>
+<h2 id="section-pagination" tabindex="-1">Pagination</h2>
 <p>Paginated category pages are different from filters: they list different products, and they're how crawlers reach products deep in a catalog. Keep them crawlable with plain links, let each page declare itself as canonical, and keep pages from going on forever by giving categories sensible sizes.</p>
 
-<h2>Measure the change</h2>
+<h2 id="section-measure-the-change" tabindex="-1">Measure the change</h2>
 <p>Before changing anything, record the share of Googlebot requests going to parameter URLs, the count of discovered and unindexed pages, and how long new products take to be indexed. After the change, watch the same numbers. On large catalogs the shift in crawl toward products shows up within weeks, and the indexing of new products speeds up soon after.</p>
 
 <p class="related">Crawl control for big catalogs is the focus of <a href="../../services/large-sites/">large-site SEO</a> and <a href="../../services/ecommerce/">ecommerce SEO</a>. See also the <a href="../../case-studies/programmatic-indexing/">programmatic indexing case study</a>.</p>

@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -812,7 +817,26 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-09">October 9, 2026</time></p>
 <p class="lead">Search engine optimization sounds like a dark art. It's mostly common sense, applied carefully. A search engine has one job: send each searcher to the page that best answers the question. Everything in SEO follows from helping it do that job, and from never trying to fool it. This primer works for any website on any platform, from a hand-coded page to a store with ten thousand products.</p>
 
-<h2>Principle 1: understand the machine</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-principle-1-understand-the-machine">Principle 1: understand the machine</a></li>
+    <li><a href="#section-principle-2-write-for-people-first">Principle 2: write for people first</a></li>
+    <li><a href="#section-principle-3-earn-trust-with-e-e-a-t">Principle 3: earn trust with E-E-A-T</a></li>
+    <li><a href="#section-principle-4-label-every-page-clearly">Principle 4: label every page clearly</a></li>
+    <li><a href="#section-principle-5-link-with-words-that-mean-something">Principle 5: link with words that mean something</a></li>
+    <li><a href="#section-principle-6-describe-every-meaningful-image">Principle 6: describe every meaningful image</a></li>
+    <li><a href="#section-principle-7-make-it-fast-and-stable">Principle 7: make it fast and stable</a></li>
+    <li><a href="#section-principle-8-build-it-so-everyone-can-use-it">Principle 8: build it so everyone can use it</a></li>
+    <li><a href="#section-my-standing-recommendation-put-the-site-behind-cloudflare">My standing recommendation: put the site behind Cloudflare</a></li>
+    <li><a href="#section-principle-9-open-the-door-for-crawlers">Principle 9: open the door for crawlers</a></li>
+    <li><a href="#section-principle-10-stay-white-hat">Principle 10: stay white hat</a></li>
+    <li><a href="#section-your-first-week">Your first week</a></li>
+    <li><a href="#section-further-reading">Further reading</a></li>
+  </ol>
+</details>
+
+<h2 id="section-principle-1-understand-the-machine" tabindex="-1">Principle 1: understand the machine</h2>
 <p>Search works in three stages.</p>
 <ol>
   <li><strong>Crawling.</strong> Programs called crawlers follow links from page to page and download what they find.</li>
@@ -821,10 +845,10 @@ dd { margin: .2rem 0 0 0; }
 </ol>
 <p>AI answers in Google, Bing, and ChatGPT search draw on the same kind of catalog. A page that can't be crawled can't be indexed, and a page that isn't indexed can't be ranked or quoted by anyone. That is why the technical basics come first.</p>
 
-<h2>Principle 2: write for people first</h2>
+<h2 id="section-principle-2-write-for-people-first" tabindex="-1">Principle 2: write for people first</h2>
 <p>Google's own guidance asks one question of every page: was it made to help a person, or to attract search traffic? Write the page you'd want to find. Answer the question fully, in plain language, early on the page. Include what only you know: your prices, your process, your photos, your results. A page that would read the same with any company's name swapped in gives a searcher nothing new.</p>
 
-<h2>Principle 3: earn trust with E-E-A-T</h2>
+<h2 id="section-principle-3-earn-trust-with-e-e-a-t" tabindex="-1">Principle 3: earn trust with E-E-A-T</h2>
 <p>Google's search quality raters judge pages for experience, expertise, authoritativeness, and trustworthiness, and Google describes trust as the most important of the four. You show them on the page itself:</p>
 <ul>
   <li><strong>Experience:</strong> evidence you've actually done the thing, such as real photos, real numbers, and lessons learned the hard way.</li>
@@ -833,7 +857,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Trust:</strong> accurate content, a real address and contact details, clear policies, HTTPS, and sources for your claims.</li>
 </ul>
 
-<h2>Principle 4: label every page clearly</h2>
+<h2 id="section-principle-4-label-every-page-clearly" tabindex="-1">Principle 4: label every page clearly</h2>
 <ul>
   <li><strong>Title tag:</strong> the clickable headline in search results. Make it unique, specific, and about 50 to 60 characters, with the page's main subject near the front.</li>
   <li><strong>Meta description:</strong> the summary under the headline. A clear 140 to 160 character description earns the click, even though it plays no direct part in ranking.</li>
@@ -841,22 +865,22 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>Readable URLs:</strong> <code>/services/roof-repair/</code> tells people and crawlers more than <code>/page?id=4817</code>.</li>
 </ul>
 
-<h2>Principle 5: link with words that mean something</h2>
+<h2 id="section-principle-5-link-with-words-that-mean-something" tabindex="-1">Principle 5: link with words that mean something</h2>
 <p>Internal links, from one page of your site to another, are how crawlers find your pages and how they learn what each page covers. The clickable words matter. "Read more," "click here," and "learn more" tell nobody anything, and a screen reader user who pulls up a list of a page's links hears the same useless phrase ten times. Make the link text describe the destination, the way "see my <a href="../../guides/core-web-vitals/">guide to Core Web Vitals</a>" names exactly where the click leads. Link from strong pages to the pages you most want found, and make sure every important page is reachable through ordinary links, without relying on search boxes or scripts.</p>
 
-<h2>Principle 6: describe every meaningful image</h2>
+<h2 id="section-principle-6-describe-every-meaningful-image" tabindex="-1">Principle 6: describe every meaningful image</h2>
 <p>Alt text is the written description of an image, read aloud by screen readers and read by search engines. Describe what the picture shows in a short sentence, and include any words that appear in it. Skip "image of" and "photo of"; screen readers already announce that it's an image. Decorative images, such as background flourishes, get an empty alt attribute so screen readers skip them. Keyword lists in alt text help nobody and look like spam.</p>
 
-<h2>Principle 7: make it fast and stable</h2>
+<h2 id="section-principle-7-make-it-fast-and-stable" tabindex="-1">Principle 7: make it fast and stable</h2>
 <p>Google's Core Web Vitals measure three things: how fast the main content appears (Largest Contentful Paint, good under 2.5 seconds), how quickly the page responds to a tap or click (Interaction to Next Paint, good under 200 milliseconds), and whether the layout jumps around while loading (Cumulative Layout Shift, good under 0.1). Compress and correctly size images, load fewer scripts, and give images width and height so the page doesn't shift. Test any page free in PageSpeed Insights. For the details, see my <a href="../../guides/core-web-vitals/">Core Web Vitals guide</a>.</p>
 
-<h2>Principle 8: build it so everyone can use it</h2>
+<h2 id="section-principle-8-build-it-so-everyone-can-use-it" tabindex="-1">Principle 8: build it so everyone can use it</h2>
 <p>Accessibility and SEO want the same things: real text, logical headings, descriptive links, alt text, captions, enough color contrast, and a site that works with a keyboard alone. The Web Content Accessibility Guidelines (WCAG) are the standard, and in the United States the ADA has been applied to websites in court. Every accessibility fix makes the site easier to crawl too. See <a href="../../guides/ada-website-compliance/">ADA website compliance</a> and <a href="../../guides/lynx-qa/">testing a site in a text browser</a>.</p>
 
-<h2>My standing recommendation: put the site behind Cloudflare</h2>
+<h2 id="section-my-standing-recommendation-put-the-site-behind-cloudflare" tabindex="-1">My standing recommendation: put the site behind Cloudflare</h2>
 <p>For almost every site, I recommend running DNS and caching through <a href="https://www.cloudflare.com/">Cloudflare</a>. Even its free plan speeds up pages, handles HTTPS certificates, and absorbs attacks, and it sells domains at cost. Hosted builders such as Shopify, Squarespace, and Wix are the exception; with those, keep Cloudflare to DNS only. My <a href="../../guides/cloudflare-seo/">Cloudflare guide</a> covers which plan to choose, what to budget, and the settings that help or hurt search.</p>
 
-<h2>Principle 9: open the door for crawlers</h2>
+<h2 id="section-principle-9-open-the-door-for-crawlers" tabindex="-1">Principle 9: open the door for crawlers</h2>
 <ul>
   <li>Keep <a href="../../guides/robots-txt/">robots.txt</a> from blocking pages you want found.</li>
   <li>Publish an XML sitemap listing your important pages, and submit it in Google Search Console. Then open Bing Webmaster Tools and use its import option to copy every verified site and sitemap over from Search Console in a few clicks. Both tools are free, and I check both regularly to make sure the sitemaps are read without errors.</li>
@@ -865,10 +889,10 @@ dd { margin: .2rem 0 0 0; }
   <li>Add <a href="../../guides/structured-data/">structured data</a> that matches what the page visibly says.</li>
 </ul>
 
-<h2>Principle 10: stay white hat</h2>
+<h2 id="section-principle-10-stay-white-hat" tabindex="-1">Principle 10: stay white hat</h2>
 <p>Every shortcut on this list has hurt real businesses, some permanently: buying links, keyword stuffing, hidden text, pages written only to rank, mass AI content nobody reviewed, fake reviews, and fake authors. The search engines publish their spam policies openly. Read them once, and you'll recognize the pitches in your inbox for what they are.</p>
 
-<h2>Your first week</h2>
+<h2 id="section-your-first-week" tabindex="-1">Your first week</h2>
 <ol>
   <li>Verify the site in Google Search Console and Bing Webmaster Tools, and submit the sitemap.</li>
   <li>List your ten most important pages, and give each a unique title, description, and H1.</li>
@@ -878,7 +902,7 @@ dd { margin: .2rem 0 0 0; }
   <li>Ask three happy customers for reviews on your Google Business Profile.</li>
 </ol>
 
-<h2>Further reading</h2>
+<h2 id="section-further-reading" tabindex="-1">Further reading</h2>
 <ul>
   <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google's SEO Starter Guide</a></li>
   <li><a href="https://developers.google.com/search/docs/essentials">Google Search Essentials</a>, including the spam policies</li>

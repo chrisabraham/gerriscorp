@@ -114,6 +114,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
@@ -807,11 +812,24 @@ dd { margin: .2rem 0 0 0; }
 <p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
 <p class="lead">The new site launched, and organic traffic dropped and stayed down. Some dip is normal while Google recrawls. A drop that's still there after a month has a cause, and it's almost always one of a short list. Here is the recovery routine I run, in the order that finds the money fastest.</p>
 
-<h2>First, separate normal turbulence from real loss</h2>
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-first-separate-normal-turbulence-from-real-loss">First, separate normal turbulence from real loss</a></li>
+    <li><a href="#section-rebuild-the-list-of-old-urls">Rebuild the list of old URLs</a></li>
+    <li><a href="#section-test-every-old-url-s-redirect">Test every old URL&#x27;s redirect</a></li>
+    <li><a href="#section-compare-old-pages-with-their-new-versions">Compare old pages with their new versions</a></li>
+    <li><a href="#section-check-that-google-can-see-the-new-site-the-way-you-think">Check that Google can see the new site the way you think</a></li>
+    <li><a href="#section-fix-in-order-of-value">Fix in order of value</a></li>
+    <li><a href="#section-keep-the-evidence">Keep the evidence</a></li>
+  </ol>
+</details>
+
+<h2 id="section-first-separate-normal-turbulence-from-real-loss" tabindex="-1">First, separate normal turbulence from real loss</h2>
 <p>Google says to expect ranking fluctuations during any significant move, and that for a medium sized site it can take a few weeks or more before the new URLs gradually replace the old ones in results, longer for large sites. So the first question is shape. A dip that's recovering week over week is the move settling. A cliff that hasn't moved, or losses concentrated in one section, is a fault.</p>
 <p>In Search Console, compare the four weeks after launch with the four weeks before, and look at pages rather than totals. Sort by lost clicks. The top twenty URLs usually account for most of the loss, and they tell you where to dig.</p>
 
-<h2>Rebuild the list of old URLs</h2>
+<h2 id="section-rebuild-the-list-of-old-urls" tabindex="-1">Rebuild the list of old URLs</h2>
 <p>Every recovery starts with the URL inventory the migration should have started with. If nobody kept one, rebuild it from every source you can reach:</p>
 <ul>
   <li>The Search Console Performance report for the months before launch, exported by page.</li>
@@ -822,7 +840,7 @@ dd { margin: .2rem 0 0 0; }
 </ul>
 <p>Merge them and remove duplicates. This list, weighted by the traffic and links each URL carried, is what you'll test.</p>
 
-<h2>Test every old URL's redirect</h2>
+<h2 id="section-test-every-old-url-s-redirect" tabindex="-1">Test every old URL's redirect</h2>
 <p>Screaming Frog's own migration guide describes the method. Switch to list mode, turn on Always Follow Redirects under Config &gt; Spider &gt; Advanced, upload the old URLs, and crawl them. The All Redirects export then shows each old address, the final address it lands on, the type of each hop, and whether a chain or a loop is involved.</p>
 <p>Read the export for these failures, in this order:</p>
 <ol>
@@ -833,7 +851,7 @@ dd { margin: .2rem 0 0 0; }
   <li><strong>JavaScript and meta refresh redirects.</strong> Google ranks server side redirects as the most reliable way to signal a move. Anything else should be replaced with one.</li>
 </ol>
 
-<h2>Compare old pages with their new versions</h2>
+<h2 id="section-compare-old-pages-with-their-new-versions" tabindex="-1">Compare old pages with their new versions</h2>
 <p>A redirect that lands on the right URL still loses traffic if the new page is weaker. If you have a crawl from before launch, compare it with a crawl of the new site in Screaming Frog's comparison mode, using URL Mapping to pair old and new addresses. Without one, archived copies of the top pages will do. Check each pair for:</p>
 <ul>
   <li>Titles, descriptions, and H1s that were rewritten, shortened, or replaced with a template default.</li>
@@ -844,15 +862,15 @@ dd { margin: .2rem 0 0 0; }
   <li>A noindex or a robots.txt rule carried over from the staging site.</li>
 </ul>
 
-<h2>Check that Google can see the new site the way you think</h2>
+<h2 id="section-check-that-google-can-see-the-new-site-the-way-you-think" tabindex="-1">Check that Google can see the new site the way you think</h2>
 <p>Use URL Inspection on a sample of the top lost URLs and their new equivalents. Look at Google's chosen canonical, the indexing status, and the rendered page. Check the old sitemap and the new one in the Sitemaps report: Google's guidance is to submit both during a move, and to expect the indexed count on the old one to fall as the new one rises. If the old URLs still show as indexed weeks later, Google isn't following your redirects as you intended.</p>
 <p>For a move to a new domain, confirm the Change of Address request went in from the old property. Google's help is specific about when it applies: a move between domains or subdomains. HTTP to HTTPS, www to non-www, and path changes within one site don't use it.</p>
 
-<h2>Fix in order of value</h2>
+<h2 id="section-fix-in-order-of-value" tabindex="-1">Fix in order of value</h2>
 <p>Recovery work goes fastest when it follows the money. Fix the redirects for the twenty URLs that lost the most first, then the patterns that cover hundreds of URLs at once, then content and template gaps on the pages that matter, then the long tail. Keep every redirect in place: Google recommends at least a year, and longer is better for people following old links.</p>
 <p>After each round of fixes, run the list crawl again and confirm the failures are gone, then watch the affected pages in Search Console. Recovered pages usually come back over weeks, as Google recrawls them. I make no promise about full recovery, because rankings also move for reasons unrelated to the migration, but a site whose old URLs all resolve cleanly to equal or better pages has removed every cause it controls.</p>
 
-<h2>Keep the evidence</h2>
+<h2 id="section-keep-the-evidence" tabindex="-1">Keep the evidence</h2>
 <p>Write down what you found, what you fixed, and when, with the before and after crawl exports. If traffic doesn't come back in the expected window, that record is what lets the next person separate a migration fault from an algorithm update or a seasonal dip.</p>
 
 <p class="related">I handle this as part of <a href="../../services/migrations/">website migration SEO</a>, and for inherited projects that went badly, <a href="../../services/rescue/">project rescue</a>. To prevent the next one, use the <a href="../../guides/migration-checklist/">website migration checklist</a> and the <a href="../../guides/migration-tools/">tools I use for a website migration</a>.</p>
