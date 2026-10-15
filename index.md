@@ -6,13 +6,9 @@
 
 I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when the technical side of your web presence is a mess and nobody owns it. I find out what's wrong, write the plan, direct the developers, human and AI, ship what I can myself, and explain all of it in plain English.
 
-<<<<<<< Updated upstream
-I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with OpenAI Codex, Claude Code, and Git.
+I've built websites since 1994 and started Gerris in 2012. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with OpenAI Codex, Claude Code, and Git.
 
 OpenAI Codex and Claude Code are my main coding tools. I also work with GitHub Copilot, Gemini, and Grok, and sometimes Perplexity. I am platform agnostic: the job determines the tool, and I take responsibility for what ships.
-=======
-I've built websites since 1994 and started Gerris in 2012. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
->>>>>>> Stashed changes
 
 ## When to call me
 - **Nobody owns the website.** You have a developer, a few vendors, and logins scattered across old inboxes. I can be your [fractional technical lead](https://gerriscorp.com/services/technical-lead/).

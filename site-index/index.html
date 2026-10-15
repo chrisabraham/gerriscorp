@@ -111,6 +111,11 @@ dd { margin: .2rem 0 0 0; }
 .help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
 .help-box h2 { margin-top: .75rem; }
 .related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
 .index-letters p { font-size: 1.05rem; word-spacing: .35em; }
 ul.site-index { list-style: none; padding: 0; }
@@ -153,7 +158,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    "url": "https://gerriscorp.com/",
    "logo": "https://gerriscorp.com/logo.png",
    "image": "https://gerriscorp.com/social-card.png",
-   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
    "foundingDate": "2012",
    "founder": {
     "@id": "https://chrisabraham.com/#person"
@@ -229,7 +234,12 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
     "Technical consulting",
     "Developer specifications",
     "AI-assisted software development",
+    "OpenAI Codex",
     "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
     "Git",
     "Linux server administration",
     "Technical SEO",
@@ -363,6 +373,15 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
          "name": "Strategic advisory and briefings",
          "url": "https://gerriscorp.com/services/advisory/"
         }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-workflow-testing/#service",
+         "name": "AI workflow testing and acceptance reviews",
+         "url": "https://gerriscorp.com/services/ai-workflow-testing/"
+        }
        }
       ]
      },
@@ -495,6 +514,15 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
          "name": "Ongoing SEO and website support",
          "url": "https://gerriscorp.com/services/ongoing-support/"
         }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/internal-linking/#service",
+         "name": "Internal linking strategy and implementation",
+         "url": "https://gerriscorp.com/services/internal-linking/"
+        }
        }
       ]
      },
@@ -590,13 +618,18 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
      "@type": "Country",
      "name": "United States"
     },
-    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+    "skills": "Technical SEO, developer specifications, OpenAI Codex, Claude Code, GitHub Copilot, Git, Linux, Cloudflare, migrations, AI search"
    },
    "knowsAbout": [
     "Technical consulting",
     "Developer specifications",
     "AI-assisted software development",
+    "OpenAI Codex",
     "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
     "Git",
     "Linux server administration",
     "Technical SEO",
@@ -723,7 +756,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
 </nav>
 <main id="main">
 <h1>Index</h1>
-<p class="lead">Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 474 headings drawn from 105 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.</p>
+<p class="lead">Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 474 headings drawn from 109 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.</p>
 <p>Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the <a href="../guides/glossary/">glossary</a>, and the <a href="../sitemap/">site map</a> lists every page by section.</p>
 <nav class="index-letters" aria-label="Index letters"><p><a href="#ix-letter-0">0–9</a> <a href="#ix-letter-a">A</a> <a href="#ix-letter-b">B</a> <a href="#ix-letter-c">C</a> <a href="#ix-letter-d">D</a> <a href="#ix-letter-e">E</a> <a href="#ix-letter-f">F</a> <a href="#ix-letter-g">G</a> <a href="#ix-letter-h">H</a> <a href="#ix-letter-i">I</a> <a href="#ix-letter-j">J</a> <a href="#ix-letter-k">K</a> <a href="#ix-letter-l">L</a> <a href="#ix-letter-m">M</a> <a href="#ix-letter-n">N</a> <a href="#ix-letter-o">O</a> <a href="#ix-letter-p">P</a> <a href="#ix-letter-q">Q</a> <a href="#ix-letter-r">R</a> <a href="#ix-letter-s">S</a> <a href="#ix-letter-t">T</a> <a href="#ix-letter-u">U</a> <a href="#ix-letter-v">V</a> <a href="#ix-letter-w">W</a> <a href="#ix-letter-x">X</a> <a href="#ix-letter-y">Y</a> <a href="#ix-letter-z">Z</a></p></nav>
 <h2 id="ix-letter-0">0–9</h2>
@@ -800,7 +833,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li id="ix-adobe-podcast-enhance-speech">Adobe Podcast Enhance Speech, <a href="../guides/podcast-for-your-brand/" title="Starting a podcast to build your brand: what it really takes">Podcast for Your Brand</a></li>
   <li id="ix-advertising-age">Advertising Age, <a href="../case-studies/founder-record/" title="A founder&#x27;s public record: tracing AI errors to the pages behind them">Founder Record</a></li>
   <li id="ix-aeo-answer-engine-optimization">AEO (answer engine optimization), <a href="../services/ai-search/" title="AI search visibility">AI Search</a>. <em>See also</em> <a href="#ix-ai-search">AI search</a></li>
-  <li id="ix-aes256-backups">AES-256 backups, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
+  <li id="ix-aes256-backups">AES-256 backups, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
   <li id="ix-agencies-working-with">agencies, working with, <a href="../services/" title="Services">Services</a>, <strong><a href="../services/agency-partner/" title="Agency partner and white-label support">Agency Partner</a></strong>
     <ul>
       <li>arrangements, <a href="../services/agency-partner/" title="Agency partner and white-label support">Agency Partner</a></li>
@@ -926,13 +959,13 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
     </ul></li>
   <li id="ix-bingbot">Bingbot, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a></li>
   <li id="ix-bitbucket">Bitbucket, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a></li>
-  <li id="ix-blackbox-chris-commandline-assistant">Blackbox (Chris’ command-line assistant), <a href="../case-studies/" title="Case studies">Case Studies</a>, <strong><a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></strong>, <a href="../about/" title="About Chris Abraham">About</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>
+  <li id="ix-blackbox-chris-commandline-assistant">Blackbox (Chris’ command-line assistant), <a href="../case-studies/" title="Case studies">Case Studies</a>, <strong><a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></strong>, <a href="../about/" title="About Chris Abraham">About</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>
     <ul>
-      <li>built from real use, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
-      <li>deploy loop, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
-      <li>how it was built, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
-      <li>safety rules, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
-      <li>what it does, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
+      <li>built from real use, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
+      <li>deploy loop, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
+      <li>how it was built, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
+      <li>safety rules, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
+      <li>what it does, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
     </ul></li>
   <li id="ix-blocklists">blocklists, <a href="../services/email-and-dns/" title="Email authentication and DNS">Email and DNS</a>, <strong><a href="../guides/email-blocklist-recovery/" title="How to get your email off a blocklist and back into the inbox">Email Blocklist Recovery</a></strong>, <a href="../guides/email-deliverability/" title="Why business email lands in spam, and how to find the cause">Email Deliverability</a>, <a href="../guides/glossary/" title="Glossary of SEO, AI search, and technical website terms">Glossary</a>
     <ul>
@@ -999,7 +1032,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
     </ul></li>
   <li id="ix-citation-share">citation share, <a href="../guides/measure-ai-search/" title="How to measure AI search citations, referrals, and actual leads">Measure AI search</a>, <a href="../guides/citation-gap-analysis/" title="Citation gap analysis: finding the sources AI cites instead of you">Citation Gap Analysis</a></li>
   <li id="ix-claude-anthropic-assistant">Claude (Anthropic assistant), <a href="../services/" title="Services">Services</a>, <a href="../services/advisory/" title="Strategic advisory and briefings">Advisory</a>, <a href="../services/crawler-visibility/" title="Content the crawler never sees">Content the Crawler Never Sees</a>, <a href="../services/ai-search/" title="AI search visibility">AI Search</a>, <a href="../guides/ai-assistants/" title="How AI assistants decide what to say about your business">AI Assistants</a></li>
-  <li id="ix-claude-code">Claude Code, <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../services/" title="Services">Services</a>, <a href="../services/ai-automation/" title="AI agents and automation, built safely">AI Agents and Automation</a>, <a href="../guides/core-web-vitals-mcp/" title="Diagnosing Core Web Vitals with MCP and an AI coding assistant">Core Web Vitals with MCP</a>, <a href="../guides/ai-coding-assistants/" title="How to use AI coding assistants on a business website safely">AI Coding Assistants for Websites</a>, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a>, <a href="../case-studies/netlify-migration/" title="Clinical practice: WordPress to Netlify, with search intact">Netlify Migration</a>, <strong><a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></strong>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>, <a href="../colophon/" title="Colophon">Colophon</a>. <em>See also</em> <a href="#ix-ai-coding-assistants">AI coding assistants</a></li>
+  <li id="ix-claude-code">Claude Code, <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../services/" title="Services">Services</a>, <a href="../services/ai-automation/" title="AI agents and automation, built safely">AI Agents and Automation</a>, <a href="../guides/core-web-vitals-mcp/" title="Diagnosing Core Web Vitals with MCP and an AI coding assistant">Core Web Vitals with MCP</a>, <a href="../guides/ai-coding-assistants/" title="How to use AI coding assistants on a business website safely">AI Coding Assistants for Websites</a>, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a>, <a href="../case-studies/netlify-migration/" title="Clinical practice: WordPress to Netlify, with search intact">Netlify Migration</a>, <strong><a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></strong>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>, <a href="../colophon/" title="Colophon">Colophon</a>. <em>See also</em> <a href="#ix-ai-coding-assistants">AI coding assistants</a></li>
   <li id="ix-claudebot">ClaudeBot, <a href="../services/seo-engineering/" title="SEO engineering for sites built in code">SEO Engineering</a>, <a href="../services/ai-search/" title="AI search visibility">AI Search</a>, <a href="../guides/ai-assistants/" title="How AI assistants decide what to say about your business">AI Assistants</a></li>
   <li id="ix-claudemd">CLAUDE.md, <a href="../guides/ai-coding-assistants/" title="How to use AI coding assistants on a business website safely">AI Coding Assistants for Websites</a></li>
   <li id="ix-claudesearchbot">Claude-SearchBot, <a href="../guides/ai-assistants/" title="How AI assistants decide what to say about your business">AI Assistants</a></li>
@@ -1022,7 +1055,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>proxied or DNS only, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a></li>
       <li>R2 storage, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
       <li>Redirect Rules and Bulk Redirects, <a href="../services/site-speed/" title="Site speed, Core Web Vitals, and Cloudflare">Site Speed and CDN</a>, <a href="../guides/301-redirects/" title="How to plan 301 redirects that keep your rankings and links">301 Redirects</a>, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a></li>
-      <li>Registrar, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>Registrar, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
       <li>Rocket Loader, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a></li>
       <li>SSL Full (strict), <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a></li>
       <li>Under Attack Mode, <a href="../guides/cloudflare-seo/" title="Cloudflare settings that help or hurt SEO and AI crawlers">Cloudflare and SEO</a></li>
@@ -1033,7 +1066,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li id="ix-clutch">Clutch, <a href="../guides/self-ranking-lists/" title="Ranking yourself first in a &quot;best of&quot; list now backfires in AI answers">Self-Ranking Lists</a></li>
   <li id="ix-codex">Codex, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a></li>
   <li id="ix-colophon">colophon, <a href="../services/wordpress-care/" title="WordPress care: caching, hardening, or moving off">WordPress Care</a>, <strong><a href="../colophon/" title="Colophon">Colophon</a></strong></li>
-  <li id="ix-commandline-assistant-chris">command-line assistant (Chris’), <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../services/ai-automation/" title="AI agents and automation, built safely">AI Agents and Automation</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>. <em>See also</em> <a href="#ix-blackbox-chris-commandline-assistant">Blackbox (Chris’ command-line assistant)</a></li>
+  <li id="ix-commandline-assistant-chris">command-line assistant (Chris’), <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../services/ai-automation/" title="AI agents and automation, built safely">AI Agents and Automation</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>. <em>See also</em> <a href="#ix-blackbox-chris-commandline-assistant">Blackbox (Chris’ command-line assistant)</a></li>
   <li id="ix-compensation-facts">compensation facts, <a href="../case-studies/ai-recruiting/" title="AI company: search visibility for recruiting engineers">AI Recruiting Visibility</a></li>
   <li id="ix-consent-mode">consent mode, <strong><a href="../guides/ga4-consent-mode/" title="Google Consent Mode v2 for GA4: a practical setup guide">GA4 Consent Mode</a></strong>, <a href="../privacy/" title="Privacy">Privacy</a>
     <ul>
@@ -1280,7 +1313,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
     <ul>
       <li>848 old URLs tested, 640 redirects, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a></li>
       <li>founded in 2012, <a href="../case-studies/founder-record/" title="A founder&#x27;s public record: tracing AI errors to the pages behind them">Founder Record</a>, <a href="../about/" title="About Chris Abraham">About</a></li>
-      <li>how this site is built, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
+      <li>how this site is built, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
       <li>logo, <a href="../colophon/" title="Colophon">Colophon</a></li>
       <li>README described the site as a preview, <a href="../guides/readme-ai-source/" title="Your public GitHub README is a source AI search reads">README as an AI Source</a></li>
       <li>redirect stubs for inherited addresses, <a href="../guides/301-redirects/" title="How to plan 301 redirects that keep your rankings and links">301 Redirects</a></li>
@@ -1293,12 +1326,12 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
     <ul>
       <li>organizations, <a href="../guides/hiring-developers/" title="How to hire and manage developers when you can&#x27;t read code yourself">Hiring Developers</a></li>
     </ul></li>
-  <li id="ix-github-actions">GitHub Actions, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a>, <a href="../guides/seo-build-checks/" title="How to add SEO regression tests to your website&#x27;s build">SEO Build Checks</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+  <li id="ix-github-actions">GitHub Actions, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a>, <a href="../guides/seo-build-checks/" title="How to add SEO regression tests to your website&#x27;s build">SEO Build Checks</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
   <li id="ix-github-copilot">GitHub Copilot, <a href="../guides/ai-coding-assistants/" title="How to use AI coding assistants on a business website safely">AI Coding Assistants for Websites</a>, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a></li>
   <li id="ix-github-issues">GitHub Issues, <a href="../services/developers/" title="Developer specs and implementation QA">Developer Specs and QA</a></li>
   <li id="ix-github-pages">GitHub Pages, <a href="../services/seo-engineering/" title="SEO engineering for sites built in code">SEO Engineering</a>, <a href="../services/site-speed/" title="Site speed, Core Web Vitals, and Cloudflare">Site Speed and CDN</a>, <a href="../services/wordpress-care/" title="WordPress care: caching, hardening, or moving off">WordPress Care</a>, <a href="../services/migrations/" title="Website migrations">Migrations</a>, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a>, <a href="../colophon/" title="Colophon">Colophon</a>, <a href="../privacy/" title="Privacy">Privacy</a>
     <ul>
-      <li>custom domains and HTTPS, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>custom domains and HTTPS, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
     </ul></li>
   <li id="ix-gitlab">GitLab, <a href="../guides/repository-access/" title="How to give an outside SEO safe access to your code repository">Repository Access</a>, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a></li>
   <li id="ix-global-predictions">Global Predictions, <a href="../guides/ai-vendor-pitch/" title="How to vet an AI vendor&#x27;s pitch before you sign anything">Vet an AI Vendor</a></li>
@@ -1315,8 +1348,8 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>verification loops, <a href="../services/google-business-profile/" title="Google Business Profile hard cases">Google Business Profile</a></li>
       <li>written diagnostic, <a href="../services/google-business-profile/" title="Google Business Profile hard cases">Google Business Profile</a></li>
     </ul></li>
-  <li id="ix-google-calendar">Google Calendar, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
-  <li id="ix-google-podcasts-closed-2024">Google Podcasts (closed 2024), <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a>, <a href="../guides/podcast-seo/" title="Podcast SEO: get every episode found in Google and AI search">Podcast SEO</a></li>
+  <li id="ix-google-calendar">Google Calendar, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
+  <li id="ix-google-podcasts-closed-2024">Google Podcasts (closed 2024), <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a>, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a>, <a href="../guides/podcast-seo/" title="Podcast SEO: get every episode found in Google and AI search">Podcast SEO</a></li>
   <li id="ix-google-postmaster-tools">Google Postmaster Tools, <a href="../services/email-and-dns/" title="Email authentication and DNS">Email and DNS</a>, <a href="../guides/email-blocklist-recovery/" title="How to get your email off a blocklist and back into the inbox">Email Blocklist Recovery</a>, <a href="../guides/email-authentication/" title="SPF, DKIM, and DMARC for every domain that sends email">Email Authentication</a>, <a href="../guides/email-deliverability/" title="Why business email lands in spam, and how to find the cause">Email Deliverability</a></li>
   <li id="ix-google-search-console">Google Search Console, <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../services/" title="Services">Services</a>, <a href="../services/analytics/" title="Analytics and measurement you can trust">Analytics</a>, <a href="../services/technical-seo/" title="Technical SEO forensics and fixes">Technical SEO</a>, <a href="../services/seo-engineering/" title="SEO engineering for sites built in code">SEO Engineering</a>, <a href="../services/crawler-visibility/" title="Content the crawler never sees">Content the Crawler Never Sees</a>, <a href="../services/large-sites/" title="SEO for large and programmatic sites">Large Sites</a>, <strong><a href="../services/search-console/" title="Google Search Console setup, cleanup, and indexing fixes">Search Console</a></strong>, <a href="../services/migrations/" title="Website migrations">Migrations</a>, <a href="../guides/fact-check-ai-seo/" title="How to fact check a confident AI answer about SEO before you act on it">Fact check AI SEO advice</a>, <a href="../guides/measure-ai-search/" title="How to measure AI search citations, referrals, and actual leads">Measure AI search</a>, <a href="../guides/traffic-drop/" title="How to diagnose a Google traffic drop in Search Console">Diagnosing a Traffic Drop</a>, <a href="../guides/year-end-seo-check/" title="The year end SEO check: one afternoon that protects next year">Year End SEO Check</a>, <a href="../guides/canonical-tags/" title="Canonical tags: how Google chooses which URL to index">Canonical Tags</a>
     <ul>
@@ -1361,7 +1394,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li id="ix-headless-cms">headless CMS, <a href="../case-studies/sanity-vercel/" title="Local service business on Sanity and Vercel: SEO in the repository">Sanity and Vercel</a></li>
   <li id="ix-helpful-content-guidance-google">helpful content guidance (Google), <a href="../guides/content-briefs/" title="How to write a content brief for pages AI search will quote">Content Briefs</a></li>
   <li id="ix-hidden-text">hidden text, <a href="../guides/search-in-2026/" title="The state of search in 2026: every Google update so far, and the AI shift behind them">Search in 2026</a></li>
-  <li id="ix-hill-mole">Hill Mole, <a href="../case-studies/" title="Case studies">Case Studies</a>, <a href="../case-studies/four-site-speed-pass/" title="Four static sites: a speed and AI crawler pass in one afternoon">Four Site Speed Pass</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a>, <a href="../about/" title="About Chris Abraham">About</a>. <em>See also</em> <a href="#ix-movable-type">Movable Type</a></li>
+  <li id="ix-hill-mole">Hill Mole, <a href="../case-studies/" title="Case studies">Case Studies</a>, <a href="../case-studies/four-site-speed-pass/" title="Four static sites: a speed and AI crawler pass in one afternoon">Four Site Speed Pass</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a>, <a href="../about/" title="About Chris Abraham">About</a>. <em>See also</em> <a href="#ix-movable-type">Movable Type</a></li>
   <li id="ix-hillmolecom">hillmole.com, <a href="../about/" title="About Chris Abraham">About</a></li>
   <li id="ix-hipaa">HIPAA, <a href="../case-studies/indexing-recovery/" title="Health-testing store: recovering after an SEO plugin outage">Indexing Recovery</a>, <a href="../about/" title="About Chris Abraham">About</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a></li>
   <li id="ix-hiring-developers">hiring developers, <strong><a href="../guides/hiring-developers/" title="How to hire and manage developers when you can&#x27;t read code yourself">Hiring Developers</a></strong>
@@ -1542,8 +1575,8 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>telling Google, <a href="../guides/migration-tools/" title="The SEO tools for a website migration, and the job each one does">Migration Tools</a></li>
       <li>URL inventory, <a href="../guides/migration-tools/" title="The SEO tools for a website migration, and the job each one does">Migration Tools</a></li>
     </ul></li>
-  <li id="ix-model-backends-comparing">model backends, comparing, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
-  <li id="ix-movable-type">Movable Type, <a href="../services/rescue/" title="Project rescue, takeovers, and legacy migrations">Project Rescue</a>, <a href="../services/wordpress-care/" title="WordPress care: caching, hardening, or moving off">WordPress Care</a>, <a href="../services/migrations/" title="Website migrations">Migrations</a>, <a href="../guides/hype-or-shift/" title="Hype or real shift? Eight tests for judging a new technology wave">Hype or Shift</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a></li>
+  <li id="ix-model-backends-comparing">model backends, comparing, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
+  <li id="ix-movable-type">Movable Type, <a href="../services/rescue/" title="Project rescue, takeovers, and legacy migrations">Project Rescue</a>, <a href="../services/wordpress-care/" title="WordPress care: caching, hardening, or moving off">WordPress Care</a>, <a href="../services/migrations/" title="Website migrations">Migrations</a>, <a href="../guides/hype-or-shift/" title="Hype or real shift? Eight tests for judging a new technology wave">Hype or Shift</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a></li>
   <li id="ix-moz">Moz, <a href="../guides/seo-101/" title="SEO 101: a first principles primer for any website">SEO 101</a></li>
   <li id="ix-multilocation-businesses">multi-location businesses, <a href="../services/" title="Services">Services</a>, <strong><a href="../services/multi-location/" title="Multi-location and connected businesses">Multi-Location</a></strong>, <strong><a href="../case-studies/multi-location-entity/" title="Multi-location brand: untangling the parent from its first location">Multi-Location Entity</a></strong>, <a href="../case-studies/seasonal-retailer/" title="Seasonal retailer: a staged plan around the peak">Seasonal Retailer</a>
     <ul>
@@ -1659,23 +1692,23 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>titles and descriptions, <a href="../guides/podcast-seo/" title="Podcast SEO: get every episode found in Google and AI search">Podcast SEO</a></li>
       <li>transcripts in the HTML, <a href="../guides/podcast-seo/" title="Podcast SEO: get every episode found in Google and AI search">Podcast SEO</a></li>
     </ul></li>
-  <li id="ix-podcast-websites">podcast websites, <a href="../services/" title="Services">Services</a>, <strong><a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></strong>, <strong><a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></strong>, <a href="../guides/podcast-seo/" title="Podcast SEO: get every episode found in Google and AI search">Podcast SEO</a>, <a href="../guides/podcast-for-your-brand/" title="Starting a podcast to build your brand: what it really takes">Podcast for Your Brand</a>. <em>See also</em> <a href="#ix-podcast-seo">podcast SEO</a>
+  <li id="ix-podcast-websites">podcast websites, <a href="../services/" title="Services">Services</a>, <strong><a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></strong>, <strong><a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></strong>, <a href="../guides/podcast-seo/" title="Podcast SEO: get every episode found in Google and AI search">Podcast SEO</a>, <a href="../guides/podcast-for-your-brand/" title="Starting a podcast to build your brand: what it really takes">Podcast for Your Brand</a>. <em>See also</em> <a href="#ix-podcast-seo">podcast SEO</a>
     <ul>
       <li>after launch, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
-      <li>Cloudflare Registrar, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
-      <li>cost, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>Cloudflare Registrar, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>cost, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
       <li>daily GitHub Actions job, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
-      <li>DNS and HTTPS, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>DNS and HTTPS, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
       <li>episode pages and transcripts, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
-      <li>GitHub Actions keepalive, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
-      <li>GitHub Pages limits, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
-      <li>late transcripts, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>GitHub Actions keepalive, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>GitHub Pages limits, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>late transcripts, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
       <li>owning the feed and audio, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
       <li>running costs, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
-      <li>sanity check, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>sanity check, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
       <li>share cards, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
-      <li>telling the search engines, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
-      <li>the generator prompt, <a href="../guides/podcast-website/" title="Build a podcast website with Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>telling the search engines, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
+      <li>the generator prompt, <a href="../guides/podcast-website/" title="Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare">Podcast Website</a></li>
       <li>why a show needs one, <a href="../services/podcast-sites/" title="Podcast websites, built and run for you">Podcast Websites</a></li>
     </ul></li>
   <li id="ix-podcasting-for-a-brand">podcasting for a brand, <strong><a href="../guides/podcast-for-your-brand/" title="Starting a podcast to build your brand: what it really takes">Podcast for Your Brand</a></strong>
@@ -1852,7 +1885,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>why each half fails alone, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a></li>
     </ul></li>
   <li id="ix-separate-tracks-for-separate-problems">separate tracks for separate problems, <a href="../services/analytics/" title="Analytics and measurement you can trust">Analytics</a>, <a href="../services/technical-seo/" title="Technical SEO forensics and fixes">Technical SEO</a>, <a href="../services/crawler-visibility/" title="Content the crawler never sees">Content the Crawler Never Sees</a>, <a href="../guides/crawled-not-indexed/" title="&quot;Crawled, currently not indexed&quot;: what it means and how to fix it">Crawled, Not Indexed</a>, <a href="../guides/traffic-drop/" title="How to diagnose a Google traffic drop in Search Console">Diagnosing a Traffic Drop</a>, <a href="../guides/removed-location-pages/" title="Deleting hundreds of location pages: why core rankings fall, and the fix">Removed Location Pages</a>, <a href="../case-studies/ecommerce-rendering/" title="Magento store: product content Googlebot never saw">E-commerce Rendering</a>, <a href="../case-studies/netlify-migration/" title="Clinical practice: WordPress to Netlify, with search intact">Netlify Migration</a></li>
-  <li id="ix-serialized-novel-chris">serialized novel (Chris’), <a href="../services/rescue/" title="Project rescue, takeovers, and legacy migrations">Project Rescue</a>, <a href="../services/wordpress-care/" title="WordPress care: caching, hardening, or moving off">WordPress Care</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>. <em>See also</em> <a href="#ix-hill-mole">Hill Mole</a></li>
+  <li id="ix-serialized-novel-chris">serialized novel (Chris’), <a href="../services/rescue/" title="Project rescue, takeovers, and legacy migrations">Project Rescue</a>, <a href="../services/wordpress-care/" title="WordPress care: caching, hardening, or moving off">WordPress Care</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a>, <a href="../stack/" title="What I can take on in your stack, layer by layer">In Your Stack</a>. <em>See also</em> <a href="#ix-hill-mole">Hill Mole</a></li>
   <li id="ix-server-hardening">server hardening, <a href="../services/technical-lead/" title="Fractional technical lead">Fractional Technical Lead</a>, <a href="../services/rescue/" title="Project rescue, takeovers, and legacy migrations">Project Rescue</a></li>
   <li id="ix-server-logs">server logs, <a href="../guides/migration-recovery/" title="Traffic fell after a site migration: how to find what broke and get it back">Migration Recovery</a>, <a href="../guides/migration-tools/" title="The SEO tools for a website migration, and the job each one does">Migration Tools</a>, <a href="../guides/faceted-navigation/" title="Faceted navigation SEO: filters, parameters, and crawl budget">Faceted Navigation</a></li>
   <li id="ix-servicearea-pages">service-area pages, <a href="../services/multi-location/" title="Multi-location and connected businesses">Multi-Location</a></li>
@@ -1993,7 +2026,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>pipes and brand suffixes, <a href="../guides/fact-check-ai-seo/" title="How to fact check a confident AI answer about SEO before you act on it">Fact check AI SEO advice</a></li>
       <li>title rewrites and length, <a href="../guides/fact-check-ai-seo/" title="How to fact check a confident AI answer about SEO before you act on it">Fact check AI SEO advice</a></li>
     </ul></li>
-  <li id="ix-todoist">Todoist, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
+  <li id="ix-todoist">Todoist, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
   <li id="ix-torvalds-linus">Torvalds, Linus, <a href="../guides/seo-superpower/" title="Repositories plus super intelligence: the SEO superpower nobody told you to learn">The SEO Superpower</a></li>
   <li id="ix-total-blocking-time">Total Blocking Time, <a href="../guides/core-web-vitals/" title="Core Web Vitals explained: LCP, INP, CLS, and the fixes that work">Core Web Vitals</a></li>
   <li id="ix-traffic-drops">traffic drops, <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../services/technical-seo/" title="Technical SEO forensics and fixes">Technical SEO</a>, <strong><a href="../guides/traffic-drop/" title="How to diagnose a Google traffic drop in Search Console">Diagnosing a Traffic Drop</a></strong>, <a href="../guides/removed-location-pages/" title="Deleting hundreds of location pages: why core rankings fall, and the fix">Removed Location Pages</a>. <em>See also</em> <a href="#ix-google-updates">Google updates</a>
@@ -2023,8 +2056,8 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
       <li>fixed-height CSS clipping, <a href="../case-studies/umbraco-operations/" title="Two B2B companies on Umbraco: publishing and technical operations">Umbraco Operations</a></li>
     </ul></li>
   <li id="ix-university-of-east-anglia">University of East Anglia, <a href="../about/" title="About Chris Abraham">About</a></li>
-  <li id="ix-upwork">Upwork, <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a>, <a href="../about/" title="About Chris Abraham">About</a>, <a href="../work-with-me/" title="Work with me">Work With Me</a>, <a href="../faq/" title="Frequently asked questions">FAQ</a></li>
-  <li id="ix-upwork-mcp-server">Upwork MCP server, <a href="../case-studies/built-with-claude-code/" title="Built with Claude Code">Built with Claude Code</a></li>
+  <li id="ix-upwork">Upwork, <a href="../" title="Experienced help for the digital work your business needs done">Home</a>, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a>, <a href="../about/" title="About Chris Abraham">About</a>, <a href="../work-with-me/" title="Work with me">Work With Me</a>, <a href="../faq/" title="Frequently asked questions">FAQ</a></li>
+  <li id="ix-upwork-mcp-server">Upwork MCP server, <a href="../case-studies/built-with-claude-code/" title="Built with Codex and Claude Code">Built with Codex and Claude Code</a></li>
   <li id="ix-urbannet">urban.net, <a href="../about/" title="About Chris Abraham">About</a></li>
   <li id="ix-url-parameters-tool-retired-2022">URL Parameters tool (retired 2022), <a href="../guides/faceted-navigation/" title="Faceted navigation SEO: filters, parameters, and crawl budget">Faceted Navigation</a></li>
   <li id="ix-usenet">Usenet, <a href="../about/" title="About Chris Abraham">About</a></li>
