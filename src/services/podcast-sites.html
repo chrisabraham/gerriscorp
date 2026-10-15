@@ -20,10 +20,13 @@ updated: 2026-10-14
 </ul>
 
 <h2>The daily job</h2>
-<p>A scheduled GitHub Actions workflow runs every morning. It adds new episodes, collects transcripts that arrive days late, rebuilds, and commits only when something changed. It refuses to publish when the feed looks broken, for example when the feed suddenly lists far fewer episodes than the site already has. Plays still count with your host, because the audio never leaves it.</p>
+<p>A scheduled GitHub Actions workflow runs every morning. It adds new episodes, collects transcripts that arrive days late, rebuilds, and commits only when something changed. It refuses to publish when the feed looks broken, for example when the feed suddenly lists far fewer episodes than the site already has. When the audio stays with your host, every play still counts there.</p>
+
+<h2>Ownership, start to finish</h2>
+<p>The domain and the repository are registered to you. Shows that already publish through Spotify, Apple, or another host can keep doing exactly that; the site clones their feed and adds a page for each new episode. Shows that want full ownership can go further: the site publishes the RSS feed the directories read, and the audio lives in storage on the show's own domain, such as Cloudflare R2, which charges nothing for downloads. The nightly check can run at any hour, or several times a day around release.</p>
 
 <h2>Running costs</h2>
-<p>GitHub Pages hosts the site and Cloudflare handles DNS. Neither charges for a site like this, so the domain is the only bill. Nothing on the server needs patching, because nothing runs on the server.</p>
+<p>GitHub Pages hosts the site and Cloudflare handles DNS. Neither charges for a site like this, so the domain is the only bill unless you host your own audio, where R2 bills for storage past its free allowance. Nothing on the server needs patching, because nothing runs on the server.</p>
 
 <h2>After launch</h2>
 <p>Most shows want more than a mirror of the feed. Common additions are corrections to an episode's notes, photos, links to the things discussed, and articles grown out of episodes that drew a response. Articles go through the same fact-check I describe on <a href="{root}services/editorial/">fact-checked writing in your voice</a>.</p>
@@ -32,4 +35,4 @@ updated: 2026-10-14
 <p>The full method is free in my guide to <a href="{root}guides/podcast-website/">building a podcast website with Claude Code and GitHub Pages</a>. For getting episodes found once the site exists, see <a href="{root}guides/podcast-seo/">podcast SEO</a>.</p>
 
 <h2>Engagement</h2>
-<p>The build is a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under <a href="{root}services/ongoing-support/">ongoing support</a>. Terms are on <a href="{root}work-with-me/">Work With Me</a>.</p>
+<p>A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under <a href="{root}services/ongoing-support/">ongoing support</a>. Terms are on <a href="{root}work-with-me/">Work With Me</a>.</p>

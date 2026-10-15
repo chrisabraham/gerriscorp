@@ -1300,11 +1300,15 @@ Search engines and AI assistants read text. A feed full of audio gives them almo
 
 ## The daily job
 
-A scheduled GitHub Actions workflow runs every morning. It adds new episodes, collects transcripts that arrive days late, rebuilds, and commits only when something changed. It refuses to publish when the feed looks broken, for example when the feed suddenly lists far fewer episodes than the site already has. Plays still count with your host, because the audio never leaves it.
+A scheduled GitHub Actions workflow runs every morning. It adds new episodes, collects transcripts that arrive days late, rebuilds, and commits only when something changed. It refuses to publish when the feed looks broken, for example when the feed suddenly lists far fewer episodes than the site already has. When the audio stays with your host, every play still counts there.
+
+## Ownership, start to finish
+
+The domain and the repository are registered to you. Shows that already publish through Spotify, Apple, or another host can keep doing exactly that; the site clones their feed and adds a page for each new episode. Shows that want full ownership can go further: the site publishes the RSS feed the directories read, and the audio lives in storage on the show's own domain, such as Cloudflare R2, which charges nothing for downloads. The nightly check can run at any hour, or several times a day around release.
 
 ## Running costs
 
-GitHub Pages hosts the site and Cloudflare handles DNS. Neither charges for a site like this, so the domain is the only bill. Nothing on the server needs patching, because nothing runs on the server.
+GitHub Pages hosts the site and Cloudflare handles DNS. Neither charges for a site like this, so the domain is the only bill unless you host your own audio, where R2 bills for storage past its free allowance. Nothing on the server needs patching, because nothing runs on the server.
 
 ## After launch
 
@@ -1316,7 +1320,7 @@ The full method is free in my guide to [building a podcast website with Claude C
 
 ## Engagement
 
-The build is a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 Updated October 14, 2026
 
