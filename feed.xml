@@ -8,6 +8,138 @@
   <updated>2026-10-15T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
+    <title>A website handover needs more than a zip file and a password</title>
+    <link href="https://gerriscorp.com/guides/website-handover/"/>
+    <id>https://gerriscorp.com/guides/website-handover/</id>
+    <published>2026-10-15T12:00:00Z</published>
+    <updated>2026-10-15T12:00:00Z</updated>
+    <summary>A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.</summary>
+    <content type="html">&lt;h1&gt;A website handover needs more than a zip file and a password&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;The contractor says the website is yours. Can someone new rebuild it, publish a correction, renew the domain, and restore the data without calling that contractor? Those are practical handover questions, and they can be answered while everyone is still available to help. Here is the inventory I would want before accepting responsibility for an inherited site.&lt;/p&gt;
+
+&lt;h2&gt;Start with the account that controls each layer&lt;/h2&gt;
+&lt;p&gt;A domain registration, a DNS zone, a hosting subscription, and a code repository can belong to four different accounts. List them separately. For each, record the business owner, the people with administrative access, the billing contact, and the recovery route. The person who can edit a page is not necessarily the person who can recover the account.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://gerriscorp.com/downloads/website-handover-inventory.csv"&gt;website handover inventory worksheet&lt;/a&gt; provides rows for these layers and room to record evidence. Put account identifiers in the private working copy, but keep passwords, recovery codes, tokens, and private keys in an approved secrets manager. The worksheet should say where access is managed, not become another loose credentials file.&lt;/p&gt;
+
+&lt;h2&gt;Prove the source matches the site&lt;/h2&gt;
+&lt;p&gt;Ask which repository and revision produced the current deployment. Keep the build instructions, runtime requirements, dependency files, and a list of required configuration variable names with the project. A useful handover lets a new maintainer start from the recorded revision in a fresh workspace and reproduce the intended result.&lt;/p&gt;
+&lt;p&gt;Try that build before treating the instructions as complete. If it needs a file that exists only on somebody's laptop, an unrecorded account, or a package that cannot be retrieved, the trial has found an unresolved dependency. Record the dependency and its owner rather than quietly borrowing the departing developer's working directory.&lt;/p&gt;
+
+&lt;h2&gt;Separate a repository transfer from an access review&lt;/h2&gt;
+&lt;p&gt;GitHub documents that secrets, deploy keys, and webhooks can remain associated with a transferred repository. Receiving ownership therefore does not by itself settle who can still act on the project. Review the actual connections, collaborators, automation accounts, and deployment credentials as part of the handover.&lt;/p&gt;
+&lt;p&gt;Agree the timing of access changes with the people responsible for the live service. An old key may still be powering the production build. Replace and test necessary connections before withdrawing the previous ones, then record that the old access has been removed. This sequence keeps an ownership improvement from becoming an accidental outage.&lt;/p&gt;
+
+&lt;h2&gt;Inventory the things outside Git&lt;/h2&gt;
+&lt;p&gt;A working site may depend on a database, uploaded media, scheduled jobs, a mail provider, search indexes, an external form service, or storage controlled by a different account. Include the dependencies the visitor never sees. A nightly import that stops running can make the site wrong for weeks before anybody notices that a background job was missed.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Content and files:&lt;/strong&gt; where editable content, original artwork, and visitor uploads live.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recurring jobs:&lt;/strong&gt; what runs, on whose service, and who receives a failure alert.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Forms and notifications:&lt;/strong&gt; where submissions are stored and how delivery is verified.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Analytics:&lt;/strong&gt; which properties and accounts contain the business's reporting history.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Licenses:&lt;/strong&gt; which commercial components need renewal or a new owner.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Restore something before calling it a backup&lt;/h2&gt;
+&lt;p&gt;List what each backup includes, its schedule, where it is stored, and who can retrieve it. Then restore the necessary components into a separate test environment. A repository backup is useful, but the application may also need data and media stored elsewhere. GitHub's backup documentation explains repository backup methods; the running service needs its own inventory around them.&lt;/p&gt;
+&lt;p&gt;Choose a small, recognizable check after the restore: a particular article, a known uploaded file, or a test record that should exist. Record the backup date and the result. Keep test notifications and outbound integrations disabled while checking the restored copy so a rehearsal does not contact real customers.&lt;/p&gt;
+
+&lt;h2&gt;Write down the domain and email dependencies&lt;/h2&gt;
+&lt;p&gt;A website move often shares a DNS zone with the company's email. Save the current records and identify which serve the site, which serve mail, and which verify ownership for other services. A new maintainer needs to know why a record exists before deciding that an unfamiliar entry is obsolete.&lt;/p&gt;
+&lt;p&gt;Record domain renewal responsibility, certificate handling, redirects, and any old hostnames that still serve files or forward visitors. The domain is not fully handed over if its renewal notice goes only to an address nobody in the business can read. The &lt;a href="https://gerriscorp.com/services/email-and-dns/"&gt;email and DNS service&lt;/a&gt; covers that layer when it needs hands on work.&lt;/p&gt;
+
+&lt;h2&gt;Ask the receiving person to do one routine job&lt;/h2&gt;
+&lt;p&gt;Have the new maintainer make an agreed harmless change on a preview, inspect the result, and explain the release and rollback process. It is a much better test of the documentation than asking whether the folder of instructions looks complete. The exercise also reveals which decisions still depend on knowledge the departing contractor has never written down.&lt;/p&gt;
+&lt;p&gt;Record unresolved items, their owners, and the next date to review them. A handover can be accepted with clearly identified followup work, but a missing recovery route should not disappear inside a general statement that everything is finished.&lt;/p&gt;
+
+&lt;h2&gt;Keep the inventory useful after handover&lt;/h2&gt;
+&lt;p&gt;Review it when hosting changes, a new supplier joins, or an integration is added. It becomes the starting point for the next contractor and a much calmer starting point for an outage. My &lt;a href="https://gerriscorp.com/case-studies/app-takeover/"&gt;application takeover case&lt;/a&gt; shows the kind of configuration and operational work that an inherited project can require.&lt;/p&gt;
+&lt;p&gt;If the documentation is incomplete or nobody knows what is running, &lt;a href="https://gerriscorp.com/services/rescue/"&gt;project rescue and takeover review&lt;/a&gt; is an existing way to hire me for the inventory and a practical next plan. A second opinion before you accept a supplier's handover also fits &lt;a href="https://gerriscorp.com/services/advisory/"&gt;strategic advisory&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository"&gt;GitHub Docs: Transferring a repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/repositories/archiving-a-github-repository/backing-up-a-repository"&gt;GitHub Docs: Backing up a repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
+    <title>Test an AI pilot with the work it is supposed to do</title>
+    <link href="https://gerriscorp.com/guides/ai-pilot-tests/"/>
+    <id>https://gerriscorp.com/guides/ai-pilot-tests/</id>
+    <published>2026-10-15T12:00:00Z</published>
+    <updated>2026-10-15T12:00:00Z</updated>
+    <summary>Turn an AI demonstration into a testable pilot: real examples, expected results, permissions, retries, failure records, and a decision your team can explain.</summary>
+    <content type="html">&lt;h1&gt;Test an AI pilot with the work it is supposed to do&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A polished demonstration answers the question the demonstrator prepared. Your working day contains the requests they did not prepare: a missing date, two customers with the same name, a task submitted twice, or a report that sounds finished when the underlying action failed. A pilot needs examples of those situations before anyone can decide whether to rely on it.&lt;/p&gt;
+
+&lt;h2&gt;Write one plain job description&lt;/h2&gt;
+&lt;p&gt;Begin with a sentence that has an input and an observable result. For example: given an approved meeting note, produce draft tasks with the correct owner and due date. That is narrow enough to test. A promise to make the team more productive is useful as an ambition, but it leaves the test writer guessing which behavior is required.&lt;/p&gt;
+&lt;p&gt;Record the tool version, its connected services, and the account permissions used in the trial. Give the pilot an owner who can decide whether an output is acceptable. The person writing the test should not have to infer the answer from whatever the assistant happened to produce.&lt;/p&gt;
+
+&lt;h2&gt;Collect ordinary examples before clever ones&lt;/h2&gt;
+&lt;p&gt;Ask the future users for several requests they would really make. Preserve the shorthand, unfinished sentences, and naming conventions that appear in daily work. Add a small number of unusual cases deliberately, rather than building the whole collection from puzzles. The ordinary examples show whether the workflow is useful; the exceptions show where it needs help.&lt;/p&gt;
+&lt;p&gt;I learned this with my own terminal assistant. A phrase I had used repeatedly was being silently ignored. Turning the exact request into a test made the problem visible and kept the correction from depending on a conversation I would later forget. The build history is described in the &lt;a href="https://gerriscorp.com/case-studies/built-with-claude-code/"&gt;assistant case study&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Define the result before running the case&lt;/h2&gt;
+&lt;p&gt;For a draft task, the owner must refer to the right person, an absent date must remain absent or trigger a question, and no live task should be created if the request only asks for a draft. For a summary, separate facts that must be present from wording that can vary. This avoids the easy mistake of approving a convincing answer because it resembles the last convincing answer.&lt;/p&gt;
+&lt;p&gt;Use the &lt;a href="https://gerriscorp.com/downloads/ai-pilot-test-cases.csv"&gt;AI pilot test case worksheet&lt;/a&gt; as a starting point. Its rows describe invented examples. Fill in the expected behavior, the observed result, and the evidence. Keep real client data in the approved project workspace rather than in a public example file.&lt;/p&gt;
+
+&lt;h2&gt;Include a few failures on purpose&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Case&lt;/th&gt;&lt;th scope="col"&gt;Question to settle&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Missing information&lt;/th&gt;&lt;td&gt;Does the assistant ask, preserve the gap, or invent a value?&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Ambiguous identity&lt;/th&gt;&lt;td&gt;Can it stop before choosing the wrong customer?&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Duplicate request&lt;/th&gt;&lt;td&gt;Does a retry repeat an action already completed?&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Unavailable service&lt;/th&gt;&lt;td&gt;Is failure reported without claiming the action succeeded?&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Instructions inside source material&lt;/th&gt;&lt;td&gt;Does quoted content stay separate from the user's request?&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Unapproved action&lt;/th&gt;&lt;td&gt;Does the workflow wait at the agreed decision point?&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Exercise service failures in an isolated trial or with a simulated dependency. Do not create a live outage to see how the pilot reacts. The aim is a reproducible example, not a surprise for the people depending on the service.&lt;/p&gt;
+
+&lt;h2&gt;Test the permission boundary as behavior&lt;/h2&gt;
+&lt;p&gt;OWASP's discussion of excessive agency recommends limiting tool capabilities and permissions, with human approval for consequential actions. Translate that principle into a case you can observe. If a workflow is allowed to prepare a message but requires approval to send it, inspect both the draft and the sending record. The assistant saying that it waited is only one part of the evidence.&lt;/p&gt;
+&lt;p&gt;A written instruction helps explain the rules. An account that lacks unnecessary permissions helps enforce them. Review both when the pilot connects to another service. A harmless drafting exercise can become a different system when somebody adds a connection that can publish, delete, or spend.&lt;/p&gt;
+
+&lt;h2&gt;Save evidence that outlives the session&lt;/h2&gt;
+&lt;p&gt;Keep the inputs, outputs, timestamps, relevant service records, and the acceptance decision together. When a test runs in GitHub Actions, downloadable workflow artifacts can hold its reports. Set retention deliberately and store sensitive evidence only where the team has approved it. A screenshot of the final answer rarely explains a retry, a hidden error, or a partial action.&lt;/p&gt;
+&lt;p&gt;My &lt;a href="https://gerriscorp.com/case-studies/data-cleanup/"&gt;outreach tracker audit&lt;/a&gt; is a useful reminder here. The tracker described activity, but checking the actual sending records changed what could honestly be reported. A pilot should make that comparison easier, not bury the trail under a confident paragraph.&lt;/p&gt;
+
+&lt;h2&gt;Score separate questions separately&lt;/h2&gt;
+&lt;p&gt;Record correctness, completeness, unauthorized actions, and manual correction effort independently. A mostly useful summary and a message sent to the wrong person should not average into an acceptable score. Decide in advance which failures stop the pilot and which can be tolerated with a documented workaround.&lt;/p&gt;
+&lt;p&gt;Repeat cases where results vary and retain the individual outcomes. If only one run was observed, say so. A small collection can reveal a repeatable failure without proving a general success rate. The report should state what was tested and the limits of that evidence.&lt;/p&gt;
+
+&lt;h2&gt;Keep the collection when the pilot ends&lt;/h2&gt;
+&lt;p&gt;Use the same examples when a prompt changes, a new model is proposed, or a connector gains another permission. Add real failures as the team encounters them. Remove obsolete cases through an explicit decision so the collection continues to describe the job people are actually doing.&lt;/p&gt;
+&lt;p&gt;I can help define and run that review through &lt;a href="https://gerriscorp.com/services/ai-workflow-testing/"&gt;AI workflow testing&lt;/a&gt;. For the earlier buying decision, the &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;AI vendor questions&lt;/a&gt; help establish what the supplier should demonstrate before a pilot begins.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://genai.owasp.org/llmrisk/llm062025-excessive-agency/"&gt;OWASP Gen AI Security Project: Excessive Agency&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/how-tos/manage-workflow-runs/download-workflow-artifacts"&gt;GitHub Docs: Downloading workflow artifacts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
     <title>Diagnosing Core Web Vitals with MCP and an AI coding assistant</title>
     <link href="https://gerriscorp.com/guides/core-web-vitals-mcp/"/>
     <id>https://gerriscorp.com/guides/core-web-vitals-mcp/</id>

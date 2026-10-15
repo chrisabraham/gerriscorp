@@ -58,4 +58,6 @@ Audits cover the whole site. Rewrites start with the pages that bring in the mos
 
 [Ask me to review your pages](https://gerriscorp.com/contact/)
 
+When the main opportunity is how the existing content connects, I offer a dedicated [internal linking strategy project](https://gerriscorp.com/services/internal-linking/), with specific source pages, destinations, and editorial placements for your team.
+
 Updated October 5, 2026

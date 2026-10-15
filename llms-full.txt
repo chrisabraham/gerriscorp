@@ -68,6 +68,7 @@ Updated: 2026-10-15
 I'm the person you call when the technical side of your web presence needs someone in charge. Every engagement starts with a paid diagnostic and a clear next step, and I do the work myself, alongside your team.
 
 ## Consulting and technical direction
+- [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/): acceptance cases for a real pilot, with expected outputs, permission boundaries, failure evidence, and a clear next decision.
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
@@ -78,6 +79,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Strategic advisory and second opinions](https://gerriscorp.com/services/advisory/): advice for founders and executives on AI, search, reputation, and technology decisions.
 
 ## Search and site performance
+- [Internal linking strategy](https://gerriscorp.com/services/internal-linking/): connect services, articles, products, and case studies with contextual links and a practical implementation map.
 - [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/): traffic drops and indexing problems diagnosed with evidence and fixed with your developers.
 - [SEO engineering for Next.js, React, and headless sites](https://gerriscorp.com/services/seo-engineering/): titles, canonicals, sitemaps, redirects, and schema written as code, tested on every build, and checked on a preview before merge.
 - [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): my signature diagnosis, for pages that look complete to visitors and empty to Google and AI crawlers.
@@ -336,6 +338,8 @@ The site goes back onto hosting you own and control, set up properly and documen
 
 [Tell me what you inherited](https://gerriscorp.com/contact/)
 
+If you are preparing to receive a site rather than responding to an outage, the [website handover checklist](https://gerriscorp.com/guides/website-handover/) and downloadable inventory help you ask for the accounts, instructions, and evidence before the departing maintainer leaves.
+
 Updated October 5, 2026
 
 
@@ -399,6 +403,8 @@ I build small, focused tools that prove value quickly. When a pilot needs to gro
 **Related:** [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
 
 [Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
+
+A working pilot can also be reviewed as its own engagement through [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/). The accompanying [pilot test case guide](https://gerriscorp.com/guides/ai-pilot-tests/) gives your team a starting collection of checks.
 
 Updated October 15, 2026
 
@@ -950,6 +956,8 @@ Audits cover the whole site. Rewrites start with the pages that bring in the mos
 **Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [AI search visibility](https://gerriscorp.com/services/ai-search/) · [Glossary](https://gerriscorp.com/guides/glossary/)
 
 [Ask me to review your pages](https://gerriscorp.com/contact/)
+
+When the main opportunity is how the existing content connects, I offer a dedicated [internal linking strategy project](https://gerriscorp.com/services/internal-linking/), with specific source pages, destinations, and editorial placements for your team.
 
 Updated October 5, 2026
 
@@ -1695,6 +1703,8 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
 
 ## Vendors, developers, and technology decisions
+- [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
+- [A website handover beyond passwords and source code](https://gerriscorp.com/guides/website-handover/): account control, builds, data, renewals, and a restore exercise, with an inventory worksheet.
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.
 - [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): own the accounts, interview for judgment, pay for a trial task, and review every change.
 - [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Amara's law, the hype cycle, and lessons from communities, blogs, social media, crypto, and AI.
@@ -6948,6 +6958,269 @@ Updated October 5, 2026
 
 ---
 
+Source: https://gerriscorp.com/services/internal-linking/
+Updated: 2026-10-15
+
+# Internal linking strategy and implementation
+
+A website can have excellent pages that barely acknowledge each other. The useful explanation sits in the archive, the service lives three sections away, and the case study never reaches the person considering that service. I connect those pieces with relevant text links, understandable anchor wording, and destinations that work.
+
+## Use the material you have already paid to create
+
+An established site contains years of work: answers to customer questions, specialist knowledge, product details, and evidence from completed projects. Linking that material thoughtfully can make the whole collection more useful. The work starts inside your existing site, with the routes you control and the pages your team already maintains.
+
+## Decide which pages should support which decisions
+
+I identify the journeys that matter to the business. Someone researching a problem may need an explanation, then an example of the work, then the relevant service. A buyer comparing products needs clear category routes and helpful supporting information. Those paths become the starting map, and crawl data shows where the published site currently makes the journey difficult.
+
+## What the review covers
+- **Unconnected content:** important pages present in the inventory but missing from normal discovery paths.
+- **Editorial opportunities:** passages where another existing page answers the next useful question.
+- **Site structure:** category routes, section indexes, breadcrumbs, and related content components.
+- **Anchor wording:** link labels that set a clear expectation without turning the paragraph into a list of search phrases.
+- **Implementation faults:** broken section targets, redirects, stale addresses, and navigation that depends on an interaction a crawler may never perform.
+
+## Make a change list people can use
+
+Each recommendation identifies the source page, the destination, the proposed location, and the reason for adding the connection. Editorial links go to the content owner. Component changes go to the developer with examples and acceptance criteria. If the same issue appears across thousands of generated pages, I investigate the template or route data so the remedy can be applied consistently.
+
+## Build context around the important destination
+
+A service page can link to evidence that helps somebody judge the offer. A technical article can point to the practical next step. A long reference page can offer a link to an exact section elsewhere, provided the target exists and remains stable. These are small edits, but they should be decisions about what the reader needs, not automatic replacements of every matching word in the database.
+
+## Evidence behind the approach
+
+My [React event platform case](https://gerriscorp.com/case-studies/react-event-platform/) involved a discovery problem affecting roughly 2,000 event pages. That is a reminder to examine the links an application actually provides, alongside its visible design. On a large archive or a programmatic site, finding the missing connection can be more useful than writing another page nobody can reach.
+
+## Implementation and acceptance
+
+I can add the agreed links where access allows, or provide a precise implementation map for your team. A new crawl checks the published connections and the pages they lead to. The verification record names the changed templates and editorial pages, while later reporting follows the search behavior of the priority destinations. Results are reported against the work observed and the question the project set out to answer.
+
+## Planning a linking project
+
+### Does the whole website need reviewing at once?
+
+No. A useful first project can focus on a service family, a content archive, or a particular product category. The scope names the inventory and the priority destinations.
+
+### Can an agency use the plan with its own editors?
+
+Yes. The proposed placements and destinations can be delivered as a working list, with developer changes separated from copy additions and a final check after publication.
+
+This work fits alongside [on page SEO](https://gerriscorp.com/services/on-page-seo/), [large site SEO](https://gerriscorp.com/services/large-sites/), and [agency support](https://gerriscorp.com/services/agency-partner/). [Tell me which pages visitors should be finding](https://gerriscorp.com/contact/) and I can scope a practical starting point.
+
+Updated October 15, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/ai-workflow-testing/
+Updated: 2026-10-15
+
+# AI workflow testing and acceptance reviews
+
+The demonstration worked. Now somebody needs to find out what happens with an incomplete request, a duplicate record, a failed connection, or an instruction hidden inside a document. I help turn an AI pilot into something your team can judge against written requirements.
+
+## Start with one job
+
+The useful unit is a workflow: turn these meeting notes into draft tasks, reconcile these two exports, or prepare this briefing from these sources. I define the inputs, the expected output, the person who accepts it, and the actions the system may take. That makes the review concrete. The question is whether this tool can do your job within agreed limits, with evidence somebody else can inspect.
+
+## A set of examples your team recognizes
+
+I work with representative examples from the people who will actually use the tool. A good test collection includes ordinary requests, shorthand, missing information, conflicting instructions, repeated submissions, and the cases that have already caused trouble. Sensitive material can be replaced with controlled examples that preserve the behavior being tested. Each case records what a satisfactory result would look like before the tool runs.
+
+## What I check
+- **Output quality:** whether names, dates, totals, sources, and record identities match the input.
+- **Action boundaries:** whether a draft stays a draft and an action requiring approval waits for it.
+- **Failure behavior:** what happens when a service is unavailable, an answer is uncertain, or an input cannot be parsed.
+- **Repeated work:** whether retrying an interrupted task creates duplicate records or messages.
+- **Traceability:** whether the team can distinguish proposed work, completed work, and work that never happened.
+
+## Experience behind the review
+
+My own command line assistant grew through real use: misread requests became explicit examples in its test suite. The [coding assistant case study](https://gerriscorp.com/case-studies/built-with-claude-code/) describes that process and the 140 end to end tests in the original build. Separately, I checked an AI generated outreach tracker against actual sending records and found activity the evidence did not support. That work is in the [data cleanup and AI audit case study](https://gerriscorp.com/case-studies/data-cleanup/). Both experiences inform a simple habit: compare the tool's report with what actually happened.
+
+## Platform agnostic by design
+
+I use OpenAI Codex and Claude Code as my primary coding assistants, alongside GitHub Copilot, Gemini, Grok, and occasional Perplexity use. For this work, the test cases and expected behavior belong to your project. The same collection can help compare a proposed replacement with the version already in use, provided the inputs and acceptance rules stay consistent.
+
+## The handover
+
+You receive the agreed test collection, observed results, evidence of failures, and a prioritized list of changes or unresolved questions. The recommendation can be to proceed within a limited scope, revise the pilot, or gather evidence that was missing. I also identify which checks can become automated regression tests and which still need a person to read the output. A passing result applies to the tested version and conditions.
+
+## Before a pilot review
+
+### Can you review a tool someone else supplied?
+
+Yes, with enough access to exercise the workflow and inspect its records. The scope distinguishes behavior I can observe from implementation details that need the supplier's cooperation.
+
+### Where should a first engagement start?
+
+With a named workflow, a small set of representative tasks, and a paid diagnostic. Implementation or a wider rollout follows only after the findings and next scope are agreed.
+
+The [AI pilot testing guide](https://gerriscorp.com/guides/ai-pilot-tests/) includes a worksheet you can use yourself. For a review, [send me the workflow and what a good result should accomplish](https://gerriscorp.com/contact/). If you need the tool built as well, see [AI agents and automation](https://gerriscorp.com/services/ai-automation/).
+
+Updated October 15, 2026
+
+
+---
+
+Source: https://gerriscorp.com/guides/ai-pilot-tests/
+Updated: 2026-10-15
+
+# Test an AI pilot with the work it is supposed to do
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 15, 2026
+
+A polished demonstration answers the question the demonstrator prepared. Your working day contains the requests they did not prepare: a missing date, two customers with the same name, a task submitted twice, or a report that sounds finished when the underlying action failed. A pilot needs examples of those situations before anyone can decide whether to rely on it.
+
+## Write one plain job description
+
+Begin with a sentence that has an input and an observable result. For example: given an approved meeting note, produce draft tasks with the correct owner and due date. That is narrow enough to test. A promise to make the team more productive is useful as an ambition, but it leaves the test writer guessing which behavior is required.
+
+Record the tool version, its connected services, and the account permissions used in the trial. Give the pilot an owner who can decide whether an output is acceptable. The person writing the test should not have to infer the answer from whatever the assistant happened to produce.
+
+## Collect ordinary examples before clever ones
+
+Ask the future users for several requests they would really make. Preserve the shorthand, unfinished sentences, and naming conventions that appear in daily work. Add a small number of unusual cases deliberately, rather than building the whole collection from puzzles. The ordinary examples show whether the workflow is useful; the exceptions show where it needs help.
+
+I learned this with my own terminal assistant. A phrase I had used repeatedly was being silently ignored. Turning the exact request into a test made the problem visible and kept the correction from depending on a conversation I would later forget. The build history is described in the [assistant case study](https://gerriscorp.com/case-studies/built-with-claude-code/).
+
+## Define the result before running the case
+
+For a draft task, the owner must refer to the right person, an absent date must remain absent or trigger a question, and no live task should be created if the request only asks for a draft. For a summary, separate facts that must be present from wording that can vary. This avoids the easy mistake of approving a convincing answer because it resembles the last convincing answer.
+
+Use the [AI pilot test case worksheet](https://gerriscorp.com/downloads/ai-pilot-test-cases.csv) as a starting point. Its rows describe invented examples. Fill in the expected behavior, the observed result, and the evidence. Keep real client data in the approved project workspace rather than in a public example file.
+
+## Include a few failures on purpose
+| Case | Question to settle |
+| --- | --- |
+| Missing information | Does the assistant ask, preserve the gap, or invent a value? |
+| Ambiguous identity | Can it stop before choosing the wrong customer? |
+| Duplicate request | Does a retry repeat an action already completed? |
+| Unavailable service | Is failure reported without claiming the action succeeded? |
+| Instructions inside source material | Does quoted content stay separate from the user's request? |
+| Unapproved action | Does the workflow wait at the agreed decision point? |
+
+Exercise service failures in an isolated trial or with a simulated dependency. Do not create a live outage to see how the pilot reacts. The aim is a reproducible example, not a surprise for the people depending on the service.
+
+## Test the permission boundary as behavior
+
+OWASP's discussion of excessive agency recommends limiting tool capabilities and permissions, with human approval for consequential actions. Translate that principle into a case you can observe. If a workflow is allowed to prepare a message but requires approval to send it, inspect both the draft and the sending record. The assistant saying that it waited is only one part of the evidence.
+
+A written instruction helps explain the rules. An account that lacks unnecessary permissions helps enforce them. Review both when the pilot connects to another service. A harmless drafting exercise can become a different system when somebody adds a connection that can publish, delete, or spend.
+
+## Save evidence that outlives the session
+
+Keep the inputs, outputs, timestamps, relevant service records, and the acceptance decision together. When a test runs in GitHub Actions, downloadable workflow artifacts can hold its reports. Set retention deliberately and store sensitive evidence only where the team has approved it. A screenshot of the final answer rarely explains a retry, a hidden error, or a partial action.
+
+My [outreach tracker audit](https://gerriscorp.com/case-studies/data-cleanup/) is a useful reminder here. The tracker described activity, but checking the actual sending records changed what could honestly be reported. A pilot should make that comparison easier, not bury the trail under a confident paragraph.
+
+## Score separate questions separately
+
+Record correctness, completeness, unauthorized actions, and manual correction effort independently. A mostly useful summary and a message sent to the wrong person should not average into an acceptable score. Decide in advance which failures stop the pilot and which can be tolerated with a documented workaround.
+
+Repeat cases where results vary and retain the individual outcomes. If only one run was observed, say so. A small collection can reveal a repeatable failure without proving a general success rate. The report should state what was tested and the limits of that evidence.
+
+## Keep the collection when the pilot ends
+
+Use the same examples when a prompt changes, a new model is proposed, or a connector gains another permission. Add real failures as the team encounters them. Remove obsolete cases through an explicit decision so the collection continues to describe the job people are actually doing.
+
+I can help define and run that review through [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/). For the earlier buying decision, the [AI vendor questions](https://gerriscorp.com/guides/ai-vendor-pitch/) help establish what the supplier should demonstrate before a pilot begins.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [OWASP Gen AI Security Project: Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)
+- [GitHub Docs: Downloading workflow artifacts](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/download-workflow-artifacts)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/website-handover/
+Updated: 2026-10-15
+
+# A website handover needs more than a zip file and a password
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 15, 2026
+
+The contractor says the website is yours. Can someone new rebuild it, publish a correction, renew the domain, and restore the data without calling that contractor? Those are practical handover questions, and they can be answered while everyone is still available to help. Here is the inventory I would want before accepting responsibility for an inherited site.
+
+## Start with the account that controls each layer
+
+A domain registration, a DNS zone, a hosting subscription, and a code repository can belong to four different accounts. List them separately. For each, record the business owner, the people with administrative access, the billing contact, and the recovery route. The person who can edit a page is not necessarily the person who can recover the account.
+
+The [website handover inventory worksheet](https://gerriscorp.com/downloads/website-handover-inventory.csv) provides rows for these layers and room to record evidence. Put account identifiers in the private working copy, but keep passwords, recovery codes, tokens, and private keys in an approved secrets manager. The worksheet should say where access is managed, not become another loose credentials file.
+
+## Prove the source matches the site
+
+Ask which repository and revision produced the current deployment. Keep the build instructions, runtime requirements, dependency files, and a list of required configuration variable names with the project. A useful handover lets a new maintainer start from the recorded revision in a fresh workspace and reproduce the intended result.
+
+Try that build before treating the instructions as complete. If it needs a file that exists only on somebody's laptop, an unrecorded account, or a package that cannot be retrieved, the trial has found an unresolved dependency. Record the dependency and its owner rather than quietly borrowing the departing developer's working directory.
+
+## Separate a repository transfer from an access review
+
+GitHub documents that secrets, deploy keys, and webhooks can remain associated with a transferred repository. Receiving ownership therefore does not by itself settle who can still act on the project. Review the actual connections, collaborators, automation accounts, and deployment credentials as part of the handover.
+
+Agree the timing of access changes with the people responsible for the live service. An old key may still be powering the production build. Replace and test necessary connections before withdrawing the previous ones, then record that the old access has been removed. This sequence keeps an ownership improvement from becoming an accidental outage.
+
+## Inventory the things outside Git
+
+A working site may depend on a database, uploaded media, scheduled jobs, a mail provider, search indexes, an external form service, or storage controlled by a different account. Include the dependencies the visitor never sees. A nightly import that stops running can make the site wrong for weeks before anybody notices that a background job was missed.
+- **Content and files:** where editable content, original artwork, and visitor uploads live.
+- **Recurring jobs:** what runs, on whose service, and who receives a failure alert.
+- **Forms and notifications:** where submissions are stored and how delivery is verified.
+- **Analytics:** which properties and accounts contain the business's reporting history.
+- **Licenses:** which commercial components need renewal or a new owner.
+
+## Restore something before calling it a backup
+
+List what each backup includes, its schedule, where it is stored, and who can retrieve it. Then restore the necessary components into a separate test environment. A repository backup is useful, but the application may also need data and media stored elsewhere. GitHub's backup documentation explains repository backup methods; the running service needs its own inventory around them.
+
+Choose a small, recognizable check after the restore: a particular article, a known uploaded file, or a test record that should exist. Record the backup date and the result. Keep test notifications and outbound integrations disabled while checking the restored copy so a rehearsal does not contact real customers.
+
+## Write down the domain and email dependencies
+
+A website move often shares a DNS zone with the company's email. Save the current records and identify which serve the site, which serve mail, and which verify ownership for other services. A new maintainer needs to know why a record exists before deciding that an unfamiliar entry is obsolete.
+
+Record domain renewal responsibility, certificate handling, redirects, and any old hostnames that still serve files or forward visitors. The domain is not fully handed over if its renewal notice goes only to an address nobody in the business can read. The [email and DNS service](https://gerriscorp.com/services/email-and-dns/) covers that layer when it needs hands on work.
+
+## Ask the receiving person to do one routine job
+
+Have the new maintainer make an agreed harmless change on a preview, inspect the result, and explain the release and rollback process. It is a much better test of the documentation than asking whether the folder of instructions looks complete. The exercise also reveals which decisions still depend on knowledge the departing contractor has never written down.
+
+Record unresolved items, their owners, and the next date to review them. A handover can be accepted with clearly identified followup work, but a missing recovery route should not disappear inside a general statement that everything is finished.
+
+## Keep the inventory useful after handover
+
+Review it when hosting changes, a new supplier joins, or an integration is added. It becomes the starting point for the next contractor and a much calmer starting point for an outage. My [application takeover case](https://gerriscorp.com/case-studies/app-takeover/) shows the kind of configuration and operational work that an inherited project can require.
+
+If the documentation is incomplete or nobody knows what is running, [project rescue and takeover review](https://gerriscorp.com/services/rescue/) is an existing way to hire me for the inventory and a practical next plan. A second opinion before you accept a supplier's handover also fits [strategic advisory](https://gerriscorp.com/services/advisory/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [GitHub Docs: Transferring a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository)
+- [GitHub Docs: Backing up a repository](https://docs.github.com/en/repositories/archiving-a-github-repository/backing-up-a-repository)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
 Updated: 2026-10-15
 
@@ -6978,6 +7251,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
+- [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
 
 ## Search and site performance
 - [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
@@ -6994,6 +7268,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
+- [Internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/): Connect your website's services, articles, products, and case studies with an internal linking plan: crawl evidence, clear anchors, and verified changes.
 
 ## Local, reputation, and email
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
@@ -7051,6 +7326,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Lynx for website QA: text browser checks before every launch](https://gerriscorp.com/guides/lynx-qa/): How to use the Lynx text browser to check content, links, and noindex tags across a whole site before launch, plus online options for teams without a terminal.
 - [ADA website compliance for businesses: lower risk, better SEO](https://gerriscorp.com/guides/ada-website-compliance/): What the ADA expects of business websites, the six fixes that cover most of the risk, what to skip, and why the same work improves search, AI answers, trust.
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
+- [Test an AI pilot with the work it is supposed to do](https://gerriscorp.com/guides/ai-pilot-tests/): Turn an AI demonstration into a testable pilot: real examples, expected results, permissions, retries, failure records, and a decision your team can explain.
+- [A website handover needs more than a zip file and a password](https://gerriscorp.com/guides/website-handover/): A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.

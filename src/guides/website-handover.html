@@ -1,0 +1,48 @@
+name: Website Handover Checklist
+type: guide
+published: 2026-10-15
+updated: 2026-10-15
+title: Website handover: accounts, source code, and a real restore
+description: A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.
+sources: GitHub Docs: Transferring a repository | https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository ;; GitHub Docs: Backing up a repository | https://docs.github.com/en/repositories/archiving-a-github-repository/backing-up-a-repository
+---
+<h1>A website handover needs more than a zip file and a password</h1>
+<p class="lead">The contractor says the website is yours. Can someone new rebuild it, publish a correction, renew the domain, and restore the data without calling that contractor? Those are practical handover questions, and they can be answered while everyone is still available to help. Here is the inventory I would want before accepting responsibility for an inherited site.</p>
+
+<h2>Start with the account that controls each layer</h2>
+<p>A domain registration, a DNS zone, a hosting subscription, and a code repository can belong to four different accounts. List them separately. For each, record the business owner, the people with administrative access, the billing contact, and the recovery route. The person who can edit a page is not necessarily the person who can recover the account.</p>
+<p>The <a href="{root}downloads/website-handover-inventory.csv">website handover inventory worksheet</a> provides rows for these layers and room to record evidence. Put account identifiers in the private working copy, but keep passwords, recovery codes, tokens, and private keys in an approved secrets manager. The worksheet should say where access is managed, not become another loose credentials file.</p>
+
+<h2>Prove the source matches the site</h2>
+<p>Ask which repository and revision produced the current deployment. Keep the build instructions, runtime requirements, dependency files, and a list of required configuration variable names with the project. A useful handover lets a new maintainer start from the recorded revision in a fresh workspace and reproduce the intended result.</p>
+<p>Try that build before treating the instructions as complete. If it needs a file that exists only on somebody's laptop, an unrecorded account, or a package that cannot be retrieved, the trial has found an unresolved dependency. Record the dependency and its owner rather than quietly borrowing the departing developer's working directory.</p>
+
+<h2>Separate a repository transfer from an access review</h2>
+<p>GitHub documents that secrets, deploy keys, and webhooks can remain associated with a transferred repository. Receiving ownership therefore does not by itself settle who can still act on the project. Review the actual connections, collaborators, automation accounts, and deployment credentials as part of the handover.</p>
+<p>Agree the timing of access changes with the people responsible for the live service. An old key may still be powering the production build. Replace and test necessary connections before withdrawing the previous ones, then record that the old access has been removed. This sequence keeps an ownership improvement from becoming an accidental outage.</p>
+
+<h2>Inventory the things outside Git</h2>
+<p>A working site may depend on a database, uploaded media, scheduled jobs, a mail provider, search indexes, an external form service, or storage controlled by a different account. Include the dependencies the visitor never sees. A nightly import that stops running can make the site wrong for weeks before anybody notices that a background job was missed.</p>
+<ul>
+  <li><strong>Content and files:</strong> where editable content, original artwork, and visitor uploads live.</li>
+  <li><strong>Recurring jobs:</strong> what runs, on whose service, and who receives a failure alert.</li>
+  <li><strong>Forms and notifications:</strong> where submissions are stored and how delivery is verified.</li>
+  <li><strong>Analytics:</strong> which properties and accounts contain the business's reporting history.</li>
+  <li><strong>Licenses:</strong> which commercial components need renewal or a new owner.</li>
+</ul>
+
+<h2>Restore something before calling it a backup</h2>
+<p>List what each backup includes, its schedule, where it is stored, and who can retrieve it. Then restore the necessary components into a separate test environment. A repository backup is useful, but the application may also need data and media stored elsewhere. GitHub's backup documentation explains repository backup methods; the running service needs its own inventory around them.</p>
+<p>Choose a small, recognizable check after the restore: a particular article, a known uploaded file, or a test record that should exist. Record the backup date and the result. Keep test notifications and outbound integrations disabled while checking the restored copy so a rehearsal does not contact real customers.</p>
+
+<h2>Write down the domain and email dependencies</h2>
+<p>A website move often shares a DNS zone with the company's email. Save the current records and identify which serve the site, which serve mail, and which verify ownership for other services. A new maintainer needs to know why a record exists before deciding that an unfamiliar entry is obsolete.</p>
+<p>Record domain renewal responsibility, certificate handling, redirects, and any old hostnames that still serve files or forward visitors. The domain is not fully handed over if its renewal notice goes only to an address nobody in the business can read. The <a href="{root}services/email-and-dns/">email and DNS service</a> covers that layer when it needs hands on work.</p>
+
+<h2>Ask the receiving person to do one routine job</h2>
+<p>Have the new maintainer make an agreed harmless change on a preview, inspect the result, and explain the release and rollback process. It is a much better test of the documentation than asking whether the folder of instructions looks complete. The exercise also reveals which decisions still depend on knowledge the departing contractor has never written down.</p>
+<p>Record unresolved items, their owners, and the next date to review them. A handover can be accepted with clearly identified followup work, but a missing recovery route should not disappear inside a general statement that everything is finished.</p>
+
+<h2>Keep the inventory useful after handover</h2>
+<p>Review it when hosting changes, a new supplier joins, or an integration is added. It becomes the starting point for the next contractor and a much calmer starting point for an outage. My <a href="{root}case-studies/app-takeover/">application takeover case</a> shows the kind of configuration and operational work that an inherited project can require.</p>
+<p>If the documentation is incomplete or nobody knows what is running, <a href="{root}services/rescue/">project rescue and takeover review</a> is an existing way to hire me for the inventory and a practical next plan. A second opinion before you accept a supplier's handover also fits <a href="{root}services/advisory/">strategic advisory</a>.</p>

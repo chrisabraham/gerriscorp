@@ -58,4 +58,6 @@ I build small, focused tools that prove value quickly. When a pilot needs to gro
 
 [Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
 
+A working pilot can also be reviewed as its own engagement through [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/). The accompanying [pilot test case guide](https://gerriscorp.com/guides/ai-pilot-tests/) gives your team a starting collection of checks.
+
 Updated October 15, 2026

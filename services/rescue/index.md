@@ -50,4 +50,6 @@ The site goes back onto hosting you own and control, set up properly and documen
 
 [Tell me what you inherited](https://gerriscorp.com/contact/)
 
+If you are preparing to receive a site rather than responding to an outage, the [website handover checklist](https://gerriscorp.com/guides/website-handover/) and downloadable inventory help you ask for the accounts, instructions, and evidence before the departing maintainer leaves.
+
 Updated October 5, 2026

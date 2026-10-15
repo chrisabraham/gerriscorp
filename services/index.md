@@ -7,6 +7,7 @@
 I'm the person you call when the technical side of your web presence needs someone in charge. Every engagement starts with a paid diagnostic and a clear next step, and I do the work myself, alongside your team.
 
 ## Consulting and technical direction
+- [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/): acceptance cases for a real pilot, with expected outputs, permission boundaries, failure evidence, and a clear next decision.
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
@@ -17,6 +18,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Strategic advisory and second opinions](https://gerriscorp.com/services/advisory/): advice for founders and executives on AI, search, reputation, and technology decisions.
 
 ## Search and site performance
+- [Internal linking strategy](https://gerriscorp.com/services/internal-linking/): connect services, articles, products, and case studies with contextual links and a practical implementation map.
 - [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/): traffic drops and indexing problems diagnosed with evidence and fixed with your developers.
 - [SEO engineering for Next.js, React, and headless sites](https://gerriscorp.com/services/seo-engineering/): titles, canonicals, sitemaps, redirects, and schema written as code, tested on every build, and checked on a preview before merge.
 - [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/): my signature diagnosis, for pages that look complete to visitors and empty to Google and AI crawlers.

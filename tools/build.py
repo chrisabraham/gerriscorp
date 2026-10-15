@@ -76,6 +76,11 @@ SERVICE_GROUPS = [
     ("Local, reputation, and email", ["services/multi-location/", "services/reputation/",
                                       "services/google-business-profile/", "services/email-and-dns/"]),
 ]
+# Additional services and guides, October 15, 2026.
+FILES += ['services/internal-linking', 'services/ai-workflow-testing', 'guides/ai-pilot-tests', 'guides/website-handover']
+SERVICE_GROUPS[0][1].extend(['services/ai-workflow-testing/'])
+SERVICE_GROUPS[1][1].extend(['services/internal-linking/'])
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))

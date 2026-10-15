@@ -1,0 +1,11 @@
+component,business_owner,account_identifier,administrator,billing_contact,recovery_route_reference,documentation_reference,acceptance_evidence,last_verified,open_issue,issue_owner
+Domain registration,,,,,,,Business can recover account and confirm renewal,,,
+DNS zone,,,,,,,Current records exported and record purposes identified,,,
+Code repository,,,,,,,Recorded production revision builds in a fresh workspace,,,
+Hosting and deploys,,,,,,,Receiving maintainer can publish and explain rollback,,,
+Database,,,,,,,Backup restored into an isolated test environment,,,
+Media storage,,,,,,,Original files and required public assets are accessible,,,
+Scheduled jobs,,,,,,,Job schedule and failure alert recipient verified,,,
+Forms and notifications,,,,,,,Test submission received and stored as expected,,,
+Analytics,,,,,,,Business controls reporting property and user access,,,
+Third party integrations,,,,,,,Required connections reviewed and credentials managed privately,,,
