@@ -379,7 +379,9 @@
    "pages": [
     "home",
     "services",
-    "services/ai-automation"
+    "services/ai-automation",
+    "services/ai-workflow-testing",
+    "guides/ai-pilot-tests"
    ],
    "subs": {
     "human confirmation on every action": [
@@ -404,7 +406,9 @@
      "services/ai-automation"
     ]
    },
-   "see": [],
+   "see": [
+    "AI workflow testing"
+   ],
    "main": [
     "services/ai-automation"
    ]
@@ -536,7 +540,9 @@
     "services",
     "services/data-cleanup",
     "case-studies/data-cleanup",
-    "stack"
+    "stack",
+    "services/ai-workflow-testing",
+    "guides/ai-pilot-tests"
    ],
    "subs": {},
    "see": [],
@@ -655,6 +661,50 @@
    "see": [],
    "main": []
   },
+  "AI workflow testing": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-workflow-testing",
+    "guides/ai-pilot-tests"
+   ],
+   "subs": {
+    "one job at a time": [
+     "services/ai-workflow-testing",
+     "guides/ai-pilot-tests"
+    ],
+    "representative examples": [
+     "services/ai-workflow-testing",
+     "guides/ai-pilot-tests"
+    ],
+    "defining results first": [
+     "guides/ai-pilot-tests"
+    ],
+    "deliberate failures": [
+     "guides/ai-pilot-tests"
+    ],
+    "permission boundaries": [
+     "services/ai-workflow-testing",
+     "guides/ai-pilot-tests"
+    ],
+    "evidence that outlives the session": [
+     "guides/ai-pilot-tests"
+    ],
+    "scoring separately": [
+     "guides/ai-pilot-tests"
+    ],
+    "handover": [
+     "services/ai-workflow-testing"
+    ],
+    "test case worksheet": [
+     "guides/ai-pilot-tests"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/ai-workflow-testing",
+    "guides/ai-pilot-tests"
+   ]
+  },
   "AI writing": {
    "kind": "topic",
    "pages": [
@@ -735,7 +785,8 @@
   "anchor text": {
    "kind": "topic",
    "pages": [
-    "case-studies/consent-blocking"
+    "case-studies/consent-blocking",
+    "services/internal-linking"
    ],
    "subs": {},
    "see": [],
@@ -897,7 +948,8 @@
    "kind": "topic",
    "pages": [
     "services/wordpress-care",
-    "services/ai-automation"
+    "services/ai-automation",
+    "guides/website-handover"
    ],
    "subs": {},
    "see": [],
@@ -1019,7 +1071,9 @@
     "case-studies",
     "case-studies/built-with-claude-code",
     "stack",
-    "about"
+    "about",
+    "services/ai-workflow-testing",
+    "guides/ai-pilot-tests"
    ],
    "subs": {
     "what it does": [
@@ -1558,7 +1612,21 @@
    "kind": "topic",
    "pages": [
     "guides/seo-superpower",
-    "stack"
+    "stack",
+    "about",
+    "home",
+    "colophon",
+    "services/ai-automation",
+    "standards",
+    "services",
+    "services/podcast-sites",
+    "services/ai-workflow-testing",
+    "services/data-cleanup",
+    "case-studies/netlify-migration",
+    "case-studies/built-with-claude-code",
+    "guides/ai-coding-assistants",
+    "guides/podcast-website",
+    "guides/core-web-vitals-mcp"
    ],
    "subs": {},
    "see": [],
@@ -2160,7 +2228,8 @@
     "services/technical-lead",
     "services/rescue",
     "services/site-speed",
-    "services/email-and-dns"
+    "services/email-and-dns",
+    "guides/website-handover"
    ],
    "subs": {
     "inventory before changes": [
@@ -2833,6 +2902,9 @@
    "subs": {
     "organizations": [
      "guides/hiring-developers"
+    ],
+    "repository transfers": [
+     "guides/website-handover"
     ]
    },
    "see": [],
@@ -2845,7 +2917,8 @@
    "pages": [
     "services/podcast-sites",
     "guides/seo-build-checks",
-    "guides/podcast-website"
+    "guides/podcast-website",
+    "guides/ai-pilot-tests"
    ],
    "subs": {},
    "see": [],
@@ -3199,6 +3272,22 @@
    "kind": "topic",
    "pages": [
     "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Grok": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "about",
+    "standards",
+    "stack",
+    "services/ai-workflow-testing",
+    "colophon",
+    "services/ai-automation",
+    "case-studies/built-with-claude-code"
    ],
    "subs": {},
    "see": [],
@@ -3629,11 +3718,36 @@
    "kind": "topic",
    "pages": [
     "guides/removed-location-pages",
-    "guides/seo-101"
+    "guides/seo-101",
+    "services/internal-linking"
    ],
-   "subs": {},
+   "subs": {
+    "unconnected content": [
+     "services/internal-linking"
+    ],
+    "editorial opportunities": [
+     "services/internal-linking"
+    ],
+    "site structure": [
+     "services/internal-linking"
+    ],
+    "anchor wording": [
+     "services/internal-linking"
+    ],
+    "implementation faults": [
+     "services/internal-linking"
+    ],
+    "change lists": [
+     "services/internal-linking"
+    ],
+    "acceptance": [
+     "services/internal-linking"
+    ]
+   },
    "see": [],
-   "main": []
+   "main": [
+    "services/internal-linking"
+   ]
   },
   "international SEO": {
    "kind": "topic",
@@ -4591,7 +4705,17 @@
    "kind": "topic",
    "pages": [
     "services/on-page-seo",
-    "case-studies/react-event-platform"
+    "case-studies/react-event-platform",
+    "services/internal-linking"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "OWASP excessive agency": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-pilot-tests"
    ],
    "subs": {},
    "see": [],
@@ -4783,6 +4907,16 @@
    "kind": "topic",
    "pages": [
     "guides/wordpress-behind-cloudflare"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "platform agnostic tool choice": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/ai-workflow-testing"
    ],
    "subs": {},
    "see": [],
@@ -4985,7 +5119,8 @@
     "home",
     "services",
     "services/rescue",
-    "case-studies/app-takeover"
+    "case-studies/app-takeover",
+    "guides/website-handover"
    ],
    "subs": {
     "handover review": [
@@ -5007,7 +5142,9 @@
      "services/rescue"
     ]
    },
-   "see": [],
+   "see": [
+    "website handover"
+   ],
    "main": [
     "services/rescue"
    ]
@@ -5588,7 +5725,8 @@
   "secrets in repositories": {
    "kind": "topic",
    "pages": [
-    "guides/repository-access"
+    "guides/repository-access",
+    "guides/website-handover"
    ],
    "subs": {},
    "see": [],
@@ -6876,6 +7014,42 @@
    "see": [],
    "main": []
   },
+  "website handover": {
+   "kind": "topic",
+   "pages": [
+    "guides/website-handover"
+   ],
+   "subs": {
+    "accounts behind each layer": [
+     "guides/website-handover"
+    ],
+    "proving source matches the site": [
+     "guides/website-handover"
+    ],
+    "repository transfer and access review": [
+     "guides/website-handover"
+    ],
+    "dependencies outside Git": [
+     "guides/website-handover"
+    ],
+    "restoring a backup": [
+     "guides/website-handover"
+    ],
+    "domain and email": [
+     "guides/website-handover"
+    ],
+    "one routine job": [
+     "guides/website-handover"
+    ],
+    "inventory worksheet": [
+     "guides/website-handover"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/website-handover"
+   ]
+  },
   "Where the Animals Go": {
    "kind": "topic",
    "pages": [
@@ -7032,6 +7206,16 @@
    "main": [
     "work-with-me"
    ]
+  },
+  "worksheets (CSV)": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-pilot-tests",
+    "guides/website-handover"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "WPCode": {
    "kind": "topic",
@@ -7258,6 +7442,10 @@
   "standards",
   "colophon",
   "contact",
-  "privacy"
+  "privacy",
+  "services/internal-linking",
+  "services/ai-workflow-testing",
+  "guides/ai-pilot-tests",
+  "guides/website-handover"
  ]
 }
