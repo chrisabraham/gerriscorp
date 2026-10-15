@@ -1,18 +1,20 @@
-> Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.
+> Chris Abraham diagnoses web problems, directs developers, and builds with OpenAI Codex and Claude Code. Consulting, automation, and SEO from Gerris Corp.
 >
-> Source: https://gerriscorp.com/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Experienced help for the digital work your business needs done
 
 I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when the technical side of your web presence is a mess and nobody owns it. I find out what's wrong, write the plan, direct the developers, human and AI, ship what I can myself, and explain all of it in plain English.
 
-I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
+I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with OpenAI Codex, Claude Code, and Git.
+
+OpenAI Codex and Claude Code are my main coding tools. I also work with GitHub Copilot, Gemini, and Grok, and sometimes Perplexity. I am platform agnostic: the job determines the tool, and I take responsibility for what ships.
 
 ## When to call me
 - **Nobody owns the website.** You have a developer, a few vendors, and logins scattered across old inboxes. I can be your [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 - **Your developers need a clear brief.** I turn vague complaints into [specs with acceptance criteria](https://gerriscorp.com/services/developers/) and check what ships.
 - **The project stalled.** The freelancer vanished or the agency handed over a zip file. I handle [rescues and takeovers](https://gerriscorp.com/services/rescue/).
-- **You want AI to save your team time without new risks.** I build [small, safe AI tools](https://gerriscorp.com/services/ai-automation/) with Claude Code.
+- **You want AI to save your team time without new risks.** I build [small, safe AI tools](https://gerriscorp.com/services/ai-automation/) with Codex and Claude Code.
 - **Traffic fell off a cliff.** I run [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and often find [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
 - **The site is slow or a migration is coming.** See [site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) and [migrations](https://gerriscorp.com/services/migrations/).
 - **AI assistants get your business wrong.** See [AI search visibility](https://gerriscorp.com/services/ai-search/).
@@ -46,4 +48,4 @@ Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) or call or text [+1 20
 
 [Contact me](https://gerriscorp.com/contact/) [Book a call](https://calendly.com/chrisabraham/30) [Hire me on Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 15, 2026

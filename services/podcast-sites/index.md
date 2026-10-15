@@ -1,6 +1,6 @@
 > I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 >
-> Source: https://gerriscorp.com/services/podcast-sites/ · Updated 2026-10-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/podcast-sites/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Podcast websites, built and run for you
 
@@ -11,7 +11,7 @@ Spotify, Apple, and YouTube own the pages your show appears on. I give the show 
 Search engines and AI assistants read text. A feed full of audio gives them almost nothing to work with, and the episode pages the platforms generate are thin and identical. A page per episode, carrying the full transcript, turns every hour you've recorded into something a person can find by searching for what you talked about. The platform pages also belong to the platform, and a platform can shut down a directory overnight, the way Google Podcasts closed in 2024.
 
 ## What I deliver
-- A generator, written in Python with Claude Code, that reads your feed and writes the whole site as static HTML.
+- A generator, written in Python with OpenAI Codex and Claude Code, that reads your feed and writes the whole site as static HTML.
 - Episode pages at permanent addresses, each with cover art, a player that streams from your host, the show notes, a transcript, and a glossary when an episode calls for one.
 - Search titles and descriptions for every episode, drafted with AI and reviewed by hand, and alt text for every cover.
 - PodcastSeries and PodcastEpisode structured data, a sitemap, an llms.txt file, and an RSS feed of the site.
@@ -36,10 +36,10 @@ Most shows want more than a mirror of the feed. Common additions are corrections
 
 ## Want to build it yourself?
 
-The full method is free in my guide to [building a podcast website with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/). For getting episodes found once the site exists, see [podcast SEO](https://gerriscorp.com/guides/podcast-seo/).
+The full method is free in my guide to [building a podcast website with Codex or Claude Code on GitHub Pages](https://gerriscorp.com/guides/podcast-website/). For getting episodes found once the site exists, see [podcast SEO](https://gerriscorp.com/guides/podcast-seo/).
 
 ## Engagement
 
 A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
-Updated October 14, 2026
+Updated October 15, 2026

@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -25,7 +25,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
 - [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
 - [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
-- [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
+- [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
 - [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
 - [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
@@ -81,4 +81,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 13, 2026
+Updated October 15, 2026

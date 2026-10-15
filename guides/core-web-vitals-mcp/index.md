@@ -1,12 +1,14 @@
 > How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
 >
-> Source: https://gerriscorp.com/guides/core-web-vitals-mcp/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/core-web-vitals-mcp/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Diagnosing Core Web Vitals with MCP and an AI coding assistant
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026 · Updated October 15, 2026
 
 Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.
+
+OpenAI Codex and Claude Code are my primary coding assistants for repository work. This guide keeps a Claude Code command as a concrete setup example; choose your assistant and follow its current MCP documentation before connecting browser tools.
 
 ## The three numbers you're chasing
 

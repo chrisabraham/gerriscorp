@@ -1,10 +1,12 @@
-> How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
+> How Chris Abraham directs OpenAI Codex and Claude Code, with original Claude Code builds of a tested assistant, a legacy blog migration, and this website.
 >
-> Source: https://gerriscorp.com/case-studies/built-with-claude-code/ · Updated 2026-10-07 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/case-studies/built-with-claude-code/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
-# Built with Claude Code
+# Built with Codex and Claude Code
 
 I run Claude Code the way a technical lead runs a development team: I write the requirements, make the design decisions, review every change, insist on tests, and decide what ships. These are three things built that way.
+
+OpenAI Codex and Claude Code are now my two main coding assistants. The three original builds below were done with Claude Code; ongoing work on this site also uses Codex. I use GitHub Copilot, Gemini, Grok, and sometimes Perplexity as well, choosing around the task rather than a single provider.
 
 ## Blackbox: a command-line chief of staff
 
@@ -52,4 +54,4 @@ Building software with AI coding assistants is a real skill, and the skill is mo
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 7, 2026
+Updated October 15, 2026

@@ -1,6 +1,6 @@
 > How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 >
-> Source: https://gerriscorp.com/standards/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/standards/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Editorial standards
 
@@ -16,7 +16,9 @@ When a guide says how Googlebot renders a page, how Bing treats a tag, what an R
 
 ## AI in the workflow, with a human at the end
 
-I build with AI tools every day, including Claude Code, and this site's generator and many first drafts came out of that work. The rule is simple: nothing goes live until I've read it, corrected it, and verified every factual statement. Biographical details about me come from my own records and published sources I can point to, never from what a chatbot has decided about me. The build itself refuses pages that break the house rules for titles, length, duplication, and voice.
+I also use GitHub Copilot, Gemini, Grok, and occasionally Perplexity. That range is deliberate: I work across AI platforms and apply the same editorial checks whichever one helped with a draft.
+
+I build with AI tools every day, primarily OpenAI Codex and Claude Code, and this site's generator and many first drafts came out of that work. The rule is simple: nothing goes live until I've read it, corrected it, and verified every factual statement. Biographical details about me come from my own records and published sources I can point to, never from what a chatbot has decided about me. The build itself refuses pages that break the house rules for titles, length, duplication, and voice.
 
 ## Confidentiality is part of accuracy
 
@@ -38,4 +40,4 @@ Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) with the page address 
 
 My background is on the [About page](https://gerriscorp.com/about/), how engagements run is on [Work With Me](https://gerriscorp.com/work-with-me/), and you can reach me through the [contact page](https://gerriscorp.com/contact/).
 
-Updated October 6, 2026
+Updated October 15, 2026

@@ -2,12 +2,13 @@ name: Core Web Vitals with MCP
 type: guide
 published: 2026-10-13
 sources: Chrome DevTools MCP (README) | https://github.com/ChromeDevTools/chrome-devtools-mcp ;; Chrome DevTools MCP tool reference | https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md ;; Anthropic: Connect Claude Code to tools via MCP | https://code.claude.com/docs/en/mcp ;; web.dev: Web Vitals | https://web.dev/articles/vitals ;; Google: PageSpeed Insights API | https://developers.google.com/speed/docs/insights/v5/get-started ;; Chrome for Developers: CrUX API | https://developer.chrome.com/docs/crux/api ;; Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights) | https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/
-updated: 2026-10-13
-title: Core Web Vitals with MCP: Chrome DevTools, Claude Code, CrUX
+updated: 2026-10-15
+title: Diagnose Core Web Vitals with MCP and AI coding assistants
 description: How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.
 ---
 <h1>Diagnosing Core Web Vitals with MCP and an AI coding assistant</h1>
 <p class="lead">Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.</p>
+<p>OpenAI Codex and Claude Code are my primary coding assistants for repository work. This guide keeps a Claude Code command as a concrete setup example; choose your assistant and follow its current MCP documentation before connecting browser tools.</p>
 
 <h2>The three numbers you're chasing</h2>
 <p>Core Web Vitals measure loading, responsiveness, and visual stability. Google's web.dev thresholds for a good experience are a Largest Contentful Paint within 2.5 seconds, an Interaction to Next Paint of 200 milliseconds or less, and a Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of page loads on mobile and desktop separately. A page passes when it meets all three. The <a href="{root}guides/core-web-vitals/">Core Web Vitals guide</a> explains each metric and its usual causes; this guide is about the tooling.</p>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Core Web Vitals with MCP: Chrome DevTools, Claude Code, CrUX</title>
+<title>Diagnose Core Web Vitals with MCP and AI coding assistants</title>
 <meta name="description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.">
 <meta name="keywords" content="Core Web Vitals with MCP, SEO guide, Gerris Corp, Chris Abraham">
 <link rel="canonical" href="https://gerriscorp.com/guides/core-web-vitals-mcp/">
@@ -46,7 +46,7 @@
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Core Web Vitals with MCP: Chrome DevTools, Claude Code, CrUX">
+<meta property="og:title" content="Diagnose Core Web Vitals with MCP and AI coding assistants">
 <meta property="og:description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.">
 <meta property="og:url" content="https://gerriscorp.com/guides/core-web-vitals-mcp/">
 <meta property="og:image" content="https://gerriscorp.com/social-card.png">
@@ -54,10 +54,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Gerris logo, a sketched water strider">
 <meta property="article:published_time" content="2026-10-13">
-<meta property="article:modified_time" content="2026-10-13">
+<meta property="article:modified_time" content="2026-10-15">
 <meta property="article:author" content="https://chrisabraham.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Core Web Vitals with MCP: Chrome DevTools, Claude Code, CrUX">
+<meta name="twitter:title" content="Diagnose Core Web Vitals with MCP and AI coding assistants">
 <meta name="twitter:description" content="How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.">
 <meta name="twitter:image" content="https://gerriscorp.com/social-card.png">
 <style>
@@ -151,7 +151,7 @@ dd { margin: .2rem 0 0 0; }
    "url": "https://gerriscorp.com/",
    "logo": "https://gerriscorp.com/logo.png",
    "image": "https://gerriscorp.com/social-card.png",
-   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
    "foundingDate": "2012",
    "founder": {
     "@id": "https://chrisabraham.com/#person"
@@ -227,7 +227,12 @@ dd { margin: .2rem 0 0 0; }
     "Technical consulting",
     "Developer specifications",
     "AI-assisted software development",
+    "OpenAI Codex",
     "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
     "Git",
     "Linux server administration",
     "Technical SEO",
@@ -588,13 +593,18 @@ dd { margin: .2rem 0 0 0; }
      "@type": "Country",
      "name": "United States"
     },
-    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+    "skills": "Technical SEO, developer specifications, OpenAI Codex, Claude Code, GitHub Copilot, Git, Linux, Cloudflare, migrations, AI search"
    },
    "knowsAbout": [
     "Technical consulting",
     "Developer specifications",
     "AI-assisted software development",
+    "OpenAI Codex",
     "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
     "Git",
     "Linux server administration",
     "Technical SEO",
@@ -658,7 +668,7 @@ dd { margin: .2rem 0 0 0; }
    "@type": "WebPage",
    "@id": "https://gerriscorp.com/guides/core-web-vitals-mcp/#webpage",
    "url": "https://gerriscorp.com/guides/core-web-vitals-mcp/",
-   "name": "Core Web Vitals with MCP: Chrome DevTools, Claude Code, CrUX",
+   "name": "Diagnose Core Web Vitals with MCP and AI coding assistants",
    "description": "How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.",
    "isPartOf": {
     "@id": "https://gerriscorp.com/#website"
@@ -668,7 +678,7 @@ dd { margin: .2rem 0 0 0; }
    },
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "dateModified": "2026-10-13",
+   "dateModified": "2026-10-15",
    "author": {
     "@id": "https://chrisabraham.com/#person"
    },
@@ -716,10 +726,10 @@ dd { margin: .2rem 0 0 0; }
     "@id": "https://gerriscorp.com/#org"
    },
    "datePublished": "2026-10-13",
-   "dateModified": "2026-10-13",
+   "dateModified": "2026-10-15",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 1045,
+   "wordCount": 1083,
    "citation": [
     {
      "@type": "CreativeWork",
@@ -786,8 +796,9 @@ dd { margin: .2rem 0 0 0; }
 <p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Core Web Vitals with MCP</p>
 <main id="main">
 <h1>Diagnosing Core Web Vitals with MCP and an AI coding assistant</h1>
-<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time></p>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-13">October 13, 2026</time> · Updated <time datetime="2026-10-15">October 15, 2026</time></p>
 <p class="lead">Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.</p>
+<p>OpenAI Codex and Claude Code are my primary coding assistants for repository work. This guide keeps a Claude Code command as a concrete setup example; choose your assistant and follow its current MCP documentation before connecting browser tools.</p>
 
 <h2>The three numbers you're chasing</h2>
 <p>Core Web Vitals measure loading, responsiveness, and visual stability. Google's web.dev thresholds for a good experience are a Largest Contentful Paint within 2.5 seconds, an Interaction to Next Paint of 200 milliseconds or less, and a Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of page loads on mobile and desktop separately. A page passes when it meets all three. The <a href="../../guides/core-web-vitals/">Core Web Vitals guide</a> explains each metric and its usual causes; this guide is about the tooling.</p>

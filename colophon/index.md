@@ -1,6 +1,6 @@
 > How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
 >
-> Source: https://gerriscorp.com/colophon/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/colophon/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Colophon
 
@@ -19,6 +19,8 @@ Oliver's second round of sketches, dated October 25, 2012, set four ideas over t
 The look borrows from the classic Plone theme I've used for my own sites for two decades: tabbed navigation, slate blue links, and nothing between the reader and the words. Body text is black Verdana at 18 pixels for legibility. The accent colors, a burnt orange for the name, a blue for page titles, and a teal for section heads, were each darkened until they pass the WCAG contrast standard against white.
 
 ## How it's built
+
+OpenAI Codex and Claude Code now share the work of maintaining and improving this site under my direction. I also use GitHub Copilot, Gemini, Grok, and sometimes Perplexity. The original terminal build described below was done with Claude Code.
 
 Every page starts as a plain HTML file. A small Python program reads them, wraps each in the shared header and footer, and writes the finished site: pages, a Markdown copy of each page for AI tools, XML and HTML sitemaps, an Atom feed, llms.txt, and redirect pages for more than 400 addresses from the old gerriscorp.com. Before anything is published, the same program checks every page: title and description lengths, one heading per page, minimum word counts, first person singular, no copied phrasing between pages, and no broken internal links. If a page fails, nothing ships.
 
@@ -39,4 +41,4 @@ The code and content live in a public repository: [github.com/chrisabraham/gerri
 
 Links to books and gear on Amazon carry my Amazon Associates tag. As an Amazon Associate I earn from qualifying purchases.
 
-Updated October 6, 2026
+Updated October 15, 2026

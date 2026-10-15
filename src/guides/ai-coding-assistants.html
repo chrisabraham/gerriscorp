@@ -1,13 +1,13 @@
 name: AI Coding Assistants for Websites
 type: guide
 published: 2026-10-06
-sources: Anthropic: Claude Code overview | https://docs.anthropic.com/en/docs/claude-code/overview
-updated: 2026-10-06
+sources: OpenAI: Codex for code generation | https://developers.openai.com/api/docs/guides/code-generation ;; Anthropic: Claude Code overview | https://docs.anthropic.com/en/docs/claude-code/overview
+updated: 2026-10-15
 title: How to use AI coding assistants on a website safely
-description: A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+description: A practical workflow for OpenAI Codex, Claude Code, and GitHub Copilot on business websites: written specs, project context, automated checks, and human review.
 ---
 <h1>How to use AI coding assistants on a business website safely</h1>
-<p class="lead">AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.</p>
+<p class="lead">AI coding assistants such as OpenAI Codex, Claude Code, GitHub Copilot, and Cursor can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.</p>
 
 <h2>Start with a written spec</h2>
 <p>An assistant does exactly what it understands you to want, at full speed. Before any code, write down the goal, the constraints, and what done looks like. "Move the blog to the new platform" is a wish. A spec says: every old URL keeps working or redirects to its closest match, titles and dates carry over, images are copied and not hotlinked, the build fails if any internal link points to a missing page, and nothing ships until the redirect list has been checked. The assistant can help draft this, and a person decides it.</p>
@@ -50,4 +50,4 @@ description: A working method for using Claude Code and other AI coding assistan
 <h2>Someone has to be accountable</h2>
 <p>The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.</p>
 
-<p class="related">See how this site and other projects were built in the <a href="{root}case-studies/built-with-claude-code/">Claude Code case study</a>, and what I build for clients under <a href="{root}services/ai-automation/">AI tools and automation</a> and <a href="{root}services/technical-lead/">fractional technical lead</a>.</p>
+<p class="related">See how this site and other projects were built in the <a href="{root}case-studies/built-with-claude-code/">Codex and Claude Code case study</a>, and what I build for clients under <a href="{root}services/ai-automation/">AI tools and automation</a> and <a href="{root}services/technical-lead/">fractional technical lead</a>.</p>

@@ -236,7 +236,7 @@ dd { margin: .2rem 0 0 0; }
 }
 """.strip()
 
-KNOWS = ["Technical consulting", "Developer specifications", "AI-assisted software development", "Claude Code",
+KNOWS = ["Technical consulting", "Developer specifications", "AI-assisted software development", "OpenAI Codex", "Claude Code", "GitHub Copilot", "Gemini", "Grok", "Perplexity",
          "Git", "Linux server administration", "Technical SEO", "JavaScript SEO", "Indexing",
          "Website migrations", "301 redirects", "Core Web Vitals", "Cloudflare", "Structured data",
          "Answer engine optimization", "Generative engine optimization", "llms.txt",
@@ -257,7 +257,7 @@ HOME = {"@type": "Place", "@id": SITE + "#place", "name": "South Arlington, Arli
 ORG = {
     "@type": "ProfessionalService", "@id": SITE + "#org", "name": "Gerris Corp",
     "alternateName": ["Gerris"], "url": SITE, "logo": SITE + "logo.png", "image": SITE + "social-card.png",
-    "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+    "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
     "foundingDate": "2012", "founder": {"@id": AUTHOR}, "employee": {"@id": AUTHOR},
     "slogan": "Experienced help for the digital work your business needs done",
     "email": EMAIL, "telephone": "+1-202-352-5051",
@@ -286,7 +286,7 @@ PERSON = {
     "nationality": {"@type": "Country", "name": "United States"}, "knowsLanguage": "en",
     "hasOccupation": {"@type": "Occupation", "name": "Technical consultant and technical SEO specialist",
                       "occupationLocation": {"@type": "Country", "name": "United States"},
-                      "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"},
+                      "skills": "Technical SEO, developer specifications, OpenAI Codex, Claude Code, GitHub Copilot, Git, Linux, Cloudflare, migrations, AI search"},
     "knowsAbout": KNOWS,
     "email": EMAIL, "telephone": "+1-202-352-5051",
     "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/", "https://mastodon.social/@chrisa",

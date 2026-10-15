@@ -148,7 +148,7 @@ dd { margin: .2rem 0 0 0; }
    "url": "https://gerriscorp.com/",
    "logo": "https://gerriscorp.com/logo.png",
    "image": "https://gerriscorp.com/social-card.png",
-   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
    "foundingDate": "2012",
    "founder": {
     "@id": "https://chrisabraham.com/#person"
@@ -224,7 +224,12 @@ dd { margin: .2rem 0 0 0; }
     "Technical consulting",
     "Developer specifications",
     "AI-assisted software development",
+    "OpenAI Codex",
     "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
     "Git",
     "Linux server administration",
     "Technical SEO",
@@ -585,13 +590,18 @@ dd { margin: .2rem 0 0 0; }
      "@type": "Country",
      "name": "United States"
     },
-    "skills": "Technical SEO, developer specifications, Claude Code, Git, Linux, Cloudflare, migrations, AI search"
+    "skills": "Technical SEO, developer specifications, OpenAI Codex, Claude Code, GitHub Copilot, Git, Linux, Cloudflare, migrations, AI search"
    },
    "knowsAbout": [
     "Technical consulting",
     "Developer specifications",
     "AI-assisted software development",
+    "OpenAI Codex",
     "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
     "Git",
     "Linux server administration",
     "Technical SEO",
@@ -665,7 +675,7 @@ dd { margin: .2rem 0 0 0; }
    },
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "dateModified": "2026-10-06",
+   "dateModified": "2026-10-15",
    "author": {
     "@id": "https://chrisabraham.com/#person"
    },
@@ -738,6 +748,7 @@ dd { margin: .2rem 0 0 0; }
 <p>The look borrows from the classic Plone theme I've used for my own sites for two decades: tabbed navigation, slate blue links, and nothing between the reader and the words. Body text is black Verdana at 18 pixels for legibility. The accent colors, a burnt orange for the name, a blue for page titles, and a teal for section heads, were each darkened until they pass the WCAG contrast standard against white.</p>
 
 <h2>How it's built</h2>
+<p>OpenAI Codex and Claude Code now share the work of maintaining and improving this site under my direction. I also use GitHub Copilot, Gemini, Grok, and sometimes Perplexity. The original terminal build described below was done with Claude Code.</p>
 <p>Every page starts as a plain HTML file. A small Python program reads them, wraps each in the shared header and footer, and writes the finished site: pages, a Markdown copy of each page for AI tools, XML and HTML sitemaps, an Atom feed, llms.txt, and redirect pages for more than 400 addresses from the old gerriscorp.com. Before anything is published, the same program checks every page: title and description lengths, one heading per page, minimum word counts, first person singular, no copied phrasing between pages, and no broken internal links. If a page fails, nothing ships.</p>
 <p>The site was written and built in a terminal, over SSH from a ThinkPad X220 to a Linux server at DigitalOcean, working alongside Claude Code, Anthropic's AI coding assistant. I set the requirements, made the editorial calls, and checked every fact; the assistant wrote code and drafts to my direction. <a href="../standards/">The editorial standards</a> describe how that division of labor works.</p>
 
@@ -754,7 +765,7 @@ dd { margin: .2rem 0 0 0; }
 <h2>Source</h2>
 <p>The code and content live in a public repository: <a href="https://github.com/chrisabraham/gerriscorp">github.com/chrisabraham/gerriscorp</a>. The site went live on October 5, 2026.</p>
 <p>Links to books and gear on Amazon carry my Amazon Associates tag. As an Amazon Associate I earn from qualifying purchases.</p>
-<p class="updated">Updated <time datetime="2026-10-06">October 6, 2026</time></p>
+<p class="updated">Updated <time datetime="2026-10-15">October 15, 2026</time></p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>

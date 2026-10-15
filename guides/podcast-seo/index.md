@@ -1,10 +1,10 @@
 > How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.
 >
-> Source: https://gerriscorp.com/guides/podcast-seo/ · Updated 2026-10-08 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/podcast-seo/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Podcast SEO: get every episode found in Google and AI search
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026 · Updated October 15, 2026
 
 Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.
 
@@ -42,7 +42,7 @@ People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a 
 
 ## Own the property
 
-Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is [how to build one with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/).
+Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is [how to build one with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/).
 
 Starting from scratch? Read [what it really takes to start a podcast for your brand](https://gerriscorp.com/guides/podcast-for-your-brand/), or [ask me to look at your show's search visibility](https://gerriscorp.com/contact/).
 

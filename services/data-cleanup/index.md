@@ -1,6 +1,6 @@
 > Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
 >
-> Source: https://gerriscorp.com/services/data-cleanup/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/data-cleanup/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Data cleanup and AI-output audits
 
@@ -39,8 +39,8 @@ Yes. Data stays in your accounts or on encrypted storage I control for the durat
 
 Usually I export, clean, and re-import with your approval at each step, which keeps a record of every change. Direct in-CRM cleanup is possible when the CRM supports it safely.
 
-**Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
+**Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 
 [Send me the messy spreadsheet](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 15, 2026

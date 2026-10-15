@@ -8,6 +8,416 @@
   <lastBuildDate>Thu, 15 Oct 2026 12:00:00 +0000</lastBuildDate>
   <atom:link href="https://gerriscorp.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>Diagnosing Core Web Vitals with MCP and an AI coding assistant</title>
+    <link>https://gerriscorp.com/guides/core-web-vitals-mcp/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/core-web-vitals-mcp/</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+    <description>How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.</description>
+    <content:encoded>&lt;h1&gt;Diagnosing Core Web Vitals with MCP and an AI coding assistant&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.&lt;/p&gt;
+&lt;p&gt;OpenAI Codex and Claude Code are my primary coding assistants for repository work. This guide keeps a Claude Code command as a concrete setup example; choose your assistant and follow its current MCP documentation before connecting browser tools.&lt;/p&gt;
+
+&lt;h2&gt;The three numbers you're chasing&lt;/h2&gt;
+&lt;p&gt;Core Web Vitals measure loading, responsiveness, and visual stability. Google's web.dev thresholds for a good experience are a Largest Contentful Paint within 2.5 seconds, an Interaction to Next Paint of 200 milliseconds or less, and a Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of page loads on mobile and desktop separately. A page passes when it meets all three. The &lt;a href="https://gerriscorp.com/guides/core-web-vitals/"&gt;Core Web Vitals guide&lt;/a&gt; explains each metric and its usual causes; this guide is about the tooling.&lt;/p&gt;
+
+&lt;h2&gt;What MCP adds&lt;/h2&gt;
+&lt;p&gt;MCP is a standard way for an AI assistant to call outside tools. An MCP server wraps a tool, such as a browser or a crawler, and the assistant can ask it to do things and read back the results. In Claude Code, you register a server with &lt;code&gt;claude mcp add&lt;/code&gt;, and its tools become available in the session. The assistant still needs you to tell it what to look at and to check its conclusions, but the tedious loop of test, read, and search the code collapses into one conversation.&lt;/p&gt;
+
+&lt;h2&gt;Chrome DevTools MCP: lab traces on demand&lt;/h2&gt;
+&lt;p&gt;Google's Chrome DevTools MCP server gives an assistant control of a real Chrome browser and the DevTools performance panel. Its documented setup for Claude Code is a single command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The tools that matter for Core Web Vitals:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;performance_start_trace&lt;/strong&gt; and &lt;strong&gt;performance_stop_trace&lt;/strong&gt; record a trace, optionally reloading the page and bypassing the cache to measure a cold load. The tool is described as finding frontend performance issues and Core Web Vitals.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;performance_analyze_insight&lt;/strong&gt; opens a specific finding from the trace, such as the LCP breakdown, which shows where the time before the largest element appeared actually went.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;emulate&lt;/strong&gt; throttles the CPU and network, with presets from Slow 3G to Fast 4G, and sets a mobile viewport, so a fast desktop doesn't hide a slow phone experience.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;list_console_messages&lt;/strong&gt; and &lt;strong&gt;list_network_requests&lt;/strong&gt; show errors and the heaviest resources.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;lighthouse_audit&lt;/strong&gt; runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the &lt;code&gt;--no-performance-crux&lt;/code&gt; flag turns that off. And Google collects usage statistics from the server by default, which &lt;code&gt;--no-usage-statistics&lt;/code&gt; disables.&lt;/p&gt;
+
+&lt;h2&gt;Real user data: CrUX, and a change to PageSpeed Insights&lt;/h2&gt;
+&lt;p&gt;A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.&lt;/p&gt;
+&lt;p&gt;One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.&lt;/p&gt;
+
+&lt;h2&gt;Screaming Frog: every template, not one page&lt;/h2&gt;
+&lt;p&gt;Traces are for depth. For breadth, Screaming Frog's PageSpeed Insights integration, under Configuration &amp;gt; API Access &amp;gt; PageSpeed Insights, pulls Lighthouse metrics and opportunities for every URL during a crawl. It can also run Lighthouse locally, which avoids the API's daily query limit but has no CrUX data.&lt;/p&gt;
+&lt;p&gt;Screaming Frog version 24 also runs as an MCP server, so an assistant can start crawls and read reports and bulk exports directly. It's a paid licence feature and needs database storage mode. Optional tools let the assistant run Node.js scripts, and they're off until you enable them in the MCP server settings.&lt;/p&gt;
+&lt;p&gt;The combination is where the time savings live: crawl every URL, group the slow ones by template, trace one representative page per template, and fix the template once.&lt;/p&gt;
+
+&lt;h2&gt;A working session, step by step&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Start from field data.&lt;/strong&gt; Check the Core Web Vitals report in Search Console or the CrUX API to see which metric fails and on which group of pages.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pick representative URLs,&lt;/strong&gt; one per failing template.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trace each on emulated mobile.&lt;/strong&gt; Ask the assistant to throttle to a mid-range phone and record a cold load.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Read the insight, then the code.&lt;/strong&gt; For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Test on a preview.&lt;/strong&gt; Trace the same page on the branch's preview deployment and compare.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Confirm in the field.&lt;/strong&gt; CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Where to keep a hand on the wheel&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Lab is not field.&lt;/strong&gt; A trace on a developer's machine, even throttled, is one sample. Treat it as a diagnosis and judge the outcome by field data.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Check every proposed fix.&lt;/strong&gt; An assistant can suggest deferring a script that the page needs, or a preload that competes with the real LCP image. Measure before and after.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mind what the browser can see.&lt;/strong&gt; The DevTools server's own documentation warns that it exposes the browser's content to the assistant. Use a separate browser profile, never one signed in to anything sensitive.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;INP needs interaction.&lt;/strong&gt; A page load trace says little about responsiveness. Have the assistant click, type, and open menus during a trace, and compare with field INP.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class="related"&gt;This is how I run speed work on code based sites as part of &lt;a href="https://gerriscorp.com/services/site-speed/"&gt;site speed and Core Web Vitals&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt;. For the habits that keep an AI assistant safe in a client codebase, see &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;using AI coding assistants on a business website&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://github.com/ChromeDevTools/chrome-devtools-mcp"&gt;Chrome DevTools MCP (README)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md"&gt;Chrome DevTools MCP tool reference&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://code.claude.com/docs/en/mcp"&gt;Anthropic: Connect Claude Code to tools via MCP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://web.dev/articles/vitals"&gt;web.dev: Web Vitals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/speed/docs/insights/v5/get-started"&gt;Google: PageSpeed Insights API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developer.chrome.com/docs/crux/api"&gt;Chrome for Developers: CrUX API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/"&gt;Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>Repositories plus super intelligence: the SEO superpower nobody told you to learn</title>
+    <link>https://gerriscorp.com/guides/seo-superpower/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/seo-superpower/</guid>
+    <pubDate>Sun, 11 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Repositories and AI coding assistants help SEOs ship fixes. How Git, OpenAI Codex, Claude Code, and GitHub Copilot connect search findings to changes in code.</description>
+    <content:encoded>&lt;h1&gt;Repositories plus super intelligence: the SEO superpower nobody told you to learn&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-11"&gt;October 11, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;On September 29, 2026, President Trump signed an executive order replacing "Artificial Intelligence" with "Super Intelligence" across the executive branch. Call it AI, SI, or a very fast intern; for anyone in SEO, the name matters less than what it does when you pair it with the other half of the equation: the code repository. Git plus a capable coding assistant is a real superpower. It takes you far outside the confines of being a Yoast monkey or a Screaming Frog jockey.&lt;/p&gt;
+
+&lt;h2&gt;Half one: the repository&lt;/h2&gt;
+&lt;p&gt;Every serious website now lives in version control, almost always Git, which Linus Torvalds and the Linux kernel community built in 2005 after losing free use of their previous tool. Before Git, teams used CVS and then Subversion. Today the code sits on GitHub, GitLab, or Bitbucket, and every change arrives as a commit, gets proposed as a pull request, is reviewed, and can be rolled back.&lt;/p&gt;
+&lt;p&gt;For SEO, that means the things you care about are files. Title patterns, canonical logic, hreflang, structured data, redirects, robots rules, sitemaps, internal linking modules, and lazy loading behavior are all written down somewhere in the repository. If you can't read it, you're guessing about it from the outside.&lt;/p&gt;
+
+&lt;h2&gt;Half two: super intelligence that reads code&lt;/h2&gt;
+&lt;p&gt;Coding assistants have moved past autocomplete. GitHub says Copilot can now answer questions about a repository, plan and make changes, run tests in a cloud environment, and review pull requests. Anthropic's Claude Code does the same from a terminal, and OpenAI Codex helps write, review, and debug code. Point one at a codebase and ask where the canonical tag comes from, and it will find the component, the function feeding it, and the edge case that breaks it, in minutes.&lt;/p&gt;
+
+&lt;h2&gt;Why each half fails alone&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;A repository without AI&lt;/strong&gt; is a wall of unfamiliar code. Most SEOs never get past the folder list, so they file a ticket and wait.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AI without a repository&lt;/strong&gt; is copy and paste from a chat window: snippets with no history, no review, and no way to know whether the fix ever shipped or what else it broke.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Together,&lt;/strong&gt; the assistant reads and drafts, Git records and protects, and the SEO supplies the one thing neither has: knowing what search engines and AI answer engines actually need.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;What the superpower looks like in practice&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Diagnosis down to the line.&lt;/strong&gt; A crawl tells you product pages render 300 words. The repository tells you a scroll triggered component never mounts for a crawler. I found exactly that once, and it's the difference between "Google doesn't like the page" and a fix a developer can ship the same day. The details are in my &lt;a href="https://gerriscorp.com/guides/javascript-seo/"&gt;JavaScript SEO guide&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Migrations with receipts.&lt;/strong&gt; Redirect maps written as config, tested against the old URL list before launch, and reviewed like any other code.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fixes at template scale.&lt;/strong&gt; One pull request repairs every page built from that template, today and in the future.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Your own tools.&lt;/strong&gt; I direct OpenAI Codex and Claude Code like a small development team; Claude Code built me a command line assistant with a full test suite, moved a legacy blog off dead software, and built this website. &lt;a href="https://gerriscorp.com/case-studies/built-with-claude-code/"&gt;See my Codex and Claude Code workflow.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;How to start, if you're an SEO&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Learn six Git words:&lt;/strong&gt; clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ask for read access&lt;/strong&gt; to a client's repository. Read only is an easy yes for most teams.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Have the assistant give you the tour.&lt;/strong&gt; Ask it to explain the structure, where templates live, and where every SEO element is generated.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Make your first pull request tiny,&lt;/strong&gt; such as a title pattern or a missing canonical, and let the developer review it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Write the rules down&lt;/strong&gt; in a project memory file and turn them into automated checks, so the assistant follows them every time.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Check everything.&lt;/strong&gt; The assistant is confidently wrong often enough that verification is the job. My method for doing this safely is in &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;how to use AI coding assistants on a business website&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;What this means for your business&lt;/h2&gt;
+&lt;p&gt;If you run a company with a website, the question to ask your SEO is no longer whether they know the plugin. It's whether they can read the code and send a pull request. An SEO with both halves of the superpower costs you fewer developer hours, finds the cause, and leaves a reviewed history of every change.&lt;/p&gt;
+
+&lt;h2&gt;Hire the superpower&lt;/h2&gt;
+&lt;p&gt;This is how I work every day: in the repository, through pull requests, with super intelligence doing the heavy reading under my direction and my name on the result. I can be your &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt;, turn a diagnosis into &lt;a href="https://gerriscorp.com/services/developers/"&gt;developer ready specs&lt;/a&gt; and verify they shipped, or &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;build you small AI tools safely&lt;/a&gt;. &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about your site&lt;/a&gt; and I'll tell you what the code is doing to your search visibility.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.openai.com/api/docs/guides/code-generation"&gt;OpenAI: Codex for code generation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/"&gt;The White House: Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence (September 29, 2026)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git"&gt;Git: A short history of Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://code.claude.com/docs/en/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"&gt;GitHub Docs: GitHub Copilot on GitHub.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare</title>
+    <link>https://gerriscorp.com/guides/podcast-website/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-website/</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Build a podcast website with OpenAI Codex or Claude Code, GitHub Pages, and Cloudflare: a page for every episode, stable links, and daily feed updates.</description>
+    <content:encoded>&lt;h1&gt;Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Codex or Claude Code does the typing.&lt;/p&gt;
+
+&lt;h2&gt;What you end up with&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;One page per episode, at an address that never changes, with the cover art, the player, the show notes, and the transcript.&lt;/li&gt;
+  &lt;li&gt;A home page that features the newest episode, an archive of every episode, and an about page with every place to subscribe.&lt;/li&gt;
+  &lt;li&gt;Structured data, a sitemap, and descriptions written for search engines and AI assistants.&lt;/li&gt;
+  &lt;li&gt;A daily job that reads your podcast feed and adds new episodes on its own.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The audio stays with your host. Each player streams from the address in your feed, so the host still counts every play and your download numbers stay whole.&lt;/p&gt;
+
+&lt;h2&gt;Step 1: register the domain at cost&lt;/h2&gt;
+&lt;p&gt;Cloudflare Registrar sells domains at the wholesale price the registry charges, plus the ICANN fee, with no markup on renewals. Privacy for the registration record comes included. A .com runs about ten dollars a year. The catch is that the domain must use Cloudflare's DNS, which suits this setup anyway. Pick a name that matches the show exactly, and register it before you announce anything.&lt;/p&gt;
+
+&lt;h2&gt;Step 2: have Codex or Claude Code build the generator&lt;/h2&gt;
+&lt;p&gt;OpenAI Codex and Claude Code are coding assistants I use to work directly with project files. Describe the site to either assistant, then have it draft the code, run the build, and work through the errors under your review. The prompt that matters most names your feed and your rules. A good one reads close to this:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Build a static site from this podcast RSS feed, one page per episode, in Python. Keep each episode's address forever once it's assigned. Cache the cover art and transcripts in the repository, never the audio. Use the feed's audio URL exactly as given. Give every page a unique title near 60 characters and a description near 155. Add PodcastEpisode structured data and a sitemap.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of a show with a few hundred episodes takes an afternoon, most of it spent downloading artwork.&lt;/p&gt;
+
+&lt;h2&gt;Step 3: publish on GitHub Pages&lt;/h2&gt;
+&lt;p&gt;GitHub Pages hosts static sites free from a public repository. Published sites can be up to 1 GB, with a soft limit of 100 GB of traffic a month, which covers a podcast site comfortably because the audio never touches it. Put a file named &lt;code&gt;CNAME&lt;/code&gt; containing your domain in the repository, and turn on Pages for the main branch.&lt;/p&gt;
+
+&lt;h2&gt;Step 4: point the domain, then turn on HTTPS&lt;/h2&gt;
+&lt;p&gt;In Cloudflare's DNS, add the four GitHub Pages A records and four AAAA records for the bare domain, and a CNAME for www pointing at your github.io address. Leave every record set to DNS only, the gray cloud, while GitHub issues the certificate. When the "Enforce HTTPS" box in the repository's Pages settings becomes clickable, tick it. If the certificate never starts, remove the custom domain in the Pages settings and add it again; GitHub skips the request when the domain was saved before its DNS existed.&lt;/p&gt;
+
+&lt;h2&gt;Step 5: make it run itself&lt;/h2&gt;
+&lt;p&gt;Ask your coding assistant for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Keepalive.&lt;/strong&gt; GitHub disables scheduled workflows in public repositories after 60 days without activity. A step that re-enables the workflow through the GitHub API on every run keeps the schedule alive through a quiet season.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Late transcripts.&lt;/strong&gt; Hosts often add transcripts days after an episode goes up. Recheck every episode that lacks one, on every run.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A sanity check.&lt;/strong&gt; If the feed suddenly lists far fewer episodes than the site has, stop and publish nothing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Step 6: tell the search engines&lt;/h2&gt;
+&lt;p&gt;Add the site to Google Search Console and Bing Webmaster Tools and submit the sitemap. Wire in IndexNow so Bing and the other engines that share it hear about each new episode the morning it appears. Put the site's address in your podcast host's settings, too, so Apple and Spotify link listeners back to it.&lt;/p&gt;
+
+&lt;h2&gt;What it costs&lt;/h2&gt;
+&lt;p&gt;The domain is the recurring site cost in this setup; hosting, HTTPS, and the daily job fit within the free allowances described above. Budget separately for whichever coding assistant you use. Check its current plan and usage limits before starting.&lt;/p&gt;
+
+&lt;h2&gt;Where AI saves the most time&lt;/h2&gt;
+&lt;p&gt;The generator itself is routine code. The slow parts are the judgment calls: a title that reads well at 60 characters, a description for an episode whose notes are two words, alt text for hundreds of cover images. An assistant drafts those in minutes, and you spend your time reviewing instead of typing. For the working method, specs, review, and keeping secrets out of the repository, see &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;how to use AI coding assistants on a website safely&lt;/a&gt;. For the DNS side, see &lt;a href="https://gerriscorp.com/guides/cloudflare-seo/"&gt;Cloudflare settings that help or hurt SEO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Want this built for your show, or for any feed you publish? &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about it&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.openai.com/api/docs/guides/code-generation"&gt;OpenAI: Codex for code generation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"&gt;GitHub Docs: GitHub Pages limits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site"&gt;GitHub Docs: Managing a custom domain for your GitHub Pages site&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.cloudflare.com/registrar/"&gt;Cloudflare Docs: Cloudflare Registrar&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow"&gt;GitHub Docs: Disabling and enabling a workflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.anthropic.com/en/docs/claude-code/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>Podcast SEO: get every episode found in Google and AI search</title>
+    <link>https://gerriscorp.com/guides/podcast-seo/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-seo/</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.</description>
+    <content:encoded>&lt;h1&gt;Podcast SEO: get every episode found in Google and AI search&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.&lt;/p&gt;
+
+&lt;h2&gt;Give every episode its own page&lt;/h2&gt;
+&lt;p&gt;One episode, one address, forever. The page carries the title, the date, the running time, the cover art, a player, the full show notes, and links to listen in the major apps. Keep the address stable even if you later edit the title on your host, because every link and every search ranking points to that address.&lt;/p&gt;
+&lt;p&gt;The player can stream straight from the audio file listed in your feed. The host keeps counting downloads, and your page keeps the search value.&lt;/p&gt;
+
+&lt;h2&gt;Put the transcript in the HTML&lt;/h2&gt;
+&lt;p&gt;The transcript is the single biggest SEO asset a podcast has: thousands of words, in your own phrasing, on exactly the topics you know. Most hosts now generate transcripts automatically. Publish the text on the episode page as real HTML. A collapsible section is fine, since the text is still in the page, and it keeps the player and notes near the top. A transcript hidden inside a player widget or a downloadable file is invisible to search.&lt;/p&gt;
+
+&lt;h2&gt;Write titles and descriptions for searchers&lt;/h2&gt;
+&lt;p&gt;Episode titles written for loyal listeners, like inside jokes or bare episode numbers, mean something only to regulars. Each page needs a title tag of about 60 characters that says what the episode covers, and a meta description of about 150 that a searcher would click. The on-page heading can stay playful. Write a unique pair for every episode; duplicate titles across hundreds of pages are a common reason an archive underperforms.&lt;/p&gt;
+
+&lt;h2&gt;Mark it up with schema&lt;/h2&gt;
+&lt;p&gt;Schema.org has types built for this. Mark each page as a &lt;code&gt;PodcastEpisode&lt;/code&gt; with its name, date, duration, description, and image, link the audio as an &lt;code&gt;AudioObject&lt;/code&gt;, and connect every episode to one &lt;code&gt;PodcastSeries&lt;/code&gt; on the home page with links to the show on each platform. Season and episode numbers have their own properties too. This is how search engines and AI systems learn that hundreds of pages belong to one show by one host.&lt;/p&gt;
+
+&lt;h2&gt;Describe your cover art&lt;/h2&gt;
+&lt;p&gt;Custom covers per episode help in image search and social shares, but only if the alt text says what each image shows. Describe the picture in a sentence, quote any words that appear in it, and skip the "image of" lead-in. Screen reader users and text-only browsers get a caption; search engines get context.&lt;/p&gt;
+
+&lt;h2&gt;Get indexed quickly&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Sitemap:&lt;/strong&gt; list every episode page with its date, and submit it in Google Search Console and Bing Webmaster Tools.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IndexNow:&lt;/strong&gt; ping Bing and the other participating engines the moment a new episode page goes live.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Internal links:&lt;/strong&gt; link each episode to the previous and next ones, and keep a full archive page, so crawlers can reach the whole catalog.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Feed link:&lt;/strong&gt; put your site's address in your host's show settings, so the apps link listeners back to it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Make it readable by AI assistants&lt;/h2&gt;
+&lt;p&gt;People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a podcast said about something. Those systems quote pages they can read. Allow their crawlers in robots.txt, keep the text in plain HTML, and consider an &lt;code&gt;llms.txt&lt;/code&gt; file that lists every episode with a link. See &lt;a href="https://gerriscorp.com/guides/ai-assistants/"&gt;how AI assistants find and describe a business&lt;/a&gt; for the wider picture.&lt;/p&gt;
+
+&lt;h2&gt;Own the property&lt;/h2&gt;
+&lt;p&gt;Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how to build one with Codex or Claude Code, GitHub Pages, and Cloudflare&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Starting from scratch? Read &lt;a href="https://gerriscorp.com/guides/podcast-for-your-brand/"&gt;what it really takes to start a podcast for your brand&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;ask me to look at your show's search visibility&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://schema.org/PodcastEpisode"&gt;Schema.org: PodcastEpisode&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/google-images"&gt;Google Search Central: Image SEO best practices&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"&gt;Google Search Central: Build and submit a sitemap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.indexnow.org/"&gt;IndexNow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>Starting a podcast to build your brand: what it really takes</title>
+    <link>https://gerriscorp.com/guides/podcast-for-your-brand/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-for-your-brand/</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.</description>
+    <content:encoded>&lt;h1&gt;Starting a podcast to build your brand: what it really takes&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A podcast puts a founder's or an expert's actual voice in someone's ears for half an hour, by choice, while they drive or walk the dog. Few marketing channels earn that much attention. I recommend one to every client with something to say, along with a warning: the hard part is showing up, week after week, for a year.&lt;/p&gt;
+
+&lt;h2&gt;What a podcast does for a brand&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Trust at scale.&lt;/strong&gt; Listeners hear how you think, how you handle a tangent, and what makes you laugh. By the time they call, they already know you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A searchable record of expertise.&lt;/strong&gt; Every episode, with its notes and transcript, becomes evidence that you know your subject, for prospects, for search engines, and for the AI assistants people now ask about you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Raw material.&lt;/strong&gt; One recording becomes show notes, an article, social clips, a newsletter item, and a transcript full of quotable lines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;The real cost is commitment&lt;/h2&gt;
+&lt;p&gt;A podcast rewards consistency long before it rewards polish. Pick a rhythm you can keep for a year, weekly or every other week, and protect it on the calendar like a client meeting. Many shows stop after a handful of episodes, so simply continuing puts you ahead of a crowd. Growth is slow, and the archive is the asset: the fiftieth episode makes the first forty-nine easier to find.&lt;/p&gt;
+
+&lt;h2&gt;A pocket recorder or a phone is enough&lt;/h2&gt;
+&lt;p&gt;A small digital voice recorder, the kind &lt;a href="https://www.amazon.com/dp/B082QL6KLG?tag=gerris-20" rel="sponsored noopener"&gt;Sony sells&lt;/a&gt; for less than a nice dinner (I record on a Sony ICD-UX570), records clean audio, fits in a jacket pocket, and charges from a plain USB port. Buy two or three and keep one in every bag, so an idea never waits for the studio. A smartphone held close in a quiet room works just as well. A carpeted bedroom beats an echoing kitchen with an expensive microphone every time.&lt;/p&gt;
+&lt;p&gt;Noise used to be the reason people bought gear. Adobe Podcast's Enhance Speech, which has a free version, now takes a noisy recording and brings it close to studio quality in a minute or two. Audacity, free on every computer, handles the edit: trim the false starts and the long pauses, and leave the personality in.&lt;/p&gt;
+
+&lt;h2&gt;Hosting and distribution are free&lt;/h2&gt;
+&lt;p&gt;A podcast host stores the audio and publishes the RSS feed that every app reads. Spotify for Creators, formerly Anchor, hosts shows free, publishes them on Spotify, and gives you the feed to list on Apple Podcasts and every other directory. Record on whatever you carry, upload the file, write the notes, schedule it, and every app picks it up.&lt;/p&gt;
+
+&lt;h2&gt;YouTube is a separate channel&lt;/h2&gt;
+&lt;p&gt;YouTube can import an audio podcast from its RSS feed, but it turns each episode into a video over a still image, and those videos live only on YouTube and YouTube Music. YouTube audiences expect faces, cuts, and visuals, and they discover shows through YouTube's own recommendations. Treat it as its own channel with its own effort, and keep publishing the audio feed everywhere else.&lt;/p&gt;
+
+&lt;h2&gt;Spend money on the parts that repeat&lt;/h2&gt;
+&lt;p&gt;An intro, an outro, and the show's main cover art appear on every episode, so they repay a professional. Freelancers on Fiverr produce all three for a modest fee. For individual episodes, ChatGPT turns a title and a mood into a custom cover in minutes, and a distinct cover per episode makes each one easier to spot in a feed and easier to share.&lt;/p&gt;
+
+&lt;h2&gt;Let AI clear away the chores&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Cleanup:&lt;/strong&gt; AI enhancement rescues recordings made in imperfect rooms.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Transcripts:&lt;/strong&gt; hosts and apps generate them automatically. Publish them, because they make every episode searchable.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Show notes:&lt;/strong&gt; paste the transcript into an assistant, ask for a summary, chapter points, and a title, then edit for your voice.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cover art:&lt;/strong&gt; an image model gives every episode its own look.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;New formats:&lt;/strong&gt; Google's NotebookLM turns notes or an episode into a two-host audio discussion, an easy bonus episode for listeners who enjoy that style.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your opinions stay yours. AI removes the busywork that makes people skip a week, and skipped weeks are what end shows.&lt;/p&gt;
+
+&lt;h2&gt;Own a home for it&lt;/h2&gt;
+&lt;p&gt;Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read &lt;a href="https://gerriscorp.com/guides/podcast-seo/"&gt;how to get every episode found in Google and AI search&lt;/a&gt;, and &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how to build the site with Codex or Claude Code and GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Want help turning a show into search visibility for your brand? &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As an Amazon Associate I earn from qualifying purchases.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://creators.spotify.com/"&gt;Spotify for Creators&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://podcast.adobe.com/enhance"&gt;Adobe Podcast: Enhance Speech&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.audacityteam.org/"&gt;Audacity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://support.google.com/youtube/answer/13525207"&gt;YouTube Help: Deliver podcasts using an RSS feed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://notebooklm.google.com/"&gt;Google NotebookLM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
+    <title>How to use AI coding assistants on a business website safely</title>
+    <link>https://gerriscorp.com/guides/ai-coding-assistants/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/ai-coding-assistants/</guid>
+    <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A practical workflow for OpenAI Codex, Claude Code, and GitHub Copilot on business websites: written specs, project context, automated checks, and human review.</description>
+    <content:encoded>&lt;h1&gt;How to use AI coding assistants on a business website safely&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-15"&gt;October 15, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;AI coding assistants such as OpenAI Codex, Claude Code, GitHub Copilot, and Cursor can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.&lt;/p&gt;
+
+&lt;h2&gt;Start with a written spec&lt;/h2&gt;
+&lt;p&gt;An assistant does exactly what it understands you to want, at full speed. Before any code, write down the goal, the constraints, and what done looks like. "Move the blog to the new platform" is a wish. A spec says: every old URL keeps working or redirects to its closest match, titles and dates carry over, images are copied and not hotlinked, the build fails if any internal link points to a missing page, and nothing ships until the redirect list has been checked. The assistant can help draft this, and a person decides it.&lt;/p&gt;
+
+&lt;h2&gt;Give the project a memory&lt;/h2&gt;
+&lt;p&gt;Claude Code reads a &lt;code&gt;CLAUDE.md&lt;/code&gt; file at the start of every session, and other tools have their own equivalents. Put the things that must never be forgotten there: the build command, the deploy process, the voice rules for copy, the files that must never be committed, the decisions already made and why. This site's project file holds its style rules and a list of names that must never appear on the site. The assistant reads it every time; a new contractor would need the same briefing.&lt;/p&gt;
+
+&lt;h2&gt;Turn the rules into checks&lt;/h2&gt;
+&lt;p&gt;Instructions get forgotten. Automated checks don't. Every rule that can be tested by a script should be. The build for this site refuses to finish if a page title falls outside 50 to 60 characters, if a meta description is the wrong length, if two pages share a title, if any page links to one that doesn't exist, or if two pages share too much of their wording. When the assistant writes a new page, the build tells it what's wrong before I ever see the draft. The same approach works for any site: link checkers, HTML validators, accessibility tests, and unit tests for anything with logic in it.&lt;/p&gt;
+
+&lt;h2&gt;Small changes, reviewed&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Use version control.&lt;/strong&gt; Every change goes through Git, on a branch, so anything can be undone and every change can be read as a diff.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keep each change small enough to read.&lt;/strong&gt; A change that touches three files gets reviewed properly. One that touches three hundred gets skimmed.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Read the diff, not the summary.&lt;/strong&gt; An assistant's description of what it changed is a claim. The diff is the evidence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Watch for scope creep.&lt;/strong&gt; Assistants like to tidy things nobody asked them to touch. Reject unrelated changes and ask again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Keep secrets and production out of reach&lt;/h2&gt;
+&lt;p&gt;Never paste passwords, API keys, or customer data into a conversation, and never commit them to a repository. Give the assistant access to a copy of the site, a staging environment, or a local build, and keep deploys to production a deliberate human step, or an automated pipeline that runs only after the checks pass. For anything destructive, such as deleting files, rewriting history, or changing DNS, require explicit confirmation every time. Inventory the DNS records before touching any of them; a careless change can stop a company's email.&lt;/p&gt;
+
+&lt;h2&gt;Verify against the real world&lt;/h2&gt;
+&lt;p&gt;Assistants are well read and out of date in places. They'll describe a platform setting that moved last year, or a search feature Google retired, with total confidence. For anything that depends on a third party's current behavior, check the vendor's documentation or test it directly. After deploying, check the live result: fetch the pages, test the redirects with &lt;code&gt;curl&lt;/code&gt;, run PageSpeed Insights, and look at the page in a browser. "The code looks right" isn't the same as "the site works."&lt;/p&gt;
+
+&lt;h2&gt;Where assistants are strongest&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Bulk, rule-based work.&lt;/strong&gt; Building a redirect map from hundreds of old URLs, rewriting templates across a site, generating structured data from page content, converting content between platforms.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Audits at scale.&lt;/strong&gt; Checking every page for missing titles, broken links, duplicate descriptions, or images without alt text, then fixing them.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Small internal tools.&lt;/strong&gt; Scripts that pull reports, clean exports, or automate a weekly chore.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Explaining unfamiliar code.&lt;/strong&gt; Reading an inherited theme or plugin and describing what it actually does.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Where to slow down&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Judgment calls.&lt;/strong&gt; Which pages to merge, which claims a page should make, what a client would or wouldn't want public. The assistant can propose; a person decides.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security and payments.&lt;/strong&gt; Authentication, checkout, and anything handling personal data needs an expert review regardless of who wrote it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Long sessions.&lt;/strong&gt; As a conversation grows, early instructions carry less weight. Restate the important rules, or keep them in the project memory file where they're read fresh.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Someone has to be accountable&lt;/h2&gt;
+&lt;p&gt;The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.&lt;/p&gt;
+
+&lt;p class="related"&gt;See how this site and other projects were built in the &lt;a href="https://gerriscorp.com/case-studies/built-with-claude-code/"&gt;Codex and Claude Code case study&lt;/a&gt;, and what I build for clients under &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;AI tools and automation&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.openai.com/api/docs/guides/code-generation"&gt;OpenAI: Codex for code generation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.anthropic.com/en/docs/claude-code/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
     <title>Glossary of SEO, AI search, and technical website terms</title>
     <link>https://gerriscorp.com/guides/glossary/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/glossary/</guid>
@@ -1161,84 +1571,6 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;/aside&gt;</content:encoded>
   </item>
   <item>
-    <title>Diagnosing Core Web Vitals with MCP and an AI coding assistant</title>
-    <link>https://gerriscorp.com/guides/core-web-vitals-mcp/</link>
-    <guid isPermaLink="true">https://gerriscorp.com/guides/core-web-vitals-mcp/</guid>
-    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
-    <description>How to diagnose LCP, INP, and CLS with an AI coding assistant through MCP: Chrome DevTools traces, real user CrUX data, and Screaming Frog at scale.</description>
-    <content:encoded>&lt;h1&gt;Diagnosing Core Web Vitals with MCP and an AI coding assistant&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-13"&gt;October 13, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.&lt;/p&gt;
-
-&lt;h2&gt;The three numbers you're chasing&lt;/h2&gt;
-&lt;p&gt;Core Web Vitals measure loading, responsiveness, and visual stability. Google's web.dev thresholds for a good experience are a Largest Contentful Paint within 2.5 seconds, an Interaction to Next Paint of 200 milliseconds or less, and a Cumulative Layout Shift of 0.1 or less, measured at the 75th percentile of page loads on mobile and desktop separately. A page passes when it meets all three. The &lt;a href="https://gerriscorp.com/guides/core-web-vitals/"&gt;Core Web Vitals guide&lt;/a&gt; explains each metric and its usual causes; this guide is about the tooling.&lt;/p&gt;
-
-&lt;h2&gt;What MCP adds&lt;/h2&gt;
-&lt;p&gt;MCP is a standard way for an AI assistant to call outside tools. An MCP server wraps a tool, such as a browser or a crawler, and the assistant can ask it to do things and read back the results. In Claude Code, you register a server with &lt;code&gt;claude mcp add&lt;/code&gt;, and its tools become available in the session. The assistant still needs you to tell it what to look at and to check its conclusions, but the tedious loop of test, read, and search the code collapses into one conversation.&lt;/p&gt;
-
-&lt;h2&gt;Chrome DevTools MCP: lab traces on demand&lt;/h2&gt;
-&lt;p&gt;Google's Chrome DevTools MCP server gives an assistant control of a real Chrome browser and the DevTools performance panel. Its documented setup for Claude Code is a single command:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The tools that matter for Core Web Vitals:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;performance_start_trace&lt;/strong&gt; and &lt;strong&gt;performance_stop_trace&lt;/strong&gt; record a trace, optionally reloading the page and bypassing the cache to measure a cold load. The tool is described as finding frontend performance issues and Core Web Vitals.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;performance_analyze_insight&lt;/strong&gt; opens a specific finding from the trace, such as the LCP breakdown, which shows where the time before the largest element appeared actually went.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;emulate&lt;/strong&gt; throttles the CPU and network, with presets from Slow 3G to Fast 4G, and sets a mobile viewport, so a fast desktop doesn't hide a slow phone experience.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;list_console_messages&lt;/strong&gt; and &lt;strong&gt;list_network_requests&lt;/strong&gt; show errors and the heaviest resources.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;lighthouse_audit&lt;/strong&gt; runs Lighthouse for accessibility, SEO, and best practices. Its documentation notes that it excludes performance, which is what the trace tools are for.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Two settings are worth knowing. The performance tools can send the traced URL to Google's CrUX API to show real user data beside the lab result; the &lt;code&gt;--no-performance-crux&lt;/code&gt; flag turns that off. And Google collects usage statistics from the server by default, which &lt;code&gt;--no-usage-statistics&lt;/code&gt; disables.&lt;/p&gt;
-
-&lt;h2&gt;Real user data: CrUX, and a change to PageSpeed Insights&lt;/h2&gt;
-&lt;p&gt;A lab trace shows one load on one machine. Search uses field data from real Chrome users, collected in the Chrome UX Report. The CrUX API returns that data for a page or a whole origin, with a Google Cloud API key set up for it.&lt;/p&gt;
-&lt;p&gt;One change to plan around: Google's PageSpeed Insights API documentation says Google plans to stop including CrUX real user data in that API, and recommends the CrUX API or the CrUX History API instead. Any script or dashboard that pulls field data from PageSpeed Insights should move now.&lt;/p&gt;
-
-&lt;h2&gt;Screaming Frog: every template, not one page&lt;/h2&gt;
-&lt;p&gt;Traces are for depth. For breadth, Screaming Frog's PageSpeed Insights integration, under Configuration &amp;gt; API Access &amp;gt; PageSpeed Insights, pulls Lighthouse metrics and opportunities for every URL during a crawl. It can also run Lighthouse locally, which avoids the API's daily query limit but has no CrUX data.&lt;/p&gt;
-&lt;p&gt;Screaming Frog version 24 also runs as an MCP server, so an assistant can start crawls and read reports and bulk exports directly. It's a paid licence feature and needs database storage mode. Optional tools let the assistant run Node.js scripts, and they're off until you enable them in the MCP server settings.&lt;/p&gt;
-&lt;p&gt;The combination is where the time savings live: crawl every URL, group the slow ones by template, trace one representative page per template, and fix the template once.&lt;/p&gt;
-
-&lt;h2&gt;A working session, step by step&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Start from field data.&lt;/strong&gt; Check the Core Web Vitals report in Search Console or the CrUX API to see which metric fails and on which group of pages.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Pick representative URLs,&lt;/strong&gt; one per failing template.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Trace each on emulated mobile.&lt;/strong&gt; Ask the assistant to throttle to a mid-range phone and record a cold load.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Read the insight, then the code.&lt;/strong&gt; For a slow LCP, the breakdown shows whether the time goes to the server, to fetching the hero image, or to rendering. With the repository open, the assistant can find the component that loads the image and propose a change, such as preloading it or removing its lazy loading.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Test on a preview.&lt;/strong&gt; Trace the same page on the branch's preview deployment and compare.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Confirm in the field.&lt;/strong&gt; CrUX data is a rolling 28 day window, so real user numbers improve gradually after release.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2&gt;Where to keep a hand on the wheel&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Lab is not field.&lt;/strong&gt; A trace on a developer's machine, even throttled, is one sample. Treat it as a diagnosis and judge the outcome by field data.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Check every proposed fix.&lt;/strong&gt; An assistant can suggest deferring a script that the page needs, or a preload that competes with the real LCP image. Measure before and after.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Mind what the browser can see.&lt;/strong&gt; The DevTools server's own documentation warns that it exposes the browser's content to the assistant. Use a separate browser profile, never one signed in to anything sensitive.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;INP needs interaction.&lt;/strong&gt; A page load trace says little about responsiveness. Have the assistant click, type, and open menus during a trace, and compare with field INP.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class="related"&gt;This is how I run speed work on code based sites as part of &lt;a href="https://gerriscorp.com/services/site-speed/"&gt;site speed and Core Web Vitals&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt;. For the habits that keep an AI assistant safe in a client codebase, see &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;using AI coding assistants on a business website&lt;/a&gt;.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul class="sources"&gt;
-  &lt;li&gt;&lt;a href="https://github.com/ChromeDevTools/chrome-devtools-mcp"&gt;Chrome DevTools MCP (README)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/tool-reference.md"&gt;Chrome DevTools MCP tool reference&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://code.claude.com/docs/en/mcp"&gt;Anthropic: Connect Claude Code to tools via MCP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://web.dev/articles/vitals"&gt;web.dev: Web Vitals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://developers.google.com/speed/docs/insights/v5/get-started"&gt;Google: PageSpeed Insights API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://developer.chrome.com/docs/crux/api"&gt;Chrome for Developers: CrUX API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/"&gt;Screaming Frog: SEO Spider configuration (MCP server and PageSpeed Insights)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content:encoded>
-  </item>
-  <item>
     <title>How to vet an AI vendor's pitch before you sign anything</title>
     <link>https://gerriscorp.com/guides/ai-vendor-pitch/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/ai-vendor-pitch/</guid>
@@ -1420,71 +1752,6 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;a href="https://www.indexnow.org/documentation"&gt;IndexNow protocol documentation&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://www.indexnow.org/faq"&gt;IndexNow frequently asked questions&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/ai-features"&gt;Google guidance for AI search features&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content:encoded>
-  </item>
-  <item>
-    <title>Repositories plus super intelligence: the SEO superpower nobody told you to learn</title>
-    <link>https://gerriscorp.com/guides/seo-superpower/</link>
-    <guid isPermaLink="true">https://gerriscorp.com/guides/seo-superpower/</guid>
-    <pubDate>Sun, 11 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Repositories plus AI coding assistants turn an SEO from plugin operator into someone who ships fixes. Why SEOs need Git, Claude Code, and Copilot now.</description>
-    <content:encoded>&lt;h1&gt;Repositories plus super intelligence: the SEO superpower nobody told you to learn&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-11"&gt;October 11, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;On September 29, 2026, President Trump signed an executive order replacing "Artificial Intelligence" with "Super Intelligence" across the executive branch. Call it AI, SI, or a very fast intern; for anyone in SEO, the name matters less than what it does when you pair it with the other half of the equation: the code repository. Git plus a capable coding assistant is a real superpower. It takes you far outside the confines of being a Yoast monkey or a Screaming Frog jockey.&lt;/p&gt;
-
-&lt;h2&gt;Half one: the repository&lt;/h2&gt;
-&lt;p&gt;Every serious website now lives in version control, almost always Git, which Linus Torvalds and the Linux kernel community built in 2005 after losing free use of their previous tool. Before Git, teams used CVS and then Subversion. Today the code sits on GitHub, GitLab, or Bitbucket, and every change arrives as a commit, gets proposed as a pull request, is reviewed, and can be rolled back.&lt;/p&gt;
-&lt;p&gt;For SEO, that means the things you care about are files. Title patterns, canonical logic, hreflang, structured data, redirects, robots rules, sitemaps, internal linking modules, and lazy loading behavior are all written down somewhere in the repository. If you can't read it, you're guessing about it from the outside.&lt;/p&gt;
-
-&lt;h2&gt;Half two: super intelligence that reads code&lt;/h2&gt;
-&lt;p&gt;Coding assistants have moved past autocomplete. GitHub says Copilot can now answer questions about a repository, plan and make changes, run tests in a cloud environment, and review pull requests. Anthropic's Claude Code does the same from a terminal, and OpenAI offers Codex alongside ChatGPT. Point one at a codebase and ask where the canonical tag comes from, and it will find the component, the function feeding it, and the edge case that breaks it, in minutes.&lt;/p&gt;
-
-&lt;h2&gt;Why each half fails alone&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;A repository without AI&lt;/strong&gt; is a wall of unfamiliar code. Most SEOs never get past the folder list, so they file a ticket and wait.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;AI without a repository&lt;/strong&gt; is copy and paste from a chat window: snippets with no history, no review, and no way to know whether the fix ever shipped or what else it broke.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Together,&lt;/strong&gt; the assistant reads and drafts, Git records and protects, and the SEO supplies the one thing neither has: knowing what search engines and AI answer engines actually need.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;What the superpower looks like in practice&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Diagnosis down to the line.&lt;/strong&gt; A crawl tells you product pages render 300 words. The repository tells you a scroll triggered component never mounts for a crawler. I found exactly that once, and it's the difference between "Google doesn't like the page" and a fix a developer can ship the same day. The details are in my &lt;a href="https://gerriscorp.com/guides/javascript-seo/"&gt;JavaScript SEO guide&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Migrations with receipts.&lt;/strong&gt; Redirect maps written as config, tested against the old URL list before launch, and reviewed like any other code.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fixes at template scale.&lt;/strong&gt; One pull request repairs every page built from that template, today and in the future.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Your own tools.&lt;/strong&gt; I direct Claude Code like a small development team; it has built me a command line assistant with a full test suite, moved a legacy blog off dead software, and built this website. &lt;a href="https://gerriscorp.com/case-studies/built-with-claude-code/"&gt;See what I built with Claude Code.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;How to start, if you're an SEO&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Learn six Git words:&lt;/strong&gt; clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Ask for read access&lt;/strong&gt; to a client's repository. Read only is an easy yes for most teams.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Have the assistant give you the tour.&lt;/strong&gt; Ask it to explain the structure, where templates live, and where every SEO element is generated.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Make your first pull request tiny,&lt;/strong&gt; such as a title pattern or a missing canonical, and let the developer review it.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Write the rules down&lt;/strong&gt; in a project memory file and turn them into automated checks, so the assistant follows them every time.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Check everything.&lt;/strong&gt; The assistant is confidently wrong often enough that verification is the job. My method for doing this safely is in &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;how to use AI coding assistants on a business website&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2&gt;What this means for your business&lt;/h2&gt;
-&lt;p&gt;If you run a company with a website, the question to ask your SEO is no longer whether they know the plugin. It's whether they can read the code and send a pull request. An SEO with both halves of the superpower costs you fewer developer hours, finds the cause, and leaves a reviewed history of every change.&lt;/p&gt;
-
-&lt;h2&gt;Hire the superpower&lt;/h2&gt;
-&lt;p&gt;This is how I work every day: in the repository, through pull requests, with super intelligence doing the heavy reading under my direction and my name on the result. I can be your &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt;, turn a diagnosis into &lt;a href="https://gerriscorp.com/services/developers/"&gt;developer ready specs&lt;/a&gt; and verify they shipped, or &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;build you small AI tools safely&lt;/a&gt;. &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about your site&lt;/a&gt; and I'll tell you what the code is doing to your search visibility.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul class="sources"&gt;
-  &lt;li&gt;&lt;a href="https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/"&gt;The White House: Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence (September 29, 2026)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git"&gt;Git: A short history of Git&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://code.claude.com/docs/en/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"&gt;GitHub Docs: GitHub Copilot on GitHub.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
@@ -1826,202 +2093,6 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;a href="https://developers.cloudflare.com/bots/concepts/bot/verified-bots/"&gt;Cloudflare Docs: Verified bots&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developers.cloudflare.com/cache/"&gt;Cloudflare Docs: Cache&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro"&gt;Google Search Central: Introduction to robots.txt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content:encoded>
-  </item>
-  <item>
-    <title>Build a podcast website with Claude Code, GitHub Pages, and Cloudflare</title>
-    <link>https://gerriscorp.com/guides/podcast-website/</link>
-    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-website/</guid>
-    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.</description>
-    <content:encoded>&lt;h1&gt;Build a podcast website with Claude Code, GitHub Pages, and Cloudflare&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Claude Code does the typing.&lt;/p&gt;
-
-&lt;h2&gt;What you end up with&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;One page per episode, at an address that never changes, with the cover art, the player, the show notes, and the transcript.&lt;/li&gt;
-  &lt;li&gt;A home page that features the newest episode, an archive of every episode, and an about page with every place to subscribe.&lt;/li&gt;
-  &lt;li&gt;Structured data, a sitemap, and descriptions written for search engines and AI assistants.&lt;/li&gt;
-  &lt;li&gt;A daily job that reads your podcast feed and adds new episodes on its own.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The audio stays with your host. Each player streams from the address in your feed, so the host still counts every play and your download numbers stay whole.&lt;/p&gt;
-
-&lt;h2&gt;Step 1: register the domain at cost&lt;/h2&gt;
-&lt;p&gt;Cloudflare Registrar sells domains at the wholesale price the registry charges, plus the ICANN fee, with no markup on renewals. Privacy for the registration record comes included. A .com runs about ten dollars a year. The catch is that the domain must use Cloudflare's DNS, which suits this setup anyway. Pick a name that matches the show exactly, and register it before you announce anything.&lt;/p&gt;
-
-&lt;h2&gt;Step 2: let Claude Code build the generator&lt;/h2&gt;
-&lt;p&gt;Claude Code is an AI coding assistant that runs in your terminal and works directly in a folder of files. You describe the site; it writes the code, runs it, reads the errors, and fixes them. The prompt that matters most names your feed and your rules. A good one reads close to this:&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;Build a static site from this podcast RSS feed, one page per episode, in Python. Keep each episode's address forever once it's assigned. Cache the cover art and transcripts in the repository, never the audio. Use the feed's audio URL exactly as given. Give every page a unique title near 60 characters and a description near 155. Add PodcastEpisode structured data and a sitemap.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of a show with a few hundred episodes takes an afternoon, most of it spent downloading artwork.&lt;/p&gt;
-
-&lt;h2&gt;Step 3: publish on GitHub Pages&lt;/h2&gt;
-&lt;p&gt;GitHub Pages hosts static sites free from a public repository. Published sites can be up to 1 GB, with a soft limit of 100 GB of traffic a month, which covers a podcast site comfortably because the audio never touches it. Put a file named &lt;code&gt;CNAME&lt;/code&gt; containing your domain in the repository, and turn on Pages for the main branch.&lt;/p&gt;
-
-&lt;h2&gt;Step 4: point the domain, then turn on HTTPS&lt;/h2&gt;
-&lt;p&gt;In Cloudflare's DNS, add the four GitHub Pages A records and four AAAA records for the bare domain, and a CNAME for www pointing at your github.io address. Leave every record set to DNS only, the gray cloud, while GitHub issues the certificate. When the "Enforce HTTPS" box in the repository's Pages settings becomes clickable, tick it. If the certificate never starts, remove the custom domain in the Pages settings and add it again; GitHub skips the request when the domain was saved before its DNS existed.&lt;/p&gt;
-
-&lt;h2&gt;Step 5: make it run itself&lt;/h2&gt;
-&lt;p&gt;Ask Claude Code for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Keepalive.&lt;/strong&gt; GitHub disables scheduled workflows in public repositories after 60 days without activity. A step that re-enables the workflow through the GitHub API on every run keeps the schedule alive through a quiet season.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Late transcripts.&lt;/strong&gt; Hosts often add transcripts days after an episode goes up. Recheck every episode that lacks one, on every run.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;A sanity check.&lt;/strong&gt; If the feed suddenly lists far fewer episodes than the site has, stop and publish nothing.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Step 6: tell the search engines&lt;/h2&gt;
-&lt;p&gt;Add the site to Google Search Console and Bing Webmaster Tools and submit the sitemap. Wire in IndexNow so Bing and the other engines that share it hear about each new episode the morning it appears. Put the site's address in your podcast host's settings, too, so Apple and Spotify link listeners back to it.&lt;/p&gt;
-
-&lt;h2&gt;What it costs&lt;/h2&gt;
-&lt;p&gt;The domain is the only bill. Hosting, HTTPS, and the daily job run free. Claude Code comes with Anthropic's paid plans, starting with Pro, which is plenty for a build like this.&lt;/p&gt;
-
-&lt;h2&gt;Where AI saves the most time&lt;/h2&gt;
-&lt;p&gt;The generator itself is routine code. The slow parts are the judgment calls: a title that reads well at 60 characters, a description for an episode whose notes are two words, alt text for hundreds of cover images. An assistant drafts those in minutes, and you spend your time reviewing instead of typing. For the working method, specs, review, and keeping secrets out of the repository, see &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;how to use AI coding assistants on a website safely&lt;/a&gt;. For the DNS side, see &lt;a href="https://gerriscorp.com/guides/cloudflare-seo/"&gt;Cloudflare settings that help or hurt SEO&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Want this built for your show, or for any feed you publish? &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about it&lt;/a&gt;.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul class="sources"&gt;
-  &lt;li&gt;&lt;a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"&gt;GitHub Docs: GitHub Pages limits&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site"&gt;GitHub Docs: Managing a custom domain for your GitHub Pages site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://developers.cloudflare.com/registrar/"&gt;Cloudflare Docs: Cloudflare Registrar&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow"&gt;GitHub Docs: Disabling and enabling a workflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.anthropic.com/en/docs/claude-code/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content:encoded>
-  </item>
-  <item>
-    <title>Podcast SEO: get every episode found in Google and AI search</title>
-    <link>https://gerriscorp.com/guides/podcast-seo/</link>
-    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-seo/</guid>
-    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
-    <description>How to make podcast episodes findable in Google, Bing, and AI answers: episode pages on your own domain, transcripts in the HTML, schema, and alt text.</description>
-    <content:encoded>&lt;h1&gt;Podcast SEO: get every episode found in Google and AI search&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.&lt;/p&gt;
-
-&lt;h2&gt;Give every episode its own page&lt;/h2&gt;
-&lt;p&gt;One episode, one address, forever. The page carries the title, the date, the running time, the cover art, a player, the full show notes, and links to listen in the major apps. Keep the address stable even if you later edit the title on your host, because every link and every search ranking points to that address.&lt;/p&gt;
-&lt;p&gt;The player can stream straight from the audio file listed in your feed. The host keeps counting downloads, and your page keeps the search value.&lt;/p&gt;
-
-&lt;h2&gt;Put the transcript in the HTML&lt;/h2&gt;
-&lt;p&gt;The transcript is the single biggest SEO asset a podcast has: thousands of words, in your own phrasing, on exactly the topics you know. Most hosts now generate transcripts automatically. Publish the text on the episode page as real HTML. A collapsible section is fine, since the text is still in the page, and it keeps the player and notes near the top. A transcript hidden inside a player widget or a downloadable file is invisible to search.&lt;/p&gt;
-
-&lt;h2&gt;Write titles and descriptions for searchers&lt;/h2&gt;
-&lt;p&gt;Episode titles written for loyal listeners, like inside jokes or bare episode numbers, mean something only to regulars. Each page needs a title tag of about 60 characters that says what the episode covers, and a meta description of about 150 that a searcher would click. The on-page heading can stay playful. Write a unique pair for every episode; duplicate titles across hundreds of pages are a common reason an archive underperforms.&lt;/p&gt;
-
-&lt;h2&gt;Mark it up with schema&lt;/h2&gt;
-&lt;p&gt;Schema.org has types built for this. Mark each page as a &lt;code&gt;PodcastEpisode&lt;/code&gt; with its name, date, duration, description, and image, link the audio as an &lt;code&gt;AudioObject&lt;/code&gt;, and connect every episode to one &lt;code&gt;PodcastSeries&lt;/code&gt; on the home page with links to the show on each platform. Season and episode numbers have their own properties too. This is how search engines and AI systems learn that hundreds of pages belong to one show by one host.&lt;/p&gt;
-
-&lt;h2&gt;Describe your cover art&lt;/h2&gt;
-&lt;p&gt;Custom covers per episode help in image search and social shares, but only if the alt text says what each image shows. Describe the picture in a sentence, quote any words that appear in it, and skip the "image of" lead-in. Screen reader users and text-only browsers get a caption; search engines get context.&lt;/p&gt;
-
-&lt;h2&gt;Get indexed quickly&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Sitemap:&lt;/strong&gt; list every episode page with its date, and submit it in Google Search Console and Bing Webmaster Tools.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;IndexNow:&lt;/strong&gt; ping Bing and the other participating engines the moment a new episode page goes live.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Internal links:&lt;/strong&gt; link each episode to the previous and next ones, and keep a full archive page, so crawlers can reach the whole catalog.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Feed link:&lt;/strong&gt; put your site's address in your host's show settings, so the apps link listeners back to it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Make it readable by AI assistants&lt;/h2&gt;
-&lt;p&gt;People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a podcast said about something. Those systems quote pages they can read. Allow their crawlers in robots.txt, keep the text in plain HTML, and consider an &lt;code&gt;llms.txt&lt;/code&gt; file that lists every episode with a link. See &lt;a href="https://gerriscorp.com/guides/ai-assistants/"&gt;how AI assistants find and describe a business&lt;/a&gt; for the wider picture.&lt;/p&gt;
-
-&lt;h2&gt;Own the property&lt;/h2&gt;
-&lt;p&gt;Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how to build one with Claude Code, GitHub Pages, and Cloudflare&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Starting from scratch? Read &lt;a href="https://gerriscorp.com/guides/podcast-for-your-brand/"&gt;what it really takes to start a podcast for your brand&lt;/a&gt;, or &lt;a href="https://gerriscorp.com/contact/"&gt;ask me to look at your show's search visibility&lt;/a&gt;.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul class="sources"&gt;
-  &lt;li&gt;&lt;a href="https://schema.org/PodcastEpisode"&gt;Schema.org: PodcastEpisode&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/google-images"&gt;Google Search Central: Image SEO best practices&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"&gt;Google Search Central: Build and submit a sitemap&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.indexnow.org/"&gt;IndexNow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content:encoded>
-  </item>
-  <item>
-    <title>Starting a podcast to build your brand: what it really takes</title>
-    <link>https://gerriscorp.com/guides/podcast-for-your-brand/</link>
-    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-for-your-brand/</guid>
-    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
-    <description>What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.</description>
-    <content:encoded>&lt;h1&gt;Starting a podcast to build your brand: what it really takes&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-08"&gt;October 8, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;A podcast puts a founder's or an expert's actual voice in someone's ears for half an hour, by choice, while they drive or walk the dog. Few marketing channels earn that much attention. I recommend one to every client with something to say, along with a warning: the hard part is showing up, week after week, for a year.&lt;/p&gt;
-
-&lt;h2&gt;What a podcast does for a brand&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Trust at scale.&lt;/strong&gt; Listeners hear how you think, how you handle a tangent, and what makes you laugh. By the time they call, they already know you.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;A searchable record of expertise.&lt;/strong&gt; Every episode, with its notes and transcript, becomes evidence that you know your subject, for prospects, for search engines, and for the AI assistants people now ask about you.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Raw material.&lt;/strong&gt; One recording becomes show notes, an article, social clips, a newsletter item, and a transcript full of quotable lines.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;The real cost is commitment&lt;/h2&gt;
-&lt;p&gt;A podcast rewards consistency long before it rewards polish. Pick a rhythm you can keep for a year, weekly or every other week, and protect it on the calendar like a client meeting. Many shows stop after a handful of episodes, so simply continuing puts you ahead of a crowd. Growth is slow, and the archive is the asset: the fiftieth episode makes the first forty-nine easier to find.&lt;/p&gt;
-
-&lt;h2&gt;A pocket recorder or a phone is enough&lt;/h2&gt;
-&lt;p&gt;A small digital voice recorder, the kind &lt;a href="https://www.amazon.com/dp/B082QL6KLG?tag=gerris-20" rel="sponsored noopener"&gt;Sony sells&lt;/a&gt; for less than a nice dinner (I record on a Sony ICD-UX570), records clean audio, fits in a jacket pocket, and charges from a plain USB port. Buy two or three and keep one in every bag, so an idea never waits for the studio. A smartphone held close in a quiet room works just as well. A carpeted bedroom beats an echoing kitchen with an expensive microphone every time.&lt;/p&gt;
-&lt;p&gt;Noise used to be the reason people bought gear. Adobe Podcast's Enhance Speech, which has a free version, now takes a noisy recording and brings it close to studio quality in a minute or two. Audacity, free on every computer, handles the edit: trim the false starts and the long pauses, and leave the personality in.&lt;/p&gt;
-
-&lt;h2&gt;Hosting and distribution are free&lt;/h2&gt;
-&lt;p&gt;A podcast host stores the audio and publishes the RSS feed that every app reads. Spotify for Creators, formerly Anchor, hosts shows free, publishes them on Spotify, and gives you the feed to list on Apple Podcasts and every other directory. Record on whatever you carry, upload the file, write the notes, schedule it, and every app picks it up.&lt;/p&gt;
-
-&lt;h2&gt;YouTube is a separate channel&lt;/h2&gt;
-&lt;p&gt;YouTube can import an audio podcast from its RSS feed, but it turns each episode into a video over a still image, and those videos live only on YouTube and YouTube Music. YouTube audiences expect faces, cuts, and visuals, and they discover shows through YouTube's own recommendations. Treat it as its own channel with its own effort, and keep publishing the audio feed everywhere else.&lt;/p&gt;
-
-&lt;h2&gt;Spend money on the parts that repeat&lt;/h2&gt;
-&lt;p&gt;An intro, an outro, and the show's main cover art appear on every episode, so they repay a professional. Freelancers on Fiverr produce all three for a modest fee. For individual episodes, ChatGPT turns a title and a mood into a custom cover in minutes, and a distinct cover per episode makes each one easier to spot in a feed and easier to share.&lt;/p&gt;
-
-&lt;h2&gt;Let AI clear away the chores&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Cleanup:&lt;/strong&gt; AI enhancement rescues recordings made in imperfect rooms.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Transcripts:&lt;/strong&gt; hosts and apps generate them automatically. Publish them, because they make every episode searchable.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Show notes:&lt;/strong&gt; paste the transcript into an assistant, ask for a summary, chapter points, and a title, then edit for your voice.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cover art:&lt;/strong&gt; an image model gives every episode its own look.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;New formats:&lt;/strong&gt; Google's NotebookLM turns notes or an episode into a two-host audio discussion, an easy bonus episode for listeners who enjoy that style.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Your opinions stay yours. AI removes the busywork that makes people skip a week, and skipped weeks are what end shows.&lt;/p&gt;
-
-&lt;h2&gt;Own a home for it&lt;/h2&gt;
-&lt;p&gt;Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read &lt;a href="https://gerriscorp.com/guides/podcast-seo/"&gt;how to get every episode found in Google and AI search&lt;/a&gt;, and &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how to build the site with Claude Code and GitHub Pages&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Want help turning a show into search visibility for your brand? &lt;a href="https://gerriscorp.com/contact/"&gt;Tell me about it&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As an Amazon Associate I earn from qualifying purchases.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul class="sources"&gt;
-  &lt;li&gt;&lt;a href="https://creators.spotify.com/"&gt;Spotify for Creators&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://podcast.adobe.com/enhance"&gt;Adobe Podcast: Enhance Speech&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.audacityteam.org/"&gt;Audacity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://support.google.com/youtube/answer/13525207"&gt;YouTube Help: Deliver podcasts using an RSS feed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://notebooklm.google.com/"&gt;Google NotebookLM&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
@@ -2953,73 +3024,6 @@ gtag('consent', 'default', {
 &lt;ul class="sources"&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/canonicalization"&gt;Google Search Central: What is canonicalization&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"&gt;Google Search Central: How to specify a canonical URL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content:encoded>
-  </item>
-  <item>
-    <title>How to use AI coding assistants on a business website safely</title>
-    <link>https://gerriscorp.com/guides/ai-coding-assistants/</link>
-    <guid isPermaLink="true">https://gerriscorp.com/guides/ai-coding-assistants/</guid>
-    <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
-    <description>A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.</description>
-    <content:encoded>&lt;h1&gt;How to use AI coding assistants on a business website safely&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-06"&gt;October 6, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.&lt;/p&gt;
-
-&lt;h2&gt;Start with a written spec&lt;/h2&gt;
-&lt;p&gt;An assistant does exactly what it understands you to want, at full speed. Before any code, write down the goal, the constraints, and what done looks like. "Move the blog to the new platform" is a wish. A spec says: every old URL keeps working or redirects to its closest match, titles and dates carry over, images are copied and not hotlinked, the build fails if any internal link points to a missing page, and nothing ships until the redirect list has been checked. The assistant can help draft this, and a person decides it.&lt;/p&gt;
-
-&lt;h2&gt;Give the project a memory&lt;/h2&gt;
-&lt;p&gt;Claude Code reads a &lt;code&gt;CLAUDE.md&lt;/code&gt; file at the start of every session, and other tools have their own equivalents. Put the things that must never be forgotten there: the build command, the deploy process, the voice rules for copy, the files that must never be committed, the decisions already made and why. This site's project file holds its style rules and a list of names that must never appear on the site. The assistant reads it every time; a new contractor would need the same briefing.&lt;/p&gt;
-
-&lt;h2&gt;Turn the rules into checks&lt;/h2&gt;
-&lt;p&gt;Instructions get forgotten. Automated checks don't. Every rule that can be tested by a script should be. The build for this site refuses to finish if a page title falls outside 50 to 60 characters, if a meta description is the wrong length, if two pages share a title, if any page links to one that doesn't exist, or if two pages share too much of their wording. When the assistant writes a new page, the build tells it what's wrong before I ever see the draft. The same approach works for any site: link checkers, HTML validators, accessibility tests, and unit tests for anything with logic in it.&lt;/p&gt;
-
-&lt;h2&gt;Small changes, reviewed&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Use version control.&lt;/strong&gt; Every change goes through Git, on a branch, so anything can be undone and every change can be read as a diff.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Keep each change small enough to read.&lt;/strong&gt; A change that touches three files gets reviewed properly. One that touches three hundred gets skimmed.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Read the diff, not the summary.&lt;/strong&gt; An assistant's description of what it changed is a claim. The diff is the evidence.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Watch for scope creep.&lt;/strong&gt; Assistants like to tidy things nobody asked them to touch. Reject unrelated changes and ask again.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Keep secrets and production out of reach&lt;/h2&gt;
-&lt;p&gt;Never paste passwords, API keys, or customer data into a conversation, and never commit them to a repository. Give the assistant access to a copy of the site, a staging environment, or a local build, and keep deploys to production a deliberate human step, or an automated pipeline that runs only after the checks pass. For anything destructive, such as deleting files, rewriting history, or changing DNS, require explicit confirmation every time. Inventory the DNS records before touching any of them; a careless change can stop a company's email.&lt;/p&gt;
-
-&lt;h2&gt;Verify against the real world&lt;/h2&gt;
-&lt;p&gt;Assistants are well read and out of date in places. They'll describe a platform setting that moved last year, or a search feature Google retired, with total confidence. For anything that depends on a third party's current behavior, check the vendor's documentation or test it directly. After deploying, check the live result: fetch the pages, test the redirects with &lt;code&gt;curl&lt;/code&gt;, run PageSpeed Insights, and look at the page in a browser. "The code looks right" isn't the same as "the site works."&lt;/p&gt;
-
-&lt;h2&gt;Where assistants are strongest&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Bulk, rule-based work.&lt;/strong&gt; Building a redirect map from hundreds of old URLs, rewriting templates across a site, generating structured data from page content, converting content between platforms.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Audits at scale.&lt;/strong&gt; Checking every page for missing titles, broken links, duplicate descriptions, or images without alt text, then fixing them.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Small internal tools.&lt;/strong&gt; Scripts that pull reports, clean exports, or automate a weekly chore.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Explaining unfamiliar code.&lt;/strong&gt; Reading an inherited theme or plugin and describing what it actually does.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Where to slow down&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Judgment calls.&lt;/strong&gt; Which pages to merge, which claims a page should make, what a client would or wouldn't want public. The assistant can propose; a person decides.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Security and payments.&lt;/strong&gt; Authentication, checkout, and anything handling personal data needs an expert review regardless of who wrote it.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Long sessions.&lt;/strong&gt; As a conversation grows, early instructions carry less weight. Restate the important rules, or keep them in the project memory file where they're read fresh.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Someone has to be accountable&lt;/h2&gt;
-&lt;p&gt;The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.&lt;/p&gt;
-
-&lt;p class="related"&gt;See how this site and other projects were built in the &lt;a href="https://gerriscorp.com/case-studies/built-with-claude-code/"&gt;Claude Code case study&lt;/a&gt;, and what I build for clients under &lt;a href="https://gerriscorp.com/services/ai-automation/"&gt;AI tools and automation&lt;/a&gt; and &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;fractional technical lead&lt;/a&gt;.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul class="sources"&gt;
-  &lt;li&gt;&lt;a href="https://docs.anthropic.com/en/docs/claude-code/overview"&gt;Anthropic: Claude Code overview&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;

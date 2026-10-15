@@ -1,25 +1,27 @@
 # Gerris Corp: full text of gerriscorp.com
 
-> Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-14. Quote freely with attribution and a link to the source page.
+> Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
+> Built 2026-10-15. Quote freely with attribution and a link to the source page.
 
 
 ---
 
 Source: https://gerriscorp.com/
-Updated: 2026-10-05
+Updated: 2026-10-15
 
 # Experienced help for the digital work your business needs done
 
 I'm Chris Abraham, and Gerris is my consultancy. I'm the person you call when the technical side of your web presence is a mess and nobody owns it. I find out what's wrong, write the plan, direct the developers, human and AI, ship what I can myself, and explain all of it in plain English.
 
-I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with Claude Code and Git.
+I've built websites since 1994 and started Gerris in 2007. I'm based in Arlington, Virginia, just outside Washington, DC, and work with clients across the United States and the English-speaking world. Technical SEO is my deepest specialty and often how clients find me: crawling, indexing, site speed, Cloudflare, 301 redirects, Search Console, and migrations. Around that core I work as a fractional technical lead, write developer specs and check what ships, rescue stalled projects, and build small AI tools with OpenAI Codex, Claude Code, and Git.
+
+OpenAI Codex and Claude Code are my main coding tools. I also work with GitHub Copilot, Gemini, and Grok, and sometimes Perplexity. I am platform agnostic: the job determines the tool, and I take responsibility for what ships.
 
 ## When to call me
 - **Nobody owns the website.** You have a developer, a few vendors, and logins scattered across old inboxes. I can be your [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 - **Your developers need a clear brief.** I turn vague complaints into [specs with acceptance criteria](https://gerriscorp.com/services/developers/) and check what ships.
 - **The project stalled.** The freelancer vanished or the agency handed over a zip file. I handle [rescues and takeovers](https://gerriscorp.com/services/rescue/).
-- **You want AI to save your team time without new risks.** I build [small, safe AI tools](https://gerriscorp.com/services/ai-automation/) with Claude Code.
+- **You want AI to save your team time without new risks.** I build [small, safe AI tools](https://gerriscorp.com/services/ai-automation/) with Codex and Claude Code.
 - **Traffic fell off a cliff.** I run [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) and often find [content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/).
 - **The site is slow or a migration is coming.** See [site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) and [migrations](https://gerriscorp.com/services/migrations/).
 - **AI assistants get your business wrong.** See [AI search visibility](https://gerriscorp.com/services/ai-search/).
@@ -53,13 +55,13 @@ Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) or call or text [+1 20
 
 [Contact me](https://gerriscorp.com/contact/) [Book a call](https://calendly.com/chrisabraham/30) [Hire me on Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 15, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/
-Updated: 2026-10-13
+Updated: 2026-10-15
 
 # Services
 
@@ -69,7 +71,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
-- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with Claude Code, with human confirmation on every action, tests, and encrypted backups.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with OpenAI Codex and Claude Code, with human confirmation on every action, tests, and encrypted backups.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
 - [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
@@ -105,7 +107,7 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 13, 2026
+Updated October 15, 2026
 
 
 ---
@@ -340,15 +342,17 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/services/ai-automation/
-Updated: 2026-10-05
+Updated: 2026-10-15
 
 # AI agents and automation, built safely
 
-Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.
+Small AI tools and automations for real workflows, built with OpenAI Codex and Claude Code, and engineered so they can't send, spend, or delete anything without a person saying yes.
+
+I work across AI platforms. Codex and Claude Code are my primary coding assistants, with GitHub Copilot, Gemini, Grok, and occasional Perplexity use in the broader workflow. I select tools around the brief and verify the result before delivery.
 
 ## Why I can build these
 
-I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
 
 ## Safety by design
 
@@ -392,17 +396,17 @@ You do. Pilots run on your accounts, and the code, prompts, tests, and documenta
 
 I build small, focused tools that prove value quickly. When a pilot needs to grow into a larger system, I specify it and work with developers who build at that scale.
 
-**Related:** [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
+**Related:** [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
 
 [Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 15, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/data-cleanup/
-Updated: 2026-10-05
+Updated: 2026-10-15
 
 # Data cleanup and AI-output audits
 
@@ -441,11 +445,11 @@ Yes. Data stays in your accounts or on encrypted storage I control for the durat
 
 Usually I export, clean, and re-import with your approval at each step, which keeps a record of every change. Direct in-CRM cleanup is possible when the CRM supports it safely.
 
-**Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
+**Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 
 [Send me the messy spreadsheet](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 15, 2026
 
 
 ---
@@ -1280,7 +1284,7 @@ Updated October 14, 2026
 ---
 
 Source: https://gerriscorp.com/services/podcast-sites/
-Updated: 2026-10-14
+Updated: 2026-10-15
 
 # Podcast websites, built and run for you
 
@@ -1291,7 +1295,7 @@ Spotify, Apple, and YouTube own the pages your show appears on. I give the show 
 Search engines and AI assistants read text. A feed full of audio gives them almost nothing to work with, and the episode pages the platforms generate are thin and identical. A page per episode, carrying the full transcript, turns every hour you've recorded into something a person can find by searching for what you talked about. The platform pages also belong to the platform, and a platform can shut down a directory overnight, the way Google Podcasts closed in 2024.
 
 ## What I deliver
-- A generator, written in Python with Claude Code, that reads your feed and writes the whole site as static HTML.
+- A generator, written in Python with OpenAI Codex and Claude Code, that reads your feed and writes the whole site as static HTML.
 - Episode pages at permanent addresses, each with cover art, a player that streams from your host, the show notes, a transcript, and a glossary when an episode calls for one.
 - Search titles and descriptions for every episode, drafted with AI and reviewed by hand, and alt text for every cover.
 - PodcastSeries and PodcastEpisode structured data, a sitemap, an llms.txt file, and an RSS feed of the site.
@@ -1316,13 +1320,13 @@ Most shows want more than a mirror of the feed. Common additions are corrections
 
 ## Want to build it yourself?
 
-The full method is free in my guide to [building a podcast website with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/). For getting episodes found once the site exists, see [podcast SEO](https://gerriscorp.com/guides/podcast-seo/).
+The full method is free in my guide to [building a podcast website with Codex or Claude Code on GitHub Pages](https://gerriscorp.com/guides/podcast-website/). For getting episodes found once the site exists, see [podcast SEO](https://gerriscorp.com/guides/podcast-seo/).
 
 ## Engagement
 
 A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
-Updated October 14, 2026
+Updated October 15, 2026
 
 
 ---
@@ -1623,7 +1627,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-13
+Updated: 2026-10-15
 
 # Guides
 
@@ -1648,7 +1652,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
 - [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
 - [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
-- [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
+- [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
 - [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
 - [The year end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
@@ -1704,7 +1708,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 13, 2026
+Updated October 15, 2026
 
 
 ---
@@ -2877,13 +2881,15 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/core-web-vitals-mcp/
-Updated: 2026-10-13
+Updated: 2026-10-15
 
 # Diagnosing Core Web Vitals with MCP and an AI coding assistant
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 13, 2026 · Updated October 15, 2026
 
 Fixing a slow page used to mean running a test, reading a waterfall, opening the code, and going back and forth between the three. With the Model Context Protocol, an AI coding assistant such as Claude Code can drive Chrome, record a performance trace, read the result, and open the component responsible, all in one session. Here is how I set it up, what each piece does, and where a person still has to check the work.
+
+OpenAI Codex and Claude Code are my primary coding assistants for repository work. This guide keeps a Claude Code command as a concrete setup example; choose your assistant and follow its current MCP documentation before connecting browser tools.
 
 ## The three numbers you're chasing
 
@@ -4511,13 +4517,13 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/ai-coding-assistants/
-Updated: 2026-10-06
+Updated: 2026-10-15
 
 # How to use AI coding assistants on a business website safely
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026 · Updated October 15, 2026
 
-AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.
+AI coding assistants such as OpenAI Codex, Claude Code, GitHub Copilot, and Cursor can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.
 
 ## Start with a written spec
 
@@ -4560,7 +4566,7 @@ Assistants are well read and out of date in places. They'll describe a platform 
 
 The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.
 
-See how this site and other projects were built in the [Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+See how this site and other projects were built in the [Codex and Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 
 ## Want me to handle this for you?
 
@@ -4571,6 +4577,7 @@ This guide shows you how to do it yourself. If you'd rather hand it to someone w
 If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
+- [OpenAI: Codex for code generation](https://developers.openai.com/api/docs/guides/code-generation)
 - [Anthropic: Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
@@ -4777,11 +4784,11 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/seo-superpower/
-Updated: 2026-10-11
+Updated: 2026-10-15
 
 # Repositories plus super intelligence: the SEO superpower nobody told you to learn
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 11, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 11, 2026 · Updated October 15, 2026
 
 On September 29, 2026, President Trump signed an executive order replacing "Artificial Intelligence" with "Super Intelligence" across the executive branch. Call it AI, SI, or a very fast intern; for anyone in SEO, the name matters less than what it does when you pair it with the other half of the equation: the code repository. Git plus a capable coding assistant is a real superpower. It takes you far outside the confines of being a Yoast monkey or a Screaming Frog jockey.
 
@@ -4793,7 +4800,7 @@ For SEO, that means the things you care about are files. Title patterns, canonic
 
 ## Half two: super intelligence that reads code
 
-Coding assistants have moved past autocomplete. GitHub says Copilot can now answer questions about a repository, plan and make changes, run tests in a cloud environment, and review pull requests. Anthropic's Claude Code does the same from a terminal, and OpenAI offers Codex alongside ChatGPT. Point one at a codebase and ask where the canonical tag comes from, and it will find the component, the function feeding it, and the edge case that breaks it, in minutes.
+Coding assistants have moved past autocomplete. GitHub says Copilot can now answer questions about a repository, plan and make changes, run tests in a cloud environment, and review pull requests. Anthropic's Claude Code does the same from a terminal, and OpenAI Codex helps write, review, and debug code. Point one at a codebase and ask where the canonical tag comes from, and it will find the component, the function feeding it, and the edge case that breaks it, in minutes.
 
 ## Why each half fails alone
 - **A repository without AI** is a wall of unfamiliar code. Most SEOs never get past the folder list, so they file a ticket and wait.
@@ -4804,7 +4811,7 @@ Coding assistants have moved past autocomplete. GitHub says Copilot can now answ
 - **Diagnosis down to the line.** A crawl tells you product pages render 300 words. The repository tells you a scroll triggered component never mounts for a crawler. I found exactly that once, and it's the difference between "Google doesn't like the page" and a fix a developer can ship the same day. The details are in my [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/).
 - **Migrations with receipts.** Redirect maps written as config, tested against the old URL list before launch, and reviewed like any other code.
 - **Fixes at template scale.** One pull request repairs every page built from that template, today and in the future.
-- **Your own tools.** I direct Claude Code like a small development team; it has built me a command line assistant with a full test suite, moved a legacy blog off dead software, and built this website. [See what I built with Claude Code.](https://gerriscorp.com/case-studies/built-with-claude-code/)
+- **Your own tools.** I direct OpenAI Codex and Claude Code like a small development team; Claude Code built me a command line assistant with a full test suite, moved a legacy blog off dead software, and built this website. [See my Codex and Claude Code workflow.](https://gerriscorp.com/case-studies/built-with-claude-code/)
 
 ## How to start, if you're an SEO
 1. **Learn six Git words:** clone, branch, commit, diff, pull request, merge. That's enough to be useful and safe.
@@ -4831,6 +4838,7 @@ This guide shows you how to do it yourself. If you'd rather hand it to someone w
 If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
+- [OpenAI: Codex for code generation](https://developers.openai.com/api/docs/guides/code-generation)
 - [The White House: Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence (September 29, 2026)](https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/)
 - [Git: A short history of Git](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
 - [Anthropic: Claude Code overview](https://code.claude.com/docs/en/overview)
@@ -4842,13 +4850,13 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/podcast-website/
-Updated: 2026-10-08
+Updated: 2026-10-15
 
-# Build a podcast website with Claude Code, GitHub Pages, and Cloudflare
+# Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026 · Updated October 15, 2026
 
-A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Claude Code does the typing.
+A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Codex or Claude Code does the typing.
 
 ## What you end up with
 - One page per episode, at an address that never changes, with the cover art, the player, the show notes, and the transcript.
@@ -4862,9 +4870,9 @@ The audio stays with your host. Each player streams from the address in your fee
 
 Cloudflare Registrar sells domains at the wholesale price the registry charges, plus the ICANN fee, with no markup on renewals. Privacy for the registration record comes included. A .com runs about ten dollars a year. The catch is that the domain must use Cloudflare's DNS, which suits this setup anyway. Pick a name that matches the show exactly, and register it before you announce anything.
 
-## Step 2: let Claude Code build the generator
+## Step 2: have Codex or Claude Code build the generator
 
-Claude Code is an AI coding assistant that runs in your terminal and works directly in a folder of files. You describe the site; it writes the code, runs it, reads the errors, and fixes them. The prompt that matters most names your feed and your rules. A good one reads close to this:
+OpenAI Codex and Claude Code are coding assistants I use to work directly with project files. Describe the site to either assistant, then have it draft the code, run the build, and work through the errors under your review. The prompt that matters most names your feed and your rules. A good one reads close to this:
 
 >
 
@@ -4882,7 +4890,7 @@ In Cloudflare's DNS, add the four GitHub Pages A records and four AAAA records f
 
 ## Step 5: make it run itself
 
-Ask Claude Code for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:
+Ask your coding assistant for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:
 - **Keepalive.** GitHub disables scheduled workflows in public repositories after 60 days without activity. A step that re-enables the workflow through the GitHub API on every run keeps the schedule alive through a quiet season.
 - **Late transcripts.** Hosts often add transcripts days after an episode goes up. Recheck every episode that lacks one, on every run.
 - **A sanity check.** If the feed suddenly lists far fewer episodes than the site has, stop and publish nothing.
@@ -4893,7 +4901,7 @@ Add the site to Google Search Console and Bing Webmaster Tools and submit the si
 
 ## What it costs
 
-The domain is the only bill. Hosting, HTTPS, and the daily job run free. Claude Code comes with Anthropic's paid plans, starting with Pro, which is plenty for a build like this.
+The domain is the recurring site cost in this setup; hosting, HTTPS, and the daily job fit within the free allowances described above. Budget separately for whichever coding assistant you use. Check its current plan and usage limits before starting.
 
 ## Where AI saves the most time
 
@@ -4910,6 +4918,7 @@ This guide shows you how to do it yourself. If you'd rather hand it to someone w
 If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
+- [OpenAI: Codex for code generation](https://developers.openai.com/api/docs/guides/code-generation)
 - [GitHub Docs: GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 - [GitHub Docs: Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 - [Cloudflare Docs: Cloudflare Registrar](https://developers.cloudflare.com/registrar/)
@@ -5178,11 +5187,11 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/podcast-seo/
-Updated: 2026-10-08
+Updated: 2026-10-15
 
 # Podcast SEO: get every episode found in Google and AI search
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026 · Updated October 15, 2026
 
 Search engines index text. A podcast is audio wrapped in a feed that podcast apps read, and the pages that platforms generate for each episode are thin, interchangeable, and owned by someone else. If you want people who search a topic you covered to find the episode where you covered it, each episode needs a real page of text on a domain you control.
 
@@ -5220,7 +5229,7 @@ People increasingly ask ChatGPT, Claude, Perplexity, or Google's AI Mode what a 
 
 ## Own the property
 
-Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is [how to build one with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/).
+Directories close. When Google Podcasts went dark in 2024, every show listed there lost that doorway at once. A site on your own domain outlasts every directory, collects the search value of every episode, and keeps working while you sleep. It can also update itself: a small script that reads your feed each morning adds new episodes and late transcripts without you touching it. Here is [how to build one with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/).
 
 Starting from scratch? Read [what it really takes to start a podcast for your brand](https://gerriscorp.com/guides/podcast-for-your-brand/), or [ask me to look at your show's search visibility](https://gerriscorp.com/contact/).
 
@@ -5244,11 +5253,11 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/podcast-for-your-brand/
-Updated: 2026-10-08
+Updated: 2026-10-15
 
 # Starting a podcast to build your brand: what it really takes
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026 · Updated October 15, 2026
 
 A podcast puts a founder's or an expert's actual voice in someone's ears for half an hour, by choice, while they drive or walk the dog. Few marketing channels earn that much attention. I recommend one to every client with something to say, along with a warning: the hard part is showing up, week after week, for a year.
 
@@ -5290,7 +5299,7 @@ Your opinions stay yours. AI removes the busywork that makes people skip a week,
 
 ## Own a home for it
 
-Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
+Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Codex or Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
 
 Want help turning a show into search visibility for your brand? [Tell me about it](https://gerriscorp.com/contact/).
 
@@ -5698,7 +5707,7 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/case-studies/
-Updated: 2026-10-05
+Updated: 2026-10-15
 
 # Case studies
 
@@ -5733,12 +5742,12 @@ Each case describes the problem, my role, what I did, who else did what, how the
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/). 88,900 contacts, two merged exports, and a tracker that invented its data.
 
 ## My own builds
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 140 tests; Hill Mole's move off Movable Type; and this site.
+- [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 140 tests; Hill Mole's move off Movable Type; and this site.
 - [Four static sites: a speed and AI crawler pass](https://gerriscorp.com/case-studies/four-site-speed-pass/). Every page measured moved to 89 or better on mobile, most to 97 and above.
 
 [Tell me about your problem](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 15, 2026
 
 
 ---
@@ -5858,7 +5867,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/case-studies/netlify-migration/
-Updated: 2026-10-05
+Updated: 2026-10-15
 
 # Clinical practice: WordPress to Netlify, with search intact
 
@@ -5875,6 +5884,8 @@ Technical SEO, migration oversight, and investigation, in coordination with the 
 I examined the legacy URLs and reconciled the redirect map, deciding for each URL whether it should pass through unchanged, inherit an existing destination, receive a migration redirect, or be treated as intentionally removed. I separated problems the migration caused from older issues the site already had, so neither got blamed on the other.
 
 ### Repository analysis with Claude Code
+
+This initial investigation used Claude Code. My current repository work also uses OpenAI Codex, with findings checked against crawl data and the live output.
 
 I combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository. It found thousands of references to images still hosted on the old WordPress site, and the handful of central files responsible, which became a developer-ready plan for moving the media. The analysis changed no code.
 
@@ -5896,7 +5907,7 @@ Migration oversight and post-launch investigation delivered; further work under 
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 15, 2026
 
 
 ---
@@ -6429,11 +6440,13 @@ Updated October 14, 2026
 ---
 
 Source: https://gerriscorp.com/case-studies/built-with-claude-code/
-Updated: 2026-10-07
+Updated: 2026-10-15
 
-# Built with Claude Code
+# Built with Codex and Claude Code
 
 I run Claude Code the way a technical lead runs a development team: I write the requirements, make the design decisions, review every change, insist on tests, and decide what ships. These are three things built that way.
+
+OpenAI Codex and Claude Code are now my two main coding assistants. The three original builds below were done with Claude Code; ongoing work on this site also uses Codex. I use GitHub Copilot, Gemini, Grok, and sometimes Perplexity as well, choosing around the task rather than a single provider.
 
 ## Blackbox: a command-line chief of staff
 
@@ -6481,13 +6494,13 @@ Building software with AI coding assistants is a real skill, and the skill is mo
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 7, 2026
+Updated October 15, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/about/
-Updated: 2026-10-14
+Updated: 2026-10-15
 
 # About Chris Abraham
 
@@ -6498,7 +6511,7 @@ I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does th
 | Principal | Chris Abraham (also Christopher Abraham) |
 | Location | South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC |
 | Clients | Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand |
-| Focus | Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
+| Focus | Technical consulting and direction, developer specs, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
 | Upwork | Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026) |
 | Working online since | Building websites since 1994; in digital marketing since 2002 |
 | Education | BA in American Literature, The George Washington University |
@@ -6506,7 +6519,9 @@ I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does th
 
 ## What I do now
 
-I'm a hands-on technical consultant whose deepest specialty is search. Clients bring me in when the technical side of their web presence needs someone in charge: I diagnose, scope, write the spec, direct the developers, human and AI, ship the parts I can ship myself, and explain it all to leadership in plain English. My technical SEO core covers on-page SEO, site speed, Cloudflare and CDN setup, 301 redirects, indexing, Google Search Console, and migrations. Around it I work as a fractional technical lead, rescue stalled projects, build small AI tools with Claude Code, clean up data, advise founders and executives, and manage the online reputation of people whose public record matters.
+My primary coding assistants are OpenAI Codex and Claude Code. I use GitHub Copilot, Gemini, and Grok too, with Perplexity from time to time. Working across providers lets me choose an assistant to fit the assignment and compare its suggestions against evidence.
+
+I'm a hands-on technical consultant whose deepest specialty is search. Clients bring me in when the technical side of their web presence needs someone in charge: I diagnose, scope, write the spec, direct the developers, human and AI, ship the parts I can ship myself, and explain it all to leadership in plain English. My technical SEO core covers on-page SEO, site speed, Cloudflare and CDN setup, 301 redirects, indexing, Google Search Console, and migrations. Around it I work as a fractional technical lead, rescue stalled projects, build small AI tools with Codex and Claude Code, clean up data, advise founders and executives, and manage the online reputation of people whose public record matters.
 
 Every layer I work in, from servers and DNS to code, schema, and data, is listed with its proof on [what I can take on in your stack](https://gerriscorp.com/stack/).
 
@@ -6547,13 +6562,13 @@ Gerris is distinct from chrisabraham.com: this site covers the consultancy and i
 
 *Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds. Why I chose it, and the story of the logo [Oliver Uberti](https://www.oliveruberti.com/) drew for it, are in the [colophon](https://gerriscorp.com/colophon/).
 
-Updated October 14, 2026
+Updated October 15, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/stack/
-Updated: 2026-10-13
+Updated: 2026-10-15
 
 # What I can take on in your stack, layer by layer
 
@@ -6574,15 +6589,17 @@ Search problems rarely stay in one layer. A ranking loss turns out to be a templ
 - I learned mail on Linux servers running Sendmail, so IMAP, POP3, SMTP ports, aliases, and mail routing are old friends. When mail misbehaves, I read the headers and the bounce codes first. The [blocklist recovery guide](https://gerriscorp.com/guides/email-blocklist-recovery/) shows the method.
 
 ## Repositories and pull requests
+
+Codex and Claude Code handle most of my work with AI coding assistants. My other tools include GitHub Copilot, Gemini, Grok, and occasional Perplexity use. I keep requirements and verification in the project so I can work across platforms.
 - I wrote and patched Perl and PHP for years, on Movable Type, PHP-Nuke, PostNuke, and scripts of my own, so a client's codebase is familiar ground long before an AI assistant opens it.
 - I merged metadata changes into a local business's Sanity and Vercel codebase through GitHub, under the developer's review, and confirmed the prerendered output. [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/).
 - I work in a 20,000 page programmatic site's GitHub repository to see how URLs get generated and specify crawl controls precisely. [Programmatic indexing](https://gerriscorp.com/case-studies/programmatic-indexing/).
-- I read entire codebases with Claude Code and Codex to find the component behind a crawl finding, and I check each answer on the live site.
+- I read entire codebases with OpenAI Codex and Claude Code to find the component behind a crawl finding, and I check each answer on the live site.
 
 ## Build pipelines and automation
 - This site is generated by a Python script that refuses to publish a bad title, a duplicate description, a broken internal link, a page under its word minimum, or two pages that share too much wording. The method is written up in [SEO regression tests in the build](https://gerriscorp.com/guides/seo-build-checks/).
 - A GitHub Actions workflow pings IndexNow after every deploy, once the new sitemap is confirmed live.
-- I moved a 309 entry serialized novel off a broken Movable Type install to Jekyll on GitHub Pages, keeping every original URL and adding schema, llms.txt, and IndexNow. [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+- I moved a 309 entry serialized novel off a broken Movable Type install to Jekyll on GitHub Pages, keeping every original URL and adding schema, llms.txt, and IndexNow. [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
 - I built my own operations assistant, about 12,000 lines of Python with 140 end to end tests, by directing Claude Code like a development team.
 
 ## Rendering and front end
@@ -6622,7 +6639,7 @@ I've worked under HIPAA and nondisclosure agreements on a healthcare site, and I
 
 For the person behind all this, see [About](https://gerriscorp.com/about/), and for the full career record, my [CV on chrisabraham.com](https://chrisabraham.com/cv). To put any of it to work, [tell me where your problem lives](https://gerriscorp.com/contact/).
 
-Updated October 13, 2026
+Updated October 15, 2026
 
 
 ---
@@ -6765,7 +6782,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/standards/
-Updated: 2026-10-06
+Updated: 2026-10-15
 
 # Editorial standards
 
@@ -6781,7 +6798,9 @@ When a guide says how Googlebot renders a page, how Bing treats a tag, what an R
 
 ## AI in the workflow, with a human at the end
 
-I build with AI tools every day, including Claude Code, and this site's generator and many first drafts came out of that work. The rule is simple: nothing goes live until I've read it, corrected it, and verified every factual statement. Biographical details about me come from my own records and published sources I can point to, never from what a chatbot has decided about me. The build itself refuses pages that break the house rules for titles, length, duplication, and voice.
+I also use GitHub Copilot, Gemini, Grok, and occasionally Perplexity. That range is deliberate: I work across AI platforms and apply the same editorial checks whichever one helped with a draft.
+
+I build with AI tools every day, primarily OpenAI Codex and Claude Code, and this site's generator and many first drafts came out of that work. The rule is simple: nothing goes live until I've read it, corrected it, and verified every factual statement. Biographical details about me come from my own records and published sources I can point to, never from what a chatbot has decided about me. The build itself refuses pages that break the house rules for titles, length, duplication, and voice.
 
 ## Confidentiality is part of accuracy
 
@@ -6803,13 +6822,13 @@ Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) with the page address 
 
 My background is on the [About page](https://gerriscorp.com/about/), how engagements run is on [Work With Me](https://gerriscorp.com/work-with-me/), and you can reach me through the [contact page](https://gerriscorp.com/contact/).
 
-Updated October 6, 2026
+Updated October 15, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/colophon/
-Updated: 2026-10-06
+Updated: 2026-10-15
 
 # Colophon
 
@@ -6828,6 +6847,8 @@ Oliver's second round of sketches, dated October 25, 2012, set four ideas over t
 The look borrows from the classic Plone theme I've used for my own sites for two decades: tabbed navigation, slate blue links, and nothing between the reader and the words. Body text is black Verdana at 18 pixels for legibility. The accent colors, a burnt orange for the name, a blue for page titles, and a teal for section heads, were each darkened until they pass the WCAG contrast standard against white.
 
 ## How it's built
+
+OpenAI Codex and Claude Code now share the work of maintaining and improving this site under my direction. I also use GitHub Copilot, Gemini, Grok, and sometimes Perplexity. The original terminal build described below was done with Claude Code.
 
 Every page starts as a plain HTML file. A small Python program reads them, wraps each in the shared header and footer, and writes the finished site: pages, a Markdown copy of each page for AI tools, XML and HTML sitemaps, an Atom feed, llms.txt, and redirect pages for more than 400 addresses from the old gerriscorp.com. Before anything is published, the same program checks every page: title and description lengths, one heading per page, minimum word counts, first person singular, no copied phrasing between pages, and no broken internal links. If a page fails, nothing ships.
 
@@ -6848,7 +6869,7 @@ The code and content live in a public repository: [github.com/chrisabraham/gerri
 
 Links to books and gear on Amazon carry my Amazon Associates tag. As an Amazon Associate I earn from qualifying purchases.
 
-Updated October 6, 2026
+Updated October 15, 2026
 
 
 ---
@@ -6928,14 +6949,14 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-14
+Updated: 2026-10-15
 
 # Site map
 
 Every page on this site, grouped by section, with a one-line summary of each. Search engines read the same list in [sitemap.xml](https://gerriscorp.com/sitemap.xml), and AI tools in [llms.txt](https://gerriscorp.com/llms.txt).
 
 ## Main pages
-- [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.
+- [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham diagnoses web problems, directs developers, and builds with OpenAI Codex and Claude Code. Consulting, automation, and SEO from Gerris Corp.
 - [Services](https://gerriscorp.com/services/): Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 - [Guides](https://gerriscorp.com/guides/): Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 - [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
@@ -6953,7 +6974,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): Chris Abraham works inside agencies' client relationships as a technical SEO and AI search specialist, under NDA, in your Basecamp, with your branding.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
-- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds AI tools with OpenAI Codex and Claude Code: reviewed actions, tests, secrets outside Git, and backups with a tested restore path.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
@@ -7016,12 +7037,12 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
-- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A practical workflow for OpenAI Codex, Claude Code, and GitHub Copilot on business websites: written specs, project context, automated checks, and human review.
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): Twelve questions that expose AI washing in a vendor pitch, the SEC and FTC cases that define it, and why a technical skeptic belongs on the sales call.
 - [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): A founder's method for hiring web developers: own the accounts first, interview for judgment, pay for a trial task, review pull requests, and manage AI use.
 - [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Eight tests for telling a lasting technology shift from a hype cycle, drawn from online communities, blogs, social media, crypto, and the AI wave of 2026.
-- [Repositories plus super intelligence: the SEO superpower nobody told you to learn](https://gerriscorp.com/guides/seo-superpower/): Repositories plus AI coding assistants turn an SEO from plugin operator into someone who ships fixes. Why SEOs need Git, Claude Code, and Copilot now.
-- [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
+- [Repositories plus super intelligence: the SEO superpower nobody told you to learn](https://gerriscorp.com/guides/seo-superpower/): Repositories and AI coding assistants help SEOs ship fixes. How Git, OpenAI Codex, Claude Code, and GitHub Copilot connect search findings to changes in code.
+- [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Build a podcast website with OpenAI Codex or Claude Code, GitHub Pages, and Cloudflare: a page for every episode, stable links, and daily feed updates.
 - [The state of search in 2026: every Google update so far, and the AI shift behind them](https://gerriscorp.com/guides/search-in-2026/): Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.
 - [Ranking yourself first in a "best of" list now backfires in AI answers](https://gerriscorp.com/guides/self-ranking-lists/): How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): SEO from first principles for absolute beginners: how search works, people first content, E E A T, titles, links, alt text, speed, and accessibility.
@@ -7049,7 +7070,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/): Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.
 - [A founder's public record: tracing AI errors to the pages behind them](https://gerriscorp.com/case-studies/founder-record/): AI answers about me got a founding year wrong, invented a company rename, and doubted a real award. Each traced to a page, and the archive settled the rest.
 - [Four static sites: a speed and AI crawler pass in one afternoon](https://gerriscorp.com/case-studies/four-site-speed-pass/): Four static sites I own, measured with mobile Lighthouse, fixed in one afternoon, and measured again: analytics deferred, images resized, robots rules verified.
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
+- [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs OpenAI Codex and Claude Code, with original Claude Code builds of a tested assistant, a legacy blog migration, and this website.
 
 ## Files for machines
 - [sitemap.xml](https://gerriscorp.com/sitemap.xml): the XML sitemap for search engines.
@@ -7058,4 +7079,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 14, 2026
+Updated October 15, 2026

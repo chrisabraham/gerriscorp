@@ -1,7 +1,7 @@
 name: Netlify Migration
 title: Case study: a clinic moves from WordPress to Netlify safely
 description: Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI assisted repository analysis, and a careful disavow.
-updated: 2026-10-05
+updated: 2026-10-15
 ---
 <h1>Clinical practice: WordPress to Netlify, with search intact</h1>
 <p class="lead">A clinical practice moved its website from WordPress on managed hosting to a new Next.js build on Netlify. The developer built the new site; my job was continuity: making sure search engines and visitors could follow the move, and investigating what went wrong afterward.</p>
@@ -13,6 +13,7 @@ updated: 2026-10-05
 <h3>Redirect decisions for every URL</h3>
 <p>I examined the legacy URLs and reconciled the redirect map, deciding for each URL whether it should pass through unchanged, inherit an existing destination, receive a migration redirect, or be treated as intentionally removed. I separated problems the migration caused from older issues the site already had, so neither got blamed on the other.</p>
 <h3>Repository analysis with Claude Code</h3>
+<p>This initial investigation used Claude Code. My current repository work also uses OpenAI Codex, with findings checked against crawl data and the live output.</p>
 <p>I combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository. It found thousands of references to images still hosted on the old WordPress site, and the handful of central files responsible, which became a developer-ready plan for moving the media. The analysis changed no code.</p>
 <h3>A conservative disavow</h3>
 <p>I reviewed the backlink profile and prepared a replacement disavow file that removed genuinely toxic domains while keeping legitimate ones, because disavowing good links does real harm.</p>

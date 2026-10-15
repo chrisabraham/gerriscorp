@@ -1,6 +1,6 @@
 > Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 >
-> Source: https://gerriscorp.com/services/ · Updated 2026-10-13 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Services
 
@@ -10,7 +10,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
-- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with Claude Code, with human confirmation on every action, tests, and encrypted backups.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with OpenAI Codex and Claude Code, with human confirmation on every action, tests, and encrypted backups.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
 - [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
@@ -46,4 +46,4 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 13, 2026
+Updated October 15, 2026

@@ -1,14 +1,16 @@
-> Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+> Chris Abraham builds AI tools with OpenAI Codex and Claude Code: reviewed actions, tests, secrets outside Git, and backups with a tested restore path.
 >
-> Source: https://gerriscorp.com/services/ai-automation/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ai-automation/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # AI agents and automation, built safely
 
-Small AI tools and automations for real workflows, built with Claude Code and engineered so they can't send, spend, or delete anything without a person saying yes.
+Small AI tools and automations for real workflows, built with OpenAI Codex and Claude Code, and engineered so they can't send, spend, or delete anything without a person saying yes.
+
+I work across AI platforms. Codex and Claude Code are my primary coding assistants, with GitHub Copilot, Gemini, Grok, and occasional Perplexity use in the broader workflow. I select tools around the brief and verify the result before delivery.
 
 ## Why I can build these
 
-I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
+I built my own first. My command-line assistant runs my tasks, calendar, and work pipeline every day, and it was built with Claude Code under the same rules I bring to clients. The numbers, the architecture, and the deploy process are on [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/).
 
 ## Safety by design
 
@@ -52,8 +54,8 @@ You do. Pilots run on your accounts, and the code, prompts, tests, and documenta
 
 I build small, focused tools that prove value quickly. When a pilot needs to grow into a larger system, I specify it and work with developers who build at that scale.
 
-**Related:** [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
+**Related:** [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/) · [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
 
 [Tell me the workflow you'd automate](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 15, 2026

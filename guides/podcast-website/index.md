@@ -1,12 +1,12 @@
-> Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
+> Build a podcast website with OpenAI Codex or Claude Code, GitHub Pages, and Cloudflare: a page for every episode, stable links, and daily feed updates.
 >
-> Source: https://gerriscorp.com/guides/podcast-website/ · Updated 2026-10-08 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/podcast-website/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
-# Build a podcast website with Claude Code, GitHub Pages, and Cloudflare
+# Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026 · Updated October 15, 2026
 
-A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Claude Code does the typing.
+A podcast that lives only on Spotify and Apple is a tenant. The platforms own the pages, the search results, and the rules, and a platform can close a door overnight, the way Google Podcasts did in 2024. A website on your own domain is the one property you control. Here is the setup I build: it costs the price of a domain, it updates itself, and Codex or Claude Code does the typing.
 
 ## What you end up with
 - One page per episode, at an address that never changes, with the cover art, the player, the show notes, and the transcript.
@@ -20,9 +20,9 @@ The audio stays with your host. Each player streams from the address in your fee
 
 Cloudflare Registrar sells domains at the wholesale price the registry charges, plus the ICANN fee, with no markup on renewals. Privacy for the registration record comes included. A .com runs about ten dollars a year. The catch is that the domain must use Cloudflare's DNS, which suits this setup anyway. Pick a name that matches the show exactly, and register it before you announce anything.
 
-## Step 2: let Claude Code build the generator
+## Step 2: have Codex or Claude Code build the generator
 
-Claude Code is an AI coding assistant that runs in your terminal and works directly in a folder of files. You describe the site; it writes the code, runs it, reads the errors, and fixes them. The prompt that matters most names your feed and your rules. A good one reads close to this:
+OpenAI Codex and Claude Code are coding assistants I use to work directly with project files. Describe the site to either assistant, then have it draft the code, run the build, and work through the errors under your review. The prompt that matters most names your feed and your rules. A good one reads close to this:
 
 >
 
@@ -40,7 +40,7 @@ In Cloudflare's DNS, add the four GitHub Pages A records and four AAAA records f
 
 ## Step 5: make it run itself
 
-Ask Claude Code for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:
+Ask your coding assistant for a GitHub Actions workflow that runs the generator every morning, commits only when something changed, and fails loudly when the feed can't be read. Three details make it dependable:
 - **Keepalive.** GitHub disables scheduled workflows in public repositories after 60 days without activity. A step that re-enables the workflow through the GitHub API on every run keeps the schedule alive through a quiet season.
 - **Late transcripts.** Hosts often add transcripts days after an episode goes up. Recheck every episode that lacks one, on every run.
 - **A sanity check.** If the feed suddenly lists far fewer episodes than the site has, stop and publish nothing.
@@ -51,7 +51,7 @@ Add the site to Google Search Console and Bing Webmaster Tools and submit the si
 
 ## What it costs
 
-The domain is the only bill. Hosting, HTTPS, and the daily job run free. Claude Code comes with Anthropic's paid plans, starting with Pro, which is plenty for a build like this.
+The domain is the recurring site cost in this setup; hosting, HTTPS, and the daily job fit within the free allowances described above. Budget separately for whichever coding assistant you use. Check its current plan and usage limits before starting.
 
 ## Where AI saves the most time
 
@@ -68,6 +68,7 @@ This guide shows you how to do it yourself. If you'd rather hand it to someone w
 If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
+- [OpenAI: Codex for code generation](https://developers.openai.com/api/docs/guides/code-generation)
 - [GitHub Docs: GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 - [GitHub Docs: Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 - [Cloudflare Docs: Cloudflare Registrar](https://developers.cloudflare.com/registrar/)

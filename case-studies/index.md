@@ -1,6 +1,6 @@
 > Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
 >
-> Source: https://gerriscorp.com/case-studies/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/case-studies/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Case studies
 
@@ -35,9 +35,9 @@ Each case describes the problem, my role, what I did, who else did what, how the
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/). 88,900 contacts, two merged exports, and a tracker that invented its data.
 
 ## My own builds
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 140 tests; Hill Mole's move off Movable Type; and this site.
+- [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/). Blackbox, my command-line assistant with 140 tests; Hill Mole's move off Movable Type; and this site.
 - [Four static sites: a speed and AI crawler pass](https://gerriscorp.com/case-studies/four-site-speed-pass/). Every page measured moved to 89 or better on mobile, most to 97 and above.
 
 [Tell me about your problem](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 15, 2026

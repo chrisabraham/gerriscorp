@@ -1,10 +1,10 @@
 > What a podcast does for a personal or business brand, the commitment behind it, and the cheap gear and AI tools that take the friction out of every episode.
 >
-> Source: https://gerriscorp.com/guides/podcast-for-your-brand/ · Updated 2026-10-08 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/podcast-for-your-brand/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Starting a podcast to build your brand: what it really takes
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 8, 2026 · Updated October 15, 2026
 
 A podcast puts a founder's or an expert's actual voice in someone's ears for half an hour, by choice, while they drive or walk the dog. Few marketing channels earn that much attention. I recommend one to every client with something to say, along with a warning: the hard part is showing up, week after week, for a year.
 
@@ -46,7 +46,7 @@ Your opinions stay yours. AI removes the busywork that makes people skip a week,
 
 ## Own a home for it
 
-Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
+Your host's pages belong to the host. Give the show its own website on its own domain, with a page for every episode, and the archive works for your brand in search for years. Read [how to get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/), and [how to build the site with Codex or Claude Code and GitHub Pages](https://gerriscorp.com/guides/podcast-website/).
 
 Want help turning a show into search visibility for your brand? [Tell me about it](https://gerriscorp.com/contact/).
 

@@ -1,6 +1,6 @@
 > Migration oversight for a clinical practice leaving WordPress: redirect decisions for every URL, an AI assisted repository analysis, and a careful disavow.
 >
-> Source: https://gerriscorp.com/case-studies/netlify-migration/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/case-studies/netlify-migration/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Clinical practice: WordPress to Netlify, with search intact
 
@@ -17,6 +17,8 @@ Technical SEO, migration oversight, and investigation, in coordination with the 
 I examined the legacy URLs and reconciled the redirect map, deciding for each URL whether it should pass through unchanged, inherit an existing destination, receive a migration redirect, or be treated as intentionally removed. I separated problems the migration caused from older issues the site already had, so neither got blamed on the other.
 
 ### Repository analysis with Claude Code
+
+This initial investigation used Claude Code. My current repository work also uses OpenAI Codex, with findings checked against crawl data and the live output.
 
 I combined crawls and exports with a read-only, AI-assisted analysis of the Next.js repository. It found thousands of references to images still hosted on the old WordPress site, and the handful of central files responsible, which became a developer-ready plan for moving the media. The analysis changed no code.
 
@@ -38,4 +40,4 @@ Migration oversight and post-launch investigation delivered; further work under 
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 15, 2026

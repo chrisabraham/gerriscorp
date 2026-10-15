@@ -1,6 +1,6 @@
 > Chris Abraham has built websites since 1994, worked at New Media Strategies and Edelman, and runs Gerris Corp, founded in 2012, from Arlington, Virginia.
 >
-> Source: https://gerriscorp.com/about/ · Updated 2026-10-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/about/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # About Chris Abraham
 
@@ -11,7 +11,7 @@ I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does th
 | Principal | Chris Abraham (also Christopher Abraham) |
 | Location | South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC |
 | Clients | Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand |
-| Focus | Technical consulting and direction, developer specs, AI tools built with Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
+| Focus | Technical consulting and direction, developer specs, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
 | Upwork | Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026) |
 | Working online since | Building websites since 1994; in digital marketing since 2002 |
 | Education | BA in American Literature, The George Washington University |
@@ -19,7 +19,9 @@ I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does th
 
 ## What I do now
 
-I'm a hands-on technical consultant whose deepest specialty is search. Clients bring me in when the technical side of their web presence needs someone in charge: I diagnose, scope, write the spec, direct the developers, human and AI, ship the parts I can ship myself, and explain it all to leadership in plain English. My technical SEO core covers on-page SEO, site speed, Cloudflare and CDN setup, 301 redirects, indexing, Google Search Console, and migrations. Around it I work as a fractional technical lead, rescue stalled projects, build small AI tools with Claude Code, clean up data, advise founders and executives, and manage the online reputation of people whose public record matters.
+My primary coding assistants are OpenAI Codex and Claude Code. I use GitHub Copilot, Gemini, and Grok too, with Perplexity from time to time. Working across providers lets me choose an assistant to fit the assignment and compare its suggestions against evidence.
+
+I'm a hands-on technical consultant whose deepest specialty is search. Clients bring me in when the technical side of their web presence needs someone in charge: I diagnose, scope, write the spec, direct the developers, human and AI, ship the parts I can ship myself, and explain it all to leadership in plain English. My technical SEO core covers on-page SEO, site speed, Cloudflare and CDN setup, 301 redirects, indexing, Google Search Console, and migrations. Around it I work as a fractional technical lead, rescue stalled projects, build small AI tools with Codex and Claude Code, clean up data, advise founders and executives, and manage the online reputation of people whose public record matters.
 
 Every layer I work in, from servers and DNS to code, schema, and data, is listed with its proof on [what I can take on in your stack](https://gerriscorp.com/stack/).
 
@@ -60,4 +62,4 @@ Gerris is distinct from chrisabraham.com: this site covers the consultancy and i
 
 *Gerris lacustris* is the common water strider, the insect that skates across the surface of ponds. Why I chose it, and the story of the logo [Oliver Uberti](https://www.oliveruberti.com/) drew for it, are in the [colophon](https://gerriscorp.com/colophon/).
 
-Updated October 14, 2026
+Updated October 15, 2026

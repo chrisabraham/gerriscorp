@@ -1,13 +1,13 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # Site map
 
 Every page on this site, grouped by section, with a one-line summary of each. Search engines read the same list in [sitemap.xml](https://gerriscorp.com/sitemap.xml), and AI tools in [llms.txt](https://gerriscorp.com/llms.txt).
 
 ## Main pages
-- [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham sorts out the technical side of your web presence: diagnoses problems, directs developers, builds with Claude Code, and fixes technical SEO.
+- [Experienced help for the digital work your business needs done](https://gerriscorp.com/): Chris Abraham diagnoses web problems, directs developers, and builds with OpenAI Codex and Claude Code. Consulting, automation, and SEO from Gerris Corp.
 - [Services](https://gerriscorp.com/services/): Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 - [Guides](https://gerriscorp.com/guides/): Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 - [Case studies](https://gerriscorp.com/case-studies/): Anonymized case studies from Chris Abraham: JavaScript rendering failures, migrations, developer specs, app takeovers, multi location schema, and data cleanup.
@@ -25,7 +25,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): Chris Abraham turns a diagnosis into a prioritized developer spec with evidence and acceptance criteria, then verifies on the live site that the fix shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): Chris Abraham works inside agencies' client relationships as a technical SEO and AI search specialist, under NDA, in your Basecamp, with your branding.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
-- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds small, safe AI tools with Claude Code: human confirmation on every action, tests, secrets kept out of Git, and encrypted backups.
+- [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds AI tools with OpenAI Codex and Claude Code: reviewed actions, tests, secrets outside Git, and backups with a tested restore path.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI generated spreadsheets for fabricated or wrong data before you rely on them.
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
@@ -88,12 +88,12 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): Full page caching keeps most visitors away from WordPress and MySQL. Here is the traffic that still reaches your server, and how to harden each path it takes.
 - [Google Consent Mode v2 for GA4: a practical setup guide](https://gerriscorp.com/guides/ga4-consent-mode/): What Consent Mode v2 controls in GA4 and Google Ads, how basic and advanced mode differ, how to set regional defaults, and how to check that it really works.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): How to find out why legitimate business email lands in spam or bounces: authentication results, reputation, blocklists, content, list hygiene, and tools.
-- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+- [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): A practical workflow for OpenAI Codex, Claude Code, and GitHub Copilot on business websites: written specs, project context, automated checks, and human review.
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): Twelve questions that expose AI washing in a vendor pitch, the SEC and FTC cases that define it, and why a technical skeptic belongs on the sales call.
 - [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): A founder's method for hiring web developers: own the accounts first, interview for judgment, pay for a trial task, review pull requests, and manage AI use.
 - [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Eight tests for telling a lasting technology shift from a hype cycle, drawn from online communities, blogs, social media, crypto, and the AI wave of 2026.
-- [Repositories plus super intelligence: the SEO superpower nobody told you to learn](https://gerriscorp.com/guides/seo-superpower/): Repositories plus AI coding assistants turn an SEO from plugin operator into someone who ships fixes. Why SEOs need Git, Claude Code, and Copilot now.
-- [Build a podcast website with Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Give a podcast its own website for the price of a domain: Cloudflare Registrar at cost, free GitHub Pages hosting, and Claude Code building every episode page.
+- [Repositories plus super intelligence: the SEO superpower nobody told you to learn](https://gerriscorp.com/guides/seo-superpower/): Repositories and AI coding assistants help SEOs ship fixes. How Git, OpenAI Codex, Claude Code, and GitHub Copilot connect search findings to changes in code.
+- [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): Build a podcast website with OpenAI Codex or Claude Code, GitHub Pages, and Cloudflare: a page for every episode, stable links, and daily feed updates.
 - [The state of search in 2026: every Google update so far, and the AI shift behind them](https://gerriscorp.com/guides/search-in-2026/): Every 2026 Google core and spam update with dates, the new spam rule against manipulating AI answers, what Bing and ChatGPT now report, and what to do now.
 - [Ranking yourself first in a "best of" list now backfires in AI answers](https://gerriscorp.com/guides/self-ranking-lists/): How self ranked best agency lists came to steer AI answers, why Google, Anthropic, and the data now push back, and what earns a real AI recommendation instead.
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): SEO from first principles for absolute beginners: how search works, people first content, E E A T, titles, links, alt text, speed, and accessibility.
@@ -121,7 +121,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Contact data: three cleanups and an AI audit](https://gerriscorp.com/case-studies/data-cleanup/): Python pipelines that cleaned an 88,900 contact list, merged two 28,800 record exports at 94% email coverage, and caught an AI tracker inventing its data.
 - [A founder's public record: tracing AI errors to the pages behind them](https://gerriscorp.com/case-studies/founder-record/): AI answers about me got a founding year wrong, invented a company rename, and doubted a real award. Each traced to a page, and the archive settled the rest.
 - [Four static sites: a speed and AI crawler pass in one afternoon](https://gerriscorp.com/case-studies/four-site-speed-pass/): Four static sites I own, measured with mobile Lighthouse, fixed in one afternoon, and measured again: analytics deferred, images resized, robots rules verified.
-- [Built with Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs Claude Code like a development team: a 12,000 line AI assistant with 140 tests, a legacy blog moved to GitHub Pages, and this site.
+- [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/): How Chris Abraham directs OpenAI Codex and Claude Code, with original Claude Code builds of a tested assistant, a legacy blog migration, and this website.
 
 ## Files for machines
 - [sitemap.xml](https://gerriscorp.com/sitemap.xml): the XML sitemap for search engines.
@@ -130,4 +130,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 14, 2026
+Updated October 15, 2026

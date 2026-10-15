@@ -1,12 +1,12 @@
-> A working method for using Claude Code and other AI coding assistants on real websites: specs, project memory, automated checks, review, and secrets.
+> A practical workflow for OpenAI Codex, Claude Code, and GitHub Copilot on business websites: written specs, project context, automated checks, and human review.
 >
-> Source: https://gerriscorp.com/guides/ai-coding-assistants/ · Updated 2026-10-06 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ai-coding-assistants/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
 
 # How to use AI coding assistants on a business website safely
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 6, 2026 · Updated October 15, 2026
 
-AI coding assistants such as Claude Code, Cursor, and GitHub Copilot can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.
+AI coding assistants such as OpenAI Codex, Claude Code, GitHub Copilot, and Cursor can now do real work on real websites: migrations, redirect maps, templates, structured data, content checks across hundreds of pages. They work fast and they work confidently, including when they're wrong. The method below is how I get the speed without the damage.
 
 ## Start with a written spec
 
@@ -49,7 +49,7 @@ Assistants are well read and out of date in places. They'll describe a platform 
 
 The assistant writes code; a person owns the outcome. For a business site that means someone who can read the diff, understands search and infrastructure, and will notice when a confident change is wrong. That's the role I play for clients: I write the spec, set up the checks, direct the assistant or the developers, and verify what ships.
 
-See how this site and other projects were built in the [Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
+See how this site and other projects were built in the [Codex and Claude Code case study](https://gerriscorp.com/case-studies/built-with-claude-code/), and what I build for clients under [AI tools and automation](https://gerriscorp.com/services/ai-automation/) and [fractional technical lead](https://gerriscorp.com/services/technical-lead/).
 
 ## Want me to handle this for you?
 
@@ -60,6 +60,7 @@ This guide shows you how to do it yourself. If you'd rather hand it to someone w
 If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
 
 ## References
+- [OpenAI: Codex for code generation](https://developers.openai.com/api/docs/guides/code-generation)
 - [Anthropic: Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)

@@ -3,13 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gerriscorp.com/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <image:image><image:loc>https://gerriscorp.com/logo.png</image:loc></image:image>
     <image:image><image:loc>https://gerriscorp.com/social-card.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/technical-lead/</loc>
@@ -29,11 +29,11 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/services/ai-automation/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/data-cleanup/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/analytics/</loc>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/services/podcast-sites/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/ongoing-support/</loc>
@@ -117,7 +117,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/fact-check-ai-seo/</loc>
@@ -181,7 +181,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/core-web-vitals-mcp/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/email-blocklist-recovery/</loc>
@@ -261,7 +261,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/ai-coding-assistants/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/ai-vendor-pitch/</loc>
@@ -277,11 +277,11 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/seo-superpower/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/podcast-website/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/search-in-2026/</loc>
@@ -297,11 +297,11 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/podcast-seo/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/podcast-for-your-brand/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/lynx-qa/</loc>
@@ -317,7 +317,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/case-studies/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/case-studies/ecommerce-rendering/</loc>
@@ -333,7 +333,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/case-studies/netlify-migration/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/case-studies/sanity-vercel/</loc>
@@ -389,16 +389,16 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/case-studies/built-with-claude-code/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/about/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <image:image><image:loc>https://gerriscorp.com/chris-abraham.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://gerriscorp.com/stack/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/work-with-me/</loc>
@@ -410,11 +410,11 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/standards/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/colophon/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/contact/</loc>
@@ -426,6 +426,6 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/sitemap/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>
