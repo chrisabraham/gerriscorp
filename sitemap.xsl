@@ -67,6 +67,11 @@ dd { margin: .2rem 0 0 0; }
 .guide-contents li { margin-bottom: .35rem; }
 h2[id] { scroll-margin-top: 1rem; }
 .contact li { margin-bottom: .6rem; }
+.index-letters p { font-size: 1.05rem; word-spacing: .35em; }
+ul.site-index { list-style: none; padding: 0; }
+ul.site-index > li { margin-bottom: .35rem; padding-left: 1.5rem; text-indent: -1.5rem; }
+ul.site-index ul { list-style: none; padding-left: 1.5rem; margin: .15rem 0 .3rem; }
+ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1rem; }
 .site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0 0 .4rem; }
 @media (max-width: 34rem) {

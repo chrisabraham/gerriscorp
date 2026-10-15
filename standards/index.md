@@ -26,7 +26,7 @@ Clients are described by industry and problem. No names, addresses, revenue, cas
 
 ## No one pays to be mentioned
 
-This site carries no affiliate links, sponsored content, or paid reviews. When I name a tool, a host, or a platform, it's because I use it or a client runs on it.
+This site carries no sponsored content and no paid reviews. Its only affiliate links are Amazon Associates links to books and gear, and any page with one ends with the required disclosure. When I name a tool, a host, or a platform, it's because I use it or a client runs on it.
 
 ## Dates mean something
 

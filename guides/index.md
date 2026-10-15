@@ -76,6 +76,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Reference
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): plain definitions, from 301 redirects to XML sitemaps.
+- [The site index](https://gerriscorp.com/site-index/): every person, company, tool, and problem on gerriscorp.com, A to Z, with the pages that cover each.
 
 ## How these guides are written
 

@@ -1,0 +1,7263 @@
+{
+ "entries": {
+  "301 redirects": {
+   "kind": "topic",
+   "pages": [
+    "services/migrations",
+    "services/email-and-dns",
+    "guides/301-redirects"
+   ],
+   "subs": {
+    "which redirect to use": [
+     "guides/301-redirects"
+    ],
+    "mapping old to new": [
+     "guides/301-redirects"
+    ],
+    "sources for old URLs": [
+     "guides/301-redirects"
+    ],
+    "where to implement": [
+     "guides/301-redirects"
+    ],
+    "chains and loops": [
+     "guides/301-redirects"
+    ],
+    "testing": [
+     "guides/301-redirects"
+    ],
+    "how long to keep": [
+     "guides/301-redirects"
+    ],
+    "PageRank question": [
+     "guides/301-redirects"
+    ]
+   },
+   "see": [
+    "site migrations"
+   ],
+   "main": [
+    "guides/301-redirects"
+   ]
+  },
+  "302 and 307 redirects": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-recovery",
+    "guides/nextjs-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "308 redirects": {
+   "kind": "topic",
+   "pages": [
+    "guides/nextjs-seo",
+    "guides/migration-tools"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "404 errors": {
+   "kind": "topic",
+   "pages": [
+    "services/ecommerce",
+    "case-studies/shopify-migration"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "410 status": {
+   "kind": "topic",
+   "pages": [
+    "guides/removed-location-pages",
+    "guides/301-redirects"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "A/B testing a fix": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/ecommerce-rendering"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Abraham Harrison": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/founder-record",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Abraham, Chris": {
+   "kind": "person",
+   "pages": [
+    "about"
+   ],
+   "subs": {
+    "websites since 1994": [
+     "home"
+    ],
+    "thirty years of building websites": [
+     "services/technical-lead"
+    ],
+    "digital work since the early 1990s": [
+     "services/advisory"
+    ],
+    "own AI visibility run": [
+     "guides/citation-gap-analysis",
+     "guides/readme-ai-source"
+    ],
+    "executive editor": [
+     "guides/content-briefs"
+    ],
+    "writing Perl and PHP": [
+     "guides/hiring-developers"
+    ],
+    "crypto news site in Tallinn": [
+     "guides/hype-or-shift"
+    ],
+    "The WELL and MemeSpace": [
+     "guides/hype-or-shift"
+    ],
+    "blogger outreach (2006)": [
+     "guides/hype-or-shift"
+    ],
+    "gray beard and technical skeptic": [
+     "guides/hype-or-shift"
+    ],
+    "own public record traced": [
+     "case-studies/founder-record"
+    ],
+    "Washington, DC area since 1988": [
+     "about"
+    ],
+    "South Arlington": [
+     "about",
+     "contact"
+    ],
+    "Upwork record": [
+     "about"
+    ],
+    "servers and systems": [
+     "about",
+     "stack"
+    ],
+    "platforms": [
+     "about",
+     "stack"
+    ],
+    "New Media Strategies": [
+     "about",
+     "services/reputation"
+    ],
+    "Edelman": [
+     "about",
+     "stack"
+    ],
+    "Abraham Harrison (2007)": [
+     "about"
+    ],
+    "Gerris Corp (2012)": [
+     "about"
+    ],
+    "Reputation.com": [
+     "about"
+    ],
+    "Owens Corning Pink Panther site (1996)": [
+     "about"
+    ],
+    "Rheingold Associates": [
+     "about"
+    ],
+    "Treasury Department": [
+     "about"
+    ],
+    "programming languages": [
+     "about",
+     "stack"
+    ],
+    "directory-era SEO": [
+     "about"
+    ],
+    "online community": [
+     "about"
+    ],
+    "writing and debate": [
+     "about",
+     "stack"
+    ],
+    "education": [
+     "about"
+    ],
+    "PNI (Picture Network International)": [
+     "stack"
+    ],
+    "rowing and the name Gerris": [
+     "colophon"
+    ]
+   },
+   "see": [
+    "working with Chris"
+   ],
+   "main": [
+    "about"
+   ]
+  },
+  "acceptance criteria": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/developers",
+    "services/technical-lead",
+    "services/technical-seo",
+    "services/crawler-visibility",
+    "guides/glossary",
+    "case-studies/react-event-platform"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "access and ownership of accounts": {
+   "kind": "topic",
+   "pages": [
+    "guides/year-end-seo-check",
+    "services/technical-lead"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "accessibility": {
+   "kind": "topic",
+   "pages": [
+    "guides/ada-website-compliance",
+    "guides/lynx-qa"
+   ],
+   "subs": {
+    "what the law expects": [
+     "guides/ada-website-compliance"
+    ],
+    "government deadlines (2027 and 2028)": [
+     "guides/ada-website-compliance"
+    ],
+    "WebAIM Million failures": [
+     "guides/ada-website-compliance"
+    ],
+    "fix list": [
+     "guides/ada-website-compliance"
+    ],
+    "overlays and badges": [
+     "guides/ada-website-compliance"
+    ],
+    "documentation and statements": [
+     "guides/ada-website-compliance"
+    ],
+    "search and AI dividends": [
+     "guides/ada-website-compliance"
+    ],
+    "keeping it from sliding": [
+     "guides/ada-website-compliance"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ada-website-compliance"
+   ]
+  },
+  "accessibility overlays": {
+   "kind": "topic",
+   "pages": [
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ADA (Americans with Disabilities Act)": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101",
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ada-website-compliance"
+   ]
+  },
+  "Adobe Podcast Enhance Speech": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Advertising Age": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/founder-record"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "AEO (answer engine optimization)": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search"
+   ],
+   "subs": {},
+   "see": [
+    "AI search"
+   ],
+   "main": []
+  },
+  "AES-256 backups": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "agencies, working with": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/agency-partner"
+   ],
+   "subs": {
+    "white label, named specialist, or referral": [
+     "services/agency-partner"
+    ],
+    "confidentiality": [
+     "services/agency-partner"
+    ],
+    "arrangements": [
+     "services/agency-partner"
+    ],
+    "client stays the agency’s": [
+     "services/agency-partner"
+    ],
+    "reporting formats": [
+     "services/agency-partner"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/agency-partner"
+   ]
+  },
+  "Ahrefs": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "guides/migration-tools"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "AI agents and automation": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/ai-automation"
+   ],
+   "subs": {
+    "human confirmation on every action": [
+     "services/ai-automation"
+    ],
+    "prompt injection defense": [
+     "services/ai-automation"
+    ],
+    "credentials and secrets": [
+     "services/ai-automation"
+    ],
+    "tests and backups": [
+     "services/ai-automation"
+    ],
+    "choosing a model": [
+     "services/ai-automation"
+    ],
+    "pilots": [
+     "services/ai-automation"
+    ],
+    "ownership of the code": [
+     "services/ai-automation"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/ai-automation"
+   ]
+  },
+  "AI agents, browsing": {
+   "kind": "topic",
+   "pages": [
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "AI answers, correcting": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/founder-record",
+    "services/reputation"
+   ],
+   "subs": {
+    "wrong founding year": [
+     "case-studies/founder-record"
+    ],
+    "invented rename (Gerris Digital)": [
+     "case-studies/founder-record"
+    ],
+    "stale freelance figures": [
+     "case-studies/founder-record"
+    ],
+    "doubted Forbes award": [
+     "case-studies/founder-record"
+    ],
+    "corroborating with archives": [
+     "case-studies/founder-record"
+    ]
+   },
+   "see": [],
+   "main": [
+    "case-studies/founder-record"
+   ]
+  },
+  "AI assistants, how they answer": {
+   "kind": "topic",
+   "pages": [
+    "guides",
+    "guides/ai-assistants"
+   ],
+   "subs": {
+    "training data": [
+     "guides/ai-assistants"
+    ],
+    "live retrieval": [
+     "guides/ai-assistants"
+    ],
+    "which index feeds which assistant": [
+     "guides/ai-assistants"
+    ],
+    "crawlers by purpose": [
+     "guides/ai-assistants"
+    ],
+    "what assistants favor": [
+     "guides/ai-assistants"
+    ],
+    "what to do this quarter": [
+     "guides/ai-assistants"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ai-assistants"
+   ]
+  },
+  "AI coding assistants": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-coding-assistants",
+    "guides/seo-superpower"
+   ],
+   "subs": {
+    "written specs": [
+     "guides/ai-coding-assistants"
+    ],
+    "project memory files": [
+     "guides/ai-coding-assistants"
+    ],
+    "rules turned into checks": [
+     "guides/ai-coding-assistants"
+    ],
+    "small reviewed changes": [
+     "guides/ai-coding-assistants"
+    ],
+    "secrets and production": [
+     "guides/ai-coding-assistants"
+    ],
+    "verifying against the real world": [
+     "guides/ai-coding-assistants"
+    ],
+    "strengths": [
+     "guides/ai-coding-assistants"
+    ],
+    "where to slow down": [
+     "guides/ai-coding-assistants"
+    ],
+    "accountability": [
+     "guides/ai-coding-assistants"
+    ]
+   },
+   "see": [
+    "Claude Code"
+   ],
+   "main": [
+    "guides/ai-coding-assistants"
+   ]
+  },
+  "AI crawlers": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "services/crawler-visibility",
+    "guides/nextjs-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "AI output, auditing": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/data-cleanup",
+    "case-studies/data-cleanup",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/data-cleanup"
+   ]
+  },
+  "AI search": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/advisory",
+    "services/ai-search"
+   ],
+   "subs": {
+    "SEO, AEO, and GEO": [
+     "services/ai-search"
+    ],
+    "readiness audit": [
+     "services/ai-search"
+    ],
+    "answer-shaped content": [
+     "services/ai-search"
+    ],
+    "machine-readable you": [
+     "services/ai-search"
+    ],
+    "technical foundations": [
+     "services/ai-search"
+    ],
+    "measurement": [
+     "services/ai-search"
+    ],
+    "careers and recruiting questions": [
+     "case-studies/ai-recruiting"
+    ]
+   },
+   "see": [
+    "AI search, measuring",
+    "AI assistants, how they answer",
+    "citation gap analysis",
+    "AI answers, correcting"
+   ],
+   "main": [
+    "services/ai-search"
+   ]
+  },
+  "AI search, measuring": {
+   "kind": "topic",
+   "pages": [
+    "guides",
+    "guides/measure-ai-search",
+    "services/ai-search",
+    "services/analytics"
+   ],
+   "subs": {
+    "citations, mentions, referrals, and leads": [
+     "guides/measure-ai-search"
+    ],
+    "Bing AI Performance report": [
+     "guides/measure-ai-search"
+    ],
+    "GA4 custom channel groups": [
+     "guides/measure-ai-search"
+    ],
+    "Search Console limits": [
+     "guides/measure-ai-search"
+    ],
+    "answer logs": [
+     "guides/measure-ai-search"
+    ],
+    "connecting to inquiries": [
+     "guides/measure-ai-search"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/measure-ai-search"
+   ]
+  },
+  "AI vendors, vetting": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {
+    "AI washing cases": [
+     "guides/ai-vendor-pitch"
+    ],
+    "twelve questions": [
+     "guides/ai-vendor-pitch"
+    ],
+    "reading the answers": [
+     "guides/ai-vendor-pitch"
+    ],
+    "paid pilots": [
+     "guides/ai-vendor-pitch"
+    ],
+    "a technical skeptic on the call": [
+     "guides/ai-vendor-pitch"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ai-vendor-pitch"
+   ]
+  },
+  "AI washing": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "AI writing": {
+   "kind": "topic",
+   "pages": [
+    "services/editorial"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Alpine.js": {
+   "kind": "topic",
+   "pages": [
+    "services/crawler-visibility"
+   ],
+   "subs": {
+    "x-show versus x-if": [
+     "guides/javascript-seo"
+    ],
+    "x-intersect and x-if": [
+     "case-studies/ecommerce-rendering"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "alt text": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101",
+    "guides/podcast-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Amara, Roy": {
+   "kind": "person",
+   "pages": [
+    "guides/hype-or-shift",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Amara’s law": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Amazon Associates": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand",
+    "colophon",
+    "standards"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "analytics": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/analytics"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/analytics"
+   ]
+  },
+  "anchor text": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/consent-blocking"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "anonymized clients": {
+   "kind": "topic",
+   "pages": [
+    "case-studies"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Anthropic": {
+   "kind": "topic",
+   "pages": [
+    "guides/self-ranking-lists",
+    "guides/ai-coding-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Anthropic usage policy (October 2026)": {
+   "kind": "topic",
+   "pages": [
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Apache and .htaccess": {
+   "kind": "topic",
+   "pages": [
+    "guides/301-redirects"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "APO (Automatic Platform Optimization)": {
+   "kind": "topic",
+   "pages": [
+    "services/wordpress-care"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "appeals, evidence-first": {
+   "kind": "topic",
+   "pages": [
+    "services/google-business-profile",
+    "case-studies/gbp-reinstatement",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies/gbp-reinstatement"
+   ]
+  },
+  "Applebot-Extended": {
+   "kind": "topic",
+   "pages": [
+    "guides/robots-txt"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Arlington, Virginia": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "about",
+    "contact"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ArtsWire": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Asana": {
+   "kind": "topic",
+   "pages": [
+    "services/agency-partner"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Ask Jeeves": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Astro": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "guides/javascript-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Atlas of the Invisible": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Audacity": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Avada": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "B2B content operations": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/umbraco-operations"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "backups": {
+   "kind": "topic",
+   "pages": [
+    "services/wordpress-care",
+    "services/ai-automation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Barracuda": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Basecamp": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/technical-lead",
+    "services/developers",
+    "services/agency-partner",
+    "case-studies/umbraco-operations",
+    "work-with-me",
+    "faq"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "BeenVerified": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Berlin": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/founder-record"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "BigQuery bulk export": {
+   "kind": "topic",
+   "pages": [
+    "guides/traffic-drop"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "BIMI": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-authentication",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Bing": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/consent-blocking"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Bing Webmaster Tools": {
+   "kind": "topic",
+   "pages": [
+    "services/analytics",
+    "services/search-console",
+    "guides/indexnow-ai-search",
+    "guides/ai-assistants",
+    "case-studies/indexing-recovery"
+   ],
+   "subs": {
+    "AI Performance report": [
+     "guides/measure-ai-search",
+     "guides/citation-gap-analysis",
+     "guides/search-in-2026"
+    ],
+    "Site Move tool": [
+     "guides/migration-checklist"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "Bingbot": {
+   "kind": "topic",
+   "pages": [
+    "guides/cloudflare-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Bitbucket": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Blackbox (Chris’ command-line assistant)": {
+   "kind": "topic",
+   "pages": [
+    "case-studies",
+    "case-studies/built-with-claude-code",
+    "stack",
+    "about"
+   ],
+   "subs": {
+    "what it does": [
+     "case-studies/built-with-claude-code"
+    ],
+    "how it was built": [
+     "case-studies/built-with-claude-code"
+    ],
+    "safety rules": [
+     "case-studies/built-with-claude-code"
+    ],
+    "built from real use": [
+     "case-studies/built-with-claude-code"
+    ],
+    "deploy loop": [
+     "case-studies/built-with-claude-code"
+    ]
+   },
+   "see": [],
+   "main": [
+    "case-studies/built-with-claude-code"
+   ]
+  },
+  "blocklists": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns",
+    "guides/email-blocklist-recovery",
+    "guides/email-deliverability",
+    "guides/glossary"
+   ],
+   "subs": {
+    "paid removal scam": [
+     "guides/email-blocklist-recovery"
+    ],
+    "reading the bounce": [
+     "guides/email-blocklist-recovery"
+    ],
+    "IP versus domain listings": [
+     "guides/email-blocklist-recovery"
+    ],
+    "domain blocklists and SURBL": [
+     "guides/email-blocklist-recovery"
+    ],
+    "fixing the cause": [
+     "guides/email-blocklist-recovery"
+    ],
+    "requesting removal": [
+     "guides/email-blocklist-recovery"
+    ],
+    "rebuilding reputation": [
+     "guides/email-blocklist-recovery"
+    ],
+    "fresh start on a subdomain": [
+     "guides/email-blocklist-recovery"
+    ],
+    "prevention": [
+     "guides/email-blocklist-recovery"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/email-blocklist-recovery"
+   ]
+  },
+  "blogger outreach": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "BOTI award": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "build checks": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "guides/seo-build-checks",
+    "guides/ai-coding-assistants"
+   ],
+   "subs": {
+    "where the checks run": [
+     "guides/seo-build-checks"
+    ],
+    "titles and descriptions": [
+     "guides/seo-build-checks"
+    ],
+    "indexing signals": [
+     "guides/seo-build-checks"
+    ],
+    "sitemap agreement": [
+     "guides/seo-build-checks"
+    ],
+    "structured data": [
+     "guides/seo-build-checks"
+    ],
+    "headings and markup": [
+     "guides/seo-build-checks"
+    ],
+    "links": [
+     "guides/seo-build-checks"
+    ],
+    "minimal Python example": [
+     "guides/seo-build-checks"
+    ],
+    "duplicate phrasing": [
+     "guides/seo-build-checks"
+    ],
+    "rolling out": [
+     "guides/seo-build-checks"
+    ]
+   },
+   "see": [
+    "SEO engineering"
+   ],
+   "main": [
+    "services/seo-engineering",
+    "guides/seo-build-checks"
+   ]
+  },
+  "California DROP (Delete Request and Opt-out Platform)": {
+   "kind": "topic",
+   "pages": [
+    "services/reputation",
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "California Privacy Protection Agency": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "canonical tags": {
+   "kind": "topic",
+   "pages": [
+    "guides/canonical-tags"
+   ],
+   "subs": {
+    "what the tag does": [
+     "guides/canonical-tags"
+    ],
+    "a hint weighed against signals": [
+     "guides/canonical-tags"
+    ],
+    "Search Console statuses": [
+     "guides/canonical-tags"
+    ],
+    "rules": [
+     "guides/canonical-tags"
+    ],
+    "pagination": [
+     "guides/canonical-tags"
+    ],
+    "canonical with noindex": [
+     "guides/canonical-tags"
+    ],
+    "cross-domain": [
+     "guides/canonical-tags"
+    ],
+    "canonical or redirect": [
+     "guides/canonical-tags"
+    ],
+    "pointing every section home": [
+     "case-studies/react-event-platform"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/canonical-tags"
+   ]
+  },
+  "careers pages": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/ai-recruiting"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "case studies": {
+   "kind": "topic",
+   "pages": [
+    "case-studies"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies"
+   ]
+  },
+  "CCBot": {
+   "kind": "topic",
+   "pages": [
+    "guides/robots-txt"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "CDNs": {
+   "kind": "topic",
+   "pages": [
+    "services/site-speed",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ChatGPT": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/analytics",
+    "services/advisory",
+    "services/crawler-visibility",
+    "services/ai-search",
+    "guides/ai-assistants",
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ChatGPT-User": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "chrisabraham.com": {
+   "kind": "topic",
+   "pages": [
+    "guides/cloudflare-seo",
+    "case-studies/founder-record",
+    "about",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Chrome": {
+   "kind": "topic",
+   "pages": [
+    "guides/speculation-rules"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Chrome DevTools": {
+   "kind": "topic",
+   "pages": [
+    "guides/speculation-rules",
+    "guides/core-web-vitals-mcp",
+    "guides/core-web-vitals"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Chrome DevTools MCP": {
+   "kind": "topic",
+   "pages": [
+    "guides/core-web-vitals-mcp"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Chrome UX Report": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "services/site-speed",
+    "guides/core-web-vitals-mcp"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "citation gap analysis": {
+   "kind": "topic",
+   "pages": [
+    "guides",
+    "guides/citation-gap-analysis",
+    "guides/glossary"
+   ],
+   "subs": {
+    "collecting cited sources": [
+     "guides/citation-gap-analysis"
+    ],
+    "seven source types": [
+     "guides/citation-gap-analysis"
+    ],
+    "ranking gaps": [
+     "guides/citation-gap-analysis"
+    ],
+    "closing gaps without paying": [
+     "guides/citation-gap-analysis"
+    ],
+    "monthly reruns": [
+     "guides/citation-gap-analysis"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/citation-gap-analysis"
+   ]
+  },
+  "citation share": {
+   "kind": "topic",
+   "pages": [
+    "guides/measure-ai-search",
+    "guides/citation-gap-analysis"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Claude (Anthropic assistant)": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/advisory",
+    "services/crawler-visibility",
+    "services/ai-search",
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Claude Code": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/ai-automation",
+    "guides/core-web-vitals-mcp",
+    "guides/ai-coding-assistants",
+    "guides/seo-superpower",
+    "guides/podcast-website",
+    "case-studies/netlify-migration",
+    "case-studies/built-with-claude-code",
+    "stack",
+    "colophon"
+   ],
+   "subs": {},
+   "see": [
+    "AI coding assistants"
+   ],
+   "main": [
+    "case-studies/built-with-claude-code"
+   ]
+  },
+  "Claude-SearchBot": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Claude-User": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "CLAUDE.md": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-coding-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ClaudeBot": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "services/ai-search",
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "client-side rendering": {
+   "kind": "topic",
+   "pages": [
+    "guides/javascript-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Cloudflare": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "home",
+    "services",
+    "services/site-speed",
+    "guides/cloudflare-seo",
+    "guides/wordpress-behind-cloudflare",
+    "case-studies/indexing-recovery"
+   ],
+   "subs": {
+    "Cache Rules and Tiered Cache": [
+     "services/site-speed"
+    ],
+    "APO": [
+     "services/site-speed",
+     "services/wordpress-care"
+    ],
+    "Polish and Cloudflare Images": [
+     "services/site-speed"
+    ],
+    "Redirect Rules and Bulk Redirects": [
+     "services/site-speed",
+     "guides/301-redirects",
+     "guides/cloudflare-seo"
+    ],
+    "Page Rules retirement": [
+     "services/site-speed"
+    ],
+    "Crawler Hints": [
+     "services/site-speed",
+     "guides/cloudflare-seo"
+    ],
+    "AI crawler blocking": [
+     "services/site-speed",
+     "guides/ai-assistants"
+    ],
+    "DNS moves": [
+     "services/site-speed"
+    ],
+    "R2 storage": [
+     "services/podcast-sites"
+    ],
+    "what to budget": [
+     "guides/cloudflare-seo",
+     "faq"
+    ],
+    "Registrar": [
+     "guides/cloudflare-seo",
+     "guides/podcast-website"
+    ],
+    "proxied or DNS only": [
+     "guides/cloudflare-seo"
+    ],
+    "AI Crawl Control": [
+     "guides/cloudflare-seo"
+    ],
+    "Bot Fight Mode": [
+     "guides/cloudflare-seo"
+    ],
+    "Under Attack Mode": [
+     "guides/cloudflare-seo"
+    ],
+    "WAF rules": [
+     "guides/cloudflare-seo"
+    ],
+    "Cache Rules for HTML": [
+     "guides/cloudflare-seo"
+    ],
+    "SSL Full (strict)": [
+     "guides/cloudflare-seo"
+    ],
+    "HSTS": [
+     "guides/cloudflare-seo"
+    ],
+    "Rocket Loader": [
+     "guides/cloudflare-seo"
+    ],
+    "Email Address Obfuscation": [
+     "guides/cloudflare-seo"
+    ]
+   },
+   "see": [
+    "DNS"
+   ],
+   "main": [
+    "services/site-speed",
+    "guides/cloudflare-seo"
+   ]
+  },
+  "Cloudflare Tunnel": {
+   "kind": "topic",
+   "pages": [
+    "guides/wordpress-behind-cloudflare"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Clutch": {
+   "kind": "topic",
+   "pages": [
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Codex": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "colophon": {
+   "kind": "topic",
+   "pages": [
+    "services/wordpress-care",
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "colophon"
+   ]
+  },
+  "command-line assistant (Chris’)": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/ai-automation",
+    "case-studies/built-with-claude-code",
+    "stack"
+   ],
+   "subs": {},
+   "see": [
+    "Blackbox (Chris’ command-line assistant)"
+   ],
+   "main": []
+  },
+  "compensation facts": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/ai-recruiting"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "consent mode": {
+   "kind": "topic",
+   "pages": [
+    "guides/ga4-consent-mode",
+    "privacy"
+   ],
+   "subs": {
+    "four signals": [
+     "guides/ga4-consent-mode"
+    ],
+    "basic and advanced mode": [
+     "guides/ga4-consent-mode"
+    ],
+    "behavioral modeling thresholds": [
+     "guides/ga4-consent-mode"
+    ],
+    "regional defaults": [
+     "guides/ga4-consent-mode"
+    ],
+    "Tag Manager Consent Initialization": [
+     "guides/ga4-consent-mode"
+    ],
+    "certified consent platforms": [
+     "guides/ga4-consent-mode"
+    ],
+    "verifying with Tag Assistant and gcs": [
+     "guides/ga4-consent-mode"
+    ],
+    "common mistakes": [
+     "guides/ga4-consent-mode"
+    ],
+    "effect on reports": [
+     "guides/ga4-consent-mode"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ga4-consent-mode"
+   ]
+  },
+  "consent tools": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/crawler-visibility",
+    "guides/ga4-consent-mode",
+    "case-studies/consent-blocking"
+   ],
+   "subs": {
+    "prior-consent blocking": [
+     "case-studies/consent-blocking"
+    ]
+   },
+   "see": [],
+   "main": [
+    "case-studies/consent-blocking"
+   ]
+  },
+  "content briefs": {
+   "kind": "topic",
+   "pages": [
+    "guides",
+    "guides/content-briefs",
+    "guides/glossary"
+   ],
+   "subs": {
+    "the question": [
+     "guides/content-briefs"
+    ],
+    "the expert answer": [
+     "guides/content-briefs"
+    ],
+    "the evidence list": [
+     "guides/content-briefs"
+    ],
+    "self-contained sections": [
+     "guides/content-briefs"
+    ],
+    "limits": [
+     "guides/content-briefs"
+    ],
+    "links, title, and description": [
+     "guides/content-briefs"
+    ],
+    "review before publishing": [
+     "guides/content-briefs"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/content-briefs"
+   ]
+  },
+  "content the crawler never sees": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/crawler-visibility",
+    "services/ecommerce",
+    "case-studies/ecommerce-rendering",
+    "case-studies/consent-blocking",
+    "case-studies/react-event-platform"
+   ],
+   "subs": {
+    "Magento with Hyvä": [
+     "services/crawler-visibility"
+    ],
+    "consent management": [
+     "services/crawler-visibility"
+    ],
+    "React click-handler links": [
+     "services/crawler-visibility"
+    ],
+    "three views of a page": [
+     "services/crawler-visibility"
+    ],
+    "how to check your own site": [
+     "services/crawler-visibility"
+    ]
+   },
+   "see": [
+    "JavaScript SEO"
+   ],
+   "main": [
+    "services/crawler-visibility"
+   ]
+  },
+  "continuous integration": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-build-checks"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "core updates": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [
+    "Google updates"
+   ],
+   "main": []
+  },
+  "Core Web Vitals": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/technical-seo",
+    "services/site-speed",
+    "guides/core-web-vitals-mcp",
+    "guides/core-web-vitals"
+   ],
+   "subs": {
+    "LCP, INP, and CLS": [
+     "services/site-speed",
+     "guides/core-web-vitals"
+    ],
+    "INP replacing First Input Delay": [
+     "services/site-speed"
+    ],
+    "diagnosing with MCP": [
+     "guides/core-web-vitals-mcp"
+    ],
+    "field data versus lab data": [
+     "guides/core-web-vitals"
+    ],
+    "where to read it": [
+     "guides/core-web-vitals"
+    ],
+    "fixing LCP": [
+     "guides/core-web-vitals"
+    ],
+    "fixing INP": [
+     "guides/core-web-vitals"
+    ],
+    "fixing CLS": [
+     "guides/core-web-vitals"
+    ],
+    "how much it matters": [
+     "guides/core-web-vitals"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/site-speed",
+    "guides/core-web-vitals"
+   ]
+  },
+  "crawl budget": {
+   "kind": "topic",
+   "pages": [
+    "guides/faceted-navigation",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/faceted-navigation"
+   ]
+  },
+  "Crawl-delay": {
+   "kind": "topic",
+   "pages": [
+    "guides/robots-txt"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Crawled, currently not indexed": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/technical-seo",
+    "services/crawler-visibility",
+    "services/large-sites",
+    "guides/crawled-not-indexed",
+    "case-studies/ecommerce-rendering",
+    "case-studies/consent-blocking"
+   ],
+   "subs": {
+    "versus Discovered, currently not indexed": [
+     "guides/crawled-not-indexed"
+    ],
+    "common causes": [
+     "guides/crawled-not-indexed"
+    ],
+    "a method for finding the cause": [
+     "guides/crawled-not-indexed"
+    ],
+    "fixes by cause": [
+     "guides/crawled-not-indexed"
+    ],
+    "Validate fix": [
+     "guides/crawled-not-indexed"
+    ],
+    "when it is a crisis": [
+     "guides/crawled-not-indexed"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/crawled-not-indexed"
+   ]
+  },
+  "Crawler Hints": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Create React App": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/react-event-platform"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "CRM cleanup": {
+   "kind": "topic",
+   "pages": [
+    "services/data-cleanup"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "CrUX API": {
+   "kind": "topic",
+   "pages": [
+    "guides/core-web-vitals-mcp"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "cryptocurrency": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "curl": {
+   "kind": "topic",
+   "pages": [
+    "guides/javascript-seo",
+    "guides/migration-tools",
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Cursor": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-coding-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "CVS and Subversion": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "dangerouslySetInnerHTML": {
+   "kind": "topic",
+   "pages": [
+    "guides/hydration-errors"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "data brokers": {
+   "kind": "topic",
+   "pages": [
+    "services/advisory",
+    "services/reputation",
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [
+    "personal information removal"
+   ],
+   "main": [
+    "guides/personal-information-removal"
+   ]
+  },
+  "data cleanup": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/data-cleanup",
+    "case-studies/data-cleanup",
+    "stack"
+   ],
+   "subs": {
+    "Python pipelines": [
+     "services/data-cleanup"
+    ],
+    "CRM and contact lists": [
+     "services/data-cleanup"
+    ],
+    "privacy of client data": [
+     "services/data-cleanup"
+    ],
+    "88,900-contact master list": [
+     "case-studies/data-cleanup"
+    ],
+    "two 28,800-record exports merged": [
+     "case-studies/data-cleanup"
+    ],
+    "AI-generated tracker audited": [
+     "case-studies/data-cleanup"
+    ],
+    "sending volume": [
+     "case-studies/data-cleanup"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/data-cleanup"
+   ]
+  },
+  "deliverability": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/email-and-dns",
+    "guides/email-blocklist-recovery",
+    "guides/email-deliverability"
+   ],
+   "subs": {
+    "reading message headers": [
+     "guides/email-deliverability"
+    ],
+    "authentication failures": [
+     "guides/email-deliverability"
+    ],
+    "reputation": [
+     "guides/email-deliverability"
+    ],
+    "sending practices": [
+     "guides/email-deliverability"
+    ],
+    "content and links": [
+     "guides/email-deliverability"
+    ],
+    "bounce codes": [
+     "guides/email-deliverability"
+    ],
+    "testing": [
+     "guides/email-deliverability"
+    ]
+   },
+   "see": [
+    "blocklists"
+   ],
+   "main": [
+    "services/email-and-dns",
+    "guides/email-deliverability"
+   ]
+  },
+  "Delphia": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Department of Justice": {
+   "kind": "topic",
+   "pages": [
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "deploy previews": {
+   "kind": "topic",
+   "pages": [
+    "guides/repository-access"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/repository-access"
+   ]
+  },
+  "developer specs": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/developers",
+    "services/technical-lead",
+    "services/crawler-visibility"
+   ],
+   "subs": {
+    "sample ticket": [
+     "services/developers"
+    ],
+    "13-page specification": [
+     "services/developers",
+     "case-studies/react-event-platform"
+    ],
+    "generated from evidence": [
+     "services/developers"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/developers"
+   ]
+  },
+  "Digital Markets Act": {
+   "kind": "topic",
+   "pages": [
+    "guides/ga4-consent-mode"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "DigitalOcean": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/app-takeover",
+    "colophon",
+    "about",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "disavow files": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/netlify-migration"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Discovered, currently not indexed": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "services/large-sites",
+    "guides/crawled-not-indexed"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "DKIM": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns",
+    "guides/email-authentication"
+   ],
+   "subs": {},
+   "see": [
+    "email authentication"
+   ],
+   "main": [
+    "guides/email-authentication"
+   ]
+  },
+  "DMARC": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns",
+    "guides/email-authentication"
+   ],
+   "subs": {
+    "aggregate reports": [
+     "guides/email-authentication",
+     "guides/email-deliverability"
+    ],
+    "alignment": [
+     "guides/email-deliverability"
+    ]
+   },
+   "see": [
+    "email authentication"
+   ],
+   "main": [
+    "guides/email-authentication"
+   ]
+  },
+  "DNS": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/rescue",
+    "services/site-speed",
+    "services/email-and-dns"
+   ],
+   "subs": {
+    "inventory before changes": [
+     "services/email-and-dns"
+    ],
+    "moving providers": [
+     "services/email-and-dns"
+    ],
+    "domain consolidation": [
+     "services/email-and-dns"
+    ],
+    "internationalized domains": [
+     "services/email-and-dns"
+    ],
+    "verification records": [
+     "services/email-and-dns"
+    ],
+    "time-to-live values": [
+     "services/email-and-dns"
+    ]
+   },
+   "see": [
+    "email authentication"
+   ],
+   "main": [
+    "services/email-and-dns"
+   ]
+  },
+  "DoNotPay": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "doorway pages": {
+   "kind": "topic",
+   "pages": [
+    "guides/removed-location-pages"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "doxxing": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Drupal": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/rescue",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "E-E-A-T": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ecommerce SEO": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/ecommerce"
+   ],
+   "subs": {
+    "product content in the HTML": [
+     "services/ecommerce"
+    ],
+    "duplicate product URLs": [
+     "services/ecommerce"
+    ],
+    "faceted navigation": [
+     "services/ecommerce"
+    ],
+    "product metadata": [
+     "services/ecommerce"
+    ],
+    "Product structured data": [
+     "services/ecommerce"
+    ],
+    "out-of-stock products": [
+     "services/ecommerce"
+    ],
+    "migrations": [
+     "services/ecommerce"
+    ],
+    "speed": [
+     "services/ecommerce"
+    ],
+    "pilot groups": [
+     "services/ecommerce"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/ecommerce"
+   ]
+  },
+  "Edelman": {
+   "kind": "topic",
+   "pages": [
+    "about",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "editorial standards": {
+   "kind": "topic",
+   "pages": [
+    "standards"
+   ],
+   "subs": {
+    "experience first": [
+     "standards"
+    ],
+    "references": [
+     "standards"
+    ],
+    "AI use": [
+     "standards"
+    ],
+    "confidentiality": [
+     "standards"
+    ],
+    "independence": [
+     "standards"
+    ],
+    "dates": [
+     "standards"
+    ],
+    "corrections": [
+     "standards"
+    ]
+   },
+   "see": [],
+   "main": [
+    "standards"
+   ]
+  },
+  "Elementor": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "email authentication": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/email-and-dns",
+    "guides/email-blocklist-recovery",
+    "guides/email-authentication"
+   ],
+   "subs": {
+    "SPF": [
+     "services/email-and-dns"
+    ],
+    "DKIM": [
+     "services/email-and-dns"
+    ],
+    "DMARC": [
+     "services/email-and-dns"
+    ],
+    "alignment and one-click unsubscribe": [
+     "services/email-and-dns"
+    ],
+    "Gmail and Yahoo requirements (2024)": [
+     "services/email-and-dns",
+     "guides/email-authentication"
+    ],
+    "Microsoft Outlook.com requirements (2025)": [
+     "services/email-and-dns",
+     "guides/email-authentication"
+    ],
+    "reaching enforcement safely": [
+     "guides/email-authentication"
+    ],
+    "common mistakes": [
+     "guides/email-authentication"
+    ],
+    "domains that don’t send mail": [
+     "guides/email-authentication"
+    ],
+    "changing DNS without breaking mail": [
+     "guides/email-authentication"
+    ]
+   },
+   "see": [
+    "deliverability"
+   ],
+   "main": [
+    "services/email-and-dns",
+    "guides/email-authentication"
+   ]
+  },
+  "email records, protecting": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "services/site-speed"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "entities": {
+   "kind": "topic",
+   "pages": [
+    "services/multi-location",
+    "services/ai-search",
+    "guides/structured-data"
+   ],
+   "subs": {
+    "parent organization and branches": [
+     "case-studies/multi-location-entity"
+    ]
+   },
+   "see": [
+    "structured data"
+   ],
+   "main": []
+  },
+  "eWorld": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "executive privacy": {
+   "kind": "topic",
+   "pages": [
+    "services/advisory"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "expired domain abuse": {
+   "kind": "topic",
+   "pages": [
+    "guides/search-in-2026"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "expired domains": {
+   "kind": "topic",
+   "pages": [
+    "services/large-sites",
+    "case-studies/programmatic-indexing"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "faceted navigation": {
+   "kind": "topic",
+   "pages": [
+    "services/ecommerce",
+    "guides/faceted-navigation"
+   ],
+   "subs": {
+    "how the problem grows": [
+     "guides/faceted-navigation"
+    ],
+    "when crawl budget matters": [
+     "guides/faceted-navigation"
+    ],
+    "filters that deserve pages": [
+     "guides/faceted-navigation"
+    ],
+    "robots.txt and fragments": [
+     "guides/faceted-navigation"
+    ],
+    "weaker tools": [
+     "guides/faceted-navigation"
+    ],
+    "crawlable filter pages": [
+     "guides/faceted-navigation"
+    ],
+    "pagination": [
+     "guides/faceted-navigation"
+    ],
+    "measuring": [
+     "guides/faceted-navigation"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/faceted-navigation"
+   ]
+  },
+  "fact-checked writing": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/editorial",
+    "services/podcast-sites"
+   ],
+   "subs": {
+    "material first": [
+     "services/editorial"
+    ],
+    "voice rules": [
+     "services/editorial"
+    ],
+    "what the check covers": [
+     "services/editorial"
+    ],
+    "list of changes": [
+     "services/editorial"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/editorial"
+   ]
+  },
+  "fact-checking AI answers": {
+   "kind": "topic",
+   "pages": [
+    "guides",
+    "guides/fact-check-ai-seo",
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {
+    "splitting an answer into claims": [
+     "guides/fact-check-ai-seo"
+    ],
+    "grading by source": [
+     "guides/fact-check-ai-seo"
+    ],
+    "tracing numbers to their population": [
+     "guides/fact-check-ai-seo"
+    ],
+    "agreement that grows when pushed": [
+     "guides/fact-check-ai-seo"
+    ],
+    "testing on your own data": [
+     "guides/fact-check-ai-seo"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/fact-check-ai-seo"
+   ]
+  },
+  "family offices": {
+   "kind": "topic",
+   "pages": [
+    "services/advisory",
+    "services/reputation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "FAQ rich results": {
+   "kind": "topic",
+   "pages": [
+    "guides/structured-data"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "feedback loops": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Fiverr": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Forbes": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/founder-record"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "fractional SEO and AI search lead": {
+   "kind": "topic",
+   "pages": [
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "fractional technical lead": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/technical-lead",
+    "services/developers"
+   ],
+   "subs": {
+    "inventory of accounts and systems": [
+     "services/technical-lead"
+    ],
+    "priorities": [
+     "services/technical-lead"
+    ],
+    "authority in writing": [
+     "services/technical-lead"
+    ],
+    "reporting to leadership": [
+     "services/technical-lead"
+    ],
+    "retainer and hours": [
+     "services/technical-lead"
+    ]
+   },
+   "see": [
+    "developer specs"
+   ],
+   "main": [
+    "services/technical-lead"
+   ]
+  },
+  "Framer": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "FTC (Federal Trade Commission)": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "FTC Endorsement Guides": {
+   "kind": "topic",
+   "pages": [
+    "guides/citation-gap-analysis"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "G2": {
+   "kind": "topic",
+   "pages": [
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GA4 (Google Analytics 4)": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/analytics",
+    "services/technical-seo"
+   ],
+   "subs": {
+    "ghost and spam traffic": [
+     "services/analytics"
+    ],
+    "conversion tracking": [
+     "services/analytics"
+    ],
+    "AI assistant referrals": [
+     "services/analytics"
+    ],
+    "matching Search Console": [
+     "services/analytics"
+    ],
+    "custom channel groups": [
+     "guides/measure-ai-search"
+    ],
+    "data retention": [
+     "guides/year-end-seo-check"
+    ],
+    "Consent Mode v2": [
+     "guides/ga4-consent-mode"
+    ],
+    "short-window engagement dips": [
+     "case-studies/netlify-migration"
+    ],
+    "deferring gtag.js": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "consent and cookies": [
+     "privacy"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/analytics"
+   ]
+  },
+  "Gartner hype cycle": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Gemini": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/analytics",
+    "services/advisory",
+    "services/crawler-visibility",
+    "services/ai-search",
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GEO (generative engine optimization)": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search"
+   ],
+   "subs": {},
+   "see": [
+    "AI search"
+   ],
+   "main": []
+  },
+  "George Washington University, The": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Gerris": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services"
+   ],
+   "subs": {
+    "README described the site as a preview": [
+     "guides/readme-ai-source"
+    ],
+    "redirect stubs for inherited addresses": [
+     "guides/301-redirects"
+    ],
+    "founded in 2012": [
+     "case-studies/founder-record",
+     "about"
+    ],
+    "how this site is built": [
+     "case-studies/built-with-claude-code"
+    ],
+    "848 old URLs tested, 640 redirects": [
+     "stack"
+    ],
+    "logo": [
+     "colophon"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "Gerris Digital (name never used)": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/founder-record"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Gerris lacustris (water strider)": {
+   "kind": "topic",
+   "pages": [
+    "about",
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "colophon"
+   ]
+  },
+  "Gerris Web Strategies": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Git": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/technical-lead",
+    "services/seo-engineering",
+    "guides/ai-coding-assistants",
+    "guides/seo-superpower",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GitHub": {
+   "kind": "topic",
+   "pages": [
+    "guides/readme-ai-source",
+    "guides/repository-access",
+    "guides/seo-superpower",
+    "case-studies/sanity-vercel",
+    "case-studies/programmatic-indexing"
+   ],
+   "subs": {
+    "organizations": [
+     "guides/hiring-developers"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/readme-ai-source"
+   ]
+  },
+  "GitHub Actions": {
+   "kind": "topic",
+   "pages": [
+    "services/podcast-sites",
+    "guides/seo-build-checks",
+    "guides/podcast-website"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GitHub Copilot": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-coding-assistants",
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GitHub Issues": {
+   "kind": "topic",
+   "pages": [
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GitHub Pages": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "services/site-speed",
+    "services/wordpress-care",
+    "services/migrations",
+    "services/podcast-sites",
+    "colophon",
+    "privacy"
+   ],
+   "subs": {
+    "custom domains and HTTPS": [
+     "guides/podcast-website"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "GitLab": {
+   "kind": "topic",
+   "pages": [
+    "guides/repository-access",
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Global Predictions": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "glossary": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/glossary"
+   ]
+  },
+  "GoDaddy": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google AI Mode": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search",
+    "guides/search-in-2026",
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google AI Overviews": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search",
+    "guides/ai-assistants",
+    "guides/search-in-2026",
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google Business Profile": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/agency-partner",
+    "services/google-business-profile",
+    "services/multi-location",
+    "case-studies/multi-location-entity",
+    "case-studies/seasonal-retailer",
+    "case-studies/gbp-reinstatement"
+   ],
+   "subs": {
+    "suspensions": [
+     "services/google-business-profile",
+     "case-studies/gbp-reinstatement"
+    ],
+    "verification loops": [
+     "services/google-business-profile"
+    ],
+    "written diagnostic": [
+     "services/google-business-profile"
+    ],
+    "remediation and appeal": [
+     "services/google-business-profile"
+    ],
+    "prevention": [
+     "services/google-business-profile"
+    ],
+    "how long reinstatement takes": [
+     "services/google-business-profile"
+    ]
+   },
+   "see": [
+    "multi-location businesses"
+   ],
+   "main": [
+    "services/google-business-profile"
+   ]
+  },
+  "Google Calendar": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google Podcasts (closed 2024)": {
+   "kind": "topic",
+   "pages": [
+    "services/podcast-sites",
+    "guides/podcast-website",
+    "guides/podcast-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google Postmaster Tools": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns",
+    "guides/email-blocklist-recovery",
+    "guides/email-authentication",
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google Search Console": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/technical-seo",
+    "services/analytics",
+    "services/seo-engineering",
+    "services/large-sites",
+    "services/crawler-visibility",
+    "services/search-console",
+    "services/migrations",
+    "guides/fact-check-ai-seo",
+    "guides/measure-ai-search",
+    "guides/traffic-drop",
+    "guides/year-end-seo-check",
+    "guides/canonical-tags"
+   ],
+   "subs": {
+    "URL Inspection": [
+     "services/technical-seo",
+     "services/crawler-visibility",
+     "services/seo-engineering",
+     "services/search-console",
+     "guides/javascript-seo",
+     "guides/crawled-not-indexed",
+     "guides/migration-recovery",
+     "guides/migration-tools"
+    ],
+    "Domain properties": [
+     "services/search-console"
+    ],
+    "permissions and old users": [
+     "services/search-console"
+    ],
+    "Page indexing report": [
+     "services/search-console"
+    ],
+    "Performance report": [
+     "services/search-console",
+     "guides/traffic-drop"
+    ],
+    "Crawl stats": [
+     "services/search-console",
+     "guides/traffic-drop"
+    ],
+    "common findings": [
+     "services/search-console"
+    ],
+    "Change of Address": [
+     "services/migrations",
+     "guides/migration-recovery",
+     "guides/migration-tools"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/search-console"
+   ]
+  },
+  "Google Search Essentials": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google spam policies": {
+   "kind": "topic",
+   "pages": [
+    "services/editorial",
+    "guides/search-in-2026",
+    "guides/self-ranking-lists",
+    "guides/seo-101"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google Tag Manager": {
+   "kind": "topic",
+   "pages": [
+    "guides/ga4-consent-mode"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google updates": {
+   "kind": "topic",
+   "pages": [
+    "guides/search-in-2026"
+   ],
+   "subs": {
+    "2026 update timeline": [
+     "guides/search-in-2026"
+    ],
+    "February Discover update": [
+     "guides/search-in-2026"
+    ],
+    "core versus spam updates": [
+     "guides/search-in-2026"
+    ],
+    "AI answers in the spam policies": [
+     "guides/search-in-2026"
+    ],
+    "scaled content abuse": [
+     "guides/search-in-2026"
+    ],
+    "site reputation abuse": [
+     "guides/search-in-2026"
+    ],
+    "expired domain abuse": [
+     "guides/search-in-2026"
+    ],
+    "num=100 change": [
+     "guides/search-in-2026"
+    ]
+   },
+   "see": [
+    "traffic drops"
+   ],
+   "main": [
+    "guides/search-in-2026"
+   ]
+  },
+  "Google Workspace": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Google-Extended": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search",
+    "guides/ai-assistants",
+    "guides/robots-txt"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Googlebot": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants",
+    "guides/javascript-seo",
+    "guides/cloudflare-seo",
+    "case-studies/ecommerce-rendering",
+    "case-studies/consent-blocking"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "GPTBot": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "services/ai-search",
+    "guides/ai-assistants",
+    "guides/search-in-2026"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Greymatter": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "grounding": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "grounding queries": {
+   "kind": "topic",
+   "pages": [
+    "guides/measure-ai-search"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "gtag.js": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/four-site-speed-pass"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "guides": {
+   "kind": "topic",
+   "pages": [
+    "guides"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides"
+   ]
+  },
+  "H2 headings, hardcoded": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/consent-blocking"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Harrison, Mark": {
+   "kind": "person",
+   "pages": [
+    "case-studies/founder-record",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "headless Chrome": {
+   "kind": "topic",
+   "pages": [
+    "guides/hydration-errors",
+    "guides/nextjs-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "headless CMS": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/sanity-vercel"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "helpful content guidance (Google)": {
+   "kind": "topic",
+   "pages": [
+    "guides/content-briefs"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "hidden text": {
+   "kind": "topic",
+   "pages": [
+    "guides/search-in-2026"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Hill Mole": {
+   "kind": "topic",
+   "pages": [
+    "case-studies",
+    "case-studies/four-site-speed-pass",
+    "case-studies/built-with-claude-code",
+    "about"
+   ],
+   "subs": {},
+   "see": [
+    "Movable Type"
+   ],
+   "main": []
+  },
+  "hillmole.com": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "HIPAA": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/indexing-recovery",
+    "stack",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "hiring developers": {
+   "kind": "topic",
+   "pages": [
+    "guides/hiring-developers"
+   ],
+   "subs": {
+    "owning the accounts": [
+     "guides/hiring-developers"
+    ],
+    "writing the brief": [
+     "guides/hiring-developers"
+    ],
+    "interview questions": [
+     "guides/hiring-developers"
+    ],
+    "paid trial tasks": [
+     "guides/hiring-developers"
+    ],
+    "pull requests": [
+     "guides/hiring-developers"
+    ],
+    "AI tools and developers": [
+     "guides/hiring-developers"
+    ],
+    "junior developers": [
+     "guides/hiring-developers"
+    ],
+    "red flags": [
+     "guides/hiring-developers"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/hiring-developers"
+   ]
+  },
+  "holiday hours": {
+   "kind": "topic",
+   "pages": [
+    "guides/year-end-seo-check"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "hreflang": {
+   "kind": "topic",
+   "pages": [
+    "guides/hreflang"
+   ],
+   "subs": {
+    "when it’s needed": [
+     "guides/hreflang"
+    ],
+    "codes": [
+     "guides/hreflang"
+    ],
+    "writing the tags": [
+     "guides/hreflang"
+    ],
+    "return links": [
+     "guides/hreflang"
+    ],
+    "URL structure choices": [
+     "guides/hreflang"
+    ],
+    "location redirects": [
+     "guides/hreflang"
+    ],
+    "Bing and the lang attribute": [
+     "guides/hreflang"
+    ],
+    "checking": [
+     "guides/hreflang"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/hreflang"
+   ]
+  },
+  "HSTS": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Hudson racing single": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "hydration errors": {
+   "kind": "topic",
+   "pages": [
+    "guides/hydration-errors",
+    "guides/nextjs-seo",
+    "guides/seo-build-checks"
+   ],
+   "subs": {
+    "what hydration is": [
+     "guides/hydration-errors"
+    ],
+    "React error #418": [
+     "guides/hydration-errors"
+    ],
+    "costs for search": [
+     "guides/hydration-errors"
+    ],
+    "usual causes": [
+     "guides/hydration-errors"
+    ],
+    "finding them sitewide": [
+     "guides/hydration-errors"
+    ],
+    "fixing at the source": [
+     "guides/hydration-errors"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/hydration-errors"
+   ]
+  },
+  "Hyvä (Magento theme)": {
+   "kind": "topic",
+   "pages": [
+    "services/crawler-visibility",
+    "services/ecommerce",
+    "case-studies/ecommerce-rendering"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "image CDNs": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/netlify-migration"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "impersonation": {
+   "kind": "topic",
+   "pages": [
+    "services/advisory"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "implementation QA": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/developers"
+   ]
+  },
+  "in your stack": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {
+    "servers and hosting": [
+     "stack"
+    ],
+    "DNS, CDN, and email": [
+     "stack"
+    ],
+    "mail servers and Google Workspace": [
+     "stack"
+    ],
+    "repositories and pull requests": [
+     "stack"
+    ],
+    "build pipelines": [
+     "stack"
+    ],
+    "rendering and front end": [
+     "stack"
+    ],
+    "content systems": [
+     "stack"
+    ],
+    "crawl data and archives": [
+     "stack"
+    ],
+    "structured data": [
+     "stack"
+    ],
+    "data": [
+     "stack"
+    ],
+    "habits": [
+     "stack"
+    ],
+    "regulated work": [
+     "stack"
+    ]
+   },
+   "see": [],
+   "main": [
+    "stack"
+   ]
+  },
+  "index bloat": {
+   "kind": "topic",
+   "pages": [
+    "services/search-console"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Indexed, though blocked by robots.txt": {
+   "kind": "topic",
+   "pages": [
+    "guides/robots-txt"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "IndexNow": {
+   "kind": "topic",
+   "pages": [
+    "services/site-speed",
+    "services/ai-search",
+    "guides/indexnow-ai-search",
+    "guides/ai-assistants",
+    "guides/glossary"
+   ],
+   "subs": {
+    "key file verification": [
+     "guides/indexnow-ai-search"
+    ],
+    "batch limits": [
+     "guides/indexnow-ai-search"
+    ],
+    "release workflow": [
+     "guides/indexnow-ai-search"
+    ],
+    "Google not a participant": [
+     "guides/indexnow-ai-search"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/indexnow-ai-search"
+   ]
+  },
+  "infinite scroll": {
+   "kind": "topic",
+   "pages": [
+    "guides/javascript-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Institute for the Future": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "interim and white label executive": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "internal links": {
+   "kind": "topic",
+   "pages": [
+    "guides/removed-location-pages",
+    "guides/seo-101"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "international SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/hreflang"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "International Targeting report (retired 2022)": {
+   "kind": "topic",
+   "pages": [
+    "guides/hreflang"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "JavaScript SEO": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "services/crawler-visibility",
+    "services/seo-engineering",
+    "guides/javascript-seo",
+    "guides/hydration-errors",
+    "guides/nextjs-seo"
+   ],
+   "subs": {
+    "how crawlers handle JavaScript": [
+     "guides/javascript-seo"
+    ],
+    "five tests": [
+     "guides/javascript-seo"
+    ],
+    "common causes": [
+     "guides/javascript-seo"
+    ],
+    "fixes": [
+     "guides/javascript-seo"
+    ],
+    "writing the ticket": [
+     "guides/javascript-seo"
+    ],
+    "dynamic rendering": [
+     "guides/javascript-seo"
+    ]
+   },
+   "see": [
+    "content the crawler never sees"
+   ],
+   "main": [
+    "guides/javascript-seo"
+   ]
+  },
+  "Jekyll": {
+   "kind": "topic",
+   "pages": [
+    "services/migrations",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Jetpack": {
+   "kind": "topic",
+   "pages": [
+    "services/wordpress-care",
+    "guides/wordpress-behind-cloudflare"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Jira": {
+   "kind": "topic",
+   "pages": [
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Joomla": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "jQuery UI tabs": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/consent-blocking"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "JSON-LD": {
+   "kind": "topic",
+   "pages": [
+    "guides/structured-data",
+    "guides/nextjs-seo",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Khan, Lina": {
+   "kind": "person",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Krueger, Dan": {
+   "kind": "person",
+   "pages": [
+    "about",
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "LAMP stack": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "lapsed domains": {
+   "kind": "topic",
+   "pages": [
+    "guides/year-end-seo-check"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "large and programmatic sites": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/large-sites",
+    "case-studies/programmatic-indexing"
+   ],
+   "subs": {
+    "segmented sitemaps": [
+     "services/large-sites"
+    ],
+    "baselines": [
+     "services/large-sites"
+    ],
+    "parameter and tool URLs": [
+     "services/large-sites"
+    ],
+    "index bloat": [
+     "services/large-sites"
+    ],
+    "template quality": [
+     "services/large-sites"
+    ],
+    "internal linking at scale": [
+     "services/large-sites"
+    ],
+    "crawl efficiency": [
+     "services/large-sites"
+    ],
+    "reporting lag": [
+     "services/large-sites"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/large-sites",
+    "case-studies/programmatic-indexing"
+   ]
+  },
+  "launch checklists": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa",
+    "guides/migration-checklist"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Lighthouse": {
+   "kind": "topic",
+   "pages": [
+    "guides/speculation-rules",
+    "guides/core-web-vitals-mcp",
+    "guides/core-web-vitals",
+    "case-studies/four-site-speed-pass"
+   ],
+   "subs": {
+    "Agentic Browsing check": [
+     "guides/ada-website-compliance"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "Linear": {
+   "kind": "topic",
+   "pages": [
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Linux servers": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/rescue",
+    "case-studies/app-takeover"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Liquid": {
+   "kind": "topic",
+   "pages": [
+    "services/ecommerce"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "llms-full.txt": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "llms.txt": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search",
+    "services/podcast-sites",
+    "guides/ai-assistants",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "location pages": {
+   "kind": "topic",
+   "pages": [
+    "services/multi-location",
+    "guides/removed-location-pages",
+    "case-studies/multi-location-entity"
+   ],
+   "subs": {
+    "why deleting them hurts": [
+     "guides/removed-location-pages"
+    ],
+    "rebuilding the inventory": [
+     "guides/removed-location-pages"
+    ],
+    "deciding each URL": [
+     "guides/removed-location-pages"
+    ],
+    "rebuilding internal paths": [
+     "guides/removed-location-pages"
+    ],
+    "what a useful one looks like": [
+     "guides/removed-location-pages"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/removed-location-pages"
+   ]
+  },
+  "London: The Information Capital": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Loom": {
+   "kind": "topic",
+   "pages": [
+    "services/agency-partner"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Lynx": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa",
+    "guides/ada-website-compliance"
+   ],
+   "subs": {
+    "installing": [
+     "guides/lynx-qa"
+    ],
+    "commands": [
+     "guides/lynx-qa"
+    ],
+    "sitemap word counts": [
+     "guides/lynx-qa"
+    ],
+    "staging versus production diffs": [
+     "guides/lynx-qa"
+    ],
+    "noindex sweep": [
+     "guides/lynx-qa"
+    ],
+    "link checks": [
+     "guides/lynx-qa"
+    ],
+    "first screen": [
+     "guides/lynx-qa"
+    ],
+    "alternatives without a terminal": [
+     "guides/lynx-qa"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/lynx-qa"
+   ]
+  },
+  "Lynx Viewer": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Magento": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/crawler-visibility",
+    "services/ecommerce",
+    "services/migrations",
+    "case-studies/ecommerce-rendering"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies/ecommerce-rendering"
+   ]
+  },
+  "mail-tester.com": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Majestic": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-tools"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "manipulating AI answers": {
+   "kind": "topic",
+   "pages": [
+    "guides/search-in-2026",
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "manual actions": {
+   "kind": "topic",
+   "pages": [
+    "guides/traffic-drop",
+    "guides/structured-data"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Markdown copies of pages": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "MCP (Model Context Protocol)": {
+   "kind": "topic",
+   "pages": [
+    "guides/core-web-vitals-mcp"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/core-web-vitals-mcp"
+   ]
+  },
+  "Memes.org": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "MemeSpace": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "meta refresh": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-recovery",
+    "guides/301-redirects"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "metrics, labeling": {
+   "kind": "topic",
+   "pages": [
+    "services/editorial"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Microsoft Copilot": {
+   "kind": "topic",
+   "pages": [
+    "services/analytics",
+    "services/crawler-visibility",
+    "services/search-console",
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Microsoft SNDS": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery",
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Microsoft Teams": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/programmatic-indexing"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "migration recovery": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-recovery"
+   ],
+   "subs": {
+    "normal turbulence versus loss": [
+     "guides/migration-recovery"
+    ],
+    "rebuilding the old URL list": [
+     "guides/migration-recovery"
+    ],
+    "testing every redirect": [
+     "guides/migration-recovery"
+    ],
+    "comparing old and new pages": [
+     "guides/migration-recovery"
+    ],
+    "checking Google’s view": [
+     "guides/migration-recovery"
+    ],
+    "fixing in order of value": [
+     "guides/migration-recovery"
+    ],
+    "keeping evidence": [
+     "guides/migration-recovery"
+    ]
+   },
+   "see": [
+    "site migrations"
+   ],
+   "main": [
+    "guides/migration-recovery"
+   ]
+  },
+  "migration tools": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-tools"
+   ],
+   "subs": {
+    "URL inventory": [
+     "guides/migration-tools"
+    ],
+    "redirect map": [
+     "guides/migration-tools"
+    ],
+    "staging compared with live": [
+     "guides/migration-tools"
+    ],
+    "launch day redirect tests": [
+     "guides/migration-tools"
+    ],
+    "telling Google": [
+     "guides/migration-tools"
+    ],
+    "proving the move held": [
+     "guides/migration-tools"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/migration-tools"
+   ]
+  },
+  "model backends, comparing": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Movable Type": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "services/wordpress-care",
+    "services/migrations",
+    "guides/hype-or-shift",
+    "case-studies/built-with-claude-code",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Moz": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "multi-location businesses": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/multi-location",
+    "case-studies/multi-location-entity",
+    "case-studies/seasonal-retailer"
+   ],
+   "subs": {
+    "entity architecture": [
+     "services/multi-location"
+    ],
+    "location pages": [
+     "services/multi-location"
+    ],
+    "consistency of names and addresses": [
+     "services/multi-location"
+    ],
+    "sister businesses": [
+     "services/multi-location"
+    ],
+    "multi-site cleanup": [
+     "services/multi-location"
+    ],
+    "seasonal planning": [
+     "services/multi-location"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/multi-location",
+    "case-studies/multi-location-entity"
+   ]
+  },
+  "MXToolbox": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery",
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "NAP (name, address, phone)": {
+   "kind": "topic",
+   "pages": [
+    "services/multi-location",
+    "services/google-business-profile"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "National Geographic": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Netlify": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "services/site-speed",
+    "services/migrations",
+    "guides/repository-access",
+    "case-studies/netlify-migration"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies/netlify-migration"
+   ]
+  },
+  "New Media Strategies": {
+   "kind": "topic",
+   "pages": [
+    "services/reputation",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "New York Times, The": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Next.js": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/seo-engineering",
+    "guides/hydration-errors",
+    "guides/nextjs-seo",
+    "guides/migration-tools",
+    "case-studies/netlify-migration"
+   ],
+   "subs": {
+    "metadata and generateMetadata": [
+     "guides/nextjs-seo",
+     "services/seo-engineering"
+    ],
+    "title templates": [
+     "guides/nextjs-seo"
+    ],
+    "metadataBase and canonicals": [
+     "guides/nextjs-seo"
+    ],
+    "streamed metadata and htmlLimitedBots": [
+     "guides/nextjs-seo"
+    ],
+    "sitemap.ts and robots.ts": [
+     "guides/nextjs-seo"
+    ],
+    "308 and 307 redirects": [
+     "guides/nextjs-seo",
+     "guides/migration-tools"
+    ],
+    "notFound() and real 404s": [
+     "guides/nextjs-seo"
+    ],
+    "JSON-LD": [
+     "guides/nextjs-seo"
+    ],
+    "Link component": [
+     "guides/nextjs-seo"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/nextjs-seo"
+   ]
+  },
+  "Nginx": {
+   "kind": "topic",
+   "pages": [
+    "guides/301-redirects"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "NIST AI Risk Management Framework": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Node.js": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "case-studies/app-takeover"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "noindex": {
+   "kind": "topic",
+   "pages": [
+    "guides/robots-txt",
+    "guides/canonical-tags",
+    "guides/faceted-navigation"
+   ],
+   "subs": {
+    "left over from staging": [
+     "guides/lynx-qa"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "nondisclosure agreements": {
+   "kind": "topic",
+   "pages": [
+    "services/agency-partner",
+    "services/advisory",
+    "services/reputation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "NotebookLM": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Notes from a Public Typewriter": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "null MX": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "num=100 change (2025)": {
+   "kind": "topic",
+   "pages": [
+    "guides/traffic-drop",
+    "guides/search-in-2026"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Nuxt": {
+   "kind": "topic",
+   "pages": [
+    "guides/javascript-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "NVDA": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "OAI-SearchBot": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search",
+    "guides/ai-assistants",
+    "guides/search-in-2026",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "on-page SEO": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/on-page-seo"
+   ],
+   "subs": {
+    "titles and meta descriptions": [
+     "services/on-page-seo"
+    ],
+    "headings": [
+     "services/on-page-seo"
+    ],
+    "copy and intent": [
+     "services/on-page-seo"
+    ],
+    "internal linking": [
+     "services/on-page-seo"
+    ],
+    "images": [
+     "services/on-page-seo"
+    ],
+    "structured data": [
+     "services/on-page-seo"
+    ],
+    "publishing in the CMS": [
+     "services/on-page-seo"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/on-page-seo"
+   ]
+  },
+  "one-click unsubscribe": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery",
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ongoing support": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/ongoing-support"
+   ],
+   "subs": {
+    "a typical month": [
+     "services/ongoing-support"
+    ],
+    "terms and unused hours": [
+     "services/ongoing-support"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/ongoing-support"
+   ]
+  },
+  "open source intelligence": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "OpenAI": {
+   "kind": "topic",
+   "pages": [
+    "guides/citation-gap-analysis"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Operation AI Comply": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "orphaned pages": {
+   "kind": "topic",
+   "pages": [
+    "services/on-page-seo",
+    "case-studies/react-event-platform"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Owens Corning": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "P0 to P3 priorities": {
+   "kind": "topic",
+   "pages": [
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Pacific Rim Productions": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Page indexing report": {
+   "kind": "topic",
+   "pages": [
+    "services/search-console",
+    "guides/crawled-not-indexed"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "PageSpeed Insights": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "guides/core-web-vitals-mcp",
+    "guides/core-web-vitals"
+   ],
+   "subs": {
+    "API dropping CrUX data": [
+     "guides/core-web-vitals-mcp"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "pagination": {
+   "kind": "topic",
+   "pages": [
+    "guides/canonical-tags",
+    "guides/faceted-navigation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "paid diagnostics": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/technical-lead",
+    "services/rescue",
+    "services/google-business-profile",
+    "services/multi-location",
+    "services/reputation",
+    "work-with-me",
+    "faq",
+    "contact"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "parameter URLs": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/programmatic-indexing"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "parked domains": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns",
+    "guides/email-authentication"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Perplexity": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/analytics",
+    "services/advisory",
+    "services/crawler-visibility",
+    "services/ai-search",
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Perplexity-User": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "PerplexityBot": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "services/ai-search",
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "personal information removal": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {
+    "where broker data comes from": [
+     "guides/personal-information-removal"
+    ],
+    "site-by-site opt-outs": [
+     "guides/personal-information-removal"
+    ],
+    "Google Results about you": [
+     "guides/personal-information-removal"
+    ],
+    "California Delete Act and DROP": [
+     "guides/personal-information-removal"
+    ],
+    "other state laws": [
+     "guides/personal-information-removal"
+    ],
+    "EU and UK right to erasure": [
+     "guides/personal-information-removal"
+    ],
+    "what removal can’t do": [
+     "guides/personal-information-removal"
+    ],
+    "protecting the household": [
+     "guides/personal-information-removal"
+    ],
+    "quarterly sweeps": [
+     "guides/personal-information-removal"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/personal-information-removal"
+   ]
+  },
+  "PHP-Nuke and PostNuke": {
+   "kind": "topic",
+   "pages": [
+    "about",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "plate carrier analogy": {
+   "kind": "topic",
+   "pages": [
+    "guides/wordpress-behind-cloudflare"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Playwright": {
+   "kind": "topic",
+   "pages": [
+    "guides/hydration-errors"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Plone": {
+   "kind": "topic",
+   "pages": [
+    "guides/indexnow-ai-search",
+    "about",
+    "stack",
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "PM2": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/app-takeover"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "podcast SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-seo"
+   ],
+   "subs": {
+    "a page per episode": [
+     "guides/podcast-seo"
+    ],
+    "transcripts in the HTML": [
+     "guides/podcast-seo"
+    ],
+    "titles and descriptions": [
+     "guides/podcast-seo"
+    ],
+    "PodcastEpisode schema": [
+     "guides/podcast-seo"
+    ],
+    "cover art alt text": [
+     "guides/podcast-seo"
+    ],
+    "fast indexing": [
+     "guides/podcast-seo"
+    ],
+    "AI assistants": [
+     "guides/podcast-seo"
+    ],
+    "owning the property": [
+     "guides/podcast-seo"
+    ]
+   },
+   "see": [
+    "podcast websites"
+   ],
+   "main": [
+    "guides/podcast-seo"
+   ]
+  },
+  "podcast websites": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/podcast-sites",
+    "guides/podcast-website",
+    "guides/podcast-seo",
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {
+    "why a show needs one": [
+     "services/podcast-sites"
+    ],
+    "episode pages and transcripts": [
+     "services/podcast-sites"
+    ],
+    "share cards": [
+     "services/podcast-sites"
+    ],
+    "daily GitHub Actions job": [
+     "services/podcast-sites"
+    ],
+    "owning the feed and audio": [
+     "services/podcast-sites"
+    ],
+    "running costs": [
+     "services/podcast-sites"
+    ],
+    "after launch": [
+     "services/podcast-sites"
+    ],
+    "Cloudflare Registrar": [
+     "guides/podcast-website"
+    ],
+    "the generator prompt": [
+     "guides/podcast-website"
+    ],
+    "GitHub Pages limits": [
+     "guides/podcast-website"
+    ],
+    "DNS and HTTPS": [
+     "guides/podcast-website"
+    ],
+    "GitHub Actions keepalive": [
+     "guides/podcast-website"
+    ],
+    "late transcripts": [
+     "guides/podcast-website"
+    ],
+    "sanity check": [
+     "guides/podcast-website"
+    ],
+    "telling the search engines": [
+     "guides/podcast-website"
+    ],
+    "cost": [
+     "guides/podcast-website"
+    ]
+   },
+   "see": [
+    "podcast SEO"
+   ],
+   "main": [
+    "services/podcast-sites",
+    "guides/podcast-website"
+   ]
+  },
+  "podcasting for a brand": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {
+    "what it does for a brand": [
+     "guides/podcast-for-your-brand"
+    ],
+    "commitment": [
+     "guides/podcast-for-your-brand"
+    ],
+    "recorders and phones": [
+     "guides/podcast-for-your-brand"
+    ],
+    "free hosting": [
+     "guides/podcast-for-your-brand"
+    ],
+    "YouTube": [
+     "guides/podcast-for-your-brand"
+    ],
+    "intro, outro, and cover art": [
+     "guides/podcast-for-your-brand"
+    ],
+    "AI for the chores": [
+     "guides/podcast-for-your-brand"
+    ],
+    "owning a home for it": [
+     "guides/podcast-for-your-brand"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/podcast-for-your-brand"
+   ]
+  },
+  "prerendering": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/sanity-vercel"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "privacy": {
+   "kind": "topic",
+   "pages": [
+    "privacy"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "privacy"
+   ]
+  },
+  "project rescue": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/rescue",
+    "case-studies/app-takeover"
+   ],
+   "subs": {
+    "handover review": [
+     "services/rescue"
+    ],
+    "server stabilization": [
+     "services/rescue"
+    ],
+    "legacy CMS migrations": [
+     "services/rescue"
+    ],
+    "platform migrations": [
+     "services/rescue"
+    ],
+    "restoring self-service": [
+     "services/rescue"
+    ],
+    "hosting afterward": [
+     "services/rescue"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/rescue"
+   ]
+  },
+  "prompt injection": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-automation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "prompt sets": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-search",
+    "services/analytics"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Proxima (later Proxicom)": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "pull requests": {
+   "kind": "topic",
+   "pages": [
+    "services/developers",
+    "services/seo-engineering",
+    "guides/hiring-developers",
+    "guides/seo-superpower",
+    "guides/glossary",
+    "case-studies/sanity-vercel"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "push protection (GitHub)": {
+   "kind": "topic",
+   "pages": [
+    "guides/repository-access"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Python": {
+   "kind": "topic",
+   "pages": [
+    "services/data-cleanup"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "quality rater guidelines": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "query fan-out": {
+   "kind": "topic",
+   "pages": [
+    "guides/content-briefs"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Radaris": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Rank Math": {
+   "kind": "topic",
+   "pages": [
+    "guides/301-redirects"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Ray, Lily": {
+   "kind": "person",
+   "pages": [
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "React": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/seo-engineering",
+    "services/technical-lead",
+    "guides/hydration-errors",
+    "guides/nextjs-seo",
+    "case-studies/react-event-platform",
+    "case-studies/app-takeover"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies/react-event-platform"
+   ]
+  },
+  "README files": {
+   "kind": "topic",
+   "pages": [
+    "guides/readme-ai-source",
+    "guides/glossary"
+   ],
+   "subs": {
+    "why AI reads them": [
+     "guides/readme-ai-source"
+    ],
+    "what to put at the top": [
+     "guides/readme-ai-source"
+    ],
+    "keeping current": [
+     "guides/readme-ai-source"
+    ],
+    "other repositories": [
+     "guides/readme-ai-source"
+    ],
+    "confidential material": [
+     "guides/readme-ai-source"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/readme-ai-source"
+   ]
+  },
+  "real user monitoring": {
+   "kind": "topic",
+   "pages": [
+    "guides/core-web-vitals"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Reddit": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "redirect maps rebuilt from the Wayback Machine": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Redirection (WordPress plugin)": {
+   "kind": "topic",
+   "pages": [
+    "guides/301-redirects"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "rel prev and next": {
+   "kind": "topic",
+   "pages": [
+    "guides/canonical-tags"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "release checkpoints": {
+   "kind": "topic",
+   "pages": [
+    "guides/indexnow-ai-search"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "reporting, plain-English": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/technical-lead",
+    "services/analytics"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "reports, disagreeing": {
+   "kind": "topic",
+   "pages": [
+    "services/analytics"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "repositories": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "repository access for an SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/repository-access"
+   ],
+   "subs": {
+    "outside collaborator": [
+     "guides/repository-access"
+    ],
+    "GitHub roles": [
+     "guides/repository-access"
+    ],
+    "GitLab roles": [
+     "guides/repository-access"
+    ],
+    "branch protection and rulesets": [
+     "guides/repository-access"
+    ],
+    "deploy previews": [
+     "guides/repository-access"
+    ],
+    "secrets and push protection": [
+     "guides/repository-access"
+    ],
+    "CMS-only option": [
+     "guides/repository-access"
+    ],
+    "removing access": [
+     "guides/repository-access"
+    ],
+    "checklist": [
+     "guides/repository-access"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/repository-access"
+   ]
+  },
+  "reputation management": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/advisory",
+    "services/reputation",
+    "guides/personal-information-removal"
+   ],
+   "subs": {
+    "auditing the record": [
+     "services/reputation"
+    ],
+    "data broker removal": [
+     "services/reputation"
+    ],
+    "Google Results about you": [
+     "services/reputation"
+    ],
+    "correcting AI answers": [
+     "services/reputation"
+    ],
+    "monitoring": [
+     "services/reputation"
+    ],
+    "working with security and legal teams": [
+     "services/reputation"
+    ],
+    "removing negative articles": [
+     "services/reputation"
+    ]
+   },
+   "see": [
+    "personal information removal"
+   ],
+   "main": [
+    "services/reputation"
+   ]
+  },
+  "Reputation.com": {
+   "kind": "topic",
+   "pages": [
+    "services/reputation",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Results about you (Google tool)": {
+   "kind": "topic",
+   "pages": [
+    "services/reputation",
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "retainers": {
+   "kind": "topic",
+   "pages": [
+    "services/ongoing-support",
+    "services/technical-lead",
+    "services/advisory",
+    "services/reputation",
+    "work-with-me",
+    "faq"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Rheingold, Howard": {
+   "kind": "person",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "rich results": {
+   "kind": "topic",
+   "pages": [
+    "guides/structured-data"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Rich Results Test": {
+   "kind": "topic",
+   "pages": [
+    "guides/structured-data"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "right to erasure": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "robots.txt": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants",
+    "guides/nextjs-seo",
+    "guides/seo-build-checks",
+    "guides/robots-txt"
+   ],
+   "subs": {
+    "location and scope": [
+     "guides/robots-txt"
+    ],
+    "syntax": [
+     "guides/robots-txt"
+    ],
+    "crawling versus indexing": [
+     "guides/robots-txt"
+    ],
+    "status codes": [
+     "guides/robots-txt"
+    ],
+    "AI crawlers": [
+     "guides/robots-txt"
+    ],
+    "common mistakes": [
+     "guides/robots-txt"
+    ],
+    "testing changes": [
+     "guides/robots-txt"
+    ],
+    "AI agents list": [
+     "case-studies/four-site-speed-pass"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/robots-txt"
+   ]
+  },
+  "roundups and best-of lists": {
+   "kind": "topic",
+   "pages": [
+    "guides/citation-gap-analysis",
+    "guides/self-ranking-lists"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Route 53": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "RSS feeds": {
+   "kind": "topic",
+   "pages": [
+    "services/podcast-sites",
+    "guides/indexnow-ai-search"
+   ],
+   "subs": {
+    "full-content Guides feed": [
+     "guides/indexnow-ai-search"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "Sanity": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "case-studies/sanity-vercel"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies/sanity-vercel"
+   ]
+  },
+  "scaled content abuse": {
+   "kind": "topic",
+   "pages": [
+    "guides/search-in-2026",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Schema Markup Validator": {
+   "kind": "topic",
+   "pages": [
+    "guides/structured-data",
+    "guides/nextjs-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Screaming Frog SEO Spider": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "guides/javascript-seo",
+    "guides/migration-recovery",
+    "guides/migration-tools",
+    "guides/core-web-vitals-mcp"
+   ],
+   "subs": {
+    "list mode and redirect testing": [
+     "guides/migration-recovery",
+     "guides/migration-tools"
+    ],
+    "crawl comparison and URL Mapping": [
+     "guides/migration-recovery",
+     "guides/migration-tools"
+    ],
+    "MCP server (version 24)": [
+     "guides/core-web-vitals-mcp"
+    ],
+    "PageSpeed Insights integration": [
+     "guides/core-web-vitals-mcp"
+    ]
+   },
+   "see": [
+    "migration tools"
+   ],
+   "main": []
+  },
+  "Search Status Dashboard": {
+   "kind": "topic",
+   "pages": [
+    "guides/traffic-drop",
+    "guides/search-in-2026"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "seasonal businesses": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/seasonal-retailer",
+    "services/multi-location"
+   ],
+   "subs": {
+    "change freeze at peak": [
+     "case-studies/seasonal-retailer"
+    ],
+    "reverification timing": [
+     "case-studies/seasonal-retailer"
+    ]
+   },
+   "see": [],
+   "main": [
+    "case-studies/seasonal-retailer"
+   ]
+  },
+  "seasonality": {
+   "kind": "topic",
+   "pages": [
+    "guides/traffic-drop"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "SEC (Securities and Exchange Commission)": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "second opinions": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/advisory"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "secrets in repositories": {
+   "kind": "topic",
+   "pages": [
+    "guides/repository-access"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "seed tests": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "self-ranking \"best of\" lists": {
+   "kind": "topic",
+   "pages": [
+    "guides/self-ranking-lists"
+   ],
+   "subs": {
+    "how the trick works": [
+     "guides/self-ranking-lists"
+    ],
+    "why it stopped working": [
+     "guides/self-ranking-lists"
+    ],
+    "what earns a real recommendation": [
+     "guides/self-ranking-lists"
+    ],
+    "fixing a published list": [
+     "guides/self-ranking-lists"
+    ],
+    "vetting AI visibility vendors": [
+     "guides/self-ranking-lists"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/self-ranking-lists"
+   ]
+  },
+  "Semrush": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "guides/migration-tools"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Sendmail": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "SEO basics": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101"
+   ],
+   "subs": {
+    "crawling, indexing, and serving": [
+     "guides/seo-101"
+    ],
+    "people-first content": [
+     "guides/seo-101"
+    ],
+    "E-E-A-T": [
+     "guides/seo-101"
+    ],
+    "titles, descriptions, and headings": [
+     "guides/seo-101"
+    ],
+    "descriptive links": [
+     "guides/seo-101"
+    ],
+    "alt text": [
+     "guides/seo-101"
+    ],
+    "speed": [
+     "guides/seo-101"
+    ],
+    "accessibility": [
+     "guides/seo-101"
+    ],
+    "Cloudflare": [
+     "guides/seo-101"
+    ],
+    "opening the door for crawlers": [
+     "guides/seo-101"
+    ],
+    "white hat": [
+     "guides/seo-101"
+    ],
+    "first week": [
+     "guides/seo-101"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/seo-101"
+   ]
+  },
+  "SEO Browser": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "SEO engineering": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/seo-engineering"
+   ],
+   "subs": {
+    "metadata in components": [
+     "services/seo-engineering"
+    ],
+    "generated sitemaps and robots rules": [
+     "services/seo-engineering"
+    ],
+    "redirects in configuration": [
+     "services/seo-engineering"
+    ],
+    "structured data in components": [
+     "services/seo-engineering"
+    ],
+    "build checks": [
+     "services/seo-engineering"
+    ],
+    "deploy previews": [
+     "services/seo-engineering"
+    ],
+    "branch and pull request workflow": [
+     "services/seo-engineering"
+    ],
+    "recrawl after release": [
+     "services/seo-engineering"
+    ]
+   },
+   "see": [
+    "build checks"
+   ],
+   "main": [
+    "services/seo-engineering"
+   ]
+  },
+  "SEO plugins, switched off": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/indexing-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "case-studies/indexing-recovery"
+   ]
+  },
+  "SEO superpower": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {
+    "the repository": [
+     "guides/seo-superpower"
+    ],
+    "AI that reads code": [
+     "guides/seo-superpower"
+    ],
+    "why each half fails alone": [
+     "guides/seo-superpower"
+    ],
+    "in practice": [
+     "guides/seo-superpower"
+    ],
+    "how to start": [
+     "guides/seo-superpower"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/seo-superpower"
+   ]
+  },
+  "separate tracks for separate problems": {
+   "kind": "topic",
+   "pages": [
+    "services/analytics",
+    "services/technical-seo",
+    "services/crawler-visibility",
+    "guides/crawled-not-indexed",
+    "guides/traffic-drop",
+    "guides/removed-location-pages",
+    "case-studies/ecommerce-rendering",
+    "case-studies/netlify-migration"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "serialized novel (Chris’)": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "services/wordpress-care",
+    "case-studies/built-with-claude-code",
+    "stack"
+   ],
+   "subs": {},
+   "see": [
+    "Hill Mole"
+   ],
+   "main": []
+  },
+  "server hardening": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "services/technical-lead"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "server logs": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-recovery",
+    "guides/migration-tools",
+    "guides/faceted-navigation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "service-area pages": {
+   "kind": "topic",
+   "pages": [
+    "services/multi-location"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "share cards (Open Graph images)": {
+   "kind": "topic",
+   "pages": [
+    "services/podcast-sites"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Shopify": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/agency-partner",
+    "services",
+    "services/ecommerce",
+    "services/migrations",
+    "case-studies/shopify-migration"
+   ],
+   "subs": {
+    "duplicate product markup": [
+     "case-studies/shopify-migration"
+    ],
+    "review metafields": [
+     "case-studies/shopify-migration"
+    ]
+   },
+   "see": [],
+   "main": [
+    "case-studies/shopify-migration"
+   ]
+  },
+  "site migrations": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/rescue",
+    "services/migrations",
+    "guides/migration-checklist",
+    "case-studies/netlify-migration",
+    "case-studies/shopify-migration"
+   ],
+   "subs": {
+    "kinds of migration": [
+     "services/migrations"
+    ],
+    "URL inventory": [
+     "services/migrations",
+     "guides/migration-checklist"
+    ],
+    "redirect maps": [
+     "services/migrations"
+    ],
+    "launch day": [
+     "services/migrations",
+     "guides/migration-checklist"
+    ],
+    "after launch": [
+     "services/migrations"
+    ],
+    "how long to keep redirects": [
+     "services/migrations"
+    ],
+    "recovery after a bad launch": [
+     "services/migrations"
+    ],
+    "baseline": [
+     "guides/migration-checklist"
+    ],
+    "redirect map": [
+     "guides/migration-checklist"
+    ],
+    "pre-launch review": [
+     "guides/migration-checklist"
+    ],
+    "the weeks after": [
+     "guides/migration-checklist"
+    ],
+    "HTTP to HTTPS and www changes": [
+     "guides/migration-checklist"
+    ],
+    "merging several sites": [
+     "guides/migration-checklist"
+    ],
+    "moving to a JavaScript framework": [
+     "guides/migration-checklist"
+    ],
+    "what to expect": [
+     "guides/migration-checklist"
+    ]
+   },
+   "see": [
+    "migration recovery",
+    "301 redirects"
+   ],
+   "main": [
+    "services/migrations",
+    "guides/migration-checklist"
+   ]
+  },
+  "site reputation abuse": {
+   "kind": "topic",
+   "pages": [
+    "guides/search-in-2026",
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "site speed": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/site-speed",
+    "guides/speculation-rules",
+    "case-studies/four-site-speed-pass"
+   ],
+   "subs": {
+    "four-site pass": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "deferred analytics": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "WebP covers": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "inlined stylesheet": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "tap targets": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "AI crawler list in robots.txt": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "results table": [
+     "case-studies/four-site-speed-pass"
+    ],
+    "the trade-off": [
+     "case-studies/four-site-speed-pass"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/site-speed",
+    "case-studies/four-site-speed-pass"
+   ]
+  },
+  "Sitebulb": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-tools",
+    "guides/hreflang"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "six Git words": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Slack": {
+   "kind": "topic",
+   "pages": [
+    "services/agency-partner"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "soft 404s": {
+   "kind": "topic",
+   "pages": [
+    "guides/crawled-not-indexed",
+    "guides/migration-recovery",
+    "guides/glossary",
+    "case-studies/sanity-vercel"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Sony ICD-UX570": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "source vetting": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "spam backlinks": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "case-studies/ecommerce-rendering"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "spam rate thresholds": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "spam updates": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [
+    "Google updates"
+   ],
+   "main": []
+  },
+  "Spamhaus": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery",
+    "guides/email-deliverability"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "speculation rules": {
+   "kind": "topic",
+   "pages": [
+    "guides/speculation-rules",
+    "guides/glossary",
+    "case-studies/four-site-speed-pass"
+   ],
+   "subs": {
+    "prefetch or prerender": [
+     "guides/speculation-rules"
+    ],
+    "eagerness levels": [
+     "guides/speculation-rules"
+    ],
+    "the rule I use": [
+     "guides/speculation-rules"
+    ],
+    "checking in DevTools": [
+     "guides/speculation-rules"
+    ],
+    "Sec-Purpose header": [
+     "guides/speculation-rules"
+    ],
+    "browser support": [
+     "guides/speculation-rules"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/speculation-rules"
+   ]
+  },
+  "SPF": {
+   "kind": "topic",
+   "pages": [
+    "services/email-and-dns",
+    "guides/email-authentication"
+   ],
+   "subs": {
+    "ten-lookup limit": [
+     "guides/email-authentication",
+     "guides/email-deliverability"
+    ]
+   },
+   "see": [
+    "email authentication"
+   ],
+   "main": [
+    "guides/email-authentication"
+   ]
+  },
+  "Spokeo": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Spotify for Creators": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Squarespace": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/rescue",
+    "services/ecommerce",
+    "services/on-page-seo",
+    "services/migrations",
+    "case-studies/shopify-migration"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "SSH": {
+   "kind": "topic",
+   "pages": [
+    "services/rescue",
+    "case-studies/app-takeover"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Stack Overflow Developer Survey (2025)": {
+   "kind": "topic",
+   "pages": [
+    "guides/hiring-developers",
+    "guides/hype-or-shift"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "staging sites": {
+   "kind": "topic",
+   "pages": [
+    "services/search-console",
+    "services/migrations"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "static websites": {
+   "kind": "topic",
+   "pages": [
+    "services/wordpress-care",
+    "services/migrations"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "strategic advisory": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/advisory",
+    "services/ai-automation"
+   ],
+   "subs": {
+    "AI search and your business": [
+     "services/advisory"
+    ],
+    "reputation online": [
+     "services/advisory"
+    ],
+    "digital risk": [
+     "services/advisory"
+    ],
+    "website and vendor decisions": [
+     "services/advisory"
+    ],
+    "AI adoption": [
+     "services/advisory"
+    ],
+    "briefings and workshops": [
+     "services/advisory"
+    ],
+    "second opinions": [
+     "services/advisory"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/advisory"
+   ]
+  },
+  "structured data": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "services/seo-engineering",
+    "services/ecommerce",
+    "services/on-page-seo",
+    "guides/structured-data",
+    "guides/glossary",
+    "case-studies/shopify-migration",
+    "case-studies/multi-location-entity"
+   ],
+   "subs": {
+    "PodcastSeries and PodcastEpisode types": [
+     "services/podcast-sites",
+     "guides/podcast-seo"
+    ],
+    "JSON-LD format": [
+     "guides/structured-data"
+    ],
+    "rich results that remain": [
+     "guides/structured-data"
+    ],
+    "retired rich results": [
+     "guides/structured-data"
+    ],
+    "connected graphs and @id": [
+     "guides/structured-data"
+    ],
+    "sameAs": [
+     "guides/structured-data"
+    ],
+    "rules that keep it safe": [
+     "guides/structured-data"
+    ],
+    "validation": [
+     "guides/structured-data"
+    ],
+    "ranking factor question": [
+     "guides/structured-data"
+    ],
+    "plugins": [
+     "guides/structured-data"
+    ]
+   },
+   "see": [
+    "entities"
+   ],
+   "main": [
+    "guides/structured-data"
+   ]
+  },
+  "subdomains for marketing mail": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-deliverability",
+    "guides/email-blocklist-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Sun SPARCstation and Solaris": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Super Intelligence executive order (2026)": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "suppressHydrationWarning": {
+   "kind": "topic",
+   "pages": [
+    "guides/hydration-errors"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "SURBL": {
+   "kind": "topic",
+   "pages": [
+    "guides/email-blocklist-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "SvelteKit": {
+   "kind": "topic",
+   "pages": [
+    "guides/javascript-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "sycophancy in AI answers": {
+   "kind": "topic",
+   "pages": [
+    "guides/fact-check-ai-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "syndicated content": {
+   "kind": "topic",
+   "pages": [
+    "guides/canonical-tags"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Tag Assistant": {
+   "kind": "topic",
+   "pages": [
+    "guides/ga4-consent-mode"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "technical SEO": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services",
+    "services/technical-seo"
+   ],
+   "subs": {
+    "rendering": [
+     "services/technical-seo"
+    ],
+    "crawling and indexing": [
+     "services/technical-seo"
+    ],
+    "redirects and broken links": [
+     "services/technical-seo"
+    ],
+    "on-page structure": [
+     "services/technical-seo"
+    ],
+    "site speed": [
+     "services/technical-seo"
+    ],
+    "structured data": [
+     "services/technical-seo"
+    ],
+    "off-site signals": [
+     "services/technical-seo"
+    ],
+    "how long a diagnostic takes": [
+     "services/technical-seo"
+    ],
+    "recovery timelines": [
+     "services/technical-seo"
+    ]
+   },
+   "see": [
+    "Crawled, currently not indexed"
+   ],
+   "main": [
+    "services/technical-seo"
+   ]
+  },
+  "technology waves, judging": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift"
+   ],
+   "subs": {
+    "Amara’s law": [
+     "guides/hype-or-shift"
+    ],
+    "hype cycle": [
+     "guides/hype-or-shift"
+    ],
+    "online communities": [
+     "guides/hype-or-shift"
+    ],
+    "blogs": [
+     "guides/hype-or-shift"
+    ],
+    "social media": [
+     "guides/hype-or-shift"
+    ],
+    "cryptocurrency": [
+     "guides/hype-or-shift"
+    ],
+    "AI": [
+     "guides/hype-or-shift"
+    ],
+    "eight tests": [
+     "guides/hype-or-shift"
+    ],
+    "acting while unsure": [
+     "guides/hype-or-shift"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/hype-or-shift"
+   ]
+  },
+  "text browsers": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [
+    "Lynx"
+   ],
+   "main": []
+  },
+  "The WELL": {
+   "kind": "topic",
+   "pages": [
+    "guides/hype-or-shift",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "therapy practice (anonymized client)": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/gbp-reinstatement"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "thin and duplicate pages": {
+   "kind": "topic",
+   "pages": [
+    "guides/crawled-not-indexed"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ThinkPad": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ThinkPad X220": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ticket systems": {
+   "kind": "topic",
+   "pages": [
+    "services/developers"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "titles and meta descriptions": {
+   "kind": "topic",
+   "pages": [
+    "services/on-page-seo",
+    "services/seo-engineering",
+    "guides/fact-check-ai-seo"
+   ],
+   "subs": {
+    "title rewrites and length": [
+     "guides/fact-check-ai-seo"
+    ],
+    "pipes and brand suffixes": [
+     "guides/fact-check-ai-seo"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "Todoist": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Torvalds, Linus": {
+   "kind": "person",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Total Blocking Time": {
+   "kind": "topic",
+   "pages": [
+    "guides/core-web-vitals"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "traffic drops": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "services/technical-seo",
+    "guides/traffic-drop",
+    "guides/removed-location-pages"
+   ],
+   "subs": {
+    "confirming the drop is real": [
+     "guides/traffic-drop"
+    ],
+    "reading clicks, impressions, CTR, and position": [
+     "guides/traffic-drop"
+    ],
+    "finding where the loss is": [
+     "guides/traffic-drop"
+    ],
+    "lining up dates": [
+     "guides/traffic-drop"
+    ],
+    "technical reports": [
+     "guides/traffic-drop"
+    ],
+    "separating problems": [
+     "guides/traffic-drop"
+    ],
+    "writing it down": [
+     "guides/traffic-drop"
+    ],
+    "recovery timelines": [
+     "guides/traffic-drop"
+    ]
+   },
+   "see": [
+    "Google updates"
+   ],
+   "main": [
+    "guides/traffic-drop"
+   ]
+  },
+  "training cutoffs": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-assistants"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "transcripts": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-seo",
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Treasury Department": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Trump, Donald": {
+   "kind": "person",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "TTFB (time to first byte)": {
+   "kind": "topic",
+   "pages": [
+    "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Uberti, Oliver": {
+   "kind": "person",
+   "pages": [
+    "about",
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Umbraco": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/agency-partner",
+    "services/on-page-seo",
+    "services/migrations",
+    "case-studies/umbraco-operations",
+    "stack"
+   ],
+   "subs": {
+    "54 city landing pages": [
+     "case-studies/umbraco-operations"
+    ],
+    "cache purging and social metadata": [
+     "case-studies/umbraco-operations"
+    ],
+    "fixed-height CSS clipping": [
+     "case-studies/umbraco-operations"
+    ]
+   },
+   "see": [],
+   "main": [
+    "case-studies/umbraco-operations"
+   ]
+  },
+  "University of East Anglia": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Upwork": {
+   "kind": "topic",
+   "pages": [
+    "home",
+    "case-studies/built-with-claude-code",
+    "work-with-me",
+    "faq",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Upwork MCP server": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "urban.net": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "URL Parameters tool (retired 2022)": {
+   "kind": "topic",
+   "pages": [
+    "guides/faceted-navigation"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Usenet": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "vendor methodology changes": {
+   "kind": "topic",
+   "pages": [
+    "services/data-cleanup",
+    "services/analytics",
+    "case-studies/umbraco-operations",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Vercel": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "guides/repository-access",
+    "case-studies/sanity-vercel"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Verdana": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "VoiceOver": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "WAVE": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Wayback Machine": {
+   "kind": "topic",
+   "pages": [
+    "guides/migration-recovery",
+    "guides/301-redirects",
+    "case-studies/founder-record",
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "WCAG": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101",
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Web Developer extension": {
+   "kind": "topic",
+   "pages": [
+    "guides/lynx-qa"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "web-vitals library": {
+   "kind": "topic",
+   "pages": [
+    "guides/core-web-vitals"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "WebAIM Million": {
+   "kind": "topic",
+   "pages": [
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Webflow": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "WebP and AVIF": {
+   "kind": "topic",
+   "pages": [
+    "case-studies/four-site-speed-pass"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Where the Animals Go": {
+   "kind": "topic",
+   "pages": [
+    "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "white label services": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/agency-partner"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Whitepages": {
+   "kind": "topic",
+   "pages": [
+    "guides/personal-information-removal"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Wix": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-lead",
+    "services/agency-partner",
+    "services/on-page-seo",
+    "services/migrations"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "WooCommerce": {
+   "kind": "topic",
+   "pages": [
+    "services",
+    "services/ecommerce",
+    "guides/wordpress-behind-cloudflare",
+    "services/wordpress-care",
+    "case-studies/indexing-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "WordPress": {
+   "kind": "topic",
+   "pages": [
+    "services/crawler-visibility",
+    "services",
+    "services/wordpress-care",
+    "services/migrations",
+    "services/on-page-seo",
+    "guides/wordpress-behind-cloudflare"
+   ],
+   "subs": {
+    "what the cache leaves exposed": [
+     "services/wordpress-care",
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "hardening": [
+     "services/wordpress-care",
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "moving to static pages": [
+     "services/wordpress-care"
+    ],
+    "choosing caching or a move": [
+     "services/wordpress-care"
+    ],
+    "APO bypass cookies": [
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "hand-written cache rules": [
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "login and XML-RPC": [
+     "guides/wordpress-behind-cloudflare",
+     "services/wordpress-care"
+    ],
+    "file editor": [
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "backups": [
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "origin firewall": [
+     "guides/wordpress-behind-cloudflare"
+    ],
+    "static alternative": [
+     "guides/wordpress-behind-cloudflare"
+    ]
+   },
+   "see": [
+    "Cloudflare"
+   ],
+   "main": [
+    "services/wordpress-care",
+    "guides/wordpress-behind-cloudflare"
+   ]
+  },
+  "working with Chris": {
+   "kind": "topic",
+   "pages": [
+    "work-with-me",
+    "faq",
+    "contact"
+   ],
+   "subs": {
+    "ways to engage": [
+     "work-with-me"
+    ],
+    "how a project runs": [
+     "work-with-me",
+     "faq"
+    ],
+    "payment terms": [
+     "work-with-me",
+     "faq"
+    ],
+    "where the work happens": [
+     "work-with-me",
+     "faq"
+    ],
+    "hosting": [
+     "work-with-me"
+    ],
+    "free audit question": [
+     "faq"
+    ],
+    "timing": [
+     "faq"
+    ],
+    "access needed": [
+     "work-with-me",
+     "faq"
+    ],
+    "what to include": [
+     "contact"
+    ],
+    "what happens next": [
+     "contact"
+    ]
+   },
+   "see": [],
+   "main": [
+    "work-with-me"
+   ]
+  },
+  "WPCode": {
+   "kind": "topic",
+   "pages": [
+    "services/on-page-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "X-Robots-Tag": {
+   "kind": "topic",
+   "pages": [
+    "services/seo-engineering",
+    "guides/repository-access"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "XML sitemaps": {
+   "kind": "topic",
+   "pages": [
+    "services/technical-seo",
+    "services/seo-engineering",
+    "services/large-sites",
+    "guides/glossary",
+    "case-studies/programmatic-indexing"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Yahoo directory": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "year-end SEO check": {
+   "kind": "topic",
+   "pages": [
+    "guides/year-end-seo-check"
+   ],
+   "subs": {
+    "indexing": [
+     "guides/year-end-seo-check"
+    ],
+    "sitemaps": [
+     "guides/year-end-seo-check"
+    ],
+    "GA4 data retention": [
+     "guides/year-end-seo-check"
+    ],
+    "domains and certificates": [
+     "guides/year-end-seo-check"
+    ],
+    "redirects": [
+     "guides/year-end-seo-check"
+    ],
+    "speed": [
+     "guides/year-end-seo-check"
+    ],
+    "listings and holiday hours": [
+     "guides/year-end-seo-check"
+    ],
+    "AI answers": [
+     "guides/year-end-seo-check"
+    ],
+    "structured data": [
+     "guides/year-end-seo-check"
+    ],
+    "access and ownership": [
+     "guides/year-end-seo-check"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/year-end-seo-check"
+   ]
+  },
+  "Yoast monkey": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-superpower"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Yoast SEO": {
+   "kind": "topic",
+   "pages": [
+    "services/on-page-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "YouTube": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-for-your-brand"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Zyppy title rewrite study": {
+   "kind": "topic",
+   "pages": [
+    "guides/fact-check-ai-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  }
+ },
+ "reviewed": [
+  "home",
+  "services",
+  "services/technical-lead",
+  "services/developers",
+  "services/agency-partner",
+  "services/rescue",
+  "services/ai-automation",
+  "services/data-cleanup",
+  "services/analytics",
+  "services/advisory",
+  "services/technical-seo",
+  "services/seo-engineering",
+  "services/crawler-visibility",
+  "services/large-sites",
+  "services/ecommerce",
+  "services/on-page-seo",
+  "services/site-speed",
+  "services/wordpress-care",
+  "services/search-console",
+  "services/migrations",
+  "services/ai-search",
+  "services/editorial",
+  "services/podcast-sites",
+  "services/ongoing-support",
+  "services/multi-location",
+  "services/reputation",
+  "services/google-business-profile",
+  "services/email-and-dns",
+  "guides",
+  "guides/fact-check-ai-seo",
+  "guides/measure-ai-search",
+  "guides/citation-gap-analysis",
+  "guides/content-briefs",
+  "guides/readme-ai-source",
+  "guides/speculation-rules",
+  "guides/indexnow-ai-search",
+  "guides/ai-assistants",
+  "guides/javascript-seo",
+  "guides/hydration-errors",
+  "guides/repository-access",
+  "guides/nextjs-seo",
+  "guides/seo-build-checks",
+  "guides/migration-recovery",
+  "guides/migration-tools",
+  "guides/core-web-vitals-mcp",
+  "guides/email-blocklist-recovery",
+  "guides/crawled-not-indexed",
+  "guides/migration-checklist",
+  "guides/email-authentication",
+  "guides/personal-information-removal",
+  "guides/traffic-drop",
+  "guides/removed-location-pages",
+  "guides/year-end-seo-check",
+  "guides/canonical-tags",
+  "guides/robots-txt",
+  "guides/structured-data",
+  "guides/301-redirects",
+  "guides/faceted-navigation",
+  "guides/hreflang",
+  "guides/core-web-vitals",
+  "guides/cloudflare-seo",
+  "guides/wordpress-behind-cloudflare",
+  "guides/ga4-consent-mode",
+  "guides/email-deliverability",
+  "guides/ai-coding-assistants",
+  "guides/ai-vendor-pitch",
+  "guides/hiring-developers",
+  "guides/hype-or-shift",
+  "guides/seo-superpower",
+  "guides/podcast-website",
+  "guides/search-in-2026",
+  "guides/self-ranking-lists",
+  "guides/seo-101",
+  "guides/podcast-seo",
+  "guides/podcast-for-your-brand",
+  "guides/lynx-qa",
+  "guides/ada-website-compliance",
+  "guides/glossary",
+  "case-studies",
+  "case-studies/ecommerce-rendering",
+  "case-studies/consent-blocking",
+  "case-studies/react-event-platform",
+  "case-studies/netlify-migration",
+  "case-studies/sanity-vercel",
+  "case-studies/shopify-migration",
+  "case-studies/app-takeover",
+  "case-studies/programmatic-indexing",
+  "case-studies/indexing-recovery",
+  "case-studies/multi-location-entity",
+  "case-studies/seasonal-retailer",
+  "case-studies/gbp-reinstatement",
+  "case-studies/umbraco-operations",
+  "case-studies/ai-recruiting",
+  "case-studies/data-cleanup",
+  "case-studies/founder-record",
+  "case-studies/four-site-speed-pass",
+  "case-studies/built-with-claude-code",
+  "about",
+  "stack",
+  "work-with-me",
+  "faq",
+  "standards",
+  "colophon",
+  "contact",
+  "privacy"
+ ]
+}

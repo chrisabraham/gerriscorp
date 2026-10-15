@@ -19,6 +19,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Colophon](https://gerriscorp.com/colophon/): How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
 - [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
 - [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
+- [Index](https://gerriscorp.com/site-index/): an A to Z list of the people, companies, tools, and problems the site covers, each linked to its pages.
 
 ## Consulting and technical direction
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.

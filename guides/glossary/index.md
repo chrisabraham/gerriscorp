@@ -6,7 +6,7 @@
 
 By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 15, 2026
 
-Plain definitions of the terms that come up in my work, written so each one makes sense on its own.
+Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The [index](https://gerriscorp.com/site-index/) lists every page where a term comes up.
 
 **301 redirect**
 A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.
