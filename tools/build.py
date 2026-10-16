@@ -502,8 +502,10 @@ GA = f"""
   function gtag(){{dataLayer.push(arguments);}}
   gtag('consent', 'default', {{ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'}});
   gtag('consent', 'default', {{analytics_storage: 'denied', region: {json.dumps(_EEA_UK)}}});
+  // Global Privacy Control or Do Not Track turns analytics cookies off anywhere.
+  if (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1') gtag('consent', 'default', {{analytics_storage: 'denied'}});
   gtag('js', new Date());
-  gtag('config', '{GA_ID}');
+  gtag('config', '{GA_ID}', {{allow_google_signals: false, allow_ad_personalization_signals: false}});
   (function () {{
     // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
     // so it never competes with the page itself. The commands above wait in dataLayer.

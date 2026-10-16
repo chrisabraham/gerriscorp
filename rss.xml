@@ -1796,7 +1796,7 @@ sys.exit(1 if problems else 0)&lt;/code&gt;&lt;/pre&gt;
   &lt;li&gt;&lt;strong&gt;Experience tested:&lt;/strong&gt; the provider and the relevant search mode.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Observed answer:&lt;/strong&gt; the claim being checked and whether it is accurate.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Source addresses:&lt;/strong&gt; the pages actually linked in that response.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Follow up:&lt;/strong&gt; the correction, page improvement, or further test required.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Follow-up:&lt;/strong&gt; the correction, page improvement, or further test required.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This is a sample of answers under recorded conditions. It cannot establish your universal position across all users, prompts, and products. The purpose is to detect patterns and factual problems you can act on.&lt;/p&gt;
 

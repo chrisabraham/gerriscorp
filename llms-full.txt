@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-15. Quote freely with attribution and a link to the source page.
+> Built 2026-10-16. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -1837,7 +1837,7 @@ A practical observation log might contain these fields:
 - **Experience tested:** the provider and the relevant search mode.
 - **Observed answer:** the claim being checked and whether it is accurate.
 - **Source addresses:** the pages actually linked in that response.
-- **Follow up:** the correction, page improvement, or further test required.
+- **Follow-up:** the correction, page improvement, or further test required.
 
 This is a sample of answers under recorded conditions. It cannot establish your universal position across all users, prompts, and products. The purpose is to detect patterns and factual problems you can act on.
 
@@ -6924,7 +6924,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/privacy/
-Updated: 2026-10-05
+Updated: 2026-10-16
 
 # Privacy
 
@@ -6935,6 +6935,8 @@ This site collects very little: anonymous visit statistics, and whatever you cho
 This site uses Google Analytics 4 to count visits, see which pages people read, and learn how visitors arrive, including from search engines and AI assistants. It records information such as the pages you view, your approximate location, your device and browser, and the site that referred you. It doesn't collect your name, email address, or other details that identify you directly.
 
 For visitors in the United Kingdom and the European Economic Area, analytics cookies are switched off. Google Analytics receives cookieless measurements instead, which count visits without storing anything on your device. Elsewhere, Google Analytics may set first-party cookies to recognize repeat visits. Advertising and personalization features are turned off for everyone.
+
+Browsers that send a Global Privacy Control or Do Not Track signal get the same cookieless treatment, wherever the visitor happens to be. Google signals stays switched off for every visit.
 
 Google processes this data under its own [privacy policy](https://policies.google.com/privacy). You can block Google Analytics anywhere with your browser's privacy settings, a content blocker, or Google's [opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
 
@@ -6954,7 +6956,7 @@ Information I see while working for clients, such as analytics, Search Console d
 
 Email [chris@gerriscorp.com](mailto:chris@gerriscorp.com) with any question about your information, or to ask me to delete correspondence you've sent.
 
-Updated October 5, 2026
+Updated October 16, 2026
 
 
 ---
@@ -7223,7 +7225,7 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-15
+Updated: 2026-10-16
 
 # Site map
 
@@ -7358,13 +7360,13 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 15, 2026
+Updated October 16, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/site-index/
-Updated: 2026-10-15
+Updated: 2026-10-16
 
 # Index
 
@@ -8722,4 +8724,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 15, 2026
+Updated October 16, 2026

@@ -23,8 +23,10 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  // Global Privacy Control or Do Not Track turns analytics cookies off anywhere.
+  if (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1') gtag('consent', 'default', {analytics_storage: 'denied'});
   gtag('js', new Date());
-  gtag('config', 'G-JF2W6ESJZN');
+  gtag('config', 'G-JF2W6ESJZN', {allow_google_signals: false, allow_ad_personalization_signals: false});
   (function () {
     // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
     // so it never competes with the page itself. The commands above wait in dataLayer.
@@ -708,7 +710,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    },
    "primaryImageOfPage": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "dateModified": "2026-10-15",
+   "dateModified": "2026-10-16",
    "author": {
     "@id": "https://chrisabraham.com/#person"
    },
@@ -2211,7 +2213,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li id="ix-zyppy-title-rewrite-study">Zyppy title rewrite study, <a href="../guides/fact-check-ai-seo/" title="How to fact check a confident AI answer about SEO before you act on it">Fact check AI SEO advice</a></li>
 </ul>
 <p class="index-top"><a href="#index-letters">Back to the letters</a></p>
-<p class="updated">Updated <time datetime="2026-10-15">October 15, 2026</time></p>
+<p class="updated">Updated <time datetime="2026-10-16">October 16, 2026</time></p>
 </main>
 <footer class="site-footer">
   <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a> · <a href="tel:+12023525051">+1 202-352-5051</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>

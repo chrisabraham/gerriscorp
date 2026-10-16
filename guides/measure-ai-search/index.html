@@ -23,8 +23,10 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
   gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  // Global Privacy Control or Do Not Track turns analytics cookies off anywhere.
+  if (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1') gtag('consent', 'default', {analytics_storage: 'denied'});
   gtag('js', new Date());
-  gtag('config', 'G-JF2W6ESJZN');
+  gtag('config', 'G-JF2W6ESJZN', {allow_google_signals: false, allow_ad_personalization_signals: false});
   (function () {
     // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
     // so it never competes with the page itself. The commands above wait in dataLayer.
@@ -762,7 +764,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    "dateModified": "2026-10-12",
    "image": "https://gerriscorp.com/social-card.png",
    "inLanguage": "en-US",
-   "wordCount": 1043,
+   "wordCount": 1042,
    "citation": [
     {
      "@type": "CreativeWork",
@@ -854,7 +856,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
   <li><strong>Experience tested:</strong> the provider and the relevant search mode.</li>
   <li><strong>Observed answer:</strong> the claim being checked and whether it is accurate.</li>
   <li><strong>Source addresses:</strong> the pages actually linked in that response.</li>
-  <li><strong>Follow up:</strong> the correction, page improvement, or further test required.</li>
+  <li><strong>Follow-up:</strong> the correction, page improvement, or further test required.</li>
 </ul>
 <p>This is a sample of answers under recorded conditions. It cannot establish your universal position across all users, prompts, and products. The purpose is to detect patterns and factual problems you can act on.</p>
 

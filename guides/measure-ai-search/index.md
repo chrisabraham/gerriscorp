@@ -51,7 +51,7 @@ A practical observation log might contain these fields:
 - **Experience tested:** the provider and the relevant search mode.
 - **Observed answer:** the claim being checked and whether it is accurate.
 - **Source addresses:** the pages actually linked in that response.
-- **Follow up:** the correction, page improvement, or further test required.
+- **Follow-up:** the correction, page improvement, or further test required.
 
 This is a sample of answers under recorded conditions. It cannot establish your universal position across all users, prompts, and products. The purpose is to detect patterns and factual problems you can act on.
 
