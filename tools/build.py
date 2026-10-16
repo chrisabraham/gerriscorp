@@ -36,6 +36,7 @@ singular ("I", never "we"), and no links to missing pages.
 import datetime, html, json, os, re, sys
 from html.parser import HTMLParser
 from guide_navigation import add_guide_contents
+import cards
 
 # Set to True at the DNS cutover: drops noindex and writes CNAME (see README).
 LIVE = True
@@ -406,7 +407,7 @@ def schema(p):
                  "guides/": "CollectionPage", "services/": "CollectionPage", "case-studies/": "CollectionPage"}.get(p["path"], "WebPage")
     page = {"@type": page_type, "@id": p["url"] + "#webpage", "url": p["url"], "name": p["title"],
             "description": p["description"], "isPartOf": {"@id": SITE + "#website"},
-            "about": {"@id": SITE + "#org"}, "primaryImageOfPage": SITE + "social-card.png",
+            "about": {"@id": SITE + "#org"}, "primaryImageOfPage": p.get("card", SITE + "social-card.png"),
             "inLanguage": "en-US", "dateModified": p["updated"], "author": {"@id": AUTHOR}}
     graph = [WEBSITE, ORG, PERSON, HOME, page]
     if p["path"]:
@@ -426,7 +427,7 @@ def schema(p):
                       "description": p["description"], "url": p["url"], "mainEntityOfPage": {"@id": p["url"] + "#webpage"},
                       "author": {"@id": AUTHOR}, "publisher": {"@id": SITE + "#org"},
                       "datePublished": p.get("published", p["updated"]), "dateModified": p["updated"],
-                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"],
+                      "image": p.get("card", SITE + "social-card.png"), "inLanguage": "en-US", "wordCount": p["words"],
                       "citation": [{"@type": "CreativeWork", "name": label, "url": u} for label, u in p["sources"]]})
         page["mainEntity"] = {"@id": p["url"] + "#article"}
     if p["kind"] == "guide":
@@ -434,7 +435,7 @@ def schema(p):
                       "description": p["description"], "url": p["url"], "mainEntityOfPage": {"@id": p["url"] + "#webpage"},
                       "author": {"@id": AUTHOR}, "publisher": {"@id": SITE + "#org"},
                       "datePublished": p.get("published", p["updated"]), "dateModified": p["updated"],
-                      "image": SITE + "social-card.png", "inLanguage": "en-US", "wordCount": p["words"],
+                      "image": p.get("card", SITE + "social-card.png"), "inLanguage": "en-US", "wordCount": p["words"],
                       "citation": [{"@type": "CreativeWork", "name": label, "url": u} for label, u in p["sources"]]})
     if p["kind"] == "guide":
         art = graph[-1]
@@ -544,7 +545,32 @@ def keywords(p):
     terms = own + [KEYWORDS_SECTION.get(p["tab"], "technical SEO consultant"), "Gerris Corp", "Chris Abraham"]
     return ", ".join(dict.fromkeys(terms))
 
+# Per-page share cards (tools/cards.py): the water strider, the logo's colors, Gerris orange.
+def _card_chrome(im, d, W, H, M):
+    from PIL import Image
+    d.rectangle([0, 0, W, 14], fill="#1e9cd5")
+    d.rectangle([0, 14, W, 22], fill="#f3b842")
+    logo = Image.open("logo.png").convert("RGBA").resize((110, 110))
+    im.paste(logo, (M - 10, 46), logo)
+    d.text((M + 116, 70), "Gerris Corp", font=cards._font("DejaVuSans-Bold.ttf", 48), fill="#c75000")
+    d.line([M, H - 108, W - M, H - 108], fill="#c8d3d8", width=2)
+    d.text((M, H - 88), "gerriscorp.com", font=cards._font("DejaVuSans-Bold.ttf", 30), fill="#16729e")
+    d.text((W - M, H - 88), "Chris Abraham, technical consultant", font=cards._font("DejaVuSans.ttf", 26), fill="#333333", anchor="ra")
+
+
+CARD_STYLE = {"version": "g1", "site": SITE, "chrome": _card_chrome, "kicker_y": 196, "kicker_color": "#237482", "title_y": 254}
+
+
+def card_for(p):
+    if p["path"] == "":
+        return SITE + "social-card.png"  # the home page keeps the hand-made site card
+    kinds = {"guide": "Guide", "case": "Case study", "service": "Service"}
+    kicker = kinds.get(p["kind"]) or ("Technical consulting, SEO, and AI search" if p["path"] == "" else "gerriscorp.com")
+    return cards.make(p["path"], p["h1"], kicker, CARD_STYLE) or SITE + "social-card.png"
+
+
 def render(p):
+    p["card"] = card_for(p)
     r = p["root"]
     home = r or "./"
     e = lambda s: html.escape(s, quote=True)
@@ -588,14 +614,15 @@ def render(p):
 <meta property="og:title" content="{e(p["title"])}">
 <meta property="og:description" content="{e(p["description"])}">
 <meta property="og:url" content="{p["url"]}">
-<meta property="og:image" content="{SITE}social-card.png">
+<meta property="og:image" content="{p["card"]}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Gerris logo, a sketched water strider">{article}
+<meta property="og:image:alt" content="{e(p["h1"])}">{article}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(p["title"])}">
 <meta name="twitter:description" content="{e(p["description"])}">
-<meta name="twitter:image" content="{SITE}social-card.png">
+<meta name="twitter:image" content="{p["card"]}">
+<meta name="twitter:image:alt" content="{e(p["h1"])}">
 <style>
 {CSS}
 </style>
