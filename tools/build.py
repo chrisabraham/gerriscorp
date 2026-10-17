@@ -609,6 +609,7 @@ def render(p):
 <link rel="alternate" type="text/plain" title="llms.txt" href="{r}llms.txt">
 <link rel="sitemap" type="application/xml" href="{r}sitemap.xml">
 <meta name="theme-color" content="#ffffff">{GA}{SPECULATION}{RELME}
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <meta property="og:site_name" content="Gerris Corp">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{og_type}">
@@ -652,6 +653,7 @@ def render(p):
 <footer class="site-footer">
   <p><a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="tel:{TEL}">{PHONE}</a> · <a href="https://calendly.com/chrisabraham/30">Book a call</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
   <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia · <a href="{r}faq/">FAQ</a> · <a href="{r}standards/">Standards</a> · <a href="{r}privacy/">Privacy</a> · <a href="{r}sitemap/">Site map</a> · <a href="{r}site-index/">Index</a> · <a href="{r}guides/glossary/">Glossary</a> · <a href="{r}colophon/">Colophon</a> · <a href="{r}llms.txt">llms.txt</a> · <a href="{r}rss.xml">RSS</a> · <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except where noted: copy, adapt, and share this work with attribution to Gerris Corp and a link.</p>
 </footer>
 </div>
 </body>
