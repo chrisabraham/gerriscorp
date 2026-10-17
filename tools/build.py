@@ -653,7 +653,7 @@ def render(p):
 </main>
 <footer class="site-footer">
   <p><a href="mailto:{EMAIL}">{EMAIL}</a>&nbsp;· <a href="tel:{TEL}">{PHONE}</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
-  <p>© {TODAY[:4]} Gerris Corp, Arlington, Virginia&nbsp;· <a href="{r}faq/">FAQ</a>&nbsp;· <a href="{r}standards/">Standards</a>&nbsp;· <a href="{r}privacy/">Privacy</a>&nbsp;· <a href="{r}sitemap/">Site map</a>&nbsp;· <a href="{r}site-index/">Index</a>&nbsp;· <a href="{r}guides/glossary/">Glossary</a>&nbsp;· <a href="{r}colophon/">Colophon</a>&nbsp;· <a href="{r}llms.txt">llms.txt</a>&nbsp;· <a href="{r}rss.xml">RSS</a>&nbsp;· <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>© {TODAY[:4]} Gerris Corp, Arlington,&nbsp;Virginia&nbsp;· <a href="{r}faq/">FAQ</a>&nbsp;· <a href="{r}standards/">Standards</a>&nbsp;· <a href="{r}privacy/">Privacy</a>&nbsp;· <a href="{r}sitemap/">Site map</a>&nbsp;· <a href="{r}site-index/">Index</a>&nbsp;· <a href="{r}guides/glossary/">Glossary</a>&nbsp;· <a href="{r}colophon/">Colophon</a>&nbsp;· <a href="{r}llms.txt">llms.txt</a>&nbsp;· <a href="{r}rss.xml">RSS</a>&nbsp;· <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
   <p>Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except where noted: copy, adapt, and share this work with attribution to Gerris&nbsp;Corp and a&nbsp;link.</p>
 </footer>
 </div>
