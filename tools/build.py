@@ -581,7 +581,8 @@ def render(p):
     if p["path"] and p["tab"] != p["path"] and p["tab"] in by_path:
         crumbs = ('\n<p class="crumbs">' + " › ".join(f'<a href="{(r + q["path"]) or "./"}">{q["name"]}</a>' for q in trail(p)[:-1])
                   + f' › {p["name"]}</p>')
-    robots = "" if LIVE else '\n<meta name="robots" content="noindex">'
+    robots = ('\n<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' if LIVE
+              else '\n<meta name="robots" content="noindex">')
     og_type = "article" if p["kind"] == "guide" else "website"
     article = ""
     if p["kind"] == "guide":
