@@ -7335,6 +7335,18 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "B2B catalog SEO": {
+   "kind": "topic",
+   "pages": [
+    "services/b2b-catalog-seo",
+    "guides/b2b-catalog-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/b2b-catalog-seo"
+   ]
   }
  },
  "reviewed": [
@@ -7446,6 +7458,8 @@
   "services/internal-linking",
   "services/ai-workflow-testing",
   "guides/ai-pilot-tests",
-  "guides/website-handover"
+  "guides/website-handover",
+  "services/b2b-catalog-seo",
+  "guides/b2b-catalog-seo"
  ]
 }

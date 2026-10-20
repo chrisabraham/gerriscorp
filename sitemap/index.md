@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-16 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-20 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -31,6 +31,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
+- [B2B catalog SEO for manufacturers and distributors](https://gerriscorp.com/services/b2b-catalog-seo/): B2B catalog SEO for manufacturers and distributors: product specifications, part discovery, crawlable templates, and quote paths tested on a focused pilot.
 
 ## Search and site performance
 - [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
@@ -107,6 +108,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 - [Test an AI pilot with the work it is supposed to do](https://gerriscorp.com/guides/ai-pilot-tests/): Turn an AI demonstration into a testable pilot: real examples, expected results, permissions, retries, failure records, and a decision your team can explain.
 - [A website handover needs more than a zip file and a password](https://gerriscorp.com/guides/website-handover/): A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.
+- [B2B catalog SEO: help the right buyer choose the right part](https://gerriscorp.com/guides/b2b-catalog-seo/): Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -135,4 +137,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 16, 2026
+Updated October 20, 2026

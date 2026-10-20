@@ -1,12 +1,13 @@
 > Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 >
-> Source: https://gerriscorp.com/services/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ · Updated 2026-10-20 · By Chris Abraham, Gerris Corp
 
 # Services
 
 I'm the person you call when the technical side of your web presence needs someone in charge. Every engagement starts with a paid diagnostic and a clear next step, and I do the work myself, alongside your team.
 
 ## Consulting and technical direction
+- [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/): technical product information, catalog discovery, and qualified quote requests.
 - [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/): acceptance cases for a real pilot, with expected outputs, permission boundaries, failure evidence, and a clear next decision.
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
@@ -48,4 +49,4 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 15, 2026
+Updated October 20, 2026

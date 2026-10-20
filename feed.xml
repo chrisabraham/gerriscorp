@@ -5,8 +5,58 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-15T12:00:00Z</updated>
+  <updated>2026-10-20T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
+  <entry>
+    <title>B2B catalog SEO: help the right buyer choose the right part</title>
+    <link href="https://gerriscorp.com/guides/b2b-catalog-seo/"/>
+    <id>https://gerriscorp.com/guides/b2b-catalog-seo/</id>
+    <published>2026-10-20T12:00:00Z</published>
+    <updated>2026-10-20T12:00:00Z</updated>
+    <summary>Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.</summary>
+    <content type="html">&lt;h1&gt;B2B catalog SEO: help the right buyer choose the right part&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-20"&gt;October 20, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A catalog can attract visitors while leaving the sales team with the wrong inquiries. The useful question is whether a buyer can establish that a part fits the application, understand the buying terms, and send enough information for a meaningful quote. I start there, then work backward through the content and technical SEO.&lt;/p&gt;
+&lt;h2&gt;Separate the buyer questions before adding pages&lt;/h2&gt;
+&lt;p&gt;An engineer checking compatibility, a purchasing manager sourcing a known part, and a hobbyist buying one replacement can use similar language. Their needs differ. Review actual inquiries with sales before treating every visit as equally valuable. Record which product families bring repeat business, which requests cannot be served, and which information sales repeatedly has to ask for.&lt;/p&gt;
+&lt;p&gt;Use that evidence to choose a small pilot family. A list of twenty commercially important parts can teach more than a rewrite of five thousand descriptions. Pick products with reliable source data, a sales owner who can review the copy, and enough existing demand to make observation worthwhile. Do not select solely by search volume.&lt;/p&gt;
+&lt;h2&gt;Make the specification understandable and inspectable&lt;/h2&gt;
+&lt;p&gt;Put the information needed for an initial decision into readable page text. For a hypothetical fitting, that could include thread standard, connection size, material, dimensions, and the conditions attached to a stated pressure rating. The exact fields must come from the manufacturer's approved documentation. An SEO writer should never infer compatibility or a safety rating from a similar product.&lt;/p&gt;
+&lt;p&gt;A practical product template includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The manufacturer and exact part identifier, including punctuation that changes the identifier.&lt;/li&gt;
+&lt;li&gt;A concise description that distinguishes this item from adjacent variants.&lt;/li&gt;
+&lt;li&gt;A labeled specification table with units and the applicable conditions.&lt;/li&gt;
+&lt;li&gt;A current datasheet, its revision where available, and any limits on the information shown.&lt;/li&gt;
+&lt;li&gt;Ordering information such as pack quantity, minimum order, or the need to confirm availability.&lt;/li&gt;
+&lt;li&gt;A quote or purchase route that carries the product context into the next step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keep downloadable drawings and PDFs where they help the buyer. Add enough HTML context that someone can understand the item before downloading. Check whether tabs, selectors, or scroll effects hide the essential text from a plain fetch. My &lt;a href="https://gerriscorp.com/services/crawler-visibility/"&gt;crawler visibility service&lt;/a&gt; addresses that rendering problem.&lt;/p&gt;
+&lt;h2&gt;Choose which pages deserve separate addresses&lt;/h2&gt;
+&lt;p&gt;A product, a product family, an application, and a filter combination are different editorial decisions. Give an individual part a useful page when buyers need that item's specific information. Use a family page to explain selection among genuinely related options. An application page should answer a real use question with expert review, rather than repeat a category description under a new heading.&lt;/p&gt;
+&lt;p&gt;Avoid creating a page for every possible combination of specifications just because the database permits it. Sample filter URLs, identify duplicates, and agree which combinations deserve discovery. Check internal links, canonical signals, and sitemap entries together. See the &lt;a href="https://gerriscorp.com/guides/faceted-navigation/"&gt;faceted navigation guide&lt;/a&gt; for the underlying crawl problem.&lt;/p&gt;
+&lt;p&gt;For obsolete parts, ask whether the page still helps owners identify an installed component. A discontinued notice and a documented replacement can be useful. Do not redirect to a superficially similar item whose compatibility is unknown. Preserve the distinction between a verified replacement and an alternative that needs engineering review.&lt;/p&gt;
+&lt;h2&gt;Give technical buyers a usable quote route&lt;/h2&gt;
+&lt;p&gt;A generic contact form can lose the part number the visitor just selected. Test the route from the actual product page. The form should preserve the relevant context and explain what information helps sales respond: quantity, timing, destination, and application details where appropriate. Ask the commercial team which fields are essential rather than making every field mandatory.&lt;/p&gt;
+&lt;p&gt;State genuine constraints before submission. If the business only supplies trade accounts or has a minimum order, let buyers know. That may reduce inquiry volume while improving fit. A qualification rule should describe how the company actually operates, not discourage an unfamiliar buyer who could become a valuable account.&lt;/p&gt;
+&lt;h2&gt;Use structured data without inventing a transaction&lt;/h2&gt;
+&lt;p&gt;Structured data should describe the visible product accurately. Google's &lt;a href="https://developers.google.com/search/docs/appearance/structured-data/product-snippet"&gt;product snippet documentation&lt;/a&gt; explains eligibility and required properties. Check the applicable requirements before promising an enhanced search appearance. A quote-only catalog must not manufacture prices, reviews, or stock status to satisfy a validator. Valid descriptive markup and eligibility for a particular search feature are separate questions.&lt;/p&gt;
+&lt;h2&gt;Measure the pilot against commercial fit&lt;/h2&gt;
+&lt;p&gt;Before editing, save the selected URLs, their current content, indexing observations, relevant query groups, and available inquiry counts. Define a qualified inquiry with sales in writing. That might require a supported product, a serviceable destination, and enough quantity or account potential to justify follow-up. Keep rejected inquiries visible in the review so the definition cannot quietly change to flatter the results.&lt;/p&gt;
+&lt;p&gt;After release, verify the pages, links, forms, and analytics events. Review the same product family over an agreed period that reflects the sales cycle. Compare visibility, inquiries, qualified opportunities, and eventual orders where records allow it. Annotate promotions, stock changes, and seasonal effects. A small sample can indicate a direction without proving that SEO caused every order.&lt;/p&gt;
+&lt;h2&gt;How I take this on&lt;/h2&gt;
+&lt;p&gt;My &lt;a href="https://gerriscorp.com/services/b2b-catalog-seo/"&gt;B2B catalog SEO service&lt;/a&gt; starts with a paid diagnostic and a bounded product family. I map the content gaps, specify template changes, coordinate expert review, and verify implementation. The deliverable is a repeatable page standard and an evidence trail for the pilot, with a decision about whether the rest of the catalog warrants the same work.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
   <entry>
     <title>A website handover needs more than a zip file and a password</title>
     <link href="https://gerriscorp.com/guides/website-handover/"/>

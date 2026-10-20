@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-16. Quote freely with attribution and a link to the source page.
+> Built 2026-10-20. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -61,13 +61,14 @@ Updated October 15, 2026
 ---
 
 Source: https://gerriscorp.com/services/
-Updated: 2026-10-15
+Updated: 2026-10-20
 
 # Services
 
 I'm the person you call when the technical side of your web presence needs someone in charge. Every engagement starts with a paid diagnostic and a clear next step, and I do the work myself, alongside your team.
 
 ## Consulting and technical direction
+- [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/): technical product information, catalog discovery, and qualified quote requests.
 - [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/): acceptance cases for a real pilot, with expected outputs, permission boundaries, failure evidence, and a clear next decision.
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
@@ -109,7 +110,7 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 15, 2026
+Updated October 20, 2026
 
 
 ---
@@ -1635,13 +1636,14 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-15
+Updated: 2026-10-20
 
 # Guides
 
 Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
 
 ## AI search
+- [B2B catalog SEO for technical buyers](https://gerriscorp.com/guides/b2b-catalog-seo/): select a product family, improve specifications, and measure useful inquiries.
 - [How to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/): split the answer into claims, grade each by its source, trace every number, and test on your own data.
 - [Measure AI citations, referrals, and leads](https://gerriscorp.com/guides/measure-ai-search/): provider reports, identifiable visits, repeatable answer checks, and attribution limits.
 - [IndexNow, Bing, and an AI search publishing workflow](https://gerriscorp.com/guides/indexnow-ai-search/): verify releases, notify participating engines, and syndicate full articles.
@@ -1719,7 +1721,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 15, 2026
+Updated October 20, 2026
 
 
 ---
@@ -7224,8 +7226,128 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/services/b2b-catalog-seo/
+Updated: 2026-10-20
+
+# B2B catalog SEO for manufacturers and distributors
+
+Your best customer may be searching for a specific component, a material, or a compatibility answer. I help suppliers make that information findable and useful, then connect the page to a quote request your sales team can act on.
+
+## When this service fits
+
+This is for businesses whose catalog supports a considered purchase: industrial components, technical equipment, specialist materials, or products sold through quotations and repeat accounts. It is especially useful when a site has thousands of items but weak specifications, inaccessible product information, or traffic that rarely becomes a suitable inquiry.
+
+A retail checkout and a supplier qualification process need different content. I review how your customers buy before recommending more pages. Sales conversations, product documentation, Search Console, and a sample crawl establish whether the immediate problem is discovery, missing information, or the route into sales.
+
+## What the diagnostic covers
+- Product family and part number discovery, including important identifiers and variant distinctions.
+- Specifications, datasheets, selection guidance, and the information buyers need before contacting sales.
+- HTML rendering, internal navigation, duplicate URLs, filters, and canonical consistency.
+- Product markup checked against the visible information and applicable search requirements.
+- Quote forms, product context, confirmation behavior, and the destination of test inquiries.
+- A measurement plan that distinguishes total submissions from commercially relevant opportunities.
+
+## A pilot before a catalog rollout
+
+I choose one product family with your commercial and technical reviewers. The first delivery is a written findings list, a page inventory, and a proposed template with acceptance criteria. Each recommendation identifies its evidence, its owner, and what must be checked before it can be published.
+
+Implementation can include editing priority pages, preparing developer specifications, or working in the repository where access permits. I verify the approved changes against the original sample. A pilot report records what shipped, what still depends on your team, and what the early observations do and do not establish.
+
+## What I need from you
+
+Access to the relevant site data, a representative catalog export, approved documentation, and someone who can verify technical claims. Sales needs to define a useful inquiry and identify recurring customer questions. I can organize and explain your source material; an authorized product expert must approve specifications, certifications, and replacement recommendations.
+
+Read the [technical buyer catalog guide](https://gerriscorp.com/guides/b2b-catalog-seo/) for the selection and measurement method. For a related implementation problem, the [ecommerce rendering case study](https://gerriscorp.com/case-studies/ecommerce-rendering/) explains how product content can be present visually yet difficult for a crawler to receive. It is evidence of that technical issue, not a forecast of your commercial results.
+
+## Questions before starting
+
+### Does every SKU need a rewritten description?
+
+No. I first identify which pages need distinct information and which problems come from shared templates. A focused product family establishes a standard before a larger editorial commitment.
+
+### Can a quote-only catalog use this service?
+
+Yes. The goal is to help a buyer qualify the product and contact the right person. I do not add fictional prices or promise shopping features for pages that do not meet their requirements.
+
+[Discuss a catalog diagnostic](https://gerriscorp.com/contact/)
+
+Updated October 20, 2026
+
+
+---
+
+Source: https://gerriscorp.com/guides/b2b-catalog-seo/
+Updated: 2026-10-20
+
+# B2B catalog SEO: help the right buyer choose the right part
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 20, 2026
+
+A catalog can attract visitors while leaving the sales team with the wrong inquiries. The useful question is whether a buyer can establish that a part fits the application, understand the buying terms, and send enough information for a meaningful quote. I start there, then work backward through the content and technical SEO.
+
+## Separate the buyer questions before adding pages
+
+An engineer checking compatibility, a purchasing manager sourcing a known part, and a hobbyist buying one replacement can use similar language. Their needs differ. Review actual inquiries with sales before treating every visit as equally valuable. Record which product families bring repeat business, which requests cannot be served, and which information sales repeatedly has to ask for.
+
+Use that evidence to choose a small pilot family. A list of twenty commercially important parts can teach more than a rewrite of five thousand descriptions. Pick products with reliable source data, a sales owner who can review the copy, and enough existing demand to make observation worthwhile. Do not select solely by search volume.
+
+## Make the specification understandable and inspectable
+
+Put the information needed for an initial decision into readable page text. For a hypothetical fitting, that could include thread standard, connection size, material, dimensions, and the conditions attached to a stated pressure rating. The exact fields must come from the manufacturer's approved documentation. An SEO writer should never infer compatibility or a safety rating from a similar product.
+
+A practical product template includes:
+- The manufacturer and exact part identifier, including punctuation that changes the identifier.
+- A concise description that distinguishes this item from adjacent variants.
+- A labeled specification table with units and the applicable conditions.
+- A current datasheet, its revision where available, and any limits on the information shown.
+- Ordering information such as pack quantity, minimum order, or the need to confirm availability.
+- A quote or purchase route that carries the product context into the next step.
+
+Keep downloadable drawings and PDFs where they help the buyer. Add enough HTML context that someone can understand the item before downloading. Check whether tabs, selectors, or scroll effects hide the essential text from a plain fetch. My [crawler visibility service](https://gerriscorp.com/services/crawler-visibility/) addresses that rendering problem.
+
+## Choose which pages deserve separate addresses
+
+A product, a product family, an application, and a filter combination are different editorial decisions. Give an individual part a useful page when buyers need that item's specific information. Use a family page to explain selection among genuinely related options. An application page should answer a real use question with expert review, rather than repeat a category description under a new heading.
+
+Avoid creating a page for every possible combination of specifications just because the database permits it. Sample filter URLs, identify duplicates, and agree which combinations deserve discovery. Check internal links, canonical signals, and sitemap entries together. See the [faceted navigation guide](https://gerriscorp.com/guides/faceted-navigation/) for the underlying crawl problem.
+
+For obsolete parts, ask whether the page still helps owners identify an installed component. A discontinued notice and a documented replacement can be useful. Do not redirect to a superficially similar item whose compatibility is unknown. Preserve the distinction between a verified replacement and an alternative that needs engineering review.
+
+## Give technical buyers a usable quote route
+
+A generic contact form can lose the part number the visitor just selected. Test the route from the actual product page. The form should preserve the relevant context and explain what information helps sales respond: quantity, timing, destination, and application details where appropriate. Ask the commercial team which fields are essential rather than making every field mandatory.
+
+State genuine constraints before submission. If the business only supplies trade accounts or has a minimum order, let buyers know. That may reduce inquiry volume while improving fit. A qualification rule should describe how the company actually operates, not discourage an unfamiliar buyer who could become a valuable account.
+
+## Use structured data without inventing a transaction
+
+Structured data should describe the visible product accurately. Google's [product snippet documentation](https://developers.google.com/search/docs/appearance/structured-data/product-snippet) explains eligibility and required properties. Check the applicable requirements before promising an enhanced search appearance. A quote-only catalog must not manufacture prices, reviews, or stock status to satisfy a validator. Valid descriptive markup and eligibility for a particular search feature are separate questions.
+
+## Measure the pilot against commercial fit
+
+Before editing, save the selected URLs, their current content, indexing observations, relevant query groups, and available inquiry counts. Define a qualified inquiry with sales in writing. That might require a supported product, a serviceable destination, and enough quantity or account potential to justify follow-up. Keep rejected inquiries visible in the review so the definition cannot quietly change to flatter the results.
+
+After release, verify the pages, links, forms, and analytics events. Review the same product family over an agreed period that reflects the sales cycle. Compare visibility, inquiries, qualified opportunities, and eventual orders where records allow it. Annotate promotions, stock changes, and seasonal effects. A small sample can indicate a direction without proving that SEO caused every order.
+
+## How I take this on
+
+My [B2B catalog SEO service](https://gerriscorp.com/services/b2b-catalog-seo/) starts with a paid diagnostic and a bounded product family. I map the content gaps, specify template changes, coordinate expert review, and verify implementation. The deliverable is a repeatable page standard and an evidence trail for the pilot, with a decision about whether the rest of the catalog warrants the same work.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-16
+Updated: 2026-10-20
 
 # Site map
 
@@ -7256,6 +7378,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
+- [B2B catalog SEO for manufacturers and distributors](https://gerriscorp.com/services/b2b-catalog-seo/): B2B catalog SEO for manufacturers and distributors: product specifications, part discovery, crawlable templates, and quote paths tested on a focused pilot.
 
 ## Search and site performance
 - [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
@@ -7332,6 +7455,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 - [Test an AI pilot with the work it is supposed to do](https://gerriscorp.com/guides/ai-pilot-tests/): Turn an AI demonstration into a testable pilot: real examples, expected results, permissions, retries, failure records, and a decision your team can explain.
 - [A website handover needs more than a zip file and a password](https://gerriscorp.com/guides/website-handover/): A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.
+- [B2B catalog SEO: help the right buyer choose the right part](https://gerriscorp.com/guides/b2b-catalog-seo/): Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -7360,17 +7484,17 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 16, 2026
+Updated October 20, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/site-index/
-Updated: 2026-10-16
+Updated: 2026-10-20
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 480 headings drawn from 109 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 481 headings drawn from 111 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -7560,6 +7684,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## B
+- B2B catalog SEO, [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/), **[B2B catalog SEO](https://gerriscorp.com/guides/b2b-catalog-seo/)**
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
 - backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
 - Barracuda, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
@@ -8724,4 +8849,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 16, 2026
+Updated October 20, 2026

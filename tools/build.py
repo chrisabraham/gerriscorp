@@ -83,6 +83,9 @@ FILES += ['services/internal-linking', 'services/ai-workflow-testing', 'guides/a
 SERVICE_GROUPS[0][1].extend(['services/ai-workflow-testing/'])
 SERVICE_GROUPS[1][1].extend(['services/internal-linking/'])
 
+FILES += ["services/b2b-catalog-seo", "guides/b2b-catalog-seo"]
+SERVICE_GROUPS[0][1].append("services/b2b-catalog-seo/")
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
