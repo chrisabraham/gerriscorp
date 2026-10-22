@@ -44,6 +44,14 @@ I'm the person you call when the technical side of your web presence needs someo
 
 Want the technical depth behind these services? See [what I can take on in your stack](https://gerriscorp.com/stack/), layer by layer, with the case study for each.
 
+## Platforms and toolbox
+
+Current work: WordPress with Yoast or Rank Math, Elementor, and WooCommerce; Shopify and Liquid; Magento 2 and Hyvä; Umbraco; Drupal and Joomla; Squarespace, Wix, Webflow, and Framer; HubSpot; Duda; and headless and custom builds on React, Next.js, Vue, Create React App, Alpine.js, Sanity, Vercel, and Netlify.
+
+Site rescue and migration: if your site is stranded on an old platform or a host you want to leave, I can spider it and replicate it on GitHub Pages or a modern stack, usually in hours, not weeks, with AI assistance on the heavy lifting. That is how I moved Hill Mole, my own novel's site, off legacy hosting and onto GitHub Pages. I work in Git and GitHub, on Linux servers I administer myself (root on DigitalOcean droplets; everything I own runs Linux), with OpenAI Codex and Claude Code as my main coding assistants.
+
+Around the platforms: Cloudflare, GitHub Pages, and DigitalOcean; Google Search Console, Bing Webmaster Tools, GA4, and Google Tag Manager; Screaming Frog, Semrush, PageSpeed Insights, and the Rich Results Test; and Basecamp and Todoist to run the work.
+
 ## How engagements are shaped
 
 A **diagnostic** answers a defined question with evidence and a recommended next step. An **implementation sprint** delivers agreed fixes, verified against written acceptance criteria. A **migration review** covers a specific launch. A **pilot** builds and demonstrates one useful tool. **Retainers** cover fractional technical leadership, ongoing support, and advisory work. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
