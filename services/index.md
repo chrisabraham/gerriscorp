@@ -10,6 +10,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/): technical product information, catalog discovery, and qualified quote requests.
 - [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/): acceptance cases for a real pilot, with expected outputs, permission boundaries, failure evidence, and a clear next decision.
 - [Fractional technical lead](https://gerriscorp.com/services/technical-lead/): one experienced person who owns your web stack part time, directs your developers and vendors, ships fixes, and reports to leadership in plain English.
+- **Umbraco and Next.js development**: sites designed, built, and rebuilt on Umbraco and Next.js, shipped with SEO and structured data in place from day one.
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with OpenAI Codex and Claude Code, with human confirmation on every action, tests, and encrypted backups.
