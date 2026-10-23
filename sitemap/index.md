@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-20 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-23 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -45,6 +45,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
+- [Your customers meet an AI answer before they meet you. We make sure it names you.](https://gerriscorp.com/services/ai-visibility/): Gerris audits how AI answers describe your business, fixes what the machines get wrong across Google, ChatGPT, Perplexity, and Gemini, and measures it monthly.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
@@ -65,6 +66,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Speculation rules: make the next page open instantly in Chrome](https://gerriscorp.com/guides/speculation-rules/): One script tag tells Chrome to fetch a page while the reader decides to click. How prefetch and prerender differ, which eagerness to pick, and what to exclude.
 - [IndexNow, Bing, and a practical AI search workflow for fall 2026](https://gerriscorp.com/guides/indexnow-ai-search/): Build a reliable publishing workflow for AI search with IndexNow, Bing Webmaster Tools, tested deployments, full-text feeds, and measurable checkpoints.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): Where ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews get their answers about a business, which crawlers feed them, and what you can do about it.
+- [When a Customer Asks for the Best, a Machine Answers](https://gerriscorp.com/guides/ai-answers-review-searches/): Google's AI Overviews now answer most review searches. What the machines say about untended businesses, and the audit, sprint, and measurement that fix it.
 - [How to tell if JavaScript is hiding your content from Google and AI](https://gerriscorp.com/guides/javascript-seo/): A practical test for JavaScript SEO: compare raw and rendered HTML, check Search Console, find content that needs a scroll or click, and fix it on the server.
 - [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): What React error 418 and other hydration mismatches are, why Google usually still indexes the page, what they cost in speed and analytics, and how to find them.
 - [How to give an outside SEO safe access to your code repository](https://gerriscorp.com/guides/repository-access/): A safe setup for letting an SEO consultant into your GitHub or GitLab repository: one repo, the Read role first, reviewed pull requests, and no secrets.
@@ -137,4 +139,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 20, 2026
+Updated October 23, 2026
