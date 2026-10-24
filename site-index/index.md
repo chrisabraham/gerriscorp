@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 482 headings drawn from 114 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 482 headings drawn from 115 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -566,9 +566,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - GoDaddy, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - Google AI Mode, [AI Search](https://gerriscorp.com/services/ai-search/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - Google AI Overviews, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
-- Google Business Profile, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Multi-Location](https://gerriscorp.com/services/multi-location/), **[Google Business Profile](https://gerriscorp.com/services/google-business-profile/)**, [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/), [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/). *See also* [multi-location businesses](https://gerriscorp.com/site-index/#ix-multilocation-businesses)
+- Google Business Profile, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Multi-Location](https://gerriscorp.com/services/multi-location/), **[Google Business Profile](https://gerriscorp.com/services/google-business-profile/)**, [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/), [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/), [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/). *See also* [multi-location businesses](https://gerriscorp.com/site-index/#ix-multilocation-businesses)
   - how long reinstatement takes, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
+  - performance reports, [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/)
   - prevention, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
+  - reading the new performance sections, [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/)
   - remediation and appeal, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
   - suspensions, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/)
   - verification loops, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
