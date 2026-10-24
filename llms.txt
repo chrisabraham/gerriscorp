@@ -99,6 +99,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [Test an AI pilot with the work it is supposed to do](https://gerriscorp.com/guides/ai-pilot-tests/index.md): Turn an AI demonstration into a testable pilot: real examples, expected results, permissions, retries, failure records, and a decision your team can explain.
 - [A website handover needs more than a zip file and a password](https://gerriscorp.com/guides/website-handover/index.md): A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.
 - [B2B catalog SEO: help the right buyer choose the right part](https://gerriscorp.com/guides/b2b-catalog-seo/index.md): Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.
+- [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/index.md): A podcast is an asset that keeps paying. Each episode's notes are copied word for word by hundreds of directories, and AI answers quote them for years to come.
 
 ## About and working together
 

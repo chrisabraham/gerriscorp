@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-23 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -111,6 +111,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Test an AI pilot with the work it is supposed to do](https://gerriscorp.com/guides/ai-pilot-tests/): Turn an AI demonstration into a testable pilot: real examples, expected results, permissions, retries, failure records, and a decision your team can explain.
 - [A website handover needs more than a zip file and a password](https://gerriscorp.com/guides/website-handover/): A website handover checklist for owners: account control, reproducible builds, hosting, DNS, data, backups, renewals, and proof a new maintainer can operate it.
 - [B2B catalog SEO: help the right buyer choose the right part](https://gerriscorp.com/guides/b2b-catalog-seo/): Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.
+- [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/): A podcast is an asset that keeps paying. Each episode's notes are copied word for word by hundreds of directories, and AI answers quote them for years to come.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -139,4 +140,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 23, 2026
+Updated October 24, 2026

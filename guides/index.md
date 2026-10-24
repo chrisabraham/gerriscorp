@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-20 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -28,6 +28,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
 - [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
+- [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/): show notes copied by hundreds of directories, AI answers quoting them for years, and a back catalog that compounds.
 - [Starting a podcast to build your brand](https://gerriscorp.com/guides/podcast-for-your-brand/): the commitment, a pocket recorder or a phone, free hosting, and the AI tools that clear away the chores.
 - [The year-end SEO check](https://gerriscorp.com/guides/year-end-seo-check/): one afternoon of indexing, sitemap, analytics, domain, listing, and AI answer checks that protects next year.
 - ["Crawled, currently not indexed": what it means and how to fix it](https://gerriscorp.com/guides/crawled-not-indexed/): a method for finding the real cause behind Search Console's most misunderstood status.
@@ -85,4 +86,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 20, 2026
+Updated October 24, 2026

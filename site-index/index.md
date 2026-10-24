@@ -1,10 +1,10 @@
 > An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 >
-> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-23 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 481 headings drawn from 113 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 482 headings drawn from 114 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -934,6 +934,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - the generator prompt, [Podcast Website](https://gerriscorp.com/guides/podcast-website/)
   - why a show needs one, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/)
 
+- podcasting as an investment, **[Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)**. *See also* [podcast SEO](https://gerriscorp.com/site-index/#ix-podcast-seo); [podcasting for a brand](https://gerriscorp.com/site-index/#ix-podcasting-for-a-brand)
+  - AI answers quoting show notes, [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
+  - an owned show site with transcripts, [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
+  - monthly measurement of AI answers, [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
+  - show notes syndication across directories, [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
+  - the back catalog as a compounding asset, [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
+
 - podcasting for a brand, **[Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)**
   - AI for the chores, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
   - commitment, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
@@ -1243,7 +1250,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing it down, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
 
 - training cutoffs, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- transcripts, [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
+- transcripts, [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
 - Treasury Department, [About](https://gerriscorp.com/about/)
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - TTFB (time to first byte), [Glossary](https://gerriscorp.com/guides/glossary/)
@@ -1359,4 +1366,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 23, 2026
+Updated October 24, 2026

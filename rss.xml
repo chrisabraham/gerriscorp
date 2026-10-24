@@ -5,8 +5,59 @@
   <link>https://gerriscorp.com/guides/</link>
   <description>Technical SEO, AI search, migration, email, and privacy guides by Chris Abraham</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 23 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 24 Oct 2026 12:00:00 +0000</lastBuildDate>
   <atom:link href="https://gerriscorp.com/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Podcasting as an investment in being found by AI search</title>
+    <link>https://gerriscorp.com/guides/podcast-investment/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/podcast-investment/</guid>
+    <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A podcast is an asset that keeps paying. Each episode's notes are copied word for word by hundreds of directories, and AI answers quote them for years to come.</description>
+    <content:encoded>&lt;h1&gt;Podcasting as an investment in being found by AI search&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-24"&gt;October 24, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Most owners who start a podcast treat it as content: record an episode, promote it for a week, move on to the next one. That undersells the asset. Done properly, a podcast is closer to buying a building than to renting a billboard. The recording is a single afternoon of work, but the words attached to it are copied onto hundreds of trusted sites, and those copies are what AI answer engines read when your customers ask questions.&lt;/p&gt;
+
+&lt;h2&gt;One recording, hundreds of copies&lt;/h2&gt;
+&lt;p&gt;A podcast runs on a feed, and the feed is a syndication machine. Your host sends every episode to the podcast directories: Apple Podcasts, Spotify, the Podcast Index, Pocket Casts, Castbox, TuneIn, and hundreds of smaller apps and sites that most owners have never heard of. Each directory republishes the episode with its show notes, word for word, exactly as you wrote them. Your business name, your links, and your claims, in your own phrasing, end up living on all of them at once.&lt;/p&gt;
+&lt;p&gt;That matters more than it used to, because the directories are no longer the only readers. Search engines index those pages, and the AI answer engines, Google's AI answers, ChatGPT, and Perplexity among them, read the same copies when they work out what to say about a business. When a customer asks an AI assistant who to call or what a company believes, the answer is assembled from text like this. An owner who has recorded fifty episodes has fifty topics on which hundreds of sites repeat his own words back to the machines. An owner who has recorded none is quoted from whatever other people wrote about him, or not quoted at all.&lt;/p&gt;
+
+&lt;h2&gt;Why it compounds instead of expiring&lt;/h2&gt;
+&lt;p&gt;Compare the asset to the usual alternatives. Advertising stops the day the payments stop. A social post is buried within days. A single article can rank for a season and then slip as competitors publish over it. A podcast back catalog behaves differently: every episode stays listed in every directory, keeps collecting listeners, and keeps standing as a permanent, citable statement of what you know and what you sell. Each new episode adds another page of quotable text and strengthens the catalog behind it.&lt;/p&gt;
+&lt;p&gt;The production cost is paid once, and it is paid in a currency owners already spend. The raw material of a business podcast is the conversations you have anyway: the questions customers ask every week, the explanations you give on sales calls, the stories you tell about work that went right and work that went wrong. Record those conversations once and they keep answering for you, in your voice, for years. That is what makes the show a citation factory rather than a content chore: the factory runs on talk that was already happening.&lt;/p&gt;
+
+&lt;h2&gt;Proof, from my own show&lt;/h2&gt;
+&lt;p&gt;I host a podcast, The Chris Abraham Show, and the mechanism above is not theory to me. On October 24, 2026, a searcher asked Google what Chris Abraham thinks about a television show, the Canadian detective series Private Eyes, and Google's AI answered by quoting my podcast's show notes nearly word for word: the passage where I explained that I came for Jason Priestley and the detective stories and stayed for the patience, the apologies, and the father and daughter relationships. The same notes sit on Apple Podcasts, on Podcast Addict, and on the show's own website, all carrying the same text from the same feed.&lt;/p&gt;
+&lt;p&gt;Nobody pitched that answer and nobody paid for the placement. The notes were written to be quotable, the feed carried them everywhere a podcast can be listed, and the engine did the rest. Note the subject, too: a question with no commercial value at all, answered from my own words because my words were the ones available to quote. Now run the same machinery on questions in your market, the ones your buyers actually ask before they spend money.&lt;/p&gt;
+
+&lt;h2&gt;What doing it right involves&lt;/h2&gt;
+&lt;p&gt;Three things separate a show that becomes an asset from a show that is just audio.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Show notes written to be quoted.&lt;/strong&gt; Spell out full names of people, companies, and products. Link to the canonical page on your own site. State your claims plainly and completely, because a directory or an AI engine will repeat them exactly as written. Vague notes produce vague answers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;An owned show site with transcripts.&lt;/strong&gt; Platform pages are thin and platform notes are capped; Spotify cuts show notes off at about 4,000 characters. A site on your own domain carries the full notes and the full transcript of every episode, in text the search and AI crawlers can read completely, and it is the one copy no platform can take away. Here is &lt;a href="https://gerriscorp.com/guides/podcast-website/"&gt;how that site gets built&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Monthly measurement.&lt;/strong&gt; Ask the questions your buyers ask, of Google, ChatGPT, and Perplexity, every month, and write down what the answers say. That is how you watch citations arrive, and how you catch a wrong claim early enough to correct it at the source. The method is in &lt;a href="https://gerriscorp.com/guides/measure-ai-search/"&gt;the guide to measuring AI search&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The practitioner details, episode pages, schema, and indexing, are in &lt;a href="https://gerriscorp.com/guides/podcast-seo/"&gt;the podcast SEO guide&lt;/a&gt;. This page is the owner's version of the same argument: the technique is simple, and the returns belong to whoever bothers to set it up properly and keep recording.&lt;/p&gt;
+
+&lt;h2&gt;Who should buy this asset&lt;/h2&gt;
+&lt;p&gt;Honesty about the time frame: a podcast is a slow asset. If you need leads this month, advertising buys them faster, and I will tell you so on a call. A catalog pays out over seasons and years, to a business its owner intends to keep. If that is the business you are building, few marketing assets treat you better, because this one gets more valuable the longer you hold it and cannot be outbid by a competitor with a larger monthly budget.&lt;/p&gt;
+
+&lt;p&gt;I set up podcast sites, show notes, transcripts, and AI answer measurement for clients, and every engagement starts with a check of what the AI answers currently say about the business. If you want that check on yours, or you want a show of your own working this way, &lt;a href="https://gerriscorp.com/contact/"&gt;ask me to look at it&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://podcastindex.org/"&gt;Podcast Index&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://podcasters.apple.com/"&gt;Apple Podcasts for Podcasters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
   <item>
     <title>When a Customer Asks for the Best, a Machine Answers</title>
     <link>https://gerriscorp.com/guides/ai-answers-review-searches/</link>
