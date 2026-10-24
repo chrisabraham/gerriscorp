@@ -5057,6 +5057,36 @@
     "guides/podcast-website"
    ]
   },
+  "podcasting as an investment": {
+   "kind": "topic",
+   "pages": [
+    "guides/podcast-investment"
+   ],
+   "subs": {
+    "show notes syndication across directories": [
+     "guides/podcast-investment"
+    ],
+    "AI answers quoting show notes": [
+     "guides/podcast-investment"
+    ],
+    "the back catalog as a compounding asset": [
+     "guides/podcast-investment"
+    ],
+    "an owned show site with transcripts": [
+     "guides/podcast-investment"
+    ],
+    "monthly measurement of AI answers": [
+     "guides/podcast-investment"
+    ]
+   },
+   "see": [
+    "podcast SEO",
+    "podcasting for a brand"
+   ],
+   "main": [
+    "guides/podcast-investment"
+   ]
+  },
   "podcasting for a brand": {
    "kind": "topic",
    "pages": [
@@ -6770,7 +6800,8 @@
    "kind": "topic",
    "pages": [
     "guides/podcast-seo",
-    "guides/podcast-for-your-brand"
+    "guides/podcast-for-your-brand",
+    "guides/podcast-investment"
    ],
    "subs": {},
    "see": [],
@@ -7460,6 +7491,7 @@
   "guides/ai-pilot-tests",
   "guides/website-handover",
   "services/b2b-catalog-seo",
-  "guides/b2b-catalog-seo"
+  "guides/b2b-catalog-seo",
+  "guides/podcast-investment"
  ]
 }
