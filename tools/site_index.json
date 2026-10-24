@@ -3030,6 +3030,7 @@
     "services",
     "services/agency-partner",
     "services/google-business-profile",
+    "guides/google-business-profile-reports",
     "services/multi-location",
     "case-studies/multi-location-entity",
     "case-studies/seasonal-retailer",
@@ -3042,6 +3043,12 @@
     ],
     "verification loops": [
      "services/google-business-profile"
+    ],
+    "performance reports": [
+     "guides/google-business-profile-reports"
+    ],
+    "reading the new performance sections": [
+     "guides/google-business-profile-reports"
     ],
     "written diagnostic": [
      "services/google-business-profile"
@@ -7492,6 +7499,7 @@
   "guides/website-handover",
   "services/b2b-catalog-seo",
   "guides/b2b-catalog-seo",
-  "guides/podcast-investment"
+  "guides/podcast-investment",
+  "guides/google-business-profile-reports"
  ]
 }
