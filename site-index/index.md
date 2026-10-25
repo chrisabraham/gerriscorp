@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 497 headings drawn from 121 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 503 headings drawn from 121 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -80,7 +80,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - ADA (Americans with Disabilities Act), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
 - Adobe Podcast Enhance Speech, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Advertising Age, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
-- AEO (answer engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search)
+- AEO (answer engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search); [AI visibility](https://gerriscorp.com/site-index/#ix-ai-visibility)
 - AES-256 backups, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - agencies, working with, [Services](https://gerriscorp.com/services/), **[Agency Partner](https://gerriscorp.com/services/agency-partner/)**
   - arrangements, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
@@ -100,6 +100,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - tests and backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/)
 
 - AI agents, browsing, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
+- AI answers, common errors, **[When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)**
 - AI answers, correcting, [Reputation](https://gerriscorp.com/services/reputation/), **[Founder Record](https://gerriscorp.com/case-studies/founder-record/)**
   - corroborating with archives, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
   - doubted Forbes award, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
@@ -128,6 +129,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - AI crawlers, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)
 - AI output, auditing, [Services](https://gerriscorp.com/services/), **[Data Cleanup](https://gerriscorp.com/services/data-cleanup/)**, [Data Cleanup](https://gerriscorp.com/case-studies/data-cleanup/), [In Your Stack](https://gerriscorp.com/stack/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
+- AI Overviews
+  - share of commercial searches, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
+
 - AI search, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[AI Search](https://gerriscorp.com/services/ai-search/)**, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/). *See also* [AI answers, correcting](https://gerriscorp.com/site-index/#ix-ai-answers-correcting); [AI assistants, how they answer](https://gerriscorp.com/site-index/#ix-ai-assistants-how-they-answer); [AI search, measuring](https://gerriscorp.com/site-index/#ix-ai-search-measuring); [citation gap analysis](https://gerriscorp.com/site-index/#ix-citation-gap-analysis)
   - answer-shaped content, [AI Search](https://gerriscorp.com/services/ai-search/)
   - careers and recruiting questions, [AI Recruiting Visibility](https://gerriscorp.com/case-studies/ai-recruiting/)
@@ -151,6 +155,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - paid pilots, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - reading the answers, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - twelve questions, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+
+- AI visibility, **[AI Visibility](https://gerriscorp.com/services/ai-visibility/)**, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
+  - audit, fixed price, [AI Visibility](https://gerriscorp.com/services/ai-visibility/)
+  - Claim Sprint, [AI Visibility](https://gerriscorp.com/services/ai-visibility/)
+  - monthly measurement, [AI Visibility](https://gerriscorp.com/services/ai-visibility/)
+  - review searches, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
+  - ten-minute self-check, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
 
 - AI washing, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/), [Glossary](https://gerriscorp.com/guides/glossary/)
 - AI workflow testing, **[AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/)**, **[Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)**
@@ -277,6 +288,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - seven source types, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
 
 - citation share, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
+- claim layer, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
 - Claude (Anthropic assistant), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
 - Claude Code, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [In Your Stack](https://gerriscorp.com/stack/), [Colophon](https://gerriscorp.com/colophon/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/). *See also* [AI coding assistants](https://gerriscorp.com/site-index/#ix-ai-coding-assistants)
 - ClaudeBot, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
@@ -571,6 +583,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Google AI Mode, [AI Search](https://gerriscorp.com/services/ai-search/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - Google AI Overviews, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - Google Business Profile, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Multi-Location](https://gerriscorp.com/services/multi-location/), **[Google Business Profile](https://gerriscorp.com/services/google-business-profile/)**, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/), [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/), [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/). *See also* [multi-location businesses](https://gerriscorp.com/site-index/#ix-multilocation-businesses)
+  - as a source for AI answers, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
   - how long reinstatement takes, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
   - performance reports, [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/)
   - prevention, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
@@ -1045,6 +1058,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Results about you (Google tool), [Reputation](https://gerriscorp.com/services/reputation/), [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - retainers, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Advisory](https://gerriscorp.com/services/advisory/), [Ongoing Support](https://gerriscorp.com/services/ongoing-support/), [Reputation](https://gerriscorp.com/services/reputation/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
 - reverse image search, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+- review searches, **[When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)**
 - Rheingold, Howard, [About](https://gerriscorp.com/about/)
 - rich results, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Rich Results Test, [Structured Data](https://gerriscorp.com/guides/structured-data/)
@@ -1076,6 +1090,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - MCP server (version 24), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
   - PageSpeed Insights integration, [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
 
+- Search Engine Land, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
 - Search Status Dashboard, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/)
 - seasonal businesses, [Multi-Location](https://gerriscorp.com/services/multi-location/), **[Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/)**
   - change freeze at peak, [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/)
@@ -1097,7 +1112,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - what earns a real recommendation, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
   - why it stopped working, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 
-- Semrush, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
+- Semrush, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
 - Sendmail, [In Your Stack](https://gerriscorp.com/stack/)
 - SEO basics, **[SEO 101](https://gerriscorp.com/guides/seo-101/)**
   - accessibility, [SEO 101](https://gerriscorp.com/guides/seo-101/)

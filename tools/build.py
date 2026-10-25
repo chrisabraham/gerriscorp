@@ -948,6 +948,8 @@ open(".well-known/security.txt", "w", encoding="utf-8").write(
 sections = [(title, [by_path[x] for x in paths]) for title, paths in SERVICE_GROUPS] + [
     ("Guides", [p for p in pages if p["tab"] == "guides/"]),
     ("About and working together", [p for p in pages if p["tab"] in ("", "case-studies/", "about/", "work-with-me/", "contact/", "sitemap/", "site-index/")])]
+_in_llms = {id(p) for _, group in sections for p in group}
+sections.append(("Policies and more", [p for p in pages if id(p) not in _in_llms]))
 llms = f"""# Gerris Corp
 
 > {ORG["description"]} Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.
@@ -1035,5 +1037,36 @@ for p in pages:
     print(f"  {p['words']:5d}  {p['kind']:7s} /{p['path']}")
 if unindexed:
     print(f"site index: {len(unindexed)} page(s) not indexed yet: {', '.join(unindexed)} (read each one and add its entries to tools/site_index.json)")
+# No phrasing borrowed from christopherabraham.com, mirroring the check in that site's build: no page
+# here may share more than 10% of its six-word phrases with any page there, and no sentence of eight
+# or more words may appear on both. SIBLING_DIR overrides; locally the checkout is christopher or
+# christopherabraham beside this repo.
+_HERE = os.path.dirname(os.path.abspath(__file__))
+SIBLING = os.environ.get("SIBLING_DIR") or next(
+    (d for d in (os.path.join(_HERE, "..", "..", n) for n in ("christopher", "christopherabraham")) if os.path.isdir(d)),
+    os.path.join(_HERE, "..", "..", "christopher"))
+if os.path.isdir(SIBLING):
+    _sib_sh, _sib_sent = {}, set()
+    for root_dir, dirs, names in os.walk(SIBLING):
+        dirs[:] = [d for d in dirs if d not in (".git", "_sibling", "src", "tools")]
+        if "index.md" in names and not root_dir.rstrip("/").endswith(("site-index", "sitemap")):
+            t = open(os.path.join(root_dir, "index.md"), encoding="utf-8").read()
+            t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)
+            w = re.findall(r"[a-z0-9']+", t.lower())
+            _sib_sh[os.path.relpath(root_dir, SIBLING)] = {" ".join(w[i:i + 6]) for i in range(len(w) - 5)}
+            _sib_sent |= {x.strip(" #*>-") for x in re.split(r"(?<=[.!?])\s+|\n", t) if len(x.split()) >= 8}
+    for p in pages:
+        if p["path"] in ("sitemap/", "site-index/"):
+            continue
+        mine = _sh.get(p["path"]) or set()
+        for other, theirs in _sib_sh.items():
+            share = len(mine & theirs) / (len(mine) or 1)
+            if share > 0.10:
+                problems.append(f"/{p['path']} shares {share:.0%} of its phrasing with christopherabraham.com /{other}")
+        for sentence in re.split(r"(?<=[.!?])\s+", _words(p)[0]):
+            if len(sentence.split()) >= 8 and sentence.strip() in _sib_sent and "Amazon Associate" not in sentence:
+                problems.append(f"/{p['path']} repeats a christopherabraham.com sentence: {sentence[:80]}")
+else:
+    problems.append(f"sibling site not found at {SIBLING}: clone chrisabraham/christopherabraham beside this repo or set SIBLING_DIR")
 for x in problems: print("PROBLEM:", x)
 sys.exit(1 if problems else 0)

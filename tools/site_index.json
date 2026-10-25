@@ -327,7 +327,8 @@
    ],
    "subs": {},
    "see": [
-    "AI search"
+    "AI search",
+    "AI visibility"
    ],
    "main": []
   },
@@ -425,6 +426,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "AI answers, common errors": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-answers-review-searches"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-answers-review-searches"
+   ]
   },
   "AI answers, correcting": {
    "kind": "topic",
@@ -555,6 +567,18 @@
     "services/data-cleanup"
    ]
   },
+  "AI Overviews": {
+   "kind": "topic",
+   "pages": [],
+   "subs": {
+    "share of commercial searches": [
+     "services/ai-visibility",
+     "guides/ai-answers-review-searches"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
   "AI search": {
    "kind": "topic",
    "pages": [
@@ -658,6 +682,34 @@
    "see": [],
    "main": [
     "guides/ai-vendor-pitch"
+   ]
+  },
+  "AI visibility": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
+   ],
+   "subs": {
+    "audit, fixed price": [
+     "services/ai-visibility"
+    ],
+    "Claim Sprint": [
+     "services/ai-visibility"
+    ],
+    "monthly measurement": [
+     "services/ai-visibility"
+    ],
+    "review searches": [
+     "guides/ai-answers-review-searches"
+    ],
+    "ten-minute self-check": [
+     "guides/ai-answers-review-searches"
+    ]
+   },
+   "see": [],
+   "main": [
+    "services/ai-visibility"
    ]
   },
   "AI washing": {
@@ -1435,6 +1487,16 @@
    "pages": [
     "guides/measure-ai-search",
     "guides/citation-gap-analysis"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "claim layer": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -3144,6 +3206,10 @@
     ],
     "how long reinstatement takes": [
      "services/google-business-profile"
+    ],
+    "as a source for AI answers": [
+     "services/ai-visibility",
+     "guides/ai-answers-review-searches"
     ]
    },
    "see": [
@@ -4522,6 +4588,30 @@
     "case-studies/multi-location-entity"
    ]
   },
+  "multiple causes": {
+   "kind": "topic",
+   "main": [
+    "guides/two-problems-at-once"
+   ],
+   "pages": [
+    "guides/two-problems-at-once"
+   ],
+   "see": [],
+   "subs": {
+    "signs of": [
+     "guides/two-problems-at-once"
+    ],
+    "separate tracks": [
+     "guides/two-problems-at-once"
+    ],
+    "when to join tracks": [
+     "guides/two-problems-at-once"
+    ],
+    "sequencing fixes": [
+     "guides/two-problems-at-once"
+    ]
+   }
+  },
   "MXToolbox": {
    "kind": "topic",
    "pages": [
@@ -4853,6 +4943,19 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "oversoul (template)": {
+   "kind": "topic",
+   "main": [
+    "services/shared-ai-memory"
+   ],
+   "pages": [
+    "services/shared-ai-memory"
+   ],
+   "see": [
+    "shared AI memory"
+   ],
+   "subs": {}
   },
   "OWASP excessive agency": {
    "kind": "topic",
@@ -5680,6 +5783,17 @@
    "see": [],
    "main": []
   },
+  "review searches": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-answers-review-searches"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-answers-review-searches"
+   ]
+  },
   "Rheingold, Howard": {
    "kind": "person",
    "pages": [
@@ -5852,6 +5966,16 @@
    ],
    "main": []
   },
+  "Search Engine Land": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Search Status Dashboard": {
    "kind": "topic",
    "pages": [
@@ -5928,6 +6052,24 @@
    "see": [],
    "main": []
   },
+  "segmentation": {
+   "kind": "topic",
+   "main": [
+    "guides/two-problems-at-once"
+   ],
+   "pages": [
+    "guides/two-problems-at-once"
+   ],
+   "see": [],
+   "subs": {
+    "by page group": [
+     "guides/two-problems-at-once"
+    ],
+    "branded and unbranded queries": [
+     "guides/two-problems-at-once"
+    ]
+   }
+  },
   "self-ranking \"best of\" lists": {
    "kind": "topic",
    "pages": [
@@ -5960,7 +6102,8 @@
    "pages": [
     "services/technical-seo",
     "guides/migration-tools",
-    "guides/ai-answers-review-searches"
+    "guides/ai-answers-review-searches",
+    "services/ai-visibility"
    ],
    "subs": {},
    "see": [],
@@ -6189,6 +6332,29 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "shared AI memory": {
+   "kind": "topic",
+   "main": [
+    "services/shared-ai-memory"
+   ],
+   "pages": [
+    "services/shared-ai-memory"
+   ],
+   "see": [
+    "Git"
+   ],
+   "subs": {
+    "profiles and project digests": [
+     "services/shared-ai-memory"
+    ],
+    "rules file": [
+     "services/shared-ai-memory"
+    ],
+    "what stays out": [
+     "services/shared-ai-memory"
+    ]
+   }
   },
   "Shopify": {
    "kind": "topic",
@@ -6557,6 +6723,20 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "static archives of old websites": {
+   "kind": "topic",
+   "pages": [
+    "guides/freeze-old-website"
+   ],
+   "subs": {},
+   "see": [
+    "site migrations",
+    "Movable Type"
+   ],
+   "main": [
+    "guides/freeze-old-website"
+   ]
   },
   "static websites": {
    "kind": "topic",
@@ -7280,6 +7460,17 @@
     "guides/website-handover"
    ]
   },
+  "Website incident timelines": {
+   "kind": "topic",
+   "pages": [
+    "guides/website-incident-timeline"
+   ],
+   "main": [
+    "guides/website-incident-timeline"
+   ],
+   "subs": {},
+   "see": []
+  },
   "Where the Animals Go": {
    "kind": "topic",
    "pages": [
@@ -7565,109 +7756,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "multiple causes": {
-   "kind": "topic",
-   "main": [
-    "guides/two-problems-at-once"
-   ],
-   "pages": [
-    "guides/two-problems-at-once"
-   ],
-   "see": [],
-   "subs": {
-    "signs of": [
-     "guides/two-problems-at-once"
-    ],
-    "separate tracks": [
-     "guides/two-problems-at-once"
-    ],
-    "when to join tracks": [
-     "guides/two-problems-at-once"
-    ],
-    "sequencing fixes": [
-     "guides/two-problems-at-once"
-    ]
-   }
-  },
-  "segmentation": {
-   "kind": "topic",
-   "main": [
-    "guides/two-problems-at-once"
-   ],
-   "pages": [
-    "guides/two-problems-at-once"
-   ],
-   "see": [],
-   "subs": {
-    "by page group": [
-     "guides/two-problems-at-once"
-    ],
-    "branded and unbranded queries": [
-     "guides/two-problems-at-once"
-    ]
-   }
-  },
-  "shared AI memory": {
-   "kind": "topic",
-   "main": [
-    "services/shared-ai-memory"
-   ],
-   "pages": [
-    "services/shared-ai-memory"
-   ],
-   "see": [
-    "Git"
-   ],
-   "subs": {
-    "profiles and project digests": [
-     "services/shared-ai-memory"
-    ],
-    "rules file": [
-     "services/shared-ai-memory"
-    ],
-    "what stays out": [
-     "services/shared-ai-memory"
-    ]
-   }
-  },
-  "oversoul (template)": {
-   "kind": "topic",
-   "main": [
-    "services/shared-ai-memory"
-   ],
-   "pages": [
-    "services/shared-ai-memory"
-   ],
-   "see": [
-    "shared AI memory"
-   ],
-   "subs": {}
-  },
-  "static archives of old websites": {
-   "kind": "topic",
-   "pages": [
-    "guides/freeze-old-website"
-   ],
-   "subs": {},
-   "see": [
-    "site migrations",
-    "Movable Type"
-   ],
-   "main": [
-    "guides/freeze-old-website"
-   ]
-  },
-  "Website incident timelines": {
-   "kind": "topic",
-   "pages": [
-    "guides/website-incident-timeline"
-   ],
-   "main": [
-    "guides/website-incident-timeline"
-   ],
-   "subs": {},
-   "see": []
   }
  },
  "reviewed": [
