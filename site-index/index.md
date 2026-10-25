@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 496 headings drawn from 120 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 497 headings drawn from 121 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -1338,6 +1338,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - repository transfer and access review, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
   - restoring a backup, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
 
+- Website incident timelines, **[Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)**
 - web-vitals library, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
 - Where the Animals Go, [Colophon](https://gerriscorp.com/colophon/)
 - white label services, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/)

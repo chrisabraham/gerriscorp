@@ -7636,6 +7636,17 @@
    "main": [
     "guides/freeze-old-website"
    ]
+  },
+  "Website incident timelines": {
+   "kind": "topic",
+   "pages": [
+    "guides/website-incident-timeline"
+   ],
+   "main": [
+    "guides/website-incident-timeline"
+   ],
+   "subs": {},
+   "see": []
   }
  },
  "reviewed": [
@@ -7756,6 +7767,7 @@
   "guides/vet-an-influencer",
   "guides/two-problems-at-once",
   "services/shared-ai-memory",
-  "guides/freeze-old-website"
+  "guides/freeze-old-website",
+  "guides/website-incident-timeline"
  ]
 }

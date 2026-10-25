@@ -95,6 +95,8 @@ SERVICE_GROUPS[0][1].append("services/shared-ai-memory/")
 # Additional guide, October 24, 2026, written by Claude Code.
 FILES += ["guides/freeze-old-website"]
 
+FILES += ["guides/website-incident-timeline"]
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))

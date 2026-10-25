@@ -1,0 +1,53 @@
+name: Website Incident Timeline
+title: Build a website incident timeline before changing code
+description: Reconstruct a website failure with dated observations, release records, cache checks, and competing explanations before choosing the next repair to make.
+type: guide
+published: 2026-10-24
+updated: 2026-10-24
+sources: Google Search Console introduction | https://developers.google.com/search/docs/monitor-debug/search-console-start
+---
+<h1>Build a website incident timeline before changing code</h1>
+<p class="lead">The website lost traffic on Tuesday. Someone remembers a release on Monday. A vendor changed a setting last week. Those facts belong in the same investigation, but their proximity does not establish a cause.</p>
+<p>Before changing code, I want a timeline that separates what happened from when someone noticed it. This is a practical way to organize technical forensics: collect dated observations, preserve the evidence, and decide which explanation deserves the next test.</p>
+
+<h2>Define the incident in observable terms</h2>
+<p>Start with the actual symptom. “Organic clicks to product pages declined” describes a different incident from “product pages return server errors” or “quote requests stopped reaching the sales inbox.” Those events can occur together, but each needs its own evidence.</p>
+<p>Record the first confirmed observation and the last confirmed normal state. If a customer reported a failure on Tuesday afternoon, the failure could have begun earlier. Write “first reported Tuesday at 14:10” rather than “began Tuesday at 14:10” unless monitoring establishes the start.</p>
+<p>Choose representative URLs and customer actions. Keep a working example alongside the failing examples when possible. A category that still works can help distinguish a shared infrastructure problem from a product template defect.</p>
+
+<h2>Use one time convention</h2>
+<p>Choose a time zone for the working timeline and write it at the top. Preserve each source timestamp and its original zone in a separate field. A server event recorded in UTC and a release discussed in local time can appear in the wrong order if someone copies the clock values without converting them.</p>
+<p>Do not invent precision. If the only record says “Monday morning,” retain that uncertainty. A date without a time cannot establish whether an event preceded an outage by five minutes or followed it by three hours.</p>
+<p>For reports summarized by day, retain that reporting granularity. Do not place a daily traffic total beside a second level server event and treat them as measurements with equivalent precision.</p>
+
+<h2>Gather records from different layers</h2>
+<p>Collect the deployment history, content publication records, DNS and proxy changes, relevant application logs, monitoring alerts, and dated support messages. Ask vendors for their change records when those records are needed to evaluate a theory. A lack of access is an investigation gap, not evidence that nothing changed.</p>
+<p>Use Search Console for the search observations it actually supplies. Google's <a href="https://developers.google.com/search/docs/monitor-debug/search-console-start">Search Console introduction</a> explains its crawl, indexing, and performance reports. Those reports can inform an incident timeline, but they are not a second by second deployment monitor.</p>
+<p>Capture the response status, important headers, and visible behavior for selected production URLs. Where caching is involved, record what the public visitor received and what environment was tested. A correct preview page does not establish a correct public response.</p>
+<p>Keep the evidence in access controlled storage. The public incident summary should not include customer submissions, tokens, credentials, or identifying log details. Link to a restricted artifact by a descriptive name rather than copying sensitive contents into a shared ticket.</p>
+
+<h2>Maintain a simple evidence table</h2>
+<p>The following is an invented example. It illustrates the structure and makes no claim about a client incident.</p>
+<table>
+<thead><tr><th scope="col">Time in UTC</th><th scope="col">Recorded event</th><th scope="col">What it establishes</th></tr></thead>
+<tbody>
+<tr><td>Monday 09:00</td><td>Product template release completed</td><td>A release ran; public output was not recorded</td></tr>
+<tr><td>Monday 09:20</td><td>Monitor saved a successful category response</td><td>That category URL responded successfully then</td></tr>
+<tr><td>Tuesday 14:10</td><td>Customer reported missing product specifications</td><td>The symptom was reported by this time</td></tr>
+<tr><td>Tuesday 14:40</td><td>Saved product response lacks specification text</td><td>The selected public response lacked the text</td></tr>
+<tr><td>Tuesday 15:05</td><td>Preview includes the specification text</td><td>Preview and public behavior differ</td></tr>
+</tbody>
+</table>
+<p>The timeline suggests a useful next question: what differs between preview and production? It does not prove the release removed the specifications. The public response may reflect a different build, stale cache, unavailable data, or a configuration difference.</p>
+
+<h2>Write competing explanations and discriminating tests</h2>
+<p>List a small number of plausible causes. Beside each one, write the observation that would strengthen or weaken it. “The production release contains different code” can be checked against the deployed revision. “A cache holds old output” requires evidence about the actual response and cache behavior.</p>
+<p>Choose a test that separates explanations. Rebuilding everything and clearing every cache may restore service, but it can also remove the evidence needed to understand the failure. When customers are actively blocked, restoration may take priority. Record that choice and capture what is practical before taking action.</p>
+<p>Separate confirmed causes from contributing conditions. An old deployment process may make recovery slow without causing the original defect. Both deserve attention, but the prevention work differs.</p>
+
+<h2>Record the intervention and verify the result</h2>
+<p>Add each repair attempt to the same timeline: the owner, exact change, environment, release identifier, and observed outcome. If two changes ship together, acknowledge that the result may not isolate which one mattered.</p>
+<p>Repeat the original failing action on production and check the working comparison example. For a content visibility incident, retain before and after response samples. For an inquiry failure, confirm receipt rather than relying on a success message in the browser.</p>
+<p>End the incident record with what is established, what remains uncertain, and the next monitoring check. A repaired product template and a later traffic recovery are separate findings. Do not claim the second from evidence of the first.</p>
+<p>This method supports <a href="{root}services/rescue/">website rescue and takeover work</a>, <a href="{root}services/technical-seo/">technical SEO diagnosis</a>, and <a href="{root}services/technical-lead/">technical direction</a>. For a traffic specific investigation, use the <a href="{root}guides/traffic-drop/">traffic drop diagnostic guide</a> alongside the timeline. The purpose is to make the next decision better supported than the first guess.</p>
+<p class="disclosure">Prepared with OpenAI Codex at Chris Abraham's request. The timeline is hypothetical and contains no client records.</p>

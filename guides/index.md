@@ -7,6 +7,7 @@
 Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
 
 ## AI search
+- [Build a website incident timeline](https://gerriscorp.com/guides/website-incident-timeline/): a practical method with an illustrative example and verification steps.
 - [B2B catalog SEO for technical buyers](https://gerriscorp.com/guides/b2b-catalog-seo/): select a product family, improve specifications, and measure useful inquiries.
 - [How to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/): split the answer into claims, grade each by its source, trace every number, and test on your own data.
 - [Measure AI citations, referrals, and leads](https://gerriscorp.com/guides/measure-ai-search/): provider reports, identifiable visits, repeatable answer checks, and attribution limits.

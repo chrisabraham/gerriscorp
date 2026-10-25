@@ -1,6 +1,6 @@
 > Chris Abraham takes over stalled or inherited web projects: inventories code, servers, accounts, and DNS, stabilizes them, and moves sites off dead software.
 >
-> Source: https://gerriscorp.com/services/rescue/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/rescue/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
 
 # Project rescue, takeovers, and legacy migrations
 
@@ -52,4 +52,8 @@ The site goes back onto hosting you own and control, set up properly and documen
 
 If you are preparing to receive a site rather than responding to an outage, the [website handover checklist](https://gerriscorp.com/guides/website-handover/) and downloadable inventory help you ask for the accounts, instructions, and evidence before the departing maintainer leaves.
 
-Updated October 5, 2026
+## Reconstruct the failure
+
+A useful takeover begins with evidence about what failed and what changed. My [website incident timeline guide](https://gerriscorp.com/guides/website-incident-timeline/) shows how to align release records, public responses, and dated reports before choosing a repair.
+
+Updated October 24, 2026
