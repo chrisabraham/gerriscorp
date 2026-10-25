@@ -1,10 +1,10 @@
 > Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 >
-> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
 
 # Glossary of SEO, AI search, and technical website terms
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 15, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 24, 2026
 
 Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The [index](https://gerriscorp.com/site-index/) lists every page where a term comes up.
 
@@ -83,6 +83,9 @@ Experience, expertise, authoritativeness, and trustworthiness: the qualities Goo
 **Email blocklist**
 A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see [blocklist recovery](https://gerriscorp.com/guides/email-blocklist-recovery/).
 
+**Endorsement Guides**
+The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in [the creator vetting guide](https://gerriscorp.com/guides/vet-an-influencer/).
+
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
 
@@ -115,6 +118,9 @@ A Core Web Vital measuring how long the largest visible element, usually a hero 
 
 **llms.txt**
 A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes [one](https://gerriscorp.com/llms.txt).
+
+**Material connection**
+Any tie between an endorser and a brand that the audience wouldn't expect, such as payment, free product, family, or employment. The FTC expects it disclosed in each post. See [vetting a creator before a sponsorship](https://gerriscorp.com/guides/vet-an-influencer/).
 
 **Meta description**
 A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.

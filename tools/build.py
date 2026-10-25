@@ -86,6 +86,7 @@ SERVICE_GROUPS[1][1].extend(['services/internal-linking/'])
 FILES += ["services/b2b-catalog-seo", "guides/b2b-catalog-seo"]
 FILES += ["guides/podcast-investment"]
 FILES += ["guides/google-business-profile-reports"]
+FILES += ["guides/vet-an-influencer"]
 SERVICE_GROUPS[0][1].append("services/b2b-catalog-seo/")
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}

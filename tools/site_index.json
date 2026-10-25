@@ -454,7 +454,8 @@
    "kind": "topic",
    "pages": [
     "guides",
-    "guides/ai-assistants"
+    "guides/ai-assistants",
+    "guides/vet-an-influencer"
    ],
    "subs": {
     "training data": [
@@ -934,6 +935,18 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "B2B catalog SEO": {
+   "kind": "topic",
+   "pages": [
+    "services/b2b-catalog-seo",
+    "guides/b2b-catalog-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/b2b-catalog-seo"
+   ]
   },
   "B2B content operations": {
    "kind": "topic",
@@ -1725,6 +1738,17 @@
     "case-studies/consent-blocking"
    ]
   },
+  "Consumer Reviews and Testimonials Rule (16 CFR Part 465)": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/vet-an-influencer"
+   ]
+  },
   "content briefs": {
    "kind": "topic",
    "pages": [
@@ -1933,6 +1957,15 @@
    ],
    "subs": {},
    "see": [],
+   "main": []
+  },
+  "creators, vetting": {
+   "kind": "topic",
+   "pages": [],
+   "subs": {},
+   "see": [
+    "influencer vetting"
+   ],
    "main": []
   },
   "CRM cleanup": {
@@ -2350,7 +2383,8 @@
    "kind": "topic",
    "pages": [
     "about",
-    "stack"
+    "stack",
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -2605,6 +2639,17 @@
     "guides/fact-check-ai-seo"
    ]
   },
+  "fake followers and views": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/vet-an-influencer"
+   ]
+  },
   "family offices": {
    "kind": "topic",
    "pages": [
@@ -2706,14 +2751,20 @@
    "pages": [
     "guides/ai-vendor-pitch"
    ],
-   "subs": {},
+   "subs": {
+    "fake reviews and influence rule": [
+     "guides/vet-an-influencer"
+    ]
+   },
    "see": [],
    "main": []
   },
   "FTC Endorsement Guides": {
    "kind": "topic",
    "pages": [
-    "guides/citation-gap-analysis"
+    "guides/citation-gap-analysis",
+    "guides/vet-an-influencer",
+    "guides/glossary"
    ],
    "subs": {},
    "see": [],
@@ -3703,6 +3754,42 @@
    "see": [],
    "main": []
   },
+  "influencer vetting": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer"
+   ],
+   "subs": {
+    "reading the archive": [
+     "guides/vet-an-influencer"
+    ],
+    "reading the audience": [
+     "guides/vet-an-influencer"
+    ],
+    "past sponsorships and disclosures": [
+     "guides/vet-an-influencer"
+    ],
+    "earlier claims": [
+     "guides/vet-an-influencer"
+    ],
+    "identity checks": [
+     "guides/vet-an-influencer"
+    ],
+    "search and AI answers": [
+     "guides/vet-an-influencer"
+    ],
+    "findings memo": [
+     "guides/vet-an-influencer"
+    ],
+    "contract terms": [
+     "guides/vet-an-influencer"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/vet-an-influencer"
+   ]
+  },
   "Institute for the Future": {
    "kind": "topic",
    "pages": [
@@ -4172,6 +4259,16 @@
    "kind": "topic",
    "pages": [
     "services/ai-search"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "material connection": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer",
+    "guides/glossary"
    ],
    "subs": {},
    "see": [],
@@ -5466,7 +5563,8 @@
     "services",
     "services/advisory",
     "services/reputation",
-    "guides/personal-information-removal"
+    "guides/personal-information-removal",
+    "guides/vet-an-influencer"
    ],
    "subs": {
     "auditing the record": [
@@ -5527,6 +5625,15 @@
     "services/reputation",
     "work-with-me",
     "faq"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "reverse image search": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -5881,6 +5988,18 @@
    "see": [],
    "main": []
   },
+  "SEO developer tickets": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-developer-tickets"
+   ],
+   "see": [],
+   "subs": {},
+   "seealso": [],
+   "main": [
+    "guides/seo-developer-tickets"
+   ]
+  },
   "SEO engineering": {
    "kind": "topic",
    "pages": [
@@ -6222,11 +6341,14 @@
   "source vetting": {
    "kind": "topic",
    "pages": [
-    "stack"
+    "stack",
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
-   "main": []
+   "main": [
+    "guides/vet-an-influencer"
+   ]
   },
   "spam backlinks": {
    "kind": "topic",
@@ -6326,6 +6448,15 @@
    ],
    "subs": {},
    "see": [],
+   "main": []
+  },
+  "sponsorships, vetting creators": {
+   "kind": "topic",
+   "pages": [],
+   "subs": {},
+   "see": [
+    "influencer vetting"
+   ],
    "main": []
   },
   "Spotify for Creators": {
@@ -6546,6 +6677,15 @@
    "kind": "topic",
    "pages": [
     "guides/canonical-tags"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "synthetic personas": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -6991,7 +7131,8 @@
     "guides/migration-recovery",
     "guides/301-redirects",
     "case-studies/founder-record",
-    "stack"
+    "stack",
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -7373,30 +7514,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "B2B catalog SEO": {
-   "kind": "topic",
-   "pages": [
-    "services/b2b-catalog-seo",
-    "guides/b2b-catalog-seo"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/b2b-catalog-seo"
-   ]
-  },
-  "SEO developer tickets": {
-   "kind": "topic",
-   "pages": [
-    "guides/seo-developer-tickets"
-   ],
-   "see": [],
-   "subs": {},
-   "seealso": [],
-   "main": [
-    "guides/seo-developer-tickets"
-   ]
   }
  },
  "reviewed": [
@@ -7513,6 +7630,7 @@
   "guides/b2b-catalog-seo",
   "guides/podcast-investment",
   "guides/google-business-profile-reports",
-  "guides/seo-developer-tickets"
+  "guides/seo-developer-tickets",
+  "guides/vet-an-influencer"
  ]
 }
