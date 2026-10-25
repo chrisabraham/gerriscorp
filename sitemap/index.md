@@ -117,6 +117,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/): A podcast is an asset that keeps paying. Each episode's notes are copied word for word by hundreds of directories, and AI answers quote them for years to come.
 - [Your Google business reports are getting a new scoreboard](https://gerriscorp.com/guides/google-business-profile-reports/): Google is testing rebuilt performance reports for business profiles, with five new sections. I explain what each one tells an owner and what to check monthly.
 - [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): A provenance check for creators before a sponsorship: the archive, the audience, the disclosures, the claims, and what the FTC holds the brand responsible for.
+- [How to freeze an old website as static HTML without losing a single link](https://gerriscorp.com/guides/freeze-old-website/): Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.

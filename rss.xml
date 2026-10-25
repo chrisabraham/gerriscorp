@@ -348,6 +348,106 @@ Owner: named developer; destination decisions: named editor.&lt;/code&gt;&lt;/pr
 &lt;/aside&gt;</content:encoded>
   </item>
   <item>
+    <title>How to freeze an old website as static HTML without losing a single link</title>
+    <link>https://gerriscorp.com/guides/freeze-old-website/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/freeze-old-website/</guid>
+    <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.</description>
+    <content:encoded>&lt;h1&gt;How to freeze an old website as static HTML without losing a single link&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-24"&gt;October 24, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Plenty of good websites are running on software nobody maintains anymore: Drupal 7 after its January 2025 end of life, Movable Type installs from the 2000s, PHP portals that only run on a host's oldest PHP version. The content still matters, people still link to it, and search engines still send visitors. The owner usually doesn't need a redesign. They need the site to stop being a security liability and a monthly hosting bill, and to keep working. Freezing it as static HTML does both. I did exactly this with my own serialized novel, which ran on Movable Type from 2005 to 2022, and here is the method.&lt;/p&gt;
+
+&lt;h2&gt;When freezing is the right call&lt;/h2&gt;
+&lt;p&gt;A frozen site is a set of plain files: no database, no login, no plugins, nothing to patch. It loads quickly, it's close to free to host, and it can sit untouched for years. That makes it right for archives, finished projects, publications that stopped publishing, a business's old site after a rebrand, and documentation for a retired product.&lt;/p&gt;
+&lt;p&gt;It's the wrong call if people still edit the site every week, or if it depends on logins, shopping carts, or bookings. Those need a real &lt;a href="https://gerriscorp.com/services/migrations/"&gt;migration&lt;/a&gt; to a maintained platform. And there's a middle path: a site can be frozen and still be edited occasionally, if the static pages are generated from source files kept in Git. My novel works that way. Corrections still happen; they just go through a build instead of an admin panel.&lt;/p&gt;
+
+&lt;h2&gt;Count every address the old site ever published&lt;/h2&gt;
+&lt;p&gt;The single biggest risk is underestimating how many URLs exist. Old blogging and portal software publishes far more than its articles. Movable Type, for example, writes individual entry pages plus monthly, weekly, daily, and category archives, separate feed files, and TrackBack endpoints for every entry. My novel had 309 chapters, and the full count of public addresses came to 953.&lt;/p&gt;
+&lt;p&gt;Build the list from several sources and merge them, because each one misses something:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;The database or export.&lt;/strong&gt; The most complete list of content, if you can still get a dump. Entry IDs, slugs, and dates let you reconstruct every permalink the software would have generated.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The old web root.&lt;/strong&gt; If the software published static files, as Movable Type did, the server's folder is a literal inventory of what it served.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A crawl of the live site.&lt;/strong&gt; Run it before anything changes, and save the export. This also captures what each page looked like, which you'll want for comparison.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Wayback Machine.&lt;/strong&gt; The Internet Archive's CDX API returns every URL it has ever captured on a domain, including pages deleted years ago that other sites still link to. When I rebuilt the redirect map for a site that had lived on three platforms, this was where most of the forgotten addresses came from.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Search Console and server logs.&lt;/strong&gt; Pages with impressions or real visits in the last year or two are the ones you can least afford to lose.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Deduplicate, normalize the protocol and host, and you have the master list. Everything after this point is checked against it.&lt;/p&gt;
+
+&lt;h2&gt;Keep the address exactly, redirect only what you must&lt;/h2&gt;
+&lt;p&gt;A redirect works, but the same URL serving the same content works better: no chain, no lost signal, nothing for anyone to maintain. So the goal for each URL on the list is to publish a file at exactly that path. Most static generators let you set the output path per page, so a chapter that lived at &lt;code&gt;/archives/2005/03/chapter_one.html&lt;/code&gt; can be written back to that exact spot.&lt;/p&gt;
+&lt;p&gt;For the rest, decide in this order:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Same path, same content.&lt;/strong&gt; Entries, main pages, and anything with outside links.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Same path, lighter content.&lt;/strong&gt; Date and category archives that only list entries can become small generated listing pages. Mark them noindex, follow so they pass visitors along without competing with the entries they repeat.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Redirect.&lt;/strong&gt; Leftovers from moved or merged entries, and dynamic URLs that can't exist as files.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Let it go.&lt;/strong&gt; Spam-filled endpoints and admin paths that were never meant to be public can return 404 or 410. Decide this on purpose, with the list in front of you, not by accident.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;The URLs a static host can't serve as files&lt;/h2&gt;
+&lt;p&gt;Some old addresses don't map onto a file at all. Watch for these:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Query strings.&lt;/strong&gt; Addresses like &lt;code&gt;/index.php?p=123&lt;/code&gt; or &lt;code&gt;/node?id=45&lt;/code&gt; are a script plus a parameter. A static host serves the same file no matter what comes after the question mark, so every one of those URLs would collapse into one page. They need redirect rules that match the query string, at the host or at a CDN in front of it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Script extensions.&lt;/strong&gt; Paths ending in &lt;code&gt;.php&lt;/code&gt;, &lt;code&gt;.cgi&lt;/code&gt;, or &lt;code&gt;.asp&lt;/code&gt; can be written as files on some hosts but may be served with the wrong content type. Test each one, or redirect them.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Feeds.&lt;/strong&gt; Feed readers and aggregators subscribed years ago and never updated. If the old site published RSS 1.0, RSS 2.0, and Atom at three different addresses, publish all three again, in their original formats. My novel still serves all three.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Where the redirect lives matters. GitHub Pages can't send a real 301 from a list of rules; it can only serve a page with an instant meta refresh, which Google says it treats as a permanent redirect but other crawlers and tools may not. If a site needs more than a handful of true redirects, put a CDN such as Cloudflare in front and use its bulk redirect lists, or choose a static host that reads a redirects file. I compare the options in my guide to &lt;a href="https://gerriscorp.com/guides/301-redirects/"&gt;planning 301 redirects&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Replace the dynamic parts, or retire them out loud&lt;/h2&gt;
+&lt;p&gt;Every feature that needed the server has to be replaced or retired deliberately:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Comments.&lt;/strong&gt; Keep the historical comments as part of each page's HTML, since they're often half the value of an old post, and close new ones.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contact forms.&lt;/strong&gt; Replace them with a plain email address or a hosted form service. Then send a test message, because a form that silently drops inquiries is worse than no form.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Site search.&lt;/strong&gt; A static search index, such as Pagefind, builds at publish time and runs in the browser. For a small archive, a good index page by date and topic may be enough.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Analytics.&lt;/strong&gt; Carry over the same property, so the before and after are comparable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Clean up while you're in there, and log it&lt;/h2&gt;
+&lt;p&gt;A freeze is a rare chance to fix things that have bothered search engines for years: give every page a real title and description, make archive pages noindex, generate a sitemap that lists only the pages meant for search, and add a canonical to each page. On my novel, every chapter got a handwritten title and description, and a script checked them. Typos and broken typography got fixed too, each one recorded in a log with the original text, so any correction can be reversed. If you're tempted to "improve" the content more than that, stop. A frozen archive should read like itself.&lt;/p&gt;
+
+&lt;h2&gt;Cut over in the right order&lt;/h2&gt;
+&lt;p&gt;The step that most often goes wrong is the last one, because old hosting packages tend to bundle more than the website. Check before you cancel anything:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Find out who runs DNS.&lt;/strong&gt; If the old host is also the DNS provider, canceling the account takes the domain's records down with it, including email. Move DNS first, copying every record exactly, especially mail and verification records. My guide to &lt;a href="https://gerriscorp.com/guides/email-authentication/"&gt;email authentication&lt;/a&gt; explains which ones keep mail flowing.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Publish the frozen site on a test address&lt;/strong&gt; and check it against the master list: every URL answers, the content matches, redirects land on the right page in one hop.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Switch the website records&lt;/strong&gt; to the new host, and confirm https and the www and non-www versions behave.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Run the master list again on the real domain.&lt;/strong&gt; For the novel, a script checked all 953 addresses, the redirects, and the canonicals before I told Google and Bing anything.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Submit the new sitemap,&lt;/strong&gt; then watch Search Console for a few weeks. Expect a quiet transition. Anything else means something on the list was missed.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Only then cancel the old hosting,&lt;/strong&gt; after downloading a final copy of the files and the database.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;What it costs, and what it saves&lt;/h2&gt;
+&lt;p&gt;For a small site, the work is mostly the inventory and the checking, not the conversion. A blog of a few hundred posts is a few days of careful work. The savings are ongoing: no security patches for software that no longer gets any, no emergency when a host retires an old PHP version, and hosting that's often free. The site also tends to get faster, which matters to visitors more than the owner usually expects.&lt;/p&gt;
+
+&lt;section class="faq"&gt;
+&lt;h2&gt;Questions about freezing a website&lt;/h2&gt;
+&lt;h3&gt;Will I lose my search rankings?&lt;/h3&gt;
+&lt;p&gt;Not if the URLs and content stay the same. Search engines see the same pages at the same addresses, served faster. Rankings drop when addresses change without redirects or when content disappears.&lt;/p&gt;
+&lt;h3&gt;Can I just use a website copier?&lt;/h3&gt;
+&lt;p&gt;Tools that mirror a site, like wget or HTTrack, are a useful starting point and a good backup. On their own they miss feeds, unlinked pages, and query string URLs, and they copy the old site's problems along with its content. Check their output against the master list.&lt;/p&gt;
+&lt;h3&gt;Can a frozen site still be updated?&lt;/h3&gt;
+&lt;p&gt;Yes, if it's generated from source files kept in Git. Edit the source, rebuild, publish. No server or database involved.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p&gt;If you have a site stranded on old software and want it preserved rather than rebuilt, that's &lt;a href="https://gerriscorp.com/services/rescue/"&gt;site rescue&lt;/a&gt; work, and I'm happy to look at it. Send me the address on the &lt;a href="https://gerriscorp.com/contact/"&gt;contact page&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://www.drupal.org/about/drupal-7/d7eol/partners"&gt;Drupal.org: Drupal 7 end of life&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/301-redirects"&gt;Google Search Central: Redirects and Google Search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server"&gt;Internet Archive: Wayback CDX Server API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/"&gt;Cloudflare Docs: Bulk Redirects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
     <title>When a Customer Asks for the Best, a Machine Answers</title>
     <link>https://gerriscorp.com/guides/ai-answers-review-searches/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/ai-answers-review-searches/</guid>

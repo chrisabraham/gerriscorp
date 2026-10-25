@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to freeze an old website as static HTML, URLs intact</title>
+<meta name="description" content="Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="keywords" content="Freeze an Old Website, SEO guide, Gerris Corp, Chris Abraham">
+<link rel="canonical" href="https://gerriscorp.com/guides/freeze-old-website/">
+<meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/rss+xml" title="Gerris guides (RSS)" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  // Global Privacy Control or Do Not Track turns analytics cookies off anywhere.
+  if (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1') gtag('consent', 'default', {analytics_storage: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-8TV2W38REZ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-8TV2W38REZ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to freeze an old website as static HTML, URLs intact">
+<meta property="og:description" content="Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.">
+<meta property="og:url" content="https://gerriscorp.com/guides/freeze-old-website/">
+<meta property="og:image" content="https://gerriscorp.com/cards/guides-freeze-old-website.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to freeze an old website as static HTML without losing a single link">
+<meta property="article:published_time" content="2026-10-24">
+<meta property="article:modified_time" content="2026-10-24">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to freeze an old website as static HTML, URLs intact">
+<meta name="twitter:description" content="Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.">
+<meta name="twitter:image" content="https://gerriscorp.com/cards/guides-freeze-old-website.png">
+<meta name="twitter:image:alt" content="How to freeze an old website as static HTML without losing a single link">
+<style>
+:root { --orange: #c75000; --blue: #16729e; --teal: #237482; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { color: var(--blue); font-size: 1.4rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.logo-full { margin: 1rem 0 1.5rem; text-align: center; }
+.logo-full img { width: 700px; }
+.logo-full figcaption { font-size: .85rem; color: var(--muted, #555); margin-top: .5rem; }
+.logo-inline { float: right; width: 220px; margin: .25rem 0 1rem 1.25rem; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
+.help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
+.help-box h2 { margin-top: .75rem; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
+.contact li { margin-bottom: .6rem; }
+.index-letters { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--rule); margin: 0 0 1rem; }
+.index-letters p { margin: 0; padding: .35rem 0; font-size: 1.05rem; display: flex; flex-wrap: wrap; gap: .1rem .2rem; }
+.index-letters a, .index-letters span { display: inline-block; min-width: 1.9rem; min-height: 1.9rem; line-height: 1.9rem; text-align: center; }
+.index-letters .index-empty { color: #767676; }
+.index-top { font-size: .9rem; margin: -.4rem 0 1.25rem; }
+[id^="ix-"] { scroll-margin-top: 4.5rem; }
+ul.site-index { list-style: none; padding: 0; }
+ul.site-index > li { margin-bottom: .35rem; padding-left: 1.5rem; text-indent: -1.5rem; }
+ul.site-index ul { list-style: none; padding-left: 1.5rem; margin: .15rem 0 .3rem; }
+ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; text-wrap: balance; }
+.site-footer a { white-space: nowrap; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.25rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "publishingPrinciples": "https://gerriscorp.com/standards/"
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2012",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "slogan": "Experienced help for the digital work your business needs done",
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "OpenAI Codex",
+    "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp",
+    "https://share.google/C5KMu0jYTNz8t2Zpn"
+   ],
+   "publishingPrinciples": "https://gerriscorp.com/standards/",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-workflow-testing/#service",
+         "name": "AI workflow testing and acceptance reviews",
+         "url": "https://gerriscorp.com/services/ai-workflow-testing/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/b2b-catalog-seo/#service",
+         "name": "B2B catalog SEO for manufacturers and distributors",
+         "url": "https://gerriscorp.com/services/b2b-catalog-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/shared-ai-memory/#service",
+         "name": "One shared memory for every AI assistant your team uses",
+         "url": "https://gerriscorp.com/services/shared-ai-memory/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/seo-engineering/#service",
+         "name": "SEO engineering for sites built in code",
+         "url": "https://gerriscorp.com/services/seo-engineering/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/wordpress-care/#service",
+         "name": "WordPress care: caching, hardening, or moving off",
+         "url": "https://gerriscorp.com/services/wordpress-care/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-visibility/#service",
+         "name": "Your customers meet an AI answer before they meet you. I help you check whether it names you.",
+         "url": "https://gerriscorp.com/services/ai-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/editorial/#service",
+         "name": "Fact-checked writing in your voice",
+         "url": "https://gerriscorp.com/services/editorial/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/podcast-sites/#service",
+         "name": "Podcast websites, built and run for you",
+         "url": "https://gerriscorp.com/services/podcast-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/internal-linking/#service",
+         "name": "Internal linking strategy and implementation",
+         "url": "https://gerriscorp.com/services/internal-linking/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://gerriscorp.com/chris-abraham.jpg",
+    "width": 320,
+    "height": 320,
+    "caption": "Chris Abraham, founder of Gerris Corp"
+   },
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
+   "homeLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, OpenAI Codex, Claude Code, GitHub Copilot, Git, Linux, Cloudflare, migrations, AI search"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "OpenAI Codex",
+    "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/",
+    "https://mastodon.social/@chrisa",
+    "https://adage.com/author/chris-abraham/1797"
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/freeze-old-website/#webpage",
+   "url": "https://gerriscorp.com/guides/freeze-old-website/",
+   "name": "How to freeze an old website as static HTML, URLs intact",
+   "description": "Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/cards/guides-freeze-old-website.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-24",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/freeze-old-website/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/freeze-old-website/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Freeze an Old Website",
+     "item": "https://gerriscorp.com/guides/freeze-old-website/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/freeze-old-website/#article",
+   "headline": "How to freeze an old website as static HTML without losing a single link",
+   "description": "Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.",
+   "url": "https://gerriscorp.com/guides/freeze-old-website/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/freeze-old-website/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-10-24",
+   "dateModified": "2026-10-24",
+   "image": "https://gerriscorp.com/cards/guides-freeze-old-website.png",
+   "inLanguage": "en-US",
+   "wordCount": 1632,
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "Drupal.org: Drupal 7 end of life",
+     "url": "https://www.drupal.org/about/drupal-7/d7eol/partners"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Google Search Central: Redirects and Google Search",
+     "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Internet Archive: Wayback CDX Server API",
+     "url": "https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Cloudflare Docs: Bulk Redirects",
+     "url": "https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/guides/freeze-old-website/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Will I lose my search rankings?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not if the URLs and content stay the same. Search engines see the same pages at the same addresses, served faster. Rankings drop when addresses change without redirects or when content disappears."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I just use a website copier?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tools that mirror a site, like wget or HTTrack, are a useful starting point and a good backup. On their own they miss feeds, unlinked pages, and query string URLs, and they copy the old site's problems along with its content. Check their output against the master list."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a frozen site still be updated?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, if it's generated from source files kept in Git. Edit the source, rebuild, publish. No server or database involved."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › Freeze an Old Website</p>
+<main id="main">
+<h1>How to freeze an old website as static HTML without losing a single link</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-10-24">October 24, 2026</time></p>
+<p class="lead">Plenty of good websites are running on software nobody maintains anymore: Drupal 7 after its January 2025 end of life, Movable Type installs from the 2000s, PHP portals that only run on a host's oldest PHP version. The content still matters, people still link to it, and search engines still send visitors. The owner usually doesn't need a redesign. They need the site to stop being a security liability and a monthly hosting bill, and to keep working. Freezing it as static HTML does both. I did exactly this with my own serialized novel, which ran on Movable Type from 2005 to 2022, and here is the method.</p>
+
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-when-freezing-is-the-right-call">When freezing is the right call</a></li>
+    <li><a href="#section-count-every-address-the-old-site-ever-published">Count every address the old site ever published</a></li>
+    <li><a href="#section-keep-the-address-exactly-redirect-only-what-you-must">Keep the address exactly, redirect only what you must</a></li>
+    <li><a href="#section-the-urls-a-static-host-can-t-serve-as-files">The URLs a static host can&#x27;t serve as files</a></li>
+    <li><a href="#section-replace-the-dynamic-parts-or-retire-them-out-loud">Replace the dynamic parts, or retire them out loud</a></li>
+    <li><a href="#section-clean-up-while-you-re-in-there-and-log-it">Clean up while you&#x27;re in there, and log it</a></li>
+    <li><a href="#section-cut-over-in-the-right-order">Cut over in the right order</a></li>
+    <li><a href="#section-what-it-costs-and-what-it-saves">What it costs, and what it saves</a></li>
+    <li><a href="#section-questions-about-freezing-a-website">Questions about freezing a website</a></li>
+  </ol>
+</details>
+
+<h2 id="section-when-freezing-is-the-right-call" tabindex="-1">When freezing is the right call</h2>
+<p>A frozen site is a set of plain files: no database, no login, no plugins, nothing to patch. It loads quickly, it's close to free to host, and it can sit untouched for years. That makes it right for archives, finished projects, publications that stopped publishing, a business's old site after a rebrand, and documentation for a retired product.</p>
+<p>It's the wrong call if people still edit the site every week, or if it depends on logins, shopping carts, or bookings. Those need a real <a href="../../services/migrations/">migration</a> to a maintained platform. And there's a middle path: a site can be frozen and still be edited occasionally, if the static pages are generated from source files kept in Git. My novel works that way. Corrections still happen; they just go through a build instead of an admin panel.</p>
+
+<h2 id="section-count-every-address-the-old-site-ever-published" tabindex="-1">Count every address the old site ever published</h2>
+<p>The single biggest risk is underestimating how many URLs exist. Old blogging and portal software publishes far more than its articles. Movable Type, for example, writes individual entry pages plus monthly, weekly, daily, and category archives, separate feed files, and TrackBack endpoints for every entry. My novel had 309 chapters, and the full count of public addresses came to 953.</p>
+<p>Build the list from several sources and merge them, because each one misses something:</p>
+<ul>
+  <li><strong>The database or export.</strong> The most complete list of content, if you can still get a dump. Entry IDs, slugs, and dates let you reconstruct every permalink the software would have generated.</li>
+  <li><strong>The old web root.</strong> If the software published static files, as Movable Type did, the server's folder is a literal inventory of what it served.</li>
+  <li><strong>A crawl of the live site.</strong> Run it before anything changes, and save the export. This also captures what each page looked like, which you'll want for comparison.</li>
+  <li><strong>The Wayback Machine.</strong> The Internet Archive's CDX API returns every URL it has ever captured on a domain, including pages deleted years ago that other sites still link to. When I rebuilt the redirect map for a site that had lived on three platforms, this was where most of the forgotten addresses came from.</li>
+  <li><strong>Search Console and server logs.</strong> Pages with impressions or real visits in the last year or two are the ones you can least afford to lose.</li>
+</ul>
+<p>Deduplicate, normalize the protocol and host, and you have the master list. Everything after this point is checked against it.</p>
+
+<h2 id="section-keep-the-address-exactly-redirect-only-what-you-must" tabindex="-1">Keep the address exactly, redirect only what you must</h2>
+<p>A redirect works, but the same URL serving the same content works better: no chain, no lost signal, nothing for anyone to maintain. So the goal for each URL on the list is to publish a file at exactly that path. Most static generators let you set the output path per page, so a chapter that lived at <code>/archives/2005/03/chapter_one.html</code> can be written back to that exact spot.</p>
+<p>For the rest, decide in this order:</p>
+<ol>
+  <li><strong>Same path, same content.</strong> Entries, main pages, and anything with outside links.</li>
+  <li><strong>Same path, lighter content.</strong> Date and category archives that only list entries can become small generated listing pages. Mark them noindex, follow so they pass visitors along without competing with the entries they repeat.</li>
+  <li><strong>Redirect.</strong> Leftovers from moved or merged entries, and dynamic URLs that can't exist as files.</li>
+  <li><strong>Let it go.</strong> Spam-filled endpoints and admin paths that were never meant to be public can return 404 or 410. Decide this on purpose, with the list in front of you, not by accident.</li>
+</ol>
+
+<h2 id="section-the-urls-a-static-host-can-t-serve-as-files" tabindex="-1">The URLs a static host can't serve as files</h2>
+<p>Some old addresses don't map onto a file at all. Watch for these:</p>
+<ul>
+  <li><strong>Query strings.</strong> Addresses like <code>/index.php?p=123</code> or <code>/node?id=45</code> are a script plus a parameter. A static host serves the same file no matter what comes after the question mark, so every one of those URLs would collapse into one page. They need redirect rules that match the query string, at the host or at a CDN in front of it.</li>
+  <li><strong>Script extensions.</strong> Paths ending in <code>.php</code>, <code>.cgi</code>, or <code>.asp</code> can be written as files on some hosts but may be served with the wrong content type. Test each one, or redirect them.</li>
+  <li><strong>Feeds.</strong> Feed readers and aggregators subscribed years ago and never updated. If the old site published RSS 1.0, RSS 2.0, and Atom at three different addresses, publish all three again, in their original formats. My novel still serves all three.</li>
+</ul>
+<p>Where the redirect lives matters. GitHub Pages can't send a real 301 from a list of rules; it can only serve a page with an instant meta refresh, which Google says it treats as a permanent redirect but other crawlers and tools may not. If a site needs more than a handful of true redirects, put a CDN such as Cloudflare in front and use its bulk redirect lists, or choose a static host that reads a redirects file. I compare the options in my guide to <a href="../../guides/301-redirects/">planning 301 redirects</a>.</p>
+
+<h2 id="section-replace-the-dynamic-parts-or-retire-them-out-loud" tabindex="-1">Replace the dynamic parts, or retire them out loud</h2>
+<p>Every feature that needed the server has to be replaced or retired deliberately:</p>
+<ul>
+  <li><strong>Comments.</strong> Keep the historical comments as part of each page's HTML, since they're often half the value of an old post, and close new ones.</li>
+  <li><strong>Contact forms.</strong> Replace them with a plain email address or a hosted form service. Then send a test message, because a form that silently drops inquiries is worse than no form.</li>
+  <li><strong>Site search.</strong> A static search index, such as Pagefind, builds at publish time and runs in the browser. For a small archive, a good index page by date and topic may be enough.</li>
+  <li><strong>Analytics.</strong> Carry over the same property, so the before and after are comparable.</li>
+</ul>
+
+<h2 id="section-clean-up-while-you-re-in-there-and-log-it" tabindex="-1">Clean up while you're in there, and log it</h2>
+<p>A freeze is a rare chance to fix things that have bothered search engines for years: give every page a real title and description, make archive pages noindex, generate a sitemap that lists only the pages meant for search, and add a canonical to each page. On my novel, every chapter got a handwritten title and description, and a script checked them. Typos and broken typography got fixed too, each one recorded in a log with the original text, so any correction can be reversed. If you're tempted to "improve" the content more than that, stop. A frozen archive should read like itself.</p>
+
+<h2 id="section-cut-over-in-the-right-order" tabindex="-1">Cut over in the right order</h2>
+<p>The step that most often goes wrong is the last one, because old hosting packages tend to bundle more than the website. Check before you cancel anything:</p>
+<ol>
+  <li><strong>Find out who runs DNS.</strong> If the old host is also the DNS provider, canceling the account takes the domain's records down with it, including email. Move DNS first, copying every record exactly, especially mail and verification records. My guide to <a href="../../guides/email-authentication/">email authentication</a> explains which ones keep mail flowing.</li>
+  <li><strong>Publish the frozen site on a test address</strong> and check it against the master list: every URL answers, the content matches, redirects land on the right page in one hop.</li>
+  <li><strong>Switch the website records</strong> to the new host, and confirm https and the www and non-www versions behave.</li>
+  <li><strong>Run the master list again on the real domain.</strong> For the novel, a script checked all 953 addresses, the redirects, and the canonicals before I told Google and Bing anything.</li>
+  <li><strong>Submit the new sitemap,</strong> then watch Search Console for a few weeks. Expect a quiet transition. Anything else means something on the list was missed.</li>
+  <li><strong>Only then cancel the old hosting,</strong> after downloading a final copy of the files and the database.</li>
+</ol>
+
+<h2 id="section-what-it-costs-and-what-it-saves" tabindex="-1">What it costs, and what it saves</h2>
+<p>For a small site, the work is mostly the inventory and the checking, not the conversion. A blog of a few hundred posts is a few days of careful work. The savings are ongoing: no security patches for software that no longer gets any, no emergency when a host retires an old PHP version, and hosting that's often free. The site also tends to get faster, which matters to visitors more than the owner usually expects.</p>
+
+<section class="faq">
+<h2 id="section-questions-about-freezing-a-website" tabindex="-1">Questions about freezing a website</h2>
+<h3>Will I lose my search rankings?</h3>
+<p>Not if the URLs and content stay the same. Search engines see the same pages at the same addresses, served faster. Rankings drop when addresses change without redirects or when content disappears.</p>
+<h3>Can I just use a website copier?</h3>
+<p>Tools that mirror a site, like wget or HTTrack, are a useful starting point and a good backup. On their own they miss feeds, unlinked pages, and query string URLs, and they copy the old site's problems along with its content. Check their output against the master list.</p>
+<h3>Can a frozen site still be updated?</h3>
+<p>Yes, if it's generated from source files kept in Git. Edit the source, rebuild, publish. No server or database involved.</p>
+</section>
+
+<p>If you have a site stranded on old software and want it preserved rather than rebuilt, that's <a href="../../services/rescue/">site rescue</a> work, and I'm happy to look at it. Send me the address on the <a href="../../contact/">contact page</a>.</p>
+<aside class="help-box" aria-label="Get help">
+  <h2>Want me to handle this for you?</h2>
+  <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:+12023525051">Call +1 202-352-5051</a> <a class="button" href="mailto:chris@gerriscorp.com">Email chris@gerriscorp.com</a></p>
+  <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>
+<h2>References</h2>
+<ul class="sources">
+  <li><a href="https://www.drupal.org/about/drupal-7/d7eol/partners">Drupal.org: Drupal 7 end of life</a></li>
+  <li><a href="https://developers.google.com/search/docs/crawling-indexing/301-redirects">Google Search Central: Redirects and Google Search</a></li>
+  <li><a href="https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server">Internet Archive: Wayback CDX Server API</a></li>
+  <li><a href="https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/">Cloudflare Docs: Bulk Redirects</a></li>
+</ul>
+<aside class="author-box" aria-label="About the author">
+  <img src="../../chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="../../about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="../../standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a>&nbsp;· <a href="tel:+12023525051">+1 202-352-5051</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p>© 2026 Gerris Corp, Arlington,&nbsp;Virginia&nbsp;· <a href="../../faq/">FAQ</a>&nbsp;· <a href="../../standards/">Standards</a>&nbsp;· <a href="../../privacy/">Privacy</a>&nbsp;· <a href="../../sitemap/">Site map</a>&nbsp;· <a href="../../site-index/">Index</a>&nbsp;· <a href="../../guides/glossary/">Glossary</a>&nbsp;· <a href="../../colophon/">Colophon</a>&nbsp;· <a href="../../llms.txt">llms.txt</a>&nbsp;· <a href="../../rss.xml">RSS</a>&nbsp;· <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except where noted: copy, adapt, and share this work with attribution to Gerris&nbsp;Corp and a&nbsp;link.</p>
+</footer>
+</div>
+</body>
+</html>

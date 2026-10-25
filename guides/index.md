@@ -58,6 +58,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
 - [The SEO tools for a website migration](https://gerriscorp.com/guides/migration-tools/): crawlers, Search Console, redirect testing, and crawl comparison, matched to the job each one does.
 - [Traffic fell after a site migration: how to get it back](https://gerriscorp.com/guides/migration-recovery/): rebuild the old URL list, test every redirect, compare old and new pages, and fix in order of value.
+- [How to freeze an old website as static HTML without losing a single link](https://gerriscorp.com/guides/freeze-old-website/): retire a dead CMS by counting every address, keeping paths exactly, carrying feeds over, and cutting over in a safe order.
 - [How to plan 301 redirects that keep your rankings and links](https://gerriscorp.com/guides/301-redirects/): which redirect to use, mapping, implementation by platform, testing, and how long to keep them.
 
 ## Analytics

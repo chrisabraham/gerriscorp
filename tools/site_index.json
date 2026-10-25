@@ -6,7 +6,8 @@
     "services/migrations",
     "services/email-and-dns",
     "guides/301-redirects",
-    "guides/two-problems-at-once"
+    "guides/two-problems-at-once",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "which redirect to use": [
@@ -1527,7 +1528,8 @@
     "services/site-speed",
     "guides/cloudflare-seo",
     "guides/wordpress-behind-cloudflare",
-    "case-studies/indexing-recovery"
+    "case-studies/indexing-recovery",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "Cache Rules and Tiered Cache": [
@@ -2270,7 +2272,8 @@
     "services/rescue",
     "services/site-speed",
     "services/email-and-dns",
-    "guides/website-handover"
+    "guides/website-handover",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "inventory before changes": [
@@ -2331,7 +2334,8 @@
    "pages": [
     "services/technical-lead",
     "services/rescue",
-    "stack"
+    "stack",
+    "guides/freeze-old-website"
    ],
    "subs": {},
    "see": [],
@@ -3015,7 +3019,8 @@
     "services/migrations",
     "services/podcast-sites",
     "colophon",
-    "privacy"
+    "privacy",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "custom domains and HTTPS": [
@@ -3464,7 +3469,8 @@
     "case-studies",
     "case-studies/four-site-speed-pass",
     "case-studies/built-with-claude-code",
-    "about"
+    "about",
+    "guides/freeze-old-website"
    ],
    "subs": {},
    "see": [
@@ -4449,7 +4455,8 @@
     "services/migrations",
     "guides/hype-or-shift",
     "case-studies/built-with-claude-code",
-    "stack"
+    "stack",
+    "guides/freeze-old-website"
    ],
    "subs": {},
    "see": [],
@@ -5469,7 +5476,8 @@
   "redirect maps rebuilt from the Wayback Machine": {
    "kind": "topic",
    "pages": [
-    "stack"
+    "stack",
+    "guides/freeze-old-website"
    ],
    "subs": {},
    "see": [],
@@ -5750,7 +5758,8 @@
    "kind": "topic",
    "pages": [
     "services/podcast-sites",
-    "guides/indexnow-ai-search"
+    "guides/indexnow-ai-search",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "full-content Guides feed": [
@@ -6192,7 +6201,8 @@
     "services/migrations",
     "guides/migration-checklist",
     "case-studies/netlify-migration",
-    "case-studies/shopify-migration"
+    "case-studies/shopify-migration",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "kinds of migration": [
@@ -7151,7 +7161,8 @@
     "guides/301-redirects",
     "case-studies/founder-record",
     "stack",
-    "guides/vet-an-influencer"
+    "guides/vet-an-influencer",
+    "guides/freeze-old-website"
    ],
    "subs": {},
    "see": [],
@@ -7611,6 +7622,20 @@
     "shared AI memory"
    ],
    "subs": {}
+  },
+  "static archives of old websites": {
+   "kind": "topic",
+   "pages": [
+    "guides/freeze-old-website"
+   ],
+   "subs": {},
+   "see": [
+    "site migrations",
+    "Movable Type"
+   ],
+   "main": [
+    "guides/freeze-old-website"
+   ]
   }
  },
  "reviewed": [
@@ -7730,6 +7755,7 @@
   "guides/seo-developer-tickets",
   "guides/vet-an-influencer",
   "guides/two-problems-at-once",
-  "services/shared-ai-memory"
+  "services/shared-ai-memory",
+  "guides/freeze-old-website"
  ]
 }

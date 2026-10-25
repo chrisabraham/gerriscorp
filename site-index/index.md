@@ -4,14 +4,14 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 495 headings drawn from 119 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 496 headings drawn from 120 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
 [0–9](https://gerriscorp.com/site-index/#ix-letter-0) [A](https://gerriscorp.com/site-index/#ix-letter-a) [B](https://gerriscorp.com/site-index/#ix-letter-b) [C](https://gerriscorp.com/site-index/#ix-letter-c) [D](https://gerriscorp.com/site-index/#ix-letter-d) [E](https://gerriscorp.com/site-index/#ix-letter-e) [F](https://gerriscorp.com/site-index/#ix-letter-f) [G](https://gerriscorp.com/site-index/#ix-letter-g) [H](https://gerriscorp.com/site-index/#ix-letter-h) [I](https://gerriscorp.com/site-index/#ix-letter-i) [J](https://gerriscorp.com/site-index/#ix-letter-j) [K](https://gerriscorp.com/site-index/#ix-letter-k) [L](https://gerriscorp.com/site-index/#ix-letter-l) [M](https://gerriscorp.com/site-index/#ix-letter-m) [N](https://gerriscorp.com/site-index/#ix-letter-n) [O](https://gerriscorp.com/site-index/#ix-letter-o) [P](https://gerriscorp.com/site-index/#ix-letter-p) [Q](https://gerriscorp.com/site-index/#ix-letter-q) [R](https://gerriscorp.com/site-index/#ix-letter-r) [S](https://gerriscorp.com/site-index/#ix-letter-s) [T](https://gerriscorp.com/site-index/#ix-letter-t) [U](https://gerriscorp.com/site-index/#ix-letter-u) [V](https://gerriscorp.com/site-index/#ix-letter-v) [W](https://gerriscorp.com/site-index/#ix-letter-w) [X](https://gerriscorp.com/site-index/#ix-letter-x) [Y](https://gerriscorp.com/site-index/#ix-letter-y) [Z](https://gerriscorp.com/site-index/#ix-letter-z)
 
 ## 0–9
-- 301 redirects, [Migrations](https://gerriscorp.com/services/migrations/), [Email and DNS](https://gerriscorp.com/services/email-and-dns/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), **[301 Redirects](https://gerriscorp.com/guides/301-redirects/)**. *See also* [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations)
+- 301 redirects, [Migrations](https://gerriscorp.com/services/migrations/), [Email and DNS](https://gerriscorp.com/services/email-and-dns/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), **[301 Redirects](https://gerriscorp.com/guides/301-redirects/)**, [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations)
   - chains and loops, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
   - how long to keep, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
   - mapping old to new, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
@@ -284,7 +284,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Claude-SearchBot, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - Claude-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - client-side rendering, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
-- Cloudflare, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Site Speed and CDN](https://gerriscorp.com/services/site-speed/)**, **[Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)**, [WordPress behind Cloudflare](https://gerriscorp.com/guides/wordpress-behind-cloudflare/), [Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/). *See also* [DNS](https://gerriscorp.com/site-index/#ix-dns)
+- Cloudflare, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Site Speed and CDN](https://gerriscorp.com/services/site-speed/)**, **[Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)**, [WordPress behind Cloudflare](https://gerriscorp.com/guides/wordpress-behind-cloudflare/), [Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [DNS](https://gerriscorp.com/site-index/#ix-dns)
   - AI Crawl Control, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
   - AI crawler blocking, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
   - APO, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/)
@@ -417,7 +417,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - aggregate reports, [Email Authentication](https://gerriscorp.com/guides/email-authentication/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
   - alignment, [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 
-- DNS, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/). *See also* [email authentication](https://gerriscorp.com/site-index/#ix-email-authentication)
+- DNS, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [email authentication](https://gerriscorp.com/site-index/#ix-email-authentication)
   - domain consolidation, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - internationalized domains, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - inventory before changes, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
@@ -428,7 +428,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - DoNotPay, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
 - doorway pages, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/)
 - doxxing, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
-- Drupal, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [In Your Stack](https://gerriscorp.com/stack/)
+- Drupal, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
@@ -561,7 +561,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - GitHub Actions, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
 - GitHub Copilot, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
 - GitHub Issues, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
-- GitHub Pages, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Colophon](https://gerriscorp.com/colophon/), [Privacy](https://gerriscorp.com/privacy/)
+- GitHub Pages, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Colophon](https://gerriscorp.com/colophon/), [Privacy](https://gerriscorp.com/privacy/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
   - custom domains and HTTPS, [Podcast Website](https://gerriscorp.com/guides/podcast-website/)
 
 - GitLab, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
@@ -626,7 +626,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - headless CMS, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - helpful content guidance (Google), [Content Briefs](https://gerriscorp.com/guides/content-briefs/)
 - hidden text, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/)
-- Hill Mole, [Case Studies](https://gerriscorp.com/case-studies/), [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/). *See also* [Movable Type](https://gerriscorp.com/site-index/#ix-movable-type)
+- Hill Mole, [Case Studies](https://gerriscorp.com/case-studies/), [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [Movable Type](https://gerriscorp.com/site-index/#ix-movable-type)
 - hillmole.com, [About](https://gerriscorp.com/about/)
 - HIPAA, [Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
 - hiring developers, **[Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)**
@@ -820,7 +820,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - URL inventory, [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
 
 - model backends, comparing, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
-- Movable Type, [Project Rescue](https://gerriscorp.com/services/rescue/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [In Your Stack](https://gerriscorp.com/stack/)
+- Movable Type, [Project Rescue](https://gerriscorp.com/services/rescue/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 - Moz, [SEO 101](https://gerriscorp.com/guides/seo-101/)
 - multi-location businesses, [Services](https://gerriscorp.com/services/), **[Multi-Location](https://gerriscorp.com/services/multi-location/)**, **[Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/)**, [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/)
   - consistency of names and addresses, [Multi-Location](https://gerriscorp.com/services/multi-location/)
@@ -1014,7 +1014,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - real user monitoring, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
 - Reddit, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [About](https://gerriscorp.com/about/)
-- redirect maps rebuilt from the Wayback Machine, [In Your Stack](https://gerriscorp.com/stack/)
+- redirect maps rebuilt from the Wayback Machine, [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 - Redirection (WordPress plugin), [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
 - rel prev and next, [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
 - release checkpoints, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
@@ -1061,7 +1061,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - roundups and best-of lists, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - Route 53, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
-- RSS feeds, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
+- RSS feeds, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
   - full-content Guides feed, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
@@ -1148,7 +1148,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - duplicate product markup, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
   - review metafields, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
 
-- site migrations, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Project Rescue](https://gerriscorp.com/services/rescue/), **[Migrations](https://gerriscorp.com/services/migrations/)**, **[Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)**, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/). *See also* [301 redirects](https://gerriscorp.com/site-index/#ix-301-redirects); [migration recovery](https://gerriscorp.com/site-index/#ix-migration-recovery)
+- site migrations, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Project Rescue](https://gerriscorp.com/services/rescue/), **[Migrations](https://gerriscorp.com/services/migrations/)**, **[Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)**, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [301 redirects](https://gerriscorp.com/site-index/#ix-301-redirects); [migration recovery](https://gerriscorp.com/site-index/#ix-migration-recovery)
   - after launch, [Migrations](https://gerriscorp.com/services/migrations/)
   - baseline, [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)
   - how long to keep redirects, [Migrations](https://gerriscorp.com/services/migrations/)
@@ -1204,6 +1204,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - SSH, [Project Rescue](https://gerriscorp.com/services/rescue/), [App Takeover](https://gerriscorp.com/case-studies/app-takeover/)
 - Stack Overflow Developer Survey (2025), [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/), [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 - staging sites, [Search Console](https://gerriscorp.com/services/search-console/), [Migrations](https://gerriscorp.com/services/migrations/)
+- static archives of old websites, **[Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)**. *See also* [Movable Type](https://gerriscorp.com/site-index/#ix-movable-type); [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations)
 - static websites, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/)
 - strategic advisory, [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), **[Advisory](https://gerriscorp.com/services/advisory/)**
   - AI adoption, [Advisory](https://gerriscorp.com/services/advisory/)
@@ -1321,7 +1322,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## W
 - WAVE, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
-- Wayback Machine, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [In Your Stack](https://gerriscorp.com/stack/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+- Wayback Machine, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [In Your Stack](https://gerriscorp.com/stack/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 - WCAG, [SEO 101](https://gerriscorp.com/guides/seo-101/), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
 - Web Developer extension, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 - WebAIM Million, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
