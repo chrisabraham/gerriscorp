@@ -322,7 +322,8 @@
   "AEO (answer engine optimization)": {
    "kind": "topic",
    "pages": [
-    "services/ai-search"
+    "services/ai-search",
+    "services/ai-visibility"
    ],
    "subs": {},
    "see": [
@@ -560,7 +561,9 @@
     "home",
     "services",
     "services/advisory",
-    "services/ai-search"
+    "services/ai-search",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {
     "SEO, AEO, and GEO": [
@@ -601,7 +604,9 @@
     "guides",
     "guides/measure-ai-search",
     "services/ai-search",
-    "services/analytics"
+    "services/analytics",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {
     "citations, mentions, referrals, and leads": [
@@ -1327,7 +1332,9 @@
     "services/ai-search",
     "guides/ai-assistants",
     "guides/podcast-for-your-brand",
-    "services/shared-ai-memory"
+    "services/shared-ai-memory",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -2511,7 +2518,9 @@
    "pages": [
     "services/multi-location",
     "services/ai-search",
-    "guides/structured-data"
+    "guides/structured-data",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {
     "parent organization and branches": [
@@ -2854,7 +2863,9 @@
     "services/advisory",
     "services/crawler-visibility",
     "services/ai-search",
-    "guides/ai-assistants"
+    "guides/ai-assistants",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -3086,7 +3097,9 @@
     "services/ai-search",
     "guides/ai-assistants",
     "guides/search-in-2026",
-    "guides/self-ranking-lists"
+    "guides/self-ranking-lists",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -3102,7 +3115,9 @@
     "services/multi-location",
     "case-studies/multi-location-entity",
     "case-studies/seasonal-retailer",
-    "case-studies/gbp-reinstatement"
+    "case-studies/gbp-reinstatement",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {
     "suspensions": [
@@ -4122,7 +4137,9 @@
     "services/ai-search",
     "services/podcast-sites",
     "guides/ai-assistants",
-    "guides/glossary"
+    "guides/glossary",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -4519,7 +4536,8 @@
    "kind": "topic",
    "pages": [
     "services/multi-location",
-    "services/google-business-profile"
+    "services/google-business-profile",
+    "services/ai-visibility"
    ],
    "subs": {},
    "see": [],
@@ -4952,7 +4970,9 @@
     "services/advisory",
     "services/crawler-visibility",
     "services/ai-search",
-    "guides/ai-assistants"
+    "guides/ai-assistants",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -5939,7 +5959,8 @@
    "kind": "topic",
    "pages": [
     "services/technical-seo",
-    "guides/migration-tools"
+    "guides/migration-tools",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -7768,6 +7789,8 @@
   "guides/two-problems-at-once",
   "services/shared-ai-memory",
   "guides/freeze-old-website",
-  "guides/website-incident-timeline"
+  "guides/website-incident-timeline",
+  "services/ai-visibility",
+  "guides/ai-answers-review-searches"
  ]
 }
