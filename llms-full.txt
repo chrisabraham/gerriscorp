@@ -156,6 +156,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with OpenAI Codex and Claude Code, with human confirmation on every action, tests, and encrypted backups.
+- [One shared memory for every AI assistant your team uses](https://gerriscorp.com/services/shared-ai-memory/): a private repository of Markdown that Claude, ChatGPT, Codex, and other assistants read before acting and update after.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
 - [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
@@ -1805,6 +1806,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
+- [When two problems hit at once, keep them on separate tracks](https://gerriscorp.com/guides/two-problems-at-once/): spot a drop with two causes, give each its own evidence and test, and join them only on proof.
 - [Your Google business reports are getting a new scoreboard](https://gerriscorp.com/guides/google-business-profile-reports/): the five new performance sections in owner language, why falling clicks can mislead, and a monthly routine.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people-first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
@@ -3681,6 +3683,88 @@ If your company hires through Upwork, you'll find me [there as well](https://www
 - [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
 - [Google Search Status Dashboard](https://status.search.google.com/)
 - [Search Console Help: Page indexing report](https://support.google.com/webmasters/answer/7440203)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/two-problems-at-once/
+Updated: 2026-10-24
+
+# When two problems hit at once, keep them on separate tracks
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 24, 2026
+
+The hardest traffic losses to fix are the ones with two causes. Everyone wants one story, so the evidence for both gets poured into the same bucket, a single explanation forms, and the fix that follows repairs half the damage or none of it. I run every overlapping cause as its own investigation, with its own evidence and its own test, and I connect them only when the data does.
+
+## Why one story feels right and fails
+
+A single explanation is satisfying. It fits on one slide, it gives the team one thing to do, and it lets everyone stop worrying. When a site loses traffic in the same season that a spam link spike shows up in a backlink tool, the spike becomes the villain within a day, because it is visible, dated, and blamable on strangers.
+
+The trouble is what happens next. The team ships the fix for the story it chose, waits six weeks, and reads the result. If the other cause was the bigger one, traffic keeps sliding and the fix looks like it failed, so a good fix gets abandoned. If both causes ease at the same time, the fix gets credit for a recovery it didn't produce, and the real cause returns with the next release. Either way the business pays for weeks of waiting and learns the wrong lesson.
+
+## Signs you have more than one problem
+
+Nobody announces that a drop has two causes. These are the patterns that tell me to split the work before anyone writes a ticket:
+- **The decline has two shapes.** A slow slope across months plus a sudden step on one date is almost never one cause.
+- **The losing pages don't share a template.** When product pages and the homepage both fall, one mechanism rarely explains both.
+- **The dates don't line up.** If one page group started falling in February and another in April, an April event can't explain February.
+- **Brand and nonbrand queries move differently.** Branded searches respond to reputation, links, and redirects; product and category searches respond to content, rendering, and indexing.
+- **The first fix moved one metric and not the others.** That is the clearest sign of all, and the most often ignored.
+
+## Open a track for each candidate cause
+
+A track is a written hypothesis with four parts: what I think is happening, the evidence that supports it, the test that would prove it wrong, and the person who can fix it. Writing the disproof test first matters most. A hypothesis with no way to fail is a belief, and beliefs are how one story swallows two problems.
+
+Each track gets its own page in the working document and its own heading in the report. Findings get filed under the track they support. A finding that seems to support both goes in a third place, marked as unassigned, until something decides it.
+
+## Give each track its own evidence
+
+Different causes leave fingerprints in different places, so each track gets the evidence that can actually speak to it:
+- **Template problems** show up in a crawl. I compare what a crawler extracts from each page type with what a person sees in the browser. A product page that weighs over a megabyte but yields three hundred words of text to the crawler is a template problem, whatever else is going on.
+- **Indexing problems** show up in Search Console's Page indexing report and in URL Inspection, grouped by template rather than read one URL at a time.
+- **Date driven problems** show up when the Performance report is segmented by page group and query type and laid against a calendar of releases, migrations, confirmed Google updates, and changes to redirects or hosting.
+- **Link and reputation problems** show up in the Links report and in third party backlink data, read for timing and pattern rather than for alarming totals.
+
+Segmentation is where most blended stories fall apart. A sitewide traffic line hides everything. The same data split into homepage, category, product, and editorial pages, and then into branded and unbranded queries, usually shows two or three distinct curves, each with its own start date.
+
+## Join the tracks only on proof
+
+Two problems can be connected, and sometimes one causes the other. A redirect error can send link equity to the wrong place and depress branded rankings. A rendering failure can strip internal links and starve deeper pages of crawl attention. When that happens, I merge the tracks. What I need before merging is a shared mechanism, the same affected URLs, or the same date with a plausible path from one to the other. Coincidence in the same month is not enough, and neither is the fact that both problems are bad.
+
+## A worked example
+
+An ecommerce client lost a large share of organic sessions over several months. Two things were visibly wrong. Product templates mounted their specifications, FAQs, and reviews only when a shopper scrolled them into view, so crawlers received a heading, an image, a few bullets, and a price. Separately, in April, the backlink tools showed several hundred new spam links against a baseline of a few dozen, around the same weeks that homepage traffic and branded searches fell.
+
+The tempting story was the spam. It was dated, it was dramatic, and it blamed someone outside the building. Split into tracks, the evidence told a different and more useful story. The rendering track was confirmed by crawl extraction on every major product page, by the template code itself, and by a cluster of clean product URLs sitting in "Crawled, currently not indexed." The April track explained the homepage and the brand queries, and it pointed at a redirect and URL handling issue as much as at the links. Neither track explained the other's pages. They went to different people as different tickets: server rendering to the developers, the redirect handling and the link review to me.
+
+## Sequence the fixes so you can read the result
+
+When two fixes ship in the same week, nobody can say afterward which one worked. Where the business can afford it, I ship them apart, with the larger or better proven fix first, and I annotate every release date in the reporting. Where both have to ship at once, I measure each against the page group and query segment it was meant to move, so a recovery in product pages counts for the rendering fix and a recovery in branded queries counts for the redirect fix.
+
+Each fix gets an acceptance check on the live site before anyone waits for traffic: a plain fetch of a product page that returns the specifications, a redirect test that returns one hop to the right destination. Traffic takes weeks to respond. Whether the fix shipped correctly takes minutes to verify, and there is no reason to spend six weeks waiting on a fix that never deployed.
+
+## What the owner hears
+
+The written report keeps the tracks separate all the way to the summary. Leadership gets one paragraph per problem: what it is, what it costs, who fixes it, and how anyone will know it worked. Engineers get the technical evidence, also by track. Nobody gets a single blended villain, because a single villain is the most expensive thing a diagnosis can produce.
+
+## How I handle this for clients
+
+This is the core of my [technical SEO forensics](https://gerriscorp.com/services/technical-seo/) work. Every engagement starts with a paid diagnostic that ends in a cause per track, the evidence behind each, and a prioritized plan with an owner for every item. When the cause turns out to be content the crawler never sees, that track becomes [crawler visibility](https://gerriscorp.com/services/crawler-visibility/) work; when it becomes a ticket for your team, it gets a [developer spec with acceptance criteria](https://gerriscorp.com/services/developers/). For the single cause version of the method, start with [diagnosing a traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Google Search Central: Debugging drops in Google Search traffic](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops)
+- [Search Console Help: Performance report](https://support.google.com/webmasters/answer/7576553)
+- [Search Console Help: URL Inspection tool](https://support.google.com/webmasters/answer/9012289)
 
 Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
 
@@ -7802,6 +7886,61 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/services/shared-ai-memory/
+Updated: 2026-10-24
+
+# One shared memory for every AI assistant your team uses
+
+Your team probably uses several AI assistants already: Claude in one window, ChatGPT in another, Codex or Claude Code in a terminal, maybe an agent running on a server. Each one forgets everything between sessions, and none of them knows what the others did yesterday. I give them one memory they all share, kept as plain Markdown files in a private Git repository your business owns.
+
+## The problem it solves
+
+Every assistant starts cold. Someone pastes the client background into ChatGPT on Monday, explains the same project to Claude on Tuesday, and on Wednesday an agent drafts an email with Friday's deadline because nobody told it the date moved. The knowledge exists, scattered across chat histories that no other tool can read. The cost shows up as repeated briefings, contradictory drafts, and mistakes that a colleague with the same notes would never make.
+
+## How it works
+
+The memory is a folder of Markdown files under version control. Every client, prospect, partner, or vendor gets exactly one profile. Every project that already lives in your project management tool gets a short digest that links back to it. A single rules file at the top of the repository tells any assistant arriving for the first time what to read, where things go, and what it must never do.
+
+Every assistant follows the same loop: read the profile before acting on that person or project, do the work, then write back what changed, with its own name on the commit. Because it's Git, every change has an author, a date, and a reason, so when an assistant gets something wrong you can see which one it was and roll it back in seconds. Anything that can read a file or clone a repository can take part. There is no vendor, no database, and no API key to rotate.
+
+## What I set up
+- **The private repository,** in your company's GitHub organization, with access granted per assistant and per person.
+- **The rules file,** written for your business: your people, your tools, your standing decisions, and the lines no assistant crosses.
+- **Profiles and project digests** for your active relationships, populated from the sources your assistants can reach, then checked by a person before anyone relies on them.
+- **Standing instructions** for each assistant, so every one of them keeps the memory current without being reminded.
+- **A review routine** that catches stale files, duplicate profiles, and anything that looks like a credential before it settles in.
+
+## What stays out
+
+Passwords, API keys, and account numbers never go in the repository; they belong in a password manager. The memory holds what a well briefed colleague would know: who someone is, what was agreed, where the project stands, and what was decided. Your project management tool stays the record of the work itself. The shared memory is the part every assistant needs before it touches that work.
+
+## Why I can build this
+
+I run my own business this way. My client records live in a private repository that Claude, Claude Code, ChatGPT, Codex, and my personal agent all read and update every day, and each of them has made mistakes in it that became a written rule. I stripped out everything personal and published the result as [oversoul, a free template on GitHub](https://github.com/chrisabraham/oversoul), licensed for anyone to use, fork, and build on. Clients get the same framework, finished for their team, plus the lessons that only came from running it.
+
+## Common questions
+
+### Which assistants work with it?
+
+Any assistant that can read files or clone a repository. In practice that covers Claude, Claude Code, ChatGPT with a GitHub connection, OpenAI Codex, GitHub Copilot, Gemini, and custom agents running on your own servers.
+
+### Do my staff need to learn Git?
+
+No. The assistants do the reading and writing. People can browse the files on GitHub like any document, and anyone curious can read the plain English explanation of what a commit is.
+
+### How does an engagement start?
+
+With a paid diagnostic: which assistants your team uses, what they keep forgetting, and which records belong in the memory. Then I set it up, populate it, and stay on for a few weeks while your assistants settle into the routine.
+
+**Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Using AI coding assistants safely](https://gerriscorp.com/guides/ai-coding-assistants/) · [Repository access for outside experts](https://gerriscorp.com/guides/repository-access/) · [Data cleanup](https://gerriscorp.com/services/data-cleanup/)
+
+[Give your assistants one memory](https://gerriscorp.com/contact/)
+
+Updated October 24, 2026
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
 Updated: 2026-10-24
 
@@ -7835,6 +7974,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
 - [B2B catalog SEO for manufacturers and distributors](https://gerriscorp.com/services/b2b-catalog-seo/): B2B catalog SEO for manufacturers and distributors: product specifications, part discovery, crawlable templates, and quote paths tested on a focused pilot.
+- [One shared memory for every AI assistant your team uses](https://gerriscorp.com/services/shared-ai-memory/): Chris Abraham sets up a private Git repository of plain Markdown that Claude, ChatGPT, Codex, and other assistants all read before acting and update after.
 
 ## Search and site performance
 - [Technical SEO forensics and fixes](https://gerriscorp.com/services/technical-seo/): Chris Abraham diagnoses traffic drops, indexing problems, slow pages, and redirect errors with evidence, then works with your developers until the fixes ship.
@@ -7885,6 +8025,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): A step-by-step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
+- [When two problems hit at once, keep them on separate tracks](https://gerriscorp.com/guides/two-problems-at-once/): When a traffic loss has two causes, one blended story produces the wrong fix. How to split the evidence, test each cause alone, and join them only on proof.
 - [Deleting hundreds of location pages: why core rankings fall, and the fix](https://gerriscorp.com/guides/removed-location-pages/): What happens when a site prunes hundreds of city or area code landing pages: why core pages can drop, how to decide each URL's fate, and how to recover.
 - [The year-end SEO check: one afternoon that protects next year](https://gerriscorp.com/guides/year-end-seo-check/): A one-afternoon year-end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.
@@ -7956,14 +8097,14 @@ Updated: 2026-10-24
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 491 headings drawn from 117 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 495 headings drawn from 119 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
 [0–9](https://gerriscorp.com/site-index/#ix-letter-0) [A](https://gerriscorp.com/site-index/#ix-letter-a) [B](https://gerriscorp.com/site-index/#ix-letter-b) [C](https://gerriscorp.com/site-index/#ix-letter-c) [D](https://gerriscorp.com/site-index/#ix-letter-d) [E](https://gerriscorp.com/site-index/#ix-letter-e) [F](https://gerriscorp.com/site-index/#ix-letter-f) [G](https://gerriscorp.com/site-index/#ix-letter-g) [H](https://gerriscorp.com/site-index/#ix-letter-h) [I](https://gerriscorp.com/site-index/#ix-letter-i) [J](https://gerriscorp.com/site-index/#ix-letter-j) [K](https://gerriscorp.com/site-index/#ix-letter-k) [L](https://gerriscorp.com/site-index/#ix-letter-l) [M](https://gerriscorp.com/site-index/#ix-letter-m) [N](https://gerriscorp.com/site-index/#ix-letter-n) [O](https://gerriscorp.com/site-index/#ix-letter-o) [P](https://gerriscorp.com/site-index/#ix-letter-p) [Q](https://gerriscorp.com/site-index/#ix-letter-q) [R](https://gerriscorp.com/site-index/#ix-letter-r) [S](https://gerriscorp.com/site-index/#ix-letter-s) [T](https://gerriscorp.com/site-index/#ix-letter-t) [U](https://gerriscorp.com/site-index/#ix-letter-u) [V](https://gerriscorp.com/site-index/#ix-letter-v) [W](https://gerriscorp.com/site-index/#ix-letter-w) [X](https://gerriscorp.com/site-index/#ix-letter-x) [Y](https://gerriscorp.com/site-index/#ix-letter-y) [Z](https://gerriscorp.com/site-index/#ix-letter-z)
 
 ## 0–9
-- 301 redirects, [Migrations](https://gerriscorp.com/services/migrations/), [Email and DNS](https://gerriscorp.com/services/email-and-dns/), **[301 Redirects](https://gerriscorp.com/guides/301-redirects/)**. *See also* [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations)
+- 301 redirects, [Migrations](https://gerriscorp.com/services/migrations/), [Email and DNS](https://gerriscorp.com/services/email-and-dns/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), **[301 Redirects](https://gerriscorp.com/guides/301-redirects/)**. *See also* [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations)
   - chains and loops, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
   - how long to keep, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
   - mapping old to new, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
@@ -8016,7 +8157,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing Perl and PHP, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
 
 - Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
-- acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
+- acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
 - access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
   - documentation and statements, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
@@ -8214,7 +8355,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - case studies, **[Case Studies](https://gerriscorp.com/case-studies/)**
 - CCBot, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 - CDNs, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Glossary](https://gerriscorp.com/guides/glossary/)
-- ChatGPT, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
+- ChatGPT, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
 - ChatGPT-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - chrisabraham.com, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
 - Chrome, [Speculation Rules](https://gerriscorp.com/guides/speculation-rules/)
@@ -8229,10 +8370,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - seven source types, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
 
 - citation share, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
-- Claude (Anthropic assistant), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- Claude Code, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [In Your Stack](https://gerriscorp.com/stack/), [Colophon](https://gerriscorp.com/colophon/). *See also* [AI coding assistants](https://gerriscorp.com/site-index/#ix-ai-coding-assistants)
+- Claude (Anthropic assistant), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
+- Claude Code, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [In Your Stack](https://gerriscorp.com/stack/), [Colophon](https://gerriscorp.com/colophon/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/). *See also* [AI coding assistants](https://gerriscorp.com/site-index/#ix-ai-coding-assistants)
 - ClaudeBot, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- CLAUDE.md, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
+- CLAUDE.md, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
 - Claude-SearchBot, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - Claude-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - client-side rendering, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
@@ -8261,7 +8402,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Cloudflare Tunnel, [WordPress behind Cloudflare](https://gerriscorp.com/guides/wordpress-behind-cloudflare/)
 - Clutch, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
-- Codex, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Data Cleanup](https://gerriscorp.com/services/data-cleanup/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [Standards](https://gerriscorp.com/standards/), [Colophon](https://gerriscorp.com/colophon/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/)
+- Codex, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Data Cleanup](https://gerriscorp.com/services/data-cleanup/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [Standards](https://gerriscorp.com/standards/), [Colophon](https://gerriscorp.com/colophon/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
 - colophon, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), **[Colophon](https://gerriscorp.com/colophon/)**
 - command-line assistant (Chris’), [Home](https://gerriscorp.com/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [In Your Stack](https://gerriscorp.com/stack/). *See also* [Blackbox (Chris’ command-line assistant)](https://gerriscorp.com/site-index/#ix-blackbox-chris-commandline-assistant)
 - compensation facts, [AI Recruiting Visibility](https://gerriscorp.com/case-studies/ai-recruiting/)
@@ -8311,7 +8452,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - crawl budget, **[Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)**, [Glossary](https://gerriscorp.com/guides/glossary/)
 - Crawl-delay, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
-- Crawled, currently not indexed, [Services](https://gerriscorp.com/services/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)**, [E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/), [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
+- Crawled, currently not indexed, [Services](https://gerriscorp.com/services/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)**, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/), [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
   - a method for finding the cause, [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)
   - common causes, [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)
   - fixes by cause, [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)
@@ -8385,7 +8526,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## E
-- ecommerce SEO, [Services](https://gerriscorp.com/services/), **[E-commerce](https://gerriscorp.com/services/ecommerce/)**
+- ecommerce SEO, [Services](https://gerriscorp.com/services/), **[E-commerce](https://gerriscorp.com/services/ecommerce/)**, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
   - duplicate product URLs, [E-commerce](https://gerriscorp.com/services/ecommerce/)
   - faceted navigation, [E-commerce](https://gerriscorp.com/services/ecommerce/)
   - migrations, [E-commerce](https://gerriscorp.com/services/ecommerce/)
@@ -8505,13 +8646,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Gerris Digital (name never used), [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - Gerris lacustris (water strider), [About](https://gerriscorp.com/about/), **[Colophon](https://gerriscorp.com/colophon/)**
 - Gerris Web Strategies, [Colophon](https://gerriscorp.com/colophon/)
-- Git, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/)
-- GitHub, **[README as an AI Source](https://gerriscorp.com/guides/readme-ai-source/)**, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)
+- Git, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
+- GitHub, **[README as an AI Source](https://gerriscorp.com/guides/readme-ai-source/)**, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
   - organizations, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
   - repository transfers, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
 
 - GitHub Actions, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
-- GitHub Copilot, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
+- GitHub Copilot, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
 - GitHub Issues, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
 - GitHub Pages, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Colophon](https://gerriscorp.com/colophon/), [Privacy](https://gerriscorp.com/privacy/)
   - custom domains and HTTPS, [Podcast Website](https://gerriscorp.com/guides/podcast-website/)
@@ -8535,7 +8676,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Google Calendar, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - Google Podcasts (closed 2024), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/)
 - Google Postmaster Tools, [Email and DNS](https://gerriscorp.com/services/email-and-dns/), [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Authentication](https://gerriscorp.com/guides/email-authentication/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
-- Google Search Console, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Search Console](https://gerriscorp.com/services/search-console/)**, [Migrations](https://gerriscorp.com/services/migrations/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/), [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
+- Google Search Console, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Large Sites](https://gerriscorp.com/services/large-sites/), **[Search Console](https://gerriscorp.com/services/search-console/)**, [Migrations](https://gerriscorp.com/services/migrations/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/), [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
   - Change of Address, [Migrations](https://gerriscorp.com/services/migrations/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
   - common findings, [Search Console](https://gerriscorp.com/services/search-console/)
   - Crawl stats, [Search Console](https://gerriscorp.com/services/search-console/), [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
@@ -8782,6 +8923,12 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - seasonal planning, [Multi-Location](https://gerriscorp.com/services/multi-location/)
   - sister businesses, [Multi-Location](https://gerriscorp.com/services/multi-location/)
 
+- multiple causes, **[Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)**
+  - separate tracks, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - sequencing fixes, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - signs of, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - when to join tracks, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+
 - MXToolbox, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
@@ -8839,6 +8986,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - OpenAI, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
 - Operation AI Comply, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
 - orphaned pages, [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/), [Internal Linking](https://gerriscorp.com/services/internal-linking/)
+- oversoul (template), **[Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)**. *See also* [shared AI memory](https://gerriscorp.com/site-index/#ix-shared-ai-memory)
 - OWASP excessive agency, [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
 - Owens Corning, [About](https://gerriscorp.com/about/)
 
@@ -9015,7 +9163,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Sanity, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)**
 - scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
 - Schema Markup Validator, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
-- Screaming Frog SEO Spider, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/). *See also* [migration tools](https://gerriscorp.com/site-index/#ix-migration-tools)
+- Screaming Frog SEO Spider, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/). *See also* [migration tools](https://gerriscorp.com/site-index/#ix-migration-tools)
   - crawl comparison and URL Mapping, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
   - list mode and redirect testing, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
   - MCP server (version 24), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
@@ -9031,6 +9179,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - second opinions, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/)
 - secrets in repositories, [Repository Access](https://gerriscorp.com/guides/repository-access/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
 - seed tests, [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
+- segmentation, **[Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)**
+  - branded and unbranded queries, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - by page group, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+
 - self-ranking "best of" lists, **[Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)**
   - fixing a published list, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
   - how the trick works, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
@@ -9080,6 +9232,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - server logs, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)
 - service-area pages, [Multi-Location](https://gerriscorp.com/services/multi-location/)
 - share cards (Open Graph images), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/)
+- shared AI memory, **[Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)**. *See also* [Git](https://gerriscorp.com/site-index/#ix-git)
+  - profiles and project digests, [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
+  - rules file, [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
+  - what stays out, [Shared AI Memory](https://gerriscorp.com/services/shared-ai-memory/)
+
 - Shopify, [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [E-commerce](https://gerriscorp.com/services/ecommerce/), [Migrations](https://gerriscorp.com/services/migrations/), **[Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)**
   - duplicate product markup, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
   - review metafields, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
@@ -9118,7 +9275,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - soft 404s, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/), [Glossary](https://gerriscorp.com/guides/glossary/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - Sony ICD-UX570, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - source vetting, [In Your Stack](https://gerriscorp.com/stack/), **[Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)**
-- spam backlinks, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/)
+- spam backlinks, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [E-commerce Rendering](https://gerriscorp.com/case-studies/ecommerce-rendering/)
 - spam rate thresholds, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - spam updates, [Glossary](https://gerriscorp.com/guides/glossary/). *See also* [Google updates](https://gerriscorp.com/site-index/#ix-google-updates)
 - Spamhaus, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
@@ -9212,7 +9369,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Todoist, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - Torvalds, Linus, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - Total Blocking Time, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
-- traffic drops, [Home](https://gerriscorp.com/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), **[Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)**, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/). *See also* [Google updates](https://gerriscorp.com/site-index/#ix-google-updates)
+- traffic drops, [Home](https://gerriscorp.com/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), **[Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)**, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/). *See also* [Google updates](https://gerriscorp.com/site-index/#ix-google-updates)
   - confirming the drop is real, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
   - finding where the loss is, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
   - lining up dates, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
@@ -9220,6 +9377,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - recovery timelines, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
   - separating problems, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
   - technical reports, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
+  - two causes at once, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
   - writing it down, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
 
 - training cutoffs, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)

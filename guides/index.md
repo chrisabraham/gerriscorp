@@ -22,6 +22,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
+- [When two problems hit at once, keep them on separate tracks](https://gerriscorp.com/guides/two-problems-at-once/): spot a drop with two causes, give each its own evidence and test, and join them only on proof.
 - [Your Google business reports are getting a new scoreboard](https://gerriscorp.com/guides/google-business-profile-reports/): the five new performance sections in owner language, why falling clicks can mislead, and a monthly routine.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people-first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.

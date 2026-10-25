@@ -55,7 +55,7 @@ FILES = ["index", "guides/seo-developer-tickets",
          "services/multi-location", "services/reputation", "services/google-business-profile", "services/email-and-dns",
          "guides/index", "guides/fact-check-ai-seo", "guides/measure-ai-search", "guides/citation-gap-analysis", "guides/content-briefs", "guides/readme-ai-source", "guides/speculation-rules", "guides/indexnow-ai-search", "guides/ai-assistants", "guides/ai-answers-review-searches", "guides/javascript-seo", "guides/hydration-errors", "guides/repository-access", "guides/nextjs-seo", "guides/seo-build-checks", "guides/migration-recovery", "guides/migration-tools", "guides/core-web-vitals-mcp", "guides/email-blocklist-recovery", "guides/crawled-not-indexed",
          "guides/migration-checklist", "guides/email-authentication", "guides/personal-information-removal",
-         "guides/traffic-drop", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
+         "guides/traffic-drop", "guides/two-problems-at-once", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
          "guides/301-redirects", "guides/faceted-navigation", "guides/hreflang", "guides/core-web-vitals",
          "guides/cloudflare-seo", "guides/wordpress-behind-cloudflare", "guides/ga4-consent-mode", "guides/email-deliverability",
          "guides/ai-coding-assistants", "guides/ai-vendor-pitch", "guides/hiring-developers", "guides/hype-or-shift", "guides/seo-superpower", "guides/podcast-website", "guides/search-in-2026", "guides/self-ranking-lists", "guides/seo-101", "guides/podcast-seo", "guides/podcast-for-your-brand", "guides/lynx-qa", "guides/ada-website-compliance", "guides/glossary",
@@ -88,6 +88,9 @@ FILES += ["guides/podcast-investment"]
 FILES += ["guides/google-business-profile-reports"]
 FILES += ["guides/vet-an-influencer"]
 SERVICE_GROUPS[0][1].append("services/b2b-catalog-seo/")
+# Added by Claude in the Claude app, October 24, 2026.
+FILES += ["services/shared-ai-memory"]
+SERVICE_GROUPS[0][1].append("services/shared-ai-memory/")
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()

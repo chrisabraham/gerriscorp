@@ -1,0 +1,58 @@
+name: Two Problems at Once
+type: guide
+published: 2026-10-24
+updated: 2026-10-24
+title: Two problems at once: keep each cause on its own track
+description: When a traffic loss has two causes, one blended story produces the wrong fix. How to split the evidence, test each cause alone, and join them only on proof.
+keywords: traffic drop diagnosis, multiple causes, SEO forensics, root cause analysis, Search Console segments
+sources: Google Search Central: Debugging drops in Google Search traffic | https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops ;; Search Console Help: Performance report | https://support.google.com/webmasters/answer/7576553 ;; Search Console Help: URL Inspection tool | https://support.google.com/webmasters/answer/9012289
+about: Root cause analysis | https://en.wikipedia.org/wiki/Root_cause_analysis ;; Confounding | https://en.wikipedia.org/wiki/Confounding
+mentions: Google Search Console | https://en.wikipedia.org/wiki/Google_Search_Console ;; Screaming Frog | https://en.wikipedia.org/wiki/Screaming_Frog
+---
+<h1>When two problems hit at once, keep them on separate tracks</h1>
+<p class="lead">The hardest traffic losses to fix are the ones with two causes. Everyone wants one story, so the evidence for both gets poured into the same bucket, a single explanation forms, and the fix that follows repairs half the damage or none of it. I run every overlapping cause as its own investigation, with its own evidence and its own test, and I connect them only when the data does.</p>
+
+<h2>Why one story feels right and fails</h2>
+<p>A single explanation is satisfying. It fits on one slide, it gives the team one thing to do, and it lets everyone stop worrying. When a site loses traffic in the same season that a spam link spike shows up in a backlink tool, the spike becomes the villain within a day, because it is visible, dated, and blamable on strangers.</p>
+<p>The trouble is what happens next. The team ships the fix for the story it chose, waits six weeks, and reads the result. If the other cause was the bigger one, traffic keeps sliding and the fix looks like it failed, so a good fix gets abandoned. If both causes ease at the same time, the fix gets credit for a recovery it didn't produce, and the real cause returns with the next release. Either way the business pays for weeks of waiting and learns the wrong lesson.</p>
+
+<h2>Signs you have more than one problem</h2>
+<p>Nobody announces that a drop has two causes. These are the patterns that tell me to split the work before anyone writes a ticket:</p>
+<ul>
+  <li><strong>The decline has two shapes.</strong> A slow slope across months plus a sudden step on one date is almost never one cause.</li>
+  <li><strong>The losing pages don't share a template.</strong> When product pages and the homepage both fall, one mechanism rarely explains both.</li>
+  <li><strong>The dates don't line up.</strong> If one page group started falling in February and another in April, an April event can't explain February.</li>
+  <li><strong>Brand and nonbrand queries move differently.</strong> Branded searches respond to reputation, links, and redirects; product and category searches respond to content, rendering, and indexing.</li>
+  <li><strong>The first fix moved one metric and not the others.</strong> That is the clearest sign of all, and the most often ignored.</li>
+</ul>
+
+<h2>Open a track for each candidate cause</h2>
+<p>A track is a written hypothesis with four parts: what I think is happening, the evidence that supports it, the test that would prove it wrong, and the person who can fix it. Writing the disproof test first matters most. A hypothesis with no way to fail is a belief, and beliefs are how one story swallows two problems.</p>
+<p>Each track gets its own page in the working document and its own heading in the report. Findings get filed under the track they support. A finding that seems to support both goes in a third place, marked as unassigned, until something decides it.</p>
+
+<h2>Give each track its own evidence</h2>
+<p>Different causes leave fingerprints in different places, so each track gets the evidence that can actually speak to it:</p>
+<ul>
+  <li><strong>Template problems</strong> show up in a crawl. I compare what a crawler extracts from each page type with what a person sees in the browser. A product page that weighs over a megabyte but yields three hundred words of text to the crawler is a template problem, whatever else is going on.</li>
+  <li><strong>Indexing problems</strong> show up in Search Console's Page indexing report and in URL Inspection, grouped by template rather than read one URL at a time.</li>
+  <li><strong>Date driven problems</strong> show up when the Performance report is segmented by page group and query type and laid against a calendar of releases, migrations, confirmed Google updates, and changes to redirects or hosting.</li>
+  <li><strong>Link and reputation problems</strong> show up in the Links report and in third party backlink data, read for timing and pattern rather than for alarming totals.</li>
+</ul>
+<p>Segmentation is where most blended stories fall apart. A sitewide traffic line hides everything. The same data split into homepage, category, product, and editorial pages, and then into branded and unbranded queries, usually shows two or three distinct curves, each with its own start date.</p>
+
+<h2>Join the tracks only on proof</h2>
+<p>Two problems can be connected, and sometimes one causes the other. A redirect error can send link equity to the wrong place and depress branded rankings. A rendering failure can strip internal links and starve deeper pages of crawl attention. When that happens, I merge the tracks. What I need before merging is a shared mechanism, the same affected URLs, or the same date with a plausible path from one to the other. Coincidence in the same month is not enough, and neither is the fact that both problems are bad.</p>
+
+<h2>A worked example</h2>
+<p>An ecommerce client lost a large share of organic sessions over several months. Two things were visibly wrong. Product templates mounted their specifications, FAQs, and reviews only when a shopper scrolled them into view, so crawlers received a heading, an image, a few bullets, and a price. Separately, in April, the backlink tools showed several hundred new spam links against a baseline of a few dozen, around the same weeks that homepage traffic and branded searches fell.</p>
+<p>The tempting story was the spam. It was dated, it was dramatic, and it blamed someone outside the building. Split into tracks, the evidence told a different and more useful story. The rendering track was confirmed by crawl extraction on every major product page, by the template code itself, and by a cluster of clean product URLs sitting in "Crawled, currently not indexed." The April track explained the homepage and the brand queries, and it pointed at a redirect and URL handling issue as much as at the links. Neither track explained the other's pages. They went to different people as different tickets: server rendering to the developers, the redirect handling and the link review to me.</p>
+
+<h2>Sequence the fixes so you can read the result</h2>
+<p>When two fixes ship in the same week, nobody can say afterward which one worked. Where the business can afford it, I ship them apart, with the larger or better proven fix first, and I annotate every release date in the reporting. Where both have to ship at once, I measure each against the page group and query segment it was meant to move, so a recovery in product pages counts for the rendering fix and a recovery in branded queries counts for the redirect fix.</p>
+<p>Each fix gets an acceptance check on the live site before anyone waits for traffic: a plain fetch of a product page that returns the specifications, a redirect test that returns one hop to the right destination. Traffic takes weeks to respond. Whether the fix shipped correctly takes minutes to verify, and there is no reason to spend six weeks waiting on a fix that never deployed.</p>
+
+<h2>What the owner hears</h2>
+<p>The written report keeps the tracks separate all the way to the summary. Leadership gets one paragraph per problem: what it is, what it costs, who fixes it, and how anyone will know it worked. Engineers get the technical evidence, also by track. Nobody gets a single blended villain, because a single villain is the most expensive thing a diagnosis can produce.</p>
+
+<h2>How I handle this for clients</h2>
+<p>This is the core of my <a href="{root}services/technical-seo/">technical SEO forensics</a> work. Every engagement starts with a paid diagnostic that ends in a cause per track, the evidence behind each, and a prioritized plan with an owner for every item. When the cause turns out to be content the crawler never sees, that track becomes <a href="{root}services/crawler-visibility/">crawler visibility</a> work; when it becomes a ticket for your team, it gets a <a href="{root}services/developers/">developer spec with acceptance criteria</a>. For the single cause version of the method, start with <a href="{root}guides/traffic-drop/">diagnosing a traffic drop in Search Console</a>.</p>
