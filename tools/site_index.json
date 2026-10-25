@@ -7385,6 +7385,18 @@
    "main": [
     "guides/b2b-catalog-seo"
    ]
+  },
+  "SEO developer tickets": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-developer-tickets"
+   ],
+   "see": [],
+   "subs": {},
+   "seealso": [],
+   "main": [
+    "guides/seo-developer-tickets"
+   ]
   }
  },
  "reviewed": [
@@ -7500,6 +7512,7 @@
   "services/b2b-catalog-seo",
   "guides/b2b-catalog-seo",
   "guides/podcast-investment",
-  "guides/google-business-profile-reports"
+  "guides/google-business-profile-reports",
+  "guides/seo-developer-tickets"
  ]
 }

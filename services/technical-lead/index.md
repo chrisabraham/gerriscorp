@@ -1,6 +1,6 @@
 > Chris Abraham owns your web stack part time: diagnoses problems, writes specs, directs developers and vendors, ships fixes, and reports in plain English.
 >
-> Source: https://gerriscorp.com/services/technical-lead/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/technical-lead/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
 
 # Fractional technical lead
 
@@ -44,4 +44,8 @@ I work with your developer. Most of the value comes from giving a good developer
 
 [Tell me what nobody owns](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+## From findings to implementation
+
+I turn audit findings into scoped developer tasks, separate business decisions from code changes, and verify the behavior after release. Each task includes examples, acceptance criteria, and a named decision owner. See the guide to [writing SEO developer tickets](https://gerriscorp.com/guides/seo-developer-tickets/) for the working method.
+
+Updated October 24, 2026

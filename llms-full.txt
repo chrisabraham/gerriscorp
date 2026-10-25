@@ -60,6 +60,87 @@ Updated October 15, 2026
 
 ---
 
+Source: https://gerriscorp.com/guides/seo-developer-tickets/
+Updated: 2026-10-24
+
+# Turn an SEO audit into developer tickets that get shipped
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 24, 2026
+
+An audit earns its keep when somebody can use it to change the website. A spreadsheet saying that 800 pages have problems leaves the developer with most of the investigation still to do. I turn a finding into a bounded task: what is broken, where the behavior comes from, what should happen instead, and how to prove the release fixed it.
+
+## Start with a reproducible failure
+
+Give the developer one URL and a short procedure that reproduces the problem. Include the date, the environment, and the observation. A screenshot can show the visible symptom; a response header or saved HTML can establish the technical behavior. Distinguish what appeared in the original response from what appeared after the browser ran scripts.
+
+For example, an old service URL might redirect to the homepage while the replacement service page exists elsewhere. That is a specific failure. A ticket saying “redirects are bad” forces somebody else to discover it again. Link the complete affected inventory, but put a representative example in the ticket itself so the recipient can start without opening five attachments.
+
+## Separate the symptom from the proposed cause
+
+I label observations, hypotheses, and decisions separately. “The rendered page has two conflicting canonical elements” is an observation. “The SEO plugin and the theme both emit them” is a hypothesis until the output is traced to those components. “Keep the plugin as the canonical owner” is an implementation decision that needs agreement.
+
+This distinction helps when an AI assistant prepares the first draft. It can propose a plausible cause with great confidence. The ticket should carry the evidence needed to confirm it, plus the uncertainty that remains. A developer should be able to disagree with my theory while still accepting the documented defect.
+
+## Scope by shared cause and release risk
+
+A thousand affected URLs can come from one template. Five broken URLs can come from five unrelated systems. I group tasks by the component or rule that needs changing, then attach the affected URL set. This produces work that can be assigned, estimated, reviewed, and reversed.
+
+Keep unrelated cleanup out of the same change. A redirect repair does not need a new navigation system and a rewritten service page bundled into it. Smaller releases make the outcome easier to assess. Where changes depend on each other, record the order explicitly: approve the destination inventory, implement the rules, update internal links, then verify the public responses.
+
+## Write acceptance criteria before implementation
+
+Acceptance criteria describe the behavior that counts as complete. They should be concrete enough for someone other than the implementer to check. For a URL migration, Google's guidance covers preparing a mapping, redirecting old URLs, and monitoring the move. I turn the agreed mapping into testable requirements rather than asking the developer to guess each destination.
+
+```
+Task: repair legacy service redirects
+Example: /old-service/ should lead to /services/current-service/
+Scope: approved redirect inventory, version dated October 24
+Expected behavior:
+1. Old URL returns the agreed permanent redirect.
+2. Location header names the approved destination.
+3. Destination returns 200 and shows the intended service.
+4. Relevant internal links use the destination directly.
+5. An unrelated missing URL still returns a real 404.
+Evidence: response checks for every row plus page review.
+Owner: named developer; destination decisions: named editor.
+```
+
+This is an illustrative ticket, not a report about a particular client. The status code and destination policy belong in the approved specification. Test exceptions, such as retired pages without a suitable replacement, individually rather than sending every missing address to the homepage.
+
+## Give priority a business reason
+
+Priority needs more information than a crawler's severity label. I consider which customer journey is affected, whether the defect is widespread, how confident the diagnosis is, and what the repair could disturb. A broken quote path on an important service page can deserve attention before hundreds of cosmetic metadata warnings.
+
+Write the reason in ordinary language: prospective customers following existing links cannot reach the service they requested. Add the relevant traffic or inquiry evidence when it exists. Avoid attaching invented revenue estimates to every defect. When commercial data is unavailable, state the observable consequence and ask the owner to confirm its importance.
+
+## Assign the decisions as well as the code
+
+Developers should not have to invent business policy to close an SEO ticket. Someone must decide whether a discontinued product has a replacement, whether two offices are separate locations, and which page owns a particular service. Put those decisions with the appropriate business or editorial owner.
+
+I use a short status sequence: awaiting decision, ready for development, implemented for review, released, verified. Each state answers a different question. A merged pull request proves that code was merged. The public site still needs checking, especially when caching, hosting rules, or content publishing can change what visitors actually receive.
+
+## Close with evidence and retain the lesson
+
+Verify the production examples and the broader affected set after deployment. Save the release reference, test results, exceptions, and remaining follow-up. If the same defect could return through the template, add an appropriate regression check. Technical completion can be demonstrated immediately; search visibility and inquiries need subsequent observation.
+
+That is the part of SEO delivery I handle between the audit and the developer: investigating the behavior, specifying the change, resolving business questions, and checking the result. See [technical SEO direction](https://gerriscorp.com/services/technical-lead/), [SEO engineering](https://gerriscorp.com/services/seo-engineering/), and the guide to [automated build checks](https://gerriscorp.com/guides/seo-build-checks/). Bring the backlog and the people who can change the site; I can help turn findings into releases.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Google Search Central: Site moves](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/services/
 Updated: 2026-10-20
 
@@ -125,7 +206,7 @@ Updated October 20, 2026
 ---
 
 Source: https://gerriscorp.com/services/technical-lead/
-Updated: 2026-10-05
+Updated: 2026-10-24
 
 # Fractional technical lead
 
@@ -169,7 +250,11 @@ I work with your developer. Most of the value comes from giving a good developer
 
 [Tell me what nobody owns](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+## From findings to implementation
+
+I turn audit findings into scoped developer tasks, separate business decisions from code changes, and verify the behavior after release. Each task includes examples, acceptance criteria, and a named decision owner. See the guide to [writing SEO developer tickets](https://gerriscorp.com/guides/seo-developer-tickets/) for the working method.
+
+Updated October 24, 2026
 
 
 ---
@@ -1262,9 +1347,9 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/services/ai-visibility/
-Updated: 2026-10-23
+Updated: 2026-10-24
 
-# Your customers meet an AI answer before they meet you. We make sure it names you.
+# Your customers meet an AI answer before they meet you. I help you check whether it names you.
 
 Google's AI Overviews now appear for 88% of commercial searches, nearly double the coverage of a year ago. Gerris audits how your business appears in AI answers, fixes what the machines get wrong, and measures the result every month, in writing.
 
@@ -1274,30 +1359,30 @@ Search results used to be ten links and a choice. Today the top of the page is a
 
 Review searches moved furthest of the five search types studied. Those are buying searches. The answer on top is now the first impression, the shortlist, and often the decision.
 
-## What we do
+## What I do
 
-### 1. AI Visibility Audit—$750 flat
+### 1. AI Visibility Audit: $750 flat
 
-We test how your business appears across Google AI Overviews, ChatGPT, Perplexity, and Gemini for the searches that bring you revenue. We document what the AI answers say about you, where you are missing, and where a competitor is being named instead. We check your entity and name-address-phone consistency across your site, your Google Business Profile, and your directory listings. The deliverable is a written report with every fix in priority order.
+I test how your business appears across Google AI Overviews, ChatGPT, Perplexity, and Gemini for the searches that bring you revenue. I document what the AI answers say about you, where you are missing, and where a competitor is being named instead. I check your entity and name-address-phone consistency across your site, your Google Business Profile, and your directory listings. The deliverable is a written report with every fix in priority order.
 
-### 2. The Claim Sprint—$1,500 flat
+### 2. The Claim Sprint: $1,500 flat
 - Technical foundation: full crawl, Search Console review, titles and metas, broken links and redirects
 - The claim layer: entity schema with sameAs links, llms.txt, a canonical "what is this business" page, and FAQ schema
 
-Where an item belongs with your developers, we return it as a precise, written fix list they can execute directly. We direct the work; we do not bill you for pretending to be your dev team.
+Where an item belongs with your developers, I return it as a precise, written fix list they can execute directly. I direct the work; I do not bill you for pretending to be your dev team.
 
-### 3. AI Presence, Measured—$500/month
+### 3. AI Presence, Measured: $500/month
 
 A monthly re-run of your money-query set across Google AI Overviews, ChatGPT, and Perplexity, delivered as a written receipt: what changed, what the answers say now, and the next fixes in line. AI answers drift; this is how you know before your customers do.
 
 ## The Google Business Profile connection
 
-For local and service businesses, the Google Business Profile is one of the primary sources AI answers are built from. A suspended, duplicate, or miscategorized profile does not just hurt your map listing; it corrupts what the AI says about you everywhere. Gerris's Google Business Profile work, including service-area configuration and reinstatement support, is delivered under the same direction as our search work, so your profile, your website, and your listings tell one consistent story. That consistency is what the machines reward.
+For local and service businesses, the Google Business Profile is one of the primary sources AI answers are built from. A suspended, duplicate, or miscategorized profile does not just hurt your map listing; it corrupts what the AI says about you everywhere. Gerris's Google Business Profile work, including service-area configuration and reinstatement support, is delivered under the same direction as my search work, so your profile, your website, and your listings tell one consistent story. That consistency is what the machines reward.
 
 ## Proof of work
 - AI-answer presence measurement is already a sold, scheduled deliverable inside a multi-location retail engagement: baseline first, then monthly across Google Search, Maps, ChatGPT, and Perplexity.
-- Our audit format has been run in full for a therapy practice, covering entity consistency and AI-readiness end to end.
-- Our claim-layer build (entity schema, llms.txt, canonical explainer page, AI-presence baseline) is already in production for a media client.
+- My audit format has been run in full for a therapy practice, covering entity consistency and AI-readiness end to end.
+- My claim-layer build (entity schema, llms.txt, canonical explainer page, AI-presence baseline) is already in production for a media client.
 - The audit's $750 price is not a launch discount. It is the price a client has already paid for the pilot.
 
 ## How engagements run
@@ -1309,7 +1394,7 @@ The machines are describing your business to your customers right now. Gerris ma
 
 **[Contact Gerris to start with the audit.](https://gerriscorp.com/contact/)**
 
-Updated October 23, 2026
+Updated October 24, 2026
 
 
 ---
@@ -1769,6 +1854,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
 
 ## Vendors, developers, and technology decisions
+- [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): a practical workflow with explicit decisions and verifiable evidence.
 - [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
 - [A website handover beyond passwords and source code](https://gerriscorp.com/guides/website-handover/): account control, builds, data, renewals, and a restore exercise, with an inventory worksheet.
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.
@@ -2369,21 +2455,21 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/ai-answers-review-searches/
-Updated: 2026-10-23
+Updated: 2026-10-24
 
 # When a Customer Asks for the Best, a Machine Answers
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 23, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 23, 2026 · Updated October 24, 2026
 
 Somebody in your service area is, right now, asking Google a question like "best [your trade] near me" or "who should I call for [your service]." A year ago they got a list of businesses and made their own shortlist. Today they get a written answer: two or three names, a sentence about each, and a recommendation. If your name is not in that paragraph, you were never in the running, and no amount of scrolling changes it, because most people never scroll.
 
-This is not a prediction. Search Engine Land, reporting Semrush's tracking data, found that Google's AI Overviews appeared for 88% of commercial keywords in August 2026, nearly double their share in September 2025. Of the five search types Semrush studied, review searches—exactly the "best," "top-rated," and "near me" questions above—moved the furthest. The searches that end in a phone call are the searches the machines took over first.
+This is not a prediction. Search Engine Land, reporting Semrush's tracking data, found that Google's AI Overviews appeared for 88% of commercial keywords in August 2026, nearly double their share in September 2025. Of the five search types Semrush studied, review searches, exactly the "best," "top-rated," and "near me" questions above, moved the furthest. The searches that end in a phone call are the searches the machines took over first.
 
 ## What the answer says about a business nobody is tending
 
 An AI answer is only as good as the record it is built from: your website, your Google Business Profile, your listings, and your reviews, reconciled by a system that cannot call you to check. When that record is untended, the answer does not come back blank. It comes back wrong, in predictable ways:
 - **It names a competitor** whose facts happen to agree with each other across sources, because agreement is what the system reads as truth.
-- **It describes the business you used to be**—services you dropped, a location you closed, hours you changed—because old listings never die on their own.
+- **It describes the business you used to be**, services you dropped, a location you closed, hours you changed, because old listings never die on their own.
 - **It blends you with somebody else**: a similarly named business across town or across the country, your details and theirs averaged into a company that does not exist.
 - **It leaves you out entirely** on the searches that carry the most money, while happily citing you for trivia.
 
@@ -2397,15 +2483,15 @@ The good news is that the same mechanism cuts the other way. The answer rewards 
 
 ## What Gerris does about it
 
-**The AI Visibility Audit—$750 flat.** We run your money searches through Google AI Overviews, ChatGPT, Perplexity, and Gemini, and document what the answers say: where you are named, where you are missing, where you are described wrongly, and where a competitor stands in your place. We check your name, address, and phone consistency across your site, your Google Business Profile, and your listings. You receive a written report, fixes in priority order, yours to keep whoever does the work.
+**The AI Visibility Audit: $750 flat.** I run your money searches through Google AI Overviews, ChatGPT, Perplexity, and Gemini, and document what the answers say: where you are named, where you are missing, where you are described wrongly, and where a competitor stands in your place. I check your name, address, and phone consistency across your site, your Google Business Profile, and your listings. You receive a written report, fixes in priority order, yours to keep whoever does the work.
 
-**The Claim Sprint—$1,500 flat.** We fix the layer the audit exposes: the technical foundation (crawl, Search Console, titles, broken links) and the claim layer (entity schema, llms.txt, a canonical page that states what your business is, FAQ schema), so the machines can quote you instead of reconstructing you. Items that belong with your developers come back as a precise written fix list.
+**The Claim Sprint: $1,500 flat.** I fix the layer the audit exposes: the technical foundation (crawl, Search Console, titles, broken links) and the claim layer (entity schema, llms.txt, a canonical page that states what your business is, FAQ schema), so the machines can quote you instead of reconstructing you. Items that belong with your developers come back as a precise written fix list.
 
-**AI Presence, Measured—$500/month.** Answers drift. We re-run your search set monthly and deliver a written receipt: what changed, what the answers say now, and what gets fixed next.
+**AI Presence, Measured: $500/month.** Answers drift. I re-run your search set monthly and deliver a written receipt: what changed, what the answers say now, and what gets fixed next.
 
 ## Your Google Business Profile is doing more talking than you think
 
-For local and service businesses, the Google Business Profile is one of the primary sources the AI answers are built from. A suspended profile, a duplicate listing, a wrong service area, or a category that undersells you does not stay a maps problem; it propagates into every answer the machines give about you. Gerris's profile work—service-area configuration, reinstatement support, and cleanup—is run under the same direction as our search work for one reason: your profile, your website, and your listings have to tell one story, because one story is what the machines believe.
+For local and service businesses, the Google Business Profile is one of the primary sources the AI answers are built from. A suspended profile, a duplicate listing, a wrong service area, or a category that undersells you does not stay a maps problem; it propagates into every answer the machines give about you. Gerris's profile work, service-area configuration, reinstatement support, and cleanup, is run under the same direction as my search work for one reason: your profile, your website, and your listings have to tell one story, because one story is what the machines believe.
 
 ## Start with the audit
 
@@ -7671,7 +7757,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
-- [Your customers meet an AI answer before they meet you. We make sure it names you.](https://gerriscorp.com/services/ai-visibility/): Gerris audits how AI answers describe your business, fixes what the machines get wrong across Google, ChatGPT, Perplexity, and Gemini, and measures it monthly.
+- [Your customers meet an AI answer before they meet you. I help you check whether it names you.](https://gerriscorp.com/services/ai-visibility/): Gerris audits how AI answers describe your business, fixes what the machines get wrong across Google, ChatGPT, Perplexity, and Gemini, and measures it monthly.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
@@ -7684,6 +7770,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 
 ## Guides
+- [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): Turn SEO findings into specific developer tasks with evidence, scope, acceptance criteria, release checks, and a clear owner for the business decision.
 - [How to fact check a confident AI answer about SEO before you act on it](https://gerriscorp.com/guides/fact-check-ai-seo/): A claim by claim method for checking polished AI answers about SEO, using a real exchange about brand names in page titles and what the evidence supports.
 - [How to measure AI search citations, referrals, and actual leads](https://gerriscorp.com/guides/measure-ai-search/): Build an honest AI search report that separates citations, referral visits, and leads using Bing Webmaster Tools, GA4, repeatable checks, and clear limits.
 - [Citation gap analysis: finding the sources AI cites instead of you](https://gerriscorp.com/guides/citation-gap-analysis/): Collect the pages AI assistants cite when they name your competitors, sort them by type, and turn the ones that leave you out into a ranked outreach list.
@@ -7777,7 +7864,7 @@ Updated: 2026-10-24
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 482 headings drawn from 115 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 483 headings drawn from 116 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -8860,6 +8947,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - white hat, [SEO 101](https://gerriscorp.com/guides/seo-101/)
 
 - SEO Browser, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
+- SEO developer tickets, **[SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)**
 - SEO engineering, [Services](https://gerriscorp.com/services/), **[SEO Engineering](https://gerriscorp.com/services/seo-engineering/)**. *See also* [build checks](https://gerriscorp.com/site-index/#ix-build-checks)
   - branch and pull request workflow, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/)
   - build checks, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/)

@@ -30,7 +30,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/index.md): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/index.md): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/index.md): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
-- [Your customers meet an AI answer before they meet you. We make sure it names you.](https://gerriscorp.com/services/ai-visibility/index.md): Gerris audits how AI answers describe your business, fixes what the machines get wrong across Google, ChatGPT, Perplexity, and Gemini, and measures it monthly.
+- [Your customers meet an AI answer before they meet you. I help you check whether it names you.](https://gerriscorp.com/services/ai-visibility/index.md): Gerris audits how AI answers describe your business, fixes what the machines get wrong across Google, ChatGPT, Perplexity, and Gemini, and measures it monthly.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/index.md): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/index.md): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/index.md): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
@@ -45,6 +45,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 
 ## Guides
 
+- [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/index.md): Turn SEO findings into specific developer tasks with evidence, scope, acceptance criteria, release checks, and a clear owner for the business decision.
 - [Guides](https://gerriscorp.com/guides/index.md): Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 - [How to fact check a confident AI answer about SEO before you act on it](https://gerriscorp.com/guides/fact-check-ai-seo/index.md): A claim by claim method for checking polished AI answers about SEO, using a real exchange about brand names in page titles and what the evidence supports.
 - [How to measure AI search citations, referrals, and actual leads](https://gerriscorp.com/guides/measure-ai-search/index.md): Build an honest AI search report that separates citations, referral visits, and leads using Bing Webmaster Tools, GA4, repeatable checks, and clear limits.

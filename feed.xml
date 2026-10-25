@@ -8,6 +8,63 @@
   <updated>2026-10-24T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
+    <title>Turn an SEO audit into developer tickets that get shipped</title>
+    <link href="https://gerriscorp.com/guides/seo-developer-tickets/"/>
+    <id>https://gerriscorp.com/guides/seo-developer-tickets/</id>
+    <published>2026-10-24T12:00:00Z</published>
+    <updated>2026-10-24T12:00:00Z</updated>
+    <summary>Turn SEO findings into specific developer tasks with evidence, scope, acceptance criteria, release checks, and a clear owner for the business decision.</summary>
+    <content type="html">&lt;h1&gt;Turn an SEO audit into developer tickets that get shipped&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-24"&gt;October 24, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;An audit earns its keep when somebody can use it to change the website. A spreadsheet saying that 800 pages have problems leaves the developer with most of the investigation still to do. I turn a finding into a bounded task: what is broken, where the behavior comes from, what should happen instead, and how to prove the release fixed it.&lt;/p&gt;
+&lt;h2&gt;Start with a reproducible failure&lt;/h2&gt;
+&lt;p&gt;Give the developer one URL and a short procedure that reproduces the problem. Include the date, the environment, and the observation. A screenshot can show the visible symptom; a response header or saved HTML can establish the technical behavior. Distinguish what appeared in the original response from what appeared after the browser ran scripts.&lt;/p&gt;
+&lt;p&gt;For example, an old service URL might redirect to the homepage while the replacement service page exists elsewhere. That is a specific failure. A ticket saying “redirects are bad” forces somebody else to discover it again. Link the complete affected inventory, but put a representative example in the ticket itself so the recipient can start without opening five attachments.&lt;/p&gt;
+&lt;h2&gt;Separate the symptom from the proposed cause&lt;/h2&gt;
+&lt;p&gt;I label observations, hypotheses, and decisions separately. “The rendered page has two conflicting canonical elements” is an observation. “The SEO plugin and the theme both emit them” is a hypothesis until the output is traced to those components. “Keep the plugin as the canonical owner” is an implementation decision that needs agreement.&lt;/p&gt;
+&lt;p&gt;This distinction helps when an AI assistant prepares the first draft. It can propose a plausible cause with great confidence. The ticket should carry the evidence needed to confirm it, plus the uncertainty that remains. A developer should be able to disagree with my theory while still accepting the documented defect.&lt;/p&gt;
+&lt;h2&gt;Scope by shared cause and release risk&lt;/h2&gt;
+&lt;p&gt;A thousand affected URLs can come from one template. Five broken URLs can come from five unrelated systems. I group tasks by the component or rule that needs changing, then attach the affected URL set. This produces work that can be assigned, estimated, reviewed, and reversed.&lt;/p&gt;
+&lt;p&gt;Keep unrelated cleanup out of the same change. A redirect repair does not need a new navigation system and a rewritten service page bundled into it. Smaller releases make the outcome easier to assess. Where changes depend on each other, record the order explicitly: approve the destination inventory, implement the rules, update internal links, then verify the public responses.&lt;/p&gt;
+&lt;h2&gt;Write acceptance criteria before implementation&lt;/h2&gt;
+&lt;p&gt;Acceptance criteria describe the behavior that counts as complete. They should be concrete enough for someone other than the implementer to check. For a URL migration, Google's guidance covers preparing a mapping, redirecting old URLs, and monitoring the move. I turn the agreed mapping into testable requirements rather than asking the developer to guess each destination.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Task: repair legacy service redirects
+Example: /old-service/ should lead to /services/current-service/
+Scope: approved redirect inventory, version dated October 24
+Expected behavior:
+1. Old URL returns the agreed permanent redirect.
+2. Location header names the approved destination.
+3. Destination returns 200 and shows the intended service.
+4. Relevant internal links use the destination directly.
+5. An unrelated missing URL still returns a real 404.
+Evidence: response checks for every row plus page review.
+Owner: named developer; destination decisions: named editor.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is an illustrative ticket, not a report about a particular client. The status code and destination policy belong in the approved specification. Test exceptions, such as retired pages without a suitable replacement, individually rather than sending every missing address to the homepage.&lt;/p&gt;
+&lt;h2&gt;Give priority a business reason&lt;/h2&gt;
+&lt;p&gt;Priority needs more information than a crawler's severity label. I consider which customer journey is affected, whether the defect is widespread, how confident the diagnosis is, and what the repair could disturb. A broken quote path on an important service page can deserve attention before hundreds of cosmetic metadata warnings.&lt;/p&gt;
+&lt;p&gt;Write the reason in ordinary language: prospective customers following existing links cannot reach the service they requested. Add the relevant traffic or inquiry evidence when it exists. Avoid attaching invented revenue estimates to every defect. When commercial data is unavailable, state the observable consequence and ask the owner to confirm its importance.&lt;/p&gt;
+&lt;h2&gt;Assign the decisions as well as the code&lt;/h2&gt;
+&lt;p&gt;Developers should not have to invent business policy to close an SEO ticket. Someone must decide whether a discontinued product has a replacement, whether two offices are separate locations, and which page owns a particular service. Put those decisions with the appropriate business or editorial owner.&lt;/p&gt;
+&lt;p&gt;I use a short status sequence: awaiting decision, ready for development, implemented for review, released, verified. Each state answers a different question. A merged pull request proves that code was merged. The public site still needs checking, especially when caching, hosting rules, or content publishing can change what visitors actually receive.&lt;/p&gt;
+&lt;h2&gt;Close with evidence and retain the lesson&lt;/h2&gt;
+&lt;p&gt;Verify the production examples and the broader affected set after deployment. Save the release reference, test results, exceptions, and remaining follow-up. If the same defect could return through the template, add an appropriate regression check. Technical completion can be demonstrated immediately; search visibility and inquiries need subsequent observation.&lt;/p&gt;
+&lt;p&gt;That is the part of SEO delivery I handle between the audit and the developer: investigating the behavior, specifying the change, resolving business questions, and checking the result. See &lt;a href="https://gerriscorp.com/services/technical-lead/"&gt;technical SEO direction&lt;/a&gt;, &lt;a href="https://gerriscorp.com/services/seo-engineering/"&gt;SEO engineering&lt;/a&gt;, and the guide to &lt;a href="https://gerriscorp.com/guides/seo-build-checks/"&gt;automated build checks&lt;/a&gt;. Bring the backlog and the people who can change the site; I can help turn findings into releases.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"&gt;Google Search Central: Site moves&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
     <title>Podcasting as an investment in being found by AI search</title>
     <link href="https://gerriscorp.com/guides/podcast-investment/"/>
     <id>https://gerriscorp.com/guides/podcast-investment/</id>
@@ -147,17 +204,17 @@
     <link href="https://gerriscorp.com/guides/ai-answers-review-searches/"/>
     <id>https://gerriscorp.com/guides/ai-answers-review-searches/</id>
     <published>2026-10-23T12:00:00Z</published>
-    <updated>2026-10-23T12:00:00Z</updated>
+    <updated>2026-10-24T12:00:00Z</updated>
     <summary>Google's AI Overviews now answer most review searches. What the machines say about untended businesses, and the audit, sprint, and measurement that fix it.</summary>
     <content type="html">&lt;h1&gt;When a Customer Asks for the Best, a Machine Answers&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-23"&gt;October 23, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-23"&gt;October 23, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-24"&gt;October 24, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;Somebody in your service area is, right now, asking Google a question like "best [your trade] near me" or "who should I call for [your service]." A year ago they got a list of businesses and made their own shortlist. Today they get a written answer: two or three names, a sentence about each, and a recommendation. If your name is not in that paragraph, you were never in the running, and no amount of scrolling changes it, because most people never scroll.&lt;/p&gt;
-&lt;p&gt;This is not a prediction. Search Engine Land, reporting Semrush's tracking data, found that Google's AI Overviews appeared for 88% of commercial keywords in August 2026, nearly double their share in September 2025. Of the five search types Semrush studied, review searches—exactly the "best," "top-rated," and "near me" questions above—moved the furthest. The searches that end in a phone call are the searches the machines took over first.&lt;/p&gt;
+&lt;p&gt;This is not a prediction. Search Engine Land, reporting Semrush's tracking data, found that Google's AI Overviews appeared for 88% of commercial keywords in August 2026, nearly double their share in September 2025. Of the five search types Semrush studied, review searches, exactly the "best," "top-rated," and "near me" questions above, moved the furthest. The searches that end in a phone call are the searches the machines took over first.&lt;/p&gt;
 &lt;h2&gt;What the answer says about a business nobody is tending&lt;/h2&gt;
 &lt;p&gt;An AI answer is only as good as the record it is built from: your website, your Google Business Profile, your listings, and your reviews, reconciled by a system that cannot call you to check. When that record is untended, the answer does not come back blank. It comes back wrong, in predictable ways:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;It names a competitor&lt;/strong&gt; whose facts happen to agree with each other across sources, because agreement is what the system reads as truth.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;It describes the business you used to be&lt;/strong&gt;—services you dropped, a location you closed, hours you changed—because old listings never die on their own.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It describes the business you used to be&lt;/strong&gt;, services you dropped, a location you closed, hours you changed, because old listings never die on their own.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;It blends you with somebody else&lt;/strong&gt;: a similarly named business across town or across the country, your details and theirs averaged into a company that does not exist.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;It leaves you out entirely&lt;/strong&gt; on the searches that carry the most money, while happily citing you for trivia.&lt;/li&gt;
 &lt;/ul&gt;
@@ -166,11 +223,11 @@
 &lt;p&gt;Review and recommendation searches are buying searches. The person asking has a problem, a budget, and a short afternoon. The machine's paragraph is not the top of their research; for most of them it is the whole of it. A business can have loyal customers, strong reviews, and a good website, and still lose that customer before the first click, because the answer was assembled from a profile nobody has opened in three years and a directory listing nobody claimed.&lt;/p&gt;
 &lt;p&gt;The good news is that the same mechanism cuts the other way. The answer rewards the business whose record is consistent, complete, and claimed. That is work. It is also, for once, work a smaller business can finish before a bigger competitor bothers to start.&lt;/p&gt;
 &lt;h2&gt;What Gerris does about it&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;The AI Visibility Audit—$750 flat.&lt;/strong&gt; We run your money searches through Google AI Overviews, ChatGPT, Perplexity, and Gemini, and document what the answers say: where you are named, where you are missing, where you are described wrongly, and where a competitor stands in your place. We check your name, address, and phone consistency across your site, your Google Business Profile, and your listings. You receive a written report, fixes in priority order, yours to keep whoever does the work.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Claim Sprint—$1,500 flat.&lt;/strong&gt; We fix the layer the audit exposes: the technical foundation (crawl, Search Console, titles, broken links) and the claim layer (entity schema, llms.txt, a canonical page that states what your business is, FAQ schema), so the machines can quote you instead of reconstructing you. Items that belong with your developers come back as a precise written fix list.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AI Presence, Measured—$500/month.&lt;/strong&gt; Answers drift. We re-run your search set monthly and deliver a written receipt: what changed, what the answers say now, and what gets fixed next.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The AI Visibility Audit: $750 flat.&lt;/strong&gt; I run your money searches through Google AI Overviews, ChatGPT, Perplexity, and Gemini, and document what the answers say: where you are named, where you are missing, where you are described wrongly, and where a competitor stands in your place. I check your name, address, and phone consistency across your site, your Google Business Profile, and your listings. You receive a written report, fixes in priority order, yours to keep whoever does the work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Claim Sprint: $1,500 flat.&lt;/strong&gt; I fix the layer the audit exposes: the technical foundation (crawl, Search Console, titles, broken links) and the claim layer (entity schema, llms.txt, a canonical page that states what your business is, FAQ schema), so the machines can quote you instead of reconstructing you. Items that belong with your developers come back as a precise written fix list.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI Presence, Measured: $500/month.&lt;/strong&gt; Answers drift. I re-run your search set monthly and deliver a written receipt: what changed, what the answers say now, and what gets fixed next.&lt;/p&gt;
 &lt;h2&gt;Your Google Business Profile is doing more talking than you think&lt;/h2&gt;
-&lt;p&gt;For local and service businesses, the Google Business Profile is one of the primary sources the AI answers are built from. A suspended profile, a duplicate listing, a wrong service area, or a category that undersells you does not stay a maps problem; it propagates into every answer the machines give about you. Gerris's profile work—service-area configuration, reinstatement support, and cleanup—is run under the same direction as our search work for one reason: your profile, your website, and your listings have to tell one story, because one story is what the machines believe.&lt;/p&gt;
+&lt;p&gt;For local and service businesses, the Google Business Profile is one of the primary sources the AI answers are built from. A suspended profile, a duplicate listing, a wrong service area, or a category that undersells you does not stay a maps problem; it propagates into every answer the machines give about you. Gerris's profile work, service-area configuration, reinstatement support, and cleanup, is run under the same direction as my search work for one reason: your profile, your website, and your listings have to tell one story, because one story is what the machines believe.&lt;/p&gt;
 &lt;h2&gt;Start with the audit&lt;/h2&gt;
 &lt;p&gt;You do not need to guess what the machines say about your business, and you do not need a retainer to find out. Start with the $750 audit, read it, and decide from evidence. &lt;strong&gt;&lt;a href="https://gerriscorp.com/contact/"&gt;Contact Gerris&lt;/a&gt; to start with the audit.&lt;/strong&gt;&lt;/p&gt;
 &lt;aside class="help-box" aria-label="Get help"&gt;

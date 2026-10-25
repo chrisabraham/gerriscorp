@@ -71,6 +71,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
 
 ## Vendors, developers, and technology decisions
+- [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): a practical workflow with explicit decisions and verifiable evidence.
 - [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
 - [A website handover beyond passwords and source code](https://gerriscorp.com/guides/website-handover/): account control, builds, data, renewals, and a restore exercise, with an inventory worksheet.
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.

@@ -45,7 +45,7 @@ SITE = "https://gerriscorp.com/"
 PREVIEW_BASE = "/gerriscorp/"
 TABS = [("", "Home"), ("services/", "Services"), ("guides/", "Guides"), ("case-studies/", "Case Studies"),
         ("about/", "About"), ("work-with-me/", "Work With Me"), ("contact/", "Contact")]
-FILES = ["index",
+FILES = ["index", "guides/seo-developer-tickets",
          "services/index",
          "services/technical-lead", "services/developers", "services/agency-partner", "services/rescue",
          "services/ai-automation", "services/data-cleanup", "services/analytics", "services/advisory",

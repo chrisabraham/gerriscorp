@@ -8,12 +8,16 @@
     <image:image><image:loc>https://gerriscorp.com/social-card.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://gerriscorp.com/guides/seo-developer-tickets/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
     <loc>https://gerriscorp.com/services/</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/technical-lead/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/developers/</loc>
@@ -89,7 +93,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/services/ai-visibility/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/services/editorial/</loc>
@@ -157,7 +161,7 @@
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/ai-answers-review-searches/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://gerriscorp.com/guides/javascript-seo/</loc>

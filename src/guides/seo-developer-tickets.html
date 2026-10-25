@@ -1,0 +1,42 @@
+name: SEO Developer Tickets
+type: guide
+published: 2026-10-24
+updated: 2026-10-24
+title: Turn an SEO audit into developer tickets that get shipped
+description: Turn SEO findings into specific developer tasks with evidence, scope, acceptance criteria, release checks, and a clear owner for the business decision.
+sources: Google Search Central: Site moves | https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes
+---
+<h1>Turn an SEO audit into developer tickets that get shipped</h1>
+<p class="lead">An audit earns its keep when somebody can use it to change the website. A spreadsheet saying that 800 pages have problems leaves the developer with most of the investigation still to do. I turn a finding into a bounded task: what is broken, where the behavior comes from, what should happen instead, and how to prove the release fixed it.</p>
+<h2>Start with a reproducible failure</h2>
+<p>Give the developer one URL and a short procedure that reproduces the problem. Include the date, the environment, and the observation. A screenshot can show the visible symptom; a response header or saved HTML can establish the technical behavior. Distinguish what appeared in the original response from what appeared after the browser ran scripts.</p>
+<p>For example, an old service URL might redirect to the homepage while the replacement service page exists elsewhere. That is a specific failure. A ticket saying “redirects are bad” forces somebody else to discover it again. Link the complete affected inventory, but put a representative example in the ticket itself so the recipient can start without opening five attachments.</p>
+<h2>Separate the symptom from the proposed cause</h2>
+<p>I label observations, hypotheses, and decisions separately. “The rendered page has two conflicting canonical elements” is an observation. “The SEO plugin and the theme both emit them” is a hypothesis until the output is traced to those components. “Keep the plugin as the canonical owner” is an implementation decision that needs agreement.</p>
+<p>This distinction helps when an AI assistant prepares the first draft. It can propose a plausible cause with great confidence. The ticket should carry the evidence needed to confirm it, plus the uncertainty that remains. A developer should be able to disagree with my theory while still accepting the documented defect.</p>
+<h2>Scope by shared cause and release risk</h2>
+<p>A thousand affected URLs can come from one template. Five broken URLs can come from five unrelated systems. I group tasks by the component or rule that needs changing, then attach the affected URL set. This produces work that can be assigned, estimated, reviewed, and reversed.</p>
+<p>Keep unrelated cleanup out of the same change. A redirect repair does not need a new navigation system and a rewritten service page bundled into it. Smaller releases make the outcome easier to assess. Where changes depend on each other, record the order explicitly: approve the destination inventory, implement the rules, update internal links, then verify the public responses.</p>
+<h2>Write acceptance criteria before implementation</h2>
+<p>Acceptance criteria describe the behavior that counts as complete. They should be concrete enough for someone other than the implementer to check. For a URL migration, Google's guidance covers preparing a mapping, redirecting old URLs, and monitoring the move. I turn the agreed mapping into testable requirements rather than asking the developer to guess each destination.</p>
+<pre><code>Task: repair legacy service redirects
+Example: /old-service/ should lead to /services/current-service/
+Scope: approved redirect inventory, version dated October 24
+Expected behavior:
+1. Old URL returns the agreed permanent redirect.
+2. Location header names the approved destination.
+3. Destination returns 200 and shows the intended service.
+4. Relevant internal links use the destination directly.
+5. An unrelated missing URL still returns a real 404.
+Evidence: response checks for every row plus page review.
+Owner: named developer; destination decisions: named editor.</code></pre>
+<p>This is an illustrative ticket, not a report about a particular client. The status code and destination policy belong in the approved specification. Test exceptions, such as retired pages without a suitable replacement, individually rather than sending every missing address to the homepage.</p>
+<h2>Give priority a business reason</h2>
+<p>Priority needs more information than a crawler's severity label. I consider which customer journey is affected, whether the defect is widespread, how confident the diagnosis is, and what the repair could disturb. A broken quote path on an important service page can deserve attention before hundreds of cosmetic metadata warnings.</p>
+<p>Write the reason in ordinary language: prospective customers following existing links cannot reach the service they requested. Add the relevant traffic or inquiry evidence when it exists. Avoid attaching invented revenue estimates to every defect. When commercial data is unavailable, state the observable consequence and ask the owner to confirm its importance.</p>
+<h2>Assign the decisions as well as the code</h2>
+<p>Developers should not have to invent business policy to close an SEO ticket. Someone must decide whether a discontinued product has a replacement, whether two offices are separate locations, and which page owns a particular service. Put those decisions with the appropriate business or editorial owner.</p>
+<p>I use a short status sequence: awaiting decision, ready for development, implemented for review, released, verified. Each state answers a different question. A merged pull request proves that code was merged. The public site still needs checking, especially when caching, hosting rules, or content publishing can change what visitors actually receive.</p>
+<h2>Close with evidence and retain the lesson</h2>
+<p>Verify the production examples and the broader affected set after deployment. Save the release reference, test results, exceptions, and remaining follow-up. If the same defect could return through the template, add an appropriate regression check. Technical completion can be demonstrated immediately; search visibility and inquiries need subsequent observation.</p>
+<p>That is the part of SEO delivery I handle between the audit and the developer: investigating the behavior, specifying the change, resolving business questions, and checking the result. See <a href="{root}services/technical-lead/">technical SEO direction</a>, <a href="{root}services/seo-engineering/">SEO engineering</a>, and the guide to <a href="{root}guides/seo-build-checks/">automated build checks</a>. Bring the backlog and the people who can change the site; I can help turn findings into releases.</p>

@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 482 headings drawn from 115 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 483 headings drawn from 116 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -1087,6 +1087,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - white hat, [SEO 101](https://gerriscorp.com/guides/seo-101/)
 
 - SEO Browser, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
+- SEO developer tickets, **[SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)**
 - SEO engineering, [Services](https://gerriscorp.com/services/), **[SEO Engineering](https://gerriscorp.com/services/seo-engineering/)**. *See also* [build checks](https://gerriscorp.com/site-index/#ix-build-checks)
   - branch and pull request workflow, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/)
   - build checks, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/)
