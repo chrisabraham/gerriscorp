@@ -1,7 +1,7 @@
 name: Glossary
 type: guide
 published: 2026-10-05
-updated: 2026-10-24
+updated: 2026-10-26
 title: Glossary of SEO, AEO, GEO, and technical website terms
 description: Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 ---
@@ -37,6 +37,8 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a <a href="{root}guides/citation-gap-analysis/">citation gap analysis</a>.</dd>
   <dt id="cls">CLS (Cumulative Layout Shift)</dt>
   <dd>A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.</dd>
+  <dt id="confabulation">Confabulation</dt>
+  <dd>NIST's term for a generative AI system stating false information with confidence. The reason AI-assisted work needs a human check. See <a href="{root}guides/ai-use-policy/">AI use policy</a>.</dd>
   <dt id="content-brief">Content brief</dt>
   <dd>A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See <a href="{root}guides/content-briefs/">writing a content brief</a>.</dd>
   <dt id="core-update">Core update</dt>
@@ -55,12 +57,16 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.</dd>
   <dt id="dmarc">DMARC</dt>
   <dd>A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.</dd>
+  <dt id="dnssec">DNSSEC</dt>
+  <dd>Signatures added to DNS records so resolvers can reject forged answers. Turn it off or move the keys before changing DNS hosts. See <a href="{root}guides/domain-account-security/">domain security</a>.</dd>
   <dt id="e-e-a-t">E-E-A-T</dt>
   <dd>Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.</dd>
   <dt id="email-blocklist">Email blocklist</dt>
   <dd>A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see <a href="{root}guides/email-blocklist-recovery/">blocklist recovery</a>.</dd>
   <dt id="endorsement-guides">Endorsement Guides</dt>
   <dd>The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in <a href="{root}guides/vet-an-influencer/">the creator vetting guide</a>.</dd>
+  <dt id="european-accessibility-act">European Accessibility Act</dt>
+  <dd>EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See <a href="{root}guides/european-accessibility-act/">the EAA guide</a>.</dd>
   <dt id="geo">GEO (generative engine optimization)</dt>
   <dd>Making a business and its content easy for AI systems to find, understand, and cite in generated answers.</dd>
   <dt id="git">Git</dt>
@@ -95,8 +101,12 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see <a href="{root}guides/hiring-developers/">hiring developers</a>.</dd>
   <dt id="readme">README</dt>
   <dd>The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see <a href="{root}guides/readme-ai-source/">your README is a source AI reads</a>.</dd>
+  <dt id="registrar-lock">Registrar lock</dt>
+  <dd>Status codes such as clientTransferProhibited that tell the registry to refuse transfers, deletions, or updates until the account holder lifts them. Registry Lock is the stricter, registry-level version.</dd>
   <dt id="repository">Repository</dt>
   <dd>The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.</dd>
+  <dt id="restore-drill">Restore drill</dt>
+  <dd>Rebuilding a website from its backup on a separate server, timed and written down, to prove the backup is complete before an emergency. See <a href="{root}guides/restore-drills/">restore drills</a>.</dd>
   <dt id="robots-txt">robots.txt</dt>
   <dd>A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.</dd>
   <dt id="scaled-content-abuse">Scaled content abuse</dt>
@@ -121,6 +131,8 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.</dd>
   <dt id="ttfb">TTFB (time to first byte)</dt>
   <dd>How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.</dd>
+  <dt id="wcag">WCAG (Web Content Accessibility Guidelines)</dt>
+  <dd>The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See <a href="{root}services/accessibility/">accessibility remediation</a>.</dd>
   <dt id="xml-sitemap">XML sitemap</dt>
   <dd>A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.</dd>
 </dl>

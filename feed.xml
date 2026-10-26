@@ -5,8 +5,426 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-24T12:00:00Z</updated>
+  <updated>2026-10-26T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
+  <entry>
+    <title>Website restore drills</title>
+    <link href="https://gerriscorp.com/guides/restore-drills/"/>
+    <id>https://gerriscorp.com/guides/restore-drills/</id>
+    <published>2026-10-26T12:00:00Z</published>
+    <updated>2026-10-26T12:00:00Z</updated>
+    <summary>A backup is only proven when you have restored from it. How I run a website restore drill, what to time and record, and the gaps it usually uncovers.</summary>
+    <content type="html">&lt;h1&gt;Website restore drills&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-26"&gt;October 26, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Every hosting plan and every WordPress backup plugin promises backups. Few owners have ever restored one. The first restore usually happens during an emergency: the site is hacked, a plugin update breaks the checkout, a developer deletes the wrong folder. That's when people find out the backup excluded the uploads folder, the database export is from March, or the only person with the hosting password is on a plane. A restore drill finds all of that on a quiet afternoon instead.&lt;/p&gt;
+
+&lt;h2&gt;What the agencies say&lt;/h2&gt;
+&lt;p&gt;CISA's #StopRansomware Guide tells organizations to maintain offline, encrypted backups of critical data and to regularly test the availability and integrity of those backups in a disaster recovery scenario. It separately advises testing backup procedures on a regular basis. NIST's contingency planning guide for federal systems treats testing and exercises as part of the plan itself. Neither document is written for a small business website, but the principle carries over without change: an untested backup is a hope.&lt;/p&gt;
+
+&lt;h2&gt;Decide what you're protecting&lt;/h2&gt;
+&lt;p&gt;List what the site is made of. For a typical WordPress site that's the database, the uploads folder, the theme and plugins, the configuration file, and the DNS records. For a static site in a Git repository, it's the repository, the build settings, the hosting configuration, and DNS. For a store, add product data, orders, customer accounts, and the payment and shipping integrations.&lt;/p&gt;
+&lt;p&gt;Then set two numbers with the owner. The first is how much recent work you can afford to lose: a day of orders, an hour, none. The second is how long the site can be down before it costs real money. Those two answers decide how often backups run and how fast a restore has to be.&lt;/p&gt;
+
+&lt;h2&gt;Restore somewhere safe&lt;/h2&gt;
+&lt;p&gt;Never drill on the live site. Restore to a staging server, a local machine, or a fresh hosting account, on a temporary address blocked from search engines. The point is to rebuild the site from nothing but the backup and the written instructions, the way you would if the original server were gone.&lt;/p&gt;
+&lt;p&gt;Use the most recent backup, not a specially prepared one. Have someone other than the person who set up the backups run the drill, following only what's written down. Every question they have to ask is a gap in the instructions.&lt;/p&gt;
+
+&lt;h2&gt;What to check on the restored copy&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Completeness.&lt;/strong&gt; Every page loads, images appear, downloads work, and the newest content is there.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Freshness.&lt;/strong&gt; The latest post, product, or order in the restored copy matches what the backup schedule promises.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Function.&lt;/strong&gt; Forms submit, search works, logins work, a test order goes through in the store's test mode.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Settings.&lt;/strong&gt; Redirects, robots rules, canonical tags, and the analytics tag are all present, since these live in places backups often skip.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Secrets.&lt;/strong&gt; API keys, mail settings, and payment credentials can be found and re-entered from a secure store.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Time it and write it down&lt;/h2&gt;
+&lt;p&gt;Record when the drill started, when the site was usable, and every step in between. Note each problem: a missing file, a version mismatch, a password nobody had, a step that took an hour because nobody had done it before. The record becomes the runbook for the real event and shows how close you are to the downtime the owner agreed to.&lt;/p&gt;
+
+&lt;h2&gt;Gaps a drill usually uncovers&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The backup lives on the same server as the site, so it would be lost with it.&lt;/li&gt;
+  &lt;li&gt;The plugin backs up the database but not the uploads, or the reverse.&lt;/li&gt;
+  &lt;li&gt;The backup is encrypted, and the key is stored only on the server being protected.&lt;/li&gt;
+  &lt;li&gt;Backups stopped months ago when a card expired or a storage quota filled, and nobody was told.&lt;/li&gt;
+  &lt;li&gt;DNS records were never saved, so pointing a new server at the domain means rebuilding them from memory.&lt;/li&gt;
+  &lt;li&gt;The hosting account, registrar, and DNS host logins belong to someone who has left.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of those is easy to fix once seen. CISA's offline-copy advice addresses the first and third: keep at least one copy somewhere an attacker on the server can't reach or erase.&lt;/p&gt;
+
+&lt;h2&gt;How often&lt;/h2&gt;
+&lt;p&gt;Run a full drill once a year and after any major change: a new host, a redesign, a new backup tool, a platform migration. Check every month that the latest backup exists and has a sensible size. A backup file that's suddenly much smaller than last month's is often the first sign something has stopped being included.&lt;/p&gt;
+
+&lt;h2&gt;The static site advantage&lt;/h2&gt;
+&lt;p&gt;A static site kept in a Git repository carries its own history. Every version of every page is in the repository, and a copy of the repository on any laptop is a full backup. Restoring means pointing a new host at the repository and rebuilding. The drill still matters, because DNS, hosting settings, and form handlers live outside the repository, but the hardest part of the problem is already solved.&lt;/p&gt;
+
+&lt;p&gt;When a site needs a fast rebuild after an incident, the record-keeping side is in my guide to &lt;a href="https://gerriscorp.com/guides/website-incident-timeline/"&gt;the website incident timeline&lt;/a&gt;. Backups and restore drills are part of &lt;a href="https://gerriscorp.com/services/wordpress-care/"&gt;WordPress care&lt;/a&gt;, and when an old site needs saving outright, see &lt;a href="https://gerriscorp.com/guides/freeze-old-website/"&gt;freezing an old website as static HTML&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://www.cisa.gov/stopransomware/ransomware-guide"&gt;CISA: #StopRansomware Guide (September 2023)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"&gt;NIST: Contingency Planning Guide for Federal Information Systems, SP 800-34 Rev. 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
+    <title>The European Accessibility Act for US companies</title>
+    <link href="https://gerriscorp.com/guides/european-accessibility-act/"/>
+    <id>https://gerriscorp.com/guides/european-accessibility-act/</id>
+    <published>2026-10-26T12:00:00Z</published>
+    <updated>2026-10-26T12:00:00Z</updated>
+    <summary>Since June 28, 2025, sites selling to EU consumers must meet the European Accessibility Act. Who it covers, the microenterprise exemption, and what to fix.</summary>
+    <content type="html">&lt;h1&gt;The European Accessibility Act for US companies&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-26"&gt;October 26, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;American companies tend to think about web accessibility through the ADA and the demand letters that come with it. If you sell online to consumers in the European Union, a second law has applied since June 28, 2025: the European Accessibility Act, Directive (EU) 2019/882. It reaches past EU borders, it names e-commerce explicitly, and each member state enforces it with its own penalties. Here is what it asks of a US business and how to tell whether yours is in scope.&lt;/p&gt;
+&lt;p&gt;This is a practitioner's guide, not legal advice. For a specific market or a complaint, talk to counsel in that country.&lt;/p&gt;
+
+&lt;h2&gt;Who it covers&lt;/h2&gt;
+&lt;p&gt;The directive defines a service provider as anyone who provides a service on the Union market or makes offers to provide one to consumers in the EU. Location isn't the test. A Delaware company with a Shopify store that ships to France and takes euros is making offers to consumers in the Union.&lt;/p&gt;
+&lt;p&gt;The services listed in Article 2 include e-commerce services, consumer banking, e-books and the software for reading them, telephony, audiovisual media services, and the websites, apps, and electronic tickets of air, bus, rail, and water passenger transport. E-commerce is defined broadly: services provided at a distance, through websites and mobile apps, by electronic means, at a consumer's request, with a view to concluding a consumer contract. In plain terms, if a European shopper can buy from you online, your storefront is in scope.&lt;/p&gt;
+&lt;p&gt;The act also covers products, such as computers, smartphones, e-readers, ATMs, and ticket machines, placed on the market after June 28, 2025. Most of my clients are affected by the services side.&lt;/p&gt;
+
+&lt;h2&gt;The microenterprise exemption&lt;/h2&gt;
+&lt;p&gt;Microenterprises that provide services are exempt from the accessibility requirements. The directive defines a microenterprise as one employing fewer than 10 people with annual turnover or an annual balance sheet total of no more than 2 million euros. Both parts apply: a nine-person company with 5 million euros in turnover and a 5 million euro balance sheet is not a microenterprise. The exemption covers services only, so a tiny company making a covered product still has to comply.&lt;/p&gt;
+&lt;p&gt;A company that grows past ten people loses the exemption, and the directive gives no grace period for crossing the line. If you're near it, plan the accessibility work before the hire that tips you over.&lt;/p&gt;
+
+&lt;h2&gt;What the standard looks like in practice&lt;/h2&gt;
+&lt;p&gt;The directive's annex sets out functional requirements: content that can be perceived, operated, understood, and used with assistive technology. The annex itself never names WCAG. The European harmonised standard for digital accessibility, EN 301 549, is the usual benchmark, and its web requirements follow WCAG 2.1 at Level AA. Meeting WCAG 2.2 AA, the current W3C version, covers that and a little more.&lt;/p&gt;
+&lt;p&gt;For an online store, the failures I find most often are the same ones behind US lawsuits:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Product images with no text alternative, or alternatives that say "image."&lt;/li&gt;
+  &lt;li&gt;Text with too little contrast against its background, especially prices and buttons.&lt;/li&gt;
+  &lt;li&gt;Form fields at checkout without labels, so screen readers announce "edit text" and nothing more.&lt;/li&gt;
+  &lt;li&gt;Menus, filters, and size pickers that can't be used with a keyboard.&lt;/li&gt;
+  &lt;li&gt;Error messages shown only in red, or not announced at all.&lt;/li&gt;
+  &lt;li&gt;Pop-ups and cookie banners that trap keyboard focus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Beyond the website&lt;/h2&gt;
+&lt;p&gt;The act asks for accessible information about the service itself, not only an accessible interface. Providers are expected to explain in their terms or a similar document how the service meets the requirements. A short accessibility statement, linked from the footer, that says what standard you work to, what's known to be incomplete, and how a customer can get help or report a barrier, does that job and is a sensible habit in any market.&lt;/p&gt;
+
+&lt;h2&gt;Transitional periods&lt;/h2&gt;
+&lt;p&gt;Article 32 lets member states allow service providers to keep using products they lawfully used before the deadline to deliver similar services until June 28, 2030. It also lets them keep self-service terminals in use to the end of their useful life, up to 20 years. A website gets no five-year pass from either provision. A store that launches or redesigns today should meet the requirements now.&lt;/p&gt;
+
+&lt;h2&gt;Enforcement&lt;/h2&gt;
+&lt;p&gt;Each member state wrote the directive into national law and chose its own enforcement body and penalties, so the consequences differ between Germany, France, Ireland, and the rest. Market surveillance authorities can require fixes and, in some countries, restrict a non-compliant service. Consumers and disability organizations can also complain. A US business with a meaningful share of EU sales should know which countries matter most and how each one enforces.&lt;/p&gt;
+
+&lt;h2&gt;Where to start&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Confirm whether you sell to EU consumers and whether the microenterprise exemption applies.&lt;/li&gt;
+  &lt;li&gt;Test your checkout from product page to confirmation with a keyboard and a screen reader.&lt;/li&gt;
+  &lt;li&gt;Fix the templates first, because one fixed product template fixes every product page.&lt;/li&gt;
+  &lt;li&gt;Publish an accessibility statement with a contact route.&lt;/li&gt;
+  &lt;li&gt;Skip overlay widgets; they don't change the underlying code that the standard measures.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The US side of the same work is in my guide to &lt;a href="https://gerriscorp.com/guides/ada-website-compliance/"&gt;ADA website compliance&lt;/a&gt;. For a store that needs the fixes made, see &lt;a href="https://gerriscorp.com/services/accessibility/"&gt;accessibility remediation&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://eur-lex.europa.eu/eli/dir/2019/882/oj"&gt;EUR-Lex: Directive (EU) 2019/882 on the accessibility requirements for products and services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/union-equality-strategy-rights-persons-disabilities-2021-2030/european-accessibility-act_en"&gt;European Commission: European Accessibility Act&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.w3.org/TR/WCAG22/"&gt;W3C: Web Content Accessibility Guidelines (WCAG) 2.2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
+    <title>Domain security: the registrar account comes first</title>
+    <link href="https://gerriscorp.com/guides/domain-account-security/"/>
+    <id>https://gerriscorp.com/guides/domain-account-security/</id>
+    <published>2026-10-26T12:00:00Z</published>
+    <updated>2026-10-26T12:00:00Z</updated>
+    <summary>Who holds the login to your domain decides who controls your website and email. Registrar locks, Registry Lock, two-factor access, and DNSSEC, in order.</summary>
+    <content type="html">&lt;h1&gt;Domain security: the registrar account comes first&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-26"&gt;October 26, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Every website and every company email address depends on one login at a domain registrar. Whoever controls that account can point the website anywhere, read the mail by changing the MX records, and issue new security certificates in the company's name. In practice that account often belongs to a founder's personal email, a departed employee, or a web designer from years ago, protected by a password and nothing else. This guide covers the protections in the order I put them in place.&lt;/p&gt;
+
+&lt;h2&gt;Find out who holds the account&lt;/h2&gt;
+&lt;p&gt;Start with an inventory. For every domain the company uses, record the registrar, the account it sits in, the email address on that account, who can log in, and when the domain renews. Include the domains nobody thinks about: the old brand name that still redirects, the product site from a past campaign, the domain that only sends email. Then check where DNS is hosted, since that can be a different company with a different login.&lt;/p&gt;
+&lt;p&gt;The account should belong to the company, registered to a shared role address such as domains@ on the company's own domain, with at least two named people able to log in. A domain in a personal account belongs, in every practical sense, to that person.&lt;/p&gt;
+
+&lt;h2&gt;Turn on two-factor authentication everywhere&lt;/h2&gt;
+&lt;p&gt;In January 2019, after a wave of DNS hijacking against government domains, the US Cybersecurity and Infrastructure Security Agency issued Emergency Directive 19-01. It required federal agencies to audit their DNS records, change the passwords on every account that could alter them, including registrar accounts, add multi-factor authentication to those accounts, and watch certificate transparency logs for certificates they hadn't requested. CISA recommended phishing-resistant factors and advised against text-message codes.&lt;/p&gt;
+&lt;p&gt;That list was written for agencies and fits any company. Use a hardware key or an authenticator app on the registrar and the DNS host. Store recovery codes where the company, not one person, can find them.&lt;/p&gt;
+
+&lt;h2&gt;Registrar lock&lt;/h2&gt;
+&lt;p&gt;A registrar lock sets status codes at the registry that refuse certain requests. ICANN's explanation of these EPP status codes describes clientTransferProhibited, which tells the registry to reject transfers to another registrar; clientDeleteProhibited, which rejects deletion; and clientUpdateProhibited, which rejects changes. Most registrars switch on the transfer lock by default and show it as a single toggle. Check that it's on for every domain.&lt;/p&gt;
+&lt;p&gt;You can look up any domain's status codes with a public lookup tool. If clientTransferProhibited is missing on a domain that matters, fix that before anything else on this list.&lt;/p&gt;
+
+&lt;h2&gt;Registry Lock for the domains that matter most&lt;/h2&gt;
+&lt;p&gt;A registrar lock can be removed by anyone who gets into the registrar account. Registry Lock goes a level higher. Some registry operators offer it through participating registrars, and it sets server status codes that only the registry can lift, usually after a manual, out-of-band confirmation from named contacts. ICANN notes that server statuses take precedence over client statuses and take longer to remove. That delay is the point. Registry Lock costs money and makes legitimate changes slower, so I recommend it for the primary domain of a company whose revenue or reputation depends on it.&lt;/p&gt;
+
+&lt;h2&gt;Auto-renew and a payment card that works&lt;/h2&gt;
+&lt;p&gt;More domains are lost to expired cards than to attackers. Turn on auto-renew, attach a company card that someone watches, and set a renewal of several years for the main domain. Make sure renewal notices go to the shared role address, not to someone who left.&lt;/p&gt;
+
+&lt;h2&gt;DNSSEC&lt;/h2&gt;
+&lt;p&gt;DNSSEC adds digital signatures to DNS records so that resolvers can detect forged answers. ICANN describes it as protection against attackers redirecting users to a fake site by tampering with DNS responses. Many DNS hosts now enable it with one setting, and the registrar then publishes the matching record at the registry. It's worth turning on where your DNS host supports it, with one warning: if you move DNS providers later, disable DNSSEC or move the keys first, or the domain can stop resolving.&lt;/p&gt;
+
+&lt;h2&gt;Watch for changes&lt;/h2&gt;
+&lt;p&gt;Set registrar notifications for any change to contacts, nameservers, or lock status. Subscribe to certificate transparency alerts for your domains through a free monitoring service, so a certificate you didn't request shows up as an email. Review the DNS records once a quarter against a saved copy, and remove records for services you no longer use, since a stale record pointing at an abandoned service can be taken over.&lt;/p&gt;
+
+&lt;h2&gt;The short version&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Every domain in a company-owned account, with two people who can log in.&lt;/li&gt;
+  &lt;li&gt;Two-factor authentication on the registrar and the DNS host, without text messages.&lt;/li&gt;
+  &lt;li&gt;Transfer lock on for every domain; Registry Lock on the main one.&lt;/li&gt;
+  &lt;li&gt;Auto-renew with a monitored card and notices to a shared address.&lt;/li&gt;
+  &lt;li&gt;DNSSEC on where the DNS host supports it.&lt;/li&gt;
+  &lt;li&gt;Alerts for changes and for new certificates.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mail records are covered in my guide to &lt;a href="https://gerriscorp.com/guides/email-authentication/"&gt;email authentication&lt;/a&gt;. If a company has dozens of domains spread across accounts, I run the inventory and consolidation as a &lt;a href="https://gerriscorp.com/services/domain-portfolio/"&gt;domain portfolio audit&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en"&gt;ICANN: EPP status codes, what do they mean&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.cisa.gov/news-events/directives/ed-19-01-mitigate-dns-infrastructure-tampering"&gt;CISA: Emergency Directive 19-01, Mitigate DNS infrastructure tampering (Jan 22, 2019)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en"&gt;ICANN: DNSSEC, what is it and why is it important&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
+    <title>How to write a company AI use policy</title>
+    <link href="https://gerriscorp.com/guides/ai-use-policy/"/>
+    <id>https://gerriscorp.com/guides/ai-use-policy/</id>
+    <published>2026-10-26T12:00:00Z</published>
+    <updated>2026-10-26T12:00:00Z</updated>
+    <summary>A practical AI use policy for a small company: approved tools, what data never goes into a chatbot, review before publishing, disclosure, and who owns it.</summary>
+    <content type="html">&lt;h1&gt;How to write a company AI use policy&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-26"&gt;October 26, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Your staff already use AI. Someone pastes a client email into ChatGPT to draft a reply, someone asks Claude to tidy a spreadsheet, someone has an AI note-taker joining calls. Without a policy, each person makes their own rules about what's safe to share and what needs checking. A good AI use policy is short, specific, and written for the people who'll follow it. Here is how I draft one with a client.&lt;/p&gt;
+
+&lt;h2&gt;Start from what people already do&lt;/h2&gt;
+&lt;p&gt;Before writing a word, ask. A short anonymous survey or a few conversations will tell you which tools are in use, on which accounts, and for what tasks. You'll find personal free accounts handling company data, browser extensions nobody approved, and a few people doing careful, useful work worth turning into standard practice. A policy that bans what everyone already does gets ignored; one that starts from real use gets followed.&lt;/p&gt;
+
+&lt;h2&gt;Approved tools and accounts&lt;/h2&gt;
+&lt;p&gt;Name the tools staff may use and the accounts they must use them through. Business and enterprise plans from the major AI providers generally offer terms that personal accounts don't, such as commitments not to train on your data, admin controls, and data retention settings. Read the terms of the plan you choose and write the result into the policy in one sentence. Personal accounts for company work should be off the list.&lt;/p&gt;
+&lt;p&gt;Include the AI features built into tools you already pay for: the writing assistant in your email suite, the meeting summarizer in your video platform, the AI in your CRM. Each one sends data somewhere, and staff can't tell which are approved unless the policy says.&lt;/p&gt;
+
+&lt;h2&gt;Data that never goes in&lt;/h2&gt;
+&lt;p&gt;This is the section that prevents the worst outcomes, so make it concrete. List the categories: client confidential information, personal data about customers or employees, health or financial records, passwords and API keys, unreleased financial results, and anything covered by a non-disclosure agreement. Give examples from your own business. "Don't paste the client's contract into a chatbot" is clearer than "protect sensitive information."&lt;/p&gt;
+&lt;p&gt;Say what to do instead: remove names and identifying details, use an approved enterprise tool for confidential work, or ask before using AI at all.&lt;/p&gt;
+
+&lt;h2&gt;A human checks before anything goes out&lt;/h2&gt;
+&lt;p&gt;AI tools state wrong facts fluently. Every piece of AI-assisted work that leaves the company, whether a client report, a published article, code in production, or a social post, needs a named person who has checked it and stands behind it. For facts, that means checking against the source, not asking the AI whether it was right. For code, it means review and tests. NIST's Generative AI Profile lists confabulation, its term for confidently stated false content, among the main risks of these systems, and the cure is a human with the time and duty to check.&lt;/p&gt;
+
+&lt;h2&gt;Disclosure&lt;/h2&gt;
+&lt;p&gt;Decide when the company tells clients and the public that AI was used. Some industries and clients require disclosure; some contracts forbid AI use on their work entirely. Check client contracts and put the answer in the policy. Never use AI to produce fake customer reviews or testimonials; the FTC's rule on consumer reviews, in force since October 21, 2024, treats AI-generated fake reviews the same as any other fake review.&lt;/p&gt;
+
+&lt;h2&gt;Meetings and recordings&lt;/h2&gt;
+&lt;p&gt;AI note-takers raise a question the rest of the policy doesn't: consent. Some US states require every party's consent before recording a call. Set a rule that the host announces any recording or AI note-taker at the start, and that anyone can ask for it to be turned off. Decide where transcripts are stored and how long they're kept.&lt;/p&gt;
+
+&lt;h2&gt;Ownership and review&lt;/h2&gt;
+&lt;p&gt;Name one person who owns the policy, answers questions, and approves new tools. Review it twice a year, because the tools change that often. NIST's AI Risk Management Framework, voluntary guidance published in January 2023, organizes the work into four functions: govern, map, measure, and manage. A small company doesn't need the full framework, but the first function, governance with clear ownership, is the part that makes the rest happen.&lt;/p&gt;
+
+&lt;h2&gt;Keep it to two pages&lt;/h2&gt;
+&lt;p&gt;A policy people read beats a thorough one they don't. Two pages, plain language, with examples from your own work. Put the approved tools list and the never-share list at the top, since those are what people will look up. Train once, with real examples, and repeat when the policy changes.&lt;/p&gt;
+
+&lt;h2&gt;A starting outline&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Purpose, in two sentences.&lt;/li&gt;
+  &lt;li&gt;Approved tools, plans, and accounts.&lt;/li&gt;
+  &lt;li&gt;Data that never goes into an AI tool, with examples.&lt;/li&gt;
+  &lt;li&gt;Review: who checks AI-assisted work before it leaves.&lt;/li&gt;
+  &lt;li&gt;Disclosure to clients and the public.&lt;/li&gt;
+  &lt;li&gt;Recordings and AI note-takers.&lt;/li&gt;
+  &lt;li&gt;How to request a new tool, and who owns the policy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For companies weighing AI tools before writing the rules, see my guide to &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;judging an AI vendor's pitch&lt;/a&gt; and the one on &lt;a href="https://gerriscorp.com/guides/ai-pilot-tests/"&gt;running AI pilot tests&lt;/a&gt;. I draft and train on these policies as &lt;a href="https://gerriscorp.com/services/ai-policy/"&gt;AI policy and staff training&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://www.nist.gov/itl/ai-risk-management-framework"&gt;NIST: AI Risk Management Framework 1.0 (Jan 26, 2023)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://doi.org/10.6028/NIST.AI.600-1"&gt;NIST: Artificial Intelligence Risk Management Framework, Generative Artificial Intelligence Profile, NIST AI 600-1 (July 26, 2024)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers"&gt;Federal Trade Commission: Consumer Reviews and Testimonials Rule, questions and answers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
+    <title>Glossary of SEO, AI search, and technical website terms</title>
+    <link href="https://gerriscorp.com/guides/glossary/"/>
+    <id>https://gerriscorp.com/guides/glossary/</id>
+    <published>2026-10-05T12:00:00Z</published>
+    <updated>2026-10-26T12:00:00Z</updated>
+    <summary>Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.</summary>
+    <content type="html">&lt;h1&gt;Glossary of SEO, AI search, and technical website terms&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-26"&gt;October 26, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The &lt;a href="https://gerriscorp.com/site-index/"&gt;index&lt;/a&gt; lists every page where a term comes up.&lt;/p&gt;
+
+&lt;dl class="glossary"&gt;
+  &lt;dt id="301-redirect"&gt;301 redirect&lt;/dt&gt;
+  &lt;dd&gt;A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.&lt;/dd&gt;
+  &lt;dt id="acceptance-criteria"&gt;Acceptance criteria&lt;/dt&gt;
+  &lt;dd&gt;The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.&lt;/dd&gt;
+  &lt;dt id="aeo"&gt;AEO (answer engine optimization)&lt;/dt&gt;
+  &lt;dd&gt;Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.&lt;/dd&gt;
+  &lt;dt id="ai-mode"&gt;AI Mode&lt;/dt&gt;
+  &lt;dd&gt;Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.&lt;/dd&gt;
+  &lt;dt id="ai-overviews"&gt;AI Overviews&lt;/dt&gt;
+  &lt;dd&gt;The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.&lt;/dd&gt;
+  &lt;dt id="ai-washing"&gt;AI washing&lt;/dt&gt;
+  &lt;dd&gt;Claiming artificial intelligence a product doesn't really use, or overstating what its AI does. The SEC brought its first AI washing cases in March 2024; see &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;how to vet an AI vendor's pitch&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="alt-text"&gt;Alt text&lt;/dt&gt;
+  &lt;dd&gt;A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.&lt;/dd&gt;
+  &lt;dt id="amaras-law"&gt;Amara's law&lt;/dt&gt;
+  &lt;dd&gt;Roy Amara's observation that people overestimate a technology's effect in the short run and underestimate it in the long run. It's the first test in &lt;a href="https://gerriscorp.com/guides/hype-or-shift/"&gt;hype or real shift&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="bimi"&gt;BIMI&lt;/dt&gt;
+  &lt;dd&gt;Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.&lt;/dd&gt;
+  &lt;dt id="bing-webmaster-tools"&gt;Bing Webmaster Tools&lt;/dt&gt;
+  &lt;dd&gt;Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.&lt;/dd&gt;
+  &lt;dt id="canonical-tag"&gt;Canonical tag&lt;/dt&gt;
+  &lt;dd&gt;A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.&lt;/dd&gt;
+  &lt;dt id="cdn"&gt;CDN (content delivery network)&lt;/dt&gt;
+  &lt;dd&gt;A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.&lt;/dd&gt;
+  &lt;dt id="citation-gap"&gt;Citation gap&lt;/dt&gt;
+  &lt;dd&gt;A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a &lt;a href="https://gerriscorp.com/guides/citation-gap-analysis/"&gt;citation gap analysis&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="cls"&gt;CLS (Cumulative Layout Shift)&lt;/dt&gt;
+  &lt;dd&gt;A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.&lt;/dd&gt;
+  &lt;dt id="confabulation"&gt;Confabulation&lt;/dt&gt;
+  &lt;dd&gt;NIST's term for a generative AI system stating false information with confidence. The reason AI-assisted work needs a human check. See &lt;a href="https://gerriscorp.com/guides/ai-use-policy/"&gt;AI use policy&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="content-brief"&gt;Content brief&lt;/dt&gt;
+  &lt;dd&gt;A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See &lt;a href="https://gerriscorp.com/guides/content-briefs/"&gt;writing a content brief&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="core-update"&gt;Core update&lt;/dt&gt;
+  &lt;dd&gt;A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.&lt;/dd&gt;
+  &lt;dt id="core-web-vitals"&gt;Core Web Vitals&lt;/dt&gt;
+  &lt;dd&gt;Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.&lt;/dd&gt;
+  &lt;dt id="crawl-budget"&gt;Crawl budget&lt;/dt&gt;
+  &lt;dd&gt;How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.&lt;/dd&gt;
+  &lt;dt id="crawled-currently-not-indexed"&gt;Crawled, currently not indexed&lt;/dt&gt;
+  &lt;dd&gt;A Google Search Console status meaning Google fetched a page and chose not to index it. See the &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;full guide&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="crawler-hints"&gt;Crawler Hints&lt;/dt&gt;
+  &lt;dd&gt;A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.&lt;/dd&gt;
+  &lt;dt id="discovered-currently-not-indexed"&gt;Discovered, currently not indexed&lt;/dt&gt;
+  &lt;dd&gt;A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.&lt;/dd&gt;
+  &lt;dt id="dkim"&gt;DKIM&lt;/dt&gt;
+  &lt;dd&gt;DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.&lt;/dd&gt;
+  &lt;dt id="dmarc"&gt;DMARC&lt;/dt&gt;
+  &lt;dd&gt;A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.&lt;/dd&gt;
+  &lt;dt id="dnssec"&gt;DNSSEC&lt;/dt&gt;
+  &lt;dd&gt;Signatures added to DNS records so resolvers can reject forged answers. Turn it off or move the keys before changing DNS hosts. See &lt;a href="https://gerriscorp.com/guides/domain-account-security/"&gt;domain security&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="e-e-a-t"&gt;E-E-A-T&lt;/dt&gt;
+  &lt;dd&gt;Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.&lt;/dd&gt;
+  &lt;dt id="email-blocklist"&gt;Email blocklist&lt;/dt&gt;
+  &lt;dd&gt;A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see &lt;a href="https://gerriscorp.com/guides/email-blocklist-recovery/"&gt;blocklist recovery&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="endorsement-guides"&gt;Endorsement Guides&lt;/dt&gt;
+  &lt;dd&gt;The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in &lt;a href="https://gerriscorp.com/guides/vet-an-influencer/"&gt;the creator vetting guide&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="european-accessibility-act"&gt;European Accessibility Act&lt;/dt&gt;
+  &lt;dd&gt;EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See &lt;a href="https://gerriscorp.com/guides/european-accessibility-act/"&gt;the EAA guide&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="geo"&gt;GEO (generative engine optimization)&lt;/dt&gt;
+  &lt;dd&gt;Making a business and its content easy for AI systems to find, understand, and cite in generated answers.&lt;/dd&gt;
+  &lt;dt id="git"&gt;Git&lt;/dt&gt;
+  &lt;dd&gt;The version control system almost every software team uses. It records each change to a set of files, who made it, and why, so any version can be restored.&lt;/dd&gt;
+  &lt;dt id="google-search-console"&gt;Google Search Console&lt;/dt&gt;
+  &lt;dd&gt;Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.&lt;/dd&gt;
+  &lt;dt id="hreflang"&gt;hreflang&lt;/dt&gt;
+  &lt;dd&gt;An annotation that tells search engines which language or regional version of a page to show to which users.&lt;/dd&gt;
+  &lt;dt id="hsts"&gt;HSTS (HTTP Strict Transport Security)&lt;/dt&gt;
+  &lt;dd&gt;A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.&lt;/dd&gt;
+  &lt;dt id="hype-cycle"&gt;Hype cycle&lt;/dt&gt;
+  &lt;dd&gt;Gartner's curve for a new technology's reputation: a trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity.&lt;/dd&gt;
+  &lt;dt id="indexnow"&gt;IndexNow&lt;/dt&gt;
+  &lt;dd&gt;An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.&lt;/dd&gt;
+  &lt;dt id="inp"&gt;INP (Interaction to Next Paint)&lt;/dt&gt;
+  &lt;dd&gt;A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.&lt;/dd&gt;
+  &lt;dt id="json-ld"&gt;JSON-LD&lt;/dt&gt;
+  &lt;dd&gt;A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.&lt;/dd&gt;
+  &lt;dt id="lcp"&gt;LCP (Largest Contentful Paint)&lt;/dt&gt;
+  &lt;dd&gt;A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.&lt;/dd&gt;
+  &lt;dt id="llms-txt"&gt;llms.txt&lt;/dt&gt;
+  &lt;dd&gt;A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes &lt;a href="https://gerriscorp.com/llms.txt"&gt;one&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="material-connection"&gt;Material connection&lt;/dt&gt;
+  &lt;dd&gt;Any tie between an endorser and a brand that the audience wouldn't expect, such as payment, free product, family, or employment. The FTC expects it disclosed in each post. See &lt;a href="https://gerriscorp.com/guides/vet-an-influencer/"&gt;vetting a creator before a sponsorship&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="meta-description"&gt;Meta description&lt;/dt&gt;
+  &lt;dd&gt;A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.&lt;/dd&gt;
+  &lt;dt id="oai-searchbot"&gt;OAI-SearchBot&lt;/dt&gt;
+  &lt;dd&gt;OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.&lt;/dd&gt;
+  &lt;dt id="orange-cloud"&gt;Orange cloud (proxied)&lt;/dt&gt;
+  &lt;dd&gt;A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.&lt;/dd&gt;
+  &lt;dt id="pull-request"&gt;Pull request&lt;/dt&gt;
+  &lt;dd&gt;A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see &lt;a href="https://gerriscorp.com/guides/hiring-developers/"&gt;hiring developers&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="readme"&gt;README&lt;/dt&gt;
+  &lt;dd&gt;The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see &lt;a href="https://gerriscorp.com/guides/readme-ai-source/"&gt;your README is a source AI reads&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="registrar-lock"&gt;Registrar lock&lt;/dt&gt;
+  &lt;dd&gt;Status codes such as clientTransferProhibited that tell the registry to refuse transfers, deletions, or updates until the account holder lifts them. Registry Lock is the stricter, registry-level version.&lt;/dd&gt;
+  &lt;dt id="repository"&gt;Repository&lt;/dt&gt;
+  &lt;dd&gt;The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.&lt;/dd&gt;
+  &lt;dt id="restore-drill"&gt;Restore drill&lt;/dt&gt;
+  &lt;dd&gt;Rebuilding a website from its backup on a separate server, timed and written down, to prove the backup is complete before an emergency. See &lt;a href="https://gerriscorp.com/guides/restore-drills/"&gt;restore drills&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="robots-txt"&gt;robots.txt&lt;/dt&gt;
+  &lt;dd&gt;A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.&lt;/dd&gt;
+  &lt;dt id="scaled-content-abuse"&gt;Scaled content abuse&lt;/dt&gt;
+  &lt;dd&gt;The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.&lt;/dd&gt;
+  &lt;dt id="schema-org"&gt;Schema.org&lt;/dt&gt;
+  &lt;dd&gt;The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.&lt;/dd&gt;
+  &lt;dt id="server-side-rendering"&gt;Server-side rendering&lt;/dt&gt;
+  &lt;dd&gt;Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.&lt;/dd&gt;
+  &lt;dt id="site-reputation-abuse"&gt;Site reputation abuse&lt;/dt&gt;
+  &lt;dd&gt;Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.&lt;/dd&gt;
+  &lt;dt id="soft-404"&gt;Soft 404&lt;/dt&gt;
+  &lt;dd&gt;A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.&lt;/dd&gt;
+  &lt;dt id="spam-update"&gt;Spam update&lt;/dt&gt;
+  &lt;dd&gt;An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.&lt;/dd&gt;
+  &lt;dt id="speculation-rules"&gt;Speculation rules&lt;/dt&gt;
+  &lt;dd&gt;A JSON block in a script tag that tells Chrome and Edge which links to prefetch or prerender before the reader clicks, so the next page opens at once. See &lt;a href="https://gerriscorp.com/guides/speculation-rules/"&gt;speculation rules&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="spf"&gt;SPF&lt;/dt&gt;
+  &lt;dd&gt;Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.&lt;/dd&gt;
+  &lt;dt id="structured-data"&gt;Structured data&lt;/dt&gt;
+  &lt;dd&gt;Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.&lt;/dd&gt;
+  &lt;dt id="title-tag"&gt;Title tag&lt;/dt&gt;
+  &lt;dd&gt;The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.&lt;/dd&gt;
+  &lt;dt id="ttfb"&gt;TTFB (time to first byte)&lt;/dt&gt;
+  &lt;dd&gt;How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.&lt;/dd&gt;
+  &lt;dt id="wcag"&gt;WCAG (Web Content Accessibility Guidelines)&lt;/dt&gt;
+  &lt;dd&gt;The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See &lt;a href="https://gerriscorp.com/services/accessibility/"&gt;accessibility remediation&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="xml-sitemap"&gt;XML sitemap&lt;/dt&gt;
+  &lt;dd&gt;A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p class="related"&gt;Want these applied to your site? See &lt;a href="https://gerriscorp.com/services/"&gt;services&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
   <entry>
     <title>Build a website incident timeline before changing code</title>
     <link href="https://gerriscorp.com/guides/website-incident-timeline/"/>
@@ -563,146 +981,6 @@ Owner: named developer; destination decisions: named editor.&lt;/code&gt;&lt;/pr
   &lt;li&gt;&lt;a href="https://searchengineland.com/google-ai-overviews-nearly-double-commercial-keywords-498078"&gt;Search Engine Land: Google AI Overviews nearly double on commercial keywords (reporting Semrush tracking, 2026)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/ai-features"&gt;Google Search Central: AI features and your website&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;aside class="author-box" aria-label="About the author"&gt;
-  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
-  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;</content>
-  </entry>
-  <entry>
-    <title>Glossary of SEO, AI search, and technical website terms</title>
-    <link href="https://gerriscorp.com/guides/glossary/"/>
-    <id>https://gerriscorp.com/guides/glossary/</id>
-    <published>2026-10-05T12:00:00Z</published>
-    <updated>2026-10-24T12:00:00Z</updated>
-    <summary>Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.</summary>
-    <content type="html">&lt;h1&gt;Glossary of SEO, AI search, and technical website terms&lt;/h1&gt;
-&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-05"&gt;October 5, 2026&lt;/time&gt; · Updated &lt;time datetime="2026-10-24"&gt;October 24, 2026&lt;/time&gt;&lt;/p&gt;
-&lt;p class="lead"&gt;Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The &lt;a href="https://gerriscorp.com/site-index/"&gt;index&lt;/a&gt; lists every page where a term comes up.&lt;/p&gt;
-
-&lt;dl class="glossary"&gt;
-  &lt;dt id="301-redirect"&gt;301 redirect&lt;/dt&gt;
-  &lt;dd&gt;A permanent redirect from one URL to another. Search engines transfer the old URL's ranking signals to the new one. The 308 status code is also permanent; 302 and 307 are temporary.&lt;/dd&gt;
-  &lt;dt id="acceptance-criteria"&gt;Acceptance criteria&lt;/dt&gt;
-  &lt;dd&gt;The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.&lt;/dd&gt;
-  &lt;dt id="aeo"&gt;AEO (answer engine optimization)&lt;/dt&gt;
-  &lt;dd&gt;Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.&lt;/dd&gt;
-  &lt;dt id="ai-mode"&gt;AI Mode&lt;/dt&gt;
-  &lt;dd&gt;Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.&lt;/dd&gt;
-  &lt;dt id="ai-overviews"&gt;AI Overviews&lt;/dt&gt;
-  &lt;dd&gt;The AI-generated summaries that appear at the top of many Google search results, with links to the pages they draw on.&lt;/dd&gt;
-  &lt;dt id="ai-washing"&gt;AI washing&lt;/dt&gt;
-  &lt;dd&gt;Claiming artificial intelligence a product doesn't really use, or overstating what its AI does. The SEC brought its first AI washing cases in March 2024; see &lt;a href="https://gerriscorp.com/guides/ai-vendor-pitch/"&gt;how to vet an AI vendor's pitch&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="alt-text"&gt;Alt text&lt;/dt&gt;
-  &lt;dd&gt;A text description of an image in the HTML alt attribute, read aloud by screen readers and used by search engines to understand the image.&lt;/dd&gt;
-  &lt;dt id="amaras-law"&gt;Amara's law&lt;/dt&gt;
-  &lt;dd&gt;Roy Amara's observation that people overestimate a technology's effect in the short run and underestimate it in the long run. It's the first test in &lt;a href="https://gerriscorp.com/guides/hype-or-shift/"&gt;hype or real shift&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="bimi"&gt;BIMI&lt;/dt&gt;
-  &lt;dd&gt;Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.&lt;/dd&gt;
-  &lt;dt id="bing-webmaster-tools"&gt;Bing Webmaster Tools&lt;/dt&gt;
-  &lt;dd&gt;Microsoft's free service for monitoring a site in Bing, whose index also feeds Microsoft Copilot and other AI assistants.&lt;/dd&gt;
-  &lt;dt id="canonical-tag"&gt;Canonical tag&lt;/dt&gt;
-  &lt;dd&gt;A link element that tells search engines which URL is the preferred version of a page when several URLs show the same or similar content. Google treats it as a strong hint.&lt;/dd&gt;
-  &lt;dt id="cdn"&gt;CDN (content delivery network)&lt;/dt&gt;
-  &lt;dd&gt;A network of servers around the world that stores copies of a site's files close to visitors, making pages faster and absorbing traffic spikes and attacks. Cloudflare is the best-known example.&lt;/dd&gt;
-  &lt;dt id="citation-gap"&gt;Citation gap&lt;/dt&gt;
-  &lt;dd&gt;A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a &lt;a href="https://gerriscorp.com/guides/citation-gap-analysis/"&gt;citation gap analysis&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="cls"&gt;CLS (Cumulative Layout Shift)&lt;/dt&gt;
-  &lt;dd&gt;A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.&lt;/dd&gt;
-  &lt;dt id="content-brief"&gt;Content brief&lt;/dt&gt;
-  &lt;dd&gt;A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See &lt;a href="https://gerriscorp.com/guides/content-briefs/"&gt;writing a content brief&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="core-update"&gt;Core update&lt;/dt&gt;
-  &lt;dd&gt;A broad recalibration of Google's ranking systems, announced a few times a year and logged on the Search Status Dashboard. Losses after one reflect being outranked, and Google says recovery can take months.&lt;/dd&gt;
-  &lt;dt id="core-web-vitals"&gt;Core Web Vitals&lt;/dt&gt;
-  &lt;dd&gt;Google's three page experience metrics: Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift, measured from real Chrome users.&lt;/dd&gt;
-  &lt;dt id="crawl-budget"&gt;Crawl budget&lt;/dt&gt;
-  &lt;dd&gt;How many URLs a search engine is willing and able to crawl on a site in a given period. It matters mostly for large sites and sites with many low-value URLs.&lt;/dd&gt;
-  &lt;dt id="crawled-currently-not-indexed"&gt;Crawled, currently not indexed&lt;/dt&gt;
-  &lt;dd&gt;A Google Search Console status meaning Google fetched a page and chose not to index it. See the &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;full guide&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="crawler-hints"&gt;Crawler Hints&lt;/dt&gt;
-  &lt;dd&gt;A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.&lt;/dd&gt;
-  &lt;dt id="discovered-currently-not-indexed"&gt;Discovered, currently not indexed&lt;/dt&gt;
-  &lt;dd&gt;A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.&lt;/dd&gt;
-  &lt;dt id="dkim"&gt;DKIM&lt;/dt&gt;
-  &lt;dd&gt;DomainKeys Identified Mail: a cryptographic signature on outgoing email, verified against a public key published in DNS.&lt;/dd&gt;
-  &lt;dt id="dmarc"&gt;DMARC&lt;/dt&gt;
-  &lt;dd&gt;A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.&lt;/dd&gt;
-  &lt;dt id="e-e-a-t"&gt;E-E-A-T&lt;/dt&gt;
-  &lt;dd&gt;Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.&lt;/dd&gt;
-  &lt;dt id="email-blocklist"&gt;Email blocklist&lt;/dt&gt;
-  &lt;dd&gt;A list of IP addresses and domains that spam filters consult to reject or junk mail, also called a DNSBL. Getting off one starts with fixing the cause; see &lt;a href="https://gerriscorp.com/guides/email-blocklist-recovery/"&gt;blocklist recovery&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="endorsement-guides"&gt;Endorsement Guides&lt;/dt&gt;
-  &lt;dd&gt;The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in &lt;a href="https://gerriscorp.com/guides/vet-an-influencer/"&gt;the creator vetting guide&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="geo"&gt;GEO (generative engine optimization)&lt;/dt&gt;
-  &lt;dd&gt;Making a business and its content easy for AI systems to find, understand, and cite in generated answers.&lt;/dd&gt;
-  &lt;dt id="git"&gt;Git&lt;/dt&gt;
-  &lt;dd&gt;The version control system almost every software team uses. It records each change to a set of files, who made it, and why, so any version can be restored.&lt;/dd&gt;
-  &lt;dt id="google-search-console"&gt;Google Search Console&lt;/dt&gt;
-  &lt;dd&gt;Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.&lt;/dd&gt;
-  &lt;dt id="hreflang"&gt;hreflang&lt;/dt&gt;
-  &lt;dd&gt;An annotation that tells search engines which language or regional version of a page to show to which users.&lt;/dd&gt;
-  &lt;dt id="hsts"&gt;HSTS (HTTP Strict Transport Security)&lt;/dt&gt;
-  &lt;dd&gt;A response header that commits browsers to HTTPS for a site for a chosen length of time. Add preload only once every subdomain serves HTTPS, because preload is slow to reverse.&lt;/dd&gt;
-  &lt;dt id="hype-cycle"&gt;Hype cycle&lt;/dt&gt;
-  &lt;dd&gt;Gartner's curve for a new technology's reputation: a trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity.&lt;/dd&gt;
-  &lt;dt id="indexnow"&gt;IndexNow&lt;/dt&gt;
-  &lt;dd&gt;An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.&lt;/dd&gt;
-  &lt;dt id="inp"&gt;INP (Interaction to Next Paint)&lt;/dt&gt;
-  &lt;dd&gt;A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.&lt;/dd&gt;
-  &lt;dt id="json-ld"&gt;JSON-LD&lt;/dt&gt;
-  &lt;dd&gt;A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.&lt;/dd&gt;
-  &lt;dt id="lcp"&gt;LCP (Largest Contentful Paint)&lt;/dt&gt;
-  &lt;dd&gt;A Core Web Vital measuring how long the largest visible element, usually a hero image or headline, takes to appear. Good is 2.5 seconds or less.&lt;/dd&gt;
-  &lt;dt id="llms-txt"&gt;llms.txt&lt;/dt&gt;
-  &lt;dd&gt;A proposed convention, introduced in 2024, for a plain Markdown file at a site's root that summarizes the site and links to its key pages for language models. Adoption by AI companies is still emerging. This site publishes &lt;a href="https://gerriscorp.com/llms.txt"&gt;one&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="material-connection"&gt;Material connection&lt;/dt&gt;
-  &lt;dd&gt;Any tie between an endorser and a brand that the audience wouldn't expect, such as payment, free product, family, or employment. The FTC expects it disclosed in each post. See &lt;a href="https://gerriscorp.com/guides/vet-an-influencer/"&gt;vetting a creator before a sponsorship&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="meta-description"&gt;Meta description&lt;/dt&gt;
-  &lt;dd&gt;A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.&lt;/dd&gt;
-  &lt;dt id="oai-searchbot"&gt;OAI-SearchBot&lt;/dt&gt;
-  &lt;dd&gt;OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.&lt;/dd&gt;
-  &lt;dt id="orange-cloud"&gt;Orange cloud (proxied)&lt;/dt&gt;
-  &lt;dd&gt;A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.&lt;/dd&gt;
-  &lt;dt id="pull-request"&gt;Pull request&lt;/dt&gt;
-  &lt;dd&gt;A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see &lt;a href="https://gerriscorp.com/guides/hiring-developers/"&gt;hiring developers&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="readme"&gt;README&lt;/dt&gt;
-  &lt;dd&gt;The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see &lt;a href="https://gerriscorp.com/guides/readme-ai-source/"&gt;your README is a source AI reads&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="repository"&gt;Repository&lt;/dt&gt;
-  &lt;dd&gt;The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.&lt;/dd&gt;
-  &lt;dt id="robots-txt"&gt;robots.txt&lt;/dt&gt;
-  &lt;dd&gt;A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.&lt;/dd&gt;
-  &lt;dt id="scaled-content-abuse"&gt;Scaled content abuse&lt;/dt&gt;
-  &lt;dd&gt;The spam policy covering mass-produced pages made mainly to rank, by any method, human or machine. Google's 2026 spam updates focused on it.&lt;/dd&gt;
-  &lt;dt id="schema-org"&gt;Schema.org&lt;/dt&gt;
-  &lt;dd&gt;The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.&lt;/dd&gt;
-  &lt;dt id="server-side-rendering"&gt;Server-side rendering&lt;/dt&gt;
-  &lt;dd&gt;Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.&lt;/dd&gt;
-  &lt;dt id="site-reputation-abuse"&gt;Site reputation abuse&lt;/dt&gt;
-  &lt;dd&gt;Hosting third-party pages on an established site so they ride its reputation in search. Google introduced the policy in 2024 and updated it in August 2026.&lt;/dd&gt;
-  &lt;dt id="soft-404"&gt;Soft 404&lt;/dt&gt;
-  &lt;dd&gt;A page that tells visitors it doesn't exist or has nothing to show, while returning a 200 success status. Google treats it as an error.&lt;/dd&gt;
-  &lt;dt id="spam-update"&gt;Spam update&lt;/dt&gt;
-  &lt;dd&gt;An upgrade to the systems that detect violations of Google's spam policies. Unlike a core update, it targets specific behavior, and the sites it catches tend to fall fast.&lt;/dd&gt;
-  &lt;dt id="speculation-rules"&gt;Speculation rules&lt;/dt&gt;
-  &lt;dd&gt;A JSON block in a script tag that tells Chrome and Edge which links to prefetch or prerender before the reader clicks, so the next page opens at once. See &lt;a href="https://gerriscorp.com/guides/speculation-rules/"&gt;speculation rules&lt;/a&gt;.&lt;/dd&gt;
-  &lt;dt id="spf"&gt;SPF&lt;/dt&gt;
-  &lt;dd&gt;Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.&lt;/dd&gt;
-  &lt;dt id="structured-data"&gt;Structured data&lt;/dt&gt;
-  &lt;dd&gt;Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.&lt;/dd&gt;
-  &lt;dt id="title-tag"&gt;Title tag&lt;/dt&gt;
-  &lt;dd&gt;The HTML title of a page, shown in browser tabs and usually as the headline of a search result. Usually 50 to 60 characters.&lt;/dd&gt;
-  &lt;dt id="ttfb"&gt;TTFB (time to first byte)&lt;/dt&gt;
-  &lt;dd&gt;How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.&lt;/dd&gt;
-  &lt;dt id="xml-sitemap"&gt;XML sitemap&lt;/dt&gt;
-  &lt;dd&gt;A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p class="related"&gt;Want these applied to your site? See &lt;a href="https://gerriscorp.com/services/"&gt;services&lt;/a&gt;.&lt;/p&gt;
-&lt;aside class="help-box" aria-label="Get help"&gt;
-  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
-  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
-  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
-&lt;/aside&gt;
 &lt;aside class="author-box" aria-label="About the author"&gt;
   &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
   &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;

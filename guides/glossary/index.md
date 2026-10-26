@@ -1,10 +1,10 @@
 > Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 >
-> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Glossary of SEO, AI search, and technical website terms
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 24, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 26, 2026
 
 Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The [index](https://gerriscorp.com/site-index/) lists every page where a term comes up.
 
@@ -50,6 +50,9 @@ A page AI assistants cite when answering your buyers' questions that names your 
 **CLS (Cumulative Layout Shift)**
 A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
 
+**Confabulation**
+NIST's term for a generative AI system stating false information with confidence. The reason AI-assisted work needs a human check. See [AI use policy](https://gerriscorp.com/guides/ai-use-policy/).
+
 **Content brief**
 A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See [writing a content brief](https://gerriscorp.com/guides/content-briefs/).
 
@@ -77,6 +80,9 @@ DomainKeys Identified Mail: a cryptographic signature on outgoing email, verifie
 **DMARC**
 A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.
 
+**DNSSEC**
+Signatures added to DNS records so resolvers can reject forged answers. Turn it off or move the keys before changing DNS hosts. See [domain security](https://gerriscorp.com/guides/domain-account-security/).
+
 **E-E-A-T**
 Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.
 
@@ -85,6 +91,9 @@ A list of IP addresses and domains that spam filters consult to reject or junk m
 
 **Endorsement Guides**
 The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in [the creator vetting guide](https://gerriscorp.com/guides/vet-an-influencer/).
+
+**European Accessibility Act**
+EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See [the EAA guide](https://gerriscorp.com/guides/european-accessibility-act/).
 
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
@@ -137,8 +146,14 @@ A proposed set of changes to a repository, presented for review and comment befo
 **README**
 The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see [your README is a source AI reads](https://gerriscorp.com/guides/readme-ai-source/).
 
+**Registrar lock**
+Status codes such as clientTransferProhibited that tell the registry to refuse transfers, deletions, or updates until the account holder lifts them. Registry Lock is the stricter, registry-level version.
+
 **Repository**
 The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.
+
+**Restore drill**
+Rebuilding a website from its backup on a separate server, timed and written down, to prove the backup is complete before an emergency. See [restore drills](https://gerriscorp.com/guides/restore-drills/).
 
 **robots.txt**
 A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.
@@ -175,6 +190,9 @@ The HTML title of a page, shown in browser tabs and usually as the headline of a
 
 **TTFB (time to first byte)**
 How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.
+
+**WCAG (Web Content Accessibility Guidelines)**
+The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See [accessibility remediation](https://gerriscorp.com/services/accessibility/).
 
 **XML sitemap**
 A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.

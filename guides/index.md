@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -40,6 +40,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to add SEO regression tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/): the checks worth automating, a minimal example, and how to roll them out without blocking developers.
 - [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): what error #418 means, why Google usually still indexes the page, the real costs, and how to find every one.
 - [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
+- [The European Accessibility Act for US companies](https://gerriscorp.com/guides/european-accessibility-act/): who it covers since June 28, 2025, the microenterprise exemption, and what to fix first.
 - [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/): scripted text browser checks for thin pages, stray noindex tags, and broken links before every launch.
 
 ## Technical SEO
@@ -54,6 +55,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
 - [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): the traffic that still reaches your server, and how to harden logins, XML-RPC, plugins, and backups.
 - [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
+- [Website restore drills](https://gerriscorp.com/guides/restore-drills/): rebuild the site from its backup on a quiet afternoon, time it, and fix the gaps before an emergency finds them.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
@@ -69,6 +71,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): headers, authentication failures, reputation, blocklists, and sending practices.
 - [How to get your email off a blocklist and back into the inbox](https://gerriscorp.com/guides/email-blocklist-recovery/): find the listing, fix the cause, request removal properly, rebuild your reputation, and avoid the paid removal scam.
+- [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): who holds the login, two-factor access, registrar and Registry Lock, renewals, and DNSSEC.
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
@@ -81,6 +84,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.
 - [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): own the accounts, interview for judgment, pay for a trial task, and review every change.
 - [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Amara's law, the hype cycle, and lessons from communities, blogs, social media, crypto, and AI.
+- [How to write a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/): approved tools, data that never goes in, human review, disclosure, and note-takers, in two pages.
 
 ## Reference
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): plain definitions, from 301 redirects to XML sitemaps.
@@ -92,4 +96,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 24, 2026
+Updated October 26, 2026

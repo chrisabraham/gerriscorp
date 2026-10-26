@@ -142,7 +142,7 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/services/
-Updated: 2026-10-20
+Updated: 2026-10-26
 
 # Services
 
@@ -159,6 +159,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
 - [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
+- [AI use policy and staff training](https://gerriscorp.com/services/ai-policy/): a two-page policy built from how your team already uses AI, and a session that makes it stick.
 - [Strategic advisory and second opinions](https://gerriscorp.com/services/advisory/): advice for founders and executives on AI, search, reputation, and technology decisions.
 
 ## Search and site performance
@@ -171,6 +172,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): titles, descriptions, headings, internal links, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): fast pages on real phones, and a CDN configured properly.
 - [WordPress care: caching, hardening, or a static move](https://gerriscorp.com/services/wordpress-care/): Cloudflare page caching, hardening for what the cache can't shield, or a move off WordPress.
+- [Website accessibility remediation](https://gerriscorp.com/services/accessibility/): template-level fixes tested with keyboards and screen readers, documented for ADA and EU rules.
 - [Google Search Console](https://gerriscorp.com/services/search-console/): setup, cleanup, and fixes for what the indexing reports reveal.
 - [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
@@ -183,6 +185,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
+- [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): every domain in a company-owned account, locked, renewing, and on one register.
 
 Want the technical depth behind these services? See [what I can take on in your stack](https://gerriscorp.com/stack/), layer by layer, with the case study for each.
 
@@ -200,7 +203,7 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 20, 2026
+Updated October 26, 2026
 
 
 ---
@@ -1787,7 +1790,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-24
+Updated: 2026-10-26
 
 # Guides
 
@@ -1827,6 +1830,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to add SEO regression tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/): the checks worth automating, a minimal example, and how to roll them out without blocking developers.
 - [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): what error #418 means, why Google usually still indexes the page, the real costs, and how to find every one.
 - [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
+- [The European Accessibility Act for US companies](https://gerriscorp.com/guides/european-accessibility-act/): who it covers since June 28, 2025, the microenterprise exemption, and what to fix first.
 - [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/): scripted text browser checks for thin pages, stray noindex tags, and broken links before every launch.
 
 ## Technical SEO
@@ -1841,6 +1845,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
 - [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): the traffic that still reaches your server, and how to harden logins, XML-RPC, plugins, and backups.
 - [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
+- [Website restore drills](https://gerriscorp.com/guides/restore-drills/): rebuild the site from its backup on a quiet afternoon, time it, and fix the gaps before an emergency finds them.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
@@ -1856,6 +1861,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): headers, authentication failures, reputation, blocklists, and sending practices.
 - [How to get your email off a blocklist and back into the inbox](https://gerriscorp.com/guides/email-blocklist-recovery/): find the listing, fix the cause, request removal properly, rebuild your reputation, and avoid the paid removal scam.
+- [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): who holds the login, two-factor access, registrar and Registry Lock, renewals, and DNSSEC.
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
@@ -1868,6 +1874,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.
 - [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): own the accounts, interview for judgment, pay for a trial task, and review every change.
 - [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Amara's law, the hype cycle, and lessons from communities, blogs, social media, crypto, and AI.
+- [How to write a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/): approved tools, data that never goes in, human review, disclosure, and note-takers, in two pages.
 
 ## Reference
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): plain definitions, from 301 redirects to XML sitemaps.
@@ -1879,7 +1886,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 24, 2026
+Updated October 26, 2026
 
 
 ---
@@ -5831,11 +5838,11 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 ---
 
 Source: https://gerriscorp.com/guides/glossary/
-Updated: 2026-10-24
+Updated: 2026-10-26
 
 # Glossary of SEO, AI search, and technical website terms
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 24, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 26, 2026
 
 Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The [index](https://gerriscorp.com/site-index/) lists every page where a term comes up.
 
@@ -5881,6 +5888,9 @@ A page AI assistants cite when answering your buyers' questions that names your 
 **CLS (Cumulative Layout Shift)**
 A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
 
+**Confabulation**
+NIST's term for a generative AI system stating false information with confidence. The reason AI-assisted work needs a human check. See [AI use policy](https://gerriscorp.com/guides/ai-use-policy/).
+
 **Content brief**
 A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See [writing a content brief](https://gerriscorp.com/guides/content-briefs/).
 
@@ -5908,6 +5918,9 @@ DomainKeys Identified Mail: a cryptographic signature on outgoing email, verifie
 **DMARC**
 A DNS policy telling receiving mail servers what to do with mail that fails SPF and DKIM alignment, and where to send reports. Policies are none, quarantine, and reject.
 
+**DNSSEC**
+Signatures added to DNS records so resolvers can reject forged answers. Turn it off or move the keys before changing DNS hosts. See [domain security](https://gerriscorp.com/guides/domain-account-security/).
+
 **E-E-A-T**
 Experience, expertise, authoritativeness, and trustworthiness: the qualities Google's quality rater guidelines ask raters to assess, and a useful description of what makes content credible.
 
@@ -5916,6 +5929,9 @@ A list of IP addresses and domains that spam filters consult to reject or junk m
 
 **Endorsement Guides**
 The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in [the creator vetting guide](https://gerriscorp.com/guides/vet-an-influencer/).
+
+**European Accessibility Act**
+EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See [the EAA guide](https://gerriscorp.com/guides/european-accessibility-act/).
 
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
@@ -5968,8 +5984,14 @@ A proposed set of changes to a repository, presented for review and comment befo
 **README**
 The introductory file at the top of a code repository. On a public GitHub repository it's a public page that AI assistants with web search read, so it should describe the live site; see [your README is a source AI reads](https://gerriscorp.com/guides/readme-ai-source/).
 
+**Registrar lock**
+Status codes such as clientTransferProhibited that tell the registry to refuse transfers, deletions, or updates until the account holder lifts them. Registry Lock is the stricter, registry-level version.
+
 **Repository**
 The folder of code and content Git tracks, along with its full history. Owning the repository, in an account the business controls, is owning the website.
+
+**Restore drill**
+Rebuilding a website from its backup on a separate server, timed and written down, to prove the backup is complete before an emergency. See [restore drills](https://gerriscorp.com/guides/restore-drills/).
 
 **robots.txt**
 A file at a site's root that tells crawlers which paths they may fetch. It controls crawling, not indexing; a blocked page can still appear in results if other sites link to it.
@@ -6006,6 +6028,9 @@ The HTML title of a page, shown in browser tabs and usually as the headline of a
 
 **TTFB (time to first byte)**
 How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.
+
+**WCAG (Web Content Accessibility Guidelines)**
+The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See [accessibility remediation](https://gerriscorp.com/services/accessibility/).
 
 **XML sitemap**
 A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.
@@ -8091,6 +8116,473 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/guides/european-accessibility-act/
+Updated: 2026-10-26
+
+# The European Accessibility Act for US companies
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 26, 2026
+
+American companies tend to think about web accessibility through the ADA and the demand letters that come with it. If you sell online to consumers in the European Union, a second law has applied since June 28, 2025: the European Accessibility Act, Directive (EU) 2019/882. It reaches past EU borders, it names e-commerce explicitly, and each member state enforces it with its own penalties. Here is what it asks of a US business and how to tell whether yours is in scope.
+
+This is a practitioner's guide, not legal advice. For a specific market or a complaint, talk to counsel in that country.
+
+## Who it covers
+
+The directive defines a service provider as anyone who provides a service on the Union market or makes offers to provide one to consumers in the EU. Location isn't the test. A Delaware company with a Shopify store that ships to France and takes euros is making offers to consumers in the Union.
+
+The services listed in Article 2 include e-commerce services, consumer banking, e-books and the software for reading them, telephony, audiovisual media services, and the websites, apps, and electronic tickets of air, bus, rail, and water passenger transport. E-commerce is defined broadly: services provided at a distance, through websites and mobile apps, by electronic means, at a consumer's request, with a view to concluding a consumer contract. In plain terms, if a European shopper can buy from you online, your storefront is in scope.
+
+The act also covers products, such as computers, smartphones, e-readers, ATMs, and ticket machines, placed on the market after June 28, 2025. Most of my clients are affected by the services side.
+
+## The microenterprise exemption
+
+Microenterprises that provide services are exempt from the accessibility requirements. The directive defines a microenterprise as one employing fewer than 10 people with annual turnover or an annual balance sheet total of no more than 2 million euros. Both parts apply: a nine-person company with 5 million euros in turnover and a 5 million euro balance sheet is not a microenterprise. The exemption covers services only, so a tiny company making a covered product still has to comply.
+
+A company that grows past ten people loses the exemption, and the directive gives no grace period for crossing the line. If you're near it, plan the accessibility work before the hire that tips you over.
+
+## What the standard looks like in practice
+
+The directive's annex sets out functional requirements: content that can be perceived, operated, understood, and used with assistive technology. The annex itself never names WCAG. The European harmonised standard for digital accessibility, EN 301 549, is the usual benchmark, and its web requirements follow WCAG 2.1 at Level AA. Meeting WCAG 2.2 AA, the current W3C version, covers that and a little more.
+
+For an online store, the failures I find most often are the same ones behind US lawsuits:
+- Product images with no text alternative, or alternatives that say "image."
+- Text with too little contrast against its background, especially prices and buttons.
+- Form fields at checkout without labels, so screen readers announce "edit text" and nothing more.
+- Menus, filters, and size pickers that can't be used with a keyboard.
+- Error messages shown only in red, or not announced at all.
+- Pop-ups and cookie banners that trap keyboard focus.
+
+## Beyond the website
+
+The act asks for accessible information about the service itself, not only an accessible interface. Providers are expected to explain in their terms or a similar document how the service meets the requirements. A short accessibility statement, linked from the footer, that says what standard you work to, what's known to be incomplete, and how a customer can get help or report a barrier, does that job and is a sensible habit in any market.
+
+## Transitional periods
+
+Article 32 lets member states allow service providers to keep using products they lawfully used before the deadline to deliver similar services until June 28, 2030. It also lets them keep self-service terminals in use to the end of their useful life, up to 20 years. A website gets no five-year pass from either provision. A store that launches or redesigns today should meet the requirements now.
+
+## Enforcement
+
+Each member state wrote the directive into national law and chose its own enforcement body and penalties, so the consequences differ between Germany, France, Ireland, and the rest. Market surveillance authorities can require fixes and, in some countries, restrict a non-compliant service. Consumers and disability organizations can also complain. A US business with a meaningful share of EU sales should know which countries matter most and how each one enforces.
+
+## Where to start
+- Confirm whether you sell to EU consumers and whether the microenterprise exemption applies.
+- Test your checkout from product page to confirmation with a keyboard and a screen reader.
+- Fix the templates first, because one fixed product template fixes every product page.
+- Publish an accessibility statement with a contact route.
+- Skip overlay widgets; they don't change the underlying code that the standard measures.
+
+The US side of the same work is in my guide to [ADA website compliance](https://gerriscorp.com/guides/ada-website-compliance/). For a store that needs the fixes made, see [accessibility remediation](https://gerriscorp.com/services/accessibility/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [EUR-Lex: Directive (EU) 2019/882 on the accessibility requirements for products and services](https://eur-lex.europa.eu/eli/dir/2019/882/oj)
+- [European Commission: European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/union-equality-strategy-rights-persons-disabilities-2021-2030/european-accessibility-act_en)
+- [W3C: Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/domain-account-security/
+Updated: 2026-10-26
+
+# Domain security: the registrar account comes first
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 26, 2026
+
+Every website and every company email address depends on one login at a domain registrar. Whoever controls that account can point the website anywhere, read the mail by changing the MX records, and issue new security certificates in the company's name. In practice that account often belongs to a founder's personal email, a departed employee, or a web designer from years ago, protected by a password and nothing else. This guide covers the protections in the order I put them in place.
+
+## Find out who holds the account
+
+Start with an inventory. For every domain the company uses, record the registrar, the account it sits in, the email address on that account, who can log in, and when the domain renews. Include the domains nobody thinks about: the old brand name that still redirects, the product site from a past campaign, the domain that only sends email. Then check where DNS is hosted, since that can be a different company with a different login.
+
+The account should belong to the company, registered to a shared role address such as domains@ on the company's own domain, with at least two named people able to log in. A domain in a personal account belongs, in every practical sense, to that person.
+
+## Turn on two-factor authentication everywhere
+
+In January 2019, after a wave of DNS hijacking against government domains, the US Cybersecurity and Infrastructure Security Agency issued Emergency Directive 19-01. It required federal agencies to audit their DNS records, change the passwords on every account that could alter them, including registrar accounts, add multi-factor authentication to those accounts, and watch certificate transparency logs for certificates they hadn't requested. CISA recommended phishing-resistant factors and advised against text-message codes.
+
+That list was written for agencies and fits any company. Use a hardware key or an authenticator app on the registrar and the DNS host. Store recovery codes where the company, not one person, can find them.
+
+## Registrar lock
+
+A registrar lock sets status codes at the registry that refuse certain requests. ICANN's explanation of these EPP status codes describes clientTransferProhibited, which tells the registry to reject transfers to another registrar; clientDeleteProhibited, which rejects deletion; and clientUpdateProhibited, which rejects changes. Most registrars switch on the transfer lock by default and show it as a single toggle. Check that it's on for every domain.
+
+You can look up any domain's status codes with a public lookup tool. If clientTransferProhibited is missing on a domain that matters, fix that before anything else on this list.
+
+## Registry Lock for the domains that matter most
+
+A registrar lock can be removed by anyone who gets into the registrar account. Registry Lock goes a level higher. Some registry operators offer it through participating registrars, and it sets server status codes that only the registry can lift, usually after a manual, out-of-band confirmation from named contacts. ICANN notes that server statuses take precedence over client statuses and take longer to remove. That delay is the point. Registry Lock costs money and makes legitimate changes slower, so I recommend it for the primary domain of a company whose revenue or reputation depends on it.
+
+## Auto-renew and a payment card that works
+
+More domains are lost to expired cards than to attackers. Turn on auto-renew, attach a company card that someone watches, and set a renewal of several years for the main domain. Make sure renewal notices go to the shared role address, not to someone who left.
+
+## DNSSEC
+
+DNSSEC adds digital signatures to DNS records so that resolvers can detect forged answers. ICANN describes it as protection against attackers redirecting users to a fake site by tampering with DNS responses. Many DNS hosts now enable it with one setting, and the registrar then publishes the matching record at the registry. It's worth turning on where your DNS host supports it, with one warning: if you move DNS providers later, disable DNSSEC or move the keys first, or the domain can stop resolving.
+
+## Watch for changes
+
+Set registrar notifications for any change to contacts, nameservers, or lock status. Subscribe to certificate transparency alerts for your domains through a free monitoring service, so a certificate you didn't request shows up as an email. Review the DNS records once a quarter against a saved copy, and remove records for services you no longer use, since a stale record pointing at an abandoned service can be taken over.
+
+## The short version
+- Every domain in a company-owned account, with two people who can log in.
+- Two-factor authentication on the registrar and the DNS host, without text messages.
+- Transfer lock on for every domain; Registry Lock on the main one.
+- Auto-renew with a monitored card and notices to a shared address.
+- DNSSEC on where the DNS host supports it.
+- Alerts for changes and for new certificates.
+
+Mail records are covered in my guide to [email authentication](https://gerriscorp.com/guides/email-authentication/). If a company has dozens of domains spread across accounts, I run the inventory and consolidation as a [domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [ICANN: EPP status codes, what do they mean](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en)
+- [CISA: Emergency Directive 19-01, Mitigate DNS infrastructure tampering (Jan 22, 2019)](https://www.cisa.gov/news-events/directives/ed-19-01-mitigate-dns-infrastructure-tampering)
+- [ICANN: DNSSEC, what is it and why is it important](https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/restore-drills/
+Updated: 2026-10-26
+
+# Website restore drills
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 26, 2026
+
+Every hosting plan and every WordPress backup plugin promises backups. Few owners have ever restored one. The first restore usually happens during an emergency: the site is hacked, a plugin update breaks the checkout, a developer deletes the wrong folder. That's when people find out the backup excluded the uploads folder, the database export is from March, or the only person with the hosting password is on a plane. A restore drill finds all of that on a quiet afternoon instead.
+
+## What the agencies say
+
+CISA's #StopRansomware Guide tells organizations to maintain offline, encrypted backups of critical data and to regularly test the availability and integrity of those backups in a disaster recovery scenario. It separately advises testing backup procedures on a regular basis. NIST's contingency planning guide for federal systems treats testing and exercises as part of the plan itself. Neither document is written for a small business website, but the principle carries over without change: an untested backup is a hope.
+
+## Decide what you're protecting
+
+List what the site is made of. For a typical WordPress site that's the database, the uploads folder, the theme and plugins, the configuration file, and the DNS records. For a static site in a Git repository, it's the repository, the build settings, the hosting configuration, and DNS. For a store, add product data, orders, customer accounts, and the payment and shipping integrations.
+
+Then set two numbers with the owner. The first is how much recent work you can afford to lose: a day of orders, an hour, none. The second is how long the site can be down before it costs real money. Those two answers decide how often backups run and how fast a restore has to be.
+
+## Restore somewhere safe
+
+Never drill on the live site. Restore to a staging server, a local machine, or a fresh hosting account, on a temporary address blocked from search engines. The point is to rebuild the site from nothing but the backup and the written instructions, the way you would if the original server were gone.
+
+Use the most recent backup, not a specially prepared one. Have someone other than the person who set up the backups run the drill, following only what's written down. Every question they have to ask is a gap in the instructions.
+
+## What to check on the restored copy
+- **Completeness.** Every page loads, images appear, downloads work, and the newest content is there.
+- **Freshness.** The latest post, product, or order in the restored copy matches what the backup schedule promises.
+- **Function.** Forms submit, search works, logins work, a test order goes through in the store's test mode.
+- **Settings.** Redirects, robots rules, canonical tags, and the analytics tag are all present, since these live in places backups often skip.
+- **Secrets.** API keys, mail settings, and payment credentials can be found and re-entered from a secure store.
+
+## Time it and write it down
+
+Record when the drill started, when the site was usable, and every step in between. Note each problem: a missing file, a version mismatch, a password nobody had, a step that took an hour because nobody had done it before. The record becomes the runbook for the real event and shows how close you are to the downtime the owner agreed to.
+
+## Gaps a drill usually uncovers
+- The backup lives on the same server as the site, so it would be lost with it.
+- The plugin backs up the database but not the uploads, or the reverse.
+- The backup is encrypted, and the key is stored only on the server being protected.
+- Backups stopped months ago when a card expired or a storage quota filled, and nobody was told.
+- DNS records were never saved, so pointing a new server at the domain means rebuilding them from memory.
+- The hosting account, registrar, and DNS host logins belong to someone who has left.
+
+Each of those is easy to fix once seen. CISA's offline-copy advice addresses the first and third: keep at least one copy somewhere an attacker on the server can't reach or erase.
+
+## How often
+
+Run a full drill once a year and after any major change: a new host, a redesign, a new backup tool, a platform migration. Check every month that the latest backup exists and has a sensible size. A backup file that's suddenly much smaller than last month's is often the first sign something has stopped being included.
+
+## The static site advantage
+
+A static site kept in a Git repository carries its own history. Every version of every page is in the repository, and a copy of the repository on any laptop is a full backup. Restoring means pointing a new host at the repository and rebuilding. The drill still matters, because DNS, hosting settings, and form handlers live outside the repository, but the hardest part of the problem is already solved.
+
+When a site needs a fast rebuild after an incident, the record-keeping side is in my guide to [the website incident timeline](https://gerriscorp.com/guides/website-incident-timeline/). Backups and restore drills are part of [WordPress care](https://gerriscorp.com/services/wordpress-care/), and when an old site needs saving outright, see [freezing an old website as static HTML](https://gerriscorp.com/guides/freeze-old-website/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [CISA: #StopRansomware Guide (September 2023)](https://www.cisa.gov/stopransomware/ransomware-guide)
+- [NIST: Contingency Planning Guide for Federal Information Systems, SP 800-34 Rev. 1](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/ai-use-policy/
+Updated: 2026-10-26
+
+# How to write a company AI use policy
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 26, 2026
+
+Your staff already use AI. Someone pastes a client email into ChatGPT to draft a reply, someone asks Claude to tidy a spreadsheet, someone has an AI note-taker joining calls. Without a policy, each person makes their own rules about what's safe to share and what needs checking. A good AI use policy is short, specific, and written for the people who'll follow it. Here is how I draft one with a client.
+
+## Start from what people already do
+
+Before writing a word, ask. A short anonymous survey or a few conversations will tell you which tools are in use, on which accounts, and for what tasks. You'll find personal free accounts handling company data, browser extensions nobody approved, and a few people doing careful, useful work worth turning into standard practice. A policy that bans what everyone already does gets ignored; one that starts from real use gets followed.
+
+## Approved tools and accounts
+
+Name the tools staff may use and the accounts they must use them through. Business and enterprise plans from the major AI providers generally offer terms that personal accounts don't, such as commitments not to train on your data, admin controls, and data retention settings. Read the terms of the plan you choose and write the result into the policy in one sentence. Personal accounts for company work should be off the list.
+
+Include the AI features built into tools you already pay for: the writing assistant in your email suite, the meeting summarizer in your video platform, the AI in your CRM. Each one sends data somewhere, and staff can't tell which are approved unless the policy says.
+
+## Data that never goes in
+
+This is the section that prevents the worst outcomes, so make it concrete. List the categories: client confidential information, personal data about customers or employees, health or financial records, passwords and API keys, unreleased financial results, and anything covered by a non-disclosure agreement. Give examples from your own business. "Don't paste the client's contract into a chatbot" is clearer than "protect sensitive information."
+
+Say what to do instead: remove names and identifying details, use an approved enterprise tool for confidential work, or ask before using AI at all.
+
+## A human checks before anything goes out
+
+AI tools state wrong facts fluently. Every piece of AI-assisted work that leaves the company, whether a client report, a published article, code in production, or a social post, needs a named person who has checked it and stands behind it. For facts, that means checking against the source, not asking the AI whether it was right. For code, it means review and tests. NIST's Generative AI Profile lists confabulation, its term for confidently stated false content, among the main risks of these systems, and the cure is a human with the time and duty to check.
+
+## Disclosure
+
+Decide when the company tells clients and the public that AI was used. Some industries and clients require disclosure; some contracts forbid AI use on their work entirely. Check client contracts and put the answer in the policy. Never use AI to produce fake customer reviews or testimonials; the FTC's rule on consumer reviews, in force since October 21, 2024, treats AI-generated fake reviews the same as any other fake review.
+
+## Meetings and recordings
+
+AI note-takers raise a question the rest of the policy doesn't: consent. Some US states require every party's consent before recording a call. Set a rule that the host announces any recording or AI note-taker at the start, and that anyone can ask for it to be turned off. Decide where transcripts are stored and how long they're kept.
+
+## Ownership and review
+
+Name one person who owns the policy, answers questions, and approves new tools. Review it twice a year, because the tools change that often. NIST's AI Risk Management Framework, voluntary guidance published in January 2023, organizes the work into four functions: govern, map, measure, and manage. A small company doesn't need the full framework, but the first function, governance with clear ownership, is the part that makes the rest happen.
+
+## Keep it to two pages
+
+A policy people read beats a thorough one they don't. Two pages, plain language, with examples from your own work. Put the approved tools list and the never-share list at the top, since those are what people will look up. Train once, with real examples, and repeat when the policy changes.
+
+## A starting outline
+- Purpose, in two sentences.
+- Approved tools, plans, and accounts.
+- Data that never goes into an AI tool, with examples.
+- Review: who checks AI-assisted work before it leaves.
+- Disclosure to clients and the public.
+- Recordings and AI note-takers.
+- How to request a new tool, and who owns the policy.
+
+For companies weighing AI tools before writing the rules, see my guide to [judging an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/) and the one on [running AI pilot tests](https://gerriscorp.com/guides/ai-pilot-tests/). I draft and train on these policies as [AI policy and staff training](https://gerriscorp.com/services/ai-policy/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [NIST: AI Risk Management Framework 1.0 (Jan 26, 2023)](https://www.nist.gov/itl/ai-risk-management-framework)
+- [NIST: Artificial Intelligence Risk Management Framework, Generative Artificial Intelligence Profile, NIST AI 600-1 (July 26, 2024)](https://doi.org/10.6028/NIST.AI.600-1)
+- [Federal Trade Commission: Consumer Reviews and Testimonials Rule, questions and answers](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/services/accessibility/
+Updated: 2026-10-26
+
+# Website accessibility remediation
+
+Fixing the barriers that stop people with disabilities from using your site, in the templates where they start, with a written record of what was tested and what changed.
+
+Most accessibility problems on a business website come from a handful of templates: the header and menu, the product or service page, the forms, the checkout. Fix those and every page built from them is fixed at once. I test the way people with disabilities actually use the web, with a keyboard, a screen reader, zoom, and a text-only browser, and I hand your developers fixes they can ship, or make them myself.
+
+## What I test
+- **Keyboard use** from the home page to the main conversion: every menu, filter, button, and form field reachable and usable without a mouse, with visible focus.
+- **Screen reader output** for headings, landmarks, links, images, form labels, error messages, and dynamic content.
+- **Color contrast** for text, buttons, and form states against WCAG 2.2 Level AA.
+- **Zoom and reflow** at 200 and 400 percent, where layouts break and content disappears.
+- **Media**: captions on video, transcripts for audio, and controls for anything that moves.
+- **Pop-ups, cookie banners, and chat widgets**, which trap keyboard users more often than anything else on a modern site.
+
+Automated scanners catch only part of the real problems and flag some false ones. I use them to cover ground quickly and then check every template by hand.
+
+## What I fix
+
+Every finding is tied to the template or component that causes it, with the WCAG success criterion it fails and the change that fixes it. On WordPress, static sites, and many Shopify themes I make the changes directly. On custom applications I write developer tickets with acceptance criteria and review the pull requests. Then I retest on the live site and record the result.
+
+Overlay widgets stay off the site. They leave the underlying code as it was, and that code is what a court or regulator examines.
+
+## Documentation
+
+You get a findings report, a record of every fix with the date it went live, and a draft accessibility statement that names the standard you work to, any known gaps, and how visitors can report a barrier. That record is what a lawyer will ask for if a demand letter arrives, and the statement is what EU rules expect a service provider to publish.
+
+## Who needs this
+
+US businesses facing ADA demand letters or wanting to avoid them, which is covered in my guide to [ADA website compliance](https://gerriscorp.com/guides/ada-website-compliance/). Companies selling to consumers in the European Union, which has enforced the European Accessibility Act since June 28, 2025, covered in my [European Accessibility Act guide](https://gerriscorp.com/guides/european-accessibility-act/). And any organization that wants more of its visitors to complete what they came to do.
+
+## The search dividend
+
+Accessible pages are easier for crawlers and AI systems to read. Real headings, labeled links, text alternatives for images, and content that doesn't depend on a mouse all help search engines understand a page the same way they help a screen reader. The work pays for itself twice.
+
+## Common questions
+
+### How long does remediation take?
+
+The testing is quoted from the number of templates and the main user journeys. Fixes depend on who implements them; template changes I make myself usually ship within the engagement.
+
+### Can you certify the site as compliant?
+
+I document what was tested, against which standard, and what was fixed. Compliance is decided by courts and regulators; the documentation is your evidence of good-faith work.
+
+### How is it billed?
+
+A prepaid audit first, then fixes by the hour or as a fixed scope once the findings are known.
+
+**Related:** [Text-browser QA](https://gerriscorp.com/guides/lynx-qa/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [WordPress care](https://gerriscorp.com/services/wordpress-care/)
+
+[Ask for an accessibility audit](https://gerriscorp.com/contact/)
+
+Updated October 26, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/ai-policy/
+Updated: 2026-10-26
+
+# AI use policy and staff training
+
+A short, enforceable policy for how your company uses AI tools, built from what your people already do, and a training session that makes it stick.
+
+I use AI tools every working day, for research, writing, code, and the build checks behind my own websites, and I've watched what happens when the checking step is skipped. That experience is what I bring to a client's policy: rules that let people get real value from the tools while keeping client data out of the wrong places and keeping a human accountable for everything that leaves the building.
+
+## How an engagement runs
+1. **Discovery.** A short anonymous survey and a few conversations to learn which tools staff use, on which accounts, for which tasks, and where the worries are.
+2. **Tool review.** I compare the business plans of the tools you want to keep, read their data terms, and recommend the approved list and account setup.
+3. **Contract check.** I list which client contracts restrict or require disclosure of AI use, so the policy matches what you've already promised.
+4. **The policy.** Two pages in plain language: approved tools, data that never goes in, who reviews AI-assisted work, disclosure, recordings and note-takers, and who owns the policy.
+5. **Training.** A working session with examples from your own business: what's fine, what's off limits, and how to check an AI's output before it goes to a client.
+6. **Review date.** A six-month check-in, because the tools change that fast.
+
+The method is laid out in my guide to [writing a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/).
+
+## What you get
+- The policy, ready to adopt, with a one-page summary for the wall or the intranet.
+- An approved tools list with account settings documented.
+- A never-share list with examples drawn from your work.
+- A review checklist for AI-assisted client deliverables, articles, and code.
+- Training slides and a recording of the session for new hires.
+
+## Who it's for
+
+Professional services firms, agencies, nonprofits, and growing companies of ten to a few hundred people, where AI use has spread faster than anyone's rules, and where client confidentiality matters. Companies that also need help choosing what to build or buy should look at [AI agents and automation](https://gerriscorp.com/services/ai-automation/) and my guide to [judging an AI vendor's pitch](https://gerriscorp.com/guides/ai-vendor-pitch/).
+
+## What the policy is built on
+
+NIST's AI Risk Management Framework and its Generative AI Profile, the FTC's rules on endorsements and reviews, the data terms of the tools you choose, and the obligations in your client contracts. For regulated industries, I draft with your counsel, who reviews the final text.
+
+## Common questions
+
+### How long does it take?
+
+Discovery through training is usually a few weeks, most of it waiting for survey answers and contract reviews.
+
+### Will the policy ban tools people like?
+
+The policy starts from what's working. Tools that handle company data on personal accounts move to business accounts; the work itself usually continues.
+
+### How is it billed?
+
+A fixed fee, paid in advance and quoted from the size of the company and the number of tools involved.
+
+**Related:** [Strategic advisory](https://gerriscorp.com/services/advisory/) · [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/) · [AI pilot tests](https://gerriscorp.com/guides/ai-pilot-tests/)
+
+[Talk about an AI policy](https://gerriscorp.com/contact/)
+
+Updated October 26, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/domain-portfolio/
+Updated: 2026-10-26
+
+# Domain portfolio audit
+
+A full accounting of the domains your company depends on: where each one is registered, whose account it sits in, who can log in, when it renews, and what it does.
+
+Companies collect domains the way they collect software subscriptions. A founder registers the first one on a personal card. A marketing agency buys three for a campaign. A product launch adds two more, a rebrand adds five, and someone buys the typo versions to keep them from squatters. Ten years later the domains are spread across four registrars and six accounts, some owned by people who've left, and nobody can say which ones still matter. I sort that out, and then I make sure it stays sorted.
+
+## What the audit covers
+- **Every domain the company uses or owns**, found from registrar accounts, DNS zones, certificate transparency logs, redirects on the main site, and the memories of long-serving staff.
+- **The registrar, account, and account holder** for each, with the email address that receives renewal and transfer notices.
+- **Lock status**: transfer, update, and delete locks, and whether Registry Lock is available for the main domain.
+- **Renewal dates and payment**, with the domains closest to expiry flagged first.
+- **DNS host and records**, including stale records pointing at services the company no longer uses.
+- **Purpose**: live site, redirect, email only, defensive, or unused, so each domain gets the right treatment.
+
+## What I fix
+
+Each domain moves into a company-owned account under a shared role address, with two named people holding access and two-factor authentication on every login. Transfer locks go on everywhere. Auto-renew goes on with a card someone watches. Domains that only exist to stop squatters get records that reject all email, so they can't be used for phishing in your name. Domains with visitors or links get permanent redirects to the right page on the main site. Domains nobody needs are allowed to lapse on purpose, after checking that nothing points at them.
+
+Consolidating onto fewer registrars makes all of this easier to keep. I move domains between registrars with the DNS left untouched, so websites and email keep running through the transfer. The step-by-step reasoning is in my guide to [domain security and registrar locks](https://gerriscorp.com/guides/domain-account-security/).
+
+## What you get
+- A domain register: one spreadsheet listing every domain with its registrar, account, purpose, renewal date, lock status, and DNS host.
+- A written record of what changed, with dates.
+- A short procedure for adding, renewing, and retiring domains, so the register stays current.
+- A list of anything I couldn't resolve, such as a domain held by a former contractor who must release it, with the steps to recover it.
+
+## When companies call me
+
+After a scare: a renewal notice that went to a departed employee, a phishing email sent from a lookalike domain, a website that vanished because a card expired. Before a sale or an investment, when buyers ask for a list of digital assets. After a rebrand, when the old domains need redirects that keep their search value. And when a new IT or marketing lead discovers nobody can log into the registrar.
+
+## Common questions
+
+### Will moving registrars take the site or email offline?
+
+A registrar transfer leaves DNS where it is. I confirm the nameservers and every record before and after the move, and plan transfers away from busy periods.
+
+### Do you need the account passwords?
+
+I prefer delegated access where the registrar supports it. Where it doesn't, I arrange temporary access and change the credentials when the work is done.
+
+### How is it billed?
+
+A fixed-scope audit, paid in advance and quoted from the number of domains and accounts. Fixes can be included or billed by the hour.
+
+**Related:** [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) · [Domain security guide](https://gerriscorp.com/guides/domain-account-security/) · [Website migrations](https://gerriscorp.com/services/migrations/)
+
+[Get your domains under control](https://gerriscorp.com/contact/)
+
+Updated October 26, 2026
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
 Updated: 2026-10-26
 
@@ -8121,6 +8613,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds AI tools with OpenAI Codex and Claude Code: reviewed actions, tests, secrets outside Git, and backups with a tested restore path.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI-generated spreadsheets for fabricated or wrong data before you rely on them.
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
+- [AI use policy and staff training](https://gerriscorp.com/services/ai-policy/): Chris Abraham learns how your staff already use AI, writes a two-page policy they will follow, picks the approved tools, and trains the team with real examples.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
 - [B2B catalog SEO for manufacturers and distributors](https://gerriscorp.com/services/b2b-catalog-seo/): B2B catalog SEO for manufacturers and distributors: product specifications, part discovery, crawlable templates, and quote paths tested on a focused pilot.
@@ -8134,6 +8627,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
 - [WordPress care: caching, hardening, or moving off](https://gerriscorp.com/services/wordpress-care/): For WordPress sites that are slow, exposed, or costly to keep: Cloudflare page caching, hardening for what the cache can't shield, or a move to static pages.
+- [Website accessibility remediation](https://gerriscorp.com/services/accessibility/): Chris Abraham fixes the accessibility barriers in your website templates, tests with keyboards and screen readers, and documents the work for ADA and EAA.
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
@@ -8148,6 +8642,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
+- [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): Chris Abraham inventories every domain a company holds, moves each into a company-owned account, locks it down, and documents renewals, DNS, and access.
 
 ## Guides
 - [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): Turn SEO findings into specific developer tasks with evidence, scope, acceptance criteria, release checks, and a clear owner for the business decision.
@@ -8210,6 +8705,10 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): A provenance check for creators before a sponsorship: the archive, the audience, the disclosures, the claims, and what the FTC holds the brand responsible for.
 - [How to freeze an old website as static HTML without losing a single link](https://gerriscorp.com/guides/freeze-old-website/): Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.
 - [Build a website incident timeline before changing code](https://gerriscorp.com/guides/website-incident-timeline/): Reconstruct a website failure with dated observations, release records, cache checks, and competing explanations before choosing the next repair to make.
+- [The European Accessibility Act for US companies](https://gerriscorp.com/guides/european-accessibility-act/): Since June 28, 2025, sites selling to EU consumers must meet the European Accessibility Act. Who it covers, the microenterprise exemption, and what to fix.
+- [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): Who holds the login to your domain decides who controls your website and email. Registrar locks, Registry Lock, two-factor access, and DNSSEC, in order.
+- [Website restore drills](https://gerriscorp.com/guides/restore-drills/): A backup is only proven when you have restored from it. How I run a website restore drill, what to time and record, and the gaps it usually uncovers.
+- [How to write a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/): A practical AI use policy for a small company: approved tools, what data never goes into a chatbot, review before publishing, disclosure, and who owns it.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -8248,7 +8747,7 @@ Updated: 2026-10-26
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 501 headings drawn from 120 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 521 headings drawn from 127 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -8310,18 +8809,20 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
 - acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
 - access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-- accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
+- accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), **[Accessibility Remediation](https://gerriscorp.com/services/accessibility/)**
   - documentation and statements, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - fix list, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - government deadlines (2027 and 2028), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - keeping it from sliding, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - overlays and badges, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
+  - remediation (service), [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
   - search and AI dividends, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - WebAIM Million failures, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - what the law expects, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
 
-- accessibility overlays, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
-- ADA (Americans with Disabilities Act), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
+- accessibility overlays, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/), [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+- accessibility statements, **[European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)**, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+- ADA (Americans with Disabilities Act), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
 - Adobe Podcast Enhance Speech, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Advertising Age, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - AEO (answer engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search); [AI visibility](https://gerriscorp.com/site-index/#ix-ai-visibility)
@@ -8393,6 +8894,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - GA4 custom channel groups, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
   - Search Console limits, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
 
+- AI use policy, **[AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)**, [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+  - AI note-takers and recordings, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
+  - data that never goes in, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
+  - policy and training (service), [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+
 - AI vendors, vetting, **[Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)**
   - a technical skeptic on the call, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - AI washing cases, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
@@ -8451,7 +8957,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## B
 - B2B catalog SEO, [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/), **[B2B catalog SEO](https://gerriscorp.com/guides/b2b-catalog-seo/)**
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
-- backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
+- backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**
 - Barracuda, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - Basecamp, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
 - BeenVerified, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
@@ -8517,6 +9023,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - case studies, **[Case Studies](https://gerriscorp.com/case-studies/)**
 - CCBot, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 - CDNs, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- certificate transparency, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
 - ChatGPT, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - ChatGPT-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - chrisabraham.com, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
@@ -8524,6 +9031,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Chrome DevTools, [Speculation Rules](https://gerriscorp.com/guides/speculation-rules/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
 - Chrome DevTools MCP, [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
 - Chrome UX Report, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
+- CISA Emergency Directive 19-01, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**
+- CISA #StopRansomware Guide, **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**
 - citation gap analysis, [Guides](https://gerriscorp.com/guides/), **[Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)**, [Glossary](https://gerriscorp.com/guides/glossary/)
   - closing gaps without paying, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
   - collecting cited sources, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
@@ -8569,6 +9078,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - colophon, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), **[Colophon](https://gerriscorp.com/colophon/)**
 - command-line assistant (Chris’), [Home](https://gerriscorp.com/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [In Your Stack](https://gerriscorp.com/stack/). *See also* [Blackbox (Chris’ command-line assistant)](https://gerriscorp.com/site-index/#ix-blackbox-chris-commandline-assistant)
 - compensation facts, [AI Recruiting Visibility](https://gerriscorp.com/case-studies/ai-recruiting/)
+- confabulation, **[AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)**
 - consent mode, **[GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)**, [Privacy](https://gerriscorp.com/privacy/)
   - basic and advanced mode, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
   - behavioral modeling thresholds, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
@@ -8583,7 +9093,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - consent tools, [Home](https://gerriscorp.com/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/), **[Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)**
   - prior-consent blocking, [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
 
-- Consumer Reviews and Testimonials Rule (16 CFR Part 465), **[Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)**
+- Consumer Reviews and Testimonials Rule (16 CFR Part 465), **[Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)**, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
 - content briefs, [Guides](https://gerriscorp.com/guides/), **[Content Briefs](https://gerriscorp.com/guides/content-briefs/)**, [Glossary](https://gerriscorp.com/guides/glossary/)
   - limits, [Content Briefs](https://gerriscorp.com/guides/content-briefs/)
   - links, title, and description, [Content Briefs](https://gerriscorp.com/guides/content-briefs/)
@@ -8673,7 +9183,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - aggregate reports, [Email Authentication](https://gerriscorp.com/guides/email-authentication/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
   - alignment, [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 
-- DNS, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [email authentication](https://gerriscorp.com/site-index/#ix-email-authentication)
+- DNS, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/), [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/). *See also* [email authentication](https://gerriscorp.com/site-index/#ix-email-authentication)
   - domain consolidation, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - internationalized domains, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - inventory before changes, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
@@ -8681,6 +9191,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - time-to-live values, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - verification records, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
+- DNSSEC, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**
+- domain portfolio audit, **[Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)**
+- domain register (inventory), [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), **[Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)**
+- domain transfers between registrars, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
 - DoNotPay, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
 - doorway pages, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/)
 - doxxing, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
@@ -8725,8 +9239,15 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - SPF, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
 - email records, protecting, [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/)
+- EN 301 549, **[European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)**
 - entities, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Multi-Location](https://gerriscorp.com/services/multi-location/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Structured Data](https://gerriscorp.com/guides/structured-data/). *See also* [structured data](https://gerriscorp.com/site-index/#ix-structured-data)
   - parent organization and branches, [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/)
+
+- EPP status codes, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**
+- European Accessibility Act, **[European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)**, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+  - microenterprise exemption, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
+  - transitional periods, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
+  - who it covers outside the EU, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
 
 - eWorld, [About](https://gerriscorp.com/about/)
 - executive privacy, [Advisory](https://gerriscorp.com/services/advisory/)
@@ -9000,7 +9521,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
-- lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
+- lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
 - large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**
   - baselines, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - crawl efficiency, [Large Sites](https://gerriscorp.com/services/large-sites/)
@@ -9115,7 +9636,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - title templates, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)
 
 - Nginx, [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
-- NIST AI Risk Management Framework, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+- NIST AI Risk Management Framework, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/), [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/), [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+- NIST Generative AI Profile (AI 600-1), **[AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)**, [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+- NIST SP 800-34 (contingency planning), [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
 - Node.js, [Project Rescue](https://gerriscorp.com/services/rescue/), [App Takeover](https://gerriscorp.com/case-studies/app-takeover/)
 - noindex, [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/), [robots.txt](https://gerriscorp.com/guides/robots-txt/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)
   - left over from staging, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
@@ -9272,6 +9795,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Reddit, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [About](https://gerriscorp.com/about/)
 - redirect maps rebuilt from the Wayback Machine, [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 - Redirection (WordPress plugin), [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
+- registrar lock, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+- Registry Lock, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
 - rel prev and next, [Canonical Tags](https://gerriscorp.com/guides/canonical-tags/)
 - release checkpoints, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
 - reporting, plain-English, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Analytics](https://gerriscorp.com/services/analytics/)
@@ -9298,6 +9823,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - working with security and legal teams, [Reputation](https://gerriscorp.com/services/reputation/)
 
 - Reputation.com, [Reputation](https://gerriscorp.com/services/reputation/), [About](https://gerriscorp.com/about/)
+- restore drills, **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**
 - Results about you (Google tool), [Reputation](https://gerriscorp.com/services/reputation/), [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - retainers, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Advisory](https://gerriscorp.com/services/advisory/), [Ongoing Support](https://gerriscorp.com/services/ongoing-support/), [Reputation](https://gerriscorp.com/services/reputation/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
 - reverse image search, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
@@ -9456,9 +9982,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Squarespace, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [E-commerce](https://gerriscorp.com/services/ecommerce/), [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [Migrations](https://gerriscorp.com/services/migrations/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
 - SSH, [Project Rescue](https://gerriscorp.com/services/rescue/), [App Takeover](https://gerriscorp.com/case-studies/app-takeover/)
 - Stack Overflow Developer Survey (2025), [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/), [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
+- staff training on AI, **[AI Policy and Training](https://gerriscorp.com/services/ai-policy/)**
 - staging sites, [Search Console](https://gerriscorp.com/services/search-console/), [Migrations](https://gerriscorp.com/services/migrations/)
 - static archives of old websites, **[Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)**. *See also* [Movable Type](https://gerriscorp.com/site-index/#ix-movable-type); [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations)
-- static websites, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/)
+- static websites, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
 - strategic advisory, [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), **[Advisory](https://gerriscorp.com/services/advisory/)**
   - AI adoption, [Advisory](https://gerriscorp.com/services/advisory/)
   - AI search and your business, [Advisory](https://gerriscorp.com/services/advisory/)
@@ -9546,6 +10073,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Treasury Department, [About](https://gerriscorp.com/about/)
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - TTFB (time to first byte), [Glossary](https://gerriscorp.com/guides/glossary/)
+- two-factor authentication, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
@@ -9576,7 +10104,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## W
 - WAVE, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 - Wayback Machine, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [In Your Stack](https://gerriscorp.com/stack/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
-- WCAG, [SEO 101](https://gerriscorp.com/guides/seo-101/), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
+- WCAG, [SEO 101](https://gerriscorp.com/guides/seo-101/), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/), [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
 - Web Developer extension, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 - WebAIM Million, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
 - Webflow, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)

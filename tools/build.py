@@ -93,6 +93,13 @@ FILES += ["guides/freeze-old-website"]
 
 FILES += ["guides/website-incident-timeline"]
 
+# Four guides and three services, October 26, 2026, written by Claude Code.
+FILES += ["guides/european-accessibility-act", "guides/domain-account-security", "guides/restore-drills", "guides/ai-use-policy",
+          "services/accessibility", "services/ai-policy", "services/domain-portfolio"]
+SERVICE_GROUPS[0][1].insert(SERVICE_GROUPS[0][1].index("services/advisory/"), "services/ai-policy/")
+SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/wordpress-care/") + 1, "services/accessibility/")
+SERVICE_GROUPS[2][1].append("services/domain-portfolio/")
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))

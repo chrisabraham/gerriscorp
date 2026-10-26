@@ -1,0 +1,49 @@
+name: Domain Portfolio Audit
+title: Domain portfolio audit: who owns your domains and logins
+description: Chris Abraham inventories every domain a company holds, moves each into a company-owned account, locks it down, and documents renewals, DNS, and access.
+updated: 2026-10-26
+---
+<h1>Domain portfolio audit</h1>
+<p class="lead">A full accounting of the domains your company depends on: where each one is registered, whose account it sits in, who can log in, when it renews, and what it does.</p>
+<p>Companies collect domains the way they collect software subscriptions. A founder registers the first one on a personal card. A marketing agency buys three for a campaign. A product launch adds two more, a rebrand adds five, and someone buys the typo versions to keep them from squatters. Ten years later the domains are spread across four registrars and six accounts, some owned by people who've left, and nobody can say which ones still matter. I sort that out, and then I make sure it stays sorted.</p>
+
+<h2>What the audit covers</h2>
+<ul>
+  <li><strong>Every domain the company uses or owns</strong>, found from registrar accounts, DNS zones, certificate transparency logs, redirects on the main site, and the memories of long-serving staff.</li>
+  <li><strong>The registrar, account, and account holder</strong> for each, with the email address that receives renewal and transfer notices.</li>
+  <li><strong>Lock status</strong>: transfer, update, and delete locks, and whether Registry Lock is available for the main domain.</li>
+  <li><strong>Renewal dates and payment</strong>, with the domains closest to expiry flagged first.</li>
+  <li><strong>DNS host and records</strong>, including stale records pointing at services the company no longer uses.</li>
+  <li><strong>Purpose</strong>: live site, redirect, email only, defensive, or unused, so each domain gets the right treatment.</li>
+</ul>
+
+<h2>What I fix</h2>
+<p>Each domain moves into a company-owned account under a shared role address, with two named people holding access and two-factor authentication on every login. Transfer locks go on everywhere. Auto-renew goes on with a card someone watches. Domains that only exist to stop squatters get records that reject all email, so they can't be used for phishing in your name. Domains with visitors or links get permanent redirects to the right page on the main site. Domains nobody needs are allowed to lapse on purpose, after checking that nothing points at them.</p>
+<p>Consolidating onto fewer registrars makes all of this easier to keep. I move domains between registrars with the DNS left untouched, so websites and email keep running through the transfer. The step-by-step reasoning is in my guide to <a href="{root}guides/domain-account-security/">domain security and registrar locks</a>.</p>
+
+<h2>What you get</h2>
+<ul>
+  <li>A domain register: one spreadsheet listing every domain with its registrar, account, purpose, renewal date, lock status, and DNS host.</li>
+  <li>A written record of what changed, with dates.</li>
+  <li>A short procedure for adding, renewing, and retiring domains, so the register stays current.</li>
+  <li>A list of anything I couldn't resolve, such as a domain held by a former contractor who must release it, with the steps to recover it.</li>
+</ul>
+
+<h2>When companies call me</h2>
+<p>After a scare: a renewal notice that went to a departed employee, a phishing email sent from a lookalike domain, a website that vanished because a card expired. Before a sale or an investment, when buyers ask for a list of digital assets. After a rebrand, when the old domains need redirects that keep their search value. And when a new IT or marketing lead discovers nobody can log into the registrar.</p>
+
+<section class="faq">
+<h2>Common questions</h2>
+<h3>Will moving registrars take the site or email offline?</h3>
+<p>A registrar transfer leaves DNS where it is. I confirm the nameservers and every record before and after the move, and plan transfers away from busy periods.</p>
+<h3>Do you need the account passwords?</h3>
+<p>I prefer delegated access where the registrar supports it. Where it doesn't, I arrange temporary access and change the credentials when the work is done.</p>
+<h3>How is it billed?</h3>
+<p>A fixed-scope audit, paid in advance and quoted from the number of domains and accounts. Fixes can be included or billed by the hour.</p>
+</section>
+
+<div class="related">
+<p><strong>Related:</strong> <a href="{root}services/email-and-dns/">Email authentication and DNS</a> · <a href="{root}guides/domain-account-security/">Domain security guide</a> · <a href="{root}services/migrations/">Website migrations</a></p>
+</div>
+
+<p><a class="button" href="{root}contact/">Get your domains under control</a></p>

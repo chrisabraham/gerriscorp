@@ -247,7 +247,9 @@
    "kind": "topic",
    "pages": [
     "guides/ada-website-compliance",
-    "guides/lynx-qa"
+    "guides/lynx-qa",
+    "guides/european-accessibility-act",
+    "services/accessibility"
    ],
    "subs": {
     "what the law expects": [
@@ -273,27 +275,47 @@
     ],
     "keeping it from sliding": [
      "guides/ada-website-compliance"
+    ],
+    "remediation (service)": [
+     "services/accessibility"
     ]
    },
    "see": [],
    "main": [
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "services/accessibility"
    ]
   },
   "accessibility overlays": {
    "kind": "topic",
    "pages": [
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "guides/european-accessibility-act",
+    "services/accessibility"
    ],
    "subs": {},
    "see": [],
    "main": []
   },
+  "accessibility statements": {
+   "kind": "topic",
+   "pages": [
+    "guides/european-accessibility-act",
+    "services/accessibility"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/european-accessibility-act"
+   ]
+  },
   "ADA (Americans with Disabilities Act)": {
    "kind": "topic",
    "pages": [
     "guides/seo-101",
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "services/accessibility",
+    "guides/european-accessibility-act"
    ],
    "subs": {},
    "see": [],
@@ -655,6 +677,28 @@
    "see": [],
    "main": [
     "guides/measure-ai-search"
+   ]
+  },
+  "AI use policy": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-use-policy",
+    "services/ai-policy"
+   ],
+   "subs": {
+    "data that never goes in": [
+     "guides/ai-use-policy"
+    ],
+    "AI note-takers and recordings": [
+     "guides/ai-use-policy"
+    ],
+    "policy and training (service)": [
+     "services/ai-policy"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ai-use-policy"
    ]
   },
   "AI vendors, vetting": {
@@ -1022,11 +1066,14 @@
    "pages": [
     "services/wordpress-care",
     "services/ai-automation",
-    "guides/website-handover"
+    "guides/website-handover",
+    "guides/restore-drills"
    ],
    "subs": {},
    "see": [],
-   "main": []
+   "main": [
+    "guides/restore-drills"
+   ]
   },
   "Barracuda": {
    "kind": "topic",
@@ -1374,6 +1421,16 @@
    "see": [],
    "main": []
   },
+  "certificate transparency": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security",
+    "services/domain-portfolio"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "ChatGPT": {
    "kind": "topic",
    "pages": [
@@ -1451,6 +1508,28 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "CISA #StopRansomware Guide": {
+   "kind": "topic",
+   "pages": [
+    "guides/restore-drills"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/restore-drills"
+   ]
+  },
+  "CISA Emergency Directive 19-01": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/domain-account-security"
+   ]
   },
   "citation gap analysis": {
    "kind": "topic",
@@ -1753,6 +1832,17 @@
    "see": [],
    "main": []
   },
+  "confabulation": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-use-policy"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-use-policy"
+   ]
+  },
   "consent mode": {
    "kind": "topic",
    "pages": [
@@ -1814,7 +1904,8 @@
   "Consumer Reviews and Testimonials Rule (16 CFR Part 465)": {
    "kind": "topic",
    "pages": [
-    "guides/vet-an-influencer"
+    "guides/vet-an-influencer",
+    "guides/ai-use-policy"
    ],
    "subs": {},
    "see": [],
@@ -2337,7 +2428,9 @@
     "services/site-speed",
     "services/email-and-dns",
     "guides/website-handover",
-    "guides/freeze-old-website"
+    "guides/freeze-old-website",
+    "guides/domain-account-security",
+    "services/domain-portfolio"
    ],
    "subs": {
     "inventory before changes": [
@@ -2365,6 +2458,49 @@
    "main": [
     "services/email-and-dns"
    ]
+  },
+  "DNSSEC": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/domain-account-security"
+   ]
+  },
+  "domain portfolio audit": {
+   "kind": "topic",
+   "pages": [
+    "services/domain-portfolio"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/domain-portfolio"
+   ]
+  },
+  "domain register (inventory)": {
+   "kind": "topic",
+   "pages": [
+    "services/domain-portfolio",
+    "guides/domain-account-security"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/domain-portfolio"
+   ]
+  },
+  "domain transfers between registrars": {
+   "kind": "topic",
+   "pages": [
+    "services/domain-portfolio"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "DoNotPay": {
    "kind": "topic",
@@ -2570,6 +2706,17 @@
    "see": [],
    "main": []
   },
+  "EN 301 549": {
+   "kind": "topic",
+   "pages": [
+    "guides/european-accessibility-act"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/european-accessibility-act"
+   ]
+  },
   "entities": {
    "kind": "topic",
    "pages": [
@@ -2588,6 +2735,39 @@
     "structured data"
    ],
    "main": []
+  },
+  "EPP status codes": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/domain-account-security"
+   ]
+  },
+  "European Accessibility Act": {
+   "kind": "topic",
+   "pages": [
+    "guides/european-accessibility-act",
+    "services/accessibility"
+   ],
+   "subs": {
+    "microenterprise exemption": [
+     "guides/european-accessibility-act"
+    ],
+    "transitional periods": [
+     "guides/european-accessibility-act"
+    ],
+    "who it covers outside the EU": [
+     "guides/european-accessibility-act"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/european-accessibility-act"
+   ]
   },
   "eWorld": {
    "kind": "topic",
@@ -4080,7 +4260,9 @@
   "lapsed domains": {
    "kind": "topic",
    "pages": [
-    "guides/year-end-seo-check"
+    "guides/year-end-seo-check",
+    "guides/domain-account-security",
+    "services/domain-portfolio"
    ],
    "subs": {},
    "see": [],
@@ -4726,7 +4908,30 @@
   "NIST AI Risk Management Framework": {
    "kind": "topic",
    "pages": [
-    "guides/ai-vendor-pitch"
+    "guides/ai-vendor-pitch",
+    "guides/ai-use-policy",
+    "services/ai-policy"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "NIST Generative AI Profile (AI 600-1)": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-use-policy",
+    "services/ai-policy"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-use-policy"
+   ]
+  },
+  "NIST SP 800-34 (contingency planning)": {
+   "kind": "topic",
+   "pages": [
+    "guides/restore-drills"
    ],
    "subs": {},
    "see": [],
@@ -5594,6 +5799,30 @@
    "see": [],
    "main": []
   },
+  "registrar lock": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security",
+    "services/domain-portfolio"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/domain-account-security"
+   ]
+  },
+  "Registry Lock": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security",
+    "services/domain-portfolio"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/domain-account-security"
+   ]
+  },
   "rel prev and next": {
    "kind": "topic",
    "pages": [
@@ -5728,6 +5957,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "restore drills": {
+   "kind": "topic",
+   "pages": [
+    "guides/restore-drills"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/restore-drills"
+   ]
   },
   "Results about you (Google tool)": {
    "kind": "topic",
@@ -6670,6 +6910,17 @@
    "see": [],
    "main": []
   },
+  "staff training on AI": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-policy"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/ai-policy"
+   ]
+  },
   "staging sites": {
    "kind": "topic",
    "pages": [
@@ -6698,7 +6949,8 @@
    "kind": "topic",
    "pages": [
     "services/wordpress-care",
-    "services/migrations"
+    "services/migrations",
+    "guides/restore-drills"
    ],
    "subs": {},
    "see": [],
@@ -7167,6 +7419,18 @@
    "see": [],
    "main": []
   },
+  "two-factor authentication": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security",
+    "services/domain-portfolio"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/domain-account-security"
+   ]
+  },
   "Uberti, Oliver": {
    "kind": "person",
    "pages": [
@@ -7329,7 +7593,9 @@
    "kind": "topic",
    "pages": [
     "guides/seo-101",
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "guides/european-accessibility-act",
+    "services/accessibility"
    ],
    "subs": {},
    "see": [],
@@ -7834,6 +8100,13 @@
   "guides/freeze-old-website",
   "guides/website-incident-timeline",
   "services/ai-visibility",
-  "guides/ai-answers-review-searches"
+  "guides/ai-answers-review-searches",
+  "guides/european-accessibility-act",
+  "guides/domain-account-security",
+  "guides/restore-drills",
+  "guides/ai-use-policy",
+  "services/accessibility",
+  "services/ai-policy",
+  "services/domain-portfolio"
  ]
 }
