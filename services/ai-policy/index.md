@@ -14,7 +14,7 @@ I use AI tools every working day, for research, writing, code, and the build che
 3. **Contract check.** I list which client contracts restrict or require disclosure of AI use, so the policy matches what you've already promised.
 4. **The policy.** Two pages in plain language: approved tools, data that never goes in, who reviews AI-assisted work, disclosure, recordings and note-takers, and who owns the policy.
 5. **Training.** A working session with examples from your own business: what's fine, what's off limits, and how to check an AI's output before it goes to a client.
-6. **Review date.** A six-month check-in, because the tools change that fast.
+6. **Review date.** The policy carries a review date of its own, because the tools change fast and a dated policy gets revisited instead of quietly expiring.
 
 The method is laid out in my guide to [writing a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/).
 
@@ -23,7 +23,7 @@ The method is laid out in my guide to [writing a company AI use policy](https://
 - An approved tools list with account settings documented.
 - A never-share list with examples drawn from your work.
 - A review checklist for AI-assisted client deliverables, articles, and code.
-- Training slides and a recording of the session for new hires.
+- A training session for the team, run on examples drawn from your own work.
 
 ## Who it's for
 
@@ -37,7 +37,7 @@ NIST's AI Risk Management Framework and its Generative AI Profile, the FTC's rul
 
 ### How long does it take?
 
-Discovery through training is usually a few weeks, most of it waiting for survey answers and contract reviews.
+The schedule depends on the size of the company and how fast survey answers and contract reviews come back. The timetable is agreed in writing before the work starts.
 
 ### Will the policy ban tools people like?
 
@@ -45,7 +45,7 @@ The policy starts from what's working. Tools that handle company data on persona
 
 ### How is it billed?
 
-A fixed fee, paid in advance and quoted from the size of the company and the number of tools involved.
+A fixed fee, quoted from the size of the company and the number of tools involved. How it is paid is settled in conversation before anything begins.
 
 **Related:** [Strategic advisory](https://gerriscorp.com/services/advisory/) · [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/) · [AI pilot tests](https://gerriscorp.com/guides/ai-pilot-tests/)
 

@@ -44,7 +44,7 @@ I prefer delegated access where the registrar supports it. Where it doesn't, I a
 
 ### How is it billed?
 
-A fixed-scope audit, paid in advance and quoted from the number of domains and accounts. Fixes can be included or billed by the hour.
+A fixed-scope audit, quoted as a fixed fee from the number of domains and accounts. Fixes can be included in that scope or quoted separately, again as a fixed fee.
 
 **Related:** [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) · [Domain security guide](https://gerriscorp.com/guides/domain-account-security/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 

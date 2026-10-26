@@ -48,7 +48,7 @@ I document what was tested, against which standard, and what was fixed. Complian
 
 ### How is it billed?
 
-A prepaid audit first, then fixes by the hour or as a fixed scope once the findings are known.
+An audit first, quoted as a fixed fee. The fixes come second: once the findings are known, they are scoped and quoted as a fixed fee before the work begins.
 
 **Related:** [Text-browser QA](https://gerriscorp.com/guides/lynx-qa/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [WordPress care](https://gerriscorp.com/services/wordpress-care/)
 
