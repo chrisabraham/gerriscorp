@@ -1384,7 +1384,6 @@
     "services/ai-search",
     "guides/ai-assistants",
     "guides/podcast-for-your-brand",
-    "services/shared-ai-memory",
     "services/ai-visibility",
     "guides/ai-answers-review-searches"
    ],
@@ -1509,8 +1508,7 @@
     "services/advisory",
     "services/crawler-visibility",
     "services/ai-search",
-    "guides/ai-assistants",
-    "services/shared-ai-memory"
+    "guides/ai-assistants"
    ],
    "subs": {},
    "see": [],
@@ -1529,8 +1527,7 @@
     "case-studies/netlify-migration",
     "case-studies/built-with-claude-code",
     "stack",
-    "colophon",
-    "services/shared-ai-memory"
+    "colophon"
    ],
    "subs": {},
    "see": [
@@ -1561,8 +1558,7 @@
   "CLAUDE.md": {
    "kind": "topic",
    "pages": [
-    "guides/ai-coding-assistants",
-    "services/shared-ai-memory"
+    "guides/ai-coding-assistants"
    ],
    "subs": {},
    "see": [],
@@ -1716,8 +1712,7 @@
     "case-studies/built-with-claude-code",
     "guides/ai-coding-assistants",
     "guides/podcast-website",
-    "guides/core-web-vitals-mcp",
-    "services/shared-ai-memory"
+    "guides/core-web-vitals-mcp"
    ],
    "subs": {},
    "see": [],
@@ -3021,8 +3016,7 @@
     "services/seo-engineering",
     "guides/ai-coding-assistants",
     "guides/seo-superpower",
-    "guides/glossary",
-    "services/shared-ai-memory"
+    "guides/glossary"
    ],
    "subs": {},
    "see": [],
@@ -3035,8 +3029,7 @@
     "guides/repository-access",
     "guides/seo-superpower",
     "case-studies/sanity-vercel",
-    "case-studies/programmatic-indexing",
-    "services/shared-ai-memory"
+    "case-studies/programmatic-indexing"
    ],
    "subs": {
     "organizations": [
@@ -3067,8 +3060,7 @@
    "kind": "topic",
    "pages": [
     "guides/ai-coding-assistants",
-    "guides/seo-superpower",
-    "services/shared-ai-memory"
+    "guides/seo-superpower"
    ],
    "subs": {},
    "see": [],
@@ -4944,19 +4936,6 @@
    "see": [],
    "main": []
   },
-  "oversoul (template)": {
-   "kind": "topic",
-   "main": [
-    "services/shared-ai-memory"
-   ],
-   "pages": [
-    "services/shared-ai-memory"
-   ],
-   "see": [
-    "shared AI memory"
-   ],
-   "subs": {}
-  },
   "OWASP excessive agency": {
    "kind": "topic",
    "pages": [
@@ -6332,29 +6311,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "shared AI memory": {
-   "kind": "topic",
-   "main": [
-    "services/shared-ai-memory"
-   ],
-   "pages": [
-    "services/shared-ai-memory"
-   ],
-   "see": [
-    "Git"
-   ],
-   "subs": {
-    "profiles and project digests": [
-     "services/shared-ai-memory"
-    ],
-    "rules file": [
-     "services/shared-ai-memory"
-    ],
-    "what stays out": [
-     "services/shared-ai-memory"
-    ]
-   }
   },
   "Shopify": {
    "kind": "topic",
@@ -7875,7 +7831,6 @@
   "guides/seo-developer-tickets",
   "guides/vet-an-influencer",
   "guides/two-problems-at-once",
-  "services/shared-ai-memory",
   "guides/freeze-old-website",
   "guides/website-incident-timeline",
   "services/ai-visibility",

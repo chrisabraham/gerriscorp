@@ -88,10 +88,6 @@ FILES += ["guides/podcast-investment"]
 FILES += ["guides/google-business-profile-reports"]
 FILES += ["guides/vet-an-influencer"]
 SERVICE_GROUPS[0][1].append("services/b2b-catalog-seo/")
-# Added by Claude in the Claude app, October 24, 2026.
-FILES += ["services/shared-ai-memory"]
-SERVICE_GROUPS[0][1].append("services/shared-ai-memory/")
-
 # Additional guide, October 24, 2026, written by Claude Code.
 FILES += ["guides/freeze-old-website"]
 
