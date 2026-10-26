@@ -42,6 +42,10 @@ Yes. I write in your templates, use your branding, and keep the technical detail
 
 **Related:** [Developer specs and QA](https://gerriscorp.com/services/developers/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Work With Me](https://gerriscorp.com/work-with-me/)
 
-[Talk to me about partnering](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026

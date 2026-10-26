@@ -67,6 +67,10 @@ Yes. I work through the same pull requests and reviews they already use, and I h
 
 **Related:** [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Developer specs and QA](https://gerriscorp.com/services/developers/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) · [React hydration errors and SEO](https://gerriscorp.com/guides/hydration-errors/) · [Working with AI coding assistants](https://gerriscorp.com/guides/ai-coding-assistants/)
 
-[Send me your repository and your search problem](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 13, 2026

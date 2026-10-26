@@ -177,6 +177,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): articles and pages written with AI from your own material, then checked claim by claim before they go live.
+- [Site indexes and glossaries](https://gerriscorp.com/services/site-index-and-glossary/): a hand-built A to Z index and a plain-language glossary for content-heavy websites.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): a page and transcript for every episode, generated from your feed and updated every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 
@@ -257,6 +258,12 @@ I work with your developer. Most of the value comes from giving a good developer
 
 I turn audit findings into scoped developer tasks, separate business decisions from code changes, and verify the behavior after release. Each task includes examples, acceptance criteria, and a named decision owner. See the guide to [writing SEO developer tickets](https://gerriscorp.com/guides/seo-developer-tickets/) for the working method.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 24, 2026
 
 
@@ -328,7 +335,11 @@ Whatever your team uses, such as Jira, Linear, GitHub Issues, or Basecamp.
 
 **Related:** [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [SEO engineering](https://gerriscorp.com/services/seo-engineering/) · [Repository access for an outside SEO](https://gerriscorp.com/guides/repository-access/)
 
-[Get your developers a real spec](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -378,7 +389,11 @@ Yes. I write in your templates, use your branding, and keep the technical detail
 
 **Related:** [Developer specs and QA](https://gerriscorp.com/services/developers/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Work With Me](https://gerriscorp.com/work-with-me/)
 
-[Talk to me about partnering](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -441,6 +456,12 @@ If you are preparing to receive a site rather than responding to an outage, the 
 ## Reconstruct the failure
 
 A useful takeover begins with evidence about what failed and what changed. My [website incident timeline guide](https://gerriscorp.com/guides/website-incident-timeline/) shows how to align release records, public responses, and dated reports before choosing a repair.
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 24, 2026
 
@@ -508,6 +529,12 @@ I build small, focused tools that prove value quickly. When a pilot needs to gro
 
 A working pilot can also be reviewed as its own engagement through [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/). The accompanying [pilot test case guide](https://gerriscorp.com/guides/ai-pilot-tests/) gives your team a starting collection of checks.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 15, 2026
 
 
@@ -555,7 +582,11 @@ Usually I export, clean, and re-import with your approval at each step, which ke
 
 **Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 
-[Send me the messy spreadsheet](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 15, 2026
 
@@ -605,7 +636,11 @@ They measure different things: Search Console counts clicks in Google, GA4 count
 
 **Related:** [Data cleanup](https://gerriscorp.com/services/data-cleanup/) · [Search Console](https://gerriscorp.com/services/search-console/) · [Ongoing support](https://gerriscorp.com/services/ongoing-support/)
 
-[Ask me what your numbers mean](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -653,7 +688,11 @@ Retainers are billed monthly in advance. Briefings, workshops, and second opinio
 
 **Related:** [Reputation and perception management](https://gerriscorp.com/services/reputation/) · [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [About Chris Abraham](https://gerriscorp.com/about/)
 
-[Start a confidential conversation](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -744,7 +783,11 @@ Google has to recrawl and reprocess the affected pages first, which takes days f
 
 **Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/) · [SEO engineering](https://gerriscorp.com/services/seo-engineering/)
 
-[Tell me what happened to your traffic](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -819,7 +862,11 @@ Yes. I work through the same pull requests and reviews they already use, and I h
 
 **Related:** [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Developer specs and QA](https://gerriscorp.com/services/developers/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) · [React hydration errors and SEO](https://gerriscorp.com/guides/hydration-errors/) · [Working with AI coding assistants](https://gerriscorp.com/guides/ai-coding-assistants/)
 
-[Send me your repository and your search problem](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 13, 2026
 
@@ -881,7 +928,11 @@ Rarely. Most fixes change how one template renders a few sections, such as rende
 
 **Related:** [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
 
-[Ask me what Google actually sees](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -925,7 +976,11 @@ It can do either. Old links can help a new site get noticed, but a domain's hist
 
 **Related:** ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Search Console](https://gerriscorp.com/services/search-console/) · [E-commerce SEO](https://gerriscorp.com/services/ecommerce/)
 
-[Tell me what dropped out](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -993,7 +1048,11 @@ For priority products and categories, yes. For large catalogs, I set up template
 
 **Related:** [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [Large and programmatic sites](https://gerriscorp.com/services/large-sites/) · [Case studies](https://gerriscorp.com/case-studies/)
 
-[Tell me about your store](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1061,6 +1120,12 @@ Audits cover the whole site. Rewrites start with the pages that bring in the mos
 
 When the main opportunity is how the existing content connects, I offer a dedicated [internal linking strategy project](https://gerriscorp.com/services/internal-linking/), with specific source pages, destinations, and editorial placements for your team.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026
 
 
@@ -1121,7 +1186,11 @@ The Chrome UX Report uses a rolling 28 days of real-user data, so improvements s
 
 **Related:** [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
 
-[Ask me why your site is slow](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1162,6 +1231,12 @@ A short diagnostic answers it: how often the site changes, who edits it, what pl
 ## Engagement
 
 A prepaid diagnostic, then a fixed-scope setup or migration. Monthly care is available under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 14, 2026
 
@@ -1224,7 +1299,11 @@ The setup and first cleanup are a project. Monitoring fits naturally into [ongoi
 
 **Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
-[Ask me to read your Search Console](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1282,7 +1361,11 @@ Yes. Post-launch cleanup is a common engagement: I rebuild the URL mapping from 
 
 **Related:** [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/) · [Recovering traffic after a migration](https://gerriscorp.com/guides/migration-recovery/) · [Migration tools](https://gerriscorp.com/guides/migration-tools/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/) · [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
-[Talk to me about your migration](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1346,7 +1429,11 @@ It builds on SEO. Most AI assistants search the web before answering, so strong 
 
 **Related:** [How AI assistants decide what to say](https://gerriscorp.com/guides/ai-assistants/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
 
-[Ask me what the AI assistants say about you](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1390,7 +1477,6 @@ For local and service businesses, the Google Business Profile is one of the prim
 - AI-answer presence measurement is already a sold, scheduled deliverable inside a multi-location retail engagement: baseline first, then monthly across Google Search, Maps, ChatGPT, and Perplexity.
 - My audit format has been run in full for a therapy practice, covering entity consistency and AI-readiness end to end.
 - My claim-layer build (entity schema, llms.txt, canonical explainer page, AI-presence baseline) is already in production for a media client.
-- A client has already paid the $750 audit price for the pilot.
 
 ## How engagements run
 1. **A short call** to confirm fit, your markets, and your money searches.
@@ -1400,6 +1486,12 @@ For local and service businesses, the Google Business Profile is one of the prim
 The machines are describing your business to your customers right now. Gerris makes sure they get it right.
 
 **[Contact Gerris to start with the audit.](https://gerriscorp.com/contact/)**
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 24, 2026
 
@@ -1440,6 +1532,12 @@ Google's spam policies target content produced at scale to manipulate rankings a
 ## Engagement
 
 Per piece or a monthly allotment, prepaid, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 14, 2026
 
@@ -1488,6 +1586,12 @@ The full method is free in my guide to [building a podcast website with Codex or
 ## Engagement
 
 A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 15, 2026
 
@@ -1544,7 +1648,11 @@ The capacity is reserved for you each month. Whether unused time carries over is
 
 **Related:** [Search Console](https://gerriscorp.com/services/search-console/) · [On-page SEO](https://gerriscorp.com/services/on-page-seo/) · [Work With Me](https://gerriscorp.com/work-with-me/)
 
-[Ask about ongoing support](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1608,7 +1716,11 @@ Yes, as part of the same engagement. See [Google Business Profile hard cases](ht
 
 **Related:** [Google Business Profile](https://gerriscorp.com/services/google-business-profile/) · [AI search visibility](https://gerriscorp.com/services/ai-search/) · [Migrations](https://gerriscorp.com/services/migrations/)
 
-[Tell me how your locations are set up](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1670,7 +1782,11 @@ Removal depends on the source and the law. Some content qualifies for removal un
 
 **Related:** [Removing your personal information](https://gerriscorp.com/guides/personal-information-removal/) · [Strategic advisory](https://gerriscorp.com/services/advisory/) · [How AI assistants decide what to say](https://gerriscorp.com/guides/ai-assistants/)
 
-[Start a confidential conversation](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1724,7 +1840,11 @@ Google's appeal reviews take anywhere from days to several weeks, and complex ca
 
 Yes, as part of local SEO within [ongoing support](https://gerriscorp.com/services/ongoing-support/) or a broader SEO engagement.
 
-[Book a profile diagnostic](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -1782,7 +1902,11 @@ Not when it's planned. I copy every record, lower time-to-live values ahead of t
 
 **Related:** [SPF, DKIM, and DMARC explained](https://gerriscorp.com/guides/email-authentication/) · [Site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
-[Get your email and domains in order](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026
 
@@ -7346,6 +7470,12 @@ Yes. The proposed placements and destinations can be delivered as a working list
 
 This work fits alongside [on page SEO](https://gerriscorp.com/services/on-page-seo/), [large site SEO](https://gerriscorp.com/services/large-sites/), and [agency support](https://gerriscorp.com/services/agency-partner/). [Tell me which pages visitors should be finding](https://gerriscorp.com/contact/) and I can scope a practical starting point.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 15, 2026
 
 
@@ -7396,6 +7526,12 @@ Yes, with enough access to exercise the workflow and inspect its records. The sc
 With a named workflow, a small set of representative tasks, and a paid diagnostic. Implementation or a wider rollout follows only after the findings and next scope are agreed.
 
 The [AI pilot testing guide](https://gerriscorp.com/guides/ai-pilot-tests/) includes a worksheet you can use yourself. For a review, [send me the workflow and what a good result should accomplish](https://gerriscorp.com/contact/). If you need the tool built as well, see [AI agents and automation](https://gerriscorp.com/services/ai-automation/).
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 15, 2026
 
@@ -7602,7 +7738,11 @@ No. I first identify which pages need distinct information and which problems co
 
 Yes. The goal is to help a buyer qualify the product and contact the right person. I do not add fictional prices or promise shopping features for pages that do not meet their requirements.
 
-[Discuss a catalog diagnostic](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 20, 2026
 
@@ -8463,7 +8603,11 @@ A prepaid audit first, then fixes by the hour or as a fixed scope once the findi
 
 **Related:** [Text-browser QA](https://gerriscorp.com/guides/lynx-qa/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [WordPress care](https://gerriscorp.com/services/wordpress-care/)
 
-[Ask for an accessibility audit](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 26, 2026
 
@@ -8520,7 +8664,11 @@ A fixed fee, paid in advance and quoted from the size of the company and the num
 
 **Related:** [Strategic advisory](https://gerriscorp.com/services/advisory/) · [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/) · [AI pilot tests](https://gerriscorp.com/guides/ai-pilot-tests/)
 
-[Talk about an AI policy](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 26, 2026
 
@@ -8576,7 +8724,55 @@ A fixed-scope audit, paid in advance and quoted from the number of domains and a
 
 **Related:** [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) · [Domain security guide](https://gerriscorp.com/guides/domain-account-security/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
-[Get your domains under control](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
+Updated October 26, 2026
+
+
+---
+
+Source: https://gerriscorp.com/services/site-index-and-glossary/
+Updated: 2026-10-26
+
+# Site indexes and glossaries
+
+A hand-built, back-of-the-book index of every topic on your website, and a glossary that defines your field's terms in plain language, both kept current as the site grows.
+
+Search boxes and menus serve people who already know what they're looking for. A good index serves the reader who knows the idea but not the word your site uses for it, and it shows every page where a topic comes up, with the main treatment marked. A glossary does the same for vocabulary. Both are old tools from print publishing, and both turn out to suit search engines and AI systems, which read them as a dense, well-linked map of what the site covers and how its pages relate.
+
+## Who it's for
+- Publishers, associations, and nonprofits with years of articles, reports, and resources.
+- Professional firms whose sites hold large libraries of guides or insights.
+- Documentation and knowledge-base sites where readers search for concepts, not page titles.
+- Any site that has outgrown its navigation.
+
+## How it works
+
+I read the site the way an indexer reads a book. Each page gets headings for the topics it treats, people and organizations it names, and the questions it answers, with subheadings where a topic splits, cross-references between synonyms, and the main discussion of each topic marked so readers go there first. The glossary collects the terms a newcomer would stumble on and defines each in a sentence or two, linking to the page that explains it in full.
+
+The index lives as structured data in your site's repository or content system, and the page is generated from it. A build check lists any new page that hasn't been indexed yet, so the index stays complete as content is added. This site carries an index and a glossary built this way, linked from the footer.
+
+## What you get
+- An A to Z index page covering every page on the site, with subheadings and cross-references.
+- A glossary page, alphabetized, with each term linked to its fullest treatment.
+- The underlying data file and a short guide for adding entries when pages are published.
+- A check in the build or publishing workflow that flags unindexed pages.
+
+## Why it helps search
+
+An index adds hundreds of descriptive internal links, written as the topic names readers use, pointing at the pages that cover each topic best. That's the kind of linking search engines use to understand a site's structure, and it gives AI systems a clean list of what the site knows about. It also exposes gaps: a topic with one thin mention, or two pages competing for the same subject, shows up plainly in an index.
+
+**Related:** [Internal linking](https://gerriscorp.com/services/internal-linking/) · [Editorial services](https://gerriscorp.com/services/editorial/) · [This site's index](https://gerriscorp.com/site-index/)
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 26, 2026
 
@@ -8633,6 +8829,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
 - [Your customers meet an AI answer before they meet you. I help you check whether it names you.](https://gerriscorp.com/services/ai-visibility/): Gerris audits how AI answers describe your business, corrects the sources they rely on across Google, ChatGPT, Perplexity, and Gemini, and measures monthly.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
+- [Site indexes and glossaries](https://gerriscorp.com/services/site-index-and-glossary/): Chris Abraham builds a hand-made A to Z index and a plain-language glossary for content-heavy websites, so readers, crawlers, and AI tools can find every topic.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
 - [Internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/): Connect your website's services, articles, products, and case studies with an internal linking plan: crawl evidence, clear anchors, and verified changes.
@@ -8747,7 +8944,7 @@ Updated: 2026-10-26
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 521 headings drawn from 127 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 525 headings drawn from 128 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -8957,6 +9154,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## B
 - B2B catalog SEO, [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/), **[B2B catalog SEO](https://gerriscorp.com/guides/b2b-catalog-seo/)**
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
+- back-of-the-book index, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**
 - Barracuda, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - Basecamp, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
@@ -9343,6 +9541,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - GitLab, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - Global Predictions, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+- glossaries, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - glossary, **[Glossary](https://gerriscorp.com/guides/glossary/)**
 - GoDaddy, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - Google AI Mode, [AI Search](https://gerriscorp.com/services/ai-search/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
@@ -9481,6 +9680,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Institute for the Future, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 - interim and white label executive, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
+- internal linking, [Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)
 - internal links, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[Internal Linking](https://gerriscorp.com/services/internal-linking/)**
   - acceptance, [Internal Linking](https://gerriscorp.com/services/internal-linking/)
   - anchor wording, [Internal Linking](https://gerriscorp.com/services/internal-linking/)
@@ -9927,6 +10127,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - duplicate product markup, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
   - review metafields, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
 
+- site indexes, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - site migrations, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Project Rescue](https://gerriscorp.com/services/rescue/), **[Migrations](https://gerriscorp.com/services/migrations/)**, **[Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)**, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [301 redirects](https://gerriscorp.com/site-index/#ix-301-redirects); [migration recovery](https://gerriscorp.com/site-index/#ix-migration-recovery)
   - after launch, [Migrations](https://gerriscorp.com/services/migrations/)
   - baseline, [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)

@@ -56,6 +56,10 @@ It builds on SEO. Most AI assistants search the web before answering, so strong 
 
 **Related:** [How AI assistants decide what to say](https://gerriscorp.com/guides/ai-assistants/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Strategic advisory](https://gerriscorp.com/services/advisory/)
 
-[Ask me what the AI assistants say about you](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026

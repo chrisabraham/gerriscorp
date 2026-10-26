@@ -65,6 +65,10 @@ Whatever your team uses, such as Jira, Linear, GitHub Issues, or Basecamp.
 
 **Related:** [Fractional technical lead](https://gerriscorp.com/services/technical-lead/) · [Content the crawler never sees](https://gerriscorp.com/services/crawler-visibility/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [SEO engineering](https://gerriscorp.com/services/seo-engineering/) · [Repository access for an outside SEO](https://gerriscorp.com/guides/repository-access/)
 
-[Get your developers a real spec](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026

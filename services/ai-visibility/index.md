@@ -36,7 +36,6 @@ For local and service businesses, the Google Business Profile is one of the prim
 - AI-answer presence measurement is already a sold, scheduled deliverable inside a multi-location retail engagement: baseline first, then monthly across Google Search, Maps, ChatGPT, and Perplexity.
 - My audit format has been run in full for a therapy practice, covering entity consistency and AI-readiness end to end.
 - My claim-layer build (entity schema, llms.txt, canonical explainer page, AI-presence baseline) is already in production for a media client.
-- A client has already paid the $750 audit price for the pilot.
 
 ## How engagements run
 1. **A short call** to confirm fit, your markets, and your money searches.
@@ -46,5 +45,11 @@ For local and service businesses, the Google Business Profile is one of the prim
 The machines are describing your business to your customers right now. Gerris makes sure they get it right.
 
 **[Contact Gerris to start with the audit.](https://gerriscorp.com/contact/)**
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 24, 2026

@@ -42,4 +42,10 @@ The full method is free in my guide to [building a podcast website with Codex or
 
 A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are billed by the hour or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 15, 2026

@@ -34,4 +34,10 @@ Google's spam policies target content produced at scale to manipulate rankings a
 
 Per piece or a monthly allotment, prepaid, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 14, 2026

@@ -1061,6 +1061,17 @@
    "see": [],
    "main": []
   },
+  "back-of-the-book index": {
+   "kind": "topic",
+   "pages": [
+    "services/site-index-and-glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/site-index-and-glossary"
+   ]
+  },
   "backups": {
    "kind": "topic",
    "pages": [
@@ -3294,6 +3305,17 @@
    "see": [],
    "main": []
   },
+  "glossaries": {
+   "kind": "topic",
+   "pages": [
+    "services/site-index-and-glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/site-index-and-glossary"
+   ]
+  },
   "glossary": {
    "kind": "topic",
    "pages": [
@@ -4075,6 +4097,15 @@
    "kind": "topic",
    "pages": [
     "guides/hype-or-shift"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "internal linking": {
+   "kind": "topic",
+   "pages": [
+    "services/site-index-and-glossary"
    ],
    "subs": {},
    "see": [],
@@ -6575,6 +6606,17 @@
     "case-studies/shopify-migration"
    ]
   },
+  "site indexes": {
+   "kind": "topic",
+   "pages": [
+    "services/site-index-and-glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "services/site-index-and-glossary"
+   ]
+  },
   "site migrations": {
    "kind": "topic",
    "pages": [
@@ -8107,6 +8149,7 @@
   "guides/ai-use-policy",
   "services/accessibility",
   "services/ai-policy",
-  "services/domain-portfolio"
+  "services/domain-portfolio",
+  "services/site-index-and-glossary"
  ]
 }

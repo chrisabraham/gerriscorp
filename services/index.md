@@ -35,6 +35,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): articles and pages written with AI from your own material, then checked claim by claim before they go live.
+- [Site indexes and glossaries](https://gerriscorp.com/services/site-index-and-glossary/): a hand-built A to Z index and a plain-language glossary for content-heavy websites.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): a page and transcript for every episode, generated from your feed and updated every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 

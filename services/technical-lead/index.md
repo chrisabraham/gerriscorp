@@ -48,4 +48,10 @@ I work with your developer. Most of the value comes from giving a good developer
 
 I turn audit findings into scoped developer tasks, separate business decisions from code changes, and verify the behavior after release. Each task includes examples, acceptance criteria, and a named decision owner. See the guide to [writing SEO developer tickets](https://gerriscorp.com/guides/seo-developer-tickets/) for the working method.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 24, 2026

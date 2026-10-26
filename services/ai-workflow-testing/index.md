@@ -45,4 +45,10 @@ With a named workflow, a small set of representative tasks, and a paid diagnosti
 
 The [AI pilot testing guide](https://gerriscorp.com/guides/ai-pilot-tests/) includes a worksheet you can use yourself. For a review, [send me the workflow and what a good result should accomplish](https://gerriscorp.com/contact/). If you need the tool built as well, see [AI agents and automation](https://gerriscorp.com/services/ai-automation/).
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 15, 2026

@@ -49,4 +49,10 @@ Yes. The proposed placements and destinations can be delivered as a working list
 
 This work fits alongside [on page SEO](https://gerriscorp.com/services/on-page-seo/), [large site SEO](https://gerriscorp.com/services/large-sites/), and [agency support](https://gerriscorp.com/services/agency-partner/). [Tell me which pages visitors should be finding](https://gerriscorp.com/contact/) and I can scope a practical starting point.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 15, 2026

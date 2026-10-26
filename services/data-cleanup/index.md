@@ -41,6 +41,10 @@ Usually I export, clean, and re-import with your approval at each step, which ke
 
 **Related:** [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 
-[Send me the messy spreadsheet](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 15, 2026

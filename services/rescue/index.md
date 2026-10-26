@@ -56,4 +56,10 @@ If you are preparing to receive a site rather than responding to an outage, the 
 
 A useful takeover begins with evidence about what failed and what changed. My [website incident timeline guide](https://gerriscorp.com/guides/website-incident-timeline/) shows how to align release records, public responses, and dated reports before choosing a repair.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 24, 2026

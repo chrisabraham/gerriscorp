@@ -50,6 +50,10 @@ Not when it's planned. I copy every record, lower time-to-live values ahead of t
 
 **Related:** [SPF, DKIM, and DMARC explained](https://gerriscorp.com/guides/email-authentication/) · [Site speed and Cloudflare](https://gerriscorp.com/services/site-speed/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
-[Get your email and domains in order](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026

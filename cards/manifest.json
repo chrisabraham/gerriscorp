@@ -119,6 +119,7 @@
  "services-rescue": "g1|Service|Project rescue, takeovers, and legacy migrations",
  "services-search-console": "g1|Service|Google Search Console setup, cleanup, and indexing fixes",
  "services-seo-engineering": "g1|Service|SEO engineering for sites built in code",
+ "services-site-index-and-glossary": "g1|Service|Site indexes and glossaries",
  "services-site-speed": "g1|Service|Site speed, Core Web Vitals, and Cloudflare",
  "services-technical-lead": "g1|Service|Fractional technical lead",
  "services-technical-seo": "g1|Service|Technical SEO forensics and fixes",

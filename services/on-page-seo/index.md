@@ -60,4 +60,10 @@ Audits cover the whole site. Rewrites start with the pages that bring in the mos
 
 When the main opportunity is how the existing content connects, I offer a dedicated [internal linking strategy project](https://gerriscorp.com/services/internal-linking/), with specific source pages, destinations, and editorial placements for your team.
 
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
 Updated October 5, 2026

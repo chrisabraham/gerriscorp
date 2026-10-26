@@ -48,6 +48,10 @@ A fixed-scope audit, paid in advance and quoted from the number of domains and a
 
 **Related:** [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) · [Domain security guide](https://gerriscorp.com/guides/domain-account-security/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
-[Get your domains under control](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 26, 2026

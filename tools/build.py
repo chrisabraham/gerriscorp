@@ -100,6 +100,10 @@ SERVICE_GROUPS[0][1].insert(SERVICE_GROUPS[0][1].index("services/advisory/"), "s
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/wordpress-care/") + 1, "services/accessibility/")
 SERVICE_GROUPS[2][1].append("services/domain-portfolio/")
 
+# A service harvested from documented work, October 26, 2026, written by Claude Code.
+FILES += ["services/site-index-and-glossary"]
+SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/editorial/") + 1, "services/site-index-and-glossary/")
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
@@ -493,6 +497,15 @@ def body_html(p, *, contents=True):
   <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
   <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:{TEL}">Call {PHONE}</a> <a class="button" href="mailto:{EMAIL}">Email {EMAIL}</a></p>
   <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>"""
+    if p["kind"] == "service":
+        # Service pages end on two routes only, Calendly or Upwork (owner, 2026-10-26); a closing contact button gives way to them.
+        body = re.sub(r'\s*<p><a class="button" href="[^"]*contact/">[^<]*</a></p>\s*$', "", body)
+        body += """
+<aside class="help-box" aria-label="Start a conversation">
+  <h2>Start a conversation</h2>
+  <p>Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Schedule a call</a> <a class="button" href="https://www.upwork.com/freelancers/chrisjabraham">Work with me through Upwork</a></p>
 </aside>"""
     if p["sources"]:
         body += ('\n<h2>References</h2>\n<ul class="sources">\n'

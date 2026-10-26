@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 521 headings drawn from 127 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 525 headings drawn from 128 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -214,6 +214,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## B
 - B2B catalog SEO, [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/), **[B2B catalog SEO](https://gerriscorp.com/guides/b2b-catalog-seo/)**
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
+- back-of-the-book index, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**
 - Barracuda, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - Basecamp, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
@@ -600,6 +601,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - GitLab, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - Global Predictions, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+- glossaries, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - glossary, **[Glossary](https://gerriscorp.com/guides/glossary/)**
 - GoDaddy, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - Google AI Mode, [AI Search](https://gerriscorp.com/services/ai-search/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
@@ -738,6 +740,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Institute for the Future, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 - interim and white label executive, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
+- internal linking, [Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)
 - internal links, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[Internal Linking](https://gerriscorp.com/services/internal-linking/)**
   - acceptance, [Internal Linking](https://gerriscorp.com/services/internal-linking/)
   - anchor wording, [Internal Linking](https://gerriscorp.com/services/internal-linking/)
@@ -1184,6 +1187,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - duplicate product markup, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
   - review metafields, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
 
+- site indexes, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - site migrations, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Project Rescue](https://gerriscorp.com/services/rescue/), **[Migrations](https://gerriscorp.com/services/migrations/)**, **[Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)**, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [301 redirects](https://gerriscorp.com/site-index/#ix-301-redirects); [migration recovery](https://gerriscorp.com/site-index/#ix-migration-recovery)
   - after launch, [Migrations](https://gerriscorp.com/services/migrations/)
   - baseline, [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)

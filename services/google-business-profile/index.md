@@ -46,6 +46,10 @@ Google's appeal reviews take anywhere from days to several weeks, and complex ca
 
 Yes, as part of local SEO within [ongoing support](https://gerriscorp.com/services/ongoing-support/) or a broader SEO engagement.
 
-[Book a profile diagnostic](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026

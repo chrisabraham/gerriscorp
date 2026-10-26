@@ -49,6 +49,10 @@ The capacity is reserved for you each month. Whether unused time carries over is
 
 **Related:** [Search Console](https://gerriscorp.com/services/search-console/) · [On-page SEO](https://gerriscorp.com/services/on-page-seo/) · [Work With Me](https://gerriscorp.com/work-with-me/)
 
-[Ask about ongoing support](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 5, 2026

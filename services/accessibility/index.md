@@ -52,6 +52,10 @@ A prepaid audit first, then fixes by the hour or as a fixed scope once the findi
 
 **Related:** [Text-browser QA](https://gerriscorp.com/guides/lynx-qa/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [WordPress care](https://gerriscorp.com/services/wordpress-care/)
 
-[Ask for an accessibility audit](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 26, 2026

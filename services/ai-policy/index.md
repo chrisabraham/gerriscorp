@@ -49,6 +49,10 @@ A fixed fee, paid in advance and quoted from the size of the company and the num
 
 **Related:** [Strategic advisory](https://gerriscorp.com/services/advisory/) · [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/) · [AI pilot tests](https://gerriscorp.com/guides/ai-pilot-tests/)
 
-[Talk about an AI policy](https://gerriscorp.com/contact/)
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
 Updated October 26, 2026
