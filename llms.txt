@@ -2,7 +2,7 @@
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management. Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.
 
-Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
+Every engagement starts with a conversation. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
 
 ## Consulting and technical direction
 
@@ -43,7 +43,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/index.md): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/index.md): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
-- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/index.md): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/index.md): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a written diagnostic and then scopes any appeal as its own step.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/index.md): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 - [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/index.md): Chris Abraham inventories every domain a company holds, moves each into a company-owned account, locks it down, and documents renewals, DNS, and access.
 
@@ -143,7 +143,7 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [Frequently asked questions](https://gerriscorp.com/faq/index.md): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Editorial standards](https://gerriscorp.com/standards/index.md): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Colophon](https://gerriscorp.com/colophon/index.md): How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
-- [Contact](https://gerriscorp.com/contact/index.md): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+- [Contact](https://gerriscorp.com/contact/index.md): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
 - [Site map](https://gerriscorp.com/sitemap/index.md): A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 - [Index](https://gerriscorp.com/site-index/index.md): An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 

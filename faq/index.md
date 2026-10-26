@@ -1,6 +1,6 @@
 > Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 >
-> Source: https://gerriscorp.com/faq/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/faq/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Frequently asked questions
 
@@ -42,7 +42,7 @@ Fixes take effect as Google recrawls the affected pages: days for important page
 
 ### How do you charge?
 
-Diagnostics, briefings, and second opinions are prepaid at a fixed price. Larger projects start with a deposit. Ongoing support and advisory retainers are billed monthly in advance.
+New engagements are quoted as a flat fee, settled in conversation once I understand the problem and written into the scope.
 
 ### Can I hire you through Upwork?
 
@@ -76,4 +76,4 @@ Yes. I name clients only with their permission, and I'm happy to sign a nondiscl
 
 Something else? [Ask me directly](https://gerriscorp.com/contact/).
 
-Updated October 5, 2026
+Updated October 26, 2026

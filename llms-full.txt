@@ -347,7 +347,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/services/agency-partner/
-Updated: 2026-10-05
+Updated: 2026-10-26
 
 # Agency partner and white-label support
 
@@ -373,7 +373,7 @@ Marketing, PR, and web agencies bring me in when a client needs deeper technical
 The full range of my work is available through partners: [technical SEO forensics](https://gerriscorp.com/services/technical-seo/), [migrations](https://gerriscorp.com/services/migrations/), [AI search visibility](https://gerriscorp.com/services/ai-search/) and answer-focused content, [e-commerce catalog work](https://gerriscorp.com/services/ecommerce/), [multi-location architecture](https://gerriscorp.com/services/multi-location/), site architecture and city-page priorities, metadata and schema implementation, GBP tracking and recovery, and [developer specs and QA](https://gerriscorp.com/services/developers/). I've worked with PR firms, digital marketing agencies, SEO agencies, and boutique web shops, across WordPress, Shopify, Magento, Umbraco, Wix, and modern JavaScript stacks.
 
 ## Arrangements
-- **Project subcontracting:** a defined deliverable for one client, scoped and prepaid.
+- **Project subcontracting:** a defined deliverable for one client, scoped in writing.
 - **Retained capacity:** a monthly block of hours your team can draw on across clients.
 - **Referral:** you introduce the client and I contract directly, with a referral fee where agreed.
 
@@ -395,7 +395,7 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 26, 2026
 
 
 ---
@@ -648,7 +648,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/services/advisory/
-Updated: 2026-10-05
+Updated: 2026-10-26
 
 # Strategic advisory and briefings
 
@@ -684,7 +684,7 @@ Always. I name no advisory or reputation clients, and I'm happy to sign a nondis
 
 ### How is advisory work billed?
 
-Retainers are billed monthly in advance. Briefings, workshops, and second opinions are scoped and prepaid individually.
+Briefings, workshops, second opinions, and retainers are each scoped in conversation.
 
 **Related:** [Reputation and perception management](https://gerriscorp.com/services/reputation/) · [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [About Chris Abraham](https://gerriscorp.com/about/)
 
@@ -694,7 +694,7 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 26, 2026
 
 
 ---
@@ -1198,7 +1198,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/services/wordpress-care/
-Updated: 2026-10-14
+Updated: 2026-10-26
 
 # WordPress care: caching, hardening, or moving off
 
@@ -1230,7 +1230,7 @@ A short diagnostic answers it: how often the site changes, who edits it, what pl
 
 ## Engagement
 
-A prepaid diagnostic, then a fixed-scope setup or migration. Monthly care is available under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+A diagnostic, then a fixed-scope setup or migration. Monthly care is available under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Start a conversation
 
@@ -1238,7 +1238,7 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 14, 2026
+Updated October 26, 2026
 
 
 ---
@@ -1499,7 +1499,7 @@ Updated October 24, 2026
 ---
 
 Source: https://gerriscorp.com/services/editorial/
-Updated: 2026-10-14
+Updated: 2026-10-26
 
 # Fact-checked writing in your voice
 
@@ -1531,7 +1531,7 @@ Google's spam policies target content produced at scale to manipulate rankings a
 
 ## Engagement
 
-Per piece or a monthly allotment, prepaid, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+Per piece or a monthly allotment, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Start a conversation
 
@@ -1539,13 +1539,13 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 14, 2026
+Updated October 26, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/services/podcast-sites/
-Updated: 2026-10-15
+Updated: 2026-10-26
 
 # Podcast websites, built and run for you
 
@@ -1585,7 +1585,7 @@ The full method is free in my guide to [building a podcast website with Codex or
 
 ## Engagement
 
-A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are quoted as a fixed fee or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+A build from an existing feed is a fixed-scope project, quoted after a call about your feed and your goals. Additions after launch are quoted as a fixed fee or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Start a conversation
 
@@ -1593,7 +1593,7 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 15, 2026
+Updated October 26, 2026
 
 
 ---
@@ -1794,7 +1794,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/services/google-business-profile/
-Updated: 2026-10-05
+Updated: 2026-10-26
 
 # Google Business Profile hard cases
 
@@ -1804,11 +1804,11 @@ A Google Business Profile is often the first thing a local customer sees, and wh
 
 ## Advisory work, priced for the effort
 
-I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer. Each stage is scoped and paid in advance, so the work is defined before it starts.
+I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer. Each stage is scoped in writing, so the work is defined before it starts.
 
 ## Stage one: a written diagnostic
 
-A prepaid review of the profile, its history, the account and its other profiles, the business's documentation, and Google's guidelines, delivered as a written findings report:
+A review of the profile, its history, the account and its other profiles, the business's documentation, and Google's guidelines, delivered as a written findings report:
 - What most likely triggered the problem, based on the evidence available.
 - What documentation exists and what's missing.
 - Whether an appeal or reverification is viable, and what it would involve.
@@ -1846,7 +1846,7 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 26, 2026
 
 
 ---
@@ -7115,7 +7115,7 @@ Updated October 24, 2026
 ---
 
 Source: https://gerriscorp.com/work-with-me/
-Updated: 2026-10-05
+Updated: 2026-10-26
 
 # Work with me
 
@@ -7132,16 +7132,13 @@ A sensible first step is a paid diagnostic with a clear question and a clear del
 ## How a project runs
 1. **First conversation.** You describe the site and the problem by email or in a short call. I say whether I'm the right person and where I'd start.
 2. **Scope in writing.** The questions, the deliverable, the access needed, the timeline, and the price, agreed before work begins.
-3. **Payment.** The diagnostic is prepaid; larger projects start with a deposit.
-4. **The work.** I investigate, report progress in writing, and raise anything urgent at once.
-5. **Delivery.** Findings, fixes, tickets, or the agreed deliverable, walked through with you and your team.
-6. **Verification.** A check of the live result once changes ship, and a recommendation for what comes next.
+3. **The work.** I investigate, report progress in writing, and raise anything urgent at once.
+4. **Delivery.** Findings, fixes, tickets, or the agreed deliverable, walked through with you and your team.
+5. **Verification.** A check of the live result once changes ship, and a recommendation for what comes next.
 
-## Payment terms
-- Diagnostics, briefings, and second opinions are prepaid.
-- Projects start with a deposit.
-- Retainers are billed at the start of each month.
-- Invoices are due on receipt, and work continues once they're paid.
+## Fees
+
+Fees are settled in conversation, once I understand the problem, and written into the scope before any work begins.
 
 ## Where the work happens
 
@@ -7164,13 +7161,13 @@ More answers on the [FAQ](https://gerriscorp.com/faq/).
 
 [Start with a diagnostic](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 26, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/faq/
-Updated: 2026-10-05
+Updated: 2026-10-26
 
 # Frequently asked questions
 
@@ -7212,7 +7209,7 @@ Fixes take effect as Google recrawls the affected pages: days for important page
 
 ### How do you charge?
 
-Diagnostics, briefings, and second opinions are prepaid at a fixed price. Larger projects start with a deposit. Ongoing support and advisory retainers are billed monthly in advance.
+New engagements are quoted as a flat fee, settled in conversation once I understand the problem and written into the scope.
 
 ### Can I hire you through Upwork?
 
@@ -7246,7 +7243,7 @@ Yes. I name clients only with their permission, and I'm happy to sign a nondiscl
 
 Something else? [Ask me directly](https://gerriscorp.com/contact/).
 
-Updated October 5, 2026
+Updated October 26, 2026
 
 
 ---
@@ -7345,7 +7342,7 @@ Updated October 15, 2026
 ---
 
 Source: https://gerriscorp.com/contact/
-Updated: 2026-10-05
+Updated: 2026-10-26
 
 # Contact
 
@@ -7377,7 +7374,7 @@ Tell me what's going on with your site. Include the address, what you're seeing,
 
 Gerris Corp is based in South Arlington, Arlington, Virginia 22204, and takes on work from anywhere, with clients so far in the US, Canada, the UK, Ireland, Australia, and New Zealand. I work in US Eastern time and schedule calls across time zones. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
 
-Updated October 5, 2026
+Updated October 26, 2026
 
 
 ---
@@ -8797,7 +8794,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Editorial standards](https://gerriscorp.com/standards/): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Colophon](https://gerriscorp.com/colophon/): How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
-- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
 - [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
 - [Index](https://gerriscorp.com/site-index/): an A to Z list of the people, companies, tools, and problems the site covers, each linked to its pages.
 
@@ -8837,7 +8834,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 ## Local, reputation, and email
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
-- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a written diagnostic and then scopes any appeal as its own step.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 - [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): Chris Abraham inventories every domain a company holds, moves each into a company-owned account, locks it down, and documents renewals, DNS, and access.
 

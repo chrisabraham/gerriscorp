@@ -1,6 +1,6 @@
 > How engagements with Chris Abraham work: a paid diagnostic first, then implementation, migration reviews, advisory, or support, all tracked in writing.
 >
-> Source: https://gerriscorp.com/work-with-me/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/work-with-me/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Work with me
 
@@ -17,16 +17,13 @@ A sensible first step is a paid diagnostic with a clear question and a clear del
 ## How a project runs
 1. **First conversation.** You describe the site and the problem by email or in a short call. I say whether I'm the right person and where I'd start.
 2. **Scope in writing.** The questions, the deliverable, the access needed, the timeline, and the price, agreed before work begins.
-3. **Payment.** The diagnostic is prepaid; larger projects start with a deposit.
-4. **The work.** I investigate, report progress in writing, and raise anything urgent at once.
-5. **Delivery.** Findings, fixes, tickets, or the agreed deliverable, walked through with you and your team.
-6. **Verification.** A check of the live result once changes ship, and a recommendation for what comes next.
+3. **The work.** I investigate, report progress in writing, and raise anything urgent at once.
+4. **Delivery.** Findings, fixes, tickets, or the agreed deliverable, walked through with you and your team.
+5. **Verification.** A check of the live result once changes ship, and a recommendation for what comes next.
 
-## Payment terms
-- Diagnostics, briefings, and second opinions are prepaid.
-- Projects start with a deposit.
-- Retainers are billed at the start of each month.
-- Invoices are due on receipt, and work continues once they're paid.
+## Fees
+
+Fees are settled in conversation, once I understand the problem, and written into the scope before any work begins.
 
 ## Where the work happens
 
@@ -49,4 +46,4 @@ More answers on the [FAQ](https://gerriscorp.com/faq/).
 
 [Start with a diagnostic](https://gerriscorp.com/contact/)
 
-Updated October 5, 2026
+Updated October 26, 2026

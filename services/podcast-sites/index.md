@@ -1,6 +1,6 @@
 > I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 >
-> Source: https://gerriscorp.com/services/podcast-sites/ · Updated 2026-10-15 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/podcast-sites/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Podcast websites, built and run for you
 
@@ -40,7 +40,7 @@ The full method is free in my guide to [building a podcast website with Codex or
 
 ## Engagement
 
-A standard build from an existing feed is an afternoon of my time. It's a fixed-scope project, prepaid, quoted after a call about your feed and your goals. Additions after launch are quoted as a fixed fee or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+A build from an existing feed is a fixed-scope project, quoted after a call about your feed and your goals. Additions after launch are quoted as a fixed fee or covered under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Start a conversation
 
@@ -48,4 +48,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 15, 2026
+Updated October 26, 2026

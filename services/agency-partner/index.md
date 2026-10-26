@@ -1,6 +1,6 @@
 > Chris Abraham works inside agencies' client relationships as a technical SEO and AI search specialist, under NDA, in your Basecamp, with your branding.
 >
-> Source: https://gerriscorp.com/services/agency-partner/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/agency-partner/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Agency partner and white-label support
 
@@ -26,7 +26,7 @@ Marketing, PR, and web agencies bring me in when a client needs deeper technical
 The full range of my work is available through partners: [technical SEO forensics](https://gerriscorp.com/services/technical-seo/), [migrations](https://gerriscorp.com/services/migrations/), [AI search visibility](https://gerriscorp.com/services/ai-search/) and answer-focused content, [e-commerce catalog work](https://gerriscorp.com/services/ecommerce/), [multi-location architecture](https://gerriscorp.com/services/multi-location/), site architecture and city-page priorities, metadata and schema implementation, GBP tracking and recovery, and [developer specs and QA](https://gerriscorp.com/services/developers/). I've worked with PR firms, digital marketing agencies, SEO agencies, and boutique web shops, across WordPress, Shopify, Magento, Umbraco, Wix, and modern JavaScript stacks.
 
 ## Arrangements
-- **Project subcontracting:** a defined deliverable for one client, scoped and prepaid.
+- **Project subcontracting:** a defined deliverable for one client, scoped in writing.
 - **Retained capacity:** a monthly block of hours your team can draw on across clients.
 - **Referral:** you introduce the client and I contract directly, with a referral fee where agreed.
 
@@ -48,4 +48,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 26, 2026

@@ -970,7 +970,7 @@ llms = f"""# Gerris Corp
 
 > {ORG["description"]} Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.
 
-Every engagement starts with a prepaid diagnostic. Contact: {EMAIL}, {PHONE}, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
+Every engagement starts with a conversation. Contact: {EMAIL}, {PHONE}, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
 """ + "".join(f"\n## {title}\n\n" + "".join(f"- [{p['h1']}]({p['url']}index.md): {p['description']}\n" for p in group)
               for title, group in sections) + f"""
 ## Optional

@@ -1,6 +1,6 @@
-> Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+> Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
 >
-> Source: https://gerriscorp.com/contact/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/contact/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Contact
 
@@ -32,4 +32,4 @@ Tell me what's going on with your site. Include the address, what you're seeing,
 
 Gerris Corp is based in South Arlington, Arlington, Virginia 22204, and takes on work from anywhere, with clients so far in the US, Canada, the UK, Ireland, Australia, and New Zealand. I work in US Eastern time and schedule calls across time zones. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
 
-Updated October 5, 2026
+Updated October 26, 2026

@@ -17,7 +17,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Editorial standards](https://gerriscorp.com/standards/): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Colophon](https://gerriscorp.com/colophon/): How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
-- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
+- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
 - [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
 - [Index](https://gerriscorp.com/site-index/): an A to Z list of the people, companies, tools, and problems the site covers, each linked to its pages.
 
@@ -57,7 +57,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 ## Local, reputation, and email
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
-- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a written diagnostic and then scopes any appeal as its own step.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
 - [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): Chris Abraham inventories every domain a company holds, moves each into a company-owned account, locks it down, and documents renewals, DNS, and access.
 

@@ -1,6 +1,6 @@
-> Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
+> Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a written diagnostic and then scopes any appeal as its own step.
 >
-> Source: https://gerriscorp.com/services/google-business-profile/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/google-business-profile/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Google Business Profile hard cases
 
@@ -10,11 +10,11 @@ A Google Business Profile is often the first thing a local customer sees, and wh
 
 ## Advisory work, priced for the effort
 
-I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer. Each stage is scoped and paid in advance, so the work is defined before it starts.
+I take on Google Business Profile cases as paid advisory engagements or as part of an ongoing SEO or reputation retainer. Each stage is scoped in writing, so the work is defined before it starts.
 
 ## Stage one: a written diagnostic
 
-A prepaid review of the profile, its history, the account and its other profiles, the business's documentation, and Google's guidelines, delivered as a written findings report:
+A review of the profile, its history, the account and its other profiles, the business's documentation, and Google's guidelines, delivered as a written findings report:
 - What most likely triggered the problem, based on the evidence available.
 - What documentation exists and what's missing.
 - Whether an appeal or reverification is viable, and what it would involve.
@@ -52,4 +52,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 26, 2026

@@ -1,6 +1,6 @@
 > Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 >
-> Source: https://gerriscorp.com/services/advisory/ · Updated 2026-10-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/advisory/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Strategic advisory and briefings
 
@@ -36,7 +36,7 @@ Always. I name no advisory or reputation clients, and I'm happy to sign a nondis
 
 ### How is advisory work billed?
 
-Retainers are billed monthly in advance. Briefings, workshops, and second opinions are scoped and prepaid individually.
+Briefings, workshops, second opinions, and retainers are each scoped in conversation.
 
 **Related:** [Reputation and perception management](https://gerriscorp.com/services/reputation/) · [AI agents and automation](https://gerriscorp.com/services/ai-automation/) · [About Chris Abraham](https://gerriscorp.com/about/)
 
@@ -46,4 +46,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 5, 2026
+Updated October 26, 2026

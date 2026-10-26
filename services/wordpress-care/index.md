@@ -1,6 +1,6 @@
 > For WordPress sites that are slow, exposed, or costly to keep: Cloudflare page caching, hardening for what the cache can't shield, or a move to static pages.
 >
-> Source: https://gerriscorp.com/services/wordpress-care/ · Updated 2026-10-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/wordpress-care/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # WordPress care: caching, hardening, or moving off
 
@@ -32,7 +32,7 @@ A short diagnostic answers it: how often the site changes, who edits it, what pl
 
 ## Engagement
 
-A prepaid diagnostic, then a fixed-scope setup or migration. Monthly care is available under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+A diagnostic, then a fixed-scope setup or migration. Monthly care is available under [ongoing support](https://gerriscorp.com/services/ongoing-support/). Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Start a conversation
 
@@ -40,4 +40,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 14, 2026
+Updated October 26, 2026

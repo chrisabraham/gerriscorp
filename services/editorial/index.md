@@ -1,6 +1,6 @@
 > I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
 >
-> Source: https://gerriscorp.com/services/editorial/ · Updated 2026-10-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/editorial/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
 
 # Fact-checked writing in your voice
 
@@ -32,7 +32,7 @@ Google's spam policies target content produced at scale to manipulate rankings a
 
 ## Engagement
 
-Per piece or a monthly allotment, prepaid, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
+Per piece or a monthly allotment, priced once the first piece has set your voice rules. That first piece takes the longest, and every later one moves faster because of it. Terms are on [Work With Me](https://gerriscorp.com/work-with-me/).
 
 ## Start a conversation
 
@@ -40,4 +40,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 14, 2026
+Updated October 26, 2026
