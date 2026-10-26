@@ -16,7 +16,6 @@ Every engagement starts with a prepaid diagnostic. Contact: chris@gerriscorp.com
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/index.md): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/index.md): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
 - [B2B catalog SEO for manufacturers and distributors](https://gerriscorp.com/services/b2b-catalog-seo/index.md): B2B catalog SEO for manufacturers and distributors: product specifications, part discovery, crawlable templates, and quote paths tested on a focused pilot.
-- [One shared memory for every AI assistant your team uses](https://gerriscorp.com/services/shared-ai-memory/index.md): Chris Abraham sets up a private Git repository of plain Markdown that Claude, ChatGPT, Codex, and other assistants all read before acting and update after.
 
 ## Search and site performance
 

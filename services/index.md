@@ -14,7 +14,6 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Developer specs and implementation QA](https://gerriscorp.com/services/developers/): a diagnosis turned into a prioritized spec with evidence and acceptance criteria, then verification that the fix actually shipped.
 - [Agency partner and white-label support](https://gerriscorp.com/services/agency-partner/): technical SEO, AI search, and developer coordination inside your agency's client relationships.
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): small AI tools built with OpenAI Codex and Claude Code, with human confirmation on every action, tests, and encrypted backups.
-- [One shared memory for every AI assistant your team uses](https://gerriscorp.com/services/shared-ai-memory/): a private repository of Markdown that Claude, ChatGPT, Codex, and other assistants read before acting and update after.
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
 - [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
