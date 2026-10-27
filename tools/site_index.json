@@ -8038,6 +8038,15 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "citation provenance": {
+   "kind": "topic",
+   "pages": [
+    "guides/citation-provenance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   }
  },
  "reviewed": [
@@ -8170,6 +8179,7 @@
   "services/domain-portfolio",
   "services/site-index-and-glossary",
   "guides/black-hat-in-modern-dress",
-  "guides/stuck-in-the-folklore"
+  "guides/stuck-in-the-folklore",
+  "guides/citation-provenance"
  ]
 }
