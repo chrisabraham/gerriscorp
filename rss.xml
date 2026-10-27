@@ -8,6 +8,49 @@
   <lastBuildDate>Tue, 27 Oct 2026 12:00:00 +0000</lastBuildDate>
   <atom:link href="https://gerriscorp.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>Where Teams Get Stuck in AI Search: The Folklore Tier</title>
+    <link>https://gerriscorp.com/guides/stuck-in-the-folklore/</link>
+    <guid isPermaLink="true">https://gerriscorp.com/guides/stuck-in-the-folklore/</guid>
+    <pubDate>Tue, 27 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A reader asked which tier of the AI search avoid list traps most teams. The answer is tier two, folklore: purchasable ritual in the shape of a mechanism.</description>
+    <content:encoded>&lt;h1&gt;Where Teams Get Stuck in AI Search: The Folklore Tier&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-27"&gt;October 27, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;A reader of the avoid essay asked a clean question: of the three tiers, the played out, the folklore, and the fatal, which one holds the most teams? I answered tier two without pausing, and I have given the same answer in intake calls for a year. Tier one wastes effort. Tier three ends sites. Tier two consumes quarters inside respectable companies, with budgets, standups, and vendor reports all pointed at rituals the engines never requested.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://gerriscorp.com/stuck-in-the-folklore.svg" alt="Doodle: a lucky horseshoe charm drawn three times in red, green, and blue, hanging beside a price tag" width="240"&gt;&lt;/p&gt;
+
+&lt;h2&gt;The tiers, in one breath&lt;/h2&gt;
+&lt;p&gt;Tier one, the played out, holds word counts, keyword density dials, and commodity listicles built from the same outline every competitor downloaded. Tier two, the folklore, holds the charms: an llms.txt file installed as a ranking asset, FAQ schema poured over pages that lost traffic for structural reasons, the brand quoted back at the engines from its own pages and the result labeled GEO, citation slots purchased in roundups assembled for sellers. Tier three holds the offenses Google names in policy, scaled content abuse and site reputation abuse and their kin. A team can leave tier one in an afternoon. Tier three requires intent. Tier two requires a confession, and confessions move slowly through an org chart.&lt;/p&gt;
+
+&lt;h2&gt;Why folklore wins the budget&lt;/h2&gt;
+&lt;p&gt;Folklore arrives in purchasable form. A vendor packages it, a conference talk blesses it, a line item carries it through procurement. Each ritual ships an artifact a manager can display: a file at the root of the domain, a block of schema in the page source, a wall of roundup placements, a dashboard filled with green checks. The artifact carries the silhouette of engineering, inputs and outputs and a changelog, and a review meeting can grade it in minutes. The genuine article refuses packaging. A record of first hand, citable work accumulates across quarters, and its early returns look thin beside a basket of deliverables. Procurement rewards the basket. The stall starts there.&lt;/p&gt;
+&lt;p&gt;Folklore also protects the buyer. A charm that fails indicts the charm, and the vendor ships a newer charm. A record that fails indicts the material, and the material belongs to the company. Ritual keeps the argument about tools. The record starts an argument about expertise, sourcing, and nerve, and respectable teams postpone that argument quarter after quarter.&lt;/p&gt;
+
+&lt;h2&gt;The diagnostic I run&lt;/h2&gt;
+&lt;p&gt;Four findings mark a stuck team, and I look for them in this order. First, a charm file treated as an asset, with a ticket history and an owner, while the pages carrying the company's actual knowledge sit stale. Second, schema ceremonies: FAQ blocks and author markup layered onto pages whose underlying problem is thin, duplicated, or outdated content. Third, a citation line item, roundup placements and listicle slots renewed like a subscription, purchased from publishers whose own traffic comes from selling the slots. Fourth, self quotation programs, content built to make the brand's pages cite the brand's claims in a closed loop, scored as visibility work. Any single finding earns a conversation. All four describe a program.&lt;/p&gt;
+&lt;p&gt;The reporting tells the same story. Stuck teams report ritual compliance: files present, blocks valid, placements live, tasks closed. The answers a buyer receives in ChatGPT, Perplexity, Gemini, and AI Mode go unmeasured, because the measurement embarrasses the rituals. I ask one question in the first meeting: show me the last ten answers in your category and point to your company. Silence in that room is the diagnosis, delivered free of charge.&lt;/p&gt;
+
+&lt;h2&gt;What the stall costs&lt;/h2&gt;
+&lt;p&gt;The invoice understates the damage. A quarter spent on folklore is a quarter in which the record stayed unwritten, and records compound. A rival publishing primary data, teardown notes, field results, and pricing research accumulates citations while the stuck team decorates. Answer engines cite sources with a history of public accuracy, and history has a start date. Every quarter of ritual pushes that start date further out, and the gap reads as authority from the outside. The engines see a decorated site carrying thin evidence, and a plainer site carrying the receipts. Receipts win the citation.&lt;/p&gt;
+
+&lt;h2&gt;What movement looks like&lt;/h2&gt;
+&lt;p&gt;Movement starts with subtraction. I retire one ritual per quarter and move its budget into production. The charm file goes quiet. The roundup subscription lapses. The schema ceremony shrinks to the blocks a page has earned. The freed hours fund a publishing cadence of first hand material: measurements from real engagements, comparisons run on live tools, postmortems with numbers attached, guidance that ages in public and gets corrected in public. That material gives outside publishers something to cite, and citations earned from accountable pages build the external record the engines cross check. My guide to &lt;a href="https://gerriscorp.com/guides/measure-ai-search/"&gt;measuring AI search&lt;/a&gt; sets the scoreboard: a fixed set of buyer questions, run across the major answer engines on a schedule, scored for presence, position, and citation. Presence moves first, slowly, and then with the stubbornness of a reputation. That curve is the work.&lt;/p&gt;
+&lt;p&gt;The folklore tier empties one confession at a time. A team admits the roundup line item bought decoration, admits the charm file served as a talisman, admits the record is the asset, and starts writing it. I have watched the admission take an hour and the first honest quarter take ninety days. Both beat another year of ceremonies.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/appearance/ai-features"&gt;Google Search Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content:encoded>
+  </item>
+  <item>
     <title>Black hat SEO in modern dress: the tactics that end sites</title>
     <link>https://gerriscorp.com/guides/black-hat-in-modern-dress/</link>
     <guid isPermaLink="true">https://gerriscorp.com/guides/black-hat-in-modern-dress/</guid>

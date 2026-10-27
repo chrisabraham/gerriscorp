@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 526 headings drawn from 129 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 527 headings drawn from 130 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -1170,6 +1170,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - redirects in configuration, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/)
   - structured data in components, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/)
 
+- SEO folklore, [Stuck in the Folklore](https://gerriscorp.com/guides/stuck-in-the-folklore/)
 - SEO plugins, switched off, **[Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/)**
 - SEO superpower, **[The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)**
   - AI that reads code, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
