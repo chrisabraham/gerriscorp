@@ -28,6 +28,8 @@ Grade three is independent staking: named testimonials from people whose own rep
 
 The standard I run for clients and for myself has two halves, and skipping either half fails the audit. First, build the owned record without embarrassment: complete, current, factual, deep enough that any question a buyer asks finds an answer in the subject's own hand. Second, earn the independent layer with the same seriousness: do work worth staking a name on, ask the named client for the named testimonial, keep the marketplace ledger spotless, and hand journalists material with receipts attached so their coverage stands without you in the room. Then measure the program the way an auditor would. Draw the citation graph behind your best answers and count how much of it the client does not own. That share is the reputation. Grow the share and the answers harden against any audit a competitor, a journalist, or a board can run. The owned record opens the door. Independent staking is what lets a stranger walk through it believing.
 
+[Search my name before you hire me](https://www.google.com/search?q=chris+abraham+seo)
+
 ## Want me to handle this for you?
 
 This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.

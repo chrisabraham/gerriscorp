@@ -1,12 +1,14 @@
 > Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
 >
-> Source: https://gerriscorp.com/contact/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/contact/ · Updated 2026-10-27 · By Chris Abraham, Gerris Corp
 
 # Contact
 
 ## Cut to the chase (TL;DR)
 
 **Book a call:** [30 minutes on my calendar](https://calendly.com/chrisabraham/30) is the fastest route in. **Call or text:** [+1 202-352-5051](tel:+12023525051), and yes, texts are welcome. **Upwork:** [my profile there](https://www.upwork.com/freelancers/chrisjabraham) carries the contract and payment protection, if you prefer hiring through the platform. Email and the longer version follow below.
+
+[Search my name before you hire me](https://www.google.com/search?q=chris+abraham+seo)
 
 Tell me what's going on with your site. Include the address, what you're seeing, what you'd like to happen, and a rough budget, and I'll reply with where I'd start.
 - Email: [chris@gerriscorp.com](mailto:chris@gerriscorp.com)
@@ -36,4 +38,4 @@ Tell me what's going on with your site. Include the address, what you're seeing,
 
 Gerris Corp is based in South Arlington, Arlington, Virginia 22204, and takes on work from anywhere, with clients so far in the US, Canada, the UK, Ireland, Australia, and New Zealand. I work in US Eastern time and schedule calls across time zones. See [Work With Me](https://gerriscorp.com/work-with-me/) for how engagements run, or the [FAQ](https://gerriscorp.com/faq/).
 
-Updated October 26, 2026
+Updated October 27, 2026
