@@ -4,6 +4,10 @@
 
 # Contact
 
+## Cut to the chase (TL;DR)
+
+**Book a call:** [30 minutes on my calendar](https://calendly.com/chrisabraham/30) is the fastest route in. **Call or text:** [+1 202-352-5051](tel:+12023525051), and yes, texts are welcome. **Upwork:** [my profile there](https://www.upwork.com/freelancers/chrisjabraham) carries the contract and payment protection, if you prefer hiring through the platform. Email and the longer version follow below.
+
 Tell me what's going on with your site. Include the address, what you're seeing, what you'd like to happen, and a rough budget, and I'll reply with where I'd start.
 - Email: [chris@gerriscorp.com](mailto:chris@gerriscorp.com)
 - Call or text: [+1 202-352-5051](tel:+12023525051)
