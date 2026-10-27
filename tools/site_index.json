@@ -8029,6 +8029,15 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "SEO folklore": {
+   "kind": "topic",
+   "pages": [
+    "guides/stuck-in-the-folklore"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   }
  },
  "reviewed": [
@@ -8160,6 +8169,7 @@
   "services/ai-policy",
   "services/domain-portfolio",
   "services/site-index-and-glossary",
-  "guides/black-hat-in-modern-dress"
+  "guides/black-hat-in-modern-dress",
+  "guides/stuck-in-the-folklore"
  ]
 }

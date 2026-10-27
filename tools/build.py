@@ -103,6 +103,7 @@ SERVICE_GROUPS[2][1].append("services/domain-portfolio/")
 # A service harvested from documented work, October 26, 2026, written by Claude Code.
 FILES += ["services/site-index-and-glossary"]
 FILES += ["guides/black-hat-in-modern-dress"]
+FILES += ["guides/stuck-in-the-folklore"]
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/editorial/") + 1, "services/site-index-and-glossary/")
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
