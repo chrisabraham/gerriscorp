@@ -8020,6 +8020,15 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "black hat SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/black-hat-in-modern-dress"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   }
  },
  "reviewed": [
@@ -8150,6 +8159,7 @@
   "services/accessibility",
   "services/ai-policy",
   "services/domain-portfolio",
-  "services/site-index-and-glossary"
+  "services/site-index-and-glossary",
+  "guides/black-hat-in-modern-dress"
  ]
 }

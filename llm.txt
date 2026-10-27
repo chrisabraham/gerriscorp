@@ -114,6 +114,7 @@ Every engagement starts with a conversation. Contact: chris@gerriscorp.com, +1 2
 - [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/index.md): Who holds the login to your domain decides who controls your website and email. Registrar locks, Registry Lock, two-factor access, and DNSSEC, in order.
 - [Website restore drills](https://gerriscorp.com/guides/restore-drills/index.md): A backup is only proven when you have restored from it. How I run a website restore drill, what to time and record, and the gaps it usually uncovers.
 - [How to write a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/index.md): A practical AI use policy for a small company: approved tools, what data never goes into a chatbot, review before publishing, disclosure, and who owns it.
+- [Black hat SEO in modern dress: the tactics that end sites](https://gerriscorp.com/guides/black-hat-in-modern-dress/index.md): The old black hat schemes never died. They changed clothes. A practitioner taxonomy of the modern versions, ranked from wasted effort to site removal.
 
 ## About and working together
 

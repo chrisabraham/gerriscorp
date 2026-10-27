@@ -1,10 +1,10 @@
 > An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 >
-> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-27 · By Chris Abraham, Gerris Corp
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 525 headings drawn from 128 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 526 headings drawn from 129 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -229,6 +229,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Bingbot, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
 - Bitbucket, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
+- black hat SEO, [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
 - Blackbox (Chris’ command-line assistant), [Case Studies](https://gerriscorp.com/case-studies/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
   - built from real use, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
   - deploy loop, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
@@ -1448,4 +1449,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 26, 2026
+Updated October 27, 2026

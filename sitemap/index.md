@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-27 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -126,6 +126,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): Who holds the login to your domain decides who controls your website and email. Registrar locks, Registry Lock, two-factor access, and DNSSEC, in order.
 - [Website restore drills](https://gerriscorp.com/guides/restore-drills/): A backup is only proven when you have restored from it. How I run a website restore drill, what to time and record, and the gaps it usually uncovers.
 - [How to write a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/): A practical AI use policy for a small company: approved tools, what data never goes into a chatbot, review before publishing, disclosure, and who owns it.
+- [Black hat SEO in modern dress: the tactics that end sites](https://gerriscorp.com/guides/black-hat-in-modern-dress/): The old black hat schemes never died. They changed clothes. A practitioner taxonomy of the modern versions, ranked from wasted effort to site removal.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -154,4 +155,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 26, 2026
+Updated October 27, 2026
