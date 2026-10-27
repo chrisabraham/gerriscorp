@@ -8791,7 +8791,7 @@ Keyword stuffing survives as entity stuffing: pages salted with entity names and
 
 ## Tier two: the plausible failures
 
-Hidden text survives as hidden instruction. Pages now carry passages written for AI crawlers, directives in markup and metadata telling answer engines how to describe the business, invisible to the customer and legible to the machine. Forged expertise survives beside it: author personas with generated portraits, invented credentials, and biographies assembled to simulate the experience signals Google calls E-E-A-T. Citation stacking rents mentions in listicles built for engines rather than readers. Review velocity gets managed the way link velocity once was, in bursts timed to look like weather. Tier two fails slowly and then publicly. The patterns are statistical, the engines are statisticians, and a fabricated record contradicts itself somewhere crawlable.
+Hidden text survives as hidden instruction. Pages now carry passages written for AI crawlers, directives in markup and metadata telling answer engines how to describe the business, invisible to the customer and legible to the machine. Forged expertise survives beside it: author personas with generated portraits, invented credentials, and biographies assembled to simulate the experience signals Google calls [E-E-A-T](https://gerriscorp.com/guides/glossary/#e-e-a-t). Citation stacking rents mentions in listicles built for engines rather than readers. Review velocity gets managed the way link velocity once was, in bursts timed to look like weather. Tier two fails slowly and then publicly. The patterns are statistical, the engines are statisticians, and a fabricated record contradicts itself somewhere crawlable.
 
 ## Tier three: the named offenses
 
