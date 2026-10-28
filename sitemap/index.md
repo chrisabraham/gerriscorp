@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-27 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-28 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -44,6 +44,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
 - [WordPress care: caching, hardening, or moving off](https://gerriscorp.com/services/wordpress-care/): For WordPress sites that are slow, exposed, or costly to keep: Cloudflare page caching, hardening for what the cache can't shield, or a move to static pages.
 - [Website accessibility remediation](https://gerriscorp.com/services/accessibility/): Chris Abraham fixes the accessibility barriers in your website templates, tests with keyboards and screen readers, and documents the work for ADA and EAA.
+- [Agent readiness review for your website](https://gerriscorp.com/services/agent-readiness/): Chris Abraham runs ChatGPT, Gemini, and other AI agents through your key tasks, then fixes the firewall rules, forms, and markup that stop them before the sale.
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
@@ -129,6 +130,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Black hat SEO in modern dress: the tactics that end sites](https://gerriscorp.com/guides/black-hat-in-modern-dress/): The old black hat schemes never died. They changed clothes. A practitioner taxonomy of the modern versions, ranked from wasted effort to site removal.
 - [Where Teams Get Stuck in AI Search: The Folklore Tier](https://gerriscorp.com/guides/stuck-in-the-folklore/): A reader asked which tier of the AI search avoid list traps most teams. The answer is tier two, folklore: purchasable ritual in the shape of a mechanism.
 - [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
+- [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -157,4 +159,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 27, 2026
+Updated October 28, 2026

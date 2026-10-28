@@ -107,6 +107,10 @@ FILES += ["guides/stuck-in-the-folklore"]
 FILES += ["guides/citation-provenance"]
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/editorial/") + 1, "services/site-index-and-glossary/")
 
+# A guide and a service on AI agents as visitors, October 28, 2026, written by Claude in the Claude app.
+FILES += ["guides/ai-agents-on-your-website", "services/agent-readiness"]
+SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/") + 1, "services/agent-readiness/")
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))

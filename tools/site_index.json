@@ -249,7 +249,9 @@
     "guides/ada-website-compliance",
     "guides/lynx-qa",
     "guides/european-accessibility-act",
-    "services/accessibility"
+    "services/accessibility",
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
    ],
    "subs": {
     "what the law expects": [
@@ -1684,7 +1686,9 @@
     "guides/cloudflare-seo",
     "guides/wordpress-behind-cloudflare",
     "case-studies/indexing-recovery",
-    "guides/freeze-old-website"
+    "guides/freeze-old-website",
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
    ],
    "subs": {
     "Cache Rules and Tiered Cache": [
@@ -4467,7 +4471,8 @@
    "kind": "topic",
    "pages": [
     "guides/lynx-qa",
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "guides/ai-agents-on-your-website"
    ],
    "subs": {
     "installing": [
@@ -5644,7 +5649,9 @@
   "prompt injection": {
    "kind": "topic",
    "pages": [
-    "services/ai-automation"
+    "services/ai-automation",
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
    ],
    "subs": {},
    "see": [],
@@ -6086,7 +6093,8 @@
     "guides/ai-assistants",
     "guides/nextjs-seo",
     "guides/seo-build-checks",
-    "guides/robots-txt"
+    "guides/robots-txt",
+    "guides/ai-agents-on-your-website"
    ],
    "subs": {
     "location and scope": [
@@ -8047,6 +8055,75 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "AI agents": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {
+    "how they identify themselves": [
+     "guides/ai-agents-on-your-website"
+    ],
+    "firewall rules": [
+     "guides/ai-agents-on-your-website",
+     "services/agent-readiness"
+    ],
+    "forms and labels": [
+     "guides/ai-agents-on-your-website",
+     "services/agent-readiness"
+    ],
+    "measuring visits": [
+     "guides/ai-agents-on-your-website"
+    ],
+    "testing": [
+     "services/agent-readiness"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
+  },
+  "Web Bot Auth": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {},
+   "see": [
+    "AI agents"
+   ],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
+  },
+  "Google-Agent": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website"
+   ],
+   "subs": {},
+   "see": [
+    "AI agents"
+   ],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
+  },
+  "CAPTCHA": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {},
+   "see": [
+    "AI agents"
+   ],
+   "main": []
   }
  },
  "reviewed": [
@@ -8180,6 +8257,8 @@
   "services/site-index-and-glossary",
   "guides/black-hat-in-modern-dress",
   "guides/stuck-in-the-folklore",
-  "guides/citation-provenance"
+  "guides/citation-provenance",
+  "guides/ai-agents-on-your-website",
+  "services/agent-readiness"
  ]
 }
