@@ -15,6 +15,8 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.</dd>
   <dt id="aeo">AEO (answer engine optimization)</dt>
   <dd>Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.</dd>
+  <dt id="agents-md">AGENTS.md</dt>
+  <dd>A Markdown file at the root of a repository holding the build steps, checks, and house rules that AI coding agents read before they work. Codex, Cursor, Gemini CLI, and many other agents look for it. See <a href="{root}guides/ai-agents-one-repository/">Several AI agents, one repository</a>.</dd>
   <dt id="ai-mode">AI Mode</dt>
   <dd>Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.</dd>
   <dt id="ai-overviews">AI Overviews</dt>
@@ -67,6 +69,8 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in <a href="{root}guides/vet-an-influencer/">the creator vetting guide</a>.</dd>
   <dt id="european-accessibility-act">European Accessibility Act</dt>
   <dd>EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See <a href="{root}guides/european-accessibility-act/">the EAA guide</a>.</dd>
+  <dt id="force-push">Force push</dt>
+  <dd>A Git push that overwrites the shared branch even when it holds commits the pusher never saw, which deletes other people's work. <code>--force-with-lease</code> refuses if the branch moved. See <a href="{root}guides/ai-agents-one-repository/">Several AI agents, one repository</a>.</dd>
   <dt id="geo">GEO (generative engine optimization)</dt>
   <dd>Making a business and its content easy for AI systems to find, understand, and cite in generated answers.</dd>
   <dt id="git">Git</dt>
@@ -133,6 +137,8 @@ description: Plain definitions of technical SEO, AI search, site speed, and emai
   <dd>How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.</dd>
   <dt id="wcag">WCAG (Web Content Accessibility Guidelines)</dt>
   <dd>The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See <a href="{root}services/accessibility/">accessibility remediation</a>.</dd>
+  <dt id="worktree">Worktree</dt>
+  <dd>An extra working folder attached to the same Git repository, on its own branch, so two jobs can change files without touching each other's copy. See <a href="{root}guides/ai-agents-one-repository/">Several AI agents, one repository</a>.</dd>
   <dt id="xml-sitemap">XML sitemap</dt>
   <dd>A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.</dd>
 </dl>

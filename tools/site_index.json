@@ -526,7 +526,8 @@
    "kind": "topic",
    "pages": [
     "guides/ai-coding-assistants",
-    "guides/seo-superpower"
+    "guides/seo-superpower",
+    "guides/ai-agents-one-repository"
    ],
    "subs": {
     "written specs": [
@@ -555,6 +556,9 @@
     ],
     "accountability": [
      "guides/ai-coding-assistants"
+    ],
+    "several agents in one repository": [
+     "guides/ai-agents-one-repository"
     ]
    },
    "see": [
@@ -1619,9 +1623,14 @@
     "case-studies/netlify-migration",
     "case-studies/built-with-claude-code",
     "stack",
-    "colophon"
+    "colophon",
+    "guides/ai-agents-one-repository"
    ],
-   "subs": {},
+   "subs": {
+    "alongside other agents": [
+     "guides/ai-agents-one-repository"
+    ]
+   },
    "see": [
     "AI coding assistants"
    ],
@@ -1650,9 +1659,14 @@
   "CLAUDE.md": {
    "kind": "topic",
    "pages": [
-    "guides/ai-coding-assistants"
+    "guides/ai-coding-assistants",
+    "guides/ai-agents-one-repository"
    ],
-   "subs": {},
+   "subs": {
+    "and AGENTS.md": [
+     "guides/ai-agents-one-repository"
+    ]
+   },
    "see": [],
    "main": []
   },
@@ -1806,9 +1820,14 @@
     "case-studies/built-with-claude-code",
     "guides/ai-coding-assistants",
     "guides/podcast-website",
-    "guides/core-web-vitals-mcp"
+    "guides/core-web-vitals-mcp",
+    "guides/ai-agents-one-repository"
    ],
-   "subs": {},
+   "subs": {
+    "sharing a repository": [
+     "guides/ai-agents-one-repository"
+    ]
+   },
    "see": [],
    "main": []
   },
@@ -3211,9 +3230,20 @@
     "services/seo-engineering",
     "guides/ai-coding-assistants",
     "guides/seo-superpower",
-    "guides/glossary"
+    "guides/glossary",
+    "guides/ai-agents-one-repository"
    ],
-   "subs": {},
+   "subs": {
+    "force push and --force-with-lease": [
+     "guides/ai-agents-one-repository"
+    ],
+    "worktrees": [
+     "guides/ai-agents-one-repository"
+    ],
+    "executable bit": [
+     "guides/ai-agents-one-repository"
+    ]
+   },
    "see": [],
    "main": []
   },
@@ -5902,9 +5932,14 @@
   "repositories": {
    "kind": "topic",
    "pages": [
-    "guides/glossary"
+    "guides/glossary",
+    "guides/ai-agents-one-repository"
    ],
-   "subs": {},
+   "subs": {
+    "several AI agents in one": [
+     "guides/ai-agents-one-repository"
+    ]
+   },
    "see": [],
    "main": []
   },
@@ -8124,6 +8159,54 @@
     "AI agents"
    ],
    "main": []
+  },
+  "AGENTS.md": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [
+    "CLAUDE.md"
+   ],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
+  },
+  "force push": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [
+    "Git"
+   ],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
+  },
+  "handoff files": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
+  },
+  "changelog": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
   }
  },
  "reviewed": [
@@ -8259,6 +8342,7 @@
   "guides/stuck-in-the-folklore",
   "guides/citation-provenance",
   "guides/ai-agents-on-your-website",
-  "services/agent-readiness"
+  "services/agent-readiness",
+  "guides/ai-agents-one-repository"
  ]
 }

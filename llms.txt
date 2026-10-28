@@ -119,6 +119,7 @@ Every engagement starts with a conversation. Contact: chris@gerriscorp.com, +1 2
 - [Where Teams Get Stuck in AI Search: The Folklore Tier](https://gerriscorp.com/guides/stuck-in-the-folklore/index.md): A reader asked which tier of the AI search avoid list traps most teams. The answer is tier two, folklore: purchasable ritual in the shape of a mechanism.
 - [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/index.md): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
 - [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/index.md): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
+- [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/index.md): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
 
 ## About and working together
 

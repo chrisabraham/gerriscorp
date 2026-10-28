@@ -17,6 +17,9 @@ The plain statements a finished change has to satisfy before anyone calls it don
 **AEO (answer engine optimization)**
 Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.
 
+**AGENTS.md**
+A Markdown file at the root of a repository holding the build steps, checks, and house rules that AI coding agents read before they work. Codex, Cursor, Gemini CLI, and many other agents look for it. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
+
 **AI Mode**
 Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.
 
@@ -94,6 +97,9 @@ The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last r
 
 **European Accessibility Act**
 EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See [the EAA guide](https://gerriscorp.com/guides/european-accessibility-act/).
+
+**Force push**
+A Git push that overwrites the shared branch even when it holds commits the pusher never saw, which deletes other people's work. `--force-with-lease` refuses if the branch moved. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
 
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
@@ -193,6 +199,9 @@ How long a browser waits for the first byte of a server's response. Slow TTFB de
 
 **WCAG (Web Content Accessibility Guidelines)**
 The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See [accessibility remediation](https://gerriscorp.com/services/accessibility/).
+
+**Worktree**
+An extra working folder attached to the same Git repository, on its own branch, so two jobs can change files without touching each other's copy. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
 
 **XML sitemap**
 A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.

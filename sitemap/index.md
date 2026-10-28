@@ -131,6 +131,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Where Teams Get Stuck in AI Search: The Folklore Tier](https://gerriscorp.com/guides/stuck-in-the-folklore/): A reader asked which tier of the AI search avoid list traps most teams. The answer is tier two, folklore: purchasable ritual in the shape of a mechanism.
 - [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
 - [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
+- [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.

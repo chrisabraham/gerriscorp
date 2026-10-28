@@ -8,6 +8,66 @@
   <updated>2026-10-28T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
+    <title>Several AI agents, one repository: the house rules</title>
+    <link href="https://gerriscorp.com/guides/ai-agents-one-repository/"/>
+    <id>https://gerriscorp.com/guides/ai-agents-one-repository/</id>
+    <published>2026-10-28T12:00:00Z</published>
+    <updated>2026-10-28T12:00:00Z</updated>
+    <summary>Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.</summary>
+    <content type="html">&lt;h1&gt;Several AI agents, one repository: the house rules&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-10-28"&gt;October 28, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;One AI coding assistant on a website is a careful new hire. Three of them on the same repository, started from different machines by different people, are a newsroom with no editor. Each one begins its session knowing nothing about the others, does good work, and pushes it. The trouble lives in the seams between them. I run several agents on my own sites every day, and these are the rules that keep their work from colliding.&lt;/p&gt;
+
+&lt;h2&gt;Why the second agent changes everything&lt;/h2&gt;
+&lt;p&gt;A single assistant's mistakes are easy to see, because every change in the repository is either yours or its. Add a second agent and the history interleaves. Agent A edits a page while agent B rebuilds the same page from an older copy. Agent B's change lands second and quietly reverts A's. Nobody did anything wrong in their own session, and the live site still went backward.&lt;/p&gt;
+&lt;p&gt;The agents cannot coordinate by conversation, since none of them sees the others' chats. They coordinate only through what is written down in the repository and through checks that refuse bad work. Every rule below is one of those two things.&lt;/p&gt;
+
+&lt;h2&gt;Give every agent its own working copy&lt;/h2&gt;
+&lt;p&gt;Two agents editing files in the same folder at the same time will overwrite each other between saves, before Git ever sees a conflict. Give each agent its own checkout. On one machine, &lt;code&gt;git worktree add&lt;/code&gt; creates a second working folder attached to the same repository, on its own branch, so a long job can run there while another agent works in the main folder. On separate machines, each agent already has its own clone, and the shared repository on GitHub becomes the only meeting point.&lt;/p&gt;
+&lt;p&gt;Keep one checkout as the live one, the copy a server or a deploy job actually serves from, and let agents change it only by merging finished work into it.&lt;/p&gt;
+
+&lt;h2&gt;Fetch first, fetch again, and never force&lt;/h2&gt;
+&lt;p&gt;An agent should fetch from the shared repository before it starts and again right before it pushes, because other agents may have pushed in between. If the shared branch moved, the agent rebases or merges, resolves any conflict by reading both versions, rebuilds, and tests again before pushing.&lt;/p&gt;
+&lt;p&gt;Ban the plain force push in your instruction file. Git's own manual says a force push "can cause the remote repository to lose commits," and with several agents those commits belong to someone else's session. If history truly has to be rewritten, &lt;code&gt;--force-with-lease&lt;/code&gt; at least refuses when the branch moved since the agent last looked. On GitHub, branch protection on &lt;code&gt;main&lt;/code&gt; enforces the ban whatever the instruction file says.&lt;/p&gt;
+&lt;p&gt;Also ban long chains that pull and push in one unattended command. When a merge half-fails, some commands still report success, and the next step commits conflict markers straight to production. Pull, look, then push.&lt;/p&gt;
+
+&lt;h2&gt;Check what a diff hides&lt;/h2&gt;
+&lt;p&gt;Agents review text changes well. They miss the changes a normal diff barely shows: a file that lost its executable permission, line endings flipped on every line, a generated file rebuilt from stale sources. A script that loses its executable bit still looks identical in review, and the first sign of trouble is a deploy that fails with "Permission denied."&lt;/p&gt;
+&lt;p&gt;Two cheap defenses cover most of it. Make &lt;code&gt;git diff --summary&lt;/code&gt; part of the review, since it prints mode changes. And add a test that checks the bit on the files that must stay executable; &lt;code&gt;git update-index --chmod=+x&lt;/code&gt; restores it without touching the contents.&lt;/p&gt;
+
+&lt;h2&gt;One instruction file that every agent reads&lt;/h2&gt;
+&lt;p&gt;Each agent product looks for its own instructions. AGENTS.md has become the shared convention: a Markdown file at the repository root, now stewarded by the Agentic AI Foundation under the Linux Foundation, and read by Codex, GitHub Copilot's coding agent, Cursor, Gemini CLI, Jules, and many others. Claude Code reads its own CLAUDE.md and, according to its documentation, can use an existing AGENTS.md in its place. Write the rules once, in AGENTS.md, and point any other file at it.&lt;/p&gt;
+&lt;p&gt;Put in it what an agent cannot work out from the code: how to build and test, which checks must pass before a push, what never to touch, and how to name commits. Keep secrets, client names, and anything confidential out of it. On a public repository that file is public, and AI search reads it too.&lt;/p&gt;
+
+&lt;h2&gt;Make every change traceable&lt;/h2&gt;
+&lt;p&gt;Have each agent start its commit messages with its own name, so the history answers "who did this" without a forensic exercise. Have it leave a short handoff file in the repository when a session ends: what changed, which checks ran, what it could not verify, and what comes next. Keep a changelog with one line per deploy. The next agent, and the next human, start from those files instead of from guesswork.&lt;/p&gt;
+
+&lt;h2&gt;Let the build referee&lt;/h2&gt;
+&lt;p&gt;Instructions are advice that an agent can misread. A check that fails the build is a rule. Every time agents step on each other, turn the lesson into a check: conflict markers in source files, duplicate titles, a page missing from the sitemap, a hand-curated list that a new page never joined. Make the serious checks fail loudly, and keep the rest as warnings that print on every build, where the next agent will see them.&lt;/p&gt;
+&lt;p&gt;Finally, give the site one deploy path that every agent uses: fetch, test, back up anything stateful, merge, verify live. When each agent deploys its own way, the shortcuts multiply.&lt;/p&gt;
+
+&lt;h2&gt;How I handle this for clients&lt;/h2&gt;
+&lt;p&gt;When a team is putting AI coding agents to work on its website, I set up the instruction file, the checks, and the deploy path, and I review what the agents ship with the same eye I bring to an SEO release. For the broader picture, see my guide to &lt;a href="https://gerriscorp.com/guides/ai-coding-assistants/"&gt;AI coding assistants on a website&lt;/a&gt;. To talk through your setup, &lt;a href="https://calendly.com/chrisabraham/30"&gt;book a call&lt;/a&gt; or reach me through &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork&lt;/a&gt;.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://agents.md/"&gt;AGENTS.md: a simple, open format for guiding coding agents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://code.claude.com/docs/en/memory"&gt;Claude Code Docs: How Claude remembers your project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-push"&gt;Git documentation: git-push, --force-with-lease&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-worktree"&gt;Git documentation: git-worktree&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://git-scm.com/docs/git-update-index"&gt;Git documentation: git-update-index, --chmod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
+  <entry>
     <title>AI agents are visitors now, and most websites are not ready</title>
     <link href="https://gerriscorp.com/guides/ai-agents-on-your-website/"/>
     <id>https://gerriscorp.com/guides/ai-agents-on-your-website/</id>
@@ -486,6 +546,8 @@
   &lt;dd&gt;The plain statements a finished change has to satisfy before anyone calls it done, written before the work starts. They turn a request into something a developer can build and a reviewer can check.&lt;/dd&gt;
   &lt;dt id="aeo"&gt;AEO (answer engine optimization)&lt;/dt&gt;
   &lt;dd&gt;Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.&lt;/dd&gt;
+  &lt;dt id="agents-md"&gt;AGENTS.md&lt;/dt&gt;
+  &lt;dd&gt;A Markdown file at the root of a repository holding the build steps, checks, and house rules that AI coding agents read before they work. Codex, Cursor, Gemini CLI, and many other agents look for it. See &lt;a href="https://gerriscorp.com/guides/ai-agents-one-repository/"&gt;Several AI agents, one repository&lt;/a&gt;.&lt;/dd&gt;
   &lt;dt id="ai-mode"&gt;AI Mode&lt;/dt&gt;
   &lt;dd&gt;Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.&lt;/dd&gt;
   &lt;dt id="ai-overviews"&gt;AI Overviews&lt;/dt&gt;
@@ -538,6 +600,8 @@
   &lt;dd&gt;The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in &lt;a href="https://gerriscorp.com/guides/vet-an-influencer/"&gt;the creator vetting guide&lt;/a&gt;.&lt;/dd&gt;
   &lt;dt id="european-accessibility-act"&gt;European Accessibility Act&lt;/dt&gt;
   &lt;dd&gt;EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See &lt;a href="https://gerriscorp.com/guides/european-accessibility-act/"&gt;the EAA guide&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="force-push"&gt;Force push&lt;/dt&gt;
+  &lt;dd&gt;A Git push that overwrites the shared branch even when it holds commits the pusher never saw, which deletes other people's work. &lt;code&gt;--force-with-lease&lt;/code&gt; refuses if the branch moved. See &lt;a href="https://gerriscorp.com/guides/ai-agents-one-repository/"&gt;Several AI agents, one repository&lt;/a&gt;.&lt;/dd&gt;
   &lt;dt id="geo"&gt;GEO (generative engine optimization)&lt;/dt&gt;
   &lt;dd&gt;Making a business and its content easy for AI systems to find, understand, and cite in generated answers.&lt;/dd&gt;
   &lt;dt id="git"&gt;Git&lt;/dt&gt;
@@ -604,6 +668,8 @@
   &lt;dd&gt;How long a browser waits for the first byte of a server's response. Slow TTFB delays everything else, and caching and CDNs reduce it.&lt;/dd&gt;
   &lt;dt id="wcag"&gt;WCAG (Web Content Accessibility Guidelines)&lt;/dt&gt;
   &lt;dd&gt;The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See &lt;a href="https://gerriscorp.com/services/accessibility/"&gt;accessibility remediation&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt id="worktree"&gt;Worktree&lt;/dt&gt;
+  &lt;dd&gt;An extra working folder attached to the same Git repository, on its own branch, so two jobs can change files without touching each other's copy. See &lt;a href="https://gerriscorp.com/guides/ai-agents-one-repository/"&gt;Several AI agents, one repository&lt;/a&gt;.&lt;/dd&gt;
   &lt;dt id="xml-sitemap"&gt;XML sitemap&lt;/dt&gt;
   &lt;dd&gt;A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.&lt;/dd&gt;
 &lt;/dl&gt;

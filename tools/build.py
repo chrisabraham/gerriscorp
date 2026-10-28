@@ -109,6 +109,9 @@ SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/editorial/") + 
 
 # A guide and a service on AI agents as visitors, October 28, 2026, written by Claude in the Claude app.
 FILES += ["guides/ai-agents-on-your-website", "services/agent-readiness"]
+
+# A guide on several AI coding agents sharing one repository, October 28, 2026, written by Claude Code.
+FILES += ["guides/ai-agents-one-repository"]
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/") + 1, "services/agent-readiness/")
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
@@ -1091,5 +1094,12 @@ if os.path.isdir(SIBLING):
                 problems.append(f"/{p['path']} repeats a christopherabraham.com sentence: {sentence[:80]}")
 else:
     problems.append(f"sibling site not found at {SIBLING}: clone chrisabraham/christopherabraham beside this repo or set SIBLING_DIR")
+# The guides index is hand-curated, so a new guide can silently miss it (twelve did, 2026-10-23 to 10-28).
+import pathlib
+_guides_index = pathlib.Path("src/guides/index.html").read_text(encoding="utf-8")
+_orphans = sorted(f.stem for f in pathlib.Path("src/guides").glob("*.html")
+                  if f.stem not in ("index", "glossary") and f"guides/{f.stem}/" not in _guides_index)
+if _orphans:
+    print(f"guides index: {len(_orphans)} guide(s) not listed on /guides/: {', '.join(_orphans)} (add a line to src/guides/index.html)")
 for x in problems: print("PROBLEM:", x)
 sys.exit(1 if problems else 0)

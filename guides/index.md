@@ -1,12 +1,17 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-28 · By Chris Abraham, Gerris Corp
 
 # Guides
 
 Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
 
 ## AI search
+- [Let AI agents use your website without new risk](https://gerriscorp.com/guides/ai-agents-on-your-website/): recognize agent visits, keep the firewall from turning them away, and guard pages against planted instructions.
+- [When a customer asks for the best, a machine answers](https://gerriscorp.com/guides/ai-answers-review-searches/): what AI Overviews say on review searches about businesses nobody tends.
+- [Citation provenance](https://gerriscorp.com/guides/citation-provenance/): who wrote the praise AI search repeats about you, and why buyers now check.
+- [Where teams get stuck in AI search](https://gerriscorp.com/guides/stuck-in-the-folklore/): the folklore tier: ritual sold as mechanism, and how to spot it.
+- [Black hat SEO in modern dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/): today's versions of the old schemes, ranked from wasted effort to removal from Google.
 - [Build a website incident timeline](https://gerriscorp.com/guides/website-incident-timeline/): a practical method with an illustrative example and verification steps.
 - [B2B catalog SEO for technical buyers](https://gerriscorp.com/guides/b2b-catalog-seo/): select a product family, improve specifications, and measure useful inquiries.
 - [How to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/): split the answer into claims, grade each by its source, trace every number, and test on your own data.
@@ -78,6 +83,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): the archive, the audience, past disclosures and claims, identity, and the FTC rules that make the brand answerable.
 
 ## Vendors, developers, and technology decisions
+- [Several AI coding agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/): separate checkouts, fetch before push, no force pushes, one AGENTS.md, and checks that referee.
 - [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): a practical workflow with explicit decisions and verifiable evidence.
 - [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
 - [A website handover beyond passwords and source code](https://gerriscorp.com/guides/website-handover/): account control, builds, data, renewals, and a restore exercise, with an inventory worksheet.
@@ -96,4 +102,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 26, 2026
+Updated October 28, 2026

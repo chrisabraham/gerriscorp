@@ -1914,13 +1914,18 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-26
+Updated: 2026-10-28
 
 # Guides
 
 Plain explanations of the problems I'm hired to fix, written for 2026 and kept up to date. Each one stands on its own, and each ends with how I handle the problem for clients.
 
 ## AI search
+- [Let AI agents use your website without new risk](https://gerriscorp.com/guides/ai-agents-on-your-website/): recognize agent visits, keep the firewall from turning them away, and guard pages against planted instructions.
+- [When a customer asks for the best, a machine answers](https://gerriscorp.com/guides/ai-answers-review-searches/): what AI Overviews say on review searches about businesses nobody tends.
+- [Citation provenance](https://gerriscorp.com/guides/citation-provenance/): who wrote the praise AI search repeats about you, and why buyers now check.
+- [Where teams get stuck in AI search](https://gerriscorp.com/guides/stuck-in-the-folklore/): the folklore tier: ritual sold as mechanism, and how to spot it.
+- [Black hat SEO in modern dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/): today's versions of the old schemes, ranked from wasted effort to removal from Google.
 - [Build a website incident timeline](https://gerriscorp.com/guides/website-incident-timeline/): a practical method with an illustrative example and verification steps.
 - [B2B catalog SEO for technical buyers](https://gerriscorp.com/guides/b2b-catalog-seo/): select a product family, improve specifications, and measure useful inquiries.
 - [How to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/): split the answer into claims, grade each by its source, trace every number, and test on your own data.
@@ -1992,6 +1997,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): the archive, the audience, past disclosures and claims, identity, and the FTC rules that make the brand answerable.
 
 ## Vendors, developers, and technology decisions
+- [Several AI coding agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/): separate checkouts, fetch before push, no force pushes, one AGENTS.md, and checks that referee.
 - [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): a practical workflow with explicit decisions and verifiable evidence.
 - [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
 - [A website handover beyond passwords and source code](https://gerriscorp.com/guides/website-handover/): account control, builds, data, renewals, and a restore exercise, with an inventory worksheet.
@@ -2010,7 +2016,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 26, 2026
+Updated October 28, 2026
 
 
 ---
@@ -5979,6 +5985,9 @@ The plain statements a finished change has to satisfy before anyone calls it don
 **AEO (answer engine optimization)**
 Shaping content so it directly answers the questions people ask, in a form that search features and AI assistants can quote.
 
+**AGENTS.md**
+A Markdown file at the root of a repository holding the build steps, checks, and house rules that AI coding agents read before they work. Codex, Cursor, Gemini CLI, and many other agents look for it. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
+
 **AI Mode**
 Google Search's conversational, AI-generated search experience, which answers questions with a written response and links, built on Google's search index.
 
@@ -6056,6 +6065,9 @@ The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last r
 
 **European Accessibility Act**
 EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See [the EAA guide](https://gerriscorp.com/guides/european-accessibility-act/).
+
+**Force push**
+A Git push that overwrites the shared branch even when it holds commits the pusher never saw, which deletes other people's work. `--force-with-lease` refuses if the branch moved. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
 
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
@@ -6155,6 +6167,9 @@ How long a browser waits for the first byte of a server's response. Slow TTFB de
 
 **WCAG (Web Content Accessibility Guidelines)**
 The W3C accessibility standard, now at version 2.2. Level AA is the benchmark US courts and EU standards most often point to. See [accessibility remediation](https://gerriscorp.com/services/accessibility/).
+
+**Worktree**
+An extra working folder attached to the same Git repository, on its own branch, so two jobs can change files without touching each other's copy. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
 
 **XML sitemap**
 A file listing the URLs a site wants search engines to crawl, with optional last-modified dates.
@@ -9063,6 +9078,81 @@ Updated October 28, 2026
 
 ---
 
+Source: https://gerriscorp.com/guides/ai-agents-one-repository/
+Updated: 2026-10-28
+
+# Several AI agents, one repository: the house rules
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 28, 2026
+
+One AI coding assistant on a website is a careful new hire. Three of them on the same repository, started from different machines by different people, are a newsroom with no editor. Each one begins its session knowing nothing about the others, does good work, and pushes it. The trouble lives in the seams between them. I run several agents on my own sites every day, and these are the rules that keep their work from colliding.
+
+## Why the second agent changes everything
+
+A single assistant's mistakes are easy to see, because every change in the repository is either yours or its. Add a second agent and the history interleaves. Agent A edits a page while agent B rebuilds the same page from an older copy. Agent B's change lands second and quietly reverts A's. Nobody did anything wrong in their own session, and the live site still went backward.
+
+The agents cannot coordinate by conversation, since none of them sees the others' chats. They coordinate only through what is written down in the repository and through checks that refuse bad work. Every rule below is one of those two things.
+
+## Give every agent its own working copy
+
+Two agents editing files in the same folder at the same time will overwrite each other between saves, before Git ever sees a conflict. Give each agent its own checkout. On one machine, `git worktree add` creates a second working folder attached to the same repository, on its own branch, so a long job can run there while another agent works in the main folder. On separate machines, each agent already has its own clone, and the shared repository on GitHub becomes the only meeting point.
+
+Keep one checkout as the live one, the copy a server or a deploy job actually serves from, and let agents change it only by merging finished work into it.
+
+## Fetch first, fetch again, and never force
+
+An agent should fetch from the shared repository before it starts and again right before it pushes, because other agents may have pushed in between. If the shared branch moved, the agent rebases or merges, resolves any conflict by reading both versions, rebuilds, and tests again before pushing.
+
+Ban the plain force push in your instruction file. Git's own manual says a force push "can cause the remote repository to lose commits," and with several agents those commits belong to someone else's session. If history truly has to be rewritten, `--force-with-lease` at least refuses when the branch moved since the agent last looked. On GitHub, branch protection on `main` enforces the ban whatever the instruction file says.
+
+Also ban long chains that pull and push in one unattended command. When a merge half-fails, some commands still report success, and the next step commits conflict markers straight to production. Pull, look, then push.
+
+## Check what a diff hides
+
+Agents review text changes well. They miss the changes a normal diff barely shows: a file that lost its executable permission, line endings flipped on every line, a generated file rebuilt from stale sources. A script that loses its executable bit still looks identical in review, and the first sign of trouble is a deploy that fails with "Permission denied."
+
+Two cheap defenses cover most of it. Make `git diff --summary` part of the review, since it prints mode changes. And add a test that checks the bit on the files that must stay executable; `git update-index --chmod=+x` restores it without touching the contents.
+
+## One instruction file that every agent reads
+
+Each agent product looks for its own instructions. AGENTS.md has become the shared convention: a Markdown file at the repository root, now stewarded by the Agentic AI Foundation under the Linux Foundation, and read by Codex, GitHub Copilot's coding agent, Cursor, Gemini CLI, Jules, and many others. Claude Code reads its own CLAUDE.md and, according to its documentation, can use an existing AGENTS.md in its place. Write the rules once, in AGENTS.md, and point any other file at it.
+
+Put in it what an agent cannot work out from the code: how to build and test, which checks must pass before a push, what never to touch, and how to name commits. Keep secrets, client names, and anything confidential out of it. On a public repository that file is public, and AI search reads it too.
+
+## Make every change traceable
+
+Have each agent start its commit messages with its own name, so the history answers "who did this" without a forensic exercise. Have it leave a short handoff file in the repository when a session ends: what changed, which checks ran, what it could not verify, and what comes next. Keep a changelog with one line per deploy. The next agent, and the next human, start from those files instead of from guesswork.
+
+## Let the build referee
+
+Instructions are advice that an agent can misread. A check that fails the build is a rule. Every time agents step on each other, turn the lesson into a check: conflict markers in source files, duplicate titles, a page missing from the sitemap, a hand-curated list that a new page never joined. Make the serious checks fail loudly, and keep the rest as warnings that print on every build, where the next agent will see them.
+
+Finally, give the site one deploy path that every agent uses: fetch, test, back up anything stateful, merge, verify live. When each agent deploys its own way, the shortcuts multiply.
+
+## How I handle this for clients
+
+When a team is putting AI coding agents to work on its website, I set up the instruction file, the checks, and the deploy path, and I review what the agents ship with the same eye I bring to an SEO release. For the broader picture, see my guide to [AI coding assistants on a website](https://gerriscorp.com/guides/ai-coding-assistants/). To talk through your setup, [book a call](https://calendly.com/chrisabraham/30) or reach me through [Upwork](https://www.upwork.com/freelancers/chrisjabraham).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [AGENTS.md: a simple, open format for guiding coding agents](https://agents.md/)
+- [Claude Code Docs: How Claude remembers your project](https://code.claude.com/docs/en/memory)
+- [Git documentation: git-push, --force-with-lease](https://git-scm.com/docs/git-push)
+- [Git documentation: git-worktree](https://git-scm.com/docs/git-worktree)
+- [Git documentation: git-update-index, --chmod](https://git-scm.com/docs/git-update-index)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
 Updated: 2026-10-28
 
@@ -9195,6 +9285,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Where Teams Get Stuck in AI Search: The Folklore Tier](https://gerriscorp.com/guides/stuck-in-the-folklore/): A reader asked which tier of the AI search avoid list traps most teams. The answer is tier two, folklore: purchasable ritual in the shape of a mechanism.
 - [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
 - [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
+- [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -9233,7 +9324,7 @@ Updated: 2026-10-28
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 532 headings drawn from 133 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 536 headings drawn from 134 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -9320,6 +9411,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - reporting formats, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
   - white label, named specialist, or referral, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
 
+- AGENTS.md, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**. *See also* [CLAUDE.md](https://gerriscorp.com/site-index/#ix-claudemd)
 - Ahrefs, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
 - AI agents, **[AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)**, [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
   - firewall rules, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/), [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
@@ -9354,11 +9446,12 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - what to do this quarter, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
   - which index feeds which assistant, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 
-- AI coding assistants, **[AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)**, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/). *See also* [Claude Code](https://gerriscorp.com/site-index/#ix-claude-code)
+- AI coding assistants, **[AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)**, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/). *See also* [Claude Code](https://gerriscorp.com/site-index/#ix-claude-code)
   - accountability, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - project memory files, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - rules turned into checks, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - secrets and production, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
+  - several agents in one repository, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
   - small reviewed changes, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - strengths, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - verifying against the real world, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
@@ -9520,6 +9613,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - CCBot, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 - CDNs, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Glossary](https://gerriscorp.com/guides/glossary/)
 - certificate transparency, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+- changelog, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**
 - ChatGPT, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - ChatGPT-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - chrisabraham.com, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
@@ -9540,9 +9634,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - citation share, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
 - claim layer, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
 - Claude (Anthropic assistant), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- Claude Code, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [In Your Stack](https://gerriscorp.com/stack/), [Colophon](https://gerriscorp.com/colophon/). *See also* [AI coding assistants](https://gerriscorp.com/site-index/#ix-ai-coding-assistants)
+- Claude Code, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [In Your Stack](https://gerriscorp.com/stack/), [Colophon](https://gerriscorp.com/colophon/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/). *See also* [AI coding assistants](https://gerriscorp.com/site-index/#ix-ai-coding-assistants)
+  - alongside other agents, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+
 - ClaudeBot, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- CLAUDE.md, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
+- CLAUDE.md, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - and AGENTS.md, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+
 - Claude-SearchBot, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - Claude-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - client-side rendering, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
@@ -9571,7 +9669,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Cloudflare Tunnel, [WordPress behind Cloudflare](https://gerriscorp.com/guides/wordpress-behind-cloudflare/)
 - Clutch, [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
-- Codex, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Data Cleanup](https://gerriscorp.com/services/data-cleanup/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [Standards](https://gerriscorp.com/standards/), [Colophon](https://gerriscorp.com/colophon/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/)
+- Codex, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Data Cleanup](https://gerriscorp.com/services/data-cleanup/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [Standards](https://gerriscorp.com/standards/), [Colophon](https://gerriscorp.com/colophon/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - sharing a repository, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+
 - colophon, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), **[Colophon](https://gerriscorp.com/colophon/)**
 - command-line assistant (Chris’), [Home](https://gerriscorp.com/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [In Your Stack](https://gerriscorp.com/stack/). *See also* [Blackbox (Chris’ command-line assistant)](https://gerriscorp.com/site-index/#ix-blackbox-chris-commandline-assistant)
 - compensation facts, [AI Recruiting Visibility](https://gerriscorp.com/case-studies/ai-recruiting/)
@@ -9783,6 +9883,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - feedback loops, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - Fiverr, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Forbes, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
+- force push, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**. *See also* [Git](https://gerriscorp.com/site-index/#ix-git)
 - fractional SEO and AI search lead, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
 - fractional technical lead, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)**, [Developer Specs and QA](https://gerriscorp.com/services/developers/). *See also* [developer specs](https://gerriscorp.com/site-index/#ix-developer-specs)
   - authority in writing, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)
@@ -9827,7 +9928,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Gerris Digital (name never used), [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - Gerris lacustris (water strider), [About](https://gerriscorp.com/about/), **[Colophon](https://gerriscorp.com/colophon/)**
 - Gerris Web Strategies, [Colophon](https://gerriscorp.com/colophon/)
-- Git, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- Git, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - executable bit, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - force push and --force-with-lease, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - worktrees, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+
 - GitHub, **[README as an AI Source](https://gerriscorp.com/guides/readme-ai-source/)**, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)
   - organizations, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
   - repository transfers, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
@@ -9898,6 +10003,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## H
 - H2 headings, hardcoded, [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
+- handoff files, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**
 - Harrison, Mark, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
 - headless Chrome, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)
 - headless CMS, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
@@ -10301,7 +10407,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - release checkpoints, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
 - reporting, plain-English, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Analytics](https://gerriscorp.com/services/analytics/)
 - reports, disagreeing, [Analytics](https://gerriscorp.com/services/analytics/)
-- repositories, [Glossary](https://gerriscorp.com/guides/glossary/)
+- repositories, [Glossary](https://gerriscorp.com/guides/glossary/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - several AI agents in one, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+
 - repository access for an SEO, **[Repository Access](https://gerriscorp.com/guides/repository-access/)**
   - branch protection and rulesets, [Repository Access](https://gerriscorp.com/guides/repository-access/)
   - checklist, [Repository Access](https://gerriscorp.com/guides/repository-access/)
