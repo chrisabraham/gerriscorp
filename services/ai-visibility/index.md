@@ -1,6 +1,6 @@
 > Gerris audits how AI answers describe your business, corrects the sources they rely on across Google, ChatGPT, Perplexity, and Gemini, and measures monthly.
 >
-> Source: https://gerriscorp.com/services/ai-visibility/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ai-visibility/ · Updated 2026-10-29 · By Chris Abraham, Gerris Corp
 
 # Your customers meet an AI answer before they meet you. I help you check whether it names you.
 
@@ -18,15 +18,15 @@ Review searches, the "best" and "which one" queries buyers type, moved furthest 
 
 I test how your business appears across Google AI Overviews, ChatGPT, Perplexity, and Gemini for the searches that bring you revenue. I document what the AI answers say about you, where you are missing, and where a competitor is being named instead. I check your entity and name-address-phone consistency across your site, your Google Business Profile, and your directory listings. The deliverable is a written report with every fix in priority order.
 
-### 2. The Claim Sprint: $1,500 flat
+### 2. The Claim Sprint
 - Technical foundation: full crawl, Search Console review, titles and metas, broken links and redirects
 - The claim layer: entity schema with sameAs links, llms.txt, a canonical "what is this business" page, and FAQ schema
 
-Where an item belongs with your developers, I return it as a precise, written fix list they can execute directly. I direct that work and verify it on the live site once your developers ship it.
+Where an item belongs with your developers, I return it as a precise, written fix list they can execute directly. I direct that work and verify it on the live site once your developers ship it. Scope and price for the sprint are set in conversation, after the audit maps the work: [contact Gerris](https://gerriscorp.com/contact/) to talk it through.
 
-### 3. AI Presence, Measured: $500/month
+### 3. AI Presence, Measured
 
-A monthly re-run of your money-query set across Google AI Overviews, ChatGPT, and Perplexity, delivered as a written receipt: what changed, what the answers say now, and the next fixes in line. AI answers drift; this is how you know before your customers do.
+A monthly re-run of your money-query set across Google AI Overviews, ChatGPT, and Perplexity, delivered as a written receipt: what changed, what the answers say now, and the next fixes in line. AI answers drift; this is how you know before your customers do. Monthly measurement is set up in conversation, shaped around your search set: [contact Gerris](https://gerriscorp.com/contact/) to arrange it.
 
 ## The Google Business Profile connection
 
@@ -52,4 +52,4 @@ Scope and fees are settled in conversation, once I understand the problem. Choos
 
 [Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
 
-Updated October 24, 2026
+Updated October 29, 2026

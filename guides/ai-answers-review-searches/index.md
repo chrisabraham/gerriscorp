@@ -1,10 +1,10 @@
 > Google's AI Overviews now answer most review searches. What the machines say about untended businesses, and the audit, sprint, and measurement that fix it.
 >
-> Source: https://gerriscorp.com/guides/ai-answers-review-searches/ · Updated 2026-10-24 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ai-answers-review-searches/ · Updated 2026-10-29 · By Chris Abraham, Gerris Corp
 
 # When a Customer Asks for the Best, a Machine Answers
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 23, 2026 · Updated October 24, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 23, 2026 · Updated October 29, 2026
 
 Somebody in your service area is, right now, asking Google a question like "best [your trade] near me" or "who should I call for [your service]." A year ago they got a list of businesses and made their own shortlist. Today they get a written answer: two or three names, a sentence about each, and a recommendation. If your name is missing from that paragraph, the shortlist was made without you.
 
@@ -32,7 +32,7 @@ Pick the three searches that bring you the most work, such as "best roofer in Ar
 
 ## What Gerris does about it
 
-The work comes in three fixed pieces, described in full on the [AI visibility service page](https://gerriscorp.com/services/ai-visibility/). The **audit** ($750) runs your money searches through Google AI Overviews, ChatGPT, Perplexity, and Gemini and checks your details everywhere the machines look, ending in a ranked written fix list. The **Claim Sprint** ($1,500) repairs the technical base and adds the claim layer: entity schema, llms.txt, a canonical page that states what the business is, and FAQ markup. **AI Presence, Measured** ($500 a month) reruns the searches monthly and reports what moved.
+The work comes in three pieces, described in full on the [AI visibility service page](https://gerriscorp.com/services/ai-visibility/). The **audit** ($750) runs your money searches through Google AI Overviews, ChatGPT, Perplexity, and Gemini and checks your details everywhere the machines look, ending in a ranked written fix list. The **Claim Sprint** repairs the technical base and adds the claim layer: entity schema, llms.txt, a canonical page that states what the business is, and FAQ markup. **AI Presence, Measured** reruns the searches monthly and reports what moved. Both the sprint and the monthly measurement take their scope from a conversation after the audit: [contact Gerris](https://gerriscorp.com/contact/) to start one.
 
 ## Your Google Business Profile is doing more talking than you think
 
