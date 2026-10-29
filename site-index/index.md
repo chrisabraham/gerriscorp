@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 536 headings drawn from 134 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 537 headings drawn from 135 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -1042,6 +1042,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - prerendering, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - privacy, **[Privacy](https://gerriscorp.com/privacy/)**
+- Products, [Products](https://gerriscorp.com/products/)
 - project rescue, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Project Rescue](https://gerriscorp.com/services/rescue/)**, [App Takeover](https://gerriscorp.com/case-studies/app-takeover/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/). *See also* [website handover](https://gerriscorp.com/site-index/#ix-website-handover)
   - handover review, [Project Rescue](https://gerriscorp.com/services/rescue/)
   - hosting afterward, [Project Rescue](https://gerriscorp.com/services/rescue/)

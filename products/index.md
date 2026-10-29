@@ -1,0 +1,60 @@
+> Fixed scope products from Gerris with prices up front: AI answer measurement, Search Console and analytics reports, local visibility, and reinstatement cases.
+>
+> Source: https://gerriscorp.com/products/ · Updated 2026-10-29 · By Chris Abraham, Gerris Corp
+
+# Products: the price is part of the page
+
+Plenty of consulting resists a price tag because the scope stays unknown until the work starts. The work collected here is different. Each item below has a defined input, a defined output, and a printed price, so a buyer can decide without a proposal cycle. I run every one of them under my own name, and the findings land in writing.
+
+## What the answer engines say
+
+### AI Answer Baseline: $500
+
+A dated measurement of your presence in AI answers. I pose up to a dozen questions, phrased the way your customers phrase them, to ChatGPT, Perplexity, Gemini, Claude, and Google AI Overviews, and I set the responses beside Google's standard top ten results for identical wording. Your report scores each tracked brand on answer appearances, lead mentions, engine coverage, and search placement. It keeps the complete answer text on file as the record, ranks the domains those answers cite with yours marked, and limits its conclusions to what the evidence shows. One company, a single market, as many as five brands or domains under watch, a dozen questions. It has already been delivered for a fireworks retailer operating several locations. Start through [Upwork](https://www.upwork.com/freelancers/chrisjabraham) or the [contact page](https://gerriscorp.com/contact/).
+
+### AI Answer Delta: $250 a run
+
+Baselines age. The Delta repeats the identical question set weeks or months later and reports the movement against the first measurement, naming the questions where your standing changed, the mentions a rival picked up, and the citations that rotated in or out. One run, one comparison, priced at $250. A Baseline on file is the entry requirement, since movement needs a fixed point to measure from.
+
+### AI Visibility Audit: $750
+
+The Audit extends the Baseline with my own review pass. I reconcile your name, address, and phone across the site, the Business Profile, and the major directories. I grade the stored answers as accurate, mistaken, or crediting a competitor. I inspect the site for the properties answer engines need: pages their crawlers can read, passages worth quoting, structured data in place. The report finishes with a repair list ordered by consequence. One company, one market, and implementation quoted separately once the findings exist. Buyers have already paid this exact price for this audit format as a pilot. The service behind it is described at [AI visibility](https://gerriscorp.com/services/ai-visibility/).
+
+### Competitor Visibility Benchmark: $500
+
+One set of questions, graded for as many as four brands at once: yours plus three rivals you name. A single answer mentions whoever it mentions, so the comparison stays even handed. You receive a share of answer table split by engine, lead mention share, the citation share that shows which domains the engines lean on, a question level map of wins and losses, and the rival material cited most often, which defines the standard your content has to beat. Standalone price $500; as a Baseline extension, $250. Four brands in total, a dozen questions, one market.
+
+## Your own data, read properly
+
+### Search Visibility Report: $500
+
+Sixteen months of your Search Console history, the deepest window the platform retains, turned into one readout. Clicks, impressions, click through rate, and average position, each set against the prior period. Leading queries and pages with their changes. The striking distance set: queries placed fifth through twentieth that already draw impressions. Titles that waste the positions they hold. Index coverage for fifty priority URLs. Send a read only grant and the report draws exclusively on your property. Every month of delay deletes the oldest month permanently, which is the practical reason to pull it now. One property, one comparison, fifty URLs examined.
+
+### Traffic Truth Report: $500, or $750 with the Search Visibility Report
+
+GA4 holds the other half of the story. This readout covers sessions and conversions grouped by channel with period changes, the source and medium ledger as GA4 recorded it, landing pages ordered by sessions, engagement, and key events, a device breakdown, a revenue view where ecommerce events are tracked, and flags for dirty data, including unassigned sessions and absent key events. Ordered with the Search Visibility Report at $750 combined, I read the two against each other: what Google dispatched versus what your analytics received, discrepancies called out by name. One property; windows of 28 and 90 days, each against its comparison.
+
+### Technical Site Health Snapshot: $500
+
+A machine crawl of as many as 500 URLs, converted into a defect ledger and sorted by internal link weight, so consequential pages surface first. It catalogs error responses, chains and loops of redirects with their lengths, absent, repeated, or bloated titles and descriptions listed page by page, canonical and indexing contradictions, orphaned and thin pages, disagreement between the sitemap and the crawl, where internal links concentrate, and a repair sequence ranked by payoff against effort. The ledger is the product. Audits at greater depth, and the repairs themselves, are engagements scoped from it.
+
+## Local ground
+
+### Local and GBP Visibility Report: $500
+
+Built for a company that wins or loses customers inside one market. I chart your map pack standing on a grid of up to nine points against five buyer queries, run the Baseline tuned to that locality, take the competitor set from what the pack and the answers actually display, review the profile itself across categories, attributes, photographs, and review posture, extract themes from public reviews, and order the corrections. One company, one market, one grid.
+
+### GBP reinstatement: $800, $1,000, or $1,200
+
+Suspension casework, sold in tiers settled in writing up front.
+- **$800:** diagnosis of the suspension, compliance corrections to the profile, a single appeal built correctly with its supporting evidence, and progress reports while Google deliberates.
+- **$1,000:** the first tier plus dissection of an earlier refusal, reconstruction of the service area where the configuration contributed to the problem, a fuller evidence file, and a resubmission when the case allows one.
+- **$1,200:** the second tier plus untangling of multiple or duplicate profiles and remediation across a wider footprint, scoped in writing case by case.
+
+Reinstatement is a decision Google makes on Google's timetable. Nothing in any tier promises a restored profile; the fee purchases thorough, documented casework. Practice details live on the [Google Business Profile](https://gerriscorp.com/services/google-business-profile/) page.
+
+## Ordering
+
+Two routes. Contract any product at its printed price through [Upwork](https://www.upwork.com/freelancers/chrisjabraham), or take a [thirty minute call](https://calendly.com/chrisabraham/30) first when the question set or the tier needs discussion. Either way, scope and price are confirmed in writing before work begins, and every report belongs to the buyer outright, to act on with any team.
+
+Updated October 29, 2026

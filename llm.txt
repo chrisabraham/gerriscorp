@@ -150,6 +150,7 @@ Every engagement starts with a conversation. Contact: chris@gerriscorp.com, +1 2
 - [Editorial standards](https://gerriscorp.com/standards/index.md): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Colophon](https://gerriscorp.com/colophon/index.md): How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
 - [Contact](https://gerriscorp.com/contact/index.md): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
+- [Products: the price is part of the page](https://gerriscorp.com/products/index.md): Fixed scope products from Gerris with prices up front: AI answer measurement, Search Console and analytics reports, local visibility, and reinstatement cases.
 - [Site map](https://gerriscorp.com/sitemap/index.md): A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 - [Index](https://gerriscorp.com/site-index/index.md): An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 

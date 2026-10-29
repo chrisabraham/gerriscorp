@@ -5697,6 +5697,15 @@
    "see": [],
    "main": []
   },
+  "Products": {
+   "kind": "topic",
+   "pages": [
+    "products"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Proxima (later Proxicom)": {
    "kind": "topic",
    "pages": [
@@ -8211,6 +8220,7 @@
  },
  "reviewed": [
   "home",
+  "products",
   "services",
   "services/technical-lead",
   "services/developers",

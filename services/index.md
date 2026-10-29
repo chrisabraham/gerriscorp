@@ -1,6 +1,6 @@
 > Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 >
-> Source: https://gerriscorp.com/services/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ · Updated 2026-10-29 · By Chris Abraham, Gerris Corp
 
 # Services
 
@@ -43,6 +43,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): entity structure, location pages, and sister brands kept distinct.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
+- [Products with published prices](https://gerriscorp.com/products/): the fixed scope shelf, AI answer reports, data readouts, a local visibility report, and reinstatement tiers.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
 - [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): every domain in a company-owned account, locked, renewing, and on one register.
 
@@ -62,4 +63,4 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 26, 2026
+Updated October 29, 2026

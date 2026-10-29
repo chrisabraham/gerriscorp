@@ -112,6 +112,9 @@ FILES += ["guides/ai-agents-on-your-website", "services/agent-readiness"]
 
 # A guide on several AI coding agents sharing one repository, October 28, 2026, written by Claude Code.
 FILES += ["guides/ai-agents-one-repository"]
+
+# The products page: fixed scope reports with published prices, October 29, 2026, on Chris' ruling via Eunice.
+FILES += ["products"]
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/") + 1, "services/agent-readiness/")
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
