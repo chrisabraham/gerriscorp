@@ -27,21 +27,36 @@
   &lt;li&gt;An internet connection once, for the model download. After that, nothing leaves the machine.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2&gt;Before you start: the terminal&lt;/h2&gt;
+&lt;p&gt;Every step below is a command typed into the Linux terminal. On Linux Mint, &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;T&lt;/kbd&gt; opens it; on Ubuntu, the same shortcut works, or search the app menu for Terminal. Copy a command from this page, paste it at the prompt with &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Shift&lt;/kbd&gt;+&lt;kbd&gt;V&lt;/kbd&gt; (the terminal ignores plain &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;V&lt;/kbd&gt;), and press &lt;kbd&gt;Enter&lt;/kbd&gt;. Wait for the prompt ending in &lt;code&gt;$&lt;/code&gt; to come back before pasting the next one.&lt;/p&gt;
+
 &lt;h2&gt;Install the tools&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt install ffmpeg pipx
+&lt;p&gt;Refresh the package list, then install ffmpeg, the converter, and pipx, the installer for Python programs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt update
+sudo apt install ffmpeg pipx
 pipx ensurepath&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Open a new terminal so the updated path loads, then install the transcriber:&lt;/p&gt;
+&lt;p&gt;The first &lt;code&gt;sudo&lt;/code&gt; line asks for the password you log in with. The terminal shows no dots or stars as you type, by design, so type it blind and press &lt;kbd&gt;Enter&lt;/kbd&gt;. When apt lists what it will install and asks whether to continue, press &lt;kbd&gt;Y&lt;/kbd&gt; and &lt;kbd&gt;Enter&lt;/kbd&gt;. &lt;code&gt;pipx ensurepath&lt;/code&gt; adds pipx's program folder to your search path, which only takes hold in terminals opened afterward, so close this window and open a fresh one. Then install the transcriber:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pipx install whisper-ctranslate2&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href="https://github.com/Softcatala/whisper-ctranslate2"&gt;whisper-ctranslate2&lt;/a&gt; is a command line front end for &lt;a href="https://github.com/SYSTRAN/faster-whisper"&gt;faster-whisper&lt;/a&gt;. It takes the same arguments as OpenAI's original Whisper program and runs up to four times faster on a CPU at equal accuracy. pipx gives it a private environment, so it never disturbs the Python your operating system relies on.&lt;/p&gt;
+&lt;p&gt;Check both tools before going further:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ffmpeg -version
+whisper-ctranslate2 --help&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first prints a version banner and the second a long page of options. If either answers "command not found," repeat its install step; for the transcriber, opening a new terminal after &lt;code&gt;pipx ensurepath&lt;/code&gt; is the usual fix.&lt;/p&gt;
 
 &lt;h2&gt;Reduce the recording to speech&lt;/h2&gt;
+&lt;p&gt;Point the terminal at the folder holding the recording. Meeting exports and screen recordings tend to end up in Videos or Downloads:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/Downloads
+ls&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; shows the folder's contents, so you can copy the file name exactly. In the Linux Mint file manager, a right click on empty space inside a folder and Open in Terminal lands you in the same place.&lt;/p&gt;
 &lt;p&gt;Whisper hears every file as a single channel at 16 kHz, so converting to exactly that before transcribing loses nothing and saves a great deal of disk and transfer:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ffmpeg -i "meeting.mp4" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "meeting.opus"&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The flags remove the picture, mix to mono, set the sample rate, and encode with Opus tuned for voices. An hour lands near 11 MB; my 5.9 GB screen recording shrank by more than 99 percent. Whisper also reads video directly, but the small audio file is quicker to move, back up, and keep.&lt;/p&gt;
+&lt;p&gt;Use your own file name in place of &lt;code&gt;meeting&lt;/code&gt;, in both spots, inside the quotes. A status line ticks forward with a &lt;code&gt;time=&lt;/code&gt; counter during the conversion. When the prompt returns, &lt;code&gt;ls -lh&lt;/code&gt; shows the new file and its size.&lt;/p&gt;
 
 &lt;h2&gt;Transcribe it&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The first run fetches the model from Hugging Face and prints a warning about unauthenticated requests, which you can ignore. After that it stays silent until it finishes and writes &lt;code&gt;meeting.txt&lt;/code&gt; next to the audio. Add &lt;code&gt;--verbose True&lt;/code&gt; to watch lines arrive with their timestamps.&lt;/p&gt;
+&lt;p&gt;Open the finished transcript in the terminal with &lt;code&gt;less "meeting.txt"&lt;/code&gt;, scroll with the arrow keys, and press &lt;kbd&gt;q&lt;/kbd&gt; to leave. Or double click it in the file manager to open it in the text editor.&lt;/p&gt;
 &lt;p&gt;Other formats are one flag away:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code&gt;--output_format srt&lt;/code&gt; or &lt;code&gt;vtt&lt;/code&gt; produces timed captions for a video editor or player.&lt;/li&gt;
@@ -70,23 +85,28 @@ pipx ensurepath&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Label the speakers&lt;/h2&gt;
 &lt;p&gt;Speaker labels come from &lt;a href="https://github.com/pyannote/pyannote-audio"&gt;pyannote.audio&lt;/a&gt;, which also runs locally. Its models sit behind a free Hugging Face account.&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Create a free account at &lt;a href="https://huggingface.co/"&gt;Hugging Face&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Create a token with read access on the &lt;a href="https://huggingface.co/settings/tokens"&gt;access tokens page&lt;/a&gt;. It is shown once, so copy it right away.&lt;/li&gt;
+  &lt;li&gt;Create a free account at &lt;a href="https://huggingface.co/join"&gt;Hugging Face&lt;/a&gt;, then confirm it from the email they send.&lt;/li&gt;
+  &lt;li&gt;Go to the &lt;a href="https://huggingface.co/settings/tokens"&gt;access tokens page&lt;/a&gt;, also reachable from your profile picture, Settings, Access Tokens. Choose Create new token, pick the Read type, name it after the computer, and create it. The token begins with &lt;code&gt;hf_&lt;/code&gt; and appears only this once, so copy it immediately and keep it somewhere private until step 4.&lt;/li&gt;
   &lt;li&gt;While signed in, accept the terms on &lt;a href="https://huggingface.co/pyannote/speaker-diarization-community-1"&gt;pyannote/speaker-diarization-community-1&lt;/a&gt;. Older releases of whisper-ctranslate2 use &lt;a href="https://huggingface.co/pyannote/speaker-diarization-3.1"&gt;speaker-diarization-3.1&lt;/a&gt; and &lt;a href="https://huggingface.co/pyannote/segmentation-3.0"&gt;segmentation-3.0&lt;/a&gt;, so accept those too. Each page asks for a company name and a website before it unlocks; use your organization's name and address.&lt;/li&gt;
-  &lt;li&gt;Add pyannote.audio to the transcriber's environment and store the token in your shell profile:&lt;/li&gt;
+  &lt;li&gt;Add pyannote.audio to the transcriber's environment and store the token in your shell profile. The first line downloads more than a gigabyte and may look stuck for several minutes; leave it running. Before pressing &lt;kbd&gt;Enter&lt;/kbd&gt; on the second line, swap &lt;code&gt;hf_yourtokenhere&lt;/code&gt; for your real token and keep the single quotes around it.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;pipx inject whisper-ctranslate2 pyannote.audio
 echo 'export HF_TOKEN=hf_yourtokenhere' &amp;gt;&amp;gt; ~/.bashrc
 source ~/.bashrc&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then pass the token with each run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;echo $HF_TOKEN&lt;/code&gt; should now print the token. Then pass it with each run:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt --hf_token "$HF_TOKEN"&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Every line comes back tagged &lt;code&gt;[SPEAKER_00]&lt;/code&gt;, &lt;code&gt;[SPEAKER_01]&lt;/code&gt;, and onward. The install brings in PyTorch, which is over a gigabyte, and labeling is a second complete pass over the audio, so a run takes roughly twice as long. The token only authorizes the model download; the audio itself stays on the machine. Keep the token out of shared scripts and code repositories.&lt;/p&gt;
 
 &lt;h2&gt;Make it a routine&lt;/h2&gt;
-&lt;p&gt;Two functions at the end of &lt;code&gt;~/.bashrc&lt;/code&gt; reduce the job to two short commands:&lt;/p&gt;
+&lt;p&gt;Two functions at the end of &lt;code&gt;~/.bashrc&lt;/code&gt; reduce the job to two short commands. That file holds the settings each new terminal loads. Edit it with nano, the plain editor built into the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nano ~/.bashrc&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Arrow down past the last line, paste both functions below with &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Shift&lt;/kbd&gt;+&lt;kbd&gt;V&lt;/kbd&gt;, write the file with &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;O&lt;/kbd&gt; and &lt;kbd&gt;Enter&lt;/kbd&gt;, and leave nano with &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;X&lt;/kbd&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;toaudio() { ffmpeg -i "$1" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "${1%.*}.opus"; }
 transcribe() { nice -n 19 whisper-ctranslate2 "$1" --model small --language en --output_format txt --vad_filter True --threads 8 --output_dir ~/Documents/Transcripts --hf_token "$HF_TOKEN"; }&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After running &lt;code&gt;source ~/.bashrc&lt;/code&gt; once, each recording takes:&lt;/p&gt;
+&lt;p&gt;Make the folder the transcripts will collect in, and reload the settings in the window you have open:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/Documents/Transcripts
+source ~/.bashrc&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From now on, each recording takes:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;toaudio "meeting.mp4"
 transcribe "meeting.opus"&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To work through a folder of recordings overnight:&lt;/p&gt;
