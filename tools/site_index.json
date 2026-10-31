@@ -8216,6 +8216,86 @@
    "main": [
     "guides/ai-agents-one-repository"
    ]
+  },
+  "ffmpeg": {
+   "kind": "tool",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "preparing audio for transcription": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
+  "Whisper": {
+   "kind": "tool",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "choosing a model": [
+     "guides/private-transcription-linux"
+    ],
+    "speeding up on old hardware": [
+     "guides/private-transcription-linux"
+    ],
+    "troubleshooting": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [
+    "transcription"
+   ],
+   "main": [
+    "guides/private-transcription-linux"
+   ]
+  },
+  "transcription": {
+   "kind": "topic",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "offline and private": [
+     "guides/private-transcription-linux"
+    ],
+    "speaker labels": [
+     "guides/private-transcription-linux"
+    ],
+    "searching transcripts": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [
+    "Whisper",
+    "ffmpeg"
+   ],
+   "main": [
+    "guides/private-transcription-linux"
+   ]
+  },
+  "pyannote.audio": {
+   "kind": "tool",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {},
+   "see": [
+    "transcription"
+   ],
+   "main": []
+  },
+  "Hugging Face": {
+   "kind": "organization",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   }
  },
  "reviewed": [
@@ -8353,6 +8433,7 @@
   "guides/citation-provenance",
   "guides/ai-agents-on-your-website",
   "services/agent-readiness",
-  "guides/ai-agents-one-repository"
+  "guides/ai-agents-one-repository",
+  "guides/private-transcription-linux"
  ]
 }

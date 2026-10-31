@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-28 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-10-31 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -79,6 +79,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): who holds the login, two-factor access, registrar and Registry Lock, renewals, and DNSSEC.
 
 ## Privacy and reputation
+- [How to transcribe recordings privately on your own Linux machine](https://gerriscorp.com/guides/private-transcription-linux/): ffmpeg and Whisper offline, model choice, speed on old hardware, speaker labels, and troubleshooting.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
 - [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): the archive, the audience, past disclosures and claims, identity, and the FTC rules that make the brand answerable.
 
@@ -102,4 +103,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 28, 2026
+Updated October 31, 2026

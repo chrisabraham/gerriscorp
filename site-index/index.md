@@ -1,10 +1,10 @@
 > An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 >
-> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-29 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-31 · By Chris Abraham, Gerris Corp
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 537 headings drawn from 135 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 542 headings drawn from 136 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -561,6 +561,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - family offices, [Advisory](https://gerriscorp.com/services/advisory/), [Reputation](https://gerriscorp.com/services/reputation/)
 - FAQ rich results, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - feedback loops, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
+- ffmpeg, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - preparing audio for transcription, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
 - Fiverr, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Forbes, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - force push, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**. *See also* [Git](https://gerriscorp.com/site-index/#ix-git)
@@ -715,6 +718,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - HSTS, [Glossary](https://gerriscorp.com/guides/glossary/)
 - Hudson racing single, [Colophon](https://gerriscorp.com/colophon/)
+- Hugging Face, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
 - hydration errors, **[Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)**, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
   - costs for search, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)
   - finding them sitewide, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)
@@ -1056,6 +1060,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Proxima (later Proxicom), [About](https://gerriscorp.com/about/)
 - pull requests, [Developer Specs and QA](https://gerriscorp.com/services/developers/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - push protection (GitHub), [Repository Access](https://gerriscorp.com/guides/repository-access/)
+- pyannote.audio, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/). *See also* [transcription](https://gerriscorp.com/site-index/#ix-transcription)
 - Python, [Data Cleanup](https://gerriscorp.com/services/data-cleanup/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
@@ -1360,6 +1365,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing it down, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
 
 - training cutoffs, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
+- transcription, **[Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)**. *See also* [ffmpeg](https://gerriscorp.com/site-index/#ix-ffmpeg); [Whisper](https://gerriscorp.com/site-index/#ix-whisper)
+  - offline and private, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - searching transcripts, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - speaker labels, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
 - transcripts, [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
 - Treasury Department, [About](https://gerriscorp.com/about/)
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
@@ -1414,6 +1424,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Website incident timelines, **[Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)**
 - web-vitals library, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
 - Where the Animals Go, [Colophon](https://gerriscorp.com/colophon/)
+- Whisper, **[Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)**. *See also* [transcription](https://gerriscorp.com/site-index/#ix-transcription)
+  - choosing a model, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - speeding up on old hardware, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - troubleshooting, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
 - white label services, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/)
 - Whitepages, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - Wix, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [Migrations](https://gerriscorp.com/services/migrations/)
@@ -1479,4 +1494,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 29, 2026
+Updated October 31, 2026

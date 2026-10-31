@@ -1,0 +1,101 @@
+name: Private Transcription on Linux
+type: guide
+published: 2026-10-31
+sources: whisper-ctranslate2 on GitHub | https://github.com/Softcatala/whisper-ctranslate2 ;; faster-whisper on GitHub | https://github.com/SYSTRAN/faster-whisper ;; OpenAI Whisper on GitHub | https://github.com/openai/whisper ;; pyannote.audio on GitHub | https://github.com/pyannote/pyannote-audio ;; FFmpeg codecs documentation | https://ffmpeg.org/ffmpeg-codecs.html
+updated: 2026-10-31
+title: Transcribe recordings privately on your own Linux machine
+description: Turn client calls and meeting recordings into searchable transcripts offline with ffmpeg and Whisper, speaker labels included, on hardware you already own.
+---
+<h1>How to transcribe recordings privately on your own Linux machine</h1>
+<p><img src="{root}private-transcription-linux.svg" alt="Doodle: a padlocked laptop drawn in red, a green speech bubble going in, and a blue page of lines coming out" width="240"></p>
+<p class="lead">Cloud transcription services all ask for the same thing: your recording, on their servers. Client calls, interviews, and internal meetings carry material with no reason to leave your building. Two free command line tools, ffmpeg and Whisper, produce a written transcript entirely offline on ordinary Linux hardware, with speaker labels when you need them. I run this on a ThinkPad W520 from 2011, and it finishes an hour of talk in about thirty minutes.</p>
+
+<h2>What you need</h2>
+<ul>
+  <li>A Linux machine. The commands here are for Linux Mint, Ubuntu, and Debian.</li>
+  <li>A 64 bit processor. A graphics card speeds things up and is optional. On my run the small model held about 1.7 GB of memory.</li>
+  <li>About a gigabyte of disk for the model, plus a few more if you add speaker labels.</li>
+  <li>An internet connection once, for the model download. After that, nothing leaves the machine.</li>
+</ul>
+
+<h2>Install the tools</h2>
+<pre><code>sudo apt install ffmpeg pipx
+pipx ensurepath</code></pre>
+<p>Open a new terminal so the updated path loads, then install the transcriber:</p>
+<pre><code>pipx install whisper-ctranslate2</code></pre>
+<p><a href="https://github.com/Softcatala/whisper-ctranslate2">whisper-ctranslate2</a> is a command line front end for <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>. It takes the same arguments as OpenAI's original Whisper program and runs up to four times faster on a CPU at equal accuracy. pipx gives it a private environment, so it never disturbs the Python your operating system relies on.</p>
+
+<h2>Reduce the recording to speech</h2>
+<p>Whisper hears every file as a single channel at 16 kHz, so converting to exactly that before transcribing loses nothing and saves a great deal of disk and transfer:</p>
+<pre><code>ffmpeg -i "meeting.mp4" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "meeting.opus"</code></pre>
+<p>The flags remove the picture, mix to mono, set the sample rate, and encode with Opus tuned for voices. An hour lands near 11 MB; my 5.9 GB screen recording shrank by more than 99 percent. Whisper also reads video directly, but the small audio file is quicker to move, back up, and keep.</p>
+
+<h2>Transcribe it</h2>
+<pre><code>whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt</code></pre>
+<p>The first run fetches the model from Hugging Face and prints a warning about unauthenticated requests, which you can ignore. After that it stays silent until it finishes and writes <code>meeting.txt</code> next to the audio. Add <code>--verbose True</code> to watch lines arrive with their timestamps.</p>
+<p>Other formats are one flag away:</p>
+<ul>
+  <li><code>--output_format srt</code> or <code>vtt</code> produces timed captions for a video editor or player.</li>
+  <li><code>--output_format json</code> produces word timings and confidence scores for scripts.</li>
+  <li><code>--output_format all</code> writes every format in one pass.</li>
+</ul>
+
+<h2>Choose a model</h2>
+<ul>
+  <li><code>tiny</code> and <code>base</code> are quick and stumble on names, jargon, and quiet voices.</li>
+  <li><code>small</code> is my default on a laptop processor. It kept names and crosstalk intact on my recordings.</li>
+  <li><code>medium</code> is clearly more accurate and several times slower. Start it before lunch.</li>
+  <li><code>large-v3</code> is the most accurate and belongs on a machine with a capable graphics card.</li>
+</ul>
+<p>Pass <code>--language en</code> whenever you know the language. Without it, Whisper guesses from the opening thirty seconds, and a wrong guess spoils the entire transcript.</p>
+
+<h2>Speed it up on older hardware</h2>
+<pre><code>nice -n 19 whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt --threads 8 --vad_filter True --compute_type int8</code></pre>
+<ul>
+  <li><code>--threads 8</code> puts every logical core to work. Use whatever number <code>nproc</code> reports.</li>
+  <li><code>--vad_filter True</code> skips the silences, which shortens long recordings and stops the model from inventing text during pauses.</li>
+  <li><code>--compute_type int8</code> selects the quickest arithmetic on a CPU.</li>
+  <li><code>nice -n 19</code> runs the job at the lowest priority, so the computer stays responsive while you keep working.</li>
+</ul>
+
+<h2>Label the speakers</h2>
+<p>Speaker labels come from <a href="https://github.com/pyannote/pyannote-audio">pyannote.audio</a>, which also runs locally. Its models sit behind a free Hugging Face account.</p>
+<ol>
+  <li>Create a free account at <a href="https://huggingface.co/">Hugging Face</a>.</li>
+  <li>Create a token with read access on the <a href="https://huggingface.co/settings/tokens">access tokens page</a>. It is shown once, so copy it right away.</li>
+  <li>While signed in, accept the terms on <a href="https://huggingface.co/pyannote/speaker-diarization-community-1">pyannote/speaker-diarization-community-1</a>. Older releases of whisper-ctranslate2 use <a href="https://huggingface.co/pyannote/speaker-diarization-3.1">speaker-diarization-3.1</a> and <a href="https://huggingface.co/pyannote/segmentation-3.0">segmentation-3.0</a>, so accept those too. Each page asks for a company name and a website before it unlocks; use your organization's name and address.</li>
+  <li>Add pyannote.audio to the transcriber's environment and store the token in your shell profile:</li>
+</ol>
+<pre><code>pipx inject whisper-ctranslate2 pyannote.audio
+echo 'export HF_TOKEN=hf_yourtokenhere' &gt;&gt; ~/.bashrc
+source ~/.bashrc</code></pre>
+<p>Then pass the token with each run:</p>
+<pre><code>whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt --hf_token "$HF_TOKEN"</code></pre>
+<p>Every line comes back tagged <code>[SPEAKER_00]</code>, <code>[SPEAKER_01]</code>, and onward. The install brings in PyTorch, which is over a gigabyte, and labeling is a second complete pass over the audio, so a run takes roughly twice as long. The token only authorizes the model download; the audio itself stays on the machine. Keep the token out of shared scripts and code repositories.</p>
+
+<h2>Make it a routine</h2>
+<p>Two functions at the end of <code>~/.bashrc</code> reduce the job to two short commands:</p>
+<pre><code>toaudio() { ffmpeg -i "$1" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "${1%.*}.opus"; }
+transcribe() { nice -n 19 whisper-ctranslate2 "$1" --model small --language en --output_format txt --vad_filter True --threads 8 --output_dir ~/Documents/Transcripts --hf_token "$HF_TOKEN"; }</code></pre>
+<p>After running <code>source ~/.bashrc</code> once, each recording takes:</p>
+<pre><code>toaudio "meeting.mp4"
+transcribe "meeting.opus"</code></pre>
+<p>To work through a folder of recordings overnight:</p>
+<pre><code>for f in ~/Recordings/*.mp4; do
+  toaudio "$f" &amp;&amp; transcribe "${f%.*}.opus"
+done</code></pre>
+<p><code>--output_dir</code> gathers every transcript in one folder. When that folder syncs between your own computers with a tool like Syncthing, every transcript follows you without touching a third party's cloud. Searching all of them is a single line:</p>
+<pre><code>grep -ril "renewal" ~/Documents/Transcripts</code></pre>
+<p>Drop the <code>-l</code> to print the matching lines themselves.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>"command not found" for whisper-ctranslate2.</strong> Run <code>pipx ensurepath</code> and open a new terminal.</li>
+  <li><strong>A warning about unauthenticated requests to the HF Hub.</strong> Harmless. Setting <code>HF_TOKEN</code> silences it.</li>
+  <li><strong>A 401, 403, or gated repository error while labeling speakers.</strong> Accept the model terms while signed in to the same account that issued the token.</li>
+  <li><strong>One sentence repeated again and again.</strong> That is Whisper filling silence. Add <code>--vad_filter True</code>.</li>
+  <li><strong>A transcript in the wrong language, or translated.</strong> Set <code>--language</code> explicitly.</li>
+  <li><strong>Too slow.</strong> Drop one model size, set <code>--threads</code> to your core count, and leave speaker labels off for recordings that don't need them.</li>
+</ul>
+
+<p class="related">Setting up private tools like this for a team is part of my <a href="{root}services/ai-automation/">AI tools and automation</a> work.</p>

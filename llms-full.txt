@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-29. Quote freely with attribution and a link to the source page.
+> Built 2026-10-31. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -1915,7 +1915,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-28
+Updated: 2026-10-31
 
 # Guides
 
@@ -1994,6 +1994,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): who holds the login, two-factor access, registrar and Registry Lock, renewals, and DNSSEC.
 
 ## Privacy and reputation
+- [How to transcribe recordings privately on your own Linux machine](https://gerriscorp.com/guides/private-transcription-linux/): ffmpeg and Whisper offline, model choice, speed on old hardware, speaker labels, and troubleshooting.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
 - [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): the archive, the audience, past disclosures and claims, identity, and the FTC rules that make the brand answerable.
 
@@ -2017,7 +2018,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 28, 2026
+Updated October 31, 2026
 
 
 ---
@@ -9217,8 +9218,163 @@ Updated October 29, 2026
 
 ---
 
+Source: https://gerriscorp.com/guides/private-transcription-linux/
+Updated: 2026-10-31
+
+# How to transcribe recordings privately on your own Linux machine
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 31, 2026
+
+Cloud transcription services all ask for the same thing: your recording, on their servers. Client calls, interviews, and internal meetings carry material with no reason to leave your building. Two free command line tools, ffmpeg and Whisper, produce a written transcript entirely offline on ordinary Linux hardware, with speaker labels when you need them. I run this on a ThinkPad W520 from 2011, and it finishes an hour of talk in about thirty minutes.
+
+## What you need
+- A Linux machine. The commands here are for Linux Mint, Ubuntu, and Debian.
+- A 64 bit processor. A graphics card speeds things up and is optional. On my run the small model held about 1.7 GB of memory.
+- About a gigabyte of disk for the model, plus a few more if you add speaker labels.
+- An internet connection once, for the model download. After that, nothing leaves the machine.
+
+## Install the tools
+
+```
+sudo apt install ffmpeg pipx
+pipx ensurepath
+```
+
+Open a new terminal so the updated path loads, then install the transcriber:
+
+```
+pipx install whisper-ctranslate2
+```
+
+[whisper-ctranslate2](https://github.com/Softcatala/whisper-ctranslate2) is a command line front end for [faster-whisper](https://github.com/SYSTRAN/faster-whisper). It takes the same arguments as OpenAI's original Whisper program and runs up to four times faster on a CPU at equal accuracy. pipx gives it a private environment, so it never disturbs the Python your operating system relies on.
+
+## Reduce the recording to speech
+
+Whisper hears every file as a single channel at 16 kHz, so converting to exactly that before transcribing loses nothing and saves a great deal of disk and transfer:
+
+```
+ffmpeg -i "meeting.mp4" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "meeting.opus"
+```
+
+The flags remove the picture, mix to mono, set the sample rate, and encode with Opus tuned for voices. An hour lands near 11 MB; my 5.9 GB screen recording shrank by more than 99 percent. Whisper also reads video directly, but the small audio file is quicker to move, back up, and keep.
+
+## Transcribe it
+
+```
+whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt
+```
+
+The first run fetches the model from Hugging Face and prints a warning about unauthenticated requests, which you can ignore. After that it stays silent until it finishes and writes `meeting.txt` next to the audio. Add `--verbose True` to watch lines arrive with their timestamps.
+
+Other formats are one flag away:
+- `--output_format srt` or `vtt` produces timed captions for a video editor or player.
+- `--output_format json` produces word timings and confidence scores for scripts.
+- `--output_format all` writes every format in one pass.
+
+## Choose a model
+- `tiny` and `base` are quick and stumble on names, jargon, and quiet voices.
+- `small` is my default on a laptop processor. It kept names and crosstalk intact on my recordings.
+- `medium` is clearly more accurate and several times slower. Start it before lunch.
+- `large-v3` is the most accurate and belongs on a machine with a capable graphics card.
+
+Pass `--language en` whenever you know the language. Without it, Whisper guesses from the opening thirty seconds, and a wrong guess spoils the entire transcript.
+
+## Speed it up on older hardware
+
+```
+nice -n 19 whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt --threads 8 --vad_filter True --compute_type int8
+```
+- `--threads 8` puts every logical core to work. Use whatever number `nproc` reports.
+- `--vad_filter True` skips the silences, which shortens long recordings and stops the model from inventing text during pauses.
+- `--compute_type int8` selects the quickest arithmetic on a CPU.
+- `nice -n 19` runs the job at the lowest priority, so the computer stays responsive while you keep working.
+
+## Label the speakers
+
+Speaker labels come from [pyannote.audio](https://github.com/pyannote/pyannote-audio), which also runs locally. Its models sit behind a free Hugging Face account.
+1. Create a free account at [Hugging Face](https://huggingface.co/).
+2. Create a token with read access on the [access tokens page](https://huggingface.co/settings/tokens). It is shown once, so copy it right away.
+3. While signed in, accept the terms on [pyannote/speaker-diarization-community-1](https://huggingface.co/pyannote/speaker-diarization-community-1). Older releases of whisper-ctranslate2 use [speaker-diarization-3.1](https://huggingface.co/pyannote/speaker-diarization-3.1) and [segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0), so accept those too. Each page asks for a company name and a website before it unlocks; use your organization's name and address.
+4. Add pyannote.audio to the transcriber's environment and store the token in your shell profile:
+
+```
+pipx inject whisper-ctranslate2 pyannote.audio
+echo 'export HF_TOKEN=hf_yourtokenhere' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Then pass the token with each run:
+
+```
+whisper-ctranslate2 "meeting.opus" --model small --language en --output_format txt --hf_token "$HF_TOKEN"
+```
+
+Every line comes back tagged `[SPEAKER_00]`, `[SPEAKER_01]`, and onward. The install brings in PyTorch, which is over a gigabyte, and labeling is a second complete pass over the audio, so a run takes roughly twice as long. The token only authorizes the model download; the audio itself stays on the machine. Keep the token out of shared scripts and code repositories.
+
+## Make it a routine
+
+Two functions at the end of `~/.bashrc` reduce the job to two short commands:
+
+```
+toaudio() { ffmpeg -i "$1" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "${1%.*}.opus"; }
+transcribe() { nice -n 19 whisper-ctranslate2 "$1" --model small --language en --output_format txt --vad_filter True --threads 8 --output_dir ~/Documents/Transcripts --hf_token "$HF_TOKEN"; }
+```
+
+After running `source ~/.bashrc` once, each recording takes:
+
+```
+toaudio "meeting.mp4"
+transcribe "meeting.opus"
+```
+
+To work through a folder of recordings overnight:
+
+```
+for f in ~/Recordings/*.mp4; do
+  toaudio "$f" && transcribe "${f%.*}.opus"
+done
+```
+
+`--output_dir` gathers every transcript in one folder. When that folder syncs between your own computers with a tool like Syncthing, every transcript follows you without touching a third party's cloud. Searching all of them is a single line:
+
+```
+grep -ril "renewal" ~/Documents/Transcripts
+```
+
+Drop the `-l` to print the matching lines themselves.
+
+## Troubleshooting
+- **"command not found" for whisper-ctranslate2.** Run `pipx ensurepath` and open a new terminal.
+- **A warning about unauthenticated requests to the HF Hub.** Harmless. Setting `HF_TOKEN` silences it.
+- **A 401, 403, or gated repository error while labeling speakers.** Accept the model terms while signed in to the same account that issued the token.
+- **One sentence repeated again and again.** That is Whisper filling silence. Add `--vad_filter True`.
+- **A transcript in the wrong language, or translated.** Set `--language` explicitly.
+- **Too slow.** Drop one model size, set `--threads` to your core count, and leave speaker labels off for recordings that don't need them.
+
+Setting up private tools like this for a team is part of my [AI tools and automation](https://gerriscorp.com/services/ai-automation/) work.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [whisper-ctranslate2 on GitHub](https://github.com/Softcatala/whisper-ctranslate2)
+- [faster-whisper on GitHub](https://github.com/SYSTRAN/faster-whisper)
+- [OpenAI Whisper on GitHub](https://github.com/openai/whisper)
+- [pyannote.audio on GitHub](https://github.com/pyannote/pyannote-audio)
+- [FFmpeg codecs documentation](https://ffmpeg.org/ffmpeg-codecs.html)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-29
+Updated: 2026-10-31
 
 # Site map
 
@@ -9350,6 +9506,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
 - [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
 - [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
+- [How to transcribe recordings privately on your own Linux machine](https://gerriscorp.com/guides/private-transcription-linux/): Turn client calls and meeting recordings into searchable transcripts offline with ffmpeg and Whisper, speaker labels included, on hardware you already own.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -9378,17 +9535,17 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 29, 2026
+Updated October 31, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/site-index/
-Updated: 2026-10-29
+Updated: 2026-10-31
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 537 headings drawn from 135 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 542 headings drawn from 136 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -9945,6 +10102,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - family offices, [Advisory](https://gerriscorp.com/services/advisory/), [Reputation](https://gerriscorp.com/services/reputation/)
 - FAQ rich results, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - feedback loops, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
+- ffmpeg, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - preparing audio for transcription, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
 - Fiverr, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Forbes, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - force push, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**. *See also* [Git](https://gerriscorp.com/site-index/#ix-git)
@@ -10099,6 +10259,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - HSTS, [Glossary](https://gerriscorp.com/guides/glossary/)
 - Hudson racing single, [Colophon](https://gerriscorp.com/colophon/)
+- Hugging Face, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
 - hydration errors, **[Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)**, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
   - costs for search, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)
   - finding them sitewide, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/)
@@ -10440,6 +10601,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Proxima (later Proxicom), [About](https://gerriscorp.com/about/)
 - pull requests, [Developer Specs and QA](https://gerriscorp.com/services/developers/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - push protection (GitHub), [Repository Access](https://gerriscorp.com/guides/repository-access/)
+- pyannote.audio, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/). *See also* [transcription](https://gerriscorp.com/site-index/#ix-transcription)
 - Python, [Data Cleanup](https://gerriscorp.com/services/data-cleanup/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
@@ -10744,6 +10906,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing it down, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
 
 - training cutoffs, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
+- transcription, **[Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)**. *See also* [ffmpeg](https://gerriscorp.com/site-index/#ix-ffmpeg); [Whisper](https://gerriscorp.com/site-index/#ix-whisper)
+  - offline and private, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - searching transcripts, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - speaker labels, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
 - transcripts, [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
 - Treasury Department, [About](https://gerriscorp.com/about/)
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
@@ -10798,6 +10965,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Website incident timelines, **[Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)**
 - web-vitals library, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
 - Where the Animals Go, [Colophon](https://gerriscorp.com/colophon/)
+- Whisper, **[Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)**. *See also* [transcription](https://gerriscorp.com/site-index/#ix-transcription)
+  - choosing a model, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - speeding up on old hardware, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - troubleshooting, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
 - white label services, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/)
 - Whitepages, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - Wix, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [Migrations](https://gerriscorp.com/services/migrations/)
@@ -10863,4 +11035,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 29, 2026
+Updated October 31, 2026

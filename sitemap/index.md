@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-29 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-10-31 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -132,6 +132,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
 - [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
 - [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
+- [How to transcribe recordings privately on your own Linux machine](https://gerriscorp.com/guides/private-transcription-linux/): Turn client calls and meeting recordings into searchable transcripts offline with ffmpeg and Whisper, speaker labels included, on hardware you already own.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -160,4 +161,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 29, 2026
+Updated October 31, 2026

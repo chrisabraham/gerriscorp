@@ -115,6 +115,7 @@ FILES += ["guides/ai-agents-one-repository"]
 
 # The products page: fixed scope reports with published prices, October 29, 2026, on Chris' ruling via Eunice.
 FILES += ["products"]
+FILES += ["guides/private-transcription-linux"]
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/") + 1, "services/agent-readiness/")
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
