@@ -5,8 +5,94 @@
   <link href="https://gerriscorp.com/feed.xml" rel="self"/>
   <link href="https://gerriscorp.com/guides/"/>
   <id>https://gerriscorp.com/guides/</id>
-  <updated>2026-10-31T12:00:00Z</updated>
+  <updated>2026-11-02T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
+  <entry>
+    <title>Programmatic SEO: what it is, where it works, and why Google ignores it</title>
+    <link href="https://gerriscorp.com/guides/programmatic-seo/"/>
+    <id>https://gerriscorp.com/guides/programmatic-seo/</id>
+    <published>2026-11-02T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <summary>What programmatic SEO is, where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.</summary>
+    <content type="html">&lt;h1&gt;Programmatic SEO: what it is, where it works, and why Google ignores it&lt;/h1&gt;
+&lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-11-02"&gt;November 2, 2026&lt;/time&gt;&lt;/p&gt;
+&lt;p class="lead"&gt;Programmatic SEO publishes pages from a database instead of an editor: one template, thousands of rows of structured data, and a page for every row, each aimed at a long-tail search. Built on real data, it produces some of the most useful pages on the web. Built on swapped variables and nothing else, it produces pages Google crawls once and refuses to index.&lt;/p&gt;
+
+&lt;h2&gt;What is programmatic SEO?&lt;/h2&gt;
+&lt;p&gt;Programmatic SEO is a publishing method with two working parts. The first is a data layer: a structured table of entities, such as products, properties, places, routes, or practitioners, where every row carries that entity's attributes. The second is a template layer: page designs that render one row each, under a predictable URL pattern. Point the templates at the table and the site gains a page for every row, each one matched to a query pattern such as {product} price, {service} in {city}, or {city} to {city} flights.&lt;/p&gt;
+&lt;p&gt;Every content management system renders templates, so templating alone is not the method. Programmatic SEO begins when the database decides how many pages exist and which searches each page targets. A single build can create a few hundred pages or a few million, and nothing in the build checks whether each page deserves to exist. That check is the whole job, and it belongs to the people publishing, because Google performs its own version of it later and publishes the verdict in Search Console.&lt;/p&gt;
+
+&lt;h2&gt;Where does programmatic SEO work?&lt;/h2&gt;
+&lt;p&gt;It works where every row holds facts that are true of that entity alone, facts a rival cannot reproduce by renaming a variable. The durable examples share that property:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Property listings.&lt;/strong&gt; Price, beds, baths, photographs, floor area, days on market, and sale status. Two listings on the same street differ in ways a buyer acts on.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Product databases.&lt;/strong&gt; Specifications, price, stock, compatibility, manuals, and owner reviews. A parts catalog page answers questions no article could answer as well.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Location pages carrying genuine local data.&lt;/strong&gt; The address, the hours, the staff, the services that branch actually offers, local inventory, and reviews of that branch. A location page earns its URL with the branch's real record.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pages computed from live data.&lt;/strong&gt; Prices, comparisons, schedules, and conversions drawn from feeds that change, so the page a visitor reads today differs from last month's because the facts moved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The test takes ten seconds. Hide the names, read two pages from the set side by side, and ask whether a visitor could tell them apart and learn something different from each. If the answer is yes, the set is publishing. If the pages collapse into one page wearing different nouns, Google reaches the same conclusion.&lt;/p&gt;
+
+&lt;h2&gt;Why do programmatic pages fail to get indexed?&lt;/h2&gt;
+&lt;p&gt;Indexing is a selection, and a template set that differs only in swapped variables gives Google nothing to select. The failure modes stack:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Near duplication.&lt;/strong&gt; Google crawls a sample of the set, compares the pages, and finds the same text arranged around different names and numbers. The rest of the set waits in "Discovered, currently not indexed" or falls into "Crawled, currently not indexed," the status the &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;guide to Crawled, currently not indexed&lt;/a&gt; takes apart.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No unique value per URL.&lt;/strong&gt; An indexed page has to be a good answer to something. A page whose only unique tokens are a city and a product name answers nothing its siblings fail to answer.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Weak internal linking.&lt;/strong&gt; Generated sets often sit deep in the site, reachable only through paginated archives or a sitemap file. Pages that nothing links to read as pages nobody values, and crawlers budget their visits accordingly.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Crawl waste.&lt;/strong&gt; Combinations, parameters, and sort orders multiply URLs far beyond the entity count, and Googlebot spends visits on variants while new or changed real pages wait. The &lt;a href="https://gerriscorp.com/guides/faceted-navigation/"&gt;faceted navigation guide&lt;/a&gt; covers the catalog version of this trap.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Site-level drag.&lt;/strong&gt; Thousands of weak URLs feed the quality signals Google computes for the whole domain and the crawl rate it grants. A flood in one template can slow indexing for pages that were never part of the flood.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;What does Google's scaled content abuse policy say?&lt;/h2&gt;
+&lt;p&gt;In March 2024, Google added scaled content abuse to its &lt;a href="https://developers.google.com/search/docs/essentials/spam-policies"&gt;spam policies for Google web search&lt;/a&gt;. The policy names the practice plainly: generating many pages primarily to manipulate search rankings, with little or no value added for the people who land on them, is spam. The method of production makes no difference. Automation, human writers, and a mixture of the two all fall under the same rule, and the examples Google gives include bulk-generated pages published without added value, material scraped or stitched from other sources, and many sites used to hide a scaled operation.&lt;/p&gt;
+&lt;p&gt;The policy judges the output and its purpose, never the technique. A database behind a page is ordinary publishing, and has been since the first catalog went online. A database behind ten thousand pages that exist to catch queries, carrying nothing a visitor could use, is the abuse. Sites that cross the line risk demotion or removal under the spam policies, and the cleanup takes far longer than the publishing did. Any programmatic project should be planned against that standard from the first template, because retrofitting value into a published flood is the expensive direction.&lt;/p&gt;
+
+&lt;h2&gt;How do you fix a programmatic site Google will not index?&lt;/h2&gt;
+&lt;p&gt;Work at the level of the template and the dataset, never page by page. A set of fifty thousand URLs has perhaps six problems, one per template, and fixing templates fixes the set.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Audit each template against demand and data.&lt;/strong&gt; For every page type, write down the searches it targets and the facts unique to each row. A type with no real demand and no unique data is a removal candidate, however many pages it has already published.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Feed the survivors real data.&lt;/strong&gt; Live prices and availability, local facts, photographs, reviews, computed comparisons: material a competitor cannot produce by renaming a variable. Where the data cannot be obtained, the honest move is to shrink the set until it matches the data on hand.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Chunk the content.&lt;/strong&gt; Break each template into blocks that each answer one question: the specification table, the price block, the local details, the questions buyers actually ask, each under a descriptive heading. Readers scan blocks, and answer engines extract from blocks. A wall of prose with variables poured in defeats both.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Match schema to the page type.&lt;/strong&gt; Product pages carry Product data, listings carry the listing type, locations carry LocalBusiness, and hubs carry ItemList, always describing content the visitor can see. The &lt;a href="https://gerriscorp.com/guides/structured-data/"&gt;structured data guide&lt;/a&gt; sorts the types worth using from the ones Google retired.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Rebuild internal linking as hub and spoke.&lt;/strong&gt; A hub for each category or region links down to every spoke beneath it; spokes link back to the hub and across to true siblings. Keep the set a few clicks from the home page, keep the sitemap limited to pages meant for the index, and treat &lt;a href="https://gerriscorp.com/services/internal-linking/"&gt;internal linking architecture&lt;/a&gt; as part of the publishing system rather than decoration added later.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Prune what cannot justify itself.&lt;/strong&gt; Delete the combinations nobody searches for, consolidate near-duplicates into the strongest URL with redirects, and noindex the variants visitors need but engines do not, such as sort orders and filter states. Pages nothing links to and nobody needs can go with a 410. A smaller set in which every page carries real facts recrawls faster and indexes better than a large set diluted by filler.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Earn real links.&lt;/strong&gt; Publish the interesting edges of the dataset: rankings, research, tools, and local data that journalists, partners, and customers cite. Links into the hubs lift the whole set, while a large inventory with no links pointing at it asks Google to take the site's word for its importance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Measure the result by template in Search Console's Page indexing report. Movement shows over weeks as Google recrawls the set, and on a pruned site the strongest pages usually get picked up first.&lt;/p&gt;
+
+&lt;section class="faq"&gt;
+&lt;h2&gt;Questions about programmatic SEO&lt;/h2&gt;
+&lt;h3&gt;Is programmatic SEO against Google's rules?&lt;/h3&gt;
+&lt;p&gt;No. The spam policies ban scaled content abuse: many pages produced to manipulate rankings with little value added. A database-driven page carrying real facts about a real entity is ordinary publishing, and some of the most heavily indexed pages on the web are built exactly that way.&lt;/p&gt;
+&lt;h3&gt;How many pages is it safe to generate?&lt;/h3&gt;
+&lt;p&gt;The policies set no number. Safety scales with data: a million listings backed by live records index well, while a thousand city pages carrying swapped names struggle. Count the unique facts on each page rather than counting pages.&lt;/p&gt;
+&lt;h3&gt;Why does Google crawl my pages and still refuse to index them?&lt;/h3&gt;
+&lt;p&gt;Crawling is cheap and indexing is a judgment. Google samples the set, finds pages that differ mainly in variables, and declines to spend index space on the rest. The &lt;a href="https://gerriscorp.com/guides/crawled-not-indexed/"&gt;guide to Crawled, currently not indexed&lt;/a&gt; gives the full method for confirming the cause on a specific site.&lt;/p&gt;
+&lt;h3&gt;Should thin pages be noindexed or deleted?&lt;/h3&gt;
+&lt;p&gt;Delete pages nobody needs and nothing links to; a 410 tells Google the removal was deliberate. Noindex pages visitors still need, such as filtered views, so they stay reachable while leaving the index. Consolidate pages that split one topic into near copies into the strongest URL and redirect the rest.&lt;/p&gt;
+&lt;h3&gt;Does adding schema get programmatic pages indexed?&lt;/h3&gt;
+&lt;p&gt;No. Schema describes a page; it cannot give a page value. Accurate, type-matched structured data helps engines understand and display a page that already deserves indexing, and wasted schema on thin pages changes nothing.&lt;/p&gt;
+&lt;h3&gt;How long does recovery take after a prune?&lt;/h3&gt;
+&lt;p&gt;Expect the first movement in weeks and the full picture across a quarter. Google recrawls at its own pace, strongest pages first. Track the Page indexing report template by template and resist republishing the pruned set while the recrawl is under way.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p class="related"&gt;I run this diagnosis as a fixed-fee &lt;a href="https://gerriscorp.com/services/indexing-audit/"&gt;indexing audit&lt;/a&gt;. See also &lt;a href="https://gerriscorp.com/case-studies/programmatic-indexing/"&gt;the programmatic indexing case study&lt;/a&gt; and the &lt;a href="https://gerriscorp.com/guides/faceted-navigation/"&gt;faceted navigation guide&lt;/a&gt; for the catalog version of the crawl problem.&lt;/p&gt;
+&lt;aside class="help-box" aria-label="Get help"&gt;
+  &lt;h2&gt;Want me to handle this for you?&lt;/h2&gt;
+  &lt;p&gt;This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="button" href="https://calendly.com/chrisabraham/30"&gt;Book a 30 minute call&lt;/a&gt; &lt;a class="button" href="tel:+12023525051"&gt;Call +1 202-352-5051&lt;/a&gt; &lt;a class="button" href="mailto:chris@gerriscorp.com"&gt;Email chris@gerriscorp.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;If your company hires through Upwork, you'll find me &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;there as well&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul class="sources"&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/essentials/spam-policies"&gt;Google Search Central: Spam policies for Google web search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget"&gt;Google Search Central: Managing crawl budget for large sites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content"&gt;Google Search Central: Creating helpful, reliable, people-first content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside class="author-box" aria-label="About the author"&gt;
+  &lt;img src="https://gerriscorp.com/chris-abraham.jpg" width="72" height="72" alt=""&gt;
+  &lt;p&gt;Written by &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt;, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. &lt;a href="https://gerriscorp.com/standards/"&gt;Editorial standards&lt;/a&gt; · &lt;a href="https://www.upwork.com/freelancers/chrisjabraham"&gt;Upwork profile&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;</content>
+  </entry>
   <entry>
     <title>How to transcribe recordings privately on your own Linux machine</title>
     <link href="https://gerriscorp.com/guides/private-transcription-linux/"/>
