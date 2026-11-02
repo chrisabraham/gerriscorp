@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-31. Quote freely with attribution and a link to the source page.
+> Built 2026-11-02. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -1915,7 +1915,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-31
+Updated: 2026-11-02
 
 # Guides
 
@@ -1967,6 +1967,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.
 - [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): matching rules, crawling versus indexing, status codes, and AI crawlers.
 - [Faceted navigation SEO: filters, parameters, and crawl budget](https://gerriscorp.com/guides/faceted-navigation/): which filter pages to index and how to keep the rest out of the crawl.
+- [Programmatic SEO: templates, data, indexing, and the fix](https://gerriscorp.com/guides/programmatic-seo/): where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.
 - [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): the codes, the return links, and the errors that void them.
 
 ## Speed and infrastructure
@@ -2018,7 +2019,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 31, 2026
+Updated November 2, 2026
 
 
 ---
@@ -9415,8 +9416,167 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/services/indexing-audit/
+Updated: 2026-11-02
+
+# Indexing audit
+
+A page Google will not index might as well not exist. The indexing audit establishes why Google is refusing your pages, proves the cause with evidence from your own data, and returns the fixes in the order to apply them. The fee is $750 flat, invoiced in advance, and the audit is the whole deliverable.
+
+## What the audit examines
+- **A full crawl of the site,** template by template: word counts, duplication, status codes, canonical choices, and the internal links each page type actually receives.
+- **Search Console and Bing Webmaster Tools diagnosis:** the Page indexing report grouped by cause and by template, crawl stats, and the dates the counts started moving.
+- **The instructions your site hands to crawlers:** robots.txt, sitemap files, canonical tags, and internal linking, checked against the indexing you actually want.
+- **A backlink audit:** the links pointing at the site sorted into genuine, irrelevant, and spam, with a disavow file prepared when the evidence supports one.
+- **Structure for AI search:** how the important pages should be chunked and marked up so answer engines can read, understand, and cite them.
+
+## What you get
+
+The deliverable is a written report: the verdict on each problem found, the evidence behind it, and a prioritized fix list a developer can execute without booking a second opinion. Fixes carry copy-and-paste examples wherever a fix has a definite shape: titles, descriptions, robots rules, canonical choices, and schema blocks. Nothing in the report depends on hiring me for the next step, and if the honest finding is that a set of pages should be deleted, the report names the page types and the order to remove them in.
+
+## Price and how it runs
+1. **A short exchange** to confirm the site, the symptoms, and the access needed: Search Console, Bing Webmaster Tools, and read access to the repository on headless or flat-file sites.
+2. **The invoice:** $750 flat, invoiced in advance. Work begins when the invoice is paid and the access lands.
+3. **The audit itself,** delivered in writing within days of access, with a walkthrough of the findings for anyone who wants one.
+
+Implementation of the fixes is separate work, quoted in writing after the audit for anyone who wants it. Many clients hand the report to their own developers, and the report is written to survive that handoff intact.
+
+## The usual findings
+
+Most indexing failures trace to a short list: pages that exist in thousands and differ in almost nothing, a template change that quietly emptied the rendered HTML, internal links that never reach the pages that matter, or a link profile spammed hard enough to make Google cautious about the whole domain. Each cause has a different fix and a different recovery clock, and treating one as another wastes months. The audit separates them on evidence before anyone touches the site. My [programmatic SEO guide](https://gerriscorp.com/guides/programmatic-seo/) shows the most common pattern in full: database-driven pages that Google crawls once and declines to keep.
+
+## Common questions
+
+### How long does the audit take?
+
+Once payment and access land, days rather than weeks. The report arrives as one document. The clock that matters afterward is Google's recrawl, which nobody controls and which the report plans around.
+
+### Does the audit include making the fixes?
+
+No. The audit is diagnosis plus a fix list written for direct execution. Implementation is separate, quoted in writing before it starts, and entirely optional.
+
+### Will a disavow file always be included?
+
+Only when the link evidence supports one. Google ignores most obvious spam links without any help, so a disavow file ships when the pattern looks targeted or the volume makes the risk real, and the report explains the call either way.
+
+### What if my pages are indexed but invisible?
+
+Indexing and ranking are separate problems, and the audit says which one a site has. Pages that sit in the index without traffic point at content, links, or demand; the findings and the fix list follow whichever problem the evidence shows.
+
+**Related:** [Programmatic SEO guide](https://gerriscorp.com/guides/programmatic-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Search Console cleanup](https://gerriscorp.com/services/search-console/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
+
+## Start a conversation
+
+Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
+
+[Schedule a call](https://calendly.com/chrisabraham/30) [Work with me through Upwork](https://www.upwork.com/freelancers/chrisjabraham)
+
+Updated November 2, 2026
+
+
+---
+
+Source: https://gerriscorp.com/guides/programmatic-seo/
+Updated: 2026-11-02
+
+# Programmatic SEO: what it is, where it works, and why Google ignores it
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published November 2, 2026
+
+Programmatic SEO publishes pages from a database instead of an editor: one template, thousands of rows of structured data, and a page for every row, each aimed at a long-tail search. Built on real data, it produces some of the most useful pages on the web. Built on swapped variables and nothing else, it produces pages Google crawls once and refuses to index.
+
+## What is programmatic SEO?
+
+Programmatic SEO is a publishing method with two working parts. The first is a data layer: a structured table of entities, such as products, properties, places, routes, or practitioners, where every row carries that entity's attributes. The second is a template layer: page designs that render one row each, under a predictable URL pattern. Point the templates at the table and the site gains a page for every row, each one matched to a query pattern such as {product} price, {service} in {city}, or {city} to {city} flights.
+
+Every content management system renders templates, so templating alone is not the method. Programmatic SEO begins when the database decides how many pages exist and which searches each page targets. A single build can create a few hundred pages or a few million, and nothing in the build checks whether each page deserves to exist. That check is the whole job, and it belongs to the people publishing, because Google performs its own version of it later and publishes the verdict in Search Console.
+
+## Where does programmatic SEO work?
+
+It works where every row holds facts that are true of that entity alone, facts a rival cannot reproduce by renaming a variable. The durable examples share that property:
+- **Property listings.** Price, beds, baths, photographs, floor area, days on market, and sale status. Two listings on the same street differ in ways a buyer acts on.
+- **Product databases.** Specifications, price, stock, compatibility, manuals, and owner reviews. A parts catalog page answers questions no article could answer as well.
+- **Location pages carrying genuine local data.** The address, the hours, the staff, the services that branch actually offers, local inventory, and reviews of that branch. A location page earns its URL with the branch's real record.
+- **Pages computed from live data.** Prices, comparisons, schedules, and conversions drawn from feeds that change, so the page a visitor reads today differs from last month's because the facts moved.
+
+The test takes ten seconds. Hide the names, read two pages from the set side by side, and ask whether a visitor could tell them apart and learn something different from each. If the answer is yes, the set is publishing. If the pages collapse into one page wearing different nouns, Google reaches the same conclusion.
+
+## Why do programmatic pages fail to get indexed?
+
+Indexing is a selection, and a template set that differs only in swapped variables gives Google nothing to select. The failure modes stack:
+- **Near duplication.** Google crawls a sample of the set, compares the pages, and finds the same text arranged around different names and numbers. The rest of the set waits in "Discovered, currently not indexed" or falls into "Crawled, currently not indexed," the status the [guide to Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/) takes apart.
+- **No unique value per URL.** An indexed page has to be a good answer to something. A page whose only unique tokens are a city and a product name answers nothing its siblings fail to answer.
+- **Weak internal linking.** Generated sets often sit deep in the site, reachable only through paginated archives or a sitemap file. Pages that nothing links to read as pages nobody values, and crawlers budget their visits accordingly.
+- **Crawl waste.** Combinations, parameters, and sort orders multiply URLs far beyond the entity count, and Googlebot spends visits on variants while new or changed real pages wait. The [faceted navigation guide](https://gerriscorp.com/guides/faceted-navigation/) covers the catalog version of this trap.
+- **Site-level drag.** Thousands of weak URLs feed the quality signals Google computes for the whole domain and the crawl rate it grants. A flood in one template can slow indexing for pages that were never part of the flood.
+
+## What does Google's scaled content abuse policy say?
+
+In March 2024, Google added scaled content abuse to its [spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies). The policy names the practice plainly: generating many pages primarily to manipulate search rankings, with little or no value added for the people who land on them, is spam. The method of production makes no difference. Automation, human writers, and a mixture of the two all fall under the same rule, and the examples Google gives include bulk-generated pages published without added value, material scraped or stitched from other sources, and many sites used to hide a scaled operation.
+
+The policy judges the output and its purpose, never the technique. A database behind a page is ordinary publishing, and has been since the first catalog went online. A database behind ten thousand pages that exist to catch queries, carrying nothing a visitor could use, is the abuse. Sites that cross the line risk demotion or removal under the spam policies, and the cleanup takes far longer than the publishing did. Any programmatic project should be planned against that standard from the first template, because retrofitting value into a published flood is the expensive direction.
+
+## How do you fix a programmatic site Google will not index?
+
+Work at the level of the template and the dataset, never page by page. A set of fifty thousand URLs has perhaps six problems, one per template, and fixing templates fixes the set.
+1. **Audit each template against demand and data.** For every page type, write down the searches it targets and the facts unique to each row. A type with no real demand and no unique data is a removal candidate, however many pages it has already published.
+2. **Feed the survivors real data.** Live prices and availability, local facts, photographs, reviews, computed comparisons: material a competitor cannot produce by renaming a variable. Where the data cannot be obtained, the honest move is to shrink the set until it matches the data on hand.
+3. **Chunk the content.** Break each template into blocks that each answer one question: the specification table, the price block, the local details, the questions buyers actually ask, each under a descriptive heading. Readers scan blocks, and answer engines extract from blocks. A wall of prose with variables poured in defeats both.
+4. **Match schema to the page type.** Product pages carry Product data, listings carry the listing type, locations carry LocalBusiness, and hubs carry ItemList, always describing content the visitor can see. The [structured data guide](https://gerriscorp.com/guides/structured-data/) sorts the types worth using from the ones Google retired.
+5. **Rebuild internal linking as hub and spoke.** A hub for each category or region links down to every spoke beneath it; spokes link back to the hub and across to true siblings. Keep the set a few clicks from the home page, keep the sitemap limited to pages meant for the index, and treat [internal linking architecture](https://gerriscorp.com/services/internal-linking/) as part of the publishing system rather than decoration added later.
+6. **Prune what cannot justify itself.** Delete the combinations nobody searches for, consolidate near-duplicates into the strongest URL with redirects, and noindex the variants visitors need but engines do not, such as sort orders and filter states. Pages nothing links to and nobody needs can go with a 410. A smaller set in which every page carries real facts recrawls faster and indexes better than a large set diluted by filler.
+7. **Earn real links.** Publish the interesting edges of the dataset: rankings, research, tools, and local data that journalists, partners, and customers cite. Links into the hubs lift the whole set, while a large inventory with no links pointing at it asks Google to take the site's word for its importance.
+
+Measure the result by template in Search Console's Page indexing report. Movement shows over weeks as Google recrawls the set, and on a pruned site the strongest pages usually get picked up first.
+
+## Questions about programmatic SEO
+
+### Is programmatic SEO against Google's rules?
+
+No. The spam policies ban scaled content abuse: many pages produced to manipulate rankings with little value added. A database-driven page carrying real facts about a real entity is ordinary publishing, and some of the most heavily indexed pages on the web are built exactly that way.
+
+### How many pages is it safe to generate?
+
+The policies set no number. Safety scales with data: a million listings backed by live records index well, while a thousand city pages carrying swapped names struggle. Count the unique facts on each page rather than counting pages.
+
+### Why does Google crawl my pages and still refuse to index them?
+
+Crawling is cheap and indexing is a judgment. Google samples the set, finds pages that differ mainly in variables, and declines to spend index space on the rest. The [guide to Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/) gives the full method for confirming the cause on a specific site.
+
+### Should thin pages be noindexed or deleted?
+
+Delete pages nobody needs and nothing links to; a 410 tells Google the removal was deliberate. Noindex pages visitors still need, such as filtered views, so they stay reachable while leaving the index. Consolidate pages that split one topic into near copies into the strongest URL and redirect the rest.
+
+### Does adding schema get programmatic pages indexed?
+
+No. Schema describes a page; it cannot give a page value. Accurate, type-matched structured data helps engines understand and display a page that already deserves indexing, and wasted schema on thin pages changes nothing.
+
+### How long does recovery take after a prune?
+
+Expect the first movement in weeks and the full picture across a quarter. Google recrawls at its own pace, strongest pages first. Track the Page indexing report template by template and resist republishing the pruned set while the recrawl is under way.
+
+I run this diagnosis as a fixed-fee [indexing audit](https://gerriscorp.com/services/indexing-audit/). See also [the programmatic indexing case study](https://gerriscorp.com/case-studies/programmatic-indexing/) and the [faceted navigation guide](https://gerriscorp.com/guides/faceted-navigation/) for the catalog version of the crawl problem.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
+- [Google Search Central: Managing crawl budget for large sites](https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-31
+Updated: 2026-11-02
 
 # Site map
 
@@ -9470,6 +9630,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
 - [Internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/): Connect your website's services, articles, products, and case studies with an internal linking plan: crawl evidence, clear anchors, and verified changes.
+- [Indexing audit](https://gerriscorp.com/services/indexing-audit/): A technical and indexing audit for a flat $750, invoiced in advance: full crawl, Search Console and Bing diagnosis, backlink review, and a fix list.
 
 ## Local, reputation, and email
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
@@ -9549,6 +9710,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
 - [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
 - [How to transcribe recordings privately on your own Linux machine](https://gerriscorp.com/guides/private-transcription-linux/): Turn client calls and meeting recordings into searchable transcripts offline with ffmpeg and Whisper, speaker labels included, on hardware you already own.
+- [Programmatic SEO: what it is, where it works, and why Google ignores it](https://gerriscorp.com/guides/programmatic-seo/): What programmatic SEO is, where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -9577,17 +9739,17 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 31, 2026
+Updated November 2, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/site-index/
-Updated: 2026-10-31
+Updated: 2026-11-02
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 542 headings drawn from 136 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 544 headings drawn from 138 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -10334,6 +10496,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - index bloat, [Search Console](https://gerriscorp.com/services/search-console/)
 - Indexed, though blocked by robots.txt, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
+- indexing audit, [Search Console](https://gerriscorp.com/services/search-console/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/), **[Indexing Audit](https://gerriscorp.com/services/indexing-audit/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/). *See also* [Crawled, currently not indexed](https://gerriscorp.com/site-index/#ix-crawled-currently-not-indexed)
+  - backlink audit and disavow, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
+  - prioritized fix list, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
+
 - IndexNow, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [AI Search](https://gerriscorp.com/services/ai-search/), **[IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)**, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Glossary](https://gerriscorp.com/guides/glossary/)
   - batch limits, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
   - Google not a participant, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
@@ -10395,7 +10561,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
 - lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
-- large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**
+- large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
   - baselines, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - crawl efficiency, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - index bloat, [Large Sites](https://gerriscorp.com/services/large-sites/)
@@ -10630,6 +10796,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - prerendering, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - privacy, **[Privacy](https://gerriscorp.com/privacy/)**
 - Products, [Products](https://gerriscorp.com/products/)
+- programmatic SEO, [Large Sites](https://gerriscorp.com/services/large-sites/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Indexing Audit](https://gerriscorp.com/services/indexing-audit/), **[Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)**. *See also* [large and programmatic sites](https://gerriscorp.com/site-index/#ix-large-and-programmatic-sites); [scaled content abuse](https://gerriscorp.com/site-index/#ix-scaled-content-abuse)
+  - content chunking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - data and templates, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - differentiation, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - hub and spoke linking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - pruning and noindex, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+
 - project rescue, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Project Rescue](https://gerriscorp.com/services/rescue/)**, [App Takeover](https://gerriscorp.com/case-studies/app-takeover/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/). *See also* [website handover](https://gerriscorp.com/site-index/#ix-website-handover)
   - handover review, [Project Rescue](https://gerriscorp.com/services/rescue/)
   - hosting afterward, [Project Rescue](https://gerriscorp.com/services/rescue/)
@@ -10728,7 +10901,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## S
 - Sanity, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)**
-- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/), [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
 - Schema Markup Validator, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Screaming Frog SEO Spider, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/). *See also* [migration tools](https://gerriscorp.com/site-index/#ix-migration-tools)
   - crawl comparison and URL Mapping, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
@@ -11077,4 +11250,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 31, 2026
+Updated November 2, 2026

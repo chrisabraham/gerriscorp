@@ -1,10 +1,10 @@
 > An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 >
-> Source: https://gerriscorp.com/site-index/ · Updated 2026-10-31 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/site-index/ · Updated 2026-11-02 · By Chris Abraham, Gerris Corp
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 542 headings drawn from 136 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 544 headings drawn from 138 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -751,6 +751,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - index bloat, [Search Console](https://gerriscorp.com/services/search-console/)
 - Indexed, though blocked by robots.txt, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
+- indexing audit, [Search Console](https://gerriscorp.com/services/search-console/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/), **[Indexing Audit](https://gerriscorp.com/services/indexing-audit/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/). *See also* [Crawled, currently not indexed](https://gerriscorp.com/site-index/#ix-crawled-currently-not-indexed)
+  - backlink audit and disavow, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
+  - prioritized fix list, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
+
 - IndexNow, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [AI Search](https://gerriscorp.com/services/ai-search/), **[IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)**, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Glossary](https://gerriscorp.com/guides/glossary/)
   - batch limits, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
   - Google not a participant, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
@@ -812,7 +816,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
 - lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/), [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
-- large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**
+- large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
   - baselines, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - crawl efficiency, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - index bloat, [Large Sites](https://gerriscorp.com/services/large-sites/)
@@ -1047,6 +1051,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - prerendering, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - privacy, **[Privacy](https://gerriscorp.com/privacy/)**
 - Products, [Products](https://gerriscorp.com/products/)
+- programmatic SEO, [Large Sites](https://gerriscorp.com/services/large-sites/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Indexing Audit](https://gerriscorp.com/services/indexing-audit/), **[Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)**. *See also* [large and programmatic sites](https://gerriscorp.com/site-index/#ix-large-and-programmatic-sites); [scaled content abuse](https://gerriscorp.com/site-index/#ix-scaled-content-abuse)
+  - content chunking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - data and templates, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - differentiation, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - hub and spoke linking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - pruning and noindex, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+
 - project rescue, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Project Rescue](https://gerriscorp.com/services/rescue/)**, [App Takeover](https://gerriscorp.com/case-studies/app-takeover/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/). *See also* [website handover](https://gerriscorp.com/site-index/#ix-website-handover)
   - handover review, [Project Rescue](https://gerriscorp.com/services/rescue/)
   - hosting afterward, [Project Rescue](https://gerriscorp.com/services/rescue/)
@@ -1145,7 +1156,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## S
 - Sanity, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)**
-- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/), [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
 - Schema Markup Validator, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Screaming Frog SEO Spider, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/). *See also* [migration tools](https://gerriscorp.com/site-index/#ix-migration-tools)
   - crawl comparison and URL Mapping, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
@@ -1494,4 +1505,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 31, 2026
+Updated November 2, 2026
