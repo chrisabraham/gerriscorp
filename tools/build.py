@@ -118,6 +118,10 @@ FILES += ["products"]
 FILES += ["guides/private-transcription-linux"]
 SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/") + 1, "services/agent-readiness/")
 
+# Indexing audit service and programmatic SEO guide, November 2, 2026.
+FILES += ["services/indexing-audit", "guides/programmatic-seo"]
+SERVICE_GROUPS[1][1].append("services/indexing-audit/")
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
