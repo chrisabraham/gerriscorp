@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-10-31 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-11-02 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -52,6 +52,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.
 - [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): matching rules, crawling versus indexing, status codes, and AI crawlers.
 - [Faceted navigation SEO: filters, parameters, and crawl budget](https://gerriscorp.com/guides/faceted-navigation/): which filter pages to index and how to keep the rest out of the crawl.
+- [Programmatic SEO: templates, data, indexing, and the fix](https://gerriscorp.com/guides/programmatic-seo/): where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.
 - [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): the codes, the return links, and the errors that void them.
 
 ## Speed and infrastructure
@@ -103,4 +104,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 31, 2026
+Updated November 2, 2026
