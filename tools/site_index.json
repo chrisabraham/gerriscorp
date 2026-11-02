@@ -4045,6 +4045,29 @@
    "see": [],
    "main": []
   },
+  "indexing audit": {
+   "kind": "topic",
+   "pages": [
+    "services/indexing-audit",
+    "guides/programmatic-seo",
+    "guides/crawled-not-indexed",
+    "services/search-console"
+   ],
+   "subs": {
+    "backlink audit and disavow": [
+     "services/indexing-audit"
+    ],
+    "prioritized fix list": [
+     "services/indexing-audit"
+    ]
+   },
+   "see": [
+    "Crawled, currently not indexed"
+   ],
+   "main": [
+    "services/indexing-audit"
+   ]
+  },
   "IndexNow": {
    "kind": "topic",
    "pages": [
@@ -4338,7 +4361,8 @@
    "pages": [
     "services",
     "services/large-sites",
-    "case-studies/programmatic-indexing"
+    "case-studies/programmatic-indexing",
+    "guides/programmatic-seo"
    ],
    "subs": {
     "segmented sitemaps": [
@@ -5640,6 +5664,40 @@
     "privacy"
    ]
   },
+  "programmatic SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/programmatic-seo",
+    "services/indexing-audit",
+    "services/large-sites",
+    "case-studies/programmatic-indexing",
+    "guides/faceted-navigation"
+   ],
+   "subs": {
+    "data and templates": [
+     "guides/programmatic-seo"
+    ],
+    "differentiation": [
+     "guides/programmatic-seo"
+    ],
+    "content chunking": [
+     "guides/programmatic-seo"
+    ],
+    "hub and spoke linking": [
+     "guides/programmatic-seo"
+    ],
+    "pruning and noindex": [
+     "guides/programmatic-seo"
+    ]
+   },
+   "see": [
+    "large and programmatic sites",
+    "scaled content abuse"
+   ],
+   "main": [
+    "guides/programmatic-seo"
+   ]
+  },
   "project rescue": {
    "kind": "topic",
    "pages": [
@@ -6221,7 +6279,8 @@
    "kind": "topic",
    "pages": [
     "guides/search-in-2026",
-    "guides/glossary"
+    "guides/glossary",
+    "guides/programmatic-seo"
    ],
    "subs": {},
    "see": [],
@@ -8434,6 +8493,7 @@
   "guides/ai-agents-on-your-website",
   "services/agent-readiness",
   "guides/ai-agents-one-repository",
-  "guides/private-transcription-linux"
- ]
+  "guides/private-transcription-linux",
+  "services/indexing-audit",
+  "guides/programmatic-seo" ]
 }
