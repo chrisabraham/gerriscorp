@@ -28,7 +28,7 @@ OpenAI Codex and Claude Code are coding assistants I use to work directly with p
 
 Build a static site from this podcast RSS feed, one page per episode, in Python. Keep each episode's address forever once it's assigned. Cache the cover art and transcripts in the repository, never the audio. Use the feed's audio URL exactly as given. Give every page a unique title near 60 characters and a description near 155. Add PodcastEpisode structured data and a sitemap.
 
-Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of a show with a few hundred episodes takes an afternoon, most of it spent downloading artwork.
+Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of [The Chris Abraham Show](https://thechrisabrahamshow.com/), a show with a few hundred episodes, takes an afternoon, most of it spent downloading artwork.
 
 ## Step 3: publish on GitHub Pages
 

@@ -1,6 +1,6 @@
 > An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 >
-> Source: https://gerriscorp.com/site-index/ · Updated 2026-11-02 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/site-index/ · Updated 2026-11-03 · By Chris Abraham, Gerris Corp
 
 # Index
 
@@ -1505,4 +1505,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated November 2, 2026
+Updated November 3, 2026

@@ -6,7 +6,7 @@
 
 For founders, executives, and families who need privacy and a defensible public record at the same time.
 
-Your reputation is whatever comes up when someone searches your name, and increasingly whatever an AI assistant says when someone asks about you. Both draw on the same sources: your own pages and profiles, news coverage, public records, data broker listings, and whatever else the web holds. Perception management means knowing what's in that record, removing what shouldn't be public, and making sure accurate information is what people and machines find first.
+Your reputation is whatever comes up when someone searches your name, and increasingly whatever an AI assistant says when someone asks about you. Both draw on the same sources: your own pages and profiles, news coverage, public records, data broker listings, and whatever else the web holds. [Perception management](https://chrisabraham.net/wiki/online-perception-management-field-guide.html) means knowing what's in that record, removing what shouldn't be public, and making sure accurate information is what people and machines find first.
 
 ## What I do
 

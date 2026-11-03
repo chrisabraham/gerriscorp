@@ -841,7 +841,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
    "dateModified": "2026-10-15",
    "image": "https://gerriscorp.com/cards/guides-podcast-website.png",
    "inLanguage": "en-US",
-   "wordCount": 936,
+   "wordCount": 941,
    "citation": [
     {
      "@type": "CreativeWork",
@@ -936,7 +936,7 @@ ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1
 <h2 id="section-step-2-have-codex-or-claude-code-build-the-generator" tabindex="-1">Step 2: have Codex or Claude Code build the generator</h2>
 <p>OpenAI Codex and Claude Code are coding assistants I use to work directly with project files. Describe the site to either assistant, then have it draft the code, run the build, and work through the errors under your review. The prompt that matters most names your feed and your rules. A good one reads close to this:</p>
 <blockquote><p>Build a static site from this podcast RSS feed, one page per episode, in Python. Keep each episode's address forever once it's assigned. Cache the cover art and transcripts in the repository, never the audio. Use the feed's audio URL exactly as given. Give every page a unique title near 60 characters and a description near 155. Add PodcastEpisode structured data and a sitemap.</p></blockquote>
-<p>Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of a show with a few hundred episodes takes an afternoon, most of it spent downloading artwork.</p>
+<p>Then review what it builds the way you'd review a contractor's work. Open a few episode pages, read the titles, click the players, and ask for changes in plain English. The first full build of <a href="https://thechrisabrahamshow.com/">The Chris Abraham Show</a>, a show with a few hundred episodes, takes an afternoon, most of it spent downloading artwork.</p>
 
 <h2 id="section-step-3-publish-on-github-pages" tabindex="-1">Step 3: publish on GitHub Pages</h2>
 <p>GitHub Pages hosts static sites free from a public repository. Published sites can be up to 1 GB, with a soft limit of 100 GB of traffic a month, which covers a podcast site comfortably because the audio never touches it. Put a file named <code>CNAME</code> containing your domain in the repository, and turn on Pages for the main branch.</p>

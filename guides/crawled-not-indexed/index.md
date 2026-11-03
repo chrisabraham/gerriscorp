@@ -14,7 +14,7 @@ In Google Search Console, open Indexing, then Pages. The "Why pages aren't index
 
 ## How it differs from "Discovered, currently not indexed"
 
-"Discovered, currently not indexed" means Google knows the URL exists and hasn't crawled it yet. That usually points to crawl priority: too many URLs, weak internal linking, a slow server, or a site Google doesn't consider worth crawling quickly. "Crawled, currently not indexed" means Google did crawl the page and judged it not worth indexing. One is about getting Google to look; the other is about what Google saw when it looked.
+"Discovered, currently not indexed" means Google knows the URL exists and hasn't crawled it yet. That usually points to crawl priority: too many URLs, weak internal linking, a slow server, or a site Google doesn't consider worth crawling quickly. "Crawled, currently not indexed" means Google did crawl the page and judged it not worth indexing. One is about getting Google to look; the other is about what Google saw when it looked. For the full diagnosis beyond this one status, see [why Google won't index your site](https://christopherabraham.com/guides/why-google-wont-index-your-site/).
 
 ## Common causes
 - **Thin or duplicate content.** Pages that say little, or say nearly the same thing as other pages: tag archives, near-identical location pages, product variants, and boilerplate-heavy templates.
