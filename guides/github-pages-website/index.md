@@ -2,7 +2,7 @@
 >
 > Source: https://gerriscorp.com/guides/github-pages-website/ · Updated 2026-11-03 · By Chris Abraham, Gerris Corp
 
-# How to build a business website on GitHub Pages for about $10 a year
+# A Real Business Website for the Price of a Domain Name
 
 By [Chris Abraham](https://gerriscorp.com/about/) · Published November 3, 2026
 
