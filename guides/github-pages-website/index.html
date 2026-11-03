@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build a business website on GitHub Pages for $10 a year</title>
+<meta name="description" content="A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="keywords" content="GitHub Pages Website Build, SEO guide, Gerris Corp, Chris Abraham">
+<link rel="canonical" href="https://gerriscorp.com/guides/github-pages-website/">
+<meta name="author" content="Chris Abraham">
+<meta name="msvalidate.01" content="2E8EA11035C27E2B7C82A165FA698E0C">
+<link rel="icon" href="../../logo.png" type="image/png">
+<link rel="apple-touch-icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="alternate" type="text/markdown" title="This page as Markdown" href="index.md">
+<link rel="alternate" type="application/rss+xml" title="Gerris guides (RSS)" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Gerris guides" href="../../feed.xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="../../llms.txt">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<meta name="theme-color" content="#ffffff">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {analytics_storage: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+  // Global Privacy Control or Do Not Track turns analytics cookies off anywhere.
+  if (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1') gtag('consent', 'default', {analytics_storage: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-8TV2W38REZ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    // gtag.js loads on the first scroll, tap, or key, or 4 seconds after the page loads,
+    // so it never competes with the page itself. The commands above wait in dataLayer.
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-8TV2W38REZ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.md", "/*.txt", "/*.xml"]}}]}, "eagerness": "moderate"}]}</script>
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta property="og:site_name" content="Gerris Corp">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build a business website on GitHub Pages for $10 a year">
+<meta property="og:description" content="A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.">
+<meta property="og:url" content="https://gerriscorp.com/guides/github-pages-website/">
+<meta property="og:image" content="https://gerriscorp.com/cards/guides-github-pages-website.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to build a business website on GitHub Pages for about $10 a year">
+<meta property="article:published_time" content="2026-11-03">
+<meta property="article:modified_time" content="2026-11-03">
+<meta property="article:author" content="https://chrisabraham.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build a business website on GitHub Pages for $10 a year">
+<meta name="twitter:description" content="A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.">
+<meta name="twitter:image" content="https://gerriscorp.com/cards/guides-github-pages-website.png">
+<meta name="twitter:image:alt" content="How to build a business website on GitHub Pages for about $10 a year">
+<style>
+:root { --orange: #c75000; --blue: #16729e; --teal: #237482; --text: #000; --muted: #333; --link: #284a57; --tab: #8cacbb; --bar: #dee7ec; --rule: #c8d3d8; --bg: #fff; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; color: var(--text); background: var(--bg); font: 18px/1.65 Verdana, "Lucida Grande", Lucida, "DejaVu Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: .5rem; background: #fff; padding: .5rem; z-index: 1; }
+.top { display: flex; align-items: center; gap: .9rem; padding: 1.25rem 0 .9rem; }
+.top > a { flex: none; line-height: 0; }
+.top img { width: 64px; height: 64px; max-width: none; }
+.brand { font-size: 1.6rem; font-weight: bold; color: var(--orange); text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.tag { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.4; }
+nav { border-bottom: 4px solid var(--bar); }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem; }
+nav li { margin: 0; }
+nav a { display: block; padding: .4rem .7rem; border: 1px solid var(--tab); border-bottom: none; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+nav a:hover { background: var(--bar); text-decoration: underline; }
+nav a[aria-current] { background: var(--bar); color: #000; font-weight: bold; }
+.crumbs { font-size: .9rem; margin: 1rem 0 0; color: var(--muted); }
+main { padding: 1.25rem 0 2rem; }
+h1 { color: var(--blue); font-size: 1.4rem; line-height: 1.25; margin: .25rem 0 1rem; }
+h2 { color: var(--teal); font-size: 1.3rem; line-height: 1.3; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 1.5rem 0 .4rem; }
+p, ul, ol, dl, table { margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+.lead { font-size: 1.1rem; }
+.byline { color: var(--muted); font-size: .9rem; margin-top: -.5rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+code { font-family: Consolas, Menlo, monospace; font-size: .92em; background: #f2f5f7; padding: 0 .2em; }
+pre { background: #f2f5f7; padding: .75rem; overflow-x: auto; font-size: .9rem; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--rule); padding: .4rem .55rem; text-align: left; vertical-align: top; }
+th { background: var(--bar); }
+dt { font-weight: bold; margin-top: 1rem; }
+dd { margin: .2rem 0 0 0; }
+.logo-full { margin: 1rem 0 1.5rem; text-align: center; }
+.logo-full img { width: 700px; }
+.logo-full figcaption { font-size: .85rem; color: var(--muted, #555); margin-top: .5rem; }
+.logo-inline { float: right; width: 220px; margin: .25rem 0 1rem 1.25rem; }
+.portrait { float: right; width: 160px; height: 160px; margin: .25rem 0 1rem 1.25rem; border: 1px solid var(--rule); }
+.button { display: inline-block; margin: 0 .5rem .6rem 0; padding: .6rem 1.1rem; border: 2px solid var(--link); background: var(--bar); color: #000; font-weight: bold; text-decoration: none; }
+.button:hover { text-decoration: underline; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: .95rem; }
+.author-box img { width: 72px; height: 72px; flex: none; border: 1px solid var(--rule); }
+.author-box p { margin: 0; }
+.help-box { border: 2px solid var(--rule); margin-top: 2rem; padding: .25rem 1rem 1rem; }
+.help-box h2 { margin-top: .75rem; }
+.related { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: .5rem; }
+.guide-contents { border: 1px solid var(--rule); margin: 1.5rem 0; padding: .65rem .85rem; font-size: .95rem; }
+.guide-contents summary { color: var(--link); cursor: pointer; font-weight: bold; }
+.guide-contents ol { margin: .75rem 0 .25rem; padding-left: 1.5rem; }
+.guide-contents li { margin-bottom: .35rem; }
+h2[id] { scroll-margin-top: 1rem; }
+.contact li { margin-bottom: .6rem; }
+.index-letters { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 1px solid var(--rule); margin: 0 0 1rem; }
+.index-letters p { margin: 0; padding: .35rem 0; font-size: 1.05rem; display: flex; flex-wrap: wrap; gap: .1rem .2rem; }
+.index-letters a, .index-letters span { display: inline-block; min-width: 1.9rem; min-height: 1.9rem; line-height: 1.9rem; text-align: center; }
+.index-letters .index-empty { color: #767676; }
+.index-top { font-size: .9rem; margin: -.4rem 0 1.25rem; }
+[id^="ix-"] { scroll-margin-top: 4.5rem; }
+ul.site-index { list-style: none; padding: 0; }
+ul.site-index > li { margin-bottom: .35rem; padding-left: 1.5rem; text-indent: -1.5rem; }
+ul.site-index ul { list-style: none; padding-left: 1.5rem; margin: .15rem 0 .3rem; }
+ul.site-index ul li { margin-bottom: .15rem; text-indent: -1rem; padding-left: 1rem; }
+.site-footer { border-top: 1px solid var(--rule); padding: 1rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: 0 0 .4rem; text-wrap: balance; }
+.site-footer a { white-space: nowrap; }
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .top img { width: 52px; height: 52px; }
+  nav a { padding: .45rem .55rem; }
+  h1 { font-size: 1.25rem; }
+  .portrait { width: 112px; height: 112px; margin-left: 1rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://gerriscorp.com/#website",
+   "url": "https://gerriscorp.com/",
+   "name": "Gerris Corp",
+   "alternateName": "Gerris",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "publishingPrinciples": "https://gerriscorp.com/standards/"
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://gerriscorp.com/#org",
+   "name": "Gerris Corp",
+   "alternateName": [
+    "Gerris"
+   ],
+   "url": "https://gerriscorp.com/",
+   "logo": "https://gerriscorp.com/logo.png",
+   "image": "https://gerriscorp.com/social-card.png",
+   "description": "Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.",
+   "foundingDate": "2012",
+   "founder": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "employee": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "slogan": "Experienced help for the digital work your business needs done",
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "location": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Washington, DC metropolitan area"
+    },
+    {
+     "@type": "State",
+     "name": "Virginia",
+     "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+     }
+    },
+    {
+     "@type": "Country",
+     "name": "United States",
+     "identifier": "US"
+    },
+    {
+     "@type": "Country",
+     "name": "Canada",
+     "identifier": "CA"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom",
+     "identifier": "GB"
+    },
+    {
+     "@type": "Country",
+     "name": "Ireland",
+     "identifier": "IE"
+    },
+    {
+     "@type": "Country",
+     "name": "Australia",
+     "identifier": "AU"
+    },
+    {
+     "@type": "Country",
+     "name": "New Zealand",
+     "identifier": "NZ"
+    },
+    "Worldwide"
+   ],
+   "knowsLanguage": "en",
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "OpenAI Codex",
+    "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "IE",
+      "AU",
+      "NZ"
+     ],
+     "availableLanguage": "English"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "technical support",
+     "email": "chris@gerriscorp.com",
+     "telephone": "+1-202-352-5051",
+     "availableLanguage": "English"
+    }
+   ],
+   "sameAs": [
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://github.com/chrisabraham/gerriscorp",
+    "https://share.google/C5KMu0jYTNz8t2Zpn"
+   ],
+   "publishingPrinciples": "https://gerriscorp.com/standards/",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gerris Corp services",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Consulting and technical direction",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-lead/#service",
+         "name": "Fractional technical lead",
+         "url": "https://gerriscorp.com/services/technical-lead/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/developers/#service",
+         "name": "Developer specs and implementation QA",
+         "url": "https://gerriscorp.com/services/developers/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agency-partner/#service",
+         "name": "Agency partner and white-label support",
+         "url": "https://gerriscorp.com/services/agency-partner/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/rescue/#service",
+         "name": "Project rescue, takeovers, and legacy migrations",
+         "url": "https://gerriscorp.com/services/rescue/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-automation/#service",
+         "name": "AI agents and automation, built safely",
+         "url": "https://gerriscorp.com/services/ai-automation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/data-cleanup/#service",
+         "name": "Data cleanup and AI-output audits",
+         "url": "https://gerriscorp.com/services/data-cleanup/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/analytics/#service",
+         "name": "Analytics and measurement you can trust",
+         "url": "https://gerriscorp.com/services/analytics/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-policy/#service",
+         "name": "AI use policy and staff training",
+         "url": "https://gerriscorp.com/services/ai-policy/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/advisory/#service",
+         "name": "Strategic advisory and briefings",
+         "url": "https://gerriscorp.com/services/advisory/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-workflow-testing/#service",
+         "name": "AI workflow testing and acceptance reviews",
+         "url": "https://gerriscorp.com/services/ai-workflow-testing/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/b2b-catalog-seo/#service",
+         "name": "B2B catalog SEO for manufacturers and distributors",
+         "url": "https://gerriscorp.com/services/b2b-catalog-seo/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Search and site performance",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/technical-seo/#service",
+         "name": "Technical SEO forensics and fixes",
+         "url": "https://gerriscorp.com/services/technical-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/seo-engineering/#service",
+         "name": "SEO engineering for sites built in code",
+         "url": "https://gerriscorp.com/services/seo-engineering/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/crawler-visibility/#service",
+         "name": "Content the crawler never sees",
+         "url": "https://gerriscorp.com/services/crawler-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/large-sites/#service",
+         "name": "SEO for large and programmatic sites",
+         "url": "https://gerriscorp.com/services/large-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ecommerce/#service",
+         "name": "E-commerce SEO: templates, catalogs, and product data",
+         "url": "https://gerriscorp.com/services/ecommerce/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/on-page-seo/#service",
+         "name": "On-page SEO",
+         "url": "https://gerriscorp.com/services/on-page-seo/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-speed/#service",
+         "name": "Site speed, Core Web Vitals, and Cloudflare",
+         "url": "https://gerriscorp.com/services/site-speed/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/wordpress-care/#service",
+         "name": "WordPress care: caching, hardening, or moving off",
+         "url": "https://gerriscorp.com/services/wordpress-care/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/accessibility/#service",
+         "name": "Website accessibility remediation",
+         "url": "https://gerriscorp.com/services/accessibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/agent-readiness/#service",
+         "name": "Agent readiness review for your website",
+         "url": "https://gerriscorp.com/services/agent-readiness/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/search-console/#service",
+         "name": "Google Search Console setup, cleanup, and indexing fixes",
+         "url": "https://gerriscorp.com/services/search-console/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/migrations/#service",
+         "name": "Website migrations",
+         "url": "https://gerriscorp.com/services/migrations/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-search/#service",
+         "name": "AI search visibility",
+         "url": "https://gerriscorp.com/services/ai-search/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ai-visibility/#service",
+         "name": "Your customers meet an AI answer before they meet you. I help you check whether it names you.",
+         "url": "https://gerriscorp.com/services/ai-visibility/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/editorial/#service",
+         "name": "Fact-checked writing in your voice",
+         "url": "https://gerriscorp.com/services/editorial/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/site-index-and-glossary/#service",
+         "name": "Site indexes and glossaries",
+         "url": "https://gerriscorp.com/services/site-index-and-glossary/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/podcast-sites/#service",
+         "name": "Podcast websites, built and run for you",
+         "url": "https://gerriscorp.com/services/podcast-sites/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/ongoing-support/#service",
+         "name": "Ongoing SEO and website support",
+         "url": "https://gerriscorp.com/services/ongoing-support/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/internal-linking/#service",
+         "name": "Internal linking strategy and implementation",
+         "url": "https://gerriscorp.com/services/internal-linking/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/indexing-audit/#service",
+         "name": "Indexing audit",
+         "url": "https://gerriscorp.com/services/indexing-audit/"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Local, reputation, and email",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/multi-location/#service",
+         "name": "Multi-location and connected businesses",
+         "url": "https://gerriscorp.com/services/multi-location/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/reputation/#service",
+         "name": "Reputation and perception management",
+         "url": "https://gerriscorp.com/services/reputation/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/google-business-profile/#service",
+         "name": "Google Business Profile hard cases",
+         "url": "https://gerriscorp.com/services/google-business-profile/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/email-and-dns/#service",
+         "name": "Email authentication and DNS",
+         "url": "https://gerriscorp.com/services/email-and-dns/"
+        }
+       },
+       {
+        "@type": "Offer",
+        "itemOffered": {
+         "@type": "Service",
+         "@id": "https://gerriscorp.com/services/domain-portfolio/#service",
+         "name": "Domain portfolio audit",
+         "url": "https://gerriscorp.com/services/domain-portfolio/"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://chrisabraham.com/#person",
+   "name": "Chris Abraham",
+   "alternateName": "Christopher Abraham",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://gerriscorp.com/chris-abraham.jpg",
+    "width": 320,
+    "height": 320,
+    "caption": "Chris Abraham, founder of Gerris Corp"
+   },
+   "url": "https://chrisabraham.com/",
+   "jobTitle": "Founder and principal consultant",
+   "worksFor": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "The George Washington University",
+     "sameAs": "https://en.wikipedia.org/wiki/George_Washington_University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of East Anglia",
+     "sameAs": "https://en.wikipedia.org/wiki/University_of_East_Anglia"
+    }
+   ],
+   "homeLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "workLocation": {
+    "@id": "https://gerriscorp.com/#place"
+   },
+   "nationality": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsLanguage": "en",
+   "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical consultant and technical SEO specialist",
+    "occupationLocation": {
+     "@type": "Country",
+     "name": "United States"
+    },
+    "skills": "Technical SEO, developer specifications, OpenAI Codex, Claude Code, GitHub Copilot, Git, Linux, Cloudflare, migrations, AI search"
+   },
+   "knowsAbout": [
+    "Technical consulting",
+    "Developer specifications",
+    "AI-assisted software development",
+    "OpenAI Codex",
+    "Claude Code",
+    "GitHub Copilot",
+    "Gemini",
+    "Grok",
+    "Perplexity",
+    "Git",
+    "Linux server administration",
+    "Technical SEO",
+    "JavaScript SEO",
+    "Indexing",
+    "Website migrations",
+    "301 redirects",
+    "Core Web Vitals",
+    "Cloudflare",
+    "Structured data",
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "llms.txt",
+    "Online reputation management",
+    "Data broker removal",
+    "Google Business Profile",
+    "SPF",
+    "DKIM",
+    "DMARC"
+   ],
+   "email": "chris@gerriscorp.com",
+   "telephone": "+1-202-352-5051",
+   "sameAs": [
+    "https://chrisabraham.com/",
+    "https://www.upwork.com/freelancers/chrisjabraham",
+    "https://hillmole.com/",
+    "https://mastodon.social/@chrisa",
+    "https://www.youtube.com/@ChrisAbrahamShow",
+    "https://adage.com/author/chris-abraham/1797"
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://gerriscorp.com/#place",
+   "name": "South Arlington, Arlington, Virginia",
+   "alternateName": [
+    "Arlington Heights, Arlington, Virginia",
+    "Arlington, VA 22204"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressRegion": "VA",
+    "postalCode": "22204",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86,
+    "longitude": -77.1
+   },
+   "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Arlington County, Virginia",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Virginia"
+    }
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://gerriscorp.com/guides/github-pages-website/#webpage",
+   "url": "https://gerriscorp.com/guides/github-pages-website/",
+   "name": "Build a business website on GitHub Pages for $10 a year",
+   "description": "A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.",
+   "isPartOf": {
+    "@id": "https://gerriscorp.com/#website"
+   },
+   "about": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "primaryImageOfPage": "https://gerriscorp.com/cards/guides-github-pages-website.png",
+   "inLanguage": "en-US",
+   "dateModified": "2026-11-03",
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://gerriscorp.com/guides/github-pages-website/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://gerriscorp.com/guides/github-pages-website/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gerriscorp.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://gerriscorp.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "GitHub Pages Website Build",
+     "item": "https://gerriscorp.com/guides/github-pages-website/"
+    }
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://gerriscorp.com/guides/github-pages-website/#article",
+   "headline": "How to build a business website on GitHub Pages for about $10 a year",
+   "description": "A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.",
+   "url": "https://gerriscorp.com/guides/github-pages-website/",
+   "mainEntityOfPage": {
+    "@id": "https://gerriscorp.com/guides/github-pages-website/#webpage"
+   },
+   "author": {
+    "@id": "https://chrisabraham.com/#person"
+   },
+   "publisher": {
+    "@id": "https://gerriscorp.com/#org"
+   },
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
+   "image": "https://gerriscorp.com/cards/guides-github-pages-website.png",
+   "inLanguage": "en-US",
+   "wordCount": 1182,
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "GitHub Docs: What is GitHub Pages?",
+     "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "GitHub Docs: Creating a GitHub Pages site",
+     "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "GitHub Docs: Managing a custom domain for your GitHub Pages site",
+     "url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "GitHub Docs: GitHub Pages limits",
+     "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Cloudflare Registrar",
+     "url": "https://www.cloudflare.com/products/registrar/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Cloudflare Docs: Manage DNS records",
+     "url": "https://developers.cloudflare.com/dns/manage-dns-records/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "GitHub Pricing",
+     "url": "https://github.com/pricing"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://gerriscorp.com/guides/github-pages-website/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is free hosting reliable enough for a business site?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "GitHub Pages runs on the same infrastructure as GitHub itself and carries published size and bandwidth limits far above small-site traffic. For a brochure or content site, uptime is not the weak point in the stack. The weak points are the expired domain and the lost account password, both handled by auto-renew and two-factor authentication."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a site like this be found by Google and AI search?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Every page is finished HTML at its own URL, which is what crawlers and answer engines read. Visibility then depends on content: specific facts, complete answers, and one clear subject per page. The technical setup removes excuses; it does not write the pages."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if the business outgrows the setup?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The files move. Plain HTML uploads to any static host or into a larger platform's theme, and the domain repoints through the same DNS panel. Nothing in the build creates lock-in, which is the reason Gerris recommends it to clients whose plans may change."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who owns the website when Gerris builds it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The client. The domain sits in the client's Cloudflare account, the repository in the client's GitHub account, and Gerris works through granted access that can be revoked at any time. Any arrangement where the site lives in the vendor's accounts should be treated as a warning sign, whoever the vendor is."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a href="../../"><img src="../../logo-128.png" width="64" height="64" alt="Gerris home" fetchpriority="high"></a>
+  <div>
+    <a class="brand" href="../../">Gerris</a>
+    <p class="tag">Chris Abraham: technical consulting, AI tools, and technical SEO</p>
+  </div>
+</header>
+<nav aria-label="Site">
+  <ul>
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../services/">Services</a></li>
+    <li><a href="../../guides/" aria-current="true">Guides</a></li>
+    <li><a href="../../case-studies/">Case Studies</a></li>
+    <li><a href="../../about/">About</a></li>
+    <li><a href="../../work-with-me/">Work With Me</a></li>
+    <li><a href="../../contact/">Contact</a></li>
+  </ul>
+</nav>
+<p class="crumbs"><a href="../../">Home</a> › <a href="../../guides/">Guides</a> › GitHub Pages Website Build</p>
+<main id="main">
+<h1>How to build a business website on GitHub Pages for about $10 a year</h1>
+<p class="byline">By <a href="../../about/">Chris Abraham</a> · Published <time datetime="2026-11-03">November 3, 2026</time></p>
+<p class="lead">A working setup for a business website that costs about $10 a year: domain at wholesale from Cloudflare, files in GitHub, GitHub Pages hosting free, DNS pointed once, and an AI chat doing the typing.</p>
+
+<p>Most small-business websites are rented from a platform at $200 to $480 a year, and the rental buys a site the business does not own and cannot move. The setup below is the one Gerris runs for its own web properties: plain files, free hosting, a domain at wholesale, and ownership sitting in the client's accounts from day one. It suits brochure sites, consultancies, professional practices, and content sites. Its limits are stated plainly at the end.</p>
+
+<details class="guide-contents">
+  <summary>On this page</summary>
+  <ol>
+    <li><a href="#section-why-does-the-domain-come-from-cloudflare-registrar">Why does the domain come from Cloudflare Registrar?</a></li>
+    <li><a href="#section-what-does-github-hold-exactly">What does GitHub hold, exactly?</a></li>
+    <li><a href="#section-how-is-the-site-switched-on-and-connected">How is the site switched on and connected?</a></li>
+    <li><a href="#section-how-does-content-get-published-without-a-developer">How does content get published without a developer?</a></li>
+    <li><a href="#section-what-does-it-cost-item-by-item">What does it cost, item by item?</a></li>
+    <li><a href="#section-where-does-this-setup-stop-working">Where does this setup stop working?</a></li>
+    <li><a href="#section-who-should-do-the-work">Who should do the work?</a></li>
+    <li><a href="#section-questions-about-building-a-website-on-github-pages">Questions about building a website on GitHub Pages</a></li>
+    <li><a href="#section-a-checklist-for-launch-day">A checklist for launch day</a></li>
+  </ol>
+</details>
+
+<h2 id="section-why-does-the-domain-come-from-cloudflare-registrar" tabindex="-1">Why does the domain come from Cloudflare Registrar?</h2>
+<p><a href="https://www.cloudflare.com/products/registrar/">Cloudflare Registrar</a> charges the wholesale registry price with no markup, no teaser year followed by a tripled renewal, and WHOIS privacy included. A .com renewal runs about $10 to $15 a year. Register in an account the business controls, switch on auto-renew and two-factor authentication, and the largest single cause of small-site death, the lapsed domain, is off the table. Cloudflare's DNS is included free, which matters in step three.</p>
+
+<h2 id="section-what-does-github-hold-exactly" tabindex="-1">What does GitHub hold, exactly?</h2>
+<p>A repository: a folder with a memory. The site's pages and images live in it as ordinary files, and every saved change is a commit, a dated snapshot that can be compared or restored. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages</a> publishes those files as a website. A free <a href="https://github.com/pricing">GitHub</a> account covers the whole arrangement, and the <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits">published limits</a> (1 GB site size, generous bandwidth) are far beyond a typical business site.</p>
+
+<h2 id="section-how-is-the-site-switched-on-and-connected" tabindex="-1">How is the site switched on and connected?</h2>
+<ol>
+<li>Create the repository and open Settings, then Pages, then publish from the main branch, as GitHub's <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">creation guide</a> describes. The site answers at a free <code>username.github.io</code> address.</li>
+<li>Enter the custom domain in the same Pages settings.</li>
+<li>In Cloudflare's DNS panel, following GitHub's <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">custom domain documentation</a>, add a <strong>CNAME</strong> record for <code>www</code> pointing at <code>username.github.io</code>, and four <strong>A</strong> records for the bare domain: <code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code>, <code>185.199.111.153</code>. Set them to DNS only during verification.</li>
+<li>Enable <strong>Enforce HTTPS</strong> in the Pages settings. GitHub issues and renews the certificate free.</li>
+</ol>
+<p>Cloudflare's <a href="https://developers.cloudflare.com/dns/manage-dns-records/">DNS records documentation</a> covers the record types for anyone setting this up for the first time. Total elapsed time for the plumbing is under an hour, most of it waiting for DNS.</p>
+
+<h2 id="section-how-does-content-get-published-without-a-developer" tabindex="-1">How does content get published without a developer?</h2>
+<p>The working loop has four steps and runs entirely in a browser:</p>
+<ol>
+<li><strong>Draft the words anywhere.</strong> Dictation, notes, a full answer to a customer question.</li>
+<li><strong>Paste them into an AI chat</strong> with the site's facts (names, prices, dates, phone) and get back a finished page file, with instructions to use only the supplied facts.</li>
+<li><strong>Paste the file into GitHub's web editor</strong> and commit it with a note describing the change.</li>
+<li><strong>Reload.</strong> Live in about a minute, with the previous version preserved in the commit history.</li>
+</ol>
+<p>Images are handled the same way: the AI generates or processes the image, the file is uploaded to the repository, and the page points at it by name. There is no CMS to patch, no plugin chain to update, and no admin password for an attacker to guess, because there is no admin.</p>
+
+<h2 id="section-what-does-it-cost-item-by-item" tabindex="-1">What does it cost, item by item?</h2>
+<ul>
+<li>Domain renewal at Cloudflare: about $10 to $15 a year.</li>
+<li>GitHub Pages hosting: $0.</li>
+<li>Cloudflare DNS: $0.</li>
+<li>HTTPS certificate: $0, self-renewing.</li>
+<li>Optional AI subscription: buys content work, not hosting.</li>
+</ul>
+<p>Against that, a website builder at $17 to $40 a month totals $200 to $480 a year and the site cannot leave the platform. Managed WordPress hosting costs a similar band and adds maintenance hours. The GitHub arrangement also changes the risk profile: the site is plain HTML in an account the business owns, so a host failure or a vendor dispute is an inconvenience measured in hours, not a rebuild.</p>
+
+<h2 id="section-where-does-this-setup-stop-working" tabindex="-1">Where does this setup stop working?</h2>
+<p>State the edges before a client hits them:</p>
+<ul>
+<li><strong>Commerce.</strong> No built-in store or checkout. Use a hosted payment link or checkout (Stripe, PayPal) or a dedicated store platform, linked from the site.</li>
+<li><strong>Forms.</strong> A static site cannot receive submissions; a helper service such as Formspree or Basin forwards them by email.</li>
+<li><strong>Dynamic features.</strong> Logins, dashboards, live inventory, and web applications need server hosting and a developer.</li>
+<li><strong>Design ceiling.</strong> A template-driven build is clean and fast; a brand competing on bespoke visual design may still need a designer.</li>
+</ul>
+<p>For clients whose existing site already lives in a repository, the companion guide on <a href="../../guides/repository-access/">giving an outside SEO safe repository access</a> covers roles, branch protection, and keeping secrets out of the code.</p>
+
+<h2 id="section-who-should-do-the-work" tabindex="-1">Who should do the work?</h2>
+<p>Owners who enjoy the loop run it themselves at no cost beyond the domain. Owners whose hours are worth more in selling and client relationships hand the repository to a technical partner: setup done correctly once, structure designed, changes shipped on request, while the domain, the GitHub account, and every file stay in the owner's name. That is the engagement shape Gerris recommends and delivers, and it is priced as labor rather than as platform rent, because the platform charges nothing.</p>
+
+<section class="faq">
+<h2 id="section-questions-about-building-a-website-on-github-pages" tabindex="-1">Questions about building a website on GitHub Pages</h2>
+
+<h3>Is free hosting reliable enough for a business site?</h3>
+<p>GitHub Pages runs on the same infrastructure as GitHub itself and carries published size and bandwidth limits far above small-site traffic. For a brochure or content site, uptime is not the weak point in the stack. The weak points are the expired domain and the lost account password, both handled by auto-renew and two-factor authentication.</p>
+
+<h3>Can a site like this be found by Google and AI search?</h3>
+<p>Yes. Every page is finished HTML at its own URL, which is what crawlers and answer engines read. Visibility then depends on content: specific facts, complete answers, and one clear subject per page. The technical setup removes excuses; it does not write the pages.</p>
+
+<h3>What if the business outgrows the setup?</h3>
+<p>The files move. Plain HTML uploads to any static host or into a larger platform's theme, and the domain repoints through the same DNS panel. Nothing in the build creates lock-in, which is the reason Gerris recommends it to clients whose plans may change.</p>
+
+<h3>Who owns the website when Gerris builds it?</h3>
+<p>The client. The domain sits in the client's Cloudflare account, the repository in the client's GitHub account, and Gerris works through granted access that can be revoked at any time. Any arrangement where the site lives in the vendor's accounts should be treated as a warning sign, whoever the vendor is.</p>
+</section>
+
+<h2 id="section-a-checklist-for-launch-day" tabindex="-1">A checklist for launch day</h2>
+<ol>
+<li>Domain registered at Cloudflare in the business's own account, auto-renew and two-factor on.</li>
+<li>GitHub account in the business's name; repository created; Pages switched on.</li>
+<li>Custom domain set; CNAME and A records in place; HTTPS enforced.</li>
+<li>First <code>index.html</code> live at the domain with real facts and a working phone number.</li>
+<li>Publishing loop tested once: one edit, one commit, one reload.</li>
+<li>Access for any consultant granted deliberately, and recorded.</li>
+</ol>
+<aside class="help-box" aria-label="Get help">
+  <h2>Want me to handle this for you?</h2>
+  <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:+12023525051">Call +1 202-352-5051</a> <a class="button" href="mailto:chris@gerriscorp.com">Email chris@gerriscorp.com</a></p>
+  <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>
+<h2>References</h2>
+<ul class="sources">
+  <li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Docs: What is GitHub Pages?</a></li>
+  <li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">GitHub Docs: Creating a GitHub Pages site</a></li>
+  <li><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">GitHub Docs: Managing a custom domain for your GitHub Pages site</a></li>
+  <li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits">GitHub Docs: GitHub Pages limits</a></li>
+  <li><a href="https://www.cloudflare.com/products/registrar/">Cloudflare Registrar</a></li>
+  <li><a href="https://developers.cloudflare.com/dns/manage-dns-records/">Cloudflare Docs: Manage DNS records</a></li>
+  <li><a href="https://github.com/pricing">GitHub Pricing</a></li>
+</ul>
+<aside class="author-box" aria-label="About the author">
+  <img src="../../chris-abraham.jpg" width="72" height="72" alt="">
+  <p>Written by <a href="../../about/">Chris Abraham</a>, founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. <a href="../../standards/">Editorial standards</a> · <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork profile</a></p>
+</aside>
+</main>
+<footer class="site-footer">
+  <p><a href="mailto:chris@gerriscorp.com">chris@gerriscorp.com</a>&nbsp;· <a href="tel:+12023525051">+1 202-352-5051</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a>&nbsp;· <a href="https://www.youtube.com/@ChrisAbrahamShow">YouTube</a></p>
+  <p>© 2026 Gerris Corp, Arlington,&nbsp;Virginia&nbsp;· <a href="../../faq/">FAQ</a>&nbsp;· <a href="../../standards/">Standards</a>&nbsp;· <a href="../../privacy/">Privacy</a>&nbsp;· <a href="../../sitemap/">Site map</a>&nbsp;· <a href="../../site-index/">Index</a>&nbsp;· <a href="../../guides/glossary/">Glossary</a>&nbsp;· <a href="../../colophon/">Colophon</a>&nbsp;· <a href="../../llms.txt">llms.txt</a>&nbsp;· <a href="../../rss.xml">RSS</a>&nbsp;· <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
+  <p>Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except where noted: copy, adapt, and share this work with attribution to Gerris&nbsp;Corp and a&nbsp;link.</p>
+</footer>
+</div>
+</body>
+</html>
