@@ -1,0 +1,86 @@
+name: GitHub Pages Website Build
+type: guide
+published: 2026-11-03
+sources: GitHub Docs: What is GitHub Pages? | https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages ;; GitHub Docs: Creating a GitHub Pages site | https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site ;; GitHub Docs: Managing a custom domain for your GitHub Pages site | https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site ;; GitHub Docs: GitHub Pages limits | https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits ;; Cloudflare Registrar | https://www.cloudflare.com/products/registrar/ ;; Cloudflare Docs: Manage DNS records | https://developers.cloudflare.com/dns/manage-dns-records/ ;; GitHub Pricing | https://github.com/pricing
+updated: 2026-11-03
+title: Build a business website on GitHub Pages for $10 a year
+description: A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.
+---
+<h1>How to build a business website on GitHub Pages for about $10 a year</h1>
+<p class="lead">A working setup for a business website that costs about $10 a year: domain at wholesale from Cloudflare, files in GitHub, GitHub Pages hosting free, DNS pointed once, and an AI chat doing the typing.</p>
+
+<p>Most small-business websites are rented from a platform at $200 to $480 a year, and the rental buys a site the business does not own and cannot move. The setup below is the one Gerris runs for its own web properties: plain files, free hosting, a domain at wholesale, and ownership sitting in the client's accounts from day one. It suits brochure sites, consultancies, professional practices, and content sites. Its limits are stated plainly at the end.</p>
+
+<h2>Why does the domain come from Cloudflare Registrar?</h2>
+<p><a href="https://www.cloudflare.com/products/registrar/">Cloudflare Registrar</a> charges the wholesale registry price with no markup, no teaser year followed by a tripled renewal, and WHOIS privacy included. A .com renewal runs about $10 to $15 a year. Register in an account the business controls, switch on auto-renew and two-factor authentication, and the largest single cause of small-site death, the lapsed domain, is off the table. Cloudflare's DNS is included free, which matters in step three.</p>
+
+<h2>What does GitHub hold, exactly?</h2>
+<p>A repository: a folder with a memory. The site's pages and images live in it as ordinary files, and every saved change is a commit, a dated snapshot that can be compared or restored. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages</a> publishes those files as a website. A free <a href="https://github.com/pricing">GitHub</a> account covers the whole arrangement, and the <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits">published limits</a> (1 GB site size, generous bandwidth) are far beyond a typical business site.</p>
+
+<h2>How is the site switched on and connected?</h2>
+<ol>
+<li>Create the repository and open Settings, then Pages, then publish from the main branch, as GitHub's <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">creation guide</a> describes. The site answers at a free <code>username.github.io</code> address.</li>
+<li>Enter the custom domain in the same Pages settings.</li>
+<li>In Cloudflare's DNS panel, following GitHub's <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">custom domain documentation</a>, add a <strong>CNAME</strong> record for <code>www</code> pointing at <code>username.github.io</code>, and four <strong>A</strong> records for the bare domain: <code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code>, <code>185.199.111.153</code>. Set them to DNS only during verification.</li>
+<li>Enable <strong>Enforce HTTPS</strong> in the Pages settings. GitHub issues and renews the certificate free.</li>
+</ol>
+<p>Cloudflare's <a href="https://developers.cloudflare.com/dns/manage-dns-records/">DNS records documentation</a> covers the record types for anyone setting this up for the first time. Total elapsed time for the plumbing is under an hour, most of it waiting for DNS.</p>
+
+<h2>How does content get published without a developer?</h2>
+<p>The working loop has four steps and runs entirely in a browser:</p>
+<ol>
+<li><strong>Draft the words anywhere.</strong> Dictation, notes, a full answer to a customer question.</li>
+<li><strong>Paste them into an AI chat</strong> with the site's facts (names, prices, dates, phone) and get back a finished page file, with instructions to use only the supplied facts.</li>
+<li><strong>Paste the file into GitHub's web editor</strong> and commit it with a note describing the change.</li>
+<li><strong>Reload.</strong> Live in about a minute, with the previous version preserved in the commit history.</li>
+</ol>
+<p>Images are handled the same way: the AI generates or processes the image, the file is uploaded to the repository, and the page points at it by name. There is no CMS to patch, no plugin chain to update, and no admin password for an attacker to guess, because there is no admin.</p>
+
+<h2>What does it cost, item by item?</h2>
+<ul>
+<li>Domain renewal at Cloudflare: about $10 to $15 a year.</li>
+<li>GitHub Pages hosting: $0.</li>
+<li>Cloudflare DNS: $0.</li>
+<li>HTTPS certificate: $0, self-renewing.</li>
+<li>Optional AI subscription: buys content work, not hosting.</li>
+</ul>
+<p>Against that, a website builder at $17 to $40 a month totals $200 to $480 a year and the site cannot leave the platform. Managed WordPress hosting costs a similar band and adds maintenance hours. The GitHub arrangement also changes the risk profile: the site is plain HTML in an account the business owns, so a host failure or a vendor dispute is an inconvenience measured in hours, not a rebuild.</p>
+
+<h2>Where does this setup stop working?</h2>
+<p>State the edges before a client hits them:</p>
+<ul>
+<li><strong>Commerce.</strong> No built-in store or checkout. Use a hosted payment link or checkout (Stripe, PayPal) or a dedicated store platform, linked from the site.</li>
+<li><strong>Forms.</strong> A static site cannot receive submissions; a helper service such as Formspree or Basin forwards them by email.</li>
+<li><strong>Dynamic features.</strong> Logins, dashboards, live inventory, and web applications need server hosting and a developer.</li>
+<li><strong>Design ceiling.</strong> A template-driven build is clean and fast; a brand competing on bespoke visual design may still need a designer.</li>
+</ul>
+<p>For clients whose existing site already lives in a repository, the companion guide on <a href="{root}guides/repository-access/">giving an outside SEO safe repository access</a> covers roles, branch protection, and keeping secrets out of the code.</p>
+
+<h2>Who should do the work?</h2>
+<p>Owners who enjoy the loop run it themselves at no cost beyond the domain. Owners whose hours are worth more in selling and client relationships hand the repository to a technical partner: setup done correctly once, structure designed, changes shipped on request, while the domain, the GitHub account, and every file stay in the owner's name. That is the engagement shape Gerris recommends and delivers, and it is priced as labor rather than as platform rent, because the platform charges nothing.</p>
+
+<section class="faq">
+<h2>Questions about building a website on GitHub Pages</h2>
+
+<h3>Is free hosting reliable enough for a business site?</h3>
+<p>GitHub Pages runs on the same infrastructure as GitHub itself and carries published size and bandwidth limits far above small-site traffic. For a brochure or content site, uptime is not the weak point in the stack. The weak points are the expired domain and the lost account password, both handled by auto-renew and two-factor authentication.</p>
+
+<h3>Can a site like this be found by Google and AI search?</h3>
+<p>Yes. Every page is finished HTML at its own URL, which is what crawlers and answer engines read. Visibility then depends on content: specific facts, complete answers, and one clear subject per page. The technical setup removes excuses; it does not write the pages.</p>
+
+<h3>What if the business outgrows the setup?</h3>
+<p>The files move. Plain HTML uploads to any static host or into a larger platform's theme, and the domain repoints through the same DNS panel. Nothing in the build creates lock-in, which is the reason Gerris recommends it to clients whose plans may change.</p>
+
+<h3>Who owns the website when Gerris builds it?</h3>
+<p>The client. The domain sits in the client's Cloudflare account, the repository in the client's GitHub account, and Gerris works through granted access that can be revoked at any time. Any arrangement where the site lives in the vendor's accounts should be treated as a warning sign, whoever the vendor is.</p>
+</section>
+
+<h2>A checklist for launch day</h2>
+<ol>
+<li>Domain registered at Cloudflare in the business's own account, auto-renew and two-factor on.</li>
+<li>GitHub account in the business's name; repository created; Pages switched on.</li>
+<li>Custom domain set; CNAME and A records in place; HTTPS enforced.</li>
+<li>First <code>index.html</code> live at the domain with real facts and a working phone number.</li>
+<li>Publishing loop tested once: one edit, one commit, one reload.</li>
+<li>Access for any consultant granted deliberately, and recorded.</li>
+</ol>
