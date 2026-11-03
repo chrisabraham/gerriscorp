@@ -122,6 +122,9 @@ SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/"
 FILES += ["services/indexing-audit", "guides/programmatic-seo"]
 SERVICE_GROUPS[1][1].append("services/indexing-audit/")
 
+# A guide to building a business website on GitHub Pages, November 3, 2026.
+FILES += ["guides/github-pages-website"]
+
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
