@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 544 headings drawn from 138 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 544 headings drawn from 139 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
