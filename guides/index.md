@@ -59,7 +59,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Core Web Vitals explained: LCP, INP, CLS, and the fixes that work](https://gerriscorp.com/guides/core-web-vitals/): field data versus lab data, and what moves each number.
 - [Diagnosing Core Web Vitals with MCP and an AI coding assistant](https://gerriscorp.com/guides/core-web-vitals-mcp/): Chrome DevTools traces, CrUX field data, and Screaming Frog across every template.
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
-- [Build a business website on GitHub Pages for $10 a year](https://gerriscorp.com/guides/github-pages-website/): a wholesale Cloudflare domain, free hosting, the DNS records, and an AI doing the typing.
+- [A Real Business Website for the Price of a Domain Name](https://gerriscorp.com/guides/github-pages-website/): a wholesale Cloudflare domain, free hosting, the DNS records, and an AI doing the typing.
 - [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): the traffic that still reaches your server, and how to harden logins, XML-RPC, plugins, and backups.
 - [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
 - [Website restore drills](https://gerriscorp.com/guides/restore-drills/): rebuild the site from its backup on a quiet afternoon, time it, and fix the gaps before an emergency finds them.
