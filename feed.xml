@@ -8,13 +8,13 @@
   <updated>2026-11-03T12:00:00Z</updated>
   <author><name>Chris Abraham</name><uri>https://chrisabraham.com/</uri></author>
   <entry>
-    <title>How to build a business website on GitHub Pages for about $10 a year</title>
+    <title>A Real Business Website for the Price of a Domain Name</title>
     <link href="https://gerriscorp.com/guides/github-pages-website/"/>
     <id>https://gerriscorp.com/guides/github-pages-website/</id>
     <published>2026-11-03T12:00:00Z</published>
     <updated>2026-11-03T12:00:00Z</updated>
     <summary>A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.</summary>
-    <content type="html">&lt;h1&gt;How to build a business website on GitHub Pages for about $10 a year&lt;/h1&gt;
+    <content type="html">&lt;h1&gt;A Real Business Website for the Price of a Domain Name&lt;/h1&gt;
 &lt;p class="byline"&gt;By &lt;a href="https://gerriscorp.com/about/"&gt;Chris Abraham&lt;/a&gt; · Published &lt;time datetime="2026-11-03"&gt;November 3, 2026&lt;/time&gt;&lt;/p&gt;
 &lt;p class="lead"&gt;A working setup for a business website that costs about $10 a year: domain at wholesale from Cloudflare, files in GitHub, GitHub Pages hosting free, DNS pointed once, and an AI chat doing the typing.&lt;/p&gt;
 
