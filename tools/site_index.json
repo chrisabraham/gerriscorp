@@ -95,7 +95,8 @@
    "kind": "topic",
    "pages": [
     "case-studies/founder-record",
-    "about"
+    "about",
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -1147,10 +1148,28 @@
     "guides/restore-drills"
    ]
   },
+  "Baird, Francois": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Barracuda": {
    "kind": "topic",
    "pages": [
     "guides/email-blocklist-recovery"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Barrett, Paul M.": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -1343,7 +1362,8 @@
   "blogger outreach": {
    "kind": "topic",
    "pages": [
-    "guides/hype-or-shift"
+    "guides/hype-or-shift",
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -1404,6 +1424,24 @@
     "services/seo-engineering",
     "guides/seo-build-checks"
    ]
+  },
+  "Burke, Shonali": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Butler, Phil": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "California DROP (Delete Request and Opt-out Platform)": {
    "kind": "topic",
@@ -2412,6 +2450,15 @@
     "services/data-cleanup"
    ]
   },
+  "de Brun, Steve": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "deliverability": {
    "kind": "topic",
    "pages": [
@@ -2718,6 +2765,15 @@
    "pages": [
     "guides/seo-101",
     "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Easton, Kaylyn": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -3122,6 +3178,15 @@
    "see": [],
    "main": []
   },
+  "Fitzgerald, Colleen": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Fiverr": {
    "kind": "topic",
    "pages": [
@@ -3198,6 +3263,15 @@
    "kind": "topic",
    "pages": [
     "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Fresh Air Fund, The": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -3281,11 +3355,38 @@
     "services/analytics"
    ]
   },
+  "Garfield, Bob": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Gartner hype cycle": {
    "kind": "topic",
    "pages": [
     "guides/hype-or-shift",
     "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Gaudet, Glenn": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Gelles, David": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -3844,6 +3945,24 @@
    "see": [],
    "main": []
   },
+  "Grinda, Fabrice": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Grinda, Olivier": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Grok": {
    "kind": "topic",
    "pages": [
@@ -3855,6 +3974,15 @@
     "colophon",
     "services/ai-automation",
     "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Grotstein, Josh": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -3907,6 +4035,24 @@
    "see": [],
    "main": []
   },
+  "Habitat for Humanity International": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Halferty Hardy, Kerry": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "handoff files": {
    "kind": "topic",
    "pages": [
@@ -3917,6 +4063,15 @@
    "main": [
     "guides/ai-agents-one-repository"
    ]
+  },
+  "Harcus, Josh": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "Harrison, Mark": {
    "kind": "person",
@@ -4035,6 +4190,15 @@
    "main": [
     "guides/hiring-developers"
    ]
+  },
+  "Hlinko, John": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "holiday hours": {
    "kind": "topic",
@@ -4336,6 +4500,15 @@
    "see": [],
    "main": []
   },
+  "influencer marketing": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "influencer vetting": {
    "kind": "topic",
    "pages": [
@@ -4433,6 +4606,15 @@
    "main": [
     "services/internal-linking"
    ]
+  },
+  "International Medical Corps": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "international SEO": {
    "kind": "topic",
@@ -4559,10 +4741,46 @@
    "see": [],
    "main": []
   },
+  "Kanter, Beth": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Kerpen, Carrie": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Khan, Lina": {
    "kind": "person",
    "pages": [
     "guides/ai-vendor-pitch"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Kimberly-Clark": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Krayev, Sergey": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -4638,11 +4856,29 @@
     "case-studies/programmatic-indexing"
    ]
   },
+  "Lasica, JD": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "launch checklists": {
    "kind": "topic",
    "pages": [
     "guides/lynx-qa",
     "guides/migration-checklist"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Leventhal, Shari F.": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -4661,6 +4897,15 @@
      "guides/ada-website-compliance"
     ]
    },
+   "see": [],
+   "main": []
+  },
+  "Linden, Tate": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
    "see": [],
    "main": []
   },
@@ -4881,6 +5126,15 @@
    "see": [],
    "main": []
   },
+  "Martucci, Rodrigo": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "material connection": {
    "kind": "topic",
    "pages": [
@@ -5054,10 +5308,37 @@
     "guides/migration-tools"
    ]
   },
+  "Milner, Rebecca": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Miriam’s Kitchen": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "model backends, comparing": {
    "kind": "topic",
    "pages": [
     "case-studies/built-with-claude-code"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Morgenthau, Jenny": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -5205,7 +5486,8 @@
    "kind": "topic",
    "pages": [
     "services/reputation",
-    "about"
+    "about",
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -5420,6 +5702,15 @@
    "main": [
     "stack"
    ]
+  },
+  "OLX": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "on-page SEO": {
    "kind": "topic",
@@ -5966,6 +6257,17 @@
     "privacy"
    ]
   },
+  "pro bono work": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "testimonials"
+   ]
+  },
   "Products": {
    "kind": "topic",
    "pages": [
@@ -6381,7 +6683,8 @@
     "services/advisory",
     "services/reputation",
     "guides/personal-information-removal",
-    "guides/vet-an-influencer"
+    "guides/vet-an-influencer",
+    "testimonials"
    ],
    "subs": {
     "auditing the record": [
@@ -6514,6 +6817,15 @@
    "see": [],
    "main": []
   },
+  "Robbins, Stever": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "robots.txt": {
    "kind": "topic",
    "pages": [
@@ -6553,6 +6865,15 @@
    "main": [
     "guides/robots-txt"
    ]
+  },
+  "Roccanti, Jenn": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "roundups and best-of lists": {
    "kind": "topic",
@@ -7023,6 +7344,15 @@
    "kind": "topic",
    "pages": [
     "services/podcast-sites"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Sherman, David": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -7704,6 +8034,18 @@
     "guides/hype-or-shift"
    ]
   },
+  "testimonials": {
+   "kind": "topic",
+   "pages": [
+    "testimonials",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "testimonials"
+   ]
+  },
   "text browsers": {
    "kind": "topic",
    "pages": [
@@ -7927,6 +8269,15 @@
    "kind": "topic",
    "pages": [
     "guides/glossary"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Tutt, Daniel": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -8233,6 +8584,15 @@
    ],
    "subs": {},
    "see": []
+  },
+  "West, Ellie": {
+   "kind": "person",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "Where the Animals Go": {
    "kind": "topic",
@@ -8683,6 +9043,7 @@
   "guides/private-transcription-linux",
   "services/indexing-audit",
   "guides/programmatic-seo",
-  "guides/github-pages-website"
+  "guides/github-pages-website",
+  "testimonials"
  ]
 }

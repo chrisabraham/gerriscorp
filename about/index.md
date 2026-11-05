@@ -72,6 +72,8 @@ Search Console technical issues, 5.0, June 2023
 
 A Squarespace to Webflow move, 5.0, December 2021
 
+Testimonials from the campaign years, from Baird's CMC and The Fresh Air Fund to JD Lasica and Bob Garfield, are collected on [testimonials](https://gerriscorp.com/testimonials/).
+
 ## Verify
 - [My Upwork profile](https://www.upwork.com/freelancers/chrisjabraham), with client reviews and work history: Top Rated, 100% Job Success.
 - [More reviews from that profile](https://christopherabraham.com/about/reviews/), quoted word for word.

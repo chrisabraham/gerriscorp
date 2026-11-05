@@ -4,7 +4,7 @@
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 561 headings drawn from 139 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 600 headings drawn from 140 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -63,7 +63,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing and debate, [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
   - writing Perl and PHP, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
 
-- Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
+- Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/), [Testimonials](https://gerriscorp.com/testimonials/)
 - acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
 - access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), **[Accessibility Remediation](https://gerriscorp.com/services/accessibility/)**, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/), [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
@@ -226,7 +226,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
 - back-of-the-book index, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**
 - backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**
+- Baird, Francois, [Testimonials](https://gerriscorp.com/testimonials/)
 - Barracuda, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
+- Barrett, Paul M., [Testimonials](https://gerriscorp.com/testimonials/)
 - Basecamp, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
 - BeenVerified, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - Berlin, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
@@ -258,7 +260,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - rebuilding reputation, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
   - requesting removal, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 
-- blogger outreach, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
+- blogger outreach, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [Testimonials](https://gerriscorp.com/testimonials/)
 - BOTI award, [About](https://gerriscorp.com/about/)
 - build checks, **[SEO Engineering](https://gerriscorp.com/services/seo-engineering/)**, **[SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)**, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/). *See also* [SEO engineering](https://gerriscorp.com/site-index/#ix-seo-engineering)
   - duplicate phrasing, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
@@ -271,6 +273,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - structured data, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
   - titles and descriptions, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
   - where the checks run, [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/)
+
+- Burke, Shonali, [Testimonials](https://gerriscorp.com/testimonials/)
+- Butler, Phil, [Testimonials](https://gerriscorp.com/testimonials/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
@@ -438,6 +443,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - sending volume, [Data Cleanup](https://gerriscorp.com/case-studies/data-cleanup/)
   - two 28,800-record exports merged, [Data Cleanup](https://gerriscorp.com/case-studies/data-cleanup/)
 
+- de Brun, Steve, [Testimonials](https://gerriscorp.com/testimonials/)
 - deliverability, [Services](https://gerriscorp.com/services/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), **[Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)**. *See also* [blocklists](https://gerriscorp.com/site-index/#ix-blocklists)
   - authentication failures, [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
   - bounce codes, [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
@@ -485,6 +491,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## E
+- Easton, Kaylyn, [Testimonials](https://gerriscorp.com/testimonials/)
 - ecommerce SEO, [Services](https://gerriscorp.com/services/), **[E-commerce](https://gerriscorp.com/services/ecommerce/)**, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
   - duplicate product URLs, [E-commerce](https://gerriscorp.com/services/ecommerce/)
   - faceted navigation, [E-commerce](https://gerriscorp.com/services/ecommerce/)
@@ -569,6 +576,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - ffmpeg, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
   - preparing audio for transcription, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
 
+- Fitzgerald, Colleen, [Testimonials](https://gerriscorp.com/testimonials/)
 - Fiverr, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Forbes, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - force push, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**. *See also* [Git](https://gerriscorp.com/site-index/#ix-git)
@@ -581,6 +589,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - retainer and hours, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)
 
 - Framer, [About](https://gerriscorp.com/about/)
+- Fresh Air Fund, The, [Testimonials](https://gerriscorp.com/testimonials/)
 - FTC Endorsement Guides, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/), [Glossary](https://gerriscorp.com/guides/glossary/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
 - FTC (Federal Trade Commission), [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - fake reviews and influence rule, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
@@ -601,7 +610,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - matching Search Console, [Analytics](https://gerriscorp.com/services/analytics/)
   - short-window engagement dips, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/)
 
+- Garfield, Bob, [Testimonials](https://gerriscorp.com/testimonials/)
 - Gartner hype cycle, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- Gaudet, Glenn, [Testimonials](https://gerriscorp.com/testimonials/)
+- Gelles, David, [Testimonials](https://gerriscorp.com/testimonials/)
 - Gemini, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
 - GEO (generative engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search)
 - George Washington University, The, [About](https://gerriscorp.com/about/)
@@ -681,7 +693,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Google-Extended, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 - GPTBot, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/)
 - Greymatter, [About](https://gerriscorp.com/about/)
+- Grinda, Fabrice, [Testimonials](https://gerriscorp.com/testimonials/)
+- Grinda, Olivier, [Testimonials](https://gerriscorp.com/testimonials/)
 - Grok, [Home](https://gerriscorp.com/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [Standards](https://gerriscorp.com/standards/), [Colophon](https://gerriscorp.com/colophon/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/)
+- Grotstein, Josh, [Testimonials](https://gerriscorp.com/testimonials/)
 - grounding, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - grounding queries, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
 - gtag.js, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
@@ -691,7 +706,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## H
 - H2 headings, hardcoded, [Consent Blocking](https://gerriscorp.com/case-studies/consent-blocking/)
+- Habitat for Humanity International, [Testimonials](https://gerriscorp.com/testimonials/)
+- Halferty Hardy, Kerry, [Testimonials](https://gerriscorp.com/testimonials/)
 - handoff files, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**
+- Harcus, Josh, [Testimonials](https://gerriscorp.com/testimonials/)
 - Harrison, Mark, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
 - headless Chrome, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)
 - headless CMS, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
@@ -710,6 +728,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - red flags, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
   - writing the brief, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
 
+- Hlinko, John, [Testimonials](https://gerriscorp.com/testimonials/)
 - holiday hours, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
 - hreflang, **[hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)**
   - Bing and the lang attribute, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
@@ -770,6 +789,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - release workflow, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
 
 - infinite scroll, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+- influencer marketing, [Testimonials](https://gerriscorp.com/testimonials/)
 - influencer vetting, **[Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)**
   - contract terms, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
   - earlier claims, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
@@ -792,6 +812,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - site structure, [Internal Linking](https://gerriscorp.com/services/internal-linking/)
   - unconnected content, [Internal Linking](https://gerriscorp.com/services/internal-linking/)
 
+- International Medical Corps, [Testimonials](https://gerriscorp.com/testimonials/)
 - international SEO, [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
 - International Targeting report (retired 2022), [hreflang for English Markets](https://gerriscorp.com/guides/hreflang/)
 - Item 8 (Coelaboration), **[In Your Stack](https://gerriscorp.com/stack/)**
@@ -817,7 +838,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
 ## K
+- Kanter, Beth, [Testimonials](https://gerriscorp.com/testimonials/)
+- Kerpen, Carrie, [Testimonials](https://gerriscorp.com/testimonials/)
 - Khan, Lina, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+- Kimberly-Clark, [Testimonials](https://gerriscorp.com/testimonials/)
+- Krayev, Sergey, [Testimonials](https://gerriscorp.com/testimonials/)
 - Krueger, Dan, [About](https://gerriscorp.com/about/), [Colophon](https://gerriscorp.com/colophon/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
@@ -835,10 +860,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - segmented sitemaps, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - template quality, [Large Sites](https://gerriscorp.com/services/large-sites/)
 
+- Lasica, JD, [Testimonials](https://gerriscorp.com/testimonials/)
 - launch checklists, [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/), [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
+- Leventhal, Shari F., [Testimonials](https://gerriscorp.com/testimonials/)
 - Lighthouse, [Speculation Rules](https://gerriscorp.com/guides/speculation-rules/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/), [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
   - Agentic Browsing check, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
 
+- Linden, Tate, [Testimonials](https://gerriscorp.com/testimonials/)
 - Linear, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
 - Linux servers, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [App Takeover](https://gerriscorp.com/case-studies/app-takeover/)
 - Liquid, [E-commerce](https://gerriscorp.com/services/ecommerce/)
@@ -875,6 +903,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - manipulating AI answers, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - manual actions, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Markdown copies of pages, [AI Search](https://gerriscorp.com/services/ai-search/)
+- Martucci, Rodrigo, [Testimonials](https://gerriscorp.com/testimonials/)
 - material connection, [Glossary](https://gerriscorp.com/guides/glossary/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
 - MCP (Model Context Protocol), **[Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)**
 - Memes.org, [About](https://gerriscorp.com/about/)
@@ -903,7 +932,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - telling Google, [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
   - URL inventory, [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
 
+- Milner, Rebecca, [Testimonials](https://gerriscorp.com/testimonials/)
+- Miriam’s Kitchen, [Testimonials](https://gerriscorp.com/testimonials/)
 - model backends, comparing, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
+- Morgenthau, Jenny, [Testimonials](https://gerriscorp.com/testimonials/)
 - Movable Type, [Project Rescue](https://gerriscorp.com/services/rescue/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 - Moz, [SEO 101](https://gerriscorp.com/guides/seo-101/)
 - multi-location businesses, [Services](https://gerriscorp.com/services/), **[Multi-Location](https://gerriscorp.com/services/multi-location/)**, **[Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/)**, [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/)
@@ -929,7 +961,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - NAP (name, address, phone), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Multi-Location](https://gerriscorp.com/services/multi-location/), [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
 - National Geographic, [Colophon](https://gerriscorp.com/colophon/)
 - Netlify, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Migrations](https://gerriscorp.com/services/migrations/), [Repository Access](https://gerriscorp.com/guides/repository-access/), **[Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/)**
-- New Media Strategies, [Reputation](https://gerriscorp.com/services/reputation/), [About](https://gerriscorp.com/about/)
+- New Media Strategies, [Reputation](https://gerriscorp.com/services/reputation/), [About](https://gerriscorp.com/about/), [Testimonials](https://gerriscorp.com/testimonials/)
 - New York Times, The, [About](https://gerriscorp.com/about/)
 - Next.js, [Services](https://gerriscorp.com/services/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/), **[Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)**, [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/)
   - 308 and 307 redirects, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
@@ -963,6 +995,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## O
 - OAI-SearchBot, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
 - Objective Daily News, **[In Your Stack](https://gerriscorp.com/stack/)**
+- OLX, [Testimonials](https://gerriscorp.com/testimonials/)
 - one-click unsubscribe, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 - ongoing support, [Services](https://gerriscorp.com/services/), **[Ongoing Support](https://gerriscorp.com/services/ongoing-support/)**
   - a typical month, [Ongoing Support](https://gerriscorp.com/services/ongoing-support/)
@@ -1065,6 +1098,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - prerendering, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - privacy, **[Privacy](https://gerriscorp.com/privacy/)**
+- pro bono work, **[Testimonials](https://gerriscorp.com/testimonials/)**
 - Products, [Products](https://gerriscorp.com/products/)
 - programmatic SEO, [Large Sites](https://gerriscorp.com/services/large-sites/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Indexing Audit](https://gerriscorp.com/services/indexing-audit/), **[Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)**. *See also* [large and programmatic sites](https://gerriscorp.com/site-index/#ix-large-and-programmatic-sites); [scaled content abuse](https://gerriscorp.com/site-index/#ix-scaled-content-abuse)
   - content chunking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
@@ -1134,7 +1168,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - removing access, [Repository Access](https://gerriscorp.com/guides/repository-access/)
   - secrets and push protection, [Repository Access](https://gerriscorp.com/guides/repository-access/)
 
-- reputation management, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[Reputation](https://gerriscorp.com/services/reputation/)**, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/). *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
+- reputation management, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[Reputation](https://gerriscorp.com/services/reputation/)**, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/), [Testimonials](https://gerriscorp.com/testimonials/). *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
   - auditing the record, [Reputation](https://gerriscorp.com/services/reputation/)
   - correcting AI answers, [Reputation](https://gerriscorp.com/services/reputation/)
   - data broker removal, [Reputation](https://gerriscorp.com/services/reputation/)
@@ -1153,6 +1187,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - rich results, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Rich Results Test, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - right to erasure, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
+- Robbins, Stever, [Testimonials](https://gerriscorp.com/testimonials/)
 - robots.txt, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/), **[robots.txt](https://gerriscorp.com/guides/robots-txt/)**, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)
   - AI agents list, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
   - AI crawlers, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
@@ -1163,6 +1198,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - syntax, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
   - testing changes, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 
+- Roccanti, Jenn, [Testimonials](https://gerriscorp.com/testimonials/)
 - roundups and best-of lists, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - Route 53, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - RSS feeds, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
@@ -1245,6 +1281,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - server logs, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/)
 - service-area pages, [Multi-Location](https://gerriscorp.com/services/multi-location/)
 - share cards (Open Graph images), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/)
+- Sherman, David, [Testimonials](https://gerriscorp.com/testimonials/)
 - Shopify, [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [E-commerce](https://gerriscorp.com/services/ecommerce/), [Migrations](https://gerriscorp.com/services/migrations/), **[Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)**
   - duplicate product markup, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
   - review metafields, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
@@ -1366,6 +1403,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - online communities, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
   - social media, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 
+- testimonials, [About](https://gerriscorp.com/about/), **[Testimonials](https://gerriscorp.com/testimonials/)**
 - text browsers, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/). *See also* [Lynx](https://gerriscorp.com/site-index/#ix-lynx)
 - The WELL, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
 - therapy practice (anonymized client), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/)
@@ -1401,6 +1439,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Treasury Department, [About](https://gerriscorp.com/about/)
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - TTFB (time to first byte), [Glossary](https://gerriscorp.com/guides/glossary/)
+- Tutt, Daniel, [Testimonials](https://gerriscorp.com/testimonials/)
 - two-factor authentication, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
@@ -1453,6 +1492,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Website incident timelines, **[Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)**
 - web-vitals library, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
+- West, Ellie, [Testimonials](https://gerriscorp.com/testimonials/)
 - Where the Animals Go, [Colophon](https://gerriscorp.com/colophon/)
 - Whisper, **[Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)**. *See also* [transcription](https://gerriscorp.com/site-index/#ix-transcription)
   - choosing a model, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)

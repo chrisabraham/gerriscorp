@@ -1,0 +1,201 @@
+> What clients, partners, students, and peers have said about my campaigns, outreach, strategy, and teaching, from Gerris Corp and the Abraham Harrison years.
+>
+> Source: https://gerriscorp.com/testimonials/ · Updated 2026-11-05 · By Chris Abraham, Gerris Corp
+
+# Testimonials from clients, partners, and peers
+
+These are the words of the people who hired me, worked beside me, or sat in a room while I taught. They come from client testimonials and LinkedIn recommendations collected across Gerris Corp and Abraham Harrison, the firm I co-founded before it. Each one is quoted as its author wrote it, with the author's title as they gave it, shortened where it ran long. Where I cut a passage, an ellipsis marks the cut.
+
+## Campaign clients
+
+>
+
+"Gerris' dedicated team assisted Baird's CMC with new media outreach to create an international discussion about the Baird's CMC report on the view of U.S. multi-nationals about investment in Africa. The results of their work were outstanding; leading to substantial coverage and vigorous debate. Chris Abraham proved to be smart, responsive and highly effective."
+
+Francois Baird, Co-Chairman, Baird's CMC
+
+>
+
+"Chris Abraham and his social media and blogger outreach teams tackled an extremely time-sensitive project for us and got up to speed quickly. We were impressed with their expertise in the industry, the ability to execute a plan successfully and willingness to listen to our needs and goals. Their work has made an impact on our programs already and has given a tremendous boost to our awareness efforts."
+
+Jenny Morgenthau, Executive Director, The Fresh Air Fund
+
+>
+
+"Upon launching HAIWatch.com, Kimberly-Clark Healthcare needed to increase the attention, traffic, and profile. We retained Chris Abraham and his team initially to drive traffic to the site using combined social media and blogger outreach. This resulted in over 100% increase to the number of site visits compared to the time frame prior to the campaign, as well as a number of secondary benefits such as brand recognition and a first page, number 6, placement when searching for “healthcare-associated infection” on Google. … They accomplished this successfully in English, Spanish, and Portuguese in countries including Argentina and Brazil."
+
+Sergey Krayev, Global Marketing & Communications, Kimberly-Clark Health Care
+
+>
+
+"Chris Abraham has been a tremendous asset to International Medical Corps during our American Express Members Project campaign. Their online strategy and outreach helped introduce the International Medical Corps to many new audiences and raised our visibility during this time-sensitive campaign. International Medical Corps was written about in more than 170 blog posts. Chris brings a unique approach to online public relations. … Without a doubt, the International Medical Corps would engage Gerris for another campaign."
+
+Rebecca Milner, Vice President, Institutional Advancement, International Medical Corps
+
+>
+
+"Chris Abraham's blogger outreach strategy was a game changer for our social media project, My Fellow American. Over just a couple months, Chris' team was able to reach 60 million eyeballs, and nearly 1,000 bloggers posted about our project. I found their team to be highly professional, and excellent in coaching my staff and team in building a well-coordinated social media and outreach strategy."
+
+Daniel Tutt, Unity Productions Foundation
+
+>
+
+"Chris Abraham and his team exceeded my wildest expectations. As a first-time author, I was concerned about my ability to build a strong campaign. We ended up getting over a hundred blog book reviews and more than 200 tweets—and we still have dozens of responses to follow up on, even after the campaign ended. … I would use Chris and his team again in a heartbeat. They know their stuff, they are extremely low maintenance to work with, and they did a fantastic job."
+
+Stever Robbins, Author, 9 Steps to Work Less and Do More
+
+>
+
+"Skinny & Co. is thrilled with the outcome of our 3 month blogger campaign! Working with Chris and Dan was an absolute delight. Their professionalism is unmatched and we were extremely satisfied with the response to their work! Over the course of three months, they contacted thousands of bloggers resulting in 500 posts, YouTube videos, and social media mentions from influencers across the board. This helped increase our audience reach and generate lots of new customers."
+
+Kaylyn Easton, CMO, Skinny & Co.
+
+>
+
+"It’s been a true pleasure working with Chris Abraham and his team. They increased the online awareness of OLX far more than I thought would be possible with English, Spanish and Portuguese bloggers."
+
+Fabrice Grinda, Co-Founder and Co-CEO, OLX
+
+>
+
+"Chris Abraham and his team did a terrific job for BrandsClub. Not only did they create and manage our twitter account, that has the most followers in the world for our business model, but their outreaches also got us tons of responses. … I would recommend them to anyone!"
+
+Olivier Grinda, Co-Founder and CMO, BrandsClub
+
+>
+
+"Gerris helped us to share our finance app with a wider audience of bloggers, finance thinkers, and influencers on Twitter. The results were impressive—dozens of blog posts, tons of Tweets and a number of A-list blog posts. On a personal note, Gerris was a pleasure to work with—responsive and easy to get along with at all points."
+
+Steve de Brun, Co-Founder, Visible Market and StockTouch
+
+>
+
+"Chris Abraham's unique approach to PR is refreshing. It was exactly what we needed to take our market exposure to the next level. Working within a prescribed budget, they were able to deliver results that both exceeded our expectations and inspired new opportunities for PR."
+
+Josh Grotstein, CEO, Motionbox, Inc.
+
+>
+
+"With Chris Abraham's audacious voice and mastery of a variety of blogs, feeds and social media networks, Abraham Harrison was instrumental in significantly raising the volume for Firebrand during its short but illustrious history."
+
+Shari F. Leventhal, Partner, FireMedia Partners, former CMO of Firebrand TV
+
+>
+
+"Chris proved himself a genius at helping generate online interest in my book GLOCK: The Rise of America's Gun."
+
+Paul M. Barrett, Deputy Director, NYU Stern Center for Business and Human Rights
+
+>
+
+"Chris developed and managed not only my online sites but indeed, my online personality. He's so good, if I used online personals, I would let him manage those for me, too."
+
+David Gelles, Corner Office columnist at The New York Times
+
+## Pro bono work
+
+>
+
+"On behalf of Habitat for Humanity International (HFHI), thank you for your company’s pro bono work on World Habitat Day blogger outreach. We were astounded by the results achieved by Chris Abraham and the team, and we appreciated your donation of staff time and resources."
+
+Colleen Fitzgerald, Director of Advocacy Implementation, Habitat for Humanity International
+
+>
+
+"We are so grateful for the commitment Chris Abraham and his team made to help us end chronic homelessness in Washington, DC. … They created a clear, succinct Give to the Max Day social media news release that was shown to more than 1,100 bloggers in the DC area. From that outreach, many bloggers joined the conversation about ending chronic homelessness by publicizing Miriam’s Kitchen’s participation in Give to the Max Day."
+
+Jenn Roccanti, Miriam’s Kitchen
+
+## Peers and partners
+
+>
+
+"In a world rife with social media gurus, Chris Abraham is the ultimate unguru. When I put together a small network of social media thought leaders in 2009 for Socialmedia.biz, Chris was the first person I contacted. Since then, I've been repeatedly struck by his thought leadership across a wide range of topics, including social marketing, blogger campaigns, reputation management and much more."
+
+JD Lasica, author
+
+>
+
+"Those who can, do. Those who cannot teach. I teach. Chris does."
+
+Bob Garfield, public broadcaster, columnist, and author
+
+>
+
+"Chris is top notch consultant in digital strategies and influencer marketing."
+
+Beth Kanter, master trainer and nonprofit innovator
+
+>
+
+"When it comes to social media marketing, and frankly marketing in general, Chris is quite simply brilliant. … But Chris is more than just a guy who knows the tools of the trade, he has a killer instinct when it comes to marketing/PR strategy. He doesn't just know what tools to use, he knows what content will work, and where (and at whom) that content should be aimed."
+
+John Hlinko, founder of LeftAction, activist, and author
+
+>
+
+"Chris was an organized, well spoken, dynamic panel leader. He was prepared and a pleasure to work with. He ROCKS!"
+
+Carrie Kerpen, CEO of Likeable Media, author of Work It
+
+>
+
+"Chris is lightning in a bottle. His worldly view and depth of understanding for both old and new media allows him to look at things differently than most of us do. As a result, Chris comes up with amazing perspectives and marketing strategies."
+
+Glenn Gaudet, CEO, GaggleAMP
+
+>
+
+"As one of the pioneer evangelists of digital technologies and social media, Chris Abraham needs no introduction for his key role in helping revamp communications. I've worked with and for Chris on numerous projects and campaigns, all of which depended on his expertise and professionalism for success."
+
+Phil Butler, journalist, editor, and author
+
+>
+
+"In a world full of bloviating 'social media gurus,' Chris is refreshingly honest and to the point. One of the smartest people I know, he is always experimenting with new media so as to best serve his clients and community."
+
+Shonali Burke, communications strategist
+
+>
+
+"Its Simple. Chris Abraham knows more about the Blogosphere than anyone I know. During his time at New Media Strategies, Chris was instrumental in helping the company understand and master the rhythm and power of blogs for public relations and marketing applications."
+
+David Sherman, Principal, (ds)2.io
+
+>
+
+"Chris is an idea machine, bottom line. Working with him is a pleasure because he's always raising the level of creativity for the company. … He also has the ability to make an analogy out of anything and explain the complex ideas through simple and easy to relate concepts."
+
+Rodrigo Martucci, managing partner of an ecommerce marketing agency in Brazil
+
+>
+
+"Chris is a whirlwind of good ideas and a respected leader in the social media space. He's got incredible energy and an unerring ability to develop affordable media programs that move the needle for his clients."
+
+Tate Linden, brand strategist
+
+>
+
+"The generosity, boundless enthusiasm, deep curiosity, wide-ranging knowledge that characterize Chris also are what help make him so incredibly effective. It is impossible not to like him, it would be silly to underestimate him."
+
+Kerry Halferty Hardy, international strategy and external relations consultant
+
+## Former interns and colleagues
+
+>
+
+"I approached Chris for an internship at his company, Abraham Harrison, after he dazzled my communications class at American University with his knowledge of the social media and public relations landscape and how his company was engaging with bloggers to generate online conversation for clients. … He allowed me to take the lead on numerous client-facing projects and provided continuous guidance along the way. He was (and still is) a great mentor."
+
+Ellie West, Senior Brand Strategist, HZDG
+
+>
+
+"It's been a real pleasure working together with him. Chris Abraham was one of the most dedicated professionals through his work at Abraham Harrison. … Deadline oriented, well organized, very good and multi-skilled people manager, understands complex matters even when outside of his direct area of expertise. … Makes the impossible possible."
+
+Josh Harcus, author of Closing Culture
+
+## What this record covers
+
+Most of these words describe the campaigns that built my reputation before search became my full-time work: blogger outreach, influencer programs, and reputation work run through Gerris and Abraham Harrison. The habits they praise carried straight into the technical work I do now, and the [server to schema](https://gerriscorp.com/stack/) page shows where. Recent client reviews from Upwork, quoted the same way, are on [my consulting site](https://christopherabraham.com/about/reviews/). To start a project of your own, [tell me what you need](https://gerriscorp.com/contact/).
+
+Updated November 5, 2026
