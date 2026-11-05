@@ -58,6 +58,22 @@ Codex and Claude Code handle most of my work with AI coding assistants. My other
 ## Data
 - My Python pipelines produced an 88,900 contact master list, merged two 28,800 record exports to 94% email coverage, and exposed an AI-made tracker that had invented its records. [Data cleanup](https://gerriscorp.com/case-studies/data-cleanup/).
 
+## Marketing platforms and site builders
+- A HubSpot partner agency brought me in as its technical SEO specialist for client sites on HubSpot's CMS.
+- I've carried a site from Squarespace onto Webflow and watched over search during a second Webflow migration, testing the redirect map one address at a time.
+- Measurement moved with Google: I migrated properties off Universal Analytics onto GA4 and wired GA4 into a web app during a WordPress move.
+- For shops, Google Merchant Center sits beside Search Console in the setup work, so products and pages are checked in the same pass.
+
+## Projects I run in public
+
+The quickest way to judge how I build is to read what I publish under my own name, code included.
+- [Adjutant](https://github.com/chrisabraham/adjutant): a command-line chief of staff that writes plain-English briefs and minutes, keeps reminders, and follows through. It is the de-personalized public version of the assistant I run for myself, under the MIT license.
+- [Oversoul](https://github.com/chrisabraham/oversoul): an empty starter for several AI agents that share one memory, kept as plain Markdown in Git. Its rules are short: fetch first, look, then push, and stop on any conflict. CC BY 4.0.
+- [chrisabraham.net](https://chrisabraham.net/): my weblog, where AI writes each post from my prompt and the prompt is printed under the post.
+- [Objective Daily News](https://objectivedailynews.com/): an archival news service I founded on November 4, 2026. Each edition carries the time it was collected; the desk's own analysis is labeled objective, and every excerpt of outside reporting is labeled subjective.
+- [Item 8 (Coelaboration)](https://item8.org/): a collaborative hypernarrative from The Meta Network's artist conference, 1997 to 1998, where I gave the item and its method and wrote as one of 19 writers. All 212 responses are preserved.
+- [My Name is Scibe](https://scibe.org/): Judy Malloy's collaborative hyperfiction, begun in 1994 on Arts Wire and The WELL, where I was one of the eight writers. It lives at its own address again.
+
 ## What comes with me into every layer
 - **Separate problems stay separate.** A template change and a spam link spike that arrive in the same month get two investigations until the data joins them. [The Magento case](https://gerriscorp.com/case-studies/ecommerce-rendering/) is the example.
 - **False alarms get caught.** When an AI visibility dashboard showed a sharp drop for a B2B client, I traced it to the vendor changing its methodology; the client's actual visibility had held steady. [Umbraco operations](https://gerriscorp.com/case-studies/umbraco-operations/).

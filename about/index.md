@@ -12,7 +12,7 @@ I'm Chris Abraham. Gerris Corp is my consultancy, and I'm the person who does th
 | Location | South Arlington (Arlington Heights), Arlington, Virginia 22204, across the river from Washington, DC |
 | Clients | Across the United States and the English-speaking world: Canada, the United Kingdom, Ireland, Australia, and New Zealand |
 | Focus | Technical consulting and direction, developer specs, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed and Cloudflare, Search Console, migrations, AI search visibility |
-| Upwork | Top Rated, 100% Job Success, more than 125 jobs and 4,000 hours (2026) |
+| Upwork | Top Rated, 100% Job Success, 132 jobs and 4,155 hours (November 2026) |
 | Working online since | Building websites since 1994; in digital marketing since 2002 |
 | Education | BA in American Literature, The George Washington University |
 | Contact | [chris@gerriscorp.com](mailto:chris@gerriscorp.com) · [+1 202-352-5051](tel:+12023525051) |
@@ -50,8 +50,32 @@ I published the Memetic Lexicon on memes.org in 1999, ran the MemeSpace communit
 
 I have a BA in American Literature from The George Washington University, with a year at the University of East Anglia in Norwich. I captained my high school speech and debate team, taught creative writing, and write every day. That training shows up in the work: appeals built like briefs, reports that explain the mechanism plainly, and pages that say what they mean.
 
+## What clients wrote
+
+Three reviews from my Upwork work history, copied exactly as the clients typed them, with the project type and the month each contract closed:
+
+>
+
+"Thanks for the great work that you did on 2 different clients. Very helpful SEO and GMB insights!"
+
+An agency that brought me in on two of its clients, 5.0, January 2025
+
+>
+
+"Chris was very willing very, very honest about what he thought he might do for us vs what we might be in need of. It turned out that we are..."
+
+Search Console technical issues, 5.0, June 2023
+
+>
+
+"He went above and beyond the call of duty - providing more help than I actually asked for."
+
+A website SEO audit, 4.5, February 2022
+
 ## Verify
 - [My Upwork profile](https://www.upwork.com/freelancers/chrisjabraham), with client reviews and work history: Top Rated, 100% Job Success.
+- [More reviews from that profile](https://christopherabraham.com/about/reviews/), word for word, with the lower ratings in view.
+- [The projects I run in public](https://gerriscorp.com/stack/#projects), from open-source agent tools to a news archive and two preserved hyperfictions.
 - [chrisabraham.com](https://chrisabraham.com/), my personal site and archive since the early 2000s.
 - [hillmole.com](https://hillmole.com/), my serialized novel and a working example of a migration.
 - [The source code of this site](https://github.com/chrisabraham/gerriscorp).

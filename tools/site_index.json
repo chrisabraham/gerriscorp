@@ -325,6 +325,17 @@
     "guides/ada-website-compliance"
    ]
   },
+  "Adjutant": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
+  },
   "Adobe Podcast Enhance Speech": {
    "kind": "topic",
    "pages": [
@@ -393,6 +404,19 @@
     "services/agency-partner"
    ]
   },
+  "AGENTS.md": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [
+    "CLAUDE.md"
+   ],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
+  },
   "Ahrefs": {
    "kind": "topic",
    "pages": [
@@ -402,6 +426,36 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "AI agents": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {
+    "how they identify themselves": [
+     "guides/ai-agents-on-your-website"
+    ],
+    "firewall rules": [
+     "guides/ai-agents-on-your-website",
+     "services/agent-readiness"
+    ],
+    "forms and labels": [
+     "guides/ai-agents-on-your-website",
+     "services/agent-readiness"
+    ],
+    "measuring visits": [
+     "guides/ai-agents-on-your-website"
+    ],
+    "testing": [
+     "services/agent-readiness"
+    ]
+   },
+   "see": [],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
   },
   "AI agents and automation": {
    "kind": "topic",
@@ -985,7 +1039,8 @@
   "ArtsWire": {
    "kind": "topic",
    "pages": [
-    "about"
+    "about",
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -1202,6 +1257,15 @@
    "see": [],
    "main": []
   },
+  "black hat SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/black-hat-in-modern-dress"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "Blackbox (Chris’ command-line assistant)": {
    "kind": "topic",
    "pages": [
@@ -1399,6 +1463,18 @@
     "guides/canonical-tags"
    ]
   },
+  "CAPTCHA": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {},
+   "see": [
+    "AI agents"
+   ],
+   "main": []
+  },
   "careers pages": {
    "kind": "topic",
    "pages": [
@@ -1448,6 +1524,17 @@
    "see": [],
    "main": []
   },
+  "changelog": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
+  },
   "ChatGPT": {
    "kind": "topic",
    "pages": [
@@ -1485,6 +1572,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "chrisabraham.net (weblog)": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
   },
   "Chrome": {
    "kind": "topic",
@@ -1576,6 +1674,15 @@
    "main": [
     "guides/citation-gap-analysis"
    ]
+  },
+  "citation provenance": {
+   "kind": "topic",
+   "pages": [
+    "guides/citation-provenance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
   },
   "citation share": {
    "kind": "topic",
@@ -1681,6 +1788,17 @@
    "see": [],
    "main": []
   },
+  "client reviews (Upwork)": {
+   "kind": "topic",
+   "pages": [
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "about"
+   ]
+  },
   "client-side rendering": {
    "kind": "topic",
    "pages": [
@@ -1782,6 +1900,17 @@
    "main": [
     "services/site-speed",
     "guides/cloudflare-seo"
+   ]
+  },
+  "Cloudflare Registrar": {
+   "kind": "topic",
+   "pages": [
+    "guides/github-pages-website"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/github-pages-website"
    ]
   },
   "Cloudflare Tunnel": {
@@ -2504,6 +2633,15 @@
     "guides/domain-account-security"
    ]
   },
+  "domain names, cost of a website": {
+   "kind": "topic",
+   "pages": [
+    "guides/github-pages-website"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "domain portfolio audit": {
    "kind": "topic",
    "pages": [
@@ -2971,6 +3109,19 @@
    "see": [],
    "main": []
   },
+  "ffmpeg": {
+   "kind": "tool",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "preparing audio for transcription": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [],
+   "main": []
+  },
   "Fiverr": {
    "kind": "topic",
    "pages": [
@@ -2988,6 +3139,19 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "force push": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [
+    "Git"
+   ],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
   },
   "fractional SEO and AI search lead": {
    "kind": "topic",
@@ -3077,7 +3241,8 @@
    "pages": [
     "services",
     "services/analytics",
-    "services/technical-seo"
+    "services/technical-seo",
+    "stack"
    ],
    "subs": {
     "ghost and spam traffic": [
@@ -3254,7 +3419,8 @@
     "guides/repository-access",
     "guides/seo-superpower",
     "case-studies/sanity-vercel",
-    "case-studies/programmatic-indexing"
+    "case-studies/programmatic-indexing",
+    "stack"
    ],
    "subs": {
     "organizations": [
@@ -3310,7 +3476,8 @@
     "services/podcast-sites",
     "colophon",
     "privacy",
-    "guides/freeze-old-website"
+    "guides/freeze-old-website",
+    "guides/github-pages-website"
    ],
    "subs": {
     "custom domains and HTTPS": [
@@ -3318,7 +3485,9 @@
     ]
    },
    "see": [],
-   "main": []
+   "main": [
+    "guides/github-pages-website"
+   ]
   },
   "GitLab": {
    "kind": "topic",
@@ -3617,6 +3786,19 @@
    "see": [],
    "main": []
   },
+  "Google-Agent": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website"
+   ],
+   "subs": {},
+   "see": [
+    "AI agents"
+   ],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
+  },
   "Google-Extended": {
    "kind": "topic",
    "pages": [
@@ -3724,6 +3906,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "handoff files": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
   },
   "Harrison, Mark": {
    "kind": "person",
@@ -3897,10 +4090,30 @@
    "see": [],
    "main": []
   },
+  "HubSpot": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
+  },
   "Hudson racing single": {
    "kind": "topic",
    "pages": [
     "colophon"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Hugging Face": {
+   "kind": "organization",
+   "pages": [
+    "guides/private-transcription-linux"
    ],
    "subs": {},
    "see": [],
@@ -3937,6 +4150,24 @@
    "main": [
     "guides/hydration-errors"
    ]
+  },
+  "hyperfiction": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "hypernarrative": {
+   "kind": "topic",
+   "pages": [],
+   "subs": {},
+   "see": [
+    "hyperfiction"
+   ],
+   "main": []
   },
   "Hyvä (Magento theme)": {
    "kind": "topic",
@@ -4220,6 +4451,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "Item 8 (Coelaboration)": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
   },
   "JavaScript SEO": {
    "kind": "topic",
@@ -4601,6 +4843,15 @@
    "see": [],
    "main": []
   },
+  "Malloy, Judy": {
+   "kind": "person",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "manipulating AI answers": {
    "kind": "topic",
    "pages": [
@@ -4665,6 +4916,24 @@
    "pages": [
     "guides/hype-or-shift",
     "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Merchant Center": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "Meta Network, The": {
+   "kind": "topic",
+   "pages": [
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -4885,6 +5154,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "My Name is Scibe": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
   },
   "NAP (name, address, phone)": {
    "kind": "topic",
@@ -5130,6 +5410,17 @@
    "see": [],
    "main": []
   },
+  "Objective Daily News": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
+  },
   "on-page SEO": {
    "kind": "topic",
    "pages": [
@@ -5230,6 +5521,17 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "Oversoul": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
   },
   "OWASP excessive agency": {
    "kind": "topic",
@@ -5664,6 +5966,15 @@
     "privacy"
    ]
   },
+  "Products": {
+   "kind": "topic",
+   "pages": [
+    "products"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "programmatic SEO": {
    "kind": "topic",
    "pages": [
@@ -5734,6 +6045,18 @@
     "services/rescue"
    ]
   },
+  "projects in public": {
+   "kind": "topic",
+   "pages": [
+    "stack",
+    "about"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "stack"
+   ]
+  },
   "prompt injection": {
    "kind": "topic",
    "pages": [
@@ -5750,15 +6073,6 @@
    "pages": [
     "services/ai-search",
     "services/analytics"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Products": {
-   "kind": "topic",
-   "pages": [
-    "products"
    ],
    "subs": {},
    "see": [],
@@ -5794,6 +6108,17 @@
    ],
    "subs": {},
    "see": [],
+   "main": []
+  },
+  "pyannote.audio": {
+   "kind": "tool",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {},
+   "see": [
+    "transcription"
+   ],
    "main": []
   },
   "Python": {
@@ -6587,6 +6912,15 @@
     "services/seo-engineering"
    ]
   },
+  "SEO folklore": {
+   "kind": "topic",
+   "pages": [
+    "guides/stuck-in-the-folklore"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "SEO plugins, switched off": {
    "kind": "topic",
    "pages": [
@@ -7037,7 +7371,8 @@
     "services/ecommerce",
     "services/on-page-seo",
     "services/migrations",
-    "case-studies/shopify-migration"
+    "case-studies/shopify-migration",
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -7384,7 +7719,8 @@
    "kind": "topic",
    "pages": [
     "guides/hype-or-shift",
-    "about"
+    "about",
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -7534,6 +7870,30 @@
    "see": [],
    "main": []
   },
+  "transcription": {
+   "kind": "topic",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "offline and private": [
+     "guides/private-transcription-linux"
+    ],
+    "speaker labels": [
+     "guides/private-transcription-linux"
+    ],
+    "searching transcripts": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [
+    "Whisper",
+    "ffmpeg"
+   ],
+   "main": [
+    "guides/private-transcription-linux"
+   ]
+  },
   "transcripts": {
    "kind": "topic",
    "pages": [
@@ -7620,6 +7980,15 @@
     "case-studies/umbraco-operations"
    ]
   },
+  "Universal Analytics": {
+   "kind": "topic",
+   "pages": [
+    "stack"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
   "University of East Anglia": {
    "kind": "topic",
    "pages": [
@@ -7638,7 +8007,11 @@
     "faq",
     "about"
    ],
-   "subs": {},
+   "subs": {
+    "client reviews quoted": [
+     "about"
+    ]
+   },
    "see": [],
    "main": []
   },
@@ -7754,6 +8127,20 @@
    "see": [],
    "main": []
   },
+  "Web Bot Auth": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {},
+   "see": [
+    "AI agents"
+   ],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
+  },
   "Web Developer extension": {
    "kind": "topic",
    "pages": [
@@ -7784,7 +8171,8 @@
   "Webflow": {
    "kind": "topic",
    "pages": [
-    "services/technical-lead"
+    "services/technical-lead",
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -7854,6 +8242,29 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "Whisper": {
+   "kind": "tool",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "choosing a model": [
+     "guides/private-transcription-linux"
+    ],
+    "speeding up on old hardware": [
+     "guides/private-transcription-linux"
+    ],
+    "troubleshooting": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [
+    "transcription"
+   ],
+   "main": [
+    "guides/private-transcription-linux"
+   ]
   },
   "white label services": {
    "kind": "topic",
@@ -8131,230 +8542,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "black hat SEO": {
-   "kind": "topic",
-   "pages": [
-    "guides/black-hat-in-modern-dress"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "SEO folklore": {
-   "kind": "topic",
-   "pages": [
-    "guides/stuck-in-the-folklore"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "citation provenance": {
-   "kind": "topic",
-   "pages": [
-    "guides/citation-provenance"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "AI agents": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
-   ],
-   "subs": {
-    "how they identify themselves": [
-     "guides/ai-agents-on-your-website"
-    ],
-    "firewall rules": [
-     "guides/ai-agents-on-your-website",
-     "services/agent-readiness"
-    ],
-    "forms and labels": [
-     "guides/ai-agents-on-your-website",
-     "services/agent-readiness"
-    ],
-    "measuring visits": [
-     "guides/ai-agents-on-your-website"
-    ],
-    "testing": [
-     "services/agent-readiness"
-    ]
-   },
-   "see": [],
-   "main": [
-    "guides/ai-agents-on-your-website"
-   ]
-  },
-  "Web Bot Auth": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
-   ],
-   "subs": {},
-   "see": [
-    "AI agents"
-   ],
-   "main": [
-    "guides/ai-agents-on-your-website"
-   ]
-  },
-  "Google-Agent": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website"
-   ],
-   "subs": {},
-   "see": [
-    "AI agents"
-   ],
-   "main": [
-    "guides/ai-agents-on-your-website"
-   ]
-  },
-  "CAPTCHA": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
-   ],
-   "subs": {},
-   "see": [
-    "AI agents"
-   ],
-   "main": []
-  },
-  "AGENTS.md": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [
-    "CLAUDE.md"
-   ],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
-  "force push": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [
-    "Git"
-   ],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
-  "handoff files": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
-  "changelog": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
-  "ffmpeg": {
-   "kind": "tool",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {
-    "preparing audio for transcription": [
-     "guides/private-transcription-linux"
-    ]
-   },
-   "see": [],
-   "main": []
-  },
-  "Whisper": {
-   "kind": "tool",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {
-    "choosing a model": [
-     "guides/private-transcription-linux"
-    ],
-    "speeding up on old hardware": [
-     "guides/private-transcription-linux"
-    ],
-    "troubleshooting": [
-     "guides/private-transcription-linux"
-    ]
-   },
-   "see": [
-    "transcription"
-   ],
-   "main": [
-    "guides/private-transcription-linux"
-   ]
-  },
-  "transcription": {
-   "kind": "topic",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {
-    "offline and private": [
-     "guides/private-transcription-linux"
-    ],
-    "speaker labels": [
-     "guides/private-transcription-linux"
-    ],
-    "searching transcripts": [
-     "guides/private-transcription-linux"
-    ]
-   },
-   "see": [
-    "Whisper",
-    "ffmpeg"
-   ],
-   "main": [
-    "guides/private-transcription-linux"
-   ]
-  },
-  "pyannote.audio": {
-   "kind": "tool",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {},
-   "see": [
-    "transcription"
-   ],
-   "main": []
-  },
-  "Hugging Face": {
-   "kind": "organization",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
   }
  },
  "reviewed": [
@@ -8495,5 +8682,7 @@
   "guides/ai-agents-one-repository",
   "guides/private-transcription-linux",
   "services/indexing-audit",
-  "guides/programmatic-seo" ]
+  "guides/programmatic-seo",
+  "guides/github-pages-website"
+ ]
 }
