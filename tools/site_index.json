@@ -5,9 +5,7 @@
    "pages": [
     "services/migrations",
     "services/email-and-dns",
-    "guides/301-redirects",
-    "guides/two-problems-at-once",
-    "guides/freeze-old-website"
+    "guides/301-redirects"
    ],
    "subs": {
     "which redirect to use": [
@@ -95,8 +93,7 @@
    "kind": "topic",
    "pages": [
     "case-studies/founder-record",
-    "about",
-    "testimonials"
+    "about"
    ],
    "subs": {},
    "see": [],
@@ -227,8 +224,7 @@
     "services/technical-seo",
     "services/crawler-visibility",
     "guides/glossary",
-    "case-studies/react-event-platform",
-    "guides/two-problems-at-once"
+    "case-studies/react-event-platform"
    ],
    "subs": {},
    "see": [],
@@ -248,11 +244,7 @@
    "kind": "topic",
    "pages": [
     "guides/ada-website-compliance",
-    "guides/lynx-qa",
-    "guides/european-accessibility-act",
-    "services/accessibility",
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
+    "guides/lynx-qa"
    ],
    "subs": {
     "what the law expects": [
@@ -278,63 +270,32 @@
     ],
     "keeping it from sliding": [
      "guides/ada-website-compliance"
-    ],
-    "remediation (service)": [
-     "services/accessibility"
     ]
    },
-   "see": [],
-   "main": [
-    "guides/ada-website-compliance",
-    "services/accessibility"
-   ]
-  },
-  "accessibility overlays": {
-   "kind": "topic",
-   "pages": [
-    "guides/ada-website-compliance",
-    "guides/european-accessibility-act",
-    "services/accessibility"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "accessibility statements": {
-   "kind": "topic",
-   "pages": [
-    "guides/european-accessibility-act",
-    "services/accessibility"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/european-accessibility-act"
-   ]
-  },
-  "ADA (Americans with Disabilities Act)": {
-   "kind": "topic",
-   "pages": [
-    "guides/seo-101",
-    "guides/ada-website-compliance",
-    "services/accessibility",
-    "guides/european-accessibility-act"
-   ],
-   "subs": {},
    "see": [],
    "main": [
     "guides/ada-website-compliance"
    ]
   },
-  "Adjutant": {
+  "accessibility overlays": {
    "kind": "topic",
    "pages": [
-    "stack"
+    "guides/ada-website-compliance"
+   ],
+   "subs": {},
+   "see": [],
+   "main": []
+  },
+  "ADA (Americans with Disabilities Act)": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-101",
+    "guides/ada-website-compliance"
    ],
    "subs": {},
    "see": [],
    "main": [
-    "stack"
+    "guides/ada-website-compliance"
    ]
   },
   "Adobe Podcast Enhance Speech": {
@@ -358,13 +319,11 @@
   "AEO (answer engine optimization)": {
    "kind": "topic",
    "pages": [
-    "services/ai-search",
-    "services/ai-visibility"
+    "services/ai-search"
    ],
    "subs": {},
    "see": [
-    "AI search",
-    "AI visibility"
+    "AI search"
    ],
    "main": []
   },
@@ -405,19 +364,6 @@
     "services/agency-partner"
    ]
   },
-  "AGENTS.md": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [
-    "CLAUDE.md"
-   ],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
   "Ahrefs": {
    "kind": "topic",
    "pages": [
@@ -427,36 +373,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "AI agents": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
-   ],
-   "subs": {
-    "how they identify themselves": [
-     "guides/ai-agents-on-your-website"
-    ],
-    "firewall rules": [
-     "guides/ai-agents-on-your-website",
-     "services/agent-readiness"
-    ],
-    "forms and labels": [
-     "guides/ai-agents-on-your-website",
-     "services/agent-readiness"
-    ],
-    "measuring visits": [
-     "guides/ai-agents-on-your-website"
-    ],
-    "testing": [
-     "services/agent-readiness"
-    ]
-   },
-   "see": [],
-   "main": [
-    "guides/ai-agents-on-your-website"
-   ]
   },
   "AI agents and automation": {
    "kind": "topic",
@@ -506,17 +422,6 @@
    "see": [],
    "main": []
   },
-  "AI answers, common errors": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-answers-review-searches"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-answers-review-searches"
-   ]
-  },
   "AI answers, correcting": {
    "kind": "topic",
    "pages": [
@@ -549,8 +454,7 @@
    "kind": "topic",
    "pages": [
     "guides",
-    "guides/ai-assistants",
-    "guides/vet-an-influencer"
+    "guides/ai-assistants"
    ],
    "subs": {
     "training data": [
@@ -581,8 +485,7 @@
    "kind": "topic",
    "pages": [
     "guides/ai-coding-assistants",
-    "guides/seo-superpower",
-    "guides/ai-agents-one-repository"
+    "guides/seo-superpower"
    ],
    "subs": {
     "written specs": [
@@ -611,9 +514,6 @@
     ],
     "accountability": [
      "guides/ai-coding-assistants"
-    ],
-    "several agents in one repository": [
-     "guides/ai-agents-one-repository"
     ]
    },
    "see": [
@@ -650,27 +550,13 @@
     "services/data-cleanup"
    ]
   },
-  "AI Overviews": {
-   "kind": "topic",
-   "pages": [],
-   "subs": {
-    "share of commercial searches": [
-     "services/ai-visibility",
-     "guides/ai-answers-review-searches"
-    ]
-   },
-   "see": [],
-   "main": []
-  },
   "AI search": {
    "kind": "topic",
    "pages": [
     "home",
     "services",
     "services/advisory",
-    "services/ai-search",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "services/ai-search"
    ],
    "subs": {
     "SEO, AEO, and GEO": [
@@ -711,9 +597,7 @@
     "guides",
     "guides/measure-ai-search",
     "services/ai-search",
-    "services/analytics",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "services/analytics"
    ],
    "subs": {
     "citations, mentions, referrals, and leads": [
@@ -738,28 +622,6 @@
    "see": [],
    "main": [
     "guides/measure-ai-search"
-   ]
-  },
-  "AI use policy": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-use-policy",
-    "services/ai-policy"
-   ],
-   "subs": {
-    "data that never goes in": [
-     "guides/ai-use-policy"
-    ],
-    "AI note-takers and recordings": [
-     "guides/ai-use-policy"
-    ],
-    "policy and training (service)": [
-     "services/ai-policy"
-    ]
-   },
-   "see": [],
-   "main": [
-    "guides/ai-use-policy"
    ]
   },
   "AI vendors, vetting": {
@@ -787,34 +649,6 @@
    "see": [],
    "main": [
     "guides/ai-vendor-pitch"
-   ]
-  },
-  "AI visibility": {
-   "kind": "topic",
-   "pages": [
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
-   ],
-   "subs": {
-    "audit, fixed price": [
-     "services/ai-visibility"
-    ],
-    "Claim Sprint": [
-     "services/ai-visibility"
-    ],
-    "monthly measurement": [
-     "services/ai-visibility"
-    ],
-    "review searches": [
-     "guides/ai-answers-review-searches"
-    ],
-    "ten-minute self-check": [
-     "guides/ai-answers-review-searches"
-    ]
-   },
-   "see": [],
-   "main": [
-    "services/ai-visibility"
    ]
   },
   "AI washing": {
@@ -1040,8 +874,7 @@
   "ArtsWire": {
    "kind": "topic",
    "pages": [
-    "about",
-    "stack"
+    "about"
    ],
    "subs": {},
    "see": [],
@@ -1102,18 +935,6 @@
    "see": [],
    "main": []
   },
-  "B2B catalog SEO": {
-   "kind": "topic",
-   "pages": [
-    "services/b2b-catalog-seo",
-    "guides/b2b-catalog-seo"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/b2b-catalog-seo"
-   ]
-  },
   "B2B content operations": {
    "kind": "topic",
    "pages": [
@@ -1123,35 +944,12 @@
    "see": [],
    "main": []
   },
-  "back-of-the-book index": {
-   "kind": "topic",
-   "pages": [
-    "services/site-index-and-glossary"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "services/site-index-and-glossary"
-   ]
-  },
   "backups": {
    "kind": "topic",
    "pages": [
     "services/wordpress-care",
     "services/ai-automation",
-    "guides/website-handover",
-    "guides/restore-drills"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/restore-drills"
-   ]
-  },
-  "Baird, Francois": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
+    "guides/website-handover"
    ],
    "subs": {},
    "see": [],
@@ -1161,15 +959,6 @@
    "kind": "topic",
    "pages": [
     "guides/email-blocklist-recovery"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Barrett, Paul M.": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -1276,15 +1065,6 @@
    "see": [],
    "main": []
   },
-  "black hat SEO": {
-   "kind": "topic",
-   "pages": [
-    "guides/black-hat-in-modern-dress"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Blackbox (Chris’ command-line assistant)": {
    "kind": "topic",
    "pages": [
@@ -1362,8 +1142,7 @@
   "blogger outreach": {
    "kind": "topic",
    "pages": [
-    "guides/hype-or-shift",
-    "testimonials"
+    "guides/hype-or-shift"
    ],
    "subs": {},
    "see": [],
@@ -1425,24 +1204,6 @@
     "guides/seo-build-checks"
    ]
   },
-  "Burke, Shonali": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Butler, Phil": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "California DROP (Delete Request and Opt-out Platform)": {
    "kind": "topic",
    "pages": [
@@ -1501,18 +1262,6 @@
     "guides/canonical-tags"
    ]
   },
-  "CAPTCHA": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
-   ],
-   "subs": {},
-   "see": [
-    "AI agents"
-   ],
-   "main": []
-  },
   "careers pages": {
    "kind": "topic",
    "pages": [
@@ -1552,27 +1301,6 @@
    "see": [],
    "main": []
   },
-  "certificate transparency": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security",
-    "services/domain-portfolio"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "changelog": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
   "ChatGPT": {
    "kind": "topic",
    "pages": [
@@ -1582,9 +1310,7 @@
     "services/crawler-visibility",
     "services/ai-search",
     "guides/ai-assistants",
-    "guides/podcast-for-your-brand",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "guides/podcast-for-your-brand"
    ],
    "subs": {},
    "see": [],
@@ -1610,17 +1336,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "chrisabraham.net (weblog)": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
   },
   "Chrome": {
    "kind": "topic",
@@ -1662,28 +1377,6 @@
    "see": [],
    "main": []
   },
-  "CISA #StopRansomware Guide": {
-   "kind": "topic",
-   "pages": [
-    "guides/restore-drills"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/restore-drills"
-   ]
-  },
-  "CISA Emergency Directive 19-01": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/domain-account-security"
-   ]
-  },
   "citation gap analysis": {
    "kind": "topic",
    "pages": [
@@ -1713,30 +1406,11 @@
     "guides/citation-gap-analysis"
    ]
   },
-  "citation provenance": {
-   "kind": "topic",
-   "pages": [
-    "guides/citation-provenance"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "citation share": {
    "kind": "topic",
    "pages": [
     "guides/measure-ai-search",
     "guides/citation-gap-analysis"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "claim layer": {
-   "kind": "topic",
-   "pages": [
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -1768,14 +1442,9 @@
     "case-studies/netlify-migration",
     "case-studies/built-with-claude-code",
     "stack",
-    "colophon",
-    "guides/ai-agents-one-repository"
+    "colophon"
    ],
-   "subs": {
-    "alongside other agents": [
-     "guides/ai-agents-one-repository"
-    ]
-   },
+   "subs": {},
    "see": [
     "AI coding assistants"
    ],
@@ -1804,14 +1473,9 @@
   "CLAUDE.md": {
    "kind": "topic",
    "pages": [
-    "guides/ai-coding-assistants",
-    "guides/ai-agents-one-repository"
+    "guides/ai-coding-assistants"
    ],
-   "subs": {
-    "and AGENTS.md": [
-     "guides/ai-agents-one-repository"
-    ]
-   },
+   "subs": {},
    "see": [],
    "main": []
   },
@@ -1825,17 +1489,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "client reviews (Upwork)": {
-   "kind": "topic",
-   "pages": [
-    "about"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "about"
-   ]
   },
   "client-side rendering": {
    "kind": "topic",
@@ -1855,10 +1508,7 @@
     "services/site-speed",
     "guides/cloudflare-seo",
     "guides/wordpress-behind-cloudflare",
-    "case-studies/indexing-recovery",
-    "guides/freeze-old-website",
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
+    "case-studies/indexing-recovery"
    ],
    "subs": {
     "Cache Rules and Tiered Cache": [
@@ -1940,17 +1590,6 @@
     "guides/cloudflare-seo"
    ]
   },
-  "Cloudflare Registrar": {
-   "kind": "topic",
-   "pages": [
-    "guides/github-pages-website"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/github-pages-website"
-   ]
-  },
   "Cloudflare Tunnel": {
    "kind": "topic",
    "pages": [
@@ -1987,14 +1626,9 @@
     "case-studies/built-with-claude-code",
     "guides/ai-coding-assistants",
     "guides/podcast-website",
-    "guides/core-web-vitals-mcp",
-    "guides/ai-agents-one-repository"
+    "guides/core-web-vitals-mcp"
    ],
-   "subs": {
-    "sharing a repository": [
-     "guides/ai-agents-one-repository"
-    ]
-   },
+   "subs": {},
    "see": [],
    "main": []
   },
@@ -2032,17 +1666,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "confabulation": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-use-policy"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-use-policy"
-   ]
   },
   "consent mode": {
    "kind": "topic",
@@ -2100,18 +1723,6 @@
    "see": [],
    "main": [
     "case-studies/consent-blocking"
-   ]
-  },
-  "Consumer Reviews and Testimonials Rule (16 CFR Part 465)": {
-   "kind": "topic",
-   "pages": [
-    "guides/vet-an-influencer",
-    "guides/ai-use-policy"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/vet-an-influencer"
    ]
   },
   "content briefs": {
@@ -2279,8 +1890,7 @@
     "services/large-sites",
     "guides/crawled-not-indexed",
     "case-studies/ecommerce-rendering",
-    "case-studies/consent-blocking",
-    "guides/two-problems-at-once"
+    "case-studies/consent-blocking"
    ],
    "subs": {
     "versus Discovered, currently not indexed": [
@@ -2323,15 +1933,6 @@
    ],
    "subs": {},
    "see": [],
-   "main": []
-  },
-  "creators, vetting": {
-   "kind": "topic",
-   "pages": [],
-   "subs": {},
-   "see": [
-    "influencer vetting"
-   ],
    "main": []
   },
   "CRM cleanup": {
@@ -2449,15 +2050,6 @@
    "main": [
     "services/data-cleanup"
    ]
-  },
-  "de Brun, Steve": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
   },
   "deliverability": {
    "kind": "topic",
@@ -2637,10 +2229,7 @@
     "services/rescue",
     "services/site-speed",
     "services/email-and-dns",
-    "guides/website-handover",
-    "guides/freeze-old-website",
-    "guides/domain-account-security",
-    "services/domain-portfolio"
+    "guides/website-handover"
    ],
    "subs": {
     "inventory before changes": [
@@ -2668,58 +2257,6 @@
    "main": [
     "services/email-and-dns"
    ]
-  },
-  "DNSSEC": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/domain-account-security"
-   ]
-  },
-  "domain names, cost of a website": {
-   "kind": "topic",
-   "pages": [
-    "guides/github-pages-website"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "domain portfolio audit": {
-   "kind": "topic",
-   "pages": [
-    "services/domain-portfolio"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "services/domain-portfolio"
-   ]
-  },
-  "domain register (inventory)": {
-   "kind": "topic",
-   "pages": [
-    "services/domain-portfolio",
-    "guides/domain-account-security"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "services/domain-portfolio"
-   ]
-  },
-  "domain transfers between registrars": {
-   "kind": "topic",
-   "pages": [
-    "services/domain-portfolio"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
   },
   "DoNotPay": {
    "kind": "topic",
@@ -2753,8 +2290,7 @@
    "pages": [
     "services/technical-lead",
     "services/rescue",
-    "stack",
-    "guides/freeze-old-website"
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -2770,21 +2306,11 @@
    "see": [],
    "main": []
   },
-  "Easton, Kaylyn": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "ecommerce SEO": {
    "kind": "topic",
    "pages": [
     "services",
-    "services/ecommerce",
-    "guides/two-problems-at-once"
+    "services/ecommerce"
    ],
    "subs": {
     "product content in the HTML": [
@@ -2824,8 +2350,7 @@
    "kind": "topic",
    "pages": [
     "about",
-    "stack",
-    "guides/vet-an-influencer"
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -2934,25 +2459,12 @@
    "see": [],
    "main": []
   },
-  "EN 301 549": {
-   "kind": "topic",
-   "pages": [
-    "guides/european-accessibility-act"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/european-accessibility-act"
-   ]
-  },
   "entities": {
    "kind": "topic",
    "pages": [
     "services/multi-location",
     "services/ai-search",
-    "guides/structured-data",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "guides/structured-data"
    ],
    "subs": {
     "parent organization and branches": [
@@ -2963,39 +2475,6 @@
     "structured data"
    ],
    "main": []
-  },
-  "EPP status codes": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/domain-account-security"
-   ]
-  },
-  "European Accessibility Act": {
-   "kind": "topic",
-   "pages": [
-    "guides/european-accessibility-act",
-    "services/accessibility"
-   ],
-   "subs": {
-    "microenterprise exemption": [
-     "guides/european-accessibility-act"
-    ],
-    "transitional periods": [
-     "guides/european-accessibility-act"
-    ],
-    "who it covers outside the EU": [
-     "guides/european-accessibility-act"
-    ]
-   },
-   "see": [],
-   "main": [
-    "guides/european-accessibility-act"
-   ]
   },
   "eWorld": {
    "kind": "topic",
@@ -3126,17 +2605,6 @@
     "guides/fact-check-ai-seo"
    ]
   },
-  "fake followers and views": {
-   "kind": "topic",
-   "pages": [
-    "guides/vet-an-influencer"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/vet-an-influencer"
-   ]
-  },
   "family offices": {
    "kind": "topic",
    "pages": [
@@ -3165,28 +2633,6 @@
    "see": [],
    "main": []
   },
-  "ffmpeg": {
-   "kind": "tool",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {
-    "preparing audio for transcription": [
-     "guides/private-transcription-linux"
-    ]
-   },
-   "see": [],
-   "main": []
-  },
-  "Fitzgerald, Colleen": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Fiverr": {
    "kind": "topic",
    "pages": [
@@ -3204,19 +2650,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "force push": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [
-    "Git"
-   ],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
   },
   "fractional SEO and AI search lead": {
    "kind": "topic",
@@ -3268,34 +2701,19 @@
    "see": [],
    "main": []
   },
-  "Fresh Air Fund, The": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "FTC (Federal Trade Commission)": {
    "kind": "topic",
    "pages": [
     "guides/ai-vendor-pitch"
    ],
-   "subs": {
-    "fake reviews and influence rule": [
-     "guides/vet-an-influencer"
-    ]
-   },
+   "subs": {},
    "see": [],
    "main": []
   },
   "FTC Endorsement Guides": {
    "kind": "topic",
    "pages": [
-    "guides/citation-gap-analysis",
-    "guides/vet-an-influencer",
-    "guides/glossary"
+    "guides/citation-gap-analysis"
    ],
    "subs": {},
    "see": [],
@@ -3315,8 +2733,7 @@
    "pages": [
     "services",
     "services/analytics",
-    "services/technical-seo",
-    "stack"
+    "services/technical-seo"
    ],
    "subs": {
     "ghost and spam traffic": [
@@ -3355,38 +2772,11 @@
     "services/analytics"
    ]
   },
-  "Garfield, Bob": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Gartner hype cycle": {
    "kind": "topic",
    "pages": [
     "guides/hype-or-shift",
     "guides/glossary"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Gaudet, Glenn": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Gelles, David": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -3400,9 +2790,7 @@
     "services/advisory",
     "services/crawler-visibility",
     "services/ai-search",
-    "guides/ai-assistants",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "guides/ai-assistants"
    ],
    "subs": {},
    "see": [],
@@ -3496,20 +2884,9 @@
     "services/seo-engineering",
     "guides/ai-coding-assistants",
     "guides/seo-superpower",
-    "guides/glossary",
-    "guides/ai-agents-one-repository"
+    "guides/glossary"
    ],
-   "subs": {
-    "force push and --force-with-lease": [
-     "guides/ai-agents-one-repository"
-    ],
-    "worktrees": [
-     "guides/ai-agents-one-repository"
-    ],
-    "executable bit": [
-     "guides/ai-agents-one-repository"
-    ]
-   },
+   "subs": {},
    "see": [],
    "main": []
   },
@@ -3520,8 +2897,7 @@
     "guides/repository-access",
     "guides/seo-superpower",
     "case-studies/sanity-vercel",
-    "case-studies/programmatic-indexing",
-    "stack"
+    "case-studies/programmatic-indexing"
    ],
    "subs": {
     "organizations": [
@@ -3576,9 +2952,7 @@
     "services/migrations",
     "services/podcast-sites",
     "colophon",
-    "privacy",
-    "guides/freeze-old-website",
-    "guides/github-pages-website"
+    "privacy"
    ],
    "subs": {
     "custom domains and HTTPS": [
@@ -3586,9 +2960,7 @@
     ]
    },
    "see": [],
-   "main": [
-    "guides/github-pages-website"
-   ]
+   "main": []
   },
   "GitLab": {
    "kind": "topic",
@@ -3608,17 +2980,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "glossaries": {
-   "kind": "topic",
-   "pages": [
-    "services/site-index-and-glossary"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "services/site-index-and-glossary"
-   ]
   },
   "glossary": {
    "kind": "topic",
@@ -3657,9 +3018,7 @@
     "services/ai-search",
     "guides/ai-assistants",
     "guides/search-in-2026",
-    "guides/self-ranking-lists",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "guides/self-ranking-lists"
    ],
    "subs": {},
    "see": [],
@@ -3675,9 +3034,7 @@
     "services/multi-location",
     "case-studies/multi-location-entity",
     "case-studies/seasonal-retailer",
-    "case-studies/gbp-reinstatement",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "case-studies/gbp-reinstatement"
    ],
    "subs": {
     "suspensions": [
@@ -3704,10 +3061,6 @@
     ],
     "how long reinstatement takes": [
      "services/google-business-profile"
-    ],
-    "as a source for AI answers": [
-     "services/ai-visibility",
-     "guides/ai-answers-review-searches"
     ]
    },
    "see": [
@@ -3765,8 +3118,7 @@
     "guides/measure-ai-search",
     "guides/traffic-drop",
     "guides/year-end-seo-check",
-    "guides/canonical-tags",
-    "guides/two-problems-at-once"
+    "guides/canonical-tags"
    ],
    "subs": {
     "URL Inspection": [
@@ -3887,19 +3239,6 @@
    "see": [],
    "main": []
   },
-  "Google-Agent": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website"
-   ],
-   "subs": {},
-   "see": [
-    "AI agents"
-   ],
-   "main": [
-    "guides/ai-agents-on-your-website"
-   ]
-  },
   "Google-Extended": {
    "kind": "topic",
    "pages": [
@@ -3945,24 +3284,6 @@
    "see": [],
    "main": []
   },
-  "Grinda, Fabrice": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Grinda, Olivier": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Grok": {
    "kind": "topic",
    "pages": [
@@ -3974,15 +3295,6 @@
     "colophon",
     "services/ai-automation",
     "case-studies/built-with-claude-code"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Grotstein, Josh": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -4030,44 +3342,6 @@
    "kind": "topic",
    "pages": [
     "case-studies/consent-blocking"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Habitat for Humanity International": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Halferty Hardy, Kerry": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "handoff files": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-one-repository"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-agents-one-repository"
-   ]
-  },
-  "Harcus, Josh": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -4126,8 +3400,7 @@
     "case-studies",
     "case-studies/four-site-speed-pass",
     "case-studies/built-with-claude-code",
-    "about",
-    "guides/freeze-old-website"
+    "about"
    ],
    "subs": {},
    "see": [
@@ -4191,15 +3464,6 @@
     "guides/hiring-developers"
    ]
   },
-  "Hlinko, John": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "holiday hours": {
    "kind": "topic",
    "pages": [
@@ -4254,30 +3518,10 @@
    "see": [],
    "main": []
   },
-  "HubSpot": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
-  },
   "Hudson racing single": {
    "kind": "topic",
    "pages": [
     "colophon"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Hugging Face": {
-   "kind": "organization",
-   "pages": [
-    "guides/private-transcription-linux"
    ],
    "subs": {},
    "see": [],
@@ -4314,24 +3558,6 @@
    "main": [
     "guides/hydration-errors"
    ]
-  },
-  "hyperfiction": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "hypernarrative": {
-   "kind": "topic",
-   "pages": [],
-   "subs": {},
-   "see": [
-    "hyperfiction"
-   ],
-   "main": []
   },
   "Hyvä (Magento theme)": {
    "kind": "topic",
@@ -4500,51 +3726,6 @@
    "see": [],
    "main": []
   },
-  "influencer marketing": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "influencer vetting": {
-   "kind": "topic",
-   "pages": [
-    "guides/vet-an-influencer"
-   ],
-   "subs": {
-    "reading the archive": [
-     "guides/vet-an-influencer"
-    ],
-    "reading the audience": [
-     "guides/vet-an-influencer"
-    ],
-    "past sponsorships and disclosures": [
-     "guides/vet-an-influencer"
-    ],
-    "earlier claims": [
-     "guides/vet-an-influencer"
-    ],
-    "identity checks": [
-     "guides/vet-an-influencer"
-    ],
-    "search and AI answers": [
-     "guides/vet-an-influencer"
-    ],
-    "findings memo": [
-     "guides/vet-an-influencer"
-    ],
-    "contract terms": [
-     "guides/vet-an-influencer"
-    ]
-   },
-   "see": [],
-   "main": [
-    "guides/vet-an-influencer"
-   ]
-  },
   "Institute for the Future": {
    "kind": "topic",
    "pages": [
@@ -4558,15 +3739,6 @@
    "kind": "topic",
    "pages": [
     "guides/hype-or-shift"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "internal linking": {
-   "kind": "topic",
-   "pages": [
-    "services/site-index-and-glossary"
    ],
    "subs": {},
    "see": [],
@@ -4607,15 +3779,6 @@
     "services/internal-linking"
    ]
   },
-  "International Medical Corps": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "international SEO": {
    "kind": "topic",
    "pages": [
@@ -4633,17 +3796,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "Item 8 (Coelaboration)": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
   },
   "JavaScript SEO": {
    "kind": "topic",
@@ -4741,46 +3893,10 @@
    "see": [],
    "main": []
   },
-  "Kanter, Beth": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Kerpen, Carrie": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Khan, Lina": {
    "kind": "person",
    "pages": [
     "guides/ai-vendor-pitch"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Kimberly-Clark": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Krayev, Sergey": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -4808,9 +3924,7 @@
   "lapsed domains": {
    "kind": "topic",
    "pages": [
-    "guides/year-end-seo-check",
-    "guides/domain-account-security",
-    "services/domain-portfolio"
+    "guides/year-end-seo-check"
    ],
    "subs": {},
    "see": [],
@@ -4856,29 +3970,11 @@
     "case-studies/programmatic-indexing"
    ]
   },
-  "Lasica, JD": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "launch checklists": {
    "kind": "topic",
    "pages": [
     "guides/lynx-qa",
     "guides/migration-checklist"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Leventhal, Shari F.": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -4897,15 +3993,6 @@
      "guides/ada-website-compliance"
     ]
    },
-   "see": [],
-   "main": []
-  },
-  "Linden, Tate": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
    "see": [],
    "main": []
   },
@@ -4953,9 +4040,7 @@
     "services/ai-search",
     "services/podcast-sites",
     "guides/ai-assistants",
-    "guides/glossary",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "guides/glossary"
    ],
    "subs": {},
    "see": [],
@@ -5012,8 +4097,7 @@
    "kind": "topic",
    "pages": [
     "guides/lynx-qa",
-    "guides/ada-website-compliance",
-    "guides/ai-agents-on-your-website"
+    "guides/ada-website-compliance"
    ],
    "subs": {
     "installing": [
@@ -5088,15 +4172,6 @@
    "see": [],
    "main": []
   },
-  "Malloy, Judy": {
-   "kind": "person",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "manipulating AI answers": {
    "kind": "topic",
    "pages": [
@@ -5121,25 +4196,6 @@
    "kind": "topic",
    "pages": [
     "services/ai-search"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Martucci, Rodrigo": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "material connection": {
-   "kind": "topic",
-   "pages": [
-    "guides/vet-an-influencer",
-    "guides/glossary"
    ],
    "subs": {},
    "see": [],
@@ -5170,24 +4226,6 @@
    "pages": [
     "guides/hype-or-shift",
     "about"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Merchant Center": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Meta Network, The": {
-   "kind": "topic",
-   "pages": [
-    "stack"
    ],
    "subs": {},
    "see": [],
@@ -5308,37 +4346,10 @@
     "guides/migration-tools"
    ]
   },
-  "Milner, Rebecca": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Miriam’s Kitchen": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "model backends, comparing": {
    "kind": "topic",
    "pages": [
     "case-studies/built-with-claude-code"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "Morgenthau, Jenny": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -5352,8 +4363,7 @@
     "services/migrations",
     "guides/hype-or-shift",
     "case-studies/built-with-claude-code",
-    "stack",
-    "guides/freeze-old-website"
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -5402,30 +4412,6 @@
     "case-studies/multi-location-entity"
    ]
   },
-  "multiple causes": {
-   "kind": "topic",
-   "main": [
-    "guides/two-problems-at-once"
-   ],
-   "pages": [
-    "guides/two-problems-at-once"
-   ],
-   "see": [],
-   "subs": {
-    "signs of": [
-     "guides/two-problems-at-once"
-    ],
-    "separate tracks": [
-     "guides/two-problems-at-once"
-    ],
-    "when to join tracks": [
-     "guides/two-problems-at-once"
-    ],
-    "sequencing fixes": [
-     "guides/two-problems-at-once"
-    ]
-   }
-  },
   "MXToolbox": {
    "kind": "topic",
    "pages": [
@@ -5436,23 +4422,11 @@
    "see": [],
    "main": []
   },
-  "My Name is Scibe": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
-  },
   "NAP (name, address, phone)": {
    "kind": "topic",
    "pages": [
     "services/multi-location",
-    "services/google-business-profile",
-    "services/ai-visibility"
+    "services/google-business-profile"
    ],
    "subs": {},
    "see": [],
@@ -5486,8 +4460,7 @@
    "kind": "topic",
    "pages": [
     "services/reputation",
-    "about",
-    "testimonials"
+    "about"
    ],
    "subs": {},
    "see": [],
@@ -5560,30 +4533,7 @@
   "NIST AI Risk Management Framework": {
    "kind": "topic",
    "pages": [
-    "guides/ai-vendor-pitch",
-    "guides/ai-use-policy",
-    "services/ai-policy"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "NIST Generative AI Profile (AI 600-1)": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-use-policy",
-    "services/ai-policy"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-use-policy"
-   ]
-  },
-  "NIST SP 800-34 (contingency planning)": {
-   "kind": "topic",
-   "pages": [
-    "guides/restore-drills"
+    "guides/ai-vendor-pitch"
    ],
    "subs": {},
    "see": [],
@@ -5692,26 +4642,6 @@
    "see": [],
    "main": []
   },
-  "Objective Daily News": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
-  },
-  "OLX": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "on-page SEO": {
    "kind": "topic",
    "pages": [
@@ -5812,17 +4742,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "Oversoul": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
   },
   "OWASP excessive agency": {
    "kind": "topic",
@@ -5940,9 +4859,7 @@
     "services/advisory",
     "services/crawler-visibility",
     "services/ai-search",
-    "guides/ai-assistants",
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
+    "guides/ai-assistants"
    ],
    "subs": {},
    "see": [],
@@ -6257,26 +5174,6 @@
     "privacy"
    ]
   },
-  "pro bono work": {
-   "kind": "topic",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "testimonials"
-   ]
-  },
-  "Products": {
-   "kind": "topic",
-   "pages": [
-    "products"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "programmatic SEO": {
    "kind": "topic",
    "pages": [
@@ -6347,24 +5244,10 @@
     "services/rescue"
    ]
   },
-  "projects in public": {
-   "kind": "topic",
-   "pages": [
-    "stack",
-    "about"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "stack"
-   ]
-  },
   "prompt injection": {
    "kind": "topic",
    "pages": [
-    "services/ai-automation",
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
+    "services/ai-automation"
    ],
    "subs": {},
    "see": [],
@@ -6410,17 +5293,6 @@
    ],
    "subs": {},
    "see": [],
-   "main": []
-  },
-  "pyannote.audio": {
-   "kind": "tool",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {},
-   "see": [
-    "transcription"
-   ],
    "main": []
   },
   "Python": {
@@ -6545,8 +5417,7 @@
   "redirect maps rebuilt from the Wayback Machine": {
    "kind": "topic",
    "pages": [
-    "stack",
-    "guides/freeze-old-website"
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -6560,30 +5431,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "registrar lock": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security",
-    "services/domain-portfolio"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/domain-account-security"
-   ]
-  },
-  "Registry Lock": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security",
-    "services/domain-portfolio"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/domain-account-security"
-   ]
   },
   "rel prev and next": {
    "kind": "topic",
@@ -6626,14 +5473,9 @@
   "repositories": {
    "kind": "topic",
    "pages": [
-    "guides/glossary",
-    "guides/ai-agents-one-repository"
+    "guides/glossary"
    ],
-   "subs": {
-    "several AI agents in one": [
-     "guides/ai-agents-one-repository"
-    ]
-   },
+   "subs": {},
    "see": [],
    "main": []
   },
@@ -6682,9 +5524,7 @@
     "services",
     "services/advisory",
     "services/reputation",
-    "guides/personal-information-removal",
-    "guides/vet-an-influencer",
-    "testimonials"
+    "guides/personal-information-removal"
    ],
    "subs": {
     "auditing the record": [
@@ -6726,17 +5566,6 @@
    "see": [],
    "main": []
   },
-  "restore drills": {
-   "kind": "topic",
-   "pages": [
-    "guides/restore-drills"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/restore-drills"
-   ]
-  },
   "Results about you (Google tool)": {
    "kind": "topic",
    "pages": [
@@ -6760,26 +5589,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "reverse image search": {
-   "kind": "topic",
-   "pages": [
-    "guides/vet-an-influencer"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "review searches": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-answers-review-searches"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/ai-answers-review-searches"
-   ]
   },
   "Rheingold, Howard": {
    "kind": "person",
@@ -6817,23 +5626,13 @@
    "see": [],
    "main": []
   },
-  "Robbins, Stever": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "robots.txt": {
    "kind": "topic",
    "pages": [
     "guides/ai-assistants",
     "guides/nextjs-seo",
     "guides/seo-build-checks",
-    "guides/robots-txt",
-    "guides/ai-agents-on-your-website"
+    "guides/robots-txt"
    ],
    "subs": {
     "location and scope": [
@@ -6866,15 +5665,6 @@
     "guides/robots-txt"
    ]
   },
-  "Roccanti, Jenn": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "roundups and best-of lists": {
    "kind": "topic",
    "pages": [
@@ -6898,8 +5688,7 @@
    "kind": "topic",
    "pages": [
     "services/podcast-sites",
-    "guides/indexnow-ai-search",
-    "guides/freeze-old-website"
+    "guides/indexnow-ai-search"
    ],
    "subs": {
     "full-content Guides feed": [
@@ -6949,8 +5738,7 @@
     "guides/javascript-seo",
     "guides/migration-recovery",
     "guides/migration-tools",
-    "guides/core-web-vitals-mcp",
-    "guides/two-problems-at-once"
+    "guides/core-web-vitals-mcp"
    ],
    "subs": {
     "list mode and redirect testing": [
@@ -6971,16 +5759,6 @@
    "see": [
     "migration tools"
    ],
-   "main": []
-  },
-  "Search Engine Land": {
-   "kind": "topic",
-   "pages": [
-    "services/ai-visibility",
-    "guides/ai-answers-review-searches"
-   ],
-   "subs": {},
-   "see": [],
    "main": []
   },
   "Search Status Dashboard": {
@@ -7059,24 +5837,6 @@
    "see": [],
    "main": []
   },
-  "segmentation": {
-   "kind": "topic",
-   "main": [
-    "guides/two-problems-at-once"
-   ],
-   "pages": [
-    "guides/two-problems-at-once"
-   ],
-   "see": [],
-   "subs": {
-    "by page group": [
-     "guides/two-problems-at-once"
-    ],
-    "branded and unbranded queries": [
-     "guides/two-problems-at-once"
-    ]
-   }
-  },
   "self-ranking \"best of\" lists": {
    "kind": "topic",
    "pages": [
@@ -7108,9 +5868,7 @@
    "kind": "topic",
    "pages": [
     "services/technical-seo",
-    "guides/migration-tools",
-    "guides/ai-answers-review-searches",
-    "services/ai-visibility"
+    "guides/migration-tools"
    ],
    "subs": {},
    "see": [],
@@ -7182,18 +5940,6 @@
    "see": [],
    "main": []
   },
-  "SEO developer tickets": {
-   "kind": "topic",
-   "pages": [
-    "guides/seo-developer-tickets"
-   ],
-   "see": [],
-   "subs": {},
-   "seealso": [],
-   "main": [
-    "guides/seo-developer-tickets"
-   ]
-  },
   "SEO engineering": {
    "kind": "topic",
    "pages": [
@@ -7232,15 +5978,6 @@
    "main": [
     "services/seo-engineering"
    ]
-  },
-  "SEO folklore": {
-   "kind": "topic",
-   "pages": [
-    "guides/stuck-in-the-folklore"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
   },
   "SEO plugins, switched off": {
    "kind": "topic",
@@ -7349,15 +6086,6 @@
    "see": [],
    "main": []
   },
-  "Sherman, David": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Shopify": {
    "kind": "topic",
    "pages": [
@@ -7381,17 +6109,6 @@
     "case-studies/shopify-migration"
    ]
   },
-  "site indexes": {
-   "kind": "topic",
-   "pages": [
-    "services/site-index-and-glossary"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "services/site-index-and-glossary"
-   ]
-  },
   "site migrations": {
    "kind": "topic",
    "pages": [
@@ -7401,8 +6118,7 @@
     "services/migrations",
     "guides/migration-checklist",
     "case-studies/netlify-migration",
-    "case-studies/shopify-migration",
-    "guides/freeze-old-website"
+    "case-studies/shopify-migration"
    ],
    "subs": {
     "kinds of migration": [
@@ -7565,21 +6281,17 @@
   "source vetting": {
    "kind": "topic",
    "pages": [
-    "stack",
-    "guides/vet-an-influencer"
+    "stack"
    ],
    "subs": {},
    "see": [],
-   "main": [
-    "guides/vet-an-influencer"
-   ]
+   "main": []
   },
   "spam backlinks": {
    "kind": "topic",
    "pages": [
     "services/technical-seo",
-    "case-studies/ecommerce-rendering",
-    "guides/two-problems-at-once"
+    "case-studies/ecommerce-rendering"
    ],
    "subs": {},
    "see": [],
@@ -7675,15 +6387,6 @@
    "see": [],
    "main": []
   },
-  "sponsorships, vetting creators": {
-   "kind": "topic",
-   "pages": [],
-   "subs": {},
-   "see": [
-    "influencer vetting"
-   ],
-   "main": []
-  },
   "Spotify for Creators": {
    "kind": "topic",
    "pages": [
@@ -7701,8 +6404,7 @@
     "services/ecommerce",
     "services/on-page-seo",
     "services/migrations",
-    "case-studies/shopify-migration",
-    "stack"
+    "case-studies/shopify-migration"
    ],
    "subs": {},
    "see": [],
@@ -7728,17 +6430,6 @@
    "see": [],
    "main": []
   },
-  "staff training on AI": {
-   "kind": "topic",
-   "pages": [
-    "services/ai-policy"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "services/ai-policy"
-   ]
-  },
   "staging sites": {
    "kind": "topic",
    "pages": [
@@ -7749,26 +6440,11 @@
    "see": [],
    "main": []
   },
-  "static archives of old websites": {
-   "kind": "topic",
-   "pages": [
-    "guides/freeze-old-website"
-   ],
-   "subs": {},
-   "see": [
-    "site migrations",
-    "Movable Type"
-   ],
-   "main": [
-    "guides/freeze-old-website"
-   ]
-  },
   "static websites": {
    "kind": "topic",
    "pages": [
     "services/wordpress-care",
-    "services/migrations",
-    "guides/restore-drills"
+    "services/migrations"
    ],
    "subs": {},
    "see": [],
@@ -7934,15 +6610,6 @@
    "see": [],
    "main": []
   },
-  "synthetic personas": {
-   "kind": "topic",
-   "pages": [
-    "guides/vet-an-influencer"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Tag Assistant": {
    "kind": "topic",
    "pages": [
@@ -8034,18 +6701,6 @@
     "guides/hype-or-shift"
    ]
   },
-  "testimonials": {
-   "kind": "topic",
-   "pages": [
-    "testimonials",
-    "about"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "testimonials"
-   ]
-  },
   "text browsers": {
    "kind": "topic",
    "pages": [
@@ -8061,8 +6716,7 @@
    "kind": "topic",
    "pages": [
     "guides/hype-or-shift",
-    "about",
-    "stack"
+    "about"
    ],
    "subs": {},
    "see": [],
@@ -8164,8 +6818,7 @@
     "home",
     "services/technical-seo",
     "guides/traffic-drop",
-    "guides/removed-location-pages",
-    "guides/two-problems-at-once"
+    "guides/removed-location-pages"
    ],
    "subs": {
     "confirming the drop is real": [
@@ -8191,9 +6844,6 @@
     ],
     "recovery timelines": [
      "guides/traffic-drop"
-    ],
-    "two causes at once": [
-     "guides/two-problems-at-once"
     ]
    },
    "see": [
@@ -8211,30 +6861,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "transcription": {
-   "kind": "topic",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {
-    "offline and private": [
-     "guides/private-transcription-linux"
-    ],
-    "speaker labels": [
-     "guides/private-transcription-linux"
-    ],
-    "searching transcripts": [
-     "guides/private-transcription-linux"
-    ]
-   },
-   "see": [
-    "Whisper",
-    "ffmpeg"
-   ],
-   "main": [
-    "guides/private-transcription-linux"
-   ]
   },
   "transcripts": {
    "kind": "topic",
@@ -8274,27 +6900,6 @@
    "see": [],
    "main": []
   },
-  "Tutt, Daniel": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
-  "two-factor authentication": {
-   "kind": "topic",
-   "pages": [
-    "guides/domain-account-security",
-    "services/domain-portfolio"
-   ],
-   "subs": {},
-   "see": [],
-   "main": [
-    "guides/domain-account-security"
-   ]
-  },
   "Uberti, Oliver": {
    "kind": "person",
    "pages": [
@@ -8331,15 +6936,6 @@
     "case-studies/umbraco-operations"
    ]
   },
-  "Universal Analytics": {
-   "kind": "topic",
-   "pages": [
-    "stack"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "University of East Anglia": {
    "kind": "topic",
    "pages": [
@@ -8358,11 +6954,7 @@
     "faq",
     "about"
    ],
-   "subs": {
-    "client reviews quoted": [
-     "about"
-    ]
-   },
+   "subs": {},
    "see": [],
    "main": []
   },
@@ -8458,9 +7050,7 @@
     "guides/migration-recovery",
     "guides/301-redirects",
     "case-studies/founder-record",
-    "stack",
-    "guides/vet-an-influencer",
-    "guides/freeze-old-website"
+    "stack"
    ],
    "subs": {},
    "see": [],
@@ -8470,27 +7060,11 @@
    "kind": "topic",
    "pages": [
     "guides/seo-101",
-    "guides/ada-website-compliance",
-    "guides/european-accessibility-act",
-    "services/accessibility"
+    "guides/ada-website-compliance"
    ],
    "subs": {},
    "see": [],
    "main": []
-  },
-  "Web Bot Auth": {
-   "kind": "topic",
-   "pages": [
-    "guides/ai-agents-on-your-website",
-    "services/agent-readiness"
-   ],
-   "subs": {},
-   "see": [
-    "AI agents"
-   ],
-   "main": [
-    "guides/ai-agents-on-your-website"
-   ]
   },
   "Web Developer extension": {
    "kind": "topic",
@@ -8522,8 +7096,7 @@
   "Webflow": {
    "kind": "topic",
    "pages": [
-    "services/technical-lead",
-    "stack"
+    "services/technical-lead"
    ],
    "subs": {},
    "see": [],
@@ -8574,26 +7147,6 @@
     "guides/website-handover"
    ]
   },
-  "Website incident timelines": {
-   "kind": "topic",
-   "pages": [
-    "guides/website-incident-timeline"
-   ],
-   "main": [
-    "guides/website-incident-timeline"
-   ],
-   "subs": {},
-   "see": []
-  },
-  "West, Ellie": {
-   "kind": "person",
-   "pages": [
-    "testimonials"
-   ],
-   "subs": {},
-   "see": [],
-   "main": []
-  },
   "Where the Animals Go": {
    "kind": "topic",
    "pages": [
@@ -8602,29 +7155,6 @@
    "subs": {},
    "see": [],
    "main": []
-  },
-  "Whisper": {
-   "kind": "tool",
-   "pages": [
-    "guides/private-transcription-linux"
-   ],
-   "subs": {
-    "choosing a model": [
-     "guides/private-transcription-linux"
-    ],
-    "speeding up on old hardware": [
-     "guides/private-transcription-linux"
-    ],
-    "troubleshooting": [
-     "guides/private-transcription-linux"
-    ]
-   },
-   "see": [
-    "transcription"
-   ],
-   "main": [
-    "guides/private-transcription-linux"
-   ]
   },
   "white label services": {
    "kind": "topic",
@@ -8902,11 +7432,22 @@
    "subs": {},
    "see": [],
    "main": []
+  },
+  "B2B catalog SEO": {
+   "kind": "topic",
+   "pages": [
+    "services/b2b-catalog-seo",
+    "guides/b2b-catalog-seo"
+   ],
+   "subs": {},
+   "see": [],
+   "main": [
+    "guides/b2b-catalog-seo"
+   ]
   }
  },
  "reviewed": [
   "home",
-  "products",
   "services",
   "services/technical-lead",
   "services/developers",
@@ -9019,31 +7560,7 @@
   "guides/b2b-catalog-seo",
   "guides/podcast-investment",
   "guides/google-business-profile-reports",
-  "guides/seo-developer-tickets",
-  "guides/vet-an-influencer",
-  "guides/two-problems-at-once",
-  "guides/freeze-old-website",
-  "guides/website-incident-timeline",
-  "services/ai-visibility",
-  "guides/ai-answers-review-searches",
-  "guides/european-accessibility-act",
-  "guides/domain-account-security",
-  "guides/restore-drills",
-  "guides/ai-use-policy",
-  "services/accessibility",
-  "services/ai-policy",
-  "services/domain-portfolio",
-  "services/site-index-and-glossary",
-  "guides/black-hat-in-modern-dress",
-  "guides/stuck-in-the-folklore",
-  "guides/citation-provenance",
-  "guides/ai-agents-on-your-website",
-  "services/agent-readiness",
-  "guides/ai-agents-one-repository",
-  "guides/private-transcription-linux",
   "services/indexing-audit",
-  "guides/programmatic-seo",
-  "guides/github-pages-website",
-  "testimonials"
+  "guides/programmatic-seo"
  ]
 }

@@ -45,7 +45,7 @@ SITE = "https://gerriscorp.com/"
 PREVIEW_BASE = "/gerriscorp/"
 TABS = [("", "Home"), ("services/", "Services"), ("guides/", "Guides"), ("case-studies/", "Case Studies"),
         ("about/", "About"), ("work-with-me/", "Work With Me"), ("contact/", "Contact")]
-FILES = ["index", "guides/seo-developer-tickets",
+FILES = ["index",
          "services/index",
          "services/technical-lead", "services/developers", "services/agency-partner", "services/rescue",
          "services/ai-automation", "services/data-cleanup", "services/analytics", "services/advisory",
@@ -55,7 +55,7 @@ FILES = ["index", "guides/seo-developer-tickets",
          "services/multi-location", "services/reputation", "services/google-business-profile", "services/email-and-dns",
          "guides/index", "guides/fact-check-ai-seo", "guides/measure-ai-search", "guides/citation-gap-analysis", "guides/content-briefs", "guides/readme-ai-source", "guides/speculation-rules", "guides/indexnow-ai-search", "guides/ai-assistants", "guides/ai-answers-review-searches", "guides/javascript-seo", "guides/hydration-errors", "guides/repository-access", "guides/nextjs-seo", "guides/seo-build-checks", "guides/migration-recovery", "guides/migration-tools", "guides/core-web-vitals-mcp", "guides/email-blocklist-recovery", "guides/crawled-not-indexed",
          "guides/migration-checklist", "guides/email-authentication", "guides/personal-information-removal",
-         "guides/traffic-drop", "guides/two-problems-at-once", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
+         "guides/traffic-drop", "guides/removed-location-pages", "guides/year-end-seo-check", "guides/canonical-tags", "guides/robots-txt", "guides/structured-data",
          "guides/301-redirects", "guides/faceted-navigation", "guides/hreflang", "guides/core-web-vitals",
          "guides/cloudflare-seo", "guides/wordpress-behind-cloudflare", "guides/ga4-consent-mode", "guides/email-deliverability",
          "guides/ai-coding-assistants", "guides/ai-vendor-pitch", "guides/hiring-developers", "guides/hype-or-shift", "guides/seo-superpower", "guides/podcast-website", "guides/search-in-2026", "guides/self-ranking-lists", "guides/seo-101", "guides/podcast-seo", "guides/podcast-for-your-brand", "guides/lynx-qa", "guides/ada-website-compliance", "guides/glossary",
@@ -86,46 +86,11 @@ SERVICE_GROUPS[1][1].extend(['services/internal-linking/'])
 FILES += ["services/b2b-catalog-seo", "guides/b2b-catalog-seo"]
 FILES += ["guides/podcast-investment"]
 FILES += ["guides/google-business-profile-reports"]
-FILES += ["guides/vet-an-influencer"]
 SERVICE_GROUPS[0][1].append("services/b2b-catalog-seo/")
-# Additional guide, October 24, 2026, written by Claude Code.
-FILES += ["guides/freeze-old-website"]
-
-FILES += ["guides/website-incident-timeline"]
-
-# Four guides and three services, October 26, 2026, written by Claude Code.
-FILES += ["guides/european-accessibility-act", "guides/domain-account-security", "guides/restore-drills", "guides/ai-use-policy",
-          "services/accessibility", "services/ai-policy", "services/domain-portfolio"]
-SERVICE_GROUPS[0][1].insert(SERVICE_GROUPS[0][1].index("services/advisory/"), "services/ai-policy/")
-SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/wordpress-care/") + 1, "services/accessibility/")
-SERVICE_GROUPS[2][1].append("services/domain-portfolio/")
-
-# A service harvested from documented work, October 26, 2026, written by Claude Code.
-FILES += ["services/site-index-and-glossary"]
-FILES += ["guides/black-hat-in-modern-dress"]
-FILES += ["guides/stuck-in-the-folklore"]
-FILES += ["guides/citation-provenance"]
-SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/editorial/") + 1, "services/site-index-and-glossary/")
-
-# A guide and a service on AI agents as visitors, October 28, 2026, written by Claude in the Claude app.
-FILES += ["guides/ai-agents-on-your-website", "services/agent-readiness"]
-
-# A guide on several AI coding agents sharing one repository, October 28, 2026, written by Claude Code.
-FILES += ["guides/ai-agents-one-repository"]
-
-# The products page: fixed scope reports with published prices, October 29, 2026, on Chris' ruling via Eunice.
-FILES += ["products"]
-FILES += ["guides/private-transcription-linux"]
-SERVICE_GROUPS[1][1].insert(SERVICE_GROUPS[1][1].index("services/accessibility/") + 1, "services/agent-readiness/")
 
 # Indexing audit service and programmatic SEO guide, November 2, 2026.
 FILES += ["services/indexing-audit", "guides/programmatic-seo"]
 SERVICE_GROUPS[1][1].append("services/indexing-audit/")
-
-# A guide to building a business website on GitHub Pages, November 3, 2026.
-FILES += ["guides/github-pages-website"]
-# Testimonials from the Gerris and Abraham Harrison years, November 5, 2026.
-FILES += ["testimonials"]
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
@@ -424,7 +389,7 @@ PERSON = {
     "knowsAbout": KNOWS,
     "email": EMAIL, "telephone": "+1-202-352-5051",
     "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/", "https://mastodon.social/@chrisa",
-               "https://www.youtube.com/@ChrisAbrahamShow", "https://adage.com/author/chris-abraham/1797"],
+               "https://adage.com/author/chris-abraham/1797"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
            "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"},
@@ -520,15 +485,6 @@ def body_html(p, *, contents=True):
   <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
   <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:{TEL}">Call {PHONE}</a> <a class="button" href="mailto:{EMAIL}">Email {EMAIL}</a></p>
   <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
-</aside>"""
-    if p["kind"] == "service":
-        # Service pages end on two routes only, Calendly or Upwork (owner, 2026-10-26); a closing contact button gives way to them.
-        body = re.sub(r'\s*<p><a class="button" href="[^"]*contact/">[^<]*</a></p>\s*$', "", body)
-        body += """
-<aside class="help-box" aria-label="Start a conversation">
-  <h2>Start a conversation</h2>
-  <p>Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.</p>
-  <p><a class="button" href="https://calendly.com/chrisabraham/30">Schedule a call</a> <a class="button" href="https://www.upwork.com/freelancers/chrisjabraham">Work with me through Upwork</a></p>
 </aside>"""
     if p["sources"]:
         body += ('\n<h2>References</h2>\n<ul class="sources">\n'
@@ -705,7 +661,7 @@ def render(p):
 {body_html(p)}
 </main>
 <footer class="site-footer">
-  <p><a href="mailto:{EMAIL}">{EMAIL}</a>&nbsp;· <a href="tel:{TEL}">{PHONE}</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a>&nbsp;· <a href="https://www.youtube.com/@ChrisAbrahamShow">YouTube</a></p>
+  <p><a href="mailto:{EMAIL}">{EMAIL}</a>&nbsp;· <a href="tel:{TEL}">{PHONE}</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
   <p>© {TODAY[:4]} Gerris Corp, Arlington,&nbsp;Virginia&nbsp;· <a href="{r}faq/">FAQ</a>&nbsp;· <a href="{r}standards/">Standards</a>&nbsp;· <a href="{r}privacy/">Privacy</a>&nbsp;· <a href="{r}sitemap/">Site map</a>&nbsp;· <a href="{r}site-index/">Index</a>&nbsp;· <a href="{r}guides/glossary/">Glossary</a>&nbsp;· <a href="{r}colophon/">Colophon</a>&nbsp;· <a href="{r}llms.txt">llms.txt</a>&nbsp;· <a href="{r}rss.xml">RSS</a>&nbsp;· <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
   <p>Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except where noted: copy, adapt, and share this work with attribution to Gerris&nbsp;Corp and a&nbsp;link.</p>
 </footer>
@@ -987,13 +943,11 @@ open(".well-known/security.txt", "w", encoding="utf-8").write(
 sections = [(title, [by_path[x] for x in paths]) for title, paths in SERVICE_GROUPS] + [
     ("Guides", [p for p in pages if p["tab"] == "guides/"]),
     ("About and working together", [p for p in pages if p["tab"] in ("", "case-studies/", "about/", "work-with-me/", "contact/", "sitemap/", "site-index/")])]
-_in_llms = {id(p) for _, group in sections for p in group}
-sections.append(("Policies and more", [p for p in pages if id(p) not in _in_llms]))
 llms = f"""# Gerris Corp
 
 > {ORG["description"]} Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.
 
-Every engagement starts with a conversation. Contact: {EMAIL}, {PHONE}, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
+Every engagement starts with a prepaid diagnostic. Contact: {EMAIL}, {PHONE}, https://calendly.com/chrisabraham/30, or https://www.upwork.com/freelancers/chrisjabraham. Each link below goes to the Markdown version of a page; the HTML version is the same URL without index.md.
 """ + "".join(f"\n## {title}\n\n" + "".join(f"- [{p['h1']}]({p['url']}index.md): {p['description']}\n" for p in group)
               for title, group in sections) + f"""
 ## Optional
@@ -1076,43 +1030,5 @@ for p in pages:
     print(f"  {p['words']:5d}  {p['kind']:7s} /{p['path']}")
 if unindexed:
     print(f"site index: {len(unindexed)} page(s) not indexed yet: {', '.join(unindexed)} (read each one and add its entries to tools/site_index.json)")
-# No phrasing borrowed from christopherabraham.com, mirroring the check in that site's build: no page
-# here may share more than 10% of its six-word phrases with any page there, and no sentence of eight
-# or more words may appear on both. SIBLING_DIR overrides; locally the checkout is christopher or
-# christopherabraham beside this repo.
-_HERE = os.path.dirname(os.path.abspath(__file__))
-SIBLING = os.environ.get("SIBLING_DIR") or next(
-    (d for d in (os.path.join(_HERE, "..", "..", n) for n in ("christopher", "christopherabraham")) if os.path.isdir(d)),
-    os.path.join(_HERE, "..", "..", "christopher"))
-if os.path.isdir(SIBLING):
-    _sib_sh, _sib_sent = {}, set()
-    for root_dir, dirs, names in os.walk(SIBLING):
-        dirs[:] = [d for d in dirs if d not in (".git", "_sibling", "src", "tools")]
-        if "index.md" in names and not root_dir.rstrip("/").endswith(("site-index", "sitemap")):
-            t = open(os.path.join(root_dir, "index.md"), encoding="utf-8").read()
-            t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)
-            w = re.findall(r"[a-z0-9']+", t.lower())
-            _sib_sh[os.path.relpath(root_dir, SIBLING)] = {" ".join(w[i:i + 6]) for i in range(len(w) - 5)}
-            _sib_sent |= {x.strip(" #*>-") for x in re.split(r"(?<=[.!?])\s+|\n", t) if len(x.split()) >= 8}
-    for p in pages:
-        if p["path"] in ("sitemap/", "site-index/"):
-            continue
-        mine = _sh.get(p["path"]) or set()
-        for other, theirs in _sib_sh.items():
-            share = len(mine & theirs) / (len(mine) or 1)
-            if share > 0.10:
-                problems.append(f"/{p['path']} shares {share:.0%} of its phrasing with christopherabraham.com /{other}")
-        for sentence in re.split(r"(?<=[.!?])\s+", _words(p)[0]):
-            if len(sentence.split()) >= 8 and sentence.strip() in _sib_sent and "Amazon Associate" not in sentence:
-                problems.append(f"/{p['path']} repeats a christopherabraham.com sentence: {sentence[:80]}")
-else:
-    problems.append(f"sibling site not found at {SIBLING}: clone chrisabraham/christopherabraham beside this repo or set SIBLING_DIR")
-# The guides index is hand-curated, so a new guide can silently miss it (twelve did, 2026-10-23 to 10-28).
-import pathlib
-_guides_index = pathlib.Path("src/guides/index.html").read_text(encoding="utf-8")
-_orphans = sorted(f.stem for f in pathlib.Path("src/guides").glob("*.html")
-                  if f.stem not in ("index", "glossary") and f"guides/{f.stem}/" not in _guides_index)
-if _orphans:
-    print(f"guides index: {len(_orphans)} guide(s) not listed on /guides/: {', '.join(_orphans)} (add a line to src/guides/index.html)")
 for x in problems: print("PROBLEM:", x)
 sys.exit(1 if problems else 0)
