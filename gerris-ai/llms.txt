@@ -11,6 +11,8 @@
 ## Key facts
 
 - The AI Visibility Audit costs $750 flat and is delivered as a written report.
+- The Claim Sprint costs $1,500 flat and builds the claim layer the audit identifies.
+- AI Presence measurement costs $500 a month and is delivered as a monthly written receipt.
 - A turnkey website on GitHub Pages costs $1,500 flat; hosting is free.
 - Gerris is led by Chris Abraham: websites since 1994, SEO since 1998.
 - Gerris Corp's wider consulting site is https://gerriscorp.com/ and Chris Abraham's practice site is https://christopherabraham.com/.

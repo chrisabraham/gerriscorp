@@ -26,11 +26,11 @@ $750flat
 The audit in detail
 2. The Claim Sprint
 The audit maps the work; the sprint does it. Technical foundation first: crawl, Search Console, titles, metas, redirects. Then the claim layer: entity schema, llms.txt, a canonical page that states what your business is, and FAQ schema, so the machines can quote you instead of guessing at you.
-Scopedafter the audit maps it
+$1,500flat
 The sprint in detail
 3. AI Presence, Measured
 AI answers drift. Every month we re-run your money-query set across the answer engines and deliver a written receipt: what changed, what the answers say now, and the next fixes in line. You know before your customers do.
-Monthlywritten receipt
+$500per month
 The measurement in detail
 How does an engagement run?
 Four steps. No retainer pitch, no vague deliverable.
@@ -62,7 +62,7 @@ GEO is generative engine optimization. It makes your business easy for generativ
 How much does an AI visibility audit cost?
 $750 flat. Gerris tests how your business appears across Google AI Overviews, ChatGPT, Perplexity, and Gemini for the searches that bring you revenue, documents what the answers say, and delivers a written report with every fix in priority order. The report is yours to keep regardless of what follows.
 What does the Claim Sprint include?
-A technical foundation (full crawl, Search Console review, titles and metas, broken links and redirects) and the claim layer (entity schema with sameAs links, llms.txt, a canonical page that states what your business is, and FAQ schema). Items that belong with your developers come back as a precise written fix list. Scope and price are set in conversation, after the audit maps the work.
+A technical foundation (full crawl, Search Console review, titles and metas, broken links and redirects) and the claim layer (entity schema with sameAs links, llms.txt, a canonical page that states what your business is, and FAQ schema). Items that belong with your developers come back as a precise written fix list. The sprint is $1,500 flat.
 Do I still need SEO if I do AEO?
 Yes. AI answers are assembled from crawlable pages, search indexes, business profiles, and directory listings. A site search engines cannot crawl or understand starves the answer engines too. Gerris treats SEO as the foundation and AEO and GEO as the work built on it.
 Who does the work at Gerris?
@@ -86,9 +86,9 @@ What is the Claim Sprint?
 The audit tells you what is broken. The sprint fixes the layer that fixes it:
 Technical foundation: full crawl, Search Console review, titles and metas, broken links and redirects.
 The claim layer: entity schema with sameAs links, an llms.txt file, a canonical page that states what your business is, and FAQ schema, so the machines can quote you instead of guessing at you.
-Where an item belongs with your developers, we return it as a precise written fix list they can execute directly, and we verify it on the live site once they ship it. Scope and price for the sprint are set in conversation, after the audit maps the work.
+Where an item belongs with your developers, we return it as a precise written fix list they can execute directly, and we verify it on the live site once they ship it. The sprint is $1,500 flat.
 What is AI Presence, Measured?
-AI answers drift. Competitors publish, directories change, and the answer that named you in March may name someone else in June. Every month we re-run your money-query set across Google AI Overviews, ChatGPT, and Perplexity, and you get a written receipt: what changed, what the answers say now, and the next fixes in line. Monthly measurement is set up in conversation, shaped around your search set.
+AI answers drift. Competitors publish, directories change, and the answer that named you in March may name someone else in June. Every month we re-run your money-query set across Google AI Overviews, ChatGPT, and Perplexity, and you get a written receipt: what changed, what the answers say now, and the next fixes in line. AI Presence is $500 a month, shaped around your search set.
 Why does the Google Business Profile matter to AI answers?
 For local and service businesses, the Google Business Profile is one of the primary sources AI answers are built from. A suspended, duplicate, or miscategorized profile damages your map listing and corrupts what the AI says about you everywhere else. Gerris's profile work, including service-area configuration and reinstatement support, runs under the same direction as the search work, so your profile, your website, and your listings tell one consistent story. That consistency is what the machines reward.
 What SEO does Gerris do?
