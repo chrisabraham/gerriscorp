@@ -1,0 +1,13 @@
+{
+  "name": "Gerris",
+  "short_name": "Gerris",
+  "description": "AI search visibility, AEO, GEO, and SEO.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c75000",
+  "icons": [
+    { "src": "https://gerriscorp.com/logo-128.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "https://gerriscorp.com/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,16 @@
+# Gerris: AI Search Visibility, AEO, GEO, and SEO
+
+> Gerris is the AI services practice of Gerris Corp, led by Chris Abraham in Arlington, Virginia. Gerris audits how AI answer engines (Google AI Overviews, ChatGPT, Perplexity, Gemini) describe a business, fixes the sources those answers are built from, and measures the result monthly in writing, on a foundation of technical SEO practiced since 1998. Contact: chris@gerriscorp.com, +1 202-352-5051, https://calendly.com/chrisabraham/30 (book a 30-minute call).
+
+## Pages
+
+- [Home](https://gerris.ai/): The home page of gerris.ai in HTML. Full text of every page is in llms-full.txt.
+- [Services](https://gerris.ai/services/): The services page of gerris.ai in HTML. Full text of every page is in llms-full.txt.
+- [About](https://gerris.ai/about/): The about page of gerris.ai in HTML. Full text of every page is in llms-full.txt.
+
+## Key facts
+
+- The AI Visibility Audit costs $750 flat and is delivered as a written report.
+- A turnkey website on GitHub Pages costs $1,500 flat; hosting is free.
+- Gerris is led by Chris Abraham: websites since 1994, SEO since 1998.
+- Gerris Corp's wider consulting site is https://gerriscorp.com/ and Chris Abraham's practice site is https://christopherabraham.com/.

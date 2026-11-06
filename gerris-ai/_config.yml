@@ -1,0 +1,2 @@
+# gerris.ai — static site, no build step. Jekyll copies files through.
+exclude: [README.md]

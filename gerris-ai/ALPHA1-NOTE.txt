@@ -1,0 +1,10 @@
+gerris.ai alpha 1 staging copy.
+
+These files stage the gerris.ai alpha-1 site inside the gerriscorp
+repository on the branch "gerris-ai-alpha1" ONLY. They are not part of
+gerriscorp.com and must never be merged to main: the CNAME for gerris.ai
+is deliberately absent here so nothing can hijack gerriscorp.com.
+
+The canonical standalone build (with CNAME and binary brand assets)
+lives in ~/workspace/gerris-ai/site/ in the desk workspace, ready to
+push the day the chrisabraham/gerris-ai repository exists.
