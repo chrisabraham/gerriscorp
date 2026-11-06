@@ -8,7 +8,7 @@
 # Home: https://gerris.ai/
 
 Answer engine optimization
-Your customers meet an AI answer before they meet you. We make sure it names you.
+Ask ChatGPT who to hire. Gerris gets your company into that answer.
 Google AI Overviews, ChatGPT, Perplexity, and Gemini now answer your buyers' questions directly. Gerris audits what those answers say about your business, fixes the sources they are built from, and measures the result every month, in writing.
 Book a 30-minute call
 See the services
