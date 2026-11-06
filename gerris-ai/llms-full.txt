@@ -99,6 +99,8 @@ Migrations and redirects: full URL inventories, one-to-one 301 maps, launch-day 
 Schema and entities: structured data that validates, matches the visible page, and ties your organization, people, and locations together.
 Speed: Core Web Vitals diagnosis, image and script cleanup, caching, and Cloudflare rules that still welcome crawlers.
 Measurement setup: Search Console, Bing Webmaster Tools, and GA4, verified and owned by you.
+What can AI do inside a business, beyond answering questions?
+Plenty, once somebody who knows the work sets it up. Gerris designs and tests the working tools: custom assistants trained on your documents, drafting pipelines that produce first drafts your staff can trust, review checklists that run the same way every time, and prompt sets written for the job instead of borrowed from a listicle. Every tool ships with the instructions, the test set, and a plain account of where it fails. An AI tool nobody has tested against the real work is a demo, and demos do not survive contact with a Tuesday.
 What does Gerris build?
 Turnkey website on GitHub Pages: $1,500 flat. Design, build, domain and DNS, and launch, start to finish. The site is static HTML, written and assembled by AI under our direction, deployed on GitHub's hosting, and handed to you outright: your domain, your repository, your files. Hosting costs nothing, because a folder of finished HTML files needs no database, no page builder, and no plugin stack. These sites load fast for the same reason: a visitor asks for a page and gets the page.
 The same shop wires the automation behind the sites: feed and sitemap generation, publishing pipelines, narration and podcast builds, and repository work done through pull requests alongside the developers who own the code. This site is one of the builds: static, on GitHub Pages, with its llms.txt and schema in the open.
@@ -131,6 +133,8 @@ Building the claim layer: entity schema, llms.txt, canonical explainer pages, an
 Making SEO changes through pull requests on GitHub, alongside the developers who own the code.
 Building fast static websites on GitHub Pages and Cloudflare, and the publishing automation behind them.
 Measuring AI-answer presence monthly, in writing, for the clients who run on it.
+What did Chris do before Gerris?
+The long version sits on his other sites; the short version runs like this. He learned the trade at New Media Strategies in the early 2000s, when SEO was still directory submissions and nerve. He co-founded Abraham Harrison, the digital marketing firm he ran with Mark Harrison, and did a tour at Edelman, the largest PR firm in the world, working the seam where search results and reputation meet. Gerris Corp dates to 2012. Along the way he has taught at Georgetown, George Washington, and Columbia, and the work has collected every kind of client an independent practice collects: retailers with hundreds of locations, media companies, universities, nonprofits, and one-person firms with one problem that matters.
 How does Gerris deliver the work?
 Chris Abraham sells the work, leads every engagement, and owns the strategy, the audits, and the measurement. Specialist delivery runs through trusted partners he has worked with for years, including a long-standing team of site editors and a Google Business Profile specialist. Anything that belongs in a client's own developers' hands goes back as a precise written fix list, and Gerris verifies it on the live site once it ships. You always know who is doing what.
 How do you hire Gerris?
