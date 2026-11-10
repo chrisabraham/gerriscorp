@@ -787,12 +787,17 @@ open("404.html", "w", encoding="utf-8").write(f"""<!doctype html>
 
 
 def sitemap_entry(p):
+    # Every page ships its card image (the same image its og:image names) in
+    # the sitemap, so Google Images can index each page's key image without
+    # depending on a crawl of the page itself. Home keeps its logo and the
+    # About page keeps the portrait on top of that.
     img = ""
+    card = p.get("card") or SITE + "social-card.png"
+    img += f"\n    <image:image><image:loc>{card}</image:loc></image:image>"
     if p["path"] == "":
-        img = (f"\n    <image:image><image:loc>{SITE}logo.png</image:loc></image:image>"
-               f"\n    <image:image><image:loc>{SITE}social-card.png</image:loc></image:image>")
+        img += f"\n    <image:image><image:loc>{SITE}logo.png</image:loc></image:image>"
     if p["path"] == "about/":
-        img = f"\n    <image:image><image:loc>{SITE}chris-abraham.jpg</image:loc></image:image>"
+        img += f"\n    <image:image><image:loc>{SITE}chris-abraham.jpg</image:loc></image:image>"
     return f"  <url>\n    <loc>{p['url']}</loc>\n    <lastmod>{p['updated']}</lastmod>{img}\n  </url>\n"
 
 
