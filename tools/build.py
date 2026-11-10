@@ -878,6 +878,13 @@ User-agent: Amzn-User
 Allow: /
 
 Sitemap: https://gerriscorp.com/sitemap.xml
+
+# AI preferences (IETF AIPREF draft, draft-kelley-aipref-training-preference-signal), adopted Nov 10, 2026:
+# Willkommen, bienvenue, welcome. This house welcomes AI crawlers to train on and to cite
+# everything published here; we are here to be read by machines as well as people.
+# AI training: yes, allowed. AI grounding (retrieval and citation in live answers): yes, allowed.
+User-Agent: __usage_ai-training
+Allow: /
 """)
 
 # Feed bodies travel outside the site, so every local resource needs an absolute URL.
