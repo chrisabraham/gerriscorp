@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-10-24. Quote freely with attribution and a link to the source page.
+> Built 2026-11-14. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -1698,7 +1698,7 @@ Updated October 5, 2026
 ---
 
 Source: https://gerriscorp.com/guides/
-Updated: 2026-10-24
+Updated: 2026-11-14
 
 # Guides
 
@@ -1742,6 +1742,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): the signals Google weighs, the Search Console statuses, and the mistakes that send rankings to the wrong page.
 - [How robots.txt works, and the mistakes that cost traffic](https://gerriscorp.com/guides/robots-txt/): matching rules, crawling versus indexing, status codes, and AI crawlers.
 - [Faceted navigation SEO: filters, parameters, and crawl budget](https://gerriscorp.com/guides/faceted-navigation/): which filter pages to index and how to keep the rest out of the crawl.
+- [Programmatic SEO: templates, data, indexing, and the fix](https://gerriscorp.com/guides/programmatic-seo/): where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.
 - [hreflang for English-language sites serving the US, UK, Canada, and Australia](https://gerriscorp.com/guides/hreflang/): the codes, the return links, and the errors that void them.
 
 ## Speed and infrastructure
@@ -1767,6 +1768,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
+- [Why reputation management only works when the behavior changes](https://gerriscorp.com/guides/reputation-management-requires-change/): what cleanup can do, what it cannot outrun, the law of diminishing returns, and the order the work runs in once the change is real.
 
 ## Vendors, developers, and technology decisions
 - [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
@@ -1785,7 +1787,7 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated October 24, 2026
+Updated November 14, 2026
 
 
 ---
@@ -7625,8 +7627,243 @@ Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Cor
 
 ---
 
+Source: https://gerriscorp.com/services/indexing-audit/
+Updated: 2026-11-02
+
+# Indexing audit
+
+A page Google will not index might as well not exist. The indexing audit establishes why Google is refusing your pages, proves the cause with evidence from your own data, and returns the fixes in the order to apply them. The fee is $750 flat, invoiced in advance, and the audit is the whole deliverable.
+
+## What the audit examines
+- **A full crawl of the site,** template by template: word counts, duplication, status codes, canonical choices, and the internal links each page type actually receives.
+- **Search Console and Bing Webmaster Tools diagnosis:** the Page indexing report grouped by cause and by template, crawl stats, and the dates the counts started moving.
+- **The instructions your site hands to crawlers:** robots.txt, sitemap files, canonical tags, and internal linking, checked against the indexing you actually want.
+- **A backlink audit:** the links pointing at the site sorted into genuine, irrelevant, and spam, with a disavow file prepared when the evidence supports one.
+- **Structure for AI search:** how the important pages should be chunked and marked up so answer engines can read, understand, and cite them.
+
+## What you get
+
+The deliverable is a written report: the verdict on each problem found, the evidence behind it, and a prioritized fix list a developer can execute without booking a second opinion. Fixes carry copy-and-paste examples wherever a fix has a definite shape: titles, descriptions, robots rules, canonical choices, and schema blocks. Nothing in the report depends on hiring me for the next step, and if the honest finding is that a set of pages should be deleted, the report names the page types and the order to remove them in.
+
+## Price and how it runs
+1. **A short exchange** to confirm the site, the symptoms, and the access needed: Search Console, Bing Webmaster Tools, and read access to the repository on headless or flat-file sites.
+2. **The invoice:** $750 flat, invoiced in advance. Work begins when the invoice is paid and the access lands.
+3. **The audit itself,** delivered in writing within days of access, with a walkthrough of the findings for anyone who wants one.
+
+Implementation of the fixes is separate work, quoted in writing after the audit for anyone who wants it. Many clients hand the report to their own developers, and the report is written to survive that handoff intact.
+
+## The usual findings
+
+Most indexing failures trace to a short list: pages that exist in thousands and differ in almost nothing, a template change that quietly emptied the rendered HTML, internal links that never reach the pages that matter, or a link profile spammed hard enough to make Google cautious about the whole domain. Each cause has a different fix and a different recovery clock, and treating one as another wastes months. The audit separates them on evidence before anyone touches the site. My [programmatic SEO guide](https://gerriscorp.com/guides/programmatic-seo/) shows the most common pattern in full: database-driven pages that Google crawls once and declines to keep.
+
+## Common questions
+
+### How long does the audit take?
+
+Once payment and access land, days rather than weeks. The report arrives as one document. The clock that matters afterward is Google's recrawl, which nobody controls and which the report plans around.
+
+### Does the audit include making the fixes?
+
+No. The audit is diagnosis plus a fix list written for direct execution. Implementation is separate, quoted in writing before it starts, and entirely optional.
+
+### Will a disavow file always be included?
+
+Only when the link evidence supports one. Google ignores most obvious spam links without any help, so a disavow file ships when the pattern looks targeted or the volume makes the risk real, and the report explains the call either way.
+
+### What if my pages are indexed but invisible?
+
+Indexing and ranking are separate problems, and the audit says which one a site has. Pages that sit in the index without traffic point at content, links, or demand; the findings and the fix list follow whichever problem the evidence shows.
+
+**Related:** [Programmatic SEO guide](https://gerriscorp.com/guides/programmatic-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Search Console cleanup](https://gerriscorp.com/services/search-console/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
+
+[Request the indexing audit](https://gerriscorp.com/contact/)
+
+Updated November 2, 2026
+
+
+---
+
+Source: https://gerriscorp.com/guides/programmatic-seo/
+Updated: 2026-11-02
+
+# Programmatic SEO: what it is, where it works, and why Google ignores it
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published November 2, 2026
+
+Programmatic SEO publishes pages from a database instead of an editor: one template, thousands of rows of structured data, and a page for every row, each aimed at a long-tail search. Built on real data, it produces some of the most useful pages on the web. Built on swapped variables and nothing else, it produces pages Google crawls once and refuses to index.
+
+## What is programmatic SEO?
+
+Programmatic SEO is a publishing method with two working parts. The first is a data layer: a structured table of entities, such as products, properties, places, routes, or practitioners, where every row carries that entity's attributes. The second is a template layer: page designs that render one row each, under a predictable URL pattern. Point the templates at the table and the site gains a page for every row, each one matched to a query pattern such as {product} price, {service} in {city}, or {city} to {city} flights.
+
+Every content management system renders templates, so templating alone is not the method. Programmatic SEO begins when the database decides how many pages exist and which searches each page targets. A single build can create a few hundred pages or a few million, and nothing in the build checks whether each page deserves to exist. That check is the whole job, and it belongs to the people publishing, because Google performs its own version of it later and publishes the verdict in Search Console.
+
+## Where does programmatic SEO work?
+
+It works where every row holds facts that are true of that entity alone, facts a rival cannot reproduce by renaming a variable. The durable examples share that property:
+- **Property listings.** Price, beds, baths, photographs, floor area, days on market, and sale status. Two listings on the same street differ in ways a buyer acts on.
+- **Product databases.** Specifications, price, stock, compatibility, manuals, and owner reviews. A parts catalog page answers questions no article could answer as well.
+- **Location pages carrying genuine local data.** The address, the hours, the staff, the services that branch actually offers, local inventory, and reviews of that branch. A location page earns its URL with the branch's real record.
+- **Pages computed from live data.** Prices, comparisons, schedules, and conversions drawn from feeds that change, so the page a visitor reads today differs from last month's because the facts moved.
+
+The test takes ten seconds. Hide the names, read two pages from the set side by side, and ask whether a visitor could tell them apart and learn something different from each. If the answer is yes, the set is publishing. If the pages collapse into one page wearing different nouns, Google reaches the same conclusion.
+
+## Why do programmatic pages fail to get indexed?
+
+Indexing is a selection, and a template set that differs only in swapped variables gives Google nothing to select. The failure modes stack:
+- **Near duplication.** Google crawls a sample of the set, compares the pages, and finds the same text arranged around different names and numbers. The rest of the set waits in "Discovered, currently not indexed" or falls into "Crawled, currently not indexed," the status the [guide to Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/) takes apart.
+- **No unique value per URL.** An indexed page has to be a good answer to something. A page whose only unique tokens are a city and a product name answers nothing its siblings fail to answer.
+- **Weak internal linking.** Generated sets often sit deep in the site, reachable only through paginated archives or a sitemap file. Pages that nothing links to read as pages nobody values, and crawlers budget their visits accordingly.
+- **Crawl waste.** Combinations, parameters, and sort orders multiply URLs far beyond the entity count, and Googlebot spends visits on variants while new or changed real pages wait. The [faceted navigation guide](https://gerriscorp.com/guides/faceted-navigation/) covers the catalog version of this trap.
+- **Site-level drag.** Thousands of weak URLs feed the quality signals Google computes for the whole domain and the crawl rate it grants. A flood in one template can slow indexing for pages that were never part of the flood.
+
+## What does Google's scaled content abuse policy say?
+
+In March 2024, Google added scaled content abuse to its [spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies). The policy names the practice plainly: generating many pages primarily to manipulate search rankings, with little or no value added for the people who land on them, is spam. The method of production makes no difference. Automation, human writers, and a mixture of the two all fall under the same rule, and the examples Google gives include bulk-generated pages published without added value, material scraped or stitched from other sources, and many sites used to hide a scaled operation.
+
+The policy judges the output and its purpose, never the technique. A database behind a page is ordinary publishing, and has been since the first catalog went online. A database behind ten thousand pages that exist to catch queries, carrying nothing a visitor could use, is the abuse. Sites that cross the line risk demotion or removal under the spam policies, and the cleanup takes far longer than the publishing did. Any programmatic project should be planned against that standard from the first template, because retrofitting value into a published flood is the expensive direction.
+
+## How do you fix a programmatic site Google will not index?
+
+Work at the level of the template and the dataset, never page by page. A set of fifty thousand URLs has perhaps six problems, one per template, and fixing templates fixes the set.
+1. **Audit each template against demand and data.** For every page type, write down the searches it targets and the facts unique to each row. A type with no real demand and no unique data is a removal candidate, however many pages it has already published.
+2. **Feed the survivors real data.** Live prices and availability, local facts, photographs, reviews, computed comparisons: material a competitor cannot produce by renaming a variable. Where the data cannot be obtained, the honest move is to shrink the set until it matches the data on hand.
+3. **Chunk the content.** Break each template into blocks that each answer one question: the specification table, the price block, the local details, the questions buyers actually ask, each under a descriptive heading. Readers scan blocks, and answer engines extract from blocks. A wall of prose with variables poured in defeats both.
+4. **Match schema to the page type.** Product pages carry Product data, listings carry the listing type, locations carry LocalBusiness, and hubs carry ItemList, always describing content the visitor can see. The [structured data guide](https://gerriscorp.com/guides/structured-data/) sorts the types worth using from the ones Google retired.
+5. **Rebuild internal linking as hub and spoke.** A hub for each category or region links down to every spoke beneath it; spokes link back to the hub and across to true siblings. Keep the set a few clicks from the home page, keep the sitemap limited to pages meant for the index, and treat [internal linking architecture](https://gerriscorp.com/services/internal-linking/) as part of the publishing system rather than decoration added later.
+6. **Prune what cannot justify itself.** Delete the combinations nobody searches for, consolidate near-duplicates into the strongest URL with redirects, and noindex the variants visitors need but engines do not, such as sort orders and filter states. Pages nothing links to and nobody needs can go with a 410. A smaller set in which every page carries real facts recrawls faster and indexes better than a large set diluted by filler.
+7. **Earn real links.** Publish the interesting edges of the dataset: rankings, research, tools, and local data that journalists, partners, and customers cite. Links into the hubs lift the whole set, while a large inventory with no links pointing at it asks Google to take the site's word for its importance.
+
+Measure the result by template in Search Console's Page indexing report. Movement shows over weeks as Google recrawls the set, and on a pruned site the strongest pages usually get picked up first.
+
+## Questions about programmatic SEO
+
+### Is programmatic SEO against Google's rules?
+
+No. The spam policies ban scaled content abuse: many pages produced to manipulate rankings with little value added. A database-driven page carrying real facts about a real entity is ordinary publishing, and some of the most heavily indexed pages on the web are built exactly that way.
+
+### How many pages is it safe to generate?
+
+The policies set no number. Safety scales with data: a million listings backed by live records index well, while a thousand city pages carrying swapped names struggle. Count the unique facts on each page rather than counting pages.
+
+### Why does Google crawl my pages and still refuse to index them?
+
+Crawling is cheap and indexing is a judgment. Google samples the set, finds pages that differ mainly in variables, and declines to spend index space on the rest. The [guide to Crawled, currently not indexed](https://gerriscorp.com/guides/crawled-not-indexed/) gives the full method for confirming the cause on a specific site.
+
+### Should thin pages be noindexed or deleted?
+
+Delete pages nobody needs and nothing links to; a 410 tells Google the removal was deliberate. Noindex pages visitors still need, such as filtered views, so they stay reachable while leaving the index. Consolidate pages that split one topic into near copies into the strongest URL and redirect the rest.
+
+### Does adding schema get programmatic pages indexed?
+
+No. Schema describes a page; it cannot give a page value. Accurate, type-matched structured data helps engines understand and display a page that already deserves indexing, and wasted schema on thin pages changes nothing.
+
+### How long does recovery take after a prune?
+
+Expect the first movement in weeks and the full picture across a quarter. Google recrawls at its own pace, strongest pages first. Track the Page indexing report template by template and resist republishing the pruned set while the recrawl is under way.
+
+I run this diagnosis as a fixed-fee [indexing audit](https://gerriscorp.com/services/indexing-audit/). See also [the programmatic indexing case study](https://gerriscorp.com/case-studies/programmatic-indexing/) and the [faceted navigation guide](https://gerriscorp.com/guides/faceted-navigation/) for the catalog version of the crawl problem.
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
+- [Google Search Central: Managing crawl budget for large sites](https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
+Source: https://gerriscorp.com/guides/reputation-management-requires-change/
+Updated: 2026-11-14
+
+# Why reputation management only works when the behavior changes
+
+By [Chris Abraham](https://gerriscorp.com/about/) · Published November 14, 2026
+
+Online reputation management can change what a search for your name turns up. It can push bad results down, crowd them out with accurate material, and build a record that ranks above the damage. It cannot outrun the behavior that caused the problem. If the behavior continues, new complaints and fresh articles keep arriving, and each round of cleanup buys less than the round before it. I have argued in print since 2013 that the money only works after the client changes. This guide explains what the work can do, what it cannot do, and the order to do things in.
+
+## What reputation management can do
+
+Reputation management is defensive SEO: the same craft that ranks a page for a product, pointed at a name. Done properly, it finds everything a search turns up about you, answers what deserves an answer, corrects what is factually wrong at the source where that is possible, and publishes enough accurate material on properties you control to push the bad results down where almost nobody looks.
+
+The building matters because silence is not neutral. I put it this way in a 2019 interview: "Google abhors a vacuum. When a community doesn't own its narrative, its narrative is vulnerable." If you publish nothing, the record of you is whatever other people happened to leave behind: an old lawsuit, an angry review, a namesake's arrest. Fill the vacuum and the picture changes: "If you create enough content, you can own the first two pages of Google."
+
+Notice what is missing from that list: deletion. Honest criticism almost never comes down, and a demand letter rarely removes a true story. The realistic tools are displacement and dilution. You bury the bad result; you rarely delete it. It stays online, one needle in a growing stack of needles, too deep for a searcher to reach. A bad result sitting at position three is a crisis. The same result at position thirty is a footnote.
+
+## What it cannot do
+
+The work cannot make a false front true. As I said in the same interview: "Your reputation online can be curated, but it has to be the truth." A polished record built on behavior that has not changed is paint over a leak. My comparison for that is water: "Online reputation damage is like water damage. It'll seep through if you try to paper it over." The stain comes back because the pipe is still leaking, and the pipe is the conduct that produced the complaints in the first place.
+
+It also cannot stop the flow. Every new bad review, every fresh article, every court filing is new material, and search engines prefer new material. A campaign can bury last month's story. It cannot bury next month's, because next month's has not been written yet.
+
+## The law of diminishing returns
+
+I worked this out in print in 2013, in an essay titled "Reputation management is not about dressing up mistakes." One of its sections is headed, without decoration, "The law of diminishing returns." The argument: brute force, backed by enough money, can hold a first page for a while, but Google normalizes the campaign, and "the newest, freshest, and most relevant real, organic, authentic, and popular content will bubble to the top." So the same monthly spend buys a smaller improvement every month, for as long as the underlying behavior keeps supplying that fresh content.
+
+In the same essay I gave the two situations their names. If you have been done wrong, by error or by malice, the job is finite; I call that scenario "the clean." If your own conduct keeps producing the problem, the job has no end; I call that "repair and repeat." Of the second job I wrote: "Online reputation management does work, but it's an endless game of whack-a-mole."
+
+The essay's opening still says the whole thing as plainly as I know how: "If you want to fix your online reputation, writing big checks to an online reputation agency isn't enough over the long haul—you'll also really need to get your own house in order."
+
+## Own it first: mea maxima culpa marketing
+
+When the fault is yours, the first move is not content. The first move is to own the mistake in public, specifically, and to make amends where amends can be made. I coined a name for the full-strength version in 2013: mea maxima culpa marketing. In the 2019 interview I described it in one breath: "It's mea maxima culpa marketing. You show you're flexible, you listen."
+
+The apology has to be real, because a performed one backfires. From the 2013 essay: if the tone of contrition "seems hollow or false, you'll probably just make it worse, much worse." Amends are concrete: the refund issued, the job finished, the record corrected, the customer answered in the same place the complaint stands. That is not garnish on the campaign. It is the first piece of new evidence, and every later piece points back to it.
+
+## The turnaround has a name
+
+The change-first argument in this guide dates to my writing of 2013. The word I use for the turnaround itself is newer. It is metanoia, a Greek word for a change of mind deep enough to change direction: stop doing the thing, repair what can be repaired, and become the person the new record describes. A record built for someone who has not turned is a costume, and a costume costs more to maintain every year. A record built for someone who has turned is simply documentation.
+
+## What you do first
+
+If the problem is your own conduct, the order of operations is fixed, and the search work comes last:
+1. Stop the behavior that keeps producing complaints. If customers keep reporting the same failure, the failure is a business process, not a run of bad luck.
+2. Make amends where amends are possible: refunds issued, work finished, records corrected, and direct answers to the people affected.
+3. Fix the process underneath, so the same failure stops recurring on a schedule.
+4. Own what is already public: answer the serious criticism where it stands, once, with facts and with the change attached.
+5. Only then start the search work in the next section.
+
+One exception, and it matters. If the damage was done to you rather than by you—a false claim, a mistaken identity, a story that belongs to someone else—skip this section. That is the clean, a finite job with a finish line. As I wrote in 2013: "If you've simply been besmirched, write a check to me."
+
+## How the work runs once the change is real
+1. Audit the record. Search your name and your company the way a stranger, a customer, or a hiring manager would, and list what ranks on the first two pages.
+2. Correct at the source. Factual errors get correction requests backed by evidence; outdated pages get updated or answered.
+3. Respond where a response helps: once, in place, with the amends and the change stated plainly.
+4. Build the record. Your own site, completed profiles, and steady publishing of accurate material fill the vacuum with the truth.
+5. Tend it in small daily doses. Managing a reputation is like getting fitter: "Spend about 20 minutes a day, walk more, take the stairs at first. If you try too hard in a weekend, you might break something."
+6. Monitor and repeat. Check the first two pages every month. Moving results is the braces; keeping them moved is the retainer, worn on a schedule. Because the behavior stopped feeding the problem, each month's gains hold instead of expiring, and the record compounds.
+
+I handle this work for clients as [reputation and perception management](https://gerriscorp.com/services/reputation/). The privacy side of the same problem is covered in my guide to [removing your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/).
+
+## Want me to handle this for you?
+
+This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.
+
+[Book a 30 minute call](https://calendly.com/chrisabraham/30) [Call +1 202-352-5051](tel:+12023525051) [Email chris@gerriscorp.com](mailto:chris@gerriscorp.com)
+
+If your company hires through Upwork, you'll find me [there as well](https://www.upwork.com/freelancers/chrisjabraham).
+
+## References
+- [Argentum: Expert shares best practices to protect your online reputation](https://www.argentum.org/expert-shares-best-practices-to-protect-your-online-reputation/)
+- [Biznology: Mea maxima culpa marketing](https://biznology.com/2013/02/mea-maxima-culpa-marketing/)
+- [Chris Abraham: Reputation management is not about dressing up mistakes](https://chrisabraham.com/blog/reputation-management-is-not-about-dressing-up-mistakes)
+
+Written by [Chris Abraham](https://gerriscorp.com/about/), founder of Gerris Corp in Arlington, Virginia, from his own client engagements, with every technical claim checked against the documentation listed. Websites since 1994, digital marketing since 2002. [Editorial standards](https://gerriscorp.com/standards/) · [Upwork profile](https://www.upwork.com/freelancers/chrisjabraham)
+
+
+---
+
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-10-24
+Updated: 2026-11-14
 
 # Site map
 
@@ -7676,6 +7913,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
 - [Internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/): Connect your website's services, articles, products, and case studies with an internal linking plan: crawl evidence, clear anchors, and verified changes.
+- [Indexing audit](https://gerriscorp.com/services/indexing-audit/): A technical and indexing audit for a flat $750, invoiced in advance: full crawl, Search Console and Bing diagnosis, backlink review, and a fix list.
 
 ## Local, reputation, and email
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
@@ -7739,6 +7977,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [B2B catalog SEO: help the right buyer choose the right part](https://gerriscorp.com/guides/b2b-catalog-seo/): Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.
 - [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/): A podcast is an asset that keeps paying. Each episode's notes are copied word for word by hundreds of directories, and AI answers quote them for years to come.
 - [Your Google business reports are getting a new scoreboard](https://gerriscorp.com/guides/google-business-profile-reports/): Google is testing rebuilt performance reports for business profiles, with five new sections. I explain what each one tells an owner and what to check monthly.
+- [Programmatic SEO: what it is, where it works, and why Google ignores it](https://gerriscorp.com/guides/programmatic-seo/): What programmatic SEO is, where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.
+- [Why reputation management only works when the behavior changes](https://gerriscorp.com/guides/reputation-management-requires-change/): Reputation work can push bad results down and build a better record. It cannot outrun the behavior that caused the damage. Change first, then it holds.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -7767,17 +8007,17 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated October 24, 2026
+Updated November 14, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/site-index/
-Updated: 2026-10-24
+Updated: 2026-11-14
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 482 headings drawn from 115 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 485 headings drawn from 118 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -8453,6 +8693,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - index bloat, [Search Console](https://gerriscorp.com/services/search-console/)
 - Indexed, though blocked by robots.txt, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
+- indexing audit, [Search Console](https://gerriscorp.com/services/search-console/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/), **[Indexing Audit](https://gerriscorp.com/services/indexing-audit/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/). *See also* [Crawled, currently not indexed](https://gerriscorp.com/site-index/#ix-crawled-currently-not-indexed)
+  - backlink audit and disavow, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
+  - prioritized fix list, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
+
 - IndexNow, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [AI Search](https://gerriscorp.com/services/ai-search/), **[IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)**, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Glossary](https://gerriscorp.com/guides/glossary/)
   - batch limits, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
   - Google not a participant, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
@@ -8503,7 +8747,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## L
 - LAMP stack, [In Your Stack](https://gerriscorp.com/stack/)
 - lapsed domains, [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-- large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**
+- large and programmatic sites, [Services](https://gerriscorp.com/services/), **[Large Sites](https://gerriscorp.com/services/large-sites/)**, **[Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
   - baselines, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - crawl efficiency, [Large Sites](https://gerriscorp.com/services/large-sites/)
   - index bloat, [Large Sites](https://gerriscorp.com/services/large-sites/)
@@ -8553,6 +8797,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - manual actions, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Markdown copies of pages, [AI Search](https://gerriscorp.com/services/ai-search/)
 - MCP (Model Context Protocol), **[Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)**
+- Mea maxima culpa marketing, **[Reputation Management Requires Change](https://gerriscorp.com/guides/reputation-management-requires-change/)**. *See also* [reputation management](https://gerriscorp.com/site-index/#ix-reputation-management)
 - Memes.org, [About](https://gerriscorp.com/about/)
 - MemeSpace, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [About](https://gerriscorp.com/about/)
 - meta refresh, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/)
@@ -8728,6 +8973,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - prerendering, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - privacy, **[Privacy](https://gerriscorp.com/privacy/)**
+- programmatic SEO, [Large Sites](https://gerriscorp.com/services/large-sites/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Indexing Audit](https://gerriscorp.com/services/indexing-audit/), **[Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)**. *See also* [large and programmatic sites](https://gerriscorp.com/site-index/#ix-large-and-programmatic-sites); [scaled content abuse](https://gerriscorp.com/site-index/#ix-scaled-content-abuse)
+  - content chunking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - data and templates, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - differentiation, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - hub and spoke linking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+  - pruning and noindex, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+
 - project rescue, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Project Rescue](https://gerriscorp.com/services/rescue/)**, [App Takeover](https://gerriscorp.com/case-studies/app-takeover/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/). *See also* [website handover](https://gerriscorp.com/site-index/#ix-website-handover)
   - handover review, [Project Rescue](https://gerriscorp.com/services/rescue/)
   - hosting afterward, [Project Rescue](https://gerriscorp.com/services/rescue/)
@@ -8783,8 +9035,9 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - removing access, [Repository Access](https://gerriscorp.com/guides/repository-access/)
   - secrets and push protection, [Repository Access](https://gerriscorp.com/guides/repository-access/)
 
-- reputation management, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[Reputation](https://gerriscorp.com/services/reputation/)**, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/). *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
+- reputation management, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[Reputation](https://gerriscorp.com/services/reputation/)**, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/), [Reputation Management Requires Change](https://gerriscorp.com/guides/reputation-management-requires-change/). *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
   - auditing the record, [Reputation](https://gerriscorp.com/services/reputation/)
+  - changing the behavior first, [Reputation Management Requires Change](https://gerriscorp.com/guides/reputation-management-requires-change/)
   - correcting AI answers, [Reputation](https://gerriscorp.com/services/reputation/)
   - data broker removal, [Reputation](https://gerriscorp.com/services/reputation/)
   - Google Results about you, [Reputation](https://gerriscorp.com/services/reputation/)
@@ -8818,7 +9071,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## S
 - Sanity, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)**
-- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/), [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
 - Schema Markup Validator, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Screaming Frog SEO Spider, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/). *See also* [migration tools](https://gerriscorp.com/site-index/#ix-migration-tools)
   - crawl comparison and URL Mapping, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
@@ -9141,4 +9394,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated October 24, 2026
+Updated November 14, 2026

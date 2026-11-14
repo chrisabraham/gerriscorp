@@ -1,6 +1,6 @@
 > A complete map of gerriscorp.com: every service, guide, and case study by Chris Abraham at Gerris Corp, grouped by section with a one line summary.
 >
-> Source: https://gerriscorp.com/sitemap/ · Updated 2026-11-05 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/sitemap/ · Updated 2026-11-14 · By Chris Abraham, Gerris Corp
 
 # Site map
 
@@ -17,7 +17,7 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [Frequently asked questions](https://gerriscorp.com/faq/): Practical answers about working with Chris Abraham at Gerris Corp: how projects start, timelines, payment, access, platforms, and confidentiality.
 - [Editorial standards](https://gerriscorp.com/standards/): How Chris Abraham writes the guides and case studies on gerriscorp.com: firsthand work, cited documentation, checked AI drafts, anonymous clients, corrections.
 - [Colophon](https://gerriscorp.com/colophon/): How gerriscorp.com is made: the water strider logo by Oliver Uberti, a Plone inspired design, a Python generator, GitHub Pages, and checks every page passes.
-- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Every engagement is scoped in writing before work starts.
+- [Contact](https://gerriscorp.com/contact/): Email Chris Abraham at Gerris Corp with your site, the problem, and your budget, or call or text. Diagnostics are prepaid and scoped in writing.
 - [Privacy](https://gerriscorp.com/privacy/): How gerriscorp.com handles your information: Google Analytics for visit statistics, no advertising or tracking cookies in the UK and EU, and email you send me.
 - [Index](https://gerriscorp.com/site-index/): an A to Z list of the people, companies, tools, and problems the site covers, each linked to its pages.
 
@@ -29,7 +29,6 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [AI agents and automation, built safely](https://gerriscorp.com/services/ai-automation/): Chris Abraham builds AI tools with OpenAI Codex and Claude Code: reviewed actions, tests, secrets outside Git, and backups with a tested restore path.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): Chris Abraham cleans and dedupes contact lists and CRMs with Python, and audits AI-generated spreadsheets for fabricated or wrong data before you rely on them.
 - [Analytics and measurement you can trust](https://gerriscorp.com/services/analytics/): Chris Abraham audits GA4 and Search Console data, removes ghost traffic, fixes conversion tracking, and explains what your numbers can and can't actually prove.
-- [AI use policy and staff training](https://gerriscorp.com/services/ai-policy/): Chris Abraham learns how your staff already use AI, writes a two-page policy they will follow, picks the approved tools, and trains the team with real examples.
 - [Strategic advisory and briefings](https://gerriscorp.com/services/advisory/): Chris Abraham advises founders and executives on AI, search, reputation, and technology, and writes second opinions on rebuilds, migrations, and vendor plans.
 - [AI workflow testing and acceptance reviews](https://gerriscorp.com/services/ai-workflow-testing/): Test an AI pilot against real tasks before expanding it. Chris Abraham checks outputs, permissions, failure handling, and evidence with a repeatable test set.
 - [B2B catalog SEO for manufacturers and distributors](https://gerriscorp.com/services/b2b-catalog-seo/): B2B catalog SEO for manufacturers and distributors: product specifications, part discovery, crawlable templates, and quote paths tested on a focused pilot.
@@ -43,14 +42,11 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): Chris Abraham makes each page say plainly what it covers: titles, descriptions, headings, internal links, images, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): Chris Abraham makes sites fast on real phones: Core Web Vitals, image and script optimization, caching, and Cloudflare CDN setup, rules, and redirects.
 - [WordPress care: caching, hardening, or moving off](https://gerriscorp.com/services/wordpress-care/): For WordPress sites that are slow, exposed, or costly to keep: Cloudflare page caching, hardening for what the cache can't shield, or a move to static pages.
-- [Website accessibility remediation](https://gerriscorp.com/services/accessibility/): Chris Abraham fixes the accessibility barriers in your website templates, tests with keyboards and screen readers, and documents the work for ADA and EAA.
-- [Agent readiness review for your website](https://gerriscorp.com/services/agent-readiness/): Chris Abraham runs ChatGPT, Gemini, and other AI agents through your key tasks, then fixes the firewall rules, forms, and markup that stop them before the sale.
 - [Google Search Console setup, cleanup, and indexing fixes](https://gerriscorp.com/services/search-console/): Chris Abraham sets up Google Search Console and Bing Webmaster Tools properly, reads the indexing reports, and fixes the problems they reveal, page by page.
 - [Website migrations](https://gerriscorp.com/services/migrations/): Chris Abraham helps you change platforms, domains, or URL structures and keep your search visibility, with URL inventories, 301 redirect maps, and checks.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): How ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews describe your business, where those answers come from, and the work that improves them.
-- [Your customers meet an AI answer before they meet you. I help you check whether it names you.](https://gerriscorp.com/services/ai-visibility/): Gerris audits how AI answers describe your business, corrects the sources they rely on across Google, ChatGPT, Perplexity, and Gemini, and measures monthly.
+- [Your customers meet an AI answer before they meet you. We make sure it names you.](https://gerriscorp.com/services/ai-visibility/): Gerris audits how AI answers describe your business, fixes what the machines get wrong across Google, ChatGPT, Perplexity, and Gemini, and measures it monthly.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): I write articles, essays, and pages in your voice with AI, then check every name, date, number, and quote against its source and report what I changed.
-- [Site indexes and glossaries](https://gerriscorp.com/services/site-index-and-glossary/): Chris Abraham builds a hand-made A to Z index and a plain-language glossary for content-heavy websites, so readers, crawlers, and AI tools can find every topic.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): I build a podcast a website it owns: every episode on its own page with a transcript, generated from the RSS feed, hosted free, and refreshed every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): A set amount of experienced help each month from Chris Abraham: SEO fixes, publishing, Search Console monitoring, troubleshooting, and developer coordination.
 - [Internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/): Connect your website's services, articles, products, and case studies with an internal linking plan: crawl evidence, clear anchors, and verified changes.
@@ -59,12 +55,10 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 ## Local, reputation, and email
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): Chris Abraham untangles multi-location brands and sister businesses: entity structure, location pages tied to Google profiles, service areas, and schema.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): Discreet perception management from Chris Abraham: search results, data broker removal, AI answers, and monthly reporting for founders and executives.
-- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a written diagnostic and then scopes any appeal as its own step.
+- [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): Suspended, unverifiable, or split Google Business Profiles: Chris Abraham starts with a prepaid written diagnostic, then scopes any appeal separately.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): Chris Abraham sets up SPF, DKIM, and DMARC, diagnoses deliverability, consolidates domains, and moves DNS and hosting without breaking email or search.
-- [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): Chris Abraham inventories every domain a company holds, moves each into a company-owned account, locks it down, and documents renewals, DNS, and access.
 
 ## Guides
-- [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): Turn SEO findings into specific developer tasks with evidence, scope, acceptance criteria, release checks, and a clear owner for the business decision.
 - [How to fact check a confident AI answer about SEO before you act on it](https://gerriscorp.com/guides/fact-check-ai-seo/): A claim by claim method for checking polished AI answers about SEO, using a real exchange about brand names in page titles and what the evidence supports.
 - [How to measure AI search citations, referrals, and actual leads](https://gerriscorp.com/guides/measure-ai-search/): Build an honest AI search report that separates citations, referral visits, and leads using Bing Webmaster Tools, GA4, repeatable checks, and clear limits.
 - [Citation gap analysis: finding the sources AI cites instead of you](https://gerriscorp.com/guides/citation-gap-analysis/): Collect the pages AI assistants cite when they name your competitors, sort them by type, and turn the ones that leave you out into a ranked outreach list.
@@ -88,7 +82,6 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): What SPF, DKIM, and DMARC records do, example records, the Gmail, Yahoo, and Microsoft sender requirements, and how to reach DMARC enforcement safely.
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): How data brokers and people search sites get your information, how to opt out, how Google Results about you works, and what California's DROP changes.
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): A step-by-step method for finding why organic traffic fell: confirm the drop is real, isolate pages and queries, check updates and indexing, and name the cause.
-- [When two problems hit at once, keep them on separate tracks](https://gerriscorp.com/guides/two-problems-at-once/): When a traffic loss has two causes, one blended story produces the wrong fix. How to split the evidence, test each cause alone, and join them only on proof.
 - [Deleting hundreds of location pages: why core rankings fall, and the fix](https://gerriscorp.com/guides/removed-location-pages/): What happens when a site prunes hundreds of city or area code landing pages: why core pages can drop, how to decide each URL's fate, and how to recover.
 - [The year-end SEO check: one afternoon that protects next year](https://gerriscorp.com/guides/year-end-seo-check/): A one-afternoon year-end SEO check for small and midsize sites: indexing, sitemaps, analytics retention, domains and certificates, listings, and AI answers.
 - [Canonical tags: how Google chooses which URL to index](https://gerriscorp.com/guides/canonical-tags/): How rel canonical works, why Google sometimes overrides it, the Search Console statuses that reveal canonical problems, and the mistakes that misdirect signals.
@@ -121,21 +114,8 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [B2B catalog SEO: help the right buyer choose the right part](https://gerriscorp.com/guides/b2b-catalog-seo/): Help technical buyers find specifications, compare parts, and request a useful quote. A B2B catalog SEO guide with a pilot and measurement plan.
 - [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/): A podcast is an asset that keeps paying. Each episode's notes are copied word for word by hundreds of directories, and AI answers quote them for years to come.
 - [Your Google business reports are getting a new scoreboard](https://gerriscorp.com/guides/google-business-profile-reports/): Google is testing rebuilt performance reports for business profiles, with five new sections. I explain what each one tells an owner and what to check monthly.
-- [How to vet an influencer or creator before your brand pays them](https://gerriscorp.com/guides/vet-an-influencer/): A provenance check for creators before a sponsorship: the archive, the audience, the disclosures, the claims, and what the FTC holds the brand responsible for.
-- [How to freeze an old website as static HTML without losing a single link](https://gerriscorp.com/guides/freeze-old-website/): Retire a website stuck on a dead CMS without losing its links: count every URL, keep addresses exactly, handle feeds and query strings, and cut over safely.
-- [Build a website incident timeline before changing code](https://gerriscorp.com/guides/website-incident-timeline/): Reconstruct a website failure with dated observations, release records, cache checks, and competing explanations before choosing the next repair to make.
-- [The European Accessibility Act for US companies](https://gerriscorp.com/guides/european-accessibility-act/): Since June 28, 2025, sites selling to EU consumers must meet the European Accessibility Act. Who it covers, the microenterprise exemption, and what to fix.
-- [Domain security: the registrar account comes first](https://gerriscorp.com/guides/domain-account-security/): Who holds the login to your domain decides who controls your website and email. Registrar locks, Registry Lock, two-factor access, and DNSSEC, in order.
-- [Website restore drills](https://gerriscorp.com/guides/restore-drills/): A backup is only proven when you have restored from it. How I run a website restore drill, what to time and record, and the gaps it usually uncovers.
-- [How to write a company AI use policy](https://gerriscorp.com/guides/ai-use-policy/): A practical AI use policy for a small company: approved tools, what data never goes into a chatbot, review before publishing, disclosure, and who owns it.
-- [Black hat SEO in modern dress: the tactics that end sites](https://gerriscorp.com/guides/black-hat-in-modern-dress/): The old black hat schemes never died. They changed clothes. A practitioner taxonomy of the modern versions, ranked from wasted effort to site removal.
-- [Where Teams Get Stuck in AI Search: The Folklore Tier](https://gerriscorp.com/guides/stuck-in-the-folklore/): A reader asked which tier of the AI search avoid list traps most teams. The answer is tier two, folklore: purchasable ritual in the shape of a mechanism.
-- [Citation Provenance: Who Really Said That About You](https://gerriscorp.com/guides/citation-provenance/): Thirty years of writing myself into the record taught me what AI search now shows every buyer: who wrote the praise. Provenance is the new reference check.
-- [AI agents are visitors now, and most websites are not ready](https://gerriscorp.com/guides/ai-agents-on-your-website/): AI agents now browse, fill in forms, and shop for people. How to recognize them, keep your firewall from turning them away, and guard pages from planted text.
-- [Several AI agents, one repository: the house rules](https://gerriscorp.com/guides/ai-agents-one-repository/): Claude Code, Codex, and other agents can share one website repository safely: separate checkouts, fetch first, no force pushes, one rule file, loud checks.
-- [How to transcribe recordings privately on your own Linux machine](https://gerriscorp.com/guides/private-transcription-linux/): Turn client calls and meeting recordings into searchable transcripts offline with ffmpeg and Whisper, speaker labels included, on hardware you already own.
 - [Programmatic SEO: what it is, where it works, and why Google ignores it](https://gerriscorp.com/guides/programmatic-seo/): What programmatic SEO is, where database driven pages earn their place, why Google leaves them unindexed, and the playbook that fixes a set at scale.
-- [A Real Business Website for the Price of a Domain Name](https://gerriscorp.com/guides/github-pages-website/): A business website on GitHub Pages with a wholesale Cloudflare domain and an AI doing the typing: hosting $0, about $10 a year all in. Steps and limits.
+- [Why reputation management only works when the behavior changes](https://gerriscorp.com/guides/reputation-management-requires-change/): Reputation work can push bad results down and build a better record. It cannot outrun the behavior that caused the damage. Change first, then it holds.
 
 ## Case studies
 - [Magento store: product content Googlebot never saw](https://gerriscorp.com/case-studies/ecommerce-rendering/): How Chris Abraham traced a Magento and Hyvä store's falling traffic to Alpine.js sections that never rendered for Googlebot, and kept two problems apart.
@@ -164,4 +144,4 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated November 5, 2026
+Updated November 14, 2026

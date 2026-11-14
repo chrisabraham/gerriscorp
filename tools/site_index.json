@@ -5524,11 +5524,15 @@
     "services",
     "services/advisory",
     "services/reputation",
-    "guides/personal-information-removal"
+    "guides/personal-information-removal",
+    "guides/reputation-management-requires-change"
    ],
    "subs": {
     "auditing the record": [
      "services/reputation"
+    ],
+    "changing the behavior first": [
+     "guides/reputation-management-requires-change"
     ],
     "data broker removal": [
      "services/reputation"
@@ -7444,6 +7448,19 @@
    "main": [
     "guides/b2b-catalog-seo"
    ]
+  },
+  "Mea maxima culpa marketing": {
+   "kind": "topic",
+   "pages": [
+    "guides/reputation-management-requires-change"
+   ],
+   "subs": {},
+   "see": [
+    "reputation management"
+   ],
+   "main": [
+    "guides/reputation-management-requires-change"
+   ]
   }
  },
  "reviewed": [
@@ -7561,6 +7578,7 @@
   "guides/podcast-investment",
   "guides/google-business-profile-reports",
   "services/indexing-audit",
-  "guides/programmatic-seo"
+  "guides/programmatic-seo",
+  "guides/reputation-management-requires-change"
  ]
 }
