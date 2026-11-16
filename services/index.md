@@ -1,6 +1,6 @@
 > Every Gerris service: fractional technical lead, developer specs, AI automation, project rescue, technical SEO, site speed, migrations, AI search, and more.
 >
-> Source: https://gerriscorp.com/services/ · Updated 2026-10-20 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/services/ · Updated 2026-11-16 · By Chris Abraham, Gerris Corp
 
 # Services
 
@@ -17,6 +17,7 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Project rescue, takeovers, and legacy migrations](https://gerriscorp.com/services/rescue/): stalled or inherited projects inventoried, stabilized, and moved off dead software.
 - [Data cleanup and AI-output audits](https://gerriscorp.com/services/data-cleanup/): contact lists, CRMs, and AI-generated spreadsheets verified, deduplicated, and rebuilt.
 - [Analytics and measurement](https://gerriscorp.com/services/analytics/): GA4 and Search Console you can trust, and an honest reading of what the numbers prove.
+- [AI use policy and staff training](https://gerriscorp.com/services/ai-policy/): a two-page policy built from how your team already uses AI, and a session that makes it stick.
 - [Strategic advisory and second opinions](https://gerriscorp.com/services/advisory/): advice for founders and executives on AI, search, reputation, and technology decisions.
 
 ## Search and site performance
@@ -29,10 +30,15 @@ I'm the person you call when the technical side of your web presence needs someo
 - [On-page SEO](https://gerriscorp.com/services/on-page-seo/): titles, descriptions, headings, internal links, and structured data, written and published.
 - [Site speed, Core Web Vitals, and Cloudflare](https://gerriscorp.com/services/site-speed/): fast pages on real phones, and a CDN configured properly.
 - [WordPress care: caching, hardening, or a static move](https://gerriscorp.com/services/wordpress-care/): Cloudflare page caching, hardening for what the cache can't shield, or a move off WordPress.
+- [Website accessibility remediation](https://gerriscorp.com/services/accessibility/): template-level fixes tested with keyboards and screen readers, documented for ADA and EU rules.
 - [Google Search Console](https://gerriscorp.com/services/search-console/): setup, cleanup, and fixes for what the indexing reports reveal.
+- [Indexing audit](https://gerriscorp.com/services/indexing-audit/): which pages Google crawls and leaves out, why, and the fixes in order of value.
 - [Website migrations](https://gerriscorp.com/services/migrations/): URL inventories, 301 redirect maps, launch checks, and cleanup.
 - [AI search visibility](https://gerriscorp.com/services/ai-search/): SEO, AEO, and GEO, so ChatGPT, Claude, Gemini, Perplexity, and Google's AI features represent you accurately.
+- [AI visibility audit and measurement](https://gerriscorp.com/services/ai-visibility/): whether AI answers name you, the sources they rely on corrected, and the result measured monthly.
+- [Agent readiness review](https://gerriscorp.com/services/agent-readiness/): AI agents run through your key tasks, and the firewall rules, forms, and markup that stop them get fixed.
 - [Fact-checked writing in your voice](https://gerriscorp.com/services/editorial/): articles and pages written with AI from your own material, then checked claim by claim before they go live.
+- [Site indexes and glossaries](https://gerriscorp.com/services/site-index-and-glossary/): a hand-built A to Z index and a plain-language glossary for content-heavy websites.
 - [Podcast websites, built and run for you](https://gerriscorp.com/services/podcast-sites/): a page and transcript for every episode, generated from your feed and updated every morning.
 - [Ongoing SEO and website support](https://gerriscorp.com/services/ongoing-support/): an agreed amount of experienced help each month.
 
@@ -40,7 +46,9 @@ I'm the person you call when the technical side of your web presence needs someo
 - [Multi-location and connected businesses](https://gerriscorp.com/services/multi-location/): entity structure, location pages, and sister brands kept distinct.
 - [Reputation and perception management](https://gerriscorp.com/services/reputation/): for founders, executives, and families who need privacy and an accurate public record.
 - [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/): suspensions and verification loops, starting with a written diagnostic.
+- [Products with published prices](https://gerriscorp.com/products/): the fixed scope shelf, AI answer reports, data readouts, a local visibility report, and reinstatement tiers.
 - [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/): SPF, DKIM, DMARC, deliverability, and domain consolidation.
+- [Domain portfolio audit](https://gerriscorp.com/services/domain-portfolio/): every domain in a company-owned account, locked, renewing, and on one register.
 
 Want the technical depth behind these services? See [what I can take on in your stack](https://gerriscorp.com/stack/), layer by layer, with the case study for each.
 
@@ -58,4 +66,4 @@ A **diagnostic** answers a defined question with evidence and a recommended next
 
 Not sure which fits? [Tell me what's going on](https://gerriscorp.com/contact/) and I'll say where I'd start.
 
-Updated October 20, 2026
+Updated November 16, 2026

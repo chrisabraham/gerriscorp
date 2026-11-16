@@ -1,10 +1,10 @@
 > An A to Z index of gerriscorp.com: the people, companies, tools, standards, and technical problems the pages cover, with links to every page on each one.
 >
-> Source: https://gerriscorp.com/site-index/ · Updated 2026-11-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/site-index/ · Updated 2026-11-16 · By Chris Abraham, Gerris Corp
 
 # Index
 
-Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 485 headings drawn from 118 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
+Reference books end with an index, and so does this site. I went through every page, from the services to the case studies, and recorded each person, company, tool, standard, and problem it discusses: 512 headings drawn from 141 pages. A locator is a page's short name; bold marks the page that treats the subject in full, and hovering shows the page's whole title.
 
 Names of people run surname first, and "See also" leads to neighboring headings. Short definitions live in the [glossary](https://gerriscorp.com/guides/glossary/), and the [site map](https://gerriscorp.com/sitemap/) lists every page by section.
 
@@ -63,10 +63,10 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing and debate, [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
   - writing Perl and PHP, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
 
-- Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/)
-- acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/)
+- Abraham Harrison, [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/), [Testimonials](https://gerriscorp.com/testimonials/)
+- acceptance criteria, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Glossary](https://gerriscorp.com/guides/glossary/), [React Event Platform](https://gerriscorp.com/case-studies/react-event-platform/), [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
 - access and ownership of accounts, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Year-End SEO Check](https://gerriscorp.com/guides/year-end-seo-check/)
-- accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
+- accessibility, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), **[Accessibility Remediation](https://gerriscorp.com/services/accessibility/)**
   - documentation and statements, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - fix list, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
   - government deadlines (2027 and 2028), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
@@ -77,10 +77,16 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - what the law expects, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
 
 - accessibility overlays, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
+- accessibility remediation, **[Accessibility Remediation](https://gerriscorp.com/services/accessibility/)**. *See also* [accessibility](https://gerriscorp.com/site-index/#ix-accessibility); [European Accessibility Act](https://gerriscorp.com/site-index/#ix-european-accessibility-act)
+  - demand letters, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+  - documentation, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+  - template fixes, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+  - what gets tested, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
+
 - ADA (Americans with Disabilities Act), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)**
 - Adobe Podcast Enhance Speech, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 - Advertising Age, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
-- AEO (answer engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search)
+- AEO (answer engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search)
 - AES-256 backups, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - agencies, working with, [Services](https://gerriscorp.com/services/), **[Agency Partner](https://gerriscorp.com/services/agency-partner/)**
   - arrangements, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
@@ -88,6 +94,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - confidentiality, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
   - reporting formats, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
   - white label, named specialist, or referral, [Agency Partner](https://gerriscorp.com/services/agency-partner/)
+
+- agent readiness, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/), **[Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)**. *See also* [AI agents on websites](https://gerriscorp.com/site-index/#ix-ai-agents-on-websites)
+  - what gets tested, [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
+  - what usually stops an agent, [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
+  - what you receive, [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
 
 - Ahrefs, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
 - AI agents and automation, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[AI Agents and Automation](https://gerriscorp.com/services/ai-automation/)**, [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/). *See also* [AI workflow testing](https://gerriscorp.com/site-index/#ix-ai-workflow-testing)
@@ -99,7 +110,20 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - prompt injection defense, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/)
   - tests and backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/)
 
-- AI agents, browsing, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
+- AI agents, browsing, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/), [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/), [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
+- AI agents on websites, **[AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)**, [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/). *See also* [agent readiness](https://gerriscorp.com/site-index/#ix-agent-readiness); [AI agents, browsing](https://gerriscorp.com/site-index/#ix-ai-agents-browsing)
+  - firewalls and agent visits, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/), [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
+  - how agents identify themselves, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)
+  - measuring agent visits, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)
+  - what an agent may do, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)
+
+- AI agents, one repository, **[Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)**. *See also* [AI coding assistants](https://gerriscorp.com/site-index/#ix-ai-coding-assistants); [repositories](https://gerriscorp.com/site-index/#ix-repositories)
+  - build checks as referee, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - fetch first, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - force pushes, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - one instruction file, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+  - separate working copies, [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+
 - AI answers, correcting, [Reputation](https://gerriscorp.com/services/reputation/), **[Founder Record](https://gerriscorp.com/case-studies/founder-record/)**
   - corroborating with archives, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
   - doubted Forbes award, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
@@ -115,7 +139,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - what to do this quarter, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
   - which index feeds which assistant, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 
-- AI coding assistants, **[AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)**, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/). *See also* [Claude Code](https://gerriscorp.com/site-index/#ix-claude-code)
+- AI coding assistants, **[AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)**, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/). *See also* [Claude Code](https://gerriscorp.com/site-index/#ix-claude-code)
   - accountability, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - project memory files, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
   - rules turned into checks, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/)
@@ -128,7 +152,12 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - AI crawlers, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)
 - AI output, auditing, [Services](https://gerriscorp.com/services/), **[Data Cleanup](https://gerriscorp.com/services/data-cleanup/)**, [Data Cleanup](https://gerriscorp.com/case-studies/data-cleanup/), [In Your Stack](https://gerriscorp.com/stack/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
-- AI search, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[AI Search](https://gerriscorp.com/services/ai-search/)**. *See also* [AI answers, correcting](https://gerriscorp.com/site-index/#ix-ai-answers-correcting); [AI assistants, how they answer](https://gerriscorp.com/site-index/#ix-ai-assistants-how-they-answer); [AI search, measuring](https://gerriscorp.com/site-index/#ix-ai-search-measuring); [citation gap analysis](https://gerriscorp.com/site-index/#ix-citation-gap-analysis)
+- AI policy and training, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/), **[AI Policy and Training](https://gerriscorp.com/services/ai-policy/)**. *See also* [AI use policies](https://gerriscorp.com/site-index/#ix-ai-use-policies)
+  - how an engagement runs, [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+  - staff training, [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+  - what the policy is built on, [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+
+- AI search, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[AI Search](https://gerriscorp.com/services/ai-search/)**, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Stuck in the Folklore](https://gerriscorp.com/guides/stuck-in-the-folklore/). *See also* [AI answers, correcting](https://gerriscorp.com/site-index/#ix-ai-answers-correcting); [AI assistants, how they answer](https://gerriscorp.com/site-index/#ix-ai-assistants-how-they-answer); [AI search, measuring](https://gerriscorp.com/site-index/#ix-ai-search-measuring); [citation gap analysis](https://gerriscorp.com/site-index/#ix-citation-gap-analysis)
   - answer-shaped content, [AI Search](https://gerriscorp.com/services/ai-search/)
   - careers and recruiting questions, [AI Recruiting Visibility](https://gerriscorp.com/case-studies/ai-recruiting/)
   - machine-readable you, [AI Search](https://gerriscorp.com/services/ai-search/)
@@ -137,7 +166,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - SEO, AEO, and GEO, [AI Search](https://gerriscorp.com/services/ai-search/)
   - technical foundations, [AI Search](https://gerriscorp.com/services/ai-search/)
 
-- AI search, measuring, [Analytics](https://gerriscorp.com/services/analytics/), [AI Search](https://gerriscorp.com/services/ai-search/), [Guides](https://gerriscorp.com/guides/), **[Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)**
+- AI search, measuring, [Analytics](https://gerriscorp.com/services/analytics/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Guides](https://gerriscorp.com/guides/), **[Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)**
   - answer logs, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
   - Bing AI Performance report, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
   - citations, mentions, referrals, and leads, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
@@ -145,12 +174,24 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - GA4 custom channel groups, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
   - Search Console limits, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/)
 
+- AI use policies, **[AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)**, **[AI Policy and Training](https://gerriscorp.com/services/ai-policy/)**. *See also* [AI policy and training](https://gerriscorp.com/site-index/#ix-ai-policy-and-training)
+  - approved tools, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/), [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+  - data that never goes in, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
+  - disclosure, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/), [AI Policy and Training](https://gerriscorp.com/services/ai-policy/)
+  - human review before publishing, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
+  - meetings and recordings, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
+
 - AI vendors, vetting, **[Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)**
   - a technical skeptic on the call, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - AI washing cases, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - paid pilots, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - reading the answers, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
   - twelve questions, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+
+- AI visibility, **[AI Visibility](https://gerriscorp.com/services/ai-visibility/)**, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Products](https://gerriscorp.com/products/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search); [AI search, measuring](https://gerriscorp.com/site-index/#ix-ai-search-measuring)
+  - audits, [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Products](https://gerriscorp.com/products/)
+  - claim sprint, [AI Visibility](https://gerriscorp.com/services/ai-visibility/)
+  - monthly measurement, [AI Visibility](https://gerriscorp.com/services/ai-visibility/)
 
 - AI washing, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/), [Glossary](https://gerriscorp.com/guides/glossary/)
 - AI workflow testing, **[AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/)**, **[Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)**
@@ -196,7 +237,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 ## B
 - B2B catalog SEO, [B2B catalog SEO](https://gerriscorp.com/services/b2b-catalog-seo/), **[B2B catalog SEO](https://gerriscorp.com/guides/b2b-catalog-seo/)**
 - B2B content operations, [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/)
-- backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
+- backups, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
 - Barracuda, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - Basecamp, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Developer Specs and QA](https://gerriscorp.com/services/developers/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Umbraco Operations](https://gerriscorp.com/case-studies/umbraco-operations/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
 - BeenVerified, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
@@ -210,6 +251,12 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 - Bingbot, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
 - Bitbucket, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
+- black hat SEO, **[Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)**. *See also* [Google spam policies](https://gerriscorp.com/site-index/#ix-google-spam-policies)
+  - citation stacking, [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
+  - forged expertise, [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
+  - hidden text and hidden instructions, [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
+  - review velocity, [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
+
 - Blackbox (Chris’ command-line assistant), [Case Studies](https://gerriscorp.com/case-studies/), **[Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)**, [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [AI Workflow Testing](https://gerriscorp.com/services/ai-workflow-testing/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
   - built from real use, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
   - deploy loop, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
@@ -262,19 +309,23 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - case studies, **[Case Studies](https://gerriscorp.com/case-studies/)**
 - CCBot, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 - CDNs, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Glossary](https://gerriscorp.com/guides/glossary/)
-- ChatGPT, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
+- ChatGPT, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
 - ChatGPT-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - chrisabraham.com, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
 - Chrome, [Speculation Rules](https://gerriscorp.com/guides/speculation-rules/)
 - Chrome DevTools, [Speculation Rules](https://gerriscorp.com/guides/speculation-rules/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/), [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
 - Chrome DevTools MCP, [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
 - Chrome UX Report, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/)
-- citation gap analysis, [Guides](https://gerriscorp.com/guides/), **[Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)**, [Glossary](https://gerriscorp.com/guides/glossary/)
+- citation gap analysis, [Guides](https://gerriscorp.com/guides/), **[Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)**, [Glossary](https://gerriscorp.com/guides/glossary/), [Citation Provenance](https://gerriscorp.com/guides/citation-provenance/)
   - closing gaps without paying, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
   - collecting cited sources, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
   - monthly reruns, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
   - ranking gaps, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
   - seven source types, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
+
+- citation provenance, **[Citation Provenance](https://gerriscorp.com/guides/citation-provenance/)**. *See also* [citation gap analysis](https://gerriscorp.com/site-index/#ix-citation-gap-analysis); [reputation management](https://gerriscorp.com/site-index/#ix-reputation-management)
+  - hierarchy of receipts, [Citation Provenance](https://gerriscorp.com/guides/citation-provenance/)
+  - the practice standard, [Citation Provenance](https://gerriscorp.com/guides/citation-provenance/)
 
 - citation share, [Measure AI search](https://gerriscorp.com/guides/measure-ai-search/), [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
 - Claude (Anthropic assistant), [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
@@ -284,7 +335,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Claude-SearchBot, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - Claude-User, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
 - client-side rendering, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
-- Cloudflare, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Site Speed and CDN](https://gerriscorp.com/services/site-speed/)**, **[Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)**, [WordPress behind Cloudflare](https://gerriscorp.com/guides/wordpress-behind-cloudflare/), [Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/). *See also* [DNS](https://gerriscorp.com/site-index/#ix-dns)
+- Cloudflare, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Site Speed and CDN](https://gerriscorp.com/services/site-speed/)**, **[Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)**, [WordPress behind Cloudflare](https://gerriscorp.com/guides/wordpress-behind-cloudflare/), [Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/), [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/), [GitHub Pages Website Build](https://gerriscorp.com/guides/github-pages-website/). *See also* [DNS](https://gerriscorp.com/site-index/#ix-dns)
   - AI Crawl Control, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
   - AI crawler blocking, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
   - APO, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/)
@@ -300,7 +351,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - proxied or DNS only, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
   - R2 storage, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/)
   - Redirect Rules and Bulk Redirects, [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/), [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
-  - Registrar, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/)
+  - Registrar, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [GitHub Pages Website Build](https://gerriscorp.com/guides/github-pages-website/)
   - Rocket Loader, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
   - SSL Full (strict), [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
   - Under Attack Mode, [Cloudflare and SEO](https://gerriscorp.com/guides/cloudflare-seo/)
@@ -406,6 +457,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - generated from evidence, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
   - sample ticket, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
 
+- developer tickets, **[SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)**. *See also* [acceptance criteria](https://gerriscorp.com/site-index/#ix-acceptance-criteria); [ticket systems](https://gerriscorp.com/site-index/#ix-ticket-systems)
+  - closing with evidence, [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
+  - priority with a business reason, [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
+  - reproducible failures, [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
+  - scoping by shared cause, [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
+  - symptom versus cause, [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
+
 - Digital Markets Act, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
 - DigitalOcean, [App Takeover](https://gerriscorp.com/case-studies/app-takeover/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/), [Colophon](https://gerriscorp.com/colophon/)
 - disavow files, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/)
@@ -415,7 +473,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - aggregate reports, [Email Authentication](https://gerriscorp.com/guides/email-authentication/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
   - alignment, [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 
-- DNS, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/). *See also* [email authentication](https://gerriscorp.com/site-index/#ix-email-authentication)
+- DNS, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), **[Email and DNS](https://gerriscorp.com/services/email-and-dns/)**, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/), [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [GitHub Pages Website Build](https://gerriscorp.com/guides/github-pages-website/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/). *See also* [email authentication](https://gerriscorp.com/site-index/#ix-email-authentication)
   - domain consolidation, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - internationalized domains, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - inventory before changes, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
@@ -423,10 +481,25 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - time-to-live values, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
   - verification records, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
+- DNSSEC, [Glossary](https://gerriscorp.com/guides/glossary/), **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**. *See also* [domain account security](https://gerriscorp.com/site-index/#ix-domain-account-security)
+  - turning it off before a DNS move, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)
+
+- domain account security, **[Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)**, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/). *See also* [DNS](https://gerriscorp.com/site-index/#ix-dns); [domain portfolios](https://gerriscorp.com/site-index/#ix-domain-portfolios)
+  - auto-renew, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+  - registrar lock, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/), [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+  - Registry Lock, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)
+  - two-factor authentication, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)
+  - watching for changes, [Domain Account Security](https://gerriscorp.com/guides/domain-account-security/)
+
+- domain portfolios, **[Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)**. *See also* [DNS](https://gerriscorp.com/site-index/#ix-dns); [domain account security](https://gerriscorp.com/site-index/#ix-domain-account-security)
+  - moving registrars, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+  - renewals and access, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+  - what the audit covers, [Domain Portfolio Audit](https://gerriscorp.com/services/domain-portfolio/)
+
 - DoNotPay, [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
 - doorway pages, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/)
 - doxxing, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
-- Drupal, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [In Your Stack](https://gerriscorp.com/stack/)
+- Drupal, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Project Rescue](https://gerriscorp.com/services/rescue/), [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
@@ -467,8 +540,15 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - SPF, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 
 - email records, protecting, [Project Rescue](https://gerriscorp.com/services/rescue/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/)
-- entities, [AI Search](https://gerriscorp.com/services/ai-search/), [Multi-Location](https://gerriscorp.com/services/multi-location/), [Structured Data](https://gerriscorp.com/guides/structured-data/). *See also* [structured data](https://gerriscorp.com/site-index/#ix-structured-data)
+- entities, [AI Search](https://gerriscorp.com/services/ai-search/), [Multi-Location](https://gerriscorp.com/services/multi-location/), [Structured Data](https://gerriscorp.com/guides/structured-data/), [Citation Provenance](https://gerriscorp.com/guides/citation-provenance/). *See also* [structured data](https://gerriscorp.com/site-index/#ix-structured-data)
   - parent organization and branches, [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/)
+
+- European Accessibility Act, **[European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)**, [Accessibility Remediation](https://gerriscorp.com/services/accessibility/). *See also* [accessibility](https://gerriscorp.com/site-index/#ix-accessibility)
+  - EN 301 549, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
+  - enforcement, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
+  - microenterprise exemption, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
+  - transitional periods, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
+  - who it covers, [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/)
 
 - eWorld, [About](https://gerriscorp.com/about/)
 - executive privacy, [Advisory](https://gerriscorp.com/services/advisory/)
@@ -505,6 +585,11 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - FAQ rich results, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - feedback loops, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/)
 - Fiverr, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
+- folklore tier, **[Stuck in the Folklore](https://gerriscorp.com/guides/stuck-in-the-folklore/)**. *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search); [black hat SEO](https://gerriscorp.com/site-index/#ix-black-hat-seo)
+  - the diagnostic, [Stuck in the Folklore](https://gerriscorp.com/guides/stuck-in-the-folklore/)
+  - what the stall costs, [Stuck in the Folklore](https://gerriscorp.com/guides/stuck-in-the-folklore/)
+  - why folklore wins the budget, [Stuck in the Folklore](https://gerriscorp.com/guides/stuck-in-the-folklore/)
+
 - Forbes, [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - fractional SEO and AI search lead, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
 - fractional technical lead, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)**, [Developer Specs and QA](https://gerriscorp.com/services/developers/). *See also* [developer specs](https://gerriscorp.com/site-index/#ix-developer-specs)
@@ -515,8 +600,14 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - retainer and hours, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)
 
 - Framer, [About](https://gerriscorp.com/about/)
-- FTC Endorsement Guides, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/)
-- FTC (Federal Trade Commission), [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/)
+- freezing a website, **[Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)**. *See also* [site migrations](https://gerriscorp.com/site-index/#ix-site-migrations); [static sites](https://gerriscorp.com/site-index/#ix-static-sites)
+  - costs and savings, [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
+  - counting every old address, [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
+  - cutover order, [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
+  - replacing dynamic parts, [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/)
+
+- FTC Endorsement Guides, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+- FTC (Federal Trade Commission), [Vet an AI Vendor](https://gerriscorp.com/guides/ai-vendor-pitch/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
@@ -535,8 +626,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - short-window engagement dips, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/)
 
 - Gartner hype cycle, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [Glossary](https://gerriscorp.com/guides/glossary/)
-- Gemini, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- GEO (generative engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search)
+- Gemini, [Services](https://gerriscorp.com/services/), [Analytics](https://gerriscorp.com/services/analytics/), [Advisory](https://gerriscorp.com/services/advisory/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Agent Readiness Review](https://gerriscorp.com/services/agent-readiness/)
+- GEO (generative engine optimization), [AI Search](https://gerriscorp.com/services/ai-search/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/). *See also* [AI search](https://gerriscorp.com/site-index/#ix-ai-search)
 - George Washington University, The, [About](https://gerriscorp.com/about/)
 - Gerris, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/)
   - 848 old URLs tested, 640 redirects, [In Your Stack](https://gerriscorp.com/stack/)
@@ -549,15 +640,15 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Gerris Digital (name never used), [Founder Record](https://gerriscorp.com/case-studies/founder-record/)
 - Gerris lacustris (water strider), [About](https://gerriscorp.com/about/), **[Colophon](https://gerriscorp.com/colophon/)**
 - Gerris Web Strategies, [Colophon](https://gerriscorp.com/colophon/)
-- Git, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/)
-- GitHub, **[README as an AI Source](https://gerriscorp.com/guides/readme-ai-source/)**, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/)
+- Git, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
+- GitHub, **[README as an AI Source](https://gerriscorp.com/guides/readme-ai-source/)**, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
   - organizations, [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/)
   - repository transfers, [Website Handover Checklist](https://gerriscorp.com/guides/website-handover/)
 
 - GitHub Actions, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/), [Podcast Website](https://gerriscorp.com/guides/podcast-website/), [Test an AI Pilot](https://gerriscorp.com/guides/ai-pilot-tests/)
 - GitHub Copilot, [AI Coding Assistants for Websites](https://gerriscorp.com/guides/ai-coding-assistants/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - GitHub Issues, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
-- GitHub Pages, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Colophon](https://gerriscorp.com/colophon/), [Privacy](https://gerriscorp.com/privacy/)
+- GitHub Pages, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Site Speed and CDN](https://gerriscorp.com/services/site-speed/), [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/), [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [Colophon](https://gerriscorp.com/colophon/), [Privacy](https://gerriscorp.com/privacy/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/), **[GitHub Pages Website Build](https://gerriscorp.com/guides/github-pages-website/)**
   - custom domains and HTTPS, [Podcast Website](https://gerriscorp.com/guides/podcast-website/)
 
 - GitLab, [Repository Access](https://gerriscorp.com/guides/repository-access/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
@@ -565,8 +656,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - glossary, **[Glossary](https://gerriscorp.com/guides/glossary/)**
 - GoDaddy, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - Google AI Mode, [AI Search](https://gerriscorp.com/services/ai-search/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
-- Google AI Overviews, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
-- Google Business Profile, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [Multi-Location](https://gerriscorp.com/services/multi-location/), **[Google Business Profile](https://gerriscorp.com/services/google-business-profile/)**, [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/), [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/), [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/). *See also* [multi-location businesses](https://gerriscorp.com/site-index/#ix-multilocation-businesses)
+- Google AI Overviews, [AI Search](https://gerriscorp.com/services/ai-search/), [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
+- Google Business Profile, [Services](https://gerriscorp.com/services/), [Agency Partner](https://gerriscorp.com/services/agency-partner/), [AI Visibility](https://gerriscorp.com/services/ai-visibility/), [Multi-Location](https://gerriscorp.com/services/multi-location/), **[Google Business Profile](https://gerriscorp.com/services/google-business-profile/)**, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/), [Multi-Location Entity](https://gerriscorp.com/case-studies/multi-location-entity/), [Seasonal Retailer](https://gerriscorp.com/case-studies/seasonal-retailer/), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/), [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/), [Products](https://gerriscorp.com/products/). *See also* [multi-location businesses](https://gerriscorp.com/site-index/#ix-multilocation-businesses)
   - how long reinstatement takes, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
   - performance reports, [New Google Business Reports](https://gerriscorp.com/guides/google-business-profile-reports/)
   - prevention, [Google Business Profile](https://gerriscorp.com/services/google-business-profile/)
@@ -590,7 +681,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - URL Inspection, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Content the Crawler Never Sees](https://gerriscorp.com/services/crawler-visibility/), [Search Console](https://gerriscorp.com/services/search-console/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)
 
 - Google Search Essentials, [SEO 101](https://gerriscorp.com/guides/seo-101/)
-- Google spam policies, [Fact-Checked Writing](https://gerriscorp.com/services/editorial/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/), [SEO 101](https://gerriscorp.com/guides/seo-101/)
+- Google spam policies, [Fact-Checked Writing](https://gerriscorp.com/services/editorial/), [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/), [SEO 101](https://gerriscorp.com/guides/seo-101/), [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
 - Google Tag Manager, [GA4 Consent Mode](https://gerriscorp.com/guides/ga4-consent-mode/)
 - Google updates, **[Search in 2026](https://gerriscorp.com/guides/search-in-2026/)**. *See also* [traffic drops](https://gerriscorp.com/site-index/#ix-traffic-drops)
   - 2026 update timeline, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/)
@@ -621,7 +712,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - headless Chrome, [Hydration Errors](https://gerriscorp.com/guides/hydration-errors/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/)
 - headless CMS, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
 - helpful content guidance (Google), [Content Briefs](https://gerriscorp.com/guides/content-briefs/)
-- hidden text, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/)
+- hidden text, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
 - Hill Mole, [Case Studies](https://gerriscorp.com/case-studies/), [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/), [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/), [About](https://gerriscorp.com/about/). *See also* [Movable Type](https://gerriscorp.com/site-index/#ix-movable-type)
 - hillmole.com, [About](https://gerriscorp.com/about/)
 - HIPAA, [Indexing Recovery](https://gerriscorp.com/case-studies/indexing-recovery/), [About](https://gerriscorp.com/about/), [In Your Stack](https://gerriscorp.com/stack/)
@@ -678,9 +769,16 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - servers and hosting, [In Your Stack](https://gerriscorp.com/stack/)
   - structured data, [In Your Stack](https://gerriscorp.com/stack/)
 
+- incident timelines, **[Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)**. *See also* [multiple causes](https://gerriscorp.com/site-index/#ix-multiple-causes); [root cause analysis](https://gerriscorp.com/site-index/#ix-root-cause-analysis)
+  - competing explanations, [Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)
+  - evidence tables, [Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)
+  - observable terms, [Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)
+  - one time convention, [Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)
+  - recording the intervention, [Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/)
+
 - index bloat, [Search Console](https://gerriscorp.com/services/search-console/)
 - Indexed, though blocked by robots.txt, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
-- indexing audit, [Search Console](https://gerriscorp.com/services/search-console/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/), **[Indexing Audit](https://gerriscorp.com/services/indexing-audit/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/). *See also* [Crawled, currently not indexed](https://gerriscorp.com/site-index/#ix-crawled-currently-not-indexed)
+- indexing audit, [Search Console](https://gerriscorp.com/services/search-console/), [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/), **[Indexing Audit](https://gerriscorp.com/services/indexing-audit/)**, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/), [Products](https://gerriscorp.com/products/). *See also* [Crawled, currently not indexed](https://gerriscorp.com/site-index/#ix-crawled-currently-not-indexed)
   - backlink audit and disavow, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
   - prioritized fix list, [Indexing Audit](https://gerriscorp.com/services/indexing-audit/)
 
@@ -691,6 +789,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - release workflow, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
 
 - infinite scroll, [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/)
+- influencer vetting, **[Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)**. *See also* [FTC Endorsement Guides](https://gerriscorp.com/site-index/#ix-ftc-endorsement-guides)
+  - checking past claims, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+  - contract protections, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+  - fake followers, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+  - reading the archive, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+  - reading the audience, [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+
 - Institute for the Future, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 - interim and white label executive, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 - internal links, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/), [SEO 101](https://gerriscorp.com/guides/seo-101/), **[Internal Linking](https://gerriscorp.com/services/internal-linking/)**
@@ -819,6 +924,12 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - multi-site cleanup, [Multi-Location](https://gerriscorp.com/services/multi-location/)
   - seasonal planning, [Multi-Location](https://gerriscorp.com/services/multi-location/)
   - sister businesses, [Multi-Location](https://gerriscorp.com/services/multi-location/)
+
+- multiple causes, **[Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)**. *See also* [root cause analysis](https://gerriscorp.com/site-index/#ix-root-cause-analysis); [traffic drops](https://gerriscorp.com/site-index/#ix-traffic-drops)
+  - a track for each cause, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - joining tracks only on proof, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - sequencing the fixes, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
+  - signs of more than one problem, [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)
 
 - MXToolbox, [Email Blocklist Recovery](https://gerriscorp.com/guides/email-blocklist-recovery/), [Email Deliverability](https://gerriscorp.com/guides/email-deliverability/)
 
@@ -959,7 +1070,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - YouTube, [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/)
 
 - prerendering, [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
-- privacy, **[Privacy](https://gerriscorp.com/privacy/)**
+- privacy, **[Privacy](https://gerriscorp.com/privacy/)**, [AI Use Policy](https://gerriscorp.com/guides/ai-use-policy/)
+- products and fixed prices, **[Products](https://gerriscorp.com/products/)**. *See also* [AI visibility](https://gerriscorp.com/site-index/#ix-ai-visibility); [indexing audit](https://gerriscorp.com/site-index/#ix-indexing-audit)
+  - AI answer reports, [Products](https://gerriscorp.com/products/)
+  - GBP reinstatement tiers, [Products](https://gerriscorp.com/products/)
+  - local visibility reports, [Products](https://gerriscorp.com/products/)
+  - Search Console reports, [Products](https://gerriscorp.com/products/)
+
 - programmatic SEO, [Large Sites](https://gerriscorp.com/services/large-sites/), [Faceted Navigation](https://gerriscorp.com/guides/faceted-navigation/), [Programmatic Indexing](https://gerriscorp.com/case-studies/programmatic-indexing/), [Indexing Audit](https://gerriscorp.com/services/indexing-audit/), **[Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)**. *See also* [large and programmatic sites](https://gerriscorp.com/site-index/#ix-large-and-programmatic-sites); [scaled content abuse](https://gerriscorp.com/site-index/#ix-scaled-content-abuse)
   - content chunking, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
   - data and templates, [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
@@ -975,7 +1092,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - restoring self-service, [Project Rescue](https://gerriscorp.com/services/rescue/)
   - server stabilization, [Project Rescue](https://gerriscorp.com/services/rescue/)
 
-- prompt injection, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/)
+- prompt injection, [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)
 - prompt sets, [Analytics](https://gerriscorp.com/services/analytics/), [AI Search](https://gerriscorp.com/services/ai-search/)
 - Proxima (later Proxicom), [About](https://gerriscorp.com/about/)
 - pull requests, [Developer Specs and QA](https://gerriscorp.com/services/developers/), [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/), [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/), [Glossary](https://gerriscorp.com/guides/glossary/), [Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)
@@ -1010,7 +1127,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - release checkpoints, [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
 - reporting, plain-English, [Home](https://gerriscorp.com/), [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Analytics](https://gerriscorp.com/services/analytics/)
 - reports, disagreeing, [Analytics](https://gerriscorp.com/services/analytics/)
-- repositories, [Glossary](https://gerriscorp.com/guides/glossary/)
+- repositories, [Glossary](https://gerriscorp.com/guides/glossary/), [Several AI Agents, One Repository](https://gerriscorp.com/guides/ai-agents-one-repository/)
 - repository access for an SEO, **[Repository Access](https://gerriscorp.com/guides/repository-access/)**
   - branch protection and rulesets, [Repository Access](https://gerriscorp.com/guides/repository-access/)
   - checklist, [Repository Access](https://gerriscorp.com/guides/repository-access/)
@@ -1022,7 +1139,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - removing access, [Repository Access](https://gerriscorp.com/guides/repository-access/)
   - secrets and push protection, [Repository Access](https://gerriscorp.com/guides/repository-access/)
 
-- reputation management, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[Reputation](https://gerriscorp.com/services/reputation/)**, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/), [Reputation Management Requires Change](https://gerriscorp.com/guides/reputation-management-requires-change/). *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
+- reputation management, [Services](https://gerriscorp.com/services/), [Advisory](https://gerriscorp.com/services/advisory/), **[Reputation](https://gerriscorp.com/services/reputation/)**, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/), [Reputation Management Requires Change](https://gerriscorp.com/guides/reputation-management-requires-change/), [Citation Provenance](https://gerriscorp.com/guides/citation-provenance/). *See also* [personal information removal](https://gerriscorp.com/site-index/#ix-personal-information-removal)
   - auditing the record, [Reputation](https://gerriscorp.com/services/reputation/)
   - changing the behavior first, [Reputation Management Requires Change](https://gerriscorp.com/guides/reputation-management-requires-change/)
   - correcting AI answers, [Reputation](https://gerriscorp.com/services/reputation/)
@@ -1033,13 +1150,25 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - working with security and legal teams, [Reputation](https://gerriscorp.com/services/reputation/)
 
 - Reputation.com, [Reputation](https://gerriscorp.com/services/reputation/), [About](https://gerriscorp.com/about/)
+- restore drills, **[Restore Drills](https://gerriscorp.com/guides/restore-drills/)**. *See also* [backups](https://gerriscorp.com/site-index/#ix-backups)
+  - deciding what to protect, [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
+  - gaps a drill uncovers, [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
+  - how often, [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
+  - restoring somewhere safe, [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
+  - timing the drill, [Restore Drills](https://gerriscorp.com/guides/restore-drills/)
+
 - Results about you (Google tool), [Reputation](https://gerriscorp.com/services/reputation/), [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
 - retainers, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/), [Advisory](https://gerriscorp.com/services/advisory/), [Ongoing Support](https://gerriscorp.com/services/ongoing-support/), [Reputation](https://gerriscorp.com/services/reputation/), [Work With Me](https://gerriscorp.com/work-with-me/), [FAQ](https://gerriscorp.com/faq/)
+- review searches, **[When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)**. *See also* [AI visibility](https://gerriscorp.com/site-index/#ix-ai-visibility); [Google AI Overviews](https://gerriscorp.com/site-index/#ix-google-ai-overviews)
+  - best and top-rated searches, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
+  - checking the answer yourself, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
+  - near me searches, [When a Customer Asks for the Best](https://gerriscorp.com/guides/ai-answers-review-searches/)
+
 - Rheingold, Howard, [About](https://gerriscorp.com/about/)
 - rich results, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Rich Results Test, [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - right to erasure, [Personal Information Removal](https://gerriscorp.com/guides/personal-information-removal/)
-- robots.txt, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/), **[robots.txt](https://gerriscorp.com/guides/robots-txt/)**
+- robots.txt, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/), [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [SEO Build Checks](https://gerriscorp.com/guides/seo-build-checks/), **[robots.txt](https://gerriscorp.com/guides/robots-txt/)**, [AI Agents on Your Website](https://gerriscorp.com/guides/ai-agents-on-your-website/)
   - AI agents list, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
   - AI crawlers, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
   - common mistakes, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
@@ -1049,6 +1178,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - syntax, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
   - testing changes, [robots.txt](https://gerriscorp.com/guides/robots-txt/)
 
+- root cause analysis, **[Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/)**, [Website Incident Timeline](https://gerriscorp.com/guides/website-incident-timeline/). *See also* [multiple causes](https://gerriscorp.com/site-index/#ix-multiple-causes); [traffic drops](https://gerriscorp.com/site-index/#ix-traffic-drops)
 - roundups and best-of lists, [Citation Gap Analysis](https://gerriscorp.com/guides/citation-gap-analysis/), [Self-Ranking Lists](https://gerriscorp.com/guides/self-ranking-lists/)
 - Route 53, [Email and DNS](https://gerriscorp.com/services/email-and-dns/)
 - RSS feeds, [Podcast Websites](https://gerriscorp.com/services/podcast-sites/), [IndexNow and AI search](https://gerriscorp.com/guides/indexnow-ai-search/)
@@ -1058,7 +1188,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## S
 - Sanity, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), **[Sanity and Vercel](https://gerriscorp.com/case-studies/sanity-vercel/)**
-- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/), [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/)
+- scaled content abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/), [Programmatic SEO](https://gerriscorp.com/guides/programmatic-seo/), [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
 - Schema Markup Validator, [Next.js SEO Checklist](https://gerriscorp.com/guides/nextjs-seo/), [Structured Data](https://gerriscorp.com/guides/structured-data/)
 - Screaming Frog SEO Spider, [Technical SEO](https://gerriscorp.com/services/technical-seo/), [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/), [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/), [Core Web Vitals with MCP](https://gerriscorp.com/guides/core-web-vitals-mcp/). *See also* [migration tools](https://gerriscorp.com/site-index/#ix-migration-tools)
   - crawl comparison and URL Mapping, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [Migration Tools](https://gerriscorp.com/guides/migration-tools/)
@@ -1128,7 +1258,12 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - duplicate product markup, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
   - review metafields, [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/)
 
-- site migrations, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Project Rescue](https://gerriscorp.com/services/rescue/), **[Migrations](https://gerriscorp.com/services/migrations/)**, **[Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)**, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/). *See also* [301 redirects](https://gerriscorp.com/site-index/#ix-301-redirects); [migration recovery](https://gerriscorp.com/site-index/#ix-migration-recovery)
+- site indexes and glossaries, **[Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)**. *See also* [glossary](https://gerriscorp.com/site-index/#ix-glossary)
+  - how the index is built, [Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)
+  - keeping the index current, [Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)
+  - why it helps search, [Site Index and Glossary](https://gerriscorp.com/services/site-index-and-glossary/)
+
+- site migrations, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), [Project Rescue](https://gerriscorp.com/services/rescue/), **[Migrations](https://gerriscorp.com/services/migrations/)**, **[Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)**, [Netlify Migration](https://gerriscorp.com/case-studies/netlify-migration/), [Shopify Migration](https://gerriscorp.com/case-studies/shopify-migration/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/). *See also* [301 redirects](https://gerriscorp.com/site-index/#ix-301-redirects); [migration recovery](https://gerriscorp.com/site-index/#ix-migration-recovery)
   - after launch, [Migrations](https://gerriscorp.com/services/migrations/)
   - baseline, [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)
   - how long to keep redirects, [Migrations](https://gerriscorp.com/services/migrations/)
@@ -1145,7 +1280,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - URL inventory, [Migrations](https://gerriscorp.com/services/migrations/), [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)
   - what to expect, [Migration Checklist](https://gerriscorp.com/guides/migration-checklist/)
 
-- site reputation abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/)
+- site reputation abuse, [Search in 2026](https://gerriscorp.com/guides/search-in-2026/), [Glossary](https://gerriscorp.com/guides/glossary/), [Black Hat in Modern Dress](https://gerriscorp.com/guides/black-hat-in-modern-dress/)
 - site speed, [Home](https://gerriscorp.com/), [Services](https://gerriscorp.com/services/), **[Site Speed and CDN](https://gerriscorp.com/services/site-speed/)**, [Speculation Rules](https://gerriscorp.com/guides/speculation-rules/), **[Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)**
   - AI crawler list in robots.txt, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
   - deferred analytics, [Four Site Speed Pass](https://gerriscorp.com/case-studies/four-site-speed-pass/)
@@ -1183,6 +1318,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - SSH, [Project Rescue](https://gerriscorp.com/services/rescue/), [App Takeover](https://gerriscorp.com/case-studies/app-takeover/)
 - Stack Overflow Developer Survey (2025), [Hiring Developers](https://gerriscorp.com/guides/hiring-developers/), [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 - staging sites, [Search Console](https://gerriscorp.com/services/search-console/), [Migrations](https://gerriscorp.com/services/migrations/)
+- static sites, [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/), [GitHub Pages Website Build](https://gerriscorp.com/guides/github-pages-website/), [Restore Drills](https://gerriscorp.com/guides/restore-drills/). *See also* [freezing a website](https://gerriscorp.com/site-index/#ix-freezing-a-website); [GitHub Pages](https://gerriscorp.com/site-index/#ix-github-pages)
 - static websites, [WordPress Care](https://gerriscorp.com/services/wordpress-care/), [Migrations](https://gerriscorp.com/services/migrations/)
 - strategic advisory, [Services](https://gerriscorp.com/services/), [AI Agents and Automation](https://gerriscorp.com/services/ai-automation/), **[Advisory](https://gerriscorp.com/services/advisory/)**
   - AI adoption, [Advisory](https://gerriscorp.com/services/advisory/)
@@ -1240,13 +1376,19 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - online communities, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
   - social media, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/)
 
+- testimonials, **[Testimonials](https://gerriscorp.com/testimonials/)**. *See also* [Abraham Harrison](https://gerriscorp.com/site-index/#ix-abraham-harrison)
+  - campaign clients, [Testimonials](https://gerriscorp.com/testimonials/)
+  - former interns and colleagues, [Testimonials](https://gerriscorp.com/testimonials/)
+  - peers and partners, [Testimonials](https://gerriscorp.com/testimonials/)
+  - pro bono work, [Testimonials](https://gerriscorp.com/testimonials/)
+
 - text browsers, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/). *See also* [Lynx](https://gerriscorp.com/site-index/#ix-lynx)
 - The WELL, [Hype or Shift](https://gerriscorp.com/guides/hype-or-shift/), [About](https://gerriscorp.com/about/)
 - therapy practice (anonymized client), [GBP Reinstatement](https://gerriscorp.com/case-studies/gbp-reinstatement/)
 - thin and duplicate pages, [Crawled, Not Indexed](https://gerriscorp.com/guides/crawled-not-indexed/)
 - ThinkPad, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 - ThinkPad X220, [Colophon](https://gerriscorp.com/colophon/)
-- ticket systems, [Developer Specs and QA](https://gerriscorp.com/services/developers/)
+- ticket systems, [Developer Specs and QA](https://gerriscorp.com/services/developers/), [SEO Developer Tickets](https://gerriscorp.com/guides/seo-developer-tickets/)
 - titles and meta descriptions, [SEO Engineering](https://gerriscorp.com/services/seo-engineering/), [On-Page SEO](https://gerriscorp.com/services/on-page-seo/), [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/)
   - pipes and brand suffixes, [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/)
   - title rewrites and length, [Fact check AI SEO advice](https://gerriscorp.com/guides/fact-check-ai-seo/)
@@ -1254,7 +1396,7 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 - Todoist, [Built with Codex and Claude Code](https://gerriscorp.com/case-studies/built-with-claude-code/)
 - Torvalds, Linus, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - Total Blocking Time, [Core Web Vitals](https://gerriscorp.com/guides/core-web-vitals/)
-- traffic drops, [Home](https://gerriscorp.com/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), **[Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)**, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/). *See also* [Google updates](https://gerriscorp.com/site-index/#ix-google-updates)
+- traffic drops, [Home](https://gerriscorp.com/), [Technical SEO](https://gerriscorp.com/services/technical-seo/), **[Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)**, [Removed Location Pages](https://gerriscorp.com/guides/removed-location-pages/), [Two Problems at Once](https://gerriscorp.com/guides/two-problems-at-once/). *See also* [Google updates](https://gerriscorp.com/site-index/#ix-google-updates)
   - confirming the drop is real, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
   - finding where the loss is, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
   - lining up dates, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
@@ -1265,7 +1407,13 @@ Names of people run surname first, and "See also" leads to neighboring headings.
   - writing it down, [Diagnosing a Traffic Drop](https://gerriscorp.com/guides/traffic-drop/)
 
 - training cutoffs, [AI Assistants](https://gerriscorp.com/guides/ai-assistants/)
-- transcripts, [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/)
+- transcription on Linux, **[Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)**. *See also* [transcripts](https://gerriscorp.com/site-index/#ix-transcripts)
+  - older hardware, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - reducing a recording to speech, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - speaker labels, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+  - Whisper, [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
+
+- transcripts, [Podcast SEO](https://gerriscorp.com/guides/podcast-seo/), [Podcast for Your Brand](https://gerriscorp.com/guides/podcast-for-your-brand/), [Podcasting as an Investment](https://gerriscorp.com/guides/podcast-investment/), [Private Transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/)
 - Treasury Department, [About](https://gerriscorp.com/about/)
 - Trump, Donald, [The SEO Superpower](https://gerriscorp.com/guides/seo-superpower/)
 - TTFB (time to first byte), [Glossary](https://gerriscorp.com/guides/glossary/)
@@ -1298,8 +1446,8 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 ## W
 - WAVE, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
-- Wayback Machine, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [In Your Stack](https://gerriscorp.com/stack/)
-- WCAG, [SEO 101](https://gerriscorp.com/guides/seo-101/), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
+- Wayback Machine, [Migration Recovery](https://gerriscorp.com/guides/migration-recovery/), [301 Redirects](https://gerriscorp.com/guides/301-redirects/), [Founder Record](https://gerriscorp.com/case-studies/founder-record/), [In Your Stack](https://gerriscorp.com/stack/), [Freeze an Old Website](https://gerriscorp.com/guides/freeze-old-website/), [Vet an Influencer](https://gerriscorp.com/guides/vet-an-influencer/)
+- WCAG, [SEO 101](https://gerriscorp.com/guides/seo-101/), [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/), [European Accessibility Act](https://gerriscorp.com/guides/european-accessibility-act/), [Accessibility Remediation](https://gerriscorp.com/services/accessibility/)
 - Web Developer extension, [Lynx for Website QA](https://gerriscorp.com/guides/lynx-qa/)
 - WebAIM Million, [ADA Website Compliance](https://gerriscorp.com/guides/ada-website-compliance/)
 - Webflow, [Fractional Technical Lead](https://gerriscorp.com/services/technical-lead/)
@@ -1381,4 +1529,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated November 14, 2026
+Updated November 16, 2026

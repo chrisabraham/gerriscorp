@@ -48,6 +48,8 @@ A fixed-scope audit, quoted as a fixed fee from the number of domains and accoun
 
 **Related:** [Email authentication and DNS](https://gerriscorp.com/services/email-and-dns/) · [Domain security guide](https://gerriscorp.com/guides/domain-account-security/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
+[Get your domains under control](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

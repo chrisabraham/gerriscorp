@@ -83,6 +83,8 @@ Google has to recrawl and reprocess the affected pages first, which takes days f
 
 **Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [JavaScript SEO](https://gerriscorp.com/guides/javascript-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/) · [SEO engineering](https://gerriscorp.com/services/seo-engineering/)
 
+[Tell me what happened to your traffic](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

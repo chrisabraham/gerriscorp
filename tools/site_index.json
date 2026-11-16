@@ -93,7 +93,8 @@
    "kind": "topic",
    "pages": [
     "case-studies/founder-record",
-    "about"
+    "about",
+    "testimonials"
    ],
    "subs": {},
    "see": [],
@@ -224,7 +225,8 @@
     "services/technical-seo",
     "services/crawler-visibility",
     "guides/glossary",
-    "case-studies/react-event-platform"
+    "case-studies/react-event-platform",
+    "guides/seo-developer-tickets"
    ],
    "subs": {},
    "see": [],
@@ -244,7 +246,9 @@
    "kind": "topic",
    "pages": [
     "guides/ada-website-compliance",
-    "guides/lynx-qa"
+    "guides/lynx-qa",
+    "guides/european-accessibility-act",
+    "services/accessibility"
    ],
    "subs": {
     "what the law expects": [
@@ -274,7 +278,8 @@
    },
    "see": [],
    "main": [
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "services/accessibility"
    ]
   },
   "accessibility overlays": {
@@ -319,7 +324,8 @@
   "AEO (answer engine optimization)": {
    "kind": "topic",
    "pages": [
-    "services/ai-search"
+    "services/ai-search",
+    "services/ai-visibility"
    ],
    "subs": {},
    "see": [
@@ -416,7 +422,9 @@
   "AI agents, browsing": {
    "kind": "topic",
    "pages": [
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
    ],
    "subs": {},
    "see": [],
@@ -485,7 +493,8 @@
    "kind": "topic",
    "pages": [
     "guides/ai-coding-assistants",
-    "guides/seo-superpower"
+    "guides/seo-superpower",
+    "guides/ai-agents-one-repository"
    ],
    "subs": {
     "written specs": [
@@ -556,7 +565,9 @@
     "home",
     "services",
     "services/advisory",
-    "services/ai-search"
+    "services/ai-search",
+    "services/ai-visibility",
+    "guides/stuck-in-the-folklore"
    ],
    "subs": {
     "SEO, AEO, and GEO": [
@@ -597,7 +608,8 @@
     "guides",
     "guides/measure-ai-search",
     "services/ai-search",
-    "services/analytics"
+    "services/analytics",
+    "services/ai-visibility"
    ],
    "subs": {
     "citations, mentions, referrals, and leads": [
@@ -949,7 +961,8 @@
    "pages": [
     "services/wordpress-care",
     "services/ai-automation",
-    "guides/website-handover"
+    "guides/website-handover",
+    "guides/restore-drills"
    ],
    "subs": {},
    "see": [],
@@ -1310,7 +1323,8 @@
     "services/crawler-visibility",
     "services/ai-search",
     "guides/ai-assistants",
-    "guides/podcast-for-your-brand"
+    "guides/podcast-for-your-brand",
+    "services/agent-readiness"
    ],
    "subs": {},
    "see": [],
@@ -1382,7 +1396,8 @@
    "pages": [
     "guides",
     "guides/citation-gap-analysis",
-    "guides/glossary"
+    "guides/glossary",
+    "guides/citation-provenance"
    ],
    "subs": {
     "collecting cited sources": [
@@ -1508,7 +1523,9 @@
     "services/site-speed",
     "guides/cloudflare-seo",
     "guides/wordpress-behind-cloudflare",
-    "case-studies/indexing-recovery"
+    "case-studies/indexing-recovery",
+    "guides/ai-agents-on-your-website",
+    "guides/github-pages-website"
    ],
    "subs": {
     "Cache Rules and Tiered Cache": [
@@ -1549,7 +1566,8 @@
     ],
     "Registrar": [
      "guides/cloudflare-seo",
-     "guides/podcast-website"
+     "guides/podcast-website",
+     "guides/github-pages-website"
     ],
     "proxied or DNS only": [
      "guides/cloudflare-seo"
@@ -2229,7 +2247,10 @@
     "services/rescue",
     "services/site-speed",
     "services/email-and-dns",
-    "guides/website-handover"
+    "guides/website-handover",
+    "guides/domain-account-security",
+    "guides/github-pages-website",
+    "services/domain-portfolio"
    ],
    "subs": {
     "inventory before changes": [
@@ -2290,7 +2311,8 @@
    "pages": [
     "services/technical-lead",
     "services/rescue",
-    "stack"
+    "stack",
+    "guides/freeze-old-website"
    ],
    "subs": {},
    "see": [],
@@ -2464,7 +2486,8 @@
    "pages": [
     "services/multi-location",
     "services/ai-search",
-    "guides/structured-data"
+    "guides/structured-data",
+    "guides/citation-provenance"
    ],
    "subs": {
     "parent organization and branches": [
@@ -2704,7 +2727,8 @@
   "FTC (Federal Trade Commission)": {
    "kind": "topic",
    "pages": [
-    "guides/ai-vendor-pitch"
+    "guides/ai-vendor-pitch",
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -2713,7 +2737,8 @@
   "FTC Endorsement Guides": {
    "kind": "topic",
    "pages": [
-    "guides/citation-gap-analysis"
+    "guides/citation-gap-analysis",
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -2790,7 +2815,8 @@
     "services/advisory",
     "services/crawler-visibility",
     "services/ai-search",
-    "guides/ai-assistants"
+    "guides/ai-assistants",
+    "services/agent-readiness"
    ],
    "subs": {},
    "see": [],
@@ -2799,7 +2825,8 @@
   "GEO (generative engine optimization)": {
    "kind": "topic",
    "pages": [
-    "services/ai-search"
+    "services/ai-search",
+    "services/ai-visibility"
    ],
    "subs": {},
    "see": [
@@ -2884,7 +2911,8 @@
     "services/seo-engineering",
     "guides/ai-coding-assistants",
     "guides/seo-superpower",
-    "guides/glossary"
+    "guides/glossary",
+    "guides/ai-agents-one-repository"
    ],
    "subs": {},
    "see": [],
@@ -2897,7 +2925,8 @@
     "guides/repository-access",
     "guides/seo-superpower",
     "case-studies/sanity-vercel",
-    "case-studies/programmatic-indexing"
+    "case-studies/programmatic-indexing",
+    "guides/ai-agents-one-repository"
    ],
    "subs": {
     "organizations": [
@@ -2952,7 +2981,9 @@
     "services/migrations",
     "services/podcast-sites",
     "colophon",
-    "privacy"
+    "privacy",
+    "guides/freeze-old-website",
+    "guides/github-pages-website"
    ],
    "subs": {
     "custom domains and HTTPS": [
@@ -2960,7 +2991,9 @@
     ]
    },
    "see": [],
-   "main": []
+   "main": [
+    "guides/github-pages-website"
+   ]
   },
   "GitLab": {
    "kind": "topic",
@@ -3018,7 +3051,8 @@
     "services/ai-search",
     "guides/ai-assistants",
     "guides/search-in-2026",
-    "guides/self-ranking-lists"
+    "guides/self-ranking-lists",
+    "guides/ai-answers-review-searches"
    ],
    "subs": {},
    "see": [],
@@ -3034,7 +3068,10 @@
     "services/multi-location",
     "case-studies/multi-location-entity",
     "case-studies/seasonal-retailer",
-    "case-studies/gbp-reinstatement"
+    "case-studies/gbp-reinstatement",
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches",
+    "products"
    ],
    "subs": {
     "suspensions": [
@@ -3177,7 +3214,8 @@
     "services/editorial",
     "guides/search-in-2026",
     "guides/self-ranking-lists",
-    "guides/seo-101"
+    "guides/seo-101",
+    "guides/black-hat-in-modern-dress"
    ],
    "subs": {},
    "see": [],
@@ -3388,7 +3426,8 @@
   "hidden text": {
    "kind": "topic",
    "pages": [
-    "guides/search-in-2026"
+    "guides/search-in-2026",
+    "guides/black-hat-in-modern-dress"
    ],
    "subs": {},
    "see": [],
@@ -3672,7 +3711,8 @@
     "services/indexing-audit",
     "guides/programmatic-seo",
     "guides/crawled-not-indexed",
-    "services/search-console"
+    "services/search-console",
+    "products"
    ],
    "subs": {
     "backlink audit and disavow": [
@@ -5166,7 +5206,8 @@
   "privacy": {
    "kind": "topic",
    "pages": [
-    "privacy"
+    "privacy",
+    "guides/ai-use-policy"
    ],
    "subs": {},
    "see": [],
@@ -5247,7 +5288,8 @@
   "prompt injection": {
    "kind": "topic",
    "pages": [
-    "services/ai-automation"
+    "services/ai-automation",
+    "guides/ai-agents-on-your-website"
    ],
    "subs": {},
    "see": [],
@@ -5473,7 +5515,8 @@
   "repositories": {
    "kind": "topic",
    "pages": [
-    "guides/glossary"
+    "guides/glossary",
+    "guides/ai-agents-one-repository"
    ],
    "subs": {},
    "see": [],
@@ -5525,7 +5568,8 @@
     "services/advisory",
     "services/reputation",
     "guides/personal-information-removal",
-    "guides/reputation-management-requires-change"
+    "guides/reputation-management-requires-change",
+    "guides/citation-provenance"
    ],
    "subs": {
     "auditing the record": [
@@ -5636,7 +5680,8 @@
     "guides/ai-assistants",
     "guides/nextjs-seo",
     "guides/seo-build-checks",
-    "guides/robots-txt"
+    "guides/robots-txt",
+    "guides/ai-agents-on-your-website"
    ],
    "subs": {
     "location and scope": [
@@ -5719,7 +5764,8 @@
    "pages": [
     "guides/search-in-2026",
     "guides/glossary",
-    "guides/programmatic-seo"
+    "guides/programmatic-seo",
+    "guides/black-hat-in-modern-dress"
    ],
    "subs": {},
    "see": [],
@@ -6122,7 +6168,8 @@
     "services/migrations",
     "guides/migration-checklist",
     "case-studies/netlify-migration",
-    "case-studies/shopify-migration"
+    "case-studies/shopify-migration",
+    "guides/freeze-old-website"
    ],
    "subs": {
     "kinds of migration": [
@@ -6186,7 +6233,8 @@
    "kind": "topic",
    "pages": [
     "guides/search-in-2026",
-    "guides/glossary"
+    "guides/glossary",
+    "guides/black-hat-in-modern-dress"
    ],
    "subs": {},
    "see": [],
@@ -6765,7 +6813,8 @@
   "ticket systems": {
    "kind": "topic",
    "pages": [
-    "services/developers"
+    "services/developers",
+    "guides/seo-developer-tickets"
    ],
    "subs": {},
    "see": [],
@@ -6822,7 +6871,8 @@
     "home",
     "services/technical-seo",
     "guides/traffic-drop",
-    "guides/removed-location-pages"
+    "guides/removed-location-pages",
+    "guides/two-problems-at-once"
    ],
    "subs": {
     "confirming the drop is real": [
@@ -6871,7 +6921,8 @@
    "pages": [
     "guides/podcast-seo",
     "guides/podcast-for-your-brand",
-    "guides/podcast-investment"
+    "guides/podcast-investment",
+    "guides/private-transcription-linux"
    ],
    "subs": {},
    "see": [],
@@ -7054,7 +7105,9 @@
     "guides/migration-recovery",
     "guides/301-redirects",
     "case-studies/founder-record",
-    "stack"
+    "stack",
+    "guides/freeze-old-website",
+    "guides/vet-an-influencer"
    ],
    "subs": {},
    "see": [],
@@ -7064,7 +7117,9 @@
    "kind": "topic",
    "pages": [
     "guides/seo-101",
-    "guides/ada-website-compliance"
+    "guides/ada-website-compliance",
+    "guides/european-accessibility-act",
+    "services/accessibility"
    ],
    "subs": {},
    "see": [],
@@ -7461,6 +7516,703 @@
    "main": [
     "guides/reputation-management-requires-change"
    ]
+  },
+  "AI visibility": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-visibility",
+    "guides/ai-answers-review-searches",
+    "products"
+   ],
+   "subs": {
+    "audits": [
+     "services/ai-visibility",
+     "products"
+    ],
+    "claim sprint": [
+     "services/ai-visibility"
+    ],
+    "monthly measurement": [
+     "services/ai-visibility"
+    ]
+   },
+   "see": [
+    "AI search",
+    "AI search, measuring"
+   ],
+   "main": [
+    "services/ai-visibility"
+   ]
+  },
+  "review searches": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-answers-review-searches"
+   ],
+   "subs": {
+    "best and top-rated searches": [
+     "guides/ai-answers-review-searches"
+    ],
+    "near me searches": [
+     "guides/ai-answers-review-searches"
+    ],
+    "checking the answer yourself": [
+     "guides/ai-answers-review-searches"
+    ]
+   },
+   "see": [
+    "AI visibility",
+    "Google AI Overviews"
+   ],
+   "main": [
+    "guides/ai-answers-review-searches"
+   ]
+  },
+  "AI agents on websites": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-on-your-website",
+    "services/agent-readiness"
+   ],
+   "subs": {
+    "how agents identify themselves": [
+     "guides/ai-agents-on-your-website"
+    ],
+    "firewalls and agent visits": [
+     "guides/ai-agents-on-your-website",
+     "services/agent-readiness"
+    ],
+    "what an agent may do": [
+     "guides/ai-agents-on-your-website"
+    ],
+    "measuring agent visits": [
+     "guides/ai-agents-on-your-website"
+    ]
+   },
+   "see": [
+    "AI agents, browsing",
+    "agent readiness"
+   ],
+   "main": [
+    "guides/ai-agents-on-your-website"
+   ]
+  },
+  "AI agents, one repository": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-agents-one-repository"
+   ],
+   "subs": {
+    "separate working copies": [
+     "guides/ai-agents-one-repository"
+    ],
+    "fetch first": [
+     "guides/ai-agents-one-repository"
+    ],
+    "force pushes": [
+     "guides/ai-agents-one-repository"
+    ],
+    "one instruction file": [
+     "guides/ai-agents-one-repository"
+    ],
+    "build checks as referee": [
+     "guides/ai-agents-one-repository"
+    ]
+   },
+   "see": [
+    "AI coding assistants",
+    "repositories"
+   ],
+   "main": [
+    "guides/ai-agents-one-repository"
+   ]
+  },
+  "AI use policies": {
+   "kind": "topic",
+   "pages": [
+    "guides/ai-use-policy",
+    "services/ai-policy"
+   ],
+   "subs": {
+    "approved tools": [
+     "guides/ai-use-policy",
+     "services/ai-policy"
+    ],
+    "data that never goes in": [
+     "guides/ai-use-policy"
+    ],
+    "human review before publishing": [
+     "guides/ai-use-policy"
+    ],
+    "disclosure": [
+     "guides/ai-use-policy",
+     "services/ai-policy"
+    ],
+    "meetings and recordings": [
+     "guides/ai-use-policy"
+    ]
+   },
+   "see": [
+    "AI policy and training"
+   ],
+   "main": [
+    "guides/ai-use-policy",
+    "services/ai-policy"
+   ]
+  },
+  "black hat SEO": {
+   "kind": "topic",
+   "pages": [
+    "guides/black-hat-in-modern-dress"
+   ],
+   "subs": {
+    "hidden text and hidden instructions": [
+     "guides/black-hat-in-modern-dress"
+    ],
+    "forged expertise": [
+     "guides/black-hat-in-modern-dress"
+    ],
+    "citation stacking": [
+     "guides/black-hat-in-modern-dress"
+    ],
+    "review velocity": [
+     "guides/black-hat-in-modern-dress"
+    ]
+   },
+   "see": [
+    "Google spam policies"
+   ],
+   "main": [
+    "guides/black-hat-in-modern-dress"
+   ]
+  },
+  "citation provenance": {
+   "kind": "topic",
+   "pages": [
+    "guides/citation-provenance"
+   ],
+   "subs": {
+    "hierarchy of receipts": [
+     "guides/citation-provenance"
+    ],
+    "the practice standard": [
+     "guides/citation-provenance"
+    ]
+   },
+   "see": [
+    "citation gap analysis",
+    "reputation management"
+   ],
+   "main": [
+    "guides/citation-provenance"
+   ]
+  },
+  "domain account security": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security",
+    "services/domain-portfolio"
+   ],
+   "subs": {
+    "registrar lock": [
+     "guides/domain-account-security",
+     "services/domain-portfolio"
+    ],
+    "Registry Lock": [
+     "guides/domain-account-security"
+    ],
+    "two-factor authentication": [
+     "guides/domain-account-security"
+    ],
+    "auto-renew": [
+     "guides/domain-account-security",
+     "services/domain-portfolio"
+    ],
+    "watching for changes": [
+     "guides/domain-account-security"
+    ]
+   },
+   "see": [
+    "DNS",
+    "domain portfolios"
+   ],
+   "main": [
+    "guides/domain-account-security"
+   ]
+  },
+  "European Accessibility Act": {
+   "kind": "topic",
+   "pages": [
+    "guides/european-accessibility-act",
+    "services/accessibility"
+   ],
+   "subs": {
+    "who it covers": [
+     "guides/european-accessibility-act"
+    ],
+    "microenterprise exemption": [
+     "guides/european-accessibility-act"
+    ],
+    "EN 301 549": [
+     "guides/european-accessibility-act"
+    ],
+    "enforcement": [
+     "guides/european-accessibility-act"
+    ],
+    "transitional periods": [
+     "guides/european-accessibility-act"
+    ]
+   },
+   "see": [
+    "accessibility"
+   ],
+   "main": [
+    "guides/european-accessibility-act"
+   ]
+  },
+  "freezing a website": {
+   "kind": "topic",
+   "pages": [
+    "guides/freeze-old-website"
+   ],
+   "subs": {
+    "counting every old address": [
+     "guides/freeze-old-website"
+    ],
+    "replacing dynamic parts": [
+     "guides/freeze-old-website"
+    ],
+    "cutover order": [
+     "guides/freeze-old-website"
+    ],
+    "costs and savings": [
+     "guides/freeze-old-website"
+    ]
+   },
+   "see": [
+    "site migrations",
+    "static sites"
+   ],
+   "main": [
+    "guides/freeze-old-website"
+   ]
+  },
+  "static sites": {
+   "kind": "topic",
+   "pages": [
+    "guides/freeze-old-website",
+    "guides/github-pages-website",
+    "guides/restore-drills"
+   ],
+   "subs": {},
+   "see": [
+    "GitHub Pages",
+    "freezing a website"
+   ],
+   "main": []
+  },
+  "transcription on Linux": {
+   "kind": "topic",
+   "pages": [
+    "guides/private-transcription-linux"
+   ],
+   "subs": {
+    "Whisper": [
+     "guides/private-transcription-linux"
+    ],
+    "reducing a recording to speech": [
+     "guides/private-transcription-linux"
+    ],
+    "speaker labels": [
+     "guides/private-transcription-linux"
+    ],
+    "older hardware": [
+     "guides/private-transcription-linux"
+    ]
+   },
+   "see": [
+    "transcripts"
+   ],
+   "main": [
+    "guides/private-transcription-linux"
+   ]
+  },
+  "restore drills": {
+   "kind": "topic",
+   "pages": [
+    "guides/restore-drills"
+   ],
+   "subs": {
+    "deciding what to protect": [
+     "guides/restore-drills"
+    ],
+    "restoring somewhere safe": [
+     "guides/restore-drills"
+    ],
+    "timing the drill": [
+     "guides/restore-drills"
+    ],
+    "gaps a drill uncovers": [
+     "guides/restore-drills"
+    ],
+    "how often": [
+     "guides/restore-drills"
+    ]
+   },
+   "see": [
+    "backups"
+   ],
+   "main": [
+    "guides/restore-drills"
+   ]
+  },
+  "developer tickets": {
+   "kind": "topic",
+   "pages": [
+    "guides/seo-developer-tickets"
+   ],
+   "subs": {
+    "reproducible failures": [
+     "guides/seo-developer-tickets"
+    ],
+    "symptom versus cause": [
+     "guides/seo-developer-tickets"
+    ],
+    "scoping by shared cause": [
+     "guides/seo-developer-tickets"
+    ],
+    "priority with a business reason": [
+     "guides/seo-developer-tickets"
+    ],
+    "closing with evidence": [
+     "guides/seo-developer-tickets"
+    ]
+   },
+   "see": [
+    "ticket systems",
+    "acceptance criteria"
+   ],
+   "main": [
+    "guides/seo-developer-tickets"
+   ]
+  },
+  "folklore tier": {
+   "kind": "topic",
+   "pages": [
+    "guides/stuck-in-the-folklore"
+   ],
+   "subs": {
+    "why folklore wins the budget": [
+     "guides/stuck-in-the-folklore"
+    ],
+    "the diagnostic": [
+     "guides/stuck-in-the-folklore"
+    ],
+    "what the stall costs": [
+     "guides/stuck-in-the-folklore"
+    ]
+   },
+   "see": [
+    "AI search",
+    "black hat SEO"
+   ],
+   "main": [
+    "guides/stuck-in-the-folklore"
+   ]
+  },
+  "multiple causes": {
+   "kind": "topic",
+   "pages": [
+    "guides/two-problems-at-once"
+   ],
+   "subs": {
+    "signs of more than one problem": [
+     "guides/two-problems-at-once"
+    ],
+    "a track for each cause": [
+     "guides/two-problems-at-once"
+    ],
+    "joining tracks only on proof": [
+     "guides/two-problems-at-once"
+    ],
+    "sequencing the fixes": [
+     "guides/two-problems-at-once"
+    ]
+   },
+   "see": [
+    "traffic drops",
+    "root cause analysis"
+   ],
+   "main": [
+    "guides/two-problems-at-once"
+   ]
+  },
+  "root cause analysis": {
+   "kind": "topic",
+   "pages": [
+    "guides/two-problems-at-once",
+    "guides/website-incident-timeline"
+   ],
+   "subs": {},
+   "see": [
+    "traffic drops",
+    "multiple causes"
+   ],
+   "main": [
+    "guides/two-problems-at-once"
+   ]
+  },
+  "influencer vetting": {
+   "kind": "topic",
+   "pages": [
+    "guides/vet-an-influencer"
+   ],
+   "subs": {
+    "reading the archive": [
+     "guides/vet-an-influencer"
+    ],
+    "reading the audience": [
+     "guides/vet-an-influencer"
+    ],
+    "fake followers": [
+     "guides/vet-an-influencer"
+    ],
+    "checking past claims": [
+     "guides/vet-an-influencer"
+    ],
+    "contract protections": [
+     "guides/vet-an-influencer"
+    ]
+   },
+   "see": [
+    "FTC Endorsement Guides"
+   ],
+   "main": [
+    "guides/vet-an-influencer"
+   ]
+  },
+  "incident timelines": {
+   "kind": "topic",
+   "pages": [
+    "guides/website-incident-timeline"
+   ],
+   "subs": {
+    "observable terms": [
+     "guides/website-incident-timeline"
+    ],
+    "one time convention": [
+     "guides/website-incident-timeline"
+    ],
+    "evidence tables": [
+     "guides/website-incident-timeline"
+    ],
+    "competing explanations": [
+     "guides/website-incident-timeline"
+    ],
+    "recording the intervention": [
+     "guides/website-incident-timeline"
+    ]
+   },
+   "see": [
+    "root cause analysis",
+    "multiple causes"
+   ],
+   "main": [
+    "guides/website-incident-timeline"
+   ]
+  },
+  "products and fixed prices": {
+   "kind": "topic",
+   "pages": [
+    "products"
+   ],
+   "subs": {
+    "AI answer reports": [
+     "products"
+    ],
+    "Search Console reports": [
+     "products"
+    ],
+    "local visibility reports": [
+     "products"
+    ],
+    "GBP reinstatement tiers": [
+     "products"
+    ]
+   },
+   "see": [
+    "AI visibility",
+    "indexing audit"
+   ],
+   "main": [
+    "products"
+   ]
+  },
+  "accessibility remediation": {
+   "kind": "topic",
+   "pages": [
+    "services/accessibility"
+   ],
+   "subs": {
+    "what gets tested": [
+     "services/accessibility"
+    ],
+    "template fixes": [
+     "services/accessibility"
+    ],
+    "documentation": [
+     "services/accessibility"
+    ],
+    "demand letters": [
+     "services/accessibility"
+    ]
+   },
+   "see": [
+    "accessibility",
+    "European Accessibility Act"
+   ],
+   "main": [
+    "services/accessibility"
+   ]
+  },
+  "agent readiness": {
+   "kind": "topic",
+   "pages": [
+    "services/agent-readiness",
+    "guides/ai-agents-on-your-website"
+   ],
+   "subs": {
+    "what gets tested": [
+     "services/agent-readiness"
+    ],
+    "what usually stops an agent": [
+     "services/agent-readiness"
+    ],
+    "what you receive": [
+     "services/agent-readiness"
+    ]
+   },
+   "see": [
+    "AI agents on websites"
+   ],
+   "main": [
+    "services/agent-readiness"
+   ]
+  },
+  "AI policy and training": {
+   "kind": "topic",
+   "pages": [
+    "services/ai-policy",
+    "guides/ai-use-policy"
+   ],
+   "subs": {
+    "how an engagement runs": [
+     "services/ai-policy"
+    ],
+    "what the policy is built on": [
+     "services/ai-policy"
+    ],
+    "staff training": [
+     "services/ai-policy"
+    ]
+   },
+   "see": [
+    "AI use policies"
+   ],
+   "main": [
+    "services/ai-policy"
+   ]
+  },
+  "domain portfolios": {
+   "kind": "topic",
+   "pages": [
+    "services/domain-portfolio"
+   ],
+   "subs": {
+    "what the audit covers": [
+     "services/domain-portfolio"
+    ],
+    "moving registrars": [
+     "services/domain-portfolio"
+    ],
+    "renewals and access": [
+     "services/domain-portfolio"
+    ]
+   },
+   "see": [
+    "domain account security",
+    "DNS"
+   ],
+   "main": [
+    "services/domain-portfolio"
+   ]
+  },
+  "site indexes and glossaries": {
+   "kind": "topic",
+   "pages": [
+    "services/site-index-and-glossary"
+   ],
+   "subs": {
+    "how the index is built": [
+     "services/site-index-and-glossary"
+    ],
+    "keeping the index current": [
+     "services/site-index-and-glossary"
+    ],
+    "why it helps search": [
+     "services/site-index-and-glossary"
+    ]
+   },
+   "see": [
+    "glossary"
+   ],
+   "main": [
+    "services/site-index-and-glossary"
+   ]
+  },
+  "testimonials": {
+   "kind": "topic",
+   "pages": [
+    "testimonials"
+   ],
+   "subs": {
+    "campaign clients": [
+     "testimonials"
+    ],
+    "pro bono work": [
+     "testimonials"
+    ],
+    "peers and partners": [
+     "testimonials"
+    ],
+    "former interns and colleagues": [
+     "testimonials"
+    ]
+   },
+   "see": [
+    "Abraham Harrison"
+   ],
+   "main": [
+    "testimonials"
+   ]
+  },
+  "DNSSEC": {
+   "kind": "topic",
+   "pages": [
+    "guides/domain-account-security",
+    "guides/glossary"
+   ],
+   "subs": {
+    "turning it off before a DNS move": [
+     "guides/domain-account-security"
+    ]
+   },
+   "see": [
+    "domain account security"
+   ],
+   "main": [
+    "guides/domain-account-security"
+   ]
   }
  },
  "reviewed": [
@@ -7579,6 +8331,31 @@
   "guides/google-business-profile-reports",
   "services/indexing-audit",
   "guides/programmatic-seo",
-  "guides/reputation-management-requires-change"
+  "guides/reputation-management-requires-change",
+  "services/ai-visibility",
+  "guides/ai-answers-review-searches",
+  "guides/ai-agents-on-your-website",
+  "guides/ai-agents-one-repository",
+  "guides/ai-use-policy",
+  "guides/black-hat-in-modern-dress",
+  "guides/citation-provenance",
+  "guides/domain-account-security",
+  "guides/european-accessibility-act",
+  "guides/freeze-old-website",
+  "guides/github-pages-website",
+  "guides/private-transcription-linux",
+  "guides/restore-drills",
+  "guides/seo-developer-tickets",
+  "guides/stuck-in-the-folklore",
+  "guides/two-problems-at-once",
+  "guides/vet-an-influencer",
+  "guides/website-incident-timeline",
+  "services/accessibility",
+  "services/agent-readiness",
+  "services/ai-policy",
+  "services/domain-portfolio",
+  "services/site-index-and-glossary",
+  "products",
+  "testimonials"
  ]
 }

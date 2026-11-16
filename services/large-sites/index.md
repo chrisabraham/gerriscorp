@@ -36,6 +36,8 @@ It can do either. Old links can help a new site get noticed, but a domain's hist
 
 **Related:** ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Search Console](https://gerriscorp.com/services/search-console/) · [E-commerce SEO](https://gerriscorp.com/services/ecommerce/)
 
+[Tell me what dropped out](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

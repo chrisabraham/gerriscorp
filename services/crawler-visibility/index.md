@@ -54,6 +54,8 @@ Rarely. Most fixes change how one template renders a few sections, such as rende
 
 **Related:** [JavaScript SEO guide](https://gerriscorp.com/guides/javascript-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
 
+[Ask me what Google actually sees](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

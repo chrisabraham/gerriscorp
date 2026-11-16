@@ -1,10 +1,10 @@
 > Plain definitions of technical SEO, AI search, site speed, and email terms: AEO, GEO, canonical tags, Core Web Vitals, DMARC, IndexNow, llms.txt, and many more.
 >
-> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-10-26 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/glossary/ · Updated 2026-11-16 · By Chris Abraham, Gerris Corp
 
 # Glossary of SEO, AI search, and technical website terms
 
-By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated October 26, 2026
+By [Chris Abraham](https://gerriscorp.com/about/) · Published October 5, 2026 · Updated November 16, 2026
 
 Plain definitions of the terms that come up in my work, written so each one makes sense on its own. The [index](https://gerriscorp.com/site-index/) lists every page where a term comes up.
 
@@ -35,6 +35,9 @@ A text description of an image in the HTML alt attribute, read aloud by screen r
 **Amara's law**
 Roy Amara's observation that people overestimate a technology's effect in the short run and underestimate it in the long run. It's the first test in [hype or real shift](https://gerriscorp.com/guides/hype-or-shift/).
 
+**Backlink**
+A link on someone else's website that points to a page on yours. Links are one of the signals search engines use to judge which pages deserve to rank, so a migration or redesign has to carry them to the new addresses.
+
 **BIMI**
 Brand Indicators for Message Identification: a DNS record that lets supporting inboxes show a brand's logo beside authenticated email. It requires DMARC enforcement.
 
@@ -50,11 +53,17 @@ A network of servers around the world that stores copies of a site's files close
 **Citation gap**
 A page AI assistants cite when answering your buyers' questions that names your competitors and leaves you out. Finding them is the job of a [citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/).
 
+**Cloudflare**
+A network that sits in front of many websites, providing DNS, caching, a content delivery network, and protection from attacks. Its settings can help or hurt search and AI crawlers; see [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/).
+
 **CLS (Cumulative Layout Shift)**
 A Core Web Vital measuring how much visible content moves unexpectedly while a page loads. Good is 0.1 or less.
 
 **Confabulation**
 NIST's term for a generative AI system stating false information with confidence. The reason AI-assisted work needs a human check. See [AI use policy](https://gerriscorp.com/guides/ai-use-policy/).
+
+**Consent Mode**
+Google's system for adjusting what GA4 and Google's other tags may store and measure, based on the consent each visitor gave. See [Google Consent Mode v2 for GA4](https://gerriscorp.com/guides/ga4-consent-mode/).
 
 **Content brief**
 A one-page instruction that settles a page's question, answer, evidence, and limits before anyone writes. See [writing a content brief](https://gerriscorp.com/guides/content-briefs/).
@@ -73,6 +82,9 @@ A Google Search Console status meaning Google fetched a page and chose not to in
 
 **Crawler Hints**
 A free Cloudflare feature that watches content change as it passes through Cloudflare's cache and notifies IndexNow engines such as Bing. Google doesn't take part.
+
+**Data broker**
+A company that collects personal information from public records and other sources and sells it or publishes it in people-search listings. Getting a name out takes an opt-out at each broker; see [how to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/).
 
 **Discovered, currently not indexed**
 A Search Console status meaning Google knows a URL exists and hasn't crawled it yet, usually a sign of crawl priority problems.
@@ -95,17 +107,32 @@ A list of IP addresses and domains that spam filters consult to reject or junk m
 **Endorsement Guides**
 The FTC's guidance on testimonials and influencer posts, 16 CFR Part 255, last revised in 2023. They hold the advertiser answerable for what paid endorsers say. Covered in [the creator vetting guide](https://gerriscorp.com/guides/vet-an-influencer/).
 
+**Entity**
+A distinct thing that search engines and AI systems keep as its own record: a person, a business, a place, or a product, with facts and profiles attached to it. Facts that agree across a site, its listings, and its profiles are how machines stay sure which entity a page describes.
+
 **European Accessibility Act**
 EU Directive 2019/882, applied since June 28, 2025, requiring accessible e-commerce, banking, e-books, and other consumer services, including from sellers outside the EU. See [the EAA guide](https://gerriscorp.com/guides/european-accessibility-act/).
 
+**Faceted navigation**
+The filter links on a catalog or listing site that combine choices such as size, color, and price into new URLs. Every combination can become a page, so the crawl needs rules; see [faceted navigation SEO](https://gerriscorp.com/guides/faceted-navigation/).
+
 **Force push**
 A Git push that overwrites the shared branch even when it holds commits the pusher never saw, which deletes other people's work. `--force-with-lease` refuses if the branch moved. See [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/).
+
+**GA4 (Google Analytics 4)**
+Google's current analytics system, which records visits, searches, and conversions as events. It replaced Universal Analytics, and most measurement questions on a business site now start with its reports.
 
 **GEO (generative engine optimization)**
 Making a business and its content easy for AI systems to find, understand, and cite in generated answers.
 
 **Git**
 The version control system almost every software team uses. It records each change to a set of files, who made it, and why, so any version can be restored.
+
+**GitHub Pages**
+GitHub's hosting for static websites, which serves a site straight from a repository at no charge. This site runs on it; see [a real business website for the price of a domain name](https://gerriscorp.com/guides/github-pages-website/).
+
+**Google Business Profile**
+The free Google listing that controls how a business appears in local search results and on Google Maps: address, hours, photos, reviews, and services. See [Google Business Profile hard cases](https://gerriscorp.com/services/google-business-profile/).
 
 **Google Search Console**
 Google's free service for monitoring how a site appears in Google Search: indexing, queries, clicks, Core Web Vitals, and errors.
@@ -119,11 +146,17 @@ A response header that commits browsers to HTTPS for a site for a chosen length 
 **Hype cycle**
 Gartner's curve for a new technology's reputation: a trigger, a peak of inflated expectations, a trough of disillusionment, a slope of enlightenment, and a plateau of productivity.
 
+**Indexing**
+The step where a search engine stores a crawled page in its index, the database its answers are drawn from. A page can be crawled and still left out, and a page outside the index cannot appear in results.
+
 **IndexNow**
 An open protocol that lets a site notify Bing, Yandex, and other participating search engines immediately when pages are added, changed, or removed.
 
 **INP (Interaction to Next Paint)**
 A Core Web Vital measuring how quickly a page responds to taps, clicks, and key presses. Good is 200 milliseconds or less. It replaced First Input Delay in March 2024.
+
+**Internal linking**
+Links between pages of the same website. They carry readers to the next useful page and show crawlers which pages matter and how the topics connect. See [internal linking strategy and implementation](https://gerriscorp.com/services/internal-linking/).
 
 **JSON-LD**
 A format for adding structured data to a page in a script block, recommended by Google for schema.org markup.
@@ -140,11 +173,20 @@ Any tie between an endorser and a brand that the audience wouldn't expect, such 
 **Meta description**
 A short summary of a page in its HTML head, often shown under the title in search results. Usually 140 to 160 characters.
 
+**Migration**
+Moving a website to a new domain, platform, or structure. The search work is the inventory of old URLs, the redirect map, and the checks in the weeks after launch; see [the website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/).
+
+**noindex**
+A meta robots instruction, or an X-Robots-Tag response header, telling search engines to keep a page out of the index. The page can still be crawled, and the links on it can still be followed.
+
 **OAI-SearchBot**
 OpenAI's crawler for ChatGPT search. It's controlled separately from GPTBot, the training crawler, so a site can appear in ChatGPT answers while declining to be used for training.
 
 **Orange cloud (proxied)**
 A Cloudflare DNS record whose traffic runs through Cloudflare's network, gaining caching, compression, and attack protection. Gray means Cloudflare answers DNS and steps aside.
+
+**Programmatic SEO**
+Building many pages from one template and a data set, such as a page for every location or product. The pages earn their place when each one answers its own query in full; see [programmatic SEO, where it works and why Google ignores it](https://gerriscorp.com/guides/programmatic-seo/).
 
 **Pull request**
 A proposed set of changes to a repository, presented for review and comment before it's merged. Requiring one for every change gives an owner a complete history; see [hiring developers](https://gerriscorp.com/guides/hiring-developers/).
@@ -170,6 +212,9 @@ The spam policy covering mass-produced pages made mainly to rank, by any method,
 **Schema.org**
 The shared vocabulary search engines use for structured data, describing organizations, people, products, services, articles, events, and much more.
 
+**SEO (search engine optimization)**
+The work of making a website easy for search engines to crawl, understand, and rank for the questions buyers ask. It covers the technical health of the site, content that answers in full, and the links and listings that confirm the business behind it.
+
 **Server-side rendering**
 Generating a page's full HTML on the server before sending it, so browsers and crawlers receive the content without running JavaScript. Static generation does the same at build time.
 
@@ -187,6 +232,9 @@ A JSON block in a script tag that tells Chrome and Edge which links to prefetch 
 
 **SPF**
 Sender Policy Framework: a DNS record listing the servers allowed to send email for a domain. It allows at most ten DNS lookups.
+
+**Static site**
+A website served as finished HTML files, with no database or application building each page as it is requested. Static sites load fast, cost little to host, and leave little to break.
 
 **Structured data**
 Machine-readable information about a page, usually schema.org in JSON-LD, describing what the page is about and how it relates to people, organizations, and other pages.

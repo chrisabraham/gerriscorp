@@ -69,14 +69,15 @@ FILES = ["index",
 SERVICE_GROUPS = [
     ("Consulting and technical direction", ["services/technical-lead/", "services/developers/", "services/agency-partner/",
                                             "services/rescue/", "services/ai-automation/", "services/data-cleanup/",
-                                            "services/analytics/", "services/advisory/"]),
+                                            "services/analytics/", "services/ai-policy/", "services/advisory/"]),
     ("Search and site performance", ["services/technical-seo/", "services/seo-engineering/", "services/crawler-visibility/", "services/large-sites/",
                                      "services/ecommerce/", "services/on-page-seo/", "services/site-speed/", "services/wordpress-care/",
+                                     "services/accessibility/", "services/agent-readiness/",
                                      "services/search-console/", "services/migrations/", "services/ai-search/", "services/ai-visibility/",
-                                     "services/editorial/", "services/podcast-sites/",
+                                     "services/editorial/", "services/site-index-and-glossary/", "services/podcast-sites/",
                                      "services/ongoing-support/"]),
     ("Local, reputation, and email", ["services/multi-location/", "services/reputation/",
-                                      "services/google-business-profile/", "services/email-and-dns/"]),
+                                      "services/google-business-profile/", "services/email-and-dns/", "services/domain-portfolio/"]),
 ]
 # Additional services and guides, October 15, 2026.
 FILES += ['services/internal-linking', 'services/ai-workflow-testing', 'guides/ai-pilot-tests', 'guides/website-handover']
@@ -94,6 +95,23 @@ FILES += ["services/indexing-audit", "guides/programmatic-seo"]
 # Reputation and change guide, November 14, 2026.
 FILES += ["guides/reputation-management-requires-change"]
 SERVICE_GROUPS[1][1].append("services/indexing-audit/")
+
+# Pages live on the site with sources in src/ but missing from FILES, restored
+# November 16, 2026 so the build, sitemap, feeds, llms files, and indexes cover
+# every page the site serves. Their generated pages were already committed and
+# linked from the glossary, the services index, and the redirects table.
+FILES += ["guides/ai-agents-on-your-website", "guides/ai-agents-one-repository", "guides/ai-use-policy",
+          "guides/black-hat-in-modern-dress", "guides/citation-provenance", "guides/domain-account-security",
+          "guides/european-accessibility-act", "guides/freeze-old-website", "guides/github-pages-website",
+          "guides/private-transcription-linux", "guides/restore-drills", "guides/seo-developer-tickets",
+          "guides/stuck-in-the-folklore", "guides/two-problems-at-once", "guides/vet-an-influencer",
+          "guides/website-incident-timeline",
+          "services/accessibility", "services/agent-readiness", "services/ai-policy",
+          "services/domain-portfolio", "services/site-index-and-glossary",
+          "products", "testimonials"]
+# Deliberately left out: services/github-pages-website. Its source is written in
+# first person plural throughout, which the checks below reject, so it cannot
+# join the build until its copy gets a voice pass. It stays live as committed.
 
 MIN_WORDS = {"guide": 700, "service": 450, "case": 250, "page": 250}
 TODAY = datetime.date.today().isoformat()
@@ -165,7 +183,7 @@ def site_map_body():
            'Search engines read the same list in <a href="{root}sitemap.xml">sitemap.xml</a>, and AI tools in '
            '<a href="{root}llms.txt">llms.txt</a>.</p>',
            '<h2>Main pages</h2>', '<ul>']
-    out += [li(by_path[x]) for x in ["", "services/", "guides/", "case-studies/", "about/", "stack/", "work-with-me/", "faq/", "standards/", "colophon/", "contact/", "privacy/"]]
+    out += [li(by_path[x]) for x in ["", "services/", "products/", "guides/", "case-studies/", "about/", "stack/", "work-with-me/", "testimonials/", "faq/", "standards/", "colophon/", "contact/", "privacy/"]]
     out.append('  <li><a href="{root}site-index/">Index</a>: an A to Z list of the people, companies, tools, and problems the site covers, each linked to its pages.</li>')
     out.append('</ul>')
     for title, paths in SERVICE_GROUPS:
@@ -392,7 +410,7 @@ PERSON = {
     "knowsAbout": KNOWS,
     "email": EMAIL, "telephone": "+1-202-352-5051",
     "sameAs": ["https://chrisabraham.com/", "https://www.upwork.com/freelancers/chrisjabraham", "https://hillmole.com/", "https://mastodon.social/@chrisa",
-               "https://adage.com/author/chris-abraham/1797"],
+               "https://www.youtube.com/@ChrisAbrahamShow", "https://adage.com/author/chris-abraham/1797"],
 }
 WEBSITE = {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Gerris Corp",
            "alternateName": "Gerris", "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"},
@@ -488,6 +506,13 @@ def body_html(p, *, contents=True):
   <p>This guide shows you how to do it yourself. If you'd rather hand it to someone who does this work for clients, I'm glad to help: tell me what's happening and I'll tell you where I'd start.</p>
   <p><a class="button" href="https://calendly.com/chrisabraham/30">Book a 30 minute call</a> <a class="button" href="tel:{TEL}">Call {PHONE}</a> <a class="button" href="mailto:{EMAIL}">Email {EMAIL}</a></p>
   <p>If your company hires through Upwork, you'll find me <a href="https://www.upwork.com/freelancers/chrisjabraham">there as well</a>.</p>
+</aside>"""
+    if p["kind"] == "service":
+        body += f"""
+<aside class="help-box" aria-label="Start a conversation">
+  <h2>Start a conversation</h2>
+  <p>Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.</p>
+  <p><a class="button" href="https://calendly.com/chrisabraham/30">Schedule a call</a> <a class="button" href="https://www.upwork.com/freelancers/chrisjabraham">Work with me through Upwork</a></p>
 </aside>"""
     if p["sources"]:
         body += ('\n<h2>References</h2>\n<ul class="sources">\n'
@@ -664,7 +689,7 @@ def render(p):
 {body_html(p)}
 </main>
 <footer class="site-footer">
-  <p><a href="mailto:{EMAIL}">{EMAIL}</a>&nbsp;· <a href="tel:{TEL}">{PHONE}</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a></p>
+  <p><a href="mailto:{EMAIL}">{EMAIL}</a>&nbsp;· <a href="tel:{TEL}">{PHONE}</a>&nbsp;· <a href="https://calendly.com/chrisabraham/30">Book a call</a>&nbsp;· <a href="https://www.upwork.com/freelancers/chrisjabraham">Upwork</a>&nbsp;· <a href="https://www.youtube.com/@ChrisAbrahamShow">YouTube</a></p>
   <p>© {TODAY[:4]} Gerris Corp, Arlington,&nbsp;Virginia&nbsp;· <a href="{r}faq/">FAQ</a>&nbsp;· <a href="{r}standards/">Standards</a>&nbsp;· <a href="{r}privacy/">Privacy</a>&nbsp;· <a href="{r}sitemap/">Site map</a>&nbsp;· <a href="{r}site-index/">Index</a>&nbsp;· <a href="{r}guides/glossary/">Glossary</a>&nbsp;· <a href="{r}colophon/">Colophon</a>&nbsp;· <a href="{r}llms.txt">llms.txt</a>&nbsp;· <a href="{r}rss.xml">RSS</a>&nbsp;· <a href="https://chrisabraham.com/">chrisabraham.com</a></p>
   <p>Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except where noted: copy, adapt, and share this work with attribution to Gerris&nbsp;Corp and a&nbsp;link.</p>
 </footer>
@@ -950,9 +975,9 @@ open(".well-known/security.txt", "w", encoding="utf-8").write(
     f"Contact: mailto:{EMAIL}\nExpires: {expires}T00:00:00Z\nPreferred-Languages: en\n"
     f"Canonical: {SITE}.well-known/security.txt\n")
 
-sections = [(title, [by_path[x] for x in paths]) for title, paths in SERVICE_GROUPS] + [
+sections = [("Services", [by_path["services/"]])] + [(title, [by_path[x] for x in paths]) for title, paths in SERVICE_GROUPS] + [
     ("Guides", [p for p in pages if p["tab"] == "guides/"]),
-    ("About and working together", [p for p in pages if p["tab"] in ("", "case-studies/", "about/", "work-with-me/", "contact/", "sitemap/", "site-index/")])]
+    ("About and working together", [p for p in pages if p["tab"] in ("", "case-studies/", "about/", "work-with-me/", "contact/", "sitemap/", "site-index/", "privacy/")])]
 llms = f"""# Gerris Corp
 
 > {ORG["description"]} Run by Chris Abraham in Arlington, Virginia. Chris has built websites since 1994; Gerris Corp was founded in 2012.

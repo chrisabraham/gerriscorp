@@ -48,6 +48,8 @@ Indexing and ranking are separate problems, and the audit says which one a site 
 
 **Related:** [Programmatic SEO guide](https://gerriscorp.com/guides/programmatic-seo/) · ["Crawled, currently not indexed"](https://gerriscorp.com/guides/crawled-not-indexed/) · [Search Console cleanup](https://gerriscorp.com/services/search-console/) · [Technical SEO forensics](https://gerriscorp.com/services/technical-seo/)
 
+[Request the indexing audit](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

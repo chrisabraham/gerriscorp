@@ -42,6 +42,8 @@ No. I first identify which pages need distinct information and which problems co
 
 Yes. The goal is to help a buyer qualify the product and contact the right person. I do not add fictional prices or promise shopping features for pages that do not meet their requirements.
 
+[Discuss a catalog diagnostic](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

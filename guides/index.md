@@ -1,6 +1,6 @@
 > Plain, current guides by Chris Abraham to technical SEO, Cloudflare, Core Web Vitals, AI search, migrations, analytics, and email, and the fix for each problem.
 >
-> Source: https://gerriscorp.com/guides/ · Updated 2026-11-14 · By Chris Abraham, Gerris Corp
+> Source: https://gerriscorp.com/guides/ · Updated 2026-11-16 · By Chris Abraham, Gerris Corp
 
 # Guides
 
@@ -10,23 +10,31 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [B2B catalog SEO for technical buyers](https://gerriscorp.com/guides/b2b-catalog-seo/): select a product family, improve specifications, and measure useful inquiries.
 - [How to fact check a confident AI answer about SEO](https://gerriscorp.com/guides/fact-check-ai-seo/): split the answer into claims, grade each by its source, trace every number, and test on your own data.
 - [Measure AI citations, referrals, and leads](https://gerriscorp.com/guides/measure-ai-search/): provider reports, identifiable visits, repeatable answer checks, and attribution limits.
+- [When a customer asks for the best, a machine answers](https://gerriscorp.com/guides/ai-answers-review-searches/): what AI Overviews say about an untended business on review searches, and the audit, sprint, and measurement that fix it.
 - [IndexNow, Bing, and an AI search publishing workflow](https://gerriscorp.com/guides/indexnow-ai-search/): verify releases, notify participating engines, and syndicate full articles.
 - [How AI assistants decide what to say about your business](https://gerriscorp.com/guides/ai-assistants/): training data versus live retrieval, which search indexes feed ChatGPT, Gemini, Claude, Perplexity, and Copilot, the crawlers behind them, and what to do this quarter.
 - [Structured data in 2026: which schema markup is worth adding](https://gerriscorp.com/guides/structured-data/): the rich results that remain, the ones Google retired, and building an entity graph that search engines and assistants can trust.
 - [Repositories plus super intelligence: the SEO superpower](https://gerriscorp.com/guides/seo-superpower/): why SEOs need Git and AI coding assistants together, what it looks like in practice, and how to start.
 - [How to give an outside SEO safe access to your code repository](https://gerriscorp.com/guides/repository-access/): one repository, the Read role first, protected main, deploy previews, no secrets, and a clean exit.
 - [How to use AI coding assistants on a business website safely](https://gerriscorp.com/guides/ai-coding-assistants/): specs, project memory, automated checks, review, and keeping secrets and production out of reach.
+- [Several AI agents, one repository](https://gerriscorp.com/guides/ai-agents-one-repository/): separate checkouts, fetch first, no force pushes, one rule file, and checks that catch what a diff hides.
+- [How to let AI agents use your website without new risk](https://gerriscorp.com/guides/ai-agents-on-your-website/): how agents identify themselves, the firewall and form settings that turn them away, and guarding pages from planted text.
 - [Citation gap analysis](https://gerriscorp.com/guides/citation-gap-analysis/): collect the sources AI cites when it names your competitors, sort them by type, and rank the ones that leave you out.
+- [Citation provenance: who really said that about you](https://gerriscorp.com/guides/citation-provenance/): who wrote the praise AI search repeats, and why provenance is the new reference check.
+- [Where teams get stuck in AI search: the folklore tier](https://gerriscorp.com/guides/stuck-in-the-folklore/): the purchasable rituals that trap most teams, and the diagnostic that shows the way out.
 - [Content briefs for pages AI search will quote](https://gerriscorp.com/guides/content-briefs/): the question, the expert's answer, the evidence, and the page's limits, settled before anyone writes.
 - [Your public GitHub README is a source AI reads](https://gerriscorp.com/guides/readme-ai-source/): keep it current, point it to the live site, and keep private notes out.
 
 ## Diagnosis
 - [How to diagnose a Google traffic drop in Search Console](https://gerriscorp.com/guides/traffic-drop/): confirm the drop, find where it is, line it up with dates, and name the cause.
+- [Two problems at once: keep each cause on its own track](https://gerriscorp.com/guides/two-problems-at-once/): split the evidence, test each cause alone, and join the tracks only on proof.
+- [Build a website incident timeline before changing code](https://gerriscorp.com/guides/website-incident-timeline/): dated observations, release records, and competing explanations, gathered before the repair starts.
 - [Your Google business reports are getting a new scoreboard](https://gerriscorp.com/guides/google-business-profile-reports/): the five new performance sections in owner language, why falling clicks can mislead, and a monthly routine.
 - [Deleting hundreds of location pages: why core rankings fall](https://gerriscorp.com/guides/removed-location-pages/): rebuild the inventory, line up the dates, decide every URL, and restore the internal paths.
 - [SEO 101: a first principles primer for any website](https://gerriscorp.com/guides/seo-101/): how search works, people-first content, E-E-A-T, titles, descriptive links, alt text, speed, accessibility, and a first week plan.
 - [Ranking yourself first in a best list now backfires](https://gerriscorp.com/guides/self-ranking-lists/): how self-ranked agency lists steered AI answers, why that is ending, and what earns a real recommendation.
 - [The state of search in 2026](https://gerriscorp.com/guides/search-in-2026/): every Google core and spam update this year, the new rule against manipulating AI answers, and what Bing and ChatGPT now report.
+- [Black hat SEO in modern dress: the tactics that end sites](https://gerriscorp.com/guides/black-hat-in-modern-dress/): the old schemes in their current clothes, ranked from wasted effort to site removal.
 - [Build a podcast website with Codex or Claude Code, GitHub Pages, and Cloudflare](https://gerriscorp.com/guides/podcast-website/): a domain at cost, free hosting, a page for every episode, and a site that updates itself.
 - [Podcast SEO: get every episode found in Google and AI search](https://gerriscorp.com/guides/podcast-seo/): episode pages on your own domain, transcripts in the HTML, schema, alt text, and fast indexing.
 - [Podcasting as an investment in being found by AI search](https://gerriscorp.com/guides/podcast-investment/): show notes copied by hundreds of directories, AI answers quoting them for years, and a back catalog that compounds.
@@ -38,6 +46,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [How to add SEO regression tests to your website's build](https://gerriscorp.com/guides/seo-build-checks/): the checks worth automating, a minimal example, and how to roll them out without blocking developers.
 - [React hydration errors and what they mean for SEO](https://gerriscorp.com/guides/hydration-errors/): what error #418 means, why Google usually still indexes the page, the real costs, and how to find every one.
 - [ADA website compliance for businesses](https://gerriscorp.com/guides/ada-website-compliance/): the six fixes that cover most of the legal risk, what to skip, and the search and AI benefits that come with them.
+- [The European Accessibility Act for US companies in the EU](https://gerriscorp.com/guides/european-accessibility-act/): who it covers, the microenterprise exemption, the standard in practice, and where to start.
 - [Lynx for website QA](https://gerriscorp.com/guides/lynx-qa/): scripted text browser checks for thin pages, stray noindex tags, and broken links before every launch.
 
 ## Technical SEO
@@ -53,6 +62,9 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Cloudflare settings that help or hurt SEO and AI crawlers](https://gerriscorp.com/guides/cloudflare-seo/): proxying, bot protection, AI crawler controls, caching, HTTPS, and edge redirects.
 - [What Cloudflare's cache leaves exposed on a WordPress site](https://gerriscorp.com/guides/wordpress-behind-cloudflare/): the traffic that still reaches your server, and how to harden logins, XML-RPC, plugins, and backups.
 - [Speculation rules for instant page loads](https://gerriscorp.com/guides/speculation-rules/): prefetch or prerender, which eagerness to pick, and what to exclude.
+- [Freeze an old website](https://gerriscorp.com/guides/freeze-old-website/): turn a dying dynamic site into a static one at the same addresses, retire the parts that cannot freeze, and log every change.
+- [A real business website for the price of a domain name](https://gerriscorp.com/guides/github-pages-website/): GitHub Pages hosting, a Cloudflare domain, publishing without a developer, and the costs item by item.
+- [Website restore drills: prove your backups actually work](https://gerriscorp.com/guides/restore-drills/): rebuild from the backup on a separate server, time it, and record the gaps it uncovers.
 
 ## Migrations and redirects
 - [The website migration SEO checklist](https://gerriscorp.com/guides/migration-checklist/): the URL inventory, the 301 redirect map, launch day, and the weeks after.
@@ -67,6 +79,7 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [SPF, DKIM, and DMARC for every domain that sends email](https://gerriscorp.com/guides/email-authentication/): what each record does, the Gmail, Yahoo, and Microsoft requirements, and how to reach enforcement safely.
 - [Why business email lands in spam, and how to find the cause](https://gerriscorp.com/guides/email-deliverability/): headers, authentication failures, reputation, blocklists, and sending practices.
 - [How to get your email off a blocklist and back into the inbox](https://gerriscorp.com/guides/email-blocklist-recovery/): find the listing, fix the cause, request removal properly, rebuild your reputation, and avoid the paid removal scam.
+- [Domain security: registrar lock, account access, and DNSSEC](https://gerriscorp.com/guides/domain-account-security/): who holds the login decides who controls the website and the email, and the locks that keep it that way.
 
 ## Privacy and reputation
 - [How to remove your personal information from data brokers and search](https://gerriscorp.com/guides/personal-information-removal/): opt-outs, Google's Results about you, and California's DROP.
@@ -76,8 +89,12 @@ Plain explanations of the problems I'm hired to fix, written for 2026 and kept u
 - [Test an AI pilot against real work](https://gerriscorp.com/guides/ai-pilot-tests/): examples, expected behavior, retries, permissions, and a downloadable test case worksheet.
 - [A website handover beyond passwords and source code](https://gerriscorp.com/guides/website-handover/): account control, builds, data, renewals, and a restore exercise, with an inventory worksheet.
 - [How to vet an AI vendor's pitch before you sign anything](https://gerriscorp.com/guides/ai-vendor-pitch/): the SEC and FTC AI washing cases, twelve questions for the sales call, and a paid pilot with a scorecard.
+- [How to write a company AI use policy your staff will follow](https://gerriscorp.com/guides/ai-use-policy/): approved tools, the data that never goes into a chatbot, review before publishing, and disclosure.
 - [How to hire and manage developers when you can't read code yourself](https://gerriscorp.com/guides/hiring-developers/): own the accounts, interview for judgment, pay for a trial task, and review every change.
+- [Turn an SEO audit into developer tickets that get shipped](https://gerriscorp.com/guides/seo-developer-tickets/): evidence, scope, acceptance criteria, release checks, and a named owner for each business decision.
+- [How to vet an influencer or creator before your brand pays](https://gerriscorp.com/guides/vet-an-influencer/): the archive, the audience, the disclosures, and what the FTC holds the brand responsible for.
 - [Hype or real shift? Eight tests for judging a new technology wave](https://gerriscorp.com/guides/hype-or-shift/): Amara's law, the hype cycle, and lessons from communities, blogs, social media, crypto, and AI.
+- [Private transcription on Linux](https://gerriscorp.com/guides/private-transcription-linux/): transcribe recordings on your own machine with Whisper, label the speakers, and keep the audio at home.
 
 ## Reference
 - [Glossary of SEO, AI search, and technical website terms](https://gerriscorp.com/guides/glossary/): plain definitions, from 301 redirects to XML sitemaps.
@@ -89,4 +106,4 @@ Each guide answers one question completely, with the definitions and context nee
 
 New guides are announced in the [full-text RSS feed](https://gerriscorp.com/rss.xml) or [Atom feed](https://gerriscorp.com/feed.xml).
 
-Updated November 14, 2026
+Updated November 16, 2026

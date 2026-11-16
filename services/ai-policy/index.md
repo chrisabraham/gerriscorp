@@ -49,6 +49,8 @@ A fixed fee, quoted from the size of the company and the number of tools involve
 
 **Related:** [Strategic advisory](https://gerriscorp.com/services/advisory/) · [AI workflow testing](https://gerriscorp.com/services/ai-workflow-testing/) · [AI pilot tests](https://gerriscorp.com/guides/ai-pilot-tests/)
 
+[Talk about an AI policy](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

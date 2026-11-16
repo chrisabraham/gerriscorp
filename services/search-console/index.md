@@ -55,6 +55,8 @@ The setup and first cleanup are a project. Monitoring fits naturally into [ongoi
 
 **Related:** ["Crawled, currently not indexed" explained](https://gerriscorp.com/guides/crawled-not-indexed/) · [Technical SEO](https://gerriscorp.com/services/technical-seo/) · [Website migrations](https://gerriscorp.com/services/migrations/)
 
+[Ask me to read your Search Console](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.

@@ -42,6 +42,8 @@ They measure different things: Search Console counts clicks in Google, GA4 count
 
 **Related:** [Data cleanup](https://gerriscorp.com/services/data-cleanup/) · [Search Console](https://gerriscorp.com/services/search-console/) · [Ongoing support](https://gerriscorp.com/services/ongoing-support/)
 
+[Ask me what your numbers mean](https://gerriscorp.com/contact/)
+
 ## Start a conversation
 
 Scope and fees are settled in conversation, once I understand the problem. Choose the route that fits how your company works.
