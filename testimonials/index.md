@@ -192,7 +192,7 @@ Ellie West, Senior Brand Strategist, HZDG
 
 "It's been a real pleasure working together with him. Chris Abraham was one of the most dedicated professionals through his work at Abraham Harrison. … Deadline oriented, well organized, very good and multi-skilled people manager, understands complex matters even when outside of his direct area of expertise. … Makes the impossible possible."
 
-Josh Harcus, author of Closing Culture
+Josh Harcus, author of [Closing Culture](https://www.amazon.com/s?k=Closing+Culture+Josh+Harcus&tag=gerris-20)
 
 ## What this record covers
 
