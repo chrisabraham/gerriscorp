@@ -1,7 +1,7 @@
 # Gerris Corp: full text of gerriscorp.com
 
 > Chris Abraham's consultancy: fractional technical leadership, developer specs and QA, AI tools built with OpenAI Codex and Claude Code, project rescue, technical SEO, site speed, migrations, AI search visibility, and reputation management.
-> Built 2026-11-16. Quote freely with attribution and a link to the source page.
+> Built 2026-11-20. Quote freely with attribution and a link to the source page.
 
 
 ---
@@ -9907,7 +9907,7 @@ Updated October 29, 2026
 ---
 
 Source: https://gerriscorp.com/testimonials/
-Updated: 2026-11-05
+Updated: 2026-11-20
 
 # Testimonials from clients, partners, and peers
 
@@ -9949,7 +9949,7 @@ Daniel Tutt, Unity Productions Foundation
 
 "Chris Abraham and his team exceeded my wildest expectations. As a first-time author, I was concerned about my ability to build a strong campaign. We ended up getting over a hundred blog book reviews and more than 200 tweets—and we still have dozens of responses to follow up on, even after the campaign ended. … I would use Chris and his team again in a heartbeat. They know their stuff, they are extremely low maintenance to work with, and they did a fantastic job."
 
-Stever Robbins, Author, 9 Steps to Work Less and Do More
+Stever Robbins, Author, [9 Steps to Work Less and Do More](https://www.amazon.com/dp/0312662610?tag=gerris-20)
 
 >
 
@@ -10043,7 +10043,7 @@ John Hlinko, founder of LeftAction, activist, and author
 
 "Chris was an organized, well spoken, dynamic panel leader. He was prepared and a pleasure to work with. He ROCKS!"
 
-Carrie Kerpen, CEO of Likeable Media, author of Work It
+Carrie Kerpen, CEO of Likeable Media, author of [Work It](https://www.amazon.com/dp/0143131818?tag=gerris-20)
 
 >
 
@@ -10105,13 +10105,15 @@ Josh Harcus, author of Closing Culture
 
 Most of these words describe the campaigns that built my reputation before search became my full-time work: blogger outreach, influencer programs, and reputation work run through Gerris and Abraham Harrison. The habits they praise carried straight into the technical work I do now, and the [server to schema](https://gerriscorp.com/stack/) page shows where. Recent client reviews from Upwork, quoted the same way, are on [my consulting site](https://christopherabraham.com/about/reviews/). To start a project of your own, [tell me what you need](https://gerriscorp.com/contact/).
 
-Updated November 5, 2026
+As an Amazon Associate I earn from qualifying purchases.
+
+Updated November 20, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/sitemap/
-Updated: 2026-11-16
+Updated: 2026-11-20
 
 # Site map
 
@@ -10278,13 +10280,13 @@ Every page on this site, grouped by section, with a one-line summary of each. Se
 - [feed.xml](https://gerriscorp.com/feed.xml): an Atom feed of the guides. RSS is available at [rss.xml](https://gerriscorp.com/rss.xml).
 - [robots.txt](https://gerriscorp.com/robots.txt): crawler rules; every search engine and AI crawler is welcome.
 
-Updated November 16, 2026
+Updated November 20, 2026
 
 
 ---
 
 Source: https://gerriscorp.com/site-index/
-Updated: 2026-11-16
+Updated: 2026-11-20
 
 # Index
 
@@ -11813,4 +11815,4 @@ Names of people run surname first, and "See also" leads to neighboring headings.
 
 [Back to the letters](https://gerriscorp.com/site-index/#index-letters)
 
-Updated November 16, 2026
+Updated November 20, 2026
